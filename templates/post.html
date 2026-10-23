@@ -46,6 +46,14 @@
         {% for f in p.faq %}<details><summary>{{ f.q }}</summary><p>{{ f.a }}</p></details>{% endfor %}
       </section>
       {% endif %}
+      <section class="follow" aria-label="Підписатися на ШІкарно">
+        {{ bait("happy", 64) }}
+        <div class="follow-text"><p class="follow-h">Щодня — одна ШІ-новина за 45 секунд</p><p>Байт розбирає головне у Shorts, а в Telegram — новина дня, промпти й обговорення.</p></div>
+        <div class="follow-btns">
+          <a class="btn" href="https://www.youtube.com/@shikarno_ua?sub_confirmation=1" rel="noopener">Підписатися на YouTube</a>
+          <a class="btn btn-alt" href="{{ site.telegram }}" rel="noopener">Telegram-канал</a>
+        </div>
+      </section>
       <section class="comments" aria-labelledby="cm-h">
         <h2 id="cm-h">Обговорення</h2>
         {% if p.telegram_post %}
