@@ -1,6 +1,6 @@
 SITE = {
-    "domain": None,                            # напр. "shikarno.com.ua" — після підключення домену
-    "url": "https://manageitblog-pixel.github.io/shikarno-site",  # з доменом: "https://<домен>"
+    "domain": "shikarno.com.ua",                            # напр. "shikarno.com.ua" — після підключення домену
+    "url": "https://shikarno.com.ua",
     "project_base": "/shikarno-site",
     "name": "ШІкарно",
     "tagline": "ШІ без води. Щодня.",
