@@ -43,6 +43,7 @@ channels.list(part=brandingSettings, mine=true) → дописати «🌐 Са
 ## 4. Telegram @shikarno_ai_ua (бот @ShikarnoUABot, chat -1004419046740)
 - setChatDescription: дописати «🌐 shikarno.com.ua — розбори з джерелами» (≤255 знаків).
 - Закріплене (getChat → pinned_message): якщо автор — бот, додати рядок «🌐 Сайт: https://shikarno.com.ua»; інакше — текст користувачу.
+- Для статей без поста в каналі (додаткові новини й гайди: claude-5-5-opus-sonnet-haiku, gemini-4-argon, anthropic-ipo, chatgpt-bezkoshtovno-v-ukraini, chatgpt-vs-gemini-vs-claude, gemini-google-maps-carplay, meta-muse-shcho-tse, shi-agenty-gid, haker-shi-agenty-100-zlamiv, gemini-skills-zamist-gems, google-ai-edge-foresight, rozbir php2shell) — поступово, 2–3 на день, публікувати короткі пости з посиланням на статтю і їхні message_id ставити в telegram_post.
 - message_id постів з роликами еп.1, 2, 6 (і всіх наступних) → у відповідні статті `telegram_post: <id>` → build → push (вмикає коментарі на сайті).
 
 ## 5. Сайт
