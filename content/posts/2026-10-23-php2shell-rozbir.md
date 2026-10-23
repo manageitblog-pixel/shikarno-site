@@ -1,5 +1,5 @@
 ---
-title: "PHP2Shell: критичні діри в PHP, через які зламують сайти. Що робити власнику сайту прямо зараз"
+title: "PHP2Shell: критична вразливість PHP, через яку зламують сайти. Що робити власнику сайту"
 slug: php2shell-vrazlyvist-php
 kind: rozbir
 number: 1

@@ -1,5 +1,5 @@
 ---
-title: "Gemini прийшов у Google Maps на CarPlay: як говорити з ШІ за кермом на iPhone"
+title: "Gemini в Google Maps на CarPlay: як увімкнути і говорити з ШІ за кермом на iPhone"
 slug: gemini-google-maps-carplay
 date: 2026-10-23T22:50:00+03:00
 description: "Google додала Gemini в Google Maps на Apple CarPlay: голосом можна змінити маршрут, оминути платні дороги, знайти заправку чи повідомити про ДТП. Як увімкнути і коли в Україні."
@@ -33,7 +33,7 @@ faq:
 
 Головне — це розмова звичайними словами, а не набір завчених команд.
 
-## Як увімкнути
+## Як увімкнути Gemini в Google Maps на CarPlay
 
 1. Онови **Google Maps** на iPhone до останньої версії в App Store.
 2. Підключи iPhone до авто через кабель або бездротовий CarPlay.
