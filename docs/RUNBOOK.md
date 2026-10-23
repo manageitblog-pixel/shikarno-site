@@ -44,9 +44,10 @@
 - Тексти дописів спільноти на тиждень (2–3 опитування й анонси) → надіслати користувачу (API немає).
 
 ## Сайт і пошук (щотижня)
-- ЩОДНЯ, окрім статей до роликів: 1–2 базові новини з тих, що не пішли в Shorts (нові моделі та продукти Anthropic, Google Gemini, OpenAI, важливі бізнес-новини), 400–700 слів, теги anthropic/claude/gemini/google/openai/chatgpt, без погодження з користувачем.
+- ЩОДНЯ, окрім статей до роликів (теми — свіжі новини, а якщо їх немає — з docs/content-backlog.md, зроблене переносити в «Зроблено»): 1–2 базові новини з тих, що не пішли в Shorts (нові моделі та продукти Anthropic, Google Gemini, OpenAI, важливі бізнес-новини), 400–700 слів, теги anthropic/claude/gemini/google/openai/chatgpt, без погодження з користувачем.
 - Понеділок: Search Console — запити з високими показами й низьким CTR → переписати title/description; позиції 8–20 → дописати статтю.
-- Середа: 1 вічнозелений гайд на сайт (тема з docs/seo-strategy.md §2 або з запитів Search Console).
+- Середа: 1 вічнозелений гайд на сайт (з docs/content-backlog.md) (тема з docs/seo-strategy.md §2 або з запитів Search Console).
+- П'ятниця: оновити 1–2 старі статті (ціни, нові факти, поле updated) — список у docs/content-backlog.md.
 - Перший робочий день місяця: 10 типових питань у ChatGPT, Gemini, Perplexity, Claude — чи цитують shikarno.com.ua; записати в docs/geo-log.md.
 
 ## Нагадування
