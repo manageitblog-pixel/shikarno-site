@@ -1,8 +1,8 @@
 ---
-title: "Claude 5.5: чим відрізняються Opus, Sonnet і Haiku і яку модель обрати"
+title: "Claude AI 5.5: чим відрізняються Opus, Sonnet і Haiku і яку модель обрати"
 slug: claude-5-5-opus-sonnet-haiku
 date: 2026-10-23T22:20:00+03:00
-description: "Anthropic оновила всю лінійку Claude: Opus 5.5, Sonnet 5.5 і Haiku 5.5. Дати виходу, ціни в API, що вміє кожна модель і яку обрати для роботи, коду чи бізнесу."
+description: "Claude AI оновився: Anthropic випустила всю лінійку Claude 5.5 — Opus 5.5, Sonnet 5.5 і Haiku 5.5. Дати виходу, ціни в API, що вміє кожна модель і яку обрати для роботи, коду чи бізнесу."
 tags: [claude, anthropic]
 source: {name: "The Batch (DeepLearning.AI)", url: "https://www.deeplearning.ai/the-batch/claude-fills-out-its-model-family/"}
 sources:

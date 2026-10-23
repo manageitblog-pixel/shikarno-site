@@ -2,7 +2,7 @@
 title: "Gemini 4 Argon: нова топова модель Google — що вміє, хто може спробувати і скільки коштує"
 slug: gemini-4-argon
 date: 2026-10-23T22:30:00+03:00
-description: "Google випустила Gemini 4 Argon — першу модель покоління Gemini 4. Доступна в застосунку Gemini для AI Pro і Ultra та в API. Ціни, контекст і чесні застереження."
+description: "Gemini AI отримав нову топову модель: Google випустила Gemini 4 Argon — першу модель покоління Gemini 4. Доступна в застосунку Gemini для AI Pro і Ultra та в API. Ціни, контекст і чесні застереження."
 tags: [gemini, google]
 source: {name: "Toolhalla — Gemini 4 Argon: ціна, доступ, контекст", url: "https://toolhalla.ai/blog/gemini-4-argon-api-price-context-2026"}
 sources:

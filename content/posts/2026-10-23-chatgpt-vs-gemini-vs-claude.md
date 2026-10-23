@@ -1,8 +1,8 @@
 ---
-title: "ChatGPT, Gemini чи Claude: що обрати у 2026 році — чесне порівняння українською"
+title: "ChatGPT vs Gemini vs Claude: що краще у 2026 році — порівняння українською"
 slug: chatgpt-vs-gemini-vs-claude
 date: 2026-10-23T22:10:00+03:00
-description: "Порівнюємо ChatGPT, Gemini і Claude: ціни, безкоштовні тарифи, сильні сторони, картинки й відео, робота з кодом і текстами. Що обрати для навчання, роботи і бізнесу."
+description: "Чат GPT, Gemini AI чи Claude AI — що краще? Порівнюємо ціни, безкоштовні тарифи, тексти, код, фото й відео. Що обрати для навчання, роботи і бізнесу в Україні."
 tags: [chatgpt, gemini, instrumenty]
 source: {name: "Notebookcheck — порівняння ШІ-підписок", url: "https://www.notebookcheck.net/What-AI-subscriptions-cost-in-2026-and-which-one-is-worth-it.1341432.0.html"}
 sources:
