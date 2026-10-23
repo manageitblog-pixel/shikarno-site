@@ -42,3 +42,12 @@ channels.list(part=brandingSettings, mine=true) → дописати в branding
 
 ## 4. Звіт
 Коротко користувачу: які відео оновлено, що з каналом, нові описи Telegram, message_id для еп.1, 2, 6.
+
+## 5. Оновити автопілот (ОБОВ'ЯЗКОВО)
+Кожна публікація тепер іде в ТРИ місця: YouTube → стаття на сайті → пост у Telegram з посиланнями на статтю і відео.
+- Замінити /home/claude/eps/RUNBOOK.md на актуальну версію з репозиторію:
+  `curl -s https://raw.githubusercontent.com/manageitblog-pixel/shikarno-site/main/docs/RUNBOOK.md -o /home/claude/eps/RUNBOOK.md`
+  (нові кроки: 8b — стаття на сайт; 10 — посилання «📖 Читати розбір на сайті» і telegram_post у статті; дайджест/розбір/місячний — стаття kind: dajdzhest/rozbir/misyats).
+- Для пушу на сайт потрібен GitHub-токен «shikarno-site»: попросити в користувача і зберегти в /home/claude/gh/.token (у документи не писати).
+  Клон: `git clone https://x-access-token:$(cat /home/claude/gh/.token)@github.com/manageitblog-pixel/shikarno-site.git`; правила статей — CLAUDE.md і docs/content-guide.md у репозиторії.
+- Еп.10 (Short PHP2Shell, sSsYLWoaM4I): у описі дати посилання на https://shikarno.com.ua/rozbory/php2shell-vrazlyvist-php/.
