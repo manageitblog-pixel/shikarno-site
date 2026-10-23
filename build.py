@@ -12,6 +12,8 @@ from config import SITE, TAG_NAMES
 
 ROOT = Path(__file__).parent
 DIST = ROOT / "dist"
+# без власного домену сайт живе на github.io/shikarno-site/ — тоді всі шляхи з префіксом
+BASE = "" if SITE.get("domain") else SITE.get("project_base", "")
 MONTHS = ["січня","лютого","березня","квітня","травня","червня","липня","серпня","вересня","жовтня","листопада","грудня"]
 
 def load(md_path):
@@ -77,7 +79,7 @@ def build(preview=False):
         if m: return "#t-" + m.group(1)
         return "#" + path.strip("/")
     env.globals.update(site=SITE, year=dt.date.today().year, tagname=tagname, plural=plural,
-                       u=(token if preview else (lambda x: x)), bare=preview)
+                       u=(token if preview else (lambda x: BASE + x)), bare=preview, base=BASE)
     env.filters["urlencode"] = lambda s: quote(str(s), safe="")
 
     views = []  # (path, html)

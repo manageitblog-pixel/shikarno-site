@@ -17,11 +17,11 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0B0A1C" media="(prefers-color-scheme: dark)">
 <meta name="theme-color" content="#F4F1FF" media="(prefers-color-scheme: light)">
-<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
-<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="/rss.xml">
+<link rel="icon" href="{{ base }}/static/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ base }}/rss.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/static/style.css">
+<link rel="stylesheet" href="{{ base }}/static/style.css">
 {% block jsonld %}{% endblock %}
 </head>
 <body>
@@ -32,6 +32,6 @@
 </main>
 {% if not bare %}
 {% include "chrome_bottom.html" %}
-<script src="/static/site.js" defer></script>
+<script src="{{ base }}/static/site.js" defer></script>
 </body>
 </html>{% endif %}
