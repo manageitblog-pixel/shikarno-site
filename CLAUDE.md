@@ -50,6 +50,10 @@ canonical, OG/Twitter, robots max-image-preview, JSON-LD NewsArticle + VideoObje
 WebSite+Organization на головній, sitemap.xml, rss.xml, внутрішні посилання «Читай також» за тегами,
 швидкість (без JS-фреймворків, відео вантажиться лише після кліку).
 
+## Для ШІ-пошуку (GEO)
+robots.txt дозволяє ШІ-ботів, /llms.txt генерується з постів, IndexNow (job `indexnow` у workflow) повідомляє Bing про нові сторінки.
+OG-картки 1200×630 генеруються в build (tools/ogcard.py, шрифт tools/fonts). news-sitemap.xml — статті за 48 год.
+
 ## Правила
 - Факти — лише з джерел, перевірених під час написання; цифри компаній про себе позначати як їхні.
 - Цитати з джерел коротші за 15 слів і не більше однієї з джерела; решта — своїми словами.

@@ -172,7 +172,26 @@ def build(preview=False):
                     f"<pubDate>{format_datetime(p['dt'])}</pubDate><description>{x(p['description'])}</description></item>" for p in posts[:30])
     (DIST/"rss.xml").write_text(f'<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>{SITE["name"]}</title>'
         f'<link>{SITE["url"]}/</link><description>{x(SITE["description"])}</description><language>uk</language>{items}</channel></rss>', encoding="utf-8")
-    (DIST/"robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {SITE['url']}/sitemap.xml\nSitemap: {SITE['url']}/news-sitemap.xml\n")
+    ai_bots = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "Claude-User",
+               "PerplexityBot", "Perplexity-User", "Google-Extended", "Applebot-Extended", "Bingbot", "DuckAssistBot", "MistralAI-User"]
+    robots = "# ШІ-асистентам дозволено читати й цитувати сайт (з посиланням на джерело)\n"
+    robots += "".join(f"User-agent: {b}\nAllow: /\n\n" for b in ai_bots)
+    robots += f"User-agent: *\nAllow: /\n\nSitemap: {SITE['url']}/sitemap.xml\nSitemap: {SITE['url']}/news-sitemap.xml\n"
+    (DIST/"robots.txt").write_text(robots)
+    key = (ROOT/"static/indexnow-key.txt").read_text().strip()
+    (DIST/f"{key}.txt").write_text(key)
+    # llms.txt — стислий путівник по сайту для мовних моделей
+    L = [f"# {SITE['name']}", "", f"> {SITE['description']} Медіа про штучний інтелект українською: щоденні новини, розбори, дайджести, з джерелами і вердиктом (оцінка 1–10).", "",
+         "Матеріали можна цитувати з посиланням на сторінку-джерело. Факти перевірені за першоджерелами; цифри компаній про себе позначені як їхні.", ""]
+    for kind, (sec, sec_name, _) in KINDS.items():
+        items = [p for p in posts if p["kind"] == kind]
+        if not items: continue
+        L.append(f"## {sec_name}")
+        L += [f"- [{p['title']}]({SITE['url']}{p['path']}): {p['description']}" for p in items]
+        L.append("")
+    L += ["## Про проєкт", f"- [Про ШІкарно і редакційна політика]({SITE['url']}/pro-nas/)", f"- [Співпраця]({SITE['url']}/spivpratsia/)",
+          f"- [YouTube]({SITE['youtube']})", f"- [Telegram]({SITE['telegram']})", ""]
+    (DIST/"llms.txt").write_text("\n".join(L), encoding="utf-8")
     if SITE.get("domain"): (DIST/"CNAME").write_text(SITE["domain"] + "\n")
     print(f"dist/: {len(views)} сторінок, {len(posts)} постів, {len(tags)} тегів")
 
