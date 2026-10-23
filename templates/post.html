@@ -46,6 +46,18 @@
         {% for f in p.faq %}<details><summary>{{ f.q }}</summary><p>{{ f.a }}</p></details>{% endfor %}
       </section>
       {% endif %}
+      <section class="comments" aria-labelledby="cm-h">
+        <h2 id="cm-h">Обговорення</h2>
+        {% if p.telegram_post %}
+        <p class="cm-note">Коментарі синхронізовані з нашим Telegram-каналом: пиши тут або під постом у Telegram — побачать усі.</p>
+        <div class="tg-comments" data-post="{{ site.tg_channel }}/{{ p.telegram_post }}">
+          <button class="btn btn-alt tg-load" type="button">Показати коментарі</button>
+        </div>
+        {% else %}
+        <p class="cm-note">Обговорюємо новини в Telegram — заходь, там Байт відповідає на питання.</p>
+        <a class="btn btn-alt" href="{{ site.telegram }}" rel="noopener">Обговорити в Telegram</a>
+        {% endif %}
+      </section>
       <aside class="source">
         <p><strong>Джерела:</strong> <a href="{{ p.source.url }}" rel="noopener">{{ p.source.name }}</a>{% for x in p.sources or [] %}, <a href="{{ x.url }}" rel="noopener">{{ x.name }}</a>{% endfor %}.</p>
         <p>Ми переказуємо факти своїми словами, перевіряємо їх за кількома джерелами і додаємо власну оцінку. Помітив помилку — напиши нам у <a href="{{ site.telegram }}" rel="noopener">Telegram</a>.</p>

@@ -39,6 +39,8 @@ sources: [{name: ..., url: ...}]   # додаткові джерела
 summary: ["...", ...]   # 3–4 пункти «Коротко»
 verdict: {score: 1-10, plus: "...", minus: "..."}
 faq: [{q: "...", a: "..."}]        # 3 питання → FAQPage schema
+telegram_post: 123      # id поста в @shikarno_ai_ua (t.me/shikarno_ai_ua/123) → віджет коментарів;
+                        # без нього — кнопка «Обговорити в Telegram». Ставити після tg.video/tg.post (message_id з відповіді)
 ```
 
 ## SEO, яке вже є (не ламати)

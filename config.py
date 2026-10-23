@@ -7,6 +7,7 @@ SITE = {
     "description": "Новини штучного інтелекту українською: коротко, з джерелами і чесним вердиктом Байта.",
     "youtube": "https://www.youtube.com/@shikarno_ua",
     "telegram": "https://t.me/shikarno_ai_ua",
+    "tg_channel": "shikarno_ai_ua",   # для віджета коментарів (обговорення під постом каналу)
     "lang": "uk",
 }
 TAG_NAMES = {
