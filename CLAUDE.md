@@ -2,7 +2,9 @@
 
 Цей репозиторій — сайт-блог каналу «ШІкарно» (новини ШІ українською, ведучий — робот Байт).
 Сайт статичний: Python-генератор збирає Markdown у HTML, GitHub Actions публікує на GitHub Pages.
-Детальні правила: docs/content-guide.md (як писати статті), docs/project-state.md (стан усього проєкту).
+Детальні правила: docs/content-guide.md (як писати статті), docs/seo-strategy.md (як виходимо в топ Google),
+docs/project-state.md (стан проєкту), docs/RUNBOOK.md (щоденний автопілот), docs/tasks/ (відкриті задачі).
+Сторінки: content/pages/pro-nas.md, spivpratsia.md (реклама/співпраця; контакт — config.SITE.contact).
 
 ## Швидкий старт
 ```bash

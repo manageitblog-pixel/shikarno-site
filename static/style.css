@@ -168,6 +168,7 @@ main{max-width:1120px;margin:0 auto;padding:0 1.25rem 4rem}
 
 /* tag + pages */
 .tag-h{font:900 clamp(2.2rem,6vw,4rem)/1.05 var(--f-head);margin:.5rem 0 .3rem;letter-spacing:-.02em}
+.tag-intro{max-width:44rem;font-size:1.15rem;color:var(--muted);margin:.4rem 0 .8rem}
 .tag-count{color:var(--muted);margin:0 0 2rem}
 .page-head{display:flex;align-items:center;gap:1.25rem}
 .page-head h1{margin:0}

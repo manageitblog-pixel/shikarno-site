@@ -51,3 +51,7 @@ channels.list(part=brandingSettings, mine=true) → дописати в branding
 - Для пушу на сайт потрібен GitHub-токен «shikarno-site»: попросити в користувача і зберегти в /home/claude/gh/.token (у документи не писати).
   Клон: `git clone https://x-access-token:$(cat /home/claude/gh/.token)@github.com/manageitblog-pixel/shikarno-site.git`; правила статей — CLAUDE.md і docs/content-guide.md у репозиторії.
 - Еп.10 (Short PHP2Shell, sSsYLWoaM4I): у описі дати посилання на https://shikarno.com.ua/rozbory/php2shell-vrazlyvist-php/.
+
+## 6. Сайт: дописати ID відео й дайджест
+- Статті еп.11 (content/posts/2026-10-24-claude-duet.md) і еп.12 (2026-10-24-walmart-vs-amazon-shi-agenty.md) вже в репо з датою виходу роликів — додати `youtube: <ID>` з eps/uploaded.json → push.
+- Дайджест #1 (3PkeNHJyqdQ, 25.10 12:00): стаття kind: dajdzhest, number: 1, date: 2026-10-25T12:00:00+03:00, chapters з meta.json (link на статті сайту, де вони є) → push у суботу.

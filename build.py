@@ -8,7 +8,7 @@ from email.utils import format_datetime
 from urllib.parse import quote
 import yaml, markdown
 from jinja2 import Environment, FileSystemLoader
-from config import SITE, TAG_NAMES
+from config import SITE, TAG_NAMES, TAG_INTRO
 
 ROOT = Path(__file__).parent
 DIST = ROOT / "dist"
@@ -87,7 +87,8 @@ def post_ld(p):
                                **({"endOffset": secs[i+1]} if i+1 < len(secs) else {}),
                                "url": f"https://www.youtube.com/watch?v={y}&t={secs[i]}s"} for i, c in enumerate(p["chapters"])]
         ld["@graph"][0]["video"] = vid
-        ld["@graph"][0]["image"] = vid["thumbnailUrl"]
+        pass
+    ld["@graph"][0]["image"] = [f"{SITE['url']}/static/og/{p['slug']}.png"] + ([f"https://i.ytimg.com/vi/{p['youtube']}/hqdefault.jpg"] if p.get("youtube") else [])
     return json.dumps(ld, ensure_ascii=False)
 
 def build(preview=False):
@@ -122,11 +123,11 @@ def build(preview=False):
         rel = [q for q in posts if q is not p and set(q["tags"]) & set(p["tags"])][:3]
         emit(p["path"], "post.html", p=p, related=rel, page_title=f"{p['title']} | {SITE['name']}",
              page_desc=p["description"], og_type="article", jsonld=post_ld(p),
-             og_image=f"https://i.ytimg.com/vi/{p['youtube']}/hqdefault.jpg" if p.get("youtube") else None)
+             og_image=f"{SITE['url']}/static/og/{p['slug']}.png")
     for t, items in sorted(tags.items()):
-        emit(f"/teg/{t}/", "tag.html", tag_title=tagname(t), items=items,
+        emit(f"/teg/{t}/", "tag.html", tag_title=tagname(t), items=items, tag_intro=TAG_INTRO.get(t),
              page_title=f"{tagname(t)}: новини ШІ українською | {SITE['name']}",
-             page_desc=f"Усі матеріали ШІкарно на тему «{tagname(t)}»: коротко, з джерелами і вердиктом Байта.")
+             page_desc=(TAG_INTRO.get(t) or f"Усі матеріали ШІкарно на тему «{tagname(t)}»: коротко, з джерелами і вердиктом Байта.")[:170])
     for kind, (sec, sec_name, _) in KINDS.items():
         items = [p for p in posts if p["kind"] == kind]
         emit(f"/{sec}/", "tag.html", tag_title=sec_name, items=items if kind != "news" else posts,
@@ -142,6 +143,21 @@ def build(preview=False):
         out = DIST / ("404.html" if path == "/404/" else path.strip("/") + "/index.html" if path != "/" else "index.html")
         out.parent.mkdir(parents=True, exist_ok=True); out.write_text(html, encoding="utf-8")
     shutil.copytree(ROOT/"static", DIST/"static")
+    try:
+        sys.path.insert(0, str(ROOT/"tools")); import ogcard
+        for p in posts:
+            label = (p["label"] + (f" #{p['number']}" if p.get("number") else "")) if p["label"] else tagname(p["tags"][0])
+            ogcard.make(p["title"], label, DIST/"static/og"/f"{p['slug']}.png")
+    except Exception as e:
+        print("OG-картки не згенеровано:", e)
+    from xml.sax.saxutils import escape as xe
+    fresh = [p for p in posts if (dt.datetime.now(dt.timezone.utc) - p["dt"]).total_seconds() < 2*86400]
+    ns = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">']
+    for p in fresh:
+        ns.append(f"<url><loc>{SITE['url']}{p['path']}</loc><news:news><news:publication><news:name>{SITE['name']}</news:name><news:language>uk</news:language></news:publication>"
+                  f"<news:publication_date>{p['iso']}</news:publication_date><news:title>{xe(p['title'])}</news:title></news:news></url>")
+    ns.append("</urlset>")
+    (DIST/"news-sitemap.xml").write_text("\n".join(ns), encoding="utf-8")
     # sitemap, rss, robots
     urls = [(path, None) for path, _ in views if path != "/404/"]
     last = {p["path"]: p["iso"] for p in posts}
@@ -156,7 +172,7 @@ def build(preview=False):
                     f"<pubDate>{format_datetime(p['dt'])}</pubDate><description>{x(p['description'])}</description></item>" for p in posts[:30])
     (DIST/"rss.xml").write_text(f'<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>{SITE["name"]}</title>'
         f'<link>{SITE["url"]}/</link><description>{x(SITE["description"])}</description><language>uk</language>{items}</channel></rss>', encoding="utf-8")
-    (DIST/"robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {SITE['url']}/sitemap.xml\n")
+    (DIST/"robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {SITE['url']}/sitemap.xml\nSitemap: {SITE['url']}/news-sitemap.xml\n")
     if SITE.get("domain"): (DIST/"CNAME").write_text(SITE["domain"] + "\n")
     print(f"dist/: {len(views)} сторінок, {len(posts)} постів, {len(tags)} тегів")
 
