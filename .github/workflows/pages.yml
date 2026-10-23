@@ -3,6 +3,8 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    - cron: "*/30 * * * *"   # відкладені пости (дайджест о 12:00 тощо) з'являються автоматично
 permissions:
   contents: read
   pages: write

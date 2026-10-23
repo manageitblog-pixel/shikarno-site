@@ -3,19 +3,32 @@
 {% block jsonld %}<script type="application/ld+json">{{ jsonld|safe }}</script>{% endblock %}
 {% block main %}
 <article class="post">
-  <nav class="crumbs" aria-label="Навігація"><a href="{{ u('/') }}">Новини</a> <span aria-hidden="true">/</span> <a href="{{ u('/teg/' ~ p.tags[0] ~ '/') }}">{{ tagname(p.tags[0]) }}</a></nav>
+  <nav class="crumbs" aria-label="Навігація"><a href="{{ u('/' ~ p.sec ~ '/') }}">{{ p.sec_name }}</a> <span aria-hidden="true">/</span> <a href="{{ u('/teg/' ~ p.tags[0] ~ '/') }}">{{ tagname(p.tags[0]) }}</a></nav>
   <header class="post-head">
+    {% if p.label %}<p class="kind-badge">{{ p.label }}{% if p.number %} #{{ p.number }}{% endif %}</p>{% endif %}
     <h1>{{ p.title }}</h1>
     <p class="post-lede">{{ p.description }}</p>
     <p class="post-meta">Редакція ШІкарно, <time datetime="{{ p.iso }}">{{ p.human }}</time>{% if p.upd_iso[:10] != p.iso[:10] %} (оновлено {{ p.upd_human }}){% endif %}. Читати {{ p.minutes }} хв.</p>
     {{ tags(p.tags) }}
   </header>
-  <div class="post-grid">
+  {% if p.long and p.youtube %}
+  <div class="wide-video" data-yt="{{ p.youtube }}">
+    <button class="short-play" type="button" aria-label="Дивитись відео «{{ p.title }}»">{{ bait("talk", 120) }}<span class="short-cap">Дивитись випуск</span>{% if p.duration %}<span class="short-time">{{ p.duration }}</span>{% endif %}</button>
+    <a class="short-link" href="https://www.youtube.com/watch?v={{ p.youtube }}" rel="noopener">Відкрити на YouTube</a>
+  </div>
+  {% endif %}
+  <div class="post-grid{% if p.long %} post-grid-long{% endif %}">
     <div class="prose">
       {% if p.summary %}
       <section class="tldr" aria-labelledby="tldr-h">
         <h2 id="tldr-h">Коротко</h2>
         <ul>{% for s in p.summary %}<li>{{ s }}</li>{% endfor %}</ul>
+      </section>
+      {% endif %}
+      {% if p.chapters %}
+      <section class="chapters" aria-labelledby="ch-h">
+        <h2 id="ch-h">Зміст випуску</h2>
+        <ol>{% for c in p.chapters %}<li><a class="tc" href="https://www.youtube.com/watch?v={{ p.youtube }}&t={{ to_sec(c.t) }}s" rel="noopener">{{ c.t }}</a> <span>{{ c.title }}</span>{% if c.link %} <a class="ch-more" href="{{ u(c.link) }}">читати</a>{% endif %}</li>{% endfor %}</ol>
       </section>
       {% endif %}
       {{ p.html|safe }}
@@ -39,7 +52,7 @@
       </aside>
       <p class="share">Поділитись: <a href="https://t.me/share/url?url={{ (site.url ~ p.path)|urlencode }}&text={{ p.title|urlencode }}" rel="noopener">Telegram</a> <a href="https://www.facebook.com/sharer/sharer.php?u={{ (site.url ~ p.path)|urlencode }}" rel="noopener">Facebook</a></p>
     </div>
-    {% if p.youtube %}<div class="post-side">{{ video(p) }}</div>{% endif %}
+    {% if p.youtube and not p.long %}<div class="post-side">{{ video(p) }}</div>{% endif %}
   </div>
   {% if related %}
   <section class="related" aria-labelledby="rel-h">

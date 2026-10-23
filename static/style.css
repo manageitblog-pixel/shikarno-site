@@ -67,7 +67,7 @@ main{max-width:1120px;margin:0 auto;padding:0 1.25rem 4rem}
 .row{display:flex;align-items:baseline;gap:1rem;border-top:1px solid var(--line)}
 .row:last-child{border-bottom:1px solid var(--line)}
 .row-link{flex:1;display:grid;grid-template-columns:8.5rem minmax(0,1fr);column-gap:1.5rem;row-gap:.25rem;padding:1.3rem 0;text-decoration:none}
-.row-link time{grid-row:span 2;color:var(--muted);font-size:.95rem;padding-top:.2rem}
+.row-link time{grid-row:span 3;color:var(--muted);font-size:.95rem;padding-top:.2rem}
 .row-title{font:800 clamp(1.15rem,2.2vw,1.45rem)/1.25 var(--f-head);letter-spacing:-.01em}
 .row-link:hover .row-title{text-decoration:underline;text-decoration-color:var(--plate);text-decoration-thickness:3px;text-underline-offset:4px}
 .row-desc{color:var(--muted);max-width:64ch}
@@ -121,6 +121,19 @@ main{max-width:1120px;margin:0 auto;padding:0 1.25rem 4rem}
 .faq details[open] summary::after{content:"−"}
 .faq details p{margin:.6rem 0 0;color:var(--muted)}
 .source p{margin:0 0 .4rem}
+
+.kind-badge{display:inline-block;margin:0 0 .8rem;font:800 .95rem/1 var(--f-head);background:var(--pink);color:#fff;padding:.45rem .8rem;border-radius:10px;transform:skew(-6deg)}
+.row-kind{font:800 .8rem/1 var(--f-head);color:var(--pink);margin-bottom:.15rem}
+.wide-video{position:relative;aspect-ratio:16/9;border-radius:24px;overflow:hidden;margin:0 0 2rem;background:linear-gradient(135deg,#1A1240,#7C5CFF 55%,#FF4F8B)}
+.wide-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.wide-video.on .short-link{display:none}
+.post-grid-long{grid-template-columns:minmax(0,1fr)}
+.chapters{margin:0 0 2rem}
+.chapters ol{list-style:none;padding:0;margin:0}
+.chapters li{display:flex;gap:.8rem;align-items:baseline;padding:.45rem 0;border-bottom:1px solid var(--line)}
+.chapters .tc{font:800 .95rem/1 var(--f-head);color:var(--plate-ink);background:var(--plate);padding:.3rem .5rem;border-radius:8px;text-decoration:none;min-width:3.4rem;text-align:center}
+.chapters span{flex:1}
+.ch-more{font-size:.9rem;color:var(--muted)}
 
 /* short facade */
 .short{position:relative;aspect-ratio:9/16;border-radius:24px;overflow:hidden;background:linear-gradient(160deg,#1A1240,#7C5CFF 55%,#FF4F8B)}

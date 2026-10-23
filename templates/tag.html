@@ -3,7 +3,8 @@
 <section class="feed tagpage">
   <nav class="crumbs" aria-label="Навігація"><a href="{{ u('/') }}">Новини</a></nav>
   <h1 class="tag-h">{{ tag_title }}</h1>
-  <p class="tag-count">{{ items|length }} {{ plural(items|length) }}</p>
+  {% if items %}<p class="tag-count">{{ items|length }} {{ plural(items|length) }}</p>
+  {% else %}<p class="tag-count">Перший випуск уже готується. Дайджест тижня виходить щонеділі о 12:00, «ШІ за місяць» — у перший понеділок місяця о 19:00.</p>{% endif %}
   <ol class="rows">{% for p in items %}{% include "_row.html" %}{% endfor %}</ol>
 </section>
 {% endblock %}

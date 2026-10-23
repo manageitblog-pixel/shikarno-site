@@ -10,6 +10,8 @@ pip install -r requirements.txt
 python3 build.py            # → dist/
 python3 build.py --preview  # → preview.html (весь сайт в одному файлі, навігація через #)
 ```
+Пости з датою в майбутньому НЕ публікуються, доки не настане їхній час: workflow запускається ще й кожні 30 хв (cron),
+тож дайджест, записаний у суботу з датою «неділя 12:00», з'явиться сам (`--future` у build.py — щоб побачити їх локально).
 Пуш у `main` → workflow `.github/workflows/pages.yml` збирає і деплоїть (~1 хв).
 
 ## Структура
@@ -21,6 +23,10 @@ python3 build.py --preview  # → preview.html (весь сайт в одном�
 
 ## Front matter статті
 ```yaml
+kind: news              # news | rozbir | dajdzhest | misyats → розділи /novyny/ /rozbory/ /dajdzhest/ /za-misyats/
+number: 1               # номер розбору/дайджесту/місячного (бейдж «Дайджест #1»)
+duration: "6:24"        # для довгих відео
+chapters: [{t: "0:00", title: "...", link: "/novyny/<slug>/"}]   # таймкоди → «Зміст випуску» + Clip schema (ключові моменти в Google)
 title: "..."            # H1 і <title>; ключова фраза на початку, ≤ ~90 знаків
 slug: latin-translit    # URL /novyny/<slug>/ — НЕ змінювати після публікації
 date: 2026-10-23T13:00:00+03:00   # час виходу ролика (Київ)

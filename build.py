@@ -14,6 +14,12 @@ ROOT = Path(__file__).parent
 DIST = ROOT / "dist"
 # без власного домену сайт живе на github.io/shikarno-site/ — тоді всі шляхи з префіксом
 BASE = "" if SITE.get("domain") else SITE.get("project_base", "")
+KINDS = {  # тип матеріалу → (розділ URL, назва розділу, мітка в стрічці)
+    "news":      ("novyny",    "Новини",          None),
+    "rozbir":    ("rozbory",   "Розбори",         "Розбір"),
+    "dajdzhest": ("dajdzhest", "Дайджести тижня", "Дайджест"),
+    "misyats":   ("za-misyats","ШІ за місяць",    "ШІ за місяць"),
+}
 MONTHS = ["січня","лютого","березня","квітня","травня","червня","липня","серпня","вересня","жовтня","листопада","грудня"]
 
 def load(md_path):
@@ -23,6 +29,11 @@ def load(md_path):
     html = markdown.markdown(body.strip(), extensions=["extra", "sane_lists"])
     meta["html"] = html.replace("<table>", '<div class="tbl"><table>').replace("</table>", "</table></div>")
     return meta
+
+def to_sec(t):
+    n = 0
+    for part in str(t).split(":"): n = n*60 + int(part)
+    return n
 
 def human(d): return f"{d.day} {MONTHS[d.month-1]} {d.year}"
 def tagname(t): return TAG_NAMES.get(t, t)
@@ -37,9 +48,12 @@ def posts_all():
         p = load(f)
         if p.get("draft"): continue
         d = p["date"] if isinstance(p["date"], dt.datetime) else dt.datetime.fromisoformat(str(p["date"]))
+        if d > dt.datetime.now(dt.timezone.utc) and "--future" not in sys.argv: continue  # відкладена публікація
+        kind = p.get("kind", "news"); sec, sec_name, label = KINDS[kind]
+        p.update(kind=kind, sec=sec, sec_name=sec_name, label=label, long=kind != "news")
         u = p.get("updated"); u = u if isinstance(u, dt.datetime) else (dt.datetime.fromisoformat(str(u)) if u else d)
         words = len(re.sub(r"<[^>]+>", " ", p["html"]).split())
-        p.update(dt=d, iso=d.isoformat(), human=human(d), path=f"/novyny/{p['slug']}/",
+        p.update(dt=d, iso=d.isoformat(), human=human(d), path=f"/{sec}/{p['slug']}/",
                  upd_iso=u.isoformat(), upd_human=human(u), words=words, minutes=max(1, round(words/180)))
         out.append(p)
     return sorted(out, key=lambda p: p["dt"], reverse=True)
@@ -56,7 +70,7 @@ def post_ld(p):
          "author": ORG, "publisher": ORG, "keywords": [tagname(t) for t in p["tags"]],
          "isBasedOn": p["source"]["url"]},
         {"@type": "BreadcrumbList", "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": "Новини", "item": SITE["url"] + "/"},
+            {"@type": "ListItem", "position": 1, "name": p["sec_name"], "item": SITE["url"] + "/" + p["sec"] + "/"},
             {"@type": "ListItem", "position": 2, "name": p["title"], "item": SITE["url"] + p["path"]}]}]}
     if p.get("faq"):
         ld["@graph"].append({"@type": "FAQPage", "mainEntity": [
@@ -65,7 +79,13 @@ def post_ld(p):
         y = p["youtube"]
         vid = {"@type": "VideoObject", "name": p["title"], "description": p["description"],
                "thumbnailUrl": f"https://i.ytimg.com/vi/{y}/hqdefault.jpg", "uploadDate": p["iso"],
-               "embedUrl": f"https://www.youtube.com/embed/{y}", "contentUrl": f"https://www.youtube.com/shorts/{y}"}
+               "embedUrl": f"https://www.youtube.com/embed/{y}",
+               "contentUrl": f"https://www.youtube.com/{'watch?v=' if p['long'] else 'shorts/'}{y}"}
+        if p.get("chapters"):
+            secs = [to_sec(c["t"]) for c in p["chapters"]]
+            vid["hasPart"] = [{"@type": "Clip", "name": c["title"], "startOffset": secs[i],
+                               **({"endOffset": secs[i+1]} if i+1 < len(secs) else {}),
+                               "url": f"https://www.youtube.com/watch?v={y}&t={secs[i]}s"} for i, c in enumerate(p["chapters"])]
         ld["@graph"][0]["video"] = vid
         ld["@graph"][0]["image"] = vid["thumbnailUrl"]
     return json.dumps(ld, ensure_ascii=False)
@@ -80,12 +100,12 @@ def build(preview=False):
 
     def token(path):
         if path == "/": return "#home"
-        m = re.match(r"/novyny/([^/]+)/", path)
+        m = re.match(r"/(?:novyny|rozbory|dajdzhest|za-misyats)/([^/]+)/", path)
         if m: return "#p-" + m.group(1)
         m = re.match(r"/teg/([^/]+)/", path)
         if m: return "#t-" + m.group(1)
         return "#" + path.strip("/")
-    env.globals.update(site=SITE, year=dt.date.today().year, tagname=tagname, plural=plural,
+    env.globals.update(to_sec=to_sec, site=SITE, year=dt.date.today().year, tagname=tagname, plural=plural,
                        u=(token if preview else (lambda x: BASE + x)), bare=preview, base=BASE)
     env.filters["urlencode"] = lambda s: quote(str(s), safe="")
 
@@ -107,6 +127,10 @@ def build(preview=False):
         emit(f"/teg/{t}/", "tag.html", tag_title=tagname(t), items=items,
              page_title=f"{tagname(t)}: новини ШІ українською | {SITE['name']}",
              page_desc=f"Усі матеріали ШІкарно на тему «{tagname(t)}»: коротко, з джерелами і вердиктом Байта.")
+    for kind, (sec, sec_name, _) in KINDS.items():
+        items = [p for p in posts if p["kind"] == kind]
+        emit(f"/{sec}/", "tag.html", tag_title=sec_name, items=items if kind != "news" else posts,
+             page_title=f"{sec_name} | {SITE['name']}", page_desc=f"{sec_name} ШІкарно: штучний інтелект українською, з джерелами і вердиктом Байта.")
     for pg in pages:
         emit(f"/{pg['slug']}/", "page.html", pg=pg, page_title=f"{pg['title']} | {SITE['name']}", page_desc=pg["description"])
     emit("/404/", "404.html", page_title=f"Сторінку не знайдено | {SITE['name']}", page_desc=SITE["description"])
