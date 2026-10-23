@@ -1,0 +1,8 @@
+<li class="row">
+  <a class="row-link" href="{{ u(p.path) }}">
+    <time datetime="{{ p.iso }}">{{ p.human }}</time>
+    <span class="row-title">{{ p.title }}</span>
+    <span class="row-desc">{{ p.description }}</span>
+  </a>
+  {% if p.youtube %}<span class="row-video" aria-label="Є відео">▶ Short</span>{% endif %}
+</li>

@@ -1,0 +1,13 @@
+{% from "macros.html" import logo, bait %}
+<footer class="foot">
+  <div class="foot-in">
+    <div class="foot-brand">{{ bait("happy", 64) }}<div><p class="foot-logo">{{ logo() }}</p><p class="foot-tag">{{ site.tagline }}</p></div></div>
+    <ul class="foot-links">
+      <li><a href="{{ site.youtube }}" rel="noopener">YouTube</a></li>
+      <li><a href="{{ site.telegram }}" rel="noopener">Telegram</a></li>
+      <li><a href="{{ u('/pro-nas/') }}">Про нас</a></li>
+      <li><a href="/rss.xml">RSS</a></li>
+    </ul>
+    <p class="foot-note">© {{ year }} ШІкарно. Байт — оригінальний персонаж каналу.</p>
+  </div>
+</footer>

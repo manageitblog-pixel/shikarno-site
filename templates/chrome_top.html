@@ -1,0 +1,11 @@
+{% from "macros.html" import logo %}
+<a class="skip" href="#main">До змісту</a>
+<header class="top">
+  <a class="brand" href="{{ u('/') }}">{{ logo() }}</a>
+  <nav class="nav" aria-label="Розділи">
+    <a href="{{ u('/') }}">Новини</a>
+    <a href="{{ u('/teg/bezpeka/') }}">Безпека</a>
+    <a href="{{ u('/pro-nas/') }}">Про нас</a>
+    <a class="nav-tg" href="{{ site.telegram }}" rel="noopener">Telegram</a>
+  </nav>
+</header>

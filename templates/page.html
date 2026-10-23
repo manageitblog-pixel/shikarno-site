@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% from "macros.html" import bait %}
+{% block main %}
+<article class="post page">
+  <header class="post-head page-head">{{ bait("happy", 120) }}<h1>{{ pg.title }}</h1></header>
+  <div class="prose">{{ pg.html|safe }}
+    <p class="page-links"><a class="btn" href="{{ site.youtube }}" rel="noopener">YouTube</a> <a class="btn btn-alt" href="{{ site.telegram }}" rel="noopener">Telegram</a></p>
+  </div>
+</article>
+{% endblock %}

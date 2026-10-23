@@ -1,0 +1,5 @@
+{% extends "base.html" %}
+{% from "macros.html" import bait %}
+{% block main %}
+<section class="notfound">{{ bait("judge", 140) }}<h1>Такої сторінки немає</h1><p>Можливо, посилання застаріло. Свіжі новини — на головній.</p><a class="btn" href="{{ u('/') }}">На головну</a></section>
+{% endblock %}

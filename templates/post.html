@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% from "macros.html" import bait, tags, video %}
+{% block jsonld %}<script type="application/ld+json">{{ jsonld|safe }}</script>{% endblock %}
+{% block main %}
+<article class="post">
+  <nav class="crumbs" aria-label="Навігація"><a href="{{ u('/') }}">Новини</a> <span aria-hidden="true">/</span> <a href="{{ u('/teg/' ~ p.tags[0] ~ '/') }}">{{ tagname(p.tags[0]) }}</a></nav>
+  <header class="post-head">
+    <h1>{{ p.title }}</h1>
+    <p class="post-lede">{{ p.description }}</p>
+    <p class="post-meta"><time datetime="{{ p.iso }}">{{ p.human }}</time>, джерело: <a href="{{ p.source.url }}" rel="noopener">{{ p.source.name }}</a></p>
+    {{ tags(p.tags) }}
+  </header>
+  <div class="post-grid">
+    <div class="prose">
+      {{ p.html|safe }}
+      {% if p.verdict %}
+      <section class="verdict" aria-label="Вердикт Байта">
+        {{ bait("judge", 84) }}
+        <div class="v-score"><span class="v-num">{{ p.verdict.score }}</span><span class="v-of">з 10</span></div>
+        <div class="v-body"><h2>Вердикт Байта</h2>
+          <p><strong>Плюс:</strong> {{ p.verdict.plus }}</p><p><strong>Мінус:</strong> {{ p.verdict.minus }}</p></div>
+      </section>
+      {% endif %}
+      <aside class="source">
+        <p>Першоджерело: <a href="{{ p.source.url }}" rel="noopener">{{ p.source.name }}</a>. Ми переказуємо факти своїми словами і додаємо власну оцінку.</p>
+      </aside>
+      <p class="share">Поділитись: <a href="https://t.me/share/url?url={{ (site.url ~ p.path)|urlencode }}&text={{ p.title|urlencode }}" rel="noopener">Telegram</a> <a href="https://www.facebook.com/sharer/sharer.php?u={{ (site.url ~ p.path)|urlencode }}" rel="noopener">Facebook</a></p>
+    </div>
+    {% if p.youtube %}<div class="post-side">{{ video(p) }}</div>{% endif %}
+  </div>
+  {% if related %}
+  <section class="related" aria-labelledby="rel-h">
+    <h2 id="rel-h" class="sec-h">Читай також</h2>
+    <ol class="rows">{% for p in related %}{% include "_row.html" %}{% endfor %}</ol>
+  </section>
+  {% endif %}
+</article>
+{% endblock %}

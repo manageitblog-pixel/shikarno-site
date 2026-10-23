@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% from "macros.html" import bait, tags %}
+{% block jsonld %}<script type="application/ld+json">{{ jsonld|safe }}</script>{% endblock %}
+{% block main %}
+{% set h = posts[0] %}
+<section class="hero">
+  <div class="hero-text">
+    <p class="hero-kicker">Свіже, <time datetime="{{ h.iso }}">{{ h.human }}</time></p>
+    <h1 class="hero-title"><a href="{{ u(h.path) }}">{{ h.title }}</a></h1>
+    <p class="hero-lede">{{ h.description }}</p>
+    <a class="btn" href="{{ u(h.path) }}">Читати розбір</a>
+  </div>
+  <figure class="hero-bait" aria-hidden="true">
+    <blockquote class="bubble">Що це означає для тебе? Зараз поясню.</blockquote>
+    {{ bait("talk", 220, "hero-bot") }}
+  </figure>
+</section>
+
+<section class="feed" aria-labelledby="feed-h">
+  <h2 id="feed-h" class="sec-h">Ще новини</h2>
+  <ol class="rows">
+    {% for p in posts[1:] %}{% include "_row.html" %}{% endfor %}
+  </ol>
+</section>
+
+<section class="tgband">
+  {{ bait("happy", 88) }}
+  <div>
+    <h2>Новина дня, промпт дня і опитування — у Telegram</h2>
+    <p>Те, що не влазить у 45 секунд відео, Байт пише текстом.</p>
+  </div>
+  <a class="btn btn-alt" href="{{ site.telegram }}" rel="noopener">Підписатись</a>
+</section>
+{% endblock %}

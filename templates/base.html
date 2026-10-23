@@ -1,0 +1,37 @@
+{% from "macros.html" import logo, bait %}
+{% if not bare %}<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{ page_title }}</title>
+<meta name="description" content="{{ page_desc }}">
+<link rel="canonical" href="{{ site.url }}{{ path }}">
+<meta property="og:site_name" content="{{ site.name }}">
+<meta property="og:locale" content="uk_UA">
+<meta property="og:type" content="{{ og_type|default('website') }}">
+<meta property="og:title" content="{{ page_title }}">
+<meta property="og:description" content="{{ page_desc }}">
+<meta property="og:url" content="{{ site.url }}{{ path }}">
+<meta property="og:image" content="{{ og_image|default(site.url ~ '/static/og.png') }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0B0A1C" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F4F1FF" media="(prefers-color-scheme: light)">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="/rss.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/style.css">
+{% block jsonld %}{% endblock %}
+</head>
+<body>
+{% include "chrome_top.html" %}
+{% endif %}
+<main id="main" class="{{ main_class|default('') }}">
+{% block main %}{% endblock %}
+</main>
+{% if not bare %}
+{% include "chrome_bottom.html" %}
+<script src="/static/site.js" defer></script>
+</body>
+</html>{% endif %}
