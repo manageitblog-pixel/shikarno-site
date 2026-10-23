@@ -4,7 +4,7 @@
 - Статичний сайт-блог: Python-генератор (Jinja2 + Markdown) → GitHub Pages. Без сервера, бази й адмінки — пости публікує Claude.
 - Репозиторій: github.com/manageitblog-pixel/shikarno-site (public, гілка main). Пуш → GitHub Actions «Build and deploy» → сайт за ~1 хв.
 - У репозиторії є CLAUDE.md і docs/content-guide.md — правила для Claude Code і Cowork (структура, front matter, SEO, тон).
-- Домен shikarno.com.ua (реєстратор imena.ua, DNS-панель dnshosting.org): 4×A @ → 185.199.108–111.153, CNAME www → manageitblog-pixel.github.io., MX imena не чіпати. GitHub Pages: Custom domain shikarno.com.ua, DNS check successful (23.10). Enforce HTTPS — увімкнути, щойно GitHub випустить сертифікат.
+- Домен shikarno.com.ua (реєстратор imena.ua, DNS-панель dnshosting.org): 4×A @ → 185.199.108–111.153, CNAME www → manageitblog-pixel.github.io., MX imena не чіпати. GitHub Pages: Custom domain shikarno.com.ua, DNS check successful (23.10). Enforce HTTPS увімкнено (23.10) — сайт працює лише через https://.
 - Розділи: /novyny/ (статті до Shorts), /rozbory/ (екстрені розбори), /dajdzhest/ (дайджест тижня), /za-misyats/ (ШІ за місяць), /teg/<tag>/. Тип задає kind у front matter; таймкоди (chapters) → «Зміст випуску» + Clip schema (ключові моменти відео в Google).
 - Відкладена публікація: пост з датою в майбутньому з'являється сам (workflow ще й за cron кожні 30 хв) — дайджест можна залити в суботу з датою «неділя 12:00».
 - Контент: розбір #1 PHP2Shell (7KYKPMVQiUI); 6 лонгрідів (еп. 1–6), кожен 600–1000 слів, з блоком «Коротко», таблицями, вердиктом Байта, FAQ і 2–3 джерелами.
@@ -34,7 +34,6 @@
 - Статей ще немає для еп. 7–12 (хакер з ШІ-агентами, Gemini skills, AI Edge Foresight, PHP2Shell Short, Claude Duet, Walmart vs Amazon) — дописати.
 
 ## Далі (у черзі)
-- Enforce HTTPS у GitHub Pages (користувач).
 - Google Search Console: ресурс «Домен», TXT-запис в imena → надіслати sitemap https://shikarno.com.ua/sitemap.xml.
 - Google Analytics 4 → вставити тег; читати статистику через Google API напряму (OAuth, scope analytics.readonly + webmasters.readonly), як YouTube API.
 - Ключові слова: Ubersuggest (вже підключений у claude.ai) — за потреби.
