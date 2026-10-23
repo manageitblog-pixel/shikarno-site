@@ -50,5 +50,14 @@ channels.list(part=brandingSettings, mine=true) → дописати «🌐 Са
 - Дайджест #1: content/posts/2026-10-25-dajdzhest-1.md — kind: dajdzhest, number: 1, slug: dajdzhest-1, date: 2026-10-25T12:00:00+03:00, youtube: 3PkeNHJyqdQ, duration, chapters з meta.json (link на статті сайту), summary = 5 головних новин, FAQ, джерела. До суботи ввечері — з'явиться сам о 12:00.
 - `python3 build.py` без помилок → commit → push.
 
+## 7. Оновити приватний артефакт «Доступи ШІкарно»
+Посилання на артефакт — у повідомленні користувача (у репозиторій його і ключі НЕ писати: репо публічне).
+Через Artifact tool (action "edit", url артефакту) заповнити рядки, які зараз «_вписати_», значеннями з твого середовища:
+- Бот @ShikarnoUABot (канал) — токен з /home/claude/tg/.token;
+- Gemini API key — з /home/claude/gem/.key;
+- YouTube OAuth client — client_id і client_secret з /home/claude/yt/client_secret.json (сам файл не вставляти цілком); дата отримання поточного refresh token і коли він спливає (режим Testing — 7 днів);
+- будь-які інші ключі чи ID, які є в тебе і яких немає в артефакті (Telegram-група, Threads тощо).
+Після оновлення перевір, що таблиці не розламались (action "read"), і скажи користувачу, що додано.
+
 ## 6. Звіт користувачу
 Що оновлено на YouTube і в Telegram, message_id постів, що на сайті. Після виконання — перенести цей файл у docs/tasks/done/.
