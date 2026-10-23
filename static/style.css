@@ -92,12 +92,35 @@ main{max-width:1120px;margin:0 auto;padding:0 1.25rem 4rem}
 .tags a{display:inline-block;text-decoration:none;font-size:.9rem;font-weight:500;padding:.25rem .75rem;border-radius:999px;border:1.5px solid var(--line)}
 .tags a:hover{border-color:var(--accent)}
 .post-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:3rem;align-items:start;border-top:1px solid var(--line);padding-top:2rem}
+.post-grid>*{min-width:0}
 .post-side{position:sticky;top:calc(1.5rem + env(safe-area-inset-top,0px))}
 .prose{max-width:42rem;font-size:1.125rem;line-height:1.72}
 .prose p{margin:0 0 1.15em}
 .prose h2{font:800 1.5rem/1.25 var(--f-head);margin:2.2rem 0 .8rem}
 .prose a{text-decoration-color:var(--accent);text-underline-offset:3px}
 .prose strong{font-weight:600}
+
+.tldr{background:var(--card);border:2px solid var(--line);border-radius:20px;padding:1.1rem 1.4rem .4rem;margin:0 0 2rem}
+.tldr h2{margin:0 0 .5rem;font-size:1.15rem}
+.tldr ul{margin:0 0 .8rem;padding-left:1.2rem}
+.tldr li{margin:.35rem 0;font-size:1.02rem}
+.tldr li::marker{color:var(--pink)}
+.prose ul,.prose ol{padding-left:1.3rem;margin:0 0 1.2em}
+.prose li{margin:.35em 0}
+.tbl{overflow-x:auto;margin:1.5rem 0;border:1px solid var(--line);border-radius:14px}
+.tbl table{border-collapse:collapse;width:100%;font-size:1rem;min-width:30rem}
+.tbl th,.tbl td{text-align:left;padding:.65rem .85rem;border-bottom:1px solid var(--line)}
+.tbl th{font-family:var(--f-head);font-weight:800;background:var(--bg2)}
+.tbl tr:last-child td{border-bottom:0}
+.faq{margin:2.5rem 0}
+.faq details{border-top:1px solid var(--line);padding:.9rem 0}
+.faq details:last-child{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;font-weight:600;font-size:1.08rem;list-style:none;display:flex;justify-content:space-between;gap:1rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font:800 1.3rem/1 var(--f-head);color:var(--pink)}
+.faq details[open] summary::after{content:"−"}
+.faq details p{margin:.6rem 0 0;color:var(--muted)}
+.source p{margin:0 0 .4rem}
 
 /* short facade */
 .short{position:relative;aspect-ratio:9/16;border-radius:24px;overflow:hidden;background:linear-gradient(160deg,#1A1240,#7C5CFF 55%,#FF4F8B)}

@@ -20,7 +20,8 @@ def load(md_path):
     raw = md_path.read_text(encoding="utf-8")
     _, fm, body = raw.split("---", 2)
     meta = yaml.safe_load(fm)
-    meta["html"] = markdown.markdown(body.strip(), extensions=["extra", "sane_lists"])
+    html = markdown.markdown(body.strip(), extensions=["extra", "sane_lists"])
+    meta["html"] = html.replace("<table>", '<div class="tbl"><table>').replace("</table>", "</table></div>")
     return meta
 
 def human(d): return f"{d.day} {MONTHS[d.month-1]} {d.year}"
@@ -36,7 +37,10 @@ def posts_all():
         p = load(f)
         if p.get("draft"): continue
         d = p["date"] if isinstance(p["date"], dt.datetime) else dt.datetime.fromisoformat(str(p["date"]))
-        p.update(dt=d, iso=d.isoformat(), human=human(d), path=f"/novyny/{p['slug']}/")
+        u = p.get("updated"); u = u if isinstance(u, dt.datetime) else (dt.datetime.fromisoformat(str(u)) if u else d)
+        words = len(re.sub(r"<[^>]+>", " ", p["html"]).split())
+        p.update(dt=d, iso=d.isoformat(), human=human(d), path=f"/novyny/{p['slug']}/",
+                 upd_iso=u.isoformat(), upd_human=human(u), words=words, minutes=max(1, round(words/180)))
         out.append(p)
     return sorted(out, key=lambda p: p["dt"], reverse=True)
 
@@ -47,13 +51,16 @@ ORG = {"@type": "Organization", "name": SITE["name"], "url": SITE["url"],
 def post_ld(p):
     ld = {"@context": "https://schema.org", "@graph": [
         {"@type": "NewsArticle", "headline": p["title"], "description": p["description"],
-         "datePublished": p["iso"], "dateModified": p.get("updated", p["iso"]) if isinstance(p.get("updated"), str) else p["iso"],
+         "datePublished": p["iso"], "dateModified": p["upd_iso"], "wordCount": p["words"],
          "inLanguage": "uk", "mainEntityOfPage": SITE["url"] + p["path"],
          "author": ORG, "publisher": ORG, "keywords": [tagname(t) for t in p["tags"]],
          "isBasedOn": p["source"]["url"]},
         {"@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Новини", "item": SITE["url"] + "/"},
             {"@type": "ListItem", "position": 2, "name": p["title"], "item": SITE["url"] + p["path"]}]}]}
+    if p.get("faq"):
+        ld["@graph"].append({"@type": "FAQPage", "mainEntity": [
+            {"@type": "Question", "name": f["q"], "acceptedAnswer": {"@type": "Answer", "text": f["a"]}} for f in p["faq"]]})
     if p.get("youtube"):
         y = p["youtube"]
         vid = {"@type": "VideoObject", "name": p["title"], "description": p["description"],

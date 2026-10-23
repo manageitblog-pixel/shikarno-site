@@ -7,11 +7,17 @@
   <header class="post-head">
     <h1>{{ p.title }}</h1>
     <p class="post-lede">{{ p.description }}</p>
-    <p class="post-meta"><time datetime="{{ p.iso }}">{{ p.human }}</time>, джерело: <a href="{{ p.source.url }}" rel="noopener">{{ p.source.name }}</a></p>
+    <p class="post-meta">Редакція ШІкарно, <time datetime="{{ p.iso }}">{{ p.human }}</time>{% if p.upd_iso[:10] != p.iso[:10] %} (оновлено {{ p.upd_human }}){% endif %}. Читати {{ p.minutes }} хв.</p>
     {{ tags(p.tags) }}
   </header>
   <div class="post-grid">
     <div class="prose">
+      {% if p.summary %}
+      <section class="tldr" aria-labelledby="tldr-h">
+        <h2 id="tldr-h">Коротко</h2>
+        <ul>{% for s in p.summary %}<li>{{ s }}</li>{% endfor %}</ul>
+      </section>
+      {% endif %}
       {{ p.html|safe }}
       {% if p.verdict %}
       <section class="verdict" aria-label="Вердикт Байта">
@@ -21,8 +27,15 @@
           <p><strong>Плюс:</strong> {{ p.verdict.plus }}</p><p><strong>Мінус:</strong> {{ p.verdict.minus }}</p></div>
       </section>
       {% endif %}
+      {% if p.faq %}
+      <section class="faq" aria-labelledby="faq-h">
+        <h2 id="faq-h">Часті питання</h2>
+        {% for f in p.faq %}<details><summary>{{ f.q }}</summary><p>{{ f.a }}</p></details>{% endfor %}
+      </section>
+      {% endif %}
       <aside class="source">
-        <p>Першоджерело: <a href="{{ p.source.url }}" rel="noopener">{{ p.source.name }}</a>. Ми переказуємо факти своїми словами і додаємо власну оцінку.</p>
+        <p><strong>Джерела:</strong> <a href="{{ p.source.url }}" rel="noopener">{{ p.source.name }}</a>{% for x in p.sources or [] %}, <a href="{{ x.url }}" rel="noopener">{{ x.name }}</a>{% endfor %}.</p>
+        <p>Ми переказуємо факти своїми словами, перевіряємо їх за кількома джерелами і додаємо власну оцінку. Помітив помилку — напиши нам у <a href="{{ site.telegram }}" rel="noopener">Telegram</a>.</p>
       </aside>
       <p class="share">Поділитись: <a href="https://t.me/share/url?url={{ (site.url ~ p.path)|urlencode }}&text={{ p.title|urlencode }}" rel="noopener">Telegram</a> <a href="https://www.facebook.com/sharer/sharer.php?u={{ (site.url ~ p.path)|urlencode }}" rel="noopener">Facebook</a></p>
     </div>
