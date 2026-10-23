@@ -1,0 +1,38 @@
+name: Partners bot (Cloudflare Worker)
+on:
+  push:
+    branches: [main]
+    paths: ["bot/**", ".github/workflows/bot.yml"]
+  workflow_dispatch:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      ADMIN_SET: ${{ secrets.PARTNERS_ADMIN_CHAT_ID != '0' }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: wr
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: bot
+          secrets: |
+            BOT_TOKEN
+            ADMIN_CHAT_ID
+            WEBHOOK_SECRET
+        env:
+          BOT_TOKEN: ${{ secrets.PARTNERS_BOT_TOKEN }}
+          ADMIN_CHAT_ID: ${{ secrets.PARTNERS_ADMIN_CHAT_ID }}
+          WEBHOOK_SECRET: ${{ secrets.PARTNERS_WEBHOOK_SECRET }}
+      - name: Set Telegram webhook
+        if: env.ADMIN_SET == 'true'
+        env:
+          BOT_TOKEN: ${{ secrets.PARTNERS_BOT_TOKEN }}
+          WEBHOOK_SECRET: ${{ secrets.PARTNERS_WEBHOOK_SECRET }}
+          URL: ${{ steps.wr.outputs.deployment-url }}
+        run: |
+          echo "Worker: $URL"
+          curl -s "https://api.telegram.org/bot${BOT_TOKEN}/setWebhook" \
+            -d "url=${URL}" -d "secret_token=${WEBHOOK_SECRET}" \
+            --data-urlencode 'allowed_updates=["message","callback_query"]' | tee /dev/stderr | grep -q '"ok":true'
