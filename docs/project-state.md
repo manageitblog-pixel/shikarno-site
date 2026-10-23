@@ -12,6 +12,12 @@
 - SEO: canonical, robots max-image-preview, JSON-LD NewsArticle/VideoObject(+Clip)/Breadcrumb/FAQPage/Organization, sitemap.xml, news-sitemap.xml, rss.xml.
 - ШІ-пошук (GEO): robots.txt явно дозволяє GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, Claude-SearchBot, PerplexityBot, Google-Extended, Bingbot та ін.; /llms.txt генерується автоматично; IndexNow повідомляє Bing (Copilot, пошук ChatGPT) про нові сторінки після кожного деплою.
 
+## Бот співпраці @ShikarnoPartnersBot
+- Cloudflare Worker (репо: bot/worker.js), автодеплой .github/workflows/bot.yml при зміні bot/**; секрети — у GitHub Secrets. URL: https://shikarno-partners-bot.manageit-blog.workers.dev.
+- Анкета кнопками (формат → бюджет → терміни → опис і контакт) → заявка власнику (@ybm_ua). Відповідь реплаєм на заявку → бот пересилає заявнику. Без бази даних.
+- Кнопка «Співпраця» на сайті → https://t.me/ShikarnoPartnersBot?start=site.
+- Ключі — лише в приватному артефакті «Доступи ШІкарно» і в GitHub Secrets.
+
 ## Доступи
 - GitHub: fine-grained токен «shikarno-site» (лише цей репозиторій; Contents/Workflows/Pages RW; до 21.01.2027). НЕ записувати в документи — /home/claude/gh/.token у робочому середовищі; після скидання попросити ще раз. Cowork-сесії потрібен той самий токен.
 - Прав адміністратора репо в токена немає: Pages/домен змінює користувач.
@@ -31,5 +37,5 @@
 
 ## Відкриті задачі
 - Cowork: docs/tasks/2026-10-23-site-links.md — посилання на сайт в описах роликів, каналу, Telegram; оновити eps/RUNBOOK.md з репо; youtube ID для еп.11–12; дайджест #1 на сайт до 25.10 12:00.
-- Користувач: Search Console (ресурс «Домен», TXT в imena, sitemap.xml і news-sitemap.xml); Bing Webmaster Tools — імпорт із Search Console; посилання на сайт у шапці YouTube-каналу; посилання на пости Telegram еп.1, 2, 6 (для коментарів); контакт для реклами (config.SITE.contact, поки канал).
+- Користувач: Search Console (ресурс «Домен», TXT в imena, sitemap.xml і news-sitemap.xml); Bing Webmaster Tools — імпорт із Search Console; посилання на сайт у шапці YouTube-каналу; посилання на пости Telegram еп.1, 2, 6 (для коментарів); контакт для реклами — бот @ShikarnoPartnersBot (готово); аватар бота через @BotFather /setuserpic.
 - Далі: GA4 + читання статистики через Google API; Google News Publisher Center через 2–3 тижні; місячна перевірка цитувань у ChatGPT/Gemini/Perplexity/Claude.
