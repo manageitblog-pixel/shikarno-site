@@ -39,4 +39,4 @@
 - Google Analytics 4 → вставити тег; читати статистику через Google API напряму (OAuth, scope analytics.readonly + webmasters.readonly), як YouTube API.
 - Ключові слова: Ubersuggest (вже підключений у claude.ai) — за потреби.
 - Посилання на сайт у профілі YouTube-каналу (Studio) і в закріпленому пості Telegram.
-- Пізніше: коментарі через Telegram-групу, розділ дайджестів.
+- Коментарі: віджет обговорення Telegram (telegram_post у front matter = id поста в @shikarno_ai_ua; вантажиться ліниво). Для еп. 1, 2, 6 потрібні посилання на їхні пости в каналі.
