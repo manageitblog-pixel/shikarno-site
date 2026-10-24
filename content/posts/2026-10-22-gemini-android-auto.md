@@ -1,6 +1,7 @@
 ---
 title: "Gemini в Android Auto тепер знає твої листи, календар і фото: що вміє і як відключити"
 slug: gemini-android-auto
+telegram_post: 15
 date: 2026-10-22T22:00:00+03:00
 updated: 2026-10-23T22:00:00+03:00
 description: "Google вмикає Personal Intelligence для Gemini в Android Auto: асистент бере дані з Gmail, Календаря, Фото і Карт. Як це працює, як вимкнути і чи доступно в Україні."

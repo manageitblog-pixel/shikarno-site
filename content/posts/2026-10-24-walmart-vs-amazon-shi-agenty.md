@@ -3,6 +3,7 @@ title: "Walmart пускає ШІ-агентів за покупками, Amazon
 slug: walmart-vs-amazon-shi-agenty
 date: 2026-10-24T19:00:00+03:00
 description: "Walmart запускає Agent Gateway і профілі для ШІ-агентів з лімітами витрат, а Amazon блокує сторонніх агентів. Що це означає для покупців і онлайн-магазинів, зокрема в Україні."
+youtube: Gp5ZTU6pynY
 tags: [agenty, pokupky]
 source: {name: TechCrunch, url: "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/"}
 sources:

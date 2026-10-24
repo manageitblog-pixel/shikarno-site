@@ -1,6 +1,7 @@
 ---
 title: "GPT-6 у ChatGPT: кому доступна, чим Sol відрізняється від Luna і що таке Intelligent UI"
 slug: chatgpt-intelligent-ui-gpt-6
+telegram_post: 14
 date: 2026-10-22T20:00:00+03:00
 updated: 2026-10-23T22:00:00+03:00
 description: "GPT-6 вже в ChatGPT: кому доступна безкоштовно (Luna) і на платних тарифах (Sol), як Intelligent UI відповідає графіками й калькуляторами і як вимкнути зайві візуали."

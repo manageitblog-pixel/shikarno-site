@@ -1,6 +1,7 @@
 ---
 title: "Gemini Skills замість Gems: що це, коли перехід і що буде з твоїми асистентами"
 slug: gemini-skills-zamist-gems
+telegram_post: 23
 date: 2026-10-23T15:00:00+03:00
 description: "Google замінює Gems у Gemini на Skills: їх можна поєднувати в одному чаті й викликати через «/». Дати переходу, автоміграція і як підготуватися."
 tags: [google, gemini, instrumenty]

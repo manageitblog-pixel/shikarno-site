@@ -3,6 +3,7 @@ title: "Claude Duet: проактивний ШІ-агент від Anthropic, я
 slug: claude-duet
 date: 2026-10-24T13:00:00+03:00
 description: "Anthropic запустила Claude Duet — агента, який стежить за твоєю поштою й застосунками, щоранку надсилає зведення і виконує задачі у власному браузері. Хто вже може спробувати."
+youtube: EwbIWlSKnWg
 tags: [agenty, instrumenty]
 source: {name: MacRumors, url: "https://macrumors.com/2026/10/21/anthropic-claude-duet/"}
 sources:
