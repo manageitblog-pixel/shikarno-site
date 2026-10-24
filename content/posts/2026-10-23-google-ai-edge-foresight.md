@@ -1,5 +1,6 @@
 ---
 title: "Google AI Edge Foresight: безкоштовний ШІ для транскрибації зустрічей на Mac без інтернету"
+telegram_post: 25
 slug: google-ai-edge-foresight
 date: 2026-10-23T18:00:00+03:00
 description: "Google випустила AI Edge Foresight — офлайн-застосунок для Mac, який транскрибує зустрічі, розгортає твої короткі нотатки в повні й відповідає з твоїх документів. Без хмари."
