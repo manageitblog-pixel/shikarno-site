@@ -3,6 +3,8 @@ title: "Gemini в Google Maps на CarPlay: як увімкнути і гово�
 slug: gemini-google-maps-carplay
 date: 2026-10-23T22:50:00+03:00
 description: "Google додала Gemini в Google Maps на Apple CarPlay: голосом можна змінити маршрут, оминути платні дороги, знайти заправку чи повідомити про ДТП. Як увімкнути і коли в Україні."
+youtube: h2oWgm-WnhA
+updated: 2026-10-25T13:00:00+02:00
 tags: [gemini, google, avto]
 source: {name: Android Authority, url: "https://androidauthority.com/gemini-navigation-google-maps-carplay-3725752"}
 sources:
