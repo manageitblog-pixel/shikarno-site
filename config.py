@@ -3,8 +3,8 @@ SITE = {
     "url": "https://shikarno.com.ua",
     "project_base": "/shikarno-site",
     "name": "ШІкарно",
-    "tagline": "ШІ без води. Щодня.",
-    "description": "Новини штучного інтелекту українською: коротко, з джерелами і чесним вердиктом Байта.",
+    "tagline": "ШІ для звичайних людей. Українською.",
+    "description": "Штучний інтелект для звичайних людей українською: новини, безкоштовні сервіси, гайди й промпти з джерелами і чесним вердиктом робота Байта.",
     "youtube": "https://www.youtube.com/@shikarno_ua",
     "telegram": "https://t.me/shikarno_ai_ua",
     "contact": "https://t.me/ShikarnoPartnersBot?start=site",   # бот заявок на співпрацю
