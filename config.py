@@ -7,6 +7,7 @@ SITE = {
     "description": "Штучний інтелект для звичайних людей українською: новини, безкоштовні сервіси, гайди й промпти з джерелами і чесним вердиктом робота Байта.",
     "youtube": "https://www.youtube.com/@shikarno_ua",
     "telegram": "https://t.me/shikarno_ai_ua",
+    "tiktok": "https://www.tiktok.com/@shikarno_ai_ua",
     "contact": "https://t.me/ShikarnoPartnersBot?start=site",   # бот заявок на співпрацю
     "tg_channel": "shikarno_ai_ua",   # для віджета коментарів (обговорення під постом каналу)
     "lang": "uk",

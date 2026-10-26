@@ -60,7 +60,7 @@ def posts_all():
 
 ORG = {"@type": "Organization", "name": SITE["name"], "url": SITE["url"],
        "logo": {"@type": "ImageObject", "url": SITE["url"] + "/static/logo.png"},
-       "sameAs": [SITE["youtube"], SITE["telegram"]]}
+       "sameAs": [SITE["youtube"], SITE["telegram"], SITE["tiktok"]]}
 
 def post_ld(p):
     ld = {"@context": "https://schema.org", "@graph": [
