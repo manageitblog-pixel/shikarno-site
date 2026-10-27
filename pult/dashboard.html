@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Пульт ШІкарно</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg1:#0B0A1C;--bg2:#1A1240;--card:rgba(255,255,255,.045);--line:rgba(255,255,255,.09);--fg:#F2F0FF;--muted:#A7A1D6;
+--y:#FFD60A;--v:#7C5CFF;--p:#FF4F8B;--c:#4CF2FF;--ok:#3DDC97;--err:#FF5C7A}
+*{box-sizing:border-box}
+html{background:#0B0A1C}
+html,body{margin:0;min-height:100vh}
+body{background:radial-gradient(1200px 700px at 70% -10%,#2a1a6a 0,transparent 60%),linear-gradient(160deg,var(--bg1),var(--bg2));color:var(--fg);font:14px/1.45 "Golos Text",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1400px;margin:0 auto;padding:16px max(16px,env(safe-area-inset-left)) 40px}
+header{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+.logo{font:900 22px Montserrat,sans-serif;letter-spacing:-.5px;display:flex;align-items:center;gap:6px}
+.logo b{background:var(--y);color:#111;border-radius:7px;padding:0 6px}
+.logo span{color:var(--muted);font-weight:800;font-size:15px;margin-left:6px}
+.live{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--muted);padding:4px 10px;border:1px solid var(--line);border-radius:99px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--muted)}
+.live.on .dot{background:var(--ok);box-shadow:0 0 10px var(--ok);animation:bl 1.6s infinite}
+@keyframes bl{50%{opacity:.35}}
+.sp{flex:1}
+.clock{font:800 15px Montserrat;color:var(--muted)}
+.seg{display:flex;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.seg button{background:none;border:0;color:var(--muted);padding:6px 12px;font:600 12px "Golos Text";cursor:pointer}
+.seg button.on{background:var(--y);color:#111}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:14px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 12px;min-width:0}
+.kpi .l{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.kpi .v{font:800 18px Montserrat;margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.kpi .v.y{color:var(--y)} .kpi .v.ok{color:var(--ok)} .kpi .v.err{color:var(--err)} .kpi .v.c{color:var(--c)}
+.grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:14px}
+@media(max-width:900px){.grid{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px;min-width:0}
+.card h2{font:800 13px Montserrat;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin:0 0 10px;display:flex;align-items:center;gap:8px}
+.card h2 .x{margin-left:auto;font:500 12px "Golos Text";text-transform:none;letter-spacing:0;color:var(--muted);cursor:pointer}
+#graph{width:100%;height:auto;display:block}
+.now{margin-top:8px;padding:10px 12px;border-radius:12px;background:rgba(124,92,255,.12);border:1px solid rgba(124,92,255,.35);font-size:13px;min-height:42px;overflow-wrap:anywhere}
+.now b{color:var(--y);font-weight:600}
+.feed{max-height:640px;overflow:auto;display:flex;flex-direction:column;gap:2px;scrollbar-width:thin}
+.row{display:grid;grid-template-columns:52px 10px 1fr;gap:8px;align-items:start;padding:6px 6px;border-radius:8px;font-size:12.5px}
+.row:hover{background:rgba(255,255,255,.04)}
+.row .t{color:var(--muted);font-variant-numeric:tabular-nums}
+.row .a{width:8px;height:8px;border-radius:50%;margin-top:5px}
+.row .m{overflow-wrap:anywhere}
+.row .m i{font-style:normal;color:var(--muted);font-size:11px;margin-right:6px}
+.row.err .m{color:var(--err)}
+.row.note .m{color:var(--y);font-weight:600}
+.row.prompt .m{color:var(--c)}
+.row.fresh{animation:fr 1.8s ease-out}
+@keyframes fr{from{background:rgba(255,214,10,.18)}to{background:transparent}}
+.lower{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+@media(max-width:900px){.lower{grid-template-columns:1fr}}
+.task{display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-top:1px solid var(--line)}
+.task:first-of-type{border-top:0}
+.chip{font-size:11px;font-weight:600;padding:2px 8px;border-radius:99px;white-space:nowrap;background:rgba(255,255,255,.08);color:var(--muted)}
+.chip.running{background:rgba(76,242,255,.15);color:var(--c)} .chip.queued{background:rgba(255,255,255,.08)}
+.chip.waiting_owner{background:rgba(255,214,10,.18);color:var(--y)} .chip.stuck{background:rgba(255,92,122,.18);color:var(--err)}
+.chip.done{background:rgba(61,220,151,.15);color:var(--ok)}
+.task .tt{font-weight:600} .task .nn{color:var(--muted);font-size:12px}
+.empty{color:var(--muted);font-size:13px;padding:6px 0}
+.headline{font-size:14px;margin-bottom:6px}
+footer{margin-top:18px;color:var(--muted);font-size:11px;text-align:center}
+.node{cursor:pointer}
+.node text{font-family:"Golos Text",sans-serif}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="logo"><b>ШІ</b>карно<span>Пульт автопілота</span></div>
+  <div class="live" id="live"><span class="dot"></span><span id="liveT">підключаюсь…</span></div>
+  <div class="sp"></div>
+  <div class="seg" id="seg"><button data-p="h">година</button><button data-p="d" class="on">доба</button><button data-p="w">тиждень</button></div>
+  <div class="clock" id="clock">--:--</div>
+</header>
+
+<div class="kpis">
+  <div class="kpi"><div class="l">Стан</div><div class="v" id="kState">—</div></div>
+  <div class="kpi"><div class="l">Наступний запуск</div><div class="v y" id="kNext">—</div></div>
+  <div class="kpi"><div class="l">Без людини</div><div class="v" id="kHuman">—</div></div>
+  <div class="kpi"><div class="l">Дій за період</div><div class="v c" id="kActs">0</div></div>
+  <div class="kpi"><div class="l">Помилок</div><div class="v" id="kErr">0</div></div>
+  <div class="kpi"><div class="l">YouTube</div><div class="v" id="kYt">—</div></div>
+  <div class="kpi"><div class="l">Telegram</div><div class="v" id="kTg">—</div></div>
+  <div class="kpi"><div class="l">Запас Shorts</div><div class="v" id="kRes">—</div></div>
+</div>
+
+<div class="grid">
+  <div class="card">
+    <h2>Карта роботи <span class="x" id="clr" hidden>скинути фільтр ×</span></h2>
+    <svg id="graph" viewBox="0 0 800 560" role="img" aria-label="Напрямки роботи автопілота"></svg>
+    <div class="now" id="now">Чекаю першої події…</div>
+  </div>
+  <div class="card">
+    <h2>Живий журнал <span class="x" id="cnt"></span></h2>
+    <div class="feed" id="feed"></div>
+  </div>
+</div>
+
+<div class="lower">
+  <div class="card"><h2>Задачі</h2><div class="headline" id="headline"></div><div id="tasks"><div class="empty">Ще немає задач.</div></div></div>
+  <div class="card"><h2>План на сьогодні і питання до тебе</h2><div id="today"><div class="empty">Порожньо.</div></div><div id="qs"></div></div>
+</div>
+<footer>Оновлюється наживо. Секрети в журналі маскуються. Сторінка не індексується пошуковиками.</footer>
+</div>
+
+<script>
+const KEY = location.pathname.split("/p/")[1]?.replace(/\/$/,"") || new URLSearchParams(location.search).get("k") || "";
+const AREAS = {
+  youtube:{n:"YouTube",c:"#FF4F8B",i:"▶"}, voice:{n:"Озвучка",c:"#7C5CFF",i:"🎙"}, render:{n:"Рендер",c:"#B57CFF",i:"🎬"},
+  site:{n:"Сайт",c:"#4CF2FF",i:"🌐"}, telegram:{n:"Telegram",c:"#38B6FF",i:"✈"}, tiktok:{n:"TikTok",c:"#FF8A3D",i:"♪"},
+  research:{n:"Пошук",c:"#3DDC97",i:"🔎"}, pult:{n:"Пульт",c:"#FFD60A",i:"◉"}, other:{n:"Інше",c:"#A7A1D6",i:"…"}
+};
+const ORDER = ["youtube","voice","render","tiktok","telegram","site","research","pult","other"];
+const PER = {h:3600e3,d:86400e3,w:7*86400e3};
+let period = "d", filter = null, events = [], agg = {h:{},d:{},w:{}}, human = null, state = {}, lastTs = 0, ws = null, wsOk = false;
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const hm = ts => new Date(ts).toLocaleTimeString("uk-UA",{hour:"2-digit",minute:"2-digit"});
+function ago(ms){ if(ms==null) return "—"; const m=Math.floor(ms/60000); if(m<1) return "щойно"; if(m<60) return m+" хв"; const h=Math.floor(m/60); if(h<48) return h+" год"+(m%60?" "+(m%60)+" хв":""); return Math.floor(h/24)+" дн"; }
+
+// ---------- граф ----------
+const SVGNS = "http://www.w3.org/2000/svg";
+let CX=400, CY=280, MOB=false;
+const pos = {};
+const MPOS = {youtube:[72,70],voice:[212,70],render:[352,70],tiktok:[352,250],telegram:[352,430],site:[212,430],research:[72,430],pult:[72,250],other:[212,560]};
+function el(t,a,p){ const e=document.createElementNS(SVGNS,t); for(const k in a) e.setAttribute(k,a[k]); p&&p.appendChild(e); return e; }
+function buildGraph(){
+  MOB=innerWidth<640; const g=$("graph"); g.innerHTML="";
+  if(MOB){ CX=212; CY=250; g.setAttribute("viewBox","0 0 424 610"); } else { CX=400; CY=280; g.setAttribute("viewBox","0 0 800 560"); }
+  const W=MOB?132:156, H=MOB?58:60, FS=MOB?13:14;
+  const defs=el("defs",{},g);
+  const rg=el("radialGradient",{id:"core"},defs); el("stop",{offset:"0%","stop-color":"#7C5CFF"},rg); el("stop",{offset:"100%","stop-color":"#FF4F8B"},rg);
+  const f=el("filter",{id:"glow",x:"-50%",y:"-50%",width:"200%",height:"200%"},defs); el("feGaussianBlur",{stdDeviation:"6",result:"b"},f);
+  const mg=el("feMerge",{},f); el("feMergeNode",{in:"b"},mg); el("feMergeNode",{in:"SourceGraphic"},mg);
+  const lines=el("g",{},g); const pulses=el("g",{id:"pulses"},g); const nodes=el("g",{},g);
+  ORDER.forEach((a,i)=>{
+    const ang=-Math.PI/2+i*2*Math.PI/ORDER.length;
+    const [x,y]=MOB?MPOS[a]:[CX+284*Math.cos(ang),CY+215*Math.sin(ang)];
+    pos[a]={x,y};
+    el("line",{x1:CX,y1:CY,x2:x,y2:y,stroke:AREAS[a].c,"stroke-opacity":".22","stroke-width":"1.5",id:"ln-"+a},lines);
+    const n=el("g",{class:"node",transform:`translate(${x},${y})`,id:"nd-"+a},nodes);
+    n.addEventListener("click",()=>setFilter(filter===a?null:a));
+    el("clipPath",{id:"cp-"+a},n).appendChild(el("rect",{x:-W/2+6,y:-H/2,width:W-12,height:H}));
+    el("rect",{x:-W/2,y:-H/2,width:W,height:H,rx:14,fill:"#15122d",stroke:AREAS[a].c,"stroke-opacity":".55","stroke-width":"1.5",id:"rc-"+a},n);
+    const t1=el("text",{x:-W/2+12,y:-6,fill:"#F2F0FF","font-size":FS,"font-weight":"600"},n); t1.textContent=AREAS[a].i+" "+AREAS[a].n;
+    const t2=el("text",{x:W/2-12,y:-6,fill:AREAS[a].c,"font-size":"15","font-weight":"800","text-anchor":"end",id:"ct-"+a,"font-family":"Montserrat"},n); t2.textContent="0";
+    const t3=el("text",{x:-W/2+12,y:15,fill:"#A7A1D6","font-size":"11",id:"lt-"+a,"clip-path":`url(#cp-${a})`},n); t3.textContent="—";
+  });
+  // Байт у центрі
+  const b=el("g",{transform:`translate(${CX},${CY}) scale(${MOB?.85:1})`,id:"bayt"},g);
+  el("circle",{r:70,fill:"url(#core)",opacity:".18",id:"halo"},b);
+  el("rect",{x:-44,y:-38,width:88,height:76,rx:22,fill:"url(#core)"},b);
+  el("rect",{x:-34,y:-28,width:68,height:50,rx:14,fill:"#0f0c22"},b);
+  el("line",{x1:0,y1:-38,x2:0,y2:-52,stroke:"#cfc6ff","stroke-width":"3"},b); el("circle",{cx:0,cy:-56,r:6,fill:"#FFD60A",id:"ant"},b);
+  el("rect",{x:-22,y:-12,width:12,height:12,rx:3,fill:"#4CF2FF",id:"eyeL"},b); el("rect",{x:10,y:-12,width:12,height:12,rx:3,fill:"#4CF2FF",id:"eyeR"},b);
+  el("rect",{x:-10,y:8,width:20,height:4,rx:2,fill:"#4CF2FF"},b);
+  const bt=el("text",{y:62,"text-anchor":"middle",fill:"#FFD60A","font-size":"13","font-weight":"800","font-family":"Montserrat"},b); bt.textContent="БАЙТ · оркестратор";
+}
+function pulse(a){
+  const p=pos[a]; if(!p) return; const c=el("circle",{r:6,fill:AREAS[a].c,filter:"url(#glow)"},$("pulses"));
+  const t0=performance.now(), D=900;
+  (function step(t){ const k=Math.min(1,(t-t0)/D); c.setAttribute("cx",CX+(p.x-CX)*k); c.setAttribute("cy",CY+(p.y-CY)*k); c.setAttribute("opacity",1-k*.6);
+    if(k<1) requestAnimationFrame(step); else c.remove(); })(t0);
+  const ant=$("ant"); ant.setAttribute("fill",AREAS[a].c); setTimeout(()=>ant.setAttribute("fill","#FFD60A"),700);
+}
+function paintGraph(){
+  const now=Date.now(), counts=agg[period]||{};
+  ORDER.forEach(a=>{
+    const v=counts[a]||{n:0,err:0}; $("ct-"+a).textContent=v.n+(v.err?` ⚠${v.err}`:"");
+    const last=[...events].reverse().find(e=>e.area===a);
+    $("lt-"+a).textContent=last?(ago(now-last.ts)+" · "+(last.text||"").slice(0,22)):"—";
+    const act=last&&now-last.ts<60000;
+    $("rc-"+a).setAttribute("stroke-opacity",act?"1":(filter===a?".95":".45"));
+    $("rc-"+a).setAttribute("filter",act?"url(#glow)":"");
+    $("ln-"+a).setAttribute("stroke-opacity",act?".8":".18");
+    $("nd-"+a).style.opacity=filter&&filter!==a?.35:1;
+  });
+  const busy=lastTs&&now-lastTs<120000; $("halo").setAttribute("opacity",busy?".45":".12");
+}
+
+// ---------- журнал ----------
+function rowHtml(e,fresh){
+  const cls=["row",e.ok?"":"err",e.kind,fresh?"fresh":""].join(" ");
+  const tag=e.kind==="tool"?(e.tool||""):({note:"віха",prompt:"людина",stop:"пауза",session:"сесія",wait:"чекає",agent:"агент"}[e.kind]||e.kind);
+  return `<div class="${cls}" data-a="${e.area}"><span class="t">${hm(e.ts)}</span><span class="a" style="background:${(AREAS[e.area]||AREAS.other).c}"></span><span class="m"><i>${esc(tag)}</i>${esc(e.text)}</span></div>`;
+}
+function renderFeed(){
+  const list=events.filter(e=>!filter||e.area===filter).slice(-300).reverse();
+  $("feed").innerHTML=list.map(e=>rowHtml(e)).join("")||'<div class="empty">Подій ще немає.</div>';
+  $("cnt").textContent=filter?AREAS[filter].n:"";
+}
+function setFilter(a){ filter=a; $("clr").hidden=!a; renderFeed(); paintGraph(); }
+$("clr").onclick=()=>setFilter(null);
+
+// ---------- KPI і стан ----------
+function paintKpis(){
+  const now=Date.now(), c=agg[period]||{};
+  let n=0,err=0; for(const a in c){ n+=c[a].n; err+=c[a].err; }
+  $("kActs").textContent=n; $("kErr").textContent=err; $("kErr").className="v "+(err?"err":"ok");
+  const busy=lastTs&&now-lastTs<120000;
+  $("kState").textContent=busy?"Працює":"Чекає"; $("kState").className="v "+(busy?"ok":"");
+  $("kHuman").textContent=human?ago(now-human):"—";
+  const nr=state.next_run?Date.parse(state.next_run):null;
+  $("kNext").textContent=nr?(nr>now?(nr-now<3600e3?"через "+ago(nr-now):"о "+hm(nr)):"мав бути "+hm(nr)):"—";
+  const m=state.metrics||{};
+  $("kYt").textContent=m.yt_subs!=null?m.yt_subs+" підп.":"—";
+  $("kTg").textContent=m.tg_subs!=null?m.tg_subs+" підп.":"—";
+  $("kRes").textContent=m.reserve!=null?m.reserve+"/10":"—";
+  $("clock").textContent=new Date().toLocaleTimeString("uk-UA",{hour:"2-digit",minute:"2-digit",second:"2-digit"});
+}
+const ST={queued:"у черзі",running:"в роботі",waiting_owner:"чекає тебе",stuck:"застрягло",done:"готово"};
+function paintState(){
+  $("headline").textContent=state.headline||"";
+  const t=(state.tasks||[]).slice().sort((a,b)=>["stuck","waiting_owner","running","queued","done"].indexOf(a.status)-["stuck","waiting_owner","running","queued","done"].indexOf(b.status));
+  $("tasks").innerHTML=t.length?t.map(x=>`<div class="task"><span class="chip ${esc(x.status)}">${esc(ST[x.status]||x.status)}</span><div><div class="tt">${esc(x.title)}</div>${x.note?`<div class="nn">${esc(x.note)}</div>`:""}</div></div>`).join(""):'<div class="empty">Ще немає задач.</div>';
+  const td=state.today||[];
+  $("today").innerHTML=td.length?td.map(x=>`<div class="task"><span class="chip ${esc(x.status||"queued")}">${esc(x.time||"")}</span><div><div class="tt">${esc(x.title)}</div>${x.area&&AREAS[x.area]?`<div class="nn">${AREAS[x.area].n}</div>`:""}</div></div>`).join(""):'<div class="empty">Порожньо.</div>';
+  const q=(state.questions||[]).filter(x=>x.status!=="answered");
+  $("qs").innerHTML=q.length?'<h2 style="margin-top:14px">Питання до тебе</h2>'+q.map(x=>`<div class="task"><span class="chip waiting_owner">?</span><div class="tt">${esc(x.text)}</div></div>`).join(""):"";
+  paintKpis();
+}
+
+// ---------- дані ----------
+async function snapshot(){
+  const r=await fetch("/api/snapshot?k="+encodeURIComponent(KEY),{cache:"no-store"}); if(!r.ok) throw new Error(r.status);
+  const d=await r.json(); events=d.events; agg=d.agg; human=d.human; state=d.state||{};
+  lastTs=events.length?events[events.length-1].ts:0; renderFeed(); paintGraph(); paintState();
+  if(events.length) $("now").innerHTML="<b>Остання дія:</b> "+esc(events[events.length-1].text);
+}
+function onEvents(list){
+  for(const e of list){
+    events.push(e); if(events.length>2000) events.shift(); lastTs=e.ts;
+    if(e.kind==="prompt") human=e.ts;
+    if(e.kind==="tool") for(const p of ["h","d","w"]){ const a=(agg[p][e.area] ||= {n:0,err:0}); a.n++; if(!e.ok) a.err++; }
+    pulse(e.area);
+    if(!filter||filter===e.area){ $("feed").insertAdjacentHTML("afterbegin",rowHtml(e,true)); const f=$("feed"); while(f.children.length>300) f.lastChild.remove(); f.querySelector(".empty")?.remove(); }
+    $("now").innerHTML="<b>"+(AREAS[e.area]||AREAS.other).n+":</b> "+esc(e.text);
+  }
+  paintGraph(); paintKpis();
+}
+function connect(){
+  const u=(location.protocol==="https:"?"wss://":"ws://")+location.host+"/ws?k="+encodeURIComponent(KEY);
+  try{ ws=new WebSocket(u); }catch(e){ return setTimeout(connect,5000); }
+  ws.onopen=()=>{ wsOk=true; $("live").classList.add("on"); $("liveT").textContent="наживо"; };
+  ws.onmessage=m=>{ if(m.data==="pong") return; const d=JSON.parse(m.data); if(d.type==="events") onEvents(d.events); if(d.type==="state"){ state=d.state; paintState(); } };
+  ws.onclose=()=>{ wsOk=false; $("live").classList.remove("on"); $("liveT").textContent="перепідключаюсь…"; setTimeout(()=>{ snapshot().catch(()=>{}); connect(); },3000); };
+}
+document.querySelectorAll("#seg button").forEach(b=>b.onclick=()=>{ period=b.dataset.p; document.querySelectorAll("#seg button").forEach(x=>x.classList.toggle("on",x===b)); paintGraph(); paintKpis(); });
+setInterval(()=>{ paintKpis(); paintGraph(); },1000);
+setInterval(()=>{ if(ws&&ws.readyState===1) ws.send("ping"); },25000);
+setInterval(()=>{ if(!wsOk) snapshot().catch(()=>{}); },30000);
+document.addEventListener("visibilitychange",()=>{ if(!document.hidden) snapshot().catch(()=>{}); });
+buildGraph();
+let lastMob=MOB; addEventListener("resize",()=>{ if((innerWidth<640)!==lastMob){ lastMob=innerWidth<640; buildGraph(); paintGraph(); } });
+snapshot().then(connect).catch(e=>{ $("liveT").textContent="немає доступу ("+e.message+")"; });
+</script>
+</body>
+</html>

@@ -19,3 +19,7 @@ pdf/*.png
 pdf/*.pdf
 pdf/*.html
 __pycache__/
+
+# пульт
+pult/.token
+pult/.viewkey

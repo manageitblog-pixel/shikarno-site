@@ -4,7 +4,7 @@
 set -e
 REPO=$(cd "$(dirname "$0")/.." && pwd); S=$REPO/studio; H=/home/claude
 mkdir -p $H
-for d in rv eps tg yt gem pdf; do
+for d in rv eps tg yt gem pdf pult; do
   if [ ! -e $H/$d ]; then ln -s $S/$d $H/$d; fi
 done
 [ -e $H/asr.py ] || ln -s $S/asr.py $H/asr.py
