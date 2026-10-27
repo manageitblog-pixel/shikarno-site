@@ -1,0 +1,24 @@
+{
+ "posted": [
+  "01_menu_tyzhden",
+  "02_r6_mother_in_law",
+  "11_ep14_gemini_carplay",
+  "22_chatgpt_zakryti_chaty",
+  "06_r9_resume",
+  "03_r2_voice_scam",
+  "07_r8_chat_privacy"
+ ],
+ "views_27_10": {
+  "02": 195,
+  "11": 56,
+  "01": 229
+ },
+ "next": [
+  "09_r5_ai_detectors",
+  "04_r1_prompts",
+  "05_r3_hallucinations",
+  "08_r7_tokens",
+  "13_ep11_claude_duet",
+  "10_r4_chatbot_vs_agent"
+ ]
+}

@@ -1,0 +1,21 @@
+# секрети — ніколи не в репозиторій (репозиторій публічний)
+tg/.token
+gem/.key
+yt/client_secret.json
+yt/token.json
+tg/owner.json
+tg/inbox.json
+tg/offset.txt
+# важкі файли
+rv/node_modules/
+rv/out/
+eps/*/
+!eps/month_oct/
+!eps/digest1/
+eps/digest1/*
+!eps/digest1/meta.json
+eps/thumbs/
+pdf/*.png
+pdf/*.pdf
+pdf/*.html
+__pycache__/

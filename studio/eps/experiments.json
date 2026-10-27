@@ -1,0 +1,20 @@
+{
+  "ep15_menu_week": {
+    "id": "W60m6jGRSp8",
+    "publish": "2026-10-26T17:00:00Z",
+    "format": "bait",
+    "len": "short",
+    "dur": 37.5,
+    "title": "Попросив ШІ меню на тиждень — а він мені лосося щодня 😅",
+    "tg_post": 45,
+    "tiktok": true
+  },
+  "ep16_chatgpt_locked": {
+    "id": "bG1ZEHzuYR0",
+    "publish": "2026-10-27T17:00:00Z",
+    "format": "news",
+    "len": "long",
+    "dur": 60.8,
+    "tg_post": 47
+  }
+}
