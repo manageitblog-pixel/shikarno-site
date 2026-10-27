@@ -14,6 +14,7 @@ bash studio/bootstrap.sh
 - `/home/claude/gem/.key` — Gemini API key (рядок)
 - `/home/claude/yt/client_secret.json` — `{"installed":{"client_id":"…","client_secret":"…","auth_uri":"https://accounts.google.com/o/oauth2/auth","token_uri":"https://oauth2.googleapis.com/token","redirect_uris":["http://localhost"]}}`
 - `/home/claude/yt/token.json` — `{"refresh_token":"…","access_token":"","expires_in":0,"obtained":0}` (refresh token — у тому ж артефакті, рядок «YouTube refresh token»)
+- `/home/claude/tg/.whsecret` — TG_WEBHOOK_SECRET (бот на вебхуку пульта)
 - `/home/claude/pult/.token` і `.viewkey` — INGEST_TOKEN і VIEW_KEY живого пульта (рядки «Пульт» у «Доступах»)
 - `/home/claude/tg/owner.json` — `{"chat_id":133254760,"confirmed":true}` — власник підтверджений 27.10 (133254760 = @ybm_ua), записати одразу. tg/offset.txt не переносити: перший inbox.py забере лише нові повідомлення.
 Перевірка: `python3 -c "import sys;sys.path.insert(0,'/home/claude/yt');import yt;yt.recent(3)"` і `python3 /home/claude/tg/inbox.py`.

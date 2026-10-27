@@ -1,6 +1,7 @@
 // Пульт ШІкарно — живий журнал роботи автопілота.
 // Події шлють хуки Claude Code (studio/pult/hook.py) і CLI (studio/pult/pult.py) → Durable Object (SQLite) → WebSocket у дашборд.
-// Секрети воркера: INGEST_TOKEN (запис), VIEW_KEY (перегляд: /p/<VIEW_KEY>).
+// Секрети воркера: INGEST_TOKEN (запис), VIEW_KEY (перегляд: /p/<VIEW_KEY>), BOT_TOKEN і TG_WEBHOOK_SECRET (@ShikarnoUABot).
+// Бот: Telegram webhook → /tg → миттєва відповідь власнику + черга, яку сесія забирає через /api/tg/pull (studio/tg/inbox.py).
 import DASHBOARD from "./dashboard.html";
 
 const KEEP = 20000; // скільки подій тримати
@@ -13,7 +14,11 @@ export default {
     const url = new URL(req.url);
     const stub = env.PULT.get(env.PULT.idFromName("main"));
     const p = url.pathname;
-    if (p === "/api/ingest" || p === "/api/state") {
+    if (p === "/tg") {
+      if (req.method !== "POST" || req.headers.get("x-telegram-bot-api-secret-token") !== env.TG_WEBHOOK_SECRET) return json({ error: "auth" }, 401);
+      return stub.fetch(req);
+    }
+    if (p === "/api/ingest" || p === "/api/state" || p === "/api/tg/pull") {
       if (req.method !== "POST") return json({ error: "method" }, 405);
       if (req.headers.get("authorization") !== `Bearer ${env.INGEST_TOKEN}`) return json({ error: "auth" }, 401);
       return stub.fetch(req);
@@ -35,10 +40,12 @@ export default {
 export class Pult {
   constructor(ctx, env) {
     this.ctx = ctx;
+    this.env = env;
     this.sql = ctx.storage.sql;
     this.sql.exec(`CREATE TABLE IF NOT EXISTS ev (id INTEGER PRIMARY KEY AUTOINCREMENT, ts INTEGER, sid TEXT, kind TEXT, tool TEXT, area TEXT, text TEXT, ok INTEGER)`);
     this.sql.exec(`CREATE INDEX IF NOT EXISTS ev_ts ON ev(ts)`);
     this.sql.exec(`CREATE TABLE IF NOT EXISTS kv (k TEXT PRIMARY KEY, v TEXT)`);
+    this.sql.exec(`CREATE TABLE IF NOT EXISTS tg (id INTEGER PRIMARY KEY, ts INTEGER, upd TEXT, taken INTEGER DEFAULT 0)`);
   }
 
   state() {
@@ -51,8 +58,83 @@ export class Pult {
     for (const ws of this.ctx.getWebSockets()) { try { ws.send(s); } catch (e) {} }
   }
 
+  addEvent(row) {
+    const id = this.sql.exec(`INSERT INTO ev (ts,sid,kind,tool,area,text,ok) VALUES (?,?,?,?,?,?,?) RETURNING id`,
+      row.ts, row.sid || "", row.kind, row.tool || "", row.area, row.text, row.ok ? 1 : 0).one().id;
+    this.broadcast({ type: "events", events: [{ id, ...row, ok: row.ok ? 1 : 0 }] });
+  }
+
+  async tgCall(method, params) {
+    const r = await fetch(`https://api.telegram.org/bot${this.env.BOT_TOKEN}/${method}`, {
+      method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(params) });
+    return r.json().catch(() => ({}));
+  }
+
+  statusText() {
+    const st = this.state(), now = Date.now();
+    const last = this.sql.exec(`SELECT ts, area, text FROM ev WHERE kind IN ('tool','note') ORDER BY id DESC LIMIT 1`).toArray()[0];
+    const busy = last && now - last.ts < 120000;
+    const kyiv = t => new Date(t).toLocaleString("uk-UA", { timeZone: "Europe/Kyiv", hour: "2-digit", minute: "2-digit", day: "2-digit", month: "2-digit" });
+    const nr = st.next_run ? Date.parse(st.next_run) : null;
+    const notes = this.sql.exec(`SELECT ts, text FROM ev WHERE kind='note' ORDER BY id DESC LIMIT 4`).toArray();
+    let t = busy ? `🟢 Байт зараз працює: ${last.text.slice(0, 120)}` : `⏸ Байт зараз не працює${last ? ` (остання дія ${kyiv(last.ts)})` : ""}.`;
+    if (nr) t += `\n⏰ Наступний запуск: ${kyiv(nr)} (Київ).`;
+    if (st.headline) t += `\n\n${st.headline}`;
+    if (notes.length) t += "\n\nОстаннє:\n" + notes.map(n => `• ${kyiv(n.ts)} — ${n.text.slice(0, 100)}`).join("\n");
+    const open = (st.tasks || []).filter(x => x.status === "waiting_owner");
+    if (open.length) t += "\n\nЧекає тебе:\n" + open.map(x => "• " + x.title).join("\n");
+    return t;
+  }
+
+  async onTelegram(upd) {
+    const id = Number(upd.update_id) || Date.now();
+    this.sql.exec(`INSERT OR IGNORE INTO tg (id, ts, upd) VALUES (?,?,?)`, id, Date.now(), JSON.stringify(upd));
+    this.sql.exec(`DELETE FROM tg WHERE taken=1 AND ts < ?`, Date.now() - 14 * 86400e3);
+    const m = upd.message;
+    if (!m || m.chat?.type !== "private") return; // група/канал — у черзі для сесії (модерація)
+    const owner = String(m.chat.id) === String(this.env.OWNER_CHAT_ID);
+    const text = (m.text || m.caption || (m.photo ? "[фото]" : m.document ? "[файл]" : m.video ? "[відео]" : "[повідомлення]")).trim();
+    const cmd = text.split(/[\s@]/)[0].toLowerCase();
+    const pultUrl = `https://shikarno-pult.manageit-blog.workers.dev/p/${this.env.VIEW_KEY}`;
+    if (!owner) {
+      if (cmd === "/start") await this.tgCall("sendMessage", { chat_id: m.chat.id, text: "Привіт! Це бот каналу ШІкарно — новини ШІ українською. Канал: https://t.me/shikarno_ai_ua" });
+      return;
+    }
+    this.sql.exec(`UPDATE tg SET taken=1 WHERE id=?`, id); // команди нижче — службові, сесії не потрібні
+    if (cmd === "/status" || cmd === "/статус") {
+      await this.tgCall("sendMessage", { chat_id: m.chat.id, text: this.statusText(), disable_web_page_preview: true });
+      return;
+    }
+    if (cmd === "/pult" || cmd === "/пульт") {
+      await this.tgCall("sendMessage", { chat_id: m.chat.id, text: "📡 Пульт наживо: " + pultUrl, disable_web_page_preview: true });
+      return;
+    }
+    if (cmd === "/start" || cmd === "/help") {
+      await this.tgCall("sendMessage", { chat_id: m.chat.id, text: "Я на зв'язку цілодобово.\n/status — що Байт робить зараз і що далі\n/pult — посилання на живий пульт\nБудь-яке інше повідомлення — задача або відповідь для Байта: я одразу підтверджу, а Байт візьме його в роботу на найближчій перевірці." });
+      return;
+    }
+    this.sql.exec(`UPDATE tg SET taken=0 WHERE id=?`, id); // звичайне повідомлення — у чергу для сесії
+    this.addEvent({ ts: Date.now(), kind: "prompt", area: "telegram", text: "Власник у боті: " + text.slice(0, 300), ok: true });
+    const st = this.state(), nr = st.next_run ? Date.parse(st.next_run) : null;
+    const last = this.sql.exec(`SELECT ts FROM ev WHERE kind IN ('tool','note') ORDER BY id DESC LIMIT 1`).toArray()[0];
+    const busy = last && Date.now() - last.ts < 120000;
+    const when = busy ? "Байт зараз працює — прочитає за кілька хвилин."
+      : `Байт прочитає на найближчій перевірці (щогодини з 07:00 до 23:00 за Києвом)${nr ? `; повний запуск — ${new Date(nr).toLocaleString("uk-UA", { timeZone: "Europe/Kyiv", hour: "2-digit", minute: "2-digit", day: "2-digit", month: "2-digit" })}` : ""}.`;
+    await this.tgCall("sendMessage", { chat_id: m.chat.id, text: "✅ Прийняв. " + when, reply_to_message_id: m.message_id });
+  }
+
   async fetch(req) {
     const url = new URL(req.url);
+    if (url.pathname === "/tg") {
+      const upd = await req.json().catch(() => null);
+      if (upd) { try { await this.onTelegram(upd); } catch (e) { console.log("tg", e); } }
+      return json({ ok: true });
+    }
+    if (url.pathname === "/api/tg/pull") {
+      const rows = this.sql.exec(`SELECT id, upd FROM tg WHERE taken=0 ORDER BY id LIMIT 200`).toArray();
+      if (rows.length) this.sql.exec(`UPDATE tg SET taken=1 WHERE id <= ? AND taken=0`, rows[rows.length - 1].id);
+      return json({ updates: rows.map(r => JSON.parse(r.upd)) });
+    }
     if (url.pathname === "/ws") {
       if (req.headers.get("upgrade") !== "websocket") return json({ error: "upgrade" }, 426);
       const pair = new WebSocketPair();

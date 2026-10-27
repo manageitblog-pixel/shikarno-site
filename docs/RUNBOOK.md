@@ -24,6 +24,7 @@
 
 ## Живий пульт (з 27.10) — https://shikarno-pult.manageit-blog.workers.dev/p/<VIEW_KEY> (ключ — studio/pult/.viewkey і «Доступи»)
 - Кожна моя дія потрапляє туди сама (хуки .claude/settings.json → studio/pult/hook.py). Якщо studio/pult/.token немає (новий контейнер) — взяти INGEST_TOKEN з «Доступів» і записати; інакше пульт мовчить.
+- Бот @ShikarnoUABot з 27.10 на вебхуку воркера пульта (/tg): власнику миттєво відповідає «Прийняв», /status і /pult — сам; решта повідомлень (особисті й з групи) — у черзі, `python3 /home/claude/tg/inbox.py` забирає її (getUpdates більше не працює, поки стоїть вебхук). Щогодинна перевірка 07–23 Київ (scheduled task «ШІкарно: перевірка бота щогодини») відповідає власнику. Після нового контейнера: tg/.whsecret з «Доступів».
 - На початку і в кінці кожного запуску: `python3 studio/pult/pult.py state '{...}'` — headline, next_run, metrics {yt_subs, tg_subs, reserve}, tasks (дзеркало задач пульта-артефакту), today (план дня з часом), questions (відкриті питання). Віхи (вийшов Short, стаття, пост) — `pult.py note "..." <area>`.
 
 ## Пульт власника (з 26.10) — https://claude.ai/artifact/QGsgcJGTSM3gFS61nJXYJz

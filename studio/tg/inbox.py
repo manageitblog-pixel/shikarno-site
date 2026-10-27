@@ -6,14 +6,24 @@ D='/home/claude/tg'; OFF=D+'/offset.txt'; INB=D+'/inbox.json'; OWN=D+'/owner.jso
 def load(p,d):
     try: return json.load(open(p))
     except Exception: return d
-def fetch():
+def updates():
+    """Оновлення бота. З 27.10 бот на вебхуку пульта (pult/worker.js): забираємо чергу звідти; без вебхука — getUpdates."""
+    if tg.call('getWebhookInfo')['result'].get('url'):
+        sys.path.insert(0,'/home/claude/pult'); import pultlib
+        r=pultlib.send('/api/tg/pull',{})['updates']
+        if r:
+            raw=load(D+'/updates.json',[]); raw=(raw+r)[-500:]; json.dump(raw,open(D+'/updates.json','w'),ensure_ascii=False)  # усе, включно з групою — для модерації
+        return r,None
     off=int(open(OFF).read()) if os.path.exists(OFF) else 0
-    r=tg.call('getUpdates',offset=off,limit=100,timeout=0)['result']; new=[]
+    return tg.call('getUpdates',offset=off,limit=100,timeout=0)['result'],off
+def fetch():
+    r,off=updates(); new=[]
     for u in r:
-        off=u['update_id']+1; m=u.get('message')
+        if off is not None: off=u['update_id']+1
+        m=u.get('message')
         if m and m['chat']['type']=='private':
-            new.append(dict(update_id=u['update_id'],chat_id=m['chat']['id'],user=m['from'].get('username'),name=m['from'].get('first_name'),date=m['date'],text=m.get('text','')))
-    open(OFF,'w').write(str(off))
+            new.append(dict(update_id=u['update_id'],chat_id=m['chat']['id'],user=m['from'].get('username'),name=m['from'].get('first_name'),date=m['date'],text=m.get('text') or m.get('caption') or ''))
+    if off is not None: open(OFF,'w').write(str(off))
     inbox=load(INB,[]); inbox+=new; json.dump(inbox,open(INB,'w'),ensure_ascii=False,indent=1)
     return new
 def ask(text):

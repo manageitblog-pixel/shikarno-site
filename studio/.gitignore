@@ -5,6 +5,8 @@ yt/client_secret.json
 yt/token.json
 tg/owner.json
 tg/inbox.json
+tg/updates.json
+tg/.whsecret
 tg/offset.txt
 # важкі файли
 rv/node_modules/
