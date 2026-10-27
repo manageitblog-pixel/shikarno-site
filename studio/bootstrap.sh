@@ -10,7 +10,8 @@ done
 [ -e $H/asr.py ] || ln -s $S/asr.py $H/asr.py
 mkdir -p $S/eps/thumbs
 # Python залежності (без venv; st2env більше не потрібен — створюємо симлінк-заглушку для старих команд)
-python3 -m pip install -q --break-system-packages numpy soundfile sherpa-onnx playwright >/dev/null 2>&1 || python3 -m pip install -q numpy soundfile sherpa-onnx playwright
+# playwright (Python) не ставимо: у хмарному контейнері pip на ньому зависає; Chromium для Remotion — npx remotion browser ensure
+python3 -c 'import numpy,soundfile,sherpa_onnx' 2>/dev/null || timeout 600 python3 -m pip install -q --break-system-packages numpy soundfile sherpa-onnx
 mkdir -p $H/st2env/bin; [ -f $H/st2env/bin/activate ] || echo 'true' > $H/st2env/bin/activate
 # Whisper для audit_vo/align (≈1.3 ГБ, тільки якщо немає)
 if [ ! -f $H/sherpa-onnx-whisper-small/small-tokens.txt ]; then
@@ -22,5 +23,4 @@ command -v pdftoppm >/dev/null || apt-get install -y -qq poppler-utils >/dev/nul
 # Remotion
 cd $S/rv && [ -d node_modules ] || npm ci --silent
 npx remotion browser ensure >/dev/null 2>&1 || true
-python3 -m playwright install chromium >/dev/null 2>&1 || true
 echo "BOOTSTRAP OK. Тепер секрети: $H/tg/.token, $H/gem/.key, $H/yt/client_secret.json, $H/yt/token.json (див. studio/MIGRATION.md)"
