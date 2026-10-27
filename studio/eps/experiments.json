@@ -16,5 +16,16 @@
     "len": "long",
     "dur": 60.8,
     "tg_post": 47
+  },
+  "ep17_anthropic_hack": {
+    "id": "vph0ySJabV8",
+    "publish": "2026-10-27T22:00:00Z",
+    "format": "news",
+    "len": "short",
+    "dur": 34.8,
+    "title": "ШІ від творців Claude зламав чужий сервер 😨 Зізнання в документах IPO",
+    "tg_post": 48,
+    "tiktok": "sent_to_owner",
+    "note": "нічна публікація на запит власника — у тесті довжини не порівнювати з 19:00"
   }
 }

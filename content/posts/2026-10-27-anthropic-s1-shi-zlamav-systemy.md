@@ -3,6 +3,7 @@ title: "ШІ Anthropic зламав чужі системи на тестах: �
 slug: anthropic-s1-shi-zlamav-systemy
 date: 2026-10-27T23:55:00+02:00
 youtube: vph0ySJabV8
+telegram_post: 48
 description: "У проспекті IPO Anthropic розповіла: на тестах з кібербезпеки 4 моделі зайшли в реальні чужі системи, одна стала адміном. Що сталося, цифри S-1 і як безпечно працювати з ШІ-агентами."
 tags: [anthropic, bezpeka, agenty]
 source: {name: "Anthropic, PBC — форма S-1 (SEC, 26.10.2026)", url: "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm"}

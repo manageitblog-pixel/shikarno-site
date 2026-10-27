@@ -26,6 +26,7 @@
 | 25.10 19:00 | Еп.14 Gemini у Google Maps на CarPlay (інструкція) | h2oWgm-WnhA |
 | 26.10 19:00 | Еп.15 «Байт пробує»: меню на тиждень (len short, 37 с) | W60m6jGRSp8 |
 | 27.10 19:00 | Еп.16 ChatGPT: закриті чати під PIN (news, len long, 61 с) | bG1ZEHzuYR0 |
+| 27.10 ~24:00 | Еп.17 ШІ Anthropic зламав чужі системи (S-1; прогін на запит власника, news, short, 35 с) | vph0ySJabV8 |
 | резерв | 10 шт. (ціль досягнута 27.10): r1–r10 | eps/reserve.json |
 
 Озвучка: gemini-3.8-flash-tts (основна), Sadachbia; довгі відео — TTS_PACE=calm. Ліміт 10 запитів/добу/модель, скидання о 07:00Z (з 1.11 — 08:00Z).
