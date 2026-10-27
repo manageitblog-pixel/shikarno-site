@@ -5,48 +5,39 @@ import json, os, sys, time
 
 sys.path.insert(0, os.path.dirname(os.path.realpath(__file__)))
 import pultlib as P
+import human as H
 
 
 def describe(ev):
+    """→ (kind, area, текст простими словами, технічні деталі, ok)"""
     name = ev.get("hook_event_name", "")
     tool = ev.get("tool_name", "") or ""
     ti = ev.get("tool_input") or {}
     if name == "UserPromptSubmit":
-        return "prompt", "", "pult", "Людина: " + P.redact(ev.get("prompt", ""), 140), True
+        return "prompt", "pult", "Ти написав: " + P.redact(ev.get("prompt", ""), 140), "", True
     if name == "SessionStart":
-        return "session", "", "pult", "Сесія стартувала (" + str(ev.get("source", "")) + ")", True
+        return "session", "pult", "Почав роботу", "", True
     if name == "Stop":
-        return "stop", "", "pult", "Хід завершено — чекаю", True
+        return "stop", "pult", "Закінчив етап — чекаю наступного запуску або твого повідомлення", "", True
     if name == "Notification":
-        return "wait", "", "pult", P.redact(ev.get("message", "Потрібна увага"), 140), True
+        return "wait", "pult", "Чекаю: " + P.redact(ev.get("message", "потрібна увага"), 120), "", True
     if name in ("SubagentStart", "SubagentStop"):
-        what = "Субагент стартував" if name == "SubagentStart" else "Субагент закінчив"
-        return "agent", ev.get("agent_type", "") or "", "other", what + " " + P.redact(ev.get("agent_type", ""), 40), True
-    # інструменти
+        return "agent", "other", ("Помічник узявся за частину роботи" if name == "SubagentStart" else "Помічник закінчив свою частину"), "", True
     ok = name != "PostToolUseFailure"
+    text, area = H.human(tool, ti)
     if tool == "Bash":
-        cmd = ti.get("command", "")
-        text = (ti.get("description") or "") + (" · " if ti.get("description") else "") + "$ " + cmd
-        area = P.area_of(cmd)
+        detail = "$ " + ti.get("command", "")
     elif tool in ("Write", "Edit", "Read", "NotebookEdit"):
-        path = ti.get("file_path", "")
-        rel = path.replace(os.environ.get("CLAUDE_PROJECT_DIR", "/home/user/shikarno-site") + "/", "")
-        verb = {"Write": "Створює", "Edit": "Редагує", "Read": "Читає"}.get(tool, tool)
-        text, area = f"{verb} {rel}", P.area_of(path)
-    elif tool in ("WebSearch", "WebFetch"):
-        text = ("Шукає: " + ti.get("query", "")) if tool == "WebSearch" else ("Читає " + ti.get("url", ""))
-        area = "research"
-    elif tool == "Grep" or tool == "Glob":
-        text, area = f"{tool} {ti.get('pattern', '')}", P.area_of(ti.get("path", ""))
-    elif tool == "Agent":
-        text, area = "Делегує агенту: " + (ti.get("description") or ""), "other"
+        detail = ti.get("file_path", "")
+    elif tool == "WebFetch":
+        detail = ti.get("url", "")
     else:
-        short = tool.split("__")[-1]
-        text = short + " " + json.dumps(ti, ensure_ascii=False)
-        area = P.area_of(tool, text)
+        detail = tool.split("__")[-1] + " " + json.dumps(ti, ensure_ascii=False)
+    area = area or P.area_of(tool, detail)
     if not ok:
-        text = "ПОМИЛКА · " + text + " → " + str(ev.get("error", ""))
-    return "tool", tool.split("__")[-1], area, P.redact(text), ok
+        text = "Не вийшло: " + text[:1].lower() + text[1:] + " — розбираюсь"
+        detail += " → " + str(ev.get("error", ""))
+    return "tool", area, P.redact(text, 160), P.redact(detail, 300), ok
 
 
 def main():
@@ -56,9 +47,9 @@ def main():
         return
     if not P.token():
         return
-    kind, tool, area, text, ok = describe(ev)
+    kind, area, text, detail, ok = describe(ev)
     data = {"ts": int(time.time() * 1000), "sid": ev.get("session_id", "")[-12:], "kind": kind,
-            "tool": tool, "area": area, "text": text, "ok": ok}
+            "tool": (ev.get("tool_name") or "").split("__")[-1], "area": area, "text": text, "detail": detail, "ok": ok}
     if os.fork():  # батько виходить одразу — Claude не чекає мережу
         return
     try:

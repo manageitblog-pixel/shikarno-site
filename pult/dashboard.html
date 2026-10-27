@@ -48,6 +48,10 @@ header{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14p
 .row .a{width:8px;height:8px;border-radius:50%;margin-top:5px}
 .row .m{overflow-wrap:anywhere}
 .row .m i{font-style:normal;color:var(--muted);font-size:11px;margin-right:6px}
+.row details{margin-top:2px}
+.row summary{cursor:pointer;color:var(--muted);font-size:11px;list-style:none;display:inline}
+.row summary::-webkit-details-marker{display:none}
+.row details code{display:block;margin-top:4px;padding:6px 8px;border-radius:8px;background:rgba(0,0,0,.35);color:var(--muted);font:11px ui-monospace,Menlo,monospace;white-space:pre-wrap;overflow-wrap:anywhere}
 .row.err .m{color:var(--err)}
 .row.note .m{color:var(--y);font-weight:600}
 .row.prompt .m{color:var(--c)}
@@ -97,7 +101,7 @@ footer{margin-top:18px;color:var(--muted);font-size:11px;text-align:center}
     <div class="now" id="now">Чекаю першої події…</div>
   </div>
   <div class="card">
-    <h2>Живий журнал <span class="x" id="cnt"></span></h2>
+    <h2>Що я роблю <span class="x" id="cnt"></span></h2>
     <div class="feed" id="feed"></div>
   </div>
 </div>
@@ -106,7 +110,7 @@ footer{margin-top:18px;color:var(--muted);font-size:11px;text-align:center}
   <div class="card"><h2>Задачі</h2><div class="headline" id="headline"></div><div id="tasks"><div class="empty">Ще немає задач.</div></div></div>
   <div class="card"><h2>План на сьогодні і питання до тебе</h2><div id="today"><div class="empty">Порожньо.</div></div><div id="qs"></div></div>
 </div>
-<footer>Оновлюється наживо. Секрети в журналі маскуються. Сторінка не індексується пошуковиками.</footer>
+<footer>Оновлюється наживо. Кожна дія — простими словами; технічні подробиці — під «деталі». Ключі й паролі ніколи не показуються.</footer>
 </div>
 
 <script>
@@ -187,8 +191,9 @@ function paintGraph(){
 // ---------- журнал ----------
 function rowHtml(e,fresh){
   const cls=["row",e.ok?"":"err",e.kind,fresh?"fresh":""].join(" ");
-  const tag=e.kind==="tool"?(e.tool||""):({note:"віха",prompt:"людина",stop:"пауза",session:"сесія",wait:"чекає",agent:"агент"}[e.kind]||e.kind);
-  return `<div class="${cls}" data-a="${e.area}"><span class="t">${hm(e.ts)}</span><span class="a" style="background:${(AREAS[e.area]||AREAS.other).c}"></span><span class="m"><i>${esc(tag)}</i>${esc(e.text)}</span></div>`;
+  const tag=e.kind==="tool"?(AREAS[e.area]||AREAS.other).n:({note:"✅ готово",prompt:"💬 ти",stop:"⏸ пауза",session:"▶ старт",wait:"⏳ чекаю",agent:"🤝 помічник"}[e.kind]||"");
+  const det=e.detail?`<details><summary>деталі ▾</summary><code>${esc(e.detail)}</code></details>`:"";
+  return `<div class="${cls}" data-a="${e.area}"><span class="t">${hm(e.ts)}</span><span class="a" style="background:${(AREAS[e.area]||AREAS.other).c}"></span><span class="m"><i>${esc(tag)}</i>${esc(e.text)}${det}</span></div>`;
 }
 function renderFeed(){
   const list=events.filter(e=>!filter||e.area===filter).slice(-300).reverse();
@@ -248,7 +253,7 @@ function connect(){
   const u=(location.protocol==="https:"?"wss://":"ws://")+location.host+"/ws?k="+encodeURIComponent(KEY);
   try{ ws=new WebSocket(u); }catch(e){ return setTimeout(connect,5000); }
   ws.onopen=()=>{ wsOk=true; $("live").classList.add("on"); $("liveT").textContent="наживо"; };
-  ws.onmessage=m=>{ if(m.data==="pong") return; const d=JSON.parse(m.data); if(d.type==="events") onEvents(d.events); if(d.type==="state"){ state=d.state; paintState(); } };
+  ws.onmessage=m=>{ if(m.data==="pong") return; const d=JSON.parse(m.data); if(d.type==="events") onEvents(d.events); if(d.type==="state"){ state=d.state; paintState(); } if(d.type==="reload") snapshot().catch(()=>{}); };
   ws.onclose=()=>{ wsOk=false; $("live").classList.remove("on"); $("liveT").textContent="перепідключаюсь…"; setTimeout(()=>{ snapshot().catch(()=>{}); connect(); },3000); };
 }
 document.querySelectorAll("#seg button").forEach(b=>b.onclick=()=>{ period=b.dataset.p; document.querySelectorAll("#seg button").forEach(x=>x.classList.toggle("on",x===b)); paintGraph(); paintKpis(); });

@@ -18,7 +18,7 @@ export default {
       if (req.method !== "POST" || req.headers.get("x-telegram-bot-api-secret-token") !== env.TG_WEBHOOK_SECRET) return json({ error: "auth" }, 401);
       return stub.fetch(req);
     }
-    if (p === "/api/ingest" || p === "/api/state" || p === "/api/tg/pull") {
+    if (p === "/api/ingest" || p === "/api/state" || p === "/api/tg/pull" || p === "/api/purge") {
       if (req.method !== "POST") return json({ error: "method" }, 405);
       if (req.headers.get("authorization") !== `Bearer ${env.INGEST_TOKEN}`) return json({ error: "auth" }, 401);
       return stub.fetch(req);
@@ -44,6 +44,7 @@ export class Pult {
     this.sql = ctx.storage.sql;
     this.sql.exec(`CREATE TABLE IF NOT EXISTS ev (id INTEGER PRIMARY KEY AUTOINCREMENT, ts INTEGER, sid TEXT, kind TEXT, tool TEXT, area TEXT, text TEXT, ok INTEGER)`);
     this.sql.exec(`CREATE INDEX IF NOT EXISTS ev_ts ON ev(ts)`);
+    try { this.sql.exec(`ALTER TABLE ev ADD COLUMN detail TEXT`); } catch (e) {} // технічні подробиці (на пульті — під «деталі»)
     this.sql.exec(`CREATE TABLE IF NOT EXISTS kv (k TEXT PRIMARY KEY, v TEXT)`);
     this.sql.exec(`CREATE TABLE IF NOT EXISTS tg (id INTEGER PRIMARY KEY, ts INTEGER, upd TEXT, taken INTEGER DEFAULT 0)`);
   }
@@ -130,6 +131,12 @@ export class Pult {
       if (upd) { try { await this.onTelegram(upd); } catch (e) { console.log("tg", e); } }
       return json({ ok: true });
     }
+    if (url.pathname === "/api/purge") { // прибрати старі технічні записи (віхи й твої повідомлення лишаються)
+      const b = await req.json().catch(() => ({}));
+      this.sql.exec(`DELETE FROM ev WHERE ts < ? AND kind NOT IN ('note','prompt')`, Number(b.before) || 0);
+      this.broadcast({ type: "reload" });
+      return json({ ok: true });
+    }
     if (url.pathname === "/api/tg/pull") {
       const rows = this.sql.exec(`SELECT id, upd FROM tg WHERE taken=0 ORDER BY id LIMIT 200`).toArray();
       if (rows.length) this.sql.exec(`UPDATE tg SET taken=1 WHERE id <= ? AND taken=0`, rows[rows.length - 1].id);
@@ -153,10 +160,11 @@ export class Pult {
           tool: String(e.tool || "").slice(0, 48),
           area: AREAS.includes(e.area) ? e.area : "other",
           text: String(e.text || "").slice(0, 400),
+          detail: String(e.detail || "").slice(0, 600),
           ok: e.ok === false ? 0 : 1,
         };
-        const id = this.sql.exec(`INSERT INTO ev (ts,sid,kind,tool,area,text,ok) VALUES (?,?,?,?,?,?,?) RETURNING id`,
-          row.ts, row.sid, row.kind, row.tool, row.area, row.text, row.ok).one().id;
+        const id = this.sql.exec(`INSERT INTO ev (ts,sid,kind,tool,area,text,ok,detail) VALUES (?,?,?,?,?,?,?,?) RETURNING id`,
+          row.ts, row.sid, row.kind, row.tool, row.area, row.text, row.ok, row.detail).one().id;
         out.push({ id, ...row });
       }
       this.sql.exec(`DELETE FROM ev WHERE id <= (SELECT MAX(id) FROM ev) - ?`, KEEP);
