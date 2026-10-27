@@ -119,7 +119,7 @@ export class Pult {
     const last = this.sql.exec(`SELECT ts FROM ev WHERE kind IN ('tool','note') ORDER BY id DESC LIMIT 1`).toArray()[0];
     const busy = last && Date.now() - last.ts < 120000;
     const when = busy ? "Байт зараз працює — прочитає за кілька хвилин."
-      : `Байт прочитає на найближчій перевірці (щогодини з 07:00 до 23:00 за Києвом)${nr ? `; повний запуск — ${new Date(nr).toLocaleString("uk-UA", { timeZone: "Europe/Kyiv", hour: "2-digit", minute: "2-digit", day: "2-digit", month: "2-digit" })}` : ""}.`;
+      : `Байт прочитає на найближчій перевірці (щогодини, цілодобово)${nr ? `; повний запуск — ${new Date(nr).toLocaleString("uk-UA", { timeZone: "Europe/Kyiv", hour: "2-digit", minute: "2-digit", day: "2-digit", month: "2-digit" })}` : ""}.`;
     await this.tgCall("sendMessage", { chat_id: m.chat.id, text: "✅ Прийняв. " + when, reply_to_message_id: m.message_id });
   }
 
