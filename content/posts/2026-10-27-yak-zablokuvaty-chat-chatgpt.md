@@ -3,6 +3,7 @@ title: "Як заблокувати чат у чат GPT: PIN, Face ID і що �
 slug: yak-zablokuvaty-chat-chatgpt
 date: 2026-10-27T19:00:00+02:00
 youtube: bG1ZEHzuYR0
+telegram_post: 47
 description: "У ChatGPT з'явились «Заблоковані чати»: розмову можна сховати з історії й пошуку під PIN чи Face ID. Як увімкнути, кому доступно і чому скидання PIN стирає все."
 tags: [chatgpt, openai, bezpeka]
 source: {name: "Android Headlines: ChatGPT Locked Chats", url: "https://www.androidheadlines.com/2026/10/openai-chatgpt-locked-chats.html"}
