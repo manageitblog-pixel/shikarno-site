@@ -11,6 +11,7 @@ SITE = {
     "contact": "https://t.me/ShikarnoPartnersBot?start=site",   # бот заявок на співпрацю
     "tg_channel": "shikarno_ai_ua",   # для віджета коментарів (обговорення під постом каналу)
     "lang": "uk",
+    "cf_beacon": "",   # токен Cloudflare Web Analytics (публічний, з коду лічильника); порожньо — лічильник вимкнено
 }
 TAG_NAMES = {
     "chatgpt": "ChatGPT", "openai": "OpenAI", "google": "Google", "gemini": "Gemini",

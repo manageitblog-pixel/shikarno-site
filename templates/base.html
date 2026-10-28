@@ -34,5 +34,6 @@
 {% if not bare %}
 {% include "chrome_bottom.html" %}
 <script src="{{ base }}/static/site.js" defer></script>
+{% if site.cf_beacon %}<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "{{ site.cf_beacon }}"}'></script>{% endif %}
 </body>
 </html>{% endif %}
