@@ -29,6 +29,20 @@ for i,s in enumerate(ep["scenes"]):
     if s["kind"].startswith("money"):
         for k in (10,45,95): place(fx,pop(1300),st+k,0.3)
         place(fx,cash(),st+120,0.45)
+    if s["kind"] in ("tier","paidFree"):  # як у Generic.tsx: рядок кожні step кадрів, клітинки через 4/6 кадрів
+        nxt=ep["scenes"][i+1]["from"]-6 if i+1<len(ep["scenes"]) else ep["total"]; dur=nxt-st; rows=s.get("items",[])
+        step=max(12,(dur-20)//max(1,len(rows)))
+        import re as _re
+        norm=lambda w:_re.sub(r"[^\w]","",w.lower()); frm=st; starts=[]
+        for r,row in enumerate(rows):  # як rowStarts у Generic.tsx: момент, коли в озвучці звучить назва рядка
+            w=next((x for x in ep["words"] if x["s"]>=frm and norm(x["w"])==norm(row[0])),None) if s["kind"]=="tier" else None
+            if i==0 and r==0: starts.append(st)
+            elif w: starts.append(w["s"]-4); frm=w["s"]+1
+            else: starts.append(st+r*step)
+        for r in range(len(rows)):
+            a=starts[r]
+            place(fx,whoosh(0.25),a-3,0.25)
+            for j,dj in enumerate((0,4,8) if s["kind"]=="tier" else (0,6)): place(fx,pop(900+250*j),a+dj+2,0.3)
     if s["kind"].startswith("verdict"):
         place(fx,ding(),st+48,0.4); place(fx,pop(700),st+60,0.3); place(fx,pop(500),st+100,0.3)
     if s["kind"]=="outro":

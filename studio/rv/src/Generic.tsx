@@ -276,10 +276,22 @@ const VerdictGeneric: React.FC<{ s: Scene }> = ({ s }) => {
 const RED = "#FF3B5C";
 const TIER = [["ПОГАНО", RED], ["ДОБРЕ", C.yellow], ["НАЙКРАЩЕ", GREEN]] as const;
 // items: [["Писати", "Без ШІ", "ChatGPT", "Claude"], ...]; рядок з'являється у свій час, клітинки — по черзі
-const Tier: React.FC<{ s: Scene; dur: number; first?: boolean }> = ({ s, dur, first }) => {
-  const f = useCurrentFrame();
+// рядок з'являється, коли в озвучці звучить його назва (слово з субтитрів); інакше — рівномірно
+const rowStarts = (words: EpData["words"], heads: string[], offset: number, dur: number, first?: boolean) => {
+  const step = Math.max(12, Math.floor((dur - 20) / Math.max(1, heads.length)));
+  const norm = (w: string) => w.toLowerCase().replace(/[^\p{L}\p{N}]/gu, "");
+  let from = offset;
+  return heads.map((h, i) => {
+    if (first && i === 0) return -20;
+    const w = words.find((x) => x.s >= from && norm(x.w) === norm(h));
+    if (w) { from = w.s + 1; return w.s - offset - 4; }
+    return i * step;
+  });
+};
+const Tier: React.FC<{ s: Scene; dur: number; first?: boolean; offset: number }> = ({ s, dur, first, offset }) => {
+  const f = useCurrentFrame(); const { words } = useEp();
   const rows = (s.items ?? []) as string[][];
-  const step = Math.max(12, Math.floor((dur - 20) / Math.max(1, rows.length)));
+  const starts = rowStarts(words, rows.map((r) => r[0]), offset, dur, first);
   const head = first ? 1 : sp(f, 12);
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: 16, width: 980 }}>
@@ -288,8 +300,8 @@ const Tier: React.FC<{ s: Scene; dur: number; first?: boolean }> = ({ s, dur, fi
         {TIER.map(([t, c]) => <div key={t} style={{ textAlign: "center", fontFamily: FONT, fontWeight: 900, fontSize: 34, color: C.ink, background: c, borderRadius: 16, padding: "10px 0" }}>{t}</div>)}
       </div>
       {rows.map((r, i) => {
-        const a = first && i === 0 ? -20 : i * step;
-        const active = f >= a && f < a + step;
+        const a = starts[i];
+        const active = f >= a && f < (starts[i + 1] ?? dur);
         return (
           <div key={i} style={{ display: "grid", gridTemplateColumns: "210px 1fr 1fr 1fr", gap: 12, opacity: f >= a ? 1 : 0.0 }}>
             <div style={{ display: "flex", alignItems: "center", fontFamily: FONT, fontWeight: 900, fontSize: 40, color: active ? C.yellow : "white" }}>{r[0]}</div>
@@ -419,7 +431,7 @@ export const GenericEpisode: React.FC<EpData> = (props) => {
           if (s.kind === "outro") return <Sequence key={i} from={start} durationInFrames={dur}><Outro offset={start} /></Sequence>;
           const V = s.kind === "hookIcon" ? <HookIcon s={s} /> : s.kind === "list" ? <List s={s} dur={dur} /> : s.kind === "beforeAfter" ? <BeforeAfter s={s} />
             : s.kind === "moneyList" ? <MoneyList s={s} dur={dur} /> : s.kind === "moneyBig" ? <MoneyBig s={s} dur={dur} />
-            : s.kind === "tier" ? <Tier s={s} dur={dur} first={i === 0} /> : s.kind === "paidFree" ? <PaidFree s={s} dur={dur} first={i === 0} /> : <VerdictGeneric s={s} />;
+            : s.kind === "tier" ? <Tier s={s} dur={dur} first={i === 0} offset={start} /> : s.kind === "paidFree" ? <PaidFree s={s} dur={dur} first={i === 0} /> : <VerdictGeneric s={s} />;
           const first = i === 0 && FIRST.includes(s.kind);
           return (
             <Sequence key={i} from={start} durationInFrames={dur}>
