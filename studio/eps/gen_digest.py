@@ -5,6 +5,16 @@ from gtts import tts
 dg=importlib.import_module(sys.argv[1]); voice=sys.argv[2]; models=sys.argv[3].split(",")
 D=f"/home/claude/eps/{dg.SLUG}"; os.makedirs(D,exist_ok=True)
 segs_audio=[]
+UPTO=int(os.environ.get("PARTS_UPTO","0"))  # >0: лише озвучити частини 1..UPTO (для довгих відео — розносимо по днях через ліміт Gemini) і вийти
+if UPTO:
+    for pi,idxs in enumerate(dg.PARTS[:UPTO]):
+        raw=f"{D}/part{pi}.wav"
+        if os.path.exists(raw): continue
+        texts=[dg.SEGS[i]["gsay"] for i in idxs]
+        for m in models:
+            try: print(pi, m, tts("\n\n".join(texts),voice,raw,model=m)); break
+            except Exception as e: print("fail",m,e)
+    print("parts ready:", [os.path.exists(f"{D}/part{k}.wav") for k in range(len(dg.PARTS))]); sys.exit(0)
 for pi,idxs in enumerate(dg.PARTS):
     texts=[dg.SEGS[i]["gsay"] for i in idxs]
     raw=f"{D}/part{pi}.wav"
