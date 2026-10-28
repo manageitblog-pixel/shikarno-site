@@ -74,5 +74,16 @@
     }
    ]
   }
+ ],
+ "organic_tests": [
+  {
+   "video": "ep21_which_ai (тір-лист ChatGPT/Gemini/Claude, динамічна версія)",
+   "posted": "2026-10-28 ~22:00 Київ",
+   "promote": false,
+   "check": [
+    "2026-10-29 22:00",
+    "2026-10-31 22:00"
+   ]
+  }
  ]
 }
