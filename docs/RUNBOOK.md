@@ -94,6 +94,7 @@
   4) анонсовані релізи і дати (оновлення моделей, кінці акцій, події) — у розділ «Оновлювати» з датою;
   5) теми, що вийшли в Shorts, але заслуговують на гайд.
   Кожну тему записувати як: назва — цільовий запит (обсяг) — тип (гайд/новина/оновлення). Сортувати за попитом. Звіт користувачу: «додано N тем, топ-3».
+- МЕТРИКИ (з 28.10, усе через studio/yt/auth.py — один вхід Google): YouTube Analytics (youtubeanalytics v2 reports), Search Console (webmasters v3 sites/https%3A%2F%2Fshikarno.com.ua%2F/searchAnalytics/query, ресурс «Префікс URL», підтверджено мета-тегом config.SITE.gsc_verify; sitemap.xml і news-sitemap.xml надіслано 28.10), відвідуваність сайту — Cloudflare Web Analytics (config.SITE.cf_beacon; дані — у панелі Cloudflare власника; API-ключ не має прав на читання Web Analytics — цифри просити скриншотом або розширити токен). GA4 немає (не потрібен). Bing Webmaster — ще не підключено (можна імпортувати з Search Console; мета-тег — config.SITE.bing_verify).
 - Понеділок: Search Console — запити з високими показами й низьким CTR → переписати title/description; позиції 8–20 → дописати статтю.
 - Середа: 1 вічнозелений гайд на сайт (з docs/content-backlog.md) (тема з docs/seo-strategy.md §2 або з запитів Search Console).
 - П'ятниця: оновити 1–2 старі статті (ціни, нові факти, поле updated) — список у docs/content-backlog.md.
