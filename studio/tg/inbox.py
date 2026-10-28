@@ -22,7 +22,7 @@ def fetch():
         if off is not None: off=u['update_id']+1
         m=u.get('message') or u.get('edited_message')
         if m and m['chat']['type']=='private':
-            new.append(dict(update_id=u['update_id'],chat_id=m['chat']['id'],user=m['from'].get('username'),name=m['from'].get('first_name'),date=m['date'],text=m.get('text') or m.get('caption') or ''))
+            new.append(dict(update_id=u['update_id'],chat_id=m['chat']['id'],user=m['from'].get('username'),name=m['from'].get('first_name'),date=m['date'],text=(m.get('text') or m.get('caption') or '')+(' [фото]' if m.get('photo') else '')+(' [файл]' if m.get('document') or m.get('video') else '')))
     if off is not None: open(OFF,'w').write(str(off))
     inbox=load(INB,[]); inbox+=new; json.dump(inbox,open(INB,'w'),ensure_ascii=False,indent=1)
     return new
