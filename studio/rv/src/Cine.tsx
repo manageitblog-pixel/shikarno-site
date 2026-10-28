@@ -3,7 +3,7 @@
 // Типи сцен: cineTitle {title, hook}, cinePrompt {text — промпт, що «друкується»}, cineReel {big, sub}, cineList {title, items[]}, cineVerdict {score, plus, minus, title}, outro.
 import React from "react";
 import { AbsoluteFill, interpolate, spring, useCurrentFrame, Easing } from "remotion";
-import { Bait, Wordmark, C, FONT } from "./brand";
+import { Bait, Wordmark, C, FONT, Socials } from "./brand";
 import { fontCss } from "./parts";
 import type { EpData, Scene } from "./Generic";
 
@@ -12,18 +12,19 @@ const DZ = 2600; // відстань між сценами в 3D
 const NEON = C.yellow;
 
 /* ---------- позиція камери: повільний дрейф у сцені + швидкий проліт крізь портал ---------- */
-function camZ(f: number, sc: Scene[]) {
-  let z = 0;
+function camZ(f: number, sc: Scene[]) { return camState(f, sc).z; }
+function camState(f: number, sc: Scene[]) {
+  let z = 0, fly = 0;
   for (let i = 0; i < sc.length; i++) {
     const a = i === 0 ? 0 : sc[i].from, b = i + 1 < sc.length ? sc[i + 1].from : 1e9;
     if (f < a) break;
-    const fly = 14; // кадрів на проліт перед наступною сценою
-    const hold = Math.max(1, b - a - fly);
+    const FL = 10; // кадрів на проліт (28.10: швидше, динамічніше)
+    const hold = Math.max(1, b - a - FL);
     const t = f - a;
-    if (t < hold) { z = i * DZ + interpolate(t, [0, hold], [0, 220], clamp); }
-    else { const k = interpolate(t - hold, [0, fly], [0, 1], { ...clamp, easing: Easing.bezier(0.65, 0, 0.35, 1) }); z = i * DZ + 220 + k * (DZ - 220); }
+    if (t < hold) { z = i * DZ + interpolate(t, [0, hold], [0, 300], clamp); fly = 0; }
+    else { const r = (t - hold) / FL; const k = interpolate(r, [0, 1], [0, 1], { ...clamp, easing: Easing.bezier(0.7, 0, 0.3, 1) }); z = i * DZ + 300 + k * (DZ - 300); fly = Math.sin(Math.PI * Math.min(1, r)); }
   }
-  return z;
+  return { z, fly };
 }
 
 /* ---------- об'ємний текст: фронт + екструзія шарами ---------- */
@@ -119,9 +120,10 @@ const SceneBody: React.FC<{ s: Scene & any; t: number; dur: number; i: number }>
       <Ring r={360} w={16} z={-400} tilt={75} spin={t * 3} />
     </div>
   );
-  return ( // outro
-    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 40 }}>
-      <Bait size={300} mood="happy" mouth={0} /><Wordmark size={110} />
+  return ( // outro: соцмережі
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 34, transform: `scale(${0.85 + 0.15 * pop})` }}>
+      <Bait size={230} mood="happy" mouth={0} /><Wordmark size={96} />
+      <Socials t={t - 6} />
     </div>
   );
 };
@@ -133,16 +135,23 @@ const Captions: React.FC<{ d: EpData }> = ({ d }) => {
   if (!cur) return null;
   const group = W.filter((w) => w.g === cur.g);
   return (
-    <div style={{ position: "absolute", top: 1500, left: 50, right: 50, display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "0 24px" }}>
-      {group.map((w, i) => { const a = f >= w.s && f < w.e; return <span key={i} style={{ fontFamily: FONT, fontWeight: 900, fontSize: 68, color: a ? NEON : "white", WebkitTextStroke: "12px black", paintOrder: "stroke fill" }}>{w.w}</span>; })}
+    <div style={{ position: "absolute", top: 1380, left: 40, right: 40, display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "0 26px" }}>
+      {group.map((w, i) => {
+        const a = f >= w.s && f < w.e; const k = spring({ frame: f - w.s, fps: 30, config: { damping: 9, mass: 0.5 } });
+        const seen = f >= w.s;
+        return <span key={i} style={{ display: "inline-block", fontFamily: FONT, fontWeight: 900, fontSize: 80, color: a ? NEON : "white", WebkitTextStroke: "13px black", paintOrder: "stroke fill",
+          opacity: seen ? 1 : 0.25, transform: `scale(${seen ? 0.7 + 0.3 * k + (a ? 0.12 : 0) : 0.8}) rotate(${a ? (i % 2 ? 4 : -4) : 0}deg)` }}>{w.w}</span>;
+      })}
     </div>
   );
 };
 
 export const Cine: React.FC<EpData> = (d) => {
   const f = useCurrentFrame(); const sc = d.scenes;
-  const z = camZ(f, sc);
-  const sway = Math.sin(f / 40) * 4, bob = Math.cos(f / 33) * 3;
+  const { z, fly } = camState(f, sc);
+  const sway = Math.sin(f / 13) * 7, bob = Math.cos(f / 11) * 4;
+  const roll = fly * 16 * (Math.floor(f / 60) % 2 ? 1 : -1);
+  const punch = 1 + 0.035 * Math.max(0, Math.sin(f / 4.5)) ** 8; // ритмічні «удари» камери
   const idx = Math.max(0, sc.findIndex((s, i) => f >= (i === 0 ? 0 : s.from) && (i + 1 >= sc.length || f < sc[i + 1].from)));
   const last = sc.length - 1;
   return (
@@ -151,12 +160,12 @@ export const Cine: React.FC<EpData> = (d) => {
       {/* зоряний пил для відчуття швидкості */}
       <AbsoluteFill style={{ perspective: 900 }}>
         <div style={{ position: "absolute", inset: 0, transformStyle: "preserve-3d", transform: `translateZ(${z % 1200}px)` }}>
-          {Array.from({ length: 60 }).map((_, k) => <div key={k} style={{ position: "absolute", left: `${(k * 37) % 100}%`, top: `${(k * 53) % 100}%`, width: 6, height: 6, borderRadius: 3, background: k % 3 ? "#fff" : NEON, opacity: 0.5, transform: `translateZ(${-((k * 97) % 1200)}px)` }} />)}
+          {Array.from({ length: 60 }).map((_, k) => <div key={k} style={{ position: "absolute", left: `${(k * 37) % 100}%`, top: `${(k * 53) % 100}%`, width: 6, height: 6 + fly * 140, borderRadius: 3, background: k % 3 ? "#fff" : NEON, opacity: 0.5 + fly * 0.4, transform: `translateZ(${-((k * 97) % 1200)}px)` }} />)}
         </div>
       </AbsoluteFill>
       {/* світ сцен */}
-      <AbsoluteFill style={{ perspective: 1100, perspectiveOrigin: "50% 45%" }}>
-        <div style={{ position: "absolute", left: "50%", top: "45%", transformStyle: "preserve-3d", transform: `rotateY(${sway}deg) rotateX(${bob}deg) translateZ(${z}px)` }}>
+      <AbsoluteFill style={{ perspective: 1100, perspectiveOrigin: "50% 45%", filter: `blur(${fly * 7}px)` }}>
+        <div style={{ position: "absolute", left: "50%", top: "45%", transformStyle: "preserve-3d", transform: `scale(${punch}) rotateZ(${roll}deg) rotateY(${sway}deg) rotateX(${bob}deg) translateZ(${z}px)` }}>
           {sc.map((s, i) => {
             if (Math.abs(i - idx) > 1) return null;
             const a = i === 0 ? 0 : s.from; const b = i + 1 < sc.length ? sc[i + 1].from : d.total;
@@ -174,6 +183,7 @@ export const Cine: React.FC<EpData> = (d) => {
           })}
         </div>
       </AbsoluteFill>
+      <AbsoluteFill style={{ background: "radial-gradient(circle, rgba(255,255,255,0.9), rgba(255,214,10,0.5) 40%, transparent 75%)", opacity: fly ** 3 * 0.55, pointerEvents: "none" }} />
       {/* Байт і бренд поверх */}
       {idx < last && <div style={{ position: "absolute", right: 30, bottom: 520 }}><Bait size={190} mouth={d.mouth[f] ?? 0} mood={sc[idx]?.kind === "cineVerdict" ? "judge" : "talk"} /></div>}
       <div style={{ position: "absolute", top: 70, left: "50%", translate: "-50% 0", opacity: 0.9 }}><Wordmark size={46} /></div>

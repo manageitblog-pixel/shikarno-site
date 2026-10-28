@@ -107,3 +107,27 @@ export const Avatar: React.FC<{ size?: number }> = ({ size = 120 }) => (
     <div style={{ marginTop: size * 0.08 }}><Bait size={size * 0.74} /></div>
   </div>
 );
+
+/* ---------- соцмережі (кінцева картка; 28.10 — на прохання власника в кожному ролику) ---------- */
+export const Socials: React.FC<{ scale?: number; t?: number }> = ({ scale = 1, t = 99 }) => {
+  const rows: [string, string, string][] = [
+    ["YouTube", "@shikarno_ua", "#FF0033"],
+    ["TikTok", "@shikarno_ai_ua", "#25F4EE"],
+    ["Telegram", "@shikarno_ai_ua", "#2AABEE"],
+    ["Сайт", "shikarno.com.ua", "#FFD60A"],
+  ];
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: 16 * scale, alignItems: "stretch", width: 760 * scale }}>
+      {rows.map(([n, h, c], i) => {
+        const a = Math.min(1, Math.max(0, (t - i * 5) / 8));
+        return (
+          <div key={n} style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 20, padding: `${14 * scale}px ${28 * scale}px`, borderRadius: 30 * scale,
+            background: "rgba(14,11,36,0.75)", border: `${3 * scale}px solid ${c}`, boxShadow: `0 0 ${24 * scale}px ${c}55`, opacity: a, transform: `translateX(${(1 - a) * 120}px)` }}>
+            <span style={{ fontFamily: FONT, fontWeight: 900, fontSize: 38 * scale, color: c }}>{n}</span>
+            <span style={{ fontFamily: FONT, fontWeight: 900, fontSize: 42 * scale, color: "white" }}>{h}</span>
+          </div>
+        );
+      })}
+    </div>
+  );
+};

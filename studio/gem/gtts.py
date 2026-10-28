@@ -9,9 +9,10 @@ STYLE=("# AUDIO PROFILE: Bait, a witty Ukrainian tech YouTuber (male, 25–30).\
        "Questions to the viewer must clearly sound like questions (rising intonation). Emphasize the key word of each sentence.\n"
        "Read ONLY the transcript below, nothing else.\n"
        "#### TRANSCRIPT\n")
+STYLE_HYPE=STYLE.replace("Pace: fast and punchy, no long pauses between sentences.","Pace: VERY fast and high-energy, like a hype movie-trailer narrator who is genuinely excited; punchy short phrases, no pauses at all between sentences, strong emphasis and rising energy towards the end of each sentence. Still crisp, clear Ukrainian.")
 STYLE_CALM=STYLE.replace("Pace: fast and punchy, no long pauses between sentences.","Pace: medium, like a confident news anchor — lively but NOT rushed; clear articulation of every word; short natural pauses between sentences and before key numbers.")
 def tts(text, voice, out, model="gemini-3.8-flash-tts", style=None):
-    style = style or (STYLE_CALM if os.environ.get("TTS_PACE")=="calm" else STYLE)
+    style = style or {"calm": STYLE_CALM, "hype": STYLE_HYPE}.get(os.environ.get("TTS_PACE",""), STYLE)
     body={"contents":[{"parts":[{"text":style+text}]}],
           "generationConfig":{"responseModalities":["AUDIO"],
               "speechConfig":{"voiceConfig":{"prebuiltVoiceConfig":{"voiceName":voice}}}}}

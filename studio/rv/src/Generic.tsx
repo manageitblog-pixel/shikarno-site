@@ -1,7 +1,7 @@
 import React, { createContext, useContext } from "react";
 import { AbsoluteFill, Sequence, interpolate, spring, useCurrentFrame, Easing } from "remotion";
 import { Highlight } from "@remotion/rough-notation";
-import { Bait, Wordmark, Avatar, C, FONT } from "./brand";
+import { Bait, Wordmark, Avatar, C, FONT, Socials } from "./brand";
 import { Background, Cursor, fontCss } from "./parts";
 
 /* ---------- дані епізоду (через inputProps) ---------- */
@@ -279,9 +279,9 @@ const Outro: React.FC<{ offset: number }> = ({ offset }) => {
   const cx = interpolate(f, [40, 66], [900, 600], { ...clamp, easing: Easing.out(Easing.cubic) });
   const cy = interpolate(f, [40, 66], [1700, 1300], { ...clamp, easing: Easing.out(Easing.cubic) });
   return (
-    <AbsoluteFill style={{ alignItems: "center", paddingTop: 330 }}>
+    <AbsoluteFill style={{ alignItems: "center", paddingTop: 230 }}>
       <div style={{ scale: `${host}`, filter: "drop-shadow(0 30px 50px rgba(124,92,255,0.6))" }}>
-        <Bait size={430} withBody mouth={mouth[f + offset] ?? 0} mood={f > tap + 10 ? "happy" : "talk"} />
+        <Bait size={340} withBody mouth={mouth[f + offset] ?? 0} mood={f > tap + 10 ? "happy" : "talk"} />
       </div>
       <div style={{ marginTop: 30, marginBottom: 14, scale: `${wm}` }}><Wordmark size={120} /></div>
       <div style={{ marginTop: 26, opacity: tag, translate: `0 ${(1 - tag) * 30}px`, fontFamily: FONT, fontWeight: 800, fontSize: 50, color: "white" }}>
@@ -289,13 +289,7 @@ const Outro: React.FC<{ offset: number }> = ({ offset }) => {
       </div>
       <div style={{ marginTop: 60, scale: `${btn * (pressed ? 0.92 : 1)}`, padding: "30px 64px", borderRadius: 60, background: sub ? "#3A3A4A" : "#FF2D2D",
         color: "white", fontFamily: FONT, fontWeight: 900, fontSize: 52, boxShadow: sub ? "none" : "0 0 50px rgba(255,45,45,0.6)" }}>{sub ? "Ви підписані ✓" : "ПІДПИСАТИСЬ"}</div>
-      <div style={{ marginTop: 48, display: "flex", flexDirection: "column", alignItems: "center", gap: 14, opacity: interpolate(f, [34, 46], [0, 1], clamp), translate: `0 ${interpolate(f, [34, 46], [30, 0], clamp)}px` }}>
-        <div style={{ fontFamily: FONT, fontWeight: 700, fontSize: 34, color: "rgba(255,255,255,0.7)" }}>Більше розборів — у Telegram</div>
-        <div style={{ display: "flex", alignItems: "center", gap: 16, padding: "14px 30px", borderRadius: 40, background: "rgba(42,171,238,0.18)", border: "3px solid #2AABEE" }}>
-          <svg width="44" height="44" viewBox="0 0 24 24"><path d="M21 4L3 11l6 2 2 6 3-4 5 4z" fill="#2AABEE" /><path d="M9 13l9-7-7 9" fill="none" stroke="#0E0B24" strokeWidth="1.2" /></svg>
-          <span style={{ fontFamily: FONT, fontWeight: 900, fontSize: 44, color: "white" }}>@shikarno_ai_ua</span>
-        </div>
-      </div>
+      <div style={{ marginTop: 40, opacity: interpolate(f, [30, 42], [0, 1], clamp) }}><Socials scale={0.85} t={f - 30} /></div>
       <Cursor x={cx} y={cy} pressed={pressed} />
     </AbsoluteFill>
   );
