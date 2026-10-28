@@ -298,15 +298,15 @@ const Tier: React.FC<{ s: Scene; dur: number; first?: boolean; offset: number }>
   const since = Math.max(0, f - starts[last]);
   const kick = f >= starts[last] ? Math.exp(-since / 7) : 0;
   const ROW = 136, HEAD = 70;
-  const camScale = 1 + 0.06 * (f / Math.max(1, dur)) + 0.09 * kick;
+  const camScale = 1 + 0.04 * (f / Math.max(1, dur)) + 0.06 * kick;
   const camRot = (last % 2 ? 1 : -1) * 2.4 * kick;
   const shake = kick * 7 * Math.sin(f * 2.3);
   return (
-    <div style={{ position: "relative", width: 980, scale: `${camScale}`, rotate: `${camRot}deg`, translate: `${shake}px ${-kick * 18}px`,
+    <div style={{ position: "relative", width: 930, scale: `${camScale}`, rotate: `${camRot}deg`, translate: `${shake}px ${-kick * 18}px`,
       transformOrigin: `50% ${HEAD + last * ROW + 60}px` }}>
       <div style={{ position: "absolute", inset: -1400, background: "white", opacity: 0.22 * kick * kick, pointerEvents: "none" }} />
       <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
-      <div style={{ display: "grid", gridTemplateColumns: "210px 1fr 1fr 1fr", gap: 12, scale: `${head}` }}>
+      <div style={{ display: "grid", gridTemplateColumns: "190px 1fr 1fr 1fr", gap: 12, scale: `${head}` }}>
         <div />
         {TIER.map(([t, c], j) => <div key={t} style={{ textAlign: "center", fontFamily: FONT, fontWeight: 900, fontSize: 34, color: C.ink, background: c, borderRadius: 16, padding: "10px 0",
           scale: `${1 + 0.05 * Math.max(0, Math.sin((f - j * 5) / 9))}` }}>{t}</div>)}
@@ -317,7 +317,7 @@ const Tier: React.FC<{ s: Scene; dur: number; first?: boolean; offset: number }>
         const slam = first && i === 0 ? 1 : sp(f - a, 10);
         const side = i % 2 ? -1 : 1;
         return (
-          <div key={i} style={{ display: "grid", gridTemplateColumns: "210px 1fr 1fr 1fr", gap: 12, opacity: f >= a ? Math.min(1, slam * 1.5) : 0,
+          <div key={i} style={{ display: "grid", gridTemplateColumns: "190px 1fr 1fr 1fr", gap: 12, opacity: f >= a ? Math.min(1, slam * 1.5) : 0,
             translate: `${(1 - slam) * 700 * side}px 0`, filter: slam < 0.98 ? `blur(${(1 - slam) * 14}px)` : undefined }}>
             <div style={{ display: "flex", alignItems: "center", fontFamily: FONT, fontWeight: 900, fontSize: r[0].length > 7 ? 32 : 40, color: active ? C.yellow : "white",
               scale: active ? `${1 + 0.06 * Math.sin(f / 5)}` : "1" }}>{r[0]}</div>
