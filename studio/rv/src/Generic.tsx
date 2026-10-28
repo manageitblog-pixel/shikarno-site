@@ -95,9 +95,9 @@ const IntroSting: React.FC = () => {
 };
 
 /* ---------- ведучий у кутку ---------- */
-const CornerHost: React.FC<{ start: number; end: number; judgeFrom: number }> = ({ start, end, judgeFrom }) => {
+const CornerHost: React.FC<{ start: number; end: number; judgeFrom: number; hide?: [number, number][] }> = ({ start, end, judgeFrom, hide = [] }) => {
   const f = useCurrentFrame(); const { mouth } = useEp();
-  if (f < start || f > end) return null;
+  if (f < start || f > end || hide.some(([a, b]) => f >= a && f < b)) return null; // таблиці на всю ширину — Байт не перекриває праву колонку
   const inS = start === 0 ? 1 : sp(f - start, 11); const out = interpolate(f, [end - 8, end], [1, 0], clamp);
   return (
     <div style={{ position: "absolute", right: 24, top: 975, opacity: out, translate: `${(1 - inS) * 300}px 0`, rotate: `${(1 - inS) * 20}deg`, filter: "drop-shadow(0 18px 30px rgba(0,0,0,0.5))" }}>
@@ -272,6 +272,73 @@ const VerdictGeneric: React.FC<{ s: Scene }> = ({ s }) => {
   );
 };
 
+/* ---------- тір-лист і «платне → безкоштовне» (29.10, за розбором вірусних Shorts) ---------- */
+const RED = "#FF3B5C";
+const TIER = [["ПОГАНО", RED], ["ДОБРЕ", C.yellow], ["НАЙКРАЩЕ", GREEN]] as const;
+// items: [["Писати", "Без ШІ", "ChatGPT", "Claude"], ...]; рядок з'являється у свій час, клітинки — по черзі
+const Tier: React.FC<{ s: Scene; dur: number; first?: boolean }> = ({ s, dur, first }) => {
+  const f = useCurrentFrame();
+  const rows = (s.items ?? []) as string[][];
+  const step = Math.max(12, Math.floor((dur - 20) / Math.max(1, rows.length)));
+  const head = first ? 1 : sp(f, 12);
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: 16, width: 980 }}>
+      <div style={{ display: "grid", gridTemplateColumns: "210px 1fr 1fr 1fr", gap: 12, scale: `${head}` }}>
+        <div />
+        {TIER.map(([t, c]) => <div key={t} style={{ textAlign: "center", fontFamily: FONT, fontWeight: 900, fontSize: 34, color: C.ink, background: c, borderRadius: 16, padding: "10px 0" }}>{t}</div>)}
+      </div>
+      {rows.map((r, i) => {
+        const a = first && i === 0 ? -20 : i * step;
+        const active = f >= a && f < a + step;
+        return (
+          <div key={i} style={{ display: "grid", gridTemplateColumns: "210px 1fr 1fr 1fr", gap: 12, opacity: f >= a ? 1 : 0.0 }}>
+            <div style={{ display: "flex", alignItems: "center", fontFamily: FONT, fontWeight: 900, fontSize: 40, color: active ? C.yellow : "white" }}>{r[0]}</div>
+            {r.slice(1, 4).map((cell, j) => {
+              const k = sp(f - a - j * 4, 9);
+              return (
+                <div key={j} style={{ height: 120, borderRadius: 22, display: "flex", alignItems: "center", justifyContent: "center", textAlign: "center", padding: "0 8px",
+                  background: active ? `${TIER[j][1]}33` : "rgba(255,255,255,0.08)", border: `4px solid ${active ? TIER[j][1] : "rgba(255,255,255,0.18)"}`,
+                  fontFamily: FONT, fontWeight: 900, fontSize: cell.length > 9 ? 34 : 42, color: "white", scale: `${k}`, opacity: k, boxShadow: active && j === 2 ? `0 0 34px ${GREEN}` : "none" }}>{cell}</div>
+              );
+            })}
+          </div>
+        );
+      })}
+    </div>
+  );
+};
+
+// items: [["Netflix", "YouTube"], ...]; поточна пара підсвічена
+const PaidFree: React.FC<{ s: Scene; dur: number; first?: boolean }> = ({ s, dur, first }) => {
+  const f = useCurrentFrame();
+  const pairs = (s.items ?? []) as string[][];
+  const step = Math.max(12, Math.floor((dur - 20) / Math.max(1, pairs.length)));
+  const col = (t: string, c: string) => <div style={{ textAlign: "center", fontFamily: FONT, fontWeight: 900, fontSize: 44, color: C.ink, background: c, borderRadius: 18, padding: "12px 0" }}>{t}</div>;
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: 16, width: 980 }}>
+      <div style={{ display: "grid", gridTemplateColumns: "1fr 90px 1fr", gap: 12 }}>{col("ПЛАТНЕ", RED)}<div />{col("БЕЗКОШТОВНО", GREEN)}</div>
+      {pairs.map(([paid, free], i) => {
+        const a = first && i === 0 ? -20 : i * step;
+        const active = f >= a && f < a + step;
+        const l = sp(f - a, 9), r = sp(f - a - 6, 9);
+        const cell = (t: string, c: string, k: number, strike: boolean) => (
+          <div style={{ position: "relative", height: 104, borderRadius: 22, display: "flex", alignItems: "center", justifyContent: "center", scale: `${k}`, opacity: k,
+            background: active ? `${c}33` : "rgba(255,255,255,0.08)", border: `4px solid ${active ? c : "rgba(255,255,255,0.18)"}`, fontFamily: FONT, fontWeight: 900, fontSize: t.length > 12 ? 36 : 46, color: strike && !active ? "rgba(255,255,255,0.6)" : "white" }}>
+            {t}
+          </div>
+        );
+        return (
+          <div key={i} style={{ display: "grid", gridTemplateColumns: "1fr 90px 1fr", gap: 12, alignItems: "center" }}>
+            {cell(paid, RED, l, true)}
+            <svg width="90" height="60" viewBox="0 0 24 24" style={{ opacity: r }}><path d="M3 12h15M13 6l6 6-6 6" fill="none" stroke={active ? C.yellow : "rgba(255,255,255,0.4)"} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" /></svg>
+            {cell(free, GREEN, r, false)}
+          </div>
+        );
+      })}
+    </div>
+  );
+};
+
 const Outro: React.FC<{ offset: number }> = ({ offset }) => {
   const f = useCurrentFrame(); const { mouth } = useEp();
   const host = sp(f, 10), wm = sp(f - 8, 11), tag = sp(f - 16, 12), btn = sp(f - 24, 10);
@@ -336,6 +403,10 @@ export const GenericEpisode: React.FC<EpData> = (props) => {
   const sc = props.scenes;
   const vIdx = sc.findIndex((s) => s.kind.startsWith("verdict"));
   const oIdx = sc.findIndex((s) => s.kind === "outro");
+  const WIDE = ["tier", "paidFree"];
+  const FIRST = ["hookIcon", ...WIDE];
+  const hide = sc.map((s, i) => [i === 0 ? 0 : s.from - 6, i < sc.length - 1 ? sc[i + 1].from - 6 : props.total, s.kind] as const)
+    .filter(([, , k]) => WIDE.includes(k)).map(([a, b]) => [a, b] as [number, number]);
   return (
     <Ctx.Provider value={props}>
       <AbsoluteFill style={{ fontFamily: FONT }}>
@@ -347,15 +418,17 @@ export const GenericEpisode: React.FC<EpData> = (props) => {
           const dur = end - start;
           if (s.kind === "outro") return <Sequence key={i} from={start} durationInFrames={dur}><Outro offset={start} /></Sequence>;
           const V = s.kind === "hookIcon" ? <HookIcon s={s} /> : s.kind === "list" ? <List s={s} dur={dur} /> : s.kind === "beforeAfter" ? <BeforeAfter s={s} />
-            : s.kind === "moneyList" ? <MoneyList s={s} dur={dur} /> : s.kind === "moneyBig" ? <MoneyBig s={s} dur={dur} /> : <VerdictGeneric s={s} />;
+            : s.kind === "moneyList" ? <MoneyList s={s} dur={dur} /> : s.kind === "moneyBig" ? <MoneyBig s={s} dur={dur} />
+            : s.kind === "tier" ? <Tier s={s} dur={dur} first={i === 0} /> : s.kind === "paidFree" ? <PaidFree s={s} dur={dur} first={i === 0} /> : <VerdictGeneric s={s} />;
+          const first = i === 0 && FIRST.includes(s.kind);
           return (
             <Sequence key={i} from={start} durationInFrames={dur}>
-              <Stage dur={dur} first={i === 0 && s.kind === "hookIcon"}>{V}</Stage>
-              {i === 0 && s.kind === "hookIcon" ? <HookHeadline s={s} /> : <Card label={s.label} title={s.title} />}
+              <Stage dur={dur} first={first}>{V}</Stage>
+              {first ? <HookHeadline s={s} /> : WIDE.includes(s.kind) ? null : <Card label={s.label} title={s.title} />}
             </Sequence>
           );
         })}
-        {oIdx > 0 && <CornerHost start={0} end={sc[oIdx].from - 6} judgeFrom={vIdx >= 0 ? sc[vIdx].from - 6 : 99999} />}
+        {oIdx > 0 && <CornerHost start={0} end={sc[oIdx].from - 6} judgeFrom={vIdx >= 0 ? sc[vIdx].from - 6 : 99999} hide={hide} />}
         <Captions />
         <TopBrand />
         {/* IntroSting вимкнено 24.10: гачок з першого кадру */}
