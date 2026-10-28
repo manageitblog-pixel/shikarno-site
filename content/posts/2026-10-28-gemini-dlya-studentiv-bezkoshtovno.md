@@ -5,6 +5,7 @@ date: 2026-10-28T19:00:00+02:00
 description: "Gemini для студентів безкоштовно: Google дає студентам 18+ план Google AI Plus на рік і в Україні. Що входить, як отримати до 31.12.2026 і скільки коштуватиме потім."
 tags: [gemini, google, instrumenty]
 youtube: gw9vvyTzYmA
+telegram_post: 50
 source: {name: "Google: студентський план Gemini (україномовна сторінка)", url: "https://gemini.google/students/?hl=uk"}
 sources:
   - {name: "Google Blog: College students get 12 months of Google AI free", url: "https://blog.google/innovation-and-ai/products/gemini-app/student-offer-google-ai/"}
