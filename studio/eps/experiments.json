@@ -27,5 +27,14 @@
     "tg_post": 48,
     "tiktok": "sent_to_owner",
     "note": "нічна публікація на запит власника — у тесті довжини не порівнювати з 19:00"
+  },
+  "ep18_gemini_students": {
+    "id": "bQlfCuRO-JU",
+    "publish": "2026-10-28T17:00:00Z",
+    "format": "free_ua",
+    "len": "short",
+    "dur": 30.4,
+    "title": "Gemini для студентів безкоштовно на рік — і в Україні теж 🎓",
+    "tiktok": "sent_to_owner"
   }
 }

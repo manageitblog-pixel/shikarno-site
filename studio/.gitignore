@@ -3,6 +3,7 @@ tg/.token
 gem/.key
 yt/client_secret.json
 yt/token.json
+yt/.pkce
 tg/owner.json
 tg/inbox.json
 tg/updates.json
