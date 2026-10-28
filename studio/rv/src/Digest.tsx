@@ -282,8 +282,11 @@ export const DigestThumb: React.FC<{ num: number; dates: string; icons: string[]
   </AbsoluteFill>
 );
 
-export const ShortThumb: React.FC<{ tag: string; red?: boolean; headline: string; icon: string; mood?: "talk" | "happy" | "judge" }> = ({ tag, red, headline, icon, mood = "happy" }) => {
+// tone — колір рубрики (лад на сторінці каналу): free зелений · scam червоний · check бірюзовий · news жовтий · try фіолетовий
+const TONES: Record<string, [string, string]> = { free: ["#19C37D", "#0B0A1C"], scam: ["#FF2D55", "#fff"], check: ["#4CF2FF", "#0B0A1C"], news: [C.yellow, C.ink], try: ["#7C5CFF", "#fff"] };
+export const ShortThumb: React.FC<{ tag: string; red?: boolean; headline: string; icon: string; mood?: "talk" | "happy" | "judge"; tone?: string }> = ({ tag, red, headline, icon, mood = "happy", tone }) => {
   const parts = headline.split("*");
+  if (tone && TONES[tone]) return <ToneThumb tag={tag} headline={headline} icon={icon} mood={mood} tone={tone} />;
   return (
     <AbsoluteFill style={{ fontFamily: FONT, background: "linear-gradient(160deg,#0B0A1C 0%,#1A1240 55%,#3B1A5A 100%)", alignItems: "center" }}>
       <style>{fontCss}</style>
@@ -296,6 +299,25 @@ export const ShortThumb: React.FC<{ tag: string; red?: boolean; headline: string
         {parts.map((p, i) => i % 2 ? <span key={i} style={{ color: C.yellow }}>{p}</span> : <span key={i}>{p}</span>)}
       </div>
       <div style={{ position: "absolute", bottom: 90, filter: "drop-shadow(0 30px 50px rgba(0,0,0,0.6))" }}><Bait size={430} mood={mood} /></div>
+    </AbsoluteFill>
+  );
+};
+
+const ToneThumb: React.FC<{ tag: string; headline: string; icon: string; mood: "talk" | "happy" | "judge"; tone: string }> = ({ tag, headline, icon, mood, tone }) => {
+  const [bg, fg] = TONES[tone]; const parts = headline.split("*");
+  const len = headline.replace(/\*/g, "").length; const fs = len > 26 ? 122 : len > 18 ? 140 : 160;
+  return (
+    <AbsoluteFill style={{ fontFamily: FONT, background: "linear-gradient(160deg,#0B0A1C 0%,#140F33 60%,#22164A 100%)", alignItems: "center" }}>
+      <style>{fontCss}</style>
+      <div style={{ position: "absolute", left: -260, top: 380, width: 900, height: 900, borderRadius: "50%", background: bg, filter: "blur(220px)", opacity: 0.35 }} />
+      <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 26, background: bg }} />
+      <div style={{ position: "absolute", top: 120 }}><Wordmark size={60} /></div>
+      <div style={{ position: "absolute", top: 250, background: bg, color: fg, fontWeight: 900, fontSize: 60, padding: "14px 44px", borderRadius: 24, letterSpacing: 1, boxShadow: `0 0 60px ${bg}88` }}>{tag}</div>
+      <div style={{ position: "absolute", top: 400, bottom: 520, width: 1000, display: "flex", alignItems: "center", justifyContent: "center", textAlign: "center", color: "white", fontWeight: 900, fontSize: fs, lineHeight: 1.04, letterSpacing: -1, textShadow: "0 10px 34px rgba(0,0,0,0.8)" }}>
+        <div>{parts.map((p, i) => i % 2 ? <span key={i} style={{ color: bg }}>{p}</span> : <span key={i}>{p}</span>)}</div>
+      </div>
+      <div style={{ position: "absolute", bottom: 150, left: 90, width: 260, height: 260, borderRadius: 70, background: `${bg}22`, border: `6px solid ${bg}`, display: "flex", alignItems: "center", justifyContent: "center", rotate: "-8deg" }}><Icon name={icon} size={160} color={bg} /></div>
+      <div style={{ position: "absolute", bottom: 70, right: 60, filter: "drop-shadow(0 30px 50px rgba(0,0,0,0.6))" }}><Bait size={380} mood={mood} /></div>
     </AbsoluteFill>
   );
 };
