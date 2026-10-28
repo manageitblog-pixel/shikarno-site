@@ -33,5 +33,31 @@
    "date": "2026-10-28",
    "rec_time": "2026-10-28 20:00"
   }
+ ],
+ "promote": [
+  {
+   "date": "2026-10-28",
+   "goal": "followers",
+   "spend_usd": 4.39,
+   "views": 3680,
+   "followers": 46,
+   "profile_views": 8,
+   "orders": [
+    {
+     "date": "2026-10-27",
+     "video": "Твій чат — не сейф",
+     "spend": 0.87,
+     "views": 552,
+     "followers": 8
+    },
+    {
+     "date": "2026-10-28",
+     "video": "+3 ролики",
+     "spend": 3.52,
+     "views": 3130,
+     "followers": 38
+    }
+   ]
+  }
  ]
 }
