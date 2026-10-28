@@ -304,7 +304,7 @@ const Tier: React.FC<{ s: Scene; dur: number; first?: boolean; offset: number }>
         const active = f >= a && f < (starts[i + 1] ?? dur);
         return (
           <div key={i} style={{ display: "grid", gridTemplateColumns: "210px 1fr 1fr 1fr", gap: 12, opacity: f >= a ? 1 : 0.0 }}>
-            <div style={{ display: "flex", alignItems: "center", fontFamily: FONT, fontWeight: 900, fontSize: 40, color: active ? C.yellow : "white" }}>{r[0]}</div>
+            <div style={{ display: "flex", alignItems: "center", fontFamily: FONT, fontWeight: 900, fontSize: r[0].length > 7 ? 32 : 40, color: active ? C.yellow : "white" }}>{r[0]}</div>
             {r.slice(1, 4).map((cell, j) => {
               const k = sp(f - a - j * 4, 9);
               return (
