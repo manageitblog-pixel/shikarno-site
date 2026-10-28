@@ -12,6 +12,16 @@ while time.time() < end:
     except Exception as e:
         new = []; print('err', e, file=sys.stderr)
     mine = [m for m in new if m.get('chat_id') == OWNER]
+    for m in mine:  # код входу Google живе ~10 хв — обмінюємо одразу, не чекаючи сесію
+        if 'localhost' in m.get('text', '') and 'code=' in m.get('text', ''):
+            try:
+                sys.path.insert(0, '/home/claude/yt'); import auth
+                res = auth.code(m['text']); ok = 'yt-analytics' in res
+                inbox.tg.call('sendMessage', chat_id=OWNER, text='✅ Вхід у YouTube оновлено' + (' — аналітика підключена.' if ok else '.') + ' Дякую!')
+                print('OAUTH_OK', res)
+            except Exception as e:
+                inbox.tg.call('sendMessage', chat_id=OWNER, text='⚠️ Код не прийнявся (' + str(e)[:80] + '). Зараз надішлю нове посилання.')
+                print('OAUTH_FAIL', e)
     if mine:
         for m in mine: print(json.dumps(m, ensure_ascii=False))
         print('OWNER_MESSAGE'); sys.exit(0)
