@@ -8,7 +8,7 @@ import { Background, Cursor, fontCss } from "./parts";
 export type Scene = {
   kind: string; label: string; title: string; from: number; to: number;
   icon?: string; items?: any[]; before?: string; after?: string;
-  big?: string; sub?: string; foot?: string; score?: number; plus?: string; minus?: string; badge?: string;
+  big?: string; sub?: string; foot?: string; score?: number; plus?: string; minus?: string; badge?: string; hook?: string;
 };
 export type EpData = { total: number; scenes: Scene[]; words: { w: string; s: number; e: number; g: string }[]; mouth: number[]; alert?: string };
 const Ctx = createContext<EpData>({ total: 300, scenes: [], words: [], mouth: [] });
@@ -98,7 +98,7 @@ const IntroSting: React.FC = () => {
 const CornerHost: React.FC<{ start: number; end: number; judgeFrom: number }> = ({ start, end, judgeFrom }) => {
   const f = useCurrentFrame(); const { mouth } = useEp();
   if (f < start || f > end) return null;
-  const inS = sp(f - start, 11); const out = interpolate(f, [end - 8, end], [1, 0], clamp);
+  const inS = start === 0 ? 1 : sp(f - start, 11); const out = interpolate(f, [end - 8, end], [1, 0], clamp);
   return (
     <div style={{ position: "absolute", right: 24, top: 975, opacity: out, translate: `${(1 - inS) * 300}px 0`, rotate: `${(1 - inS) * 20}deg`, filter: "drop-shadow(0 18px 30px rgba(0,0,0,0.5))" }}>
       <Bait size={200} mouth={mouth[f] ?? 0} look={-6} mood={f >= judgeFrom ? "judge" : "talk"} />
@@ -106,10 +106,26 @@ const CornerHost: React.FC<{ start: number; end: number; judgeFrom: number }> = 
   );
 };
 
+/* ---------- гачок: великий заголовок з ПЕРШОГО кадру (28.10) ---------- */
+const HookHeadline: React.FC<{ s: Scene }> = ({ s }) => {
+  const f = useCurrentFrame();
+  const text = s.hook ?? s.title;
+  const parts = text.split(/(\*[^*]+\*)/g).filter(Boolean);
+  const pulse = 1 + 0.025 * Math.sin(f / 6);
+  return (
+    <div style={{ position: "absolute", left: 50, right: 50, top: 210, display: "flex", justifyContent: "center", scale: `${pulse}` }}>
+      <div style={{ fontFamily: FONT, fontWeight: 900, fontSize: 108, lineHeight: 1.05, color: "white", textAlign: "center",
+        textShadow: "0 8px 0 rgba(0,0,0,0.35), 0 0 40px rgba(124,92,255,0.6)", letterSpacing: -1 }}>
+        {parts.map((p, i) => p.startsWith("*") ? <span key={i} style={{ color: C.yellow }}>{p.slice(1, -1)}</span> : <span key={i}>{p}</span>)}
+      </div>
+    </div>
+  );
+};
+
 /* ---------- сцени ---------- */
 const HookIcon: React.FC<{ s: Scene }> = ({ s }) => {
   const f = useCurrentFrame();
-  const card = sp(f, 10); const badge = sp(f - 12, 8);
+  const card = 0.9 + 0.1 * sp(f, 10); const badge = 0.85 + 0.15 * sp(f, 8); // з 28.10: видно з першого кадру (стрічка Shorts показує кадр 0)
   const ring = (d: number) => {
     const t = ((f + d) % 45) / 45;
     return <div style={{ position: "absolute", inset: -60 - t * 120, borderRadius: 140, border: `6px solid ${C.yellow}`, opacity: (1 - t) * 0.6 }} />;
@@ -312,11 +328,11 @@ const Captions: React.FC = () => {
   );
 };
 
-const Stage: React.FC<{ dur: number; children: React.ReactNode }> = ({ dur, children }) => {
+const Stage: React.FC<{ dur: number; children: React.ReactNode; first?: boolean }> = ({ dur, children, first }) => {
   const f = useCurrentFrame();
-  const s = sp(f, 14); const out = interpolate(f, [dur - 7, dur], [1, 0], clamp);
+  const s = first ? 1 : sp(f, 14); const out = interpolate(f, [dur - 7, dur], [1, 0], clamp); // перша сцена — без появи: кадр 0 вже повний
   return (
-    <AbsoluteFill style={{ top: 210, height: 960, alignItems: "center", justifyContent: "center", opacity: Math.min(s * 1.4, 1) * out, translate: `0 ${(1 - s) * 80}px`, scale: `${0.9 + 0.1 * s}` }}>
+    <AbsoluteFill style={{ top: first ? 470 : 210, height: 960, alignItems: "center", justifyContent: "center", opacity: Math.min(s * 1.4, 1) * out, translate: `0 ${(1 - s) * 80}px`, scale: `${0.9 + 0.1 * s}` }}>
       {children}
     </AbsoluteFill>
   );
@@ -340,12 +356,12 @@ export const GenericEpisode: React.FC<EpData> = (props) => {
             : s.kind === "moneyList" ? <MoneyList s={s} dur={dur} /> : s.kind === "moneyBig" ? <MoneyBig s={s} dur={dur} /> : <VerdictGeneric s={s} />;
           return (
             <Sequence key={i} from={start} durationInFrames={dur}>
-              <Stage dur={dur}>{V}</Stage>
-              <Card label={s.label} title={s.title} />
+              <Stage dur={dur} first={i === 0 && s.kind === "hookIcon"}>{V}</Stage>
+              {i === 0 && s.kind === "hookIcon" ? <HookHeadline s={s} /> : <Card label={s.label} title={s.title} />}
             </Sequence>
           );
         })}
-        {oIdx > 0 && <CornerHost start={30} end={sc[oIdx].from - 6} judgeFrom={vIdx >= 0 ? sc[vIdx].from - 6 : 99999} />}
+        {oIdx > 0 && <CornerHost start={0} end={sc[oIdx].from - 6} judgeFrom={vIdx >= 0 ? sc[vIdx].from - 6 : 99999} />}
         <Captions />
         <TopBrand />
         {/* IntroSting вимкнено 24.10: гачок з першого кадру */}

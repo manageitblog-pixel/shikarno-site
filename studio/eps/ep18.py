@@ -2,7 +2,7 @@
 # Джерело: https://gemini.google/students/?hl=uk (україномовна сторінка, ціни в ₴; перевірено 28.10.2026)
 SLUG="ep18_gemini_students"
 SCENES = [
- dict(kind="hookIcon", icon="check", badge="ДЛЯ СТУДЕНТІВ", label="БЕЗКОШТОВНО І УКРАЇНСЬКОЮ", title="Gemini на рік — безкоштовно",
+ dict(kind="hookIcon", icon="check", badge="ДЛЯ СТУДЕНТІВ", label="БЕЗКОШТОВНО І УКРАЇНСЬКОЮ", title="Gemini на рік — безкоштовно", hook="Gemini на рік *безкоштовно* студентам",
       text="Студент? Google дає рік платного Gemini безкоштовно. І в Україні теж.",
       gsay="Студент? Гугл дає рік платного Джеміні безкоштовно. І в Україні теж."),
  dict(kind="list", label="ЩО ДАЮТЬ", title="Google AI Plus",
