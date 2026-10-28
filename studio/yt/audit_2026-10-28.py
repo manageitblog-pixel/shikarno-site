@@ -53,8 +53,8 @@ CYR_RU = re.compile(r"[ыэъё]", re.I)
 
 def new_snippet(v):
     s = v["snippet"]; title, extra, hashtags = M[v["id"]]
-    tags = [t for t in s.get("tags", []) if t not in GENERIC and not CYR_RU.search(t)]
-    for t in extra:
+    tags = []
+    for t in extra + [t for t in s.get("tags", []) if t not in GENERIC and not CYR_RU.search(t)]:
         if t.lower() not in {x.lower() for x in tags}: tags.append(t)
     while len(",".join(tags)) > 450: tags.pop()
     lines = [l for l in s.get("description", "").rstrip().split("\n") if not l.strip().startswith("#")]
