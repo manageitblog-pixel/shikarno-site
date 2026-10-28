@@ -41,7 +41,8 @@ for i,s in enumerate(ep["scenes"]):
             else: starts.append(st+r*step)
         for r in range(len(rows)):
             a=starts[r]
-            place(fx,whoosh(0.25),a-3,0.25)
+            place(fx,whoosh(0.3),a-5,0.35)
+            if not (i==0 and r==0): place(fx,impact(),a,0.35)
             for j,dj in enumerate((0,4,8) if s["kind"]=="tier" else (0,6)): place(fx,pop(900+250*j),a+dj+2,0.3)
     if s["kind"].startswith("verdict"):
         place(fx,ding(),st+48,0.4); place(fx,pop(700),st+60,0.3); place(fx,pop(500),st+100,0.3)

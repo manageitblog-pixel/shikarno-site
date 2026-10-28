@@ -293,29 +293,52 @@ const Tier: React.FC<{ s: Scene; dur: number; first?: boolean; offset: number }>
   const rows = (s.items ?? []) as string[][];
   const starts = rowStarts(words, rows.map((r) => r[0]), offset, dur, first);
   const head = first ? 1 : sp(f, 12);
+  // «камера»: повільний наїзд + удар і поворот на кожному новому рядку (рух між рядками, текст стоїть, коли читають)
+  const last = Math.max(0, starts.filter((a) => f >= a).length - 1);
+  const since = Math.max(0, f - starts[last]);
+  const kick = f >= starts[last] ? Math.exp(-since / 7) : 0;
+  const ROW = 136, HEAD = 70;
+  const camScale = 1 + 0.06 * (f / Math.max(1, dur)) + 0.09 * kick;
+  const camRot = (last % 2 ? 1 : -1) * 2.4 * kick;
+  const shake = kick * 7 * Math.sin(f * 2.3);
   return (
-    <div style={{ display: "flex", flexDirection: "column", gap: 16, width: 980 }}>
+    <div style={{ position: "relative", width: 980, scale: `${camScale}`, rotate: `${camRot}deg`, translate: `${shake}px ${-kick * 18}px`,
+      transformOrigin: `50% ${HEAD + last * ROW + 60}px` }}>
+      <div style={{ position: "absolute", inset: -1400, background: "white", opacity: 0.22 * kick * kick, pointerEvents: "none" }} />
+      <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
       <div style={{ display: "grid", gridTemplateColumns: "210px 1fr 1fr 1fr", gap: 12, scale: `${head}` }}>
         <div />
-        {TIER.map(([t, c]) => <div key={t} style={{ textAlign: "center", fontFamily: FONT, fontWeight: 900, fontSize: 34, color: C.ink, background: c, borderRadius: 16, padding: "10px 0" }}>{t}</div>)}
+        {TIER.map(([t, c], j) => <div key={t} style={{ textAlign: "center", fontFamily: FONT, fontWeight: 900, fontSize: 34, color: C.ink, background: c, borderRadius: 16, padding: "10px 0",
+          scale: `${1 + 0.05 * Math.max(0, Math.sin((f - j * 5) / 9))}` }}>{t}</div>)}
       </div>
       {rows.map((r, i) => {
         const a = starts[i];
         const active = f >= a && f < (starts[i + 1] ?? dur);
+        const slam = first && i === 0 ? 1 : sp(f - a, 10);
+        const side = i % 2 ? -1 : 1;
         return (
-          <div key={i} style={{ display: "grid", gridTemplateColumns: "210px 1fr 1fr 1fr", gap: 12, opacity: f >= a ? 1 : 0.0 }}>
-            <div style={{ display: "flex", alignItems: "center", fontFamily: FONT, fontWeight: 900, fontSize: r[0].length > 7 ? 32 : 40, color: active ? C.yellow : "white" }}>{r[0]}</div>
+          <div key={i} style={{ display: "grid", gridTemplateColumns: "210px 1fr 1fr 1fr", gap: 12, opacity: f >= a ? Math.min(1, slam * 1.5) : 0,
+            translate: `${(1 - slam) * 700 * side}px 0`, filter: slam < 0.98 ? `blur(${(1 - slam) * 14}px)` : undefined }}>
+            <div style={{ display: "flex", alignItems: "center", fontFamily: FONT, fontWeight: 900, fontSize: r[0].length > 7 ? 32 : 40, color: active ? C.yellow : "white",
+              scale: active ? `${1 + 0.06 * Math.sin(f / 5)}` : "1" }}>{r[0]}</div>
             {r.slice(1, 4).map((cell, j) => {
-              const k = sp(f - a - j * 4, 9);
+              const k = first && i === 0 ? 1 : spring({ frame: f - a - 3 - j * 5, fps: 30, config: { damping: 7, mass: 0.7 } });
+              const best = active && j === 2;
+              const sweep = ((f - a) * 4) % 260 - 60;
               return (
-                <div key={j} style={{ height: 120, borderRadius: 22, display: "flex", alignItems: "center", justifyContent: "center", textAlign: "center", padding: "0 8px",
+                <div key={j} style={{ position: "relative", overflow: "hidden", height: 120, borderRadius: 22, display: "flex", alignItems: "center", justifyContent: "center", textAlign: "center", padding: "0 8px",
                   background: active ? `${TIER[j][1]}33` : "rgba(255,255,255,0.08)", border: `4px solid ${active ? TIER[j][1] : "rgba(255,255,255,0.18)"}`,
-                  fontFamily: FONT, fontWeight: 900, fontSize: cell.length > 9 ? 34 : 42, color: "white", scale: `${k}`, opacity: k, boxShadow: active && j === 2 ? `0 0 34px ${GREEN}` : "none" }}>{cell}</div>
+                  fontFamily: FONT, fontWeight: 900, fontSize: cell.length > 9 ? 34 : 42, color: "white", scale: `${k * (best ? 1 + 0.04 * Math.sin(f / 4) : 1)}`, opacity: Math.min(1, k),
+                  rotate: `${(1 - Math.min(1, k)) * (j - 1) * 14}deg`, boxShadow: best ? `0 0 ${30 + 16 * Math.sin(f / 4)}px ${GREEN}` : "none" }}>
+                  {best && <div style={{ position: "absolute", top: 0, bottom: 0, left: `${sweep}%`, width: "35%", background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.35), transparent)", rotate: "15deg" }} />}
+                  <span style={{ position: "relative" }}>{cell}</span>
+                </div>
               );
             })}
           </div>
         );
       })}
+      </div>
     </div>
   );
 };
