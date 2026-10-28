@@ -6,12 +6,16 @@ import data from "./data.json";
 import ep from "./ep.json";
 import { GenericEpisode, EpData } from "./Generic";
 import { DigestVideo, DData, DigestThumb, ShortThumb } from "./Digest";
+import { Cine } from "./Cine";
 
 export const Root: React.FC = () => (
   <>
     <Composition id="Short" component={Short} durationInFrames={data.total} fps={30} width={1080} height={1920} />
     <Composition id="Episode" component={Episode} durationInFrames={ep.total} fps={30} width={1080} height={1920} />
     <Composition id="Ep" component={GenericEpisode as any} durationInFrames={300} fps={30} width={1080} height={1920}
+      defaultProps={{ total: 300, scenes: [], words: [], mouth: [] } as EpData}
+      calculateMetadata={({ props }) => ({ durationInFrames: (props as EpData).total })} />
+    <Composition id="Cine" component={Cine as any} durationInFrames={300} fps={30} width={1080} height={1920}
       defaultProps={{ total: 300, scenes: [], words: [], mouth: [] } as EpData}
       calculateMetadata={({ props }) => ({ durationInFrames: (props as EpData).total })} />
     <Composition id="Digest" component={DigestVideo as any} durationInFrames={300} fps={30} width={1920} height={1080}
