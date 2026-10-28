@@ -13,7 +13,7 @@ SITE = {
     "lang": "uk",
     "gsc_verify": "",  # Google Search Console: content з мета-тегу підтвердження (ресурс «Префікс URL»)
     "bing_verify": "", # Bing Webmaster: content з мета-тегу msvalidate.01
-    "cf_beacon": "",   # токен Cloudflare Web Analytics (публічний, з коду лічильника); порожньо — лічильник вимкнено
+    "cf_beacon": "922b68fdf5944113a07f641dc3d56168",   # токен Cloudflare Web Analytics (публічний, з коду лічильника); порожньо — лічильник вимкнено
 }
 TAG_NAMES = {
     "chatgpt": "ChatGPT", "openai": "OpenAI", "google": "Google", "gemini": "Gemini",
