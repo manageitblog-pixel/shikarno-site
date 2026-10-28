@@ -119,7 +119,10 @@ export class Pult {
     const st = this.state(), nr = st.next_run ? Date.parse(st.next_run) : null;
     const last = this.sql.exec(`SELECT ts FROM ev WHERE kind IN ('tool','note') ORDER BY id DESC LIMIT 1`).toArray()[0];
     const busy = last && Date.now() - last.ts < 120000;
-    const when = busy ? "Байт зараз працює — прочитає за кілька хвилин."
+    const lp = Number(this.sql.exec(`SELECT v FROM kv WHERE k='last_pull'`).toArray()[0]?.v || 0);
+    const live = Date.now() - lp < 90000; // вартовий у сесії опитує чергу кожні ~10 с
+    const when = live ? "Байт на зв'язку — уже читає, відповім тут за кілька хвилин."
+      : busy ? "Байт зараз працює — прочитає за кілька хвилин."
       : `Байт прочитає на найближчій перевірці (щогодини, цілодобово)${nr ? `; повний запуск — ${new Date(nr).toLocaleString("uk-UA", { timeZone: "Europe/Kyiv", hour: "2-digit", minute: "2-digit", day: "2-digit", month: "2-digit" })}` : ""}.`;
     await this.tgCall("sendMessage", { chat_id: m.chat.id, text: "✅ Прийняв. " + when, reply_to_message_id: m.message_id });
   }
@@ -138,6 +141,7 @@ export class Pult {
       return json({ ok: true });
     }
     if (url.pathname === "/api/tg/pull") {
+      this.sql.exec(`INSERT OR REPLACE INTO kv (k,v) VALUES ('last_pull',?)`, String(Date.now())); // вартовий сесії живий
       const rows = this.sql.exec(`SELECT id, upd FROM tg WHERE taken=0 ORDER BY id LIMIT 200`).toArray();
       if (rows.length) this.sql.exec(`UPDATE tg SET taken=1 WHERE id <= ? AND taken=0`, rows[rows.length - 1].id);
       return json({ updates: rows.map(r => JSON.parse(r.upd)) });

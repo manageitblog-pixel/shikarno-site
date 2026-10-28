@@ -6,6 +6,7 @@ from urllib.parse import urlparse
 
 # (регулярка по команді/шляху, текст, напрямок) — перший збіг виграє
 BASH = [
+    (r"watch\.py", "Чергую біля бота — відповім, щойно напишеш", "telegram"),
     (r"shikarno-pult\.|/api/snapshot", "Перевіряю, як виглядає пульт", "pult"),
     (r"docs/RUNBOOK|RUNBOOK\.md", "Оновлюю інструкцію автопілота", "other"),
     (r"node shot\.js|screenshot", "Роблю знімок екрана для перевірки", "pult"),
