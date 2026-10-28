@@ -100,7 +100,7 @@
 - Перший робочий день місяця: 10 типових питань у ChatGPT, Gemini, Perplexity, Claude — чи цитують shikarno.com.ua; записати в docs/geo-log.md.
 
 ## Нагадування
-- OAuth Testing: refresh token живе 7 днів, останній отримано 22.10 ~17:05Z → 28.10 надіслати користувачу нове посилання (PKCE, scope youtube.upload + youtube + youtube.force-ssl, redirect http://localhost).
+- OAuth Testing: refresh token живе 7 днів, останній отримано 28.10 ~07:49Z (з yt-analytics.readonly) → 4.11 надіслати нове посилання: `python3 studio/yt/auth.py link` у бот; код власник надсилає в бот — вартовий (tg/watch.py) обмінює його сам за секунди (код живе ~10 хв).
 - Gemini free tier: 10 запитів на добу на модель.
 - Telegram: домен відкрито, бот @ShikarnoUABot — адмін із повними правами в @shikarno_ai_ua (chat id -1004419046740), токен у /home/claude/tg/.token. Назву, опис, аватар і закріплене привітання налаштовано 22.10; закинуто ролики еп.1, 2, 6.
 - Threads: домен відкрито; чекаємо від користувача токен, App ID і App Secret.
