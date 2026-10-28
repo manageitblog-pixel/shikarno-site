@@ -7,6 +7,7 @@
 <title>{{ page_title }}</title>
 <meta name="description" content="{{ page_desc }}">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+{% if site.gsc_verify %}<meta name="google-site-verification" content="{{ site.gsc_verify }}">{% endif %}{% if site.bing_verify %}<meta name="msvalidate.01" content="{{ site.bing_verify }}">{% endif %}
 <link rel="canonical" href="{{ site.url }}{{ path }}">
 <meta property="og:site_name" content="{{ site.name }}">
 <meta property="og:locale" content="uk_UA">
