@@ -59,5 +59,11 @@
   "tts": "hype",
   "title": "Попросив ШІ зробити титри як у кіно 🎬 Результат — вау",
   "tg_post": 51
+ },
+ "ep21_which_ai": {
+  "tg_post": 54,
+  "format": "check",
+  "template": "tier",
+  "version": "dynamic"
  }
 }
