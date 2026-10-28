@@ -11,7 +11,7 @@ SITE = {
     "contact": "https://t.me/ShikarnoPartnersBot?start=site",   # бот заявок на співпрацю
     "tg_channel": "shikarno_ai_ua",   # для віджета коментарів (обговорення під постом каналу)
     "lang": "uk",
-    "gsc_verify": "",  # Google Search Console: content з мета-тегу підтвердження (ресурс «Префікс URL»)
+    "gsc_verify": "xNv9qJb2dgq3CcsirKKTJhuSh3afZ4NeuRTEdxDvdqs",  # Google Search Console: content з мета-тегу підтвердження (ресурс «Префікс URL»)
     "bing_verify": "", # Bing Webmaster: content з мета-тегу msvalidate.01
     "cf_beacon": "922b68fdf5944113a07f641dc3d56168",   # токен Cloudflare Web Analytics (публічний, з коду лічильника); порожньо — лічильник вимкнено
 }
