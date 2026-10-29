@@ -79,6 +79,7 @@
   "template": "chat",
   "tone": "check",
   "title_hashtag": true,
-  "len": "short"
+  "len": "short",
+  "tg_post": 56
  }
 }
