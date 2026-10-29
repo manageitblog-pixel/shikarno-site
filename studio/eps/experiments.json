@@ -81,5 +81,11 @@
   "title_hashtag": true,
   "len": "short",
   "tg_post": 56
+ },
+ "r_deepfake_mama_6h_3": {
+  "format": "scam",
+  "template": "generic_old",
+  "title_hashtag": false,
+  "tg_post": 57
  }
 }
