@@ -71,7 +71,8 @@
   "template": "generic",
   "tone": "free",
   "title_hashtag": false,
-  "len": "short"
+  "len": "short",
+  "tg_post": 55
  },
  "ep23_love_game": {
   "format": "trend",

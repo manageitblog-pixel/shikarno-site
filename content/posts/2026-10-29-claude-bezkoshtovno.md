@@ -5,6 +5,7 @@ date: 2026-10-29T10:00:00+02:00
 description: "Claude безкоштовно: що вміє безкоштовний план Claude від Anthropic — пошук, файли, пам'ять, — чи працює в Україні, як почати за 3 кроки і коли потрібен Pro за $20."
 tags: [claude, anthropic, instrumenty]
 youtube: lMjktLNCWws
+telegram_post: 55
 source: {name: "Claude: тарифи (Free, Pro, Max)", url: "https://claude.com/pricing"}
 sources:
   - {name: "Anthropic: країни, де доступний Claude", url: "https://www.anthropic.com/supported-countries"}
