@@ -7,6 +7,7 @@ import ep from "./ep.json";
 import { GenericEpisode, EpData } from "./Generic";
 import { DigestVideo, DData, DigestThumb, ShortThumb } from "./Digest";
 import { Cine } from "./Cine";
+import { Chat, ChatData } from "./Chat";
 
 export const Root: React.FC = () => (
   <>
@@ -18,6 +19,9 @@ export const Root: React.FC = () => (
     <Composition id="Cine" component={Cine as any} durationInFrames={300} fps={30} width={1080} height={1920}
       defaultProps={{ total: 300, scenes: [], words: [], mouth: [] } as EpData}
       calculateMetadata={({ props }) => ({ durationInFrames: (props as EpData).total })} />
+    <Composition id="Chat" component={Chat as any} durationInFrames={300} fps={30} width={1080} height={1920}
+      defaultProps={{ total: 300, question: "", model: "Gemini", prompt: "", promptFrom: 0, promptTo: 60, turns: [], reveal: 150, answer: "", reactions: [], outroFrom: 270, mouth: [] } as ChatData}
+      calculateMetadata={({ props }) => ({ durationInFrames: (props as ChatData).total })} />
     <Composition id="Digest" component={DigestVideo as any} durationInFrames={300} fps={30} width={1920} height={1080}
       defaultProps={{ total: 300, num: 1, dates: "", segs: [], words: [], mouth: [], titles: [] } as DData}
       calculateMetadata={({ props }) => ({ durationInFrames: (props as DData).total })} />
