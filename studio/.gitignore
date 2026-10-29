@@ -14,6 +14,8 @@ rv/node_modules/
 rv/out/
 eps/*/
 !eps/month_oct/
+eps/month_oct/*.wav
+eps/month_oct/*.mp4
 !eps/digest1/
 eps/digest1/*
 !eps/digest1/meta.json
