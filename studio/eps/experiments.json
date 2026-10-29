@@ -65,5 +65,12 @@
   "format": "check",
   "template": "tier",
   "version": "dynamic"
+ },
+ "ep22_claude_free": {
+  "format": "free_ua",
+  "template": "generic",
+  "tone": "free",
+  "title_hashtag": false,
+  "len": "short"
  }
 }

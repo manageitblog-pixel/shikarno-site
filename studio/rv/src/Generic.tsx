@@ -8,7 +8,7 @@ import { Background, Cursor, fontCss } from "./parts";
 export type Scene = {
   kind: string; label: string; title: string; from: number; to: number;
   icon?: string; items?: any[]; before?: string; after?: string;
-  big?: string; sub?: string; foot?: string; score?: number; plus?: string; minus?: string; badge?: string; hook?: string;
+  big?: string; sub?: string; foot?: string; score?: number; plus?: string; minus?: string; badge?: string; hook?: string; tone?: string;
 };
 export type EpData = { total: number; scenes: Scene[]; words: { w: string; s: number; e: number; g: string }[]; mouth: number[]; alert?: string };
 const Ctx = createContext<EpData>({ total: 300, scenes: [], words: [], mouth: [] });
@@ -18,6 +18,8 @@ const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 const sp = (f: number, damping = 12) => spring({ frame: f, fps: 30, config: { damping, mass: 0.8 } });
 const INTRO = 26;
 const GREEN = "#19C37D";
+// колір рубрики на кадрі 0 (= заставка в мобільному додатку): free · scam · check · news · try
+const TONE: Record<string, string> = { free: "#19C37D", scam: "#FF2D55", check: "#4CF2FF", news: "#FFD60A", try: "#7C5CFF" };
 
 /* ---------- іконки ---------- */
 export const Icon: React.FC<{ name: string; size?: number; color?: string }> = ({ name, size = 64, color = "white" }) => {
@@ -116,7 +118,7 @@ const HookHeadline: React.FC<{ s: Scene }> = ({ s }) => {
     <div style={{ position: "absolute", left: 50, right: 50, top: 210, display: "flex", justifyContent: "center", scale: `${pulse}` }}>
       <div style={{ fontFamily: FONT, fontWeight: 900, fontSize: 108, lineHeight: 1.05, color: "white", textAlign: "center",
         textShadow: "0 8px 0 rgba(0,0,0,0.35), 0 0 40px rgba(124,92,255,0.6)", letterSpacing: -1 }}>
-        {parts.map((p, i) => p.startsWith("*") ? <span key={i} style={{ color: C.yellow }}>{p.slice(1, -1)}</span> : <span key={i}>{p}</span>)}
+        {parts.map((p, i) => p.startsWith("*") ? <span key={i} style={{ color: (s.tone && TONE[s.tone]) || C.yellow }}>{p.slice(1, -1)}</span> : <span key={i}>{p}</span>)}
       </div>
     </div>
   );
@@ -142,7 +144,7 @@ const HookIcon: React.FC<{ s: Scene }> = ({ s }) => {
       </div>
       {s.badge ? <div style={{
         position: "absolute", right: -70, top: -40, scale: `${badge}`, rotate: `${12 + Math.sin(f / 8) * 4}deg`,
-        background: s.badge ? "#FF2D55" : C.yellow, color: s.badge ? "#fff" : "#111", fontFamily: FONT, fontWeight: 900, fontSize: 60, padding: "16px 34px", borderRadius: 24, boxShadow: s.badge ? "0 0 40px rgba(255,45,85,0.8)" : "0 20px 40px rgba(0,0,0,0.4)",
+        background: (s.tone && TONE[s.tone]) || "#FF2D55", color: s.tone && s.tone !== "scam" && s.tone !== "try" ? "#0B0A1C" : "#fff", fontFamily: FONT, fontWeight: 900, fontSize: (s.badge ?? "").length > 10 ? 46 : 60, padding: "16px 34px", borderRadius: 24, whiteSpace: "nowrap", boxShadow: s.badge ? "0 0 40px rgba(255,45,85,0.8)" : "0 20px 40px rgba(0,0,0,0.4)",
       }}>{s.badge}</div> : null}
     </div>
   );
