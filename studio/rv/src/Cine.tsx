@@ -70,12 +70,12 @@ const Cube: React.FC<{ s: number; x: number; y: number; z: number; rot: number; 
 };
 
 /* ---------- сцени (локальний кадр t) ---------- */
-const Typed: React.FC<{ text: string; t: number; dur: number }> = ({ text, t, dur }) => {
+const Typed: React.FC<{ text: string; t: number; dur: number; chips?: string[] }> = ({ text, t, dur, chips }) => {
   const n = Math.floor(interpolate(t, [6, Math.max(8, dur * 0.7)], [0, text.length], clamp));
   return (
     <div style={{ width: 720, padding: "40px 44px", borderRadius: 40, background: "rgba(18,12,40,0.88)", border: `3px solid ${NEON}`, boxShadow: `0 0 60px rgba(255,214,10,0.35)` }}>
       <div style={{ display: "flex", gap: 14, marginBottom: 26 }}>
-        {["ПРОМПТ", "ШІ", "МОУШН"].map((x) => <span key={x} style={{ fontFamily: FONT, fontWeight: 900, fontSize: 26, color: "#111", background: NEON, borderRadius: 30, padding: "6px 18px" }}>{x}</span>)}
+        {(chips ?? ["ПРОМПТ", "ШІ", "МОУШН"]).map((x) => <span key={x} style={{ fontFamily: FONT, fontWeight: 900, fontSize: 26, color: "#111", background: NEON, borderRadius: 30, padding: "6px 18px" }}>{x}</span>)}
       </div>
       <div style={{ fontFamily: FONT, fontWeight: 800, fontSize: 44, lineHeight: 1.25, color: "white" }}>
         «{text.slice(0, n)}<span style={{ opacity: Math.floor(t / 8) % 2 ? 1 : 0, color: NEON }}>|</span>»
@@ -93,7 +93,7 @@ const SceneBody: React.FC<{ s: Scene & any; t: number; dur: number; i: number }>
       <Ring r={430} w={22} z={-500} tilt={70} spin={t * 2} /><Sphere d={150} x={-380} y={-520} z={-300} /><Cube s={110} x={380} y={470} z={-200} rot={t * 2} />
     </div>
   );
-  if (s.kind === "cinePrompt") return <div style={{ transform: `rotateY(${wob * 0.6}deg)`, scale: `${0.9 + 0.1 * pop}` }}><Typed text={s.text_prompt ?? s.title} t={t} dur={dur} /></div>;
+  if (s.kind === "cinePrompt") return <div style={{ transform: `rotateY(${wob * 0.6}deg)`, scale: `${0.9 + 0.1 * pop}` }}><Typed text={s.text_prompt ?? s.title} t={t} dur={dur} chips={s.chips} /></div>;
   if (s.kind === "cineReel") return (
     <div style={{ transformStyle: "preserve-3d", transform: `rotateY(${Math.sin(t / 14) * 18}deg) rotateX(${Math.cos(t / 20) * 8}deg)` }}>
       {[0, 1, 2, 3, 4].map((k) => <Ring key={k} r={240 + k * 130} w={18} z={-k * 320} spin={t * (k % 2 ? -3 : 3)} color={k % 2 ? NEON : C.cyan} />)}
