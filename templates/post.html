@@ -6,7 +6,7 @@
   <nav class="crumbs" aria-label="Навігація"><a href="{{ u('/' ~ p.sec ~ '/') }}">{{ p.sec_name }}</a> <span aria-hidden="true">/</span> <a href="{{ u('/teg/' ~ p.tags[0] ~ '/') }}">{{ tagname(p.tags[0]) }}</a></nav>
   <header class="post-head">
     {% if p.label %}<p class="kind-badge">{{ p.label }}{% if p.number %} #{{ p.number }}{% endif %}</p>{% endif %}
-    <h1>{{ p.title }}</h1>
+    <h1 style="view-transition-name:t-{{ p.slug }}">{{ p.title }}</h1>
     <p class="post-lede">{{ p.description }}</p>
     <p class="post-meta">Редакція ШІкарно, <time datetime="{{ p.iso }}">{{ p.human }}</time>{% if p.upd_iso[:10] != p.iso[:10] %} (оновлено {{ p.upd_human }}){% endif %}. Читати {{ p.minutes }} хв.</p>
     {{ tags(p.tags) }}
@@ -34,8 +34,11 @@
       {{ p.html|safe }}
       {% if p.verdict %}
       <section class="verdict" aria-label="Вердикт Байта">
-        {{ bait("judge", 84) }}
-        <div class="v-score"><span class="v-num">{{ p.verdict.score }}</span><span class="v-of">з 10</span></div>
+        <div class="v-score">
+          <svg class="v-ring" viewBox="0 0 112 112" aria-hidden="true"><circle cx="56" cy="56" r="48" class="v-track"/><circle cx="56" cy="56" r="48" class="v-fill" stroke-dashoffset="{{ (302 * (1 - p.verdict.score / 10))|round(1) }}" transform="rotate(-90 56 56)"/></svg>
+          <span class="v-num">{{ p.verdict.score }}<span class="v-of">/10</span></span>
+        </div>
+        {{ bait("judge", 84, "live") }}
         <div class="v-body"><h2>Вердикт Байта</h2>
           <p><strong>Плюс:</strong> {{ p.verdict.plus }}</p><p><strong>Мінус:</strong> {{ p.verdict.minus }}</p></div>
       </section>
@@ -47,7 +50,7 @@
       </section>
       {% endif %}
       <section class="follow" aria-label="Підписатися на ШІкарно">
-        {{ bait("happy", 64) }}
+        {{ bait("happy", 64, "live") }}
         <div class="follow-text"><p class="follow-h">Щодня — одна ШІ-новина за 45 секунд</p><p>Байт розбирає головне у Shorts, а в Telegram — новина дня, промпти й обговорення.</p></div>
         <div class="follow-btns">
           <a class="btn" href="https://www.youtube.com/@shikarno_ua?sub_confirmation=1" rel="noopener">Підписатися на YouTube</a>

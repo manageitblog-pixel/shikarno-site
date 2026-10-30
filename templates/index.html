@@ -4,15 +4,16 @@
 {% block main %}
 {% set h = posts[0] %}
 <section class="hero">
+  <div class="warp" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
   <div class="hero-text">
-    <p class="hero-kicker">Свіже, <time datetime="{{ h.iso }}">{{ h.human }}</time></p>
-    <h1 class="hero-title"><a href="{{ u(h.path) }}">{{ h.title }}</a></h1>
+    <p class="hero-kicker">Свіже · <time datetime="{{ h.iso }}">{{ h.human }}</time></p>
+    <h1 class="hero-title"><a href="{{ u(h.path) }}" style="view-transition-name:t-{{ h.slug }}">{{ h.title }}</a></h1>
     <p class="hero-lede">{{ h.description }}</p>
     <a class="btn" href="{{ u(h.path) }}">Читати розбір</a>
   </div>
   <figure class="hero-bait" aria-hidden="true">
     <blockquote class="bubble">Що це означає для тебе? Зараз поясню.</blockquote>
-    {{ bait("talk", 220, "hero-bot") }}
+    {{ bait("talk", 220, "hero-bot live") }}
   </figure>
 </section>
 
@@ -24,7 +25,7 @@
 </section>
 
 <section class="tgband">
-  {{ bait("happy", 88) }}
+  {{ bait("happy", 88, "live") }}
   <div>
     <h2>Новина дня, промпт дня і опитування — у Telegram</h2>
     <p>Те, що не влазить у 45 секунд відео, Байт пише текстом.</p>
