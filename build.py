@@ -58,7 +58,7 @@ def posts_all():
         out.append(p)
     return sorted(out, key=lambda p: p["dt"], reverse=True)
 
-ORG = {"@type": "Organization", "name": SITE["name"], "url": SITE["url"],
+ORG = {"@type": "Organization", "name": SITE["name"], "alternateName": ["Шікарно", "Shikarno", "shikarno.com.ua"], "url": SITE["url"],
        "logo": {"@type": "ImageObject", "url": SITE["url"] + "/static/logo.png"},
        "sameAs": [SITE["youtube"], SITE["telegram"], SITE["tiktok"]]}
 
@@ -115,7 +115,7 @@ def build(preview=False):
         views.append((path, env.get_template(tpl).render(path=path, **ctx)))
 
     home_ld = json.dumps({"@context": "https://schema.org", "@graph": [
-        {"@type": "WebSite", "name": SITE["name"], "url": SITE["url"] + "/", "inLanguage": "uk", "description": SITE["description"]},
+        {"@type": "WebSite", "name": SITE["name"], "alternateName": ["Шікарно", "Shikarno", "shikarno.com.ua"], "url": SITE["url"] + "/", "inLanguage": "uk", "description": SITE["description"]},
         ORG]}, ensure_ascii=False)
     emit("/", "index.html", posts=posts, page_title=f"{SITE['name']} — новини штучного інтелекту українською",
          page_desc=SITE["description"], jsonld=home_ld)
