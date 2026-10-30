@@ -54,3 +54,9 @@ document.addEventListener("click",function(e){
     c.style.setProperty("--mx",(e.clientX-r.left)+"px"); c.style.setProperty("--my",(e.clientY-r.top)+"px");
   },{passive:true});
 })();
+
+/* Кільця крутяться лише коли герой на екрані — менше роботи для браузера */
+(function(){
+  var w=document.querySelector(".warp"); if(!w||!("IntersectionObserver" in window)) return;
+  new IntersectionObserver(function(en){ w.classList.toggle("paused",!en[0].isIntersecting); }).observe(w);
+})();
