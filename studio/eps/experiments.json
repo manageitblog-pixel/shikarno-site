@@ -94,7 +94,8 @@
   "tone": "news",
   "title_hashtag": false,
   "len": "short",
-  "v2": "voice: штучний інтелект замість «ші»"
+  "v2": "voice: штучний інтелект замість «ші»",
+  "tg_post": 58
  },
  "ep25_prompts_1": {
   "format": "prompts",
