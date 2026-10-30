@@ -19,7 +19,7 @@ const sp = (f: number, damping = 12) => spring({ frame: f, fps: 30, config: { da
 const INTRO = 26;
 const GREEN = "#19C37D";
 // колір рубрики на кадрі 0 (= заставка в мобільному додатку): free · scam · check · news · try
-const TONE: Record<string, string> = { free: "#19C37D", scam: "#FF2D55", check: "#4CF2FF", news: "#FFD60A", try: "#7C5CFF" };
+const TONE: Record<string, string> = { free: "#19C37D", scam: "#FF2D55", check: "#4CF2FF", news: "#FFD60A", try: "#B39CFF" };
 
 /* ---------- іконки ---------- */
 export const Icon: React.FC<{ name: string; size?: number; color?: string }> = ({ name, size = 64, color = "white" }) => {

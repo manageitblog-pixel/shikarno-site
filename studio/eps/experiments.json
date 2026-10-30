@@ -94,5 +94,12 @@
   "tone": "news",
   "title_hashtag": false,
   "len": "short"
+ },
+ "ep25_prompts_1": {
+  "format": "prompts",
+  "template": "generic",
+  "tone": "try",
+  "title_hashtag": true,
+  "len": "short"
  }
 }
