@@ -12,7 +12,7 @@ document.addEventListener("click",function(e){
   var box=document.querySelector(".tg-comments"); if(!box) return;
   function load(){
     if(box.dataset.loaded) return; box.dataset.loaded="1";
-    var dark=true;
+    var dark=false;
     var s=document.createElement("script");
     s.async=true; s.src="https://telegram.org/js/telegram-widget.js?22";
     s.setAttribute("data-telegram-discussion", box.dataset.post);
