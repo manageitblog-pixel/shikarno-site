@@ -1,7 +1,7 @@
 :root{
-  --bg:#0B0A1C; --bg2:#1A1240; --ink:#F4F1FF; --muted:#B7AEE8; --line:rgba(255,255,255,.12);
+  --bg:#0B0A1C; --bg2:#1A1240; --ink:#F4F1FF; --muted:#D4CDF7; --line:rgba(255,255,255,.12);
   --plate:#FFD60A; --plate-ink:#0B0A1C; --accent:#9D85FF; --pink:#FF4F8B; --cyan:#4CF2FF;
-  --card:rgba(255,255,255,.05); --bubble:#1A1240; --glass:rgba(255,255,255,.08);
+  --card:#1C1642; --bubble:#1A1240; --glass:rgba(255,255,255,.08);
   --grad:linear-gradient(90deg,#7C5CFF,#FF4F8B);
   --ease:cubic-bezier(0.16,1,0.3,1);
   --f-head:"Montserrat",system-ui,"Segoe UI",Arial,sans-serif;
@@ -91,7 +91,7 @@ main{max-width:1120px;margin:0 auto;padding:0 1.25rem 4rem}
 .post-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:3rem;align-items:start;border-top:1px solid var(--line);padding-top:2rem}
 .post-grid>*{min-width:0}
 .post-side{position:sticky;top:calc(1.5rem + env(safe-area-inset-top,0px))}
-.prose{max-width:42rem;font-size:1.125rem;line-height:1.72}
+.prose{max-width:42rem;font-size:1.15rem;line-height:1.75;color:#ECE8FF}
 .prose p{margin:0 0 1.15em}
 .prose h2{font:800 1.5rem/1.25 var(--f-head);margin:2.2rem 0 .8rem}
 .prose a{text-decoration-color:var(--accent);text-underline-offset:3px}
@@ -222,7 +222,7 @@ main{max-width:1120px;margin:0 auto;padding:0 1.25rem 4rem}
   transition:transform .3s var(--ease),border-color .3s var(--ease),background .3s}
 .row::before{content:"";position:absolute;left:1.4rem;top:1.25rem;width:40px;height:6px;border-radius:3px;background:var(--cyan)}
 .row:nth-child(3n+2)::before{background:var(--pink)}.row:nth-child(3n)::before{background:#7C5CFF}
-.row:hover{transform:translateY(-4px);border-color:var(--cyan);background:rgba(255,255,255,.08)}
+.row:hover{transform:translateY(-4px);border-color:var(--cyan);background:#221B4D}
 .row-link{display:flex;flex-direction:column;gap:.45rem;height:100%;padding:2.4rem 1.4rem 1.4rem}
 .row-link:hover{color:var(--ink)}
 .row-link time{order:-2;font-size:.8rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:0}
@@ -258,7 +258,7 @@ main{max-width:1120px;margin:0 auto;padding:0 1.25rem 4rem}
 
 /* ===== хвиля 2: живий фон, стрічка тем, обкладинки, світіння ===== */
 body::before{content:"";position:fixed;z-index:-2;inset:-20vmax;pointer-events:none;
-  background:radial-gradient(28vmax 28vmax at 20% 30%,rgba(124,92,255,.22),transparent 70%),radial-gradient(24vmax 24vmax at 80% 70%,rgba(255,79,139,.16),transparent 70%),radial-gradient(18vmax 18vmax at 60% 15%,rgba(76,242,255,.08),transparent 70%);
+  background:radial-gradient(28vmax 28vmax at 20% 30%,rgba(124,92,255,.12),transparent 70%),radial-gradient(24vmax 24vmax at 80% 70%,rgba(255,79,139,.08),transparent 70%),radial-gradient(18vmax 18vmax at 60% 15%,rgba(76,242,255,.05),transparent 70%);
   animation:aurora 24s ease-in-out infinite alternate}
 @keyframes aurora{to{transform:translate(6vmax,-4vmax) rotate(8deg)}}
 .grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
