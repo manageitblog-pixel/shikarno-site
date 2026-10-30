@@ -102,7 +102,9 @@
   "template": "generic",
   "tone": "try",
   "title_hashtag": true,
-  "len": "short"
+  "len": "short",
+  "tg_post": 59,
+  "tg_prompts_post": 60
  },
  "ep26_tier2": {
   "format": "check",
