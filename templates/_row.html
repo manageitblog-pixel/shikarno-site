@@ -1,5 +1,6 @@
 <li class="row">
   <a class="row-link" href="{{ u(p.path) }}">
+    <span class="row-cover" aria-hidden="true"><span class="rc-blob"></span><span class="rc-word">{{ tagname(p.tags[0]) }}</span>{% if p.youtube %}<span class="rc-play"></span>{% endif %}</span>
     <time datetime="{{ p.iso }}">{{ p.human }}</time>
     {% if p.label %}<span class="row-kind">{{ p.label }}{% if p.number %} #{{ p.number }}{% endif %}</span>{% endif %}<span class="row-title" style="view-transition-name:t-{{ p.slug }}">{{ p.title }}</span>
     <span class="row-desc">{{ p.description }}</span>

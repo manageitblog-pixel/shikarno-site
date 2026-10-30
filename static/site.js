@@ -44,3 +44,13 @@ document.addEventListener("click",function(e){
   }
   addEventListener("pointermove",function(ev){ x=ev.clientX; y=ev.clientY; if(!raf) raf=requestAnimationFrame(look); },{passive:true});
 })();
+
+/* Світіння картки йде за курсором */
+(function(){
+  if(!matchMedia("(pointer:fine)").matches) return;
+  document.addEventListener("pointermove",function(e){
+    var c=e.target.closest&&e.target.closest(".row"); if(!c) return;
+    var r=c.getBoundingClientRect();
+    c.style.setProperty("--mx",(e.clientX-r.left)+"px"); c.style.setProperty("--my",(e.clientY-r.top)+"px");
+  },{passive:true});
+})();

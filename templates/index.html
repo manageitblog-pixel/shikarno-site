@@ -17,8 +17,12 @@
   </figure>
 </section>
 
+<nav class="ticker" aria-label="Теми">
+  <div class="ticker-in">{% for k in range(2) %}<ul{% if k %} aria-hidden="true"{% endif %}>{% for t in ['chatgpt','gemini','claude','agenty','bezpeka','instrumenty','video','openai','google','anthropic','pokupky','avto'] %}<li><a href="{{ u('/teg/' ~ t ~ '/') }}"{% if k %} tabindex="-1"{% endif %}>{{ tagname(t) }}</a></li>{% endfor %}</ul>{% endfor %}</div>
+</nav>
+
 <section class="feed" aria-labelledby="feed-h">
-  <h2 id="feed-h" class="sec-h">Ще новини</h2>
+  <h2 id="feed-h" class="sec-h"><span class="grad">Ще новини</span></h2>
   <ol class="rows">
     {% for p in posts[1:] %}{% include "_row.html" %}{% endfor %}
   </ol>

@@ -2,6 +2,7 @@
 {% from "macros.html" import bait, tags, video %}
 {% block jsonld %}<script type="application/ld+json">{{ jsonld|safe }}</script>{% endblock %}
 {% block main %}
+<div class="readbar" aria-hidden="true"></div>
 <article class="post">
   <nav class="crumbs" aria-label="Навігація"><a href="{{ u('/' ~ p.sec ~ '/') }}">{{ p.sec_name }}</a> <span aria-hidden="true">/</span> <a href="{{ u('/teg/' ~ p.tags[0] ~ '/') }}">{{ tagname(p.tags[0]) }}</a></nav>
   <header class="post-head">
