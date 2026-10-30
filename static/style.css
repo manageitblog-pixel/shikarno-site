@@ -363,3 +363,4 @@ body::before{content:"";position:fixed;z-index:-2;inset:-20vmax;pointer-events:n
   .rows{grid-template-columns:1fr}
   .verdict{grid-template-columns:auto 1fr}
 }
+@media (max-width:440px){.nav-about{display:none}.nav{gap:.95rem}}
