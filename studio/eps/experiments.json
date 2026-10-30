@@ -87,5 +87,12 @@
   "template": "generic_old",
   "title_hashtag": false,
   "tg_post": 57
+ },
+ "ep24_iphone_duo": {
+  "format": "trend",
+  "template": "generic",
+  "tone": "news",
+  "title_hashtag": false,
+  "len": "short"
  }
 }
