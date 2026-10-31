@@ -330,7 +330,7 @@ const Tier: React.FC<{ s: Scene; dur: number; first?: boolean; offset: number }>
               return (
                 <div key={j} style={{ position: "relative", overflow: "hidden", height: 120, borderRadius: 22, display: "flex", alignItems: "center", justifyContent: "center", textAlign: "center", padding: "0 8px",
                   background: active ? `${TIER[j][1]}33` : "rgba(255,255,255,0.08)", border: `4px solid ${active ? TIER[j][1] : "rgba(255,255,255,0.18)"}`,
-                  fontFamily: FONT, fontWeight: 900, fontSize: cell.length > 9 ? 34 : 42, color: "white", scale: `${k * (best ? 1 + 0.04 * Math.sin(f / 4) : 1)}`, opacity: Math.min(1, k),
+                  fontFamily: FONT, fontWeight: 900, fontSize: Math.min(42, Math.floor(205 / (0.68 * Math.max(...cell.split(" ").map((w) => w.length))))), color: "white", scale: `${k * (best ? 1 + 0.04 * Math.sin(f / 4) : 1)}`, opacity: Math.min(1, k),
                   rotate: `${(1 - Math.min(1, k)) * (j - 1) * 14}deg`, boxShadow: best ? `0 0 ${30 + 16 * Math.sin(f / 4)}px ${GREEN}` : "none" }}>
                   {best && <div style={{ position: "absolute", top: 0, bottom: 0, left: `${sweep}%`, width: "35%", background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.35), transparent)", rotate: "15deg" }} />}
                   <span style={{ position: "relative" }}>{cell}</span>
