@@ -5,6 +5,7 @@ date: 2026-10-31T19:00:00+02:00
 description: "Шахраї підробляють голос рідних за допомогою ШІ. Тір-лист безпеки Байта: що робити, коли «син» просить гроші, «банк» питає код, «друг» позичає в чаті."
 tags: [bezpeka]
 youtube: raAU0wNcxYs
+telegram_post: 62
 source: {name: "FTC: Scammers use AI to enhance their family emergency schemes", url: "https://consumer.ftc.gov/consumer-alerts/2023/03/scammers-use-ai-enhance-their-family-emergency-schemes"}
 sources:
   - {name: "НБУ: Обережно! IVR-шахрайство з платіжними картками", url: "https://old.bank.gov.ua/control/uk/publish/article?art_id=32262824"}

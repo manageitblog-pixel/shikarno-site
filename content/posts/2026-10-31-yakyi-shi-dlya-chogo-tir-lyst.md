@@ -5,6 +5,7 @@ date: 2026-10-31T21:00:00+02:00
 description: "Який ШІ обрати для резюме, перекладу, таблиць, рецептів, бюджету, фото й відео? Тір-лист Байта: що погано, що добре і що найкраще — і що з цього безкоштовно."
 tags: [instrumenty, chatgpt, gemini, claude]
 youtube: uuzSF8xOWCU
+telegram_post: 63
 source: {name: "Google: NotebookLM тепер Gemini Notebook", url: "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/"}
 sources:
   - {name: "Claude: тарифи", url: "https://claude.com/pricing"}
