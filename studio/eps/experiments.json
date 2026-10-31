@@ -121,5 +121,26 @@
   "len": "short",
   "trend": "halloween",
   "tg_post": 61
+ },
+ "ep28_tier_work": {
+  "format": "check",
+  "template": "tier",
+  "tone": "check",
+  "title_hashtag": true,
+  "len": "short"
+ },
+ "ep29_scam_tier": {
+  "format": "myth",
+  "template": "tier",
+  "tone": "check",
+  "title_hashtag": false,
+  "len": "short"
+ },
+ "ep30_tier_home": {
+  "format": "free_ua",
+  "template": "tier",
+  "tone": "check",
+  "title_hashtag": true,
+  "len": "short"
  }
 }
