@@ -5,6 +5,7 @@ date: 2026-11-01T19:00:00+02:00
 description: "Який ШІ для навчання обрати студенту: Gemini Notebook робить подкаст і картки з лекцій, ChatGPT має безкоштовний режим навчання, Gemini Deep Research — звіт з джерелами."
 tags: [gemini, chatgpt, instrumenty]
 youtube: 8PkvPh5Ij9o
+telegram_post: 67
 source: {name: "Gemini Notebook Help: Flashcards і Quizzes", url: "https://support.google.com/notebooklm/answer/16958963"}
 sources:
   - {name: "OpenAI: ChatGPT Study mode FAQ", url: "https://help.openai.com/en/articles/11780217-chatgpt-study-mode-faq"}
