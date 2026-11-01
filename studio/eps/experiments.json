@@ -186,5 +186,16 @@
   "len": "short",
   "trend": "mono_ai_cashback",
   "tts": "lite"
+ },
+ "_swipe_2026-11-01": {
+  "channel_viewed_pct": 40.1,
+  "top": {
+   "ChatGPT, Gemini чи Claude (RRbc__OEMJs)": 54.6,
+   "Для роботи (uuzSF8xOWCU)": 46.1,
+   "Для фото й відео (2O3QC70WmjA)": 45.8,
+   "Для дому (OqXm5MZJHmo)": 44.1,
+   "ChatGPT у Chrome": 40.8
+  },
+  "source": "скрін власника, Studio 28 дн, 1.11"
  }
 }
