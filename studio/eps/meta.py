@@ -168,3 +168,9 @@ META19 = {
    description="Тір-лист Байта для SMM-фахівців і маркетологів. Контент-план — ChatGPT з окремим «Проєктом» під кожного клієнта. Голос бренду — Gemini «Skills»: збережені інструкції, які Gemini застосовує сам (без підписки, 18+; Gems автоматично стають скілами). Картинки — Gemini Nano Banana. Шаблони постів — власні Skills у Claude. Перевірено на сторінках Google, OpenAI і Anthropic станом на 1.11.2026."+FOOT+"\n\n#shorts #SMM #маркетинг",
    tags=["ШІ для SMM","ШІ для маркетолога","Gemini Skills","ChatGPT Projects","Nano Banana","Claude Skills","контент-план ШІ","AI for SMM","AI marketing tools","ШІ","штучний інтелект","ШІкарно"]),
 }
+
+META20 = {
+ "ep35_mono_ai_cashback": dict(title="10% кешбеку на ChatGPT і Claude у mono 💸 Як увімкнути #ШІ #monobank",
+   description="Кешбек monobank на ChatGPT, Claude та інші ШІ-сервіси: з 1 листопада в mono з'явилася нова категорія кешбеку «Штучний інтелект» — 10%. За словами співзасновника monobank Олега Гороховського, до неї входять ChatGPT, Claude, Cursor, Midjourney, Grok, ElevenLabs і Higgsfield AI. Категорію треба обрати в застосунку на початку місяця. Ліміти й умови — дивись у застосунку mono.\n\nДжерело: канал «ОГо!» (t.me/OGoMono), 31.10.2026."+FOOT+"\n\n#ШІ #monobank #кешбек #ChatGPT #штучнийінтелект",
+   tags=["кешбек монобанк ШІ","monobank кешбек ChatGPT","mono кешбек штучний інтелект","кешбек на ChatGPT","ChatGPT підписка дешевше","Claude підписка","monobank","ШІ","штучний інтелект","ШІкарно"]),
+}
