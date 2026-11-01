@@ -4,6 +4,7 @@
 # Нові типи сцен для шаблону Digest (зробити 29–30.10): section, timeline, numbers, calendar. Решта — як у digest1 (intro, agenda, points, verdict, quick, outro).
 import re
 SLUG="month_oct"
+NUM=1
 KICKER="ШІ ЗА МІСЯЦЬ"
 DATES="жовтень 2026"
 BIG="ШІ за жовтень"

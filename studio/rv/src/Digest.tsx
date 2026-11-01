@@ -5,7 +5,7 @@ import { Cursor, fontCss } from "./parts";
 import { Icon } from "./Generic";
 
 export type DSeg = { kind: string; from: number; to: number; n?: number; icon?: string; title?: string; source?: string;
-  points?: string[]; items?: any[]; score?: number; plus?: string; minus?: string; label?: string; at?: number[] };
+  points?: string[]; items?: any[]; score?: number; plus?: string; minus?: string; label?: string; at?: number[]; sub?: string };
 export type DData = { total: number; num: number; dates: string; segs: DSeg[]; words: { w: string; s: number; e: number; g: string }[]; mouth: number[]; titles: string[]; kicker?: string; sub?: string; big?: string; agendaTitle?: string; red?: boolean };
 const Ctx = createContext<DData>({ total: 300, num: 1, dates: "", segs: [], words: [], mouth: [], titles: [] });
 const useD = () => useContext(Ctx);
@@ -208,6 +208,46 @@ const Quick: React.FC<{ s: DSeg; dur: number; off: number }> = ({ s, dur, off })
   );
 };
 
+/* розділ (1.11): велика картка «Розділ N» між блоками довгих випусків */
+const Section: React.FC<{ s: DSeg }> = ({ s }) => {
+  const f = useCurrentFrame(); const k = sp(f, 10); const k2 = sp(f - 8, 12);
+  return (
+    <AbsoluteFill style={{ alignItems: "center", justifyContent: "center" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 60, scale: `${0.9 + 0.1 * k}`, opacity: k }}>
+        <div style={{ width: 260, height: 260, borderRadius: 64, background: `linear-gradient(135deg, ${C.purple}, ${C.pink})`, display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "0 0 90px rgba(124,92,255,0.6)", rotate: `${(1 - k) * -25}deg` }}><Icon name={s.icon ?? "bolt"} size={160} /></div>
+        <div style={{ display: "flex", flexDirection: "column", gap: 18 }}>
+          <div style={{ alignSelf: "flex-start", background: C.yellow, color: C.ink, fontFamily: FONT, fontWeight: 900, fontSize: 44, padding: "8px 30px", borderRadius: 14, letterSpacing: 4 }}>РОЗДІЛ {s.n}</div>
+          <div style={{ fontFamily: FONT, fontWeight: 900, fontSize: 104, color: "white", lineHeight: 1, opacity: k2, translate: `${(1 - k2) * 80}px 0` }}>{s.title}</div>
+          {s.sub && <div style={{ fontFamily: FONT, fontWeight: 700, fontSize: 46, color: C.cyan, opacity: k2 }}>{s.sub}</div>}
+        </div>
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+/* цифри / календар / хронологія: items [["значення","підпис"], ...] — по черзі, синхронно з реченнями (at) */
+const Facts: React.FC<{ s: DSeg; dur: number; off: number }> = ({ s, dur, off }) => {
+  const f = useCurrentFrame(); const items = (s.items ?? []) as [string, string][];
+  const step = (dur - 20) / Math.max(1, items.length);
+  const head = s.kind === "numbers" ? "ЦИФРИ" : s.kind === "calendar" ? "КАЛЕНДАР" : "ХРОНОЛОГІЯ";
+  const big = items.length > 5;
+  return (
+    <AbsoluteFill>
+      <div style={{ position: "absolute", left: 140, top: 150, background: C.yellow, color: C.ink, fontFamily: FONT, fontWeight: 900, fontSize: 52, padding: "10px 34px", borderRadius: 16, letterSpacing: 4, scale: `${sp(f, 9)}` }}>{head}</div>
+      <div style={{ position: "absolute", left: 140, top: 270, right: 420, display: "flex", flexDirection: "column", gap: big ? 16 : 24 }}>
+        {items.map(([v, tx], i) => { const a = s.at ? s.at[i] : 6 + i * step; const nx = s.at ? (i + 1 < s.at.length ? s.at[i + 1] : dur) : a + step; const k = sp(f - a, 11); const active = f >= a && f < nx;
+          return (
+            <div key={i} style={{ display: "flex", alignItems: "center", gap: 30, padding: big ? "12px 26px" : "18px 30px", borderRadius: 26, background: active ? "rgba(255,214,10,0.14)" : "rgba(255,255,255,0.07)", border: `3px solid ${active ? C.yellow : "rgba(255,255,255,0.15)"}`, opacity: k, translate: `0 ${(1 - k) * 60}px` }}>
+              <div style={{ minWidth: 300, fontFamily: FONT, fontWeight: 900, fontSize: big ? 46 : 56, color: active ? C.yellow : C.cyan }}>{v}</div>
+              <span style={{ fontFamily: FONT, fontWeight: 800, fontSize: big ? 34 : 40, color: "white" }}>{tx}</span>
+            </div>
+          ); })}
+      </div>
+      <Host size={280} x={1540} y={440} offset={off} />
+    </AbsoluteFill>
+  );
+};
+
 const Outro: React.FC<{ off: number }> = ({ off }) => {
   const f = useCurrentFrame();
   const tap = 150; const sub = f >= tap; const pressed = f >= tap && f < tap + 5;
@@ -247,6 +287,8 @@ export const DigestVideo: React.FC<DData> = (props) => {
           if (s.kind === "points") return out(<Points s={s} dur={dur} off={start} />);
           if (s.kind === "verdict") return out(<Verdict s={s} off={start} />);
           if (s.kind === "quick") return out(<Quick s={s} dur={dur} off={start} />);
+          if (s.kind === "section") return out(<Section s={s} />);
+          if (s.kind === "numbers" || s.kind === "calendar" || s.kind === "timeline") return out(<Facts s={s} dur={dur} off={start} />);
           return out(<Outro off={start} />);
         })}
         <Header />
