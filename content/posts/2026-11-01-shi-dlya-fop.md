@@ -5,6 +5,7 @@ date: 2026-11-01T21:00:00+02:00
 description: "ШІ для ФОП і бухгалтера: Дія.AI замовляє довідку про доходи в чаті, ChatGPT робить таблицю з фото чеків і працює в Excel, Claude тримає шаблони рахунків."
 tags: [chatgpt, claude, gemini, instrumenty]
 youtube: Iv5uSMwqAOA
+telegram_post: 69
 source: {name: "Дія.AI — ШІ-асистент на порталі Дія", url: "https://diia.gov.ua/diia-ai"}
 sources:
   - {name: "OpenAI: ChatGPT for Excel and Google Sheets", url: "https://help.openai.com/en/articles/20001063-chatgpt-for-excel-and-google-sheets"}
