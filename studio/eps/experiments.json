@@ -143,5 +143,29 @@
   "title_hashtag": true,
   "len": "short",
   "owner_edit": "31.10 21:00Z: власник додав #AI у теги і «aishorts» у назву"
+ },
+ "ep31_prof_teacher": {
+  "format": "check",
+  "template": "tier",
+  "tone": "check",
+  "title_hashtag": false,
+  "len": "short",
+  "series": "professions"
+ },
+ "ep32_prof_student": {
+  "format": "check",
+  "template": "tier",
+  "tone": "check",
+  "title_hashtag": false,
+  "len": "short",
+  "series": "professions"
+ },
+ "ep33_prof_fop": {
+  "format": "check",
+  "template": "tier",
+  "tone": "check",
+  "title_hashtag": false,
+  "len": "short",
+  "series": "professions"
  }
 }
