@@ -5,6 +5,7 @@ date: 2026-11-01T14:00:00+02:00
 description: "ШІ для вчителя без води: які кнопки Gemini у Google Classroom роблять план уроку, тест, критерії оцінювання й презентацію, і як Gemini Notebook пояснює тему українською."
 tags: [gemini, google, instrumenty]
 youtube: WKvVIB9cugQ
+telegram_post: 66
 source: {name: "Google Classroom Help: Gemini in Classroom", url: "https://support.google.com/edu/classroom/answer/15410566"}
 sources:
   - {name: "Google: NotebookLM тепер Gemini Notebook", url: "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/"}
