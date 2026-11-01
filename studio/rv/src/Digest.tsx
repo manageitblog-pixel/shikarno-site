@@ -238,7 +238,9 @@ const Facts: React.FC<{ s: DSeg; dur: number; off: number }> = ({ s, dur, off })
         {items.map(([v, tx], i) => { const a = s.at ? s.at[i] : 6 + i * step; const nx = s.at ? (i + 1 < s.at.length ? s.at[i + 1] : dur) : a + step; const k = sp(f - a, 11); const active = f >= a && f < nx;
           return (
             <div key={i} style={{ display: "flex", alignItems: "center", gap: 30, padding: big ? "12px 26px" : "18px 30px", borderRadius: 26, background: active ? "rgba(255,214,10,0.14)" : "rgba(255,255,255,0.07)", border: `3px solid ${active ? C.yellow : "rgba(255,255,255,0.15)"}`, opacity: k, translate: `0 ${(1 - k) * 60}px` }}>
-              <div style={{ minWidth: 300, fontFamily: FONT, fontWeight: 900, fontSize: big ? 46 : 56, color: active ? C.yellow : C.cyan }}>{v}</div>
+              {s.kind === "timeline"
+                ? <div style={{ width: 84, height: 84, borderRadius: 22, background: `linear-gradient(135deg, ${C.purple}, ${C.pink})`, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}><Icon name={v} size={52} /></div>
+                : <div style={{ minWidth: 300, fontFamily: FONT, fontWeight: 900, fontSize: big ? 46 : 56, color: active ? C.yellow : C.cyan }}>{v}</div>}
               <span style={{ fontFamily: FONT, fontWeight: 800, fontSize: big ? 34 : 40, color: "white" }}>{tx}</span>
             </div>
           ); })}
