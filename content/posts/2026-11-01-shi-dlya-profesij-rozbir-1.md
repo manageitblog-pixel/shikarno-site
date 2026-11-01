@@ -7,6 +7,7 @@ date: 2026-11-01T20:30:00+02:00
 description: "Повний розбір ШІ для чотирьох професій: Gemini у Classroom для вчителя, Gemini Notebook і Study mode для студента, Дія.AI і ChatGPT для ФОП, Skills і Projects для SMM. Кроки і промпти."
 tags: [instrumenty, gemini, chatgpt, claude]
 youtube: 6-2a9ncHaz4
+telegram_post: 68
 duration: "5:45"
 chapters: [{t: "0:00", title: "Вступ"}, {t: "0:31", title: "Вчитель: Gemini у Classroom", link: "/novyny/shi-dlya-vchytelya/"}, {t: "1:10", title: "Вчитель: готові промпти"}, {t: "1:49", title: "Студент: Notebook, Study mode, Deep Research", link: "/novyny/shi-dlya-studenta/"}, {t: "2:25", title: "Студент: готові промпти"}, {t: "2:59", title: "ФОП: Дія.AI, ChatGPT, Claude", link: "/novyny/shi-dlya-fop/"}, {t: "3:35", title: "ФОП: готові промпти"}, {t: "4:09", title: "SMM: Projects, Skills, Nano Banana", link: "/novyny/shi-dlya-smm/"}, {t: "4:44", title: "SMM: готові промпти"}, {t: "5:15", title: "Чого не вантажити в ШІ"}, {t: "5:28", title: "Фінал"}]
 source: {name: "Google Classroom Help: Gemini in Classroom", url: "https://support.google.com/edu/classroom/answer/15410566"}
