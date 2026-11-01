@@ -142,13 +142,14 @@
   "tone": "check",
   "title_hashtag": true,
   "len": "short",
-  "owner_edit": "31.10 21:00Z: власник додав #AI у теги і «aishorts» у назву"
+  "owner_edit": "31.10 21:00Z: власник додав #AI у теги і «aishorts» у назву",
+  "result_1_11": "853 перегляди за ~14 год (vs ep28 «для роботи» 375 за 21 год)"
  },
  "ep31_prof_teacher": {
   "format": "check",
   "template": "tier",
   "tone": "check",
-  "title_hashtag": false,
+  "title_hashtag": "#aishorts",
   "len": "short",
   "series": "professions"
  },
@@ -164,7 +165,7 @@
   "format": "check",
   "template": "tier",
   "tone": "check",
-  "title_hashtag": false,
+  "title_hashtag": "#aishorts",
   "len": "short",
   "series": "professions"
  }
