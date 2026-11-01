@@ -10,7 +10,7 @@ for ((a=0; a<TOTAL; a+=CH)); do
   b=$((a+CH-1)); [ $b -ge $TOTAL ] && b=$((TOTAL-1))
   f=$D/chunks/c_$(printf %06d $a).mp4
   [ -s $f.ok ] && continue
-  npx remotion render src/index.ts $COMP $f --props=$D/props.json --frames=$a-$b $BX --concurrency=2 --muted --log=error
+  npx remotion render src/index.ts $COMP $f --props=$D/props.json --frames=$a-$b $BX --concurrency=${CONC:-2} --muted --log=error
   echo $a-$b > $f.ok; echo "chunk $a-$b done $(date -u +%H:%M)"
 done
 ls $D/chunks/c_*.mp4 | sort | sed "s/^/file '/;s/$/'/" > $D/chunks/list.txt
