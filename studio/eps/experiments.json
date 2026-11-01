@@ -168,5 +168,14 @@
   "title_hashtag": "#aishorts",
   "len": "short",
   "series": "professions"
+ },
+ "ep34_prof_smm": {
+  "format": "check",
+  "template": "tier",
+  "tone": "check",
+  "title_hashtag": "#aishorts",
+  "len": "short",
+  "series": "professions",
+  "outro": "adult_question"
  }
 }
