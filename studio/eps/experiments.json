@@ -177,5 +177,14 @@
   "len": "short",
   "series": "professions",
   "outro": "adult_question"
+ },
+ "ep35_mono_ai_cashback": {
+  "format": "news",
+  "template": "generic",
+  "tone": "check",
+  "title_hashtag": "#ШІ #monobank",
+  "len": "short",
+  "trend": "mono_ai_cashback",
+  "tts": "lite"
  }
 }
