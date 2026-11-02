@@ -111,7 +111,11 @@
   "template": "tier",
   "tone": "check",
   "title_hashtag": false,
-  "len": "short"
+  "len": "short",
+  "tiktok_views": {
+   "2026-11-02 22:00": 11000
+  },
+  "tiktok_note_2026-11-02": "539 лайків, 18 коментарів, +28 підписників; суперечки в коментарях (Gemini для фото, ElevenLabs, ціна Claude)"
  },
  "ep27_halloween": {
   "format": "prompts",
