@@ -5,6 +5,7 @@ date: 2026-11-02T19:00:00+02:00
 description: "Безкоштовні ШІ замість платних сервісів: Gemini Nano Banana замість фотостоків, ChatGPT Study mode для пояснення тем, Gemini Deep Research і Gemini Notebook — з лімітами, але без оплати."
 tags: [instrumenty, gemini, chatgpt, google]
 youtube: 8Paum6UQ6Zo
+telegram_post: 73
 source: {name: "OpenAI: ChatGPT Study mode FAQ", url: "https://help.openai.com/en/articles/11780217-chatgpt-study-mode-faq"}
 sources:
   - {name: "Gemini Help: генерація зображень", url: "https://support.google.com/gemini/answer/14286560"}
