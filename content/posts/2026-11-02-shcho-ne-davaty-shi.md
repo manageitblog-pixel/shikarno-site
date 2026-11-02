@@ -5,6 +5,7 @@ date: 2026-11-02T21:00:00+02:00
 description: "Що не можна вставляти в ChatGPT і Gemini: паролі, фото паспорта, аналізи з іменем. Як увімкнути тимчасовий чат і вимкнути навчання на твоїх розмовах — коротко і по кроках."
 tags: [bezpeka, chatgpt, gemini, openai]
 youtube: SfMbPLIU1Ag
+telegram_post: 74
 source: {name: "OpenAI: Temporary Chat FAQ", url: "https://help.openai.com/en/articles/8914046-temporary-chat-faq"}
 sources:
   - {name: "OpenAI: Data controls in ChatGPT", url: "https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt"}
