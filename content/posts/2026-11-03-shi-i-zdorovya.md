@@ -5,6 +5,7 @@ date: 2026-11-03T10:00:00+02:00
 description: "Де ШІ корисний для здоров'я, а де — ні: пояснити терміни в аналізах і скласти питання до лікаря — так; ставити діагноз і радити ліки — ні. Плюс як не злити свої медичні дані."
 tags: [bezpeka, chatgpt, instrumenty]
 youtube: BWZdlfxz0Ys
+telegram_post: 75
 source: {name: "OpenAI: Temporary Chat FAQ", url: "https://help.openai.com/en/articles/8914046-temporary-chat-faq"}
 sources:
   - {name: "Gemini Apps Privacy Hub", url: "https://support.google.com/gemini/answer/13594961?hl=en"}
