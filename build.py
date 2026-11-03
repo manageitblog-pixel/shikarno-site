@@ -192,6 +192,8 @@ def build(preview=False):
     L += ["## Про проєкт", f"- [Про ШІкарно і редакційна політика]({SITE['url']}/pro-nas/)", f"- [Співпраця]({SITE['url']}/spivpratsia/)",
           f"- [YouTube]({SITE['youtube']})", f"- [Telegram]({SITE['telegram']})", ""]
     (DIST/"llms.txt").write_text("\n".join(L), encoding="utf-8")
+    for f in (ROOT/"static/root").rglob("*"):  # файли, що мають лежати в корені сайту (TikTok callback, файли верифікації)
+        if f.is_file(): t = DIST/f.relative_to(ROOT/"static/root"); t.parent.mkdir(parents=True, exist_ok=True); shutil.copy(f, t)
     if SITE.get("domain"): (DIST/"CNAME").write_text(SITE["domain"] + "\n")
     print(f"dist/: {len(views)} сторінок, {len(posts)} постів, {len(tags)} тегів")
 

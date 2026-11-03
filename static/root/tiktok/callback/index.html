@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="uk"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>ШІкарно × TikTok</title>
+<style>body{margin:0;min-height:100vh;display:grid;place-items:center;background:#0B0A1C;color:#fff;font:16px/1.5 system-ui,sans-serif;padding:16px}
+main{max-width:520px}code{display:block;word-break:break-all;background:#1A1240;padding:12px;border-radius:8px;color:#FFD60A;margin:12px 0}</style></head>
+<body><main><h1>ШІкарно × TikTok</h1><div id="o">Немає коду авторизації.</div></main>
+<script>
+var q=new URLSearchParams(location.search),c=q.get("code"),e=q.get("error"),o=document.getElementById("o");
+if(c){o.innerHTML="Авторизацію отримано. Скопіюй код і надішли в бот ШІкарно (діє кілька хвилин):";var k=document.createElement("code");k.textContent=c;o.appendChild(k);}
+else if(e){o.textContent="Помилка: "+e+" "+(q.get("error_description")||"");}
+</script></body></html>
