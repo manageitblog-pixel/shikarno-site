@@ -4,6 +4,7 @@ slug: shi-dlya-likarya
 date: 2026-11-03T21:00:00+02:00
 description: "ШІ для лікаря — тільки папери, не діагноз: виписка в Claude Projects, пояснення пацієнту через Gemini Skills, переклад документів у Google Translate, протоколи в Gemini Notebook."
 tags: [instrumenty, claude, gemini, google]
+youtube: 8VvSIKBtEWE
 source: {name: "Claude: що таке Projects", url: "https://support.claude.com/en/articles/9517075-what-are-projects"}
 sources:
   - {name: "Gemini Help: Skills", url: "https://support.google.com/gemini/answer/17094296"}
