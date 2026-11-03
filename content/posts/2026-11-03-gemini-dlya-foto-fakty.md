@@ -5,6 +5,7 @@ date: 2026-11-03T14:00:00+02:00
 description: "Чому Gemini іноді малює «мило»: безкоштовна Nano Banana 2 дає завантаження лише в 1K, Pro і 2K — з підпискою. Що з лімітами ChatGPT Images 2.5. Факти з довідок."
 tags: [gemini, google, chatgpt]
 youtube: SaMMfRU8Nsg
+telegram_post: 76
 source: {name: "Gemini Apps Help: створення й редагування зображень", url: "https://support.google.com/gemini/answer/14286560?hl=en"}
 sources:
   - {name: "OpenAI: ChatGPT release notes", url: "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"}
