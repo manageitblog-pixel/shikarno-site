@@ -3,7 +3,7 @@
 # blog.google Gemini Omni (3.11) — Omni Flash у Gemini app лише для Google AI Plus/Pro/Ultra; редагування відео звичайними словами; цифровий аватар зі своїм голосом.
 # ChatGPT Images 2.5 з 8.09.2026, Free — «обмежено» (з пошуку по домену OpenAI, 2.11). Рейтинг «погано/добре» — суб'єктивний.
 SLUG="ep44_tier_foto_video2"
-ROWS=[["Нове фото","Стоки","Canva","Nano Banana"],["Редагувати","Фотошоп","ChatGPT","Nano Banana"],["Для друку","Апскейл","1K","Banana Pro"],
+ROWS=[["Нове фото","Стоки","Canva","Nano Banana"],["Правки","Фотошоп","ChatGPT","Nano Banana"],["Для друку","Апскейл","1K","Banana Pro"],
       ["Відео","Стоки","CapCut","Gemini Omni"],["Монтаж","Вручну","CapCut","Omni словами"]]
 SCENES = [
  dict(kind="tier", label="", title="", hook="ШІ для *фото й відео* 2.0", items=ROWS,
