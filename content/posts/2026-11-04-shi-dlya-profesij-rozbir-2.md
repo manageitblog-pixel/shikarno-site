@@ -7,6 +7,7 @@ date: 2026-11-04T19:00:00+02:00
 description: "Повний розбір ШІ для водія, лікаря і юриста: Google Translate і AI Mode в дорозі, Claude і Gemini для медичних паперів, практика без вигаданих постанов. Кроки і промпти."
 tags: [instrumenty, gemini, chatgpt, claude]
 youtube: KjjLuzq_i7U
+telegram_post: 80
 duration: "5:31"
 chapters: [{t: "0:00", title: "Вступ"}, {t: "0:32", title: "Водій: Translate, AI Mode, ChatGPT, Gemini", link: "/novyny/shi-dlya-vodiya-kuryera/"}, {t: "1:10", title: "Водій: готові промпти"}, {t: "1:46", title: "Лікар: лише папери і пояснення", link: "/novyny/shi-dlya-likarya/"}, {t: "2:55", title: "Лікар: готові промпти"}, {t: "3:29", title: "Юрист: що каже суд і що працює", link: "/novyny/shi-dlya-yurysta/"}, {t: "4:16", title: "Юрист: готові промпти"}, {t: "4:52", title: "Три правила для всіх"}, {t: "5:14", title: "Фінал"}]
 source: {name: "Верховний Суд: ухвала у справі № 240/14153/24", url: "https://supreme.court.gov.ua/supreme/pres-centr/news/1954015/"}
