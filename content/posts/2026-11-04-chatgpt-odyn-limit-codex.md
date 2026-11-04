@@ -4,6 +4,8 @@ slug: chatgpt-odyn-limit-codex
 date: 2026-11-04T14:00:00+02:00
 description: "OpenAI об'єднує вкладки Chat і Work, а з грудня ліміт ChatGPT і Codex на Plus, Pro і Business стане спільним. Instant не рахується. Що це значить і як стежити за лімітом."
 tags: [chatgpt, openai]
+youtube: 5-mxCxEFjUw
+telegram_post: 79
 source: {name: "Trending Topics: ChatGPT merges Chat and Work (лист OpenAI підписникам)", url: "https://www.trendingtopics.eu/chatgpt-merges-chat-and-work-following-claudes-playbook/"}
 sources:
   - {name: "FourWeekMBA: ChatGPT and Codex will share one usage allowance in December", url: "https://fourweekmba.com/ai-chatgpt-and-codex-will-share-one-usage-allowance-in-december/"}

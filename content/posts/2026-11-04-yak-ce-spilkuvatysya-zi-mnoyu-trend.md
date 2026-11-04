@@ -4,6 +4,7 @@ slug: yak-ce-spilkuvatysya-zi-mnoyu-trend
 date: 2026-11-04T21:00:00+02:00
 description: "Тренд з TikTok: питаєш ШІ, як це — спілкуватися з тобою. Байт зіграв з Gemini — ось чесна відповідь, промпт для копіювання і чому без історії чату ШІ судить лише з одного повідомлення."
 tags: [gemini, google, chatgpt]
+youtube: maIz2Jq1FhA
 source: {name: "TikTok: тренд «what it's like chatting with me»", url: "https://www.tiktok.com/en/trending/detail/chatgpt-what-its-like-chatting-with-me-trend"}
 summary:
   - "Тренд з TikTok: просиш ШІ одним реченням описати, як це — спілкуватися з тобою."

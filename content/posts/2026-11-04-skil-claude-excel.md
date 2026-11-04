@@ -4,6 +4,7 @@ slug: skil-claude-excel
 date: 2026-11-04T19:00:00+02:00
 description: "Як увімкнути скіл Excel у Claude і за хвилину зробити з нотаток справжній файл .xlsx з категоріями, формулами й графіком. Працює на безкоштовному тарифі. Три кроки й промпт."
 tags: [claude, anthropic, instrumenty]
+youtube: 141OUHyI-lQ
 source: {name: "Claude Help Center: Using Skills in Claude", url: "https://support.claude.com/en/articles/12512180-using-skills-in-claude"}
 summary:
   - "Скіли в Claude є на Free, Pro, Max та інших тарифах — за довідкою Claude."
