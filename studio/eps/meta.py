@@ -216,3 +216,9 @@ META23.update({
    description="Який ШІ для фото й відео у 2026 — тір-лист Байта, тема зайшла, тож даємо більше. Нове фото: найкраще Nano Banana в Gemini, безкоштовно. Правки: Nano Banana, пишеш словами, що змінити (редагування з 18 років). Для друку безкоштовних 1K замало — Nano Banana Pro у 2K, з підпискою Google AI. Відео й монтаж словами — Gemini Omni, лише з підпискою Google AI Plus, Pro або Ultra. Рейтинг «погано/добре» — суб'єктивний. Перевірено на сторінках Google 2–3.11.2026.\n\n#ШІ #штучнийінтелект #NanoBanana #Gemini #тірліст"+FOOT,
    tags=["який ШІ для фото","ШІ для відео","Nano Banana","Nano Banana Pro","Gemini Omni","монтаж ШІ","CapCut","тір-лист ШІ","AI photo video tools","ШІ","штучний інтелект","ШІкарно"]),
 })
+
+META23.update({
+ "ep45_chatgpt_odyn_limit": dict(title="ChatGPT: один ліміт на чат і Codex з грудня ⚠️ що це значить для Plus #ШІ",
+   description="ChatGPT змінює ліміти. За листом OpenAI підписникам: вкладки Chat і Work об'єднають в одну (спершу тестує невелика група), а з грудня на Plus, Pro і Business ліміт буде спільний для ChatGPT і Codex. Режим Instant у ліміт не входить. Залишок і час скидання — в налаштуваннях, розділ використання. Вердикт Байта: 5/10 — зручніше, але Codex з'їдає ліміт чату. Джерело: Trending Topics, 2.11.2026 (лист OpenAI).\n\n#ШІ #штучнийінтелект #ChatGPT #OpenAI #Codex"+FOOT,
+   tags=["ChatGPT ліміт","ліміт ChatGPT Plus","ChatGPT Codex","ChatGPT Work","OpenAI новини","ChatGPT Plus","новини ШІ","ChatGPT українською","ШІ","штучний інтелект","ШІкарно"]),
+})
