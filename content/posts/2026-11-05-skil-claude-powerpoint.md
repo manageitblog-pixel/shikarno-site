@@ -5,6 +5,7 @@ date: 2026-11-05T19:00:00+02:00
 description: "Як увімкнути скіл PowerPoint у Claude і за хвилину зробити з нотаток наради справжній файл .pptx із заголовками й пунктами. Працює на безкоштовному тарифі. Три кроки й промпт."
 tags: [claude, anthropic, instrumenty]
 youtube: CElgVrS_GIA
+telegram_post: 85
 source: {name: "Claude Help Center: Using Skills in Claude", url: "https://support.claude.com/en/articles/12512180-using-skills-in-claude"}
 summary:
   - "Скіли в Claude є на Free, Pro, Max та інших тарифах — за довідкою Claude."
