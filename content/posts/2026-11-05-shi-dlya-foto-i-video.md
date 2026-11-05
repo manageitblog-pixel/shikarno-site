@@ -5,6 +5,7 @@ date: 2026-11-05T21:00:00+02:00
 description: "Тір-лист ШІ для фото й відео: Nano Banana в Gemini безкоштовно для нових фото й правок словами, Banana Pro у 2K для друку, Gemini Omni для відео й монтажу з підпискою."
 tags: [gemini, google, instrumenty, video]
 youtube: DMSoAoXDlp8
+telegram_post: 86
 source: {name: "Gemini Apps Help: створення й редагування зображень", url: "https://support.google.com/gemini/answer/14286560?hl=en"}
 sources:
   - {name: "Google: Gemini Omni", url: "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni/"}
