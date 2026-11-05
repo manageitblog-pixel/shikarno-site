@@ -5,6 +5,7 @@ date: 2026-11-05T14:00:00+02:00
 description: "ChatGPT навчився робити анімовані GIF з тексту або твого фото: оновлення Images 2.6 розгортають з 4 листопада. Що вміє, де застосувати і що робити, якщо функції ще немає."
 tags: [chatgpt, openai]
 youtube: B7F8DkpVk60
+telegram_post: 84
 source: {name: "Android Authority: ChatGPT can now create animated GIFs from photos and prompts", url: "https://www.androidauthority.com/chatgpt-animated-gif-generation-3731805/"}
 sources:
   - {name: "Unite.AI: ChatGPT Adds Animated GIF Creation and Editing with Images 2.6", url: "https://www.unite.ai/chatgpt-adds-animated-gif-creation-and-editing-with-images-2-6/"}
