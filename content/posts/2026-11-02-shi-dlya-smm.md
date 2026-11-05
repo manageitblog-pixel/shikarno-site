@@ -3,7 +3,7 @@ title: "ШІ для SMM: контент-план, голос бренду і к�
 slug: shi-dlya-smm
 date: 2026-11-02T10:00:00+02:00
 description: "Які ШІ-інструменти реально економлять час SMM-фахівцю: ChatGPT Projects для контент-плану, Gemini Skills для голосу бренду, Nano Banana для картинок, Claude Skills для шаблонів."
-tags: [chatgpt, gemini, claude, instrumenty]
+tags: [chatgpt, gemini, claude, instrumenty, biznes]
 youtube: jsyUTrw6hvI
 source: {name: "Gemini Help: Skills", url: "https://support.google.com/gemini/answer/17094296"}
 sources:

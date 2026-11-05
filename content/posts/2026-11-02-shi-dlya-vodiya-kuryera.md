@@ -3,7 +3,7 @@ title: "ШІ для водія і кур'єра: переклад, поломк�
 slug: shi-dlya-vodiya-kuryera
 date: 2026-11-02T14:00:00+02:00
 description: "Які ШІ-функції реально допомагають водію й кур'єру: живий переклад у Google Translate, AI Mode з Lens для лампочок на панелі, ChatGPT для чеків, Gemini Skills для відповідей."
-tags: [avto, google, chatgpt, gemini]
+tags: [avto, google, chatgpt, gemini, biznes]
 youtube: -QfxU9v03dE
 telegram_post: 71
 source: {name: "Google Translate Help: Live translate", url: "https://support.google.com/translate/answer/6142474?hl=en&co=GENIE.Platform%3DAndroid"}

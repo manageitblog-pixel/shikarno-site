@@ -3,7 +3,7 @@ title: "ШІ для вчителя: план уроку, тест і презе�
 slug: shi-dlya-vchytelya
 date: 2026-11-01T14:00:00+02:00
 description: "ШІ для вчителя без води: які кнопки Gemini у Google Classroom роблять план уроку, тест, критерії оцінювання й презентацію, і як Gemini Notebook пояснює тему українською."
-tags: [gemini, google, instrumenty]
+tags: [gemini, google, instrumenty, biznes]
 youtube: WKvVIB9cugQ
 telegram_post: 66
 source: {name: "Google Classroom Help: Gemini in Classroom", url: "https://support.google.com/edu/classroom/answer/15410566"}

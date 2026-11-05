@@ -5,7 +5,7 @@ kind: rozbir
 number: 4
 date: 2026-11-06T19:00:00+02:00
 description: "Що таке скіли, конектори і MCP простими словами, як увімкнути їх у Claude, Gemini і ChatGPT, що з цього безкоштовно і три правила безпеки. Кроки, шляхи в меню і промпти."
-tags: [instrumenty, claude, gemini, chatgpt]
+tags: [instrumenty, claude, gemini, chatgpt, rozrobka]
 youtube: Eyhg8lwIFg8
 duration: "8:08"
 chapters: [{t: "0:00", title: "Вступ"}, {t: "0:33", title: "Що таке скіли, конектори і MCP"}, {t: "1:16", title: "Різниця на прикладі"}, {t: "1:44", title: "Скіли в Claude", link: "/novyny/skil-claude-excel/"}, {t: "2:27", title: "Свій конектор у Claude"}, {t: "3:22", title: "Скіли в Gemini"}, {t: "4:06", title: "Що робити зі скілами Gemini"}, {t: "4:59", title: "ChatGPT: застосунки і MCP", link: "/novyny/chatgpt-gif-images-2-6/"}, {t: "5:52", title: "Старт за 10 хвилин", link: "/novyny/skil-claude-powerpoint/"}, {t: "6:26", title: "Три правила безпеки"}, {t: "6:55", title: "Що всередині скіла"}, {t: "7:44", title: "Фінал"}]

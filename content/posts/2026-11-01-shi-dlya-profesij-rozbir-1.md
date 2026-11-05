@@ -5,7 +5,7 @@ kind: rozbir
 number: 2
 date: 2026-11-01T20:30:00+02:00
 description: "Повний розбір ШІ для чотирьох професій: Gemini у Classroom для вчителя, Gemini Notebook і Study mode для студента, Дія.AI і ChatGPT для ФОП, Skills і Projects для SMM. Кроки і промпти."
-tags: [instrumenty, gemini, chatgpt, claude]
+tags: [instrumenty, gemini, chatgpt, claude, biznes]
 youtube: 6-2a9ncHaz4
 telegram_post: 68
 duration: "5:45"

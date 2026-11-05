@@ -3,7 +3,7 @@ title: "ШІ для ФОП: довідка в Дія.AI, чеки в табли�
 slug: shi-dlya-fop
 date: 2026-11-01T21:00:00+02:00
 description: "ШІ для ФОП і бухгалтера: Дія.AI замовляє довідку про доходи в чаті, ChatGPT робить таблицю з фото чеків і працює в Excel, Claude тримає шаблони рахунків."
-tags: [chatgpt, claude, gemini, instrumenty]
+tags: [chatgpt, claude, gemini, instrumenty, biznes]
 youtube: Iv5uSMwqAOA
 telegram_post: 69
 source: {name: "Дія.AI — ШІ-асистент на порталі Дія", url: "https://diia.gov.ua/diia-ai"}

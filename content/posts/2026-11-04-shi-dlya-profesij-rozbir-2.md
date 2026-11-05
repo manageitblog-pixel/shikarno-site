@@ -5,7 +5,7 @@ kind: rozbir
 number: 3
 date: 2026-11-04T19:00:00+02:00
 description: "Повний розбір ШІ для водія, лікаря і юриста: Google Translate і AI Mode в дорозі, Claude і Gemini для медичних паперів, практика без вигаданих постанов. Кроки і промпти."
-tags: [instrumenty, gemini, chatgpt, claude]
+tags: [instrumenty, gemini, chatgpt, claude, biznes]
 youtube: KjjLuzq_i7U
 telegram_post: 80
 duration: "5:31"

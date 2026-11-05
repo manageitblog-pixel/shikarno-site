@@ -3,7 +3,7 @@ title: "ШІ для юриста: практика, договори, порів
 slug: shi-dlya-yurysta
 date: 2026-11-04T10:00:00+02:00
 description: "ШІ для юриста без вигаданих постанов: чому не питати ChatGPT про практику, Opendatabot і реєстр судових рішень, договори в ChatGPT Projects, порівняння версій у Claude, закони в Gemini Notebook."
-tags: [instrumenty, chatgpt, claude, gemini]
+tags: [instrumenty, chatgpt, claude, gemini, biznes]
 youtube: 9e_gXMn0vtk
 telegram_post: 78
 source: {name: "Верховний Суд: ухвала у справі № 240/14153/24", url: "https://supreme.court.gov.ua/supreme/pres-centr/news/1954015/"}

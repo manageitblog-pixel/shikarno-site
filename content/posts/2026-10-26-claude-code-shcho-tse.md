@@ -3,7 +3,7 @@ title: "Claude Code: що це, скільки коштує і як почати
 slug: claude-code-shcho-tse
 date: 2026-10-26T16:00:00+02:00
 description: "Claude Code від Anthropic — ШІ-агент для програмування в терміналі, редакторі коду й десктопному застосунку. Що він уміє, які тарифи його включають, як почати і з якими ризиками."
-tags: [claude, anthropic, instrumenty]
+tags: [claude, anthropic, instrumenty, rozrobka]
 source: {name: "eWeek — шпаргалка цін на ШІ", url: "https://www.eweek.com/news/ai-pricing-cheat-sheet-2026/"}
 sources:
   - {name: "Документація Claude Code", url: "https://docs.claude.com/"}
