@@ -1,11 +1,12 @@
 import React, { createContext, useContext } from "react";
-import { AbsoluteFill, Sequence, interpolate, spring, useCurrentFrame, Easing } from "remotion";
+import { AbsoluteFill, Sequence, interpolate, spring, useCurrentFrame, Easing, Img, staticFile } from "remotion";
 import { Bait, Wordmark, Avatar, C, FONT } from "./brand";
 import { Cursor, fontCss } from "./parts";
 import { Icon } from "./Generic";
 
 export type DSeg = { kind: string; from: number; to: number; n?: number; icon?: string; title?: string; source?: string;
-  points?: string[]; items?: any[]; score?: number; plus?: string; minus?: string; label?: string; at?: number[]; sub?: string };
+  points?: string[]; items?: any[]; score?: number; plus?: string; minus?: string; label?: string; at?: number[]; sub?: string;
+  image?: string; hl?: { x: number; y: number; w: number; h: number }; url?: string; left?: { title: string; items: string[] }; right?: { title: string; items: string[] } };
 export type DData = { total: number; num: number; dates: string; segs: DSeg[]; words: { w: string; s: number; e: number; g: string }[]; mouth: number[]; titles: string[]; kicker?: string; sub?: string; big?: string; agendaTitle?: string; red?: boolean };
 const Ctx = createContext<DData>({ total: 300, num: 1, dates: "", segs: [], words: [], mouth: [], titles: [] });
 const useD = () => useContext(Ctx);
@@ -161,6 +162,66 @@ const Points: React.FC<{ s: DSeg; dur: number; off: number }> = ({ s, dur, off }
   );
 };
 
+/* скрін першоджерела / нашого тесту в рамці браузера: повільне наближення до підсвітки (рішення 5.11) */
+const Evidence: React.FC<{ s: DSeg; dur: number; off: number }> = ({ s, dur, off }) => {
+  const f = useCurrentFrame(); const head = sp(f, 12);
+  const FW = 960, FH = 600; const IW = 1600, IH = 1000; const k0 = FW / IW;
+  const hl = s.hl; const z = interpolate(f, [0, dur], [1, hl ? 1.35 : 1.06], { ...clamp, easing: Easing.inOut(Easing.quad) });
+  const cx = hl ? (hl.x + hl.w / 2) * k0 : FW / 2, cy = hl ? (hl.y + hl.h / 2) * k0 : FH / 2;
+  const hk = interpolate(f, [dur * 0.25, dur * 0.25 + 12], [0, 1], clamp);
+  const demo = s.kind === "demo";
+  return (
+    <AbsoluteFill>
+      <div style={{ position: "absolute", left: 110, top: 150, display: "flex", alignItems: "center", gap: 18, opacity: head }}>
+        <div style={{ padding: "8px 20px", borderRadius: 14, background: demo ? C.purple : C.yellow, color: demo ? "white" : C.ink, fontFamily: FONT, fontWeight: 900, fontSize: 28, letterSpacing: 2 }}>{s.label ?? (demo ? "НАШ ТЕСТ" : "ДЖЕРЕЛО")}</div>
+        <div style={{ fontFamily: FONT, fontWeight: 900, fontSize: 46, color: "white" }}>{s.title}</div>
+      </div>
+      <div style={{ position: "absolute", left: 110, top: 220, width: FW, borderRadius: 22, overflow: "hidden", background: "#1d1b33", boxShadow: "0 40px 90px rgba(0,0,0,0.55)", border: "2px solid rgba(255,255,255,0.12)", opacity: head, translate: `0 ${(1 - head) * 40}px` }}>
+        <div style={{ height: 52, display: "flex", alignItems: "center", gap: 10, padding: "0 20px", background: "rgba(255,255,255,0.06)" }}>
+          {["#FF5F57", "#FEBC2E", "#28C840"].map((c) => <div key={c} style={{ width: 16, height: 16, borderRadius: 8, background: c }} />)}
+          <div style={{ marginLeft: 18, flex: 1, height: 32, borderRadius: 16, background: "rgba(255,255,255,0.08)", color: "rgba(255,255,255,0.7)", fontFamily: FONT, fontWeight: 600, fontSize: 20, display: "flex", alignItems: "center", padding: "0 18px", overflow: "hidden", whiteSpace: "nowrap" }}>{s.url ?? s.source}</div>
+        </div>
+        <div style={{ position: "relative", width: FW, height: FH, overflow: "hidden" }}>
+          <div style={{ position: "absolute", left: 0, top: 0, width: FW, height: FH, transformOrigin: `${cx}px ${cy}px`, transform: `scale(${z})` }}>
+            {s.image ? <Img src={staticFile(s.image)} style={{ width: FW, height: FH, objectFit: "cover", objectPosition: "top" }} /> : null}
+            {hl ? <div style={{ position: "absolute", left: hl.x * k0 - 8, top: hl.y * k0 - 6, width: hl.w * k0 + 16, height: hl.h * k0 + 12, borderRadius: 10, border: `5px solid ${C.yellow}`, background: "rgba(255,214,10,0.16)", boxShadow: "0 0 40px rgba(255,214,10,0.55)", opacity: hk }} /> : null}
+          </div>
+        </div>
+      </div>
+      <Host size={240} x={1560} y={520} offset={off} />
+    </AbsoluteFill>
+  );
+};
+
+/* дві колонки: було/стало або ChatGPT vs Gemini */
+const Compare: React.FC<{ s: DSeg; dur: number; off: number }> = ({ s, dur, off }) => {
+  const f = useCurrentFrame(); const head = sp(f, 12);
+  const col = (c: { title: string; items: string[] } | undefined, i: number, color: string) => {
+    const k = sp(f - 8 - i * 10, 12);
+    return (
+      <div style={{ flex: 1, minWidth: 0, borderRadius: 30, padding: "34px 38px", background: "rgba(255,255,255,0.07)", border: `3px solid ${color}`, opacity: k, translate: `0 ${(1 - k) * 60}px` }}>
+        <div style={{ fontFamily: FONT, fontWeight: 900, fontSize: 52, color }}>{c?.title}</div>
+        <div style={{ marginTop: 26, display: "flex", flexDirection: "column", gap: 18 }}>
+          {(c?.items ?? []).map((t, j) => {
+            const kk = sp(f - 20 - i * 10 - j * Math.max(6, dur * 0.12), 13);
+            return <div key={j} style={{ fontFamily: FONT, fontWeight: 700, fontSize: 36, color: "white", opacity: kk, translate: `${(1 - kk) * 40}px 0` }}>• {t}</div>;
+          })}
+        </div>
+      </div>
+    );
+  };
+  return (
+    <AbsoluteFill>
+      <div style={{ position: "absolute", left: 110, top: 160, right: 400, fontFamily: FONT, fontWeight: 900, fontSize: 64, color: "white", opacity: head }}>{s.title}</div>
+      <div style={{ position: "absolute", left: 110, top: 290, right: 400, display: "flex", gap: 36 }}>
+        {col(s.left, 0, "rgba(255,255,255,0.55)")}
+        {col(s.right, 1, C.yellow)}
+      </div>
+      <Host size={240} x={1580} y={520} offset={off} />
+    </AbsoluteFill>
+  );
+};
+
 const Verdict: React.FC<{ s: DSeg; off: number }> = ({ s, off }) => {
   const f = useCurrentFrame(); const sc = (s.score ?? 8) / 10;
   const p = interpolate(f, [6, 40], [0, sc], { ...clamp, easing: Easing.out(Easing.cubic) });
@@ -288,6 +349,8 @@ export const DigestVideo: React.FC<DData> = (props) => {
           if (s.kind === "agenda") return out(<Agenda s={s} dur={dur} off={start} />);
           if (s.kind === "points") return out(<Points s={s} dur={dur} off={start} />);
           if (s.kind === "verdict") return out(<Verdict s={s} off={start} />);
+          if (s.kind === "evidence" || s.kind === "demo") return out(<Evidence s={s} dur={dur} off={start} />);
+          if (s.kind === "compare") return out(<Compare s={s} dur={dur} off={start} />);
           if (s.kind === "quick") return out(<Quick s={s} dur={dur} off={start} />);
           if (s.kind === "section") return out(<Section s={s} />);
           if (s.kind === "numbers" || s.kind === "calendar" || s.kind === "timeline") return out(<Facts s={s} dur={dur} off={start} />);
