@@ -5,6 +5,7 @@ date: 2026-11-06T14:00:00+02:00
 description: "Google випустив Gemini Omni 1.2 Flash: відео до 15 секунд, правки діалогом без нової генерації і на 30% дешевше. Що це дає бізнесу, розробникам і звичайним користувачам."
 tags: [gemini, google, video, biznes, rozrobka]
 youtube: ccsneYuuXtQ
+telegram_post: 89
 source: {name: "Google AI Studio: Gemini API changelog (5.11.2026)", url: "https://aistudio.google.com/docs/changelog"}
 sources:
   - {name: "Google: Gemini Omni", url: "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni/"}
