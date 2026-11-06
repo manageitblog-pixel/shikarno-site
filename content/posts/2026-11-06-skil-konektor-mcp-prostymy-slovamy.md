@@ -5,6 +5,7 @@ date: 2026-11-06T21:00:00+02:00
 description: "Скіл, конектор і MCP простими словами: що це, чим відрізняються і навіщо звичайному користувачу. Коротке пояснення з прикладом і посилання на повний розбір."
 tags: [rozrobka, claude, chatgpt, instrumenty]
 youtube: GJ2Nq-hiwXE
+telegram_post: 91
 source: {name: "Model Context Protocol: What is MCP", url: "https://modelcontextprotocol.io/docs/getting-started/intro"}
 sources:
   - {name: "Claude Help Center: Custom connectors using remote MCP", url: "https://support.claude.com/en/articles/11175166-getting-started-with-custom-connectors-using-remote-mcp"}
