@@ -5,6 +5,7 @@ date: 2026-11-06T10:00:00+02:00
 description: "Тір-лист ШІ для перекладу: живий переклад розмови в Google Translate, листи й резюме через ChatGPT чи Claude, документи Word і PDF до 10 МБ, меню через Lens. Безкоштовно."
 tags: [instrumenty, google, chatgpt, claude, biznes]
 youtube: n-WP6KVd6U8
+telegram_post: 87
 source: {name: "Google Translate Help: Live translate", url: "https://support.google.com/translate/answer/6142474?hl=en&co=GENIE.Platform%3DAndroid"}
 sources:
   - {name: "Google Translate Help: переклад документів", url: "https://support.google.com/translate/answer/2534559?hl=en&co=GENIE.Platform%3DDesktop"}
