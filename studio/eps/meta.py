@@ -273,3 +273,9 @@ META23.update({
    description="5 листопада 2026 Google випустив Gemini Omni 1.2 Flash (Google AI Studio changelog): відео до 15 секунд, правки діалогом («зміни світло», «заміни товар») без нової генерації, вартість генерації відео на 30% нижча. Поки — для розробників і бізнесу через Gemini API; у застосунку Gemini відео з Omni доступні з підпискою Google AI. Вердикт Байта: 7/10 — для бізнесу корисно, звичайним — лише з підпискою.\n\nЯк зробити рекламний ролик товару з ШІ — у Telegram: t.me/shikarno_ai_ua"+FOOT+"\n\n#shorts #штучнийінтелект #ші #gemini",
    tags=["Gemini Omni","Gemini Omni 1.2","ШІ відео","генерація відео ШІ","Google Gemini","відео для бізнесу ШІ","Gemini API","новини ШІ","ШІ","штучний інтелект","ШІкарно"]),
 })
+
+META23.update({
+ "ep55_skil_konektor_mcp": dict(title="Скіл, конектор і MCP за 40 секунд: що це простими словами 🧩 #ШІ #shorts",
+   description="Скіл — збережений рецепт задачі для ШІ. Конектор — доступ ШІ до твоєї пошти, диска чи календаря. MCP (Model Context Protocol) — відкритий стандарт таких підключень; на офіційному сайті його порівнюють з USB-C. Стандарт створила Anthropic, його підтримують Claude і ChatGPT.\n\n▶️ Повний розбір: як увімкнути скіли й конектори в Claude, Gemini і ChatGPT безкоштовно — https://youtu.be/Eyhg8lwIFg8\n📖 https://shikarno.com.ua/rozbory/skily-mcp-konektory-rozbir-1/"+FOOT+"\n\n#shorts #штучнийінтелект #ші #mcp",
+   tags=["MCP","що таке MCP","Claude Skills","скіли","конектори Claude","Model Context Protocol","ШІ для розробників","ШІ простими словами","ШІ","штучний інтелект","ШІкарно"]),
+})
