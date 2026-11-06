@@ -1,0 +1,211 @@
+<meta name="dash-one-writer">
+<style>
+#dash-root .sk { font-family: var(--font-anthropic-sans); display: flex; flex-direction: column; gap: var(--cds-gap-lg); }
+#dash-root .sk-head h1 { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; text-wrap: balance; }
+#dash-root .sk-head p { margin: var(--cds-gap-xs) 0 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-body); max-width: 70ch; }
+#dash-root .sk b { font-weight: 600; font-variant-numeric: tabular-nums; }
+#dash-root .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr)); gap: var(--cds-gap-md); }
+#dash-root .tile, #dash-root .card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); min-width: 0; }
+#dash-root .tile .lab { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+#dash-root .tile .num { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; margin-top: var(--cds-gap-xs); }
+#dash-root .tile .goal { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin-top: var(--cds-gap-xs); }
+#dash-root .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); gap: var(--cds-gap-md); }
+#dash-root .card h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0; }
+#dash-root .card .note { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin: var(--cds-gap-xs) 0 var(--cds-gap-md); }
+#dash-root .chart { position: relative; min-height: 220px; }
+#dash-root .chart.short { min-height: 260px; }
+#dash-root .tip { position: absolute; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); white-space: nowrap; }
+#dash-root .tip .d { color: var(--cds-text-secondary); }
+#dash-root .tbl { max-height: 28rem; overflow: auto; }
+#dash-root table { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
+#dash-root th { position: sticky; top: 0; background: var(--color-panel); text-align: left; font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); }
+#dash-root td { padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); vertical-align: top; }
+#dash-root td.n, #dash-root th.n { text-align: right; }
+#dash-root .pill { display: inline-block; padding: 0 var(--cds-pad-xs); border-radius: var(--cds-radius); border: 1px solid var(--color-border-line); white-space: nowrap; }
+#dash-root [data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+#dash-root [data-dash-source-state=empty] { color: transparent; }
+#dash-root details { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+@media (max-width: 640px) { #dash-root .hide-narrow { display: none; } }
+</style>
+
+<div class="sk">
+  <header class="sk-head">
+    <h1>Аналітика ШІкарно</h1>
+    <p>За останні 7 днів у даних YouTube — <b data-draw="v7" data-source="yt_week" data-field="views" data-where="period=Останні 7 днів">—</b> переглядів і <b data-draw="s7" data-source="yt_week" data-field="subs" data-where="period=Останні 7 днів">—</b> нових підписників (попередні 7 днів: <b data-draw="v7p" data-source="yt_week" data-field="views" data-where="period=Попередні 7 днів">—</b> переглядів). YouTube Analytics віддає дні із затримкою 2–3 дні.</p>
+  </header>
+
+  <section class="tiles" aria-label="Головні цифри">
+    <div class="tile"><div class="lab">Підписники YouTube</div><div class="num" data-draw="t1" data-source="totals" data-field="value" data-where="metric=Підписники YouTube">—</div><div class="goal">ціль до 5.12 — 1 000</div></div>
+    <div class="tile"><div class="lab">Учасники Telegram-каналу</div><div class="num" data-draw="t2" data-source="totals" data-field="value" data-where="metric=Учасники Telegram-каналу">—</div><div class="goal">ціль до 5.12 — 150</div></div>
+    <div class="tile"><div class="lab">Переглядів YouTube за весь час</div><div class="num" data-draw="t3" data-source="totals" data-field="value" data-where="metric=Переглядів YouTube всього">—</div><div class="goal">усі відео каналу</div></div>
+    <div class="tile"><div class="lab">Відео на каналі</div><div class="num" data-draw="t4" data-source="totals" data-field="value" data-where="metric=Відео на каналі">—</div><div class="goal">Shorts і довгі</div></div>
+  </section>
+
+  <section class="grid">
+    <div class="card">
+      <h2 id="views">Перегляди YouTube по днях</h2>
+      <p class="note">З 20.10.2026; останні 2–3 дні ще не пораховані</p>
+      <div class="chart" data-draw="daily" data-source="yt_daily"></div>
+    </div>
+    <div class="card">
+      <h2 id="google">Сайт у Google: покази по днях</h2>
+      <p class="note">Search Console, shikarno.com.ua</p>
+      <div class="chart" data-draw="site" data-source="site_daily"></div>
+    </div>
+  </section>
+
+  <section class="grid">
+    <div class="card">
+      <h2 id="sources">Звідки приходять глядачі YouTube</h2>
+      <p class="note">Перегляди за джерелом трафіку, з 20.10.2026</p>
+      <div class="chart short" data-draw="traffic" data-source="yt_traffic"></div>
+    </div>
+    <div class="card">
+      <h2 id="queries">Запити, за якими Google показує сайт</h2>
+      <p class="note">Топ-10 за показами, з 20.10.2026</p>
+      <div class="tbl">
+        <table data-source="site_queries" data-row-key="query">
+          <thead><tr><th data-field="query">Запит</th><th class="n" data-field="impressions">Покази</th><th class="n" data-field="clicks">Кліки</th><th class="n" data-field="position">Позиція</th></tr></thead>
+          <tbody data-draw="qrows"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2 id="videos">Відео: що дивляться і що додивляються</h2>
+    <p class="note">Топ-50 за переглядами з 20.10.2026. «Не прогорнули» — частка переглядів, які не гортнули одразу; «% перегляду» — яку частину ролика в середньому дивляться.</p>
+    <div class="tbl">
+      <table data-source="yt_videos" data-row-key="id">
+        <thead><tr><th data-field="video">Відео</th><th class="hide-narrow" data-field="format">Формат</th><th class="n" data-field="views">Перегляди</th><th class="n hide-narrow" data-field="engaged_share">Не прогорнули</th><th class="n" data-field="avg_view_pct">% перегляду</th><th class="n" data-field="subs">Підписки</th></tr></thead>
+        <tbody data-draw="vrows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <details>
+    <summary>Звідки цифри</summary>
+    <p>YouTube Analytics і YouTube Data API каналу ШІкарно, Google Search Console для shikarno.com.ua, кількість учасників Telegram-каналу через бота. TikTok поки не підключений: його API статистики потребує схваленого застосунку. Відвідування сайту з усіх джерел (Cloudflare) з'являться після додавання токена.</p>
+  </details>
+</div>
+
+<script>
+dash.calc('yt_week', {
+  inputs: ['yt_daily'],
+  title: 'YouTube: тиждень до тижня',
+  description: 'Сума переглядів і підписок за останні 7 днів із даними і за 7 днів перед ними.',
+  fn: (yt_daily) => {
+    const rows = yt_daily.slice().sort((a, b) => a.day < b.day ? -1 : 1);
+    const last = rows.slice(-7), prev = rows.slice(-14, -7);
+    const sum = (r, k) => r.reduce((s, x) => s + Number(x[k]), 0);
+    return [
+      {period: 'Останні 7 днів', views: sum(last, 'views'), subs: sum(last, 'subs')},
+      {period: 'Попередні 7 днів', views: sum(prev, 'views'), subs: sum(prev, 'subs')},
+    ];
+  },
+});
+</script>
+
+<script>
+(() => {
+  const fmt = d3.format(',');
+  const cell = (id, where, field, f) => (el) => {
+    const g = dash.data(id);
+    if (g.status !== 'ok') { el.textContent = '—'; return; }
+    const [k, v] = where.split('=');
+    const r = g.data.find((x) => String(x[k]) === v);
+    el.textContent = r ? (f || fmt)(Number(r[field])) : '—';
+  };
+  dash.draw('v7', cell('yt_week', 'period=Останні 7 днів', 'views'));
+  dash.draw('s7', cell('yt_week', 'period=Останні 7 днів', 'subs'));
+  dash.draw('v7p', cell('yt_week', 'period=Попередні 7 днів', 'views'));
+  dash.draw('t1', cell('totals', 'metric=Підписники YouTube', 'value'));
+  dash.draw('t2', cell('totals', 'metric=Учасники Telegram-каналу', 'value'));
+  dash.draw('t3', cell('totals', 'metric=Переглядів YouTube всього', 'value'));
+  dash.draw('t4', cell('totals', 'metric=Відео на каналі', 'value'));
+
+  const bars = (id, field, label) => (el) => {
+    el.replaceChildren();
+    const g = dash.data(id);
+    if (g.status !== 'ok') { el.textContent = ''; return; }
+    const rows = g.data.map((r) => ({d: new Date(r.day), v: Number(r[field]), raw: r.day})).sort((a, b) => a.d - b.d);
+    const W = Math.max(280, el.clientWidth), H = 220, m = {t: 10, r: 8, b: 26, l: 8};
+    const y = d3.scaleLinear([0, d3.max(rows, (r) => r.v) || 1], [H - m.b, m.t]).nice();
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    const yAxis = svg.append('g').attr('font-size', null).attr('font-family', null);
+    yAxis.call(d3.axisLeft(y).ticks(4).tickFormat(d3.format('~s')).tickSize(0));
+    yAxis.select('.domain').remove();
+    yAxis.selectAll('text').attr('fill', 'var(--color-fg-muted)').style('font-size', 'var(--cds-font-size-caption)');
+    let wmax = 0; yAxis.selectAll('text').each(function () { wmax = Math.max(wmax, this.getComputedTextLength()); });
+    m.l = wmax + 10; yAxis.attr('transform', `translate(${m.l - 4},0)`);
+    const x = d3.scaleBand(rows.map((r) => r.raw), [m.l, W - m.r]).padding(0.25);
+    svg.append('g').selectAll('line').data(y.ticks(4)).join('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y).attr('y2', y).attr('stroke', 'var(--cds-chart-grid)');
+    const fd = d3.utcFormat('%d.%m');
+    const step = Math.ceil(rows.length / Math.max(2, Math.floor((W - m.l) / 46)));
+    svg.append('g').selectAll('text').data(rows.filter((_, i) => i % step === 0)).join('text')
+      .attr('x', (r) => x(r.raw) + x.bandwidth() / 2).attr('y', H - 8).attr('text-anchor', 'middle')
+      .attr('fill', 'var(--color-fg-muted)').style('font-size', 'var(--cds-font-size-caption)').text((r) => fd(r.d));
+    const tip = d3.select(el).append('div').attr('class', 'tip').style('display', 'none');
+    svg.append('g').selectAll('rect').data(rows).join('rect')
+      .attr('x', (r) => x(r.raw)).attr('width', Math.min(32, x.bandwidth())).attr('y', (r) => y(r.v)).attr('height', (r) => y(0) - y(r.v))
+      .attr('rx', 2).attr('fill', dash.colors[0])
+      .on('mousemove', function (ev, r) {
+        d3.select(this).attr('fill-opacity', 0.75);
+        const [px, py] = d3.pointer(ev, el);
+        tip.style('display', null).html('');
+        tip.append('div').attr('class', 'd').text(d3.utcFormat('%d.%m.%Y')(r.d));
+        tip.append('div').text(`${label}: ${fmt(r.v)}`);
+        const tw = tip.node().offsetWidth;
+        tip.style('left', `${Math.min(Math.max(0, px - tw / 2), el.clientWidth - tw)}px`).style('top', `${Math.max(0, py - 48)}px`);
+      })
+      .on('mouseleave', function () { d3.select(this).attr('fill-opacity', 1); tip.style('display', 'none'); });
+  };
+  dash.draw('daily', bars('yt_daily', 'views', 'Переглядів'));
+  dash.draw('site', bars('site_daily', 'impressions', 'Показів у Google'));
+
+  dash.draw('traffic', (el) => {
+    el.replaceChildren();
+    const g = dash.data('yt_traffic');
+    if (g.status !== 'ok') return;
+    const rows = g.data.map((r) => ({k: r.source, v: Number(r.views)})).sort((a, b) => b.v - a.v);
+    const W = Math.max(280, el.clientWidth), rowH = 24, H = rows.length * rowH + 8;
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    const lab = svg.append('g').selectAll('text').data(rows).join('text').attr('y', (_, i) => i * rowH + 16)
+      .attr('fill', 'var(--color-fg)').style('font-size', 'var(--cds-font-size-caption)').text((r) => r.k);
+    let lw = 0; lab.each(function () { lw = Math.max(lw, this.getComputedTextLength()); });
+    const vals = svg.append('g').selectAll('text').data(rows).join('text').attr('y', (_, i) => i * rowH + 16)
+      .attr('text-anchor', 'end').attr('x', W).attr('fill', 'var(--color-fg-muted)').style('font-size', 'var(--cds-font-size-caption)').text((r) => fmt(r.v));
+    let vw = 0; vals.each(function () { vw = Math.max(vw, this.getComputedTextLength()); });
+    const x = d3.scaleLinear([0, d3.max(rows, (r) => r.v) || 1], [lw + 10, W - vw - 10]);
+    svg.append('g').selectAll('rect').data(rows).join('rect').attr('x', lw + 10).attr('y', (_, i) => i * rowH + 5)
+      .attr('height', 14).attr('width', (r) => Math.max(1, x(r.v) - x(0))).attr('rx', 2)
+      .attr('fill', (_, i) => i === 0 ? dash.colors[0] : 'var(--cds-chart-muted)');
+  });
+
+  dash.draw('qrows', (tb) => {
+    tb.replaceChildren();
+    const g = dash.data('site_queries');
+    if (g.status !== 'ok') return;
+    g.data.forEach((r) => {
+      const tr = tb.insertRow();
+      tr.insertCell().textContent = r.query;
+      [['impressions', fmt], ['clicks', fmt], ['position', d3.format('.1f')]].forEach(([k, f]) => { const c = tr.insertCell(); c.className = 'n'; c.textContent = f(Number(r[k])); });
+    });
+  });
+
+  const pct = d3.format('.0%');
+  dash.draw('vrows', (tb) => {
+    tb.replaceChildren();
+    const g = dash.data('yt_videos');
+    if (g.status !== 'ok') return;
+    g.data.forEach((r) => {
+      const tr = tb.insertRow(); tr.dataset.key = r.id;
+      tr.insertCell().textContent = r.video;
+      const f = tr.insertCell(); f.className = 'hide-narrow'; const p = document.createElement('span'); p.className = 'pill'; p.textContent = r.format; f.append(p);
+      [['views', fmt, ''], ['engaged_share', pct, 'hide-narrow'], ['avg_view_pct', pct, ''], ['subs', fmt, '']].forEach(([k, fn, cls]) => {
+        const c = tr.insertCell(); c.className = ('n ' + cls).trim(); c.textContent = fn(Number(r[k]));
+      });
+    });
+  });
+})();
+</script>
