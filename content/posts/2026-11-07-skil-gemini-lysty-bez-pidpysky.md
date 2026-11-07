@@ -5,6 +5,7 @@ date: 2026-11-07T19:00:00+02:00
 description: "Скіли в Gemini для звичайних чатів працюють без підписки. Покроково: як створити скіл «пиши ділові листи як я» через Create with Gemini і прикріпити свої листи-зразки."
 tags: [gemini, google, biznes, instrumenty]
 youtube: 2YAok1rudp4
+telegram_post: 94
 source: {name: "Довідка Google Gemini: Skills", url: "https://support.google.com/gemini/answer/17094296"}
 summary:
   - "Скіли в Gemini для звичайних чатів не потребують підписки (довідка Google, перевірено 5.11.2026)."
