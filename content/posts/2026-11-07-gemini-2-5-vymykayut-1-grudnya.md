@@ -5,6 +5,7 @@ date: 2026-11-07T14:00:00+02:00
 description: "Google зробив Gemini 2.5 Pro і 2.5 Flash застарілими: з 1 грудня 2026 запити підуть на 3.8 Flash і 3.5 Flash-Lite. Що може зламатися в API і як підготуватися."
 tags: [gemini, google, rozrobka]
 youtube: hiUk0MF91SQ
+telegram_post: 93
 source: {name: "Google AI Studio: Gemini API changelog (2.11.2026)", url: "https://aistudio.google.com/docs/changelog"}
 summary:
   - "2 листопада Google позначив gemini-2.5-pro і gemini-2.5-flash як застарілі."
