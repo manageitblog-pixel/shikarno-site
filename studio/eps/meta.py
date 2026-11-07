@@ -294,3 +294,24 @@ META23.update({
    description="Скіли в Gemini для звичайних чатів не потребують підписки (довідка Google Gemini, перевірено 5.11.2026). Умови: 18+, вхід в акаунт і увімкнене збереження активності.\n\nЯк зробити скіл «пиши листи як я»:\n1) gemini.google.com → Customize → Skills → Create\n2) «Create with Gemini» — опиши словами: коротко, ввічливо, з одним наступним кроком у кінці\n3) прикріпи 2–3 свої листи як зразок\nДалі в чаті — «/» і вибір скіла, або Gemini підхопить його сам.\n\n▶️ Повний розбір скілів, конекторів і MCP: https://youtu.be/Eyhg8lwIFg8"+FOOT+"\n\n#shorts #штучнийінтелект #ші #gemini",
    tags=["скіли Gemini","Gemini Skills","Gemini безкоштовно","Create with Gemini","ШІ для роботи","ділові листи ШІ","ШІ для бізнесу","Gemini","ШІ","штучний інтелект","ШІкарно"]),
 })
+
+WEEKLY1_CH="""0:00 Вступ
+0:24 У цьому випуску
+0:52 Для всіх
+0:54 ChatGPT робить GIF (Images 2.6)
+2:02 Кешбек 10% на ШІ в mono
+2:49 Для бізнесу
+2:51 Один ліміт на ChatGPT і Codex з грудня
+3:51 Скіли Gemini без підписки: «листи як я»
+4:37 Для ІТ
+4:39 Gemini 2.5 Pro і Flash підмінять 1 грудня
+5:15 Gemini Omni 1.2 Flash і ще з changelog
+6:07 Наш тест: скільки токенів «їсть» українська
+6:57 Тиждень у цифрах
+7:19 Три дії на тиждень
+7:35 Фінал"""
+META23.update({
+ "weekly1": dict(title="ШІ за тиждень з Байтом #1: GIF у ChatGPT, один ліміт з Codex, Gemini 2.5 вимикають",
+   description="Головне зі світу штучного інтелекту за 1–7 листопада 2026 — для звичайних людей, бізнесу й розробників. Джерела на екрані, вердикт Байта після кожного розділу.\n\n"+WEEKLY1_CH+"\n\n📄 Стаття з усіма джерелами: https://shikarno.com.ua/dajdzhest/shi-za-tyzhden-1/\n\nДжерела:\n• Images 2.6 і GIF у ChatGPT — Unite.AI з посиланням на The Verge (4.11): https://www.unite.ai/chatgpt-adds-animated-gif-creation-and-editing-with-images-2-6/\n• Кешбек «Штучний інтелект» у mono — канал «ОГо!» (31.10): https://t.me/OGoMono\n• Спільний ліміт ChatGPT і Codex — FourWeekMBA (лист OpenAI підписникам): https://fourweekmba.com/ai-chatgpt-and-codex-will-share-one-usage-allowance-in-december/\n• Скіли Gemini — довідка Google: https://support.google.com/gemini/answer/17094296\n• Gemini 2.5, Omni 1.2, TTS, embeddings — Google AI Studio changelog: https://aistudio.google.com/docs/changelog\n• Токени — власний тест ШІкарно, tiktoken (OpenAI), 7.11.2026"+FOOT+"\n\n#штучнийінтелект #ші #chatgpt #claude #gemini",
+   tags=["ШІ за тиждень","новини ШІ","новини штучного інтелекту","ChatGPT GIF","Images 2.6","ліміти ChatGPT","Codex","Gemini 2.5","Gemini Omni","скіли Gemini","кешбек mono","токени українською","ШІ для бізнесу","ШІ для розробників","ШІкарно","Байт"]),
+})
