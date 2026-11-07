@@ -288,3 +288,9 @@ META23.update({
    description="За changelog Google AI Studio (2.11.2026): моделі gemini-2.5-pro і gemini-2.5-flash застарілі. З 1 грудня 2026 запити до 2.5 Pro йтимуть на gemini-3.8-flash, до 2.5 Flash — на gemini-3.5-flash-lite. Google попереджає про зміни, що ламають сумісність: function calling, перевірка thought_signature і параметр thinking_level.\n\nПорада Байта: перемкни модель зараз і прожени тести, не чекаючи грудня.\nДжерело: https://aistudio.google.com/docs/changelog"+FOOT+"\n\n#shorts #штучнийінтелект #ші #gemini",
    tags=["Gemini 2.5 Pro","Gemini API","Gemini 3.8 Flash","Google AI Studio","міграція Gemini","ШІ для розробників","новини ШІ","Gemini","ШІ","штучний інтелект","ШІкарно"]),
 })
+
+META23.update({
+ "ep58_skily_gemini_bez_pidpysky": dict(title="Для роботи: Gemini пише листи твоїм стилем — скіл без підписки ✉️ #ШІ #shorts",
+   description="Скіли в Gemini для звичайних чатів не потребують підписки (довідка Google Gemini, перевірено 5.11.2026). Умови: 18+, вхід в акаунт і увімкнене збереження активності.\n\nЯк зробити скіл «пиши листи як я»:\n1) gemini.google.com → Customize → Skills → Create\n2) «Create with Gemini» — опиши словами: коротко, ввічливо, з одним наступним кроком у кінці\n3) прикріпи 2–3 свої листи як зразок\nДалі в чаті — «/» і вибір скіла, або Gemini підхопить його сам.\n\n▶️ Повний розбір скілів, конекторів і MCP: https://youtu.be/Eyhg8lwIFg8"+FOOT+"\n\n#shorts #штучнийінтелект #ші #gemini",
+   tags=["скіли Gemini","Gemini Skills","Gemini безкоштовно","Create with Gemini","ШІ для роботи","ділові листи ШІ","ШІ для бізнесу","Gemini","ШІ","штучний інтелект","ШІкарно"]),
+})
