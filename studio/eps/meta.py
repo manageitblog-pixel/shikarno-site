@@ -279,3 +279,12 @@ META23.update({
    description="Скіл — збережений рецепт задачі для ШІ. Конектор — доступ ШІ до твоєї пошти, диска чи календаря. MCP (Model Context Protocol) — відкритий стандарт таких підключень; на офіційному сайті його порівнюють з USB-C. Стандарт створила Anthropic, його підтримують Claude і ChatGPT.\n\n▶️ Повний розбір: як увімкнути скіли й конектори в Claude, Gemini і ChatGPT безкоштовно — https://youtu.be/Eyhg8lwIFg8\n📖 https://shikarno.com.ua/rozbory/skily-mcp-konektory-rozbir-1/"+FOOT+"\n\n#shorts #штучнийінтелект #ші #mcp",
    tags=["MCP","що таке MCP","Claude Skills","скіли","конектори Claude","Model Context Protocol","ШІ для розробників","ШІ простими словами","ШІ","штучний інтелект","ШІкарно"]),
 })
+
+META23.update({
+ "ep56_tokeny_ukrainska": dict(title="Українська в ChatGPT «їсть» у 1,7 раза більше токенів: Байт порахував 🧮 #ШІ #shorts",
+   description="Розробникам і бізнесу, що платять за API: однаковий запит українською займає помітно більше токенів, ніж англійською. Байт перевірив сам: 4 однакові запити (лист клієнту, меню, інфляція, перевірка коду), відкритий токенізатор OpenAI tiktoken, 7.11.2026. o200k_base: 129 токенів українською проти 77 англійською (×1,68). Старіший cl100k_base: 215 проти 79 (×2,72).\n\nЩо робити: системні інструкції — англійською, відповідь — проси українською; довгі документи стискай перед запитом. Для коротких звичайних чатів різниці не відчуєш."+FOOT+"\n\n#shorts #штучнийінтелект #ші #chatgpt",
+   tags=["токени ChatGPT","українська мова ChatGPT","ліміти ChatGPT","OpenAI API ціна","tiktoken","ШІ для розробників","ШІ для бізнесу","ChatGPT українською","ШІ","штучний інтелект","ШІкарно"]),
+ "ep57_gemini_25_vymykayut": dict(title="Розробникам: Gemini 2.5 Pro і Flash підмінять 1 грудня — що може зламатися ⚠️ #ШІ #shorts",
+   description="За changelog Google AI Studio (2.11.2026): моделі gemini-2.5-pro і gemini-2.5-flash застарілі. З 1 грудня 2026 запити до 2.5 Pro йтимуть на gemini-3.8-flash, до 2.5 Flash — на gemini-3.5-flash-lite. Google попереджає про зміни, що ламають сумісність: function calling, перевірка thought_signature і параметр thinking_level.\n\nПорада Байта: перемкни модель зараз і прожени тести, не чекаючи грудня.\nДжерело: https://aistudio.google.com/docs/changelog"+FOOT+"\n\n#shorts #штучнийінтелект #ші #gemini",
+   tags=["Gemini 2.5 Pro","Gemini API","Gemini 3.8 Flash","Google AI Studio","міграція Gemini","ШІ для розробників","новини ШІ","Gemini","ШІ","штучний інтелект","ШІкарно"]),
+})
