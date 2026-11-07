@@ -5,6 +5,7 @@ date: 2026-11-07T10:00:00+02:00
 description: "Той самий запит українською займає в 1,7 раза більше токенів, ніж англійською. Власний замір токенізатором OpenAI, що це означає для API і довгих чатів і як зекономити."
 tags: [chatgpt, openai, rozrobka, biznes]
 youtube: vn-OWcMvXbI
+telegram_post: 92
 source: {name: "OpenAI tiktoken (відкритий токенізатор), замір ШІкарно 7.11.2026", url: "https://github.com/openai/tiktoken"}
 summary:
   - "Чотири однакові запити: 129 токенів українською проти 77 англійською в токенізаторі o200k_base (×1,68)."
