@@ -1,0 +1,26 @@
+{
+ "recorded": "2026-11-08T07:5xZ, Claude Code 2.1.319, mcp 2.3.0, реальний запуск",
+ "log": [
+  {
+   "cmd": "pip show mcp",
+   "out": "Name: mcp\nVersion: 2.3.0"
+  },
+  {
+   "cmd": "python3 server.py   # старий приклад з FastMCP",
+   "out": "ModuleNotFoundError: No module named 'mcp.server.fastmcp'.\nThis is mcp 2.x, where FastMCP was renamed to MCPServer\n(from mcp.server.mcpserver import MCPServer)",
+   "error": true
+  },
+  {
+   "cmd": "claude mcp add --scope project nbu -- python3 server.py",
+   "out": "Added stdio MCP server nbu with command: python3 server.py to project config\nFile modified: ./.mcp.json"
+  },
+  {
+   "cmd": "claude mcp list",
+   "out": "Checking MCP server health…\n\nnbu: python3 server.py - ⏸ Pending approval (run `claude` to approve)"
+  },
+  {
+   "cmd": "claude -p \"Який сьогодні офіційний курс долара і євро за НБУ? Відповідь коротко, українською.\" --mcp-config .mcp.json --strict-mcp-config --allowedTools \"mcp__nbu__kurs_nbu\"",
+   "out": "Офіційний курс НБУ:\n\n- Долар США (USD): 45,3206 грн\n- Євро (EUR): 50,6455 грн\n\nСьогодні 8 листопада, а курс встановлено на 09.11.2026. НБУ публікує курс заздалегідь, на наступний день."
+  }
+ ]
+}

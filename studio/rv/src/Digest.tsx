@@ -1,12 +1,12 @@
 import React, { createContext, useContext } from "react";
-import { AbsoluteFill, Sequence, interpolate, spring, useCurrentFrame, Easing, Img, staticFile } from "remotion";
+import { AbsoluteFill, Sequence, interpolate, spring, useCurrentFrame, Easing, Img, staticFile, OffthreadVideo } from "remotion";
 import { Bait, Wordmark, Avatar, C, FONT } from "./brand";
 import { Cursor, fontCss } from "./parts";
 import { Icon } from "./Generic";
 
 export type DSeg = { kind: string; from: number; to: number; n?: number; icon?: string; title?: string; source?: string;
   points?: string[]; items?: any[]; score?: number; plus?: string; minus?: string; label?: string; at?: number[]; sub?: string;
-  image?: string; hl?: { x: number; y: number; w: number; h: number }; url?: string; left?: { title: string; items: string[] }; right?: { title: string; items: string[] } };
+  image?: string; hl?: { x: number; y: number; w: number; h: number }; url?: string; left?: { title: string; items: string[] }; right?: { title: string; items: string[] }; video?: string; vstart?: number; term?: { cmd: string; out: string; error?: boolean }[]; link?: string; zoom?: number[] };
 export type DData = { total: number; num: number; dates: string; segs: DSeg[]; words: { w: string; s: number; e: number; g: string }[]; mouth: number[]; titles: string[]; kicker?: string; sub?: string; big?: string; agendaTitle?: string; red?: boolean };
 const Ctx = createContext<DData>({ total: 300, num: 1, dates: "", segs: [], words: [], mouth: [], titles: [] });
 const useD = () => useContext(Ctx);
@@ -193,6 +193,67 @@ const Evidence: React.FC<{ s: DSeg; dur: number; off: number }> = ({ s, dur, off
   );
 };
 
+
+/* запис екрана реальної сторінки (rec.js): великий браузер, плашка з посиланням (рішення власника 8.11) */
+const Screen: React.FC<{ s: DSeg; dur: number; off: number }> = ({ s, dur, off }) => {
+  const f = useCurrentFrame(); const head = sp(f, 12);
+  const W = 1440, H = 826;
+  const z = s.zoom ? interpolate(f, [0, dur], [s.zoom[0], s.zoom[1]], { ...clamp, easing: Easing.inOut(Easing.quad) }) : interpolate(f, [0, dur], [1, 1.05], clamp);
+  const lk = sp(f - 18, 14);
+  return (
+    <AbsoluteFill>
+      <div style={{ position: "absolute", left: 200, top: 130, display: "flex", alignItems: "center", gap: 18, opacity: head }}>
+        <div style={{ padding: "8px 20px", borderRadius: 14, background: C.yellow, color: C.ink, fontFamily: FONT, fontWeight: 900, fontSize: 28, letterSpacing: 2 }}>{s.label ?? "ЕКРАН"}</div>
+        <div style={{ fontFamily: FONT, fontWeight: 900, fontSize: 44, color: "white" }}>{s.title}</div>
+      </div>
+      <div style={{ position: "absolute", left: 200, top: 196, width: W, borderRadius: 20, overflow: "hidden", background: "#1d1b33", boxShadow: "0 40px 90px rgba(0,0,0,0.55)", border: "2px solid rgba(255,255,255,0.14)", opacity: head, scale: `${0.96 + head * 0.04}` }}>
+        <div style={{ height: 46, display: "flex", alignItems: "center", gap: 10, padding: "0 18px", background: "rgba(255,255,255,0.07)" }}>
+          {["#FF5F57", "#FEBC2E", "#28C840"].map((c) => <div key={c} style={{ width: 14, height: 14, borderRadius: 7, background: c }} />)}
+          <div style={{ marginLeft: 16, flex: 1, height: 30, borderRadius: 15, background: "rgba(255,255,255,0.1)", color: "rgba(255,255,255,0.8)", fontFamily: FONT, fontWeight: 600, fontSize: 19, display: "flex", alignItems: "center", padding: "0 16px", overflow: "hidden", whiteSpace: "nowrap" }}>🔒 {s.url}</div>
+        </div>
+        <div style={{ position: "relative", width: W, height: H - 46, overflow: "hidden", background: "white" }}>
+          <div style={{ width: W, height: W * 1000 / 1600, transform: `scale(${z})`, transformOrigin: "50% 35%" }}>
+            {s.video ? <OffthreadVideo src={staticFile(s.video)} startFrom={Math.round((s.vstart ?? 0) * 30)} muted style={{ width: W, height: W * 1000 / 1600 }} /> : null}
+          </div>
+        </div>
+      </div>
+      {s.link ? <div style={{ position: "absolute", left: 230, top: 965, padding: "12px 26px", borderRadius: 18, background: "rgba(11,10,28,0.92)", border: `3px solid ${C.cyan ?? "#4CF2FF"}`, fontFamily: FONT, fontWeight: 800, fontSize: 30, color: "white", opacity: lk, translate: `0 ${(1 - lk) * 30}px` }}>🔗 {s.link}</div> : null}
+      <Host size={200} x={1640} y={720} offset={off} />
+    </AbsoluteFill>
+  );
+};
+
+/* термінал: команди друкуються, далі реальний вивід (лог реального запуску) */
+const Terminal: React.FC<{ s: DSeg; dur: number; off: number }> = ({ s, dur, off }) => {
+  const f = useCurrentFrame(); const head = sp(f, 12);
+  const items = s.term ?? []; const n = Math.max(1, items.length); const slot = dur / n;
+  const lines: React.ReactNode[] = [];
+  items.forEach((it, i) => {
+    const t0 = i * slot + 6; if (f < t0) return;
+    const typed = Math.min(it.cmd.length, Math.floor((f - t0) * 2.2));
+    const outAt = t0 + it.cmd.length / 2.2 + 10;
+    lines.push(<div key={"c" + i} style={{ color: "#4CF2FF" }}><span style={{ color: "#19C37D" }}>shikarno@demo</span><span style={{ color: "white" }}>:~/nbu$ </span>{it.cmd.slice(0, typed)}{typed < it.cmd.length && Math.floor(f / 8) % 2 === 0 ? "▌" : ""}</div>);
+    if (f >= outAt) { const shown = it.out.split("\n").slice(0, Math.floor((f - outAt) / 3) + 1);
+      lines.push(<div key={"o" + i} style={{ color: it.error ? "#FF6B8B" : "rgba(255,255,255,0.88)", whiteSpace: "pre-wrap", marginBottom: 14 }}>{shown.join("\n")}</div>); }
+  });
+  return (
+    <AbsoluteFill>
+      <div style={{ position: "absolute", left: 200, top: 130, display: "flex", alignItems: "center", gap: 18, opacity: head }}>
+        <div style={{ padding: "8px 20px", borderRadius: 14, background: C.purple, color: "white", fontFamily: FONT, fontWeight: 900, fontSize: 28, letterSpacing: 2 }}>{s.label ?? "ТЕРМІНАЛ · РЕАЛЬНИЙ ЗАПУСК"}</div>
+        <div style={{ fontFamily: FONT, fontWeight: 900, fontSize: 44, color: "white" }}>{s.title}</div>
+      </div>
+      <div style={{ position: "absolute", left: 200, top: 196, width: 1400, height: 760, borderRadius: 20, overflow: "hidden", background: "#0d0c17", boxShadow: "0 40px 90px rgba(0,0,0,0.6)", border: "2px solid rgba(255,255,255,0.14)", opacity: head }}>
+        <div style={{ height: 44, display: "flex", alignItems: "center", gap: 10, padding: "0 18px", background: "rgba(255,255,255,0.07)" }}>
+          {["#FF5F57", "#FEBC2E", "#28C840"].map((c) => <div key={c} style={{ width: 14, height: 14, borderRadius: 7, background: c }} />)}
+          <div style={{ marginLeft: 16, color: "rgba(255,255,255,0.6)", fontFamily: "monospace", fontSize: 20 }}>bash — Claude Code {""}</div>
+        </div>
+        <div style={{ padding: "22px 30px", fontFamily: "'DejaVu Sans Mono', monospace", fontSize: 25, lineHeight: 1.45, display: "flex", flexDirection: "column", justifyContent: "flex-end", height: 760 - 44 - 44, overflow: "hidden" }}>{lines}</div>
+      </div>
+      <Host size={200} x={1640} y={720} offset={off} />
+    </AbsoluteFill>
+  );
+};
+
 /* дві колонки: було/стало або ChatGPT vs Gemini */
 const Compare: React.FC<{ s: DSeg; dur: number; off: number }> = ({ s, dur, off }) => {
   const f = useCurrentFrame(); const head = sp(f, 12);
@@ -351,6 +412,8 @@ export const DigestVideo: React.FC<DData> = (props) => {
           if (s.kind === "verdict") return out(<Verdict s={s} off={start} />);
           if (s.kind === "evidence" || s.kind === "demo") return out(<Evidence s={s} dur={dur} off={start} />);
           if (s.kind === "compare") return out(<Compare s={s} dur={dur} off={start} />);
+          if (s.kind === "screen") return out(<Screen s={s} dur={dur} off={start} />);
+          if (s.kind === "terminal") return out(<Terminal s={s} dur={dur} off={start} />);
           if (s.kind === "quick") return out(<Quick s={s} dur={dur} off={start} />);
           if (s.kind === "section") return out(<Section s={s} />);
           if (s.kind === "numbers" || s.kind === "calendar" || s.kind === "timeline") return out(<Facts s={s} dur={dur} off={start} />);
