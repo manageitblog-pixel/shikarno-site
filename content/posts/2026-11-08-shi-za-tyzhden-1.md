@@ -7,6 +7,7 @@ date: 2026-11-08T12:00:00+02:00
 description: "Головне про штучний інтелект за 1–7 листопада 2026 для людей, бізнесу й розробників: GIF у ChatGPT, кешбек mono на ШІ, спільний ліміт ChatGPT і Codex, скіли Gemini, кінець Gemini 2.5 і тест токенів."
 tags: [chatgpt, gemini, biznes, rozrobka]
 youtube: lvcZI5L--MA
+telegram_post: 97
 duration: "8:06"
 chapters: [{t: "0:00", title: "Вступ"}, {t: "0:52", title: "Для всіх"}, {t: "0:54", title: "ChatGPT робить GIF", link: "/novyny/chatgpt-gif-images-2-6/"}, {t: "2:02", title: "Кешбек 10% на ШІ в mono", link: "/novyny/mono-keshbek-shi/"}, {t: "2:49", title: "Для бізнесу"}, {t: "2:51", title: "Один ліміт на ChatGPT і Codex", link: "/novyny/chatgpt-odyn-limit-codex/"}, {t: "3:51", title: "Скіли Gemini без підписки", link: "/novyny/skil-gemini-lysty-bez-pidpysky/"}, {t: "4:37", title: "Для ІТ"}, {t: "4:39", title: "Gemini 2.5 підмінять 1 грудня", link: "/novyny/gemini-2-5-vymykayut-1-grudnya/"}, {t: "5:15", title: "Gemini Omni 1.2 і ще з changelog", link: "/novyny/gemini-omni-1-2-video-15-sekund/"}, {t: "6:07", title: "Наш тест: токени українською", link: "/novyny/ukrainska-tokeny-chatgpt/"}, {t: "6:57", title: "Тиждень у цифрах"}, {t: "7:19", title: "Три дії на тиждень"}, {t: "7:35", title: "Фінал"}]
 source: {name: "Google AI Studio: Gemini API changelog", url: "https://aistudio.google.com/docs/changelog"}
