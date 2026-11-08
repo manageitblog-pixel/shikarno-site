@@ -201,5 +201,41 @@
    "ChatGPT у Chrome": 40.8
   },
   "source": "скрін власника, Studio 28 дн, 1.11"
+ },
+ "ep59_shi_zabere_robotu": {
+  "format": "check",
+  "template": "generic",
+  "tone": "check",
+  "len": "short",
+  "series": "professions",
+  "audience": "люди+бізнес",
+  "tts": "flash"
+ },
+ "ep60_pravyla_bezpeky_konektoriv": {
+  "format": "skills",
+  "template": "generic",
+  "tone": "howto",
+  "len": "short",
+  "series": "skills_clip",
+  "audience": "бізнес+IT+люди",
+  "tts": "flash",
+  "funnel": "Eyhg8lwIFg8"
+ },
+ "ep61_shi_rozrobnyk_otsinka": {
+  "format": "humor",
+  "template": "chat",
+  "tone": "humor",
+  "len": "short",
+  "series": "shi_ty_serjozno",
+  "audience": "IT",
+  "tts": "lite"
+ },
+ "ep62_claude_vydalyv_konspekty": {
+  "format": "news",
+  "template": "generic",
+  "tone": "check",
+  "len": "short",
+  "audience": "люди+бізнес",
+  "tts": "lite"
  }
 }
