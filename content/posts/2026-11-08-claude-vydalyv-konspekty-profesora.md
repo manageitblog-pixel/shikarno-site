@@ -1,7 +1,7 @@
 ---
 title: "Claude видалив професору конспекти за рік: 3 правила, щоб ШІ не стер твої файли"
 slug: claude-vydalyv-konspekty-profesora
-date: 2026-11-08T21:00:00+02:00
+date: 2026-11-30T21:00:00+02:00
 description: "Професор права з Чикаго попросив Claude оновити номери сторінок, а той видалив конспекти лекцій за рік і силабус. Що сталося і 3 правила безпеки для файлів."
 tags: [claude, anthropic, bezpeka, agenty]
 youtube: kFPd6UPTGxI
