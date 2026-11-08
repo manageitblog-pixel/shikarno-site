@@ -13,6 +13,7 @@ LOG=json.load(open("/home/user/shikarno-site/studio/demo/mcp-nbu/terminal_log.js
 CODE=open("/home/user/shikarno-site/studio/demo/mcp-nbu/server.py").read().split("\n",1)[1].strip()
 
 def G(t):
+    t=t.replace("ШІкарно","Шікарно")
     R=[("Add from Google Drive","Едд фром Гугл Драйв"),("Customize","Кастомайз"),("Connectors","Конектори"),("Tool permissions","Тул пермішенз"),("Always allow","Олвейз алау"),("Needs approval","Нідз апрувал"),("Blocked","Блокд"),("Disconnect","Дісконект"),
        ("Google Drive","Гугл Драйв"),("Google Calendar","Гугл Календар"),("Gmail","Джимейл"),("Google","Гугл"),("Claude Desktop","Клод Десктоп"),("Claude Code","Клод Код"),("claude.ai","клод крапка ей-ай"),("Claude","Клод"),("Anthropic","Антропік"),("ChatGPT","Чат Джі-Пі-Ті"),
        ("FastMCP","Фаст Ем-Сі-Пі"),("MCPServer","Ем-Сі-Пі Сервер"),("MCP","Ем-Сі-Пі"),("USB-C","ю-ес-бі сі"),("Docs","Докс"),("Sheets","Шітс"),("Slides","Слайдс"),("PDF","пі-ді-еф"),("Python","Пайтон"),("stdout","стандартний вивід"),("JSON","джейсон"),("Inspector","Інспектор"),
