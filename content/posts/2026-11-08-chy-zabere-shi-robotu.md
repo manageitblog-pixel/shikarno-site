@@ -5,6 +5,7 @@ date: 2026-11-08T10:00:00+02:00
 description: "Чи забере штучний інтелект твою роботу? Дослідження ILO 2025: ШІ зачіпає кожну четверту професію, але найвищий ризик — у 3,3%. Прогноз WEF до 2030 і що робити."
 tags: [biznes, instrumenty]
 youtube: OjbTM7Q7eOw
+telegram_post: 96
 source: {name: "ILO Working Paper 140: Generative AI and Jobs (20.05.2025)", url: "https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure"}
 sources:
   - {name: "WEF Future of Jobs Report 2025 — огляд на порталі Digital Skills and Jobs (ЄС)", url: "https://digital-skills-jobs.europa.eu/en/latest/research/future-jobs-report-2025"}
