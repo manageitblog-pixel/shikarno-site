@@ -5,6 +5,7 @@ date: 2026-11-08T14:00:00+02:00
 description: "Підключаєш ChatGPT, Claude чи Gemini до пошти чи диска? Три правила безпеки конекторів і скілів: довірені джерела, обережно з «Дозволити завжди», вимикай зайве."
 tags: [bezpeka, claude, chatgpt, biznes]
 youtube: aLY2ZUCHzUg
+telegram_post: 98
 source: {name: "Довідка Anthropic: Using Skills in Claude", url: "https://support.claude.com/en/articles/12512180-using-skills-in-claude"}
 summary:
   - "Конектор чи скіл — це доступ ШІ до твоїх даних: пошти, диска, календаря."
