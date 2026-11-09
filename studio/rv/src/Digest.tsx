@@ -3,10 +3,11 @@ import { AbsoluteFill, Sequence, interpolate, spring, useCurrentFrame, Easing, I
 import { Bait, Wordmark, Avatar, C, FONT } from "./brand";
 import { Cursor, fontCss } from "./parts";
 import { Icon } from "./Generic";
+import { UiMock } from "./UiMock";
 
 export type DSeg = { kind: string; from: number; to: number; n?: number; icon?: string; title?: string; source?: string;
   points?: string[]; items?: any[]; score?: number; plus?: string; minus?: string; label?: string; at?: number[]; sub?: string;
-  image?: string; hl?: { x: number; y: number; w: number; h: number }; url?: string; left?: { title: string; items: string[] }; right?: { title: string; items: string[] }; video?: string; vstart?: number; term?: { cmd: string; out: string; error?: boolean }[]; link?: string; zoom?: number[] };
+  image?: string; hl?: { x: number; y: number; w: number; h: number }; url?: string; left?: { title: string; items: string[] }; right?: { title: string; items: string[] }; video?: string; vstart?: number; term?: { cmd: string; out: string; error?: boolean }[]; link?: string; zoom?: number[]; ui?: any[]; src?: string };
 export type DData = { total: number; num: number; dates: string; segs: DSeg[]; words: { w: string; s: number; e: number; g: string }[]; mouth: number[]; titles: string[]; kicker?: string; sub?: string; big?: string; agendaTitle?: string; red?: boolean };
 const Ctx = createContext<DData>({ total: 300, num: 1, dates: "", segs: [], words: [], mouth: [], titles: [] });
 const useD = () => useContext(Ctx);
@@ -414,6 +415,7 @@ export const DigestVideo: React.FC<DData> = (props) => {
           if (s.kind === "compare") return out(<Compare s={s} dur={dur} off={start} />);
           if (s.kind === "screen") return out(<Screen s={s} dur={dur} off={start} />);
           if (s.kind === "terminal") return out(<Terminal s={s} dur={dur} off={start} />);
+          if (s.kind === "ui") return out(<><UiMock title={s.title} steps={s.ui ?? []} at={s.at ?? []} dur={dur} src={s.src} /><Host size={200} x={1640} y={720} offset={start} /></>);
           if (s.kind === "quick") return out(<Quick s={s} dur={dur} off={start} />);
           if (s.kind === "section") return out(<Section s={s} />);
           if (s.kind === "numbers" || s.kind === "calendar" || s.kind === "timeline") return out(<Facts s={s} dur={dur} off={start} />);
