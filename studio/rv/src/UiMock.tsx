@@ -41,11 +41,11 @@ const Sidebar: React.FC<{ items: string[]; pick: number; k: number; crumbs?: str
   </div>
 );
 
-const Step: React.FC<{ st: UiStep; f: number; hist?: UiStep[] }> = ({ st, f, hist = [] }) => {
+const Step: React.FC<{ st: UiStep; f: number; hist?: UiStep[]; len?: number }> = ({ st, f, hist = [], len = 90 }) => {
   const k = sp(f - 18);
   if (st.t === "menu") return <Sidebar items={st.items} pick={st.pick ?? 0} k={k} crumbs={st.crumbs} />;
   if (st.t === "connect") {
-    const done = f > 40;
+    const dn = Math.min(40, Math.max(12, Math.floor(len * 0.45))); const done = f > dn;
     return (
       <div style={{ position: "absolute", inset: 0, padding: 60, background: "white" }}>
         <div style={{ ...T(20, 800, MUTED), letterSpacing: 2 }}>{st.crumbs ?? "CUSTOMIZE › CONNECTORS"}</div>
@@ -55,7 +55,7 @@ const Step: React.FC<{ st: UiStep; f: number; hist?: UiStep[] }> = ({ st, f, his
             <div key={i} style={{ marginTop: 24, height: 96, borderRadius: 20, border: `2px solid ${me ? ACC : LINE}`, display: "flex", alignItems: "center", padding: "0 30px", gap: 24, background: me ? "rgba(124,92,255,0.06)" : "white" }}>
               <div style={{ width: 52, height: 52, borderRadius: 14, background: ["#4CAF50", "#EA4335", "#4285F4"][i % 3], opacity: 0.85 }} />
               <div style={{ flex: 1, ...T(30, 800) }}>{n}</div>
-              {me ? <div style={{ padding: "12px 30px", borderRadius: 14, background: done ? GREENBG : ACC, color: done ? "#0b6b3f" : "white", ...T(26, 800, done ? "#0b6b3f" : "white"), transform: `scale(${f > 30 && f < 40 ? 0.94 : 1})` }}>{done ? "Connected ✓" : st.btn ?? "Connect"}</div>
+              {me ? <div style={{ padding: "12px 30px", borderRadius: 14, background: done ? GREENBG : ACC, color: done ? "#0b6b3f" : "white", ...T(26, 800, done ? "#0b6b3f" : "white"), transform: `scale(${f > dn - 8 && f < dn ? 0.94 : 1})` }}>{done ? "Connected ✓" : st.btn ?? "Connect"}</div>
                 : <div style={{ ...T(24, 600, MUTED) }}>Connect</div>}
             </div>);
         })}
@@ -99,11 +99,11 @@ const Step: React.FC<{ st: UiStep; f: number; hist?: UiStep[] }> = ({ st, f, his
     const r: string = st.reply ?? ""; const shown = r.slice(0, Math.max(0, Math.floor((f - 24) * 3.2)));
     return (
       <div style={{ position: "absolute", inset: 0, background: "white", padding: "40px 120px", display: "flex", flexDirection: "column", justifyContent: "flex-end", paddingBottom: 70 }}>
-        {hist.map((h, i) => <div key={i} style={{ opacity: 0.55, marginBottom: 22 }}>
-          <div style={{ marginLeft: "auto", maxWidth: 900, width: "fit-content", padding: "14px 22px", borderRadius: 20, background: "#efeefe", ...T(23, 600) }}>{h.user}</div>
+        {hist.map((h, i) => <div key={i} style={{ opacity: 0.55, marginBottom: 22, display: "flex", flexDirection: "column" }}>
+          <div style={{ alignSelf: "flex-end", marginLeft: "auto", maxWidth: 900, width: "fit-content", padding: "14px 22px", borderRadius: 20, background: "#efeefe", ...T(23, 600) }}>{h.user}</div>
           <div style={{ marginTop: 12, maxWidth: 1100, ...T(22, 500), lineHeight: 1.45, whiteSpace: "pre-wrap" }}>{h.reply}</div></div>)}
-        {st.file ? <div style={{ marginLeft: "auto", width: "fit-content", padding: "10px 18px", borderRadius: 14, background: "#f1effa", ...T(22, 700), marginBottom: 10 }}>📄 {st.file}</div> : null}
-        <div style={{ marginLeft: "auto", maxWidth: 900, width: "fit-content", padding: "18px 26px", borderRadius: 24, background: "#efeefe", ...T(27, 600), opacity: sp(f) }}>{st.user}</div>
+        {st.file ? <div style={{ alignSelf: "flex-end", marginLeft: "auto", width: "fit-content", padding: "10px 18px", borderRadius: 14, background: "#f1effa", ...T(22, 700), marginBottom: 10 }}>📄 {st.file}</div> : null}
+        <div style={{ alignSelf: "flex-end", marginLeft: "auto", maxWidth: 900, width: "fit-content", padding: "18px 26px", borderRadius: 24, background: "#efeefe", ...T(27, 600), opacity: sp(f) }}>{st.user}</div>
         {f > 20 ? <div style={{ marginTop: 26, maxWidth: 1100, ...T(26, 500), lineHeight: 1.5, whiteSpace: "pre-wrap" }}>
           {st.tool && f > 14 ? <div style={{ ...T(20, 700, MUTED), marginBottom: 10 }}>⚙ {st.tool}</div> : null}{shown}</div> : null}
         {st.confirm && f > 24 + r.length / 3.2 + 6 ? <div style={{ marginTop: 18, display: "flex", gap: 16, opacity: sp(f - 24 - r.length / 3.2 - 6) }}>
@@ -166,8 +166,8 @@ export const UiMock: React.FC<{ title?: string; steps: UiStep[]; at: number[]; d
         <div style={{ fontFamily: FONT, fontWeight: 900, fontSize: 44, color: "white" }}>{title}</div>
       </div>
       <div style={{ position: "absolute", left: 200, top: 196, width: W, height: H, borderRadius: 20, overflow: "hidden", background: "white", boxShadow: "0 40px 90px rgba(0,0,0,0.55)", border: "2px solid rgba(255,255,255,0.14)", opacity: head }}>
-        <Step key={cur} st={steps[cur]} f={lf} hist={steps[cur].t === "chat" ? steps.slice(Math.max(0, cur - 2), cur).filter((x) => x.t === "chat" && !x.file) : []} />
-        <div style={{ position: "absolute", right: 18, bottom: 14, padding: "6px 14px", borderRadius: 10, background: "rgba(14,11,36,0.75)", ...T(18, 700, "white") }}>{src ?? "кроки — за довідкою Anthropic · спрощена схема"}</div>
+        <Step key={cur} st={steps[cur]} f={lf} len={(starts[cur + 1] ?? dur) - starts[cur]} hist={steps[cur].t === "chat" ? steps.slice(Math.max(0, cur - 2), cur).filter((x) => x.t === "chat" && !x.file) : []} />
+        <div style={{ position: "absolute", right: 18, top: 14, padding: "6px 14px", borderRadius: 10, background: "rgba(14,11,36,0.75)", ...T(18, 700, "white") }}>{src ?? "кроки — за довідкою Anthropic · спрощена схема"}</div>
         <Cursor x={cx - 10} y={cy - 6} pressed={lf > 24 && lf < 32} />
       </div>
       <div style={{ position: "absolute", left: 200, top: 980, display: "flex", gap: 10 }}>

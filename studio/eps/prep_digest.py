@@ -37,7 +37,7 @@ for i,(s,t) in enumerate(zip(dg.SEGS,tl)):
     else:
         spread(s["text"].replace(" —","").split(), st, en, i, 0)
     segs.append(sc)
-titles=[s["title"].split(":")[0] for s in dg.SEGS if s["kind"]=="points"]
+titles=[s["title"].split(":")[0] for s in dg.SEGS if s["kind"]=="section"] or [s["title"].split(":")[0] for s in dg.SEGS if s["kind"]=="points"]
 json.dump({**{k:getattr(dg,K) for k,K in [("kicker","KICKER"),("sub","SUB"),("big","BIG"),("agendaTitle","AGENDA_TITLE"),("red","RED")] if hasattr(dg,K)},"total":total,"num":dg.NUM,"dates":dg.DATES,"segs":segs,"words":words,"mouth":[round(x,3) for x in m.tolist()],"titles":titles},open(f"{D}/props.json","w"),ensure_ascii=False)
 chap=[(0,"Вступ")]+[(s["from"]/FPS,f'{s["n"]}. {s["title"]}') for s in segs if s["kind"]=="points"]+[(s["from"]/FPS,"Коротко") for s in segs if s["kind"]=="quick"]+[(s["from"]/FPS,"Фінал") for s in segs if s["kind"]=="outro"]
 json.dump([[round(a,1),b] for a,b in chap],open(f"{D}/chapters.json","w"),ensure_ascii=False)

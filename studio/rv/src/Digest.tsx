@@ -45,7 +45,7 @@ const Header: React.FC = () => {
 /* розділи внизу */
 const Chapters: React.FC = () => {
   const f = useCurrentFrame(); const { segs, total, titles } = useD();
-  const starts = segs.filter((s) => s.kind === "points").map((s) => s.from);
+  const secs = segs.filter((s) => s.kind === "section"); const starts = (secs.length ? secs : segs.filter((s) => s.kind === "points")).map((s) => s.from);
   const cur = starts.filter((s) => f >= s).length;
   return (
     <div style={{ position: "absolute", left: 48, right: 48, bottom: 26, display: "flex", gap: 10, alignItems: "flex-end" }}>
