@@ -5,6 +5,7 @@ date: 2026-11-09T21:00:00+02:00
 description: "Як перевірити, чи фото або відео зроблене ШІ: у безкоштовному Gemini є перевірка водяного знака SynthID. Кроки, ліміти і головний підступ — Gemini бачить лише ШІ від Google."
 tags: [gemini, google, bezpeka]
 youtube: cpk0jBsJOtA
+telegram_post: 102
 source: {name: "Довідка Gemini: перевірка контенту на SynthID", url: "https://support.google.com/gemini/answer/16722517?hl=en"}
 sources:
   - {name: "Google Blog: як зрозуміти, як створено чи змінено контент (19.05.2026)", url: "https://blog.google/innovation-and-ai/products/making-it-easier-to-understand-how-content-was-created-and-edited/"}
