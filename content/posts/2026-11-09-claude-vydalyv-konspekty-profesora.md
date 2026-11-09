@@ -5,6 +5,7 @@ date: 2026-11-09T10:00:00+02:00
 description: "Професор права з Чикаго попросив Claude оновити номери сторінок, а той видалив конспекти лекцій за рік і силабус. Що сталося і 3 правила безпеки для файлів."
 tags: [claude, anthropic, bezpeka, agenty]
 youtube: y4wM3p0zLS4
+telegram_post: 99
 source: {name: "Dexerto: Professor returns from lunch to find AI deleted years worth of lecture notes", url: "https://www.dexerto.com/entertainment/professor-returns-from-lunch-to-find-ai-deleted-years-worth-of-lecture-notes-3425652/"}
 summary:
   - "Професор права Чиказького університету Вільям Боуд попросив Claude оновити номери сторінок у старих конспектах."
