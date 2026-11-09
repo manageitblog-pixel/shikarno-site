@@ -5,6 +5,7 @@ date: 2026-11-09T14:00:00+02:00
 description: "Рубрика «ШІ, ти серйозно?» для айтішників: дали Gemini роль senior-розробника і спитали, чому оцінка «на дві години» стала трьома днями. Справжня відповідь і лайфхак."
 tags: [rozrobka, gemini, google]
 youtube: 50Y16F55E3k
+telegram_post: 100
 source: {name: "Тест ШІкарно в Gemini (gemini-3-flash-preview), 8.11.2026, один запит без історії чату", url: "https://gemini.google.com/"}
 summary:
   - "Третя серія рубрики «ШІ, ти серйозно?» — тепер для айтішників."
