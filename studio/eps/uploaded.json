@@ -73,5 +73,12 @@
  "news1_example": "wbZmsGoYyDI",
  "konektory1_test": "eP-ne8pHlp4",
  "ep64_gemini_synthid_perevirka": "cpk0jBsJOtA",
- "ep63_prof_hr": "Dfwai-UrPXg"
+ "ep63_prof_hr": "Dfwai-UrPXg",
+ "konektory1": {
+  "id": "kKYvFHKIvKM",
+  "publish_at": "2026-11-11T17:00:00Z",
+  "title": "Конектори Claude від А до Я",
+  "kind": "long-guide",
+  "playlist": "Скіли"
+ }
 }
