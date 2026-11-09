@@ -5,6 +5,7 @@ date: 2026-11-09T19:00:00+02:00
 description: "ШІ для HR і власників бізнесу: robota.ua пише вакансію, Claude Projects сортує знеособлені резюме, Gemini Skills готує питання, Notebook — онбординг. Без порушення персданих."
 tags: [biznes, claude, gemini, instrumenty]
 youtube: Dfwai-UrPXg
+telegram_post: 101
 source: {name: "robota.ua для роботодавців", url: "https://robota.ua/employer"}
 sources:
   - {name: "Anthropic: What are Projects", url: "https://support.claude.com/en/articles/9517075-what-are-projects"}
