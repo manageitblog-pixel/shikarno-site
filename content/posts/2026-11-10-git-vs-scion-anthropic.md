@@ -7,6 +7,7 @@ date: 2026-11-10T19:00:00+02:00
 description: "Anthropic замінила git власною системою Scion: 30 000+ злиттів на день, 200× менше ресурсів. Як працює git, чому він зламався на ШІ-агентах, як влаштований Scion і що взяти собі."
 tags: [rozrobka, anthropic, claude, agenty]
 youtube: g99aVmNXhVs
+telegram_post: 106
 duration: "9:55"
 chapters: [{t: "0:00", title: "Вступ"}, {t: "0:47", title: "Що сталося: цифри Anthropic"}, {t: "1:54", title: "Як працює git (реальний clone)"}, {t: "2:54", title: "Чому git зламався: shallow і partial clone"}, {t: "4:30", title: "Як влаштований Scion"}, {t: "6:18", title: "Результати і уроки"}, {t: "7:56", title: "Твій git сьогодні: sparse-checkout, commit-graph, Scalar"}, {t: "8:57", title: "Вердикт"}, {t: "9:39", title: "Фінал"}]
 source: {name: "Anthropic Engineering: Redesigning source control at Anthropic (13.10.2026)", url: "https://www.anthropic.com/engineering/redesigning-source-control"}
