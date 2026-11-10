@@ -5,6 +5,7 @@ date: 2026-11-10T14:00:00+02:00
 description: "Anthropic випустила Claude Fable 5.2 і Mythos 5.2 — одну модель у двох версіях. Що вміє, які цифри (за даними Anthropic), чи є в безкоштовному Claude і ціни API."
 tags: [claude, anthropic, rozrobka]
 youtube: PocfDWGNhOk
+telegram_post: 104
 source: {name: "Anthropic: Introducing Claude Fable 5.2 and Claude Mythos 5.2 (9.11.2026)", url: "https://www.anthropic.com/claude-fable-and-mythos-5-2"}
 sources:
   - {name: "Тарифи Claude", url: "https://claude.com/pricing"}
