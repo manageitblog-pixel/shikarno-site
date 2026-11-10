@@ -5,6 +5,7 @@ date: 2026-11-10T10:50:00+02:00
 description: "Який ШІ обрати у 2026: ChatGPT, Claude чи Gemini? Суб'єктивний тір-лист Байта для листів, фото, PDF і конспектів, пошуку й коду — з поясненням, чому саме так."
 tags: [chatgpt, claude, gemini, instrumenty]
 youtube: YNYTMV8FV9E
+telegram_post: 103
 source: {name: "Anthropic: Claude Fable 5.2 і Mythos 5.2 (9.11.2026)", url: "https://www.anthropic.com/claude-fable-and-mythos-5-2"}
 sources:
   - {name: "Тарифи Claude", url: "https://claude.com/pricing"}

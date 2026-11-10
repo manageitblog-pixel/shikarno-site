@@ -83,12 +83,20 @@
   "10_r4_chatbot_vs_agent"
  ],
  "owner_note_27_10": "Власник опублікував усі заплановані; у TikTok 7 відео. Далі — генерувати нові щодня (ролик дня + пакет у бот).",
- "sent_to_owner": {
-  "file": "eps/ep61_shi_rozrobnyk_otsinka/tiktok.mp4",
-  "date": "2026-11-09",
-  "rec_time": "2026-11-09 21:00 Київ",
-  "note": "IT-скетч, Chat-формат; основний голос"
- },
+ "sent_to_owner": [
+  {
+   "file": "eps/ep65_tier_shi_dlya_choho/tiktok.mp4",
+   "date": "2026-11-10",
+   "rec_time": "2026-11-10 19:00 Київ",
+   "note": "тір-лист"
+  },
+  {
+   "file": "eps/ep66_claude_fable_5_2/tiktok.mp4",
+   "date": "2026-11-10",
+   "rec_time": "2026-11-11 12:30 Київ",
+   "note": "новина Fable 5.2"
+  }
+ ],
  "promote": [
   {
    "date": "2026-10-28",
