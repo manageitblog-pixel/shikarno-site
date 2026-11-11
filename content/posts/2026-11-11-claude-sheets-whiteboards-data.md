@@ -5,6 +5,7 @@ date: 2026-11-11T14:00:00+02:00
 description: "Anthropic запустила Claude Sheets і Whiteboards (бета) та Claude Data. Таблиці з формулами з одного запиту, дошка для команди, дашборди з даних — що вміє і на яких тарифах."
 tags: [claude, anthropic, instrumenty]
 youtube: -9JCYEvwrrE
+telegram_post: 109
 source: {name: "Anthropic: Introducing Claude Whiteboards, Claude Sheets, and Claude Data (10.11.2026)", url: "https://claude.com/resources/articles/sheets-whiteboards-data"}
 summary:
   - "10.11.2026 Anthropic запустила Claude Sheets і Claude Whiteboards у беті, а Claude Data — для всіх (замість Claude Dashboards)."
