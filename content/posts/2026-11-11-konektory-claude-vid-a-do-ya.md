@@ -7,6 +7,7 @@ date: 2026-11-11T19:00:00+02:00
 description: "Як підключити Google Drive, Gmail і Календар до Claude, які дозволи ставити в Tool permissions і як написати свій MCP-сервер у терміналі. Кроки, ліміти і 4 правила безпеки."
 tags: [claude, instrumenty, biznes, rozrobka, google]
 youtube: kKYvFHKIvKM
+telegram_post: 111
 duration: "10:03"
 chapters: [{t: "0:00", title: "Вступ"}, {t: "0:38", title: "Що таке конектор і MCP", link: "/novyny/skil-konektor-mcp-prostymy-slovamy/"}, {t: "1:23", title: "Google Drive у Claude"}, {t: "3:12", title: "Gmail і Календар"}, {t: "5:24", title: "Свій MCP-сервер (реальний термінал)"}, {t: "8:23", title: "Безпека", link: "/novyny/3-pravyla-bezpeky-konektoriv/"}, {t: "9:26", title: "Коротко"}, {t: "9:46", title: "Фінал"}]
 source: {name: "Claude Help Center: Use Google Workspace connectors", url: "https://support.claude.com/en/articles/10166901-use-google-workspace-connectors"}
