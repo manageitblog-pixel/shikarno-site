@@ -5,6 +5,7 @@ date: 2026-11-11T10:00:00+02:00
 description: "Довідка Google: частину даних з підключених до Gemini застосунків (Gmail, Диск) перевіряють люди. Що саме вони бачать і 3 кроки, щоб захистити пошту."
 tags: [gemini, bezpeka, google]
 youtube: OT5E1EclkHY
+telegram_post: 107
 source: {name: "Довідка Google: Gemini і підключені застосунки", url: "https://support.google.com/gemini/answer/16836988"}
 summary:
   - "У довідці Google сказано: частину даних з підключених до Gemini застосунків перевіряють спеціалісти, зокрема сторонні постачальники послуг."
