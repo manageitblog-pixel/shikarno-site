@@ -4,6 +4,7 @@ slug: chatgpt-pamyat-yak-vydalyty
 date: 2026-11-12T19:00:00+02:00
 description: "Видалив чат у ChatGPT, а він досі пам'ятає? Збережені спогади живуть окремо від історії. Де їх знайти, як видалити і чому вимкнути пам'ять — замало."
 tags: [chatgpt, openai, bezpeka]
+youtube: QbG1TkyEEXk
 source: {name: "OpenAI Help: Memory FAQ", url: "https://help.openai.com/en/articles/8590148-memory-in-chatgpt"}
 sources:
   - {name: "OpenAI Help: Data controls in ChatGPT", url: "https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt"}
