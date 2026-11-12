@@ -28,3 +28,4 @@ __pycache__/
 # пульт
 pult/.token
 pult/.viewkey
+tg/.bait_token
