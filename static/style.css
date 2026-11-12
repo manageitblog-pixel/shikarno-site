@@ -366,7 +366,8 @@ body::before{content:"";position:absolute;z-index:-2;inset:0 0 auto;height:200vh
 }
 @media (max-width:440px){.nav-about{display:none}.nav{gap:.95rem}}
 .warp.paused i{animation-play-state:paused}
-.prose pre,main pre{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:1rem 1.1rem;overflow-x:auto;font:500 .92rem/1.55 ui-monospace,SFMono-Regular,Menlo,monospace;margin:0 0 1.2rem}
+.prose pre,main pre{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:1rem 1.1rem;overflow-x:auto;font:500 .95rem/1.55 var(--f-body);margin:0 0 1.2rem}
+.prose pre code,main pre code{font:inherit}
 pre.has-copy{position:relative;padding-top:2.6rem;white-space:pre-wrap;word-break:break-word}
 .copy-btn{position:absolute;top:.5rem;right:.5rem;font:700 .8rem/1 var(--f-head);padding:.45rem .8rem;border:0;border-radius:999px;background:#FFD60A;color:#0B0A1C;cursor:pointer}
 .copy-btn:active{transform:scale(.96)}
