@@ -5,6 +5,7 @@ date: 2026-11-12T14:00:00+02:00
 description: "Claude відкриває Canva, Notion, Dropbox, Asana й ще 9 сервісів прямо в чаті і править їх разом з тобою. Що вміють інтерактивні конектори, де працюють і на яких тарифах."
 tags: [claude, anthropic, instrumenty]
 youtube: kIbdPmG0sT4
+telegram_post: 113
 source: {name: "Anthropic: Interactive connectors — the full tool in Claude (10.11.2026)", url: "https://claude.com/resources/articles/interactive-connectors-full-tool"}
 summary:
   - "10.11.2026 Anthropic додала інтерактивні конектори: інструмент відкривається в Claude поруч із розмовою або на весь екран."
