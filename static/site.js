@@ -60,3 +60,16 @@ document.addEventListener("click",function(e){
   var w=document.querySelector(".warp"); if(!w||!("IntersectionObserver" in window)) return;
   new IntersectionObserver(function(en){ w.classList.toggle("paused",!en[0].isIntersecting); }).observe(w);
 })();
+
+/* Кнопка «Скопіювати» для блоків коду (набори ШІ-помічника) */
+(function(){
+  if(!navigator.clipboard) return;
+  document.querySelectorAll("pre > code").forEach(function(c){
+    var pre=c.parentNode, b=document.createElement("button");
+    b.type="button"; b.className="copy-btn"; b.textContent="Скопіювати";
+    b.addEventListener("click",function(){
+      navigator.clipboard.writeText(c.innerText).then(function(){ b.textContent="Скопійовано ✓"; setTimeout(function(){b.textContent="Скопіювати";},1800); });
+    });
+    pre.classList.add("has-copy"); pre.appendChild(b);
+  });
+})();

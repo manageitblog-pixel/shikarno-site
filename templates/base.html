@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{{ page_title }}</title>
 <meta name="description" content="{{ page_desc }}">
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="robots" content="{% if noindex %}noindex, nofollow{% else %}index, follow, max-image-preview:large, max-snippet:-1{% endif %}">
 {% if site.gsc_verify %}<meta name="google-site-verification" content="{{ site.gsc_verify }}">{% endif %}{% if site.bing_verify %}<meta name="msvalidate.01" content="{{ site.bing_verify }}">{% endif %}
 <link rel="canonical" href="{{ site.url }}{{ path }}">
 <meta property="og:site_name" content="{{ site.name }}">

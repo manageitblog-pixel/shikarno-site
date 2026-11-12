@@ -133,7 +133,8 @@ def build(preview=False):
         emit(f"/{sec}/", "tag.html", tag_title=sec_name, items=items if kind != "news" else posts,
              page_title=f"{sec_name} | {SITE['name']}", page_desc=f"{sec_name} ШІкарно: штучний інтелект українською, з джерелами і вердиктом Байта.")
     for pg in pages:
-        emit(f"/{pg['slug']}/", "page.html", pg=pg, page_title=f"{pg['title']} | {SITE['name']}", page_desc=pg["description"])
+        emit(f"/{pg['slug']}/", "page.html", pg=pg, page_title=f"{pg['title']} | {SITE['name']}", page_desc=pg["description"],
+             noindex=bool(pg.get("noindex")))
     emit("/404/", "404.html", page_title=f"Сторінку не знайдено | {SITE['name']}", page_desc=SITE["description"])
 
     if preview: return write_preview(env, views)
@@ -159,7 +160,8 @@ def build(preview=False):
     ns.append("</urlset>")
     (DIST/"news-sitemap.xml").write_text("\n".join(ns), encoding="utf-8")
     # sitemap, rss, robots
-    urls = [(path, None) for path, _ in views if path != "/404/"]
+    hidden = {f"/{pg['slug']}/" for pg in pages if pg.get("noindex")}
+    urls = [(path, None) for path, _ in views if path != "/404/" and path not in hidden]
     last = {p["path"]: p["iso"] for p in posts}
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for path, _ in urls:
