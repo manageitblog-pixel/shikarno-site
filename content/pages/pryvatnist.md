@@ -1,22 +1,30 @@
 ---
-title: Політика конфіденційності / Privacy Policy
+title: Політика конфіденційності
 slug: pryvatnist
-description: "Як ШІкарно обробляє дані: сайт без реклами-трекерів, анонімна статистика Cloudflare, застосунок для TikTok зберігає лише токен доступу. Privacy Policy of ShIkarno."
+description: "Які дані збирає ШІкарно (сайт і бот @ShikarnoBaitBot), навіщо, як довго зберігає і як їх видалити. Коротко і зрозуміло."
 ---
-Оновлено: 3 листопада 2026.
+Ми збираємо мінімум даних і лише для того, щоб дати тобі обіцяне. Ніколи не продаємо й не передаємо їх рекламодавцям.
 
-## Українською
+## Бот @ShikarnoBaitBot («Твій ШІ-помічник»)
 
-**Сайт.** Ми не просимо реєстрації і не збираємо імена чи email. Для статистики відвідувань використовуємо Cloudflare Web Analytics — без cookie і без відстеження між сайтами. Відео YouTube вантажаться лише після кліку (через youtube-nocookie.com).
+**Що зберігаємо:** твій Telegram ID, ім'я, яке ти написав, обрану професію і ШІ, прогрес у маршруті. **Email** — лише якщо ти сам його залишив.
 
-**Застосунок ШІкарно для TikTok.** Після того як власник акаунта авторизує застосунок у TikTok, ми отримуємо і зберігаємо лише те, що потрібно для завантаження наших відео: ідентифікатор акаунта (open_id) і токен доступу. Ми не читаємо повідомлення, підписників чи інші дані акаунта, не передаємо дані третім особам і не продаємо їх. Токени зберігаються в захищеному сховищі, а не в публічному коді. Щоб видалити дані, відклич доступ у налаштуваннях TikTok і напиши нам — ми видалимо токен протягом 7 днів.
+**Навіщо:** щоб видати набір помічника, надсилати щотижневі апгрейди, а на пошту — паспорт помічника й апгрейди (якщо ти залишив email).
 
-**Контакт:** [Telegram-бот для звернень](https://t.me/ShikarnoPartnersBot?start=site).
+**Де:** у захищеній базі Cloudflare (ЄС/США, залежно від інфраструктури Cloudflare). Доступ — лише в команди ШІкарно.
 
-## In English
+**Як довго:** поки ти користуєшся ботом. Неактивні записи видаляємо через 12 місяців.
 
-**Website.** No registration, no names or emails collected. Visit statistics use Cloudflare Web Analytics (cookieless, no cross-site tracking). YouTube embeds load only after a click (youtube-nocookie.com).
+**Як видалити:** надішли боту команду **/delete** — усі твої дані зникнуть одразу. Відписатися від листів можна посиланням у кожному листі.
 
-**ShIkarno TikTok app.** After the account owner authorizes the app on TikTok, we receive and store only what is needed to upload our own videos: the account identifier (open_id) and an access token. We do not read messages, followers or other account data, and we never share or sell data. Tokens are kept in secure storage, not in public code. To delete your data, revoke access in TikTok settings and contact us — we delete the token within 7 days.
+**Перевірка підписки:** бот перевіряє, чи ти підписаний на канал @shikarno_ai_ua, — Telegram повідомляє лише статус підписки, нічого більше.
 
-**Contact:** [Telegram contact bot](https://t.me/ShikarnoPartnersBot?start=site).
+## Сайт shikarno.com.ua
+
+Сайт не має реєстрації й не просить персональних даних. Для статистики відвідувань використовуємо Cloudflare Web Analytics — без cookie і без відстеження між сайтами. Відео YouTube вантажаться з youtube-nocookie.com лише після твого кліку.
+
+## Контакти
+
+Питання про дані — напиши нам у Telegram: [@shikarno_ai_ua](https://t.me/shikarno_ai_ua) або [бот співпраці](https://t.me/ShikarnoPartnersBot).
+
+*Оновлено: 12 листопада 2026.*

@@ -1,0 +1,16 @@
+name = "shikarno-bait-bot"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+workers_dev = true
+
+[vars]
+OWNER_CHAT_ID = "133254760"
+CHANNEL = "@shikarno_ai_ua"
+
+[[durable_objects.bindings]]
+name = "DB"
+class_name = "BaitDB"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["BaitDB"]
