@@ -1,6 +1,7 @@
 // Байт · ШІкарно (@ShikarnoBaitBot) — «Твій ШІ-помічник за 10 хвилин».
 // Webhook → Durable Object (SQLite): користувачі (tg id, ім'я, email за згодою, професія, ШІ, прогрес).
 // Секрет воркера: BOT_TOKEN. Секрет вебхука = перші 32 символи SHA-256 від токена (обчислюється тут і при setWebhook).
+import { KITS } from "./kits.js";
 const SITE = "https://shikarno.com.ua";
 const PROF = {
   vch: { name: "Вчитель", page: "/pomichnyk-vchytel/", emoji: "👩‍🏫",
@@ -75,6 +76,10 @@ async function hookSecret(tok) {
 const json = (d, s = 200) => new Response(JSON.stringify(d), { status: s, headers: { "content-type": "application/json" } });
 
 export default {
+  async scheduled(ev, env) {
+    const stub = env.DB.get(env.DB.idFromName("main"));
+    await stub.fetch("https://do/weekly", { method: "POST" });
+  },
   async fetch(req, env) {
     const url = new URL(req.url);
     if (url.pathname === "/tg" && req.method === "POST") {
@@ -91,6 +96,7 @@ export class BaitDB {
     this.env = env; this.sql = ctx.storage.sql;
     this.sql.exec(`CREATE TABLE IF NOT EXISTS u (id INTEGER PRIMARY KEY, name TEXT, email TEXT, consent INTEGER DEFAULT 0, prof TEXT, ai TEXT,
       step TEXT, src TEXT, created INTEGER, updated INTEGER, setup INTEGER DEFAULT 0)`);
+    for (const c of ["wk INTEGER DEFAULT 0", "wk_ts INTEGER DEFAULT 0"]) { try { this.sql.exec(`ALTER TABLE u ADD COLUMN ${c}`); } catch (e) {} }
   }
   api(method, body) {
     return fetch(`https://api.telegram.org/bot${this.env.BOT_TOKEN}/${method}`, { method: "POST",
@@ -111,6 +117,7 @@ export class BaitDB {
   esc(s) { return String(s ?? "").replace(/[&<>]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c])); }
 
   async fetch(req) {
+    if (new URL(req.url).pathname === "/weekly") { await this.weekly(); return json({ ok: true }); }
     const upd = await req.json().catch(() => ({}));
     try { await this.handle(upd); } catch (e) { await this.send(this.env.OWNER_CHAT_ID, "⚠️ Байт-бот помилка: " + this.esc(String(e).slice(0, 300))); }
     return json({ ok: true });
@@ -132,7 +139,15 @@ export class BaitDB {
       await this.send(this.env.OWNER_CHAT_ID, `✨ Байт-бот: запит на ${u.step === "uniq" ? "УНІКАЛЬНИЙ помічник" : "іншу професію"} від ${this.esc(u.name || m.from.first_name)} (id ${id}, ${this.esc(PROF[u.prof]?.name || u.prof || "—")}):\n\n${this.esc(t.slice(0, 1500))}`);
       return this.send(id, "Записав 📝 Передав команді — напишу тобі тут, щойно твій помічник буде готовий.");
     }
-    return this.send(id, "Натисни /start, щоб зібрати свого ШІ-помічника 🤖\nПитання чи щось не вийшло — пиши сюди, я передам людям ШІкарно.");
+    if (String(id) === this.env.OWNER_CHAT_ID && m.reply_to_message) {
+      const mm = /\(id (\d+)/.exec(m.reply_to_message.text || "");
+      if (mm) { await this.send(mm[1], "💬 Відповідь від команди ШІкарно:\n\n" + this.esc(t)); return this.send(id, "✅ Надіслано"); }
+    }
+    if (u && t) {
+      await this.send(this.env.OWNER_CHAT_ID, `💬 Спитай Байта — ${this.esc(u.name || m.from.first_name)} (id ${id}, ${this.esc(PROF[u.prof]?.name || "—")}):\n\n${this.esc(t.slice(0, 1500))}\n\n↩️ Відповідай реплаєм на це повідомлення — я перешлю.`);
+      return this.send(id, "Отримав 📝 Передав команді ШІкарно — відповімо тут найближчим часом.");
+    }
+    return this.send(id, "Натисни /start, щоб зібрати свого ШІ-помічника 🤖");
   }
 
   async start(from, src) {
@@ -173,6 +188,8 @@ export class BaitDB {
       this.upsert(id, { ai: a, step: "name" });
       return this.send(id, "Як тебе звати? Напиши ім'я — лише для привітання 🙂", { reply_markup: { force_reply: true, input_field_placeholder: "Ім'я" } });
     }
+    if (d === "wdone") return this.send(id, "Супер! 💪 Наступний крок прийде у вівторок.");
+    if (d === "wfail") { this.upsert(id, { step: "done" }); return this.send(id, "Напиши одним повідомленням, що саме не вийшло — команда ШІкарно підкаже."); }
     if (d === "uniq") {
       this.upsert(id, { step: "uniq" });
       return this.send(id, "Базовий набір — під типову роботу. Хочеш помічника саме під себе? Опиши одним повідомленням: чим займаєшся (ніша, місто/онлайн), хто твої клієнти і що найбільше забирає час. Команда ШІкарно збере унікальну сторінку під тебе і я напишу, коли готово 🙌");
@@ -184,7 +201,7 @@ export class BaitDB {
       if (!p) return;
       return this.send(id, `Супер, ${this.esc(u.name)}! 🎉 Спробуй прямо зараз — скопіюй у свого помічника:\n\n` +
         p.first.map((c, i) => `${i + 1}. <code>${this.esc(c)}</code>`).join("\n\n") +
-        `\n\nЩовівторка я надсилатиму апгрейд твого помічника. Щось не вийшло — просто напиши сюди.`);
+        `\n\nЩовівторка я надсилатиму наступний крок маршруту. Щось не вийшло — просто напиши сюди.`).then(() => this.sendWeek(id));
     }
   }
   gotName(id, t) {
@@ -205,16 +222,39 @@ export class BaitDB {
   async deliver(id) {
     const u = this.user(id), p = PROF[u.prof]; if (!p) return this.askProf(id);
     const ai = AI[u.ai] || "ChatGPT", where = u.ai === "idk" ? "Раджу почати з безкоштовного ChatGPT або Gemini — на сторінці є кроки для обох." : `На сторінці відкрий розділ «Крок 2» → ${ai}.`;
+    const kit = KITS[p.page];
+    if (kit?.instr) {
+      await this.send(id, `${p.emoji} <b>${this.esc(u.name)}, ось «мозок» твого помічника.</b> Натисни на текст нижче — він скопіюється:`);
+      await this.send(id, `<pre>${this.esc(kit.instr)}</pre>`);
+      const fd = new FormData();
+      fd.append("chat_id", String(id));
+      fd.append("caption", "Той самий текст файлом — зручно з комп'ютера.");
+      fd.append("document", new Blob([kit.instr], { type: "text/plain" }), `pomichnyk-${u.prof}.txt`);
+      await fetch(`https://api.telegram.org/bot${this.env.BOT_TOKEN}/sendDocument`, { method: "POST", body: fd }).catch(() => {});
+    }
     await this.send(id,
       `${p.emoji} <b>${this.esc(u.name)}, твій помічник готовий!</b>\n\n` +
-      `1️⃣ Відкрий набір і натисни «Скопіювати» біля інструкції.\n2️⃣ ${this.esc(where)}\n3️⃣ Встав — і помічник уже знає твою роботу.\n\n` +
-      `Усередині: 30 готових команд, шаблони, картка безпеки і маршрут на 4 тижні.`,
-      { reply_markup: { inline_keyboard: [[{ text: "📦 Відкрити мій набір", url: SITE + p.page }], [{ text: "✅ Налаштував!", callback_data: "setup" }], [{ text: "✨ Хочу унікальний — під мій бізнес", callback_data: "uniq" }]] } });
+      `1️⃣ Скопіюй інструкцію вище.\n2️⃣ ${this.esc(where)}\n3️⃣ Встав — і помічник уже знає твою роботу.\n\n` +
+      `У повному наборі на сайті: 30 готових команд, шаблони, картка безпеки і маршрут на 4 тижні.`,
+      { reply_markup: { inline_keyboard: [[{ text: "📦 Повний набір: 30 команд і шаблони", url: SITE + p.page }], [{ text: "✅ Налаштував!", callback_data: "setup" }], [{ text: "✨ Хочу унікальний — під мій бізнес", callback_data: "uniq" }]] } });
     await this.send(this.env.OWNER_CHAT_ID, `🤖 Байт-бот: новий помічник — ${p.name}, ${this.esc(ai)}${u.email ? ", з email" : ""}`);
   }
+  async sendWeek(id) {
+    const u = this.user(id), p = PROF[u?.prof], kit = p && KITS[p.page];
+    if (!kit || (u.wk || 0) >= kit.weeks.length) return;
+    const w = kit.weeks[u.wk || 0];
+    this.upsert(id, { wk: (u.wk || 0) + 1, wk_ts: Date.now() });
+    return this.send(id, `🗺 <b>${this.esc(w.title)}</b>\n\n${w.body}\n\nЗробив? Тисни кнопку — або напиши, що не вийшло.`,
+      { reply_markup: { inline_keyboard: [[{ text: "✅ Зробив", callback_data: "wdone" }, { text: "🤔 Не вийшло", callback_data: "wfail" }]] } });
+  }
+  async weekly() {
+    const due = Date.now() - 6.5 * 864e5;
+    const rows = this.sql.exec(`SELECT id FROM u WHERE setup=1 AND wk>=1 AND wk<4 AND wk_ts<?`, due).toArray();
+    for (const r of rows) await this.sendWeek(r.id);
+  }
   stats(id) {
-    const r = this.sql.exec(`SELECT COUNT(*) n, SUM(email IS NOT NULL) e, SUM(setup) s, SUM(step='done') d FROM u`).toArray()[0];
+    const r = this.sql.exec(`SELECT COUNT(*) n, SUM(email IS NOT NULL) e, SUM(setup) s, SUM(step='done') d, SUM(wk>=2) w2 FROM u`).toArray()[0];
     const by = this.sql.exec(`SELECT prof, COUNT(*) n FROM u GROUP BY prof`).toArray().map(x => `${x.prof || "—"}: ${x.n}`).join(", ");
-    return this.send(id, `📊 Байт-бот\nСтарти: ${r.n}\nОтримали набір: ${r.d || 0}\nНалаштували: ${r.s || 0}\nEmail: ${r.e || 0}\nЗа професіями: ${by}`);
+    return this.send(id, `📊 Байт-бот\nСтарти: ${r.n}\nОтримали набір: ${r.d || 0}\nНалаштували: ${r.s || 0}\nEmail: ${r.e || 0}\nДійшли до 2-го тижня: ${r.w2 || 0}\nЗа професіями: ${by}`);
   }
 }

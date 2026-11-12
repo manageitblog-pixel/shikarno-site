@@ -14,3 +14,6 @@ class_name = "BaitDB"
 [[migrations]]
 tag = "v1"
 new_sqlite_classes = ["BaitDB"]
+
+[triggers]
+crons = ["0 8 * * 2"]
