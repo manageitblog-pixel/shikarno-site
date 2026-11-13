@@ -5,6 +5,7 @@ date: 2026-11-13T19:00:00+02:00
 description: "Claude Meetings (бета) — Claude заходить у Google Meet як учасник: нотатки, задачі, документи під час дзвінка. Що він зберігає, кому доступно і як з приватністю."
 tags: [claude, anthropic, biznes]
 youtube: trlZL_IoPkE
+telegram_post: 119
 source: {name: "Anthropic: Claude Meetings (12.11.2026)", url: "https://claude.com/resources/articles/claude-meetings"}
 summary:
   - "12.11.2026 Anthropic запустила Claude Meetings у бета-версії."
