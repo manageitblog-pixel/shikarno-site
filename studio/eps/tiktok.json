@@ -123,6 +123,16 @@
    "ep": "ep70",
    "file": "eps/ep70_chatgpt_pamyat/tiktok.mp4",
    "rec": "2026-11-12 20:00 Kyiv"
+  },
+  {
+   "ep": "ep71",
+   "file": "eps/ep71_gemini_hydrogen/tiktok.mp4",
+   "rec": "2026-11-13 15:00 Kyiv"
+  },
+  {
+   "ep": "ep72",
+   "file": "eps/ep72_claude_meetings/tiktok.mp4",
+   "rec": "2026-11-13 20:00 Kyiv"
   }
  ],
  "promote": [
