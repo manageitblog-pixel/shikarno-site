@@ -41,3 +41,4 @@
 - Cowork: docs/tasks/2026-10-23-site-links.md — посилання на сайт в описах роликів, каналу, Telegram; оновити eps/RUNBOOK.md з репо; youtube ID для еп.11–12; дайджест #1 на сайт до 25.10 12:00.
 - Користувач: Search Console (ресурс «Домен», TXT в imena, sitemap.xml і news-sitemap.xml); Bing Webmaster Tools — імпорт із Search Console; посилання на сайт у шапці YouTube-каналу; посилання на пости Telegram еп.1, 2, 6 (для коментарів); контакт для реклами — бот @ShikarnoPartnersBot (готово); аватар бота через @BotFather /setuserpic.
 - Далі: GA4 + читання статистики через Google API; Google News Publisher Center через 2–3 тижні; місячна перевірка цитувань у ChatGPT/Gemini/Perplexity/Claude.
+- Розіграш мерчу: на паузі (рішення власника). Сторіс TikTok 12.11 «Розіграти мерч з Байтом?» — 0 відгуку (13.11). Повернутися при ~1000 підписників YouTube або запиті від аудиторії; бюджет — за власником.
