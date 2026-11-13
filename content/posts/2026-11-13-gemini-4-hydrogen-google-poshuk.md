@@ -5,6 +5,7 @@ date: 2026-11-13T14:00:00+02:00
 description: "Gemini 4 Hydrogen — швидка модель Google, доступна безкоштовно в застосунку Gemini. На ній тепер працює Google Пошук: що змінилось, кому доступно і як перевірити."
 tags: [gemini, google]
 youtube: KRm46ScK2Bc
+telegram_post: 117
 source: {name: "Google: Introducing Gemini 4 Hydrogen (12.11.2026)", url: "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"}
 sources:
   - {name: "Google: Gemini 4 Hydrogen — оновлення Пошуку (12.11.2026)", url: "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/"}
