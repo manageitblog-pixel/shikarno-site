@@ -10,6 +10,8 @@ const { chromium } = require('playwright'); const fs = require('fs'); const path
   await p.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 }); await p.waitForTimeout(2500);
   // прибрати cookie-банери
   for (const t of ['Accept all', 'Accept', 'I agree', 'Got it', 'Allow all']) { try { await p.getByRole('button', { name: t, exact: true }).first().click({ timeout: 800 }); break; } catch (e) {} }
+  // REC_CLICK="Expand all" — розгорнути акордеони перед записом (довідки Google ховають текст)
+  for (const t of (process.env.REC_CLICK || '').split('|').filter(Boolean)) { try { const els = p.getByText(t, { exact: true }); const n = await els.count(); for (let i = 0; i < n; i++) { await els.nth(i).click({ timeout: 2000 }); await p.waitForTimeout(600); } } catch (e) { console.error('CLICK FAIL:', t); } }
   await p.addStyleTag({ content: '.__hl{outline:5px solid #FFD60A!important;background:rgba(255,214,10,.25)!important;border-radius:6px;transition:all .3s} #__cur{position:fixed;z-index:999999;width:28px;height:28px;pointer-events:none;transition:left .9s ease,top .9s ease}' });
   await p.evaluate(() => { const c = document.createElement('div'); c.id = '__cur'; c.innerHTML = '<svg viewBox="0 0 24 24" width="28" height="28"><path d="M3 2l7 19 2.5-7.5L20 11z" fill="white" stroke="black" stroke-width="1.5"/></svg>'; c.style.left = '800px'; c.style.top = '500px'; document.body.appendChild(c); });
   await p.waitForTimeout(1200);
