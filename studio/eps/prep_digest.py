@@ -31,7 +31,7 @@ for i,(s,t) in enumerate(zip(dg.SEGS,tl)):
             g=spread(sen.replace(" —","").split(), a, b, i, g)
         if "pt" in s:
             def tm(p):
-                k=int(p); fr=p-k; a=A[k]; b=A[k+1] if k+1<len(A) else en
+                k=min(int(p),len(A)-1); fr=p-int(p) if int(p)<len(A) else 0.5; a=A[k]; b=A[k+1] if k+1<len(A) else en
                 return a+(b-a)*fr
             sc["at"]=[max(4,round(tm(p)*FPS)-seqstart) for p in s["pt"]]
     else:
