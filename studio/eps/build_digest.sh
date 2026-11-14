@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-B=${REMOTION_BROWSER:-/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell}; BX=""; [ -x "$B" ] && BX="--browser-executable=$B"
+B=${REMOTION_BROWSER:-$(ls -d /opt/pw-browsers/chromium_headless_shell-*/*/*headless*shell* 2>/dev/null | grep -v LICENSE | sort -V | tail -1)}; BX=""; [ -x "$B" ] && BX="--browser-executable=$B"
 D=/home/claude/eps/$1
 python3 /home/claude/eps/mix_digest.py $D
 cd /home/claude/rv

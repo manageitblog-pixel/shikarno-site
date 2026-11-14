@@ -2,7 +2,7 @@
 # Стійкий рендер 16:9 шматками по CH кадрів (переживає перезапуск контейнера: готові шматки пропускаються)
 # usage: render_chunks.sh <dir> <composition> [CH]
 set -e
-B=${REMOTION_BROWSER:-/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell}; BX=""; [ -x "$B" ] && BX="--browser-executable=$B"
+B=${REMOTION_BROWSER:-$(ls -d /opt/pw-browsers/chromium_headless_shell-*/*/*headless*shell* 2>/dev/null | grep -v LICENSE | sort -V | tail -1)}; BX=""; [ -x "$B" ] && BX="--browser-executable=$B"
 D=$1; COMP=$2; CH=${3:-900}
 TOTAL=$(python3 -c "import json;print(json.load(open('$D/props.json'))['total'])")
 mkdir -p $D/chunks; cd /home/claude/rv
