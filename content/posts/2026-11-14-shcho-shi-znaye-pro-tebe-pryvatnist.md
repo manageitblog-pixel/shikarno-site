@@ -7,6 +7,7 @@ date: 2026-11-14T19:00:00+02:00
 description: "Як вимкнути навчання на своїх чатах у ChatGPT, Gemini, Claude і Copilot, що бачить Meta AI у WhatsApp, хто з людей читає чати і що ніколи не давати ШІ. Чекліст на 5 хвилин."
 tags: [bezpeka, chatgpt, gemini, claude, google, openai, anthropic]
 youtube: GNqU-wcz9Ws
+telegram_post: 123
 duration: "17:04"
 chapters: [{t: "0:00", title: "Вступ"}, {t: "0:53", title: "Що бачить будь-який ШІ"}, {t: "3:12", title: "ChatGPT", link: "/novyny/chatgpt-pamyat-yak-vydalyty/"}, {t: "5:10", title: "Gemini"}, {t: "7:17", title: "Claude"}, {t: "8:59", title: "Meta AI"}, {t: "11:05", title: "Copilot"}, {t: "13:14", title: "Порівняння і заборони"}, {t: "16:00", title: "Чекліст на 5 хвилин"}]
 source: {name: "Google: Gemini Apps Privacy Hub", url: "https://support.google.com/gemini/answer/13594961"}
