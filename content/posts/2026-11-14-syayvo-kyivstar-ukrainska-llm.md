@@ -5,6 +5,7 @@ date: 2026-11-14T10:00:00+02:00
 description: "Сяйво — українська LLM від Київстару і Мінцифри на основі Gemma 3: мала версія 4B протестована, далі 26B, тест до кінця грудня, публічна — можливо в січні 2027."
 tags: [biznes, google]
 youtube: Vv5pl-AFtgA
+telegram_post: 120
 source: {name: "DOU: Київстар про ШІ-стратегію і Сяйво (12.11.2026)", url: "https://dou.ua/lenta/news/kyivstar-ai-strategy/"}
 sources:
   - {name: "DOU: Коли з'явиться тестова модель Сяйва", url: "https://dou.ua/lenta/news/national-llm-when-launch/"}
