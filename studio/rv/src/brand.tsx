@@ -13,7 +13,7 @@ export const C = {
 export const FONT = "Mont";
 
 /* ---------- Ведучий «Байт» ---------- */
-type Mood = "talk" | "happy" | "judge";
+type Mood = "talk" | "happy" | "judge" | "shock";
 export const Bait: React.FC<{ size?: number; mouth?: number; mood?: Mood; look?: number; frameOffset?: number; withBody?: boolean }> = ({
   size = 240, mouth = 0, mood = "talk", look = 0, frameOffset = 0, withBody = false,
 }) => {
@@ -25,7 +25,8 @@ export const Bait: React.FC<{ size?: number; mouth?: number; mood?: Mood; look?:
   const ant = Math.sin(f / 7) * 8;
   const mw = 30 + 14 * mouth;
   const mh = 5 + 24 * mouth;
-  const eyeRy = mood === "happy" ? 6 : 16 * blink;
+  const eyeRy = mood === "happy" ? 6 : mood === "shock" ? 22 : 16 * blink;
+  const eyeRx = mood === "shock" ? 17 : 13;
   const vbH = withBody ? 300 : 200;
   return (
     <svg width={size} height={(size * vbH) / 200} viewBox={`0 0 200 ${vbH}`} style={{ overflow: "visible" }}>
@@ -67,12 +68,12 @@ export const Bait: React.FC<{ size?: number; mouth?: number; mood?: Mood; look?:
             </>
           ) : (
             <>
-              <ellipse cx={75 + look} cy="98" rx="13" ry={eyeRy} fill={C.cyan} />
-              <ellipse cx={125 + look} cy="98" rx="13" ry={eyeRy} fill={C.cyan} />
+              <ellipse cx={75 + look} cy="98" rx={eyeRx} ry={eyeRy} fill={C.cyan} />
+              <ellipse cx={125 + look} cy="98" rx={eyeRx} ry={eyeRy} fill={C.cyan} />
             </>
           )}
           {/* рот */}
-          <rect x={100 - mw / 2} y={134 - mh / 2} width={mw} height={mh} rx={Math.min(mh, mw) / 2} fill={C.cyan} />
+          {mood === "shock" ? <ellipse cx="100" cy="140" rx="14" ry="16" fill={C.cyan} /> : <rect x={100 - mw / 2} y={134 - mh / 2} width={mw} height={mh} rx={Math.min(mh, mw) / 2} fill={C.cyan} />}
         </g>
         {/* щічки */}
         <circle cx="52" cy="128" r="8" fill={C.pink} opacity="0.55" />
