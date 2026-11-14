@@ -8,6 +8,7 @@ import { GenericEpisode, EpData } from "./Generic";
 import { DigestVideo, DData, DigestThumb, ShortThumb } from "./Digest";
 import { Thumb2, LongThumb2 } from "./Thumb2";
 import { Thumb3 } from "./Thumb3";
+import { Thumb4 } from "./Thumb4";
 import { Cine } from "./Cine";
 import { Chat, ChatData } from "./Chat";
 
@@ -39,6 +40,10 @@ export const Root: React.FC = () => (
       defaultProps={{ object: "card", text: "Він *платить*?", mood: "shock" }} />
     <Still id="Thumb3Wide" component={Thumb3 as any} width={1920} height={1080}
       defaultProps={{ object: "toggle", text: "Вимкни *це*", label: "Improve the model for everyone", wide: true }} />
+    <Still id="Thumb4" component={Thumb4 as any} width={1080} height={1920}
+      defaultProps={{ series: "НОВИНИ ШІ", text: "ШІ платить *твоєю* карткою", logos: ["openai"] }} />
+    <Still id="Thumb4Wide" component={Thumb4 as any} width={1920} height={1080}
+      defaultProps={{ series: "НОВИНИ ШІ", text: "Що *вимикають*", logos: ["openai", "googlegemini"], wide: true }} />
     <Still id="Avatar" component={AvatarStill} width={800} height={800} />
     <Still id="Banner" component={BannerStill} width={2560} height={1440} />
     <Still id="Watermark" component={WatermarkStill} width={150} height={150} />

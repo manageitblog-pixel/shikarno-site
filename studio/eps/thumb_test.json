@@ -1,5 +1,5 @@
 {
- "_note": "Тест стилів обкладинок з 14.11 (власник: «попробуй і кольорові і такі»). v2=яскравий фон Thumb2/LongThumb2; v3=темний+1 об’єкт Thumb3. Порівнювати CTR (Analytics impressions CTR) і перегляди через 7 днів.",
+ "_note": "Тест стилів обкладинок з 14.11 (власник: «попробуй і кольорові і такі»). v2=яскравий фон Thumb2/LongThumb2; v3=темний+1 об’єкт Thumb3. Порівнювати CTR (Analytics impressions CTR) і перегляди через 7 днів. v4=стиль «як у Ігоря»: логотипи-вставки, ключові слова, текст знизу з плашкою, серія зверху (Thumb4).",
  "Vv5pl-AFtgA": {
   "ep": "ep73 Сяйво",
   "style": "v2",
@@ -23,8 +23,8 @@
  },
  "0vQVLBHUM9U": {
   "ep": "old long",
-  "style": "v2",
-  "set": "2026-11-14",
+  "style": "v4",
+  "set": "2026-11-14 08:00",
   "backup": "eps/thumbs/old/backup/0vQVLBHUM9U.jpg"
  },
  "FcWmonPhvqE": {
@@ -35,8 +35,8 @@
  },
  "KjjLuzq_i7U": {
   "ep": "old long",
-  "style": "v2",
-  "set": "2026-11-14",
+  "style": "v4",
+  "set": "2026-11-14 08:00",
   "backup": "eps/thumbs/old/backup/KjjLuzq_i7U.jpg"
  },
  "Eyhg8lwIFg8": {
@@ -47,20 +47,20 @@
  },
  "lvcZI5L--MA": {
   "ep": "old long",
-  "style": "v2",
-  "set": "2026-11-14",
+  "style": "v4",
+  "set": "2026-11-14 08:00",
   "backup": "eps/thumbs/old/backup/lvcZI5L--MA.jpg"
  },
  "kKYvFHKIvKM": {
   "ep": "old long",
-  "style": "v3",
-  "set": "2026-11-14",
+  "style": "v4",
+  "set": "2026-11-14 08:00",
   "backup": "eps/thumbs/old/backup/kKYvFHKIvKM.jpg"
  },
  "g99aVmNXhVs": {
   "ep": "old long",
-  "style": "v2",
-  "set": "2026-11-14",
+  "style": "v4",
+  "set": "2026-11-14 08:00",
   "backup": "eps/thumbs/old/backup/g99aVmNXhVs.jpg"
  }
 }
