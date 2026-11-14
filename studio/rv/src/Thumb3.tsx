@@ -51,7 +51,7 @@ export const Thumb3: React.FC<P> = (p) => {
       <style>{fontCss}</style>{glow}
       <div style={{ position: "absolute", left: 80, top: 0, bottom: 120, width: 860, display: "flex", alignItems: "center" }}><Words t={p.text} size={165} accent={acc} /></div>
       <div style={{ position: "absolute", right: 70, top: 150 }}>{obj}</div>
-      <div style={{ position: "absolute", right: 200, bottom: -230, transform: "rotate(6deg)", filter: "drop-shadow(0 40px 60px rgba(0,0,0,0.6))" }}><Bait size={620} mood={p.mood ?? "shock"} /></div>
+      <div style={{ position: "absolute", right: 220, bottom: -90, transform: "rotate(6deg)", filter: "drop-shadow(0 40px 60px rgba(0,0,0,0.6))" }}><Bait size={500} mood={p.mood ?? "shock"} /></div>
       <div style={{ position: "absolute", left: 80, bottom: 60 }}><Wordmark size={56} /></div>
     </AbsoluteFill>
   );
