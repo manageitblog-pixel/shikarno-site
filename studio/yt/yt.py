@@ -57,3 +57,16 @@ def comment(vid, text):
     r=urllib.request.Request("https://www.googleapis.com/youtube/v3/commentThreads?part=snippet",data=json.dumps(body).encode(),method="POST",
         headers={"Authorization":"Bearer "+token(),"Content-Type":"application/json; charset=UTF-8"})
     return json.load(urllib.request.urlopen(r))["id"]
+
+PLAYLISTS={"news":"PLTBOXlyURN0g","sec":"PLK19K_iOB7fU","skills":"PLDoCjFWXo6eI","prof":"PLUNuDFNf9LVc","tier":"PLbWfeHw_IhwY",
+           "check":"PLY2sr8xgYaG4","digest":"PLb2dDm0ckIWk","try":"PLJmaWDPrufYo","free":"PLHQnxB4mtNbM"}
+def add_to_playlist(vid, *keys):
+    """Після КОЖНОЇ заливки (власник 14.11: «нічого не забув?»): yt.add_to_playlist(vid, "news", "sec")"""
+    out=[]
+    for k in keys:
+        pl=PLAYLISTS.get(k,k)
+        r=urllib.request.Request("https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+            data=json.dumps({"snippet":{"playlistId":pl,"resourceId":{"kind":"youtube#video","videoId":vid}}}).encode(),method="POST",
+            headers={"Authorization":"Bearer "+token(),"Content-Type":"application/json"})
+        out.append(json.load(urllib.request.urlopen(r))["id"])
+    return out
