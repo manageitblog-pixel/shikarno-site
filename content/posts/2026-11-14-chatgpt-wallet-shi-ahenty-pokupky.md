@@ -5,6 +5,7 @@ date: 2026-11-14T14:00:00+02:00
 description: "ChatGPT Wallet — гаманець, з якого агенти ChatGPT самі оплачують покупки з підтвердженням Face ID. Кому доступно, як захищена картка і чому United Airlines обмежила ШІ-агентів."
 tags: [chatgpt, openai, agenty, pokupky]
 youtube: ZSOH2sXLI_Y
+telegram_post: 122
 source: {name: "OpenAI: Introducing ChatGPT Wallet (13.11.2026)", url: "https://openai.com/index/introducing-chatgpt-wallet/"}
 sources:
   - {name: "OpenAI: Making purchases with ChatGPT Wallet", url: "https://help.openai.com/en/articles/20001654-making-purchases-with-chatgpt-wallet"}
