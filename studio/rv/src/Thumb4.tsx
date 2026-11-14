@@ -21,15 +21,15 @@ export const Thumb4: React.FC<P> = (p) => {
   const c1 = p.c1 ?? "#1E6BFF", c2 = p.c2 ?? "#FF4F8B";
   const parts = p.text.split("*");
   const words = (size: number) => (
-    <div style={{ color: "#fff", fontWeight: 900, fontSize: size, lineHeight: 0.98, letterSpacing: -2, textTransform: "uppercase", textShadow: "0 8px 0 rgba(0,0,0,0.45), 0 0 40px rgba(0,0,0,0.6)" }}>
-      {parts.map((t, i) => i % 2 ? <span key={i} style={{ background: C.yellow, color: "#0E0B24", padding: "0 16px", borderRadius: 14, display: "inline-block", textShadow: "none", transform: "rotate(-1.5deg)" }}>{t}</span> : <span key={i}>{t}</span>)}
+    <div style={{ color: "#fff", fontWeight: 900, fontSize: size, lineHeight: 0.98, letterSpacing: -2, textTransform: "uppercase", WebkitTextStroke: `${Math.round(size/22)}px #0E0B24`, paintOrder: "stroke fill", textShadow: "0 8px 0 rgba(0,0,0,0.5)" }}>
+      {parts.map((t, i) => i % 2 ? <span key={i} style={{ background: C.yellow, color: "#0E0B24", padding: "0 16px", borderRadius: 14, display: "inline-block", textShadow: "none", WebkitTextStroke: "0", transform: "rotate(-1.5deg)" }}>{t}</span> : <span key={i}>{t}</span>)}
     </div>
   );
   const bg = (
     <>
       <div style={{ position: "absolute", inset: 0, background: `linear-gradient(115deg, ${c1} 0%, ${c1} 48%, ${c2} 52%, ${c2} 100%)` }} />
       {p.shot && <Img src={staticFile(p.shot)} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", opacity: 0.28, filter: "blur(2px) saturate(1.2)", mixBlendMode: "luminosity" }} />}
-      <div style={{ position: "absolute", inset: 0, background: "radial-gradient(circle at 75% 35%, rgba(255,255,255,0.18), transparent 45%), linear-gradient(0deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.15) 45%, rgba(0,0,0,0) 70%)" }} />
+      <div style={{ position: "absolute", inset: 0, background: "radial-gradient(circle at 75% 35%, rgba(255,255,255,0.18), transparent 45%), linear-gradient(0deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.30) 100%)" }} />
     </>
   );
   const series = <div style={{ position: "absolute", left: 40, top: 36, background: C.yellow, color: "#0E0B24", fontWeight: 900, fontSize: 46, padding: "8px 22px", borderRadius: 10, letterSpacing: 1 }}>{p.series}</div>;
@@ -44,16 +44,15 @@ export const Thumb4: React.FC<P> = (p) => {
     <AbsoluteFill style={{ fontFamily: FONT, overflow: "hidden" }}>
       <style>{fontCss}</style>{bg}{series}
       {/* логотипи — верхня права зона */}
-      <div style={{ position: "absolute", right: 70, top: 90, display: "flex", gap: 34 }}>
-        {logos.map((id, i) => <Logo key={id} id={id} size={logos.length > 2 ? 250 : 320} rot={i % 2 ? 6 : -6} />)}
+      <div style={{ position: "absolute", right: 60, top: 300, display: "flex", gap: 28 }}>
+        {logos.map((id, i) => <Logo key={id} id={id} size={logos.length > 2 ? 200 : 240} rot={i % 2 ? 6 : -6} />)}
       </div>
-      {p.big && <div style={{ position: "absolute", right: 70, top: logos.length ? 330 : 120, color: C.yellow, fontWeight: 900, fontSize: 230, lineHeight: 0.9, WebkitTextStroke: "6px #0E0B24", paintOrder: "stroke fill", transform: "rotate(-4deg)" }}>{p.big}</div>}
+      {p.big && <div style={{ position: "absolute", right: 80, top: 60, color: C.yellow, fontWeight: 900, fontSize: 200, lineHeight: 0.9, WebkitTextStroke: "6px #0E0B24", paintOrder: "stroke fill", transform: "rotate(-4deg)" }}>{p.big}</div>}
       {/* Байт — праворуч знизу */}
       <div style={{ position: "absolute", right: 70, bottom: -110, transform: "rotate(-5deg)", filter: "drop-shadow(0 30px 50px rgba(0,0,0,0.6))" }}><Bait size={p.big ? 420 : 520} mood={p.mood ?? "shock"} /></div>
-      {/* ключі + текст — ліва нижня зона */}
-      <div style={{ position: "absolute", left: 50, top: 150, width: 820 }}>{keys}</div>
-      <div style={{ position: "absolute", left: 50, bottom: 110, width: 1250 }}>{words(150)}</div>
-      <div style={{ position: "absolute", left: 50, bottom: 34 }}><Wordmark size={46} /></div>
+      {/* текст — головний, ліва верхня зона; ключі — внизу (низ правого кута займає тривалість YouTube) */}
+      <div style={{ position: "absolute", left: 50, top: 130, width: 1020 }}>{words(160)}</div>
+      <div style={{ position: "absolute", left: 50, bottom: 46, width: 1150 }}>{keys}</div>
     </AbsoluteFill>
   );
   return (
