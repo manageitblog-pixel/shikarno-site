@@ -6,7 +6,7 @@ import data from "./data.json";
 import ep from "./ep.json";
 import { GenericEpisode, EpData } from "./Generic";
 import { DigestVideo, DData, DigestThumb, ShortThumb } from "./Digest";
-import { Thumb2 } from "./Thumb2";
+import { Thumb2, LongThumb2 } from "./Thumb2";
 import { Cine } from "./Cine";
 import { Chat, ChatData } from "./Chat";
 
@@ -32,6 +32,8 @@ export const Root: React.FC = () => (
       defaultProps={{ tag: "ЕКСТРЕНО", red: true, headline: "Дірка в *PHP* на 9.2 з 10", icon: "warning", mood: "judge" }} />
     <Still id="Thumb2" component={Thumb2 as any} width={1080} height={1920}
       defaultProps={{ variant: "react", pal: "fire", headline: "ШІ платить *твоєю* карткою", tag: "CHATGPT WALLET", icon: "money", mood: "shock" }} />
+    <Still id="LongThumb2" component={LongThumb2 as any} width={1920} height={1080}
+      defaultProps={{ variant: "react", pal: "fire", headline: "Що ШІ *знає* про тебе", kicker: "ПРИВАТНІСТЬ" }} />
     <Still id="Avatar" component={AvatarStill} width={800} height={800} />
     <Still id="Banner" component={BannerStill} width={2560} height={1440} />
     <Still id="Watermark" component={WatermarkStill} width={150} height={150} />

@@ -96,3 +96,38 @@ export const Thumb2: React.FC<P> = (p) => {
     </AbsoluteFill>
   );
 };
+
+// Довгі 1920×1080: текст ліворуч (3–5 слів), праворуч — Байт / скрін / цифра; kicker — серія.
+type L = P & { kicker?: string };
+export const LongThumb2: React.FC<L> = (p) => {
+  const [a, b, fg] = PALS[p.pal ?? "grape"] ?? PALS.grape;
+  const hi = p.pal === "sun" ? "#0E0B24" : C.yellow;
+  const bg = `radial-gradient(circle at 70% 40%, ${b} 0%, ${a} 60%, ${a} 100%)`;
+  const parts = p.headline.split("*");
+  const head = (
+    <div style={{ position: "absolute", left: 70, top: p.kicker ? 210 : 120, width: p.variant === "react" ? 1000 : 900, color: fg, fontWeight: 900, fontSize: p.variant === "react" ? 150 : 124, lineHeight: 0.98, letterSpacing: -3, textTransform: "uppercase",
+      WebkitTextStroke: "5px rgba(0,0,0,0.85)", paintOrder: "stroke fill", textShadow: "0 14px 0 rgba(0,0,0,0.35)" }}>
+      {parts.map((t, i) => i % 2 ? <span key={i} style={{ background: hi, color: hi === "#FFD60A" ? "#0E0B24" : "#fff", padding: "0 18px", borderRadius: 18, WebkitTextStroke: "0", display: "inline-block", transform: "rotate(-2deg)" }}>{t}</span> : <span key={i}>{t}</span>)}
+    </div>
+  );
+  return (
+    <AbsoluteFill style={{ fontFamily: FONT, background: bg, overflow: "hidden" }}>
+      <style>{fontCss}</style>
+      <div style={{ position: "absolute", inset: -600, background: `repeating-conic-gradient(from 0deg at 70% 50%, rgba(255,255,255,0.10) 0deg 8deg, transparent 8deg 22deg)` }} />
+      {p.kicker && <div style={{ position: "absolute", left: 70, top: 70, background: "#0E0B24", color: "#fff", fontWeight: 900, fontSize: 60, padding: "10px 34px", borderRadius: 20, border: `5px solid ${C.yellow}` }}>{p.kicker}</div>}
+      {head}
+      {p.variant === "screen" && p.shot && (
+        <div style={{ position: "absolute", right: 60, top: 170, width: 820, height: 560, borderRadius: 30, overflow: "hidden", transform: "rotate(4deg)", border: "10px solid #fff", boxShadow: "0 40px 80px rgba(0,0,0,0.5)", background: "#fff" }}>
+          <Img src={staticFile(p.shot)} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} />
+          <div style={{ position: "absolute", left: 120, top: 150, width: 520, height: 200, borderRadius: "50%", border: "12px solid #FF2D55", transform: "rotate(-5deg)" }} />
+        </div>
+      )}
+      {p.variant === "number" && <div style={{ position: "absolute", right: 60, top: 170, width: 860, textAlign: "center", whiteSpace: "nowrap", color: C.yellow, fontWeight: 900, fontSize: Math.min(330, Math.floor(1350 / Math.max(1, (p.big ?? "").length))), lineHeight: 0.9, WebkitTextStroke: "8px #0E0B24", paintOrder: "stroke fill", textShadow: "0 18px 0 rgba(0,0,0,0.35)", transform: "rotate(-4deg)" }}>{p.big}</div>}
+      {p.icon && p.variant !== "screen" && <div style={{ position: "absolute", right: 520, top: 110, width: 220, height: 220, borderRadius: 60, background: "#fff", display: "flex", alignItems: "center", justifyContent: "center", transform: "rotate(-10deg)", boxShadow: "0 30px 60px rgba(0,0,0,0.35)" }}><Icon name={p.icon} size={150} color={a} /></div>}
+      <div style={{ position: "absolute", right: p.variant === "screen" ? 0 : 40, bottom: p.variant === "react" ? -120 : -60, transform: "rotate(-6deg)", filter: "drop-shadow(0 40px 60px rgba(0,0,0,0.5))" }}>
+        <Bait size={p.variant === "react" ? 760 : p.variant === "number" ? 380 : 470} mood={p.mood ?? "shock"} />
+      </div>
+      <div style={{ position: "absolute", left: 70, bottom: 50 }}><Wordmark size={60} /></div>
+    </AbsoluteFill>
+  );
+};
