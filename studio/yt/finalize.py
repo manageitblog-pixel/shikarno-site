@@ -13,20 +13,28 @@ ap.add_argument("vid"); ap.add_argument("pl", nargs="+")
 ap.add_argument("--thumb", required=True); ap.add_argument("--comment", required=True)
 ap.add_argument("--at"); ap.add_argument("--style", default="")
 a = ap.parse_args()
+import time
+# YouTube віддає застарілий snippet ~30 с після заливки/зміни (15.11: теги «зникли», а fix перезаписав опис) → чекаємо, поки теги з'являться
+def fresh(vid, tries=8):
+    for _ in range(tries):
+        v = yt.api("videos", part="snippet,status,contentDetails", id=vid)["items"][0]
+        if v["snippet"].get("tags"): return v
+        time.sleep(15)
+    return v
 
 subprocess.run(["python3", "/home/claude/yt/thumb.py", a.vid, a.thumb], check=True, capture_output=True)
 pls = audit.playlist_map()
 have = set(pls.get(a.vid, []))
 for k in a.pl:
     if k not in have: yt.add_to_playlist(a.vid, k)
-v = yt.api("videos", part="snippet,status,contentDetails", id=a.vid)["items"][0]
+v = fresh(a.vid)
 audit.fix(v, audit.check(v, {a.vid: a.pl}, None))
 pc = "/home/claude/eps/pending_comments.json"; p = json.load(open(pc))
 p[a.vid] = {"at": a.at or v["status"].get("publishAt") or "", "text": a.comment}; json.dump(p, open(pc, "w"), ensure_ascii=False, indent=1)
 if a.style:
     tt = "/home/claude/eps/thumb_test.json"; d = json.load(open(tt))
     d[a.vid] = {"ep": v["snippet"]["title"][:40], "style": a.style, "set": v["status"].get("publishAt", "")}; json.dump(d, open(tt, "w"), ensure_ascii=False, indent=1)
-v = yt.api("videos", part="snippet,status,contentDetails", id=a.vid)["items"][0]
+time.sleep(20); v = fresh(a.vid)
 r = audit.check(v, audit.playlist_map(), None)
 iss = [i for i in r["issues"] if i != "C1"]  # коментар з'явиться після publishAt (post_comments.py)
 print("PASS" if not iss else "FAIL " + ",".join(iss), "|", r["title"])

@@ -22,7 +22,7 @@ TOOLS = [  # (ознака в назві, хештег, англ. теги)
     ("copilot", "#copilot", ["microsoft copilot"]), ("meta", "#metaai", ["meta ai"]), ("grok", "#grok", ["grok ai"]),
     ("deepseek", "#deepseek", ["deepseek"]), ("сяйво", "#сяйво", ["ukrainian llm"]), ("київстар", "#сяйво", ["kyivstar ai"]),
     ("mcp", "#claude", ["mcp server"]), ("nvidia", "#nvidia", ["nvidia ai"]), ("шахра", "#шахраї", ["ai scam"]),
-    ("дипфейк", "#дипфейк", ["deepfake"]),
+    ("дипфейк", "#дипфейк", ["deepfake"]), ("lovable", "#lovable", ["lovable", "vibe coding"]),
 ]
 RU_CH = re.compile(r"[ыэъё]", re.I)
 RU_WORDS = {"нейросеть", "нейросети", "искусственный", "интеллект", "бесплатно", "как", "что", "чат"}

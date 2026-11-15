@@ -4,6 +4,7 @@ slug: lovable-vytik-danykh-sajty-shi
 date: 2026-11-15T19:00:00+02:00
 description: "Безпекова компанія Crissy Field перевірила 159 тисяч проєктів Lovable: 24 664 сайти віддають записи бази без входу — пошти, повідомлення, номери паспортів. Як перевірити свій сайт."
 tags: [bezpeka, biznes, rozrobka, instrumenty]
+youtube: Bh-YF2BbuiQ
 source: {name: "Crissy Field: Lovable — numerous apps expose sensitive data", url: "https://crissyfield.de/research/lovable-en/"}
 summary:
   - "Crissy Field (Німеччина) проаналізувала 159 041 проєкт Lovable, створений з грудня 2025 по вересень 2026."
