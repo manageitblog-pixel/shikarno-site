@@ -16,3 +16,9 @@ def upload(method, field, path, **params):
     except urllib.error.HTTPError as e: return json.loads(e.read())
 def post(text, **kw): return call("sendMessage", chat_id=CH, text=text, parse_mode="HTML", **kw)
 def video(path, caption, **kw): return upload("sendVideo","video",path, chat_id=CH, caption=caption, parse_mode="HTML", supports_streaming="true", width=1080, height=1920, **kw)
+OWNER=133254760
+def owner_video(path, caption):
+    """Відео власнику (для TikTok): завжди з розмірами/тривалістю — без них Telegram малює квадрат 320×320 («розтягнутий кадр», 15.11)."""
+    import subprocess
+    w,h,d=subprocess.check_output(["ffprobe","-v","error","-select_streams","v:0","-show_entries","stream=width,height:format=duration","-of","csv=p=0:s=,",path]).decode().replace("\n",",").strip(",").split(",")[:3]
+    return upload("sendVideo","video",path, chat_id=OWNER, caption=caption, supports_streaming="true", width=int(w), height=int(h), duration=int(float(d)))
