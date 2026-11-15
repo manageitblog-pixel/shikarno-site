@@ -150,6 +150,12 @@
    "file": "eps/cuts6/c3_tiktok.mp4",
    "date": "2026-11-15",
    "rec": "2026-11-15 зараз (~11:40 Київ)"
+  },
+  {
+   "file": "eps/ep75_lovable_vytik/tiktok.mp4",
+   "date": "2026-11-15",
+   "rec_time": "2026-11-15 19:05 Київ",
+   "note": "Lovable, безпека"
   }
  ],
  "promote": [
@@ -282,11 +288,6 @@
   }
  ],
  "queue_cuts6": [
-  {
-   "ep": "ep75",
-   "file": "eps/ep75_lovable_vytik/tiktok.mp4",
-   "rec": "2026-11-15 19:05 Київ"
-  },
   {
    "ep": "cut6_c1",
    "file": "eps/cuts6/c1_chatgpt.mp4",
