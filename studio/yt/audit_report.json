@@ -1,10 +1,10 @@
 [
  {
-  "id": "Vv5pl-AFtgA",
-  "title": "Сяйво від Київстару: український штучний інтелект — коли вийде і що відомо 🇺🇦 #ШІ #shorts",
-  "short": true,
+  "id": "GNqU-wcz9Ws",
+  "title": "Що ШІ знає про тебе: як вимкнути навчання в ChatGPT, Gemini, Claude, Meta AI і Copilot (2026)",
+  "short": false,
   "issues": [],
-  "tags": 15,
+  "tags": 16,
   "status": "public"
  },
  {
@@ -13,7 +13,15 @@
   "short": true,
   "issues": [],
   "tags": 14,
-  "status": "private"
+  "status": "public"
+ },
+ {
+  "id": "Vv5pl-AFtgA",
+  "title": "Сяйво від Київстару: український штучний інтелект — коли вийде і що відомо 🇺🇦 #ШІ #shorts",
+  "short": true,
+  "issues": [],
+  "tags": 15,
+  "status": "public"
  },
  {
   "id": "trlZL_IoPkE",
@@ -22,14 +30,6 @@
   "issues": [],
   "tags": 12,
   "status": "public"
- },
- {
-  "id": "GNqU-wcz9Ws",
-  "title": "Що ШІ знає про тебе: як вимкнути навчання в ChatGPT, Gemini, Claude, Meta AI і Copilot (2026)",
-  "short": false,
-  "issues": [],
-  "tags": 13,
-  "status": "private"
  },
  {
   "id": "KRm46ScK2Bc",
@@ -91,9 +91,7 @@
   "id": "PocfDWGNhOk",
   "title": "Claude Fable 5.2 вийшов: найрозумніший ШІ — і близнюк Mythos, якого тобі не дадуть 🤖 #ШІ #shorts",
   "short": true,
-  "issues": [
-   "C1"
-  ],
+  "issues": [],
   "tags": 12,
   "status": "public"
  },
@@ -101,9 +99,7 @@
   "id": "YNYTMV8FV9E",
   "title": "ChatGPT, Claude чи Gemini: який ШІ для чого у 2026? 🏆 Тір-лист Байта #ШІ #shorts",
   "short": true,
-  "issues": [
-   "C1"
-  ],
+  "issues": [],
   "tags": 13,
   "status": "public"
  },
@@ -375,9 +371,7 @@
   "id": "jsyUTrw6hvI",
   "title": "ШІ для SMM: контент-план, голос бренду, картинки 📱 #ШІ #shorts",
   "short": true,
-  "issues": [
-   "C1"
-  ],
+  "issues": [],
   "tags": 21,
   "status": "public"
  },
@@ -393,9 +387,7 @@
   "id": "jsyUTrw6hvI",
   "title": "ШІ для SMM: контент-план, голос бренду, картинки 📱 #ШІ #shorts",
   "short": true,
-  "issues": [
-   "C1"
-  ],
+  "issues": [],
   "tags": 21,
   "status": "public"
  },
@@ -403,9 +395,7 @@
   "id": "Iv5uSMwqAOA",
   "title": "ШІ для ФОП: податковий день без болю 💼 ШІ для професій #3 #ШІ #shorts",
   "short": true,
-  "issues": [
-   "C1"
-  ],
+  "issues": [],
   "tags": 18,
   "status": "public"
  },
@@ -413,9 +403,7 @@
   "id": "8PkvPh5Ij9o",
   "title": "ШІ для студента: сесія за вечір 🎓 ШІ для професій #2 #ШІ #shorts",
   "short": true,
-  "issues": [
-   "C1"
-  ],
+  "issues": [],
   "tags": 16,
   "status": "public"
  },
@@ -423,9 +411,7 @@
   "id": "WKvVIB9cugQ",
   "title": "ШІ для вчителя: що реально економить час 🍎 ШІ для професій #1 #ШІ #shorts",
   "short": true,
-  "issues": [
-   "C1"
-  ],
+  "issues": [],
   "tags": 15,
   "status": "public"
  },
@@ -433,9 +419,7 @@
   "id": "OqXm5MZJHmo",
   "title": "Який ШІ для дому? 🏠 Тір-лист Байта #4 #ШІ #shorts",
   "short": true,
-  "issues": [
-   "C1"
-  ],
+  "issues": [],
   "tags": 15,
   "status": "public"
  },
@@ -443,9 +427,7 @@
   "id": "raAU0wNcxYs",
   "title": "ШІ-шахраї: що робити, коли дзвонить «син»? 🚨 Тір-лист безпеки #ШІ #shorts",
   "short": true,
-  "issues": [
-   "C1"
-  ],
+  "issues": [],
   "tags": 12,
   "status": "public"
  },
@@ -453,9 +435,7 @@
   "id": "uuzSF8xOWCU",
   "title": "Який ШІ для роботи? 💼 Тір-лист Байта #3 #ШІ #shorts",
   "short": true,
-  "issues": [
-   "C1"
-  ],
+  "issues": [],
   "tags": 17,
   "status": "public"
  },
@@ -471,9 +451,7 @@
   "id": "2O3QC70WmjA",
   "title": "Який ШІ для фото, відео й навчання? 🤖 Тір-лист Байта #2 #ШІ #shorts",
   "short": true,
-  "issues": [
-   "C1"
-  ],
+  "issues": [],
   "tags": 15,
   "status": "public"
  },
