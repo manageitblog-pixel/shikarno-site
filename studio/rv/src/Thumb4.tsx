@@ -63,7 +63,7 @@ export const Thumb4: React.FC<P> = (p) => {
       </div>
       {p.big && <div style={{ position: "absolute", left: 0, right: 0, top: 520, textAlign: "center", color: C.yellow, fontWeight: 900, fontSize: 260, lineHeight: 0.9, WebkitTextStroke: "6px #0E0B24", paintOrder: "stroke fill" }}>{p.big}</div>}
       <div style={{ position: "absolute", left: 50, right: 50, top: p.big ? 800 : 560 }}>{keys}</div>
-      <div style={{ position: "absolute", left: 50, right: 50, top: p.big ? 900 : 700 }}>{words(150)}</div>
+      <div style={{ position: "absolute", left: 50, right: 50, top: p.big ? 935 : 700 }}>{words(150)}</div>
       <div style={{ position: "absolute", right: -60, bottom: -90, transform: "rotate(8deg)", filter: "drop-shadow(0 30px 50px rgba(0,0,0,0.6))" }}><Bait size={640} mood={p.mood ?? "shock"} /></div>
       <div style={{ position: "absolute", left: 50, bottom: 50 }}><Wordmark size={50} /></div>
     </AbsoluteFill>
