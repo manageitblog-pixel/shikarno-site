@@ -4,6 +4,7 @@ slug: apple-health-ai-study-shi-zdorovya
 date: 2026-11-16T08:30:00+02:00
 description: "Apple запустила застосунок Health AI Study: ШІ відповідає на питання про здоров'я з урахуванням даних Apple Health. Хто може взяти участь, що з даними і чому це не лікар."
 tags: [bezpeka, instrumenty]
+telegram_post: 126
 source: {name: "App Store: Apple Health AI Study App", url: "https://apps.apple.com/us/app/apple-health-ai-study-app/id6800060365"}
 sources: [{name: "TechCrunch: Apple launches new app to study how people use AI for health", url: "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/"}]
 summary:
