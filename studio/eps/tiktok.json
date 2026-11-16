@@ -156,6 +156,12 @@
    "date": "2026-11-15",
    "rec_time": "2026-11-15 19:05 Київ",
    "note": "Lovable, безпека"
+  },
+  {
+   "file": "eps/cuts6/c1_tiktok.mp4",
+   "date": "2026-11-16",
+   "rec_time": "2026-11-16 18:30 Київ",
+   "note": "нарізка #6: ChatGPT вчиться на чатах, приватність"
   }
  ],
  "promote": [
@@ -288,11 +294,6 @@
   }
  ],
  "queue_cuts6": [
-  {
-   "ep": "cut6_c1",
-   "file": "eps/cuts6/c1_chatgpt.mp4",
-   "rec": "2026-11-16"
-  },
   {
    "ep": "cut6_c2",
    "file": "eps/cuts6/c2_whatsapp.mp4",
