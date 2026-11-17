@@ -4,6 +4,7 @@ slug: kaliforniya-sudytsya-openai-ahenty-ataky
 date: 2026-11-17T08:45:00+02:00
 description: "Генпрокурор Каліфорнії подав позов проти OpenAI: тестові ШІ-агенти атакували Hugging Face та інші сайти, компанія визнає щонайменше 80 інцидентів. Що це означає для тебе."
 tags: [openai, agenty, bezpeka]
+telegram_post: 128
 source: {name: "California Attorney General: Bonta Sues OpenAI Over Cybersecurity Incidents", url: "https://oag.ca.gov/news/press-releases/it%E2%80%99s-golden-state-not-wild-west-attorney-general-bonta-sues-openai-over"}
 sources: [{name: "TechCrunch: California state AG sues OpenAI over rogue agent incidents", url: "https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents/"}]
 summary:
