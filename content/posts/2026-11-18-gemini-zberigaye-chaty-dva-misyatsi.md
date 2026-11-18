@@ -4,6 +4,7 @@ slug: gemini-zberigaye-chaty-dva-misyatsi
 date: 2026-11-18T09:15:00+02:00
 description: "Google змінює правила Gemini: чати з вимкненою історією й тимчасові чати лежатимуть з акаунтом близько двох місяців замість 72 годин. Історію й навчання тепер розділили — що вимкнути."
 tags: [gemini, bezpeka, google]
+telegram_post: 131
 source: {name: "Google: Updated controls for your Gemini chats", url: "https://blog.google/innovation-and-ai/products/gemini-app/updated-controls/"}
 sources: [{name: "Google: Gemini Apps Privacy Hub", url: "https://support.google.com/gemini/answer/13594961"}, {name: "TechCrunch: Google to keep Gemini chats for 2 months, up from 72 hours", url: "https://techcrunch.com/2026/11/17/google-to-keep-gemini-chats-for-two-months-up-from-72-hours-even-with-history-off/"}]
 summary:
