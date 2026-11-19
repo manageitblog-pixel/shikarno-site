@@ -89,87 +89,12 @@
   "10_r4_chatbot_vs_agent"
  ],
  "owner_note_27_10": "Власник опублікував усі заплановані; у TikTok 7 відео. Далі — генерувати нові щодня (ролик дня + пакет у бот).",
- "sent_to_owner": [
-  {
-   "file": "eps/ep65_tier_shi_dlya_choho/tiktok.mp4",
-   "date": "2026-11-10",
-   "rec_time": "2026-11-10 19:00 Київ",
-   "note": "тір-лист"
-  },
-  {
-   "file": "eps/ep66_claude_fable_5_2/tiktok.mp4",
-   "date": "2026-11-10",
-   "rec_time": "2026-11-11 12:30 Київ",
-   "note": "новина Fable 5.2"
-  },
-  {
-   "file": "eps/ep67_gemini_poshta_rezenzenty/tiktok.mp4",
-   "date": "2026-11-11",
-   "rec_time": "2026-11-11 19:00 Київ",
-   "note": "безпека Gemini і пошта"
-  },
-  {
-   "file": "eps/ep68_claude_sheets_whiteboards/tiktok.mp4",
-   "date": "2026-11-11",
-   "rec_time": "2026-11-12 12:30 Київ",
-   "note": "Claude Sheets/Whiteboards/Data"
-  },
-  {
-   "ep": "ep69",
-   "file": "eps/ep69_claude_interaktyvni_konektory/tiktok.mp4",
-   "rec": "2026-11-12 15:00 Kyiv"
-  },
-  {
-   "ep": "ep70",
-   "file": "eps/ep70_chatgpt_pamyat/tiktok.mp4",
-   "rec": "2026-11-12 20:00 Kyiv"
-  },
-  {
-   "ep": "ep71",
-   "file": "eps/ep71_gemini_hydrogen/tiktok.mp4",
-   "rec": "2026-11-13 15:00 Kyiv"
-  },
-  {
-   "ep": "ep72",
-   "file": "eps/ep72_claude_meetings/tiktok.mp4",
-   "rec": "2026-11-13 20:00 Kyiv"
-  },
-  {
-   "ep": "ep73",
-   "file": "eps/ep73_syayvo_kyivstar/tiktok.mp4",
-   "rec": "2026-11-14 на запит власника ~09:00 Kyiv"
-  },
-  {
-   "ep": "ep74",
-   "file": "eps/ep74_chatgpt_wallet/tiktok.mp4",
-   "rec": "2026-11-14 17:00 Kyiv",
-   "posted": "2026-11-14 ~17:25 Kyiv (власник: Done)"
-  },
-  {
-   "ep": "cut6_c3",
-   "file": "eps/cuts6/c3_tiktok.mp4",
-   "date": "2026-11-15",
-   "rec": "2026-11-15 зараз (~11:40 Київ)"
-  },
-  {
-   "file": "eps/ep75_lovable_vytik/tiktok.mp4",
-   "date": "2026-11-15",
-   "rec_time": "2026-11-15 19:05 Київ",
-   "note": "Lovable, безпека"
-  },
-  {
-   "file": "eps/cuts6/c1_tiktok.mp4",
-   "date": "2026-11-16",
-   "rec_time": "2026-11-16 18:30 Київ",
-   "note": "нарізка #6: ChatGPT вчиться на чатах, приватність"
-  },
-  {
-   "file": "eps/cuts6/c2_tiktok.mp4",
-   "date": "2026-11-17",
-   "rec_time": "2026-11-17 18:30 Київ",
-   "note": "нарізка #6: Meta AI у WhatsApp, інкогніто-чат"
-  }
- ],
+ "sent_to_owner": {
+  "file": "eps/ep76_inkognito_shi/tiktok.mp4",
+  "date": "2026-11-19 17:08Z",
+  "rec_time": "2026-11-19 19:30–21:00 Київ",
+  "note": "Short ep76 «Інкогніто в ШІ — не сейф» (YT 0Kb6AamTRQo, TG 134); підпис і перший коментар — окремо в <code>"
+ },
  "promote": [
   {
    "date": "2026-10-28",

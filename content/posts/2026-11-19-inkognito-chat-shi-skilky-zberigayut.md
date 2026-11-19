@@ -6,6 +6,7 @@ date: 2026-11-19T19:00:00+02:00
 description: "Інкогніто в ШІ ховає чат від людей, а не від компанії. Скільки тимчасові чати лежать на серверах ChatGPT, Claude, Gemini і в новому режимі Google AI Mode — таблиця і 3 правила."
 tags: [bezpeka, chatgpt, gemini, claude]
 youtube: 0Kb6AamTRQo
+telegram_post: 134
 source: {name: "Google: тимчасові треди в AI Mode (17.11.2026)", url: "https://blog.google/products-and-platforms/products/search/temporary-threads-ai-mode/"}
 sources:
   - {name: "Claude Help Center: Using incognito chats", url: "https://support.claude.com/en/articles/12260368-using-incognito-chats"}
