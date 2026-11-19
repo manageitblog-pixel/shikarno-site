@@ -5,6 +5,7 @@ slug: anthropic-ipo-83-dolary
 date: 2026-11-19T08:45:00+02:00
 description: "Anthropic, творець Claude, оцінила IPO в $83 за акцію — вище за діапазон $70–78. Тікер ANT, Nasdaq, торги з 19 листопада. Цифри угоди і що зміниться для користувачів Claude."
 tags: [anthropic, claude]
+telegram_post: 132
 source: {name: "Anthropic: Anthropic prices initial public offering (18.11.2026)", url: "https://www.anthropic.com/news/anthropic-prices-initial-public-offering"}
 sources:
   - {name: "Anthropic: Anthropic launches roadshow for proposed IPO (10.11.2026)", url: "https://www.anthropic.com/news/roadshow-launch"}

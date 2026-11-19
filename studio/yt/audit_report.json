@@ -1,11 +1,19 @@
 [
  {
-  "id": "Vp1PPNxtcrI",
-  "title": "ChatGPT вчиться на твоїх чатах — як вимкнути за 30 секунд 🔐 #ШІ #shorts",
+  "id": "bRanUVdt2Pw",
+  "title": "Meta AI у WhatsApp: що він запам'ятовує і де справжній інкогніто-чат 💬 #ШІ #shorts",
   "short": true,
   "issues": [
    "C1"
   ],
+  "tags": 10,
+  "status": "public"
+ },
+ {
+  "id": "Vp1PPNxtcrI",
+  "title": "ChatGPT вчиться на твоїх чатах — як вимкнути за 30 секунд 🔐 #ШІ #shorts",
+  "short": true,
+  "issues": [],
   "tags": 10,
   "status": "public"
  },
@@ -24,14 +32,6 @@
   "issues": [],
   "tags": 12,
   "status": "public"
- },
- {
-  "id": "bRanUVdt2Pw",
-  "title": "Meta AI у WhatsApp: що він запам'ятовує і де справжній інкогніто-чат 💬 #ШІ #shorts",
-  "short": true,
-  "issues": [],
-  "tags": 10,
-  "status": "private"
  },
  {
   "id": "GNqU-wcz9Ws",
