@@ -6,6 +6,7 @@ date: 2026-11-20T19:00:00+02:00
 description: "Як перевірити шахрайське SMS чи QR-код: київська MacPaw випустила Moonlock для iPhone з ШІ-перевіркою повідомлень. Що він вміє, безкоштовна альтернатива і 3 правила."
 tags: [bezpeka, chatgpt, gemini]
 youtube: CfHTFrYH_z4
+telegram_post: 136
 source: {name: "MacPaw: Moonlock для iPhone (18.11.2026)", url: "https://macpaw.com/news/moonlock-iphone"}
 sources:
   - {name: "DOU: MacPaw випустила ШІ-застосунок для захисту iPhone від шахраїв", url: "https://dou.ua/lenta/news/macpaw-launched-moonlock-for-iphone/"}
