@@ -1,11 +1,17 @@
 [
  {
+  "id": "0Kb6AamTRQo",
+  "title": "Інкогніто-чат у ШІ: скільки насправді зберігають ChatGPT, Claude і Gemini 🕵️ #ШІ #shorts",
+  "short": true,
+  "issues": [],
+  "tags": 18,
+  "status": "public"
+ },
+ {
   "id": "bRanUVdt2Pw",
   "title": "Meta AI у WhatsApp: що він запам'ятовує і де справжній інкогніто-чат 💬 #ШІ #shorts",
   "short": true,
-  "issues": [
-   "C1"
-  ],
+  "issues": [],
   "tags": 10,
   "status": "public"
  },
@@ -682,19 +688,19 @@
   "status": "public"
  },
  {
-  "id": "TeQP_kM98Ng",
-  "title": "Gemini в Android Auto: їде з тобою і знає твою пошту 🚗 #ШІ #shorts",
-  "short": true,
-  "issues": [],
-  "tags": 14,
-  "status": "public"
- },
- {
   "id": "uEA0vrgrkf0",
   "title": "FLUX 3 Max: 10 секунд відео за 12 секунд 🤯 Нова нейромережа #ШІ #shorts",
   "short": true,
   "issues": [],
   "tags": 16,
+  "status": "public"
+ },
+ {
+  "id": "mP4aIt0qbik",
+  "title": "ChatGPT тепер відповідає кнопками, графіками й калькуляторами 🤯 #ШІ #shorts",
+  "short": true,
+  "issues": [],
+  "tags": 10,
   "status": "public"
  },
  {
