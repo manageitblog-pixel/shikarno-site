@@ -1,80 +1,10 @@
 {
- "posted": [
-  "01_menu_tyzhden",
-  "02_r6_mother_in_law",
-  "11_ep14_gemini_carplay",
-  "22_chatgpt_zakryti_chaty",
-  "06_r9_resume",
-  "03_r2_voice_scam",
-  "07_r8_chat_privacy",
-  {
-   "file": "ep27_halloween/tiktok.mp4",
-   "date": "2026-10-31 14:39",
-   "by": "owner"
-  },
-  {
-   "file": "ep28_tier_work/tiktok.mp4",
-   "date": "2026-11-01 ~11:05",
-   "by": "owner"
-  },
-  {
-   "file": "ep35_mono_ai_cashback/tiktok.mp4",
-   "date": "2026-11-01 ~22:20",
-   "by": "owner"
-  },
-  {
-   "file": "ep31_prof_teacher/tiktok.mp4",
-   "date": "2026-11-01 (до 22:00)",
-   "by": "owner",
-   "note": "ймовірно викладено після «А текст до копіювання?»"
-  },
-  {
-   "file": "ep32_prof_student/tiktok.mp4",
-   "date": "2026-11-02",
-   "by": "owner"
-  },
-  {
-   "file": "ep41_foto_fakty/tiktok.mp4",
-   "date": "2026-11-02",
-   "by": "owner",
-   "note": "відповідь відео на коментар BODYA43; 520 переглядів на 3.11 18:41 Київ"
-  },
-  {
-   "file": "ep44_tier_foto_video2/tiktok.mp4",
-   "date": "2026-11-04",
-   "by": "owner",
-   "note": "викладено першу версію (старий голос) — не замінюємо, рішення власника"
-  },
-  {
-   "file": "ep47_yak_zi_mnoyu/tiktok.mp4",
-   "date": "2026-11-04",
-   "note": "власник: «Запаблішив» 21:13 Київ"
-  },
-  {
-   "file": "ep48_osbb_skarga/tiktok.mp4",
-   "date": "2026-11-05",
-   "by": "owner",
-   "note": "власник: «Тільки що загрузив два відразу» ~20:40 Київ"
-  },
-  {
-   "file": "ep49_chatgpt_gif/tiktok.mp4",
-   "date": "2026-11-05",
-   "by": "owner",
-   "note": "власник: «Тільки що загрузив два відразу» ~20:40 Київ"
-  },
-  {
-   "file": "ep61_shi_rozrobnyk_otsinka/tiktok.mp4",
-   "date": "2026-11-09",
-   "by": "owner",
-   "note": "~19:28 Київ, плейлист «Яку роль дати наступною?»; 7 переглядів за 14 хв"
-  },
-  {
-   "file": "ep67_gemini_poshta_rezenzenty/tiktok.mp4",
-   "date": "2026-11-11 ~19:50Z",
-   "by": "owner",
-   "note": "власник: «Залив»; переможець YouTube (285/11 год) → кандидат на Promote після доби органіки"
-  }
- ],
+ "posted": {
+  "file": "ep77_sms_shakhrai/tiktok.mp4",
+  "date": "2026-11-20 ~09:51Z",
+  "by": "owner",
+  "note": "власник: «Залив в Тік ток» — раніше за YouTube-прем'єру (17Z); перевірити перегляди через добу"
+ },
  "views_27_10": {
   "02": 195,
   "11": 56,
@@ -91,7 +21,7 @@
  "owner_note_27_10": "Власник опублікував усі заплановані; у TikTok 7 відео. Далі — генерувати нові щодня (ролик дня + пакет у бот).",
  "sent_to_owner": {
   "file": "eps/ep77_sms_shakhrai/tiktok.mp4",
-  "date": "2026-11-20 10:5xZ",
+  "date": "2026-11-20 09:50Z",
   "rec_time": "2026-11-20 19:30–21:00 Київ",
   "note": "Short ep77 «Підозріле SMS» (YT CfHTFrYH_z4 о 17Z); власник спитав «що в черзі про шахрайство — в TikTok?»; підпис і 1-й коментар окремо в <code>"
  },
