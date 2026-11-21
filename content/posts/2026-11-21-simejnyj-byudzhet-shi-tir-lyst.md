@@ -6,6 +6,7 @@ date: 2026-11-21T19:00:00+02:00
 description: "Як вести сімейний бюджет з ШІ: Claude робить таблицю з формулами, ChatGPT розбирає чеки, Gemini пояснює комуналку. Тір-лист Байта #5 і що ШІ не можна надсилати."
 tags: [instrumenty, claude, chatgpt, gemini]
 youtube: gljrHADi4aU
+telegram_post: 137
 source: {name: "Anthropic: Claude Sheets, Whiteboards і Data (10.11.2026)", url: "https://claude.com/resources/articles/sheets-whiteboards-data"}
 sources:
   - {name: "A90: AI is giving everyone the same advice (дослідження 65 моделей, 20.11.2026)", url: "https://a90.com/experiments/same-advice/"}
