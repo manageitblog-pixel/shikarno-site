@@ -2,7 +2,7 @@
 kind: news
 title: "ШІ в телефоні читає твою переписку? Signal блокує ШІ-агентів в iOS 27 і Android"
 slug: signal-blokuye-shi-agentiv
-date: 2026-11-21T19:00:00+02:00
+date: 2026-11-25T19:00:00+02:00
 description: "Signal блокує скріншоти в iOS 27 і на Android, бо ШІ-асистенти Gemini і Siri сканують екран і бачать переписку. Що сталося, як це вимкнути і 3 кроки для твоєї приватності."
 tags: [bezpeka, gemini, agenty]
 youtube: Rlm1u-I6x00
