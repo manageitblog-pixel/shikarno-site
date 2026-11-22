@@ -123,5 +123,23 @@
   "status": "new",
   "added": "2026-11-22",
   "id": "7"
+ },
+ {
+  "title": "Кліп-воронка з шоу #2 (Gemini пам’ятає чати 2 місяці) → пов’язане відео на шоу",
+  "format": "clip",
+  "channels": [
+   "short",
+   "tiktok"
+  ],
+  "demand": 3,
+  "fresh": 3,
+  "show": 5,
+  "fit": 5,
+  "by": "eic",
+  "source": "aTUsauz53rs 0:41–1:18",
+  "status": "approved",
+  "decision": "Кліп-редактор, тиждень 23–29.11, не в день Short 19:00",
+  "added": "2026-11-22",
+  "id": "8"
  }
 ]
