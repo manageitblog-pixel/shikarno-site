@@ -1,5 +1,6 @@
-"""Тести Policy Engine (plan §12 п.1–7, 15–17 + рішення власника 22.11). Без мережі; фікстури — копії реальних
-факт-файлів і сценаріїв у тимчасовій теці; тимчасові ops.sqlite, quota.log, policy.json.
+"""Тести Policy Engine (plan §12 п.1–7, 15–17 + рішення власника 22.11). Без мережі; фікстури — заморожені копії
+факт-файлів і сценаріїв зі studio/tests/fixtures/ (НЕ живі studio/eps/*), копіюються в тимчасову теку;
+тимчасові ops.sqlite, quota.log, policy.json.
 python3 -m unittest studio/tests/test_policy.py
 """
 import copy, datetime as dt, json, os, shutil, subprocess, sys, tempfile, unittest
@@ -10,7 +11,7 @@ sys.path.insert(0, str(STUDIO))
 import ops  # noqa: E402
 import policy as pol  # noqa: E402
 
-REAL_EPS = STUDIO / "eps"
+FIX = Path(__file__).resolve().parent / "fixtures"
 NOW = "2026-11-22T16:00:00Z"
 ENV = ("SHK_EPS", "SHK_POLICY", "SHK_OPS_DB", "SHK_QUOTA_LOG", "SHK_POSTS")
 TABLE = "| Твердження | Джерело | Статус | Нотатка |\n|---|---|---|---|\n"
@@ -21,9 +22,11 @@ class Base(unittest.TestCase):
         self.tmp = tempfile.TemporaryDirectory()
         self.d = Path(self.tmp.name)
         self.eps = self.d / "eps"; self.eps.mkdir()
-        for f in ("ep82_factcheck_independent.md", "guide1_factcheck_independent.md", "guide3_factcheck_independent.md",
+        for f in ("ep82_factcheck_independent.md", "guide3_factcheck_independent.md",
                   "ep84_factcheck_independent.md", "ep82.py", "guide1.py", "guide3.py", "meta.py"):
-            shutil.copy(REAL_EPS / f, self.eps / f)
+            shutil.copy(FIX / f, self.eps / f)
+        # guide1 — версія 77f7220 (до повторних раундів): останній рядок без «Вердикт:»
+        shutil.copy(FIX / "guide1_factcheck_noverdict.md", self.eps / "guide1_factcheck_independent.md")
         # сценарій старший за факт-файл (інакше fact.stale)
         for f in ("ep82.py", "guide1.py", "guide3.py"):
             os.utime(self.eps / f, (1_700_000_000, 1_700_000_000))
@@ -100,6 +103,29 @@ class FactPolicy(Base):
         d = self.ev("guide1")
         self.assertEqual(self.rules(d)["fact.no_verdict"]["verdict"], "BLOCK")
         self.assertEqual(d["result"], "BLOCK")
+
+    # раунди: UNVERIFIED/FAIL, закриті PASS у пізнішому раунді, не рахуються (виправлено 22.11)
+    def test_guide1_three_rounds_resolved_allow(self):
+        body = (FIX / "guide1_factcheck_3rounds.md").read_text(encoding="utf-8")
+        (self.eps / "guide1_factcheck_independent.md").write_text(body, encoding="utf-8")
+        f = pol.parse_factcheck(body)
+        self.assertEqual((f["verdict"], f["fail"], f["unverified_claimed"]), ("PASS", 0, 0))
+        self.assertEqual(f["unverified_resolved"], 2)   # сегмент 41: раунд 1 і 2 → PASS у раунді 3
+        self.assertGreater(f["final_round_rows"], 0)
+        d = self.ev("guide1")
+        self.assertEqual(d["evidence"]["fact"], "ALLOW", self.rules(d, "fact"))
+
+    def test_unverified_left_open_block(self):
+        hdr = "| # | Твердження | URL | Статус | Примітка |\n|---|---|---|---|---|\n"
+        body = ("# фактчек\n" + hdr + "| 3 | a | https://help.openai.com/a | FAIL | |\n"
+                "| 41 | попередження під полем | — | UNVERIFIED | не знайшов |\n\nВердикт: FAIL\n\n"
+                "## Повторна перевірка 22.11\n\n" + hdr + "| 3 | a виправлено | https://help.openai.com/a | PASS | |\n"
+                "\nВердикт: PASS\n")
+        self.factfile("ep88_x", body)
+        f = pol.parse_factcheck(body)
+        self.assertEqual((f["fail"], f["fail_earlier"], f["unverified_claimed"]), (0, 1, 1))
+        r = self.rules(self.ev("ep88_x"))
+        self.assertEqual(r["fact.unverified_claimed"]["verdict"], "BLOCK")
 
     def test_file_without_verdict_block(self):
         self.factfile("ep90_x", "# фактчек\n" + TABLE + "| a | https://help.openai.com/x | PASS | |\n\nВсе добре, PASS.\n")

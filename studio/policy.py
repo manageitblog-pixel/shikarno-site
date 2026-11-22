@@ -240,46 +240,68 @@ def _status(cell):
     return None
 
 
+ROUND_HEAD_RE = re.compile(r"^#+\s*(?:повторна\s+перевірка|перевірка\s+\d+|перевірка\s+змін)", re.I)
+SEG_RE = re.compile(r"\d+")
+
+
+def _norm_claim(s):
+    return " ".join(WORD_RE.findall(s.lower()))
+
+
 def parse_factcheck(text):
     """Розбір *_factcheck_independent.md.
 
     verdict — лише з ОСТАННЬОГО непорожнього рядка «Вердикт: PASS|FAIL» (рішення власника №3).
     Статуси — лише з колонки «Статус» таблиць; слово FAIL у прозі не рахується (§3.4 п.3).
-    Раунди: файл ділиться рядками-вердиктами; FAIL рахуються в останньому раунді (повторна перевірка після
-    виправлень закриває попередні FAIL), UNVERIFIED — у всіх раундах. Якщо в раніших раундах були FAIL,
-    останній раунд мусить мати власну таблицю статусів (інакше PASS без повторної перевірки).
+    Раунди: межа — рядок-вердикт (крім останнього) або заголовок «Повторна перевірка» / «Перевірка N» /
+    «Перевірка змін…». FAIL рахуються в останньому раунді (повторна перевірка після виправлень закриває
+    попередні FAIL). UNVERIFIED рахується, лише якщо пізніший раунд не перевірив те саме твердження
+    (той самий сегмент «#» або те саме формулювання) — пізніший рядок заміняє ранній (виправлено 22.11).
+    Якщо в раніших раундах були FAIL, останній раунд мусить мати власну таблицю статусів.
     """
     lines = text.splitlines()
     nonempty = [ln.strip() for ln in lines if ln.strip()]
     last = nonempty[-1] if nonempty else ""
     m = VERDICT_RE.match(last)
     verdict_lines = [i for i, ln in enumerate(lines) if VERDICT_RE.match(ln.strip())]
-    final_start = verdict_lines[-2] + 1 if len(verdict_lines) >= 2 else 0
+    starts = sorted({i + 1 for i in verdict_lines[:-1]} |
+                    {i for i, ln in enumerate(lines) if ROUND_HEAD_RE.match(ln.strip())})
+    final_start = starts[-1] if starts else 0
     res = {"verdict": m.group(1) if m else None, "rounds": max(1, len(verdict_lines)),
            "pass": 0, "fail": 0, "fail_earlier": 0, "unverified_claimed": 0, "unverified_not_claimed": 0,
-           "rows": 0, "final_round_rows": 0, "fail_rows": [], "unverified_rows": [], "urls": []}
+           "unverified_resolved": 0, "rows": 0, "final_round_rows": 0, "fail_rows": [], "unverified_rows": [],
+           "urls": []}
+    items = []   # (round, seg-key, norm-claim, status, not_claimed, claim)
     for start, header, rows in _tables(lines):
         idx = next((k for k, h in enumerate(header) if re.match(r"\**\s*статус", h, re.I)), None)
         if idx is None: continue
+        rnd = sum(1 for s0 in starts if s0 <= start)
         final = start >= final_start
+        seg_i = next((k for k, h in enumerate(header) if h.replace("*", "").strip() in ("#", "№", "сегмент")), None)
+        cl_i = next((k for k, h in enumerate(header) if re.search(r"твердженн|формулюванн", h, re.I)), None)
+        if cl_i is None: cl_i = 1 if seg_i == 0 and len(header) > 1 else 0
         for cells in rows:
             if idx >= len(cells): continue
             st = _status(cells[idx])
             if not st: continue
             res["rows"] += 1
             if final: res["final_round_rows"] += 1
-            claim = cells[0][:90] if cells else ""
+            claim = cells[cl_i][:90] if cl_i < len(cells) else ""
+            seg = tuple(SEG_RE.findall(cells[seg_i])) if seg_i is not None and seg_i < len(cells) else ()
             if st == "PASS": res["pass"] += 1
             elif st == "FAIL":
                 if final:
                     res["fail"] += 1; res["fail_rows"].append(claim)
                 else:
                     res["fail_earlier"] += 1
-            else:
-                rest = " ".join(cells[idx:])
-                if NOT_CLAIMED_RE.search(rest): res["unverified_not_claimed"] += 1
-                else:
-                    res["unverified_claimed"] += 1; res["unverified_rows"].append(claim)
+            items.append((rnd, seg, _norm_claim(claim), st, bool(NOT_CLAIMED_RE.search(" ".join(cells[idx:]))), claim))
+    for rnd, seg, nc, st, not_claimed, claim in items:
+        if st != "UNVERIFIED": continue
+        if any(r2 > rnd and ((seg and s2 == seg) or (nc and n2 == nc)) for r2, s2, n2, *_ in items):
+            res["unverified_resolved"] += 1; continue
+        if not_claimed: res["unverified_not_claimed"] += 1
+        else:
+            res["unverified_claimed"] += 1; res["unverified_rows"].append(claim)
     res["urls"] = extract_urls(text)
     return res
 

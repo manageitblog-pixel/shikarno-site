@@ -17,6 +17,7 @@
 
 **Підсумок:** 7 BLOCK. Справжніх блокерів контенту три:
 - guide1: формат факт-файлу, 2 FAIL без повторної перевірки, 1 UNVERIFIED і конфлікт слоту з ep78.
+  - **виправлено 22.11:** файл отримав раунди 2–3 і `Вердикт: PASS`; парсер більше не рахує UNVERIFIED/FAIL, закриті PASS у пізнішому раунді (сегмент/формулювання) → `fact` ALLOW. Лишаються `quality.no_render`, `high_risk.requirements`, `schedule_conflict.slot_taken`, `publication.no_idea_link`. Тести policy — на фікстурах studio/tests/fixtures/.
 - ep83: UNVERIFIED в описі.
 - ep82: застарілий фактчек (DEGRADE).
 
