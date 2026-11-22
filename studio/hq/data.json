@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T12:47:51Z",
+ "generated": "2026-11-22T12:54:47Z",
  "kpi": {
   "subs": 311,
   "subs_goal": 1000,
@@ -712,12 +712,12 @@
  "lake": {
   "videos": 91,
   "daily": 732,
-  "news": 1503,
+  "news": 1606,
   "niche": 592,
-  "comp": 428,
-  "comp_videos": 61167,
+  "comp": 474,
+  "comp_videos": 61808,
   "research": 65,
-  "posts": 97,
+  "posts": 98,
   "site_queries": 79,
   "comp_ai": 214
  },
@@ -725,29 +725,50 @@
   {
    "date": "2026-11-22",
    "source": "hn",
+   "title": "AI is becoming a disaster for the climate",
+   "score": 7,
+   "url": "https://www.bloodinthemachine.com/p/ai-is-becoming-a-disaster-for-the"
+  },
+  {
+   "date": "2026-11-22",
+   "source": "hn",
+   "title": "Harsher on Male? Evaluating LLMs on Gender-Asymmetric Moral Framing in Conflicts",
+   "score": 66,
+   "url": "https://arxiv.org/abs/2606.14068"
+  },
+  {
+   "date": "2026-11-22",
+   "source": "hn",
+   "title": "A Slinky on an Escalator Is a Weirdly Good Test of LLM Intelligence",
+   "score": 7,
+   "url": "https://morethanamachine.com/posts/slinky-escalator-benchmark/"
+  },
+  {
+   "date": "2026-11-22",
+   "source": "hn",
    "title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
-   "score": 34,
+   "score": 216,
    "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/"
   },
   {
    "date": "2026-11-22",
    "source": "hn",
    "title": "The Mythology of Conscious AI",
-   "score": 60,
+   "score": 84,
    "url": "https://www.noemamag.com/the-mythology-of-conscious-ai/"
   },
   {
    "date": "2026-11-22",
    "source": "hn",
    "title": "Together.ai: Prompt Leakage for Requests",
-   "score": 29,
+   "score": 34,
    "url": "https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026"
   },
   {
    "date": "2026-11-22",
    "source": "hn",
    "title": "Current Efforts Aren't Enough to Slow the AI Cyber Virus",
-   "score": 10,
+   "score": 13,
    "url": "https://www.bridgewater.com/research-and-insights/current-efforts-arent-enough-to-slow-the-ai-cyber-virus"
   },
   {
@@ -784,27 +805,6 @@
    "title": "SkyFall і Sine Engineering проведуть інженерний хакатон для молоді у Львові. Там буде ярмарок вакансій",
    "score": null,
    "url": "https://dou.ua/lenta/news/skyfall-sine-hackathon-in-lviv/"
-  },
-  {
-   "date": "2026-11-22",
-   "source": "dou",
-   "title": "Компанія Федорова співпрацюватиме з польською JRH ASI. Працюватимуть над ШІ, сенсорами та БПЛА",
-   "score": null,
-   "url": "https://dou.ua/lenta/news/fedorovs-company-with-polish-jrh-asi/"
-  },
-  {
-   "date": "2026-11-22",
-   "source": "dou",
-   "title": "Уряд хоче оновити процедуру бронювання і залучити до $4 млрд на компенсації для бізнесу",
-   "score": null,
-   "url": "https://dou.ua/lenta/news/reserving-insurance-shelters/"
-  },
-  {
-   "date": "2026-11-22",
-   "source": "dou",
-   "title": "Anthropic виходить на Nasdaq. Що це означає для українського ІТ та як придбати акції (UPD)",
-   "score": null,
-   "url": "https://dou.ua/lenta/news/anthropic-nasdaq-what-it-means/"
   }
  ],
  "competitors": [
@@ -818,19 +818,19 @@
    "channel": "Mark Tilbury",
    "subs": 9450000,
    "lang": "en",
-   "avg": 4411596
+   "avg": 4419842
   },
   {
    "channel": "Google Korea",
    "subs": 111000,
    "lang": "en",
-   "avg": 2382233
+   "avg": 2383529
   },
   {
    "channel": "Google Antigravity",
    "subs": 180000,
    "lang": "en",
-   "avg": 2368610
+   "avg": 2368673
   },
   {
    "channel": "TechAkshay 2.0",
@@ -848,13 +848,13 @@
    "channel": "Jaden Williams",
    "subs": 3400000,
    "lang": "en",
-   "avg": 1728969
+   "avg": 1730560
   },
   {
    "channel": "Paul J Lipsky",
    "subs": 535000,
    "lang": "en",
-   "avg": 1522183
+   "avg": 1522321
   },
   {
    "channel": "Google DeepMind",
@@ -866,7 +866,7 @@
    "channel": "Shark Numbers",
    "subs": 2010000,
    "lang": "en",
-   "avg": 1298842
+   "avg": 1301598
   }
  ],
  "activity": [
@@ -939,8 +939,8 @@
    "agent": "longs",
    "task": "Гайд «Claude безкоштовно»: сценарій",
    "started": "2026-11-22T12:41:00Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-22T12:54:41Z",
+   "result": "48 сегментів, ~2 720 слів, 13 скрінів"
   },
   {
    "id": "10",
@@ -949,6 +949,22 @@
    "started": "2026-11-22T12:46:26Z",
    "finished": "2026-11-22T12:47:50Z",
    "result": "PASS; м'якше формулювання про Google Keep"
+  },
+  {
+   "id": "11",
+   "agent": "de",
+   "task": "Даталейк: новини, ніша, конкуренти, знімок бази",
+   "started": "2026-11-22T12:52:45Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "12",
+   "agent": "factcheck",
+   "task": "Фактчек гайду «Claude безкоштовно» + сторінки сайту",
+   "started": "2026-11-22T12:54:41Z",
+   "finished": null,
+   "result": ""
   }
  ],
  "agents": [
