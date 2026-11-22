@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T18:40:26Z",
+ "generated": "2026-11-22T18:42:34Z",
  "kpi": {
   "subs": 311,
   "subs_goal": 1000,
@@ -940,7 +940,7 @@
  "lake": {
   "videos": 93,
   "daily": 746,
-  "news": 1607,
+  "news": 1851,
   "niche": 604,
   "comp": 504,
   "comp_videos": 62243,
@@ -952,87 +952,87 @@
  "news": [
   {
    "date": "2026-11-22",
-   "source": "hn",
-   "title": "Show HN: I built a game where you are an LLM's subagent",
-   "score": 108,
-   "url": "https://github.com/gulivan/worker755"
+   "source": "openai",
+   "title": "Perplexity and Intelligence",
+   "score": null,
+   "url": "https://openai.com/index/perplexity-and-intelligence"
   },
   {
    "date": "2026-11-22",
-   "source": "hn",
-   "title": "Muru – AI-assisted Rust server for Python apps by mod_WSGI's creator",
-   "score": 46,
-   "url": "https://simonwillison.net/2026/Nov/21/muru/"
+   "source": "techcrunch",
+   "title": "Why data centers are at the center of the Big Tech backlash",
+   "score": null,
+   "url": "https://techcrunch.com/2026/11/22/why-data-centers-are-at-the-center-of-the-big-tech-backlash/"
   },
   {
    "date": "2026-11-22",
-   "source": "hn",
-   "title": "AI People Are Extremely Rich",
-   "score": 19,
-   "url": "https://www.noahpinion.blog/p/ai-people-are-very-very-very-very"
+   "source": "verge",
+   "title": "Binding of Isaac developer removes AI music from Repentance Plus",
+   "score": null,
+   "url": "https://www.theverge.com/games/1039770/binding-of-isaac-ai-music"
   },
   {
    "date": "2026-11-22",
-   "source": "hn",
-   "title": "AI is becoming a disaster for the climate",
-   "score": 43,
-   "url": "https://www.bloodinthemachine.com/p/ai-is-becoming-a-disaster-for-the"
+   "source": "verge",
+   "title": "The vibe-coding revolution is coming to all the gadgets",
+   "score": null,
+   "url": "https://www.theverge.com/column/1039139/vibe-coding-gadgets-tv-camera"
   },
   {
    "date": "2026-11-22",
-   "source": "hn",
-   "title": "Harsher on Male? Evaluating LLMs on Gender-Asymmetric Moral Framing in Conflicts",
-   "score": 71,
-   "url": "https://arxiv.org/abs/2606.14068"
+   "source": "wired",
+   "title": "Banks Have Had It Up to Here With Your AI Agent",
+   "score": null,
+   "url": "https://www.wired.com/story/banks-are-cracking-down-on-ai-agents/"
   },
   {
    "date": "2026-11-22",
-   "source": "hn",
-   "title": "A Slinky on an Escalator Is a Weirdly Good Test of LLM Intelligence",
-   "score": 16,
-   "url": "https://morethanamachine.com/posts/slinky-escalator-benchmark/"
+   "source": "ain",
+   "title": "Signal обмежить створення скриншотів на смартфонах, щоб захистити листування від ШІ",
+   "score": null,
+   "url": "https://ain.ua/2026/11/20/signal-obmezit-stvorennia-skrinsotiv-na-smartfonax-shhob-zaxistiti-listuvannia-vid-si/"
   },
   {
    "date": "2026-11-22",
-   "source": "hn",
-   "title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
-   "score": 470,
-   "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/"
+   "source": "devua",
+   "title": "У Gemini з’явилася функція створення GIF-анімацій за допомогою ШІ",
+   "score": null,
+   "url": "https://dev.ua/news/google-zapustyla-heneratsiiu-shi-gif-1795350586"
   },
   {
    "date": "2026-11-22",
-   "source": "hn",
-   "title": "The Mythology of Conscious AI",
-   "score": 126,
-   "url": "https://www.noemamag.com/the-mythology-of-conscious-ai/"
+   "source": "devua",
+   "title": "«Я злив секрети»: ШІ-агент для програмування зізнався у витоку даних, а інший обійшов корпоративні обмеження",
+   "score": null,
+   "url": "https://dev.ua/news/ya-zlyv-sekrety-shi-ahent-ziznavsia-u-vytoku-danykh-1795344674"
   },
   {
    "date": "2026-11-22",
-   "source": "hn",
-   "title": "Together.ai: Prompt Leakage for Requests",
-   "score": 41,
-   "url": "https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026"
+   "source": "devua",
+   "title": "ChatGPT «стиснули» для запуску на 16-бітній приставці Super Nintendo",
+   "score": null,
+   "url": "https://dev.ua/news/chatgpt-stysnuly-dlia-zapusku-na-16-bitnii-prystavtsi-super-nintendo-1795340326"
   },
   {
    "date": "2026-11-22",
-   "source": "hn",
-   "title": "Current Efforts Aren't Enough to Slow the AI Cyber Virus",
-   "score": 19,
-   "url": "https://www.bridgewater.com/research-and-insights/current-efforts-arent-enough-to-slow-the-ai-cyber-virus"
+   "source": "devua",
+   "title": "Перегони за доведення гіпотези Рімана перетворилися на протистояння людини та штучного інтелекту",
+   "score": null,
+   "url": "https://dev.ua/news/perehony-za-dovedennia-hipotezy-rimana-peretvorylysia-na-protystoiannia-liudyny-ta-shtuchnoho-intelektu-1795333743"
   },
   {
    "date": "2026-11-22",
-   "source": "hn",
-   "title": "Since last year, we asked: \"What if AI solved the Riemann Hypothesis?\"",
-   "score": 37,
-   "url": "https://www.youtube.com/watch?v=zqzk43bSdDI"
+   "source": "speka",
+   "title": "ШІ виявляє ознаки раку сечового міхура за 5 років до діагнозу",
+   "score": null,
+   "url": "https://speka.ua/news/si-viyavlyaje-oznaki-raku-secovogo-mixura-za-5-rokiv-do-diagnozu-v71qy3"
   },
   {
    "date": "2026-11-22",
-   "source": "hn",
-   "title": "The Engineering Manager's role is under attack (again)",
-   "score": 40,
-   "url": "https://www.manager.dev/newsletter/the-engineering-manager-s-role-is-under-attack-again"
+   "source": "speka",
+   "title": "Математик Anthropic заявив, що разом із Claude довів гіпотезу Рімана",
+   "score": null,
+   "url": "https://speka.ua/news/matematik-anthropic-zayaviv-shho-razom-iz-claude-doviv-gipotezu-rimana-vz8ld4"
   }
  ],
  "competitors": [
@@ -1143,30 +1143,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "27",
-   "agent": "coo",
-   "task": "P0 Autonomous Operations Plan (лише план, без змін)",
-   "started": "2026-11-22T13:28:33Z",
-   "finished": "2026-11-22T13:39:42Z",
-   "result": "План автономних операцій: 14 розділів, 7 кроків, нічого не змінено"
-  },
-  {
-   "id": "28",
-   "agent": "designer",
-   "task": "Шаблон Shorts: кадр 0 за специфікацією (Байт + плашка серії)",
-   "started": "2026-11-22T13:29:00Z",
-   "finished": "2026-11-22T13:37:15Z",
-   "result": "Кадр 0 Shorts: плашка серії + Байт 440 px + пігулки з першого кадру; з ep82 (24.11) — тест 5 Shorts"
-  },
-  {
-   "id": "29",
-   "agent": "factcheck",
-   "task": "Незалежний фактчек гайду #3 «Gemini безкоштовно»",
-   "started": "2026-11-22T13:39:42Z",
-   "finished": "2026-11-22T13:46:53Z",
-   "result": "guide3: FAIL — 81/84 PASS; 3 назви меню англійською замість українського інтерфейсу"
-  },
   {
    "id": "30",
    "agent": "factcheck",
@@ -1380,6 +1356,30 @@
    "agent": "de",
    "task": "lake.py news: +25 RSS-джерел (світові ШІ-медіа, блоги компаній, українські tech-медіа)",
    "started": "2026-11-22T18:39:37Z",
+   "finished": "2026-11-22T18:42:33Z",
+   "result": "22 RSS-стрічки (було 3): +264 новини, 1851 у лейку"
+  },
+  {
+   "id": "57",
+   "agent": "trend",
+   "task": "фон: TikTok-тренди української ШІ-ніші (vidIQ ≤20 кредитів) → ідеї",
+   "started": "2026-11-22T18:42:11Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "58",
+   "agent": "da",
+   "task": "фон: якість даталейку (порожні поля, дублі, застарілі знімки)",
+   "started": "2026-11-22T18:42:11Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "59",
+   "agent": "designer",
+   "task": "фон: ресерч дизайну — обкладинки й кадр 0 українських аномалій",
+   "started": "2026-11-22T18:42:33Z",
    "finished": null,
    "result": ""
   }
