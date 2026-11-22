@@ -62,6 +62,22 @@ def main():
     last7 = q("select sum(views), sum(views*avg_pct)/max(sum(views),1), sum(subs) from daily where date >= ?", (today - datetime.timedelta(days=9)).isoformat())[0]
     days = q("select date, sum(views), sum(views*avg_pct)/max(sum(views),1) from daily where date >= ? group by date order by date", (today - datetime.timedelta(days=40)).isoformat())
     site = q("select date, clicks, impressions, position from site_daily order by date")
+    # історія (власник 22.11: «там історичність результатів показуй») — по тижнях (пн), з channel_daily / site_daily / tg_daily
+    def wk(d): x = datetime.date.fromisoformat(d[:10]); return (x - datetime.timedelta(days=x.weekday())).isoformat()
+    H = {}
+    for d, v, wm, sg, sl, lw, sv in q("select date, views, watch_min, subs_gained, subs_lost, long_watch_min, short_views from channel_daily order by date"):
+        h = H.setdefault(wk(d), dict(w=wk(d), views=0, subs=0, long_h=0.0, short_views=0, clicks=0, impr=0))
+        h["views"] += v or 0; h["subs"] += (sg or 0) - (sl or 0); h["long_h"] += (lw or 0) / 60; h["short_views"] += sv or 0
+    for d, cl, im, _ in site:
+        h = H.setdefault(wk(d), dict(w=wk(d), views=0, subs=0, long_h=0.0, short_views=0, clicks=0, impr=0)); h["clicks"] += cl or 0; h["impr"] += im or 0
+    hist = sorted(H.values(), key=lambda h: h["w"]); cs = ch = 0
+    last = (q("select max(date) from channel_daily")[0][0] or today.isoformat())[:10]
+    for h in hist: h["partial"] = (datetime.date.fromisoformat(h["w"]) + datetime.timedelta(days=6)).isoformat() > last
+    for h in hist: cs += h["subs"]; ch += h["long_h"]; h["subs_cum"] = cs; h["long_cum"] = round(ch, 1); h["long_h"] = round(h["long_h"], 1)
+    tg_hist = [dict(d=d, n=n) for d, n in q("select date, members from tg_daily order by date")]
+    long_hours = None
+    try: long_hours = analytics_db.long_hours_12m()
+    except Exception: long_hours = round(ch, 1)
     tg_members = None
     try:
         sys.path.insert(0, "/home/claude/tg"); import tg
@@ -94,11 +110,11 @@ def main():
     comp_top = [dict(channel=t, subs=s, lang=l, avg=int(a)) for t, s, l, a in q("select c.title, c.subs, c.lang, avg(v.views) from comp c join comp_ai a using(channel_id) join comp_videos v on v.channel_id=c.channel_id where a.ai_share>=0.3 and c.lang in ('uk','en') and v.published>=? group by c.channel_id order by avg(v.views) desc limit 10", (today - datetime.timedelta(days=90)).isoformat())]
     tt = json.load(open(os.path.join(ROOT, "studio", "eps", "tiktok.json"))).get("posted_auto", {})
     data = dict(
-        generated=datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
-        kpi=dict(subs=subs, subs_goal=1000, long_hours=10.1, long_hours_goal=4000, views_total=views_total, views_7d=last7[0], pct_7d=round(last7[1] or 0, 1), subs_7d=last7[2],
+        generated=datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        kpi=dict(subs=subs, subs_goal=1000, long_hours=long_hours, long_hours_goal=4000, views_total=views_total, views_7d=last7[0], pct_7d=round(last7[1] or 0, 1), subs_7d=last7[2],
                  tg=tg_members, tg_goal=150, site_clicks_28d=sum(r[1] for r in site[-28:]), site_impr_28d=sum(r[2] for r in site[-28:]), tiktok_auto=len(tt)),
         days=[dict(d=d, v=v, p=round(p or 0, 1)) for d, v, p in days], site=[dict(d=d, c=cl, i=im, pos=round(po, 1)) for d, cl, im, po in site],
-        formats=formats, videos=vids, ideas=ideas[:12], lake=lake, news=news, competitors=comp_top,
+        history=hist, tg_hist=tg_hist, formats=formats, videos=vids, ideas=ideas[:12], lake=lake, news=news, competitors=comp_top,
         activity=(json.load(open(os.path.join(ROOT, "studio", "hq", "activity.json"))) if os.path.exists(os.path.join(ROOT, "studio", "hq", "activity.json")) else {"items": []})["items"][-30:],
         agents=AGENTS, depts=DEPTS, schedule=[dict(time=a, what=b, agent=c_) for a, b, c_ in SCHEDULE],
         asks=[dict(what="Дозвіл vidIQ у .claude/settings.json (TikTok без підтверджень)", status="чекає власника"),

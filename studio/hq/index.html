@@ -62,7 +62,13 @@ td.num{text-align:right;font-family:var(--mono)}
 .lake div{background:#ffffff08;border-radius:10px;padding:10px}.lake b{display:block;font-family:var(--display);font-size:20px;font-variant-numeric:tabular-nums}.lake span{font-size:12px;color:var(--mut)}
 .asks li{margin:4px 0}
 a{color:var(--cyan)}
-.spark{width:100%;height:90px}
+.hist{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.hc{background:var(--card,#ffffff08);border:1px solid #ffffff14;border-radius:14px;padding:12px 14px;position:relative}
+.hc h3{margin:0;font-size:13px;font-weight:600;color:var(--mut)}.hc .big{font-family:var(--display);font-size:24px;font-variant-numeric:tabular-nums;margin:2px 0 4px}
+.hc .big small{font-size:12px;color:var(--mut);font-family:inherit;font-weight:400}
+.hc svg{width:100%;height:110px;display:block;overflow:visible}.hc .ax{font-size:10px;fill:#A9A3D6}
+.tip{position:absolute;pointer-events:none;background:#0B0A1C;border:1px solid #ffffff2a;border-radius:8px;padding:5px 8px;font-size:12px;white-space:nowrap;transform:translate(-50%,-110%);display:none;z-index:2}
+.htab{margin-top:10px;font-size:13px}.htab table{margin-top:8px}
 @media (max-width:860px){.office{grid-template-columns:1fr}.tl{grid-template-columns:90px 1fr}.tl .who{display:none}}
 @media (prefers-reduced-motion:reduce){.live:before{animation:none}}
 </style>
@@ -74,8 +80,14 @@ a{color:var(--cyan)}
   </header>
 
   <section aria-labelledby="h-kpi">
-    <h2 id="h-kpi">Для CEO <span>цілі каналу і де ми зараз</span></h2>
+    <h2 id="h-kpi">Цілі каналу <span>де ми зараз · must-have 1000 підписників і 400–500 год, star — 1000 і 4000 год до 31.01.2027</span></h2>
     <div class="kpis" id="kpis"></div>
+  </section>
+
+  <section aria-labelledby="h-hist">
+    <h2 id="h-hist">Історія результатів <span>по тижнях (з понеділка) · наведи на точку · пунктир — тиждень ще не повний (YouTube запізнюється на 2–3 дні)</span></h2>
+    <div class="hist" id="hist"></div>
+    <details class="htab"><summary>Таблиця цифр</summary><table id="histtab"></table></details>
   </section>
 
   <section aria-labelledby="h-live">
@@ -111,18 +123,7 @@ a{color:var(--cyan)}
     </section>
   </div>
 
-  <div class="grid2">
-    <section class="card" aria-labelledby="h-views">
-      <h2 id="h-views">YouTube по днях <span>перегляди, 40 днів</span></h2>
-      <svg class="spark" id="spark" viewBox="0 0 400 90" preserveAspectRatio="none" role="img" aria-label="Перегляди по днях"></svg>
-      <div class="note" id="sparknote" style="font-size:12px;color:var(--mut)"></div>
-    </section>
-    <section class="card" aria-labelledby="h-site">
-      <h2 id="h-site">Сайт у Google <span>кліки і покази</span></h2>
-      <svg class="spark" id="spark2" viewBox="0 0 400 90" preserveAspectRatio="none" role="img" aria-label="Покази сайту по днях"></svg>
-      <div class="note" id="sitenote" style="font-size:12px;color:var(--mut)"></div>
-    </section>
-  </div>
+
 
   <section class="card" aria-labelledby="h-vids">
     <h2 id="h-vids">Останні відео <span>перші 7 днів</span></h2>
@@ -193,10 +194,7 @@ function render(D){
   const nm={tier:"тір-лист",free:"безкоштовно",news:"новини",sec:"безпека",skills:"скіли",try:"Байт пробує",check:"перевірка",prof:"професії",digest:"шоу/дайджест"};
   $("#formats").innerHTML=D.formats.map(f=>{const [k,v]=f.name.split(" · ");return `<div class="fbar"><span>${esc(k)} · ${esc(nm[v]||v)} <span style="color:var(--mut)">(${f.n})</span></span><span class="track"><i style="width:${(f.views/mx*100).toFixed(1)}%;background:${f.pct>=60?"var(--good)":f.pct>=45?"var(--warn)":"var(--pink)"}"></i></span><span class="v">${fmt(Math.round(f.views))}</span></div>`}).join("")+`<div style="font-size:12px;color:var(--mut)">колір — % перегляду: зелений ≥60%, жовтий ≥45%, рожевий нижче</div>`;
 
-  spark("#spark",D.days.map(d=>d.v),"var(--cyan)");
-  const tot=D.days.slice(-7).reduce((a,d)=>a+d.v,0); $("#sparknote").textContent="Останні 7 днів з даними: "+fmt(tot)+" переглядів (YouTube Analytics запізнюється на 2–3 дні).";
-  spark("#spark2",D.site.map(d=>d.i),"var(--yellow)");
-  $("#sitenote").textContent="Покази на день; кліків за 28 днів: "+fmt(K.site_clicks_28d)+". SEO-відділ переписує сторінки, які Google вже показує.";
+  history(D);
 
   $("#videos").innerHTML="<tr><th>Дата</th><th>Відео</th><th>Формат</th><th>7 днів</th><th>% перегл.</th><th>Всього</th></tr>"+D.videos.map(v=>`<tr><td style="font-family:var(--mono)">${v.published.slice(5)}</td><td><a href="https://youtu.be/${esc(v.id)}" target="_blank" rel="noopener">${esc(v.title)}</a></td><td>${esc(nm[v.format]||v.format)}${v.short?"":" · довгий"}</td><td class="num">${fmt(v.views7)}</td><td class="num">${v.pct?v.pct+"%":"—"}</td><td class="num">${fmt(v.total)}</td></tr>`).join("");
   $("#news").innerHTML="<tr><th>Дата</th><th>Джерело</th><th>Новина</th></tr>"+D.news.map(n=>`<tr><td style="font-family:var(--mono)">${esc((n.date||"").slice(5))}</td><td>${esc(n.source)}${n.score?` <span style="color:var(--mut)">${n.score}</span>`:""}</td><td><a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a></td></tr>`).join("");
@@ -206,6 +204,45 @@ function render(D){
   $("#asks").innerHTML=D.asks.map(a=>`<li>${esc(a.what)} — <span class="state warn">${esc(a.status)}</span></li>`).join("");
 
   office(D);
+}
+
+function history(D){
+  const Hs=(D.history||[]).filter(h=>h.w>="2026-10-01"), wl=w=>w.slice(8,10)+"."+w.slice(5,7);
+  const tgp=(D.tg_hist||[]).map(t=>({w:t.d,n:t.n}));
+  const C=[
+    {k:"views",t:"Перегляди YouTube за тиждень",c:"#4CF2FF",f:fmt,last:"sum"},
+    {k:"subs_cum",t:"Підписники: приріст наростаючим",c:"#FFD60A",f:v=>"+"+fmt(v),goal:1000,gl:"ціль 1000",cum:1},
+    {k:"long_cum",t:"Години довгих наростаючим",c:"#FF4F8B",f:v=>fmt(v)+" год",goal:450,gl:"must-have ~450 год",cum:1},
+    {k:"long_h",t:"Години довгих за тиждень",c:"#FF4F8B",f:v=>fmt(v)+" год"},
+    {k:"impr",t:"Сайт: покази в Google за тиждень",c:"#9B87FF",f:fmt},
+    {k:"clicks",t:"Сайт: кліки з Google за тиждень",c:"#9B87FF",f:fmt},
+  ];
+  const box=$("#hist"); box.innerHTML="";
+  C.forEach(c=>{const pts=Hs.map(h=>({x:wl(h.w),v:h[c.k]||0,p:h.partial}));const lastFull=c.cum?{...pts[pts.length-1],x:"на зараз",cur:1}:([...pts].reverse().find(p=>!p.p)||pts[pts.length-1]);
+    box.insertAdjacentHTML("beforeend",`<div class="hc"><h3>${c.t}</h3><div class="big">${lastFull?c.f(lastFull.v):"—"} <small>${lastFull?(lastFull.cur?lastFull.x:"тиждень з "+lastFull.x):""}</small></div><svg role="img" aria-label="${esc(c.t)}"></svg><div class="tip"></div></div>`);
+    hline(box.lastElementChild,pts,c)});
+  box.insertAdjacentHTML("beforeend",`<div class="hc"><h3>Telegram: учасники каналу</h3><div class="big">${fmt(tgp.length?tgp[tgp.length-1].n:D.kpi.tg)} <small>/ ${fmt(D.kpi.tg_goal)}</small></div><svg role="img" aria-label="Telegram по днях"></svg><div class="tip"></div></div>`);
+  const tb=box.lastElementChild; if(tgp.length>1) hline(tb,tgp.map(t=>({x:t.w.slice(8,10)+"."+t.w.slice(5,7),v:t.n})),{c:"#4CF2FF",f:fmt}); else tb.querySelector("svg").outerHTML=`<p style="font-size:12px;color:var(--mut);margin:6px 0 0">Історію пишемо щодня з 22.11 — лінія з'явиться з другого дня.</p>`;
+  $("#histtab").innerHTML="<tr><th>Тиждень</th><th>Перегляди</th><th>з них Shorts</th><th>Підписки нетто</th><th>Год довгих</th><th>Покази сайту</th><th>Кліки</th></tr>"+Hs.map(h=>`<tr><td style="font-family:var(--mono)">${wl(h.w)}${h.partial?" *":""}</td><td class="num">${fmt(h.views)}</td><td class="num">${fmt(h.short_views)}</td><td class="num">${fmt(h.subs)}</td><td class="num">${fmt(h.long_h)}</td><td class="num">${fmt(h.impr)}</td><td class="num">${fmt(h.clicks)}</td></tr>`).join("")+`<tr><td colspan="7" style="color:var(--mut)">* тиждень неповний</td></tr>`;
+}
+function hline(card,pts,c){
+  const svg=card.querySelector("svg"),tip=card.querySelector(".tip"); if(!pts.length){return}
+  const W=300,H=110,L=4,R=4,T=10,B=18,vals=pts.map(p=>p.v),mx=Math.max(...vals,1)*1.1,step=(W-L-R)/Math.max(1,pts.length-1);
+  svg.setAttribute("viewBox",`0 0 ${W} ${H}`);svg.setAttribute("preserveAspectRatio","none");
+  const X=i=>L+i*step,Y=v=>T+(H-T-B)*(1-v/mx);
+  const full=pts.map((p,i)=>[X(i),Y(p.v),p]),solid=full.filter(q=>!q[2].p),dash=full.slice(Math.max(0,solid.length-1));
+  const d=a=>a.map((q,i)=>(i?"L":"M")+q[0].toFixed(1)+" "+q[1].toFixed(1)).join(" ");
+  let g=`<line x1="0" x2="${W}" y1="${H-B}" y2="${H-B}" stroke="#ffffff22"/>`;
+  if(solid.length) g+=`<path d="${d(solid)} L${solid[solid.length-1][0]} ${H-B} L${solid[0][0]} ${H-B}Z" fill="${c.c}" opacity=".12"/><path d="${d(solid)}" fill="none" stroke="${c.c}" stroke-width="2" vector-effect="non-scaling-stroke"/>`;
+  if(dash.length>1) g+=`<path d="${d(dash)}" fill="none" stroke="${c.c}" stroke-width="2" stroke-dasharray="4 4" vector-effect="non-scaling-stroke"/>`;
+  g+=full.map(q=>`<circle cx="${q[0]}" cy="${q[1]}" r="3" fill="${q[2].p?"#14112e":c.c}" stroke="${c.c}" stroke-width="1.5" vector-effect="non-scaling-stroke"/>`).join("");
+  g+=`<text class="ax" x="${L}" y="${H-4}">${esc(pts[0].x)}</text><text class="ax" x="${W-R}" y="${H-4}" text-anchor="end">${esc(pts[pts.length-1].x)}</text><text class="ax" x="${L}" y="9">макс ${esc(c.f(Math.max(...vals)))}</text>`;
+  if(c.goal) g+=`<text class="ax" x="${W-R}" y="9" text-anchor="end">${esc(c.gl)}: ${Math.round(Math.max(...vals)/c.goal*100)}%</text>`;
+  g+=full.map((q,i)=>`<rect x="${q[0]-step/2}" y="0" width="${Math.max(step,8)}" height="${H}" fill="transparent" data-i="${i}"/>`).join("");
+  svg.innerHTML=g;
+  svg.querySelectorAll("rect[data-i]").forEach(r=>{const i=+r.dataset.i,q=full[i];
+    const show=()=>{const bb=svg.getBoundingClientRect(),cb=card.getBoundingClientRect();tip.style.display="block";tip.style.left=(bb.left-cb.left+q[0]/W*bb.width)+"px";tip.style.top=(bb.top-cb.top+q[1]/H*bb.height)+"px";tip.innerHTML=`<b>${esc(q[2].x)}</b> · ${esc(c.f(q[2].v))}${q[2].p?" · неповний":""}`};
+    r.addEventListener("mouseenter",show);r.addEventListener("click",show);r.addEventListener("mouseleave",()=>tip.style.display="none")});
 }
 
 function spark(sel,vals,col){
