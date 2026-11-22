@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T18:43:29Z",
+ "generated": "2026-11-22T18:44:23Z",
  "kpi": {
   "subs": 311,
   "subs_goal": 1000,
@@ -732,6 +732,45 @@
    "score": 400.0
   },
   {
+   "title": "Тір-лист: безкоштовні ШІ для відео українською — що реально працює без оплати",
+   "format": "tier",
+   "channels": [
+    "short",
+    "tiktok"
+   ],
+   "demand": 4,
+   "fresh": 4,
+   "show": 5,
+   "fit": 5,
+   "source": "https://www.tiktok.com/@ai_sashka/video/7710994491628375328",
+   "by": "researcher-niche",
+   "status": "new",
+   "added": "2026-11-22",
+   "id": "30",
+   "score": 400.0
+  },
+  {
+   "title": "Надиктуй ChatGPT хоч годину: живий диктант — текст з’являється, поки говориш (і безкоштовно)",
+   "format": "try",
+   "channels": [
+    "show",
+    "short",
+    "site",
+    "tg"
+   ],
+   "demand": 4,
+   "fresh": 4,
+   "show": 5,
+   "fit": 5,
+   "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+   "by": "researcher-web",
+   "status": "new",
+   "added": "2026-11-22",
+   "id": "25",
+   "decision": "кандидат у шоу #3 29.11 (веб-скан 22.11: release notes OpenAI 18.11, всі плани, глобально)",
+   "score": 282.0
+  },
+  {
    "title": "Гайд #3 «Gemini безкоштовно українською» 18–20 хв (відео + сторінка сайту)",
    "format": "guide",
    "channels": [
@@ -750,6 +789,27 @@
    "added": "2026-11-22",
    "id": "19",
    "score": 234.0
+  },
+  {
+   "title": "Як вимкнути ШІ в Canva: новий перемикач — і що все одно залишиться",
+   "format": "try",
+   "channels": [
+    "show",
+    "short",
+    "site",
+    "tg"
+   ],
+   "demand": 4,
+   "fresh": 4,
+   "show": 5,
+   "fit": 4,
+   "source": "https://www.canva.com/help/manage-ai-features/",
+   "by": "researcher-web",
+   "status": "new",
+   "added": "2026-11-22",
+   "id": "26",
+   "decision": "кандидат у шоу #3 29.11 (веб-скан 22.11: Canva 19.11, перемикач у Settings > Permissions, розкатують поступово — перевірити на акаунті перед зйомкою)",
+   "score": 225.6
   },
   {
    "title": "ChatGPT з нуля українською — гайд 12–15 хв",
@@ -835,6 +895,24 @@
    "score": 220.0
   },
   {
+   "title": "«Тобі пише підтримка Telegram»: як ШІ-шахраї крадуть акаунти — 3 ознаки",
+   "format": "sec",
+   "channels": [
+    "short",
+    "tiktok"
+   ],
+   "demand": 5,
+   "fresh": 4,
+   "show": 4,
+   "fit": 4,
+   "source": "https://www.tiktok.com/@cyberyaro/video/7706508797715483911",
+   "by": "researcher-niche",
+   "status": "new",
+   "added": "2026-11-22",
+   "id": "31",
+   "score": 217.9
+  },
+  {
    "title": "Розширення чи скіл для ШІ просить доступ до всього: 3 перевірки перед встановленням",
    "format": "sec",
    "channels": [
@@ -855,86 +933,6 @@
    "added": "2026-11-22",
    "id": "22",
    "score": 212.5
-  },
-  {
-   "title": "Moonlock від MacPaw: український застосунок ловить шахрайські SMS і посилання на iPhone",
-   "format": "sec",
-   "channels": [
-    "short",
-    "site",
-    "tg"
-   ],
-   "demand": 3,
-   "fresh": 5,
-   "show": 4,
-   "fit": 5,
-   "source": "https://apps.apple.com/ua/app/moonlock/id6799935865",
-   "by": "researcher-news",
-   "note": "App Store: безкоштовно + підписка $11.99/міс або $59.99/рік, 7 дн тріал, iOS 26+, мова лише англійська; kw «moonlock» 290 (змішаний)",
-   "status": "in_work",
-   "added": "2026-11-22",
-   "id": "17",
-   "decision": "ep83 26.11",
-   "score": 204.3
-  },
-  {
-   "title": "Гайд «Claude безкоштовно» 18–22 хв (відео + сторінка сайту)",
-   "format": "guide",
-   "channels": [
-    "long",
-    "site"
-   ],
-   "demand": 4,
-   "fresh": 3,
-   "show": 5,
-   "fit": 5,
-   "by": "cso",
-   "source": "strategy.md §5; Search Console claude-bezkoshtovno",
-   "status": "approved",
-   "decision": "Довгий ср 2.12 19:00, сценарій 22–23.11",
-   "added": "2026-11-22",
-   "id": "9",
-   "score": 180.0
-  },
-  {
-   "title": "Українською ШІ відповідає гірше? Тест ChatGPT, Claude і Gemini: одне питання двома мовами",
-   "format": "check",
-   "channels": [
-    "short",
-    "site",
-    "long"
-   ],
-   "demand": 4,
-   "fresh": 3,
-   "show": 5,
-   "fit": 5,
-   "length": 33,
-   "source": "https://www.youtube.com/watch?v=WM7_lXcALZA",
-   "by": "researcher-niche",
-   "decision": "аномалія UA 27.5× (Відчайдушний програміст, довге про переплату токенів); наша версія — якість відповідей для звичайного користувача, власний тест",
-   "status": "new",
-   "added": "2026-11-22",
-   "id": "24",
-   "score": 179.7
-  },
-  {
-   "title": "Кліп-воронка з шоу #2 (Gemini пам’ятає чати 2 місяці) → пов’язане відео на шоу",
-   "format": "clip",
-   "channels": [
-    "short",
-    "tiktok"
-   ],
-   "demand": 3,
-   "fresh": 3,
-   "show": 5,
-   "fit": 5,
-   "by": "eic",
-   "source": "aTUsauz53rs 0:41–1:18",
-   "status": "in_work",
-   "decision": "Кліп-редактор 22.11: готово studio/eps/clip_weekly2/final.mp4 (1080×1920, 31,9 с, голос із шоу aTUsauz53rs 0:44–1:18 без нової озвучки; хук «Твої чати в Gemini живуть 2 місяці?»; кінцева картка «Повний випуск ↓ ШІ за тиждень #2»). Не залито. Пропозиція виходу: вт 24.11 14:00 Київ (12:00Z), не в слот Short 19:00; пов'язане відео = aTUsauz53rs; безпека ≤1/тижд — цей кліп і є нею.",
-   "added": "2026-11-22",
-   "id": "8",
-   "score": 165.2
   }
  ],
  "lake": {
@@ -1380,8 +1378,8 @@
    "agent": "designer",
    "task": "фон: ресерч дизайну — обкладинки й кадр 0 українських аномалій",
    "started": "2026-11-22T18:42:33Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-22T18:44:22Z",
+   "result": "UA-обкладинки: суб'єкт 14/15, цифри 1/15, питання на «ти» 3–5 слів; 2 пропозиції для Thumb4Wide"
   }
  ],
  "agents": [
