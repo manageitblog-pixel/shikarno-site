@@ -136,7 +136,7 @@ a{color:var(--cyan)}
       <div class="tbl"><table id="news"></table></div>
     </section>
     <section class="card" aria-labelledby="h-comp">
-      <h2 id="h-comp">Конкуренти <span>топ ШІ-каналів за середніми переглядами, 90 днів</span></h2>
+      <h2 id="h-comp">Конкуренти <span>ШІ-канали, середні перегляди за 90 днів · спершу українські (наша аудиторія), англомовні — орієнтир</span></h2>
       <div class="tbl"><table id="comp"></table></div>
     </section>
   </div>
@@ -199,7 +199,8 @@ function render(D){
 
   $("#videos").innerHTML="<tr><th>Дата</th><th>Відео</th><th>Формат</th><th>7 днів</th><th>% перегл.</th><th>Всього</th></tr>"+D.videos.map(v=>`<tr><td style="font-family:var(--mono)">${v.published.slice(5)}</td><td><a href="https://youtu.be/${esc(v.id)}" target="_blank" rel="noopener">${esc(v.title)}</a></td><td>${esc(nm[v.format]||v.format)}${v.short?"":" · довгий"}</td><td class="num">${fmt(v.views7)}</td><td class="num">${v.pct?v.pct+"%":"—"}</td><td class="num">${fmt(v.total)}</td></tr>`).join("");
   $("#news").innerHTML="<tr><th>Дата</th><th>Джерело</th><th>Новина</th></tr>"+D.news.map(n=>`<tr><td style="font-family:var(--mono)">${esc((n.date||"").slice(5))}</td><td>${esc(n.source)}${n.score?` <span style="color:var(--mut)">${n.score}</span>`:""}</td><td><a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a></td></tr>`).join("");
-  $("#comp").innerHTML="<tr><th>Канал</th><th>Мова</th><th>Підписники</th><th>Сер. перегл.</th></tr>"+D.competitors.map(c=>`<tr><td>${esc(c.channel)}</td><td>${c.lang==="uk"?"укр":"англ"}</td><td class="num">${fmt(c.subs)}</td><td class="num">${fmt(c.avg)}</td></tr>`).join("");
+  {const row=c=>`<tr><td>${esc(c.channel)}</td><td class="num">${fmt(c.subs)}</td><td class="num">${fmt(c.avg)}</td></tr>`,uk=D.competitors.filter(c=>c.lang==="uk"),en=D.competitors.filter(c=>c.lang!=="uk");
+  $("#comp").innerHTML="<tr><th>Канал</th><th>Підписники</th><th>Сер. перегл.</th></tr>"+`<tr><th colspan="3" style="color:var(--yellow)">🇺🇦 Україномовні (${uk.length})</th></tr>`+uk.map(row).join("")+`<tr><th colspan="3" style="color:var(--mut)">Англомовні — орієнтир (${en.length})</th></tr>`+en.map(row).join("");}
   const L=D.lake, ln=[["videos","наших відео"],["daily","днів метрик"],["news","новин"],["niche","відео ніші"],["comp","каналів-конкурентів"],["comp_ai","з них про ШІ"],["comp_videos","відео конкурентів"],["research","тем у радарах"],["posts","статей сайту"],["site_queries","пошукових запитів"]];
   $("#lake").innerHTML=ln.map(([k,l])=>`<div><b>${fmt(L[k])}</b><span>${l}</span></div>`).join("");
   $("#asks").innerHTML=D.asks.map(a=>`<li>${esc(a.what)} — <span class="state warn">${esc(a.status)}</span></li>`).join("");

@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T18:30:58Z",
+ "generated": "2026-11-22T18:35:22Z",
  "kpi": {
   "subs": 311,
   "subs_goal": 1000,
@@ -1032,64 +1032,109 @@
  ],
  "competitors": [
   {
-   "channel": "Google Gemini",
-   "subs": 46600,
-   "lang": "en",
-   "avg": 6054122
+   "channel": "Орлов вигорів з АІ",
+   "subs": 12700,
+   "lang": "uk",
+   "avg": 18059,
+   "n": 15
   },
   {
-   "channel": "Google Korea",
-   "subs": 111000,
-   "lang": "en",
-   "avg": 2383529
+   "channel": "DOU",
+   "subs": 104000,
+   "lang": "uk",
+   "avg": 15211,
+   "n": 102
   },
   {
-   "channel": "Google Antigravity",
-   "subs": 180000,
-   "lang": "en",
-   "avg": 2368673
+   "channel": "Serhii Nemchynskyi",
+   "subs": 333000,
+   "lang": "uk",
+   "avg": 15095,
+   "n": 42
+  },
+  {
+   "channel": "КОЖОКАР  про Ютуб ",
+   "subs": 18100,
+   "lang": "uk",
+   "avg": 10634,
+   "n": 12
+  },
+  {
+   "channel": "Відчайдушний програміст",
+   "subs": 18300,
+   "lang": "uk",
+   "avg": 10417,
+   "n": 35
+  },
+  {
+   "channel": "dev ua   ",
+   "subs": 8480,
+   "lang": "uk",
+   "avg": 8976,
+   "n": 12
+  },
+  {
+   "channel": "Markel Kori",
+   "subs": 3740,
+   "lang": "uk",
+   "avg": 4694,
+   "n": 4
+  },
+  {
+   "channel": "Red Sneakers Production",
+   "subs": 15900,
+   "lang": "uk",
+   "avg": 4369,
+   "n": 16
+  },
+  {
+   "channel": "ЧЕТВЕРТА ПРОМИСЛОВА",
+   "subs": 1250,
+   "lang": "uk",
+   "avg": 4194,
+   "n": 60
+  },
+  {
+   "channel": "Простий Фронтенд",
+   "subs": 7240,
+   "lang": "uk",
+   "avg": 4186,
+   "n": 1
   },
   {
    "channel": "TechAkshay 2.0",
    "subs": 334000,
    "lang": "en",
-   "avg": 2301903
+   "avg": 2301903,
+   "n": 47
   },
   {
    "channel": "ExpHub - Prashant Kirad",
    "subs": 12500000,
    "lang": "en",
-   "avg": 1936739
+   "avg": 1936739,
+   "n": 3
   },
   {
    "channel": "Paul J Lipsky",
    "subs": 535000,
    "lang": "en",
-   "avg": 1522321
-  },
-  {
-   "channel": "Google DeepMind",
-   "subs": 944000,
-   "lang": "en",
-   "avg": 1304759
+   "avg": 1522321,
+   "n": 50
   },
   {
    "channel": "Shark Numbers",
    "subs": 2010000,
    "lang": "en",
-   "avg": 1301598
+   "avg": 1301598,
+   "n": 10
   },
   {
    "channel": "Vicky x Vlogs",
    "subs": 101000,
    "lang": "en",
-   "avg": 1130611
-  },
-  {
-   "channel": "Google for Developers",
-   "subs": 2690000,
-   "lang": "en",
-   "avg": 800524
+   "avg": 1130611,
+   "n": 108
   }
  ],
  "activity": [

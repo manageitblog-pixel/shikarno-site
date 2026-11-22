@@ -107,7 +107,10 @@ def main():
     lake = {t: q(f"select count(*) from {t}")[0][0] for t in ("videos", "daily", "news", "niche", "comp", "comp_videos", "research", "posts", "site_queries")}
     lake["comp_ai"] = q("select count(*) from comp_ai where ai_share>=0.3")[0][0]
     news = [dict(date=d, source=s, title=t, score=sc, url=u) for u, s, d, t, sc in q("select url, source, published, title, score from news where source in ('openai','google','deepmind','anthropic','hn','dou') order by published desc, fetched desc limit 12")]
-    comp_top = [dict(channel=t, subs=s, lang=l, avg=int(a)) for t, s, l, a in q("select c.title, c.subs, c.lang, avg(v.views) from comp c join comp_ai a using(channel_id) join comp_videos v on v.channel_id=c.channel_id where a.ai_share>=0.3 and c.lang in ('uk','en') and v.published>=? group by c.channel_id order by avg(v.views) desc limit 10", (today - datetime.timedelta(days=90)).isoformat())]
+    # власник 22.11: «чому тільки англомовні? рідні аудиторії — українські» → окремо укр (головне) і англ (орієнтир)
+    def comp(lang, n):
+        return [dict(channel=t, subs=s_, lang=l, avg=int(a), n=k) for t, s_, l, a, k in q("select c.title, c.subs, c.lang, avg(v.views), count(v.video_id) from comp c join comp_ai a using(channel_id) join comp_videos v on v.channel_id=c.channel_id where a.ai_share>=0.3 and c.lang=? and v.published>=? and c.title not like 'ШІкарно%' and c.title not like 'Google%' and c.title not like 'OpenAI%' and c.title not like 'Anthropic%' group by c.channel_id order by avg(v.views) desc limit ?", lang, (today - datetime.timedelta(days=90)).isoformat(), n)]
+    comp_top = comp('uk', 10) + comp('en', 5)
     tt = json.load(open(os.path.join(ROOT, "studio", "eps", "tiktok.json"))).get("posted_auto", {})
     data = dict(
         generated=datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
