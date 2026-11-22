@@ -17,10 +17,11 @@ usage:
 import sys, os, json, sqlite3, datetime, statistics
 D = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data")
 F = os.path.join(D, "ideas.json"); DB = os.path.join(D, "analytics.sqlite")
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.realpath(__file__)), "..")); from util import read_json, write_json_atomic, update_json, locked
 
 
-def load(): return json.load(open(F)) if os.path.exists(F) else []
-def save(x): json.dump(x, open(F, "w"), ensure_ascii=False, indent=1)
+def load(): return read_json(F, [])
+def save(x): write_json_atomic(F, x)
 
 
 def priors():
@@ -54,14 +55,16 @@ def board(n=15):
 if __name__ == "__main__":
     a = sys.argv[1:] or ["board"]
     if a[0] == "add":
-        x = load(); i = json.loads(a[1]); i.setdefault("status", "new"); i.setdefault("added", datetime.date.today().isoformat())
-        i["id"] = str(max([int(j["id"]) for j in x] or [0]) + 1); x.append(i); save(x); print("added", i["id"])
+        with locked(F):
+            x = load(); i = json.loads(a[1]); i.setdefault("status", "new"); i.setdefault("added", datetime.date.today().isoformat())
+            i["id"] = str(max([int(j["id"]) for j in x] or [0]) + 1); x.append(i); save(x); print("added", i["id"])
     elif a[0] == "set":
-        x = load()
-        for i in x:
-            if i["id"] == a[1]:
-                for kv in a[2:]:
-                    k, v = kv.split("=", 1); i[k] = v
-        save(x); print("ok")
+        with locked(F):
+            x = load()
+            for i in x:
+                if i["id"] == a[1]:
+                    for kv in a[2:]:
+                        k, v = kv.split("=", 1); i[k] = v
+            save(x); print("ok")
     else:
         board(int(a[1]) if len(a) > 1 else 15)

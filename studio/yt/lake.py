@@ -27,6 +27,7 @@ sys.path.insert(0, "/home/claude/yt"); sys.path.insert(0, HERE)
 
 def db():
     c = sqlite3.connect(DB)
+    c.execute("pragma busy_timeout=10000")
     c.executescript("""
     create table if not exists research(date text, n int, title text, score int, plan text, sources text, verified int, file text, primary key(date,n,file));
     create table if not exists posts(slug text primary key, date text, kind text, title text, tags text, youtube text, words int);

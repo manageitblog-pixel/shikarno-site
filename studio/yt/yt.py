@@ -41,7 +41,7 @@ def token():
         data=urllib.parse.urlencode({"client_id":c["client_id"],"client_secret":c["client_secret"],
             "refresh_token":t["refresh_token"],"grant_type":"refresh_token"}).encode()
         n=json.load(urllib.request.urlopen("https://oauth2.googleapis.com/token",data=data))
-        t.update(n); t["obtained"]=time.time(); json.dump(t,open(f"{D}/token.json","w"))
+        t.update(n); t["obtained"]=time.time(); sys.path.insert(0,os.path.join(os.path.dirname(os.path.realpath(__file__)),"..")); from util import write_json_atomic; write_json_atomic(f"{D}/token.json",t,indent=None,ensure_ascii=True)
     return t["access_token"]
 def api(path, **q):
     url="https://www.googleapis.com/youtube/v3/"+path+"?"+urllib.parse.urlencode(q)

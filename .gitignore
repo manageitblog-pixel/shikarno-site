@@ -5,3 +5,7 @@ studio/rv/public/rec/
 studio/data/analytics.sqlite
 studio/data/analytics.sqlite-journal
 studio/data/quota.log
+
+# блокування/атомарний запис studio/util.py
+*.json.lock
+.*.json.*.tmp

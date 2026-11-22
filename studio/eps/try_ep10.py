@@ -11,4 +11,5 @@ try:
     vid=yt.upload("/home/claude/eps/ep10_php2shell/final.mp4",m["title"],m["description"],m["tags"],privacy="private" if at else "public",category="28")
 except urllib.error.HTTPError as e: print("FAIL",e.code,e.read().decode()[:120]); sys.exit()
 if at: yt.schedule(vid,at)
-u["ep10_php2shell"]=vid; json.dump(u,open('/home/claude/eps/uploaded.json','w')); print("OK",vid,at or "public now")
+sys.path.insert(0,'/home/claude/eps/..'); from util import update_json
+update_json('/home/claude/eps/uploaded.json',lambda u:u.__setitem__("ep10_php2shell",vid),{},indent=None,ensure_ascii=True); print("OK",vid,at or "public now")

@@ -9,6 +9,7 @@ agent_id — з AGENTS у studio/yt/hq_data.py (shorts, longs, factcheck, qa, lp
 """
 import sys, os, json, datetime
 F = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "hq", "activity.json")
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.realpath(__file__)), "..")); from util import read_json, write_json_atomic, update_json, locked
 
 
 def load():
@@ -18,20 +19,24 @@ def load():
 
 def save(d):
     d["items"] = d["items"][-200:]
-    json.dump(d, open(F, "w"), ensure_ascii=False, indent=1)
+    write_json_atomic(F, d)
 
 
 def now(): return datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
 if __name__ == "__main__":
-    a = sys.argv[1:]; d = load()
+    a = sys.argv[1:]
     if a and a[0] == "start":
-        i = str(int(max([int(x["id"]) for x in d["items"]] or [0])) + 1)
-        d["items"].append(dict(id=i, agent=a[1], task=a[2], started=now(), finished=None, result="")); save(d); print(i)
+        with locked(F):
+            d = load(); i = str(int(max([int(x["id"]) for x in d["items"]] or [0])) + 1)
+            d["items"].append(dict(id=i, agent=a[1], task=a[2], started=now(), finished=None, result="")); save(d); print(i)
     elif a and a[0] == "done":
-        for x in d["items"]:
-            if x["id"] == a[1]: x["finished"] = now(); x["result"] = a[2] if len(a) > 2 else ""
-        save(d); print("ok")
+        with locked(F):
+            d = load()
+            for x in d["items"]:
+                if x["id"] == a[1]: x["finished"] = now(); x["result"] = a[2] if len(a) > 2 else ""
+            save(d); print("ok")
     else:
+        d = load()
         for x in d["items"][-20:]: print(x["id"], x["agent"], "✓" if x["finished"] else "…", x["task"][:70])

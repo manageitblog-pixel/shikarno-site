@@ -23,6 +23,7 @@ UP = "/home/claude/eps/uploaded.json"
 def db():
     os.makedirs(os.path.dirname(DB), exist_ok=True)
     c = sqlite3.connect(DB)
+    c.execute("pragma busy_timeout=10000")
     c.executescript("""
     create table if not exists videos(id text primary key, slug text, title text, published text, duration_s int, short int, format text, playlists text);
     create table if not exists daily(video_id text, date text, views int, engaged int, avg_pct real, avg_dur real, subs int, shares int, likes int, primary key(video_id,date));

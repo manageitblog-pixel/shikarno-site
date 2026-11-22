@@ -6,6 +6,7 @@ usage: python3 studio/yt/finalize.py <vid> <playlist-key...> --thumb <jpg> --com
 """
 import sys, os, json, subprocess, argparse
 sys.path.insert(0, "/home/claude/yt"); sys.path.insert(0, os.path.dirname(__file__))
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.realpath(__file__)), "..")); from util import update_json
 import yt, audit
 
 ap = argparse.ArgumentParser()
@@ -30,11 +31,11 @@ for k in a.pl:
     if k not in have: yt.add_to_playlist(a.vid, k)
 v = fresh(a.vid)
 audit.fix(v, audit.check(v, {a.vid: a.pl}, None))
-pc = "/home/claude/eps/pending_comments.json"; p = json.load(open(pc))
-p[a.vid] = {"at": a.at or v["status"].get("publishAt") or "", "text": a.comment}; json.dump(p, open(pc, "w"), ensure_ascii=False, indent=1)
+pc = "/home/claude/eps/pending_comments.json"
+update_json(pc, lambda p: p.__setitem__(a.vid, {"at": a.at or v["status"].get("publishAt") or "", "text": a.comment}), {})
 if a.style:
-    tt = "/home/claude/eps/thumb_test.json"; d = json.load(open(tt))
-    d[a.vid] = {"ep": v["snippet"]["title"][:40], "style": a.style, "set": v["status"].get("publishAt", "")}; json.dump(d, open(tt, "w"), ensure_ascii=False, indent=1)
+    tt = "/home/claude/eps/thumb_test.json"
+    update_json(tt, lambda d: d.__setitem__(a.vid, {"ep": v["snippet"]["title"][:40], "style": a.style, "set": v["status"].get("publishAt", "")}), {})
 time.sleep(20); v = fresh(a.vid)
 r = audit.check(v, audit.playlist_map(), None)
 iss = [i for i in r["issues"] if i != "C1"]  # коментар з'явиться після publishAt (post_comments.py)
