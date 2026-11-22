@@ -211,7 +211,7 @@
   {
    "id": "27",
    "agent": "coo",
-   "task": "P0 Safety & Control Plan (лише план, без змін коду)",
+   "task": "P0 Autonomous Operations Plan (лише план, без змін)",
    "started": "2026-11-22T13:28:33Z",
    "finished": null,
    "result": ""
