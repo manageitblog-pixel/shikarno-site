@@ -51,9 +51,10 @@
   "fit": 4,
   "by": "researcher-niche",
   "source": "outliers 22.11: «Логопеди, а ви використовуєте ШІ» 12×",
-  "status": "new",
+  "status": "in_work",
   "added": "2026-11-22",
-  "id": "3"
+  "id": "3",
+  "decision": "ep84 27.11"
  },
  {
   "title": "Gemini Tasks: ШІ платить рахунки — чи безпечно",
