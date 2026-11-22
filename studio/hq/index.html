@@ -76,7 +76,7 @@ a{color:var(--cyan)}
 <div class="wrap">
   <header>
     <div class="logo"><b>ШІ</b>карно HQ <small>штаб студії</small></div>
-    <div class="meta"><span class="live" id="clock">Київ —</span><span id="upd">дані: —</span></div>
+    <div class="meta"><span class="live" id="clock">Київ —</span><span id="upd">дані: —</span> <span id="ago" style="color:var(--mut)"></span> <span id="livest" style="color:var(--good)"></span></div>
   </header>
 
   <section aria-labelledby="h-kpi">
@@ -160,10 +160,11 @@ function kyivNow(){return new Date(new Date().toLocaleString("en-US",{timeZone:"
 function tick(){const d=kyivNow();$("#clock").textContent="Київ "+d.toTimeString().slice(0,5)}
 tick();setInterval(tick,15000);
 
-fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(render).catch(e=>{console.error(e);$("#side").innerHTML="<p>Не вдалося показати дані: "+esc(e&&e.message)+". Онови сторінку.</p>"});
+let LIVE=null;
+fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(D=>{LIVE=D;render(D);office(D);live(D)}).catch(e=>{console.error(e);$("#side").innerHTML="<p>Не вдалося показати дані: "+esc(e&&e.message)+". Онови сторінку.</p>"});
 
 function render(D){
-  const gen=new Date(D.generated); $("#upd").textContent="дані: "+gen.toLocaleString("uk-UA",{timeZone:"Europe/Kyiv",day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"});
+  const gen=new Date(D.generated); $("#upd").textContent="дані: "+gen.toLocaleString("uk-UA",{timeZone:"Europe/Kyiv",day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"});{const m=Math.round((Date.now()-gen)/60000);$("#ago").textContent="("+(m<1?"щойно":m+" хв тому")+")"}
   const K=D.kpi;
   const tiles=[
     {lab:"Підписники YouTube",val:fmt(K.subs),sub:"/ "+fmt(K.subs_goal),p:K.subs/K.subs_goal,note:"поріг монетизації"},
@@ -203,7 +204,6 @@ function render(D){
   $("#lake").innerHTML=ln.map(([k,l])=>`<div><b>${fmt(L[k])}</b><span>${l}</span></div>`).join("");
   $("#asks").innerHTML=D.asks.map(a=>`<li>${esc(a.what)} — <span class="state warn">${esc(a.status)}</span></li>`).join("");
 
-  office(D);
 }
 
 function history(D){
@@ -255,6 +255,19 @@ function spark(sel,vals,col){
 }
 
 /* ---------- Офіс: кімнати-відділи, піксельні агенти ходять між столами і на редколегію ---------- */
+/* Живі дані: студія пише документ hq/live у базу артефакту при кожній події агентів — сторінка оновлюється сама, без перезавантаження */
+async function live(D){
+  const db=await (window.claude?.use?.("db")??Promise.resolve(null)).catch(()=>null);
+  const st=$("#livest"); if(!db){if(st)st.textContent="оновлення: при відкритті сторінки";return}
+  let timer=setTimeout(()=>{if(st)st.textContent="живі дані поки недоступні — показано останній знімок"},10000);
+  db.doc("hq/live").onSnapshot(snap=>{
+    clearTimeout(timer); if(!snap.exists){if(st)st.textContent="наживо ●";return}
+    const L=snap.data()||{};
+    if(L.generated&&(!D.generated||L.generated>=D.generated)){Object.assign(D,L);render(D)}
+    if(st)st.textContent="наживо ●";
+  },e=>{clearTimeout(timer);if(st)st.textContent="живі дані недоступні ("+esc(e&&e.code)+")"});
+  setInterval(()=>{const g=new Date(D.generated),m=Math.round((Date.now()-g)/60000);const u=$("#ago");if(u)u.textContent="("+(m<1?"щойно":m+" хв тому")+")"},30000);
+}
 function office(D){
   const cv=$("#office"),cx=cv.getContext("2d"),W=cv.width,H=cv.height;
   const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
