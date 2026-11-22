@@ -6,11 +6,16 @@ studio/data/analytics.sqlite:
   daily(video_id, date, views, engaged, avg_pct, avg_dur, subs, shares, likes)     — щоденні цифри (YouTube Analytics)
   traffic(video_id, source, views, updated)                                         — джерела трафіку за весь час
   snap(video_id, date, views_public)                                                — публічний лічильник (свіжий, без затримки 2–3 дні)
+  daily.watch_min, daily.subs_lost                                                  — хвилини перегляду й відписки (з 22.11)
+  channel_daily(date, views, watch_min, subs_gained, subs_lost, avg_pct, long_watch_min, short_views) — канал по днях з 2026-10-01
+  traffic_daily(video_id, date, source, views)                                     — джерела трафіку по днях (останні 60 днів, історія не перезаписується)
+  tg_daily(date, members)                                                           — підписники Telegram-каналу на дату
 
 usage:
   python3 studio/yt/analytics_db.py sync [--days 120]   # оновити все (щодня зранку в радарі)
   python3 studio/yt/analytics_db.py report               # формати: медіана переглядів на 7-й день, % перегляду, підписки/1000
   python3 studio/yt/analytics_db.py top [N]              # топ і низ роликів за переглядами 7 днів
+  python3 studio/yt/analytics_db.py hours                # години перегляду довгих (videoOnDemand) за 365 днів — для YPP
 """
 import sys, os, json, sqlite3, datetime, statistics, urllib.request, urllib.parse
 sys.path.insert(0, "/home/claude/yt"); sys.path.insert(0, os.path.dirname(__file__))
@@ -29,7 +34,13 @@ def db():
     create table if not exists daily(video_id text, date text, views int, engaged int, avg_pct real, avg_dur real, subs int, shares int, likes int, primary key(video_id,date));
     create table if not exists traffic(video_id text, source text, views int, updated text, primary key(video_id,source));
     create table if not exists snap(video_id text, date text, views_public int, primary key(video_id,date));
+    create table if not exists channel_daily(date text primary key, views int, watch_min real, subs_gained int, subs_lost int, avg_pct real, long_watch_min real, short_views int);
+    create table if not exists traffic_daily(video_id text, date text, source text, views int, primary key(video_id,date,source));
+    create table if not exists tg_daily(date text primary key, members int);
     """)
+    have = {r[1] for r in c.execute("pragma table_info(daily)")}
+    for col, typ in (("watch_min", "real"), ("subs_lost", "int")):
+        if col not in have: c.execute(f"alter table daily add column {col} {typ}")
     return c
 
 
@@ -38,6 +49,38 @@ def ya(**q):
     r = urllib.request.Request("https://youtubeanalytics.googleapis.com/v2/reports?" + urllib.parse.urlencode(q),
                                headers={"Authorization": "Bearer " + yt.token()})
     return json.load(urllib.request.urlopen(r, timeout=60))
+
+
+def clamp_pct(x):
+    return None if x is None else max(0.0, min(100.0, float(x)))
+
+
+def sync_channel(c, start="2026-10-01", end=None):
+    """Канал по днях: загальні цифри + хвилини довгих (videoOnDemand) + перегляди Shorts (фільтр creatorContentType працює)."""
+    end = end or datetime.date.today().isoformat()
+    rows = {r[0]: list(r[1:]) for r in ya(startDate=start, endDate=end, dimensions="day",
+            metrics="views,estimatedMinutesWatched,subscribersGained,subscribersLost,averageViewPercentage").get("rows", [])}
+    lw = {r[0]: r[1] for r in ya(startDate=start, endDate=end, dimensions="day", metrics="estimatedMinutesWatched",
+                                 filters="creatorContentType==videoOnDemand").get("rows", [])}
+    sv = {r[0]: r[1] for r in ya(startDate=start, endDate=end, dimensions="day", metrics="views",
+                                 filters="creatorContentType==shorts").get("rows", [])}
+    for d, (v, wm, sg, sl, pct) in rows.items():
+        c.execute("insert or replace into channel_daily values(?,?,?,?,?,?,?,?)", (d, v, wm, sg, sl, clamp_pct(pct), lw.get(d, 0), sv.get(d, 0)))
+    return len(rows)
+
+
+def sync_tg(c):
+    sys.path.insert(0, "/home/claude/tg"); import tg
+    n = tg.call("getChatMemberCount", chat_id=tg.CH)["result"]
+    c.execute("insert or replace into tg_daily values(?,?)", (datetime.date.today().isoformat(), n))
+    return n
+
+
+def long_hours_12m():
+    """Години перегляду довгих відео (creatorContentType==videoOnDemand) за останні 365 днів — з API, не захардкоджено."""
+    end = datetime.date.today(); start = end - datetime.timedelta(days=365)
+    r = ya(startDate=start.isoformat(), endDate=end.isoformat(), metrics="estimatedMinutesWatched", filters="creatorContentType==videoOnDemand")
+    return round(((r.get("rows") or [[0]])[0][0] or 0) / 60, 1)
 
 
 def all_videos():
@@ -80,17 +123,30 @@ def sync(days=120):
     for vid in vids:
         try:
             r = ya(startDate=start, endDate=end, dimensions="day", filters=f"video=={vid}",
-                   metrics="views,engagedViews,averageViewPercentage,averageViewDuration,subscribersGained,shares,likes")
+                   metrics="views,engagedViews,averageViewPercentage,averageViewDuration,subscribersGained,shares,likes,estimatedMinutesWatched,subscribersLost")
         except Exception as e:
             print("ERR daily", vid, e); continue
         for row in r.get("rows", []):
-            c.execute("insert or replace into daily values(?,?,?,?,?,?,?,?,?)", (vid, *row))
+            row = list(row); row[3] = clamp_pct(row[3])  # бувало 600% — обрізаємо до 0..100
+            c.execute("insert or replace into daily(video_id,date,views,engaged,avg_pct,avg_dur,subs,shares,likes,watch_min,subs_lost) values(?,?,?,?,?,?,?,?,?,?,?)", (vid, *row))
         try:
             t = ya(startDate="2026-01-01", endDate=end, dimensions="insightTrafficSourceType", filters=f"video=={vid}", metrics="views")
             for s, n in t.get("rows", []):
                 c.execute("insert or replace into traffic values(?,?,?,?)", (vid, s, n, end))
         except Exception as e:
             print("ERR traffic", vid, e)
+        try:  # по днях — історія не перезаписується
+            t = ya(startDate=(today - datetime.timedelta(days=60)).isoformat(), endDate=end, dimensions="day,insightTrafficSourceType",
+                   filters=f"video=={vid}", metrics="views")
+            for d, s, n in t.get("rows", []):
+                c.execute("insert or replace into traffic_daily values(?,?,?,?)", (vid, d, s, n))
+        except Exception as e:
+            print("ERR traffic_daily", vid, e)
+    c.commit()
+    try: print("channel_daily:", sync_channel(c, start=min("2026-10-01", start)), "днів")
+    except Exception as e: print("ERR channel_daily", e)
+    try: print("tg_daily: учасників", sync_tg(c))
+    except Exception as e: print("ERR tg_daily", e)
     c.commit()
     n = c.execute("select count(*) from videos").fetchone()[0]; m = c.execute("select count(*) from daily").fetchone()[0]
     print(f"sync OK: {n} відео, {m} рядків daily")
@@ -133,5 +189,6 @@ def top(n=10):
 if __name__ == "__main__":
     a = sys.argv[1:] or ["report"]
     if a[0] == "sync": sync(int(a[2]) if len(a) > 2 and a[1] == "--days" else 120)
+    elif a[0] == "hours": print(f"довгі (videoOnDemand), 365 днів: {long_hours_12m()} год")
     elif a[0] == "top": top(int(a[1]) if len(a) > 1 else 10)
     else: report()

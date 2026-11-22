@@ -6,6 +6,8 @@
   niche                              — чужі відео ніші (outliers.py; + `lake.py niche` — ширші UA/EN запити)
   research                           — усі теми з радарів docs/research/radar-*.md (дата, назва, оцінка, формат, джерела [V]/[S])
   site_daily, site_queries, site_pages — Search Console (покази, кліки, позиції)
+  site_queries_weekly                — запити Search Console по ISO-тижнях (останні 8 тижнів; week = '2026-W47')
+  traffic_daily, channel_daily, tg_daily — історія по днях (analytics_db.py sync)
   posts                              — усі статті сайту (slug, дата, kind, теги, youtube, слів)
 
 usage:
@@ -34,6 +36,10 @@ def db():
     create table if not exists site_daily(date text primary key, clicks int, impressions int, ctr real, position real);
     create table if not exists site_queries(query text, period text, clicks int, impressions int, ctr real, position real, primary key(query,period));
     create table if not exists site_pages(page text, period text, clicks int, impressions int, ctr real, position real, primary key(page,period));
+    create table if not exists site_queries_weekly(week text, query text, clicks int, impressions int, ctr real, position real, primary key(week,query));
+    create table if not exists traffic_daily(video_id text, date text, source text, views int, primary key(video_id,date,source));
+    create table if not exists channel_daily(date text primary key, views int, watch_min real, subs_gained int, subs_lost int, avg_pct real, long_watch_min real, short_views int);
+    create table if not exists tg_daily(date text primary key, members int);
     create table if not exists comp(channel_id text, date text, title text, subs int, views int, videos int, country text, lang text, primary key(channel_id,date));
     create table if not exists comp_videos(video_id text primary key, channel_id text, title text, published text, duration_s int, views int, likes int, comments int, fetched text);
     create table if not exists news(url text primary key, source text, published text, title text, score int, fetched text);
@@ -83,6 +89,14 @@ def ingest_site(c):
     for dim, tab in (("query", "site_queries"), ("page", "site_pages")):
         for r in gsc({"startDate": start, "endDate": end, "dimensions": [dim], "rowLimit": 1000}):
             c.execute(f"insert or replace into {tab} values(?,?,?,?,?,?)", (r["keys"][0], per, r["clicks"], r["impressions"], r["ctr"], r["position"]))
+    # тижнева динаміка: ISO-тижні (пн–нд), останні 8; поточний неповний тиждень теж оновлюється
+    last = datetime.date.fromisoformat(end); mon = last - datetime.timedelta(days=last.weekday())
+    for k in range(8):
+        ws = mon - datetime.timedelta(weeks=k); we = min(ws + datetime.timedelta(days=6), last)
+        y, w, _ = ws.isocalendar(); wk = f"{y}-W{w:02d}"
+        for r in gsc({"startDate": ws.isoformat(), "endDate": we.isoformat(), "dimensions": ["query"], "rowLimit": 1000}):
+            c.execute("insert or replace into site_queries_weekly values(?,?,?,?,?,?)", (wk, r["keys"][0], r["clicks"], r["impressions"], r["ctr"], r["position"]))
+    print("site_queries_weekly:", c.execute("select count(*) from site_queries_weekly").fetchone()[0], "рядків")
     print("site:", c.execute("select count(*) from site_daily").fetchone()[0], "днів,", c.execute("select count(*) from site_queries").fetchone()[0], "запитів")
 
 
@@ -289,7 +303,7 @@ def ask(q):
 
 def stats():
     c = db()
-    for t in ("videos", "daily", "traffic", "news", "niche", "comp", "comp_videos", "research", "posts", "site_daily", "site_queries", "site_pages"):
+    for t in ("videos", "daily", "traffic", "traffic_daily", "channel_daily", "tg_daily", "site_queries_weekly", "news", "niche", "comp", "comp_videos", "research", "posts", "site_daily", "site_queries", "site_pages"):
         print(f"{t:14}", c.execute(f"select count(*) from {t}").fetchone()[0])
 
 
