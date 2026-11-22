@@ -581,14 +581,22 @@
    "agent": "eic",
    "task": "Голосовий CTA «повне відео — під роликом» для ep83–ep86 (до озвучки) + повторний фактчек змін",
    "started": "2026-11-22T20:19:59Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-22T20:23:35Z",
+   "result": "CTA на довге в ep83–86 (RELATED: GNqU-wcz9Ws, 6-2a9ncHaz4; ep85 — гайд #1 після заливки)"
   },
   {
    "id": "74",
    "agent": "seo",
    "task": "Таблиця «Short → пов'язане довге» для всіх Shorts 31.10–29.11 (пакет власнику для Studio)",
    "started": "2026-11-22T20:19:59Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "75",
+   "agent": "factcheck",
+   "task": "Повторна перевірка змін CTA в ep83–ep86",
+   "started": "2026-11-22T20:23:35Z",
    "finished": null,
    "result": ""
   }
