@@ -4,3 +4,4 @@ __pycache__/
 studio/rv/public/rec/
 studio/data/analytics.sqlite
 studio/data/analytics.sqlite-journal
+studio/data/quota.log

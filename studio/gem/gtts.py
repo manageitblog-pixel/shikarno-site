@@ -18,13 +18,18 @@ def tts(text, voice, out, model="gemini-3.8-flash-tts", style=None):
               "speechConfig":{"voiceConfig":{"prebuiltVoiceConfig":{"voiceName":voice}}}}}
     req=urllib.request.Request(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
         data=json.dumps(body).encode(), headers={"Content-Type":"application/json","x-goog-api-key":KEY})
+    d=None
     for attempt in range(4):
         try:
             d=json.load(urllib.request.urlopen(req, timeout=180)); break
         except urllib.error.HTTPError as e:
             msg=e.read().decode()[:300]; print("HTTP",e.code,msg, file=sys.stderr)
-            if e.code==429: time.sleep(30); continue
+            if e.code==429:
+                if attempt<3: time.sleep(30)
+                continue
             raise
+    if d is None:
+        raise RuntimeError(f"TTS quota exhausted: 4 consecutive HTTP 429 from Gemini ({model}); try later or another key/model")
     c=d["candidates"][0]
     if "content" not in c: raise RuntimeError("no content: "+json.dumps(c)[:400])
     part=c["content"]["parts"][0]["inlineData"]
