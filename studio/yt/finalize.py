@@ -15,12 +15,13 @@ ap.add_argument("--at"); ap.add_argument("--style", default="")
 a = ap.parse_args()
 import time
 # YouTube віддає застарілий snippet ~30 с після заливки/зміни (15.11: теги «зникли», а fix перезаписав опис) → чекаємо, поки теги з'являться
-def fresh(vid, tries=8):
+# 22.11: одразу після заливки duration = P0D → audit вважав 6-хв шоу Short-ом і дописав «#ШІ #shorts» → чекаємо й обробку відео (до ~10 хв)
+def fresh(vid, tries=40):
     for _ in range(tries):
         v = yt.api("videos", part="snippet,status,contentDetails", id=vid)["items"][0]
-        if v["snippet"].get("tags"): return v
+        if v["snippet"].get("tags") and audit.iso_sec(v["contentDetails"].get("duration", "P0D")) > 0: return v
         time.sleep(15)
-    return v
+    sys.exit("FAIL відео ще не оброблене (duration 0) — повтори finalize пізніше")
 
 subprocess.run(["python3", "/home/claude/yt/thumb.py", a.vid, a.thumb], check=True, capture_output=True)
 pls = audit.playlist_map()

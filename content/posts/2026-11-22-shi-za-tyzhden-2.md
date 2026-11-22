@@ -6,6 +6,7 @@ number: 3
 date: 2026-11-22T14:00:00+02:00
 description: "Головне про штучний інтелект за 16–22 листопада 2026: Gemini тримає чати 2 місяці, Signal блокує ШІ-асистентів, Anthropic на Nasdaq, Gemini Tasks, Gemini 4 Neon і GPT-6.2, ШІ-науковець."
 tags: [gemini, anthropic, bezpeka, rozrobka]
+youtube: aTUsauz53rs
 duration: "5:59"
 chapters: [{t: "0:00", title: "Вступ"}, {t: "0:39", title: "Для всіх"}, {t: "0:41", title: "Gemini тримає чати ~2 місяці", link: "/novyny/gemini-zberigaye-chaty-dva-misyatsi/"}, {t: "1:18", title: "Signal блокує ШІ-асистентів"}, {t: "1:56", title: "Для бізнесу"}, {t: "2:00", title: "Anthropic на біржі: $83 за акцію", link: "/novyny/anthropic-ipo-83-dolary/"}, {t: "2:32", title: "Gemini Tasks: дзвонить і платить"}, {t: "3:21", title: "Для ІТ"}, {t: "3:23", title: "Gemini 4 Neon і GPT-6.2"}, {t: "3:54", title: "Claude і чорні діри, Frostbite"}, {t: "4:46", title: "Тиждень у цифрах"}, {t: "5:04", title: "Українське і 3 дії", link: "/novyny/moonlock-iphone-shakhrajski-sms/"}, {t: "5:35", title: "Фінал"}]
 source: {name: "Google: оновлення історії й навчання в Gemini (16.11.2026)", url: "https://blog.google/innovation-and-ai/products/gemini-app/updated-controls/"}
