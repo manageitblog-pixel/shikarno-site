@@ -68,3 +68,17 @@
 Перед озвучкою 23.11 потрібна заміна в сегменті 14. Заміна в сегменті 41 — бажана.
 
 Вердикт: FAIL
+
+## Перевірка 3 (22.11)
+
+Третій незалежний фактчекер, сценарій не редагував. `git show be9b26a -- studio/eps/guide1.py`: змінено рівно два рядки, `text` сегментів 14 і 41 (2 insertions, 2 deletions). Змінено лише ці два речення, решту тексту, слайди, `points` і PARTS не зачеплено. `python3 -c "import sys; sys.path.insert(0,'studio/eps'); import guide1"` проходить, тобто assert ≤1300 знаків на частину виконується. Першоджерела відкрито 22.11 curl-ом (усі 200).
+
+| # | Формулювання зараз | Першоджерело (22.11) | Статус | Примітка |
+|---|---|---|---|---|
+| 14 | «Але одинадцятого грудня OpenAI їх вимикає і переносить на плагіни, тож звикати до них не варто.» | https://help.openai.com/en/articles/8554397-creating-and-editing-gpts — «planning to retire custom GPTs and help creators move their workflows to plugins», «Standard retirement is scheduled for December 11, 2026», «includes all ChatGPT plans»; https://help.openai.com/en/articles/20001519-custom-gpt-retirement-and-migration-faq — «Custom GPTs are scheduled to retire on Dec 11, 2026», «Restrictions on creating or publishing GPTs are separate from retirement of existing GPTs» | PASS | «Вимикає» тут коректне: 11.12 вимикають самі наявні GPT, а не лише їх створення (створення на особистих тарифах закрили раніше, див. 9275245). Дата 11.12 стосується всіх особистих тарифів. Пізніша дата 28.02.2027 діє лише для FedRAMP і Enterprise з відстрочкою, глядачів гайду це не стосується. «Переносить на плагіни» — спрощення: заміну-плагін переносить творець GPT, автоматично вона не з'являється. Для гайду новачка це допустимо, і висновок «звикати не варто» від цього не змінюється |
+| 41 | «OpenAI і сама в довідці радить перевіряти важливе.» | https://help.openai.com/en/articles/8313428-does-chatgpt-tell-the-truth — «verify important information from reliable sources», «Please check important information» | PASS | Переказ точний, і неперевірене твердження про попередження під полем вводу з тексту зникло |
+| інше | Решта сценарію | diff be9b26a | не змінювалось | Висновки попередніх перевірок чинні. Сегмент 34 — PASS (перевірка 2) |
+
+Обидві правки з перевірки 2 внесено дослівно, і вони відповідають першоджерелам. Сценарій можна озвучувати 23.11.
+
+Вердикт: PASS
