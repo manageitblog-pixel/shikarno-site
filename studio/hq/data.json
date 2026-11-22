@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T14:19:13Z",
+ "generated": "2026-11-22T14:22:17Z",
  "kpi": {
   "subs": 311,
   "subs_goal": 1000,
@@ -901,9 +901,10 @@
    "fit": 4,
    "by": "researcher-niche",
    "source": "outliers 22.11: «Логопеди, а ви використовуєте ШІ» 12×",
-   "status": "new",
+   "status": "in_work",
    "added": "2026-11-22",
    "id": "3",
+   "decision": "ep84 27.11",
    "score": 109.3
   },
   {
@@ -1087,14 +1088,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "6",
-   "agent": "longs",
-   "task": "Гайд «ChatGPT з нуля»: сценарій 18–20 хв",
-   "started": "2026-11-22T12:18:00Z",
-   "finished": "2026-11-22T12:29:00Z",
-   "result": "48 сегментів, 11 скрінів"
-  },
   {
    "id": "7",
    "agent": "factcheck",
@@ -1316,14 +1309,22 @@
    "agent": "shorts",
    "task": "ep84 (пт 27.11 17Z): ШІ для логопеда (ідея 3)",
    "started": "2026-11-22T14:18:35Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-22T14:22:16Z",
+   "result": "ep84 «ШІ для логопеда» (27.11): 481 знак, гачок «Твоя дитина не вимовляє Р?», самоперевірка 8/8"
   },
   {
    "id": "35",
    "agent": "seo",
    "task": "Наступна сторінка з GSC (покази ≥50, поз. 4–20)",
    "started": "2026-11-22T14:18:35Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "36",
+   "agent": "factcheck",
+   "task": "Незалежний фактчек ep84 «ШІ для логопеда»",
+   "started": "2026-11-22T14:22:16Z",
    "finished": null,
    "result": ""
   }
