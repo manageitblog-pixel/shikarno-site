@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T15:29:09Z",
+ "generated": "2026-11-22T15:29:20Z",
  "kpi": {
   "subs": 311,
   "subs_goal": 1000,
@@ -1322,8 +1322,8 @@
    "agent": "seo",
    "task": "SEO: chomu-ne-pratsyuie-chatgpt (79 показів, поз. 6.6)",
    "started": "2026-11-22T15:23:47Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-22T15:29:19Z",
+   "result": "chomu-ne-pratsyuie-chatgpt: ~1050 слів, таблиця симптом→рішення, 10 причин, 5 FAQ"
   },
   {
    "id": "50",
