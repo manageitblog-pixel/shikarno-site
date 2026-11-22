@@ -99,6 +99,7 @@ def main():
                  tg=tg_members, tg_goal=150, site_clicks_28d=sum(r[1] for r in site[-28:]), site_impr_28d=sum(r[2] for r in site[-28:]), tiktok_auto=len(tt)),
         days=[dict(d=d, v=v, p=round(p or 0, 1)) for d, v, p in days], site=[dict(d=d, c=cl, i=im, pos=round(po, 1)) for d, cl, im, po in site],
         formats=formats, videos=vids, ideas=ideas[:12], lake=lake, news=news, competitors=comp_top,
+        activity=(json.load(open(os.path.join(ROOT, "studio", "hq", "activity.json"))) if os.path.exists(os.path.join(ROOT, "studio", "hq", "activity.json")) else {"items": []})["items"][-30:],
         agents=AGENTS, depts=DEPTS, schedule=[dict(time=a, what=b, agent=c_) for a, b, c_ in SCHEDULE],
         asks=[dict(what="Дозвіл vidIQ у .claude/settings.json (TikTok без підтверджень)", status="чекає власника"),
               dict(what="Підключити Instagram (бізнес/автор-акаунт) через vidIQ", status="чекає власника"),

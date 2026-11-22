@@ -45,7 +45,7 @@ canvas{display:block;width:100%;height:auto;cursor:pointer;image-rendering:pixel
 .chip{font-size:12px;padding:3px 9px;border-radius:20px;background:#ffffff0d;border:1px solid var(--line);cursor:pointer;color:var(--fg)}
 .chip:hover,.chip:focus-visible{border-color:var(--yellow);outline:none}
 .grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:14px}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px;display:grid;gap:10px;min-width:0}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px;display:grid;gap:10px;min-width:0;align-content:start}
 .tbl{overflow-x:auto}
 table{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums}
 th{text-align:left;font-weight:600;color:var(--mut);font-size:11px;text-transform:uppercase;letter-spacing:.06em;padding:6px 8px;border-bottom:1px solid var(--line)}
@@ -76,6 +76,14 @@ a{color:var(--cyan)}
   <section aria-labelledby="h-kpi">
     <h2 id="h-kpi">Для CEO <span>цілі каналу і де ми зараз</span></h2>
     <div class="kpis" id="kpis"></div>
+  </section>
+
+  <section aria-labelledby="h-live">
+    <h2 id="h-live">Зараз у роботі <span>реальні задачі агентів, не розклад</span></h2>
+    <div class="grid2">
+      <div class="card"><div style="font-weight:600">Працюють зараз</div><div class="timeline" id="now"></div></div>
+      <div class="card"><div style="font-weight:600">Здано сьогодні</div><div class="timeline" id="done"></div></div>
+    </div>
   </section>
 
   <section aria-labelledby="h-office">
@@ -166,6 +174,13 @@ function render(D){
   ];
   $("#kpis").innerHTML=tiles.map(t=>`<div class="kpi"><div class="lab">${t.lab}</div><div class="val">${t.val} <small>${t.sub}</small></div>${t.p!=null?`<div class="bar"><i style="width:${Math.max(1,Math.min(100,t.p*100)).toFixed(1)}%"></i></div>`:""}<div class="note">${t.st?`<span class="state ${t.st}">${t.st==="ok"?"в нормі":t.st==="warn"?"нижче цілі":"критично"}</span> `:""}${t.note}</div></div>`).join("");
 
+  // live activity
+  const A=D.activity||[],nameOf=id=>{const a=D.agents.find(x=>x.id===id);return a?a.name.split(" (")[0]:id};
+  const t2=x=>x?new Date(x).toLocaleTimeString("uk-UA",{timeZone:"Europe/Kyiv",hour:"2-digit",minute:"2-digit"}):"";
+  const run=A.filter(x=>!x.finished), fin=A.filter(x=>x.finished&&new Date(x.finished).toDateString()===new Date().toDateString()).sort((a,b)=>b.finished.localeCompare(a.finished));
+  $("#now").innerHTML=run.length?run.map(x=>`<div class="tl now"><span class="t">з ${t2(x.started)}</span><span>${esc(x.task)}</span><span class="who" style="color:var(--mut)">${esc(nameOf(x.agent))}</span></div>`).join(""):`<div style="color:var(--mut);font-size:13px">Зараз нічого не запущено. Диспетчер стартує о :17 щогодини.</div>`;
+  $("#done").innerHTML=fin.length?fin.slice(0,12).map(x=>`<div class="tl"><span class="t">${t2(x.finished)}</span><span>${esc(x.task)}${x.result?` <span style="color:var(--mut)">— ${esc(x.result)}</span>`:""}</span><span class="who" style="color:var(--mut)">${esc(nameOf(x.agent))}</span></div>`).join(""):`<div style="color:var(--mut);font-size:13px">Сьогодні ще нічого не здано.</div>`;
+
   // timeline
   const now=kyivNow(), hm=now.getHours()*60+now.getMinutes();
   $("#timeline").innerHTML=D.schedule.map(s=>{const m=/^(\d\d):(\d\d)/.exec(s.time);const near=m&&Math.abs(+m[1]*60+ +m[2]-hm)<=45;const a=D.agents.find(x=>x.id===s.agent);return `<div class="tl ${near?"now":""}"><span class="t">${esc(s.time)}</span><span>${esc(s.what)}</span><span class="who" style="color:var(--mut)">${esc(a?a.name:"")}</span></div>`}).join("");
@@ -209,7 +224,7 @@ function office(D){
   const rows=2,cols=Math.ceil(D.depts.length/rows),pad=10,rw=(W-pad*(cols+1))/cols,rh=(H-pad*(rows+1))/rows;
   const rooms={};D.depts.forEach((d,i)=>{const c=i%cols,r=Math.floor(i/cols);rooms[d.id]={...d,x:pad+c*(rw+pad),y:pad+r*(rh+pad),w:rw,h:rh}});
   const now=kyivNow(),hm=now.getHours()*60+now.getMinutes();
-  const busy=id=>D.schedule.some(s=>{const m=/^(\d\d):(\d\d)/.exec(s.time);return s.agent===id&&m&&hm-(+m[1]*60+ +m[2])>=0&&hm-(+m[1]*60+ +m[2])<=40})||["collector","bot","editor"].includes(id);
+  const busy=id=>D.schedule.some(s=>{const m=/^(\d\d):(\d\d)/.exec(s.time);return s.agent===id&&m&&hm-(+m[1]*60+ +m[2])>=0&&hm-(+m[1]*60+ +m[2])<=40})||(D.activity||[]).some(x=>x.agent===id&&!x.finished)||["de","ea"].includes(id);
   const per={};D.agents.forEach(a=>{(per[a.dept]=per[a.dept]||[]).push(a)});
   const ag=D.agents.map(a=>{const R=rooms[a.dept],k=per[a.dept].indexOf(a),n=per[a.dept].length;
     const desk={x:R.x+R.w*(k+1)/(n+1),y:R.y+R.h*.42};
