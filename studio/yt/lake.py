@@ -14,7 +14,7 @@ usage:
   python3 studio/yt/lake.py ingest              # research + posts + Search Console (+ niche за потреби окремо)
   python3 studio/yt/lake.py niche               # ширша ніша: UA + англомовні ШІ-запити (квота ~2000 од.)
   python3 studio/yt/lake.py comp [500]         # ≥500 каналів-конкурентів: знімок статистики + останні 15 відео (щотижня)
-  python3 studio/yt/lake.py news                # новини: RSS OpenAI/Google/DeepMind, Anthropic, HN (ШІ), dou → news (кожні 4 год)
+  python3 studio/yt/lake.py news                # новини: ~22 RSS (компанії, світові й UA ШІ-медіа), Anthropic, HN (ШІ), dou → news (кожні 4 год)
   python3 studio/yt/lake.py history [365]        # усі відео ШІ-конкурентів за рік (≈1 од. квоти на 50 відео)
   python3 studio/yt/lake.py snapshot             # знімок живої бази в studio/data/snapshot/ (комітиться раз на добу)
   python3 studio/yt/lake.py ask "<тема>"        # що ми знаємо про тему: наші ролики й цифри, статті, радари, ніша, пошук
@@ -194,7 +194,62 @@ def competitors(target=500, per_q=50, max_search=30):
     print(f"comp: {n} каналів оновлено, {c.execute('select count(*) from comp_videos').fetchone()[0]} відео конкурентів")
 
 
-FEEDS = {"openai": "https://openai.com/news/rss.xml", "google": "https://blog.google/technology/ai/rss/", "deepmind": "https://deepmind.google/blog/rss.xml"}
+# RSS/Atom-стрічки (перевірені живим запитом 22.11.2026). ключ → (URL, фільтр AI_RX для загальних стрічок)
+FEEDS = {
+    # першоджерела
+    "openai": ("https://openai.com/news/rss.xml", False),
+    "google": ("https://blog.google/technology/ai/rss/", False),
+    "gemini": ("https://blog.google/products/gemini/rss/", False),
+    "deepmind": ("https://deepmind.google/blog/rss.xml", False),
+    "microsoft": ("https://www.microsoft.com/en-us/ai/blog/feed/", False),
+    "msnews": ("https://news.microsoft.com/source/topics/ai/feed/", False),
+    "meta": ("https://about.fb.com/news/feed/", True),
+    "metaeng": ("https://engineering.fb.com/feed/", True),
+    "hf": ("https://huggingface.co/blog/feed.xml", False),
+    "nvidia": ("https://blogs.nvidia.com/feed/", True),
+    "mistral": ("https://mistral.ai/rss.xml", False),
+    "apple": ("https://www.apple.com/newsroom/rss-feed.rss", True),
+    # світові ШІ-медіа
+    "techcrunch": ("https://techcrunch.com/category/artificial-intelligence/feed/", False),
+    "verge": ("https://www.theverge.com/rss/ai-artificial-intelligence/index.xml", False),
+    "venturebeat": ("https://feeds.feedburner.com/venturebeat/SZYF", False),
+    "ars": ("https://arstechnica.com/ai/feed/", False),
+    "mittr": ("https://www.technologyreview.com/topic/artificial-intelligence/feed", False),
+    "wired": ("https://www.wired.com/feed/tag/ai/latest/rss", False),
+    # українські tech-медіа (загальні стрічки → фільтр AI_RX)
+    "ain": ("https://ain.ua/feed/", True),
+    "devua": ("https://dev.ua/rss", True),
+    "speka": ("https://speka.media/rss", True),
+    "liga": ("https://tech.liga.net/ua/all/rss.xml", True),
+}
+FEED_MAX = 30   # ≤30 записів з одного джерела за прогін
+
+
+def feed_items(xml):
+    """RSS <item> / Atom <entry> → [(url, title, YYYY-MM-DD)]."""
+    import xml.etree.ElementTree as ET, email.utils
+    A = "{http://www.w3.org/2005/Atom}"; out = []
+    root = ET.fromstring(xml)
+    for it in root.iter():
+        tag = it.tag
+        if tag == "item":
+            title = it.findtext("title") or ""; link = (it.findtext("link") or "").strip()
+            if not link:
+                g = it.find("guid"); link = (g.text or "").strip() if g is not None and (g.text or "").startswith("http") else ""
+            raw = it.findtext("pubDate") or it.findtext("{http://purl.org/dc/elements/1.1/}date") or ""
+        elif tag == A + "entry":
+            title = it.findtext(A + "title") or ""
+            ls = it.findall(A + "link"); l = next((x for x in ls if x.get("rel", "alternate") == "alternate"), ls[0] if ls else None)
+            link = (l.get("href") or "").strip() if l is not None else ""
+            raw = it.findtext(A + "published") or it.findtext(A + "updated") or ""
+        else: continue
+        raw = raw.strip(); pub = ""
+        if re.match(r"\d{4}-\d{2}-\d{2}", raw): pub = raw[:10]
+        elif raw:
+            try: pub = email.utils.parsedate_to_datetime(raw).strftime("%Y-%m-%d")
+            except Exception: pub = ""
+        if link and title.strip(): out.append((link, re.sub(r"\s+", " ", title).strip(), pub))
+    return out
 
 
 def anthropic_dates(c, get, limit=25):
@@ -213,17 +268,18 @@ def news():
     import html as H
     c = db(); today = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M"); n = 0
     def get(u):
-        return urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0 shikarno-lake"}), timeout=30).read().decode("utf-8", "ignore")
-    for src, u in FEEDS.items():
-        try: t = get(u)
-        except Exception as e: print("feed ERR", src, e); continue
-        for it in re.findall(r"<item>(.*?)</item>", t, re.S):
-            ti = re.search(r"<title>(?:<!\[CDATA\[)?(.*?)(?:\]\]>)?</title>", it, re.S); l = re.search(r"<link>(.*?)</link>", it); d = re.search(r"<pubDate>(.*?)</pubDate>", it)
-            if ti and l:
-                pub = d.group(1).strip() if d else ""
-                try: pub = datetime.datetime.strptime(pub[:25].strip(), "%a, %d %b %Y %H:%M:%S").strftime("%Y-%m-%d")
-                except Exception: pass
-                n += c.execute("insert or ignore into news values(?,?,?,?,?,?)", (l.group(1).strip(), src, pub, H.unescape(ti.group(1).strip()), None, today)).rowcount
+        return urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0 shikarno-lake"}), timeout=20).read().decode("utf-8", "ignore")
+    rx_ai = re.compile(r"(?<!\w)" + AI_RX, re.I); per = {}
+    for src, (u, filt) in FEEDS.items():
+        try:
+            k = 0
+            for link, ti, pub in feed_items(get(u)):
+                if k >= FEED_MAX: break
+                ti = H.unescape(ti)
+                if filt and not rx_ai.search(ti): continue
+                k += 1; per[src] = per.get(src, 0) + c.execute("insert or ignore into news values(?,?,?,?,?,?)", (link, src, pub, ti, None, today)).rowcount
+        except Exception as e: print("feed ERR", src, str(e)[:120])
+    n += sum(per.values()); print("rss нових:", ", ".join(f"{k} {v}" for k, v in sorted(per.items(), key=lambda x: -x[1])) or "0")
     try:
         t = get("https://www.anthropic.com/news")
         for path in dict.fromkeys(re.findall(r'href="(/news/[a-z0-9-]+)"', t)):
