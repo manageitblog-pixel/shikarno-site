@@ -93,8 +93,8 @@
    "agent": "factcheck",
    "task": "Фактчек гайду «Claude безкоштовно» + сторінки сайту",
    "started": "2026-11-22T12:54:41Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-22T13:00:00Z",
+   "result": "FAIL→виправлено (мова інтерфейсу) → PASS; сторінка Claude виправлена"
   }
  ]
 }
