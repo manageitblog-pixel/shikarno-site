@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T14:22:17Z",
+ "generated": "2026-11-22T14:23:24Z",
  "kpi": {
   "subs": 311,
   "subs_goal": 1000,
@@ -806,10 +806,10 @@
    "source": "https://apps.apple.com/ua/app/moonlock/id6799935865",
    "by": "researcher-news",
    "note": "App Store: безкоштовно + підписка $11.99/міс або $59.99/рік, 7 дн тріал, iOS 26+, мова лише англійська; kw «moonlock» 290 (змішаний)",
-   "status": "new",
+   "status": "in_work",
    "added": "2026-11-22",
    "id": "17",
-   "decision": "кандидат у шоу #3",
+   "decision": "ep83 26.11",
    "score": 204.3
   },
   {
@@ -1089,14 +1089,6 @@
  ],
  "activity": [
   {
-   "id": "7",
-   "agent": "factcheck",
-   "task": "Фактчек гайду + сторінки ChatGPT",
-   "started": "2026-11-22T12:34:00Z",
-   "finished": "2026-11-22T12:37:00Z",
-   "result": "2 помилки знайдено й виправлено"
-  },
-  {
    "id": "8",
    "agent": "shorts",
    "task": "Тір-лист #7 «ШІ для кухні»: сценарій",
@@ -1301,8 +1293,8 @@
    "agent": "shorts",
    "task": "ep83 (чт 26.11 17Z): Moonlock від MacPaw проти шахраїв (ідея 17)",
    "started": "2026-11-22T14:18:35Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-22T14:23:23Z",
+   "result": "ep83 «Moonlock — чесно, чи варто?» (26.11): 483 знаки, вердикт Байта 6/10, самоперевірка 13/13"
   },
   {
    "id": "34",
@@ -1325,6 +1317,14 @@
    "agent": "factcheck",
    "task": "Незалежний фактчек ep84 «ШІ для логопеда»",
    "started": "2026-11-22T14:22:16Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "37",
+   "agent": "factcheck",
+   "task": "Незалежний фактчек ep83 Moonlock",
+   "started": "2026-11-22T14:23:23Z",
    "finished": null,
    "result": ""
   }

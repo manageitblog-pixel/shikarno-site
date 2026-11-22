@@ -261,8 +261,8 @@
    "agent": "shorts",
    "task": "ep83 (чт 26.11 17Z): Moonlock від MacPaw проти шахраїв (ідея 17)",
    "started": "2026-11-22T14:18:35Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-22T14:23:23Z",
+   "result": "ep83 «Moonlock — чесно, чи варто?» (26.11): 483 знаки, вердикт Байта 6/10, самоперевірка 13/13"
   },
   {
    "id": "34",
@@ -285,6 +285,14 @@
    "agent": "factcheck",
    "task": "Незалежний фактчек ep84 «ШІ для логопеда»",
    "started": "2026-11-22T14:22:16Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "37",
+   "agent": "factcheck",
+   "task": "Незалежний фактчек ep83 Moonlock",
+   "started": "2026-11-22T14:23:23Z",
    "finished": null,
    "result": ""
   }
