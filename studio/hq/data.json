@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T20:49:29Z",
+ "generated": "2026-11-22T20:54:46Z",
  "kpi": {
   "subs": 311,
   "subs_goal": 1000,
@@ -523,12 +523,12 @@
   },
   "tiktok": {
    "videos": 7,
-   "views_total": 12093,
-   "views_7d": 793,
+   "views_total": 12387,
+   "views_7d": 1087,
    "new_7d": 4,
-   "saves_total": 91,
-   "likes_total": 218,
-   "last_snapshot": "2026-11-22",
+   "saves_total": 94,
+   "likes_total": 224,
+   "last_snapshot": "2026-11-22T20",
    "best": [
     {
      "title": "Український ШІ Сяйво: коли вийде",
@@ -556,6 +556,10 @@
     {
      "x": "2026-11-22",
      "v": 12093
+    },
+    {
+     "x": "2026-11-22T20",
+     "v": 12387
     }
    ]
   },
@@ -1106,7 +1110,7 @@
  "lake": {
   "videos": 93,
   "daily": 746,
-  "news": 1851,
+  "news": 1853,
   "niche": 604,
   "comp": 504,
   "comp_videos": 62243,
@@ -1116,6 +1120,13 @@
   "comp_ai": 235
  },
  "news": [
+  {
+   "date": "2026-11-22",
+   "source": "hn",
+   "title": "C++26 is done (again): November 2026 ISO C++ meeting trip report",
+   "score": 19,
+   "url": "https://herbsutter.com/2026/11/21/c26-is-done-again-trip-report-november-2026-iso-c-standards-meeting-buzios-brazil/"
+  },
   {
    "date": "2026-11-22",
    "source": "openai",
@@ -1192,13 +1203,6 @@
    "title": "ШІ виявляє ознаки раку сечового міхура за 5 років до діагнозу",
    "score": null,
    "url": "https://speka.ua/news/si-viyavlyaje-oznaki-raku-secovogo-mixura-za-5-rokiv-do-diagnozu-v71qy3"
-  },
-  {
-   "date": "2026-11-22",
-   "source": "speka",
-   "title": "Математик Anthropic заявив, що разом із Claude довів гіпотезу Рімана",
-   "score": null,
-   "url": "https://speka.ua/news/matematik-anthropic-zayaviv-shho-razom-iz-claude-doviv-gipotezu-rimana-vz8ld4"
   }
  ],
  "competitors": [
@@ -1309,14 +1313,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "46",
-   "agent": "da",
-   "task": "Аудит прогнозів: Shorts, яким виповнилось 7 днів (15–16.11)",
-   "started": "2026-11-22T15:18:10Z",
-   "finished": "2026-11-22T15:22:32Z",
-   "result": "Аудит 14–16.11: формула занижує ×2 (штраф довжини завеликий); гіпотеза-експеримент: список 45–55 с vs ≤35 с"
-  },
   {
    "id": "47",
    "agent": "factcheck",
@@ -1548,6 +1544,14 @@
    "started": "2026-11-22T20:23:35Z",
    "finished": "2026-11-22T20:25:38Z",
    "result": "CTA ep83–86: PASS (ep85 умовно — після заливки гайда #1)"
+  },
+  {
+   "id": "76",
+   "agent": "de",
+   "task": "Збирач даталейку 20:52Z: новини, TikTok/TG-знімок, сигнали",
+   "started": "2026-11-22T20:52:52Z",
+   "finished": "2026-11-22T20:54:35Z",
+   "result": "TikTok 2-й знімок (OLX 304, дім 228), TG 6; ідея #33; квота YouTube 0, vidIQ 5"
   }
  ],
  "agents": [

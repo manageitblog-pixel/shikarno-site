@@ -123,7 +123,7 @@ def main():
         tl = None
     if tl:
         tv = q("select video_id, posted, title, views, likes, saves, shares from tiktok_snap where date=? order by views desc", tl)
-        c7 = (datetime.date.fromisoformat(tl) - datetime.timedelta(days=6)).isoformat()
+        c7 = (datetime.date.fromisoformat(tl[:10]) - datetime.timedelta(days=6)).isoformat()
         tk = dict(videos=len(tv), views_total=sum(r[3] or 0 for r in tv), views_7d=sum(r[3] or 0 for r in tv if (r[1] or "") >= c7), new_7d=sum(1 for r in tv if (r[1] or "") >= c7),
                   saves_total=sum(r[5] or 0 for r in tv), likes_total=sum(r[4] or 0 for r in tv), last_snapshot=tl,
                   best=[dict(title=r[2], views=r[3], saves=r[5], id=r[0], posted=r[1]) for r in tv[:3]],
