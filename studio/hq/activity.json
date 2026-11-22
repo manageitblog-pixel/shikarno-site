@@ -397,8 +397,8 @@
    "agent": "factcheck",
    "task": "Незалежний фактчек ep86 (манікюр)",
    "started": "2026-11-22T15:27:27Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-22T15:29:08Z",
+   "result": "ep86: PASS 15/15"
   }
  ]
 }

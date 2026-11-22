@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T15:27:29Z",
+ "generated": "2026-11-22T15:29:09Z",
  "kpi": {
   "subs": 311,
   "subs_goal": 1000,
@@ -1330,8 +1330,8 @@
    "agent": "factcheck",
    "task": "Незалежний фактчек ep86 (манікюр)",
    "started": "2026-11-22T15:27:27Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-22T15:29:08Z",
+   "result": "ep86: PASS 15/15"
   }
  ],
  "agents": [
