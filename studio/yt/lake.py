@@ -169,7 +169,24 @@ def competitors(target=500, per_q=50):
                               int(stt.get("viewCount", 0)), int(stt.get("likeCount", 0) or 0), int(stt.get("commentCount", 0) or 0), today))
             n += 1
         c.commit()
+    print("ШІ-каналів (≥30% відео про ШІ):", ai_share(c))
     print(f"comp: {n} каналів оновлено, {c.execute('select count(*) from comp_videos').fetchone()[0]} відео конкурентів")
+
+
+AI_RX = r"(ші|ai|штучн|нейро|gpt|chatgpt|claude|клод|gemini|джеміні|midjourney|промпт|prompt|llm|агент|agent|автоматиз|вайбкод|vibe ?cod|cursor|codex|copilot|n8n|openai|anthropic|deepseek|grok)"
+
+
+def ai_share(c):
+    """Частка відео каналу про ШІ → таблиця comp_ai (канал вважаємо конкурентом, якщо ≥30%)."""
+    c.execute("drop table if exists comp_ai")
+    c.execute("create table comp_ai(channel_id text primary key, ai_share real, n int)")
+    rx = re.compile(AI_RX, re.I)
+    by = {}
+    for ch, t in c.execute("select channel_id,title from comp_videos"):
+        a = by.setdefault(ch, [0, 0]); a[1] += 1; a[0] += bool(rx.search(t))
+    for ch, (k, n) in by.items(): c.execute("insert into comp_ai values(?,?,?)", (ch, k / n, n))
+    c.commit()
+    return sum(1 for k, n in by.values() if k / n >= 0.3)
 
 
 def ask(q):
