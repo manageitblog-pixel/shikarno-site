@@ -19,9 +19,9 @@ CUTS = [(31.82, 65.09, [31.82, 36.35, 43.86, 49.8, 54.1, 59.53], [
     "А тему пояснить Gemini Notebook — так тепер називається NotebookLM.",
     "Завантаж розділ підручника, попроси аудіоогляд, і учні слухають тему як подкаст."])]
 SCENES = [
- dict(kind="hookIcon", label="", title="", icon="form", tone="news", badge="ВЧИТЕЛЮ", hook="ШІ вже *у твоєму Classroom*"),
+ dict(kind="hookIcon", label="", title="", icon="form", tone="news", badge="ВЧИТЕЛЮ", hook="ШІ вже *у\u00a0твоєму Classroom*"),
  dict(kind="list", label="GEMINI У CLASSROOM", title="Урок за 5 хвилин",
-      items=[["form", "План уроку — 1 кнопка"], ["check", "Тест → Google Forms"], ["chart", "Критерії оцінювання"], ["video", "Тема як подкаст"]]),
+      items=[["form", "План уроку — 1 кнопка"], ["check", "Тест → Google Forms"], ["video", "Тема як подкаст"]]),
  dict(kind="hookIcon", label="ПОВНИЙ РОЗБІР ↓", title="ШІ для професій #1", icon="video", tone="news", badge="+ студент, ФОП, SMM"),
  dict(kind="outro", label="", title=""),
 ]

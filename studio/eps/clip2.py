@@ -21,7 +21,7 @@ CUTS = [(249.44, 270.01, [249.44, 254.17, 263.15], [
 SCENES = [
  dict(kind="hookIcon", label="", title="", icon="image", tone="news", badge="SMM", hook="Пояснюєш бренд *щоразу з нуля?*"),
  dict(kind="list", label="SMM · МІСЯЦЬ КОНТЕНТУ", title="Бренд запам'ятає ШІ",
-      items=[["chat", "ChatGPT: Проєкт під клієнта"], ["text", "Gemini: Skill голосу бренду"], ["image", "Nano Banana: картинки"], ["check", "Claude: шаблони постів"]]),
+      items=[["chat", "Проєкт у ChatGPT"], ["text", "Skill у Gemini"], ["image", "Nano Banana + Claude"]]),
  dict(kind="hookIcon", label="ПОВНИЙ РОЗБІР ↓", title="ШІ для професій #1", icon="video", tone="news", badge="+ готові промпти"),
  dict(kind="outro", label="", title=""),
 ]

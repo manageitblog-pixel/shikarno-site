@@ -25,8 +25,7 @@ CUTS = [(308.51, 324.89, [308.51, 311.28, 319.87], [
 SCENES = [
  dict(kind="hookIcon", label="", title="", icon="chat", tone="news", badge="і в Україні", hook="Реклама в *ChatGPT?*"),
  dict(kind="list", label="OPENAI · ЖОВТЕНЬ 2026", title="Реклама в ChatGPT",
-      items=[["image", "Біля згенерованих картинок"], ["chart", "1,2 млрд людей на тиждень"], ["map", "З 21.10 — і в Україні"],
-             ["warning", "Шукай позначку реклами"], ["check", "Ціни перевіряй сам"]]),
+      items=[["chart", "1,2 млрд на тиждень"], ["map", "З 21.10 — в Україні"], ["warning", "Шукай позначку"]]),
  dict(kind="hookIcon", label="ПОВНИЙ ВИПУСК ↓", title="ШІ за жовтень", icon="video", tone="news", badge="ще 9 подій"),
  dict(kind="outro", label="", title=""),
 ]
