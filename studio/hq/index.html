@@ -1,0 +1,267 @@
+<meta charset="utf-8">
+<title>ШІкарно HQ</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: штаб-квартира каналу — зверху цифри для CEO, у центрі живий офіс агентів, нижче — конвеєр, ідеї, аналітика, дані. Бренд ШІкарно, свідомо одна темна тема. */
+:root{
+  --ink:#0B0A1C; --ink2:#1A1240; --panel:#16123a; --line:#2c2560;
+  --fg:#F3F1FF; --mut:#A9A3D6; --yellow:#FFD60A; --violet:#7C5CFF; --pink:#FF4F8B; --cyan:#4CF2FF;
+  --good:#7DF29B; --warn:#FFA94D; --bad:#FF5C7A;
+  --display:"Montserrat",system-ui,sans-serif; --body:"Golos Text",system-ui,sans-serif; --mono:"JetBrains Mono",ui-monospace,monospace;
+  color-scheme:dark;
+}
+body{background:linear-gradient(160deg,var(--ink) 0%,var(--ink2) 100%) fixed;background-color:var(--ink);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.5}
+.wrap{max-width:1240px;margin:0 auto;padding-block:18px 60px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:22px}
+header{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:900;font-size:26px;letter-spacing:-.5px}
+.logo b{background:var(--yellow);color:var(--ink);padding:0 8px;border-radius:6px}
+.logo small{font-family:var(--body);font-weight:500;font-size:13px;color:var(--mut);letter-spacing:.06em;text-transform:uppercase}
+.meta{display:flex;gap:14px;flex-wrap:wrap;color:var(--mut);font-size:13px;font-family:var(--mono)}
+.live{display:inline-flex;align-items:center;gap:6px}.live:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--good);box-shadow:0 0 10px var(--good);animation:pulse 1.6s infinite}
+@keyframes pulse{50%{opacity:.35}}
+h2{font-family:var(--display);font-weight:800;font-size:18px;margin:0;text-wrap:balance;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px}
+h2 span{font-family:var(--body);font-weight:500;font-size:13px;color:var(--mut)}
+section{display:grid;gap:12px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.kpi{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px;display:grid;gap:6px;min-width:0}
+.kpi .lab{font-size:11px;color:var(--mut);text-transform:uppercase;letter-spacing:.08em}
+.kpi .val{font-family:var(--display);font-weight:900;font-size:28px;font-variant-numeric:tabular-nums;line-height:1}
+.kpi .val small{font-size:14px;color:var(--mut);font-weight:700}
+.bar{height:6px;background:#ffffff14;border-radius:4px;overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--violet),var(--pink));border-radius:4px}
+.kpi .note{font-size:12px;color:var(--mut)}
+.state{display:inline-block;font-size:11px;font-weight:600;padding:1px 8px;border-radius:20px;border:1px solid currentColor}
+.ok{color:var(--good)}.warn{color:var(--warn)}.bad{color:var(--bad)}
+.office{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:12px;align-items:start}
+.canvasbox{background:#0e0b26;border:1px solid var(--line);border-radius:14px;overflow:hidden;position:relative}
+canvas{display:block;width:100%;height:auto;cursor:pointer;image-rendering:pixelated}
+.side{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px;display:grid;gap:10px;min-width:0}
+.side h3{margin:0;font-family:var(--display);font-weight:800;font-size:16px}
+.side .dept{font-size:12px;font-weight:600}
+.side p{margin:0;color:var(--fg)}
+.side dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:4px 10px;font-size:13px}.side dt{color:var(--mut)}.side dd{margin:0}
+.roster{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-size:12px;padding:3px 9px;border-radius:20px;background:#ffffff0d;border:1px solid var(--line);cursor:pointer;color:var(--fg)}
+.chip:hover,.chip:focus-visible{border-color:var(--yellow);outline:none}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px;display:grid;gap:10px;min-width:0}
+.tbl{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums}
+th{text-align:left;font-weight:600;color:var(--mut);font-size:11px;text-transform:uppercase;letter-spacing:.06em;padding:6px 8px;border-bottom:1px solid var(--line)}
+td{padding:7px 8px;border-bottom:1px solid #ffffff0a;vertical-align:top}
+td.num{text-align:right;font-family:var(--mono)}
+.timeline{display:grid;gap:6px}
+.tl{display:grid;grid-template-columns:120px 1fr auto;gap:10px;align-items:center;font-size:13px;padding:6px 10px;border-radius:8px;background:#ffffff08}
+.tl .t{font-family:var(--mono);color:var(--cyan)}
+.tl.now{background:#FFD60A1a;outline:1px solid var(--yellow)}
+.fbar{display:grid;grid-template-columns:150px 1fr 56px;gap:8px;align-items:center;font-size:13px}
+.fbar .track{height:14px;background:#ffffff0d;border-radius:4px;overflow:hidden}.fbar .track i{display:block;height:100%;border-radius:4px}
+.fbar .v{font-family:var(--mono);text-align:right}
+.lake{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px}
+.lake div{background:#ffffff08;border-radius:10px;padding:10px}.lake b{display:block;font-family:var(--display);font-size:20px;font-variant-numeric:tabular-nums}.lake span{font-size:12px;color:var(--mut)}
+.asks li{margin:4px 0}
+a{color:var(--cyan)}
+.spark{width:100%;height:90px}
+@media (max-width:860px){.office{grid-template-columns:1fr}.tl{grid-template-columns:90px 1fr}.tl .who{display:none}}
+@media (prefers-reduced-motion:reduce){.live:before{animation:none}}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="logo"><b>ШІ</b>карно HQ <small>штаб студії</small></div>
+    <div class="meta"><span class="live" id="clock">Київ —</span><span id="upd">дані: —</span></div>
+  </header>
+
+  <section aria-labelledby="h-kpi">
+    <h2 id="h-kpi">Для CEO <span>цілі каналу і де ми зараз</span></h2>
+    <div class="kpis" id="kpis"></div>
+  </section>
+
+  <section aria-labelledby="h-office">
+    <h2 id="h-office">Офіс <span>агенти за відділами · натисни на будь-кого</span></h2>
+    <div class="office">
+      <div class="canvasbox"><canvas id="office" width="960" height="560" aria-label="Анімований офіс агентів"></canvas></div>
+      <aside class="side" id="side" aria-live="polite"></aside>
+    </div>
+    <div class="roster" id="roster"></div>
+  </section>
+
+  <section aria-labelledby="h-day">
+    <h2 id="h-day">Конвеєр дня <span>що і коли запускається (час Київ)</span></h2>
+    <div class="timeline" id="timeline"></div>
+  </section>
+
+  <div class="grid2">
+    <section class="card" aria-labelledby="h-ideas">
+      <h2 id="h-ideas">Дошка ідей <span>бал = попит × свіжість × показ × аудиторія × прогноз</span></h2>
+      <div class="tbl"><table id="ideas"></table></div>
+    </section>
+    <section class="card" aria-labelledby="h-fmt">
+      <h2 id="h-fmt">Що вистрілює <span>медіана переглядів за 7 днів</span></h2>
+      <div id="formats" style="display:grid;gap:6px"></div>
+    </section>
+  </div>
+
+  <div class="grid2">
+    <section class="card" aria-labelledby="h-views">
+      <h2 id="h-views">YouTube по днях <span>перегляди, 40 днів</span></h2>
+      <svg class="spark" id="spark" viewBox="0 0 400 90" preserveAspectRatio="none" role="img" aria-label="Перегляди по днях"></svg>
+      <div class="note" id="sparknote" style="font-size:12px;color:var(--mut)"></div>
+    </section>
+    <section class="card" aria-labelledby="h-site">
+      <h2 id="h-site">Сайт у Google <span>кліки і покази</span></h2>
+      <svg class="spark" id="spark2" viewBox="0 0 400 90" preserveAspectRatio="none" role="img" aria-label="Покази сайту по днях"></svg>
+      <div class="note" id="sitenote" style="font-size:12px;color:var(--mut)"></div>
+    </section>
+  </div>
+
+  <section class="card" aria-labelledby="h-vids">
+    <h2 id="h-vids">Останні відео <span>перші 7 днів</span></h2>
+    <div class="tbl"><table id="videos"></table></div>
+  </section>
+
+  <div class="grid2">
+    <section class="card" aria-labelledby="h-news">
+      <h2 id="h-news">Стрічка ресерчерів <span>свіжі першоджерела, HN, DOU</span></h2>
+      <div class="tbl"><table id="news"></table></div>
+    </section>
+    <section class="card" aria-labelledby="h-comp">
+      <h2 id="h-comp">Конкуренти <span>топ ШІ-каналів за середніми переглядами, 90 днів</span></h2>
+      <div class="tbl"><table id="comp"></table></div>
+    </section>
+  </div>
+
+  <div class="grid2">
+    <section class="card" aria-labelledby="h-lake">
+      <h2 id="h-lake">Даталейк <span>що вже зібрано</span></h2>
+      <div class="lake" id="lake"></div>
+    </section>
+    <section class="card" aria-labelledby="h-asks">
+      <h2 id="h-asks">Чекає власника</h2>
+      <ul class="asks" id="asks"></ul>
+    </section>
+  </div>
+</div>
+
+<script>
+const $=s=>document.querySelector(s), fmt=n=>n==null?"—":Number(n).toLocaleString("uk-UA");
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function kyivNow(){return new Date(new Date().toLocaleString("en-US",{timeZone:"Europe/Kyiv"}))}
+function tick(){const d=kyivNow();$("#clock").textContent="Київ "+d.toTimeString().slice(0,5)}
+tick();setInterval(tick,15000);
+
+fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(render).catch(()=>{$("#side").innerHTML="<p>Не вдалося завантажити дані. Онови сторінку.</p>"});
+
+function render(D){
+  const gen=new Date(D.generated); $("#upd").textContent="дані: "+gen.toLocaleString("uk-UA",{timeZone:"Europe/Kyiv",day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"});
+  const K=D.kpi;
+  const tiles=[
+    {lab:"Підписники YouTube",val:fmt(K.subs),sub:"/ "+fmt(K.subs_goal),p:K.subs/K.subs_goal,note:"поріг монетизації"},
+    {lab:"Години довгих (12 міс)",val:fmt(K.long_hours),sub:"/ "+fmt(K.long_hours_goal),p:K.long_hours/K.long_hours_goal,note:"2 довгих/тиждень — у графіку"},
+    {lab:"Перегляди, ~7 днів",val:fmt(K.views_7d),sub:"",note:"всього "+fmt(K.views_total)},
+    {lab:"Сер. % перегляду",val:(K.pct_7d??"—")+"%",sub:"",note:"ціль ≥ 60%",st:K.pct_7d>=60?"ok":K.pct_7d>=45?"warn":"bad"},
+    {lab:"Telegram",val:fmt(K.tg),sub:"/ "+fmt(K.tg_goal),p:(K.tg||0)/K.tg_goal,note:"ціль до кінця грудня"},
+    {lab:"Сайт: кліки з Google",val:fmt(K.site_clicks_28d),sub:"",note:fmt(K.site_impr_28d)+" показів за 28 днів"},
+  ];
+  $("#kpis").innerHTML=tiles.map(t=>`<div class="kpi"><div class="lab">${t.lab}</div><div class="val">${t.val} <small>${t.sub}</small></div>${t.p!=null?`<div class="bar"><i style="width:${Math.max(1,Math.min(100,t.p*100)).toFixed(1)}%"></i></div>`:""}<div class="note">${t.st?`<span class="state ${t.st}">${t.st==="ok"?"в нормі":t.st==="warn"?"нижче цілі":"критично"}</span> `:""}${t.note}</div></div>`).join("");
+
+  // timeline
+  const now=kyivNow(), hm=now.getHours()*60+now.getMinutes();
+  $("#timeline").innerHTML=D.schedule.map(s=>{const m=/^(\d\d):(\d\d)/.exec(s.time);const near=m&&Math.abs(+m[1]*60+ +m[2]-hm)<=45;const a=D.agents.find(x=>x.id===s.agent);return `<div class="tl ${near?"now":""}"><span class="t">${esc(s.time)}</span><span>${esc(s.what)}</span><span class="who" style="color:var(--mut)">${esc(a?a.name:"")}</span></div>`}).join("");
+
+  // ideas
+  $("#ideas").innerHTML="<tr><th>Бал</th><th>Ідея</th><th>Формат</th><th>Куди</th><th>Статус</th></tr>"+D.ideas.map(i=>`<tr><td class="num">${fmt(Math.round(i.score||0))}</td><td>${esc(i.title)}${i.kw?`<div style="color:var(--mut);font-size:12px">${esc(i.kw)}</div>`:""}</td><td>${esc(i.format)}</td><td>${esc((i.channels||[]).join(", "))}</td><td><span class="state ${i.status==="done"?"ok":i.status==="approved"||i.status==="in_work"?"warn":""}">${esc(i.status)}</span></td></tr>`).join("");
+
+  // formats
+  const mx=Math.max(...D.formats.map(f=>f.views));
+  const nm={tier:"тір-лист",free:"безкоштовно",news:"новини",sec:"безпека",skills:"скіли",try:"Байт пробує",check:"перевірка",prof:"професії",digest:"шоу/дайджест"};
+  $("#formats").innerHTML=D.formats.map(f=>{const [k,v]=f.name.split(" · ");return `<div class="fbar"><span>${esc(k)} · ${esc(nm[v]||v)} <span style="color:var(--mut)">(${f.n})</span></span><span class="track"><i style="width:${(f.views/mx*100).toFixed(1)}%;background:${f.pct>=60?"var(--good)":f.pct>=45?"var(--warn)":"var(--pink)"}"></i></span><span class="v">${fmt(Math.round(f.views))}</span></div>`}).join("")+`<div style="font-size:12px;color:var(--mut)">колір — % перегляду: зелений ≥60%, жовтий ≥45%, рожевий нижче</div>`;
+
+  spark("#spark",D.days.map(d=>d.v),"var(--cyan)");
+  const tot=D.days.slice(-7).reduce((a,d)=>a+d.v,0); $("#sparknote").textContent="Останні 7 днів з даними: "+fmt(tot)+" переглядів (YouTube Analytics запізнюється на 2–3 дні).";
+  spark("#spark2",D.site.map(d=>d.i),"var(--yellow)");
+  $("#sitenote").textContent="Покази на день; кліків за 28 днів: "+fmt(K.site_clicks_28d)+". SEO-відділ переписує сторінки, які Google вже показує.";
+
+  $("#videos").innerHTML="<tr><th>Дата</th><th>Відео</th><th>Формат</th><th>7 днів</th><th>% перегл.</th><th>Всього</th></tr>"+D.videos.map(v=>`<tr><td style="font-family:var(--mono)">${v.published.slice(5)}</td><td><a href="https://youtu.be/${esc(v.id)}" target="_blank" rel="noopener">${esc(v.title)}</a></td><td>${esc(nm[v.format]||v.format)}${v.short?"":" · довгий"}</td><td class="num">${fmt(v.views7)}</td><td class="num">${v.pct?v.pct+"%":"—"}</td><td class="num">${fmt(v.total)}</td></tr>`).join("");
+  $("#news").innerHTML="<tr><th>Дата</th><th>Джерело</th><th>Новина</th></tr>"+D.news.map(n=>`<tr><td style="font-family:var(--mono)">${esc((n.date||"").slice(5))}</td><td>${esc(n.source)}${n.score?` <span style="color:var(--mut)">${n.score}</span>`:""}</td><td><a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a></td></tr>`).join("");
+  $("#comp").innerHTML="<tr><th>Канал</th><th>Мова</th><th>Підписники</th><th>Сер. перегл.</th></tr>"+D.competitors.map(c=>`<tr><td>${esc(c.channel)}</td><td>${c.lang==="uk"?"укр":"англ"}</td><td class="num">${fmt(c.subs)}</td><td class="num">${fmt(c.avg)}</td></tr>`).join("");
+  const L=D.lake, ln=[["videos","наших відео"],["daily","днів метрик"],["news","новин"],["niche","відео ніші"],["comp","каналів-конкурентів"],["comp_ai","з них про ШІ"],["comp_videos","відео конкурентів"],["research","тем у радарах"],["posts","статей сайту"],["site_queries","пошукових запитів"]];
+  $("#lake").innerHTML=ln.map(([k,l])=>`<div><b>${fmt(L[k])}</b><span>${l}</span></div>`).join("");
+  $("#asks").innerHTML=D.asks.map(a=>`<li>${esc(a.what)} — <span class="state warn">${esc(a.status)}</span></li>`).join("");
+
+  office(D);
+}
+
+function spark(sel,vals,col){
+  const el=$(sel); if(!vals.length){el.innerHTML="";return}
+  const W=400,H=90,mx=Math.max(...vals,1),step=W/Math.max(1,vals.length-1);
+  const pts=vals.map((v,i)=>[i*step,H-6-(v/mx)*(H-16)]);
+  const line=pts.map((p,i)=>(i?"L":"M")+p[0].toFixed(1)+" "+p[1].toFixed(1)).join(" ");
+  const last=pts[pts.length-1];
+  el.innerHTML=`<line x1="0" x2="${W}" y1="${H-6}" y2="${H-6}" stroke="#ffffff22"/><path d="${line} L${W} ${H-6} L0 ${H-6}Z" fill="${col}" opacity=".12"/><path d="${line}" fill="none" stroke="${col}" stroke-width="2" vector-effect="non-scaling-stroke"/><circle cx="${last[0]}" cy="${last[1]}" r="3.5" fill="${col}"/><text x="4" y="12" fill="#A9A3D6" font-size="10">макс ${fmt(mx)}</text>`;
+}
+
+/* ---------- Офіс: кімнати-відділи, піксельні агенти ходять між столами і на редколегію ---------- */
+function office(D){
+  const cv=$("#office"),cx=cv.getContext("2d"),W=cv.width,H=cv.height;
+  const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const cols=4,rows=2,pad=10,rw=(W-pad*(cols+1))/cols,rh=(H-pad*(rows+1))/rows;
+  const rooms={};D.depts.forEach((d,i)=>{const c=i%cols,r=Math.floor(i/cols);rooms[d.id]={...d,x:pad+c*(rw+pad),y:pad+r*(rh+pad),w:rw,h:rh}});
+  const now=kyivNow(),hm=now.getHours()*60+now.getMinutes();
+  const busy=id=>D.schedule.some(s=>{const m=/^(\d\d):(\d\d)/.exec(s.time);return s.agent===id&&m&&hm-(+m[1]*60+ +m[2])>=0&&hm-(+m[1]*60+ +m[2])<=40})||["collector","bot","editor"].includes(id);
+  const per={};D.agents.forEach(a=>{(per[a.dept]=per[a.dept]||[]).push(a)});
+  const ag=D.agents.map(a=>{const R=rooms[a.dept],k=per[a.dept].indexOf(a),n=per[a.dept].length;
+    const desk={x:R.x+R.w*(k+1)/(n+1),y:R.y+R.h*.42};
+    return {...a,R,desk,x:desk.x,y:desk.y+26,tx:desk.x,ty:desk.y+26,ph:Math.random()*6,wait:Math.random()*120,busy:busy(a.id),dir:1}});
+  let sel=ag[0];
+  function pick(a){
+    const r=Math.random();
+    if(a.busy&&r<.7){a.tx=a.desk.x;a.ty=a.desk.y+26;a.wait=200+Math.random()*200;return}
+    if(r<.12&&a.dept!=="board"){const B=rooms.board;a.tx=B.x+30+Math.random()*(B.w-60);a.ty=B.y+B.h*.62+Math.random()*20;a.wait=120+Math.random()*120;return}
+    a.tx=a.R.x+24+Math.random()*(a.R.w-48);a.ty=a.R.y+a.R.h*.55+Math.random()*(a.R.h*.32);a.wait=60+Math.random()*160;
+  }
+  function drawRoom(R){
+    cx.fillStyle="#141036";cx.fillRect(R.x,R.y,R.w,R.h);
+    cx.fillStyle="#1b1645";for(let i=0;i<R.w;i+=16)cx.fillRect(R.x+i,R.y+R.h*.5,1,R.h*.5); // підлога
+    cx.strokeStyle=R.color;cx.globalAlpha=.55;cx.lineWidth=2;cx.strokeRect(R.x+1,R.y+1,R.w-2,R.h-2);cx.globalAlpha=1;
+    cx.fillStyle=R.color;cx.fillRect(R.x,R.y,R.w,22);
+    cx.fillStyle="#0B0A1C";cx.font="800 12px Montserrat, sans-serif";cx.fillText(R.name.toUpperCase(),R.x+8,R.y+15);
+    // столи з моніторами
+    (per[R.id]||[]).forEach((a,k,arr)=>{const x=R.x+R.w*(k+1)/(arr.length+1),y=R.y+R.h*.42;
+      cx.fillStyle="#3a3170";cx.fillRect(x-20,y,40,10);cx.fillStyle="#241d52";cx.fillRect(x-17,y+10,4,10);cx.fillRect(x+13,y+10,4,10);
+      cx.fillStyle="#0b0a1c";cx.fillRect(x-11,y-16,22,15);const on=ag.find(g=>g.id===a.id);cx.fillStyle=on&&on.busy?R.color:"#3b3570";cx.fillRect(x-9,y-14,18,11);
+      if(on&&on.busy&&!reduce){cx.fillStyle="#0b0a1c";const t=Date.now()/300;for(let l=0;l<3;l++)cx.fillRect(x-7,y-12+l*3,4+((t+l*3)%10),1)}
+    });
+    if(R.id==="board"){cx.fillStyle="#2e2668";cx.beginPath();cx.ellipse(R.x+R.w/2,R.y+R.h*.74,R.w*.32,14,0,0,7);cx.fill()} // стіл редколегії
+    if(R.id==="data"){for(let i=0;i<3;i++){cx.fillStyle="#2a2366";cx.fillRect(R.x+R.w-30,R.y+32+i*22,18,18);cx.fillStyle=Math.random()<.5?"#7DF29B":"#4CF2FF";cx.fillRect(R.x+R.w-26,R.y+36+i*22,3,3)}} // сервери
+  }
+  function drawAgent(a,t){
+    const moving=Math.hypot(a.tx-a.x,a.ty-a.y)>1.5,step=moving?Math.floor(t/140+a.ph)%2:0,col=a.R.color,x=Math.round(a.x),y=Math.round(a.y);
+    cx.fillStyle="#00000055";cx.fillRect(x-7,y+12,14,3);
+    cx.fillStyle="#2b2456";cx.fillRect(x-5,y+4,4,8-(step?2:0));cx.fillRect(x+1,y+4,4,8-(step?0:2)); // ноги
+    cx.fillStyle=col;cx.fillRect(x-7,y-8,14,13); // тіло
+    cx.fillStyle="#f6e7d6";cx.fillRect(x-5,y-19,10,10); // голова
+    cx.fillStyle="#0B0A1C";cx.fillRect(x-3+(a.dir>0?1:0),y-15,2,2);cx.fillRect(x+1+(a.dir>0?1:0),y-15,2,2);
+    cx.fillStyle="#0B0A1C";cx.font="700 9px JetBrains Mono, monospace";cx.fillText(a.emoji,x-3,y+2);
+    if(a===sel){cx.strokeStyle="#FFD60A";cx.lineWidth=2;cx.strokeRect(x-10,y-22,20,38)}
+    cx.font="600 10px Golos Text, sans-serif";const nm=a.name.split(" ")[0];const w=cx.measureText(nm).width;
+    cx.fillStyle="#0B0A1Ccc";cx.fillRect(x-w/2-3,y+16,w+6,13);cx.fillStyle="#F3F1FF";cx.fillText(nm,x-w/2,y+26);
+    if(a.busy){const bx=x+8,by=y-34;cx.fillStyle="#F3F1FF";cx.fillRect(bx,by,22,12);cx.fillStyle="#0B0A1C";const d=Math.floor(t/350)%4;for(let i=0;i<3;i++)if(i<d||reduce)cx.fillRect(bx+4+i*6,by+5,3,3)}
+  }
+  function frame(t){
+    cx.fillStyle="#0e0b26";cx.fillRect(0,0,W,H);
+    Object.values(rooms).forEach(drawRoom);
+    ag.forEach(a=>{const dx=a.tx-a.x,dy=a.ty-a.y,d=Math.hypot(dx,dy);
+      if(d>1.5){const s=reduce?d:.9;a.x+=dx/d*Math.min(s,d);a.y+=dy/d*Math.min(s,d);a.dir=dx>=0?1:-1}else if(--a.wait<=0)pick(a)});
+    [...ag].sort((a,b)=>a.y-b.y).forEach(a=>drawAgent(a,t));
+    if(!reduce)requestAnimationFrame(frame);
+  }
+  function show(a){sel=a;const R=a.R;$("#side").innerHTML=`<div class="dept" style="color:${R.color}">${esc(R.name)}</div><h3>${esc(a.name)}</h3><p>${esc(a.role)}</p><dl><dt>Розклад</dt><dd>${esc(a.schedule)}</dd><dt>Ціль</dt><dd>${esc(a.kpi)}</dd><dt>Зараз</dt><dd>${a.busy?'<span class="state ok">працює</span>':'<span class="state" style="color:var(--mut)">чекає свого часу</span>'}</dd></dl>`;if(reduce)frame(performance.now())}
+  cv.addEventListener("click",e=>{const r=cv.getBoundingClientRect(),mx=(e.clientX-r.left)*W/r.width,my=(e.clientY-r.top)*H/r.height;
+    let best=null,bd=40;ag.forEach(a=>{const d=Math.hypot(a.x-mx,a.y-my);if(d<bd){bd=d;best=a}});if(best)show(best)});
+  $("#roster").innerHTML=ag.map((a,i)=>`<button class="chip" data-i="${i}" style="border-left:3px solid ${a.R.color}">${esc(a.name)}</button>`).join("");
+  $("#roster").addEventListener("click",e=>{const b=e.target.closest(".chip");if(b)show(ag[+b.dataset.i])});
+  show(sel);ag.forEach(pick);requestAnimationFrame(frame);
+}
+</script>

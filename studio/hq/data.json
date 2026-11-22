@@ -1,0 +1,1077 @@
+{
+ "generated": "2026-11-22T10:42:42Z",
+ "kpi": {
+  "subs": 311,
+  "subs_goal": 1000,
+  "long_hours": 10.1,
+  "long_hours_goal": 4000,
+  "views_total": 11890,
+  "views_7d": 890,
+  "pct_7d": 48.4,
+  "subs_7d": 2,
+  "tg": 6,
+  "tg_goal": 150,
+  "site_clicks_28d": 43,
+  "site_impr_28d": 3669,
+  "tiktok_auto": 2
+ },
+ "days": [
+  {
+   "d": "2026-10-21",
+   "v": 8,
+   "p": 21.8
+  },
+  {
+   "d": "2026-10-22",
+   "v": 148,
+   "p": 38.9
+  },
+  {
+   "d": "2026-10-23",
+   "v": 188,
+   "p": 41.1
+  },
+  {
+   "d": "2026-10-24",
+   "v": 100,
+   "p": 27.0
+  },
+  {
+   "d": "2026-10-25",
+   "v": 66,
+   "p": 32.4
+  },
+  {
+   "d": "2026-10-26",
+   "v": 52,
+   "p": 34.2
+  },
+  {
+   "d": "2026-10-27",
+   "v": 18,
+   "p": 30.6
+  },
+  {
+   "d": "2026-10-28",
+   "v": 64,
+   "p": 79.1
+  },
+  {
+   "d": "2026-10-29",
+   "v": 575,
+   "p": 59.7
+  },
+  {
+   "d": "2026-10-30",
+   "v": 584,
+   "p": 61.4
+  },
+  {
+   "d": "2026-10-31",
+   "v": 2063,
+   "p": 63.5
+  },
+  {
+   "d": "2026-11-01",
+   "v": 1939,
+   "p": 45.2
+  },
+  {
+   "d": "2026-11-02",
+   "v": 1232,
+   "p": 51.7
+  },
+  {
+   "d": "2026-11-03",
+   "v": 510,
+   "p": 50.0
+  },
+  {
+   "d": "2026-11-04",
+   "v": 543,
+   "p": 44.8
+  },
+  {
+   "d": "2026-11-05",
+   "v": 470,
+   "p": 39.6
+  },
+  {
+   "d": "2026-11-06",
+   "v": 283,
+   "p": 36.7
+  },
+  {
+   "d": "2026-11-07",
+   "v": 186,
+   "p": 32.6
+  },
+  {
+   "d": "2026-11-08",
+   "v": 128,
+   "p": 41.8
+  },
+  {
+   "d": "2026-11-09",
+   "v": 154,
+   "p": 47.9
+  },
+  {
+   "d": "2026-11-10",
+   "v": 161,
+   "p": 129.3
+  },
+  {
+   "d": "2026-11-11",
+   "v": 829,
+   "p": 36.8
+  },
+  {
+   "d": "2026-11-12",
+   "v": 411,
+   "p": 47.7
+  },
+  {
+   "d": "2026-11-13",
+   "v": 140,
+   "p": 60.6
+  },
+  {
+   "d": "2026-11-14",
+   "v": 150,
+   "p": 38.7
+  },
+  {
+   "d": "2026-11-15",
+   "v": 116,
+   "p": 48.6
+  },
+  {
+   "d": "2026-11-16",
+   "v": 113,
+   "p": 40.8
+  },
+  {
+   "d": "2026-11-17",
+   "v": 142,
+   "p": 49.4
+  },
+  {
+   "d": "2026-11-18",
+   "v": 117,
+   "p": 49.7
+  },
+  {
+   "d": "2026-11-19",
+   "v": 112,
+   "p": 50.9
+  }
+ ],
+ "site": [
+  {
+   "d": "2026-10-27",
+   "c": 3,
+   "i": 190,
+   "pos": 7.5
+  },
+  {
+   "d": "2026-10-28",
+   "c": 1,
+   "i": 152,
+   "pos": 7.6
+  },
+  {
+   "d": "2026-10-29",
+   "c": 0,
+   "i": 144,
+   "pos": 9.2
+  },
+  {
+   "d": "2026-10-30",
+   "c": 1,
+   "i": 95,
+   "pos": 9.2
+  },
+  {
+   "d": "2026-10-31",
+   "c": 2,
+   "i": 50,
+   "pos": 7.2
+  },
+  {
+   "d": "2026-11-01",
+   "c": 1,
+   "i": 123,
+   "pos": 9.1
+  },
+  {
+   "d": "2026-11-02",
+   "c": 0,
+   "i": 131,
+   "pos": 8.8
+  },
+  {
+   "d": "2026-11-03",
+   "c": 0,
+   "i": 98,
+   "pos": 10.6
+  },
+  {
+   "d": "2026-11-04",
+   "c": 3,
+   "i": 135,
+   "pos": 10.8
+  },
+  {
+   "d": "2026-11-05",
+   "c": 1,
+   "i": 135,
+   "pos": 9.1
+  },
+  {
+   "d": "2026-11-06",
+   "c": 0,
+   "i": 163,
+   "pos": 9.6
+  },
+  {
+   "d": "2026-11-07",
+   "c": 3,
+   "i": 159,
+   "pos": 9.0
+  },
+  {
+   "d": "2026-11-08",
+   "c": 0,
+   "i": 149,
+   "pos": 7.9
+  },
+  {
+   "d": "2026-11-09",
+   "c": 1,
+   "i": 160,
+   "pos": 7.0
+  },
+  {
+   "d": "2026-11-10",
+   "c": 1,
+   "i": 134,
+   "pos": 6.5
+  },
+  {
+   "d": "2026-11-11",
+   "c": 5,
+   "i": 180,
+   "pos": 7.0
+  },
+  {
+   "d": "2026-11-12",
+   "c": 4,
+   "i": 186,
+   "pos": 7.3
+  },
+  {
+   "d": "2026-11-13",
+   "c": 3,
+   "i": 201,
+   "pos": 8.0
+  },
+  {
+   "d": "2026-11-14",
+   "c": 3,
+   "i": 191,
+   "pos": 8.5
+  },
+  {
+   "d": "2026-11-15",
+   "c": 3,
+   "i": 148,
+   "pos": 8.2
+  },
+  {
+   "d": "2026-11-16",
+   "c": 0,
+   "i": 166,
+   "pos": 6.5
+  },
+  {
+   "d": "2026-11-17",
+   "c": 2,
+   "i": 157,
+   "pos": 7.7
+  },
+  {
+   "d": "2026-11-18",
+   "c": 1,
+   "i": 157,
+   "pos": 8.3
+  },
+  {
+   "d": "2026-11-19",
+   "c": 2,
+   "i": 135,
+   "pos": 6.5
+  },
+  {
+   "d": "2026-11-20",
+   "c": 3,
+   "i": 130,
+   "pos": 9.3
+  }
+ ],
+ "formats": [
+  {
+   "name": "Short · tier",
+   "n": 17,
+   "views": 200,
+   "pct": 63.9
+  },
+  {
+   "name": "Short · free",
+   "n": 6,
+   "views": 118.5,
+   "pct": 53.9
+  },
+  {
+   "name": "Довгий · digest",
+   "n": 3,
+   "views": 48,
+   "pct": 22.3
+  },
+  {
+   "name": "Short · check",
+   "n": 4,
+   "views": 44.5,
+   "pct": 60.8
+  },
+  {
+   "name": "Short · news",
+   "n": 16,
+   "views": 44.0,
+   "pct": 35.6
+  },
+  {
+   "name": "Short · skills",
+   "n": 8,
+   "views": 43.0,
+   "pct": 48.1
+  },
+  {
+   "name": "Short · prof",
+   "n": 4,
+   "views": 41.5,
+   "pct": 47.8
+  },
+  {
+   "name": "Short · try",
+   "n": 7,
+   "views": 41,
+   "pct": 49.8
+  },
+  {
+   "name": "Short · sec",
+   "n": 10,
+   "views": 34.5,
+   "pct": 41.3
+  },
+  {
+   "name": "Довгий · prof",
+   "n": 3,
+   "views": 29,
+   "pct": 10.2
+  },
+  {
+   "name": "Довгий · skills",
+   "n": 2,
+   "views": 26.0,
+   "pct": 21.7
+  },
+  {
+   "name": "Довгий · sec",
+   "n": 1,
+   "views": 5,
+   "pct": 40.4
+  }
+ ],
+ "videos": [
+  {
+   "id": "gljrHADi4aU",
+   "title": "Сімейний бюджет з ШІ: який ШІ для грошей? 💸 Тір-лист Байта #5",
+   "format": "sec",
+   "short": true,
+   "published": "2026-11-21",
+   "views7": 0,
+   "pct": 0,
+   "total": 2
+  },
+  {
+   "id": "CfHTFrYH_z4",
+   "title": "Шахрайське SMS: як перевірити за 10 секунд з ШІ 🚨",
+   "format": "sec",
+   "short": true,
+   "published": "2026-11-20",
+   "views7": 0,
+   "pct": 0,
+   "total": 3
+  },
+  {
+   "id": "0Kb6AamTRQo",
+   "title": "Інкогніто-чат у ШІ: скільки насправді зберігають ChatGPT, Claude і Gemini 🕵️",
+   "format": "sec",
+   "short": true,
+   "published": "2026-11-19",
+   "views7": 30,
+   "pct": 52.1,
+   "total": 37
+  },
+  {
+   "id": "bRanUVdt2Pw",
+   "title": "Meta AI у WhatsApp: що він запам'ятовує і де справжній інкогніто-чат 💬",
+   "format": "sec",
+   "short": true,
+   "published": "2026-11-18",
+   "views7": 37,
+   "pct": 40.2,
+   "total": 42
+  },
+  {
+   "id": "Vp1PPNxtcrI",
+   "title": "ChatGPT вчиться на твоїх чатах — як вимкнути за 30 секунд 🔐",
+   "format": "sec",
+   "short": true,
+   "published": "2026-11-17",
+   "views7": 79,
+   "pct": 47.8,
+   "total": 86
+  },
+  {
+   "id": "RbyuepKjOig",
+   "title": "Ніколи не давай ШІ ці 7 речей: паролі, картки, паспорт і ще 4 🔒",
+   "format": "sec",
+   "short": true,
+   "published": "2026-11-16",
+   "views7": 37,
+   "pct": 68.5,
+   "total": 39
+  },
+  {
+   "id": "Bh-YF2BbuiQ",
+   "title": "Lovable: сайти, зроблені ШІ, світять дані клієнтів — 24 тисячі без захисту ⚠️",
+   "format": "sec",
+   "short": true,
+   "published": "2026-11-15",
+   "views7": 6,
+   "pct": 37.1,
+   "total": 6
+  },
+  {
+   "id": "GNqU-wcz9Ws",
+   "title": "Що ШІ знає про тебе: як вимкнути навчання в ChatGPT, Gemini, Claude, Meta AI і Copilot (2026)",
+   "format": "sec",
+   "short": false,
+   "published": "2026-11-14",
+   "views7": 37,
+   "pct": 10.8,
+   "total": 61
+  },
+  {
+   "id": "ZSOH2sXLI_Y",
+   "title": "ChatGPT Wallet: ШІ платить твоєю карткою, а United блокує ШІ-агентів 💳",
+   "format": "sec",
+   "short": true,
+   "published": "2026-11-14",
+   "views7": 31,
+   "pct": 14.2,
+   "total": 37
+  },
+  {
+   "id": "Vv5pl-AFtgA",
+   "title": "Сяйво від Київстару: український штучний інтелект — коли вийде і що відомо 🇺🇦",
+   "format": "news",
+   "short": true,
+   "published": "2026-11-14",
+   "views7": 51,
+   "pct": 27.9,
+   "total": 57
+  },
+  {
+   "id": "trlZL_IoPkE",
+   "title": "Claude Meetings (бета): Claude приходить у Google Meet — нотатки, задачі, документи 🎥",
+   "format": "news",
+   "short": true,
+   "published": "2026-11-13",
+   "views7": 31,
+   "pct": 20.5,
+   "total": 32
+  },
+  {
+   "id": "KRm46ScK2Bc",
+   "title": "Google поміняв мозок своєму Пошуку: Gemini 4 Hydrogen — безкоштовно ⚡",
+   "format": "free",
+   "short": true,
+   "published": "2026-11-13",
+   "views7": 30,
+   "pct": 45.1,
+   "total": 35
+  },
+  {
+   "id": "QbG1TkyEEXk",
+   "title": "Видалив чат у ChatGPT? Він усе одно пам’ятає — як стерти по-справжньому 🔐",
+   "format": "sec",
+   "short": true,
+   "published": "2026-11-12",
+   "views7": 64,
+   "pct": 50.7,
+   "total": 75
+  },
+  {
+   "id": "kIbdPmG0sT4",
+   "title": "Canva, Notion і Dropbox тепер прямо в чаті з Claude — і він їх править 🖥️",
+   "format": "skills",
+   "short": true,
+   "published": "2026-11-12",
+   "views7": 22,
+   "pct": 79.0,
+   "total": 22
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Який ШІ для дітей? Тір-лист #6 (AI Quests українською)",
+   "format": "tier",
+   "channels": [
+    "short",
+    "site",
+    "tg",
+    "tiktok"
+   ],
+   "demand": 4,
+   "fresh": 4,
+   "show": 5,
+   "fit": 5,
+   "by": "researcher-search",
+   "source": "https://dou.ua/lenta/news/google-ai-quests-ukraine-kids/ + kw.py «штучний інтелект для дітей»",
+   "status": "new",
+   "added": "2026-11-22",
+   "id": "1",
+   "kw": "штучний інтелект для дітей (70); ші для дітей (20); нейроігри для дітей (10)",
+   "score": 400.0
+  },
+  {
+   "title": "ChatGPT з нуля українською — гайд 12–15 хв",
+   "format": "guide",
+   "channels": [
+    "long",
+    "site"
+   ],
+   "demand": 5,
+   "fresh": 3,
+   "show": 5,
+   "fit": 5,
+   "by": "researcher-search",
+   "source": "Search Console: «чат gpt українською безкоштовно» 577 показів",
+   "status": "new",
+   "added": "2026-11-22",
+   "id": "2",
+   "kw": "chatgpt уроки (178); chatgpt як користуватися (20); що таке chatgpt (10)",
+   "score": 225.0
+  },
+  {
+   "title": "Який ШІ для кухні? Тір-лист",
+   "format": "tier",
+   "channels": [
+    "short",
+    "site",
+    "tiktok"
+   ],
+   "demand": 3,
+   "fresh": 3,
+   "show": 5,
+   "fit": 5,
+   "by": "owner",
+   "source": "рішення власника 21.11",
+   "status": "new",
+   "added": "2026-11-22",
+   "id": "5",
+   "kw": "зерно «ші для кухні» без релевантного попиту: бізнес на кухні (8); дитячі кухні (10, нерелевантно) — спробувати «рецепти chatgpt»",
+   "score": 225.0
+  },
+  {
+   "title": "Claude безкоштовно — повний гайд (сайт)",
+   "format": "guide",
+   "channels": [
+    "site"
+   ],
+   "demand": 4,
+   "fresh": 3,
+   "show": 4,
+   "fit": 4,
+   "by": "researcher-search",
+   "source": "Search Console: claude-bezkoshtovno 354 покази, поз. 5,7",
+   "status": "new",
+   "added": "2026-11-22",
+   "id": "7",
+   "score": 115.2
+  },
+  {
+   "title": "ШІ для логопеда / вузькі професії",
+   "format": "prof",
+   "channels": [
+    "short",
+    "site"
+   ],
+   "demand": 3,
+   "fresh": 3,
+   "show": 4,
+   "fit": 4,
+   "by": "researcher-niche",
+   "source": "outliers 22.11: «Логопеди, а ви використовуєте ШІ» 12×",
+   "status": "new",
+   "added": "2026-11-22",
+   "id": "3",
+   "score": 29.9
+  },
+  {
+   "title": "Gemini Tasks: ШІ платить рахунки — чи безпечно",
+   "format": "sec",
+   "channels": [
+    "tg",
+    "site"
+   ],
+   "demand": 2,
+   "fresh": 4,
+   "show": 4,
+   "fit": 4,
+   "by": "researcher-news",
+   "source": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
+   "status": "new",
+   "added": "2026-11-22",
+   "id": "4",
+   "score": 25.6
+  },
+  {
+   "title": "ШІ для перукаря/майстра краси",
+   "format": "prof",
+   "channels": [
+    "short",
+    "site",
+    "insta"
+   ],
+   "demand": 2,
+   "fresh": 3,
+   "show": 4,
+   "fit": 4,
+   "by": "owner",
+   "source": "рішення власника 21.11; kw.py 22.11 — попит низький",
+   "status": "new",
+   "added": "2026-11-22",
+   "id": "6",
+   "score": 19.9
+  }
+ ],
+ "lake": {
+  "videos": 91,
+  "daily": 732,
+  "news": 1503,
+  "niche": 592,
+  "comp": 428,
+  "comp_videos": 61167,
+  "research": 65,
+  "posts": 97,
+  "site_queries": 79,
+  "comp_ai": 214
+ },
+ "news": [
+  {
+   "date": "2026-11-22",
+   "source": "hn",
+   "title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
+   "score": 34,
+   "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/"
+  },
+  {
+   "date": "2026-11-22",
+   "source": "hn",
+   "title": "The Mythology of Conscious AI",
+   "score": 60,
+   "url": "https://www.noemamag.com/the-mythology-of-conscious-ai/"
+  },
+  {
+   "date": "2026-11-22",
+   "source": "hn",
+   "title": "Together.ai: Prompt Leakage for Requests",
+   "score": 29,
+   "url": "https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026"
+  },
+  {
+   "date": "2026-11-22",
+   "source": "hn",
+   "title": "Current Efforts Aren't Enough to Slow the AI Cyber Virus",
+   "score": 10,
+   "url": "https://www.bridgewater.com/research-and-insights/current-efforts-arent-enough-to-slow-the-ai-cyber-virus"
+  },
+  {
+   "date": "2026-11-22",
+   "source": "hn",
+   "title": "Since last year, we asked: \"What if AI solved the Riemann Hypothesis?\"",
+   "score": 37,
+   "url": "https://www.youtube.com/watch?v=zqzk43bSdDI"
+  },
+  {
+   "date": "2026-11-22",
+   "source": "hn",
+   "title": "The Engineering Manager's role is under attack (again)",
+   "score": 40,
+   "url": "https://www.manager.dev/newsletter/the-engineering-manager-s-role-is-under-attack-again"
+  },
+  {
+   "date": "2026-11-22",
+   "source": "dou",
+   "title": "Мінцифри планує підвищити зарплати кіберфахівцям і запустити сайт із вакансіями",
+   "score": null,
+   "url": "https://dou.ua/lenta/news/mintsyfry-raise-salaries-for-cybersecurity/"
+  },
+  {
+   "date": "2026-11-22",
+   "source": "dou",
+   "title": "N-iX стала партнером SpaceX Super Intelligence. До кінця року 60% інженерів мають підвищити ШІ-кваліфікацію",
+   "score": null,
+   "url": "https://dou.ua/lenta/news/n-ix-space-x-ai-new-roles/"
+  },
+  {
+   "date": "2026-11-22",
+   "source": "dou",
+   "title": "SkyFall і Sine Engineering проведуть інженерний хакатон для молоді у Львові. Там буде ярмарок вакансій",
+   "score": null,
+   "url": "https://dou.ua/lenta/news/skyfall-sine-hackathon-in-lviv/"
+  },
+  {
+   "date": "2026-11-22",
+   "source": "dou",
+   "title": "Компанія Федорова співпрацюватиме з польською JRH ASI. Працюватимуть над ШІ, сенсорами та БПЛА",
+   "score": null,
+   "url": "https://dou.ua/lenta/news/fedorovs-company-with-polish-jrh-asi/"
+  },
+  {
+   "date": "2026-11-22",
+   "source": "dou",
+   "title": "Уряд хоче оновити процедуру бронювання і залучити до $4 млрд на компенсації для бізнесу",
+   "score": null,
+   "url": "https://dou.ua/lenta/news/reserving-insurance-shelters/"
+  },
+  {
+   "date": "2026-11-22",
+   "source": "dou",
+   "title": "Anthropic виходить на Nasdaq. Що це означає для українського ІТ та як придбати акції (UPD)",
+   "score": null,
+   "url": "https://dou.ua/lenta/news/anthropic-nasdaq-what-it-means/"
+  }
+ ],
+ "competitors": [
+  {
+   "channel": "Google Gemini",
+   "subs": 46500,
+   "lang": "en",
+   "avg": 6052383
+  },
+  {
+   "channel": "Mark Tilbury",
+   "subs": 9450000,
+   "lang": "en",
+   "avg": 4411596
+  },
+  {
+   "channel": "Google Korea",
+   "subs": 111000,
+   "lang": "en",
+   "avg": 2382233
+  },
+  {
+   "channel": "Google Antigravity",
+   "subs": 180000,
+   "lang": "en",
+   "avg": 2368610
+  },
+  {
+   "channel": "TechAkshay 2.0",
+   "subs": 334000,
+   "lang": "en",
+   "avg": 2346541
+  },
+  {
+   "channel": "ExpHub - Prashant Kirad",
+   "subs": 12500000,
+   "lang": "en",
+   "avg": 1934644
+  },
+  {
+   "channel": "Jaden Williams",
+   "subs": 3400000,
+   "lang": "en",
+   "avg": 1728969
+  },
+  {
+   "channel": "Paul J Lipsky",
+   "subs": 535000,
+   "lang": "en",
+   "avg": 1522183
+  },
+  {
+   "channel": "Google DeepMind",
+   "subs": 944000,
+   "lang": "en",
+   "avg": 1304564
+  },
+  {
+   "channel": "Shark Numbers",
+   "subs": 2010000,
+   "lang": "en",
+   "avg": 1298842
+  }
+ ],
+ "agents": [
+  {
+   "id": "editor",
+   "name": "Головний редактор",
+   "dept": "board",
+   "emoji": "E",
+   "role": "Оркестратор: план дня, рішення по темах, контроль, звіт власнику",
+   "schedule": "щодня, постійно",
+   "kpi": "усі слоти виконані"
+  },
+  {
+   "id": "radar",
+   "name": "Ресерчер новин",
+   "dept": "research",
+   "emoji": "R",
+   "role": "Першоджерела (OpenAI, Google, Anthropic, DeepMind), HN, DOU — радар щоранку",
+   "schedule": "щодня 08:43",
+   "kpi": "≥5 тем з першоджерел"
+  },
+  {
+   "id": "search",
+   "name": "Ресерчер пошуку",
+   "dept": "research",
+   "emoji": "S",
+   "role": "Що шукають: підказки YouTube (kw.py), Search Console сайту",
+   "schedule": "у радарі + SEO",
+   "kpi": "попит для кожної ідеї"
+  },
+  {
+   "id": "niche",
+   "name": "Ресерчер ніші",
+   "dept": "research",
+   "emoji": "N",
+   "role": "Аномалії й конкуренти: outliers, 500 ШІ-каналів, що вистрілює",
+   "schedule": "щодня + пн аналіз",
+   "kpi": "500 конкурентів у базі"
+  },
+  {
+   "id": "collector",
+   "name": "Агент-збирач",
+   "dept": "data",
+   "emoji": "D",
+   "role": "Наповнює даталейк: новини, YouTube, сайт, ніша, конкуренти; знімок бази",
+   "schedule": "кожні 4 год",
+   "kpi": "база росте щодня"
+  },
+  {
+   "id": "analyst",
+   "name": "Аналітик",
+   "dept": "data",
+   "emoji": "A",
+   "role": "Медіани форматів, % перегляду, тижневий цикл росту",
+   "schedule": "щоранку + нд",
+   "kpi": "сер. % перегляду ≥60"
+  },
+  {
+   "id": "shorts",
+   "name": "Сценарист Shorts",
+   "dept": "production",
+   "emoji": "W",
+   "role": "Тір-листи й професії під пошукові запити",
+   "schedule": "щодня до 17Z",
+   "kpi": "1 Short/день"
+  },
+  {
+   "id": "longs",
+   "name": "Сценарист довгих",
+   "dept": "production",
+   "emoji": "L",
+   "role": "Шоу «ШІ за тиждень» (нд 14:00), гайд (ср 19:00)",
+   "schedule": "сб + пн",
+   "kpi": "2 довгих/тиждень"
+  },
+  {
+   "id": "studio",
+   "name": "Продакшн",
+   "dept": "production",
+   "emoji": "P",
+   "role": "Озвучка Байта, рендер, обкладинки, заливка, finalize",
+   "schedule": "за чергою",
+   "kpi": "0 FAIL"
+  },
+  {
+   "id": "factcheck",
+   "name": "Фактчекер",
+   "dept": "qa",
+   "emoji": "F",
+   "role": "Кожне твердження ↔ першоджерело; не пройшло — назад автору",
+   "schedule": "перед озвучкою",
+   "kpi": "0 неперевірених фактів"
+  },
+  {
+   "id": "qa",
+   "name": "QA відео",
+   "dept": "qa",
+   "emoji": "Q",
+   "role": "Кадри, голос (F0), субтитри, обкладинка, finalize PASS",
+   "schedule": "після рендеру",
+   "kpi": "PASS на кожному"
+  },
+  {
+   "id": "seo",
+   "name": "SEO-відділ",
+   "dept": "seo",
+   "emoji": "K",
+   "role": "Ключові слова, назви й теги, 1 сторінка сайту на день",
+   "schedule": "щодня 12:13",
+   "kpi": "кліки з Google ↑"
+  },
+  {
+   "id": "tg",
+   "name": "Telegram-відділ",
+   "dept": "tg",
+   "emoji": "T",
+   "role": "Ріст каналу: промпт дня, воронки, експеримент тижня, модерація",
+   "schedule": "щодня 08:41",
+   "kpi": "6 → 150 учасників"
+  },
+  {
+   "id": "tiktok",
+   "name": "Дистрибуція",
+   "dept": "dist",
+   "emoji": "V",
+   "role": "TikTok через vidIQ, згодом Instagram",
+   "schedule": "разом з YouTube",
+   "kpi": "кожен Short у TikTok"
+  },
+  {
+   "id": "bot",
+   "name": "Черговий бота",
+   "dept": "board",
+   "emoji": "B",
+   "role": "Повідомлення власника, щогодинна перевірка",
+   "schedule": "кожну годину + вотчер",
+   "kpi": "відповідь < 1 год"
+  }
+ ],
+ "depts": [
+  {
+   "id": "board",
+   "name": "Редколегія",
+   "color": "#FFD60A"
+  },
+  {
+   "id": "research",
+   "name": "Дослідження",
+   "color": "#4CF2FF"
+  },
+  {
+   "id": "data",
+   "name": "Даталейк",
+   "color": "#7C5CFF"
+  },
+  {
+   "id": "production",
+   "name": "Виробництво",
+   "color": "#FF4F8B"
+  },
+  {
+   "id": "qa",
+   "name": "Контроль якості",
+   "color": "#7DF29B"
+  },
+  {
+   "id": "seo",
+   "name": "SEO",
+   "color": "#FFA94D"
+  },
+  {
+   "id": "tg",
+   "name": "Telegram",
+   "color": "#5AB2FF"
+  },
+  {
+   "id": "dist",
+   "name": "Дистрибуція",
+   "color": "#C792FF"
+  }
+ ],
+ "schedule": [
+  {
+   "time": "щогодини :49",
+   "what": "Перевірка бота",
+   "agent": "bot"
+  },
+  {
+   "time": "кожні 4 год :52",
+   "what": "Агент-збирач даталейку",
+   "agent": "collector"
+  },
+  {
+   "time": "08:41",
+   "what": "Telegram-відділ: промпт дня",
+   "agent": "tg"
+  },
+  {
+   "time": "08:43",
+   "what": "Радар і редколегія",
+   "agent": "radar"
+  },
+  {
+   "time": "10:37 пн",
+   "what": "Конкуренти: тижневий аналіз",
+   "agent": "niche"
+  },
+  {
+   "time": "11:23 сб/пн",
+   "what": "Довгі: шоу (сб) і гайд (пн)",
+   "agent": "longs"
+  },
+  {
+   "time": "12:13",
+   "what": "SEO-відділ",
+   "agent": "seo"
+  },
+  {
+   "time": "14:00 нд",
+   "what": "Шоу «ШІ за тиждень»",
+   "agent": "longs"
+  },
+  {
+   "time": "19:00",
+   "what": "Short дня + TikTok + стаття + TG",
+   "agent": "studio"
+  },
+  {
+   "time": "11:13 нд",
+   "what": "Цикл росту і звіт власнику",
+   "agent": "analyst"
+  }
+ ],
+ "asks": [
+  {
+   "what": "Дозвіл vidIQ у .claude/settings.json (TikTok без підтверджень)",
+   "status": "чекає власника"
+  },
+  {
+   "what": "Підключити Instagram (бізнес/автор-акаунт) через vidIQ",
+   "status": "чекає власника"
+  },
+  {
+   "what": "Скріни переглядів TikTok за тиждень",
+   "status": "чекає власника"
+  }
+ ]
+}
