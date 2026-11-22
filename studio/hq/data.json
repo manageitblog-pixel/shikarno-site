@@ -1,11 +1,11 @@
 {
- "generated": "2026-11-22T16:53:32Z",
+ "generated": "2026-11-22T16:55:25Z",
  "kpi": {
   "subs": 311,
   "subs_goal": 1000,
   "long_hours": 10.1,
   "long_hours_goal": 4000,
-  "views_total": 11890,
+  "views_total": 11913,
   "views_7d": 890,
   "pct_7d": 46.0,
   "subs_7d": 2,
@@ -935,7 +935,7 @@
  "lake": {
   "videos": 93,
   "daily": 746,
-  "news": 1610,
+  "news": 1607,
   "niche": 604,
   "comp": 504,
   "comp_videos": 62243,
@@ -949,7 +949,7 @@
    "date": "2026-11-22",
    "source": "hn",
    "title": "Show HN: I built a game where you are an LLM's subagent",
-   "score": 105,
+   "score": 108,
    "url": "https://github.com/gulivan/worker755"
   },
   {
@@ -991,14 +991,14 @@
    "date": "2026-11-22",
    "source": "hn",
    "title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
-   "score": 468,
+   "score": 470,
    "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/"
   },
   {
    "date": "2026-11-22",
    "source": "hn",
    "title": "The Mythology of Conscious AI",
-   "score": 125,
+   "score": 126,
    "url": "https://www.noemamag.com/the-mythology-of-conscious-ai/"
   },
   {
@@ -1330,8 +1330,8 @@
    "agent": "de",
    "task": "lake.py news: дата публікації для новин Anthropic",
    "started": "2026-11-22T16:53:30Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-22T16:55:24Z",
+   "result": "anthropic: дати зі сторінок статей, 20 бекфіл; 3 сторінки-категорії видалено; utcnow замінено"
   }
  ],
  "agents": [

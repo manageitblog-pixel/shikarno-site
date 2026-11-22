@@ -413,8 +413,8 @@
    "agent": "de",
    "task": "lake.py news: дата публікації для новин Anthropic",
    "started": "2026-11-22T16:53:30Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-22T16:55:24Z",
+   "result": "anthropic: дати зі сторінок статей, 20 бекфіл; 3 сторінки-категорії видалено; utcnow замінено"
   }
  ]
 }
