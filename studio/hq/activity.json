@@ -309,6 +309,14 @@
    "agent": "de",
    "task": "Автономія крок 1–2: studio/ops.py (журнал рішень, стан публікацій) + бекфіл",
    "started": "2026-11-22T14:29:29Z",
+   "finished": "2026-11-22T14:33:40Z",
+   "result": "ops.py: журнал рішень (append-only, хеш-ланцюжок), стан публікацій; 15/15 тестів; бекфіл 286"
+  },
+  {
+   "id": "40",
+   "agent": "de",
+   "task": "Автономія крок 3: policy.py + policy.json (shadow)",
+   "started": "2026-11-22T14:33:40Z",
    "finished": null,
    "result": ""
   }
