@@ -1,11 +1,11 @@
 {
- "generated": "2026-11-22T18:38:02Z",
+ "generated": "2026-11-22T18:39:38Z",
  "kpi": {
   "subs": 311,
   "subs_goal": 1000,
   "long_hours": 10.1,
   "long_hours_goal": 4000,
-  "views_total": 11913,
+  "views_total": 11890,
   "views_7d": 890,
   "pct_7d": 46.0,
   "subs_7d": 2,
@@ -813,6 +813,50 @@
    "score": 220.2
   },
   {
+   "title": "Чому ШІ каже, що ти геніальний — і одна фраза, щоб отримати чесну критику",
+   "format": "skills",
+   "channels": [
+    "short",
+    "site",
+    "tiktok"
+   ],
+   "demand": 3,
+   "fresh": 3,
+   "show": 5,
+   "fit": 5,
+   "length": 30,
+   "hook": "you",
+   "source": "https://www.youtube.com/watch?v=sgGGZbMGNyU",
+   "by": "researcher-niche",
+   "decision": "аномалії UA 6.1× (ШІ просто) і 12.6× XQSab0zX2ew «чому не можна просити ШІ перевірити себе»; наша версія — показ до/після на одному запиті",
+   "status": "new",
+   "added": "2026-11-22",
+   "id": "23",
+   "score": 220.0
+  },
+  {
+   "title": "Розширення чи скіл для ШІ просить доступ до всього: 3 перевірки перед встановленням",
+   "format": "sec",
+   "channels": [
+    "short",
+    "site",
+    "tg"
+   ],
+   "demand": 3,
+   "fresh": 4,
+   "show": 4,
+   "fit": 5,
+   "length": 32,
+   "hook": "you",
+   "source": "https://www.youtube.com/watch?v=iAIbVTdZyEs",
+   "by": "researcher-niche",
+   "decision": "аномалія UA 12.4× (Академія Yours); наша версія — чекліст дозволів, без залякування",
+   "status": "new",
+   "added": "2026-11-22",
+   "id": "22",
+   "score": 212.5
+  },
+  {
    "title": "Moonlock від MacPaw: український застосунок ловить шахрайські SMS і посилання на iPhone",
    "format": "sec",
    "channels": [
@@ -853,6 +897,27 @@
    "score": 180.0
   },
   {
+   "title": "Українською ШІ відповідає гірше? Тест ChatGPT, Claude і Gemini: одне питання двома мовами",
+   "format": "check",
+   "channels": [
+    "short",
+    "site",
+    "long"
+   ],
+   "demand": 4,
+   "fresh": 3,
+   "show": 5,
+   "fit": 5,
+   "length": 33,
+   "source": "https://www.youtube.com/watch?v=WM7_lXcALZA",
+   "by": "researcher-niche",
+   "decision": "аномалія UA 27.5× (Відчайдушний програміст, довге про переплату токенів); наша версія — якість відповідей для звичайного користувача, власний тест",
+   "status": "new",
+   "added": "2026-11-22",
+   "id": "24",
+   "score": 179.7
+  },
+  {
    "title": "Кліп-воронка з шоу #2 (Gemini пам’ятає чати 2 місяці) → пов’язане відео на шоу",
    "format": "clip",
    "channels": [
@@ -870,66 +935,6 @@
    "added": "2026-11-22",
    "id": "8",
    "score": 165.2
-  },
-  {
-   "title": "Уряд створює корпус українських текстів для ШІ — хто отримає доступ",
-   "format": "news",
-   "channels": [
-    "show",
-    "site",
-    "tg"
-   ],
-   "demand": 2,
-   "fresh": 5,
-   "show": 4,
-   "fit": 5,
-   "source": "https://www.kmu.gov.ua/npas/deiaki-pytannia-rozvytku-ukrainskykh-velykykh-movnykh-modelei-t111126",
-   "by": "researcher-news",
-   "note": "Постанова КМУ №1416 від 11.11.2026; Мінцифри створює за 3 міс; правила доступу — у Положенні (PDF), звірити перед сценарієм",
-   "status": "new",
-   "added": "2026-11-22",
-   "id": "18",
-   "decision": "кандидат у шоу #3",
-   "score": 146.8
-  },
-  {
-   "title": "Манікюр і ШІ: дизайн нігтів, відповіді в директ, ціна | ШІ для професій #11",
-   "format": "prof",
-   "channels": [
-    "short",
-    "site",
-    "insta"
-   ],
-   "demand": 3,
-   "fresh": 3,
-   "show": 4,
-   "fit": 4,
-   "by": "researcher-search",
-   "source": "kw.py 22.11: «манікюр» 137 фраз («манікюр для початківців» 63, «манікюр українською» 28); звужено з ідеї №6",
-   "length": 33,
-   "hook": "you",
-   "status": "approved",
-   "decision": "ep86 29.11",
-   "added": "2026-11-22",
-   "id": "21",
-   "score": 142.1
-  },
-  {
-   "title": "Claude безкоштовно — повний гайд (сайт)",
-   "format": "guide",
-   "channels": [
-    "site"
-   ],
-   "demand": 4,
-   "fresh": 3,
-   "show": 4,
-   "fit": 4,
-   "by": "researcher-search",
-   "source": "Search Console: claude-bezkoshtovno 354 покази, поз. 5,7",
-   "status": "new",
-   "added": "2026-11-22",
-   "id": "7",
-   "score": 115.2
   }
  ],
  "lake": {
@@ -1138,22 +1143,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "25",
-   "agent": "cm",
-   "task": "Коментарі YouTube і група TG без відповіді; пост дня",
-   "started": "2026-11-22T13:23:33Z",
-   "finished": "2026-11-22T13:24:48Z",
-   "result": "Коментарів глядачів і повідомлень у групі без відповіді нема; пост дня вже вийшов"
-  },
-  {
-   "id": "26",
-   "agent": "designer",
-   "task": "Ресерч дизайну: обкладинки й кадр 0 топ-роликів ніші → 1 гіпотеза",
-   "started": "2026-11-22T13:24:19Z",
-   "finished": "2026-11-22T13:27:43Z",
-   "result": "18 довгих + 10 Shorts ніші: живий суб'єкт 35–50% кадру, 3 слова; гіпотеза тижня + специфікація кадру 0"
-  },
   {
    "id": "27",
    "agent": "coo",
@@ -1375,6 +1364,22 @@
    "agent": "seo",
    "task": "Нова стаття під запит з попитом, якого сайт ще не покриває",
    "started": "2026-11-22T18:37:34Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "55",
+   "agent": "trend",
+   "task": "Веб-скан світу за 48 год: 30+ джерел (світові й українські) → топ подій → дошка ідей",
+   "started": "2026-11-22T18:38:59Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "56",
+   "agent": "de",
+   "task": "lake.py news: +25 RSS-джерел (світові ШІ-медіа, блоги компаній, українські tech-медіа)",
+   "started": "2026-11-22T18:39:37Z",
    "finished": null,
    "result": ""
   }
