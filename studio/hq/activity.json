@@ -503,6 +503,22 @@
    "started": "2026-11-22T18:55:52Z",
    "finished": "2026-11-22T18:58:34Z",
    "result": "Розділ «Платформи»: YouTube, TikTok, сайт, Telegram — головні цифри, історія, топ"
+  },
+  {
+   "id": "64",
+   "agent": "cm",
+   "task": "Сигнал у Telegram: 2 знахідки веб-скану (диктування ChatGPT без ліміту; вимкнути ШІ в Canva)",
+   "started": "2026-11-22T19:01:50Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "65",
+   "agent": "seo",
+   "task": "Сигнал на сайт: коротка новина «ChatGPT: диктуй хоч годину»",
+   "started": "2026-11-22T19:01:50Z",
+   "finished": null,
+   "result": ""
   }
  ]
 }
