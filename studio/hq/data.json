@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T19:04:54Z",
+ "generated": "2026-11-22T19:06:18Z",
  "kpi": {
   "subs": 311,
   "subs_goal": 1000,
@@ -1310,22 +1310,6 @@
  ],
  "activity": [
   {
-   "id": "36",
-   "agent": "factcheck",
-   "task": "Незалежний фактчек ep84 «ШІ для логопеда»",
-   "started": "2026-11-22T14:22:16Z",
-   "finished": "2026-11-22T14:23:58Z",
-   "result": "ep84: PASS (12 PASS, 0 FAIL; 1 UNVERIFIED лише в коментарі файлу)"
-  },
-  {
-   "id": "37",
-   "agent": "factcheck",
-   "task": "Незалежний фактчек ep83 Moonlock",
-   "started": "2026-11-22T14:23:23Z",
-   "finished": "2026-11-22T14:25:21Z",
-   "result": "ep83: PASS (18 PASS, 1 UNVERIFIED — назва папки в описі); помірний перетин з ep77"
-  },
-  {
    "id": "38",
    "agent": "seo",
    "task": "SEO: mono-keshbek-shi (157 показів, поз. 6.0)",
@@ -1548,6 +1532,22 @@
    "started": "2026-11-22T19:01:50Z",
    "finished": "2026-11-22T19:04:53Z",
    "result": "Сигнал-новина на сайті: /novyny/holosovyj-vvid-chatgpt-dyktuvannya/ (~445 слів)"
+  },
+  {
+   "id": "66",
+   "agent": "cso",
+   "task": "Плейбуки алгоритмів: YouTube (Shorts і довгі) + TikTok — офіційні джерела → правила для студії",
+   "started": "2026-11-22T19:05:28Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "67",
+   "agent": "seo",
+   "task": "Плейбуки: Google Search (SEO/Discover) + Telegram ріст — офіційні джерела → правила",
+   "started": "2026-11-22T19:05:28Z",
+   "finished": null,
+   "result": ""
   }
  ],
  "agents": [
