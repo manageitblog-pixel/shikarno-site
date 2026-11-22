@@ -112,12 +112,37 @@ def main():
         return [dict(channel=t, subs=s_, lang=l, avg=int(a), n=k) for t, s_, l, a, k in q("select c.title, c.subs, c.lang, avg(v.views), count(v.video_id) from comp c join comp_ai a using(channel_id) join comp_videos v on v.channel_id=c.channel_id where a.ai_share>=0.3 and c.lang=? and v.published>=? and c.title not like 'ШІкарно%' and c.title not like 'Google%' and c.title not like 'OpenAI%' and c.title not like 'Anthropic%' group by c.channel_id order by avg(v.views) desc limit ?", lang, (today - datetime.timedelta(days=90)).isoformat(), n)]
     comp_top = comp('uk', 10) + comp('en', 5)
     tt = json.load(open(os.path.join(ROOT, "studio", "eps", "tiktok.json"))).get("posted_auto", {})
+    # платформи (власник 22.11: «аналітика по TikTok, сайту і Telegram, а не тільки YouTube») — лише фактичні дані, без екстраполяцій
+    yt_p = dict(subs=subs, views_7d=last7[0], long_hours=long_hours, history=[dict(x=h["w"], v=h["views"], p=h["partial"]) for h in hist if h["w"] >= "2026-10-01"],
+                best=[dict(title=v["title"], views=v["views7"], id=v["id"]) for v in sorted(vids, key=lambda v: -(v["views7"] or 0))[:3]])
+    tk = None
+    try:
+        tl = q("select max(date) from tiktok_snap")[0][0]
+    except sqlite3.OperationalError:
+        tl = None
+    if tl:
+        tv = q("select video_id, posted, title, views, likes, saves, shares from tiktok_snap where date=? order by views desc", tl)
+        c7 = (datetime.date.fromisoformat(tl) - datetime.timedelta(days=6)).isoformat()
+        tk = dict(videos=len(tv), views_total=sum(r[3] or 0 for r in tv), views_7d=sum(r[3] or 0 for r in tv if (r[1] or "") >= c7), new_7d=sum(1 for r in tv if (r[1] or "") >= c7),
+                  saves_total=sum(r[5] or 0 for r in tv), likes_total=sum(r[4] or 0 for r in tv), last_snapshot=tl,
+                  best=[dict(title=r[2], views=r[3], saves=r[5], id=r[0], posted=r[1]) for r in tv[:3]],
+                  history=[dict(x=d, v=v) for d, v in q("select date, sum(views) from tiktok_snap group by date order by date")])
+    weeks = [w for (w,) in q("select distinct week from site_queries_weekly order by week desc limit 4")]
+    tq = q(f"select query, sum(clicks), sum(impressions), sum(position*impressions)/max(sum(impressions),1) from site_queries_weekly where week in ({','.join('?'*len(weeks))}) group by query order by sum(clicks) desc, sum(impressions) desc limit 5", *weeks) if weeks else []
+    s28 = site[-28:]; ic = sum(r[2] or 0 for r in s28); cc = sum(r[1] or 0 for r in s28)
+    site_p = dict(impr_28d=ic, clicks_28d=cc, ctr=round(cc / ic * 100, 2) if ic else None, avg_pos=round(sum((r[3] or 0) * (r[2] or 0) for r in s28) / ic, 1) if ic else None,
+                  last_day=site[-1][0] if site else None, weeks=(weeks[-1] + "…" + weeks[0]) if weeks else None,
+                  top_queries=[dict(q=a, clicks=b, impr=i_, pos=round(p_, 1)) for a, b, i_, p_ in tq],
+                  history=[dict(x=h["w"], v=h["impr"], p=h["partial"]) for h in hist if h["w"] >= "2026-10-01"])
+    tg_p = dict(members=tg_members if tg_members is not None else (tg_hist[-1]["n"] if tg_hist else None), tg_goal=150, posts_7d=None,
+                history=[dict(x=t["d"], v=t["n"]) for t in tg_hist], since=tg_hist[0]["d"] if tg_hist else None)
+    platforms = dict(youtube=yt_p, tiktok=tk, site=site_p, telegram=tg_p)
     data = dict(
         generated=datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         kpi=dict(subs=subs, subs_goal=1000, long_hours=long_hours, long_hours_goal=4000, views_total=views_total, views_7d=last7[0], pct_7d=round(last7[1] or 0, 1), subs_7d=last7[2],
                  tg=tg_members, tg_goal=150, site_clicks_28d=sum(r[1] for r in site[-28:]), site_impr_28d=sum(r[2] for r in site[-28:]), tiktok_auto=len(tt)),
         days=[dict(d=d, v=v, p=round(p or 0, 1)) for d, v, p in days], site=[dict(d=d, c=cl, i=im, pos=round(po, 1)) for d, cl, im, po in site],
-        history=hist, tg_hist=tg_hist, formats=formats, videos=vids, ideas=ideas[:12], lake=lake, news=news, competitors=comp_top,
+        history=hist, tg_hist=tg_hist, platforms=platforms, formats=formats, videos=vids, ideas=ideas[:12], lake=lake, news=news, competitors=comp_top,
         activity=(json.load(open(os.path.join(ROOT, "studio", "hq", "activity.json"))) if os.path.exists(os.path.join(ROOT, "studio", "hq", "activity.json")) else {"items": []})["items"][-30:],
         agents=AGENTS, depts=DEPTS, schedule=[dict(time=a, what=b, agent=c_) for a, b, c_ in SCHEDULE],
         asks=[dict(what="Дозвіл vidIQ у .claude/settings.json (TikTok без підтверджень)", status="чекає власника"),

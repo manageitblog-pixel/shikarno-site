@@ -62,6 +62,19 @@ td.num{text-align:right;font-family:var(--mono)}
 .lake div{background:#ffffff08;border-radius:10px;padding:10px}.lake b{display:block;font-family:var(--display);font-size:20px;font-variant-numeric:tabular-nums}.lake span{font-size:12px;color:var(--mut)}
 .asks li{margin:4px 0}
 a{color:var(--cyan)}
+.plat{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.pc{background:var(--panel);border:1px solid var(--line);border-top:3px solid var(--pcol,var(--violet));border-radius:14px;padding:14px;display:grid;gap:10px;align-content:start;min-width:0;position:relative}
+.pc h3{margin:0;font-family:var(--display);font-weight:800;font-size:15px;display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.pc h3 small{font-family:var(--body);font-weight:500;font-size:11px;color:var(--mut)}
+.pc .big{font-family:var(--display);font-weight:900;font-size:30px;line-height:1;font-variant-numeric:tabular-nums}
+.pc .big small{font-family:var(--body);font-size:12px;font-weight:500;color:var(--mut)}
+.pc .sec{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.pc .sec div{background:#ffffff08;border-radius:8px;padding:6px 8px;min-width:0}
+.pc .sec b{display:block;font-family:var(--mono);font-size:14px;font-variant-numeric:tabular-nums}.pc .sec span{font-size:11px;color:var(--mut);line-height:1.25;display:block}
+.pc svg{width:100%;height:90px;display:block;overflow:visible}.pc .ax{font-size:10px;fill:#A9A3D6}
+.pc .wait{font-size:12px;color:var(--mut);margin:0;padding:10px;border:1px dashed var(--line);border-radius:8px}
+.pc .best{display:grid;gap:4px;font-size:13px}.pc .best .lab{font-size:11px;color:var(--mut);text-transform:uppercase;letter-spacing:.08em}
+.pc .best div.r{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px}.pc .best div.r span:first-child{overflow-wrap:anywhere}.pc .best div.r span:last-child{font-family:var(--mono);color:var(--mut)}
 .hist{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
 .hc{background:var(--card,#ffffff08);border:1px solid #ffffff14;border-radius:14px;padding:12px 14px;position:relative}
 .hc h3{margin:0;font-size:13px;font-weight:600;color:var(--mut)}.hc .big{font-family:var(--display);font-size:24px;font-variant-numeric:tabular-nums;margin:2px 0 4px}
@@ -82,6 +95,11 @@ a{color:var(--cyan)}
   <section aria-labelledby="h-kpi">
     <h2 id="h-kpi">Цілі каналу <span>відповідає CSO (Директор зі стратегії) · де ми зараз · must-have 1000 підписників і 400–500 год, star — 1000 і 4000 год до 31.01.2027</span></h2>
     <div class="kpis" id="kpis"></div>
+  </section>
+
+  <section aria-labelledby="h-plat">
+    <h2 id="h-plat">Платформи <span>YouTube, TikTok, сайт і Telegram разом · головна цифра, історія і що зараз працює найкраще</span></h2>
+    <div class="plat" id="plat"></div>
   </section>
 
   <section aria-labelledby="h-hist">
@@ -196,6 +214,7 @@ function render(D){
   $("#formats").innerHTML=D.formats.map(f=>{const [k,v]=f.name.split(" · ");return `<div class="fbar"><span>${esc(k)} · ${esc(nm[v]||v)} <span style="color:var(--mut)">(${f.n})</span></span><span class="track"><i style="width:${(f.views/mx*100).toFixed(1)}%;background:${f.pct>=60?"var(--good)":f.pct>=45?"var(--warn)":"var(--pink)"}"></i></span><span class="v">${fmt(Math.round(f.views))}</span></div>`}).join("")+`<div style="font-size:12px;color:var(--mut)">колір — % перегляду: зелений ≥60%, жовтий ≥45%, рожевий нижче</div>`;
 
   history(D);
+  platforms(D);
 
   $("#videos").innerHTML="<tr><th>Дата</th><th>Відео</th><th>Формат</th><th>7 днів</th><th>% перегл.</th><th>Всього</th></tr>"+D.videos.map(v=>`<tr><td style="font-family:var(--mono)">${v.published.slice(5)}</td><td><a href="https://youtu.be/${esc(v.id)}" target="_blank" rel="noopener">${esc(v.title)}</a></td><td>${esc(nm[v.format]||v.format)}${v.short?"":" · довгий"}</td><td class="num">${fmt(v.views7)}</td><td class="num">${v.pct?v.pct+"%":"—"}</td><td class="num">${fmt(v.total)}</td></tr>`).join("");
   $("#news").innerHTML="<tr><th>Дата</th><th>Джерело</th><th>Новина</th></tr>"+D.news.map(n=>`<tr><td style="font-family:var(--mono)">${esc((n.date||"").slice(5))}</td><td>${esc(n.source)}${n.score?` <span style="color:var(--mut)">${n.score}</span>`:""}</td><td><a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a></td></tr>`).join("");
@@ -225,6 +244,37 @@ function history(D){
   box.insertAdjacentHTML("beforeend",`<div class="hc"><h3>Telegram: учасники каналу</h3><div class="big">${fmt(tgp.length?tgp[tgp.length-1].n:D.kpi.tg)} <small>/ ${fmt(D.kpi.tg_goal)}</small></div><svg role="img" aria-label="Telegram по днях"></svg><div class="tip"></div></div>`);
   const tb=box.lastElementChild; if(tgp.length>1) hline(tb,tgp.map(t=>({x:t.w.slice(8,10)+"."+t.w.slice(5,7),v:t.n})),{c:"#4CF2FF",f:fmt}); else tb.querySelector("svg").outerHTML=`<p style="font-size:12px;color:var(--mut);margin:6px 0 0">Історію пишемо щодня з 22.11 — лінія з'явиться з другого дня.</p>`;
   $("#histtab").innerHTML="<tr><th>Тиждень</th><th>Перегляди</th><th>з них Shorts</th><th>Підписки нетто</th><th>Год довгих</th><th>Покази сайту</th><th>Кліки</th></tr>"+Hs.map(h=>`<tr><td style="font-family:var(--mono)">${wl(h.w)}${h.partial?" *":""}</td><td class="num">${fmt(h.views)}</td><td class="num">${fmt(h.short_views)}</td><td class="num">${fmt(h.subs)}</td><td class="num">${fmt(h.long_h)}</td><td class="num">${fmt(h.impr)}</td><td class="num">${fmt(h.clicks)}</td></tr>`).join("")+`<tr><td colspan="7" style="color:var(--mut)">* тиждень неповний</td></tr>`;
+}
+function platforms(D){
+  const P=D.platforms||{},box=$("#plat"),dm=x=>x.slice(8,10)+"."+x.slice(5,7),cut=(t,n)=>{t=String(t||"");return t.length>n?t.slice(0,n-1)+"…":t};
+  const sec=a=>`<div class="sec">${a.map(([v,l])=>`<div><b>${v}</b><span>${l}</span></div>`).join("")}</div>`;
+  const best=(lab,rows)=>`<div class="best"><div class="lab">${lab}</div>${rows.length?rows.map(([t,v])=>`<div class="r"><span>${esc(t)}</span><span>${v}</span></div>`).join(""):'<div style="color:var(--mut)">даних ще немає</div>'}</div>`;
+  const Y=P.youtube||{},T=P.tiktok,S=P.site||{},G=P.telegram||{};
+  const C=[
+    {n:"YouTube",col:"#FF4F8B",sub:"тиждень з пн",big:fmt(Y.subs),bl:"підписників / 1000",
+     sec:[[fmt(Y.views_7d),"переглядів ~7 днів"],[fmt(Y.long_hours),"год довгих (12 міс)"],[Math.round((Y.subs||0)/10)+"%","до 1000 підп."]],
+     h:(Y.history||[]).map(h=>({x:dm(h.x),v:h.v,p:h.p})),hl:"перегляди за тиждень",
+     best:best("Найкраще — перші 7 днів",(Y.best||[]).map(b=>[cut(b.title,60),fmt(b.views)]))},
+    {n:"TikTok",col:"#4CF2FF",sub:T?"знімок "+dm(T.last_snapshot):"",big:T?fmt(T.views_total):"—",bl:T?"переглядів у "+T.videos+" роликах":"знімків ще немає",
+     sec:T?[[fmt(T.views_7d),"переглядів роликів за 7 днів ("+T.new_7d+")"],[fmt(T.saves_total),"збережень"],[fmt(T.likes_total),"лайків"]]:[],
+     h:T?(T.history||[]).map(h=>({x:dm(h.x),v:h.v})):[],hl:"сума переглядів по знімках",
+     best:best("Найкраще — перегляди · збереження",T?(T.best||[]).map(b=>[cut(b.title,60),fmt(b.views)+" · "+fmt(b.saves)]):[])},
+    {n:"Сайт",col:"#9B87FF",sub:S.last_day?"Search Console до "+dm(S.last_day):"",big:fmt(S.impr_28d),bl:"показів у Google за 28 днів",
+     sec:[[fmt(S.clicks_28d),"кліків"],[S.ctr!=null?String(S.ctr).replace(".",",")+"%":"—","CTR"],[S.avg_pos!=null?String(S.avg_pos).replace(".",","):"—","сер. позиція"]],
+     h:(S.history||[]).map(h=>({x:dm(h.x),v:h.v,p:h.p})),hl:"покази за тиждень",
+     best:best("Топ запитів — кліки · покази (4 тижні)",(S.top_queries||[]).map(q=>[cut(q.q,60),fmt(q.clicks)+" · "+fmt(q.impr)]))},
+    {n:"Telegram",col:"#FFD60A",sub:"@shikarno_ai_ua",big:fmt(G.members),bl:"учасників / "+fmt(G.tg_goal),
+     sec:[[Math.round((G.members||0)/(G.tg_goal||150)*100)+"%","до цілі 150"],[fmt(Math.max(0,(G.tg_goal||150)-(G.members||0))),"ще треба"],[G.posts_7d==null?"—":fmt(G.posts_7d),"постів за 7 днів"+(G.posts_7d==null?" (не збираємо)":"")]],
+     h:(G.history||[]).map(h=>({x:dm(h.x),v:h.v})),hl:"учасники по днях",
+     best:'<div class="best"><div class="lab">Що працює</div><div style="color:var(--mut)">Аналітики постів ще немає — рахуємо лише учасників.</div></div>'},
+  ];
+  box.innerHTML="";
+  C.forEach(c=>{
+    box.insertAdjacentHTML("beforeend",`<div class="pc" style="--pcol:${c.col}"><h3>${c.n} <small>${esc(c.sub)}</small></h3><div class="big">${c.big} <small>${esc(c.bl)}</small></div>${c.sec.length?sec(c.sec):""}<div><div style="font-size:11px;color:var(--mut);margin-bottom:2px">${esc(c.hl)}</div><svg role="img" aria-label="${esc(c.n+": "+c.hl)}"></svg></div><div class="tip"></div>${c.best}</div>`);
+    const card=box.lastElementChild;
+    if(c.h.length>1) hline(card,c.h,{c:c.col,f:fmt});
+    else card.querySelector("svg").outerHTML=`<p class="wait">Історія збирається з 22.11${c.h.length?" — поки 1 точка ("+fmt(c.h[0].v)+")":""}; лінія з'явиться з другого знімка.</p>`;
+  });
 }
 function hline(card,pts,c){
   const svg=card.querySelector("svg"),tip=card.querySelector(".tip"); if(!pts.length){return}
