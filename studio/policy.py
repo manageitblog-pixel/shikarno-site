@@ -488,7 +488,7 @@ def collect(action, policy=None, now=None):
     # ---- duplicate / similarity
     if spec.get("similarity") and sf.get("exists"):
         mine_t = title_words(sf.get("title"))
-        mine_s = " ".join(sf.get("texts") or [])
+        mine_s = WORD_RE.findall(" ".join(sf.get("texts") or []).lower())   # порівнюємо послідовності слів
         window = int(policy.get("duplicate", {}).get("window_items", 40))
         keys = [k for k in uploaded if _key(k) != _key(slug)][-window:]
         bt, bs = (0.0, None, None), (0.0, None)
@@ -499,8 +499,11 @@ def collect(action, policy=None, now=None):
             exact = bool(title) and title.strip() == (sf.get("title") or "").strip()
             if j > bt[0] or exact: bt = (1.0 if exact else j, k, exact)
             if mine_s and ok.get("texts"):
-                s = difflib.SequenceMatcher(None, mine_s, " ".join(ok["texts"]), autojunk=False).ratio()
-                if s > bs[0]: bs = (s, k)
+                sm = difflib.SequenceMatcher(None, mine_s, WORD_RE.findall(" ".join(ok["texts"]).lower()))
+                # real_quick_ratio/quick_ratio — верхні межі ratio за O(1)/O(n): швидко відсікаємо явно різні тексти
+                if sm.real_quick_ratio() > bs[0] and sm.quick_ratio() > bs[0]:
+                    s = sm.ratio()
+                    if s > bs[0]: bs = (s, k)
         f["similarity"] = {"title_max": _r(bt[0]), "title_with": bt[1], "title_exact": bool(bt[2]),
                            "script_max": _r(bs[0]), "script_with": bs[1], "compared": len(keys)}
     # ---- site
@@ -932,7 +935,7 @@ def decide(action, facts, policy):
             rules += r
         evidence["legacy"] = ctx["legacy"]
         evidence["sources"] = source_stats(facts, policy) if "sources" in policy else None
-        evidence["high_risk"] = high_risk_matches(facts.get("text_blob"), policy) if "high_risk" in policy else None
+        evidence["high_risk_matches"] = high_risk_matches(facts.get("text_blob"), policy) if "high_risk" in policy else None
     rules = _clean(rules)
     result = max([r["verdict"] for r in rules] or ["ALLOW"], key=STRENGTH.get)
     modes = sorted({r["mode"] for r in rules if r.get("mode") and r["verdict"] == "DEGRADE"})
@@ -959,6 +962,7 @@ def gate(action, *, agent_name="policy_engine", run_id=None, now=None, conn=None
     Помилка самого policy: shadow → proceed=True (лог), enforce → BLOCK (fail-closed для C/D)."""
     import ops
     a = dict(action)
+    facts, err = None, None
     try:
         policy, pv = load_policy()
         mode = policy.get("mode")

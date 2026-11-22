@@ -81,8 +81,8 @@ class FactPolicy(Base):
 
     def test_ep82_high_risk_degrade(self):
         d = self.ev("ep82")
-        self.assertIn("health", d["evidence"]["high_risk"])
-        self.assertEqual(d["evidence"]["high_risk"], d["evidence"]["high_risk"])
+        self.assertIn("health", d["evidence"]["high_risk_matches"])
+        self.assertEqual(d["evidence"]["high_risk"], "DEGRADE")
         self.assertEqual(self.rules(d, "high_risk")["high_risk.topic"]["verdict"], "DEGRADE")
 
     def test_ep82_guide3_last_line_pass(self):
