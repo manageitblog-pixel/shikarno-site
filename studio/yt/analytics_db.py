@@ -3,7 +3,8 @@
 
 studio/data/analytics.sqlite:
   videos(id, slug, title, published, duration_s, short, format, playlists)          — паспорт кожного ролика
-  daily(video_id, date, views, engaged, avg_pct, avg_dur, subs, shares, likes)     — щоденні цифри (YouTube Analytics)
+  daily(video_id, date, views, engaged, avg_pct, avg_dur, subs, shares, likes)     — щоденні цифри (YouTube Analytics);
+                                                                                     avg_pct/avg_dur NULL = API не дав утримання (малі дні)
   traffic(video_id, source, views, updated)                                         — джерела трафіку за весь час
   snap(video_id, date, views_public)                                                — публічний лічильник (свіжий, без затримки 2–3 дні)
   daily.watch_min, daily.subs_lost                                                  — хвилини перегляду й відписки (з 22.11)
@@ -53,6 +54,12 @@ def ya(**q):
 
 def clamp_pct(x):
     return None if x is None else max(0.0, min(100.0, float(x)))
+
+
+def no_retention(views, avg_pct, avg_dur, watch_min):
+    """YouTube не віддає утримання для днів з 1–3 переглядами: views>0, а avg_pct=avg_dur=watch_min=0.
+    Такий 0 — «немає даних», не «0% перегляду»: зберігаємо avg_pct/avg_dur як NULL (data-quality 22.11)."""
+    return (views or 0) > 0 and not avg_pct and not avg_dur and not watch_min
 
 
 def sync_channel(c, start="2026-10-01", end=None):
@@ -128,6 +135,7 @@ def sync(days=120):
             print("ERR daily", vid, e); continue
         for row in r.get("rows", []):
             row = list(row); row[3] = clamp_pct(row[3])  # бувало 600% — обрізаємо до 0..100
+            if no_retention(row[1], row[3], row[4], row[8]): row[3] = row[4] = None  # API не дав утримання ≠ 0%
             c.execute("insert or replace into daily(video_id,date,views,engaged,avg_pct,avg_dur,subs,shares,likes,watch_min,subs_lost) values(?,?,?,?,?,?,?,?,?,?,?)", (vid, *row))
         try:
             t = ya(startDate="2026-01-01", endDate=end, dimensions="insightTrafficSourceType", filters=f"video=={vid}", metrics="views")
@@ -155,7 +163,9 @@ def sync(days=120):
 def first7(c, vid):
     pub = c.execute("select published from videos where id=?", (vid,)).fetchone()[0][:10]
     end = (datetime.date.fromisoformat(pub) + datetime.timedelta(days=6)).isoformat()
-    r = c.execute("select sum(views), sum(views*avg_pct)/max(sum(views),1), sum(subs) from daily where video_id=? and date between ? and ?", (vid, pub, end)).fetchone()
+    # % перегляду зважений лише на дні, де API дав утримання (avg_pct NULL = немає даних, не 0%)
+    r = c.execute("select sum(views), sum(views*avg_pct)/nullif(sum(case when avg_pct is not null then views end),0), sum(subs) "
+                  "from daily where video_id=? and date between ? and ?", (vid, pub, end)).fetchone()
     return (r[0] or 0, r[1] or 0, r[2] or 0)
 
 

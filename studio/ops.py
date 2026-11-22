@@ -12,6 +12,8 @@ publications змінюються лише через transition() дозвол�
 CLI: python3 studio/ops.py verify | backfill | report [--date YYYY-MM-DD] | stats
      python3 studio/ops.py decide --type T --agent A --input @in.json [--output @out.json] [--content ID] ...
      python3 studio/ops.py run start TASK [--agent A] | run finish RUN_ID [--status ok|failed] [--error ...]
+     python3 studio/ops.py exp list | exp status ID | exp start ID --date YYYY-MM-DD --control a,b [--variant x]
+     python3 studio/ops.py exp add ID CONTENT_ID [--arm variant|control] | exp redesign ID --reason ... --set f=v
 БД можна підмінити змінною SHK_OPS_DB (тести).
 """
 import argparse, datetime as dt, hashlib, json, os, re, sqlite3, subprocess, sys, uuid
@@ -419,6 +421,111 @@ def backfill(conn=None, eps=None, posts=None, now_dt=None):
     return {"added": added, "seen": seen, "total_added": total}
 
 
+# ---------- experiments (§8) ----------
+EXP_DESIGN_FIELDS = ("hypothesis", "variant", "control", "threshold", "success_metric", "guardrail_metrics",
+                     "audience_format", "start_date", "end_date", "sample_size", "max_share", "kind")
+
+
+def _exp(c, experiment_id):
+    r = c.execute("select * from experiments where experiment_id=?", (experiment_id,)).fetchone()
+    if not r: raise KeyError(experiment_id)
+    return r
+
+
+def exp_redesign(experiment_id, reason, agent="data_engineer", conn=None, **fields):
+    """Правка дизайну, поки status='designed' (після running це блокує тригер exp_frozen). Пише decision з before/after."""
+    bad = set(fields) - set(EXP_DESIGN_FIELDS)
+    if bad: raise ValueError(f"поля {sorted(bad)} не є полями дизайну")
+    if not fields: raise ValueError("нічого змінювати")
+    c = conn or db()
+    with _tx(c):
+        e = _exp(c, experiment_id)
+        if e["status"] != "designed":
+            raise ValueError(f"{experiment_id}: status={e['status']}, дизайн змінюється лише в designed")
+        before = {k: e[k] for k in fields}
+        c.execute(f"update experiments set {', '.join(k + '=?' for k in fields)} where experiment_id=?",
+                  [*fields.values(), experiment_id])
+        return decide("experiment", agent, {"action": "redesign", "experiment_id": experiment_id, "before": before,
+                                            "reason": reason}, {"after": fields}, model="rule", confidence=1.0,
+                      status="executed", conn=c)
+
+
+def exp_start(experiment_id, start_date, control_ids, variant_ids=(), agent="data_engineer", conn=None):
+    """designed → running: фіксує experiment_items (control/variant), start_date, publications.experiment_id
+    для варіанта, рядок agent_decisions(experiment). Повторний старт — ValueError. Повертає decision_id."""
+    control_ids, variant_ids = list(dict.fromkeys(control_ids or [])), list(dict.fromkeys(variant_ids or []))
+    if not control_ids: raise ValueError("control_ids порожній: контроль фіксується до старту")
+    both = set(control_ids) & set(variant_ids)
+    if both: raise ValueError(f"ролики і в control, і у variant: {sorted(both)}")
+    dt.date.fromisoformat(start_date[:10])
+    c = conn or db()
+    with _tx(c):
+        e = _exp(c, experiment_id)
+        if e["status"] != "designed":
+            raise ValueError(f"{experiment_id}: вже {e['status']} — повторний старт заборонено")
+        if len(variant_ids) > e["sample_size"]:
+            raise ValueError(f"variant {len(variant_ids)} > sample_size {e['sample_size']}")
+        for arm, ids in (("control", control_ids), ("variant", variant_ids)):
+            c.executemany("insert into experiment_items(experiment_id, content_id, arm) values(?,?,?)",
+                          [(experiment_id, x, arm) for x in ids])
+        c.execute("update experiments set status='running', start_date=? where experiment_id=?",
+                  (start_date, experiment_id))
+        if variant_ids:
+            c.execute(f"update publications set experiment_id=? where content_id in ({','.join('?' * len(variant_ids))})",
+                      [experiment_id, *variant_ids])
+        return decide("experiment", agent, {"action": "start", "experiment_id": experiment_id,
+                                            "design": {k: e[k] for k in EXP_DESIGN_FIELDS}},
+                      {"status": "running", "start_date": start_date, "control": control_ids, "variant": variant_ids},
+                      model="rule", confidence=1.0, status="executed", conn=c)
+
+
+def exp_add(experiment_id, content_id, arm="variant", agent="data_engineer", conn=None):
+    """Додати ролик у running-експеримент (variant — після заливки). Дубль або перевищення sample_size — ValueError."""
+    if arm not in ("variant", "control"): raise ValueError(f"arm {arm!r}")
+    c = conn or db()
+    with _tx(c):
+        e = _exp(c, experiment_id)
+        if e["status"] != "running":
+            raise ValueError(f"{experiment_id}: status={e['status']}, додавати можна лише в running")
+        if c.execute("select 1 from experiment_items where experiment_id=? and content_id=?",
+                     (experiment_id, content_id)).fetchone():
+            raise ValueError(f"{content_id} уже в {experiment_id}")
+        if arm == "variant":
+            n = c.execute("select count(*) from experiment_items where experiment_id=? and arm='variant'",
+                          (experiment_id,)).fetchone()[0]
+            if n >= e["sample_size"]: raise ValueError(f"variant уже {n} = sample_size {e['sample_size']}")
+        c.execute("insert into experiment_items(experiment_id, content_id, arm) values(?,?,?)",
+                  (experiment_id, content_id, arm))
+        if arm == "variant":
+            c.execute("update publications set experiment_id=? where content_id=?", (experiment_id, content_id))
+        return decide("experiment", agent, {"action": "add", "experiment_id": experiment_id},
+                      {"content_id": content_id, "arm": arm}, model="rule", confidence=1.0, status="executed",
+                      related_content_id=content_id, conn=c)
+
+
+def exp_status(experiment_id, conn=None):
+    c = conn or db()
+    e = dict(_exp(c, experiment_id))
+    items = {"control": [], "variant": []}
+    for r in c.execute("select i.content_id, i.arm, p.state, p.external_id from experiment_items i left join "
+                       "publications p on p.content_id=i.content_id and p.platform='youtube' "
+                       "where i.experiment_id=? order by i.arm, i.content_id", (experiment_id,)):
+        items[r["arm"]].append({"content_id": r["content_id"], "youtube": r["external_id"], "state": r["state"]})
+    e["items"] = items
+    e["decisions"] = [dict(r) for r in c.execute(
+        "select seq, decision_id, agent_name, started_at, output from agent_decisions where decision_type='experiment' "
+        "and json_extract(input_snapshot,'$.experiment_id')=? order by seq", (experiment_id,))]
+    return e
+
+
+def exp_list(conn=None):
+    c = conn or db()
+    return [dict(r) for r in c.execute(
+        "select e.experiment_id, e.status, e.start_date, e.end_date, e.sample_size, "
+        "sum(i.arm='control') control, sum(i.arm='variant') variant from experiments e "
+        "left join experiment_items i using(experiment_id) group by e.experiment_id order by e.experiment_id")]
+
+
 # ---------- report / stats ----------
 def report(date=None, conn=None):
     c = conn or db()
@@ -477,7 +584,28 @@ def main(argv=None):
     ru = sp.add_parser("run"); ru.add_argument("action", choices=["start", "finish"]); ru.add_argument("ref")
     ru.add_argument("--agent"); ru.add_argument("--trigger"); ru.add_argument("--status", default="ok")
     ru.add_argument("--error")
+    ex = sp.add_parser("exp"); ex.add_argument("action", choices=["start", "add", "status", "list", "redesign"])
+    ex.add_argument("id", nargs="?"); ex.add_argument("content", nargs="?")
+    ex.add_argument("--date"); ex.add_argument("--control", default=""); ex.add_argument("--variant", default="")
+    ex.add_argument("--arm", default="variant"); ex.add_argument("--agent", default="data_engineer")
+    ex.add_argument("--reason"); ex.add_argument("--set", action="append", default=[], metavar="FIELD=VALUE")
     a = ap.parse_args(argv)
+    if a.cmd == "exp":
+        out = None
+        if a.action == "list": out = exp_list()
+        elif not a.id: ap.error("потрібен experiment_id")
+        elif a.action == "status": out = exp_status(a.id)
+        elif a.action == "start":
+            if not a.date: ap.error("exp start потребує --date YYYY-MM-DD")
+            split = lambda s: [x.strip() for x in s.split(",") if x.strip()]
+            out = {"decision_id": exp_start(a.id, a.date, split(a.control), split(a.variant), a.agent)}
+        elif a.action == "add":
+            if not a.content: ap.error("exp add ID CONTENT_ID [--arm variant|control]")
+            out = {"decision_id": exp_add(a.id, a.content, a.arm, a.agent)}
+        elif a.action == "redesign":
+            if not a.reason or not a.set: ap.error("exp redesign ID --reason ... --set field=value")
+            out = {"decision_id": exp_redesign(a.id, a.reason, a.agent, **dict(s.split("=", 1) for s in a.set))}
+        print(json.dumps(out, ensure_ascii=False, indent=1)); return 0
     if a.cmd == "verify":
         v = verify(); print(json.dumps(v, ensure_ascii=False, indent=1)); return 0 if v["ok"] else 1
     if a.cmd == "backfill":

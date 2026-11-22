@@ -189,5 +189,63 @@ class RunsExperiments(Base):
         self.c.execute("update experiments set status='decided', decision='promote' where experiment_id='e1'")
 
 
+class ExpLifecycle(Base):
+    def setUp(self):
+        super().setUp()
+        self.c.execute("insert into experiments(experiment_id,hypothesis,variant,control,sample_size,success_metric,"
+                       "threshold,status) values('e1','h','v','c',2,'m','t','designed')")
+        ops.pub_create("ep82", "youtube", "scheduled", conn=self.c)
+
+    def test_redesign_then_start_freezes(self):
+        ops.exp_redesign("e1", "метрики немає в API", conn=self.c, success_metric="views_48h", threshold="+20%")
+        did = ops.exp_start("e1", "2026-11-24", ["ep79", "ep80"], ["ep82"], conn=self.c)
+        e = ops.exp_status("e1", conn=self.c)
+        self.assertEqual((e["status"], e["start_date"], e["success_metric"]), ("running", "2026-11-24", "views_48h"))
+        self.assertEqual([i["content_id"] for i in e["items"]["control"]], ["ep79", "ep80"])
+        self.assertEqual(e["items"]["variant"][0]["state"], "scheduled")
+        self.assertEqual(self.c.execute("select experiment_id from publications where content_id='ep82'").fetchone()[0], "e1")
+        self.assertEqual(len(e["decisions"]), 2); self.assertEqual(e["decisions"][-1]["decision_id"], did)
+        with self.assertRaises(sqlite3.IntegrityError):
+            self.c.execute("update experiments set threshold='x' where experiment_id='e1'")
+        with self.assertRaises(ValueError):
+            ops.exp_redesign("e1", "late", conn=self.c, hypothesis="h2")
+        self.assertTrue(ops.verify(self.c)["ok"])
+
+    def test_add_items(self):
+        ops.exp_start("e1", "2026-11-24", ["ep79"], conn=self.c)
+        ops.exp_add("e1", "ep82", conn=self.c)
+        ops.exp_add("e1", "ep83", conn=self.c)
+        with self.assertRaises(ValueError):   # дубль
+            ops.exp_add("e1", "ep82", conn=self.c)
+        with self.assertRaises(ValueError):   # sample_size=2 вичерпано
+            ops.exp_add("e1", "ep84", conn=self.c)
+        ops.exp_add("e1", "ep78", "control", conn=self.c)
+        self.assertEqual(ops.exp_list(conn=self.c)[0]["variant"], 2)
+        self.assertEqual(ops.exp_list(conn=self.c)[0]["control"], 2)
+
+    def test_add_before_start_rejected(self):
+        with self.assertRaises(ValueError):
+            ops.exp_add("e1", "ep82", conn=self.c)
+
+    def test_restart_rejected(self):
+        ops.exp_start("e1", "2026-11-24", ["ep79"], conn=self.c)
+        with self.assertRaises(ValueError):
+            ops.exp_start("e1", "2026-11-25", ["ep80"], conn=self.c)
+        self.assertEqual(self.c.execute("select count(*) from experiment_items").fetchone()[0], 1)
+
+    def test_start_validation_is_atomic(self):
+        with self.assertRaises(ValueError):
+            ops.exp_start("e1", "2026-11-24", [], conn=self.c)
+        with self.assertRaises(ValueError):
+            ops.exp_start("e1", "2026-11-24", ["a"], ["a"], conn=self.c)
+        with self.assertRaises(sqlite3.IntegrityError):   # дубль у тій самій транзакції → відкат усього
+            self.c.execute("insert into experiment_items values('e1','x','control')")
+            ops.exp_start("e1", "2026-11-24", ["x"], conn=self.c)
+        self.assertEqual(ops.exp_status("e1", conn=self.c)["status"], "designed")
+        self.assertEqual(ops.stats(self.c)["agent_decisions"], 0)
+        with self.assertRaises(KeyError):
+            ops.exp_start("nope", "2026-11-24", ["a"], conn=self.c)
+
+
 if __name__ == "__main__":
     unittest.main()
