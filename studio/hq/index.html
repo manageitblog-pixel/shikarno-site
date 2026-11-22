@@ -151,7 +151,7 @@ function kyivNow(){return new Date(new Date().toLocaleString("en-US",{timeZone:"
 function tick(){const d=kyivNow();$("#clock").textContent="Київ "+d.toTimeString().slice(0,5)}
 tick();setInterval(tick,15000);
 
-fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(render).catch(()=>{$("#side").innerHTML="<p>Не вдалося завантажити дані. Онови сторінку.</p>"});
+fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(render).catch(e=>{console.error(e);$("#side").innerHTML="<p>Не вдалося показати дані: "+esc(e&&e.message)+". Онови сторінку.</p>"});
 
 function render(D){
   const gen=new Date(D.generated); $("#upd").textContent="дані: "+gen.toLocaleString("uk-UA",{timeZone:"Europe/Kyiv",day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"});
@@ -218,7 +218,7 @@ function office(D){
   function pick(a){
     const r=Math.random();
     if(a.busy&&r<.7){a.tx=a.desk.x;a.ty=a.desk.y+26;a.wait=200+Math.random()*200;return}
-    if(r<.12&&a.dept!=="board"){const B=rooms.board;a.tx=B.x+30+Math.random()*(B.w-60);a.ty=B.y+B.h*.62+Math.random()*20;a.wait=120+Math.random()*120;return}
+    if(r<.12&&a.dept!=="exec"){const B=rooms.exec||Object.values(rooms)[0];a.tx=B.x+30+Math.random()*(B.w-60);a.ty=B.y+B.h*.62+Math.random()*20;a.wait=120+Math.random()*120;return}
     a.tx=a.R.x+24+Math.random()*(a.R.w-48);a.ty=a.R.y+a.R.h*.55+Math.random()*(a.R.h*.32);a.wait=60+Math.random()*160;
   }
   function drawRoom(R){
@@ -233,8 +233,8 @@ function office(D){
       cx.fillStyle="#0b0a1c";cx.fillRect(x-11,y-16,22,15);const on=ag.find(g=>g.id===a.id);cx.fillStyle=on&&on.busy?R.color:"#3b3570";cx.fillRect(x-9,y-14,18,11);
       if(on&&on.busy&&!reduce){cx.fillStyle="#0b0a1c";const t=Date.now()/300;for(let l=0;l<3;l++)cx.fillRect(x-7,y-12+l*3,4+((t+l*3)%10),1)}
     });
-    if(R.id==="board"){cx.fillStyle="#2e2668";cx.beginPath();cx.ellipse(R.x+R.w/2,R.y+R.h*.74,R.w*.32,14,0,0,7);cx.fill()} // стіл редколегії
-    if(R.id==="data"){for(let i=0;i<3;i++){cx.fillStyle="#2a2366";cx.fillRect(R.x+R.w-30,R.y+32+i*22,18,18);cx.fillStyle=Math.random()<.5?"#7DF29B":"#4CF2FF";cx.fillRect(R.x+R.w-26,R.y+36+i*22,3,3)}} // сервери
+    if(R.id==="exec"){cx.fillStyle="#2e2668";cx.beginPath();cx.ellipse(R.x+R.w/2,R.y+R.h*.74,R.w*.32,14,0,0,7);cx.fill()} // стіл редколегії
+    if(R.id==="research"){for(let i=0;i<3;i++){cx.fillStyle="#2a2366";cx.fillRect(R.x+R.w-30,R.y+32+i*22,18,18);cx.fillStyle=Math.random()<.5?"#7DF29B":"#4CF2FF";cx.fillRect(R.x+R.w-26,R.y+36+i*22,3,3)}} // сервери
   }
   function drawAgent(a,t){
     const moving=Math.hypot(a.tx-a.x,a.ty-a.y)>1.5,step=moving?Math.floor(t/140+a.ph)%2:0,col=a.R.color,x=Math.round(a.x),y=Math.round(a.y);
