@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T21:49:23Z",
+ "generated": "2026-11-22T22:06:29Z",
  "kpi": {
   "subs": 311,
   "subs_goal": 1000,
@@ -1314,38 +1314,6 @@
  ],
  "activity": [
   {
-   "id": "47",
-   "agent": "factcheck",
-   "task": "Незалежний фактчек ep85 (подорожі)",
-   "started": "2026-11-22T15:22:10Z",
-   "finished": "2026-11-22T15:23:31Z",
-   "result": "ep85: PASS 11/11; 3 поради для опису"
-  },
-  {
-   "id": "48",
-   "agent": "shorts",
-   "task": "ep86 (нд 29.11 17Z): ШІ для професій — тема за попитом",
-   "started": "2026-11-22T15:23:47Z",
-   "finished": "2026-11-22T15:27:27Z",
-   "result": "ep86 «Манікюр і ШІ» (29.11): 478 знаків, самоперевірка 5/5"
-  },
-  {
-   "id": "49",
-   "agent": "seo",
-   "task": "SEO: chomu-ne-pratsyuie-chatgpt (79 показів, поз. 6.6)",
-   "started": "2026-11-22T15:23:47Z",
-   "finished": "2026-11-22T15:29:19Z",
-   "result": "chomu-ne-pratsyuie-chatgpt: ~1050 слів, таблиця симптом→рішення, 10 причин, 5 FAQ"
-  },
-  {
-   "id": "50",
-   "agent": "factcheck",
-   "task": "Незалежний фактчек ep86 (манікюр)",
-   "started": "2026-11-22T15:27:27Z",
-   "finished": "2026-11-22T15:29:08Z",
-   "result": "ep86: PASS 15/15"
-  },
-  {
    "id": "51",
    "agent": "de",
    "task": "Збирач даталейку 16:52Z: новини → дошка ідей",
@@ -1552,6 +1520,38 @@
    "started": "2026-11-22T20:52:52Z",
    "finished": "2026-11-22T20:54:35Z",
    "result": "TikTok 2-й знімок (OLX 304, дім 228), TG 6; ідея #33; квота YouTube 0, vidIQ 5"
+  },
+  {
+   "id": "77",
+   "agent": "seo",
+   "task": "Ріст до 1.12: CTR — нові title/description для 5 сторінок з найбільшими показами і низьким CTR",
+   "started": "2026-11-22T22:03:48Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "78",
+   "agent": "clip",
+   "task": "Ріст до 1.12: 3 нарізки з довгих (без озвучки) для Shorts/TikTok цього тижня",
+   "started": "2026-11-22T22:03:48Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "79",
+   "agent": "cm",
+   "task": "Ріст до 1.12: воронки в Telegram (опис YouTube, закріпи, сайт, TikTok-біо) + безкоштовний взаємопіар",
+   "started": "2026-11-22T22:03:48Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "80",
+   "agent": "dist",
+   "task": "Ріст до 1.12: TikTok — найкращі YouTube Shorts, яких ще нема в TikTok (+1/день, підпис-запит)",
+   "started": "2026-11-22T22:03:48Z",
+   "finished": null,
+   "result": ""
   }
  ],
  "agents": [

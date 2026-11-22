@@ -607,6 +607,38 @@
    "started": "2026-11-22T20:52:52Z",
    "finished": "2026-11-22T20:54:35Z",
    "result": "TikTok 2-й знімок (OLX 304, дім 228), TG 6; ідея #33; квота YouTube 0, vidIQ 5"
+  },
+  {
+   "id": "77",
+   "agent": "seo",
+   "task": "Ріст до 1.12: CTR — нові title/description для 5 сторінок з найбільшими показами і низьким CTR",
+   "started": "2026-11-22T22:03:48Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "78",
+   "agent": "clip",
+   "task": "Ріст до 1.12: 3 нарізки з довгих (без озвучки) для Shorts/TikTok цього тижня",
+   "started": "2026-11-22T22:03:48Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "79",
+   "agent": "cm",
+   "task": "Ріст до 1.12: воронки в Telegram (опис YouTube, закріпи, сайт, TikTok-біо) + безкоштовний взаємопіар",
+   "started": "2026-11-22T22:03:48Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "80",
+   "agent": "dist",
+   "task": "Ріст до 1.12: TikTok — найкращі YouTube Shorts, яких ще нема в TikTok (+1/день, підпис-запит)",
+   "started": "2026-11-22T22:03:48Z",
+   "finished": null,
+   "result": ""
   }
  ]
 }
