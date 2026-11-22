@@ -251,5 +251,85 @@
   "status": "new",
   "added": "2026-11-22",
   "id": "14"
+ },
+ {
+  "title": "Anthropic на Nasdaq (ANT): що IPO розробника Claude означає для тебе",
+  "format": "news",
+  "channels": [
+   "show",
+   "site",
+   "tg"
+  ],
+  "demand": 3,
+  "fresh": 5,
+  "show": 5,
+  "fit": 4,
+  "source": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+  "by": "researcher-news",
+  "note": "18.11 ціна $83, 980 млн акцій, торги з 19.11 (дані Anthropic); оновити пост 2026-10-23-anthropic-ipo; kw «акції anthropic» — прямого попиту нема",
+  "status": "new",
+  "added": "2026-11-22",
+  "id": "15",
+  "decision": "кандидат у шоу #3"
+ },
+ {
+  "title": "Claude розв’язав дві відкриті задачі фізики чорних дір — що це каже про ШІ-науку",
+  "format": "news",
+  "channels": [
+   "show",
+   "site",
+   "tg"
+  ],
+  "demand": 2,
+  "fresh": 5,
+  "show": 4,
+  "fit": 3,
+  "source": "https://www.anthropic.com/research/claude-black-hole-physics",
+  "by": "researcher-news",
+  "note": "17.11, заяви Anthropic: перевірено в Lean і фізиком; практичних застосувань нема — казати чесно",
+  "status": "new",
+  "added": "2026-11-22",
+  "id": "16",
+  "decision": "кандидат у шоу #3"
+ },
+ {
+  "title": "Moonlock від MacPaw: український застосунок ловить шахрайські SMS і посилання на iPhone",
+  "format": "sec",
+  "channels": [
+   "short",
+   "site",
+   "tg"
+  ],
+  "demand": 3,
+  "fresh": 5,
+  "show": 4,
+  "fit": 5,
+  "source": "https://apps.apple.com/ua/app/moonlock/id6799935865",
+  "by": "researcher-news",
+  "note": "App Store: безкоштовно + підписка $11.99/міс або $59.99/рік, 7 дн тріал, iOS 26+, мова лише англійська; kw «moonlock» 290 (змішаний)",
+  "status": "new",
+  "added": "2026-11-22",
+  "id": "17",
+  "decision": "кандидат у шоу #3"
+ },
+ {
+  "title": "Уряд створює корпус українських текстів для ШІ — хто отримає доступ",
+  "format": "news",
+  "channels": [
+   "show",
+   "site",
+   "tg"
+  ],
+  "demand": 2,
+  "fresh": 5,
+  "show": 4,
+  "fit": 5,
+  "source": "https://www.kmu.gov.ua/npas/deiaki-pytannia-rozvytku-ukrainskykh-velykykh-movnykh-modelei-t111126",
+  "by": "researcher-news",
+  "note": "Постанова КМУ №1416 від 11.11.2026; Мінцифри створює за 3 міс; правила доступу — у Положенні (PDF), звірити перед сценарієм",
+  "status": "new",
+  "added": "2026-11-22",
+  "id": "18",
+  "decision": "кандидат у шоу #3"
  }
 ]
