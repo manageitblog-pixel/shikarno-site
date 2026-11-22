@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T19:19:05Z",
+ "generated": "2026-11-22T19:19:40Z",
  "kpi": {
   "subs": 311,
   "subs_goal": 1000,
@@ -1522,8 +1522,8 @@
    "agent": "shorts",
    "task": "ep82: рендер (новий кадр 0) → QA → заливка на 24.11 17Z → finalize PASS → старт експерименту frame0",
    "started": "2026-11-22T19:12:09Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-22T19:19:39Z",
+   "result": "ep82 bvS0k_r3_bs → 24.11 17Z, finalize PASS; exp frame0 running (1/5)"
   },
   {
    "id": "69",
