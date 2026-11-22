@@ -6,6 +6,7 @@ date: 2026-11-22T19:00:00+02:00
 description: "Як продати на OLX з ШІ: ChatGPT пише опис за фото, Google Lens підказує ціну, Claude відповідає на «а дешевше?». Плюс ШІ-помічник самого OLX і як не попасти на шахраїв."
 tags: [pokupky, chatgpt, claude, google]
 youtube: LtNuOtQe0pc
+telegram_post: 139
 source: {name: "dev.ua: на OLX з'явився ШІ-помічник для створення оголошень (30.04.2025)", url: "https://dev.ua/news/na-olx-ziavyvsia-shi-pomichnyk-iakyi-dopomozhe-stvoryty-oholoshennia-1746007017"}
 sources:
   - {name: "Кошт: OLX додав штучний інтелект для створення оголошень", url: "https://kosht.media/olx-zapustyv-shi-dlia-stvorennia-oholoshen/"}
