@@ -13,6 +13,7 @@ usage:
   python3 studio/yt/lake.py niche               # ширша ніша: UA + англомовні ШІ-запити (квота ~2000 од.)
   python3 studio/yt/lake.py comp [500]         # ≥500 каналів-конкурентів: знімок статистики + останні 15 відео (щотижня)
   python3 studio/yt/lake.py news                # новини: RSS OpenAI/Google/DeepMind, Anthropic, HN (ШІ), dou → news (кожні 4 год)
+  python3 studio/yt/lake.py history [365]        # усі відео ШІ-конкурентів за рік (≈1 од. квоти на 50 відео)
   python3 studio/yt/lake.py ask "<тема>"        # що ми знаємо про тему: наші ролики й цифри, статті, радари, ніша, пошук
   python3 studio/yt/lake.py sql "select ..."    # довільний запит
   python3 studio/yt/lake.py stats               # скільки чого в лейку
@@ -233,6 +234,37 @@ def ai_share(c):
     return sum(1 for k, n in by.values() if k / n >= 0.3)
 
 
+def history(days=365, min_share=0.3):
+    """Повна історія конкурентів: усі відео ШІ-каналів за `days` днів (uploads playlist → videos). Квота ~1 од. на 50 відео."""
+    import yt
+    c = db(); since = (datetime.date.today() - datetime.timedelta(days=days)).isoformat(); today = datetime.date.today().isoformat()
+    chans = [r[0] for r in c.execute("select a.channel_id from comp_ai a where a.ai_share>=? order by a.channel_id", (min_share,))]
+    total = 0
+    for k, ch in enumerate(chans):
+        try:
+            up = yt.api("channels", part="contentDetails", id=ch)["items"][0]["contentDetails"]["relatedPlaylists"]["uploads"]
+        except Exception as e:
+            print("ERR", ch, e); continue
+        tok = None; ids = []
+        while True:
+            q = dict(part="contentDetails", playlistId=up, maxResults=50)
+            if tok: q["pageToken"] = tok
+            try: r = yt.api("playlistItems", **q)
+            except Exception as e: print("ERR pl", ch, e); break
+            items = r["items"]; ids += [i["contentDetails"]["videoId"] for i in items if i["contentDetails"].get("videoPublishedAt", "9")[:10] >= since]
+            tok = r.get("nextPageToken")
+            if not tok or not items or items[-1]["contentDetails"].get("videoPublishedAt", "9")[:10] < since: break
+        for i in range(0, len(ids), 50):
+            for v in yt.api("videos", part="snippet,statistics,contentDetails", id=",".join(ids[i:i + 50]))["items"]:
+                sec = sum(int(a) * {"H": 3600, "M": 60, "S": 1}[u] for a, u in re.findall(r"(\d+)([HMS])", v["contentDetails"].get("duration", "PT0S")))
+                st = v["statistics"]
+                c.execute("insert or replace into comp_videos values(?,?,?,?,?,?,?,?,?)", (v["id"], ch, v["snippet"]["title"], v["snippet"]["publishedAt"][:10], sec,
+                          int(st.get("viewCount", 0)), int(st.get("likeCount", 0) or 0), int(st.get("commentCount", 0) or 0), today))
+        total += len(ids); c.commit()
+        if k % 20 == 0: print(f"{k+1}/{len(chans)} каналів, +{total} відео", flush=True)
+    print(f"history: {len(chans)} каналів, {total} відео за {days} днів; всього comp_videos {c.execute('select count(*) from comp_videos').fetchone()[0]}")
+
+
 def ask(q):
     c = db(); like = f"%{q.lower()}%"
     print(f"== Наші ролики про «{q}» (перегляди за 7 днів / % перегляду)")
@@ -268,6 +300,7 @@ if __name__ == "__main__":
         c.commit(); stats()
     elif a[0] == "niche": niche()
     elif a[0] == "news": news()
+    elif a[0] == "history": history(int(a[1]) if len(a) > 1 else 365)
     elif a[0] == "comp": competitors(int(a[1]) if len(a) > 1 else 500)
     elif a[0] == "ask": ask(" ".join(a[1:]))
     elif a[0] == "sql":
