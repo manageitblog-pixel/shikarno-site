@@ -10,7 +10,8 @@ export type Scene = {
   icon?: string; items?: any[]; before?: string; after?: string;
   big?: string; sub?: string; foot?: string; score?: number; plus?: string; minus?: string; badge?: string; hook?: string; tone?: string;
 };
-export type EpData = { total: number; scenes: Scene[]; words: { w: string; s: number; e: number; g: string }[]; mouth: number[]; alert?: string; series?: string };
+export type EpData = { total: number; scenes: Scene[]; words: { w: string; s: number; e: number; g: string }[]; mouth: number[]; alert?: string; series?: string;
+  keys?: string[]; frame0?: boolean }; // keys — пігулки під Байтом на кадрі 0 (як у обкладинки); frame0 — новий кадр 0 (за замовч. для тір-листа)
 const Ctx = createContext<EpData>({ total: 300, scenes: [], words: [], mouth: [] });
 const useEp = () => useContext(Ctx);
 
@@ -46,9 +47,13 @@ export const Icon: React.FC<{ name: string; size?: number; color?: string }> = (
 };
 
 /* ---------- верх: плашка бренду + прогрес ---------- */
+// плашка серії, якщо series не задано: з формату епізоду (Ресерч 22.11, кадр 0)
+const autoSeries = (d: EpData) => d.series ?? (!f0On(d) ? undefined
+  : d.scenes[0]?.kind === "tier" ? "ТІР-ЛИСТ БАЙТА" : d.alert || d.scenes[0]?.tone === "scam" ? "ЗАХИСТ" : "НОВИНИ ШІ");
+const f0On = (d: EpData) => d.frame0 ?? d.scenes[0]?.kind === "tier";
 const TopBrand: React.FC = () => {
-  const f = useCurrentFrame(); const { total, alert, series } = useEp();
-  const show = series ? 1 : sp(f - INTRO + 4, 14); // series (кліпи з шоу, 22.11): лого + плашка серії вже на кадрі 0
+  const f = useCurrentFrame(); const ep = useEp(); const { total, alert } = ep; const series = autoSeries(ep);
+  const show = series ? 1 : sp(f - INTRO + 4, 14); // series (кліпи з шоу, 22.11) / новий кадр 0: лого + плашка серії вже на кадрі 0
   return (
     <>
       <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 12, background: "rgba(255,255,255,0.12)" }}>
@@ -98,14 +103,58 @@ const IntroSting: React.FC = () => {
 };
 
 /* ---------- ведучий у кутку ---------- */
-const CornerHost: React.FC<{ start: number; end: number; judgeFrom: number; hide?: [number, number][] }> = ({ start, end, judgeFrom, hide = [] }) => {
+const CornerHost: React.FC<{ start: number; end: number; judgeFrom: number; hide?: [number, number][]; noIn?: boolean }> = ({ start, end, judgeFrom, hide = [], noIn }) => {
   const f = useCurrentFrame(); const { mouth } = useEp();
   if (f < start || f > end || hide.some(([a, b]) => f >= a && f < b)) return null; // таблиці на всю ширину — Байт не перекриває праву колонку
-  const inS = start === 0 ? 1 : sp(f - start, 11); const out = interpolate(f, [end - 8, end], [1, 0], clamp);
+  const inS = start === 0 || noIn ? 1 : sp(f - start, 11); const out = interpolate(f, [end - 8, end], [1, 0], clamp);
   return (
     <div style={{ position: "absolute", right: 24, top: 975, opacity: out, translate: `${(1 - inS) * 300}px 0`, rotate: `${(1 - inS) * 20}deg`, filter: "drop-shadow(0 18px 30px rgba(0,0,0,0.5))" }}>
       <Bait size={200} mouth={mouth[f] ?? 0} look={-6} mood={f >= judgeFrom ? "judge" : "talk"} />
     </div>
+  );
+};
+
+/* ---------- кадр 0 Shorts (docs/design-guide.md «Ресерч 22.11»): великий Байт у нижній половині + пігулки ---------- */
+// кадри 0–3 статичні; з F0_IN по F0_END Байт 440 → 200 їде в позицію CornerHost (right 24, top 975), пігулки гаснуть
+type Mood = "talk" | "happy" | "judge" | "shock";
+const F0_IN = 4, F0_END = 16;
+const f0Mood = (d: EpData): Mood => {
+  const s = d.scenes[0];
+  if (s?.kind === "tier") return "judge";
+  if (d.alert || s?.tone === "scam") return "shock";
+  return s?.tone === "free" || s?.tone === "try" ? "happy" : "talk";
+};
+const f0Keys = (d: EpData): string[] => {
+  if (d.keys?.length) return d.keys.slice(0, 3);
+  const heads = d.scenes[0]?.kind === "tier" ? ((d.scenes[0].items ?? []) as string[][]).map((r) => r[0].toLowerCase()) : [];
+  const out: string[] = [];
+  for (const h of heads) { if (out.length < 3 && [...out, h].join("").length <= 26) out.push(h); }
+  return out;
+};
+const Frame0Host: React.FC<{ hiddenAfter: boolean }> = ({ hiddenAfter }) => {
+  const f = useCurrentFrame(); const ep = useEp();
+  if (f > F0_END) return null;
+  const rows = ep.scenes[0]?.kind === "tier" ? (ep.scenes[0].items ?? []).length : 0;
+  const S0 = rows > 5 ? 360 : 440, top0 = rows > 5 ? 1000 : 960; // довша таблиця — менший Байт (п. 4 специфікації)
+  const t = interpolate(f, [F0_IN, F0_END], [0, 1], { ...clamp, easing: Easing.inOut(Easing.cubic) });
+  const size = S0 + (200 - S0) * t;
+  const left = 540 - S0 / 2 + (1080 - 24 - 200 - (540 - S0 / 2)) * t, top = top0 + (975 - top0) * t;
+  const op = hiddenAfter ? interpolate(f, [10, F0_END], [1, 0], clamp) : 1; // у тір-листі CornerHost схований → Байт гасне дорогою в кут
+  const eff = interpolate(f, [0, F0_IN, F0_END], [0, 0, F0_END], clamp); // анімація Байта (моргання, антена) стоїть на кадрах 0–3
+  const pills = interpolate(f, [F0_IN, F0_IN + 4], [1, 0], clamp);
+  const keys = f0Keys(ep);
+  return (
+    <>
+      <div style={{ position: "absolute", left: 540 - 420, top: top0 + S0 / 2 - 420, width: 840, height: 840, borderRadius: "50%", opacity: 1 - t,
+        background: `radial-gradient(circle, ${C.purple}40 0%, ${C.purple}1A 45%, transparent 70%)` }} />
+      <div style={{ position: "absolute", left, top, opacity: op, filter: "drop-shadow(0 18px 30px rgba(0,0,0,0.5))" }}>
+        <Bait size={size} mouth={f < F0_IN ? 0 : ep.mouth[f] ?? 0} look={-6 * t} mood={f0Mood(ep)} frameOffset={eff - f} />
+      </div>
+      {keys.length > 0 && pills > 0 && <div style={{ position: "absolute", left: 60, right: 60, top: 1400, display: "flex", justifyContent: "center", gap: 18, opacity: pills, translate: `0 ${(1 - pills) * 30}px` }}>
+        {keys.map((k) => <div key={k} style={{ fontFamily: FONT, fontWeight: 800, fontSize: 44, color: "white", padding: "6px 26px", borderRadius: 40, whiteSpace: "nowrap",
+          background: "rgba(14,11,36,0.75)", border: "2px solid rgba(255,255,255,0.22)" }}>{k}</div>)}
+      </div>}
+    </>
   );
 };
 
@@ -114,7 +163,7 @@ const HookHeadline: React.FC<{ s: Scene }> = ({ s }) => {
   const f = useCurrentFrame();
   const text = s.hook ?? s.title;
   const parts = text.split(/(\*[^*]+\*)/g).filter(Boolean);
-  const pulse = 1 + 0.025 * Math.sin(f / 6);
+  const pulse = 1 + 0.025 * Math.sin((f0On(useEp()) ? Math.max(0, f - F0_IN) : f) / 6); // новий кадр 0: кадри 0–3 однакові
   return (
     <div style={{ position: "absolute", left: 50, right: 50, top: 210, display: "flex", justifyContent: "center", scale: `${pulse}` }}>
       <div style={{ fontFamily: FONT, fontWeight: 900, fontSize: 108, lineHeight: 1.05, color: "white", textAlign: "center",
@@ -292,18 +341,20 @@ const rowStarts = (words: EpData["words"], heads: string[], offset: number, dur:
   });
 };
 const Tier: React.FC<{ s: Scene; dur: number; first?: boolean; offset: number }> = ({ s, dur, first, offset }) => {
-  const f = useCurrentFrame(); const { words } = useEp();
+  const f = useCurrentFrame(); const ep = useEp(); const { words } = ep;
+  const fx = first && f0On(ep) ? Math.max(0, f - F0_IN) : f; // декоративні пульсації стоять на кадрах 0–3 (кадр 0 = кадр 3)
   const rows = (s.items ?? []) as string[][];
   const starts = rowStarts(words, rows.map((r) => r[0]), offset, dur, first);
   const head = first ? 1 : sp(f, 12);
   // «камера»: повільний наїзд + удар і поворот на кожному новому рядку (рух між рядками, текст стоїть, коли читають)
   const last = Math.max(0, starts.filter((a) => f >= a).length - 1);
-  const since = Math.max(0, f - starts[last]);
-  const kick = f >= starts[last] ? Math.exp(-since / 7) : 0;
+  const fc = last === 0 ? fx : f; // «камера» на першому рядку теж стоїть на кадрах 0–3
+  const since = Math.max(0, fc - starts[last]);
+  const kick = fc >= starts[last] ? Math.exp(-since / 7) : 0;
   const ROW = 136, HEAD = 70;
-  const camScale = 1 + 0.04 * (f / Math.max(1, dur)) + 0.06 * kick;
+  const camScale = 1 + 0.04 * (fc / Math.max(1, dur)) + 0.06 * kick;
   const camRot = (last % 2 ? 1 : -1) * 2.4 * kick;
-  const shake = kick * 7 * Math.sin(f * 2.3);
+  const shake = kick * 7 * Math.sin(fc * 2.3);
   return (
     <div style={{ position: "relative", width: 930, scale: `${camScale}`, rotate: `${camRot}deg`, translate: `${shake}px ${-kick * 18}px`,
       transformOrigin: `50% ${HEAD + last * ROW + 60}px` }}>
@@ -312,7 +363,7 @@ const Tier: React.FC<{ s: Scene; dur: number; first?: boolean; offset: number }>
       <div style={{ display: "grid", gridTemplateColumns: "190px 1fr 1fr 1fr", gap: 12, scale: `${head}` }}>
         <div />
         {TIER.map(([t, c], j) => <div key={t} style={{ textAlign: "center", fontFamily: FONT, fontWeight: 900, fontSize: 34, color: C.ink, background: c, borderRadius: 16, padding: "10px 0",
-          scale: `${1 + 0.05 * Math.max(0, Math.sin((f - j * 5) / 9))}` }}>{t}</div>)}
+          scale: `${1 + 0.05 * Math.max(0, Math.sin((fx - j * 5) / 9))}` }}>{t}</div>)}
       </div>
       {rows.map((r, i) => {
         const a = starts[i];
@@ -323,16 +374,16 @@ const Tier: React.FC<{ s: Scene; dur: number; first?: boolean; offset: number }>
           <div key={i} style={{ display: "grid", gridTemplateColumns: "190px 1fr 1fr 1fr", gap: 12, opacity: f >= a ? Math.min(1, slam * 1.5) : 0,
             translate: `${(1 - slam) * 700 * side}px 0`, filter: slam < 0.98 ? `blur(${(1 - slam) * 14}px)` : undefined }}>
             <div style={{ display: "flex", alignItems: "center", fontFamily: FONT, fontWeight: 900, fontSize: r[0].length > 7 ? 32 : 40, color: active ? C.yellow : "white",
-              scale: active ? `${1 + 0.06 * Math.sin(f / 5)}` : "1" }}>{r[0]}</div>
+              scale: active ? `${1 + 0.06 * Math.sin(fx / 5)}` : "1" }}>{r[0]}</div>
             {r.slice(1, 4).map((cell, j) => {
               const k = first && i === 0 ? 1 : spring({ frame: f - a - 3 - j * 5, fps: 30, config: { damping: 7, mass: 0.7 } });
               const best = active && j === 2;
-              const sweep = ((f - a) * 4) % 260 - 60;
+              const sweep = ((fx - a) * 4) % 260 - 60;
               return (
                 <div key={j} style={{ position: "relative", overflow: "hidden", height: 120, borderRadius: 22, display: "flex", alignItems: "center", justifyContent: "center", textAlign: "center", padding: "0 8px",
                   background: active ? `${TIER[j][1]}33` : "rgba(255,255,255,0.08)", border: `4px solid ${active ? TIER[j][1] : "rgba(255,255,255,0.18)"}`,
-                  fontFamily: FONT, fontWeight: 900, fontSize: Math.min(42, Math.floor(205 / (0.68 * Math.max(...cell.split(" ").map((w) => w.length))))), color: "white", scale: `${k * (best ? 1 + 0.04 * Math.sin(f / 4) : 1)}`, opacity: Math.min(1, k),
-                  rotate: `${(1 - Math.min(1, k)) * (j - 1) * 14}deg`, boxShadow: best ? `0 0 ${30 + 16 * Math.sin(f / 4)}px ${GREEN}` : "none" }}>
+                  fontFamily: FONT, fontWeight: 900, fontSize: Math.min(42, Math.floor(205 / (0.68 * Math.max(...cell.split(" ").map((w) => w.length))))), color: "white", scale: `${k * (best ? 1 + 0.04 * Math.sin(fx / 4) : 1)}`, opacity: Math.min(1, k),
+                  rotate: `${(1 - Math.min(1, k)) * (j - 1) * 14}deg`, boxShadow: best ? `0 0 ${30 + 16 * Math.sin(fx / 4)}px ${GREEN}` : "none" }}>
                   {best && <div style={{ position: "absolute", top: 0, bottom: 0, left: `${sweep}%`, width: "35%", background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.35), transparent)", rotate: "15deg" }} />}
                   <span style={{ position: "relative" }}>{cell}</span>
                 </div>
@@ -445,6 +496,7 @@ export const GenericEpisode: React.FC<EpData> = (props) => {
   const FIRST = ["hookIcon", ...WIDE];
   const hide = sc.map((s, i) => [i === 0 ? 0 : s.from - 6, i < sc.length - 1 ? sc[i + 1].from - 6 : props.total, s.kind] as const)
     .filter(([, , k]) => WIDE.includes(k)).map(([a, b]) => [a, b] as [number, number]);
+  const f0 = f0On(props);
   return (
     <Ctx.Provider value={props}>
       <AbsoluteFill style={{ fontFamily: FONT }}>
@@ -466,7 +518,8 @@ export const GenericEpisode: React.FC<EpData> = (props) => {
             </Sequence>
           );
         })}
-        {oIdx > 0 && <CornerHost start={0} end={sc[oIdx].from - 6} judgeFrom={vIdx >= 0 ? sc[vIdx].from - 6 : 99999} hide={hide} />}
+        {oIdx > 0 && <CornerHost start={f0 ? F0_END + 1 : 0} noIn={f0} end={sc[oIdx].from - 6} judgeFrom={vIdx >= 0 ? sc[vIdx].from - 6 : 99999} hide={hide} />}
+        {f0 && <Frame0Host hiddenAfter={oIdx <= 0 || hide.some(([a, b]) => F0_END + 1 >= a && F0_END + 1 < b)} />}
         <Captions />
         <TopBrand />
         {/* IntroSting вимкнено 24.10: гачок з першого кадру */}

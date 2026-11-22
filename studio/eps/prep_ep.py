@@ -20,5 +20,9 @@ for i,(s,t) in enumerate(zip(ep.SCENES,tl)):
     for w,k in zip(ws,wts):
         d=(en-st)*k/T; words.append({"w":w,"s":round(tt*FPS),"e":round((tt+d)*FPS),"g":f"{i}-{grp}"}); tt+=d; cnt+=1
         if cnt>=3 or w[-1] in ",.?!:" or len(w)>11: grp+=1; cnt=0
-json.dump({"alert":getattr(ep,"ALERT",None),"total":total,"scenes":scenes,"words":words,"mouth":[round(x,3) for x in m.tolist()]},open(f"{D}/props.json","w"),ensure_ascii=False)
+# кадр 0 Shorts (design-guide «Ресерч 22.11»): плашка серії й пігулки — ті самі, що на обкладинці (thumb.props.json), або SERIES/KEYS у сценарії
+import os; th=json.load(open(f"{D}/thumb.props.json")) if os.path.exists(f"{D}/thumb.props.json") else {}
+extra={k:v for k,v in {"series":getattr(ep,"SERIES",None) or th.get("series"),"keys":getattr(ep,"KEYS",None) or th.get("keys"),
+       "frame0":getattr(ep,"FRAME0",None)}.items() if v is not None and v != []}  # FRAME0=True/False — увімкнути/вимкнути новий кадр 0 (за замовч. лише тір-лист)
+json.dump({"alert":getattr(ep,"ALERT",None),**extra,"total":total,"scenes":scenes,"words":words,"mouth":[round(x,3) for x in m.tolist()]},open(f"{D}/props.json","w"),ensure_ascii=False)
 print(ep.SLUG,total,[(s["kind"],s["from"]) for s in scenes])
