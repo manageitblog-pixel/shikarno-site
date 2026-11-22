@@ -519,6 +519,22 @@
    "started": "2026-11-22T19:01:50Z",
    "finished": "2026-11-22T19:04:53Z",
    "result": "Сигнал-новина на сайті: /novyny/holosovyj-vvid-chatgpt-dyktuvannya/ (~445 слів)"
+  },
+  {
+   "id": "66",
+   "agent": "cso",
+   "task": "Плейбуки алгоритмів: YouTube (Shorts і довгі) + TikTok — офіційні джерела → правила для студії",
+   "started": "2026-11-22T19:05:28Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "67",
+   "agent": "seo",
+   "task": "Плейбуки: Google Search (SEO/Discover) + Telegram ріст — офіційні джерела → правила",
+   "started": "2026-11-22T19:05:28Z",
+   "finished": null,
+   "result": ""
   }
  ]
 }
