@@ -24,3 +24,5 @@ command -v pdftoppm >/dev/null || apt-get install -y -qq poppler-utils >/dev/nul
 cd $S/rv && [ -d node_modules ] || npm ci --silent
 npx remotion browser ensure >/dev/null 2>&1 || true
 echo "BOOTSTRAP OK. Тепер секрети: $H/tg/.token, $H/gem/.key, $H/yt/client_secret.json, $H/yt/token.json (див. studio/MIGRATION.md)"
+# Даталейк: жива база не в git — після перезапуску контейнера відновити з щоденного знімка
+[ -f $S/data/analytics.sqlite ] || { [ -f $S/data/snapshot/analytics.sqlite ] && cp $S/data/snapshot/analytics.sqlite $S/data/analytics.sqlite; }
