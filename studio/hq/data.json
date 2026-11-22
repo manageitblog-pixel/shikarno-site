@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T22:19:16Z",
+ "generated": "2026-11-22T22:25:38Z",
  "kpi": {
   "subs": 311,
   "subs_goal": 1000,
@@ -861,6 +861,27 @@
  ],
  "ideas": [
   {
+   "title": "Чорна пʼятниця з ChatGPT: перевір знижку за 30 секунд — справжня чи накручена ціна",
+   "format": "try",
+   "channels": [
+    "short",
+    "tiktok",
+    "site"
+   ],
+   "demand": 4,
+   "fresh": 5,
+   "show": 5,
+   "fit": 5,
+   "hook": "you",
+   "length": 30,
+   "source": "https://www.youtube.com/watch?v=qaqYqjPjpeU",
+   "by": "researcher-niche",
+   "status": "new",
+   "added": "2026-11-22",
+   "id": "34",
+   "score": 458.2
+  },
+  {
    "title": "Який ШІ для дітей? Тір-лист #6 (AI Quests українською)",
    "format": "tier",
    "channels": [
@@ -922,6 +943,27 @@
    "score": 400.0
   },
   {
+   "title": "ШІ для ФОПа: рахунок, акт і нагадування про податок за 5 хвилин — що можна довірити ШІ, а що ні",
+   "format": "prof",
+   "channels": [
+    "short",
+    "site",
+    "tg"
+   ],
+   "demand": 4,
+   "fresh": 3,
+   "show": 5,
+   "fit": 5,
+   "hook": "you",
+   "length": 35,
+   "source": "https://www.youtube.com/watch?v=ZtbpANr-ZDo",
+   "by": "researcher-niche",
+   "status": "new",
+   "added": "2026-11-22",
+   "id": "35",
+   "score": 296.0
+  },
+  {
    "title": "Надиктуй ChatGPT хоч годину: живий диктант — текст з’являється, поки говориш (і безкоштовно)",
    "format": "try",
    "channels": [
@@ -941,6 +983,52 @@
    "id": "25",
    "decision": "сигнал TG 140 22.11",
    "score": 282.0
+  },
+  {
+   "title": "«Ведуча ТСН» у TikTok каже підписати петицію? Це діпфейк: 595 ШІ-підробок українських журналісток і 3 ознаки",
+   "format": "sec",
+   "channels": [
+    "show",
+    "short",
+    "site",
+    "tg",
+    "tiktok"
+   ],
+   "demand": 4,
+   "fresh": 3,
+   "show": 5,
+   "fit": 5,
+   "hook": "you",
+   "length": 35,
+   "source": "https://texty.org.ua/projects/116211/shtuchnyj-intelekt-i-tiktok-yak-vidomyx-zhurnalistok-peretvoryuyut-na-fejky/",
+   "by": "researcher-web",
+   "note": "Тексти + «Жінки в медіа»: 595 відео (328 — лише підроблений голос, 267 — голос і відео), разом понад 24 млн переглядів, найчастіше підробляють Вітвіцьку, Даугуле, Мазур; 45% — фейкові петиції й опитування, ~24% — «гроші/гуманітарка» (збір персональних даних). Дані за 10.2023–09.2025, тож це не новина тижня: тема знову в стрічках завдяки подкасту Детектор медіа 20.11.2026 (https://detector.media/mediumy/article/254150/2026-11-20-piv-milyona-pereglyadiv-odnogo-dypfeyku-yak-u-tiktoku-ekspluatuyut-doviru-do-ukrainskykh-zhurnalistok/). Для глядача: фейк зі знайомим обличчям з телебачення веде на сторінку, де в тебе беруть дані. Формат: Short «3 ознаки» (TikTok) + стаття на сайті з чеклістом від Текстів.",
+   "decision": "кандидат у шоу #3 29.11 (веб-скан 22.11 ввечері): казати чесно, що дослідження 2025 року, а свіжий привід — подкаст 20.11",
+   "status": "new",
+   "added": "2026-11-22",
+   "id": "38",
+   "score": 265.6
+  },
+  {
+   "title": "ШІ для студента: курсова без списування — 3 чесні способи і 1, що тебе здасть",
+   "format": "prof",
+   "channels": [
+    "short",
+    "tiktok",
+    "site"
+   ],
+   "demand": 4,
+   "fresh": 3,
+   "show": 4,
+   "fit": 5,
+   "hook": "you",
+   "length": 30,
+   "source": "https://www.youtube.com/watch?v=LN3vWf2S9TQ",
+   "by": "researcher-niche",
+   "status": "new",
+   "added": "2026-11-22",
+   "id": "36",
+   "score": 236.8
   },
   {
    "title": "Гайд #3 «Gemini безкоштовно українською» 18–20 хв (відео + сторінка сайту)",
@@ -1022,95 +1110,12 @@
    "kw": "зерно «ші для кухні» без релевантного попиту: бізнес на кухні (8); дитячі кухні (10, нерелевантно) — спробувати «рецепти chatgpt»",
    "decision": "Short 24.11 19:00 (тір-лист кухня), сценарій 22.11",
    "score": 225.0
-  },
-  {
-   "title": "Anthropic на Nasdaq (ANT): що IPO розробника Claude означає для тебе",
-   "format": "news",
-   "channels": [
-    "show",
-    "site",
-    "tg"
-   ],
-   "demand": 3,
-   "fresh": 5,
-   "show": 5,
-   "fit": 4,
-   "source": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
-   "by": "researcher-news",
-   "note": "18.11 ціна $83, 980 млн акцій, торги з 19.11 (дані Anthropic); оновити пост 2026-10-23-anthropic-ipo; kw «акції anthropic» — прямого попиту нема",
-   "status": "new",
-   "added": "2026-11-22",
-   "id": "15",
-   "decision": "кандидат у шоу #3",
-   "score": 220.2
-  },
-  {
-   "title": "Чому ШІ каже, що ти геніальний — і одна фраза, щоб отримати чесну критику",
-   "format": "skills",
-   "channels": [
-    "short",
-    "site",
-    "tiktok"
-   ],
-   "demand": 3,
-   "fresh": 3,
-   "show": 5,
-   "fit": 5,
-   "length": 30,
-   "hook": "you",
-   "source": "https://www.youtube.com/watch?v=sgGGZbMGNyU",
-   "by": "researcher-niche",
-   "decision": "аномалії UA 6.1× (ШІ просто) і 12.6× XQSab0zX2ew «чому не можна просити ШІ перевірити себе»; наша версія — показ до/після на одному запиті",
-   "status": "new",
-   "added": "2026-11-22",
-   "id": "23",
-   "score": 220.0
-  },
-  {
-   "title": "«Тобі пише підтримка Telegram»: як ШІ-шахраї крадуть акаунти — 3 ознаки",
-   "format": "sec",
-   "channels": [
-    "short",
-    "tiktok"
-   ],
-   "demand": 5,
-   "fresh": 4,
-   "show": 4,
-   "fit": 4,
-   "source": "https://www.tiktok.com/@cyberyaro/video/7706508797715483911",
-   "by": "researcher-niche",
-   "status": "new",
-   "added": "2026-11-22",
-   "id": "31",
-   "score": 217.9
-  },
-  {
-   "title": "Розширення чи скіл для ШІ просить доступ до всього: 3 перевірки перед встановленням",
-   "format": "sec",
-   "channels": [
-    "short",
-    "site",
-    "tg"
-   ],
-   "demand": 3,
-   "fresh": 4,
-   "show": 4,
-   "fit": 5,
-   "length": 32,
-   "hook": "you",
-   "source": "https://www.youtube.com/watch?v=iAIbVTdZyEs",
-   "by": "researcher-niche",
-   "decision": "аномалія UA 12.4× (Академія Yours); наша версія — чекліст дозволів, без залякування",
-   "status": "new",
-   "added": "2026-11-22",
-   "id": "22",
-   "score": 212.5
   }
  ],
  "lake": {
   "videos": 93,
   "daily": 746,
-  "news": 1853,
+  "news": 1857,
   "niche": 604,
   "comp": 504,
   "comp_videos": 62243,
@@ -1122,9 +1127,37 @@
  "news": [
   {
    "date": "2026-11-22",
+   "source": "techcrunch",
+   "title": "OpenAI’s chief scientist has thoughts on how to limit AI development",
+   "score": null,
+   "url": "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/"
+  },
+  {
+   "date": "2026-11-22",
+   "source": "venturebeat",
+   "title": "Your ML model passed every test. Here’s what those tests might have missed",
+   "score": null,
+   "url": "https://venturebeat.com/orchestration/your-ml-model-passed-every-test-heres-what-those-tests-might-have-missed"
+  },
+  {
+   "date": "2026-11-22",
+   "source": "hn",
+   "title": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
+   "score": 44,
+   "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth"
+  },
+  {
+   "date": "2026-11-22",
+   "source": "hn",
+   "title": "Harvard CS 2881R AI Safety",
+   "score": 13,
+   "url": "https://boazbk.github.io/mltheoryseminar/"
+  },
+  {
+   "date": "2026-11-22",
    "source": "hn",
    "title": "C++26 is done (again): November 2026 ISO C++ meeting trip report",
-   "score": 19,
+   "score": 46,
    "url": "https://herbsutter.com/2026/11/21/c26-is-done-again-trip-report-november-2026-iso-c-standards-meeting-buzios-brazil/"
   },
   {
@@ -1175,34 +1208,6 @@
    "title": "У Gemini з’явилася функція створення GIF-анімацій за допомогою ШІ",
    "score": null,
    "url": "https://dev.ua/news/google-zapustyla-heneratsiiu-shi-gif-1795350586"
-  },
-  {
-   "date": "2026-11-22",
-   "source": "devua",
-   "title": "«Я злив секрети»: ШІ-агент для програмування зізнався у витоку даних, а інший обійшов корпоративні обмеження",
-   "score": null,
-   "url": "https://dev.ua/news/ya-zlyv-sekrety-shi-ahent-ziznavsia-u-vytoku-danykh-1795344674"
-  },
-  {
-   "date": "2026-11-22",
-   "source": "devua",
-   "title": "ChatGPT «стиснули» для запуску на 16-бітній приставці Super Nintendo",
-   "score": null,
-   "url": "https://dev.ua/news/chatgpt-stysnuly-dlia-zapusku-na-16-bitnii-prystavtsi-super-nintendo-1795340326"
-  },
-  {
-   "date": "2026-11-22",
-   "source": "devua",
-   "title": "Перегони за доведення гіпотези Рімана перетворилися на протистояння людини та штучного інтелекту",
-   "score": null,
-   "url": "https://dev.ua/news/perehony-za-dovedennia-hipotezy-rimana-peretvorylysia-na-protystoiannia-liudyny-ta-shtuchnoho-intelektu-1795333743"
-  },
-  {
-   "date": "2026-11-22",
-   "source": "speka",
-   "title": "ШІ виявляє ознаки раку сечового міхура за 5 років до діагнозу",
-   "score": null,
-   "url": "https://speka.ua/news/si-viyavlyaje-oznaki-raku-secovogo-mixura-za-5-rokiv-do-diagnozu-v71qy3"
   }
  ],
  "competitors": [
@@ -1313,30 +1318,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "54",
-   "agent": "seo",
-   "task": "Нова стаття під запит з попитом, якого сайт ще не покриває",
-   "started": "2026-11-22T18:37:34Z",
-   "finished": "2026-11-22T18:43:28Z",
-   "result": "Нова стаття /novyny/detektor-shi-tekstu/ (~910 слів, 5 детекторів, FAQ 5)"
-  },
-  {
-   "id": "55",
-   "agent": "trend",
-   "task": "Веб-скан світу за 48 год: 30+ джерел (світові й українські) → топ подій → дошка ідей",
-   "started": "2026-11-22T18:38:59Z",
-   "finished": "2026-11-22T18:45:49Z",
-   "result": "Веб-скан 48 год: 30 пошуків, 15 подій звірено; ідеї №25–29, 3 кандидати в шоу #3"
-  },
-  {
-   "id": "56",
-   "agent": "de",
-   "task": "lake.py news: +25 RSS-джерел (світові ШІ-медіа, блоги компаній, українські tech-медіа)",
-   "started": "2026-11-22T18:39:37Z",
-   "finished": "2026-11-22T18:42:33Z",
-   "result": "22 RSS-стрічки (було 3): +264 новини, 1851 у лейку"
-  },
   {
    "id": "57",
    "agent": "trend",
@@ -1534,22 +1515,46 @@
    "agent": "voice",
    "task": "Озвучка наперед: guide1 ч.4+ → ep83–86, до реального 429",
    "started": "2026-11-22T22:18:49Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-22T22:25:05Z",
+   "result": "guide1 ч.4 озвучено (F0 142, 2 запити), далі реальний 429 о 22:24Z; продовження з 08:00Z: guide1 ч.5–15 → ep83–86"
   },
   {
    "id": "82",
    "agent": "trend",
    "task": "фон: веб-скан світу й України за 12–24 год → ідеї на дошку, кандидати в шоу #3",
    "started": "2026-11-22T22:18:54Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-22T22:24:21Z",
+   "result": "Веб-скан 22.11 ввечері: +5 ідей №38–42 (діпфейки журналісток у TikTok, «IT-підтримка» ШІ-голосом 0,5 млн, Gallup «ШІ-друг» у молоді, OpenRouter/MiniMax витік запитів, METR 3,6 міс); №38–40 — кандидати в шоу #3 29.11; коміт a7616f1"
   },
   {
    "id": "83",
    "agent": "niche",
    "task": "фон: аномалії українських ШІ-каналів і TikTok-тренди → ідеї",
    "started": "2026-11-22T22:18:54Z",
+   "finished": "2026-11-22T22:22:31Z",
+   "result": "Скан 2 аномалій UA-ніші (niche: 276 укр. відео, без нового прогону outliers.py — берегли квоту) + TikTok vidIQ (10 кредитів). Топ: студенти/курсова 57×, ШІ-підлабузництво 46×, ШІ для інженера 35×, програміст 2026 21×, ФОП-рахунки 7×; TikTok «рецепт від ChatGPT» 43×. Ідеї №34–37 (Чорна пʼятниця, ФОП, студент, ШІ-музика). docs/research/ua-niche-outliers-2026-11-22.md"
+  },
+  {
+   "id": "84",
+   "agent": "seo",
+   "task": "Ідея №34: стаття «Чорна п'ятниця: як перевірити знижку з ChatGPT» + пост TG (сигнал перед Short)",
+   "started": "2026-11-22T22:22:52Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "85",
+   "agent": "analyst",
+   "task": "Аудит прогнозів роликів, яким виповнилось 7 днів + щоденний зріз метрик росту до 1.12",
+   "started": "2026-11-22T22:24:43Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "86",
+   "agent": "designer",
+   "task": "Упаковка на 3 дні: ep81 (23.11), ep82 (24.11), ep78/guide1 (25.11) — обкладинки, кадр 0, назви",
+   "started": "2026-11-22T22:25:18Z",
    "finished": null,
    "result": ""
   }
