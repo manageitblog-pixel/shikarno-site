@@ -351,5 +351,25 @@
   "decision": "гайд #3 9.12",
   "added": "2026-11-22",
   "id": "19"
+ },
+ {
+  "title": "Куди поїхати на вихідні: який ШІ? Тір-лист #8 (подорожі)",
+  "format": "tier",
+  "channels": [
+   "short",
+   "site",
+   "tiktok"
+  ],
+  "demand": 4,
+  "fresh": 4,
+  "show": 5,
+  "fit": 5,
+  "source": "kw.py: «куди поїхати на вихідні» 169, «куди поїхати відпочивати» 231",
+  "length": 30,
+  "by": "researcher-search",
+  "status": "approved",
+  "decision": "ep85 28.11",
+  "added": "2026-11-22",
+  "id": "20"
  }
 ]
