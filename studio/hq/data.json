@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T14:55:42Z",
+ "generated": "2026-11-22T14:57:06Z",
  "kpi": {
   "subs": 311,
   "subs_goal": 1000,
@@ -1325,8 +1325,8 @@
    "agent": "factcheck",
    "task": "guide1: 3-й раунд — перевірка двох замін",
    "started": "2026-11-22T14:55:27Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-22T14:57:06Z",
+   "result": "guide1 раунд 3: PASS — готовий до озвучки 23.11"
   }
  ],
  "agents": [
