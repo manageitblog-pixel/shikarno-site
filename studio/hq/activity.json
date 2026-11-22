@@ -613,8 +613,8 @@
    "agent": "seo",
    "task": "Ріст до 1.12: CTR — нові title/description для 5 сторінок з найбільшими показами і низьким CTR",
    "started": "2026-11-22T22:03:48Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-22T22:09:37Z",
+   "result": "SEO: нові title/description для 4 сторінок з найбільшими показами й найнижчим CTR (ChatGPT безкоштовно, вимкнути Gemini, Anthropic IPO, скачати ChatGPT), коміт 6096092; контроль експерименту G1 не чіпали"
   },
   {
    "id": "78",
