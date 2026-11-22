@@ -392,5 +392,67 @@
   "decision": "ep86 29.11",
   "added": "2026-11-22",
   "id": "21"
+ },
+ {
+  "title": "Розширення чи скіл для ШІ просить доступ до всього: 3 перевірки перед встановленням",
+  "format": "sec",
+  "channels": [
+   "short",
+   "site",
+   "tg"
+  ],
+  "demand": 3,
+  "fresh": 4,
+  "show": 4,
+  "fit": 5,
+  "length": 32,
+  "hook": "you",
+  "source": "https://www.youtube.com/watch?v=iAIbVTdZyEs",
+  "by": "researcher-niche",
+  "decision": "аномалія UA 12.4× (Академія Yours); наша версія — чекліст дозволів, без залякування",
+  "status": "new",
+  "added": "2026-11-22",
+  "id": "22"
+ },
+ {
+  "title": "Чому ШІ каже, що ти геніальний — і одна фраза, щоб отримати чесну критику",
+  "format": "skills",
+  "channels": [
+   "short",
+   "site",
+   "tiktok"
+  ],
+  "demand": 3,
+  "fresh": 3,
+  "show": 5,
+  "fit": 5,
+  "length": 30,
+  "hook": "you",
+  "source": "https://www.youtube.com/watch?v=sgGGZbMGNyU",
+  "by": "researcher-niche",
+  "decision": "аномалії UA 6.1× (ШІ просто) і 12.6× XQSab0zX2ew «чому не можна просити ШІ перевірити себе»; наша версія — показ до/після на одному запиті",
+  "status": "new",
+  "added": "2026-11-22",
+  "id": "23"
+ },
+ {
+  "title": "Українською ШІ відповідає гірше? Тест ChatGPT, Claude і Gemini: одне питання двома мовами",
+  "format": "check",
+  "channels": [
+   "short",
+   "site",
+   "long"
+  ],
+  "demand": 4,
+  "fresh": 3,
+  "show": 5,
+  "fit": 5,
+  "length": 33,
+  "source": "https://www.youtube.com/watch?v=WM7_lXcALZA",
+  "by": "researcher-niche",
+  "decision": "аномалія UA 27.5× (Відчайдушний програміст, довге про переплату токенів); наша версія — якість відповідей для звичайного користувача, власний тест",
+  "status": "new",
+  "added": "2026-11-22",
+  "id": "24"
  }
 ]
