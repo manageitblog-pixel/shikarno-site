@@ -602,5 +602,23 @@
   "status": "new",
   "added": "2026-11-22",
   "id": "32"
+ },
+ {
+  "title": "Головний науковець OpenAI: «перплексія» як спільна лінійка для всіх ШІ-лабораторій і стрибок прогресу вже у 2027",
+  "format": "news",
+  "channels": [
+   "show",
+   "site",
+   "tg"
+  ],
+  "demand": 2,
+  "fresh": 5,
+  "show": 3,
+  "fit": 3,
+  "by": "researcher-news",
+  "source": "https://openai.com/index/perplexity-and-intelligence",
+  "status": "new",
+  "added": "2026-11-22",
+  "id": "33"
  }
 ]
