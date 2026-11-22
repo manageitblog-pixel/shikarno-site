@@ -8,7 +8,8 @@ studio/data/analytics.sqlite:
   traffic(video_id, source, views, updated)                                         — джерела трафіку за весь час
   snap(video_id, date, views_public)                                                — публічний лічильник (свіжий, без затримки 2–3 дні)
   daily.watch_min, daily.subs_lost                                                  — хвилини перегляду й відписки (з 22.11)
-  channel_daily(date, views, watch_min, subs_gained, subs_lost, avg_pct, long_watch_min, short_views) — канал по днях з 2026-10-01
+  channel_daily(date, views, watch_min, subs_gained, subs_lost, avg_pct, long_watch_min, short_views) — канал по днях (у базі з 25.07; sync тягне з 2026-10-01);
+                                                                                     дні без переглядів API не віддає (пропуск = 0); avg_pct NULL = немає утримання
   traffic_daily(video_id, date, source, views)                                     — джерела трафіку по днях (останні 60 днів, історія не перезаписується)
   tg_daily(date, members)                                                           — підписники Telegram-каналу на дату
 
@@ -72,7 +73,8 @@ def sync_channel(c, start="2026-10-01", end=None):
     sv = {r[0]: r[1] for r in ya(startDate=start, endDate=end, dimensions="day", metrics="views",
                                  filters="creatorContentType==shorts").get("rows", [])}
     for d, (v, wm, sg, sl, pct) in rows.items():
-        c.execute("insert or replace into channel_daily values(?,?,?,?,?,?,?,?)", (d, v, wm, sg, sl, clamp_pct(pct), lw.get(d, 0), sv.get(d, 0)))
+        pct = None if no_retention(v, pct, None, wm) else clamp_pct(pct)  # 1–3 перегляди за день: 0% = «немає даних» (data-quality 22.11, ніч)
+        c.execute("insert or replace into channel_daily values(?,?,?,?,?,?,?,?)", (d, v, wm, sg, sl, pct, lw.get(d, 0), sv.get(d, 0)))
     return len(rows)
 
 
