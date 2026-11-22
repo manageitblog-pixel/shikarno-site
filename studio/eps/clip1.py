@@ -26,7 +26,7 @@ SCENES = [
  dict(kind="outro", label="", title=""),
 ]
 META = dict(
- title="ШІ для вчителя: план уроку і тест за 5 хвилин у Google Classroom 🍎 #shorts",
+ title="ШІ для вчителя: план уроку і тест за 5 хвилин у Google Classroom 🍎 #ШІ #shorts",
  first_comment="Вчителі, що вже віддали ШІ — плани, тести чи перевірку? 👇 Повний розбір: https://youtu.be/6-2a9ncHaz4",
  description=("ШІ для вчителя вже вбудований у Google Classroom: інструменти Gemini складають план уроку за класом, темою й тривалістю, "
   "роблять тест, який можна перенести в Google Forms, і критерії оцінювання. А Gemini Notebook (колишній NotebookLM) робить з розділу "
