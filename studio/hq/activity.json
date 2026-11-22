@@ -477,14 +477,22 @@
    "agent": "de",
    "task": "ops.py exp_start + контроль для експерименту кадру 0 (старт 24.11); daily 0→NULL",
    "started": "2026-11-22T18:45:31Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-22T18:51:41Z",
+   "result": "ops exp_start/add/status; контроль frame0 (ep71–81) готовий, старт після заливки ep82; daily 245 рядків → NULL"
   },
   {
    "id": "61",
    "agent": "longs",
    "task": "Озвучка зараз (квота є!): ep82 → гайд #1 частини 1–16 → ep83 → ep84, до першого 429",
    "started": "2026-11-22T18:50:33Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "62",
+   "agent": "de",
+   "task": "policy: тести на фікстурах (не живі файли) + UNVERIFIED, закритий у наступному раунді, не рахувати",
+   "started": "2026-11-22T18:52:08Z",
    "finished": null,
    "result": ""
   }
