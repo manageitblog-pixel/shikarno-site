@@ -16,6 +16,7 @@ def snap(v, SR, t, back=0.35, fwd=0.02):
         if e < best: best, bt = e, x + 0.01
     return round(bt, 3), 20 * np.log10(best + 1e-9)
 
+# Списки — ≤3 пункти: 4-й пункт List заходить під Байта в куті (CornerHost, top 975), а hide для List у Generic.tsx немає.
 def build(SLUG, SRC, CUTS, SCENES, series, keys=None, frame0=True, list_from=1, card_s=1.8):
     """CUTS: [(a, b, [starts], [texts])] у часі vo.wav джерела; a, b — межі речень з align.json (до snap).
     SCENES: [hook, list(s)..., endcard, outro]; list_from — з якого (глобального) речення починається 2-га сцена."""
