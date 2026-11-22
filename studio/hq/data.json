@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T12:44:51Z",
+ "generated": "2026-11-22T12:46:32Z",
  "kpi": {
   "subs": 311,
   "subs_goal": 1000,
@@ -931,14 +931,22 @@
    "agent": "shorts",
    "task": "Тір-лист #7 «ШІ для кухні»: сценарій",
    "started": "2026-11-22T12:41:00Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-22T12:46:26Z",
+   "result": "сценарій ep82, 479 знаків, «меню на тиждень» у назві"
   },
   {
    "id": "9",
    "agent": "longs",
    "task": "Гайд «Claude безкоштовно»: сценарій",
    "started": "2026-11-22T12:41:00Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "10",
+   "agent": "factcheck",
+   "task": "Фактчек тір-листа #7 «ШІ для кухні»",
+   "started": "2026-11-22T12:46:26Z",
    "finished": null,
    "result": ""
   }
