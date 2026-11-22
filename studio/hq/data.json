@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T14:23:58Z",
+ "generated": "2026-11-22T14:25:22Z",
  "kpi": {
   "subs": 311,
   "subs_goal": 1000,
@@ -1317,8 +1317,8 @@
    "agent": "factcheck",
    "task": "Незалежний фактчек ep83 Moonlock",
    "started": "2026-11-22T14:23:23Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-22T14:25:21Z",
+   "result": "ep83: PASS (18 PASS, 1 UNVERIFIED — назва папки в описі); помірний перетин з ep77"
   },
   {
    "id": "38",
