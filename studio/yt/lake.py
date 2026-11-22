@@ -107,7 +107,7 @@ NICHE_Q = ["штучний інтелект", "ChatGPT українською", 
 
 def niche(days=60):
     import yt
-    c = db(); after = (datetime.datetime.utcnow() - datetime.timedelta(days=days)).strftime("%Y-%m-%dT00:00:00Z"); vids = set()
+    c = db(); after = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=days)).strftime("%Y-%m-%dT00:00:00Z"); vids = set()
     for q in NICHE_Q:
         en = q.isascii()
         try:
@@ -197,10 +197,21 @@ def competitors(target=500, per_q=50, max_search=30):
 FEEDS = {"openai": "https://openai.com/news/rss.xml", "google": "https://blog.google/technology/ai/rss/", "deepmind": "https://deepmind.google/blog/rss.xml"}
 
 
+def anthropic_dates(c, get, limit=25):
+    """Дата anthropic.com/news/* — лише на сторінці статті (article:published_time / datePublished); ≤limit запитів."""
+    rows = c.execute("select url from news where source='anthropic' and (published is null or published='') order by fetched desc limit ?", (limit,)).fetchall()
+    for (u,) in rows:
+        try:
+            m = re.search(r'(?:article:published_time" content="|"datePublished":")(\d{4}-\d{2}-\d{2})|<time dateTime="(\d{4}-\d{2}-\d{2})', get(u))
+            if m: c.execute("update news set published=? where url=?", (m.group(1) or m.group(2), u))
+        except Exception as e: print("anthropic date ERR", u, e)
+    return len(rows)
+
+
 def news():
     """Новини з першоджерел і обговорень → таблиця news (накопичується; дублікати за URL відкидаються)."""
     import html as H
-    c = db(); today = datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M"); n = 0
+    c = db(); today = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M"); n = 0
     def get(u):
         return urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0 shikarno-lake"}), timeout=30).read().decode("utf-8", "ignore")
     for src, u in FEEDS.items():
@@ -216,15 +227,16 @@ def news():
     try:
         t = get("https://www.anthropic.com/news")
         for path in dict.fromkeys(re.findall(r'href="(/news/[a-z0-9-]+)"', t)):
-            if path.split("/")[-1] in ("announcements", "features", "partnerships", "product"): continue
+            if path.split("/")[-1] in ("announcements", "features", "partnerships", "product", "policy", "safeguards", "security"): continue
             n += c.execute("insert or ignore into news values(?,?,?,?,?,?)", ("https://www.anthropic.com" + path, "anthropic", "", path.split("/")[-1].replace("-", " "), None, today)).rowcount
     except Exception as e: print("anthropic ERR", e)
+    anthropic_dates(c, get, 25)
     try:
         ids = json.loads(get("https://hacker-news.firebaseio.com/v0/topstories.json"))[:80]; rx = re.compile(AI_RX, re.I)
         for i in ids:
             h = json.loads(get(f"https://hacker-news.firebaseio.com/v0/item/{i}.json"))
             if h and h.get("url") and rx.search(" " + h.get("title", "") + " "):
-                c.execute("insert into news values(?,?,?,?,?,?) on conflict(url) do update set score=excluded.score", (h["url"], "hn", datetime.datetime.utcfromtimestamp(h["time"]).strftime("%Y-%m-%d"), h["title"], h.get("score"), today)); n += 1
+                c.execute("insert into news values(?,?,?,?,?,?) on conflict(url) do update set score=excluded.score", (h["url"], "hn", datetime.datetime.fromtimestamp(h["time"], datetime.timezone.utc).strftime("%Y-%m-%d"), h["title"], h.get("score"), today)); n += 1
     except Exception as e: print("hn ERR", e)
     try:
         t = get("https://dou.ua/lenta/news/")
