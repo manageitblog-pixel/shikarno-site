@@ -204,21 +204,23 @@ const List: React.FC<{ s: Scene; dur: number }> = ({ s, dur }) => {
   const f = useCurrentFrame();
   const items = (s.items ?? []) as [string, string][];
   const step = Math.max(14, Math.floor((dur - 30) / Math.max(1, items.length)));
+  // ≥ 4 пунктів (рамка x ≈ 90–850): вужче й лівіше, щоб 4-й пункт не заїжджав під кутового Байта (x ≥ 856, y ≥ 975); ≤ 3 — як було
+  const big = items.length >= 4;
   return (
-    <div style={{ display: "flex", flexDirection: "column", gap: 34, width: 860 }}>
+    <div style={{ display: "flex", flexDirection: "column", gap: big ? 24 : 34, width: big ? 760 : 860, ...(big ? { translate: "-70px 0" } : {}) }}>
       {items.map(([ic, tx], i) => {
         const a = 8 + i * step; const k = sp(f - a, 11);
         const active = f >= a && f < a + step + 6;
         return (
           <div key={i} style={{
-            display: "flex", alignItems: "center", gap: 34, padding: "30px 40px", borderRadius: 36,
+            display: "flex", alignItems: "center", gap: 34, padding: big ? "24px 36px" : "30px 40px", borderRadius: 36,
             background: active ? "rgba(255,214,10,0.16)" : "rgba(255,255,255,0.08)", border: `3px solid ${active ? C.yellow : "rgba(255,255,255,0.2)"}`,
             translate: `${(1 - k) * 400}px 0`, opacity: k, scale: active ? "1.04" : "1",
           }}>
-            <div style={{ width: 120, height: 120, borderRadius: 30, background: `linear-gradient(135deg, ${C.purple}, ${C.pink})`, display: "flex", alignItems: "center", justifyContent: "center" }}>
-              <Icon name={ic} size={76} />
+            <div style={{ width: big ? 104 : 120, height: big ? 104 : 120, borderRadius: 30, background: `linear-gradient(135deg, ${C.purple}, ${C.pink})`, display: "flex", alignItems: "center", justifyContent: "center", ...(big ? { flexShrink: 0 } : {}) }}>
+              <Icon name={ic} size={big ? 66 : 76} />
             </div>
-            <div style={{ fontFamily: FONT, fontWeight: 900, fontSize: 58, color: "white" }}>{tx}</div>
+            <div style={{ fontFamily: FONT, fontWeight: 900, fontSize: big && tx.length > 14 ? 50 : 58, color: "white" }}>{tx}</div>
           </div>
         );
       })}
