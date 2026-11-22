@@ -1,9 +1,9 @@
 ---
-title: "Як відключити Gemini на телефоні і видалити: Android, Samsung, Xiaomi (2026)"
+title: "Як відключити Gemini на телефоні: 3 кроки (Android, Samsung)"
 slug: yak-vidklyuchyty-gemini
 date: 2026-10-23T23:20:00+03:00
-updated: 2026-11-22T15:18:00+02:00
-description: "Як відключити Gemini на телефоні в 2026: прибрати з кнопки живлення, вимкнути «Hey Google», заблокований екран та історію, видалити застосунок. Android, Samsung, Xiaomi."
+updated: 2026-11-23T00:08:00+02:00
+description: "Як відключити Gemini на Android: асистент «Немає», кнопка живлення (на Samsung — бічна), «Hey Google» та історія. І чому старого Асистента вже не повернеш."
 tags: [gemini, google, instrumenty]
 source: {name: "Gemini Apps Help — Manage or delete the Gemini app on your Android device", url: "https://support.google.com/gemini/answer/16938321?hl=en"}
 sources:

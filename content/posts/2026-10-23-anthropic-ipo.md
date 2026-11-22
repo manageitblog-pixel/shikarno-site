@@ -1,9 +1,9 @@
 ---
-title: "IPO Anthropic: що це за компанія, як вона вийшла на біржу і що про це відомо"
+title: "Антропік (Anthropic): що це за компанія і як вийшла на IPO"
 slug: anthropic-ipo
 date: 2026-10-23T22:40:00+03:00
-updated: 2026-11-22T15:30:00+02:00
-description: "Anthropic — що це за компанія і як пройшло IPO? Розробник Claude вийшов на Nasdaq 19 листопада 2026 (тікер ANT): заявка до SEC, банки, як зсувались дати."
+updated: 2026-11-23T00:08:00+02:00
+description: "Що таке Антропік (Anthropic): компанія, що створює Claude. Як вона готувала IPO, які банки його вели і як 19 листопада 2026 вийшла на Nasdaq під тікером ANT."
 tags: [anthropic]
 source: {name: "Bloomberg Law", url: "https://news.bgov.com/banking-law/anthropic-said-to-target-mega-ipo-before-thanksgiving-holiday"}
 sources:

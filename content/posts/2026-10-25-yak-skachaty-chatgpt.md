@@ -1,9 +1,9 @@
 ---
-title: "Як скачати і встановити чат GPT на телефон і ПК: Android, iPhone, Windows, Mac"
+title: "Як скачати чат GPT безкоштовно: телефон, ПК і Mac"
 slug: yak-skachaty-chatgpt
 date: 2026-10-25T16:00:00+02:00
-updated: 2026-11-22T16:20:00+02:00
-description: "Як скачати і встановити чат GPT на телефон і комп'ютер: офіційні застосунки для Android, iPhone, Windows і Mac, системні вимоги, як відрізнити підробку і як користуватися."
+updated: 2026-11-23T00:08:00+02:00
+description: "Як скачати чат GPT безкоштовно і без клонів: офіційний ChatGPT для Android, iPhone, Windows і Mac, системні вимоги (iOS 18+, macOS 14+) і як відрізнити підробку."
 tags: [chatgpt, openai, instrumenty]
 source: {name: "OpenAI — сторінка завантаження ChatGPT", url: "https://chatgpt.com/download"}
 sources:

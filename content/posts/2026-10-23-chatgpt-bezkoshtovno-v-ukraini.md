@@ -1,9 +1,9 @@
 ---
-title: "Чат GPT українською безкоштовно: вхід без VPN, ліміти і тарифи — гайд 2026"
+title: "Чат GPT українською безкоштовно: вхід без VPN і ліміти"
 slug: chatgpt-bezkoshtovno-v-ukraini
 date: 2026-10-23T22:00:00+03:00
-updated: 2026-11-22T16:00:00+02:00
-description: "Чат GPT українською безкоштовно: як увійти в ChatGPT без VPN, увімкнути українську, що вміє безплатна версія на моделі Luna, які ліміти й скільки коштують Go, Plus і Pro."
+updated: 2026-11-23T00:08:00+02:00
+description: "Чат GPT українською безкоштовно і без VPN: як увійти на chatgpt.com чи в застосунку, увімкнути українську, що вміє Free і коли платити за Go ($8) чи Plus ($20)."
 tags: [chatgpt, openai, instrumenty]
 source: {name: "OpenAI Help Center — ChatGPT Free Tier FAQ", url: "https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq"}
 sources:
