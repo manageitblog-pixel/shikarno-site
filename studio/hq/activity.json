@@ -255,6 +255,30 @@
    "started": "2026-11-22T13:48:24Z",
    "finished": "2026-11-22T13:50:50Z",
    "result": "guide3 повторно: PASS — готовий до озвучки за планом TTS"
+  },
+  {
+   "id": "33",
+   "agent": "shorts",
+   "task": "ep83 (чт 26.11 17Z): Moonlock від MacPaw проти шахраїв (ідея 17)",
+   "started": "2026-11-22T14:18:35Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "34",
+   "agent": "shorts",
+   "task": "ep84 (пт 27.11 17Z): ШІ для логопеда (ідея 3)",
+   "started": "2026-11-22T14:18:35Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "35",
+   "agent": "seo",
+   "task": "Наступна сторінка з GSC (покази ≥50, поз. 4–20)",
+   "started": "2026-11-22T14:18:35Z",
+   "finished": null,
+   "result": ""
   }
  ]
 }
