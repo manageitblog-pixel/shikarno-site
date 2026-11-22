@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T13:23:03Z",
+ "generated": "2026-11-22T13:23:49Z",
  "kpi": {
   "subs": 311,
   "subs_goal": 1000,
@@ -711,6 +711,26 @@
    "score": 400.0
   },
   {
+   "title": "Гайд #3 «Gemini безкоштовно українською» 18–20 хв (відео + сторінка сайту)",
+   "format": "guide",
+   "channels": [
+    "long",
+    "site"
+   ],
+   "demand": 4,
+   "fresh": 3,
+   "show": 5,
+   "fit": 5,
+   "source": "kw.py 22.11: gemini 164 фрази — «gemini українською» 30, «gemini як користуватися» 30, «gemini безкоштовно» 29, «для студентів» 17; промпти 29/20 (як писати промпти 10/10 укр., медіана 485); «резюме с помощью chatgpt» 249 — рос. запит",
+   "by": "showrunner",
+   "hook": "you",
+   "status": "approved",
+   "decision": "гайд #3 9.12",
+   "added": "2026-11-22",
+   "id": "19",
+   "score": 234.0
+  },
+  {
    "title": "ChatGPT з нуля українською — гайд 12–15 хв",
    "format": "guide",
    "channels": [
@@ -904,27 +924,6 @@
    "added": "2026-11-22",
    "id": "14",
    "score": 105.7
-  },
-  {
-   "title": "Claude розв’язав дві відкриті задачі фізики чорних дір — що це каже про ШІ-науку",
-   "format": "news",
-   "channels": [
-    "show",
-    "site",
-    "tg"
-   ],
-   "demand": 2,
-   "fresh": 5,
-   "show": 4,
-   "fit": 3,
-   "source": "https://www.anthropic.com/research/claude-black-hole-physics",
-   "by": "researcher-news",
-   "note": "17.11, заяви Anthropic: перевірено в Lean і фізиком; практичних застосувань нема — казати чесно",
-   "status": "new",
-   "added": "2026-11-22",
-   "id": "16",
-   "decision": "кандидат у шоу #3",
-   "score": 88.1
   }
  ],
  "lake": {
@@ -1245,8 +1244,8 @@
    "agent": "seo",
    "task": "Наступна сторінка з GSC (покази ≥50, поз. 4–20)",
    "started": "2026-11-22T13:19:11Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-22T13:23:33Z",
+   "result": "yak-vidklyuchyty-gemini переписано (533 покази, поз. 6.9): ~1000 слів, FAQ 5, застарілу пораду прибрано"
   },
   {
    "id": "21",
@@ -1277,6 +1276,14 @@
    "agent": "seo",
    "task": "Оновити статтю anthropic-ipo: лістинг на Nasdaq 19.11",
    "started": "2026-11-22T13:22:46Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "25",
+   "agent": "cm",
+   "task": "Коментарі YouTube і група TG без відповіді; пост дня",
+   "started": "2026-11-22T13:23:33Z",
    "finished": null,
    "result": ""
   }
