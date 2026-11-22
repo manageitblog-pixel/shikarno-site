@@ -1,0 +1,1368 @@
+<title>Система ШІкарно 22.11</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;600&family=Montserrat:wght@800&family=JetBrains+Mono&display=swap">
+<style>
+/* Звіт-документ: вузька колонка тексту, зміст угорі, широкі таблиці скролляться */
+:root{--bg:#F7F6FC;--fg:#1A1630;--mut:#5E5880;--line:#DEDAF0;--card:#FFFFFF;--acc:#6A4BFF;--hl:#FFD60A;--ok:#1F8A4C;--mid:#9A6A00;--no:#C2264B;
+--display:"Montserrat",system-ui,sans-serif;--text:"Golos Text",system-ui,sans-serif;--mono:"JetBrains Mono",ui-monospace,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0B0A1C;--fg:#ECEAF8;--mut:#A9A3D6;--line:#2A2450;--card:#14112E;--acc:#9B87FF;--ok:#4CD08A;--mid:#FFD60A;--no:#FF7A9A;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0B0A1C;--fg:#ECEAF8;--mut:#A9A3D6;--line:#2A2450;--card:#14112E;--acc:#9B87FF;--ok:#4CD08A;--mid:#FFD60A;--no:#FF7A9A;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:16px/1.6 var(--text);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 64px}
+main{max-width:880px;margin:0 auto}
+h1{font:800 clamp(24px,4vw,34px)/1.2 var(--display);text-wrap:balance;margin:0 0 8px}
+h1::before{content:"ШІ";background:var(--hl);color:#0B0A1C;padding:0 6px;border-radius:6px;margin-right:10px;font-size:.8em}
+h2{font:800 22px/1.3 var(--display);margin:48px 0 12px;padding-top:12px;border-top:2px solid var(--line);text-wrap:balance}
+h3{font-size:17px;margin:28px 0 8px}
+p,li{max-width:68ch} a{color:var(--acc)}
+code{font:13px var(--mono);background:var(--card);border:1px solid var(--line);border-radius:5px;padding:0 4px;word-break:break-word}
+pre{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px;overflow-x:auto} pre code{border:0;padding:0}
+.tw{overflow-x:auto;margin:12px 0;border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;font-size:14px;min-width:640px;width:100%} th,td{text-align:left;vertical-align:top;padding:7px 10px;border-bottom:1px solid var(--line)}
+th{background:var(--card);font-weight:600;position:sticky;top:0}
+.toc{display:flex;flex-wrap:wrap;gap:6px;margin:16px 0 8px} .toc a{font-size:13px;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:3px 10px;color:var(--fg);background:var(--card)}
+.toc a:focus-visible,a:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.tag{font-size:12px;font-weight:600;border-radius:999px;padding:1px 8px;border:1px solid currentColor;white-space:nowrap} .tag.ok{color:var(--ok)} .tag.mid{color:var(--mid)} .tag.no{color:var(--no)}
+.note{color:var(--mut);font-size:14px}
+</style>
+<main>
+<p class="note">Звіт лише для читання: опис системи як вона є, без пропозицій. Позначки: <span class="tag ok">підтверджено кодом</span> <span class="tag mid">ймовірно</span> <span class="tag no">відсутньо</span></p>
+<nav class="toc" aria-label="Зміст"><a href="#1-executive-summary">1. Executive summary</a><a href="#2-system-overview">2. System overview (простою мовою)</a><a href="#3-repository-map">3. Repository map</a><a href="#4-end-to-end-data-flow">4. End-to-end data flow</a><a href="#5-agent-inventory">5. Agent inventory</a><a href="#6-agent-orchestration-map">6. Agent orchestration map (фактична)</a><a href="#7-decision-points">7. Decision points</a><a href="#8-data-storage-map">8. Data storage map</a><a href="#9-external-integrations">9. External integrations</a><a href="#10-what-works">10. What works</a><a href="#11-what-is-broken-or-risky">11. What is broken or risky</a><a href="#12-what-is-unclear">12. What is unclear</a><a href="#13-critical-questions-for-owner">13. Critical questions for owner</a></nav>
+<h1 id="22112026-1320z">Як фактично працює система «ШІкарно» (стан 22.11.2026, ~13:20Z)</h1>
+<p>Режим: лише читання. Файли репозиторію й /home/claude не змінювались, публікацій і необоротних дій не було. Значень секретів не виводив.
+Що перевірено: код на <code>HEAD = db6b7a7</code> гілки <code>claude/inspiring-mccarthy-77osj6</code>, яка збігається з <code>origin/main</code> (0/0 комітів розбіжності). Поки йшов аудит, інші агенти закомітили <code>e420371</code> (studio/util.py, блокування) і <code>fbdef44</code> (історія метрик в analytics_db.py і lake.py). Тому описую стан після цих комітів, а нові частини позначаю «додано 22.11 ~13:15Z». Також перевірено: жива SQLite (відкрита <code>mode=ro</code>), JSON-стан, <code>.claude/settings.json</code>, workflows, Cloudflare-воркери, 20 активних запланованих задач (<code>list_triggers</code>, лише читання) і метадані головної сесії (<code>get_session</code>).</p>
+<p><strong>Позначки:</strong> <strong>[К]</strong> підтверджено кодом (файл:рядок або таблиця). <strong>[П]</strong> підтверджено планувальником або документацією (промпт задачі, RUNBOOK), не кодом репозиторію. <strong>[?]</strong> ймовірно, але не підтверджено. <strong>[—]</strong> відсутнє, НЕ ПІДТВЕРДЖЕНО КОДОМ.</p>
+<hr />
+<h2 id="1-executive-summary">1. Executive summary</h2>
+<ol>
+<li>Система — це одна довга сесія Claude Code («Автопілот ШІКАРНО», <code>session_015jXV5…</code>, режим дозволів <strong>auto</strong>, працює з 26.10). У неї стріляють 20 запланованих задач-промптів. Сесія сама виконує скрипти репозиторію і запускає фонових субагентів (Agent tool). Оркестратора в коді немає: логіка «хто, що, коли» живе в текстах промптів у хмарному планувальнику і в docs/RUNBOOK.md [П].</li>
+<li>Код репозиторію — це набір інструментів без власного керування: YouTube-клієнт, TTS, ASR-звірка, Remotion-рендер, Telegram-хелпер, даталейк SQLite, генератор сайту. Їх викликає LLM-агент. Скрипта, який сам проводить ролик від сценарію до публікації, немає [—].</li>
+<li>Кінцевий результат: Short (1/день о 17:00Z) і довгі відео (план — нд-шоу і ср-гайд) на YouTube через <code>publishAt</code>, той самий ролик у TikTok через vidIQ MCP, пост у Telegram-каналі, стаття на сайті (GitHub Pages) і метрики в SQLite [К]+[П].</li>
+<li><strong>Людини в контурі публікації немає.</strong> 22.11 власник письмово дав постійний дозвіл («без вікна вето») на YouTube, Telegram і TikTok (RUNBOOK:71–72) [П]. Запобіжники лише агентні: <code>finalize.py</code> PASS (тільки упаковка), фактчек-файл (дисципліна промпту, код його не перевіряє) і посилання власнику після виходу.</li>
+<li>Необоротні або публічні дії: заливка на YouTube і автоматичний вихід за <code>publishAt</code>, коментарі від імені каналу, щоденна масова зміна назв, описів і тегів <strong>усіх</strong> відео (<code>audit.py --fix</code> у радарі), пости і видалення повідомлень у Telegram, публікація в TikTok, push у <code>main</code> (деплой сайту + IndexNow у Bing), зміна і видалення самих запланованих задач агентом COO.</li>
+<li>Людина потрібна лише в кількох місцях: щотижневе оновлення OAuth YouTube (режим Testing, наступне ~25.11 10:00Z) [К auth.py:1; П], «Related video» і дописи спільноти в Studio, закріплення коментарів, скріни TikTok, бюджети.</li>
+<li>Дані: одна SQLite <code>studio/data/analytics.sqlite</code> (19 таблиць, лише автоіндекси PK, journal_mode=delete) плюс ~10 JSON-файлів стану. Новина, тема, ідея, випуск, публікації і метрики між собою не пов'язані: 14 ідей, жодна не має <code>video_id</code> [К].</li>
+<li><code>studio/eps/queue.json</code>, <code>studio/data/bets.json</code> і <code>docs/org/rollout.md</code> не існують [—], хоча на них посилаються промпти COO і Диспетчера та оргдизайн [П].</li>
+<li>22.11 додано захист: <code>_req</code> з timeout, ретраями і журналом квоти, перевірка дублів за назвою за 24 год у <code>yt.upload</code>, атомарний запис і flock для JSON. Покриття неповне: <code>thumb.py</code>, <code>tg.py</code>, <code>inbox.py</code>, <code>lake.news</code>, <code>auth.py</code>, <code>hq_data.py</code> ці механізми не використовують [К].</li>
+<li>Єдина точка відмови: усі 20 задач прив'язані до однієї persistent-сесії. Під час аудиту її контекст був заповнений на 896 489 з 1 000 000 токенів, поріг автокомпакції — 901 600 [К get_session]. Зовнішнього heartbeat немає [—].</li>
+<li>Секретів у git немає (<code>studio/.gitignore</code>, права 600) [К]. У публічному коді є chat_id власника (<code>tg.py:19</code>, <code>wrangler.toml</code>) і URL артефакту «Доступи» (<code>studio/MIGRATION.md</code>).</li>
+<li>Агенти змінюють власні правила: growth-loop щонеділі сам «прибирає нижні 20% форматів» і пише це в RUNBOOK; COO може робити <code>update_trigger</code>/<code>delete_trigger</code>; збирач сам ставить <code>approved</code> ідеям з балом ≥300 [П].</li>
+</ol>
+<hr />
+<h2 id="2-system-overview">2. System overview (простою мовою)</h2>
+<p><strong>Бізнес-ціль.</strong> Монетизувати YouTube-канал (YPP: 1 000 підписників і 4 000 год довгих до 31.01.2027; мінімум — 1 000 підписників і 400–500 год), а Telegram, TikTok і сайт розвивати як допоміжні канали (RUNBOOK:75, docs/org/strategy.md) [П].</p>
+<p><strong>Актори.</strong>
+- <strong>Власник</strong> пише боту @ShikarnoUABot, дає рішення і дозволи, раз на тиждень вручну оновлює OAuth.
+- <strong>Головна сесія Claude</strong> (оркестратор) — одна, з контекстом 1M токенів.
+- <strong>Субагенти</strong> (Agent tool, run_in_background) запускаються з промптів Диспетчера та відділів.
+- <strong>Хмарний планувальник</strong> (20 задач) будить головну сесію.
+- <strong>GitHub Actions</strong> збирає і деплоїть сайт (push + cron */30) і три воркери Cloudflare.
+- <strong>Cloudflare Workers:</strong> пульт + вебхук бота, Partners bot, Bait bot (має власний cron).
+- <strong>Зовнішні API:</strong> YouTube Data/Analytics, Search Console, Gemini TTS, Telegram Bot API, vidIQ MCP, IndexNow, RSS/HN/DOU.</p>
+<p><strong>Життєвий цикл контенту:</strong> сигнал (радар, новини, пошуковий попит) → тема/ідея → сценарій <code>epNN.py</code> → фактчек (md-файл) → озвучка Gemini → звірка голосу/ASR → рендер Remotion → обкладинка → заливка з <code>publishAt</code> → finalize → (у момент виходу) коментар, TG-пост, TikTok, стаття → метрики в SQLite → тижневий цикл росту → зміни правил у RUNBOOK.</p>
+<p><strong>Що автоматизовано:</strong> майже все, включно з публікацією. <strong>Що робить людина:</strong> OAuth раз на 7 днів, дії в YouTube Studio, які API не підтримує, бюджети, підключення акаунтів.</p>
+<p><strong>Завершеність.</strong> Стабільне: сайт, рендер і TTS-конвеєр, YouTube-клієнт, даталейк. Прототипне або частково на папері: оргструктура v3 (17–18 «агентів» — це промпти, а не процеси), черга продакшну, ставки CSO, Line Producer (запланованої задачі немає), Clip Editor, незалежний QA (у коді є лише скрипти, які запускає той самий агент).</p>
+<hr />
+<h2 id="3-repository-map">3. Repository map</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Шлях</th>
+<th>Призначення</th>
+<th>Як запускається</th>
+<th>Залежить від</th>
+<th>Що змінює</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>build.py</code>, <code>config.py</code>, <code>templates/</code>, <code>static/</code>, <code>content/posts</code> (98 .md)</td>
+<td>статичний сайт, SEO, sitemap, rss, llms.txt</td>
+<td><code>python3 build.py</code> локально і в CI</td>
+<td>jinja2, markdown, pyyaml, pillow</td>
+<td><code>dist/</code></td>
+</tr>
+<tr>
+<td><code>.github/workflows/pages.yml</code></td>
+<td>build → deploy-pages → indexnow</td>
+<td>push у main, <code>workflow_dispatch</code>, cron <code>*/30</code> (рядок 65)</td>
+<td>GitHub Pages</td>
+<td>публічний сайт</td>
+</tr>
+<tr>
+<td><code>tools/indexnow.py</code></td>
+<td>ping Bing про змінені URL</td>
+<td>job <code>indexnow</code></td>
+<td><code>static/indexnow-key.txt</code>, <code>git diff HEAD~1</code> (рядок 15)</td>
+<td>зовнішній індекс</td>
+</tr>
+<tr>
+<td><code>tools/ogcard.py</code>, <code>tools/keywords*.py</code></td>
+<td>OG-картки; ключові слова</td>
+<td>build / вручну</td>
+<td>Pillow</td>
+<td><code>dist/</code>, json</td>
+</tr>
+<tr>
+<td><code>pult/worker.js</code> + <code>pult.yml</code></td>
+<td>пульт (Durable Object SQLite <code>ev</code>, <code>kv</code>, <code>tg</code>), вебхук бота <code>/tg</code>, <code>/api/tg/pull</code>, <code>/api/ingest</code>, <code>/api/state</code></td>
+<td>Cloudflare, деплой при зміні <code>pult/**</code></td>
+<td>секрети CF/TG у GitHub Secrets</td>
+<td>черга повідомлень, журнал подій</td>
+</tr>
+<tr>
+<td><code>bot/</code> + <code>bot.yml</code></td>
+<td>@ShikarnoPartnersBot, заявки партнерів</td>
+<td>Cloudflare</td>
+<td>GitHub Secrets</td>
+<td>пересилає заявки адміну</td>
+</tr>
+<tr>
+<td><code>bait/</code> + <code>bait-bot.yml</code></td>
+<td>@ShikarnoBaitBot: онбординг, <strong>email за згодою</strong>, щотижнева розсилка</td>
+<td>Cloudflare, cron <code>0 8 * * 2</code> (wrangler.toml)</td>
+<td><code>BAIT_BOT_TOKEN</code></td>
+<td>DO-таблиця <code>u</code> (PII)</td>
+</tr>
+<tr>
+<td><code>.claude/settings.json</code></td>
+<td>хуки на всі події → <code>studio/pult/hook.py</code></td>
+<td>кожна подія Claude Code</td>
+<td><code>studio/pult/.token</code></td>
+<td>шле опис дії на пульт</td>
+</tr>
+<tr>
+<td><code>.claude/skills/growth-loop/SKILL.md</code></td>
+<td>тижневий цикл росту</td>
+<td>задача нд 11:13</td>
+<td>yt, tg, GSC</td>
+<td>RUNBOOK, повідомлення власнику</td>
+</tr>
+<tr>
+<td><code>studio/bootstrap.sh</code></td>
+<td>симлінки <code>/home/claude/{rv,eps,tg,yt,gem,pdf,pult}</code> → studio, залежності, Whisper, відновлення бази зі знімка (рядок 28)</td>
+<td>вручну / в задачі бота</td>
+<td>apt, pip, npm</td>
+<td>/home/claude</td>
+</tr>
+<tr>
+<td><code>studio/util.py</code> (додано 22.11)</td>
+<td><code>locked</code>, <code>read_json</code>, <code>write_json_atomic</code>, <code>update_json</code></td>
+<td>бібліотека</td>
+<td>fcntl</td>
+<td>JSON-стан</td>
+</tr>
+<tr>
+<td><code>studio/yt/yt.py</code></td>
+<td>token, api, upload, schedule, comment, add_to_playlist, set_category</td>
+<td>бібліотека</td>
+<td><code>yt/token.json</code>, <code>client_secret.json</code></td>
+<td>YouTube</td>
+</tr>
+<tr>
+<td><code>studio/yt/auth.py</code></td>
+<td>OAuth PKCE (6 scopes, рядки 91–93)</td>
+<td><code>link</code> / <code>code</code></td>
+<td><code>.pkce</code></td>
+<td><code>token.json</code></td>
+</tr>
+<tr>
+<td><code>studio/yt/finalize.py</code></td>
+<td>обкладинка → плейлист → <code>audit.fix</code> → черга коментаря → <code>thumb_test</code> → PASS/FAIL</td>
+<td>вручну агентом після заливки</td>
+<td>yt, audit, thumb</td>
+<td>YouTube, <code>pending_comments.json</code></td>
+</tr>
+<tr>
+<td><code>studio/yt/audit.py</code></td>
+<td>правила упаковки T1/D1/D2/G1–4/P1/C1; <code>--fix</code></td>
+<td>щоранку в радарі (<code>--fix</code>), SEO без <code>--fix</code></td>
+<td>yt</td>
+<td><strong>метадані всіх відео</strong></td>
+</tr>
+<tr>
+<td><code>studio/yt/post_comments.py</code></td>
+<td>постить чергу перших коментарів після <code>publishAt</code></td>
+<td>з нагадувань «вийшов»</td>
+<td>yt, util</td>
+<td>YouTube-коментарі</td>
+</tr>
+<tr>
+<td><code>studio/yt/thumb.py</code>, <code>thumbs_push.py</code></td>
+<td><code>thumbnails.set</code></td>
+<td>finalize / вручну</td>
+<td>yt.token</td>
+<td>YouTube</td>
+</tr>
+<tr>
+<td><code>studio/yt/analytics_db.py</code></td>
+<td>sync YT Analytics → videos, daily, traffic, snap (+22.11: channel_daily, traffic_daily, tg_daily, watch_min, subs_lost); report, top, hours</td>
+<td>збирач / радар</td>
+<td>yt, audit, tg</td>
+<td>SQLite</td>
+</tr>
+<tr>
+<td><code>studio/yt/lake.py</code></td>
+<td>ingest (research, posts, GSC +22.11 тижні), news, niche, comp, history, snapshot, ask, sql</td>
+<td>збирач кожні 4 год</td>
+<td>yt, RSS/HN/DOU</td>
+<td>SQLite, знімок у git</td>
+</tr>
+<tr>
+<td><code>studio/yt/ideas.py</code></td>
+<td>дошка ідей, бал, priors</td>
+<td>агенти</td>
+<td>SQLite, util</td>
+<td><code>studio/data/ideas.json</code></td>
+</tr>
+<tr>
+<td><code>studio/yt/kw.py</code>, <code>outliers.py</code></td>
+<td>autocomplete + пошук YouTube; аномалії ніші</td>
+<td>агенти</td>
+<td>suggestqueries.google.com (неофіційний), yt</td>
+<td>stdout, <code>niche</code></td>
+</tr>
+<tr>
+<td><code>studio/yt/hq_data.py</code>, <code>activity.py</code>, <code>studio/hq/index.html</code></td>
+<td>дашборд HQ (артефакт) і журнал агентів</td>
+<td>після кожної зміни</td>
+<td>SQLite, tg, yt</td>
+<td><code>hq/data.json</code>, <code>hq/activity.json</code></td>
+</tr>
+<tr>
+<td><code>studio/yt/retag*.py</code>, <code>audit_2026-10-28.py</code>, <code>dash.py</code>, <code>site_stats.py</code>, <code>backup_*.json</code></td>
+<td>разові/старі інструменти</td>
+<td>вручну</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>studio/eps/epNN.py</code>, <code>guide*.py</code>, <code>weekly*.py</code>, <code>digest1.py</code>, <code>special1.py</code>, <code>month_oct.py</code>, <code>r1–r10.py</code></td>
+<td>сценарії (SCENES/SEGS, тексти, <code>gsay</code>)</td>
+<td>імпортуються gen_<em>/prep_</em></td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>studio/eps/meta.py</code> (374 рядки)</td>
+<td>назви/описи/теги (<code>META…</code>, <code>META23.update</code>)</td>
+<td>імпорт агентом</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>studio/eps/gen_full.py</code>, <code>gen_digest.py</code>, <code>voice_check.py</code>, <code>audit_vo.py</code>, <code>align.py</code></td>
+<td>TTS, нарізка сцен за паузами + Whisper (sherpa-onnx), F0 143±8 Гц, звірка тексту</td>
+<td>вручну агентом</td>
+<td><code>gem/gtts.py</code>, whisper-small</td>
+<td><code>eps/&lt;slug&gt;/*.wav</code>, <code>vo_tl.json</code></td>
+</tr>
+<tr>
+<td><code>studio/eps/prep_ep.py</code>, <code>prep_digest.py</code>, <code>mix_*.py</code>, <code>build.sh</code>, <code>build_digest.sh</code>, <code>render_chunks.sh</code></td>
+<td>props.json, мікс, Remotion render, ffmpeg</td>
+<td>вручну агентом (nohup)</td>
+<td><code>studio/rv</code></td>
+<td><code>eps/&lt;slug&gt;/final.mp4</code></td>
+</tr>
+<tr>
+<td><code>studio/eps/upload_reserve.py</code>, <code>try_ep10.py</code></td>
+<td>заливка резерву / разовий</td>
+<td>вручну</td>
+<td>yt</td>
+<td>YouTube, <code>reserve.json</code>/<code>uploaded.json</code></td>
+</tr>
+<tr>
+<td><code>studio/rv/</code></td>
+<td>Remotion: Short, Ep, Cine, Chat, Digest + Stills ShortThumb, Thumb2/3/4, DigestThumb… (Root.tsx:17–49)</td>
+<td><code>npx remotion</code></td>
+<td>node_modules</td>
+<td>mp4/png</td>
+</tr>
+<tr>
+<td><code>studio/gem/gtts.py</code></td>
+<td>Gemini TTS (<code>gemini-3.8-flash-tts</code>)</td>
+<td>бібліотека</td>
+<td><code>gem/.key</code></td>
+<td>wav</td>
+</tr>
+<tr>
+<td><code>studio/tg/tg.py</code>, <code>inbox.py</code>, <code>watch.py</code></td>
+<td>Bot API; черга з пульта; вартовий + автообмін OAuth-коду</td>
+<td>бібліотека / фон</td>
+<td><code>tg/.token</code>, pult</td>
+<td>TG-канал, <code>inbox.json</code>, <code>updates.json</code>, <code>token.json</code></td>
+</tr>
+<tr>
+<td><code>studio/pult/</code></td>
+<td>хук, CLI пульта, human.py</td>
+<td>хуки / CLI</td>
+<td><code>pult/.token</code></td>
+<td>пульт</td>
+</tr>
+<tr>
+<td><code>studio/eps/*.json</code></td>
+<td>стан: uploaded (99), reserve (10), tiktok, pending_comments (3), comments, experiments, thumb_test, series, playlists</td>
+<td>агенти</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>docs/</code></td>
+<td>RUNBOOK (194 рядки, ~85 КБ), video-principles, playbooks, <code>org/*</code>, <code>research/radar-*.md</code> (13 днів), tasks</td>
+<td>читають агенти</td>
+<td>—</td>
+<td>правила</td>
+</tr>
+<tr>
+<td><code>studio/MIGRATION.md</code>, <code>studio/eps/RUNBOOK.md</code></td>
+<td>інструкція переїзду; <strong>стара копія</strong> RUNBOOK</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Чого немає [—]:</strong> docker/compose, міграцій БД (схема — <code>create table if not exists</code> у <code>db()</code>), черг/брокерів, тестів (жодного test-файлу), окремого production-оточення (усе — один хмарний контейнер <code>env_01X84g2W…</code>), моніторингу/алертів.</p>
+<hr />
+<h2 id="4-end-to-end-data-flow">4. End-to-end data flow</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Етап</th>
+<th>Компонент / де</th>
+<th>Вхід → вихід / куди</th>
+<th>Тригер</th>
+<th>Sync</th>
+<th>Можна пропустити</th>
+<th>Failure / retry / idempotency</th>
+<th>Людина</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Signal source</strong></td>
+<td>RSS OpenAI/Google/DeepMind, HTML anthropic.com/news, HN Firebase, HTML dou.ua (<code>lake.py:183–220</code>) [К]. Reddit, Verge, ain, dev.ua — читає лише LLM у радарі, у базу не пишеться [П]. YouTube search (niche, comp, kw, outliers), GSC, YT Analytics [К]</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>ні</td>
+</tr>
+<tr>
+<td><strong>Ingestion</strong></td>
+<td><code>lake.py news</code></td>
+<td>HTTP → таблиця <code>news</code></td>
+<td>збирач <code>52 */4 * * *</code> UTC [П]</td>
+<td>sync у субагенті</td>
+<td>так (помилка лише <code>print</code>, рядки 194, 207, 214, 219)</td>
+<td>timeout 30 с, <strong>без retry</strong> [К]; <code>insert or ignore</code> за URL — ідемпотентно</td>
+<td>ні</td>
+</tr>
+<tr>
+<td><strong>Raw storage</strong></td>
+<td>—</td>
+<td>окремого raw-шару немає: одразу таблиці без payload [—]</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Normalization</strong></td>
+<td><code>lake.py</code></td>
+<td>дата RSS → YYYY-MM-DD (199); Anthropic <code>published=''</code> (206); dou <code>published=fetched</code> (218); <code>lang_of</code> (129)</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Помилка парсингу дати мовчки лишає сирий рядок (200)</td>
+<td>ні</td>
+</tr>
+<tr>
+<td><strong>Deduplication</strong></td>
+<td>PK <code>news.url</code></td>
+<td>лише точний URL [К]. Тема «вже була» — LLM дивиться <code>uploaded.json</code> і <code>content/posts</code> [П]</td>
+<td></td>
+<td></td>
+<td></td>
+<td>між джерелами дублі не відсікаються [—]</td>
+<td>ні</td>
+</tr>
+<tr>
+<td><strong>Relevance / scoring</strong></td>
+<td>HN — regex <code>AI_RX</code> (223); радар — LLM пише «x/10» у <code>docs/research/radar-*.md</code> [П]; <code>lake.ingest_research</code> парсить (46–58); <code>ideas.score = demand×fresh×show×fit×prior(format)</code> (ideas.py:42–43) [К]</td>
+<td>radar.md → <code>research</code>; ideas.json</td>
+<td>радар <code>43 6 * * *</code> UTC; збирач додає 5 новин/добу в дошку [П]</td>
+<td></td>
+<td>так</td>
+<td>prior — медіана 7 днів за форматом (27–39); demand/fresh/show/fit ставить LLM</td>
+<td>ні</td>
+</tr>
+<tr>
+<td><strong>Editorial queue</strong></td>
+<td><code>studio/data/ideas.json</code> (14: 10 new, 4 approved) [К]</td>
+<td>статуси new/approved/in_work/done/rejected (ideas.py:8)</td>
+<td>агенти</td>
+<td></td>
+<td>так</td>
+<td>flock + атомарний запис (57–68, з 22.11)</td>
+<td>ні</td>
+</tr>
+<tr>
+<td><strong>Agent decision</strong></td>
+<td>радар «найкращу тему дня — у роботу»; збирач «бал ≥300 → approved»; Диспетчер — беклоги [П]</td>
+<td>рішення в radar.md, <code>ideas.decision</code>, тексти задач-нагадувань</td>
+<td>cron</td>
+<td></td>
+<td></td>
+<td>рішення недетерміноване (LLM)</td>
+<td>ні</td>
+</tr>
+<tr>
+<td><strong>Research / fact-check</strong></td>
+<td>LLM (WebFetch). Файли <code>epNN_factcheck.md</code> / <code>_independent.md</code> (є для ep81, ep82, guide1, guide2; для ep80 немає) [К файлова система]</td>
+<td>md-таблиця «твердження ↔ URL ↔ PASS/UNVERIFIED»</td>
+<td>Диспетчер запускає незалежного агента для сценаріїв без <code>*_factcheck_independent.md</code> [П]</td>
+<td>async</td>
+<td><strong>так</strong>: код не блокує озвучку без файлу [—]</td>
+<td>при FAIL — «назад автору» (промпт)</td>
+<td>ні</td>
+</tr>
+<tr>
+<td><strong>Content generation</strong></td>
+<td>сценарій <code>epNN.py</code> (LLM), <code>meta.py</code>; <code>gen_full.py</code> → <code>gtts.tts</code> (Gemini) → <code>split_scenes</code> + Whisper; <code>voice_check</code>; <code>audit_vo</code>; <code>prep_ep</code>; <code>build.sh</code> (Remotion + ffmpeg); обкладинка <code>remotion still</code></td>
+<td><code>eps/&lt;slug&gt;/{full_*.wav, vo_raw.wav, vo_tl.json, vo.wav, props.json, final.mp4, thumb.jpg, tg.mp4, tiktok.mp4}</code> — <strong>поза git</strong> (<code>studio/.gitignore: eps/*/</code>)</td>
+<td>Диспетчер, нагадування</td>
+<td>sync, рендер у фоні (nohup), агент чекає в тому ж ході</td>
+<td></td>
+<td>gtts: 4 спроби на 429 з паузою 30 с, далі RuntimeError (111–121); кеш сирого дубля (gen_full:52); voice_check exit 1 при BAD</td>
+<td>ні</td>
+</tr>
+<tr>
+<td><strong>Review / approval</strong></td>
+<td><code>voice_check</code>, <code>audit_vo</code> (друкує розбіжності, рішення приймає LLM), дизайн-відділ (кадри 0/1 с/80%) [П], <code>finalize.py</code> → <code>audit.check</code> PASS/FAIL (41–43)</td>
+<td>PASS у stdout; <code>thumb_test.json</code>, <code>pending_comments.json</code></td>
+<td>вручну агентом</td>
+<td>sync</td>
+<td>finalize — так (його виклик тримається на дисципліні промпту)</td>
+<td><code>fresh()</code> чекає до 40×15 с (20–25)</td>
+<td><strong>немає</strong> (постійний дозвіл)</td>
+</tr>
+<tr>
+<td><strong>Publishing — YouTube</strong></td>
+<td><code>yt.upload(... publish_at)</code> → <code>schedule</code> (yt.py:56–72, 96–99); запис slug→id в <code>uploaded.json</code> робить агент (окремого скрипта для Shorts немає; є <code>upload_reserve.py</code>, <code>try_ep10.py</code>)</td>
+<td>YouTube private + publishAt → <strong>автоматично public</strong></td>
+<td>виклик агентом; вихід — за часом YouTube</td>
+<td>sync</td>
+<td></td>
+<td><code>_req</code>: 3 спроби, backoff 1/4 с, timeout 60 (22–37); перевірка дубля: така сама назва за 24 год серед 20 останніх (73–88), а якщо перевірка впала — <strong>заливає далі</strong> (79); тіло файлу читається в пам'ять цілком (70)</td>
+<td>ні</td>
+</tr>
+<tr>
+<td><strong>Publishing — після виходу</strong></td>
+<td>нагадування «вийшов» (17:04Z): <code>post_comments.py</code>, <code>workflow_dispatch pages.yml</code>, <code>tg.video</code> → <code>telegram_post</code> у статті, TikTok через vidIQ (<code>vidiq_video_upload</code> → <code>vidiq_put.sh</code> → draft → publish) → <code>tiktok.json.posted_auto</code> [П]+[К vidiq_put.sh]</td>
+<td>коментар, TG-пост, TikTok-пост, стаття</td>
+<td>одноразові задачі</td>
+<td>async</td>
+<td>так</td>
+<td><code>post_comments</code>: помилка → <code>print ERR</code>, запис лишається в черзі (рядки 8–11); <code>tg.call</code> повертає JSON помилки замість винятку (tg.py:7); vidiq_put: timeout і перевірка коду 200/201/308</td>
+<td><strong>немає</strong>; посилання власнику після виходу</td>
+</tr>
+<tr>
+<td><strong>Publishing — сайт</strong></td>
+<td>агент пише <code>content/posts/*.md</code> → <code>git push</code> main → Pages; майбутні дати — лише після часу (build.py:51) + cron */30</td>
+<td>dist → Pages; IndexNow</td>
+<td>push / cron</td>
+<td>async</td>
+<td></td>
+<td>concurrency group <code>pages</code>, без скасування (pages.yml:70–72)</td>
+<td>ні</td>
+</tr>
+<tr>
+<td><strong>Metrics</strong></td>
+<td><code>analytics_db.sync</code> (YT Analytics по відео/днях; з 22.11 також watch_min, subs_lost, channel_daily, traffic_daily, tg_daily); <code>lake.ingest_site</code> (GSC); <code>snap</code>; TikTok — <code>views_owner</code> вручну; HQ: <code>getChatMemberCount</code></td>
+<td>SQLite</td>
+<td>збирач раз на добу після 08:00Z, радар</td>
+<td>sync</td>
+<td></td>
+<td><code>ya()</code> timeout 60, <strong>без retry</strong>; помилка по відео → <code>print</code> і continue</td>
+<td>ні</td>
+</tr>
+<tr>
+<td><strong>Analysis / feedback</strong></td>
+<td><code>report</code>/<code>top</code>, <code>lake ask</code>, forecast-audit, growth-loop (нд), CSO (пн), COO (2×/день) [П]; <code>ideas.priors()</code> [К]</td>
+<td>RUNBOOK, strategy.md, повідомлення власнику</td>
+<td>cron</td>
+<td></td>
+<td></td>
+<td>рішення — LLM</td>
+<td>власник отримує звіти, відповідає за бажанням</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="5-agent-inventory">5. Agent inventory</h2>
+<p>Агенти — це не процеси, а <strong>промпти задач</strong> у планувальнику [П] і субагенти, яких ці промпти запускають. «Ролі» з <code>hq_data.py:12–31</code> (18 штук) — це дані для дашборду, а не виконувані сутності [К].</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Агент / задача</th>
+<th>Ініціатор / розклад</th>
+<th>Модель / тип</th>
+<th>Інструменти</th>
+<th>Читає</th>
+<th>Пише / зовнішні дії</th>
+<th>Власник у контурі</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Головна сесія (оркестратор, «Головний редактор», фактично COO)</td>
+<td>усі задачі, вартовий <code>watch.py</code></td>
+<td>Claude Opus 5.5, auto</td>
+<td>Bash, Edit, Agent, Artifact, trigger-tools, vidIQ MCP</td>
+<td>усе</td>
+<td>усе</td>
+<td>приймає повідомлення власника</td>
+</tr>
+<tr>
+<td>Перевірка бота</td>
+<td><code>CRON_TZ=Europe/Kyiv 49 * * * *</code></td>
+<td>головна сесія</td>
+<td>inbox.py, tg</td>
+<td>черга пульта, updates.json</td>
+<td>відповіді власнику; <strong>видалення спаму в групі</strong></td>
+<td>так (виконує його прохання)</td>
+</tr>
+<tr>
+<td>Диспетчер</td>
+<td><code>CRON_TZ=Europe/Kyiv 17 * * * *</code></td>
+<td>головна + ≤4 субагенти/год, ≤1 на відділ</td>
+<td>Agent ×N, activity.py, hq_data, Artifact</td>
+<td>ideas.json, <code>queue.json</code> (немає), сценарії, GSC, updates.json</td>
+<td>сценарії, фактчеки, озвучка/рендер/заливка, push у <strong>дві гілки</strong>, dispatch-log</td>
+<td>ні («не писати власнику»)</td>
+</tr>
+<tr>
+<td>Збирач даталейку (Data Engineer)</td>
+<td><code>52 */4 * * *</code> UTC</td>
+<td>субагент + головна (HQ)</td>
+<td>lake.py, analytics_db, outliers, ideas.py</td>
+<td>API</td>
+<td>SQLite, знімок у git, ideas (додає 5/добу, <strong>approve при балі ≥300</strong>), публікує артефакт HQ</td>
+<td>ні</td>
+</tr>
+<tr>
+<td>Радар + редколегія (Trend Researcher + EIC)</td>
+<td><code>43 6 * * *</code> UTC</td>
+<td>головна</td>
+<td>WebFetch, kw, outliers, analytics_db, <code>audit.py --fix</code></td>
+<td>першоджерела, HN, Reddit, ЗМІ</td>
+<td>radar.md, <strong>масові правки метаданих YouTube</strong>, тема дня у виробництво, звіт власнику</td>
+<td>ні (лише звіт)</td>
+</tr>
+<tr>
+<td>Telegram/Community</td>
+<td><code>CRON_TZ=Europe/Kyiv 41 8 * * *</code></td>
+<td>субагент</td>
+<td>tg.py</td>
+<td>updates.json, pending_comments</td>
+<td>пост «промпт дня», модерація групи, tg_daily</td>
+<td>ні</td>
+</tr>
+<tr>
+<td>SEO-відділ</td>
+<td><code>CRON_TZ=Europe/Kyiv 13 12 * * *</code></td>
+<td>субагент</td>
+<td>kw.py, audit.py (без fix), YouTube API, GSC, build.py</td>
+<td>ideas, GSC</td>
+<td><code>ideas.kw</code>, <strong>нові назви/теги відео ≤14 днів</strong>, переписані статті, push</td>
+<td>ні</td>
+</tr>
+<tr>
+<td>Дизайн-відділ</td>
+<td><code>CRON_TZ=Europe/Kyiv 7 15 * * *</code></td>
+<td>субагент</td>
+<td>ffmpeg, remotion still, thumb.py</td>
+<td>final.mp4</td>
+<td><strong>заміна обкладинки</strong>, design-guide</td>
+<td>ні</td>
+</tr>
+<tr>
+<td>COO</td>
+<td><code>CRON_TZ=Europe/Kyiv 27 9,20 * * *</code></td>
+<td>головна</td>
+<td><strong>update_trigger/delete_trigger</strong>, list_triggers, hq_data, Playwright</td>
+<td>ideas, queue (немає)</td>
+<td>оргзміни, промпти задач, звіт власнику 20:27</td>
+<td>лише для нових/прибраних ролей</td>
+</tr>
+<tr>
+<td>CSO</td>
+<td><code>CRON_TZ=Europe/Kyiv 19 11 * * 1</code></td>
+<td>головна</td>
+<td>lake, analytics_db</td>
+<td>база, research</td>
+<td>strategy.md, рішення для COO, 5 рядків власнику</td>
+<td>ні</td>
+</tr>
+<tr>
+<td>Growth loop</td>
+<td><code>CRON_TZ=Europe/Kyiv 13 11 * * 0</code></td>
+<td>головна, скіл</td>
+<td>yt, tg, GSC</td>
+<td>метрики</td>
+<td><strong>зміни часток форматів у RUNBOOK</strong></td>
+<td>звіт власнику</td>
+</tr>
+<tr>
+<td>Конкуренти</td>
+<td><code>CRON_TZ=Europe/Kyiv 37 10 * * 1</code></td>
+<td>головна</td>
+<td>lake comp/ingest</td>
+<td>YouTube</td>
+<td>comp, ideas, звіт</td>
+<td>звіт</td>
+</tr>
+<tr>
+<td>Довгі відео</td>
+<td><code>CRON_TZ=Europe/Kyiv 23 9 * * 1,6</code></td>
+<td>головна</td>
+<td>увесь конвеєр</td>
+<td>radar, першоджерела</td>
+<td>weeklyN.py/guide, заливка, finalize, стаття</td>
+<td>звіт</td>
+</tr>
+<tr>
+<td>Разові нагадування</td>
+<td><code>run_once_at</code>: 22.11 17:04Z ep80; 23.11 08:05Z TTS гайду; 23.11 08:20Z добір конкурентів; 23.11 09:17Z звірка пошуку; 23.11 17:04Z ep81; 25.11 08:00Z токен; 25.11 17:04Z ep78; 26.11 09:00Z Bait-бот</td>
+<td>головна</td>
+<td>post_comments, workflow_dispatch, tg.video, vidIQ publish</td>
+<td>—</td>
+<td><strong>публікації</strong></td>
+<td>ні (окрім токена)</td>
+</tr>
+<tr>
+<td>Незалежний фактчекер</td>
+<td>Диспетчер (субагенти не можуть запускати інших агентів)</td>
+<td>субагент</td>
+<td>WebFetch</td>
+<td>сценарій, meta</td>
+<td><code>*_factcheck_independent.md</code></td>
+<td>ні</td>
+</tr>
+<tr>
+<td>LLM у коді</td>
+<td>лише Gemini TTS (<code>gtts.py</code>) — генерація аудіо, не рішення [К]</td>
+<td>Gemini</td>
+<td>—</td>
+<td>текст</td>
+<td>wav</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Детерміновані «агенти»</td>
+<td><code>audit.check/fix</code>, <code>ideas.score</code>, <code>voice_check</code>, <code>_find_recent_upload</code> [К]</td>
+<td>rule engine</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="6-agent-orchestration-map">6. Agent orchestration map (фактична)</h2>
+<pre><code>Хмарний планувальник (20 задач) ──prompt──► ГОЛОВНА СЕСІЯ (одна, persistent, auto)
+   │                                           │  ▲ watch.py (фон, 10 с) ◄── pult /api/tg/pull ◄── @ShikarnoUABot webhook ◄── ВЛАСНИК
+   │                                           │  └─ хуки → hook.py → pult /api/ingest (журнал дій)
+   │                                           ├─Agent(bg)─► субагент-відділ (сценарій / SEO / TG / дизайн / збирач)
+   │                                           │               └─ результат (текст) ──► головна: «естафета» → наступний Agent
+   │                                           ├─Agent(bg)─► незалежний фактчекер ──► *_factcheck_independent.md
+   │                                           ├─Bash─► gen_full (Gemini TTS) → voice_check → audit_vo → prep_ep → build.sh (Remotion)
+   │                                           ├─Bash─► yt.upload(publish_at) ─► YouTube (private→public у publishAt)  [НЕОБОРОТНО]
+   │                                           ├─Bash─► finalize.py ─► thumbnails/playlist/videos.update + pending_comments.json
+   │                                           ├─send_later/create_trigger ─► нагадування «вийшов» 17:04Z
+   │                                           └─Artifact publish ─► HQ-дашборд
+   нагадування 17:04Z ─► головна ─► post_comments.py ─► YouTube comment [НЕОБОРОТНО]
+                                 ├─► gh workflow_dispatch pages.yml / git push main ─► Pages + IndexNow
+                                 ├─► tg.video ─► канал @shikarno_ai_ua [НЕОБОРОТНО] ─► message_id → telegram_post → push
+                                 └─► vidIQ MCP upload → draft → publish ─► TikTok [НЕОБОРОТНО] ─► tiktok.json + посилання власнику
+   analytics_db.sync / lake ─► SQLite ─► hq_data ─► HQ ; growth-loop/CSO/COO ─► RUNBOOK / strategy / update_trigger
+</code></pre>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Перехід</th>
+<th>Хто ініціює</th>
+<th>Дані / формат</th>
+<th>Проміжний результат</th>
+<th>Агент сам іде далі?</th>
+<th>Людина?</th>
+<th>Якщо наступний недоступний</th>
+<th>Петлі / повтори</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Планувальник → головна</td>
+<td>cron</td>
+<td>текст промпту</td>
+<td>—</td>
+<td>так</td>
+<td>ні</td>
+<td>якщо сесія зайнята, промпт чекає кінця ходу [?]; <code>last_run SUCCEEDED</code> означає лише доставку</td>
+<td>задачі з однієї години (:17 Диспетчер, :49 бот) ставляться в чергу одна за одною</td>
+</tr>
+<tr>
+<td>Головна → субагент</td>
+<td>Диспетчер/відділ</td>
+<td>текст брифу</td>
+<td>git-файли, stdout</td>
+<td>так («естафета», RUNBOOK:74)</td>
+<td>ні</td>
+<td>субагент падає → головна бачить помилку; формального статусу немає</td>
+<td>можливий нескінченний ланцюг естафети; обмеження «≤4/год» записане лише в промпті</td>
+</tr>
+<tr>
+<td>Субагент → git</td>
+<td>субагент</td>
+<td>файли</td>
+<td><code>git add</code> конкретних шляхів, push у main і другу гілку, при відмові <code>pull --no-rebase</code></td>
+<td>так</td>
+<td>ні</td>
+<td>merge-конфлікт → [?]</td>
+<td>паралельні push</td>
+</tr>
+<tr>
+<td>Сценарій → фактчек</td>
+<td>Диспетчер</td>
+<td><code>epNN.py</code> + meta</td>
+<td>md-таблиця</td>
+<td>так</td>
+<td>ні</td>
+<td>без файлу озвучка заборонена <strong>лише промптом</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td>Фактчек → TTS</td>
+<td>головна/Диспетчер</td>
+<td>текст <code>gsay</code></td>
+<td><code>full_*.wav</code> (кеш)</td>
+<td>так</td>
+<td>ні</td>
+<td>429×4 → RuntimeError; чекати 08:00Z</td>
+<td>переозвучка потребує <code>rm full_*.wav</code> (RUNBOOK:114)</td>
+</tr>
+<tr>
+<td>Рендер → заливка</td>
+<td>головна</td>
+<td>final.mp4, meta</td>
+<td><code>uploaded.json</code> (пише агент)</td>
+<td>так</td>
+<td>ні</td>
+<td><code>_req</code> 3 спроби → RuntimeError</td>
+<td>дубль відсікається лише за точною назвою за 24 год</td>
+</tr>
+<tr>
+<td>Заливка → публікація</td>
+<td>YouTube</td>
+<td>publishAt</td>
+<td>—</td>
+<td><strong>автоматично</strong></td>
+<td>ні</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Публікація → TG/TikTok/коментар</td>
+<td>одноразова задача 17:04Z</td>
+<td>шляхи, тексти в промпті</td>
+<td>tiktok.json, telegram_post</td>
+<td>так</td>
+<td>ні</td>
+<td>помилка tg повертається як JSON; post_comments лишає запис</td>
+<td>повторний запуск може запостити TG/TikTok вдруге: у коді перевірки немає [—]</td>
+</tr>
+<tr>
+<td>Метрики → рішення</td>
+<td>growth/CSO/COO</td>
+<td>SQLite, звіти</td>
+<td>RUNBOOK, strategy.md</td>
+<td>так</td>
+<td>ні (звіт)</td>
+<td>—</td>
+<td>щотижнева зміна форматів (це визнано в org-design:11)</td>
+</tr>
+<tr>
+<td>Власник → система</td>
+<td>бот</td>
+<td>текст</td>
+<td>inbox.json, черга DO</td>
+<td>—</td>
+<td>так</td>
+<td>вартовий мертвий → відповідь на щогодинній перевірці</td>
+<td>вартовий перезапускається щоходу</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="7-decision-points">7. Decision points</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Рішення</th>
+<th>Хто</th>
+<th>На основі</th>
+<th>Пороги</th>
+<th>Де зафіксовано</th>
+<th>Детерм./відтвор.</th>
+<th>Оборотне</th>
+<th>Наслідок помилки</th>
+<th>Видно причину / скасування</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Вибір теми</td>
+<td>LLM (радар, Диспетчер)</td>
+<td>радар, kw.py, outliers, база</td>
+<td>«бал» у тексті, x/10</td>
+<td>radar-*.md, <code>research</code>, <code>ideas.decision</code></td>
+<td>ні / ні</td>
+<td>до заливки</td>
+<td>слабка тема, дубль</td>
+<td>так (radar.md); скасувати може власник у бот</td>
+</tr>
+<tr>
+<td>Відсікання дублікатів новин</td>
+<td>PK URL</td>
+<td>URL</td>
+<td>точний збіг</td>
+<td><code>news</code></td>
+<td>так</td>
+<td>так</td>
+<td>одна подія = 3 записи</td>
+<td>—</td>
+</tr>
+<tr>
+<td>«Вже було»</td>
+<td>LLM</td>
+<td>uploaded.json, posts</td>
+<td>—</td>
+<td>ніде</td>
+<td>ні</td>
+<td>—</td>
+<td>повтор теми</td>
+<td>ні</td>
+</tr>
+<tr>
+<td>Важливість новини</td>
+<td>LLM + <code>AI_RX</code> для HN</td>
+<td>заголовок</td>
+<td>regex</td>
+<td><code>news.score</code> (лише HN points)</td>
+<td>частково</td>
+<td>—</td>
+<td>шум (OpenAI RSS: 1 419 записів від 2015 р.)</td>
+<td>ні</td>
+</tr>
+<tr>
+<td>Формат / платформа</td>
+<td>правила RUNBOOK (Shorts лише tier/prof) + LLM; <code>ideas.priors</code></td>
+<td>медіана формату</td>
+<td>prior ≥0.2</td>
+<td>ideas.json <code>format</code>, <code>channels</code></td>
+<td>частково</td>
+<td>так</td>
+<td>—</td>
+<td>частково</td>
+</tr>
+<tr>
+<td>Approve ідеї</td>
+<td>LLM збирача</td>
+<td>бал</td>
+<td><strong>≥300 → approved</strong> [П]</td>
+<td>ideas.json</td>
+<td>ні</td>
+<td>так</td>
+<td>слот під слабку тему</td>
+<td>так</td>
+</tr>
+<tr>
+<td>Hook</td>
+<td>LLM-сценарист</td>
+<td>чекліст RUNBOOK:105–113</td>
+<td>≤6 слів, 0–2 с</td>
+<td>у <code>epNN.py</code></td>
+<td>ні</td>
+<td>до рендеру</td>
+<td>—</td>
+<td>варіанти не зберігаються</td>
+</tr>
+<tr>
+<td>Сценарій</td>
+<td>LLM</td>
+<td>першоджерела</td>
+<td>≤35 с (Shorts)</td>
+<td>epNN.py, meta.py (git)</td>
+<td>ні</td>
+<td>до заливки</td>
+<td>факт-помилка в публікації</td>
+<td>так (git)</td>
+</tr>
+<tr>
+<td>Перевірка фактів</td>
+<td>LLM-фактчекер (незалежний лише для частини випусків)</td>
+<td>WebFetch</td>
+<td>PASS/UNVERIFIED</td>
+<td><code>*_factcheck*.md</code></td>
+<td>ні</td>
+<td>—</td>
+<td>UNVERIFIED проходить у публікацію (ep82: 2 UNVERIFIED)</td>
+<td>так</td>
+</tr>
+<tr>
+<td>Якість голосу</td>
+<td><code>voice_check</code></td>
+<td>F0</td>
+<td>143±8 Гц</td>
+<td>stdout</td>
+<td>так</td>
+<td>так</td>
+<td>—</td>
+<td>так</td>
+</tr>
+<tr>
+<td>Готовність до публікації</td>
+<td><code>audit.check</code></td>
+<td>метадані</td>
+<td>T1/D1/D2/G1–4/P1</td>
+<td>stdout, <code>audit_report.json</code></td>
+<td>так</td>
+<td>—</td>
+<td>PASS не перевіряє факти й відео</td>
+<td>так</td>
+</tr>
+<tr>
+<td>Час публікації</td>
+<td>правила + LLM</td>
+<td>RUNBOOK</td>
+<td>17:00Z Short; нд 12:00Z/14:00 Київ; ср 17:00Z</td>
+<td><code>publishAt</code> на YouTube; промпти</td>
+<td>—</td>
+<td><strong>до publishAt</strong> (<code>schedule</code> або private)</td>
+<td>два ролики 25.11 17:00Z (ep78 і гайд #1) [П]</td>
+<td>так</td>
+</tr>
+<tr>
+<td>Публікація YouTube/TG/TikTok</td>
+<td>агент, постійний дозвіл</td>
+<td>finalize PASS + фактчек (промпт)</td>
+<td>—</td>
+<td>uploaded.json, tiktok.json, telegram_post</td>
+<td>—</td>
+<td><strong>ні</strong> (видаляти заборонено RUNBOOK:11)</td>
+<td>публічна помилка</td>
+<td>посилання власнику після факту</td>
+</tr>
+<tr>
+<td>Редагування опублікованого</td>
+<td><code>audit.py --fix</code> щоранку; SEO (≤14 днів); дизайн (обкладинки)</td>
+<td>правила</td>
+<td>список правил audit.py:5–9</td>
+<td><code>audit_report.json</code>; бекапи — ad hoc</td>
+<td>так (fix)</td>
+<td>частково (історії змін немає)</td>
+<td>масова зміна описів і тегів усіх відео; назви — змінюються хвости-хештеги (audit.py:132–139)</td>
+<td>ні</td>
+</tr>
+<tr>
+<td>Видалення</td>
+<td>TG група: спам → <code>deleteMessage</code> (LLM) [П]; YouTube — заборонено правилом</td>
+<td>вміст повідомлення</td>
+<td>—</td>
+<td>ніде</td>
+<td>ні</td>
+<td><strong>ні</strong></td>
+<td>видалено легітимне повідомлення</td>
+<td>ні</td>
+</tr>
+<tr>
+<td>Зміна стратегії</td>
+<td>growth-loop, CSO, COO</td>
+<td>метрики</td>
+<td>«нижні 20% прибрати» (SKILL.md:6)</td>
+<td>RUNBOOK, strategy.md</td>
+<td>ні</td>
+<td>так</td>
+<td>хаос форматів</td>
+<td>так (git)</td>
+</tr>
+<tr>
+<td>Зміна prompt'ів і правил</td>
+<td>COO (<code>update_trigger</code>/<code>delete_trigger</code>), будь-який агент (Edit RUNBOOK)</td>
+<td>—</td>
+<td>нові ролі — лише з погодження власника</td>
+<td>планувальник (історії немає), git</td>
+<td>ні</td>
+<td>частково</td>
+<td>агент вимикає або змінює задачі</td>
+<td>промпти видно лише через list_triggers</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="8-data-storage-map">8. Data storage map</h2>
+<p><strong>SQLite <code>studio/data/analytics.sqlite</code></strong> (поза git; знімок <code>studio/data/snapshot/analytics.sqlite</code> у git; <code>journal_mode=delete</code>, <code>busy_timeout=10000</code> у <code>db()</code>). Індексів, крім автоіндексів PK, немає. FK немає. Схема в коді: <code>analytics_db.db()</code>, <code>lake.db()</code>.</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Таблиця</th>
+<th>PK</th>
+<th>Рядків</th>
+<th>Ключові поля</th>
+<th>Пише</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>videos</td>
+<td>id</td>
+<td>93</td>
+<td>slug, title, published, duration_s, short, format, playlists</td>
+<td>analytics_db.sync (лише public)</td>
+</tr>
+<tr>
+<td>daily</td>
+<td>(video_id,date)</td>
+<td>746 (21.10–19.11)</td>
+<td>views, engaged, avg_pct, avg_dur, subs, shares, likes, +watch_min, subs_lost</td>
+<td>sync</td>
+</tr>
+<tr>
+<td>traffic</td>
+<td>(video_id,source)</td>
+<td>434</td>
+<td>views за весь час, <strong>перезапис</strong></td>
+<td>sync</td>
+</tr>
+<tr>
+<td>traffic_daily (22.11)</td>
+<td>(video_id,date,source)</td>
+<td>1 326</td>
+<td>60 днів</td>
+<td>sync</td>
+</tr>
+<tr>
+<td>channel_daily (22.11)</td>
+<td>date</td>
+<td>40</td>
+<td>views, watch_min, subs±, avg_pct, long_watch_min, short_views</td>
+<td>sync_channel</td>
+</tr>
+<tr>
+<td>snap</td>
+<td>(video_id,date)</td>
+<td>93</td>
+<td>публічний лічильник</td>
+<td>sync</td>
+</tr>
+<tr>
+<td>tg_daily (22.11)</td>
+<td>date</td>
+<td>1</td>
+<td>members</td>
+<td>sync_tg</td>
+</tr>
+<tr>
+<td>news</td>
+<td>url</td>
+<td>1 606</td>
+<td>source, published, title, score, fetched</td>
+<td>lake.news</td>
+</tr>
+<tr>
+<td>research</td>
+<td>(date,n,file)</td>
+<td>65 (10–22.11)</td>
+<td>title, score, plan, sources, verified</td>
+<td>ingest_research</td>
+</tr>
+<tr>
+<td>posts</td>
+<td>slug</td>
+<td>98</td>
+<td>date, kind, tags, youtube, words</td>
+<td>ingest_posts</td>
+</tr>
+<tr>
+<td>site_daily / site_queries / site_pages / site_queries_weekly (22.11)</td>
+<td>date / (query,period) / (page,period) / (week,query)</td>
+<td>25 / 79 / 59 / 102</td>
+<td>clicks, impressions, ctr, position</td>
+<td>ingest_site</td>
+</tr>
+<tr>
+<td>niche</td>
+<td>(video_id,fetched)</td>
+<td>592</td>
+<td>views, channel_subs, ratio, ru</td>
+<td>outliers, lake.niche</td>
+</tr>
+<tr>
+<td>comp / comp_videos / comp_ai</td>
+<td>(channel_id,date) / video_id / channel_id</td>
+<td>504 / 62 243 / 503</td>
+<td>subs, views; відео; ai_share</td>
+<td>lake.comp/history; <code>comp_ai</code> <strong>дропається</strong> при кожному запуску (lake.py:228)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Пульт (Cloudflare DO SQLite):</strong> <code>ev(id, ts, sid, kind, tool, area, text, ok, detail)</code> — журнал дій агента (зберігаються останні KEEP рядків), <code>kv</code> (state, last_pull), <code>tg(id, ts, upd, taken)</code> — черга оновлень бота, оброблені видаляються через 14 днів (worker.js:45–49, 92–93) [К]. <strong>Bait bot DO:</strong> таблиця <code>u</code> з tg id, ім'ям, email (за згодою), професією (bait/worker.js:97) [К].</p>
+<p><strong>JSON-стан (git):</strong> <code>eps/uploaded.json</code> (slug→video_id, 99), <code>reserve.json</code> (10), <code>tiktok.json</code> (15 ключів, <code>posted_auto</code> 2), <code>pending_comments.json</code> (3), <code>comments.json</code>, <code>experiments.json</code>, <code>thumb_test.json</code>, <code>series.json</code>, <code>playlists.json</code>; <code>data/ideas.json</code> (14); <code>hq/activity.json</code> (16, max 200), <code>hq/data.json</code>. <strong>Поза git:</strong> <code>tg/inbox.json</code>, <code>tg/updates.json</code> (останні 500), <code>tg/offset.txt</code>, <code>data/quota.log</code> (з 22.11, 18 рядків).</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Питання</th>
+<th>Відповідь</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Raw</td>
+<td>немає [—]</td>
+</tr>
+<tr>
+<td>Транскрипти</td>
+<td>лише stdout <code>gen_full</code>/<code>audit_vo</code>; не зберігаються [—]</td>
+</tr>
+<tr>
+<td>Відео/аудіо/прев'ю</td>
+<td><code>studio/eps/&lt;slug&gt;/</code> локально в контейнері (12 ГБ), <strong>не в git</strong>; копії — на YouTube/TG/TikTok</td>
+</tr>
+<tr>
+<td>Метрики</td>
+<td>SQLite (YouTube, GSC, TG — 1 день); TikTok — <code>tiktok.json.views_owner</code> вручну</td>
+</tr>
+<tr>
+<td>Рішення агентів</td>
+<td>radar-*.md, <code>ideas.decision</code>, RUNBOOK, dispatch-log.md (6 рядків), activity.json, пульт <code>ev</code></td>
+</tr>
+<tr>
+<td>Audit log</td>
+<td>пульт <code>ev</code> (обрізаний), git-історія (615 комітів), quota.log. Журналу «хто що опублікував» немає [—]</td>
+</tr>
+<tr>
+<td>Versioning / soft delete</td>
+<td>лише git для файлів; <code>insert or replace</code> перезаписує; soft delete немає [—]</td>
+</tr>
+<tr>
+<td>Відновлення історії рішень</td>
+<td>частково: git + radar.md; промпти задач без історії [—]</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="9-external-integrations">9. External integrations</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Сервіс</th>
+<th>Навіщо / де</th>
+<th>Credentials і де лежать</th>
+<th>Rate limit / retry / timeout</th>
+<th>Логи / помилки</th>
+<th>Ризики</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>YouTube Data API v3</td>
+<td>заливка, розклад, метадані, коментарі, плейлисти, пошук (yt.py, audit, lake, kw, outliers)</td>
+<td>OAuth: <code>studio/yt/client_secret.json</code>, <code>token.json</code> (600, gitignored); копії в артефакті «Доступи»</td>
+<td><code>_req</code>: 3 спроби на 429/5xx, timeout 60, облік одиниць у quota.log (з 22.11). <strong>thumb.py</strong> і <code>auth.py</code> — без timeout/retry</td>
+<td>stderr; <code>_scrub</code> маскує токени</td>
+<td>Testing-режим: refresh 7 днів; квота ~10k/день (MIGRATION/org-design) [П]; ToS — масові правки метаданих</td>
+</tr>
+<tr>
+<td>YouTube Analytics v2</td>
+<td>analytics_db.ya</td>
+<td>той самий OAuth</td>
+<td>timeout 60, без retry</td>
+<td>print ERR</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Search Console</td>
+<td>lake.gsc</td>
+<td>той самий OAuth (<code>webmasters.readonly</code>)</td>
+<td>timeout 60, без retry</td>
+<td><code>site ERR</code></td>
+<td>—</td>
+</tr>
+<tr>
+<td>Google OAuth</td>
+<td>auth.py, watch.py (автообмін коду з бота)</td>
+<td><code>.pkce</code> (<strong>644</strong>)</td>
+<td>без timeout</td>
+<td>—</td>
+<td>код приймається з будь-якого повідомлення власника з <code>localhost</code>+<code>code=</code></td>
+</tr>
+<tr>
+<td>Gemini TTS</td>
+<td>gtts.py</td>
+<td><code>studio/gem/.key</code> (600)</td>
+<td>4 спроби на 429 з паузою 30 с, timeout 180</td>
+<td>stderr</td>
+<td>~10 запитів/добу (RUNBOOK:77)</td>
+</tr>
+<tr>
+<td>Telegram Bot API</td>
+<td>tg.py (канал, owner_video), inbox, hq, analytics_db</td>
+<td><code>studio/tg/.token</code> (600); webhook secret <code>tg/.whsecret</code></td>
+<td>timeout 120/300, <strong>без retry</strong>; помилки повертаються як JSON</td>
+<td>—</td>
+<td>токен у URL запиту (стандарт Bot API)</td>
+</tr>
+<tr>
+<td>Cloudflare Workers + DO</td>
+<td>пульт, Partners, Bait</td>
+<td>GitHub Secrets (CLOUDFLARE_API_TOKEN, …); <code>pult/.token</code>, <code>.viewkey</code> локально</td>
+<td>—</td>
+<td>console.log</td>
+<td>Bait зберігає email (PII)</td>
+</tr>
+<tr>
+<td>vidIQ MCP</td>
+<td>TikTok upload/publish, метрики [П]; <code>vidiq_put.sh</code> [К]</td>
+<td>OAuth у vidIQ (поза репо)</td>
+<td>curl timeout 30/60/120, resumable</td>
+<td>stderr</td>
+<td>TikTok ToS щодо автоматизації (RUNBOOK:97); кредити vidIQ</td>
+</tr>
+<tr>
+<td>suggestqueries.google.com</td>
+<td>kw.py</td>
+<td>—</td>
+<td>timeout 10</td>
+<td>—</td>
+<td>неофіційний endpoint</td>
+</tr>
+<tr>
+<td>RSS/HTML: openai, blog.google, deepmind, anthropic, HN Firebase, dou.ua</td>
+<td>lake.news</td>
+<td>—</td>
+<td>timeout 30, без retry</td>
+<td>print ERR</td>
+<td>парсинг HTML регулярками</td>
+</tr>
+<tr>
+<td>GitHub</td>
+<td>push (агенти), Actions, Pages</td>
+<td>git-креденшали сесії; GitHub Secrets</td>
+<td>—</td>
+<td>Actions</td>
+<td>push у дві гілки</td>
+</tr>
+<tr>
+<td>IndexNow (Bing)</td>
+<td>tools/indexnow.py</td>
+<td><code>static/indexnow-key.txt</code> (публічний за протоколом)</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Cloudflare Web Analytics</td>
+<td><code>site_stats.py</code> (CF_TOKEN з «Доступів», запуск вручну)</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>у базу не збирається</td>
+</tr>
+<tr>
+<td>Claude Artifacts</td>
+<td>HQ, пульт-артефакт, база знань, «Доступи»</td>
+<td>акаунт власника</td>
+<td>—</td>
+<td>—</td>
+<td>у «Доступах» лежать усі секрети</td>
+</tr>
+<tr>
+<td>X/Twitter, Reddit API, email, черги, моніторинг</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td><strong>відсутні</strong> [—]; Reddit лише через читання LLM</td>
+</tr>
+<tr>
+<td>Домен / хостинг</td>
+<td>shikarno.com.ua → GitHub Pages (CNAME у build)</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="10-what-works">10. What works</h2>
+<ul>
+<li>Сайт: генератор, відкладені пости, cron */30, IndexNow [К]. За попереднім аудитом, 36 з 40 запусків були успішні; повторно я це не перевіряв.</li>
+<li>Конвеєр виробництва Short і довгих: TTS → нарізка за паузами + Whisper → F0 → мікс → Remotion → ffmpeg. Відтворюваний: є сценарії в git і кеш дублів [К]. Ролики ep80 і ep81 мають повний набір артефактів (final/tg/tiktok/thumb) [К фс].</li>
+<li>YouTube-клієнт: timeout, retry, облік квоти, перевірка дубля за назвою (22.11) [К]. <code>finalize.py</code> з повторним опитуванням поки YouTube обробляє відео [К].</li>
+<li>Даталейк: 19 таблиць, 62 тис. відео конкурентів, щоденні метрики. З 22.11 є історія трафіку по днях, хвилини перегляду і <code>long_hours_12m()</code> з API [К].</li>
+<li>Повний цикл підтверджено файлами для Shorts ep80/ep81: <code>uploaded.json</code> → TG (<code>telegram_post</code>) → TikTok (<code>posted_auto</code>: 2 записи, з них ep30 через vidIQ 22.11 13:30Z) [К дані].</li>
+<li>Бот і пульт: вебхук, черга в DO, «Прийняв», <code>/status</code>, вартовий із 10-секундним опитуванням, автоматичний обмін OAuth-коду [К].</li>
+<li>Секрети не в git, маскування в хуку (<code>pultlib.SECRET</code>) і в <code>yt._scrub</code> [К].</li>
+<li>Незалежний фактчек із таблицею URL для ep81, ep82, guide1, guide2 [К фс].</li>
+</ul>
+<h2 id="11-what-is-broken-or-risky">11. What is broken or risky</h2>
+<ol>
+<li><strong>Публікація без людини і без кодового запобіжника</strong> [П+К]. Код не перевіряє, що перед <code>upload</code> є фактчек PASS; finalize перевіряє лише упаковку. UNVERIFIED-твердження проходять у публікацію (ep82 має 2 UNVERIFIED). Для ep80 фактчек-файлу немає.</li>
+<li><strong>Масові автоматичні правки опублікованого.</strong> Радар щоранку запускає <code>audit.py --fix</code> по <strong>всіх</strong> відео: переписуються описи і теги, хвіст назви (audit.py:122–159). Історії «було → стало» немає, бекапи робляться лише ad hoc. RUNBOOK:11 і :19 водночас кажуть «старі теги не чіпати» — це суперечність.</li>
+<li><strong>SPOF і стан сесії.</strong> 20 задач залежать від однієї сесії, контекст якої майже вичерпано (896 489 з 1 000 000 токенів, поріг компакції 901 600). Після компакції частина правил може загубитися [?]. Зовнішнього heartbeat і алерту немає [—].</li>
+<li><strong>OAuth Testing:</strong> refresh-токен живе 7 днів. Наступне закінчення ~25.11 10:00Z. Разом із ним зупиняться заливки, аналітика і GSC. Відновлення потребує ручного кліку власника [К auth.py:1, П].</li>
+<li><strong>Неіснуючі файли, на які посилаються промпти:</strong> <code>queue.json</code>, <code>bets.json</code>, <code>docs/org/rollout.md</code> [—]. Немає й задачі Line Producer, хоча hq_data.SCHEDULE її показує. Розклад HQ («11:23 сб/пн») не збігається з задачею (09:23 Київ).</li>
+<li><strong>Конфлікти розкладу і правил:</strong> 25.11 о 17:00Z виходять одразу ep78 (Short, перенесений з 21.11) і гайд #1. Промпт ep78 ще велить «нагадати власнику про TikTok-пакет», хоча з 22.11 TikTok публікується автоматично. CSO забороняє «щотижневу зміну форматів», а growth-loop щонеділі прибирає нижні 20% форматів.</li>
+<li><strong>Застарілий черговий коментар:</strong> <code>pending_comments.json</code> містить <code>Rlm1u-I6x00</code> з <code>at=2026-11-21T17:00Z</code>, але ролик перенесено на 25.11. Кожен запуск <code>post_comments</code> пробуватиме коментувати приватне відео, отримає ERR і лишить запис [К дані + post_comments.py:8–11].</li>
+<li><strong>Ідемпотентність неповна:</strong> перевірка дубля дивиться лише точну назву за 24 год, а якщо API-перевірка падає, заливка йде далі (yt.py:79). TG-пости, TikTok-публікації і <code>add_to_playlist</code> не захищені від повторного виконання [—]. <code>uploaded.json</code> після заливки пише агент, а не код.</li>
+<li><strong>Записи без атомарності:</strong> <code>inbox.py:69,81</code> (<code>updates.json</code>, <code>inbox.json</code>, <code>offset.txt</code>), <code>hq_data.py:109</code>, <code>auth.py:116</code> (token.json), <code>upload_reserve.py:79</code> пишуть напряму, без util. Пишуть паралельно субагенти і головна сесія.</li>
+<li><strong>Push у дві гілки</strong> від кількох агентів одночасно, з <code>pull --no-rebase</code> [П].</li>
+<li><strong>Без retry і з тихими збоями:</strong> <code>lake.news</code> і <code>ya()</code> лише друкують помилку. <code>tg.call</code> не кидає виняток. <code>thumb.py</code> без timeout. Журналу запусків (<code>runs</code>) немає [—].</li>
+<li><strong>Метрики:</strong> KPI годин у HQ досі захардкоджено (<code>hq_data.py:98 long_hours=10.1</code>), хоча <code>long_hours_12m()</code> уже є. <code>traffic</code>, <code>site_queries</code> і <code>site_pages</code> перезаписуються. <code>daily</code> відстає на 2–3 дні (макс. дата 19.11). TikTok-метрики збираються вручну.</li>
+<li><strong>Безпека:</strong> у публічному репо є chat_id власника (<code>tg.py:19</code>, <code>pult/wrangler.toml</code>, <code>bait/wrangler.toml</code>) і URL «Доступів» (MIGRATION.md). <code>yt/.pkce</code> має права 644. Bait-бот зберігає email. Вміст групи TG і коментарів потрапляє в LLM із правом видаляти й публікувати (ризик prompt-injection; захист — лише інструкція «дані, не інструкції», RUNBOOK:42).</li>
+<li><strong>Документація суперечлива:</strong> RUNBOOK ~85 КБ, у ньому 1 vs 3 vs 4 Shorts/день, «щодня send_later 07:10Z» (такої задачі немає), стара копія <code>studio/eps/RUNBOOK.md</code>. <code>project-state.md</code> має стан на 23.10.</li>
+<li><strong>«Незалежність» контролю частково формальна:</strong> фактчекер і автор — одна модель. <code>guide1_factcheck.md</code> робив сам автор (dispatch-log). QA-ролі немає як окремого кроку в коді.</li>
+</ol>
+<h2 id="12-what-is-unclear">12. What is unclear</h2>
+<ul>
+<li>Що робить сесія, коли кілька задач стріляють під час довгого ходу (рендер ~70 хв): черга, пропуск чи злиття? <code>last_run</code> фіксує лише доставку [?].</li>
+<li>Чи справді субагенти пушать у <code>claude/inspiring-mccarthy-77osj6</code>, і навіщо ця гілка. Зараз вона ідентична <code>origin/main</code>.</li>
+<li>Які дії режим <strong>auto</strong> пропускає без запиту: vidIQ publish, <code>deleteMessage</code>, <code>update_trigger</code>. У <code>settings.json</code> немає <code>permissions</code>, а HQ просить «Дозвіл vidIQ у settings.json» [?].</li>
+<li>Чи публікує TikTok-пост vidIQ одразу, чи за розкладом (<code>posted_auto.scheduled</code>) [?]. Чи потрібне ще й підтвердження в застосунку.</li>
+<li>Чи виконується <code>audit.py --fix</code> щодня фактично. Журналу немає, <code>audit_report.json</code> перезаписується.</li>
+<li>Як саме проходить заливка Shorts: однорядковий Python у Bash (скрипта немає). Невідомо, чи завжди передається <code>publish_at</code>.</li>
+<li>Чи є резервна копія DO пульта і Bait-бота і хто має доступ до email користувачів.</li>
+<li>Квота YouTube 10k/день — це цифра з документів. Фактичну квоту проєкту в Google Cloud кодом не підтверджено.</li>
+<li>Чи <code>cancel-in-progress: false</code> разом із cron */30 і ручними <code>workflow_dispatch</code> не створює черги деплоїв [?].</li>
+</ul>
+<hr />
+<h2 id="13-critical-questions-for-owner">13. Critical questions for owner</h2>
+<ol>
+<li>Чи має головна сесія (режим auto) права викликати <code>vidiq_social_post_publish</code> без запиту дозволу на кожен виклик? Хто підтверджує, якщо ні?</li>
+<li>Чи вимагати кодом (а не промптом) фактчек PASS і 0 UNVERIFIED перед <code>yt.upload</code> і TikTok? Зараз ep82 з 2 UNVERIFIED може вийти 24.11 17:00Z.</li>
+<li>Чи погоджуєте ви щоденний <code>audit.py --fix</code> по <strong>всіх</strong> відео (переписування описів, тегів і хвостів назв)? RUNBOOK водночас забороняє чіпати старі теги.</li>
+<li>Чи має COO право змінювати промпти й вимикати або видаляти задачі (<code>update_trigger</code>/<code>delete_trigger</code>) без вас?</li>
+<li>Чи має збирач право сам ставити <code>approved</code> ідеям з балом ≥300? Чи має growth-loop право сам прибирати формати?</li>
+<li>25.11 о 17:00Z одночасно виходять ep78 і гайд #1. Це навмисно?</li>
+<li>Чи потрібна гілка <code>claude/inspiring-mccarthy-77osj6</code>? Чи є хтось, крім агентів, хто з неї читає?</li>
+<li>Чи є окреме production-оточення, чи все — один хмарний контейнер <code>env_01X84g2W…</code> з медіа (12 ГБ) поза git?</li>
+<li>Що має статися, коли головна сесія компактується або впаде: чи є людина, яка це помітить (heartbeat ніде не перевіряється)?</li>
+<li>Хто, крім агента, має доступ до артефакту «Доступи» (усі секрети) і до email-бази Bait-бота? Чи погоджене зберігання email?</li>
+<li>Чи може агент видаляти повідомлення в групі обговорення без вашого перегляду?</li>
+<li>Чи є Bait-бот (щотижнева розсилка, cron вт 08:00Z) і Partners-бот частиною цієї системи, чи це окремі продукти без агентів?</li>
+</ol>
+</main>

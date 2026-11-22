@@ -179,7 +179,7 @@ function render(D){
   const A=D.activity||[],nameOf=id=>{const a=D.agents.find(x=>x.id===id);return a?a.name.split(" (")[0]:id};
   const t2=x=>x?new Date(x).toLocaleTimeString("uk-UA",{timeZone:"Europe/Kyiv",hour:"2-digit",minute:"2-digit"}):"";
   const run=A.filter(x=>!x.finished), fin=A.filter(x=>x.finished&&new Date(x.finished).toDateString()===new Date().toDateString()).sort((a,b)=>b.finished.localeCompare(a.finished));
-  $("#now").innerHTML=run.length?run.map(x=>`<div class="tl now"><span class="t">з ${t2(x.started)}</span><span>${esc(x.task)}</span><span class="who" style="color:var(--mut)">${esc(nameOf(x.agent))}</span></div>`).join(""):`<div style="color:var(--mut);font-size:13px">Зараз нічого не запущено. Диспетчер стартує о :17 щогодини.</div>`;
+  $("#now").innerHTML=run.length?run.map(x=>`<div class="tl now"><span class="t">з ${t2(x.started)}</span><span>${esc(x.task)}</span><span class="who" style="color:var(--mut)">${esc(nameOf(x.agent))}</span></div>`).join(""):`<div style="color:var(--mut);font-size:13px">Пул порожній — наступна задача з черги стартує, щойно звільниться місце (до 5 агентів одночасно).</div>`;
   $("#done").innerHTML=fin.length?fin.slice(0,12).map(x=>`<div class="tl"><span class="t">${t2(x.finished)}</span><span>${esc(x.task)}${x.result?` <span style="color:var(--mut)">— ${esc(x.result)}</span>`:""}</span><span class="who" style="color:var(--mut)">${esc(nameOf(x.agent))}</span></div>`).join(""):`<div style="color:var(--mut);font-size:13px">Сьогодні ще нічого не здано.</div>`;
 
   // timeline
