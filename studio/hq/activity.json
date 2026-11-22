@@ -253,8 +253,8 @@
    "agent": "factcheck",
    "task": "Повторний незалежний фактчек guide3 після виправлень",
    "started": "2026-11-22T13:48:24Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-22T13:50:50Z",
+   "result": "guide3 повторно: PASS — готовий до озвучки за планом TTS"
   }
  ]
 }
