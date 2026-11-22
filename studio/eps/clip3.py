@@ -39,7 +39,7 @@ META = dict(
   "▶ Повний випуск «Штучний інтелект за жовтень 2026» — 10 головних подій: https://youtu.be/FcWmonPhvqE\n\n"
   "Джерела:\n• TechCrunch, 5.10.2026: https://techcrunch.com/2026/10/05/openai-launches-visual-ads-that-appear-alongside-image-generation-results/\n"
   "• dev.ua (за Reuters), 21.10.2026: https://dev.ua/news/reklamu-v-chatgpt-teper-mozhna-zapuskaty-v-ukraini-1792594874\n\n"
-  "Фрагмент повного випуску, озвучка — та сама. Ведучий Байт — віртуальний персонаж, озвучка створена за допомогою ШІ."),
+  "Фрагмент повного випуску, озвучка — та сама."),
  tags=["реклама в ChatGPT", "ChatGPT реклама Україна", "ChatGPT", "OpenAI", "ChatGPT ads", "безкоштовний ChatGPT", "реклама ШІ",
        "новини ШІ", "ШІ за місяць", "ШІ", "штучний інтелект", "ШІкарно"],
  playlists=["news"],

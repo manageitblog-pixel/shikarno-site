@@ -36,7 +36,7 @@ META = dict(
   "Джерела:\n• Google, Gemini у Classroom: https://support.google.com/edu/classroom/answer/15410566\n"
   "• Google, NotebookLM → Gemini Notebook: https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/\n"
   "• Google, Audio Overviews: https://support.google.com/notebooklm/answer/16206563\n\n"
-  "Фрагмент повного розбору, озвучка — та сама. Ведучий Байт — віртуальний персонаж, озвучка створена за допомогою ШІ."),
+  "Фрагмент повного розбору, озвучка — та сама."),
  tags=["ШІ для вчителя", "Google Classroom", "Gemini в Classroom", "план уроку", "тест Google Forms", "Gemini Notebook", "NotebookLM",
        "ШІ для професій", "Gemini", "AI for teachers", "ШІ", "штучний інтелект", "ШІкарно"],
  playlists=["prof"],

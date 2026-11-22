@@ -36,7 +36,7 @@ META = dict(
   "• Google, Skills у Gemini: https://support.google.com/gemini/answer/17094296\n"
   "• Google, створення зображень у Gemini: https://support.google.com/gemini/answer/14286560\n"
   "• Anthropic, Skills у Claude: https://support.claude.com/en/articles/12512180-use-skills-in-claude\n\n"
-  "Фрагмент повного розбору, озвучка — та сама. Ведучий Байт — віртуальний персонаж, озвучка створена за допомогою ШІ."),
+  "Фрагмент повного розбору, озвучка — та сама."),
  tags=["ШІ для SMM", "контент-план", "голос бренду", "SMM", "ChatGPT Projects", "Gemini Skills", "Nano Banana", "Claude Skills",
        "ШІ для професій", "AI for SMM", "ШІ", "штучний інтелект", "ШІкарно"],
  playlists=["prof"],
