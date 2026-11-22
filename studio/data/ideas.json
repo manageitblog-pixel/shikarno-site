@@ -454,5 +454,153 @@
   "status": "new",
   "added": "2026-11-22",
   "id": "24"
+ },
+ {
+  "title": "Надиктуй ChatGPT хоч годину: живий диктант — текст з’являється, поки говориш (і безкоштовно)",
+  "format": "try",
+  "channels": [
+   "show",
+   "short",
+   "site",
+   "tg"
+  ],
+  "demand": 4,
+  "fresh": 4,
+  "show": 5,
+  "fit": 5,
+  "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+  "by": "researcher-web",
+  "status": "new",
+  "added": "2026-11-22",
+  "id": "25",
+  "decision": "кандидат у шоу #3 29.11 (веб-скан 22.11: release notes OpenAI 18.11, всі плани, глобально)"
+ },
+ {
+  "title": "Як вимкнути ШІ в Canva: новий перемикач — і що все одно залишиться",
+  "format": "try",
+  "channels": [
+   "show",
+   "short",
+   "site",
+   "tg"
+  ],
+  "demand": 4,
+  "fresh": 4,
+  "show": 5,
+  "fit": 4,
+  "source": "https://www.canva.com/help/manage-ai-features/",
+  "by": "researcher-web",
+  "status": "new",
+  "added": "2026-11-22",
+  "id": "26",
+  "decision": "кандидат у шоу #3 29.11 (веб-скан 22.11: Canva 19.11, перемикач у Settings > Permissions, розкатують поступово — перевірити на акаунті перед зйомкою)"
+ },
+ {
+  "title": "ШІ-агент показав чужий баланс у банку: що Reuters знайшов у Meta Muse — і які дозволи не давати своєму телефону",
+  "format": "sec",
+  "channels": [
+   "show",
+   "short",
+   "site",
+   "tg"
+  ],
+  "demand": 3,
+  "fresh": 4,
+  "show": 4,
+  "fit": 5,
+  "source": "https://www.bnnbloomberg.ca/business/company-news/2026/11/18/as-meta-bets-big-on-muse-ai-agent-early-safety-mishaps-surface/",
+  "by": "researcher-web",
+  "status": "new",
+  "added": "2026-11-22",
+  "id": "27",
+  "decision": "кандидат у шоу #3 29.11 (веб-скан 22.11: Reuters 18.11; випадки — з внутрішніх постів, Meta: «isolated incidents»; чужі баланси Reuters не підтвердив)"
+ },
+ {
+  "title": "Google на головній тепер пам’ятає твої ШІ-пошуки: нова бічна панель і як прибрати історію",
+  "format": "try",
+  "channels": [
+   "show",
+   "short",
+   "site",
+   "tg"
+  ],
+  "demand": 3,
+  "fresh": 4,
+  "show": 5,
+  "fit": 4,
+  "source": "https://x.com/rmstein/status/2123500235930640844",
+  "by": "researcher-web",
+  "status": "new",
+  "added": "2026-11-22",
+  "id": "28"
+ },
+ {
+  "title": "mono шукає 12 людей, які вміють працювати з ШІ: оплачувана ШІнтернатура, заявки до 30.11",
+  "format": "news",
+  "channels": [
+   "show",
+   "site",
+   "tg"
+  ],
+  "demand": 3,
+  "fresh": 5,
+  "show": 3,
+  "fit": 4,
+  "source": "https://dou.ua/lenta/news/monobank-launches-ai-internship-2027/",
+  "by": "researcher-web",
+  "status": "new",
+  "added": "2026-11-22",
+  "id": "29"
+ },
+ {
+  "title": "Тір-лист: безкоштовні ШІ для відео українською — що реально працює без оплати",
+  "format": "tier",
+  "channels": [
+   "short",
+   "tiktok"
+  ],
+  "demand": 4,
+  "fresh": 4,
+  "show": 5,
+  "fit": 5,
+  "source": "https://www.tiktok.com/@ai_sashka/video/7710994491628375328",
+  "by": "researcher-niche",
+  "status": "new",
+  "added": "2026-11-22",
+  "id": "30"
+ },
+ {
+  "title": "«Тобі пише підтримка Telegram»: як ШІ-шахраї крадуть акаунти — 3 ознаки",
+  "format": "sec",
+  "channels": [
+   "short",
+   "tiktok"
+  ],
+  "demand": 5,
+  "fresh": 4,
+  "show": 4,
+  "fit": 4,
+  "source": "https://www.tiktok.com/@cyberyaro/video/7706508797715483911",
+  "by": "researcher-niche",
+  "status": "new",
+  "added": "2026-11-22",
+  "id": "31"
+ },
+ {
+  "title": "«Будь ласка» чи команда: ChatGPT відповідає краще, якщо ввічливий? Тест Байта",
+  "format": "check",
+  "channels": [
+   "short",
+   "tiktok"
+  ],
+  "demand": 4,
+  "fresh": 3,
+  "show": 5,
+  "fit": 5,
+  "source": "https://www.tiktok.com/@vector_standup/video/7705795504898149665",
+  "by": "researcher-niche",
+  "status": "new",
+  "added": "2026-11-22",
+  "id": "32"
  }
 ]
