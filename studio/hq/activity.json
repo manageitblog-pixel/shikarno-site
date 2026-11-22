@@ -381,14 +381,22 @@
    "agent": "shorts",
    "task": "ep86 (нд 29.11 17Z): ШІ для професій — тема за попитом",
    "started": "2026-11-22T15:23:47Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-22T15:27:27Z",
+   "result": "ep86 «Манікюр і ШІ» (29.11): 478 знаків, самоперевірка 5/5"
   },
   {
    "id": "49",
    "agent": "seo",
    "task": "SEO: chomu-ne-pratsyuie-chatgpt (79 показів, поз. 6.6)",
    "started": "2026-11-22T15:23:47Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "50",
+   "agent": "factcheck",
+   "task": "Незалежний фактчек ep86 (манікюр)",
+   "started": "2026-11-22T15:27:27Z",
    "finished": null,
    "result": ""
   }

@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T15:24:12Z",
+ "generated": "2026-11-22T15:27:29Z",
  "kpi": {
   "subs": 311,
   "subs_goal": 1000,
@@ -893,6 +893,28 @@
    "score": 146.8
   },
   {
+   "title": "Манікюр і ШІ: дизайн нігтів, відповіді в директ, ціна | ШІ для професій #11",
+   "format": "prof",
+   "channels": [
+    "short",
+    "site",
+    "insta"
+   ],
+   "demand": 3,
+   "fresh": 3,
+   "show": 4,
+   "fit": 4,
+   "by": "researcher-search",
+   "source": "kw.py 22.11: «манікюр» 137 фраз («манікюр для початківців» 63, «манікюр українською» 28); звужено з ідеї №6",
+   "length": 33,
+   "hook": "you",
+   "status": "approved",
+   "decision": "ep86 29.11",
+   "added": "2026-11-22",
+   "id": "21",
+   "score": 142.1
+  },
+  {
    "title": "Claude безкоштовно — повний гайд (сайт)",
    "format": "guide",
    "channels": [
@@ -908,25 +930,6 @@
    "added": "2026-11-22",
    "id": "7",
    "score": 115.2
-  },
-  {
-   "title": "ШІ для логопеда / вузькі професії",
-   "format": "prof",
-   "channels": [
-    "short",
-    "site"
-   ],
-   "demand": 3,
-   "fresh": 3,
-   "show": 4,
-   "fit": 4,
-   "by": "researcher-niche",
-   "source": "outliers 22.11: «Логопеди, а ви використовуєте ШІ» 12×",
-   "status": "in_work",
-   "added": "2026-11-22",
-   "id": "3",
-   "decision": "ep84 27.11",
-   "score": 109.3
   }
  ],
  "lake": {
@@ -1090,14 +1093,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "20",
-   "agent": "seo",
-   "task": "Наступна сторінка з GSC (покази ≥50, поз. 4–20)",
-   "started": "2026-11-22T13:19:11Z",
-   "finished": "2026-11-22T13:23:33Z",
-   "result": "yak-vidklyuchyty-gemini переписано (533 покази, поз. 6.9): ~1000 слів, FAQ 5, застарілу пораду прибрано"
-  },
   {
    "id": "21",
    "agent": "designer",
@@ -1319,14 +1314,22 @@
    "agent": "shorts",
    "task": "ep86 (нд 29.11 17Z): ШІ для професій — тема за попитом",
    "started": "2026-11-22T15:23:47Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-22T15:27:27Z",
+   "result": "ep86 «Манікюр і ШІ» (29.11): 478 знаків, самоперевірка 5/5"
   },
   {
    "id": "49",
    "agent": "seo",
    "task": "SEO: chomu-ne-pratsyuie-chatgpt (79 показів, поз. 6.6)",
    "started": "2026-11-22T15:23:47Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "50",
+   "agent": "factcheck",
+   "task": "Незалежний фактчек ep86 (манікюр)",
+   "started": "2026-11-22T15:27:27Z",
    "finished": null,
    "result": ""
   }
