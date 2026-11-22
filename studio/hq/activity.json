@@ -375,6 +375,22 @@
    "started": "2026-11-22T15:22:10Z",
    "finished": "2026-11-22T15:23:31Z",
    "result": "ep85: PASS 11/11; 3 поради для опису"
+  },
+  {
+   "id": "48",
+   "agent": "shorts",
+   "task": "ep86 (нд 29.11 17Z): ШІ для професій — тема за попитом",
+   "started": "2026-11-22T15:23:47Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "49",
+   "agent": "seo",
+   "task": "SEO: chomu-ne-pratsyuie-chatgpt (79 показів, поз. 6.6)",
+   "started": "2026-11-22T15:23:47Z",
+   "finished": null,
+   "result": ""
   }
  ]
 }
