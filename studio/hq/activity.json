@@ -277,8 +277,8 @@
    "agent": "seo",
    "task": "Наступна сторінка з GSC (покази ≥50, поз. 4–20)",
    "started": "2026-11-22T14:18:35Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-22T14:23:46Z",
+   "result": "yak-skachaty-chatgpt (236 показів, поз. 8.0): ~1300 слів, вимоги, ознаки підробки, FAQ 5"
   },
   {
    "id": "36",
@@ -293,6 +293,14 @@
    "agent": "factcheck",
    "task": "Незалежний фактчек ep83 Moonlock",
    "started": "2026-11-22T14:23:23Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "38",
+   "agent": "seo",
+   "task": "SEO: mono-keshbek-shi (157 показів, поз. 6.0)",
+   "started": "2026-11-22T14:23:46Z",
    "finished": null,
    "result": ""
   }
