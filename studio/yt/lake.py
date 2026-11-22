@@ -14,6 +14,7 @@ usage:
   python3 studio/yt/lake.py comp [500]         # ≥500 каналів-конкурентів: знімок статистики + останні 15 відео (щотижня)
   python3 studio/yt/lake.py news                # новини: RSS OpenAI/Google/DeepMind, Anthropic, HN (ШІ), dou → news (кожні 4 год)
   python3 studio/yt/lake.py history [365]        # усі відео ШІ-конкурентів за рік (≈1 од. квоти на 50 відео)
+  python3 studio/yt/lake.py snapshot             # знімок живої бази в studio/data/snapshot/ (комітиться раз на добу)
   python3 studio/yt/lake.py ask "<тема>"        # що ми знаємо про тему: наші ролики й цифри, статті, радари, ніша, пошук
   python3 studio/yt/lake.py sql "select ..."    # довільний запит
   python3 studio/yt/lake.py stats               # скільки чого в лейку
@@ -299,6 +300,8 @@ if __name__ == "__main__":
         except Exception as e: print("site ERR", e)
         c.commit(); stats()
     elif a[0] == "niche": niche()
+    elif a[0] == "snapshot":  # жива база не в git (її постійно пишуть збирачі); у git — щоденний знімок
+        import shutil; src = sqlite3.connect(DB); dst = sqlite3.connect(os.path.join(ROOT, "studio", "data", "snapshot", "analytics.sqlite")); src.backup(dst); dst.close(); print("snapshot OK")
     elif a[0] == "news": news()
     elif a[0] == "history": history(int(a[1]) if len(a) > 1 else 365)
     elif a[0] == "comp": competitors(int(a[1]) if len(a) > 1 else 500)
