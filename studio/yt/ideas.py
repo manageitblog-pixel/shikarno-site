@@ -84,7 +84,7 @@ def priors(S=None):
 
 
 RELEASE = re.compile(r"\d+\.\d+|\b[A-Za-z]+[- ]\d+\b|\bбета\b|\bbeta\b|\(бета\)|вийшов|вийшла|реліз", re.I)
-YOU = re.compile(r"\b(тв(ій|оя|ою|ої|оє|оїй|оєї|оєму)|тебе|тобі)\b", re.I)
+YOU = re.compile(r"\b(тв(ій|оя|ою|ої|оє|оїй|оєї|оєму|оїх|оїм|оїми|оєю|ого|оєму|оїй)|тебе|тобі)\b", re.I)
 ACTION = re.compile(r"як (вимкнути|стерти|увімкнути|перевірити|захистити|видалити)|перевір|за \d+ (с|секунд)", re.I)
 
 
@@ -103,7 +103,7 @@ def length_mult(i):
     L = i.get("length")
     try: L = float(L)
     except (TypeError, ValueError): return 1.0
-    return 1.0 if L <= 35 else 0.6 if L <= 45 else 0.5
+    return 1.0 if L <= 35 else 0.85 if L <= 45 else 0.8   # аудит 22.11: старі 0.6/0.5 занижували прогноз ×2.3
 
 
 def score(i, P):
