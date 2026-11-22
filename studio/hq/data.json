@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T15:29:20Z",
+ "generated": "2026-11-22T16:53:32Z",
  "kpi": {
   "subs": 311,
   "subs_goal": 1000,
@@ -935,7 +935,7 @@
  "lake": {
   "videos": 93,
   "daily": 746,
-  "news": 1608,
+  "news": 1610,
   "niche": 604,
   "comp": 504,
   "comp_videos": 62243,
@@ -948,22 +948,29 @@
   {
    "date": "2026-11-22",
    "source": "hn",
+   "title": "Show HN: I built a game where you are an LLM's subagent",
+   "score": 105,
+   "url": "https://github.com/gulivan/worker755"
+  },
+  {
+   "date": "2026-11-22",
+   "source": "hn",
    "title": "Muru – AI-assisted Rust server for Python apps by mod_WSGI's creator",
-   "score": 6,
+   "score": 46,
    "url": "https://simonwillison.net/2026/Nov/21/muru/"
   },
   {
    "date": "2026-11-22",
    "source": "hn",
    "title": "AI People Are Extremely Rich",
-   "score": 6,
+   "score": 19,
    "url": "https://www.noahpinion.blog/p/ai-people-are-very-very-very-very"
   },
   {
    "date": "2026-11-22",
    "source": "hn",
    "title": "AI is becoming a disaster for the climate",
-   "score": 7,
+   "score": 43,
    "url": "https://www.bloodinthemachine.com/p/ai-is-becoming-a-disaster-for-the"
   },
   {
@@ -977,35 +984,35 @@
    "date": "2026-11-22",
    "source": "hn",
    "title": "A Slinky on an Escalator Is a Weirdly Good Test of LLM Intelligence",
-   "score": 9,
+   "score": 16,
    "url": "https://morethanamachine.com/posts/slinky-escalator-benchmark/"
   },
   {
    "date": "2026-11-22",
    "source": "hn",
    "title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
-   "score": 243,
+   "score": 468,
    "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/"
   },
   {
    "date": "2026-11-22",
    "source": "hn",
    "title": "The Mythology of Conscious AI",
-   "score": 88,
+   "score": 125,
    "url": "https://www.noemamag.com/the-mythology-of-conscious-ai/"
   },
   {
    "date": "2026-11-22",
    "source": "hn",
    "title": "Together.ai: Prompt Leakage for Requests",
-   "score": 35,
+   "score": 41,
    "url": "https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026"
   },
   {
    "date": "2026-11-22",
    "source": "hn",
    "title": "Current Efforts Aren't Enough to Slow the AI Cyber Virus",
-   "score": 14,
+   "score": 19,
    "url": "https://www.bridgewater.com/research-and-insights/current-efforts-arent-enough-to-slow-the-ai-cyber-virus"
   },
   {
@@ -1021,13 +1028,6 @@
    "title": "The Engineering Manager's role is under attack (again)",
    "score": 40,
    "url": "https://www.manager.dev/newsletter/the-engineering-manager-s-role-is-under-attack-again"
-  },
-  {
-   "date": "2026-11-22",
-   "source": "dou",
-   "title": "Мінцифри планує підвищити зарплати кіберфахівцям і запустити сайт із вакансіями",
-   "score": null,
-   "url": "https://dou.ua/lenta/news/mintsyfry-raise-salaries-for-cybersecurity/"
   }
  ],
  "competitors": [
@@ -1093,22 +1093,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "21",
-   "agent": "designer",
-   "task": "Обкладинки гайду #1 (25.11) і ep82 (24.11), кадр 0",
-   "started": "2026-11-22T13:19:11Z",
-   "finished": "2026-11-22T13:24:19Z",
-   "result": "Обкладинки гайду #1 (A/B) і ep82; кадр 0 ep82 виправлено (хук у 2 рядки)"
-  },
-  {
-   "id": "22",
-   "agent": "trend",
-   "task": "Свіжі новини даталейку → оцінка → дошка ідей; аномалії ніші",
-   "started": "2026-11-22T13:20:57Z",
-   "finished": "2026-11-22T13:22:46Z",
-   "result": "+23 новини; 4 кандидати в шоу #3 (Anthropic на Nasdaq, Moonlock, корпус текстів КМУ, Claude і фізика)"
-  },
   {
    "id": "23",
    "agent": "longs",
@@ -1332,6 +1316,22 @@
    "started": "2026-11-22T15:27:27Z",
    "finished": "2026-11-22T15:29:08Z",
    "result": "ep86: PASS 15/15"
+  },
+  {
+   "id": "51",
+   "agent": "de",
+   "task": "Збирач даталейку 16:52Z: новини → дошка ідей",
+   "started": "2026-11-22T16:52:29Z",
+   "finished": "2026-11-22T16:53:30Z",
+   "result": "+21 новина (HN, dou); першоджерельних за 24 год нема; anthropic без дати публікації — баг"
+  },
+  {
+   "id": "52",
+   "agent": "de",
+   "task": "lake.py news: дата публікації для новин Anthropic",
+   "started": "2026-11-22T16:53:30Z",
+   "finished": null,
+   "result": ""
   }
  ],
  "agents": [
