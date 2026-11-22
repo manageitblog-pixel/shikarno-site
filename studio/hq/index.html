@@ -206,7 +206,7 @@ function spark(sel,vals,col){
 function office(D){
   const cv=$("#office"),cx=cv.getContext("2d"),W=cv.width,H=cv.height;
   const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const cols=4,rows=2,pad=10,rw=(W-pad*(cols+1))/cols,rh=(H-pad*(rows+1))/rows;
+  const rows=2,cols=Math.ceil(D.depts.length/rows),pad=10,rw=(W-pad*(cols+1))/cols,rh=(H-pad*(rows+1))/rows;
   const rooms={};D.depts.forEach((d,i)=>{const c=i%cols,r=Math.floor(i/cols);rooms[d.id]={...d,x:pad+c*(rw+pad),y:pad+r*(rh+pad),w:rw,h:rh}});
   const now=kyivNow(),hm=now.getHours()*60+now.getMinutes();
   const busy=id=>D.schedule.some(s=>{const m=/^(\d\d):(\d\d)/.exec(s.time);return s.agent===id&&m&&hm-(+m[1]*60+ +m[2])>=0&&hm-(+m[1]*60+ +m[2])<=40})||["collector","bot","editor"].includes(id);

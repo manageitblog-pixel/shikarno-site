@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T10:42:42Z",
+ "generated": "2026-11-22T10:52:30Z",
  "kpi": {
   "subs": 311,
   "subs_goal": 1000,
@@ -957,6 +957,24 @@
    "kpi": "кожен Short у TikTok"
   },
   {
+   "id": "designer",
+   "name": "Дизайнер",
+   "dept": "design",
+   "emoji": "G",
+   "role": "Обкладинки v4, кадр 0, графіка роликів і сайту; чекліст docs/design-guide.md",
+   "schedule": "щодня 15:07",
+   "kpi": "0 вад на виході"
+  },
+  {
+   "id": "dresearch",
+   "name": "Ресерчер дизайну",
+   "dept": "design",
+   "emoji": "X",
+   "role": "Що працює в обкладинках ніші й за кордоном; 1 експеримент на тиждень",
+   "schedule": "щосереди 15:07",
+   "kpi": "1 гіпотеза/тиждень"
+  },
+  {
    "id": "bot",
    "name": "Черговий бота",
    "dept": "board",
@@ -1006,6 +1024,11 @@
    "id": "dist",
    "name": "Дистрибуція",
    "color": "#C792FF"
+  },
+  {
+   "id": "design",
+   "name": "Дизайн",
+   "color": "#FF8FD8"
   }
  ],
  "schedule": [
@@ -1045,6 +1068,11 @@
    "agent": "seo"
   },
   {
+   "time": "15:07",
+   "what": "Дизайнер: кадр 0 і обкладинка дня (ср — ресерч дизайну)",
+   "agent": "designer"
+  },
+  {
    "time": "14:00 нд",
    "what": "Шоу «ШІ за тиждень»",
    "agent": "longs"
@@ -1052,7 +1080,7 @@
   {
    "time": "19:00",
    "what": "Short дня + TikTok + стаття + TG",
-   "agent": "studio"
+   "agent": "shorts"
   },
   {
    "time": "11:13 нд",

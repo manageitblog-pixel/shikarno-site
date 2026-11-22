@@ -24,6 +24,8 @@ AGENTS = [
   dict(id="seo", name="SEO-відділ", dept="seo", emoji="K", role="Ключові слова, назви й теги, 1 сторінка сайту на день", schedule="щодня 12:13", kpi="кліки з Google ↑"),
   dict(id="tg", name="Telegram-відділ", dept="tg", emoji="T", role="Ріст каналу: промпт дня, воронки, експеримент тижня, модерація", schedule="щодня 08:41", kpi="6 → 150 учасників"),
   dict(id="tiktok", name="Дистрибуція", dept="dist", emoji="V", role="TikTok через vidIQ, згодом Instagram", schedule="разом з YouTube", kpi="кожен Short у TikTok"),
+  dict(id="designer", name="Дизайнер", dept="design", emoji="G", role="Обкладинки v4, кадр 0, графіка роликів і сайту; чекліст docs/design-guide.md", schedule="щодня 15:07", kpi="0 вад на виході"),
+  dict(id="dresearch", name="Ресерчер дизайну", dept="design", emoji="X", role="Що працює в обкладинках ніші й за кордоном; 1 експеримент на тиждень", schedule="щосереди 15:07", kpi="1 гіпотеза/тиждень"),
   dict(id="bot", name="Черговий бота", dept="board", emoji="B", role="Повідомлення власника, щогодинна перевірка", schedule="кожну годину + вотчер", kpi="відповідь < 1 год"),
 ]
 DEPTS = [
@@ -31,13 +33,14 @@ DEPTS = [
   dict(id="data", name="Даталейк", color="#7C5CFF"), dict(id="production", name="Виробництво", color="#FF4F8B"),
   dict(id="qa", name="Контроль якості", color="#7DF29B"), dict(id="seo", name="SEO", color="#FFA94D"),
   dict(id="tg", name="Telegram", color="#5AB2FF"), dict(id="dist", name="Дистрибуція", color="#C792FF"),
+  dict(id="design", name="Дизайн", color="#FF8FD8"),
 ]
 SCHEDULE = [  # (Київ, що, агент)
   ("щогодини :49", "Перевірка бота", "bot"), ("кожні 4 год :52", "Агент-збирач даталейку", "collector"),
   ("08:41", "Telegram-відділ: промпт дня", "tg"), ("08:43", "Радар і редколегія", "radar"),
   ("10:37 пн", "Конкуренти: тижневий аналіз", "niche"), ("11:23 сб/пн", "Довгі: шоу (сб) і гайд (пн)", "longs"),
-  ("12:13", "SEO-відділ", "seo"), ("14:00 нд", "Шоу «ШІ за тиждень»", "longs"),
-  ("19:00", "Short дня + TikTok + стаття + TG", "studio"), ("11:13 нд", "Цикл росту і звіт власнику", "analyst"),
+  ("12:13", "SEO-відділ", "seo"), ("15:07", "Дизайнер: кадр 0 і обкладинка дня (ср — ресерч дизайну)", "designer"), ("14:00 нд", "Шоу «ШІ за тиждень»", "longs"),
+  ("19:00", "Short дня + TikTok + стаття + TG", "shorts"), ("11:13 нд", "Цикл росту і звіт власнику", "analyst"),
 ]
 
 
