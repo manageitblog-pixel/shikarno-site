@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T15:18:46Z",
+ "generated": "2026-11-22T15:22:11Z",
  "kpi": {
   "subs": 311,
   "subs_goal": 1000,
@@ -584,7 +584,7 @@
    "published": "2026-11-19",
    "views7": 30,
    "pct": 52.1,
-   "total": 37
+   "total": 38
   },
   {
    "id": "bRanUVdt2Pw",
@@ -634,7 +634,7 @@
    "published": "2026-11-14",
    "views7": 37,
    "pct": 10.8,
-   "total": 61
+   "total": 66
   },
   {
    "id": "ZSOH2sXLI_Y",
@@ -708,6 +708,27 @@
    "id": "1",
    "kw": "штучний інтелект для дітей (70); ші для дітей (20); нейроігри для дітей (10)",
    "decision": "Short 23.11 19:00 (тір-лист #6), сценарій сьогодні",
+   "score": 400.0
+  },
+  {
+   "title": "Куди поїхати на вихідні: який ШІ? Тір-лист #8 (подорожі)",
+   "format": "tier",
+   "channels": [
+    "short",
+    "site",
+    "tiktok"
+   ],
+   "demand": 4,
+   "fresh": 4,
+   "show": 5,
+   "fit": 5,
+   "source": "kw.py: «куди поїхати на вихідні» 169, «куди поїхати відпочивати» 231",
+   "length": 30,
+   "by": "researcher-search",
+   "status": "approved",
+   "decision": "ep85 28.11",
+   "added": "2026-11-22",
+   "id": "20",
    "score": 400.0
   },
   {
@@ -906,25 +927,6 @@
    "id": "3",
    "decision": "ep84 27.11",
    "score": 109.3
-  },
-  {
-   "title": "Codex Security Plugin: ШІ шукає вразливості в коді",
-   "format": "news",
-   "channels": [
-    "show",
-    "site",
-    "tg"
-   ],
-   "demand": 3,
-   "fresh": 4,
-   "show": 4,
-   "fit": 3,
-   "by": "trend",
-   "source": "https://openai.com/business/learn/codex-security-plugin-demo",
-   "status": "new",
-   "added": "2026-11-22",
-   "id": "14",
-   "score": 105.7
   }
  ],
  "lake": {
@@ -1088,14 +1090,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "17",
-   "agent": "de",
-   "task": "Дашборд: історичні графіки замість «Для CEO»",
-   "started": "2026-11-22T13:16:18Z",
-   "finished": "2026-11-22T13:18:19Z",
-   "result": "6 графіків по тижнях + таблиця; «Для CEO» прибрано; години довгих з API"
-  },
   {
    "id": "18",
    "agent": "clip",
@@ -1309,8 +1303,8 @@
    "agent": "shorts",
    "task": "ep85 (сб 28.11 17Z): тір-лист — тема за попитом",
    "started": "2026-11-22T15:18:10Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-22T15:22:10Z",
+   "result": "ep85 тір-лист #8 «Куди поїхати на вихідні»: 425 знаків, самоперевірка 5/5"
   },
   {
    "id": "45",
@@ -1325,6 +1319,14 @@
    "agent": "da",
    "task": "Аудит прогнозів: Shorts, яким виповнилось 7 днів (15–16.11)",
    "started": "2026-11-22T15:18:10Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "47",
+   "agent": "factcheck",
+   "task": "Незалежний фактчек ep85 (подорожі)",
+   "started": "2026-11-22T15:22:10Z",
    "finished": null,
    "result": ""
   }
