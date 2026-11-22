@@ -12,6 +12,7 @@ usage:
   python3 studio/yt/lake.py ingest              # research + posts + Search Console (+ niche за потреби окремо)
   python3 studio/yt/lake.py niche               # ширша ніша: UA + англомовні ШІ-запити (квота ~2000 од.)
   python3 studio/yt/lake.py comp [500]         # ≥500 каналів-конкурентів: знімок статистики + останні 15 відео (щотижня)
+  python3 studio/yt/lake.py news                # новини: RSS OpenAI/Google/DeepMind, Anthropic, HN (ШІ), dou → news (кожні 4 год)
   python3 studio/yt/lake.py ask "<тема>"        # що ми знаємо про тему: наші ролики й цифри, статті, радари, ніша, пошук
   python3 studio/yt/lake.py sql "select ..."    # довільний запит
   python3 studio/yt/lake.py stats               # скільки чого в лейку
@@ -32,6 +33,7 @@ def db():
     create table if not exists site_pages(page text, period text, clicks int, impressions int, ctr real, position real, primary key(page,period));
     create table if not exists comp(channel_id text, date text, title text, subs int, views int, videos int, country text, lang text, primary key(channel_id,date));
     create table if not exists comp_videos(video_id text primary key, channel_id text, title text, published text, duration_s int, views int, likes int, comments int, fetched text);
+    create table if not exists news(url text primary key, source text, published text, title text, score int, fetched text);
     create table if not exists niche(video_id text, fetched text, channel text, title text, published text, duration_s int, views int, channel_subs int, ratio real, ru int, primary key(video_id,fetched));
     """)
     c.create_function("ul", 1, lambda x: (x or "").lower())  # SQLite lower() не знає кирилиці
@@ -129,7 +131,7 @@ def lang_of(title):
     return "en"
 
 
-def competitors(target=500, per_q=50):
+def competitors(target=500, per_q=50, max_search=30):
     """Збирає й оновлює ≥500 каналів ніші: статистика каналу (знімок на дату) + останні 15 відео кожного. Квота: пошук 100/запит."""
     import yt
     c = db(); today = datetime.date.today().isoformat()
@@ -139,8 +141,10 @@ def competitors(target=500, per_q=50):
     for i in range(0, len(nv), 50):  # канали з уже зібраної ніші — 1 од. квоти на 50 відео
         for v in yt.api("videos", part="snippet", id=",".join(nv[i:i + 50]))["items"]: new.add(v["snippet"]["channelId"])
     print("канали з ніші:", len(have | new))
+    done_q = 0
     for q in COMP_Q:
-        if len(have | new) >= target: break
+        if len(have | new) >= target or done_q >= max_search: break
+        done_q += 2
         en = q.isascii(); tok = None
         for _ in range(2):
             try:
@@ -173,6 +177,46 @@ def competitors(target=500, per_q=50):
     print(f"comp: {n} каналів оновлено, {c.execute('select count(*) from comp_videos').fetchone()[0]} відео конкурентів")
 
 
+FEEDS = {"openai": "https://openai.com/news/rss.xml", "google": "https://blog.google/technology/ai/rss/", "deepmind": "https://deepmind.google/blog/rss.xml"}
+
+
+def news():
+    """Новини з першоджерел і обговорень → таблиця news (накопичується; дублікати за URL відкидаються)."""
+    import html as H
+    c = db(); today = datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M"); n = 0
+    def get(u):
+        return urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0 shikarno-lake"}), timeout=30).read().decode("utf-8", "ignore")
+    for src, u in FEEDS.items():
+        try: t = get(u)
+        except Exception as e: print("feed ERR", src, e); continue
+        for it in re.findall(r"<item>(.*?)</item>", t, re.S):
+            ti = re.search(r"<title>(?:<!\[CDATA\[)?(.*?)(?:\]\]>)?</title>", it, re.S); l = re.search(r"<link>(.*?)</link>", it); d = re.search(r"<pubDate>(.*?)</pubDate>", it)
+            if ti and l:
+                pub = d.group(1).strip() if d else ""
+                try: pub = datetime.datetime.strptime(pub[:25].strip(), "%a, %d %b %Y %H:%M:%S").strftime("%Y-%m-%d")
+                except Exception: pass
+                n += c.execute("insert or ignore into news values(?,?,?,?,?,?)", (l.group(1).strip(), src, pub, H.unescape(ti.group(1).strip()), None, today)).rowcount
+    try:
+        t = get("https://www.anthropic.com/news")
+        for path in dict.fromkeys(re.findall(r'href="(/news/[a-z0-9-]+)"', t)):
+            if path.split("/")[-1] in ("announcements", "features", "partnerships", "product"): continue
+            n += c.execute("insert or ignore into news values(?,?,?,?,?,?)", ("https://www.anthropic.com" + path, "anthropic", "", path.split("/")[-1].replace("-", " "), None, today)).rowcount
+    except Exception as e: print("anthropic ERR", e)
+    try:
+        ids = json.loads(get("https://hacker-news.firebaseio.com/v0/topstories.json"))[:80]; rx = re.compile(AI_RX, re.I)
+        for i in ids:
+            h = json.loads(get(f"https://hacker-news.firebaseio.com/v0/item/{i}.json"))
+            if h and h.get("url") and rx.search(" " + h.get("title", "") + " "):
+                c.execute("insert into news values(?,?,?,?,?,?) on conflict(url) do update set score=excluded.score", (h["url"], "hn", datetime.datetime.utcfromtimestamp(h["time"]).strftime("%Y-%m-%d"), h["title"], h.get("score"), today)); n += 1
+    except Exception as e: print("hn ERR", e)
+    try:
+        t = get("https://dou.ua/lenta/news/")
+        for u2, ti in re.findall(r'<h2[^>]*>\s*<a href="(https://dou.ua/lenta/[^"]+)"[^>]*>(.*?)</a>', t, re.S):
+            n += c.execute("insert or ignore into news values(?,?,?,?,?,?)", (u2, "dou", today[:10], H.unescape(re.sub(r"<.*?>|\s+", " ", ti)).strip(), None, today)).rowcount
+    except Exception as e: print("dou ERR", e)
+    c.commit(); print("news +", n, "| всього", c.execute("select count(*) from news").fetchone()[0])
+
+
 AI_RX = r"(ші|ai|штучн|нейро|gpt|chatgpt|claude|клод|gemini|джеміні|midjourney|промпт|prompt|llm|агент|agent|автоматиз|вайбкод|vibe ?cod|cursor|codex|copilot|n8n|openai|anthropic|deepseek|grok)"
 
 
@@ -203,13 +247,15 @@ def ask(q):
     for r in c.execute("select query,impressions,clicks,round(position,1) from site_queries where ul(query) like ? order by impressions desc limit 8", (like,)): print("  ", *r)
     print("== Радари (теми, оцінка, план)")
     for r in c.execute("select date,score,title,plan from research where ul(title) like ? or ul(plan) like ? order by date desc limit 8", (like, like)): print("  ", r[0], f"{r[1]}/10", r[2][:70], "→", r[3][:50])
+    print("== Новини (першоджерела, HN, dou)")
+    for r in c.execute("select published,source,score,title from news where ul(title) like ? order by published desc limit 8", (like,)): print("  ", *r)
     print("== Ніша (чужі відео, views/subs)")
     for r in c.execute("select round(max(ratio),1),max(views),channel,title from niche where ul(title) like ? and ru=0 group by video_id order by max(ratio) desc limit 8", (like,)): print("  ", f"{r[0]}x", r[1], r[2][:20], "|", r[3][:70])
 
 
 def stats():
     c = db()
-    for t in ("videos", "daily", "traffic", "niche", "comp", "comp_videos", "research", "posts", "site_daily", "site_queries", "site_pages"):
+    for t in ("videos", "daily", "traffic", "news", "niche", "comp", "comp_videos", "research", "posts", "site_daily", "site_queries", "site_pages"):
         print(f"{t:14}", c.execute(f"select count(*) from {t}").fetchone()[0])
 
 
@@ -221,6 +267,7 @@ if __name__ == "__main__":
         except Exception as e: print("site ERR", e)
         c.commit(); stats()
     elif a[0] == "niche": niche()
+    elif a[0] == "news": news()
     elif a[0] == "comp": competitors(int(a[1]) if len(a) > 1 else 500)
     elif a[0] == "ask": ask(" ".join(a[1:]))
     elif a[0] == "sql":
