@@ -1,0 +1,124 @@
+[
+ {
+  "title": "Який ШІ для дітей? Тір-лист #6 (AI Quests українською)",
+  "format": "tier",
+  "channels": [
+   "short",
+   "site",
+   "tg",
+   "tiktok"
+  ],
+  "demand": 4,
+  "fresh": 4,
+  "show": 5,
+  "fit": 5,
+  "by": "researcher-search",
+  "source": "https://dou.ua/lenta/news/google-ai-quests-ukraine-kids/ + kw.py «штучний інтелект для дітей»",
+  "status": "new",
+  "added": "2026-11-22",
+  "id": "1"
+ },
+ {
+  "title": "ChatGPT з нуля українською — гайд 12–15 хв",
+  "format": "guide",
+  "channels": [
+   "long",
+   "site"
+  ],
+  "demand": 5,
+  "fresh": 3,
+  "show": 5,
+  "fit": 5,
+  "by": "researcher-search",
+  "source": "Search Console: «чат gpt українською безкоштовно» 577 показів",
+  "status": "new",
+  "added": "2026-11-22",
+  "id": "2"
+ },
+ {
+  "title": "ШІ для логопеда / вузькі професії",
+  "format": "prof",
+  "channels": [
+   "short",
+   "site"
+  ],
+  "demand": 3,
+  "fresh": 3,
+  "show": 4,
+  "fit": 4,
+  "by": "researcher-niche",
+  "source": "outliers 22.11: «Логопеди, а ви використовуєте ШІ» 12×",
+  "status": "new",
+  "added": "2026-11-22",
+  "id": "3"
+ },
+ {
+  "title": "Gemini Tasks: ШІ платить рахунки — чи безпечно",
+  "format": "sec",
+  "channels": [
+   "tg",
+   "site"
+  ],
+  "demand": 2,
+  "fresh": 4,
+  "show": 4,
+  "fit": 4,
+  "by": "researcher-news",
+  "source": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
+  "status": "new",
+  "added": "2026-11-22",
+  "id": "4"
+ },
+ {
+  "title": "Який ШІ для кухні? Тір-лист",
+  "format": "tier",
+  "channels": [
+   "short",
+   "site",
+   "tiktok"
+  ],
+  "demand": 3,
+  "fresh": 3,
+  "show": 5,
+  "fit": 5,
+  "by": "owner",
+  "source": "рішення власника 21.11",
+  "status": "new",
+  "added": "2026-11-22",
+  "id": "5"
+ },
+ {
+  "title": "ШІ для перукаря/майстра краси",
+  "format": "prof",
+  "channels": [
+   "short",
+   "site",
+   "insta"
+  ],
+  "demand": 2,
+  "fresh": 3,
+  "show": 4,
+  "fit": 4,
+  "by": "owner",
+  "source": "рішення власника 21.11; kw.py 22.11 — попит низький",
+  "status": "new",
+  "added": "2026-11-22",
+  "id": "6"
+ },
+ {
+  "title": "Claude безкоштовно — повний гайд (сайт)",
+  "format": "guide",
+  "channels": [
+   "site"
+  ],
+  "demand": 4,
+  "fresh": 3,
+  "show": 4,
+  "fit": 4,
+  "by": "researcher-search",
+  "source": "Search Console: claude-bezkoshtovno 354 покази, поз. 5,7",
+  "status": "new",
+  "added": "2026-11-22",
+  "id": "7"
+ }
+]
