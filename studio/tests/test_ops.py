@@ -108,12 +108,12 @@ class Backfill(Base):
 
     def test_idempotent(self):
         r1 = ops.backfill(**self.kw)
-        self.assertEqual(r1["total_added"], 8)
+        self.assertEqual(r1["total_added"], 9)
         snap = [tuple(r) for r in self.c.execute("select * from publications order by 1,2")]
         r2 = ops.backfill(**self.kw)
         self.assertEqual(r2["total_added"], 0)
         self.assertEqual(snap, [tuple(r) for r in self.c.execute("select * from publications order by 1,2")])
-        self.assertEqual(self.c.execute("select count(*) from pub_events").fetchone()[0], 8)
+        self.assertEqual(self.c.execute("select count(*) from pub_events").fetchone()[0], 9)
         self.assertEqual(self.c.execute("select count(*) from agent_decisions").fetchone()[0], 1)
         self.assertTrue(ops.verify(self.c)["ok"])
 

@@ -9,3 +9,8 @@ studio/data/quota.log
 # блокування/атомарний запис studio/util.py
 *.json.lock
 .*.json.*.tmp
+
+# журнал автономії (studio/ops.py): жива база не в git
+studio/data/ops.sqlite
+studio/data/ops.sqlite-wal
+studio/data/ops.sqlite-shm
