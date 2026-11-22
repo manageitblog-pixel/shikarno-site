@@ -10,7 +10,7 @@ export type Scene = {
   icon?: string; items?: any[]; before?: string; after?: string;
   big?: string; sub?: string; foot?: string; score?: number; plus?: string; minus?: string; badge?: string; hook?: string; tone?: string;
 };
-export type EpData = { total: number; scenes: Scene[]; words: { w: string; s: number; e: number; g: string }[]; mouth: number[]; alert?: string };
+export type EpData = { total: number; scenes: Scene[]; words: { w: string; s: number; e: number; g: string }[]; mouth: number[]; alert?: string; series?: string };
 const Ctx = createContext<EpData>({ total: 300, scenes: [], words: [], mouth: [] });
 const useEp = () => useContext(Ctx);
 
@@ -47,8 +47,8 @@ export const Icon: React.FC<{ name: string; size?: number; color?: string }> = (
 
 /* ---------- верх: плашка бренду + прогрес ---------- */
 const TopBrand: React.FC = () => {
-  const f = useCurrentFrame(); const { total, alert } = useEp();
-  const show = sp(f - INTRO + 4, 14);
+  const f = useCurrentFrame(); const { total, alert, series } = useEp();
+  const show = series ? 1 : sp(f - INTRO + 4, 14); // series (кліпи з шоу, 22.11): лого + плашка серії вже на кадрі 0
   return (
     <>
       <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 12, background: "rgba(255,255,255,0.12)" }}>
@@ -60,6 +60,7 @@ const TopBrand: React.FC = () => {
         background: "rgba(14,11,36,0.55)", border: "2px solid rgba(255,255,255,0.22)",
       }}>
         <Avatar size={72} /><Wordmark size={46} />
+        {series && <div style={{ marginLeft: 6, background: C.yellow, color: C.ink, fontFamily: FONT, fontWeight: 900, fontSize: 34, padding: "8px 20px", borderRadius: 14, letterSpacing: 1, whiteSpace: "nowrap" }}>{series}</div>}
       </div>
       {alert && <div style={{
         position: "absolute", top: 196, left: "50%", translate: "-50% 0", scale: `${show}`, opacity: show * (0.82 + 0.18 * Math.sin(f / 5)),
