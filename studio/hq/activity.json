@@ -735,6 +735,14 @@
    "started": "2026-11-22T23:21:55Z",
    "finished": null,
    "result": ""
+  },
+  {
+   "id": "93",
+   "agent": "production",
+   "task": "Фікс Generic.tsx: список ≥4 пунктів не заходить під кутового Байта (за специфікацією design-guide 22.11 ніч), ≤3 — без змін",
+   "started": "2026-11-22T23:22:15Z",
+   "finished": null,
+   "result": ""
   }
  ]
 }
