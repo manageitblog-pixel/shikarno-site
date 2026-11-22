@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T19:13:06Z",
+ "generated": "2026-11-22T19:13:27Z",
  "kpi": {
   "subs": 311,
   "subs_goal": 1000,
@@ -1538,8 +1538,8 @@
    "agent": "seo",
    "task": "Плейбуки: Google Search (SEO/Discover) + Telegram ріст — офіційні джерела → правила",
    "started": "2026-11-22T19:05:28Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-22T19:13:15Z",
+   "result": "Плейбуки Google (17 правил) і Telegram (15); 6 експериментів designed; проблема сайту — CTR, не позиції"
   },
   {
    "id": "68",
