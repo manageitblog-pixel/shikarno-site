@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T19:02:35Z",
+ "generated": "2026-11-22T19:04:54Z",
  "kpi": {
   "subs": 311,
   "subs_goal": 1000,
@@ -935,7 +935,7 @@
    "status": "new",
    "added": "2026-11-22",
    "id": "25",
-   "decision": "кандидат у шоу #3 29.11 (веб-скан 22.11: release notes OpenAI 18.11, всі плани, глобально)",
+   "decision": "сигнал TG 140 22.11",
    "score": 282.0
   },
   {
@@ -1546,8 +1546,8 @@
    "agent": "seo",
    "task": "Сигнал на сайт: коротка новина «ChatGPT: диктуй хоч годину»",
    "started": "2026-11-22T19:01:50Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-22T19:04:53Z",
+   "result": "Сигнал-новина на сайті: /novyny/holosovyj-vvid-chatgpt-dyktuvannya/ (~445 слів)"
   }
  ],
  "agents": [
