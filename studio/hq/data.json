@@ -1,11 +1,11 @@
 {
- "generated": "2026-11-22T18:45:50Z",
+ "generated": "2026-11-22T18:50:58Z",
  "kpi": {
   "subs": 311,
   "subs_goal": 1000,
   "long_hours": 10.1,
   "long_hours_goal": 4000,
-  "views_total": 11913,
+  "views_total": 11890,
   "views_7d": 890,
   "pct_7d": 46.0,
   "subs_7d": 2,
@@ -476,55 +476,55 @@
    "name": "Short · tier",
    "n": 17,
    "views": 200,
-   "pct": 63.9
+   "pct": 66.3
   },
   {
    "name": "Short · free",
    "n": 6,
    "views": 118.5,
-   "pct": 53.9
+   "pct": 56.9
   },
   {
    "name": "Довгий · digest",
    "n": 3,
    "views": 48,
-   "pct": 22.3
+   "pct": 35.1
   },
   {
    "name": "Short · check",
    "n": 4,
    "views": 44.5,
-   "pct": 60.8
+   "pct": 62.2
   },
   {
    "name": "Short · news",
    "n": 16,
    "views": 44.0,
-   "pct": 35.6
+   "pct": 38.3
   },
   {
    "name": "Short · skills",
    "n": 8,
    "views": 43.0,
-   "pct": 46.1
+   "pct": 47.4
   },
   {
    "name": "Short · prof",
    "n": 4,
    "views": 41.5,
-   "pct": 47.8
+   "pct": 49.8
   },
   {
    "name": "Short · try",
    "n": 7,
    "views": 41,
-   "pct": 49.8
+   "pct": 51.9
   },
   {
    "name": "Short · sec",
    "n": 11,
    "views": 36,
-   "pct": 37.9
+   "pct": 43.2
   },
   {
    "name": "Довгий · prof",
@@ -536,13 +536,13 @@
    "name": "Довгий · skills",
    "n": 2,
    "views": 26.0,
-   "pct": 21.7
+   "pct": 28.5
   },
   {
    "name": "Довгий · sec",
    "n": 1,
    "views": 5,
-   "pct": 40.4
+   "pct": 50.5
   }
  ],
  "videos": [
@@ -603,7 +603,7 @@
    "short": true,
    "published": "2026-11-17",
    "views7": 79,
-   "pct": 47.8,
+   "pct": 49.7,
    "total": 87
   },
   {
@@ -623,7 +623,7 @@
    "short": true,
    "published": "2026-11-15",
    "views7": 6,
-   "pct": 37.1,
+   "pct": 74.3,
    "total": 6
   },
   {
@@ -643,7 +643,7 @@
    "short": true,
    "published": "2026-11-14",
    "views7": 31,
-   "pct": 14.2,
+   "pct": 15.2,
    "total": 37
   },
   {
@@ -653,7 +653,7 @@
    "short": true,
    "published": "2026-11-14",
    "views7": 51,
-   "pct": 27.9,
+   "pct": 32.4,
    "total": 57
   },
   {
@@ -663,7 +663,7 @@
    "short": true,
    "published": "2026-11-13",
    "views7": 31,
-   "pct": 20.5,
+   "pct": 21.2,
    "total": 32
   },
   {
@@ -673,7 +673,7 @@
    "short": true,
    "published": "2026-11-13",
    "views7": 30,
-   "pct": 45.1,
+   "pct": 56.4,
    "total": 35
   },
   {
@@ -1142,14 +1142,6 @@
  ],
  "activity": [
   {
-   "id": "31",
-   "agent": "longs",
-   "task": "Гайд #3: виправити 3 FAIL фактчеку (назви меню українською)",
-   "started": "2026-11-22T13:46:53Z",
-   "finished": "2026-11-22T13:48:24Z",
-   "result": "guide3: 3 FAIL + 2 уточнення виправлено (сегменти 7, 27, 31, 36, 39)"
-  },
-  {
    "id": "32",
    "agent": "factcheck",
    "task": "Повторний незалежний фактчек guide3 після виправлень",
@@ -1378,6 +1370,14 @@
    "agent": "de",
    "task": "ops.py exp_start + контроль для експерименту кадру 0 (старт 24.11); daily 0→NULL",
    "started": "2026-11-22T18:45:31Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "61",
+   "agent": "longs",
+   "task": "Озвучка зараз (квота є!): ep82 → гайд #1 частини 1–16 → ep83 → ep84, до першого 429",
+   "started": "2026-11-22T18:50:33Z",
    "finished": null,
    "result": ""
   }
