@@ -157,5 +157,24 @@
    "note": "Скрін Promote «ШІ для вчителя»: 2 с 36,1% (нижче сер.), 6 с 18,4% (вище), до кінця 1,9%, лайки 3,2% (нижче); TikTok: слабше за подібні. Порада: не доливати; наступний Promote — Gemini-пошта після доби органіки ($2–3/день ×3) або тір-лист."
   }
  ],
- "queue_cuts6": []
+ "queue_cuts6": [],
+ "posted_auto": {
+  "ep79_tier_money": {
+   "url": "https://www.tiktok.com/@shikarno_ai_ua/video/7710936415873273109",
+   "at": "2026-11-22 ~10:20Z",
+   "via": "vidIQ",
+   "postId": "ac2b8f24-994c-4847-b8f6-f360e0c301b4"
+  },
+  "ep30_tier_home": {
+   "scheduled": "2026-11-22T13:30:00Z",
+   "via": "vidIQ",
+   "postId": "1aea1840-a285-4842-99c3-3b89ca4935a6"
+  }
+ },
+ "settings_owner_2211": {
+  "privacyLevel": "PUBLIC_TO_EVERYONE",
+  "allowComment": true,
+  "musicUsageConfirmed": true,
+  "isAiGenerated": true
+ }
 }
