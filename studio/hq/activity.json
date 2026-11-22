@@ -173,14 +173,22 @@
    "agent": "trend",
    "task": "Свіжі новини даталейку → оцінка → дошка ідей; аномалії ніші",
    "started": "2026-11-22T13:20:57Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-22T13:22:46Z",
+   "result": "+23 новини; 4 кандидати в шоу #3 (Anthropic на Nasdaq, Moonlock, корпус текстів КМУ, Claude і фізика)"
   },
   {
    "id": "23",
    "agent": "longs",
    "task": "Гайд #3 (ср 9.12): вибір теми з дошки + сценарій",
    "started": "2026-11-22T13:21:46Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "24",
+   "agent": "seo",
+   "task": "Оновити статтю anthropic-ipo: лістинг на Nasdaq 19.11",
+   "started": "2026-11-22T13:22:46Z",
    "finished": null,
    "result": ""
   }

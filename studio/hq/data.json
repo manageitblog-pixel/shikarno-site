@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T13:22:16Z",
+ "generated": "2026-11-22T13:23:03Z",
  "kpi": {
   "subs": 311,
   "subs_goal": 1000,
@@ -751,6 +751,48 @@
    "score": 225.0
   },
   {
+   "title": "Anthropic на Nasdaq (ANT): що IPO розробника Claude означає для тебе",
+   "format": "news",
+   "channels": [
+    "show",
+    "site",
+    "tg"
+   ],
+   "demand": 3,
+   "fresh": 5,
+   "show": 5,
+   "fit": 4,
+   "source": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+   "by": "researcher-news",
+   "note": "18.11 ціна $83, 980 млн акцій, торги з 19.11 (дані Anthropic); оновити пост 2026-10-23-anthropic-ipo; kw «акції anthropic» — прямого попиту нема",
+   "status": "new",
+   "added": "2026-11-22",
+   "id": "15",
+   "decision": "кандидат у шоу #3",
+   "score": 220.2
+  },
+  {
+   "title": "Moonlock від MacPaw: український застосунок ловить шахрайські SMS і посилання на iPhone",
+   "format": "sec",
+   "channels": [
+    "short",
+    "site",
+    "tg"
+   ],
+   "demand": 3,
+   "fresh": 5,
+   "show": 4,
+   "fit": 5,
+   "source": "https://apps.apple.com/ua/app/moonlock/id6799935865",
+   "by": "researcher-news",
+   "note": "App Store: безкоштовно + підписка $11.99/міс або $59.99/рік, 7 дн тріал, iOS 26+, мова лише англійська; kw «moonlock» 290 (змішаний)",
+   "status": "new",
+   "added": "2026-11-22",
+   "id": "17",
+   "decision": "кандидат у шоу #3",
+   "score": 204.3
+  },
+  {
    "title": "Гайд «Claude безкоштовно» 18–22 хв (відео + сторінка сайту)",
    "format": "guide",
    "channels": [
@@ -787,6 +829,27 @@
    "added": "2026-11-22",
    "id": "8",
    "score": 165.2
+  },
+  {
+   "title": "Уряд створює корпус українських текстів для ШІ — хто отримає доступ",
+   "format": "news",
+   "channels": [
+    "show",
+    "site",
+    "tg"
+   ],
+   "demand": 2,
+   "fresh": 5,
+   "show": 4,
+   "fit": 5,
+   "source": "https://www.kmu.gov.ua/npas/deiaki-pytannia-rozvytku-ukrainskykh-velykykh-movnykh-modelei-t111126",
+   "by": "researcher-news",
+   "note": "Постанова КМУ №1416 від 11.11.2026; Мінцифри створює за 3 міс; правила доступу — у Положенні (PDF), звірити перед сценарієм",
+   "status": "new",
+   "added": "2026-11-22",
+   "id": "18",
+   "decision": "кандидат у шоу #3",
+   "score": 146.8
   },
   {
    "title": "Claude безкоштовно — повний гайд (сайт)",
@@ -843,79 +906,25 @@
    "score": 105.7
   },
   {
-   "title": "Gemini Tasks: ШІ платить рахунки — чи безпечно",
-   "format": "sec",
+   "title": "Claude розв’язав дві відкриті задачі фізики чорних дір — що це каже про ШІ-науку",
+   "format": "news",
    "channels": [
-    "tg",
-    "site"
+    "show",
+    "site",
+    "tg"
    ],
    "demand": 2,
-   "fresh": 4,
+   "fresh": 5,
    "show": 4,
-   "fit": 4,
+   "fit": 3,
+   "source": "https://www.anthropic.com/research/claude-black-hole-physics",
    "by": "researcher-news",
-   "source": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
+   "note": "17.11, заяви Anthropic: перевірено в Lean і фізиком; практичних застосувань нема — казати чесно",
    "status": "new",
    "added": "2026-11-22",
-   "id": "4",
-   "score": 87.2
-  },
-  {
-   "title": "ШІ для перукаря/майстра краси",
-   "format": "prof",
-   "channels": [
-    "short",
-    "site",
-    "insta"
-   ],
-   "demand": 2,
-   "fresh": 3,
-   "show": 4,
-   "fit": 4,
-   "by": "owner",
-   "source": "рішення власника 21.11; kw.py 22.11 — попит низький",
-   "status": "new",
-   "added": "2026-11-22",
-   "id": "6",
-   "score": 72.9
-  },
-  {
-   "title": "MedChemBench: чи допоможе ШІ знаходити ліки",
-   "format": "news",
-   "channels": [
-    "show",
-    "site",
-    "tg"
-   ],
-   "demand": 2,
-   "fresh": 5,
-   "show": 3,
-   "fit": 3,
-   "by": "trend",
-   "source": "https://openai.com/index/introducing-medchembench",
-   "status": "new",
-   "added": "2026-11-22",
-   "id": "12",
-   "score": 66.1
-  },
-  {
-   "title": "OpenAI проти «крадіжки» моделей через дистиляцію",
-   "format": "news",
-   "channels": [
-    "show",
-    "site",
-    "tg"
-   ],
-   "demand": 2,
-   "fresh": 5,
-   "show": 2,
-   "fit": 3,
-   "by": "trend",
-   "source": "https://openai.com/index/combatting-adversarial-distillation",
-   "status": "new",
-   "added": "2026-11-22",
-   "id": "10",
-   "score": 44.0
+   "id": "16",
+   "decision": "кандидат у шоу #3",
+   "score": 88.1
   }
  ],
  "lake": {
@@ -1252,14 +1261,22 @@
    "agent": "trend",
    "task": "Свіжі новини даталейку → оцінка → дошка ідей; аномалії ніші",
    "started": "2026-11-22T13:20:57Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-22T13:22:46Z",
+   "result": "+23 новини; 4 кандидати в шоу #3 (Anthropic на Nasdaq, Moonlock, корпус текстів КМУ, Claude і фізика)"
   },
   {
    "id": "23",
    "agent": "longs",
    "task": "Гайд #3 (ср 9.12): вибір теми з дошки + сценарій",
    "started": "2026-11-22T13:21:46Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "24",
+   "agent": "seo",
+   "task": "Оновити статтю anthropic-ipo: лістинг на Nasdaq 19.11",
+   "started": "2026-11-22T13:22:46Z",
    "finished": null,
    "result": ""
   }
