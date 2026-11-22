@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T14:23:47Z",
+ "generated": "2026-11-22T14:23:58Z",
  "kpi": {
   "subs": 311,
   "subs_goal": 1000,
@@ -1309,8 +1309,8 @@
    "agent": "factcheck",
    "task": "Незалежний фактчек ep84 «ШІ для логопеда»",
    "started": "2026-11-22T14:22:16Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-22T14:23:58Z",
+   "result": "ep84: PASS (12 PASS, 0 FAIL; 1 UNVERIFIED лише в коментарі файлу)"
   },
   {
    "id": "37",
