@@ -1,1 +1,2 @@
 - 22.11 14:17 — Аналітик даних: перший аудит прогнозів (Shorts 08–15.11) → docs/research/forecast-audit-2026-11-22.md; prior формату слабкий (ρ=0.24), пропозиції до ideas.py описано
+- 22.11 14:17 — Сценарист Shorts: ep81 «Який ШІ для дітей? Тір-лист Байта #6» (23.11 17Z) — сценарій studio/eps/ep81.py, META23, фактчек 10 тверджень (0 FAIL; вікові межі ChatGPT 13+/згода батьків, Gemini <13 через Family Link, Storybook і Claude 18+, AI Quests 11–14).
