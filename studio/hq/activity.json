@@ -485,8 +485,8 @@
    "agent": "longs",
    "task": "Озвучка зараз (квота є!): ep82 → гайд #1 частини 1–16 → ep83 → ep84, до першого 429",
    "started": "2026-11-22T18:50:33Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-22T19:12:09Z",
+   "result": "Озвучено ep82 + гайд #1 частини 0–3; реальний ліміт 10 запитів/добу, половина — передублі F0"
   },
   {
    "id": "62",
@@ -533,6 +533,14 @@
    "agent": "seo",
    "task": "Плейбуки: Google Search (SEO/Discover) + Telegram ріст — офіційні джерела → правила",
    "started": "2026-11-22T19:05:28Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "68",
+   "agent": "shorts",
+   "task": "ep82: рендер (новий кадр 0) → QA → заливка на 24.11 17Z → finalize PASS → старт експерименту frame0",
+   "started": "2026-11-22T19:12:09Z",
    "finished": null,
    "result": ""
   }
