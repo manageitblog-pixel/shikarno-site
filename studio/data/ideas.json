@@ -620,5 +620,84 @@
   "status": "new",
   "added": "2026-11-22",
   "id": "33"
+ },
+ {
+  "title": "Чорна пʼятниця з ChatGPT: перевір знижку за 30 секунд — справжня чи накручена ціна",
+  "format": "try",
+  "channels": [
+   "short",
+   "tiktok",
+   "site"
+  ],
+  "demand": 4,
+  "fresh": 5,
+  "show": 5,
+  "fit": 5,
+  "hook": "you",
+  "length": 30,
+  "source": "https://www.youtube.com/watch?v=qaqYqjPjpeU",
+  "by": "researcher-niche",
+  "status": "new",
+  "added": "2026-11-22",
+  "id": "34"
+ },
+ {
+  "title": "ШІ для ФОПа: рахунок, акт і нагадування про податок за 5 хвилин — що можна довірити ШІ, а що ні",
+  "format": "prof",
+  "channels": [
+   "short",
+   "site",
+   "tg"
+  ],
+  "demand": 4,
+  "fresh": 3,
+  "show": 5,
+  "fit": 5,
+  "hook": "you",
+  "length": 35,
+  "source": "https://www.youtube.com/watch?v=ZtbpANr-ZDo",
+  "by": "researcher-niche",
+  "status": "new",
+  "added": "2026-11-22",
+  "id": "35"
+ },
+ {
+  "title": "ШІ для студента: курсова без списування — 3 чесні способи і 1, що тебе здасть",
+  "format": "prof",
+  "channels": [
+   "short",
+   "tiktok",
+   "site"
+  ],
+  "demand": 4,
+  "fresh": 3,
+  "show": 4,
+  "fit": 5,
+  "hook": "you",
+  "length": 30,
+  "source": "https://www.youtube.com/watch?v=LN3vWf2S9TQ",
+  "by": "researcher-niche",
+  "status": "new",
+  "added": "2026-11-22",
+  "id": "36"
+ },
+ {
+  "title": "Пісня українською за 30 секунд: безкоштовний ШІ-генератор музики проти Suno — тест Байта",
+  "format": "try",
+  "channels": [
+   "short",
+   "tiktok"
+  ],
+  "demand": 3,
+  "fresh": 4,
+  "show": 5,
+  "fit": 4,
+  "hook": "plain",
+  "length": 30,
+  "source": "https://www.tiktok.com/@ai_sashka/video/7708421045484637472",
+  "by": "researcher-niche",
+  "status": "new",
+  "added": "2026-11-22",
+  "id": "37"
  }
 ]
