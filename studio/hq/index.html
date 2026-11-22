@@ -245,7 +245,7 @@ function office(D){
     cx.fillStyle="#0B0A1C";cx.fillRect(x-3+(a.dir>0?1:0),y-15,2,2);cx.fillRect(x+1+(a.dir>0?1:0),y-15,2,2);
     cx.fillStyle="#0B0A1C";cx.font="700 9px JetBrains Mono, monospace";cx.fillText(a.emoji,x-3,y+2);
     if(a===sel){cx.strokeStyle="#FFD60A";cx.lineWidth=2;cx.strokeRect(x-10,y-22,20,38)}
-    cx.font="600 10px Golos Text, sans-serif";const nm=a.name.split(" ")[0];const w=cx.measureText(nm).width;
+    cx.font="600 10px Golos Text, sans-serif";const br=/\(([^)]+)\)/.exec(a.name),nm=br&&br[1].length<=5?br[1]:a.name.split(" (")[0].split(" ").slice(0,a.name.startsWith("Лінійний")||a.name.startsWith("Головний")?2:1).join(" ");const w=cx.measureText(nm).width;
     cx.fillStyle="#0B0A1Ccc";cx.fillRect(x-w/2-3,y+16,w+6,13);cx.fillStyle="#F3F1FF";cx.fillText(nm,x-w/2,y+26);
     if(a.busy){const bx=x+8,by=y-34;cx.fillStyle="#F3F1FF";cx.fillRect(bx,by,22,12);cx.fillStyle="#0B0A1C";const d=Math.floor(t/350)%4;for(let i=0;i<3;i++)if(i<d||reduce)cx.fillRect(bx+4+i*6,by+5,3,3)}
   }
