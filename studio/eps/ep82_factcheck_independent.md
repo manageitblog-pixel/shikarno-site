@@ -1,0 +1,22 @@
+# Фактчек ep82 (незалежний) — «Який ШІ для кухні?», тір-лист Байта #7
+
+Перевірено 22.11.2026 на офіційних сторінках. Перевірялись ROWS, SCENES (text/gsay) у studio/eps/ep82.py та title/description/tags у meta.py (ep82_tier_kitchen).
+
+| Твердження | URL | Статус | Примітка |
+|---|---|---|---|
+| ChatGPT: сфоткай полиці й спитай (приймає фото) | https://help.openai.com/en/articles/8400551-chatgpt-image-inputs-faq | PASS | Сторінка каже: «Image inputs are available on Free and paid ChatGPT plans, subject to plan-specific usage limits». PNG/JPEG/GIF, до 20 МБ. |
+| Фото можна надсилати й на безкоштовному плані (з лімітами) — опис | там само | PASS | Те саме формулювання: Free є, ліміти залежать від плану. |
+| ChatGPT голосом (заміна інгредієнта, «руки в тісті») | https://help.openai.com/en/articles/8400625-voice-mode-faq | PASS | ChatGPT Voice: «speak with ChatGPT and hear a spoken response»; на Free доступ обмежений. Advanced/Standard voice замінюють на Live з 11.12.2026, але голосова розмова лишається. |
+| Claude розпише меню таблицею | https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them | PASS | Artifacts доступні на Free; є Sheets (beta), тобто таблиці, які Claude будує. Звичайну таблицю в чаті Claude теж видає. Порада «попроси таблицею» — це сценарій використання, не заява про окрему функцію. |
+| Claude читає фото | https://support.claude.com/en/articles/8241126-uploading-files-to-claude | PASS | JPEG/PNG/GIF/WebP, до 8000×8000. Сторінка не каже, чи це є на Free, але в ролику доступ на Free для Claude і не заявлено. |
+| Gemini читає фото | https://support.google.com/gemini/answer/14903178 | PASS | «You can attach … photos …». Є ліміти, частина функцій «subject to availability». |
+| Gemini створює список у Google Keep / додає пункти | https://support.google.com/gemini/answer/15230597 | PASS | Gemini вміє створити список або додати в нього пункти (можна дописати «@Google Keep»). Умови: вхід в акаунт, увімкнена історія (Gemini Apps Activity), підключений Google Workspace у Connected Apps. Окремого розширення чи застосунку Keep не потрібно, лише підключення. Опис ці умови називає правильно. |
+| Gemini/Keep доступні в Україні | https://support.google.com/gemini/answer/13575153 ; https://support.google.com/gemini/answer/13695044 | UNVERIFIED (не заявлено) | Gemini web в Україні є (Ukraine у списку країн). Про Connected Apps сказано: «Availability of Connected Apps vary by location, language, device, and Gemini app». Окремо для України чи української мови підтвердження немає. Ролик доступність в Україні не обіцяє, тож це не FAIL. |
+| Безкоштовність Keep-інтеграції | там само | UNVERIFIED (не заявлено) | Сторінки нічого не кажуть про Free чи платний план. У ролику й описі безкоштовність не заявлено. |
+| Калорії: найкраще етикетка, ШІ з фото лише прикидає | — (формулювання) | PASS | У тексті й озвучці сказано, що ШІ «лише прикидає». В описі є «Це не медична й не дієтологічна порада» і порада дивитися упаковку. Як медична порада не читається. |
+| Тір-ранжування (доставка/гугл/ChatGPT тощо) | — | PASS (думка) | Подано як «Тір-лист Байта» і «суб'єктивний рейтинг» — це думка. |
+| Title / tags | — | PASS | Фактичних тверджень немає, лише ключові слова. |
+
+Рекомендація (необов'язкова, не блокує): у text/gsay «Gemini сам додасть його в Google Keep» → «Gemini може сам додати його в Google Keep». Так чесніше, бо Connected Apps є не всюди й не для всіх мов.
+
+Вердикт: PASS
