@@ -1,0 +1,419 @@
+{
+ "version": "2026-11-22.1",
+ "mode": "shadow",
+ "_why": {
+  "version": "Людська мітка; у журнал іде policy_version = sha256(policy.json)[:12] (план §3.1).",
+  "mode": "План §3.1/§11 крок 3: спершу shadow (лише лог), enforce — крок 7 після 3–5 днів порівняння (~2.12); TikTok +60 хв діє лише з enforce (рішення власника №5)."
+ },
+ "rate_limit": {
+  "shorts_per_day": 2,
+  "long_per_day": 1,
+  "tg_per_day": 3,
+  "tiktok_per_day": 2,
+  "site_per_day": 5,
+  "indexnow_per_day": 5,
+  "yt_comment_per_day": 3,
+  "safe_mode_factor": 2,
+  "long_prefixes": [
+   "guide",
+   "digest",
+   "weekly",
+   "month_",
+   "special",
+   "rozbir"
+  ],
+  "_why": {
+   "shorts_per_day": "RUNBOOK:3,38 — 1 Short на день о 17:00Z + резерв як 3-й ролик лише коли день зірвався; 2-й ролик дня має ~7 переглядів (RUNBOOK:38). План §3.8 дефолт 2 (Short дня + кліп). Рішення власника №4: ліміти — агенти за стандартами розкрутки.",
+   "long_per_day": "План §3.8: Long ≤1/добу; RUNBOOK: гайд ср + дайджест нд.",
+   "tg_per_day": "RUNBOOK:62 — рубрики Telegram «2–3 пости на день разом із відео»; верхня межа 3 (план §3.8 мав 2 з «1–2/день»).",
+   "tiktok_per_day": "RUNBOOK:32 — TikTok 1–2/день (ролик дня + запас); план §3.8.",
+   "site_per_day": "RUNBOOK:81 — максимум 5 матеріалів на день разом зі статтями до Shorts (план §3.8 мав 3).",
+   "indexnow_per_day": "План §3.8: IndexNow ≤ число нових URL; нових URL ≤ site_per_day.",
+   "yt_comment_per_day": "Закріп-коментар — 1 на відео; відео на день ≤ shorts_per_day + long_per_day = 3.",
+   "safe_mode_factor": "План §3.8/§9 T6: перевищення ×2 → SAFE_MODE.",
+   "long_prefixes": "Як відрізнити довгі в publications (slug): гайди, дайджести/weekly, місячні, спецвипуски (RUNBOOK розд. «Субота», «Екстрені»)."
+  }
+ },
+ "budget": {
+  "yt_quota_day": 10000,
+  "yt_upload_cost": 1800,
+  "yt_comment_cost": 50,
+  "yt_soft_stop": 8000,
+  "yt_safe_mode_ratio": 1.1,
+  "quota_reset_hour_utc": 8,
+  "tts_per_day": 10,
+  "_why": {
+   "yt_quota_day": "Стандартна квота YouTube Data API 10 000 од./добу [П, не підтверджено кодом] — план §3.7.",
+   "yt_upload_cost": "yt.py:10–13 — videos.insert 1600 + 4×50 (thumbnail/playlist/comment) = 1800 (план §3.7 reserve_for_upload).",
+   "yt_comment_cost": "commentThreads.insert = 50 од. (yt.py:10–13).",
+   "yt_soft_stop": "План §3.7/§10.2: не-upload дії зупиняються на 8 000, решта — резерв під upload.",
+   "yt_safe_mode_ratio": "План §3.7: перевищення >110% денного ліміту → SAFE_MODE (T2/T3).",
+   "quota_reset_hour_utc": "Квота YouTube скидається опівночі за тихоокеанським часом = 08:00Z узимку [?] (план §3.7); вікно доби рахуємо від цієї години.",
+   "tts_per_day": "RUNBOOK:96 — Gemini free tier 10 запитів/добу на модель; рішення власника №4 (межі безкоштовного TTS)."
+  }
+ },
+ "fact": {
+  "max_fail": 0,
+  "max_unverified_claimed": 0,
+  "max_unverified_not_claimed": 5,
+  "stale_is": "DEGRADE",
+  "_why": {
+   "max_fail": "План §3.4 п.3: рядків таблиці зі статусом FAIL = 0.",
+   "max_unverified_claimed": "Рішення власника №3: 0 UNVERIFIED, заявлених у ролику/описі як факт.",
+   "max_unverified_not_claimed": "Рішення власника №3: UNVERIFIED з позначкою «не заявлено» дозволено; план §3.4 п.4 мав ≤2 (ep82 має рівно 2). Межа 5 — лише запобіжник від файлу, де «не заявлено» все.",
+   "stale_is": "План §3.4 п.5: до міграції на sha256 сценарію — mtime(факт-файл) ≥ mtime(epNN.py) як DEGRADE-перевірка."
+  }
+ },
+ "quality": {
+  "short_max_s": 60,
+  "short_target_s": 35,
+  "long_min_s": 240,
+  "tech_max_short_s": 180,
+  "short_wh": [
+   1080,
+   1920
+  ],
+  "long_wh": [
+   1920,
+   1080
+  ],
+  "min_mean_volume_db": -35,
+  "silence_db": -50,
+  "max_silence_s": 1.5,
+  "silence_tail_ignore_s": 1.0,
+  "asr_segment_min": 0.9,
+  "asr_overall_min": 0.95,
+  "thumb_max_bytes": 2000000,
+  "tiktok_max_bytes": 10000000,
+  "tg_max_bytes": 50000000,
+  "voice_check_timeout_s": 60,
+  "_why": {
+   "short_max_s": "План §3.3: Short ≤60 с — жорстка межа політики каналу (RUNBOOK:50 «тривалість <60 с»).",
+   "short_target_s": "План §3.3 + RUNBOOK:19/ep83 «≤35 с»: вище цілі — DEGRADE(no_tiktok), не BLOCK.",
+   "long_min_s": "Відхилення від плану §3.3 (≥360 с): дайджест за RUNBOOK «Субота» триває 4–6 хв, 360 с заблокувало б його; беремо 240 с.",
+   "tech_max_short_s": "audit.py:93 — технічна межа Short ≤180 с [К]; довше за 180 с ролик уже не Short.",
+   "short_wh": "План §3.3: 1080×1920 для Short.",
+   "long_wh": "План §3.3: 1920×1080 для довгих.",
+   "min_mean_volume_db": "План §3.3: mean_volume > −35 dB (інакше «тиха» доріжка).",
+   "silence_db": "План §3.3: silencedetect −50 dB.",
+   "max_silence_s": "План §3.3: жодної тиші довше 1,5 с.",
+   "silence_tail_ignore_s": "План §3.3: «поза останньою секундою».",
+   "asr_segment_min": "План §3.3: word-match кожного сегмента ≥0,90 (audit_vo.py --json).",
+   "asr_overall_min": "План §3.3: загальний word-match ≥0,95.",
+   "thumb_max_bytes": "План §3.3: thumb.jpg <2 МБ [?ліміт YouTube].",
+   "tiktok_max_bytes": "RUNBOOK:33 — TikTok стиснути ≤10 МБ.",
+   "tg_max_bytes": "RUNBOOK:56 — ліміт бота 50 МБ.",
+   "voice_check_timeout_s": "voice_check.py працює <1 с; 60 с — запас, щоб policy не зависав."
+  }
+ },
+ "duplicate": {
+  "title_block": 0.8,
+  "title_canary": 0.6,
+  "script_block": 0.7,
+  "window_items": 40,
+  "_why": {
+   "title_block": "План §3.5 п.5: Jaccard слів назви без хештегів ≥0,8 → BLOCK.",
+   "title_canary": "План §3.5 п.5: 0,6–0,8 → CANARY (лише як експеримент «рімейк»).",
+   "script_block": "План §3.5 п.6: difflib.SequenceMatcher тексту сценарію ≥0,7 → BLOCK.",
+   "window_items": "План §3.5: «за 30/60 днів»; дат заливки локально немає, тож беремо останні 40 записів uploaded.json (≈1 Short/день, RUNBOOK:3)."
+  }
+ },
+ "sources": {
+  "tier1": [
+   "help.openai.com",
+   "openai.com",
+   "chatgpt.com",
+   "support.google.com",
+   "blog.google",
+   "deepmind.google",
+   "gemini.google",
+   "gemini.google.com",
+   "research.google",
+   "anthropic.com",
+   "support.claude.com",
+   "claude.com",
+   "signal.org",
+   "gov.ua",
+   "apps.apple.com",
+   "support.apple.com",
+   "apple.com",
+   "play.google.com",
+   "support.microsoft.com",
+   "microsoft.com",
+   "macpaw.com",
+   "google"
+  ],
+  "tier2": [
+   "dou.ua",
+   "ain.ua",
+   "theverge.com",
+   "techcrunch.com",
+   "arstechnica.com",
+   "wired.com",
+   "engadget.com",
+   "macrumors.com",
+   "9to5google.com",
+   "9to5mac.com",
+   "dev.ua",
+   "itc.ua",
+   "reuters.com",
+   "bloomberg.com"
+  ],
+  "tier0_suffixes": [
+   ".ru",
+   ".by"
+  ],
+  "tier0_domains": [
+   "semrush.com"
+  ],
+  "own": [
+   "shikarno.com.ua",
+   "t.me",
+   "tiktok.com",
+   "youtube.com",
+   "youtu.be"
+  ],
+  "min_tier1_share": 0.6,
+  "_why": {
+   "tier1": "План §3.6: офіційні домени компаній і довідки (+ App Store/Google Play — офіційні сторінки застосунків; macpaw.com — компанія з ep83). Зміна списку — D-дія. «google» — доменна зона .google належить Google (readalong.google, blog.google).",
+   "tier2": "План §3.6: профільні ЗМІ.",
+   "tier0_suffixes": "План §3.6: домени .ru/.by заборонено.",
+   "tier0_domains": "CLAUDE.md: «Semrush не використовувати» (рішення власника).",
+   "own": "Власні посилання (футер опису, канал) — не джерела фактів.",
+   "min_tier1_share": "План §3.6: ≥60% URL — tier-1; нижче → DEGRADE(no_tiktok)."
+  }
+ },
+ "high_risk": {
+  "categories": {
+   "health": {
+    "patterns": [
+     "калорі",
+     "дієт",
+     "медич",
+     "лікар",
+     "\\bліки\\b",
+     "\\bліків\\b",
+     "хвороб",
+     "симптом"
+    ],
+    "disclaimer": "не (медична|дієтологічна)"
+   },
+   "money": {
+    "patterns": [
+     "інвест",
+     "кредит",
+     "крипт",
+     "біткоїн",
+     "біржа",
+     "позик"
+    ],
+    "disclaimer": "не (інвестиційна|фінансова)"
+   },
+   "kids": {
+    "patterns": [
+     "\\bдіт(и|ей|ям|ьми|ях)\\b",
+     "дитин",
+     "школяр"
+    ]
+   },
+   "politics_war": {
+    "patterns": [
+     "вибор(и|ів|ах)",
+     "\\bвійн",
+     "політи",
+     "військов"
+    ]
+   },
+   "legal": {
+    "patterns": [
+     "юридичн\\w* (консультац|допомог|порад\\w* від)",
+     "адвокат",
+     "позов"
+    ],
+    "disclaimer": "не юридична"
+   },
+   "personal_data": {
+    "patterns": [
+     "персональн\\w* дан",
+     "паспорт"
+    ]
+   },
+   "death": {
+    "patterns": [
+     "смерт",
+     "помер"
+    ]
+   }
+  },
+  "require_tier1_share": 1.0,
+  "max_unverified_not_claimed": 2,
+  "_why": {
+   "categories": "План §3.10: здоров'я/калорії/ліки; гроші/інвестиції/крипто; діти; вибори/війна/політика; юридичні поради; персональні дані; смерть. Дисклеймер — regex як у ep82 (meta.py:374). Без загальних «здоров'я»/«суд»: у гайдах це застереження («здоров'я — з фахівцем»), а не тема (shadow 22.11).",
+   "require_tier1_share": "План §3.10: tier-1 для 100% тверджень (рахуємо за URL факт-файлу й опису).",
+   "max_unverified_not_claimed": "План §3.10 вимагав 0 навіть «не заявлено», але тест §12 п.1 очікує ep82 (2 × «не заявлено», калорії) → DEGRADE; узгоджено з рішенням власника №3: ≤2."
+  }
+ },
+ "schedule": {
+  "min_gap_min": 120,
+  "min_lead_min": 15,
+  "tiktok_after_youtube_min": 60,
+  "max_decision_age_h": 24,
+  "slots": {
+   "short": [
+    "*@17:00"
+   ],
+   "long": [
+    "wed@17:00",
+    "sun@12:00",
+    "sat@12:00"
+   ]
+  },
+  "_why": {
+   "min_gap_min": "План §3.9: дві публікації на платформі не ближче 120 хв → RETRY_LATER(наступний слот).",
+   "min_lead_min": "План §3.9: publish_at у минулому або раніше ніж через 15 хв → BLOCK.",
+   "tiktok_after_youtube_min": "Рішення власника №5: TikTok +60 хв після YouTube (rollback у TikTok неможливий); діє з enforce.",
+   "max_decision_age_h": "План §3.2 п.4: рішення policy дійсне ≤24 год.",
+   "slots": "План §3.9 + RUNBOOK:3: Short 17:00Z щодня, гайд ср 17:00Z, дайджест нд 12:00Z (сб 12:00Z — резерв для довгих). Поза сіткою → CANARY."
+  }
+ },
+ "rollback": {
+  "plans": {
+   "youtube": "privacyStatus=private (yt._put)",
+   "yt_comment": "comments.delete",
+   "telegram": "deleteMessage / editMessage",
+   "website": "git revert + push",
+   "tiktok": "compensation: прибрати вручну у vidIQ + лог",
+   "indexnow": "повторний ping після revert"
+  },
+  "no_rollback": [
+   "tiktok",
+   "indexnow"
+  ],
+  "_why": {
+   "plans": "План §3.12/§6: перед ALLOW має існувати rollback або compensation для платформи.",
+   "no_rollback": "План §3.12: rollback неможливий (TikTok [?], IndexNow) → потрібні YouTube-етап ≥60 хв і чисті fact/quality, інакше DEGRADE(skip_platform)."
+  }
+ },
+ "legacy": {
+  "slugs": [
+   "cut6_c1_chatgpt",
+   "cut6_c2_whatsapp",
+   "cut6_c3_nikoly",
+   "digest1",
+   "ep10_php2shell",
+   "ep11_claude_duet",
+   "ep12_walmart_agents",
+   "ep13_php_second",
+   "ep14_gemini_carplay",
+   "ep15_menu_week",
+   "ep16_chatgpt_locked",
+   "ep17_anthropic_hack",
+   "ep18_gemini_students",
+   "ep18_gemini_students_v1_unpublished",
+   "ep19_im_so_sorry",
+   "ep20_cine_titles",
+   "ep21_which_ai",
+   "ep22_claude_free",
+   "ep23_love_game",
+   "ep24_iphone_duo",
+   "ep24_iphone_duo_v1_unpublished",
+   "ep25_prompts_1",
+   "ep26_tier2",
+   "ep26_tier2_v1_unpublished",
+   "ep27_halloween",
+   "ep28_tier_work",
+   "ep29_scam_tier",
+   "ep2_chatgpt_chrome",
+   "ep30_tier_home",
+   "ep31_prof_teacher",
+   "ep32_prof_student",
+   "ep33_prof_fop",
+   "ep34_prof_smm",
+   "ep35_mono_ai_cashback",
+   "ep36_prof_driver",
+   "ep37_ne_platy_1",
+   "ep38_safety_tier",
+   "ep39_health_tier",
+   "ep3_flux3_max",
+   "ep40_tier_revansh",
+   "ep41_foto_fakty",
+   "ep42_prof_doctor",
+   "ep43_prof_lawyer",
+   "ep44_tier_foto_video2",
+   "ep45_chatgpt_odyn_limit",
+   "ep46_skil_excel",
+   "ep47_yak_zi_mnoyu",
+   "ep48_osbb_skarga",
+   "ep49_chatgpt_gif",
+   "ep4_gemini_car",
+   "ep50_skil_powerpoint",
+   "ep51_tost_teshchi",
+   "ep52_shi_taksyst",
+   "ep53_tier_pereklad",
+   "ep54_gemini_omni_12",
+   "ep55_skil_konektor_mcp",
+   "ep56_tokeny_ukrainska",
+   "ep57_gemini_25_vymykayut",
+   "ep58_skily_gemini_bez_pidpysky",
+   "ep59_shi_zabere_robotu",
+   "ep5_openai_agents",
+   "ep60_pravyla_bezpeky_konektoriv",
+   "ep61_shi_rozrobnyk_otsinka",
+   "ep62_claude_vydalyv_konspekty",
+   "ep63_prof_hr",
+   "ep64_gemini_synthid_perevirka",
+   "ep65_tier_shi_dlya_choho",
+   "ep66_claude_fable_5_2",
+   "ep67_gemini_poshta_rezenzenty",
+   "ep68_claude_sheets_whiteboards",
+   "ep69_claude_interaktyvni_konektory",
+   "ep6_chatgpt_visual",
+   "ep70_chatgpt_pamyat",
+   "ep71_gemini_hydrogen",
+   "ep72_claude_meetings",
+   "ep73_syayvo_kyivstar",
+   "ep74_chatgpt_wallet",
+   "ep75_lovable_vytik",
+   "ep76_inkognito_shi",
+   "ep77_sms_shakhrai",
+   "ep78_signal_shi_agent",
+   "ep79_tier_money",
+   "ep7_ai_hacker",
+   "ep80_prof_olx",
+   "ep81_tier_kids",
+   "ep8_gemini_skills",
+   "ep9_google_foresight",
+   "konektory1",
+   "konektory1_test",
+   "month_oct",
+   "news1_example",
+   "prof1",
+   "prof2",
+   "pryvatnist1",
+   "r10_olx_ad",
+   "r1_prompts",
+   "r2_voice_scam",
+   "r3_hallucinations",
+   "r4_chatbot_vs_agent",
+   "r5_ai_detectors",
+   "r6_mother_in_law",
+   "r7_tokens",
+   "r8_chat_privacy",
+   "r9_resume",
+   "scion1",
+   "skills1",
+   "special1",
+   "weekly1",
+   "weekly2"
+  ],
+  "skip_checks": [
+   "idea_link",
+   "asr",
+   "silence"
+  ],
+  "_why": {
+   "slugs": "План §4 Grandfathering: усі ключі uploaded.json і reserve.json на 22.11.2026 (до cutover).",
+   "skip_checks": "План §4: для legacy пропускаються перевірки 2 (idea), 7 (ASR), 12 (тиша); 13, 15, 16, 20 лишаються; без факт-файлу → DEGRADE(no_tiktok)."
+  }
+ }
+}
