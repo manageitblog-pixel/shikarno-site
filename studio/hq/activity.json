@@ -317,6 +317,22 @@
    "agent": "de",
    "task": "Автономія крок 3: policy.py + policy.json (shadow)",
    "started": "2026-11-22T14:33:40Z",
+   "finished": "2026-11-22T14:52:31Z",
+   "result": "policy.py shadow: 44/44 тестів; enforce заблокував би 7/7 — знайшов 4 реальні проблеми"
+  },
+  {
+   "id": "41",
+   "agent": "factcheck",
+   "task": "Повторний незалежний фактчек guide1 (сегменти 14, 34, 41) + машинний вердикт",
+   "started": "2026-11-22T14:52:36Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "42",
+   "agent": "factcheck",
+   "task": "Фактчек змін ep82 після 12:47Z (дизайнер змінив хук/підписи)",
+   "started": "2026-11-22T14:52:36Z",
    "finished": null,
    "result": ""
   }
