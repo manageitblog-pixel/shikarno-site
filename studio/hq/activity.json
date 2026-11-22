@@ -621,8 +621,8 @@
    "agent": "clip",
    "task": "Ріст до 1.12: 3 нарізки з довгих (без озвучки) для Shorts/TikTok цього тижня",
    "started": "2026-11-22T22:03:48Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-22T22:46:48Z",
+   "result": "3 кліпи-воронки з довгих без нової озвучки (голос з vo.wav, межі речень з align.json, −14 LUFS, 1080×1920, кадр 0 з плашкою серії й Байтом, картка «Повний розбір ↓»): clip1 вчитель (6-2a9ncHaz4 0:31.8–1:05.1) → ENKGdbr04h0, 23.11 13Z, PASS; clip2 SMM (6-2a9ncHaz4 4:09–4:44) → _wp0rz8edB8, 24.11 13Z, PASS; clip3 реклама в ChatGPT (FcWmonPhvqE 5:08–5:40) відрендерено, не залито — квота YouTube API на 22.11 вичерпана (~9,7 тис./10 тис.); після 08Z 23.11: python3 studio/eps/upload_clip.py clip3 2026-11-25T13:00:00Z"
   },
   {
    "id": "79",
