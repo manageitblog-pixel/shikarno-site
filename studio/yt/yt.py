@@ -53,7 +53,12 @@ def recent(n=5):
     ids=",".join(i["contentDetails"]["videoId"] for i in items)
     for v in api("videos",part="snippet,statistics,status,contentDetails",id=ids)["items"]:
         print(v["snippet"]["publishedAt"][:16], v["status"]["privacyStatus"], v["contentDetails"]["duration"], v["statistics"], "|", v["snippet"]["title"])
+TG_LINE="💬 Telegram — промпти й списки до роликів: https://t.me/shikarno_ai_ua"
+def with_tg(description):
+    """Воронка в Telegram (КМ 22.11): кожен новий опис мусить мати посилання на канал; якщо META його забула — дописуємо рядок."""
+    return description if "t.me/shikarno_ai_ua" in description else description.rstrip()+"\n\n"+TG_LINE
 def upload(path, title, description, tags, privacy="private", category="28", lang="uk", publish_at=None):
+    description=with_tg(description)
     meta={"snippet":{"title":title,"description":description,"tags":tags,"categoryId":category,
                      "defaultLanguage":lang,"defaultAudioLanguage":lang},
           "status":{"privacyStatus":privacy,"selfDeclaredMadeForKids":False}}

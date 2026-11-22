@@ -26,6 +26,11 @@
         <ul>{% for s in p.summary %}<li>{{ s }}</li>{% endfor %}</ul>
       </section>
       {% endif %}
+      <aside class="tg-cta" aria-label="Telegram-канал ШІкарно">
+        <p class="tg-cta-h">Промпти й списки до таких тем — у Telegram</p>
+        <p>Байт щодня пише там новину дня і «Промпт дня», а в закріпі лежить безкоштовний PDF «50 промптів українською».</p>
+        <a class="btn" href="{{ site.telegram }}" rel="noopener">Підписатися на @{{ site.tg_channel }}</a>
+      </aside>
       {% if p.chapters %}
       <section class="chapters" aria-labelledby="ch-h">
         <h2 id="ch-h">Зміст випуску</h2>
