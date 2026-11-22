@@ -23,10 +23,10 @@ CUTS = [(308.51, 324.89, [308.51, 311.28, 319.87], [
     "Рекламний блок має позначку, а відповідь ШІ — ні.",
     "Якщо питаєш про покупку — проси кілька варіантів з порівнянням і перевіряй ціни сам."])]
 SCENES = [
- dict(kind="hookIcon", label="", title="", icon="chat", tone="news", badge="і в Україні", hook="Реклама в *ChatGPT?*"),
+ dict(kind="hookIcon", label="", title="", icon="chat", tone="news", badge="і в Україні", hook="Реклама в\u00a0*ChatGPT?*"),
  dict(kind="list", label="OPENAI · ЖОВТЕНЬ 2026", title="Реклама в ChatGPT",
       items=[["chart", "1,2 млрд на тиждень"], ["map", "З 21.10 — в Україні"], ["warning", "Шукай позначку"]]),
- dict(kind="hookIcon", label="ПОВНИЙ ВИПУСК ↓", title="ШІ за жовтень", icon="video", tone="news", badge="ще 9 подій"),
+ dict(kind="hookIcon", label="ПОВНИЙ ВИПУСК ↓", title="ШІ за жовтень", icon="video", tone="news", badge="усе за жовтень"),
  dict(kind="outro", label="", title=""),
 ]
 META = dict(
@@ -36,7 +36,7 @@ META = dict(
   "1,2 млрд людей на тиждень (дані компанії). 21 жовтня рекламна мережа ChatGPT запрацювала ще у 26 країнах, серед них Україна; "
   "за повідомленням, рекламу бачать користувачі тарифів Free і Go. Як не сплутати рекламу з порадою: рекламний блок має позначку, "
   "а відповідь ШІ — ні. Питаєш про покупку — проси кілька варіантів з порівнянням і перевіряй ціни сам.\n\n"
-  "▶ Повний випуск «Штучний інтелект за жовтень 2026» — 10 головних подій: https://youtu.be/FcWmonPhvqE\n\n"
+  "▶ Повний випуск «Штучний інтелект за жовтень 2026» — GPT-6, ШІ-агенти, Anthropic на біржі, ШІ в Україні: https://youtu.be/FcWmonPhvqE\n\n"
   "Джерела:\n• TechCrunch, 5.10.2026: https://techcrunch.com/2026/10/05/openai-launches-visual-ads-that-appear-alongside-image-generation-results/\n"
   "• dev.ua (за Reuters), 21.10.2026: https://dev.ua/news/reklamu-v-chatgpt-teper-mozhna-zapuskaty-v-ukraini-1792594874\n\n"
   "Фрагмент повного випуску, озвучка — та сама."),
