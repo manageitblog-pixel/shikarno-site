@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T12:54:47Z",
+ "generated": "2026-11-22T12:56:54Z",
  "kpi": {
   "subs": 311,
   "subs_goal": 1000,
@@ -654,6 +654,25 @@
    "score": 67.5
   },
   {
+   "title": "Codex Security Plugin: ШІ шукає вразливості в коді",
+   "format": "news",
+   "channels": [
+    "show",
+    "site",
+    "tg"
+   ],
+   "demand": 3,
+   "fresh": 4,
+   "show": 4,
+   "fit": 3,
+   "by": "trend",
+   "source": "https://openai.com/business/learn/codex-security-plugin-demo",
+   "status": "new",
+   "added": "2026-11-22",
+   "id": "14",
+   "score": 34.6
+  },
+  {
    "title": "ШІ для логопеда / вузькі професії",
    "format": "prof",
    "channels": [
@@ -690,6 +709,25 @@
    "score": 25.6
   },
   {
+   "title": "MedChemBench: чи допоможе ШІ знаходити ліки",
+   "format": "news",
+   "channels": [
+    "show",
+    "site",
+    "tg"
+   ],
+   "demand": 2,
+   "fresh": 5,
+   "show": 3,
+   "fit": 3,
+   "by": "trend",
+   "source": "https://openai.com/index/introducing-medchembench",
+   "status": "new",
+   "added": "2026-11-22",
+   "id": "12",
+   "score": 21.6
+  },
+  {
    "title": "ШІ для перукаря/майстра краси",
    "format": "prof",
    "channels": [
@@ -707,6 +745,25 @@
    "added": "2026-11-22",
    "id": "6",
    "score": 19.9
+  },
+  {
+   "title": "OpenAI проти «крадіжки» моделей через дистиляцію",
+   "format": "news",
+   "channels": [
+    "show",
+    "site",
+    "tg"
+   ],
+   "demand": 2,
+   "fresh": 5,
+   "show": 2,
+   "fit": 3,
+   "by": "trend",
+   "source": "https://openai.com/index/combatting-adversarial-distillation",
+   "status": "new",
+   "added": "2026-11-22",
+   "id": "10",
+   "score": 14.4
   }
  ],
  "lake": {
@@ -714,12 +771,12 @@
   "daily": 732,
   "news": 1606,
   "niche": 592,
-  "comp": 474,
-  "comp_videos": 61808,
+  "comp": 504,
+  "comp_videos": 62243,
   "research": 65,
   "posts": 98,
   "site_queries": 79,
-  "comp_ai": 214
+  "comp_ai": 235
  },
  "news": [
   {
@@ -810,15 +867,9 @@
  "competitors": [
   {
    "channel": "Google Gemini",
-   "subs": 46500,
+   "subs": 46600,
    "lang": "en",
-   "avg": 6052383
-  },
-  {
-   "channel": "Mark Tilbury",
-   "subs": 9450000,
-   "lang": "en",
-   "avg": 4419842
+   "avg": 6054122
   },
   {
    "channel": "Google Korea",
@@ -836,19 +887,13 @@
    "channel": "TechAkshay 2.0",
    "subs": 334000,
    "lang": "en",
-   "avg": 2346541
+   "avg": 2301903
   },
   {
    "channel": "ExpHub - Prashant Kirad",
    "subs": 12500000,
    "lang": "en",
-   "avg": 1934644
-  },
-  {
-   "channel": "Jaden Williams",
-   "subs": 3400000,
-   "lang": "en",
-   "avg": 1730560
+   "avg": 1936739
   },
   {
    "channel": "Paul J Lipsky",
@@ -860,13 +905,25 @@
    "channel": "Google DeepMind",
    "subs": 944000,
    "lang": "en",
-   "avg": 1304564
+   "avg": 1304759
   },
   {
    "channel": "Shark Numbers",
    "subs": 2010000,
    "lang": "en",
    "avg": 1301598
+  },
+  {
+   "channel": "Vicky x Vlogs",
+   "subs": 101000,
+   "lang": "en",
+   "avg": 1130611
+  },
+  {
+   "channel": "Google for Developers",
+   "subs": 2690000,
+   "lang": "en",
+   "avg": 800524
   }
  ],
  "activity": [
@@ -955,8 +1012,8 @@
    "agent": "de",
    "task": "Даталейк: новини, ніша, конкуренти, знімок бази",
    "started": "2026-11-22T12:52:45Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-22T12:56:53Z",
+   "result": "+122 новини, 235 ШІ-конкурентів, 62 тис. відео, 5 ідей"
   },
   {
    "id": "12",
