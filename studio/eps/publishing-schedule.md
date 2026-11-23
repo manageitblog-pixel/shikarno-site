@@ -34,3 +34,4 @@ OAuth у режимі Testing → refresh token до ~29.10; 28.10 надісл�
 | 23.11 15:00 | Кліп-воронка clip1 «ШІ для вчителя: план уроку і тест за 5 хвилин» (з 6-2a9ncHaz4, 0:31.8–1:05.1; finalize PASS) | ENKGdbr04h0 |
 | 24.11 15:00 | Кліп-воронка clip2 «ШІ для SMM: контент-план і голос бренду» (з 6-2a9ncHaz4, 4:09–4:44; finalize PASS) | _wp0rz8edB8 |
 | 25.11 15:00 | Кліп-воронка clip3 «Реклама в ChatGPT вже в Україні» (з FcWmonPhvqE, 5:08–5:40) — відрендерено, заливка після скидання квоти 23.11 08Z: `python3 studio/eps/upload_clip.py clip3 2026-11-25T13:00:00Z` | — |
+| 25.11 19:00 | Гайд #1 «ChatGPT українською з нуля: як користуватися безкоштовно і без VPN | Гайд 2026» (16:9, 19:07; обкладинка thumb_B v4, A/B з thumb_A — Test & compare у Studio вручну; finalize PASS) | M-KQwpDwpA4 |
