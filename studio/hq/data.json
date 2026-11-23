@@ -1,14 +1,14 @@
 {
- "generated": "2026-11-23T21:18:34Z",
+ "generated": "2026-11-23T21:24:51Z",
  "fresh": {
-  "yt_live": "2026-11-23T21:18:35Z",
+  "yt_live": "2026-11-23T21:24:51Z",
   "yt_analytics": "2026-11-20",
-  "tg_members": "2026-11-23T21:18:36Z",
+  "tg_members": "2026-11-23T21:24:52Z",
   "tg_posts": "2026-11-23T21:18:36Z",
-  "ideas": "2026-11-23T20:21:06Z",
+  "ideas": "2026-11-23T21:22:26Z",
   "news": "2026-11-23 21:16",
   "comp": "2026-11-23",
-  "tiktok": "2026-11-23T16",
+  "tiktok": "2026-11-23T21",
   "site": "2026-11-21",
   "site_live": "2026-11-23T21:18:38Z",
   "activity": "2026-11-23T21:17:50Z",
@@ -20,7 +20,7 @@
   "subs_goal": 1000,
   "long_hours": 10.7,
   "long_hours_goal": 4000,
-  "views_total": 11961,
+  "views_total": 11982,
   "videos": 96,
   "views_7d": 815,
   "pct_7d": 51.0,
@@ -533,9 +533,9 @@
  "platforms": {
   "youtube": {
    "subs": 315,
-   "views_total": 11961,
+   "views_total": 11982,
    "videos": 96,
-   "live_at": "2026-11-23T21:18:35Z",
+   "live_at": "2026-11-23T21:24:51Z",
    "views_7d": 815,
    "pct_7d": 51.0,
    "subs_7d": 2,
@@ -608,12 +608,12 @@
   },
   "tiktok": {
    "videos": 12,
-   "views_total": 15409,
-   "views_7d": 1325,
+   "views_total": 15442,
+   "views_7d": 1358,
    "new_7d": 6,
    "saves_total": 123,
-   "likes_total": 305,
-   "last_snapshot": "2026-11-23T16",
+   "likes_total": 307,
+   "last_snapshot": "2026-11-23T21",
    "best": [
     {
      "title": "Український ШІ Сяйво: коли вийде",
@@ -647,28 +647,28 @@
      "v": 12387
     },
     {
-     "x": "2026-11-23",
-     "v": 12658
-    },
-    {
      "x": "2026-11-23T00",
-     "v": 12653
+     "v": 12479
     },
     {
      "x": "2026-11-23T04",
-     "v": 15439
+     "v": 15265
     },
     {
      "x": "2026-11-23T08",
-     "v": 15440
+     "v": 15266
     },
     {
      "x": "2026-11-23T12",
-     "v": 15441
+     "v": 15267
     },
     {
      "x": "2026-11-23T16",
-     "v": 15409
+     "v": 15304
+    },
+    {
+     "x": "2026-11-23T21",
+     "v": 15442
     }
    ]
   },
@@ -1323,9 +1323,10 @@
    "length": 30,
    "source": "https://www.youtube.com/watch?v=qaqYqjPjpeU",
    "by": "researcher-niche",
-   "status": "new",
+   "status": "approved",
    "added": "2026-11-22",
    "id": "34",
+   "decision": "бал 458 ≥300: сценарій уже є — ep87 (Чорна пʼятниця, PASS), вийти до 28.11",
    "score": 458.2
   },
   {
@@ -1384,10 +1385,11 @@
    "fit": 5,
    "source": "https://www.tiktok.com/@ai_sashka/video/7710994491628375328",
    "by": "researcher-niche",
-   "status": "new",
+   "status": "approved",
    "added": "2026-11-22",
    "id": "30",
    "kw": "штучний інтелект монтаж відео (60); ші відео безкоштовно (10); штучний інтелект для створення відео (8)",
+   "decision": "бал 400 ≥300: тір-лист, наступний вільний слот тір-листа після #8",
    "score": 400.0
   },
   {
@@ -1413,6 +1415,30 @@
    "id": "57",
    "decision": "Схвалено 23.11 (score 354 ≥300): свіжа перевірена зміна умов Wells Fargo з 24.11, безпекова тема з прямою порадою глядачу; формат sec у Shorts/TikTok + сторінка сайту й TG.",
    "kw": "що таке ші агент (10); ші агенти (10); як створити ші агента (10) — попит низький, «Wells Fargo» в UA-підказках нема",
+   "score": 354.1
+  },
+  {
+   "title": "Google тепер бачить твої витрати: AI Mode у Пошуку підключає Google Wallet (а згодом Drive і Gemini) — що він знатиме і де вимкнути",
+   "format": "sec",
+   "channels": [
+    "short",
+    "tiktok",
+    "site",
+    "tg"
+   ],
+   "demand": 4,
+   "fresh": 5,
+   "show": 4,
+   "fit": 5,
+   "length": 33,
+   "hook": "you",
+   "source": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
+   "by": "researcher-news",
+   "note": "Google 23.11: Personal Intelligence в AI Mode — Wallet з сьогодні (opt-in), Drive і Gemini app «у найближчі тижні»; вже були Gmail, Calendar, Photos. Керування: Search Personalization → Connected Apps. Доступність в Україні перевірити під час написання. Додатково: TechCrunch 23.11.",
+   "status": "approved",
+   "added": "2026-11-23",
+   "id": "80",
+   "decision": "Бал 354 (sec, твої дані + свіжий реліз Google 23.11): Short 19:00 Київ найближчим вільним слотом + сайт + TG; перевірити доступність в Україні й показати, де вимкнути (Search Personalization → Connected Apps).",
    "score": 354.1
   },
   {
@@ -1481,6 +1507,27 @@
    "score": 282.0
   },
   {
+   "title": "Байт пробує Gemini Canvas: з конспекту — тест і картки за хвилину, з таблиці — калькулятор цін (4 фішки, про які мало хто знає)",
+   "format": "try",
+   "channels": [
+    "short",
+    "tiktok",
+    "site"
+   ],
+   "demand": 4,
+   "fresh": 4,
+   "show": 5,
+   "fit": 5,
+   "length": 33,
+   "source": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-canvas-tasks/",
+   "by": "researcher-news",
+   "note": "Google 23.11: 4 способи — веб-застосунки/міні-ігри, навчальні інструменти з нотаток/PDF (квізи, картки), офісні (таблиця → трекер продажів, калькулятор), правка тексту виділенням. Показати реальний тест українською; пара до тір-листа «ШІ для дітей/вчителя».",
+   "status": "new",
+   "added": "2026-11-23",
+   "id": "81",
+   "score": 282.0
+  },
+  {
    "title": "«Ведуча ТСН» у TikTok каже підписати петицію? Це діпфейк: 595 ШІ-підробок українських журналісток і 3 ознаки",
    "format": "sec",
    "channels": [
@@ -1527,54 +1574,11 @@
    "added": "2026-11-23",
    "id": "43",
    "score": 265.6
-  },
-  {
-   "title": "ШІ для студента: курсова без списування — 3 чесні способи і 1, що тебе здасть",
-   "format": "prof",
-   "channels": [
-    "short",
-    "tiktok",
-    "site"
-   ],
-   "demand": 4,
-   "fresh": 3,
-   "show": 4,
-   "fit": 5,
-   "hook": "you",
-   "length": 30,
-   "source": "https://www.youtube.com/watch?v=LN3vWf2S9TQ",
-   "by": "researcher-niche",
-   "status": "new",
-   "added": "2026-11-22",
-   "id": "36",
-   "score": 236.8
-  },
-  {
-   "title": "Як зробити, щоб текст від ChatGPT не виглядав як ШІ: 5 ознак «ШІ-тексту» з довідника Вікіпедії — і промпт, що їх прибирає",
-   "format": "skills",
-   "channels": [
-    "short",
-    "site",
-    "tg"
-   ],
-   "demand": 4,
-   "fresh": 3,
-   "show": 4,
-   "fit": 5,
-   "hook": "you",
-   "length": 35,
-   "by": "researcher-niche",
-   "source": "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing",
-   "note": "Аномалії тижня 23.11: Dmytro Matniak «Як розпізнати текст ШІ: StoryScope і скіл для Claude, щоб писати по-людськи» 10236 / медіана 815,5 (12,6×); Максим Шаповал «Як навчити ШІ писати по-людськи: сторінка Вікіпедії» 1014 / 241 (4,2×). Перед сценарієм перевірити сторінку Вікіпедії та дослідження StoryScope першоджерелом; приклад — до/після на українському тексті. Не дубль №23 (лестощі ШІ).",
-   "status": "new",
-   "added": "2026-11-23",
-   "id": "55",
-   "score": 234.6
   }
  ],
  "ideas_count": {
-  "total": 79,
-  "open": 79
+  "total": 88,
+  "open": 88
  },
  "lake": {
   "videos": 94,

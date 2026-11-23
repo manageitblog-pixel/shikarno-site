@@ -196,7 +196,11 @@ def cf_store(c, live):
     """Денні рядки (київські дні) у site_rum_daily — щоб історія накопичувалась і за межами вікна CF."""
     if not live or not live.get("days") or live.get("error"): return
     c.execute("create table if not exists site_rum_daily(date text primary key, pageloads int, visits int, sampled int default 0, updated text)")
-    c.executemany("insert or replace into site_rum_daily(date, pageloads, visits, sampled, updated) values(?,?,?,?,?)",
+    # точний день (sampled=0) ніколи не затираємо оцінкою CF (за ~9 днів CF віддає старі дні семпльованими ×10)
+    c.executemany("""insert into site_rum_daily(date, pageloads, visits, sampled, updated) values(?,?,?,?,?)
+                     on conflict(date) do update set pageloads=excluded.pageloads, visits=excluded.visits,
+                       sampled=excluded.sampled, updated=excluded.updated
+                     where excluded.sampled=0 or site_rum_daily.sampled=1""",
                   [(d["d"], d["pageloads"], d["visits"], int(d.get("sampled", False)), live["updated"]) for d in live["days"]])
     c.commit()
 
