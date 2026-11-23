@@ -815,6 +815,22 @@
    "started": "2026-11-23T07:24:12Z",
    "finished": null,
    "result": ""
+  },
+  {
+   "id": "103",
+   "agent": "production",
+   "task": "COO-ініціатива: чому дубль 1 часто з F0 117–131 Гц (норма 143±8) — половина квоти TTS іде на перезаписи; знайти причину і зменшити",
+   "started": "2026-11-23T07:28:50Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "104",
+   "agent": "da",
+   "task": "COO-ініціатива: override формату в аналітиці (gljrHADi4aU → tier, LtNuOtQe0pc → prof), перерахунок медіан",
+   "started": "2026-11-23T07:28:50Z",
+   "finished": null,
+   "result": ""
   }
  ]
 }
