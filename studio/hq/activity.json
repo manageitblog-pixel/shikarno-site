@@ -853,8 +853,8 @@
    "agent": "longs",
    "task": "Гайд #1: збірка (vo → audit_vo → align → prep_digest → build_digest.sh), обкладинка, meta, стаття, заливка 25.11 17:00Z",
    "started": "2026-11-23T08:18:54Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-23T12:48:26Z",
+   "result": "Гайд #1 «ChatGPT з нуля» заплановано: M-KQwpDwpA4, 25.11 17:00Z (19:00 Київ), 19:07, finalize PASS, обкладинка B (A/B у Studio вручну). ASR: мін. 0,506, нижче 0,5 немає. Скрін попередження під полем вводу пропущено (Cloudflare). Стаття під гайд — окремо (сторінка-експеримент не чіпалась)."
   },
   {
    "id": "108",
@@ -967,6 +967,14 @@
    "started": "2026-11-23T12:14:11Z",
    "finished": "2026-11-23T12:21:40Z",
    "result": "Офіц. змін нема; П19–П26 у youtube.md §5; END_SCREEN=0 на 13 довгих → exp-2026-11-23-yt-endscreen-named (designed); пропозиції CSO щодо E1/ep82"
+  },
+  {
+   "id": "122",
+   "agent": "seo",
+   "task": "Гайд #1: окрема стаття на сайт (youtube M-KQwpDwpA4 + chapters), дата 25.11 19:00; оновити посилання в описі YouTube",
+   "started": "2026-11-23T12:49:06Z",
+   "finished": null,
+   "result": ""
   }
  ]
 }
