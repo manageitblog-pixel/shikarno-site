@@ -803,5 +803,105 @@
   "status": "new",
   "added": "2026-11-22",
   "id": "42"
+ },
+ {
+  "title": "Signal ховає твої чати від ШІ телефона: блок Siri AI на iOS 27 і «Захист екрана» від Gemini на Android",
+  "format": "sec",
+  "channels": [
+   "short",
+   "tiktok",
+   "site",
+   "tg"
+  ],
+  "demand": 3,
+  "fresh": 4,
+  "show": 5,
+  "fit": 5,
+  "hook": "you",
+  "length": 30,
+  "source": "https://signal.org/blog/protecting-your-privacy/",
+  "by": "researcher-news",
+  "note": "Signal, 20.11.2026 (в укр. медіа 22.11): на iOS 27 Signal блокує скриншоти в застосунку, щоб Siri AI не зчитувала листування, — налаштування «Block Siri AI»; на Android автоматично вмикає «Screen security», коли бачить, що ШІ-асистент (напр. Gemini) намагається читати екран, — лише там, де це можна виявити; на Windows 11 скриншоти вже блокуються проти Recall; macOS не покрито — порада: додати Signal у Excluded Apps (System Settings > Siri). Захист можна вимкнути, але тоді чати (і чати співрозмовників) бачитиме агент; доступ через файлову систему це не зупиняє. Подача: «твій телефонний ШІ читає екран — ось 1 перемикач». Продовжує успішну серію приватності в TikTok (пам’ять ChatGPT 4,9K, Gemini/Gmail 1,2K).",
+  "status": "new",
+  "added": "2026-11-23",
+  "id": "43"
+ },
+ {
+  "title": "Gemini забирає твою історію з ChatGPT: як перенести чати й «пам’ять» у Gemini — і чи варто",
+  "format": "try",
+  "channels": [
+   "short",
+   "tiktok",
+   "site"
+  ],
+  "demand": 3,
+  "fresh": 3,
+  "show": 5,
+  "fit": 4,
+  "hook": "you",
+  "length": 30,
+  "source": "https://blog.google/innovation-and-ai/products/gemini-app/switch-ai-assistants-transfer-history/",
+  "by": "researcher-news",
+  "note": "Google, 19.11.2026: імпорт контексту з інших ШІ — копіюєш промпт із налаштувань імпорту Gemini, запускаєш його в старому ШІ, вставляєш отримане резюме вподобань у Gemini; окремо — ZIP-експорт історії чатів зі старого сервісу і завантаження в налаштуваннях Gemini. Доступність за країнами/тарифами в пості не вказана — перевірити в Україні перед зйомкою. Кут: що саме ти віддаєш Google (зв’язка з ідеями приватності).",
+  "status": "new",
+  "added": "2026-11-23",
+  "id": "44"
+ },
+ {
+  "title": "Together AI злив частину промптів користувачів: ключ від репозиторію лежав на GitHub — що це означає для тебе",
+  "format": "news",
+  "channels": [
+   "site",
+   "tg"
+  ],
+  "demand": 1,
+  "fresh": 5,
+  "show": 2,
+  "fit": 2,
+  "hook": "niche",
+  "source": "https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026",
+  "by": "researcher-news",
+  "note": "Together AI, 21.11.2026: стороння особа завантажила частину збережених зразків промптів serverless-інференсу після того, як облікові дані до приватного репозиторію опинились у публічному репозиторії GitHub. Переважно запити до MiniMax M3, GLM-5.2, Kimi K2.6, надіслані в червні–липні 2026 (24.06, 4.07, 8.07, 14.07). Кількість постраждалих не названо; компанія ще перевіряє, чи були чутливі дані, напише постраждалим напряму, радить увімкнути zero data retention. Можна об’єднати з ідеєю 41 (OpenRouter/MiniMax) в один TG-пост «два витоки за тиждень: особисте в ШІ не вставляти».",
+  "status": "new",
+  "added": "2026-11-23",
+  "id": "45"
+ },
+ {
+  "title": "4 рівні ШІ-навичок програміста: N-iX хоче 60% інженерів рівня L2 до кінця року — перевір, де ти",
+  "format": "news",
+  "channels": [
+   "site",
+   "tg"
+  ],
+  "demand": 2,
+  "fresh": 4,
+  "show": 3,
+  "fit": 3,
+  "hook": "you",
+  "source": "https://dou.ua/lenta/news/n-ix-space-x-ai-new-roles/",
+  "by": "researcher-news",
+  "note": "DOU, 20.11.2026 (за заявою N-iX): компанія (1 700+ фахівців) увійшла в партнерську мережу SpaceX Super Intelligence (Grok для коду й агентів). Шкала: L1 AI-assisted — усі інженери з Q2 2026; L2 AI-augmented — ціль 60% до кінця 2026; L3 AI workflow architect — 15%; L4 — без цілі. Нові ролі: GenAI Adoption Leader, AI-native engineer. Цифра компанії про себе: час від PR до завершення −49% у командах, де міряли. Для ІТ-аудиторії: самоперевірка «на якому ти рівні».",
+  "status": "new",
+  "added": "2026-11-23",
+  "id": "46"
+ },
+ {
+  "title": "Gemini на Mac сам клацає й заповнює форми: Computer use у застосунку — що вміє і чому не в Україні",
+  "format": "news",
+  "channels": [
+   "site",
+   "tg"
+  ],
+  "demand": 2,
+  "fresh": 3,
+  "show": 4,
+  "fit": 2,
+  "hook": "release",
+  "source": "https://gemini.google/release-notes/",
+  "by": "researcher-news",
+  "note": "Gemini release notes, 19.11.2026: Computer use у Mac-застосунку Gemini виконує багатокрокові дії (клацання, введення, форми) в програмах і на сайтах в окремому вікні з живим переглядом, можна зупинити будь-коли; ти обираєш, якими застосунками користуватись; зупиняється на входах і оплатах, перед чутливими діями просить підтвердження. Доступ: англійською, США, підписки Google AI Plus/Pro/Ultra, 18+, особисті акаунти. Для нас — коротко на сайті/в TG, без Short (недоступно в Україні).",
+  "status": "new",
+  "added": "2026-11-23",
+  "id": "47"
  }
 ]
