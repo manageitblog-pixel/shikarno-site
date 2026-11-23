@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-23T16:50:28Z",
+ "generated": "2026-11-23T16:56:50Z",
  "kpi": {
   "subs": 314,
   "subs_goal": 1000,
@@ -538,12 +538,12 @@
   },
   "tiktok": {
    "videos": 7,
-   "views_total": 12483,
-   "views_7d": 1183,
-   "new_7d": 4,
-   "saves_total": 93,
-   "likes_total": 224,
-   "last_snapshot": "2026-11-23T12",
+   "views_total": 11320,
+   "views_7d": 1220,
+   "new_7d": 5,
+   "saves_total": 82,
+   "likes_total": 204,
+   "last_snapshot": "2026-11-23T16",
    "best": [
     {
      "title": "Український ШІ Сяйво: коли вийде",
@@ -560,11 +560,11 @@
      "posted": "2026-11-12"
     },
     {
-     "title": "Gemini читає твою пошту?",
-     "views": 1200,
-     "saves": 12,
-     "id": "7707003510256192776",
-     "posted": "2026-11-11"
+     "title": "Інкогніто-чат у ШІ — не сейф",
+     "views": 354,
+     "saves": 2,
+     "id": "7709933399191899410",
+     "posted": "2026-11-19"
     }
    ],
    "history": [
@@ -591,6 +591,10 @@
     {
      "x": "2026-11-23T12",
      "v": 12483
+    },
+    {
+     "x": "2026-11-23T16",
+     "v": 11320
     }
    ]
   },
@@ -1167,7 +1171,7 @@
  "lake": {
   "videos": 94,
   "daily": 773,
-  "news": 1891,
+  "news": 1913,
   "niche": 806,
   "comp": 1015,
   "comp_videos": 62794,
@@ -1179,87 +1183,87 @@
  "news": [
   {
    "date": "2026-11-23",
-   "source": "verge",
-   "title": "Meta Muse can do your Black Friday shopping at Walmart",
+   "source": "hf",
+   "title": "How to build and maintain an agentic evaluation",
    "score": null,
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1039874/walmart-agent-gateway-meta-muse-black-friday"
+   "url": "https://huggingface.co/blog/agentic-evals"
+  },
+  {
+   "date": "2026-11-23",
+   "source": "techcrunch",
+   "title": "Trump reportedly called into Nvidia board meeting to advocate for Huang’s return",
+   "score": null,
+   "url": "https://techcrunch.com/2026/11/23/trump-reportedly-called-into-nvidia-board-meeting-to-advocate-for-huangs-return/"
+  },
+  {
+   "date": "2026-11-23",
+   "source": "techcrunch",
+   "title": "Trump endorses Jensen Huang’s return to Nvidia, says US has no evidence of wrongdoing",
+   "score": null,
+   "url": "https://techcrunch.com/2026/11/23/trump-endorses-jensen-huangs-return-to-nvidia-says-us-has-no-evidence-of-wrongdoing/"
+  },
+  {
+   "date": "2026-11-23",
+   "source": "techcrunch",
+   "title": "Sierra doubles valuation to $30B within six months as demand for AI in CX takes off",
+   "score": null,
+   "url": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/"
+  },
+  {
+   "date": "2026-11-23",
+   "source": "techcrunch",
+   "title": "Nvidia reverses course and brings Jensen Huang back as CEO",
+   "score": null,
+   "url": "https://techcrunch.com/2026/11/23/nvidia-reverses-course-and-brings-jensen-huang-back-as-ceo/"
+  },
+  {
+   "date": "2026-11-23",
+   "source": "verge",
+   "title": "Tech leaders are celebrating Jensen Huang’s return",
+   "score": null,
+   "url": "https://www.theverge.com/tech/1040069/jensen-huang-return-elon-musk-sam-altman-yay"
+  },
+  {
+   "date": "2026-11-23",
+   "source": "verge",
+   "title": "Jensen Huang is back as Nvidia’s CEO",
+   "score": null,
+   "url": "https://www.theverge.com/tech/1039937/nvidia-ceo-jensen-huang-reinstated"
+  },
+  {
+   "date": "2026-11-23",
+   "source": "venturebeat",
+   "title": "AI is changing who gets a say in IT decisions",
+   "score": null,
+   "url": "https://venturebeat.com/security/ai-is-changing-who-gets-a-say-in-it-decisions"
+  },
+  {
+   "date": "2026-11-23",
+   "source": "venturebeat",
+   "title": "AI agents have permission. Who’s checking the blast radius?",
+   "score": null,
+   "url": "https://venturebeat.com/security/ai-agents-have-permission-whos-checking-the-blast-radius"
   },
   {
    "date": "2026-11-23",
    "source": "ars",
-   "title": "Review: The Asus ProArt P16 offers a glimpse of a future powered by local AI",
+   "title": "Jensen Huang reinstated as Nvidia CEO, board chair",
    "score": null,
-   "url": "https://arstechnica.com/reviews/2026/11/review-the-asus-proart-p16-offers-a-glimpse-of-a-future-powered-by-local-ai/"
+   "url": "https://arstechnica.com/ai/2026/11/jensen-huang-reinstated-as-nvidia-ceo-board-chair/"
   },
   {
    "date": "2026-11-23",
    "source": "wired",
-   "title": "Submit Your Questions: Will Anyone Keep You Safe From AI?",
+   "title": "Jensen Huang Is Back as Nvidia CEO",
    "score": null,
-   "url": "https://www.wired.com/story/livestream-will-anyone-keep-us-safe-from-ai/"
+   "url": "https://www.wired.com/story/jensen-huang-is-back-as-nvidia-ceo/"
   },
   {
    "date": "2026-11-23",
    "source": "wired",
-   "title": "States Sue SpaceX Over Grok Deepfakes",
+   "title": "Nvidia Is Powering Brain-Computer Interfaces Now",
    "score": null,
-   "url": "https://www.wired.com/story/states-sue-spacex-over-grok-deepfakes/"
-  },
-  {
-   "date": "2026-11-23",
-   "source": "wired",
-   "title": "Goodbye, World: The End of Programmers",
-   "score": null,
-   "url": "https://www.wired.com/story/goodbye-world-the-end-of-programmers/"
-  },
-  {
-   "date": "2026-11-23",
-   "source": "devua",
-   "title": "Головний науковець OpenAI пропонує обмежувати розвиток потужних ШІ-моделей на основі перплексії",
-   "score": null,
-   "url": "https://dev.ua/news/v-openai-khochut-lobotomizuvaty-ai-1795433523"
-  },
-  {
-   "date": "2026-11-23",
-   "source": "devua",
-   "title": "У ЗСУ розробляють ШІ-помічника «Фаланга», який аналізуватиме розвіддані та допомагатиме планувати бойові операції",
-   "score": null,
-   "url": "https://dev.ua/news/falanha-1795428191"
-  },
-  {
-   "date": "2026-11-23",
-   "source": "speka",
-   "title": "OSIRIS AI та Schiebel запустили дрон з безпілотного гелікоптера в польоті",
-   "score": null,
-   "url": "https://speka.ua/news/osiris-ai-ta-schiebel-zapustili-dron-z-bezpilotnogo-gelikoptera-v-polyoti-py15qg"
-  },
-  {
-   "date": "2026-11-23",
-   "source": "speka",
-   "title": "Signal обмежує скріншоти на iOS та Android через загрозу стеження з боку ШІ-асистентів",
-   "score": null,
-   "url": "https://speka.ua/news/signal-obmezuje-skrinsoti-cerez-si-agentiv-9x15kw"
-  },
-  {
-   "date": "2026-11-23",
-   "source": "speka",
-   "title": "ШІ пришвидшує розробку нового ШІ: скільки часу на це потрібно",
-   "score": null,
-   "url": "https://speka.ua/news/shi-prishvidshuye-rozrobku-novogo-shi-skilki-chasu-na-ce-potribno-pjzy2o"
-  },
-  {
-   "date": "2026-11-23",
-   "source": "speka",
-   "title": "Гурман: Apple ризикує програти перегони ШІ-агентів через застарілий підхід",
-   "score": null,
-   "url": "https://speka.ua/news/gurman-apple-rizikuye-prograti-peregoni-shi-agentiv-cherez-zastarilij-pidhid-v5m7xq"
-  },
-  {
-   "date": "2026-11-23",
-   "source": "speka",
-   "title": "Нішеві інтернет-магазини частіше з'являються у відповідях ChatGPT, ніж маркетплейси",
-   "score": null,
-   "url": "https://speka.ua/news/nishevi-magazyny-chatgpt-doslidzhennia-promodo-vmdm4n"
+   "url": "https://www.wired.com/story/nvidia-is-powering-brain-computer-interfaces-now/"
   }
  ],
  "competitors": [
@@ -1370,14 +1374,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "97",
-   "agent": "trend",
-   "task": "фон: веб-скан 02:20Z — новини за 12 год, кандидати в шоу #3 (29.11)",
-   "started": "2026-11-23T02:18:16Z",
-   "finished": "2026-11-23T02:23:39Z",
-   "result": "Веб-скан 12 год (~20 пошуків EN/UA): вихідні тихі. Додав 1 ідею: №48 «2 тижні без ChatGPT — менше самотності» (arXiv 2611.25263), кандидат у шоу #3 у парі з №40. Рейтинг кандидатів шоу #3 → docs/research/show3-candidates-2026-11-23.md (топ: №25, №38, №27, №39)."
-  },
   {
    "id": "98",
    "agent": "seo",
@@ -1609,6 +1605,14 @@
    "started": "2026-11-23T14:10:08Z",
    "finished": "2026-11-23T14:16:50Z",
    "result": "Черга TikTok 24–30.11: 15 слотів (9 релізів + 6 архівних), підписи й файли — docs/research/tiktok-queue-2026-11-23.md"
+  },
+  {
+   "id": "127",
+   "agent": "de",
+   "task": "Збирач даталейку 16:53Z: новини, TikTok/TG-знімок, сигнали",
+   "started": "2026-11-23T16:52:58Z",
+   "finished": "2026-11-23T16:56:39Z",
+   "result": "Лейк 16:55Z: news +34, TikTok 16Z (7 відео, «ШІ для вчителя» 37 перегл.), TG 6 підписників, сигнали TG 140/141/142 оновлено, ідеї 67–71 (жодна ≥300)"
   }
  ],
  "agents": [
