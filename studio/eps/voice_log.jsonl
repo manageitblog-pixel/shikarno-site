@@ -95,3 +95,6 @@
 {"ev": "tts_ok", "n": 13, "out": "/home/claude/eps/guide2/part0.wav", "res": "(56.68, 24000, 'audio/wav')", "t": "08:22:52Z"}
 {"ev": "part", "part": 0, "take": 1, "f0": 135.6, "f0_ok": true, "dur": 56.7, "audit": [{"seg": 0, "ratio": 0.98, "match": 0.66}, {"seg": 1, "ratio": 0.93, "match": 0.72}], "repeat_suspect": false, "t": "08:23:41Z"}
 {"ev": "part_final", "part": 0, "take": 1, "f0": 135.6, "clean": true, "t": "08:23:41Z"}
+{"ev": "tts_ok", "n": 14, "out": "/home/claude/eps/guide2/part1.wav", "res": "(72.96, 24000, 'audio/wav')", "t": "08:24:53Z"}
+{"ev": "part", "part": 1, "take": 1, "f0": 128.1, "f0_ok": false, "dur": 73.0, "audit": [{"seg": 2, "ratio": 0.79, "match": 0.36}, {"seg": 3, "ratio": 0.93, "match": 0.77}, {"seg": 4, "ratio": 0.88, "match": 0.68}], "repeat_suspect": false, "t": "08:26:05Z"}
+{"ev": "STOP", "reason": "TTS quota exhausted: 4 consecutive HTTP 429 from Gemini (gemini-3.8-flash-tts); try later or another key/model", "ok_requests": 14, "t": "08:27:36Z"}
