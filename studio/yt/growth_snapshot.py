@@ -7,6 +7,7 @@
   кліки/покази Google 28д — Search Console (lake.gsc), вікно = 28 днів до останньої дати з даними
   Telegram                — Bot API getChatMemberCount
   TikTok                  — останній знімок studio/data/tiktok/*.json (vidIQ; сам скрипт TikTok не знімає)
+  Instagram               — ig_snap/ig_account (studio/yt/instagram_ingest.py зі studio/data/instagram/*.json; база — знімок 23.11 21Z)
   Сайт наживо             — Cloudflare Web Analytics (hq_data.cf_live): перегляди сторінок сьогодні (Київ) і за 7 днів
 Якщо джерело впало — значення null і текст помилки в "errors"; вигаданих цифр немає.
 
@@ -18,7 +19,7 @@ HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.abspath(os.pat
 OUT = os.path.join(ROOT, "studio", "data", "growth_1201.jsonl")
 sys.path.insert(0, "/home/claude/yt"); sys.path.insert(0, HERE)
 
-BASE = {"yt_subs": 311, "long_hours_12m": 10.5, "gsc_clicks_28d": 43, "gsc_impr_28d": 3669, "tg_members": 6, "tiktok_views": 15304}  # TikTok: з 23.11 19:18Z база = сума всіх відомих відео (11); стара 12387 рахувала лише 7 останніх. Like-for-like ті самі 7: 12387 → 12483 (+96) за 22.11 20:53Z–23.11 16:56Z
+BASE = {"yt_subs": 311, "long_hours_12m": 10.5, "gsc_clicks_28d": 43, "gsc_impr_28d": 3669, "tg_members": 6, "tiktok_views": 15304, "instagram_followers": 4, "instagram_views": 10}  # TikTok: з 23.11 19:18Z база = сума всіх відомих відео (11); стара 12387 рахувала лише 7 останніх. Like-for-like ті самі 7: 12387 → 12483 (+96) за 22.11 20:53Z–23.11 16:56Z
 TARGET = {"yt_subs": 330, "long_hours_12m": 14, "gsc_clicks_28d": 60, "tg_members": 15}
 
 
@@ -62,6 +63,18 @@ def tiktok():
             "tiktok_snapshot": max(r[2] for r in rows)}
 
 
+def instagram():
+    """Підписники з останнього ig_account; перегляди — сума plays по всіх відомих Reels (останній знімок кожного shortcode)."""
+    import sqlite3
+    c = sqlite3.connect(os.path.join(ROOT, "studio", "data", "analytics.sqlite"))
+    rows = c.execute("""select s.shortcode, s.plays, s.ts from ig_snap s
+        join (select shortcode, max(ts) t from ig_snap group by shortcode) m on m.shortcode=s.shortcode and m.t=s.ts""").fetchall()
+    if not rows: raise RuntimeError("ig_snap порожня")
+    acc = c.execute("select followers from ig_account order by ts desc limit 1").fetchone()
+    return {"instagram_followers": acc[0] if acc else None, "instagram_views": sum(r[1] or 0 for r in rows),
+            "instagram_reels": len(rows), "instagram_snapshot": max(r[2] for r in rows)}
+
+
 def site_live():
     import hq_data
     r = hq_data.cf_live()
@@ -75,6 +88,7 @@ def main():
     for name, fn, keys in (("youtube", yt_channel, ["yt_subs"]), ("analytics", long_hours, ["long_hours_12m"]),
                            ("search_console", gsc_28d, ["gsc_clicks_28d", "gsc_impr_28d"]), ("telegram", telegram, ["tg_members"]),
                            ("tiktok", tiktok, ["tiktok_views"]),
+                           ("instagram", instagram, ["instagram_followers", "instagram_views"]),
                            ("cloudflare", site_live, ["site_pageloads_today", "site_pageloads_7d"])):
         try: rec.update(fn())
         except Exception as e:

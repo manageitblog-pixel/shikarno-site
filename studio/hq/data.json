@@ -1,17 +1,18 @@
 {
- "generated": "2026-11-23T21:24:51Z",
+ "generated": "2026-11-23T21:27:12Z",
  "fresh": {
-  "yt_live": "2026-11-23T21:24:51Z",
+  "yt_live": "2026-11-23T21:27:12Z",
   "yt_analytics": "2026-11-20",
-  "tg_members": "2026-11-23T21:24:52Z",
+  "tg_members": "2026-11-23T21:27:13Z",
   "tg_posts": "2026-11-23T21:18:36Z",
   "ideas": "2026-11-23T21:22:26Z",
   "news": "2026-11-23 21:16",
   "comp": "2026-11-23",
   "tiktok": "2026-11-23T21",
+  "instagram": "2026-11-23T21",
   "site": "2026-11-21",
   "site_live": "2026-11-23T21:18:38Z",
-  "activity": "2026-11-23T21:17:50Z",
+  "activity": "2026-11-23T21:25:31Z",
   "asks": "2026-11-23T19:55:00Z"
  },
  "notes": [],
@@ -535,7 +536,7 @@
    "subs": 315,
    "views_total": 11982,
    "videos": 96,
-   "live_at": "2026-11-23T21:24:51Z",
+   "live_at": "2026-11-23T21:27:12Z",
    "views_7d": 815,
    "pct_7d": 51.0,
    "subs_7d": 2,
@@ -669,6 +670,51 @@
     {
      "x": "2026-11-23T21",
      "v": 15442
+    }
+   ]
+  },
+  "instagram": {
+   "followers": 4,
+   "views_30d": 5,
+   "reach_30d": 8,
+   "reels": 9,
+   "plays_total": 10,
+   "likes_total": 0,
+   "saves_total": 1,
+   "last_snapshot": "2026-11-23T21",
+   "best": [
+    {
+     "shortcode": "DgGPYVlji9v",
+     "title": "Не плати за це #1",
+     "plays": 5,
+     "pct": 32,
+     "published": "2026-11-23"
+    },
+    {
+     "shortcode": "DgGPtQrEhZZ",
+     "title": "Який ШІ для роботи?",
+     "plays": 4,
+     "pct": 54,
+     "published": "2026-11-23"
+    },
+    {
+     "shortcode": "DgGPnnkgnyk",
+     "title": "ChatGPT, Gemini чи Claude: який ШІ для чого?",
+     "plays": 1,
+     "pct": 45,
+     "published": "2026-11-23"
+    }
+   ],
+   "history": [
+    {
+     "x": "2026-11-23T21",
+     "v": 10
+    }
+   ],
+   "followers_hist": [
+    {
+     "x": "2026-11-23T21",
+     "v": 4
     }
    ]
   },
@@ -1787,14 +1833,6 @@
  ],
  "activity": [
   {
-   "id": "101",
-   "agent": "eic",
-   "task": "Ранкова редакція 23.11: аналітика, радар, редколегія, автоаудит",
-   "started": "2026-11-23T06:44:25Z",
-   "finished": "2026-11-23T06:51:25Z",
-   "result": "Радар 23.11: 20.11 — 65 перегл., 31,6%, пошук 59; топ — тір-лист ChatGPT/Claude/Gemini; №38 у шоу #3 замість №18, №30 після ep87; гайди #4–5 під пошук; аудит 99/0"
-  },
-  {
    "id": "102",
    "agent": "factcheck",
    "task": "Гайд #2 Claude (вихід 2.12): повторний незалежний фактчек з чітким вердиктом + свіжість скрінів (редизайн Claude mobile)",
@@ -2116,6 +2154,15 @@
    "finished": null,
    "result": "",
    "agent_raw": "analyst"
+  },
+  {
+   "id": "141",
+   "agent": "de",
+   "task": "Instagram-аналітика: instagram_ingest.py (ig_snap), блок Instagram на дашборді HQ і в знімку росту",
+   "started": "2026-11-23T21:25:31Z",
+   "finished": null,
+   "result": "",
+   "agent_raw": "data"
   }
  ],
  "agents": [
