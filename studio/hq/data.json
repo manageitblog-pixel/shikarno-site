@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-23T21:31:40Z",
+ "generated": "2026-11-23T22:06:39Z",
  "fresh": {
-  "yt_live": "2026-11-23T21:31:40Z",
+  "yt_live": "2026-11-23T22:06:39Z",
   "yt_analytics": "2026-11-20",
-  "tg_members": "2026-11-23T21:31:41Z",
-  "tg_posts": "2026-11-23T21:18:36Z",
+  "tg_members": "2026-11-23T22:06:40Z",
+  "tg_posts": "2026-11-23T22:06:41Z",
   "ideas": "2026-11-23T21:22:26Z",
   "news": "2026-11-23 21:16",
   "comp": "2026-11-23",
   "tiktok": "2026-11-23T21",
   "instagram": "2026-11-23T21",
   "site": "2026-11-21",
-  "site_live": "2026-11-23T21:31:43Z",
+  "site_live": "2026-11-23T22:06:42Z",
   "activity": "2026-11-23T21:25:31Z",
   "asks": "2026-11-23T19:55:00Z"
  },
@@ -536,7 +536,7 @@
    "subs": 315,
    "views_total": 11982,
    "videos": 96,
-   "live_at": "2026-11-23T21:31:40Z",
+   "live_at": "2026-11-23T22:06:39Z",
    "views_7d": 815,
    "pct_7d": 51.0,
    "subs_7d": 2,
@@ -596,14 +596,14 @@
      "id": "Vp1PPNxtcrI"
     },
     {
+     "title": "ШІ для вчителя: план уроку і тест за 5 хвилин у Google Classroom 🍎",
+     "views": 86,
+     "id": "ENKGdbr04h0"
+    },
+    {
      "title": "Що ШІ знає про тебе: як вимкнути навчання в ChatGPT, Gemini, Claude, Meta AI і Copilot (2026)",
      "views": 77,
      "id": "GNqU-wcz9Ws"
-    },
-    {
-     "title": "ШІ для вчителя: план уроку і тест за 5 хвилин у Google Classroom 🍎",
-     "views": 74,
-     "id": "ENKGdbr04h0"
     }
    ]
   },
@@ -788,24 +788,19 @@
     }
    ],
    "live": {
-    "updated": "2026-11-23T21:31:43Z",
+    "updated": "2026-11-23T22:06:42Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
-    "today_pageloads": 10,
-    "today_visits": 10,
-    "yesterday_pageloads": 16,
-    "yesterday_visits": 14,
-    "pageloads_7d": 47,
-    "visits_7d": 43,
+    "today_pageloads": 0,
+    "today_visits": 0,
+    "yesterday_pageloads": 10,
+    "yesterday_visits": 10,
+    "pageloads_7d": 42,
+    "visits_7d": 38,
     "last24h": {
      "pageloads": 10,
      "visits": 10,
      "hours": [
-      {
-       "h": "2026-11-22T22:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
       {
        "h": "2026-11-22T23:00:00Z",
        "pageloads": 0,
@@ -920,16 +915,15 @@
        "h": "2026-11-23T21:00:00Z",
        "pageloads": 0,
        "visits": 0
+      },
+      {
+       "h": "2026-11-23T22:00:00Z",
+       "pageloads": 0,
+       "visits": 0
       }
      ]
     },
     "days": [
-     {
-      "d": "2026-11-10",
-      "pageloads": 10,
-      "visits": 10,
-      "sampled": true
-     },
      {
       "d": "2026-11-11",
       "pageloads": 40,
@@ -1007,24 +1001,30 @@
       "pageloads": 10,
       "visits": 10,
       "sampled": false
+     },
+     {
+      "d": "2026-11-24",
+      "pageloads": 0,
+      "visits": 0,
+      "sampled": false
      }
     ],
     "top_pages_7d": [
      {
       "path": "/",
-      "count": 18
+      "count": 17
      },
      {
       "path": "/novyny/claude-bezkoshtovno/",
-      "count": 7
+      "count": 5
      },
      {
       "path": "/novyny/promty-dlya-chatgpt/",
       "count": 3
      },
      {
-      "path": "/rozbory/skily-mcp-konektory-rozbir-1/",
-      "count": 3
+      "path": "/novyny/anthropic-ipo-83-dolary/",
+      "count": 2
      },
      {
       "path": "/novyny/moonlock-iphone-shakhrajski-sms/",
@@ -1034,11 +1034,11 @@
     "top_referrers_7d": [
      {
       "host": "(прямі / без реферера)",
-      "count": 24
+      "count": 21
      },
      {
       "host": "www.google.com",
-      "count": 10
+      "count": 8
      },
      {
       "host": "m.facebook.com",
@@ -1056,7 +1056,7 @@
     "top_countries_7d": [
      {
       "country": "UA",
-      "count": 27
+      "count": 23
      },
      {
       "country": "US",
@@ -1071,7 +1071,7 @@
       "count": 2
      },
      {
-      "country": "GB",
+      "country": "MD",
       "count": 1
      }
     ]
@@ -1219,7 +1219,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 74
+   "total": 86
   },
   {
    "id": "LtNuOtQe0pc",
@@ -1230,7 +1230,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 58
+   "total": 56
   },
   {
    "id": "aTUsauz53rs",
@@ -1241,7 +1241,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 10
+   "total": 9
   },
   {
    "id": "gljrHADi4aU",
@@ -1263,7 +1263,7 @@
    "views7": 2,
    "pct": 64.2,
    "complete": false,
-   "total": 3
+   "total": 4
   },
   {
    "id": "0Kb6AamTRQo",
