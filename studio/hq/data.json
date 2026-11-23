@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-23T12:49:57Z",
+ "generated": "2026-11-23T12:57:24Z",
  "kpi": {
   "subs": 314,
   "subs_goal": 1000,
@@ -538,12 +538,12 @@
   },
   "tiktok": {
    "videos": 7,
-   "views_total": 12482,
-   "views_7d": 1182,
+   "views_total": 12483,
+   "views_7d": 1183,
    "new_7d": 4,
    "saves_total": 93,
    "likes_total": 224,
-   "last_snapshot": "2026-11-23T08",
+   "last_snapshot": "2026-11-23T12",
    "best": [
     {
      "title": "Український ШІ Сяйво: коли вийде",
@@ -587,6 +587,10 @@
     {
      "x": "2026-11-23T08",
      "v": 12482
+    },
+    {
+     "x": "2026-11-23T12",
+     "v": 12483
     }
    ]
   },
@@ -1163,7 +1167,7 @@
  "lake": {
   "videos": 94,
   "daily": 773,
-  "news": 1874,
+  "news": 1891,
   "niche": 806,
   "comp": 1015,
   "comp_videos": 62794,
@@ -1175,87 +1179,87 @@
  "news": [
   {
    "date": "2026-11-23",
-   "source": "devua",
-   "title": "16-річний латвієць отримав $500 000 на створення дешевих ракет із ШІ, які мають бути стійкими до РЕБ. До створення стартапу його підштовхнула війна в Україні",
-   "score": null,
-   "url": "https://dev.ua/news/henriis-dandzberhs-1795418855"
-  },
-  {
-   "date": "2026-11-23",
-   "source": "devua",
-   "title": "В ООН цілий тиждень засідали, щоб врегулювати використання повністю автономної ШІ-зброї, але безрезультатно. Що стало на заваді",
-   "score": null,
-   "url": "https://dev.ua/news/v-oon-tsilyi-tyzhden-zasidaly-shchob-vrehuliuvaty-vykorystannia-povnistiu-avtonomnoi-shi-zbroi-ale-bezrezultatno-shcho-stalo-na-zavadi-1795418581"
-  },
-  {
-   "date": "2026-11-23",
-   "source": "speka",
-   "title": "Головний науковець OpenAI запропонував обмежувати розвиток ШІ за допомогою метрики perplexity",
-   "score": null,
-   "url": "https://speka.ua/news/openai-pachocki-obmezhennya-rozvytku-shi-perplexity-98kdjk"
-  },
-  {
-   "date": "2026-11-23",
-   "source": "speka",
-   "title": "Ілон Маск про прорив Starship, Grok 4.8 та роботів Optimus у побуті",
-   "score": null,
-   "url": "https://speka.ua/videos-and-podcasts/ilon-mask-pro-proriv-starship-grok-48-ta-robotiv-optimus-u-pobuti-p0845l"
-  },
-  {
-   "date": "2026-11-23",
-   "source": "hn",
-   "title": "COP31 climate talks fail to reach deal amid fossil fuel and money rows",
-   "score": 6,
-   "url": "https://www.bbc.com/news/articles/cqwy06zrd26lo"
-  },
-  {
-   "date": "2026-11-23",
-   "source": "dou",
-   "title": "Україна збільшує виробництво дронів і ракет «Нептун». Які обсяги",
-   "score": null,
-   "url": "https://dou.ua/lenta/news/drone-neptune-production-2026/"
-  },
-  {
-   "date": "2026-11-23",
-   "source": "techcrunch",
-   "title": "How Notable Capital, GIC, and Baillie Gifford bet big on Anthropic before its IPO",
-   "score": null,
-   "url": "https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo/"
-  },
-  {
-   "date": "2026-11-23",
-   "source": "hn",
-   "title": "LiberNT: An AI-Fueled Fork of ReactOS Focused on Windows 11 Compatibility",
-   "score": 7,
-   "url": "https://www.phoronix.com/news/LiberNT"
-  },
-  {
-   "date": "2026-11-22",
    "source": "verge",
-   "title": "We haven’t seen the last of the major tech outages",
+   "title": "Meta Muse can do your Black Friday shopping at Walmart",
    "score": null,
-   "url": "https://www.theverge.com/tech/1039851/major-tech-outages"
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1039874/walmart-agent-gateway-meta-muse-black-friday"
   },
   {
-   "date": "2026-11-22",
-   "source": "hn",
-   "title": "0rwx – A simple model of AI usage, inspired by Unix permissions",
-   "score": 51,
-   "url": "https://0rwx.com/"
+   "date": "2026-11-23",
+   "source": "ars",
+   "title": "Review: The Asus ProArt P16 offers a glimpse of a future powered by local AI",
+   "score": null,
+   "url": "https://arstechnica.com/reviews/2026/11/review-the-asus-proart-p16-offers-a-glimpse-of-a-future-powered-by-local-ai/"
   },
   {
-   "date": "2026-11-22",
-   "source": "hn",
-   "title": "Agent swarm trying to solve P vs. NP",
-   "score": 144,
-   "url": "https://pequalnp.com/"
+   "date": "2026-11-23",
+   "source": "wired",
+   "title": "Submit Your Questions: Will Anyone Keep You Safe From AI?",
+   "score": null,
+   "url": "https://www.wired.com/story/livestream-will-anyone-keep-us-safe-from-ai/"
   },
   {
-   "date": "2026-11-22",
-   "source": "hn",
-   "title": "Localcode, open source agentic coding on your Mac with one command",
-   "score": 58,
-   "url": "https://github.com/mjwsolo/localcode"
+   "date": "2026-11-23",
+   "source": "wired",
+   "title": "States Sue SpaceX Over Grok Deepfakes",
+   "score": null,
+   "url": "https://www.wired.com/story/states-sue-spacex-over-grok-deepfakes/"
+  },
+  {
+   "date": "2026-11-23",
+   "source": "wired",
+   "title": "Goodbye, World: The End of Programmers",
+   "score": null,
+   "url": "https://www.wired.com/story/goodbye-world-the-end-of-programmers/"
+  },
+  {
+   "date": "2026-11-23",
+   "source": "devua",
+   "title": "Головний науковець OpenAI пропонує обмежувати розвиток потужних ШІ-моделей на основі перплексії",
+   "score": null,
+   "url": "https://dev.ua/news/v-openai-khochut-lobotomizuvaty-ai-1795433523"
+  },
+  {
+   "date": "2026-11-23",
+   "source": "devua",
+   "title": "У ЗСУ розробляють ШІ-помічника «Фаланга», який аналізуватиме розвіддані та допомагатиме планувати бойові операції",
+   "score": null,
+   "url": "https://dev.ua/news/falanha-1795428191"
+  },
+  {
+   "date": "2026-11-23",
+   "source": "speka",
+   "title": "OSIRIS AI та Schiebel запустили дрон з безпілотного гелікоптера в польоті",
+   "score": null,
+   "url": "https://speka.ua/news/osiris-ai-ta-schiebel-zapustili-dron-z-bezpilotnogo-gelikoptera-v-polyoti-py15qg"
+  },
+  {
+   "date": "2026-11-23",
+   "source": "speka",
+   "title": "Signal обмежує скріншоти на iOS та Android через загрозу стеження з боку ШІ-асистентів",
+   "score": null,
+   "url": "https://speka.ua/news/signal-obmezuje-skrinsoti-cerez-si-agentiv-9x15kw"
+  },
+  {
+   "date": "2026-11-23",
+   "source": "speka",
+   "title": "ШІ пришвидшує розробку нового ШІ: скільки часу на це потрібно",
+   "score": null,
+   "url": "https://speka.ua/news/shi-prishvidshuye-rozrobku-novogo-shi-skilki-chasu-na-ce-potribno-pjzy2o"
+  },
+  {
+   "date": "2026-11-23",
+   "source": "speka",
+   "title": "Гурман: Apple ризикує програти перегони ШІ-агентів через застарілий підхід",
+   "score": null,
+   "url": "https://speka.ua/news/gurman-apple-rizikuye-prograti-peregoni-shi-agentiv-cherez-zastarilij-pidhid-v5m7xq"
+  },
+  {
+   "date": "2026-11-23",
+   "source": "speka",
+   "title": "Нішеві інтернет-магазини частіше з'являються у відповідях ChatGPT, ніж маркетплейси",
+   "score": null,
+   "url": "https://speka.ua/news/nishevi-magazyny-chatgpt-doslidzhennia-promodo-vmdm4n"
   }
  ],
  "competitors": [
@@ -1366,14 +1370,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "93",
-   "agent": "production",
-   "task": "Фікс Generic.tsx: список ≥4 пунктів не заходить під кутового Байта (за специфікацією design-guide 22.11 ніч), ≤3 — без змін",
-   "started": "2026-11-22T23:22:15Z",
-   "finished": "2026-11-22T23:25:14Z",
-   "result": "Баг List ≥ 4 пунктів у Generic.tsx виправлено (коміт 1121277): ширина 760, зсув −70 px, gap 24, менші padding/іконка, 50 px для довгих пунктів. Списки ≤ 3 пунктів попіксельно ідентичні (ep24, кадри 0 і 370); 4-й пункт ep24 більше не заходить під Байта навіть активним. exp-frame0 не зачеплено."
-  },
   {
    "id": "94",
    "agent": "shorts",
@@ -1603,8 +1599,16 @@
    "agent": "seo",
    "task": "Гайд #1: окрема стаття на сайт (youtube M-KQwpDwpA4 + chapters), дата 25.11 19:00; оновити посилання в описі YouTube",
    "started": "2026-11-23T12:49:06Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-23T12:55:09Z",
+   "result": "https://shikarno.com.ua/rozbory/yak-korystuvatysya-chatgpt/"
+  },
+  {
+   "id": "123",
+   "agent": "de",
+   "task": "Збирач даталейку 12:53Z: новини, TikTok/TG-знімок, сигнали",
+   "started": "2026-11-23T12:52:41Z",
+   "finished": "2026-11-23T12:57:13Z",
+   "result": "Даталейк 12Z: news +32, TikTok-знімок (дім 308, OLX 320), TG 6 підписників, сигнали TG142+сайт Чорна пʼятниця, ідеї 63–66 (усі <300)"
   }
  ],
  "agents": [
