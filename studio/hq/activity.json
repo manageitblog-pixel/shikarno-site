@@ -781,8 +781,8 @@
    "agent": "seo",
    "task": "фон: нова стаття під запит з попитом, якого сайт не покриває (кандидати: №44 імпорт історії ChatGPT у Gemini, №43 Signal vs ШІ в телефоні)",
    "started": "2026-11-23T03:17:51Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-23T03:22:05Z",
+   "result": "Опубліковано (авто 23.11 18:00) статтю «Як перенести чати з ChatGPT у Gemini» — /novyny/perenesty-chaty-chatgpt-v-gemini/. Ключ: «перенести чати з ChatGPT у Gemini»; попит в UA малий (gemini import chatgpt ≈10/міс за Ubersuggest), але тема свіжа (Google, 19.11) і в автодоповненнях багато варіантів. Факти перевірено в довідці Google і OpenAI; в Україні працює (обмеження — ЄЕЗ, CH, UK). Ідея №43 (Signal) вже покрита статтею 25.11."
   }
  ]
 }
