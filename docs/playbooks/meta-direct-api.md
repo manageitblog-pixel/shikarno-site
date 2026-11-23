@@ -122,3 +122,9 @@ POST …/<THREADS_USER_ID>/threads_publish  creation_id=<id>
 - Threads troubleshooting (статус, ліміти): https://developers.facebook.com/docs/threads/troubleshooting
 - Threads changelog (домени .net/.com): https://developers.facebook.com/docs/threads/changelog
 - App roles: https://developers.facebook.com/docs/development/build-and-test/app-roles
+
+## План після підключення (власник 23.11)
+- Сторіз щодня: анонс ролика дня + заклик на Telegram / YouTube / TikTok. Перевірити, чи API підтримує стікер-посилання в сторіз (за нашими даними — ні; тоді «посилання в профілі»).
+- Reels — переходять з vidIQ на пряме API з `cover_url` (обкладинка окремо, без 0,5 с кадру).
+- Threads — той самий ролик/текст дня.
+- Щоденний тригер «Instagram Reel дня» (19:23 Київ) — розширити на сторіз і Threads.
