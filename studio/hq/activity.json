@@ -1119,6 +1119,14 @@
    "started": "2026-11-23T21:17:50Z",
    "finished": null,
    "result": ""
+  },
+  {
+   "id": "141",
+   "agent": "data",
+   "task": "Instagram-аналітика: instagram_ingest.py (ig_snap), блок Instagram на дашборді HQ і в знімку росту",
+   "started": "2026-11-23T21:25:31Z",
+   "finished": null,
+   "result": ""
   }
  ]
 }
