@@ -29,8 +29,8 @@ RU_WORDS = {"нейросеть", "нейросети", "искусственн�
 PL = {"news": "PLTBOXlyURN0g", "sec": "PLK19K_iOB7fU", "skills": "PLDoCjFWXo6eI", "prof": "PLUNuDFNf9LVc", "tier": "PLbWfeHw_IhwY",
       "check": "PLY2sr8xgYaG4", "digest": "PLb2dDm0ckIWk", "try": "PLJmaWDPrufYo", "free": "PLHQnxB4mtNbM"}
 PL_RULES = [  # перше збігання по назві → плейлист
-    (r"тір|tier", "tier"), (r"шахра|scam|безпек|дірк|приватн|знає про тебе|пам.ят|wallet|злам", "sec"),
-    (r"скіл|skill|mcp|конектор", "skills"), (r"професі|вчител|лікар|юрист|водій|hr|smm", "prof"),
+    (r"тір|tier", "tier"), (r"шахра|scam|безпек|дірк|приватн|знає про тебе|пам.ят|wallet|злам(?!ат)", "sec"),
+    (r"скіл|skill|mcp|конектор", "skills"), (r"професі|вчител|лікар|юрист|водій|\bhr\b|\bsmm\b", "prof"),
     (r"за тиждень|за місяць|дайджест|жовтень|листопад", "digest"), (r"безкоштовн|free", "free"),
     (r"пробує|спробував|тест", "try"), (r"перевір", "check"), (r".", "news"),
 ]
