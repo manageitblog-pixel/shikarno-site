@@ -1226,5 +1226,84 @@
   "status": "new",
   "added": "2026-11-23",
   "id": "62"
+ },
+ {
+  "title": "Grok малював роздягнені фото реальних людей — два штати США судяться зі SpaceX: як захистити свої фото від ШІ-«роздягання»",
+  "format": "sec",
+  "channels": [
+   "short",
+   "tiktok",
+   "site",
+   "tg"
+  ],
+  "demand": 3,
+  "fresh": 5,
+  "show": 3,
+  "fit": 4,
+  "source": "https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform",
+  "by": "researcher-news",
+  "length": 35,
+  "decision": "Перевірено: прес-реліз генпрокурора Вірджинії 23.11.2026 (позов Вірджинії й Орегону проти SpaceX/X Corp; Wired 23.11 — суди Richmond і Multnomah County).",
+  "status": "new",
+  "added": "2026-11-23",
+  "id": "63"
+ },
+ {
+  "title": "COMFY хоче, щоб 80% коду писали ШІ-агенти: що це означає для програмістів в Україні",
+  "format": "news",
+  "channels": [
+   "short",
+   "site",
+   "tg"
+  ],
+  "demand": 3,
+  "fresh": 5,
+  "show": 2,
+  "fit": 3,
+  "source": "https://jobs.dou.ua/companies/comfy/vacancies/379240/",
+  "by": "researcher-news",
+  "length": 35,
+  "decision": "Перевірено: вакансія COMFY на jobs.dou.ua (Head of Engineering Excellence & AI, «80% коду, тестів і документації створюють AI-агенти під контролем інженерів»); DOU 23.11.",
+  "status": "new",
+  "added": "2026-11-23",
+  "id": "64"
+ },
+ {
+  "title": "ChatGPT радить нішеві магазини частіше за маркетплейси: дослідження Promodo — і як цим скористатись малому бізнесу",
+  "format": "news",
+  "channels": [
+   "site",
+   "tg"
+  ],
+  "demand": 3,
+  "fresh": 4,
+  "show": 2,
+  "fit": 4,
+  "source": "https://www.promodo.ua/blog/nishevim-brendam----bilshe-ai-trafiku-doslidzhennya-promodo",
+  "by": "researcher-news",
+  "decision": "Перевірено: блог Promodo 20.11.2026 — у 3 з 4 категорій нішеві бренди мають у 2–5 разів більше згадок у ChatGPT, ніж маркетплейс (дані Promodo, назви брендів не розкриті).",
+  "status": "new",
+  "added": "2026-11-23",
+  "id": "65"
+ },
+ {
+  "title": "ШІ-агент купує за тебе на Чорну пʼятницю: Walmart пускає Meta Muse з лімітом витрат — які правила ставити агенту з грошима",
+  "format": "sec",
+  "channels": [
+   "short",
+   "tiktok",
+   "site"
+  ],
+  "demand": 2,
+  "fresh": 5,
+  "show": 3,
+  "fit": 3,
+  "source": "https://corporate.walmart.com/news/2026/10/Making-It-Possible-for-Agents-to-Shop-on-Behalf-of-Customers",
+  "by": "researcher-news",
+  "length": 35,
+  "decision": "Перевірено: Walmart (жовт. 2026) — Agent Profiles, ліміти $50/$100/$200 або підтвердження кожної покупки; дата запуску 24.11 з Muse — за The Verge 23.11 з посиланням на Walmart (на сайті Walmart ще не підтверджено). Тільки США; пара до ідеї 57.",
+  "status": "new",
+  "added": "2026-11-23",
+  "id": "66"
  }
 ]
