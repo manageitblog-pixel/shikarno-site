@@ -108,9 +108,9 @@ if __name__ == "__main__":
                 os.environ["TTS_PACE"] = PER_GUIDE.get(name, {}).get("TTS_PACE", "calm"); guide_part(dg, D, pi, idxs)
         # Черга за датами виходу (оновлювати): guide1 25.11 → ep83 26.11 → ep84–86 → guide2 2.12 (незалежний PASS 23.11)
         guide("guide1")
+        guide("guide2")  # CSO 23.11: гайд #2 → пт 27.11 (якщо QA до 26.11 20:00); у ep83/ep85 є запасні дублі
         for k in ("VC_REF", "VC_TOL"): os.environ.pop(k, None)
         for mod in ("ep83", "ep84", "ep85", "ep86"): short(mod)
-        guide("guide2")
         log(ev="all_done", ok_requests=REQ["ok"])
     except RuntimeError as e:
         log(ev="STOP", reason=str(e)[:300], ok_requests=REQ["ok"])
