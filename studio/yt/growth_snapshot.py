@@ -17,7 +17,7 @@ HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.abspath(os.pat
 OUT = os.path.join(ROOT, "studio", "data", "growth_1201.jsonl")
 sys.path.insert(0, "/home/claude/yt"); sys.path.insert(0, HERE)
 
-BASE = {"yt_subs": 311, "long_hours_12m": 10.5, "gsc_clicks_28d": 43, "gsc_impr_28d": 3669, "tg_members": 6, "tiktok_views": 12387}
+BASE = {"yt_subs": 311, "long_hours_12m": 10.5, "gsc_clicks_28d": 43, "gsc_impr_28d": 3669, "tg_members": 6, "tiktok_views": 15304}  # TikTok: з 23.11 19:18Z база = сума всіх відомих відео (11); стара 12387 рахувала лише 7 останніх. Like-for-like ті самі 7: 12387 → 12483 (+96) за 22.11 20:53Z–23.11 16:56Z
 TARGET = {"yt_subs": 330, "long_hours_12m": 14, "gsc_clicks_28d": 60, "tg_members": 15}
 
 
@@ -49,11 +49,16 @@ def telegram():
 
 
 def tiktok():
-    files = sorted(glob.glob(os.path.join(ROOT, "studio", "data", "tiktok", "*.json")))
-    if not files: raise RuntimeError("немає знімків studio/data/tiktok/")
-    d = json.load(open(files[-1], encoding="utf-8")); v = d.get("videos", [])
-    return {"tiktok_views": sum(x.get("views") or 0 for x in v), "tiktok_videos": len(v),
-            "tiktok_snapshot": d.get("fetched") or d.get("date") or os.path.basename(files[-1])}
+    """Сума переглядів по ВСІХ відомих відео: для кожного video_id — останній знімок у tiktok_snap.
+    (До 23.11 рахували лише останні ~7 відео зі знімка — при кожному новому пості старе випадало, сума «падала».)"""
+    import sqlite3
+    c = sqlite3.connect(os.path.join(ROOT, "studio", "data", "analytics.sqlite"))
+    rows = c.execute("""select t.video_id, t.views, t.date from tiktok_snap t
+        join (select video_id, max(date) d from tiktok_snap group by video_id) m
+        on m.video_id=t.video_id and m.d=t.date""").fetchall()
+    if not rows: raise RuntimeError("tiktok_snap порожня")
+    return {"tiktok_views": sum(r[1] or 0 for r in rows), "tiktok_videos": len(rows),
+            "tiktok_snapshot": max(r[2] for r in rows)}
 
 
 def main():
