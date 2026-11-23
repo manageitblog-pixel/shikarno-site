@@ -404,7 +404,7 @@ META23.update({'guide1': dict(
 17:40 Вердикт Байта
 18:06 3 кроки на сьогодні
 
-Усі промпти з гайда і покрокова інструкція: https://shikarno.com.ua/novyny/chatgpt-bezkoshtovno-v-ukraini/
+Усі промпти з гайда і покрокова інструкція: https://shikarno.com.ua/rozbory/yak-korystuvatysya-chatgpt/
 
 Джерела (перевірено 22.11.2026):
 • Країни, де працює ChatGPT: https://help.openai.com/en/articles/7947663-chatgpt-supported-countries
