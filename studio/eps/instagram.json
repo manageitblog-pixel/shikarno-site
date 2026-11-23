@@ -1,10 +1,56 @@
 {
   "_comment": "Instagram @shikarno_ai_ua (vidIQ platformAccountId 29646238265010544). Дозвіл власника 23.11 ~20:33Z: «Так! Запабліши зараз 9 штук топових. І від завтра в звичайному режимі». Публікація: vidiq_instagram_publish_reel з YouTube-посиланням, isAiGenerated true.",
   "posted_auto": {
-    "ep37_ne_platy_1": {"yt": "8Paum6UQ6Zo", "ig": "https://www.instagram.com/reel/DgGPYVlji9v/", "at": "2026-11-23"},
-    "ep26_tier2": {"yt": "2O3QC70WmjA", "ig": "https://www.instagram.com/reel/DgGPe0ZoaJV/", "at": "2026-11-23"},
-    "ep21_which_ai": {"yt": "RRbc__OEMJs", "ig": "https://www.instagram.com/reel/DgGPnnkgnyk/", "at": "2026-11-23"},
-    "ep28_tier_work": {"yt": "uuzSF8xOWCU", "ig": "https://www.instagram.com/reel/DgGPtQrEhZZ/", "at": "2026-11-23"}
+    "ep37_ne_platy_1": {
+      "yt": "8Paum6UQ6Zo",
+      "ig": "https://www.instagram.com/reel/DgGPYVlji9v/",
+      "at": "2026-11-23"
+    },
+    "ep26_tier2": {
+      "yt": "2O3QC70WmjA",
+      "ig": "https://www.instagram.com/reel/DgGPe0ZoaJV/",
+      "at": "2026-11-23"
+    },
+    "ep21_which_ai": {
+      "yt": "RRbc__OEMJs",
+      "ig": "https://www.instagram.com/reel/DgGPnnkgnyk/",
+      "at": "2026-11-23"
+    },
+    "ep28_tier_work": {
+      "yt": "uuzSF8xOWCU",
+      "ig": "https://www.instagram.com/reel/DgGPtQrEhZZ/",
+      "at": "2026-11-23"
+    },
+    "cut6_c1_chatgpt": {
+      "yt": "Vp1PPNxtcrI",
+      "ig": "https://www.instagram.com/reel/DgGQ-ZQE5Hx/",
+      "at": "2026-11-23",
+      "cover": "ig.mp4 (обкладинка 0,5 с, studio/eps/ig_cover.py)"
+    },
+    "ep76_inkognito_shi": {
+      "yt": "0Kb6AamTRQo",
+      "ig": "https://www.instagram.com/reel/DgGRAVLFORb/",
+      "at": "2026-11-23",
+      "cover": "ig.mp4 (обкладинка 0,5 с, studio/eps/ig_cover.py)"
+    },
+    "ep79_tier_money": {
+      "yt": "gljrHADi4aU",
+      "ig": "https://www.instagram.com/reel/DgGQ8fODsVW/",
+      "at": "2026-11-23",
+      "cover": "ig.mp4 (обкладинка 0,5 с, studio/eps/ig_cover.py)"
+    },
+    "ep80_prof_olx": {
+      "yt": "LtNuOtQe0pc",
+      "ig": "https://www.instagram.com/reel/DgGRAlDjqkk/",
+      "at": "2026-11-23",
+      "cover": "ig.mp4 (обкладинка 0,5 с, studio/eps/ig_cover.py)"
+    },
+    "ep81_tier_kids": {
+      "yt": "xaYHobFNYHo",
+      "ig": "https://www.instagram.com/reel/DgGREKOGUW5/",
+      "at": "2026-11-23",
+      "cover": "ig.mp4 (обкладинка 0,5 с, studio/eps/ig_cover.py)"
+    }
   },
-  "paused": "23.11 після 4 з 9: власник помітив слабшу озвучку старих роликів (до контролю F0). Старі (до ~16.11) не публікувати; vidIQ-задачі ep36/ep67/ep29/ep30/ep31 підготовлені, але НЕ публікувати."
+  "paused": "23.11: старі (до ~16.11) не публікувати — озвучка до контролю висоти. Свіжі — лише ig.mp4 з обкладинкою першим кадром (python3 studio/eps/ig_cover.py reels), поки не підключено Meta API з cover_url."
 }
