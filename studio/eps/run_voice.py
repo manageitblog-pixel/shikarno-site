@@ -76,7 +76,17 @@ def short(mod):
         log(ev="short", ep=mod, take=take, f0=F, f0_ok=ok, scenes=[l for l in r.stdout.splitlines() if re.match(r"^\d+ ", l)])
         if best is None or abs(F - float(os.environ.get("VC_REF", VC.REF))) < abs(best[1] - float(os.environ.get("VC_REF", VC.REF))): best = (take, F)
         if ok: break
-    for f in ("vo_raw.wav", "vo_tl.json"): shutil.copy(f"{D}/takes/take{best[0]}_{f}", f"{D}/{f}")
+    ref = float(os.environ.get("VC_REF", VC.REF))
+    fb = [f for f in os.listdir(f"{D}/takes") if re.match(r"vo_fallback_f0_[\d.]+_raw\.wav$", f)]
+    if fb:  # QA 23.11: запасний дубль (з таймлайном) лишається, якщо новий не ближчий до еталона
+        fF = float(re.search(r"f0_([\d.]+)_raw", fb[0]).group(1))
+        if abs(fF - ref) <= abs(best[1] - ref):
+            base = fb[0][:-len("_raw.wav")]
+            shutil.copy(f"{D}/takes/{base}_raw.wav", f"{D}/vo_raw.wav"); shutil.copy(f"{D}/takes/{base}_tl.json", f"{D}/vo_tl.json")
+            log(ev="short_fallback_kept", ep=mod, new_f0=best[1], fallback_f0=fF); best = None
+    if best is not None:
+        for f in ("vo_raw.wav", "vo_tl.json"): shutil.copy(f"{D}/takes/take{best[0]}_{f}", f"{D}/{f}")
+    best = best or (0, fF)
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", f"{D}/vo_raw.wav", "-af",
                     "highpass=f=60,acompressor=threshold=-18dB:ratio=3:attack=5:release=80,loudnorm=I=-14:TP=-1.5:LRA=7",
                     "-ar", "44100", f"{D}/vo.wav"], check=True)
