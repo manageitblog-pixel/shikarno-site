@@ -64,7 +64,7 @@ td.num{text-align:right;font-family:var(--mono)}
 a{color:var(--cyan)}
 .plat{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
 .pc{background:var(--panel);border:1px solid var(--line);border-top:3px solid var(--pcol,var(--violet));border-radius:14px;padding:14px;display:grid;gap:10px;align-content:start;min-width:0;position:relative}
-.pc h3{margin:0;font-family:var(--display);font-weight:800;font-size:15px;display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.pc h3{margin:0;font-family:var(--display);font-weight:800;font-size:15px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;align-items:baseline}
 .pc h3 small{font-family:var(--body);font-weight:500;font-size:11px;color:var(--mut)}
 .pc .big{font-family:var(--display);font-weight:900;font-size:30px;line-height:1;font-variant-numeric:tabular-nums}
 .pc .big small{font-family:var(--body);font-size:12px;font-weight:500;color:var(--mut)}
@@ -277,7 +277,7 @@ function history(D){
     {k:"clicks",t:"Сайт: кліки з Google за тиждень",c:"#9B87FF",f:fmt,ps:1},
   ];
   const box=$("#hist"); box.innerHTML="";
-  C.forEach(c=>{const pts=Hs.map(h=>({x:wl(h.w),v:h[c.k]||0,p:c.ps?h.partial_site:h.partial}));const lastFull=c.cum?{...pts[pts.length-1],x:"на "+ddmm((D.fresh||{}).yt_analytics),cur:1}:([...pts].reverse().find(p=>!p.p)||pts[pts.length-1]);
+  C.forEach(c=>{const pts=Hs.map(h=>({x:wl(h.w),v:h[c.k]||0,p:c.ps?h.partial_site:h.partial}));const lastFull=c.cum?{...pts[pts.length-1],x:c.k==="subs_total"?"наживо":"на "+ddmm((D.fresh||{}).yt_analytics),cur:1}:([...pts].reverse().find(p=>!p.p)||pts[pts.length-1]);
     box.insertAdjacentHTML("beforeend",`<div class="hc"><h3>${c.t}</h3><div class="big">${lastFull?c.f(lastFull.v):"—"} <small>${lastFull?(lastFull.cur?lastFull.x:"тиждень з "+lastFull.x):""}</small></div><svg role="img" aria-label="${esc(c.t)}"></svg><div class="tip"></div></div>`);
     hline(box.lastElementChild,pts,c)});
   box.insertAdjacentHTML("beforeend",`<div class="hc"><h3>Telegram: учасники каналу</h3><div class="big">${fmt(tgp.length?tgp[tgp.length-1].n:D.kpi.tg)} <small>/ ${fmt(D.kpi.tg_goal)}</small></div><svg role="img" aria-label="Telegram по днях"></svg><div class="tip"></div></div>`);
