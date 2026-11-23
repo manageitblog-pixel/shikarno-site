@@ -50,7 +50,7 @@ def guide_part(dg, D, pi, idxs):
         json.dump(dict(f0=F, ok=ok, audit=[dict(seg=i, **a) for i, a in zip(idxs, au)]),
                   open(f"{tk}/part{pi}_take{take}_audit.json", "w"), ensure_ascii=False, indent=1)
         sc = (0 if ok else 1) + (1 if rep else 0)
-        if best is None or sc < best[0] or (sc == best[0] and abs(F - VC.REF) < abs(best[2] - VC.REF)): best = (sc, take, F)
+        if best is None or sc < best[0] or (sc == best[0] and abs(F - float(os.environ.get("VC_REF", VC.REF))) < abs(best[2] - float(os.environ.get("VC_REF", VC.REF)))): best = (sc, take, F)
         if ok and not rep: break
     shutil.copy(f"{tk}/part{pi}_take{best[1]}_f0_{best[2]:.1f}.wav", raw)
     log(ev="part_final", part=pi, take=best[1], f0=best[2], clean=best[0] == 0)
@@ -74,7 +74,7 @@ def short(mod):
         F, ok = f0(D)
         for f in ("vo_raw.wav", "vo_tl.json"): shutil.copy(f"{D}/{f}", f"{D}/takes/take{take}_{f}")
         log(ev="short", ep=mod, take=take, f0=F, f0_ok=ok, scenes=[l for l in r.stdout.splitlines() if re.match(r"^\d+ ", l)])
-        if best is None or abs(F - VC.REF) < abs(best[1] - VC.REF): best = (take, F)
+        if best is None or abs(F - float(os.environ.get("VC_REF", VC.REF))) < abs(best[1] - float(os.environ.get("VC_REF", VC.REF))): best = (take, F)
         if ok: break
     for f in ("vo_raw.wav", "vo_tl.json"): shutil.copy(f"{D}/takes/take{best[0]}_{f}", f"{D}/{f}")
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", f"{D}/vo_raw.wav", "-af",
@@ -86,13 +86,19 @@ def short(mod):
         segs=[(s["i"], s["len_ratio"], s["match"]) for s in js["segments"]], dur=js["duration_s"])
 if __name__ == "__main__":
     try:
+        # guide1: частини 0–9 озвучено старим calm (за v2-вимірювачем медіана 128,5 Гц) → решту частин тим самим промптом
+        # і в межах власної смуги відео 128,5±8, щоб висота не стрибала посеред ролика (рішення COO 23.11, ops policy).
+        PER_GUIDE = {"guide1": {"TTS_PACE": "calm_v1", "VC_REF": "128.5", "VC_TOL": "8"}}
         def guide(name):
+            for k in ("VC_REF", "VC_TOL"): os.environ.pop(k, None)
+            os.environ.update(PER_GUIDE.get(name, {}))
             dg = importlib.import_module(name); D = f"/home/claude/eps/{dg.SLUG}"; os.makedirs(D, exist_ok=True)
             for pi, idxs in enumerate(dg.PARTS):
                 if os.path.exists(f"{D}/part{pi}.wav"): continue
-                os.environ["TTS_PACE"] = "calm"; guide_part(dg, D, pi, idxs)
+                os.environ["TTS_PACE"] = PER_GUIDE.get(name, {}).get("TTS_PACE", "calm"); guide_part(dg, D, pi, idxs)
         # Черга за датами виходу (оновлювати): guide1 25.11 → ep83 26.11 → ep84–86 → guide2 2.12 (незалежний PASS 23.11)
         guide("guide1")
+        for k in ("VC_REF", "VC_TOL"): os.environ.pop(k, None)
         for mod in ("ep83", "ep84", "ep85", "ep86"): short(mod)
         guide("guide2")
         log(ev="all_done", ok_requests=REQ["ok"])

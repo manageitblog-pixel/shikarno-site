@@ -14,6 +14,9 @@ import sys
 import numpy as np
 
 REF, TOL = 141.5, 8.0
+# Перевизначення для одного довгого відео, щоб нові частини звучали як уже озвучені (рішення COO 23.11, guide1): VC_REF/VC_TOL.
+import os as _os
+REF = float(_os.environ.get("VC_REF", REF)); TOL = float(_os.environ.get("VC_TOL", TOL))
 REF_LEGACY = 143.0
 FMIN, FMAX, RMS_GATE, VOICING = 70.0, 400.0, 0.02, 0.3
 
