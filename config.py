@@ -14,6 +14,7 @@ SITE = {
     "lang": "uk",
     "gsc_verify": "xNv9qJb2dgq3CcsirKKTJhuSh3afZ4NeuRTEdxDvdqs",  # Google Search Console: content з мета-тегу підтвердження (ресурс «Префікс URL»)
     "bing_verify": "", # Bing Webmaster: content з мета-тегу msvalidate.01
+    "cf_account": "ccc1a134eac2c4a3907b41bac24ddccd",   # Cloudflare Account ID (не секрет; ключ читання аналітики — у проксі середовища, не в репо)
     "cf_beacon": "922b68fdf5944113a07f641dc3d56168",   # токен Cloudflare Web Analytics (публічний, з коду лічильника); порожньо — лічильник вимкнено
 }
 TAG_NAMES = {
