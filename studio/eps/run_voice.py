@@ -98,17 +98,21 @@ if __name__ == "__main__":
     try:
         # guide1: частини 0–9 озвучено старим calm (за v2-вимірювачем медіана 128,5 Гц) → решту частин тим самим промптом
         # і в межах власної смуги відео 128,5±8, щоб висота не стрибала посеред ролика (рішення COO 23.11, ops policy).
-        PER_GUIDE = {"guide1": {"TTS_PACE": "calm_v1", "VC_REF": "128.5", "VC_TOL": "8"}}
+        PER_GUIDE = {"guide1": {"TTS_PACE": "calm_v1", "VC_REF": "128.5", "VC_TOL": "8"},
+                     "weekly3": {"UPTO": "11"}}  # остання частина (оновлення 28.11 + outro) — окремо 28.11
         def guide(name):
             for k in ("VC_REF", "VC_TOL"): os.environ.pop(k, None)
-            os.environ.update(PER_GUIDE.get(name, {}))
+            os.environ.update({k: v for k, v in PER_GUIDE.get(name, {}).items() if k != "UPTO"})
             dg = importlib.import_module(name); D = f"/home/claude/eps/{dg.SLUG}"; os.makedirs(D, exist_ok=True)
+            upto = int(PER_GUIDE.get(name, {}).get("UPTO", len(dg.PARTS)))
             for pi, idxs in enumerate(dg.PARTS):
+                if pi >= upto: break
                 if os.path.exists(f"{D}/part{pi}.wav"): continue
                 os.environ["TTS_PACE"] = PER_GUIDE.get(name, {}).get("TTS_PACE", "calm"); guide_part(dg, D, pi, idxs)
-        # Черга за датами виходу (оновлювати): guide1 25.11 → ep83 26.11 → ep84–86 → guide2 2.12 (незалежний PASS 23.11)
+        # Черга (оновлювати): guide1 25.11 → guide2 27.11 → шоу #3 29.11 (ч.0–10) → повтори Shorts ep83/ep85 (є запасні дублі)
         guide("guide1")
-        guide("guide2")  # CSO 23.11: гайд #2 → пт 27.11 (якщо QA до 26.11 20:00); у ep83/ep85 є запасні дублі
+        guide("guide2")  # CSO 23.11
+        guide("weekly3")  # шоу #3, вихід 29.11 12:00Z; фактчек PASS 23.11 (гайд #2 → пт 27.11, якщо QA до 26.11 20:00; у ep83/ep85 є запасні дублі)
         for k in ("VC_REF", "VC_TOL"): os.environ.pop(k, None)
         for mod in ("ep83", "ep84", "ep85", "ep86"): short(mod)
         log(ev="all_done", ok_requests=REQ["ok"])

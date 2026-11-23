@@ -941,8 +941,8 @@
    "agent": "factcheck",
    "task": "Шоу #3: перевірка diff правок 23.11 (інший агент)",
    "started": "2026-11-23T10:42:21Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-23T10:45:00Z",
+   "result": "Вердикт: PASS — 4 обов'язкові правки й необов'язкові перевірено за diff і джерелами (FAQ OpenAI, arXiv)"
   }
  ]
 }
