@@ -162,3 +162,61 @@ for s in SEGS:
 PARTS=[[0,1],[2,3,4],[5,6,7,8],[9,10,11],[12,13,14],[15,16,17,18],[19,20],[21,22,23],[24,25],[26,27,28],[29,30],[31,32,33,34,35],[36,37,38],[39,40,41],[42,43,44],[45,46,47]]
 assert sorted(i for p in PARTS for i in p)==list(range(len(SEGS)))
 assert all(sum(len(SEGS[i]['gsay']) for i in p)<=1300 for p in PARTS)
+
+# ── META (Дизайнер упаковки, 23.11; activity 119). Структура — як META23['guide1'] у meta.py (title/description/tags/playlists/first_comment).
+# Вихід: пт 27.11 17:00Z, якщо qa_pass до чт 26.11 20:00 (strategy.md §8); інакше ср 2.12 17:00Z.
+# Назва: фраза «claude безкоштовно» першою (kw.py 23.11: «claude як користуватися» 30, «claude безкоштовно» 29, «claude українською» 29;
+#   GSC 25.10–22.11 для /novyny/claude-bezkoshtovno/: видимий запит лише «claude ai українською безкоштовно», 6 показів, поз. 7). 68 знаків.
+# Факти опису — лише зі сценарію вище (фактчек PASS); нові формулювання перелічено в docs/research/guide2-packaging-2026-11-23.md.
+# ТАЙМКОДИ: рядок CHAPTERS_TODO замінити реальними таймкодами з guide2/props.json після рендеру (як у guide1); перед заливкою — перевірка внизу файлу.
+# Обкладинки: /home/claude/eps/guide2/thumb_A.jpg (H-D символ «Claude = $0») і thumb_B.jpg (питання на «ти» «За Claude платиш?») — Studio «Test & compare».
+# Сайт: сторінка claude-bezkoshtovno — control у exp-2026-11-22-seo-title-ctr до 20.12: `youtube:` на ній НЕ міняти до кінця експерименту.
+CHAPTERS_TODO = "⏱ Таймкоди — після рендеру (guide2/props.json)"
+META = dict(
+ title='Claude безкоштовно українською: як користуватися без VPN | Гайд 2026',
+ description=f'''Claude безкоштовно українською — повний гайд для новачка: як зареєструватися в Україні без VPN, що вміє безкоштовний план, як працює ліміт на 5 годин, 5 задач з готовими промптами і коли таки платити. Факти — зі сторінок Anthropic станом на 22.11.2026.
+
+• Free — $0: пошук в інтернеті, пам'ять, готові файли Excel, Word і PDF, артефакти.
+• Ліміт оновлюється кожні 5 годин; скільки саме повідомлень — Anthropic не називає.
+• Україна — у списку країн Anthropic (крім Криму, Донецької, Луганської, Херсонської і Запорізької областей). Лише з 18 років.
+• Кнопки на вебі й у програмі для ПК — англійською, але відповідає Claude українською.
+• Pro — $20 на місяць або $17 при оплаті за рік (ціни США, без податків).
+
+{CHAPTERS_TODO}
+
+Усі промпти з гайда, тарифи і покрокова інструкція: https://shikarno.com.ua/novyny/claude-bezkoshtovno/
+
+Джерела (перевірено 22.11.2026):
+• Тарифи Claude: https://claude.com/pricing
+• Країни, де працює Claude: https://www.anthropic.com/supported-countries
+• Як почати: https://support.claude.com/en/articles/8114491-get-started-with-claude
+• Мова інтерфейсу і відповідей: https://support.claude.com/en/articles/10769299-how-to-use-claude-in-your-preferred-language
+• Ліміти: https://support.claude.com/en/articles/11647753-understanding-usage-and-length-limits
+• Завантаження файлів: https://support.claude.com/en/articles/8241126-upload-files-to-claude
+• Створення файлів: https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude
+• Артефакти: https://support.claude.com/en/articles/17153992-what-are-artifacts-and-how-do-i-use-them
+• Чи малює Claude картинки: https://support.claude.com/en/articles/9002504-can-claude-produce-images
+• Перенесення пам'яті: https://support.claude.com/en/articles/12123587-import-and-export-your-memory-from-claude
+• Інкогніто-чати: https://support.claude.com/en/articles/12260368-use-incognito-chats
+• План Pro: https://support.claude.com/en/articles/8325606-what-is-the-pro-plan
+• Скільки зберігаються дані: https://privacy.claude.com/en/articles/10023548-how-long-do-you-store-personal-data
+• Оновлення умов (навчання на чатах): https://www.anthropic.com/news/updates-to-our-consumer-terms
+
+Ціни — у доларах США без податків, з офіційної сторінки Anthropic; точна сума для тебе — на claude.ai/upgrade.
+
+🎁 PDF «50 промптів українською» — у Telegram: t.me/shikarno_ai_ua/37
+🎵 TikTok: tiktok.com/@shikarno_ai_ua
+
+ШІкарно — штучний інтелект для звичайних людей українською: новини, безкоштовні сервіси, промпти і чесний вердикт.
+
+Сценарії пише редакція ШІкарно, факти — з першоджерел. Ведучий Байт — віртуальний персонаж, озвучка створена за допомогою ШІ.''',
+ tags=['Claude безкоштовно', 'Claude українською', 'Claude як користуватися', 'Claude безкоштовно українською', 'Claude AI', 'клод ші українською',
+       'клод ші безкоштовно', 'Claude як зареєструватися', 'Claude ліміти', 'Claude тарифи', 'Claude без VPN', 'Anthropic', 'Claude tutorial',
+       'ШІ', 'штучний інтелект', 'ШІкарно'],
+ playlists=['free'],
+ first_comment='Що першим доручиш Claude: А — пояснити договір простими словами, Б — витрати за місяць → таблиця Excel? Пиши А чи Б 👇\n🎁 Промпти «Резюме документа» і «Сімейний бюджет» + ще 48, PDF безкоштовно — у Telegram: t.me/shikarno_ai_ua/37',
+ thumbs=['/home/claude/eps/guide2/thumb_A.jpg', '/home/claude/eps/guide2/thumb_B.jpg'],
+)
+assert len(META['title']) <= 70 and len(META['description']) <= 5000 and sum(len(t) for t in META['tags']) <= 500
+assert not re.search(r"\b\d+[.,]\d+\b", META['title'] + ''.join(META['tags'])), "без номерів версій моделей"
+# Перед заливкою (QA): `python3 -c "import guide2 as g; assert g.CHAPTERS_TODO not in g.META['description']"` — падає, доки таймкоди не вставлено.
