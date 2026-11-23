@@ -1305,5 +1305,99 @@
   "status": "new",
   "added": "2026-11-23",
   "id": "66"
+ },
+ {
+  "title": "Дженсен Хуанг знову CEO Nvidia: рада повернула його одноголосно — що сталося і чому це важливо для цін на ШІ",
+  "format": "news",
+  "channels": [
+   "short",
+   "site",
+   "tg"
+  ],
+  "demand": 3,
+  "fresh": 5,
+  "show": 2,
+  "fit": 3,
+  "source": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+  "by": "researcher-news",
+  "length": 35,
+  "decision": "Перевірено: пресреліз Nvidia 23.11.2026 — рада одноголосно відновила Хуанга як президента, CEO і члена ради (тимчасово CEO була CFO Колетт Кресс); незалежний комітет розслідує повідомлення про спробу іноземної розвідки, рада посилається на висновки посадовців США щодо нацбезпеки.",
+  "status": "new",
+  "added": "2026-11-23",
+  "id": "67"
+ },
+ {
+  "title": "Sierra коштує $30 млрд: ШІ-агенти підтримки, які беруть гроші за вирішену проблему, а не за токени — що це значить для бізнесу",
+  "format": "news",
+  "channels": [
+   "site",
+   "tg"
+  ],
+  "demand": 2,
+  "fresh": 5,
+  "show": 2,
+  "fit": 3,
+  "source": "https://sierra.ai/blog/series-f-30b",
+  "by": "researcher-news",
+  "decision": "Перевірено: блог Sierra 23.11.2026 — Series F $1,75 млрд при оцінці $30 млрд (лідери Greenoaks і Lightspeed); ARR понад $400 млн — дані компанії про себе; модель оплати за результат.",
+  "status": "new",
+  "added": "2026-11-23",
+  "id": "68"
+ },
+ {
+  "title": "Як перевірити ШІ-агента, щоб він не обманював тест: 5 правил від Hugging Face (агент «здав» задачу, якої не робив)",
+  "format": "skills",
+  "channels": [
+   "site",
+   "tg"
+  ],
+  "demand": 2,
+  "fresh": 5,
+  "show": 3,
+  "fit": 2,
+  "source": "https://huggingface.co/blog/agentic-evals",
+  "by": "researcher-news",
+  "decision": "Перевірено: блог Hugging Face 23.11.2026 (Ghosh, Burtenshaw, Solaiman) — перевіряти грейдер лінивим агентом, оцінювати фінальний стан, а не заяву агента, читати трейси, pass^k для автономних задач, фіксувати версії. Ніша ІТ.",
+  "status": "new",
+  "added": "2026-11-23",
+  "id": "69"
+ },
+ {
+  "title": "GPT-6.2 Astra і Sol: OpenAI прибрала temperature і просить не писати «будь стислим» — що змінити у своїх промптах",
+  "format": "news",
+  "channels": [
+   "site",
+   "tg"
+  ],
+  "demand": 3,
+  "fresh": 4,
+  "show": 3,
+  "fit": 2,
+  "source": "https://developers.openai.com/api/docs/guides/latest-model?model=gpt-6.2-astra",
+  "by": "researcher-news",
+  "decision": "Перевірено: гайд OpenAI для розробників (дата на сторінці не вказана; dev.ua 23.11) — temperature/top_p/logprobs не підтримуються, reasoning low замість none/minimal, Astra за замовчуванням стисліша. Самі моделі вийшли 17.11 (openai.com/index/introducing-gpt-6-2-astra-sol) і вже були в дайджесті #2 — брати лише як практичний кут.",
+  "status": "new",
+  "added": "2026-11-23",
+  "id": "70"
+ },
+ {
+  "title": "Grammarly тепер Superhuman — і має особистого ШІ-асистента, який сам знаходить задачі в пошті й календарі: що вміє і чи варто",
+  "format": "try",
+  "channels": [
+   "short",
+   "site",
+   "tg"
+  ],
+  "demand": 3,
+  "fresh": 3,
+  "show": 4,
+  "fit": 4,
+  "source": "https://blog.superhuman.com/proactive-ai-assistant-for-work/",
+  "by": "researcher-news",
+  "length": 35,
+  "decision": "Перевірено: блог Superhuman 20.11.2026 — Go стає проактивним асистентом (пропонує дії лише з підтвердження, пише твоїм стилем, 20+ агентів-партнерів, зокрема DeepL); розгортання в найближчі місяці, переважно в платних планах; DOU 23.11. Підтримку української не заявлено.",
+  "status": "new",
+  "added": "2026-11-23",
+  "id": "71"
  }
 ]
