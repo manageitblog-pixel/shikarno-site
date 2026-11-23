@@ -42,3 +42,7 @@
 {"ev": "part", "part": 7, "take": 2, "f0": 138.7, "f0_ok": true, "dur": 66.8, "audit": [{"seg": 21, "ratio": 0.95, "match": 0.73}, {"seg": 22, "ratio": 0.94, "match": 0.78}], "repeat_suspect": false, "t": "03:22:36Z"}
 {"ev": "part_final", "part": 7, "take": 2, "f0": 138.7, "clean": true, "t": "03:22:36Z"}
 {"ev": "STOP", "reason": "TTS quota exhausted: 4 consecutive HTTP 429 from Gemini (gemini-3.8-flash-tts); try later or another key/model", "ok_requests": 3, "t": "03:24:07Z"}
+{"ev": "tts_ok", "n": 1, "out": "/home/claude/eps/guide1/part8.wav", "res": "(77.76, 24000, 'audio/wav')", "t": "04:19:49Z"}
+{"ev": "part", "part": 8, "take": 1, "f0": 135.6, "f0_ok": true, "dur": 77.8, "audit": [{"seg": 23, "ratio": 0.93, "match": 0.79}, {"seg": 24, "ratio": 0.95, "match": 0.84}, {"seg": 25, "ratio": 0.92, "match": 0.82}], "repeat_suspect": false, "t": "04:21:10Z"}
+{"ev": "part_final", "part": 8, "take": 1, "f0": 135.6, "clean": true, "t": "04:21:10Z"}
+{"ev": "STOP", "reason": "TTS quota exhausted: 4 consecutive HTTP 429 from Gemini (gemini-3.8-flash-tts); try later or another key/model", "ok_requests": 1, "t": "04:22:40Z"}
