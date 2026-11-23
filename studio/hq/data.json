@@ -1,13 +1,13 @@
 {
- "generated": "2026-11-22T23:49:22Z",
+ "generated": "2026-11-23T00:19:14Z",
  "kpi": {
   "subs": 312,
   "subs_goal": 1000,
   "long_hours": 10.5,
   "long_hours_goal": 4000,
   "views_total": 11913,
-  "views_7d": 890,
-  "pct_7d": 46.0,
+  "views_7d": 750,
+  "pct_7d": 44.2,
   "subs_7d": 2,
   "tg": 6,
   "tg_goal": 150,
@@ -474,7 +474,7 @@
  "platforms": {
   "youtube": {
    "subs": 312,
-   "views_7d": 890,
+   "views_7d": 750,
    "long_hours": 10.5,
    "history": [
     {
@@ -657,6 +657,12 @@
    "pct": 56.9
   },
   {
+   "name": "Short · news",
+   "n": 17,
+   "views": 48,
+   "pct": 37.6
+  },
+  {
    "name": "Довгий · digest",
    "n": 3,
    "views": 48,
@@ -667,12 +673,6 @@
    "n": 4,
    "views": 44.5,
    "pct": 62.2
-  },
-  {
-   "name": "Short · news",
-   "n": 16,
-   "views": 44.0,
-   "pct": 38.3
   },
   {
    "name": "Short · skills",
@@ -694,9 +694,9 @@
   },
   {
    "name": "Short · sec",
-   "n": 11,
-   "views": 36,
-   "pct": 43.2
+   "n": 12,
+   "views": 34.5,
+   "pct": 40.3
   },
   {
    "name": "Довгий · prof",
@@ -712,9 +712,9 @@
   },
   {
    "name": "Довгий · sec",
-   "n": 1,
-   "views": 5,
-   "pct": 50.5
+   "n": 2,
+   "views": 21.0,
+   "pct": 30.6
   }
  ],
  "videos": [
@@ -1222,8 +1222,8 @@
    "channel": "DOU",
    "subs": 104000,
    "lang": "uk",
-   "avg": 15211,
-   "n": 102
+   "avg": 15409,
+   "n": 98
   },
   {
    "channel": "Serhii Nemchynskyi",
@@ -1250,8 +1250,8 @@
    "channel": "dev ua   ",
    "subs": 8480,
    "lang": "uk",
-   "avg": 8976,
-   "n": 12
+   "avg": 9722,
+   "n": 11
   },
   {
    "channel": "Markel Kori",
@@ -1299,15 +1299,15 @@
    "channel": "Paul J Lipsky",
    "subs": 535000,
    "lang": "en",
-   "avg": 1522321,
-   "n": 50
+   "avg": 1552458,
+   "n": 49
   },
   {
    "channel": "Shark Numbers",
    "subs": 2010000,
    "lang": "en",
-   "avg": 1301598,
-   "n": 10
+   "avg": 1250873,
+   "n": 9
   },
   {
    "channel": "Vicky x Vlogs",
@@ -1318,22 +1318,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "64",
-   "agent": "cm",
-   "task": "Сигнал у Telegram: 2 знахідки веб-скану (диктування ChatGPT без ліміту; вимкнути ШІ в Canva)",
-   "started": "2026-11-22T19:01:50Z",
-   "finished": "2026-11-22T19:44:30Z",
-   "result": "2 сигнали в TG: #140 диктування ChatGPT (першоджерело OpenAI), #141 Canva (першоджерело за Cloudflare — звірено з PetaPixel і описом сторінки)"
-  },
-  {
-   "id": "65",
-   "agent": "seo",
-   "task": "Сигнал на сайт: коротка новина «ChatGPT: диктуй хоч годину»",
-   "started": "2026-11-22T19:01:50Z",
-   "finished": "2026-11-22T19:04:53Z",
-   "result": "Сигнал-новина на сайті: /novyny/holosovyj-vvid-chatgpt-dyktuvannya/ (~445 слів)"
-  },
   {
    "id": "66",
    "agent": "cso",
@@ -1557,6 +1541,22 @@
    "started": "2026-11-22T23:22:15Z",
    "finished": "2026-11-22T23:25:14Z",
    "result": "Баг List ≥ 4 пунктів у Generic.tsx виправлено (коміт 1121277): ширина 760, зсув −70 px, gap 24, менші padding/іконка, 50 px для довгих пунктів. Списки ≤ 3 пунктів попіксельно ідентичні (ep24, кадри 0 і 370); 4-й пункт ep24 більше не заходить під Байта навіть активним. exp-frame0 не зачеплено."
+  },
+  {
+   "id": "94",
+   "agent": "shorts",
+   "task": "Озвучка наперед (квота знову доступна 00:18Z): guide1 ч.5+ → ep83–86, до реального 429",
+   "started": "2026-11-23T00:18:43Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "95",
+   "agent": "cm",
+   "task": "Коментарі YouTube і група TG без відповіді — відповісти (≤ 200 од. API)",
+   "started": "2026-11-23T00:18:48Z",
+   "finished": null,
+   "result": ""
   }
  ],
  "agents": [
