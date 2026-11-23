@@ -1,10 +1,18 @@
 [
  {
-  "id": "aTUsauz53rs",
-  "title": "Новини ШІ за тиждень: Anthropic на біржі, Gemini платить сам | ШІ за тиждень з Байтом #2",
-  "short": false,
+  "id": "_wp0rz8edB8",
+  "title": "ШІ для SMM: контент-план і голос бренду без пояснень щоразу 📱 ChatGPT, Gemini, Claude #ШІ #shorts",
+  "short": true,
   "issues": [],
-  "tags": 17,
+  "tags": 16,
+  "status": "private"
+ },
+ {
+  "id": "bvS0k_r3_bs",
+  "title": "Меню на тиждень і вечеря з того, що є 🍳 Тір-лист Байта #7 #ШІ #shorts",
+  "short": true,
+  "issues": [],
+  "tags": 14,
   "status": "private"
  },
  {
@@ -13,7 +21,23 @@
   "short": true,
   "issues": [],
   "tags": 14,
+  "status": "public"
+ },
+ {
+  "id": "xaYHobFNYHo",
+  "title": "Штучний інтелект для дітей: який ШІ обрати? 🧒 Тір-лист Байта #6 #ШІ #shorts",
+  "short": true,
+  "issues": [],
+  "tags": 14,
   "status": "private"
+ },
+ {
+  "id": "aTUsauz53rs",
+  "title": "Новини ШІ за тиждень: Anthropic на біржі, Gemini платить сам | ШІ за тиждень з Байтом #2",
+  "short": false,
+  "issues": [],
+  "tags": 17,
+  "status": "public"
  },
  {
   "id": "gljrHADi4aU",
@@ -352,19 +376,19 @@
   "status": "public"
  },
  {
+  "id": "DMSoAoXDlp8",
+  "title": "Який ШІ для фото й відео? Nano Banana, Gemini Omni, CapCut 🎬 Тір-лист Байта #ШІ #shorts",
+  "short": true,
+  "issues": [],
+  "tags": 14,
+  "status": "public"
+ },
+ {
   "id": "KjjLuzq_i7U",
   "title": "Штучний інтелект для водія, лікаря і юриста: що реально працює | ШІ для професій #2",
   "short": false,
   "issues": [],
   "tags": 20,
-  "status": "public"
- },
- {
-  "id": "141OUHyI-lQ",
-  "title": "Excel з графіком за хвилину: скіл Claude безкоштовно 📊 Скіли #1 #ШІ #shorts",
-  "short": true,
-  "issues": [],
-  "tags": 14,
   "status": "public"
  },
  {
@@ -672,27 +696,19 @@
   "status": "public"
  },
  {
-  "id": "ULBtAJDADhk",
-  "title": "ШІ-агенти зламали 100+ компаній: ~$50 за злам 😨 #ШІ #shorts",
+  "id": "Gp5ZTU6pynY",
+  "title": "ШІ-агенти купують замість тебе: Walmart пускає, Amazon блокує 🛒 #ШІ #shorts",
   "short": true,
   "issues": [],
   "tags": 13,
   "status": "public"
  },
  {
-  "id": "J3fkrWp64UE",
-  "title": "Google зробив ШІ для зустрічей без інтернету 💻 Gemma 4 на Mac #ШІ #shorts",
+  "id": "EwbIWlSKnWg",
+  "title": "Claude Duet: ШІ, який пише тобі першим — що вміє #ШІ #shorts",
   "short": true,
   "issues": [],
-  "tags": 11,
-  "status": "public"
- },
- {
-  "id": "VJnUKMatmJ8",
-  "title": "⚡ Друга дірка в PHP за 2 дні: CVE-2026-115560 — чи варто панікувати? #ШІ #shorts",
-  "short": true,
-  "issues": [],
-  "tags": 11,
+  "tags": 14,
   "status": "public"
  },
  {
@@ -733,6 +749,14 @@
   "short": true,
   "issues": [],
   "tags": 16,
+  "status": "public"
+ },
+ {
+  "id": "sSsYLWoaM4I",
+  "title": "⚡ Екстрено: дірка в PHP на 9.2/10 — де тут ШІ і як захиститись #ШІ #shorts",
+  "short": true,
+  "issues": [],
+  "tags": 13,
   "status": "public"
  },
  {
