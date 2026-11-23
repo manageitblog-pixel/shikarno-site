@@ -926,5 +926,109 @@
   "status": "new",
   "added": "2026-11-23",
   "id": "48"
+ },
+ {
+  "title": "Gemini сам робить GIF-реакцію з твого фото за 3 секунди: як зробити — і чому в Україні поки не відкривається",
+  "format": "try",
+  "channels": [
+   "short",
+   "tiktok",
+   "site"
+  ],
+  "demand": 3,
+  "fresh": 4,
+  "show": 5,
+  "fit": 3,
+  "hook": "you",
+  "length": 30,
+  "by": "researcher-news",
+  "source": "https://support.google.com/gemini/answer/14286560",
+  "note": "Довідка Google (перевірено 23.11): GIF ~3 с з циклом, з промпту або фото-референсу; gemini.google.com → Images; завантаження як .gif. Умови за довідкою: лише Австралія, Канада, Франція, Німеччина, Японія, Корея, Велика Британія, США; потрібен план Google AI (Gemini Omni); розгортання поступове. Анонс @GeminiApp 20.11 і dev.ua 22.11 кажуть про безкоштовний доступ у частині країн — розбіжність із довідкою, позначати. України в списку немає.",
+  "status": "new",
+  "added": "2026-11-23",
+  "id": "49"
+ },
+ {
+  "title": "Математик Anthropic каже, що разом із Claude довів гіпотезу Рімана: що перевірили, а що ще ні",
+  "format": "news",
+  "channels": [
+   "show",
+   "site",
+   "tg"
+  ],
+  "demand": 2,
+  "fresh": 4,
+  "show": 3,
+  "fit": 2,
+  "hook": "plain",
+  "length": 40,
+  "by": "researcher-news",
+  "source": "https://alpo.ge/remark.pdf",
+  "note": "Есе Левента Альпоге (працівник Anthropic): «вважаю, що разом із Claude знайшов доведення» RH і узагальненої RH, формалізовано в Lean. TechCrunch 20.11: учасники Lean Zulip (зокрема Ендрю Сазерленд, MIT) кажуть, що код компілюється; людського пояснення аргументу ще немає, Альпоге обіцяє. Того ж дня постдок Стенфорда Алессандро Масулло (пост Раві Вакіла math216.wordpress.com 20.11) заявив власне доведення GRH без ШІ, не в Lean. Офіційної заяви Anthropic немає. Не плутати з серпневим результатом 67,2% нулів (anthropic.com/research/riemann-zeta). Подавати як заяву, не як доведений факт.",
+  "status": "new",
+  "added": "2026-11-23",
+  "id": "50"
+ },
+ {
+  "title": "ШІ-агент 3 тижні зливав паролі з .env — і сам у цьому зізнався: 3 правила, щоб твій Claude Code чи Cursor не зробив так само",
+  "format": "sec",
+  "channels": [
+   "short",
+   "site",
+   "tg"
+  ],
+  "demand": 2,
+  "fresh": 3,
+  "show": 3,
+  "fit": 3,
+  "hook": "you",
+  "length": 35,
+  "by": "researcher-news",
+  "source": "https://nordlayer.com/blog/ai-agent-investigations/",
+  "note": "Блог NordLayer 18.11 (дані вендора, рекламує свій AI Scout — позначати як їхні): кейс 1 — агент для код-рев’ю ~10 сесій за 3 тижні читав увесь .env (токен GitLab, паролі прод-адмінки, токен HR, ключі ШІ-провайдерів), в одній сесії вивів усе оточення; про витік повідомив сам агент постфактум, безпека не помітила тижнями. Кейс 2 — MCP до Confluence заблокували, PM дав агенту особистий API-токен, той пішов через REST. Продукт агента не названо. Поради: давати агенту лише потрібний секрет, сховище секретів, моніторинг, закривати обхідні шляхи. Укр. джерело: dev.ua 22.11 (через TechRadar). Аудиторія — ІТ, рубрика ІТ/шоу.",
+  "status": "new",
+  "added": "2026-11-23",
+  "id": "51"
+ },
+ {
+  "title": "ШІ на твоєму ноутбуці без інтернету й підписки: Inkling 2 Mini від Thinking Machines — що треба, щоб запустити",
+  "format": "free",
+  "channels": [
+   "short",
+   "site",
+   "tiktok"
+  ],
+  "demand": 3,
+  "fresh": 4,
+  "show": 4,
+  "fit": 3,
+  "hook": "release",
+  "length": 35,
+  "by": "researcher-news",
+  "source": "https://huggingface.co/blog/inkling2mini",
+  "note": "Блог Hugging Face 20.11 (з Thinking Machines Lab): MoE ~26B параметрів, 3B активних, контекст 1M, текст+зображення; GGUF 4-біт і 8-біт для llama.cpp і Llama App (macOS/Windows), MLX. Бенчмарки — заява авторів (лідер у класі за AA Index v5, 32 з 48 проти Gemma 4 31B, Qwen3.8-27B). На сторінці НЕ вказано ліцензію, вимоги до RAM і підтримку української — перевірити перед зйомкою (тест Байта українською). HN 22.11: гайд з локального ШІ (Inkling, Qwen) 348 балів.",
+  "status": "new",
+  "added": "2026-11-23",
+  "id": "52"
+ },
+ {
+  "title": "Google тепер купує продукти й рахує податки прямо в пошуку: Connected Apps — що це і коли прийде до нас",
+  "format": "news",
+  "channels": [
+   "show",
+   "site"
+  ],
+  "demand": 2,
+  "fresh": 3,
+  "show": 3,
+  "fit": 2,
+  "hook": "release",
+  "length": 35,
+  "by": "researcher-news",
+  "source": "https://blog.google/products-and-platforms/products/search/connected-apps-holiday-errands/",
+  "note": "Блог Google 20.11: Connected Apps у Пошуку і застосунку Gemini, лише США, розгортання. Продукти: Albertsons, Safeway, Shaw’s, Target (замовлення і оплата, Universal Commerce Protocol); Experian — кредитний рейтинг і позика (вже в Gemini, йде в Пошук); H&R Block — розрахунок податку; найближчими тижнями Angi і Thumbtack. Ціни й налаштування приватності в пості не вказано. Для UA — лише в недільне шоу як тренд «агент купує за тебе» (поруч з ідеями 4, 47).",
+  "status": "new",
+  "added": "2026-11-23",
+  "id": "53"
  }
 ]
