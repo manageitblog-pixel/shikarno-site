@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-23T08:49:59Z",
+ "generated": "2026-11-23T08:57:49Z",
  "kpi": {
   "subs": 314,
   "subs_goal": 1000,
@@ -537,13 +537,13 @@
    ]
   },
   "tiktok": {
-   "videos": 10,
-   "views_total": 15265,
-   "views_7d": 1181,
+   "videos": 7,
+   "views_total": 12482,
+   "views_7d": 1182,
    "new_7d": 4,
-   "saves_total": 121,
-   "likes_total": 300,
-   "last_snapshot": "2026-11-23T04",
+   "saves_total": 93,
+   "likes_total": 224,
+   "last_snapshot": "2026-11-23T08",
    "best": [
     {
      "title": "Український ШІ Сяйво: коли вийде",
@@ -560,11 +560,11 @@
      "posted": "2026-11-12"
     },
     {
-     "title": "Дав ШІ роль таксиста",
-     "views": 2100,
-     "saves": 27,
-     "id": "7705840932226141448",
-     "posted": "2026-11-08"
+     "title": "Gemini читає твою пошту?",
+     "views": 1200,
+     "saves": 12,
+     "id": "7707003510256192776",
+     "posted": "2026-11-11"
     }
    ],
    "history": [
@@ -583,6 +583,10 @@
     {
      "x": "2026-11-23T04",
      "v": 15265
+    },
+    {
+     "x": "2026-11-23T08",
+     "v": 12482
     }
    ]
   },
@@ -759,7 +763,7 @@
    "published": "2026-11-22",
    "views7": 0,
    "pct": 0,
-   "total": 33
+   "total": 36
   },
   {
    "id": "aTUsauz53rs",
@@ -976,6 +980,30 @@
    "score": 400.0
   },
   {
+   "title": "Банк каже: «ШІ-агент — на твій ризик». Wells Fargo з 24.11 вважає кожну дію агента твоєю — 3 правила, перш ніж дати ШІ доступ до банку",
+   "format": "sec",
+   "channels": [
+    "short",
+    "tiktok",
+    "site",
+    "tg"
+   ],
+   "demand": 4,
+   "fresh": 5,
+   "show": 4,
+   "fit": 5,
+   "hook": "you",
+   "length": 35,
+   "by": "researcher-news",
+   "source": "https://www.wellsfargo.com/online-banking/online-access-agreement/upcoming/",
+   "note": "Перевірено 23.11 у першоджерелі: нова Online Access Agreement Wells Fargo, Version Effective November 24, 2026, розділ 15 «AI Agents»: дії агента з твоїм логіном вважаються авторизованими тобою, «AT YOUR OWN RISK», банк може блокувати агентів. Контекст — Wired 22.11 (https://www.wired.com/story/banks-are-cracking-down-on-ai-agents/): JPMorgan Chase заборонив стороннім агентам входити з твоїми даними, Bank of America застеріг не давати логін агентам; Amazon блокує покупки Meta Muse. Для UA: правило «не давай ШІ-агенту пароль від банку» — продовження №27 (Muse показав чужий баланс), але інша новина. Українські банки не перевіряли — не стверджувати про них.",
+   "status": "approved",
+   "added": "2026-11-23",
+   "id": "57",
+   "decision": "Схвалено 23.11 (score 354 ≥300): свіжа перевірена зміна умов Wells Fargo з 24.11, безпекова тема з прямою порадою глядачу; формат sec у Shorts/TikTok + сторінка сайту й TG.",
+   "score": 354.1
+  },
+  {
    "title": "ШІ для ФОПа: рахунок, акт і нагадування про податок за 5 хвилин — що можна довірити ШІ, а що ні",
    "format": "prof",
    "channels": [
@@ -1127,35 +1155,13 @@
    "added": "2026-11-22",
    "id": "19",
    "score": 234.0
-  },
-  {
-   "title": "ШІ чи справжнє фото? Вгадай 5 з 5 — і 3 ознаки, які видають ШІ-картинку (тест Байта)",
-   "format": "check",
-   "channels": [
-    "short",
-    "tiktok",
-    "tg"
-   ],
-   "demand": 4,
-   "fresh": 3,
-   "show": 5,
-   "fit": 5,
-   "hook": "you",
-   "length": 30,
-   "by": "researcher-niche",
-   "source": "https://www.youtube.com/watch?v=KxFlhNMkojs",
-   "note": "Аномалія тижня 23.11: Академія Yours «ШІ чи справжнє фото? Я вгадав лише 2 з 6» — 1107 переглядів при медіані каналу 97 (11,4×, comp_videos 22.11). Поруч Matniak «Як розпізнати текст ШІ» 12,6×. Формат-квіз: глядач вгадує сам, відповідь у кінці → коментарі. Ознаки брати з перевірених джерел під час сценарію, фото — власні/згенеровані нами (без чужих). Відрізняється від №38 (діпфейки журналісток, безпека).",
-   "status": "new",
-   "added": "2026-11-23",
-   "id": "54",
-   "score": 233.6
   }
  ],
  "lake": {
   "videos": 94,
   "daily": 773,
-  "news": 1867,
-  "niche": 604,
+  "news": 1874,
+  "niche": 806,
   "comp": 1015,
   "comp_videos": 62794,
   "research": 70,
@@ -1164,6 +1170,48 @@
   "comp_ai": 241
  },
  "news": [
+  {
+   "date": "2026-11-23",
+   "source": "devua",
+   "title": "16-річний латвієць отримав $500 000 на створення дешевих ракет із ШІ, які мають бути стійкими до РЕБ. До створення стартапу його підштовхнула війна в Україні",
+   "score": null,
+   "url": "https://dev.ua/news/henriis-dandzberhs-1795418855"
+  },
+  {
+   "date": "2026-11-23",
+   "source": "devua",
+   "title": "В ООН цілий тиждень засідали, щоб врегулювати використання повністю автономної ШІ-зброї, але безрезультатно. Що стало на заваді",
+   "score": null,
+   "url": "https://dev.ua/news/v-oon-tsilyi-tyzhden-zasidaly-shchob-vrehuliuvaty-vykorystannia-povnistiu-avtonomnoi-shi-zbroi-ale-bezrezultatno-shcho-stalo-na-zavadi-1795418581"
+  },
+  {
+   "date": "2026-11-23",
+   "source": "speka",
+   "title": "Головний науковець OpenAI запропонував обмежувати розвиток ШІ за допомогою метрики perplexity",
+   "score": null,
+   "url": "https://speka.ua/news/openai-pachocki-obmezhennya-rozvytku-shi-perplexity-98kdjk"
+  },
+  {
+   "date": "2026-11-23",
+   "source": "speka",
+   "title": "Ілон Маск про прорив Starship, Grok 4.8 та роботів Optimus у побуті",
+   "score": null,
+   "url": "https://speka.ua/videos-and-podcasts/ilon-mask-pro-proriv-starship-grok-48-ta-robotiv-optimus-u-pobuti-p0845l"
+  },
+  {
+   "date": "2026-11-23",
+   "source": "hn",
+   "title": "COP31 climate talks fail to reach deal amid fossil fuel and money rows",
+   "score": 6,
+   "url": "https://www.bbc.com/news/articles/cqwy06zrd26lo"
+  },
+  {
+   "date": "2026-11-23",
+   "source": "dou",
+   "title": "Україна збільшує виробництво дронів і ракет «Нептун». Які обсяги",
+   "score": null,
+   "url": "https://dou.ua/lenta/news/drone-neptune-production-2026/"
+  },
   {
    "date": "2026-11-23",
    "source": "techcrunch",
@@ -1189,64 +1237,22 @@
    "date": "2026-11-22",
    "source": "hn",
    "title": "0rwx – A simple model of AI usage, inspired by Unix permissions",
-   "score": 33,
+   "score": 51,
    "url": "https://0rwx.com/"
   },
   {
    "date": "2026-11-22",
    "source": "hn",
    "title": "Agent swarm trying to solve P vs. NP",
-   "score": 136,
+   "score": 144,
    "url": "https://pequalnp.com/"
   },
   {
    "date": "2026-11-22",
    "source": "hn",
    "title": "Localcode, open source agentic coding on your Mac with one command",
-   "score": 41,
+   "score": 58,
    "url": "https://github.com/mjwsolo/localcode"
-  },
-  {
-   "date": "2026-11-22",
-   "source": "hn",
-   "title": "What Happened in Fall 2026: AI and P vs. NP",
-   "score": 20,
-   "url": "https://cacm.acm.org/blogcacm/what-happened-in-fall-2026-ai-and-p-vs-np"
-  },
-  {
-   "date": "2026-11-22",
-   "source": "hn",
-   "title": "GTA 6's fictional porn studio \"Booty Bang\" now has a real AI parody site",
-   "score": 3,
-   "url": "https://bootybang.ai/"
-  },
-  {
-   "date": "2026-11-22",
-   "source": "hn",
-   "title": "Arizona grandfather hailed as a hero after finding missing toddler in desert",
-   "score": 13,
-   "url": "https://www.theguardian.com/us-news/2026/nov/22/arizona-grandfather-toddler-missing-desert"
-  },
-  {
-   "date": "2026-11-22",
-   "source": "hn",
-   "title": "US drivers pay an extra $12B a year for digital car repairs",
-   "score": 11,
-   "url": "https://www.theregister.com/personal-tech/2026/11/22/as-cars-go-digital-us-consumers-pay-an-extra-12-billion-a-year-for-repairs/5311412"
-  },
-  {
-   "date": "2026-11-22",
-   "source": "techcrunch",
-   "title": "OpenAI’s chief scientist has thoughts on how to limit AI development",
-   "score": null,
-   "url": "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/"
-  },
-  {
-   "date": "2026-11-22",
-   "source": "venturebeat",
-   "title": "Your ML model passed every test. Here’s what those tests might have missed",
-   "score": null,
-   "url": "https://venturebeat.com/orchestration/your-ml-model-passed-every-test-heres-what-those-tests-might-have-missed"
   }
  ],
  "competitors": [
@@ -1357,14 +1363,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "80",
-   "agent": "dist",
-   "task": "Ріст до 1.12: TikTok — найкращі YouTube Shorts, яких ще нема в TikTok (+1/день, підпис-запит)",
-   "started": "2026-11-22T22:03:48Z",
-   "finished": "2026-11-23T07:29:40Z",
-   "result": "Субагент зупинено (10 год на дозволі vidIQ); TikTok — з головної сесії, clip1 о 14:05Z"
-  },
   {
    "id": "81",
    "agent": "voice",
@@ -1596,6 +1594,14 @@
    "started": "2026-11-23T08:38:09Z",
    "finished": "2026-11-23T08:42:08Z",
    "result": "Конкуренти 23.11: UA-ріст за добу (Аксіома +19%, Matniak +5,6%), 71 аномалія за 14 днів, ідеї 54–56, звіт docs/research/competitors-2026-11-23.md"
+  },
+  {
+   "id": "110",
+   "agent": "de",
+   "task": "Збирач даталейку 08:53Z (денний): TikTok/TG, sync, outliers, history (пн), snapshot",
+   "started": "2026-11-23T08:52:41Z",
+   "finished": "2026-11-23T08:57:30Z",
+   "result": "Даталейк 23.11 08Z: новини +20, TikTok-знімок, TG 6, sync, outliers +202 у niche, метрики сигналів 22.11, ідеї 57–61 (57 схвалено), знімок бази; history 30 пропущено (квота)"
   }
  ],
  "agents": [

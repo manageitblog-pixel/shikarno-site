@@ -877,8 +877,8 @@
    "agent": "de",
    "task": "Збирач даталейку 08:53Z (денний): TikTok/TG, sync, outliers, history (пн), snapshot",
    "started": "2026-11-23T08:52:41Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-23T08:57:30Z",
+   "result": "Даталейк 23.11 08Z: новини +20, TikTok-знімок, TG 6, sync, outliers +202 у niche, метрики сигналів 22.11, ідеї 57–61 (57 схвалено), знімок бази; history 30 пропущено (квота)"
   }
  ]
 }
