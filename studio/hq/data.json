@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-23T00:49:28Z",
+ "generated": "2026-11-23T00:56:42Z",
  "kpi": {
   "subs": 313,
   "subs_goal": 1000,
@@ -469,6 +469,10 @@
   {
    "d": "2026-11-22",
    "n": 6
+  },
+  {
+   "d": "2026-11-23",
+   "n": 6
   }
  ],
  "platforms": {
@@ -523,12 +527,12 @@
   },
   "tiktok": {
    "videos": 7,
-   "views_total": 12387,
-   "views_7d": 1087,
+   "views_total": 12479,
+   "views_7d": 1179,
    "new_7d": 4,
-   "saves_total": 94,
+   "saves_total": 93,
    "likes_total": 224,
-   "last_snapshot": "2026-11-22T20",
+   "last_snapshot": "2026-11-23T00",
    "best": [
     {
      "title": "Український ШІ Сяйво: коли вийде",
@@ -560,6 +564,10 @@
     {
      "x": "2026-11-22T20",
      "v": 12387
+    },
+    {
+     "x": "2026-11-23T00",
+     "v": 12479
     }
    ]
   },
@@ -637,6 +645,10 @@
    "history": [
     {
      "x": "2026-11-22",
+     "v": 6
+    },
+    {
+     "x": "2026-11-23",
      "v": 6
     }
    ],
@@ -1010,6 +1022,29 @@
    "score": 265.6
   },
   {
+   "title": "Signal ховає твої чати від ШІ телефона: блок Siri AI на iOS 27 і «Захист екрана» від Gemini на Android",
+   "format": "sec",
+   "channels": [
+    "short",
+    "tiktok",
+    "site",
+    "tg"
+   ],
+   "demand": 3,
+   "fresh": 4,
+   "show": 5,
+   "fit": 5,
+   "hook": "you",
+   "length": 30,
+   "source": "https://signal.org/blog/protecting-your-privacy/",
+   "by": "researcher-news",
+   "note": "Signal, 20.11.2026 (в укр. медіа 22.11): на iOS 27 Signal блокує скриншоти в застосунку, щоб Siri AI не зчитувала листування, — налаштування «Block Siri AI»; на Android автоматично вмикає «Screen security», коли бачить, що ШІ-асистент (напр. Gemini) намагається читати екран, — лише там, де це можна виявити; на Windows 11 скриншоти вже блокуються проти Recall; macOS не покрито — порада: додати Signal у Excluded Apps (System Settings > Siri). Захист можна вимкнути, але тоді чати (і чати співрозмовників) бачитиме агент; доступ через файлову систему це не зупиняє. Подача: «твій телефонний ШІ читає екран — ось 1 перемикач». Продовжує успішну серію приватності в TikTok (пам’ять ChatGPT 4,9K, Gemini/Gmail 1,2K).",
+   "status": "new",
+   "added": "2026-11-23",
+   "id": "43",
+   "score": 265.6
+  },
+  {
    "title": "ШІ для студента: курсова без списування — 3 чесні способи і 1, що тебе здасть",
    "format": "prof",
    "channels": [
@@ -1089,33 +1124,12 @@
    "id": "2",
    "kw": "chatgpt уроки (178); chatgpt як користуватися (20); що таке chatgpt (10)",
    "score": 225.0
-  },
-  {
-   "title": "Який ШІ для кухні? Тір-лист",
-   "format": "tier",
-   "channels": [
-    "short",
-    "site",
-    "tiktok"
-   ],
-   "demand": 3,
-   "fresh": 3,
-   "show": 5,
-   "fit": 5,
-   "by": "owner",
-   "source": "рішення власника 21.11",
-   "status": "approved",
-   "added": "2026-11-22",
-   "id": "5",
-   "kw": "зерно «ші для кухні» без релевантного попиту: бізнес на кухні (8); дитячі кухні (10, нерелевантно) — спробувати «рецепти chatgpt»",
-   "decision": "Short 24.11 19:00 (тір-лист кухня), сценарій 22.11",
-   "score": 225.0
   }
  ],
  "lake": {
   "videos": 93,
   "daily": 746,
-  "news": 1857,
+  "news": 1865,
   "niche": 604,
   "comp": 504,
   "comp_videos": 62243,
@@ -1125,6 +1139,62 @@
   "comp_ai": 235
  },
  "news": [
+  {
+   "date": "2026-11-22",
+   "source": "verge",
+   "title": "We haven’t seen the last of the major tech outages",
+   "score": null,
+   "url": "https://www.theverge.com/tech/1039851/major-tech-outages"
+  },
+  {
+   "date": "2026-11-22",
+   "source": "hn",
+   "title": "0rwx – A simple model of AI usage, inspired by Unix permissions",
+   "score": 8,
+   "url": "https://0rwx.com/"
+  },
+  {
+   "date": "2026-11-22",
+   "source": "hn",
+   "title": "Agent swarm trying to solve P vs. NP",
+   "score": 89,
+   "url": "https://pequalnp.com/"
+  },
+  {
+   "date": "2026-11-22",
+   "source": "hn",
+   "title": "Localcode, open source agentic coding on your Mac with one command",
+   "score": 13,
+   "url": "https://github.com/mjwsolo/localcode"
+  },
+  {
+   "date": "2026-11-22",
+   "source": "hn",
+   "title": "What Happened in Fall 2026: AI and P vs. NP",
+   "score": 13,
+   "url": "https://cacm.acm.org/blogcacm/what-happened-in-fall-2026-ai-and-p-vs-np"
+  },
+  {
+   "date": "2026-11-22",
+   "source": "hn",
+   "title": "GTA 6's fictional porn studio \"Booty Bang\" now has a real AI parody site",
+   "score": 3,
+   "url": "https://bootybang.ai/"
+  },
+  {
+   "date": "2026-11-22",
+   "source": "hn",
+   "title": "Arizona grandfather hailed as a hero after finding missing toddler in desert",
+   "score": 8,
+   "url": "https://www.theguardian.com/us-news/2026/nov/22/arizona-grandfather-toddler-missing-desert"
+  },
+  {
+   "date": "2026-11-22",
+   "source": "hn",
+   "title": "US drivers pay an extra $12B a year for digital car repairs",
+   "score": 11,
+   "url": "https://www.theregister.com/personal-tech/2026/11/22/as-cars-go-digital-us-consumers-pay-an-extra-12-billion-a-year-for-repairs/5311412"
+  },
   {
    "date": "2026-11-22",
    "source": "techcrunch",
@@ -1143,71 +1213,15 @@
    "date": "2026-11-22",
    "source": "hn",
    "title": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
-   "score": 44,
+   "score": 171,
    "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth"
   },
   {
    "date": "2026-11-22",
    "source": "hn",
    "title": "Harvard CS 2881R AI Safety",
-   "score": 13,
+   "score": 33,
    "url": "https://boazbk.github.io/mltheoryseminar/"
-  },
-  {
-   "date": "2026-11-22",
-   "source": "hn",
-   "title": "C++26 is done (again): November 2026 ISO C++ meeting trip report",
-   "score": 46,
-   "url": "https://herbsutter.com/2026/11/21/c26-is-done-again-trip-report-november-2026-iso-c-standards-meeting-buzios-brazil/"
-  },
-  {
-   "date": "2026-11-22",
-   "source": "openai",
-   "title": "Perplexity and Intelligence",
-   "score": null,
-   "url": "https://openai.com/index/perplexity-and-intelligence"
-  },
-  {
-   "date": "2026-11-22",
-   "source": "techcrunch",
-   "title": "Why data centers are at the center of the Big Tech backlash",
-   "score": null,
-   "url": "https://techcrunch.com/2026/11/22/why-data-centers-are-at-the-center-of-the-big-tech-backlash/"
-  },
-  {
-   "date": "2026-11-22",
-   "source": "verge",
-   "title": "Binding of Isaac developer removes AI music from Repentance Plus",
-   "score": null,
-   "url": "https://www.theverge.com/games/1039770/binding-of-isaac-ai-music"
-  },
-  {
-   "date": "2026-11-22",
-   "source": "verge",
-   "title": "The vibe-coding revolution is coming to all the gadgets",
-   "score": null,
-   "url": "https://www.theverge.com/column/1039139/vibe-coding-gadgets-tv-camera"
-  },
-  {
-   "date": "2026-11-22",
-   "source": "wired",
-   "title": "Banks Have Had It Up to Here With Your AI Agent",
-   "score": null,
-   "url": "https://www.wired.com/story/banks-are-cracking-down-on-ai-agents/"
-  },
-  {
-   "date": "2026-11-22",
-   "source": "ain",
-   "title": "Signal обмежить створення скриншотів на смартфонах, щоб захистити листування від ШІ",
-   "score": null,
-   "url": "https://ain.ua/2026/11/20/signal-obmezit-stvorennia-skrinsotiv-na-smartfonax-shhob-zaxistiti-listuvannia-vid-si/"
-  },
-  {
-   "date": "2026-11-22",
-   "source": "devua",
-   "title": "У Gemini з’явилася функція створення GIF-анімацій за допомогою ШІ",
-   "score": null,
-   "url": "https://dev.ua/news/google-zapustyla-heneratsiiu-shi-gif-1795350586"
   }
  ],
  "competitors": [
@@ -1318,14 +1332,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "66",
-   "agent": "cso",
-   "task": "Плейбуки алгоритмів: YouTube (Shorts і довгі) + TikTok — офіційні джерела → правила для студії",
-   "started": "2026-11-22T19:05:28Z",
-   "finished": "2026-11-22T19:12:47Z",
-   "result": "Плейбуки YouTube (15 правил) і TikTok (14); 6 експериментів designed; 5 рішень CSO"
-  },
   {
    "id": "67",
    "agent": "seo",
@@ -1557,6 +1563,14 @@
    "started": "2026-11-23T00:18:48Z",
    "finished": "2026-11-23T00:20:39Z",
    "result": "Коментарі перевірено: YouTube — 100 гілок, нових глядацьких без відповіді немає (старий рос. троль пропущено, не видалено), перші коментарі на публічних усі є, черга 5 — у майбутньому; TG-група — лише автопересилання, спаму 0. Відповідей 0, квота ~7 од."
+  },
+  {
+   "id": "96",
+   "agent": "de",
+   "task": "Збирач даталейку 00:53Z: новини, TikTok/TG-знімок, сигнали",
+   "started": "2026-11-23T00:53:11Z",
+   "finished": "2026-11-23T00:56:30Z",
+   "result": "Даталейк 23.11 00Z: +22 новини, TikTok-знімок (7 відео), TG 6 підписників, ідеї 43–47 (топ — Signal проти ШІ телефона, 265,6); сигнали ще молодші 24 год"
   }
  ],
  "agents": [
