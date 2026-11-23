@@ -82,6 +82,12 @@ a{color:var(--cyan)}
 .hc svg{width:100%;height:110px;display:block;overflow:visible}.hc .ax{font-size:10px;fill:#A9A3D6}
 .tip{position:absolute;pointer-events:none;background:#0B0A1C;border:1px solid #ffffff2a;border-radius:8px;padding:5px 8px;font-size:12px;white-space:nowrap;transform:translate(-50%,-110%);display:none;z-index:2}
 .htab{margin-top:10px;font-size:13px}.htab table{margin-top:8px}
+.fr{display:inline-block;font-family:var(--mono);font-size:11px;font-weight:500;color:var(--mut);background:#ffffff0a;border:1px solid var(--line);border-radius:20px;padding:0 8px;line-height:18px;white-space:normal}
+.fr.old{color:var(--warn);border-color:#FFA94D66}.fr.live{color:var(--good);border-color:#7DF29B55}
+.upd{font-family:var(--mono);font-size:13px;color:var(--fg)}.upd.old{color:var(--warn)}
+.notes{font-size:13px;color:var(--warn);margin:0}
+.tl.hung{background:#FFA94D14;outline:1px solid #FFA94D88}
+.tl .src{font-size:11px;color:var(--mut)}
 @media (max-width:860px){.office{grid-template-columns:1fr}.tl{grid-template-columns:90px 1fr}.tl .who{display:none}}
 @media (prefers-reduced-motion:reduce){.live:before{animation:none}}
 </style>
@@ -89,11 +95,12 @@ a{color:var(--cyan)}
 <div class="wrap">
   <header>
     <div class="logo"><b>ШІ</b>карно HQ <small>штаб студії</small></div>
-    <div class="meta"><span class="live" id="clock">Київ —</span><span id="upd">дані: —</span> <span id="ago" style="color:var(--mut)"></span> <span id="livest" style="color:var(--good)"></span></div>
+    <div class="meta"><span class="live" id="clock">Київ —</span><span class="upd" id="upd">Оновлено: —</span> <span id="ago" style="color:var(--mut)"></span> <span id="livest" style="color:var(--good)"></span></div>
   </header>
 
   <section aria-labelledby="h-kpi">
-    <h2 id="h-kpi">Цілі каналу <span>відповідає CSO (Директор зі стратегії) · де ми зараз · must-have 1000 підписників і 400–500 год, star — 1000 і 4000 год до 31.01.2027</span></h2>
+    <h2 id="h-kpi">Цілі каналу <span>відповідає CSO (Директор зі стратегії) · де ми зараз · must-have 1000 підписників і 400–500 год, star — 1000 і 4000 год до 31.01.2027</span> <span class="fr" id="fr-kpi"></span></h2>
+    <p class="notes" id="notes" hidden></p>
     <div class="kpis" id="kpis"></div>
   </section>
 
@@ -103,13 +110,13 @@ a{color:var(--cyan)}
   </section>
 
   <section aria-labelledby="h-hist">
-    <h2 id="h-hist">Історія результатів <span>по тижнях (з понеділка) · наведи на точку · пунктир — тиждень ще не повний (YouTube запізнюється на 2–3 дні)</span></h2>
+    <h2 id="h-hist">Історія результатів <span>по тижнях (з понеділка) · наведи на точку · пунктир — тиждень ще не повний</span> <span class="fr" id="fr-hist"></span></h2>
     <div class="hist" id="hist"></div>
     <details class="htab"><summary>Таблиця цифр</summary><table id="histtab"></table></details>
   </section>
 
   <section aria-labelledby="h-live">
-    <h2 id="h-live">Зараз у роботі <span>реальні задачі агентів, не розклад</span></h2>
+    <h2 id="h-live">Зараз у роботі <span>реальні задачі агентів із журналу, не розклад · відкрита понад 6 год = «завис?»</span> <span class="fr" id="fr-live"></span></h2>
     <div class="grid2">
       <div class="card"><div style="font-weight:600">Працюють зараз</div><div class="timeline" id="now"></div></div>
       <div class="card"><div style="font-weight:600">Здано сьогодні</div><div class="timeline" id="done"></div></div>
@@ -117,7 +124,7 @@ a{color:var(--cyan)}
   </section>
 
   <section aria-labelledby="h-office">
-    <h2 id="h-office">Офіс <span>агенти за відділами · натисни на будь-кого</span></h2>
+    <h2 id="h-office">Офіс <span>агенти за відділами · працює = є відкрита задача в журналі · натисни на будь-кого</span> <span class="fr" id="fr-office"></span></h2>
     <div class="office">
       <div class="canvasbox"><canvas id="office" width="960" height="560" aria-label="Анімований офіс агентів"></canvas></div>
       <aside class="side" id="side" aria-live="polite"></aside>
@@ -126,17 +133,17 @@ a{color:var(--cyan)}
   </section>
 
   <section aria-labelledby="h-day">
-    <h2 id="h-day">Конвеєр дня <span>що і коли запускається (час Київ)</span></h2>
+    <h2 id="h-day">Конвеєр дня <span>що і коли запускається (час Київ)</span> <span class="fr">звірено з розкладом задач 23.11</span></h2>
     <div class="timeline" id="timeline"></div>
   </section>
 
   <div class="grid2">
     <section class="card" aria-labelledby="h-ideas">
-      <h2 id="h-ideas">Дошка ідей <span>бал = попит × свіжість × показ × аудиторія × прогноз</span></h2>
+      <h2 id="h-ideas">Дошка ідей <span>топ-12 відкритих за балом = попит × свіжість × показ × аудиторія × прогноз</span> <span class="fr" id="fr-ideas"></span></h2>
       <div class="tbl"><table id="ideas"></table></div>
     </section>
     <section class="card" aria-labelledby="h-fmt">
-      <h2 id="h-fmt">Що вистрілює <span>медіана переглядів за 7 днів</span></h2>
+      <h2 id="h-fmt">Що вистрілює <span>медіана переглядів за перші 7 днів ролика, за форматом</span> <span class="fr" id="fr-fmt"></span></h2>
       <div id="formats" style="display:grid;gap:6px"></div>
     </section>
   </div>
@@ -144,28 +151,28 @@ a{color:var(--cyan)}
 
 
   <section class="card" aria-labelledby="h-vids">
-    <h2 id="h-vids">Останні відео <span>перші 7 днів</span></h2>
+    <h2 id="h-vids">Останні відео <span>публічні ролики каналу · «всього» — наживо, «перші 7 днів» — з YouTube Analytics</span> <span class="fr" id="fr-vids"></span></h2>
     <div class="tbl"><table id="videos"></table></div>
   </section>
 
   <div class="grid2">
     <section class="card" aria-labelledby="h-news">
-      <h2 id="h-news">Стрічка ресерчерів <span>свіжі першоджерела, HN, DOU</span></h2>
+      <h2 id="h-news">Стрічка ресерчерів <span>свіжі першоджерела, HN, DOU</span> <span class="fr" id="fr-news"></span></h2>
       <div class="tbl"><table id="news"></table></div>
     </section>
     <section class="card" aria-labelledby="h-comp">
-      <h2 id="h-comp">Конкуренти <span>ШІ-канали, середні перегляди за 90 днів · спершу українські (наша аудиторія), англомовні — орієнтир</span></h2>
+      <h2 id="h-comp">Конкуренти <span>ШІ-канали, середні перегляди за 90 днів · спершу українські (наша аудиторія), англомовні — орієнтир</span> <span class="fr" id="fr-comp"></span></h2>
       <div class="tbl"><table id="comp"></table></div>
     </section>
   </div>
 
   <div class="grid2">
     <section class="card" aria-labelledby="h-lake">
-      <h2 id="h-lake">Даталейк <span>що вже зібрано</span></h2>
+      <h2 id="h-lake">Даталейк <span>що вже зібрано</span> <span class="fr" id="fr-lake"></span></h2>
       <div class="lake" id="lake"></div>
     </section>
     <section class="card" aria-labelledby="h-asks">
-      <h2 id="h-asks">Чекає власника</h2>
+      <h2 id="h-asks">Чекає власника <span>studio/hq/asks.json</span> <span class="fr" id="fr-asks"></span></h2>
       <ul class="asks" id="asks"></ul>
     </section>
   </div>
@@ -177,100 +184,136 @@ const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&g
 function kyivNow(){return new Date(new Date().toLocaleString("en-US",{timeZone:"Europe/Kyiv"}))}
 function tick(){const d=kyivNow();$("#clock").textContent="Київ "+d.toTimeString().slice(0,5)}
 tick();setInterval(tick,15000);
+/* Свіжість: кожен блок підписаний, станом на коли його дані (власник 23.11: «дані неповні або застарілі»). */
+const parseT=x=>{if(!x)return null;x=String(x).trim().replace(" ","T");if(/^\d{4}-\d\d-\d\d$/.test(x))return new Date(x+"T12:00:00Z");if(/T\d\d$/.test(x))x+=":00";if(!/(Z|[+-]\d\d:?\d\d)$/.test(x))x+="Z";const d=new Date(x);return isNaN(d)?null:d};
+const KY={timeZone:"Europe/Kyiv"};
+const hhmm=x=>{const d=parseT(x);return d?d.toLocaleTimeString("uk-UA",{...KY,hour:"2-digit",minute:"2-digit"}):"—"};
+const ddmm=x=>{x=String(x||"");return /^\d{4}-\d\d-\d\d/.test(x)?x.slice(8,10)+"."+x.slice(5,7):"—"};
+const kyivDay=d=>d.toLocaleDateString("uk-UA",KY);
+const when=x=>{const d=parseT(x);if(!d)return "—";if(/^\d{4}-\d\d-\d\d$/.test(String(x)))return ddmm(x);return kyivDay(d)===kyivDay(new Date())?hhmm(x):ddmm(d.toLocaleDateString("sv-SE",KY))+" "+hhmm(x)};
+const ageH=x=>{const d=parseT(x);return d?(Date.now()-d)/3.6e6:Infinity};
+function fr(id,text,old,live){const el=document.getElementById(id);if(!el)return;el.textContent=text;el.className="fr"+(old?" old":live?" live":"")}
+const AF={yt_live:2,tiktok:6,tg_posts:3,tg_members:3,news:6,yt_analytics:24*4,site:24*4,ideas:24,comp:24*8};
+const isOld=(F,k)=>ageH(F[k])>(AF[k]||24);
 
 let LIVE=null;
 fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(D=>{LIVE=D;render(D);office(D);live(D)}).catch(e=>{console.error(e);$("#side").innerHTML="<p>Не вдалося показати дані: "+esc(e&&e.message)+". Онови сторінку.</p>"});
 
+function agoTxt(D){const m=Math.round((Date.now()-new Date(D.generated))/60000);return "("+(m<1?"щойно":m<120?m+" хв тому":Math.round(m/60)+" год тому")+")"}
 function render(D){
-  const gen=new Date(D.generated); $("#upd").textContent="дані: "+gen.toLocaleString("uk-UA",{timeZone:"Europe/Kyiv",day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"});{const m=Math.round((Date.now()-gen)/60000);$("#ago").textContent="("+(m<1?"щойно":m+" хв тому")+")"}
-  const K=D.kpi;
+  const F=D.fresh||{},gen=new Date(D.generated),gm=(Date.now()-gen)/60000;
+  $("#upd").textContent="Оновлено: "+gen.toLocaleString("uk-UA",{...KY,day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"})+" (Київ)";
+  $("#upd").className="upd"+(gm>60?" old":""); $("#ago").textContent=agoTxt(D)+(gm>60?" — старше години, чекаємо оновлення":"");
+  const N=D.notes||[]; $("#notes").hidden=!N.length; $("#notes").textContent=N.join(" · ");
+  const YA=F.yt_analytics, yaTxt="YouTube Analytics станом на "+ddmm(YA);
+  fr("fr-kpi",(F.yt_live?"YouTube наживо, "+when(F.yt_live):"YouTube наживо: немає")+" · "+yaTxt,isOld(F,"yt_live"),true);
+  const K=D.kpi, W=K.window||[];
   const tiles=[
-    {lab:"Підписники YouTube",val:fmt(K.subs),sub:"/ "+fmt(K.subs_goal),p:K.subs/K.subs_goal,note:"поріг монетизації"},
-    {lab:"Години довгих (12 міс)",val:fmt(K.long_hours),sub:"/ "+fmt(K.long_hours_goal),p:K.long_hours/K.long_hours_goal,note:"2 довгих/тиждень — у графіку"},
-    {lab:"Перегляди, ~7 днів",val:fmt(K.views_7d),sub:"",note:"всього "+fmt(K.views_total)},
-    {lab:"Сер. % перегляду",val:(K.pct_7d??"—")+"%",sub:"",note:"ціль ≥ 60%",st:K.pct_7d>=60?"ok":K.pct_7d>=45?"warn":"bad"},
-    {lab:"Telegram",val:fmt(K.tg),sub:"/ "+fmt(K.tg_goal),p:(K.tg||0)/K.tg_goal,note:"ціль до кінця грудня"},
-    {lab:"Сайт: кліки з Google",val:fmt(K.site_clicks_28d),sub:"",note:fmt(K.site_impr_28d)+" показів за 28 днів"},
+    {lab:"Підписники YouTube",val:fmt(K.subs),sub:"/ "+fmt(K.subs_goal),p:K.subs/K.subs_goal,note:"наживо, "+when(F.yt_live)+" · поріг монетизації"},
+    {lab:"Години довгих (12 міс)",val:fmt(K.long_hours),sub:"/ "+fmt(K.long_hours_goal),p:K.long_hours/K.long_hours_goal,note:"YouTube Analytics станом на "+ddmm(YA)},
+    {lab:"Перегляди за 7 днів",val:fmt(K.views_7d),sub:"",note:ddmm(W[0])+"–"+ddmm(W[1])+" (Analytics) · всього наживо "+fmt(K.views_total)+(K.videos?" у "+K.videos+" відео":"")},
+    {lab:"Сер. % перегляду",val:(K.pct_7d??"—")+"%",sub:"",note:"ціль ≥ 60% · "+ddmm(W[0])+"–"+ddmm(W[1]),st:K.pct_7d==null?"":K.pct_7d>=60?"ok":K.pct_7d>=45?"warn":"bad"},
+    {lab:"Підписки нетто, 7 днів",val:(K.subs_7d>0?"+":"")+fmt(K.subs_7d),sub:"",note:ddmm(W[0])+"–"+ddmm(W[1])+" (Analytics)"},
+    {lab:"Telegram",val:fmt(K.tg),sub:"/ "+fmt(K.tg_goal),p:(K.tg||0)/K.tg_goal,note:"наживо, "+when(F.tg_members)+" · ціль до кінця грудня"},
+    {lab:"Сайт: кліки з Google",val:fmt(K.site_clicks_28d),sub:"",note:fmt(K.site_impr_28d)+" показів за 28 днів · Search Console станом на "+ddmm(F.site)},
   ];
-  $("#kpis").innerHTML=tiles.map(t=>`<div class="kpi"><div class="lab">${t.lab}</div><div class="val">${t.val} <small>${t.sub}</small></div>${t.p!=null?`<div class="bar"><i style="width:${Math.max(1,Math.min(100,t.p*100)).toFixed(1)}%"></i></div>`:""}<div class="note">${t.st?`<span class="state ${t.st}">${t.st==="ok"?"в нормі":t.st==="warn"?"нижче цілі":"критично"}</span> `:""}${t.note}</div></div>`).join("");
+  $("#kpis").innerHTML=tiles.map(t=>`<div class="kpi"><div class="lab">${t.lab}</div><div class="val">${t.val} <small>${t.sub}</small></div>${t.p!=null?`<div class="bar"><i style="width:${Math.max(1,Math.min(100,t.p*100)).toFixed(1)}%"></i></div>`:""}<div class="note">${t.st?`<span class="state ${t.st}">${t.st==="ok"?"в нормі":t.st==="warn"?"нижче цілі":"критично"}</span> `:""}${esc(t.note)}</div></div>`).join("");
 
-  // live activity
+  // live activity: відкрита понад 6 год без done — «завис?», а не «працює»
   const A=D.activity||[],nameOf=id=>{const a=D.agents.find(x=>x.id===id);return a?a.name.split(" (")[0]:id};
-  const t2=x=>x?new Date(x).toLocaleTimeString("uk-UA",{timeZone:"Europe/Kyiv",hour:"2-digit",minute:"2-digit"}):"";
-  const run=A.filter(x=>!x.finished), fin=A.filter(x=>x.finished&&new Date(x.finished).toDateString()===new Date().toDateString()).sort((a,b)=>b.finished.localeCompare(a.finished));
-  $("#now").innerHTML=run.length?run.map(x=>`<div class="tl now"><span class="t">з ${t2(x.started)}</span><span>${esc(x.task)}</span><span class="who" style="color:var(--mut)">${esc(nameOf(x.agent))}</span></div>`).join(""):`<div style="color:var(--mut);font-size:13px">Пул порожній — наступна задача з черги стартує, щойно звільниться місце (до 5 агентів одночасно).</div>`;
-  $("#done").innerHTML=fin.length?fin.slice(0,12).map(x=>`<div class="tl"><span class="t">${t2(x.finished)}</span><span>${esc(x.task)}${x.result?` <span style="color:var(--mut)">— ${esc(x.result)}</span>`:""}</span><span class="who" style="color:var(--mut)">${esc(nameOf(x.agent))}</span></div>`).join(""):`<div style="color:var(--mut);font-size:13px">Сьогодні ще нічого не здано.</div>`;
+  const run=A.filter(x=>!x.finished).sort((a,b)=>b.started.localeCompare(a.started)), today=kyivDay(new Date());
+  const fin=A.filter(x=>x.finished&&kyivDay(parseT(x.finished))===today).sort((a,b)=>b.finished.localeCompare(a.finished));
+  const who=x=>esc(nameOf(x.agent))+(x.agent_raw?` <span class="src">(${esc(x.agent_raw)})</span>`:"");
+  $("#now").innerHTML=run.length?run.map(x=>{const h=ageH(x.started)>=6;return `<div class="tl ${h?"hung":"now"}"><span class="t">з ${when(x.started)}</span><span>${h?'<span class="state warn">завис?</span> ':""}${esc(x.task)}</span><span class="who" style="color:var(--mut)">${who(x)}</span></div>`}).join(""):`<div style="color:var(--mut);font-size:13px">Зараз жодної відкритої задачі в журналі — наступну стартує Диспетчер (щогодини :17, до 5 агентів одночасно).</div>`;
+  $("#done").innerHTML=fin.length?fin.slice(0,12).map(x=>`<div class="tl"><span class="t">${hhmm(x.finished)}</span><span>${esc(x.task)}${x.result?` <span style="color:var(--mut)">— ${esc(x.result)}</span>`:""}</span><span class="who" style="color:var(--mut)">${who(x)}</span></div>`).join("")+(fin.length>12?`<div class="src">ще ${fin.length-12} задач сьогодні</div>`:""):`<div style="color:var(--mut);font-size:13px">Сьогодні (за Києвом) ще нічого не здано.</div>`;
+  const hung=run.filter(x=>ageH(x.started)>=6).length;
+  fr("fr-live","журнал: остання подія "+when(F.activity)+" · у роботі "+(run.length-hung)+(hung?" · завис? "+hung:""),hung>0);
+  fr("fr-office","працює "+(run.length-hung)+" з "+D.agents.length+(hung?" · завис? "+hung:""),hung>0);
 
   // timeline
   const now=kyivNow(), hm=now.getHours()*60+now.getMinutes();
-  $("#timeline").innerHTML=D.schedule.map(s=>{const m=/^(\d\d):(\d\d)/.exec(s.time);const near=m&&Math.abs(+m[1]*60+ +m[2]-hm)<=45;const a=D.agents.find(x=>x.id===s.agent);return `<div class="tl ${near?"now":""}"><span class="t">${esc(s.time)}</span><span>${esc(s.what)}</span><span class="who" style="color:var(--mut)">${esc(a?a.name:"")}</span></div>`}).join("");
+  $("#timeline").innerHTML=D.schedule.map(s=>{const m=/^(\d\d):(\d\d)/.exec(s.time);const near=m&&Math.abs(+m[1]*60+ +m[2]-hm)<=45;const a=D.agents.find(x=>x.id===s.agent);return `<div class="tl ${near?"now":""}"><span class="t">${esc(s.time)}</span><span>${esc(s.what)}</span><span class="who" style="color:var(--mut)">${esc(a?a.name.split(" (")[0]:"")}</span></div>`}).join("");
 
   // ideas
-  $("#ideas").innerHTML="<tr><th>Бал</th><th>Ідея</th><th>Формат</th><th>Куди</th><th>Статус</th></tr>"+D.ideas.map(i=>`<tr><td class="num">${fmt(Math.round(i.score||0))}</td><td>${esc(i.title)}${i.kw?`<div style="color:var(--mut);font-size:12px">${esc(i.kw)}</div>`:""}</td><td>${esc(i.format)}</td><td>${esc((i.channels||[]).join(", "))}</td><td><span class="state ${i.status==="done"?"ok":i.status==="approved"||i.status==="in_work"?"warn":""}">${esc(i.status)}</span></td></tr>`).join("");
+  const IC=D.ideas_count||{}; fr("fr-ideas","відкритих "+fmt(IC.open)+" · дошка оновлена "+when(F.ideas),isOld(F,"ideas"));
+  const stl={new:"нова",approved:"схвалена",in_work:"в роботі",done:"зроблено"};
+  $("#ideas").innerHTML="<tr><th>Бал</th><th>Ідея</th><th>Формат</th><th>Куди</th><th>Статус</th></tr>"+D.ideas.map(i=>`<tr><td class="num">${fmt(Math.round(i.score||0))}</td><td>${esc(i.title)}${i.kw?`<div style="color:var(--mut);font-size:12px">${esc(typeof i.kw==="string"?i.kw:JSON.stringify(i.kw))}</div>`:""}</td><td>${esc(i.format)}</td><td>${esc((i.channels||[]).join(", "))}</td><td><span class="state ${i.status==="done"?"ok":i.status==="approved"||i.status==="in_work"?"warn":""}">${esc(stl[i.status]||i.status)}</span></td></tr>`).join("");
 
   // formats
-  const mx=Math.max(...D.formats.map(f=>f.views));
-  const nm={tier:"тір-лист",free:"безкоштовно",news:"новини",sec:"безпека",skills:"скіли",try:"Байт пробує",check:"перевірка",prof:"професії",digest:"шоу/дайджест"};
-  $("#formats").innerHTML=D.formats.map(f=>{const [k,v]=f.name.split(" · ");return `<div class="fbar"><span>${esc(k)} · ${esc(nm[v]||v)} <span style="color:var(--mut)">(${f.n})</span></span><span class="track"><i style="width:${(f.views/mx*100).toFixed(1)}%;background:${f.pct>=60?"var(--good)":f.pct>=45?"var(--warn)":"var(--pink)"}"></i></span><span class="v">${fmt(Math.round(f.views))}</span></div>`}).join("")+`<div style="font-size:12px;color:var(--mut)">колір — % перегляду: зелений ≥60%, жовтий ≥45%, рожевий нижче</div>`;
+  fr("fr-fmt",yaTxt+" · ролики до "+ddmm(D.formats_cutoff),isOld(F,"yt_analytics"));
+  const mx=Math.max(1,...D.formats.map(f=>f.views));
+  const nm={tier:"тір-лист",free:"безкоштовно",news:"новини",sec:"безпека",skills:"скіли",try:"Байт пробує",check:"перевірка",prof:"професії",digest:"шоу/дайджест",guide:"гайд"};
+  $("#formats").innerHTML=D.formats.map(f=>{const [k,v]=f.name.split(" · ");return `<div class="fbar"><span>${esc(k)} · ${esc(nm[v]||v)} <span style="color:var(--mut)">(${f.n})</span></span><span class="track"><i style="width:${(f.views/mx*100).toFixed(1)}%;background:${f.pct>=60?"var(--good)":f.pct>=45?"var(--warn)":"var(--pink)"}"></i></span><span class="v">${fmt(Math.round(f.views))}</span></div>`}).join("")+`<div style="font-size:12px;color:var(--mut)">колір — % перегляду: зелений ≥60%, жовтий ≥45%, рожевий нижче · у дужках — кількість роликів</div>`;
 
   history(D);
   platforms(D);
 
-  $("#videos").innerHTML="<tr><th>Дата</th><th>Відео</th><th>Формат</th><th>7 днів</th><th>% перегл.</th><th>Всього</th></tr>"+D.videos.map(v=>`<tr><td style="font-family:var(--mono)">${v.published.slice(5)}</td><td><a href="https://youtu.be/${esc(v.id)}" target="_blank" rel="noopener">${esc(v.title)}</a></td><td>${esc(nm[v.format]||v.format)}${v.short?"":" · довгий"}</td><td class="num">${fmt(v.views7)}</td><td class="num">${v.pct?v.pct+"%":"—"}</td><td class="num">${fmt(v.total)}</td></tr>`).join("");
-  $("#news").innerHTML="<tr><th>Дата</th><th>Джерело</th><th>Новина</th></tr>"+D.news.map(n=>`<tr><td style="font-family:var(--mono)">${esc((n.date||"").slice(5))}</td><td>${esc(n.source)}${n.score?` <span style="color:var(--mut)">${n.score}</span>`:""}</td><td><a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a></td></tr>`).join("");
+  fr("fr-vids","всього — наживо, "+when(F.yt_live)+" · 7 днів — "+yaTxt,isOld(F,"yt_live"),true);
+  const v7=v=>v.views7==null?`<span style="color:var(--mut)" title="YouTube Analytics ще не має днів цього ролика">чекаємо</span>`:fmt(v.views7)+(v.complete?"":`<span class="src"> неповн.</span>`);
+  $("#videos").innerHTML="<tr><th>Дата</th><th>Відео</th><th>Формат</th><th>Перші 7 днів</th><th>% перегл.</th><th>Всього</th></tr>"+D.videos.map(v=>`<tr><td style="font-family:var(--mono)">${ddmm(v.published)}</td><td><a href="https://youtu.be/${esc(v.id)}" target="_blank" rel="noopener">${esc(v.title)}</a></td><td>${v.format?esc(nm[v.format]||v.format):(v.short?"Short":"")}${v.short?"":" · довгий"}</td><td class="num">${v7(v)}</td><td class="num">${v.pct!=null?v.pct+"%":v.views7==null?"":"—"}</td><td class="num">${fmt(v.total)}</td></tr>`).join("")+`<tr><td colspan="6" class="src">«чекаємо» — YouTube Analytics має дані лише до ${ddmm(YA)}; «неповн.» — 7 днів ще не минуло.</td></tr>`;
+  fr("fr-news","останній збір "+when(F.news),isOld(F,"news"));
+  $("#news").innerHTML="<tr><th>Дата</th><th>Джерело</th><th>Новина</th></tr>"+D.news.map(n=>`<tr><td style="font-family:var(--mono)">${esc(ddmm(n.date))}</td><td>${esc(n.source)}${n.score?` <span style="color:var(--mut)">${n.score}</span>`:""}</td><td><a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a></td></tr>`).join("");
+  fr("fr-comp","знімок каналів "+ddmm(F.comp),isOld(F,"comp"));
   {const row=c=>`<tr><td>${esc(c.channel)}</td><td class="num">${fmt(c.subs)}</td><td class="num">${fmt(c.avg)}</td></tr>`,uk=D.competitors.filter(c=>c.lang==="uk"),en=D.competitors.filter(c=>c.lang!=="uk");
   $("#comp").innerHTML="<tr><th>Канал</th><th>Підписники</th><th>Сер. перегл.</th></tr>"+`<tr><th colspan="3" style="color:var(--yellow)">🇺🇦 Україномовні (${uk.length})</th></tr>`+uk.map(row).join("")+`<tr><th colspan="3" style="color:var(--mut)">Англомовні — орієнтир (${en.length})</th></tr>`+en.map(row).join("");}
+  fr("fr-lake","станом на "+when(D.generated));
   const L=D.lake, ln=[["videos","наших відео"],["daily","днів метрик"],["news","новин"],["niche","відео ніші"],["comp","каналів-конкурентів"],["comp_ai","з них про ШІ"],["comp_videos","відео конкурентів"],["research","тем у радарах"],["posts","статей сайту"],["site_queries","пошукових запитів"]];
   $("#lake").innerHTML=ln.map(([k,l])=>`<div><b>${fmt(L[k])}</b><span>${l}</span></div>`).join("");
-  $("#asks").innerHTML=D.asks.map(a=>`<li>${esc(a.what)} — <span class="state warn">${esc(a.status)}</span></li>`).join("");
-
+  fr("fr-asks","оновлено "+when(F.asks));
+  $("#asks").innerHTML=D.asks.length?D.asks.map(a=>`<li><b style="font-weight:600">${esc(a.what)}</b>${a.why?` <span style="color:var(--mut)">— ${esc(a.why)}</span>`:""}<div><span class="state warn">${esc(a.status)}</span> <span class="src">${esc(a.when||"")}</span></div></li>`).join(""):`<li style="color:var(--mut)">Відкритих прохань немає.</li>`;
+  if(window.__office) window.__office(D);
 }
 
 function history(D){
   const Hs=(D.history||[]).filter(h=>h.w>="2026-10-01"), wl=w=>w.slice(8,10)+"."+w.slice(5,7);
-  const tgp=(D.tg_hist||[]).map(t=>({w:t.d,n:t.n}));
+  const tgp=(D.tg_hist||[]).map(t=>({w:t.d,n:t.n})),F=D.fresh||{};
+  fr("fr-hist","YouTube Analytics станом на "+ddmm(F.yt_analytics)+" · Search Console станом на "+ddmm(F.site)+" · Telegram наживо",isOld(F,"yt_analytics"));
   const C=[
     {k:"views",t:"Перегляди YouTube за тиждень",c:"#4CF2FF",f:fmt,last:"sum"},
-    {k:"subs_cum",t:"Підписники: приріст наростаючим",c:"#FFD60A",f:v=>"+"+fmt(v),goal:1000,gl:"ціль 1000",cum:1},
+    {k:D.history.some(h=>h.subs_total!=null)?"subs_total":"subs_cum",t:"Підписники YouTube на кінець тижня",c:"#FFD60A",f:fmt,goal:1000,gl:"ціль 1000",cum:1},
     {k:"long_cum",t:"Години довгих наростаючим",c:"#FF4F8B",f:v=>fmt(v)+" год",goal:450,gl:"must-have ~450 год",cum:1},
     {k:"long_h",t:"Години довгих за тиждень",c:"#FF4F8B",f:v=>fmt(v)+" год"},
-    {k:"impr",t:"Сайт: покази в Google за тиждень",c:"#9B87FF",f:fmt},
-    {k:"clicks",t:"Сайт: кліки з Google за тиждень",c:"#9B87FF",f:fmt},
+    {k:"impr",t:"Сайт: покази в Google за тиждень",c:"#9B87FF",f:fmt,ps:1},
+    {k:"clicks",t:"Сайт: кліки з Google за тиждень",c:"#9B87FF",f:fmt,ps:1},
   ];
   const box=$("#hist"); box.innerHTML="";
-  C.forEach(c=>{const pts=Hs.map(h=>({x:wl(h.w),v:h[c.k]||0,p:h.partial}));const lastFull=c.cum?{...pts[pts.length-1],x:"на зараз",cur:1}:([...pts].reverse().find(p=>!p.p)||pts[pts.length-1]);
+  C.forEach(c=>{const pts=Hs.map(h=>({x:wl(h.w),v:h[c.k]||0,p:c.ps?h.partial_site:h.partial}));const lastFull=c.cum?{...pts[pts.length-1],x:"на "+ddmm((D.fresh||{}).yt_analytics),cur:1}:([...pts].reverse().find(p=>!p.p)||pts[pts.length-1]);
     box.insertAdjacentHTML("beforeend",`<div class="hc"><h3>${c.t}</h3><div class="big">${lastFull?c.f(lastFull.v):"—"} <small>${lastFull?(lastFull.cur?lastFull.x:"тиждень з "+lastFull.x):""}</small></div><svg role="img" aria-label="${esc(c.t)}"></svg><div class="tip"></div></div>`);
     hline(box.lastElementChild,pts,c)});
   box.insertAdjacentHTML("beforeend",`<div class="hc"><h3>Telegram: учасники каналу</h3><div class="big">${fmt(tgp.length?tgp[tgp.length-1].n:D.kpi.tg)} <small>/ ${fmt(D.kpi.tg_goal)}</small></div><svg role="img" aria-label="Telegram по днях"></svg><div class="tip"></div></div>`);
   const tb=box.lastElementChild; if(tgp.length>1) hline(tb,tgp.map(t=>({x:t.w.slice(8,10)+"."+t.w.slice(5,7),v:t.n})),{c:"#4CF2FF",f:fmt}); else tb.querySelector("svg").outerHTML=`<p style="font-size:12px;color:var(--mut);margin:6px 0 0">Історію пишемо щодня з 22.11 — лінія з'явиться з другого дня.</p>`;
-  $("#histtab").innerHTML="<tr><th>Тиждень</th><th>Перегляди</th><th>з них Shorts</th><th>Підписки нетто</th><th>Год довгих</th><th>Покази сайту</th><th>Кліки</th></tr>"+Hs.map(h=>`<tr><td style="font-family:var(--mono)">${wl(h.w)}${h.partial?" *":""}</td><td class="num">${fmt(h.views)}</td><td class="num">${fmt(h.short_views)}</td><td class="num">${fmt(h.subs)}</td><td class="num">${fmt(h.long_h)}</td><td class="num">${fmt(h.impr)}</td><td class="num">${fmt(h.clicks)}</td></tr>`).join("")+`<tr><td colspan="7" style="color:var(--mut)">* тиждень неповний</td></tr>`;
+  if(tgp.length>1&&tgp.every(t=>t.n===tgp[0].n)) tb.insertAdjacentHTML("beforeend",`<p style="font-size:12px;color:var(--warn);margin:4px 0 0">Без змін з ${esc(ddmm(tgp[0].w))} (${fmt(tgp[0].n)} учасників).</p>`);
+  $("#histtab").innerHTML="<tr><th>Тиждень</th><th>Перегляди</th><th>з них Shorts</th><th>Підписки нетто</th><th>Год довгих</th><th>Покази сайту</th><th>Кліки</th></tr>"+Hs.map(h=>`<tr><td style="font-family:var(--mono)">${wl(h.w)}${h.partial?" *":""}</td><td class="num">${fmt(h.views)}</td><td class="num">${fmt(h.short_views)}</td><td class="num">${fmt(h.subs)}</td><td class="num">${fmt(h.long_h)}</td><td class="num">${fmt(h.impr)}</td><td class="num">${fmt(h.clicks)}</td></tr>`).join("")+`<tr><td colspan="7" style="color:var(--mut)">* тиждень неповний (YouTube Analytics до ${esc(ddmm((D.fresh||{}).yt_analytics))}, Search Console до ${esc(ddmm((D.fresh||{}).site))})</td></tr>`;
 }
 function platforms(D){
-  const P=D.platforms||{},box=$("#plat"),dm=x=>x.slice(8,10)+"."+x.slice(5,7),cut=(t,n)=>{t=String(t||"");return t.length>n?t.slice(0,n-1)+"…":t};
+  const P=D.platforms||{},F=D.fresh||{},box=$("#plat"),dm=ddmm,cut=(t,n)=>{t=String(t||"");return t.length>n?t.slice(0,n-1)+"…":t};
   const sec=a=>`<div class="sec">${a.map(([v,l])=>`<div><b>${v}</b><span>${l}</span></div>`).join("")}</div>`;
-  const best=(lab,rows)=>`<div class="best"><div class="lab">${lab}</div>${rows.length?rows.map(([t,v])=>`<div class="r"><span>${esc(t)}</span><span>${v}</span></div>`).join(""):'<div style="color:var(--mut)">даних ще немає</div>'}</div>`;
-  const Y=P.youtube||{},T=P.tiktok,S=P.site||{},G=P.telegram||{};
+  const best=(lab,rows)=>`<div class="best"><div class="lab">${lab}</div>${rows.length?rows.map(([t,v])=>`<div class="r"><span>${esc(t)}</span><span>${v}</span></div>`).join(""):'<div style="color:var(--mut)">за 7 днів нічого немає</div>'}</div>`;
+  const badge=(t,old,lv)=>`<span class="fr${old?" old":lv?" live":""}">${esc(t)}</span>`;
+  const Y=P.youtube||{},T=P.tiktok,S=P.site||{},G=P.telegram||{},W=Y.window||[];
   const C=[
-    {n:"YouTube",col:"#FF4F8B",sub:"тиждень з пн",big:fmt(Y.subs),bl:"підписників / 1000",
-     sec:[[fmt(Y.views_7d),"переглядів ~7 днів"],[fmt(Y.long_hours),"год довгих (12 міс)"],[Math.round((Y.subs||0)/10)+"%","до 1000 підп."]],
-     h:(Y.history||[]).map(h=>({x:dm(h.x),v:h.v,p:h.p})),hl:"перегляди за тиждень",
-     best:best("Найкраще — перші 7 днів",(Y.best||[]).map(b=>[cut(b.title,60),fmt(b.views)]))},
-    {n:"TikTok",col:"#4CF2FF",sub:T?"знімок "+dm(T.last_snapshot):"",big:T?fmt(T.views_total):"—",bl:T?"переглядів у "+T.videos+" роликах":"знімків ще немає",
+    {n:"YouTube",col:"#FF4F8B",fr:badge(Y.live_at?"наживо, "+when(Y.live_at):"наживо: немає",isOld(F,"yt_live"),1),big:fmt(Y.subs),bl:"підписників / 1000 · "+fmt(Y.views_total)+" переглядів усього",
+     sec:[[fmt(Y.views_7d),"переглядів "+dm(W[0])+"–"+dm(W[1])],[fmt(Y.long_hours),"год довгих (12 міс)"],[Y.subs!=null?Math.round(Y.subs/10)+"%":"—","до 1000 підп."]],
+     fr2:badge("дані YouTube Analytics станом на "+dm(F.yt_analytics),isOld(F,"yt_analytics")),
+     h:(Y.history||[]).map(h=>({x:dm(h.x),v:h.v,p:h.p})),hl:"перегляди за тиждень (Analytics)",
+     best:best("Найбільше переглядів зараз — останні ролики (наживо)",(Y.best_live||[]).map(b=>[cut(b.title,60),fmt(b.views)]))},
+    {n:"TikTok",col:"#4CF2FF",fr:T?badge("знімок "+when(T.last_snapshot),isOld(F,"tiktok")):badge("немає знімків",1),big:T?fmt(T.views_total):"—",bl:T?"переглядів у всіх "+T.videos+" відомих роликах":"знімків ще немає",
      sec:T?[[fmt(T.views_7d),"переглядів роликів за 7 днів ("+T.new_7d+")"],[fmt(T.saves_total),"збережень"],[fmt(T.likes_total),"лайків"]]:[],
-     h:T?(T.history||[]).map(h=>({x:dm(h.x),v:h.v})):[],hl:"сума переглядів по знімках",
+     h:T?(T.history||[]).map(h=>({x:dm(h.x)+(h.x.length>10?" "+h.x.slice(11,13)+"Z":""),v:h.v})):[],hl:"сума переглядів по знімках (кожне відео — останнє відоме значення)",
      best:best("Найкраще — перегляди · збереження",T?(T.best||[]).map(b=>[cut(b.title,60),fmt(b.views)+" · "+fmt(b.saves)]):[])},
-    {n:"Сайт",col:"#9B87FF",sub:S.last_day?"Search Console до "+dm(S.last_day):"",big:fmt(S.impr_28d),bl:"показів у Google за 28 днів",
+    {n:"Сайт",col:"#9B87FF",fr:badge("Search Console станом на "+dm(S.last_day),isOld(F,"site")),big:fmt(S.impr_28d),bl:"показів у Google за 28 днів ("+dm(S.first_day)+"–"+dm(S.last_day)+")",
      sec:[[fmt(S.clicks_28d),"кліків"],[S.ctr!=null?String(S.ctr).replace(".",",")+"%":"—","CTR"],[S.avg_pos!=null?String(S.avg_pos).replace(".",","):"—","сер. позиція"]],
      h:(S.history||[]).map(h=>({x:dm(h.x),v:h.v,p:h.p})),hl:"покази за тиждень",
      best:best("Топ запитів — кліки · покази (4 тижні)",(S.top_queries||[]).map(q=>[cut(q.q,60),fmt(q.clicks)+" · "+fmt(q.impr)]))},
-    {n:"Telegram",col:"#FFD60A",sub:"@shikarno_ai_ua",big:fmt(G.members),bl:"учасників / "+fmt(G.tg_goal),
-     sec:[[Math.round((G.members||0)/(G.tg_goal||150)*100)+"%","до цілі 150"],[fmt(Math.max(0,(G.tg_goal||150)-(G.members||0))),"ще треба"],[G.posts_7d==null?"—":fmt(G.posts_7d),"постів за 7 днів"+(G.posts_7d==null?" (не збираємо)":"")]],
+    {n:"Telegram",col:"#FFD60A",fr:badge("наживо, "+when(F.tg_members),isOld(F,"tg_members"),1),big:fmt(G.members),bl:"учасників / "+fmt(G.tg_goal)+" (ще треба "+fmt(Math.max(0,(G.tg_goal||150)-(G.members||0)))+")",
+     sec:[[G.posts_7d==null?"—":fmt(G.posts_7d),"постів за 7 днів"],[G.views_7d==null?"—":fmt(G.views_7d),"переглядів постів"],[G.views_avg==null?"—":String(G.views_avg).replace(".",","),"сер. переглядів на пост"]],
+     fr2:badge(G.posts_error?G.posts_error:"пости з t.me/s, "+when(F.tg_posts),!!G.posts_error||isOld(F,"tg_posts")),
      h:(G.history||[]).map(h=>({x:dm(h.x),v:h.v})),hl:"учасники по днях",
-     best:'<div class="best"><div class="lab">Що працює</div><div style="color:var(--mut)">Аналітики постів ще немає — рахуємо лише учасників.</div></div>'},
+     best:G.posts_7d==null?'<div class="best"><div class="lab">Пости</div><div style="color:var(--mut)">немає даних: публічна сторінка t.me не відповіла</div></div>':best("Найкращі пости за 7 днів — перегляди",(G.best||[]).map(b=>[dm(b.date.slice(0,10))+" · "+cut(b.text,70),fmt(b.views)]))},
   ];
   box.innerHTML="";
   C.forEach(c=>{
-    box.insertAdjacentHTML("beforeend",`<div class="pc" style="--pcol:${c.col}"><h3>${c.n} <small>${esc(c.sub)}</small></h3><div class="big">${c.big} <small>${esc(c.bl)}</small></div>${c.sec.length?sec(c.sec):""}<div><div style="font-size:11px;color:var(--mut);margin-bottom:2px">${esc(c.hl)}</div><svg role="img" aria-label="${esc(c.n+": "+c.hl)}"></svg></div><div class="tip"></div>${c.best}</div>`);
+    box.insertAdjacentHTML("beforeend",`<div class="pc" style="--pcol:${c.col}"><h3>${c.n} ${c.fr}</h3><div class="big">${c.big} <small>${esc(c.bl)}</small></div>${c.sec.length?sec(c.sec):""}${c.fr2?`<div>${c.fr2}</div>`:""}<div><div style="font-size:11px;color:var(--mut);margin-bottom:2px">${esc(c.hl)}</div><svg role="img" aria-label="${esc(c.n+": "+c.hl)}"></svg></div><div class="tip"></div>${c.best}</div>`);
     const card=box.lastElementChild;
     if(c.h.length>1) hline(card,c.h,{c:c.col,f:fmt});
     else card.querySelector("svg").outerHTML=`<p class="wait">Історія збирається з 22.11${c.h.length?" — поки 1 точка ("+fmt(c.h[0].v)+")":""}; лінія з'явиться з другого знімка.</p>`;
@@ -317,23 +360,24 @@ async function live(D){
     if(L.generated&&(!D.generated||L.generated>=D.generated)){Object.assign(D,L);render(D)}
     if(st)st.textContent="наживо ●";
   },e=>{clearTimeout(timer);if(st)st.textContent="живі дані недоступні ("+esc(e&&e.code)+")"});
-  setInterval(()=>{const g=new Date(D.generated),m=Math.round((Date.now()-g)/60000);const u=$("#ago");if(u)u.textContent="("+(m<1?"щойно":m+" хв тому")+")"},30000);
+  setInterval(()=>{const u=$("#ago");if(u)u.textContent=agoTxt(D)+((Date.now()-new Date(D.generated))/60000>60?" — старше години, чекаємо оновлення":"")},30000);
 }
 function office(D){
   const cv=$("#office"),cx=cv.getContext("2d"),W=cv.width,H=cv.height;
   const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
   const rows=2,cols=Math.ceil(D.depts.length/rows),pad=10,rw=(W-pad*(cols+1))/cols,rh=(H-pad*(rows+1))/rows;
   const rooms={};D.depts.forEach((d,i)=>{const c=i%cols,r=Math.floor(i/cols);rooms[d.id]={...d,x:pad+c*(rw+pad),y:pad+r*(rh+pad),w:rw,h:rh}});
-  const now=kyivNow(),hm=now.getHours()*60+now.getMinutes();
-  const busy=id=>D.schedule.some(s=>{const m=/^(\d\d):(\d\d)/.exec(s.time);return s.agent===id&&m&&hm-(+m[1]*60+ +m[2])>=0&&hm-(+m[1]*60+ +m[2])<=40})||(D.activity||[]).some(x=>x.agent===id&&!x.finished)||["de","ea"].includes(id);
+  /* стан агента — лише з журналу: відкрита задача <6 год = працює, ≥6 год без done = «завис?» (а не вигаданий «працює» за розкладом) */
+  const task=(Dx,id)=>(Dx.activity||[]).filter(x=>x.agent===id&&!x.finished).sort((a,b)=>b.started.localeCompare(a.started))[0]||null;
+  const busy=(Dx,id)=>{const t=task(Dx,id);return t?(ageH(t.started)>=6?"hung":"work"):false};
   const per={};D.agents.forEach(a=>{(per[a.dept]=per[a.dept]||[]).push(a)});
   const ag=D.agents.map(a=>{const R=rooms[a.dept],k=per[a.dept].indexOf(a),n=per[a.dept].length;
     const desk={x:R.x+R.w*(k+1)/(n+1),y:R.y+R.h*.42};
-    return {...a,R,desk,x:desk.x,y:desk.y+26,tx:desk.x,ty:desk.y+26,ph:Math.random()*6,wait:Math.random()*120,busy:busy(a.id),dir:1}});
+    return {...a,R,desk,x:desk.x,y:desk.y+26,tx:desk.x,ty:desk.y+26,ph:Math.random()*6,wait:Math.random()*120,busy:busy(D,a.id),task:task(D,a.id),dir:1}});
   let sel=ag[0];
   function pick(a){
     const r=Math.random();
-    if(a.busy&&r<.7){a.tx=a.desk.x;a.ty=a.desk.y+26;a.wait=200+Math.random()*200;return}
+    if(a.busy==="work"&&r<.7){a.tx=a.desk.x;a.ty=a.desk.y+26;a.wait=200+Math.random()*200;return}
     if(r<.12&&a.dept!=="exec"){const B=rooms.exec||Object.values(rooms)[0];a.tx=B.x+30+Math.random()*(B.w-60);a.ty=B.y+B.h*.62+Math.random()*20;a.wait=120+Math.random()*120;return}
     a.tx=a.R.x+24+Math.random()*(a.R.w-48);a.ty=a.R.y+a.R.h*.55+Math.random()*(a.R.h*.32);a.wait=60+Math.random()*160;
   }
@@ -346,8 +390,8 @@ function office(D){
     // столи з моніторами
     (per[R.id]||[]).forEach((a,k,arr)=>{const x=R.x+R.w*(k+1)/(arr.length+1),y=R.y+R.h*.42;
       cx.fillStyle="#3a3170";cx.fillRect(x-20,y,40,10);cx.fillStyle="#241d52";cx.fillRect(x-17,y+10,4,10);cx.fillRect(x+13,y+10,4,10);
-      cx.fillStyle="#0b0a1c";cx.fillRect(x-11,y-16,22,15);const on=ag.find(g=>g.id===a.id);cx.fillStyle=on&&on.busy?R.color:"#3b3570";cx.fillRect(x-9,y-14,18,11);
-      if(on&&on.busy&&!reduce){cx.fillStyle="#0b0a1c";const t=Date.now()/300;for(let l=0;l<3;l++)cx.fillRect(x-7,y-12+l*3,4+((t+l*3)%10),1)}
+      cx.fillStyle="#0b0a1c";cx.fillRect(x-11,y-16,22,15);const on=ag.find(g=>g.id===a.id);cx.fillStyle=on&&on.busy==="work"?R.color:on&&on.busy==="hung"?"#FFA94D":"#3b3570";cx.fillRect(x-9,y-14,18,11);
+      if(on&&on.busy==="work"&&!reduce){cx.fillStyle="#0b0a1c";const t=Date.now()/300;for(let l=0;l<3;l++)cx.fillRect(x-7,y-12+l*3,4+((t+l*3)%10),1)}
     });
     if(R.id==="exec"){cx.fillStyle="#2e2668";cx.beginPath();cx.ellipse(R.x+R.w/2,R.y+R.h*.74,R.w*.32,14,0,0,7);cx.fill()} // стіл редколегії
     if(R.id==="research"){for(let i=0;i<3;i++){cx.fillStyle="#2a2366";cx.fillRect(R.x+R.w-30,R.y+32+i*22,18,18);cx.fillStyle=Math.random()<.5?"#7DF29B":"#4CF2FF";cx.fillRect(R.x+R.w-26,R.y+36+i*22,3,3)}} // сервери
@@ -363,7 +407,8 @@ function office(D){
     if(a===sel){cx.strokeStyle="#FFD60A";cx.lineWidth=2;cx.strokeRect(x-10,y-22,20,38)}
     cx.font="600 10px Golos Text, sans-serif";const br=/\(([^)]+)\)/.exec(a.name),nm=br&&br[1].length<=5?br[1]:a.name.split(" (")[0].split(" ").slice(0,a.name.startsWith("Лінійний")||a.name.startsWith("Головний")?2:1).join(" ");const w=cx.measureText(nm).width;
     cx.fillStyle="#0B0A1Ccc";cx.fillRect(x-w/2-3,y+16,w+6,13);cx.fillStyle="#F3F1FF";cx.fillText(nm,x-w/2,y+26);
-    if(a.busy){const bx=x+8,by=y-34;cx.fillStyle="#F3F1FF";cx.fillRect(bx,by,22,12);cx.fillStyle="#0B0A1C";const d=Math.floor(t/350)%4;for(let i=0;i<3;i++)if(i<d||reduce)cx.fillRect(bx+4+i*6,by+5,3,3)}
+    if(a.busy==="work"){const bx=x+8,by=y-34;cx.fillStyle="#F3F1FF";cx.fillRect(bx,by,22,12);cx.fillStyle="#0B0A1C";const d=Math.floor(t/350)%4;for(let i=0;i<3;i++)if(i<d||reduce)cx.fillRect(bx+4+i*6,by+5,3,3)}
+    else if(a.busy==="hung"){const bx=x+8,by=y-34;cx.fillStyle="#FFA94D";cx.fillRect(bx,by,14,12);cx.fillStyle="#0B0A1C";cx.font="800 10px Montserrat, sans-serif";cx.fillText("?",bx+4,by+10)}
   }
   function frame(t){
     cx.fillStyle="#0e0b26";cx.fillRect(0,0,W,H);
@@ -373,11 +418,13 @@ function office(D){
     [...ag].sort((a,b)=>a.y-b.y).forEach(a=>drawAgent(a,t));
     if(!reduce)requestAnimationFrame(frame);
   }
-  function show(a){sel=a;const R=a.R;$("#side").innerHTML=`<div class="dept" style="color:${R.color}">${esc(R.name)}</div><h3>${esc(a.name)}</h3><p>${esc(a.role)}</p><dl><dt>Розклад</dt><dd>${esc(a.schedule)}</dd><dt>Ціль</dt><dd>${esc(a.kpi)}</dd><dt>Зараз</dt><dd>${a.busy?'<span class="state ok">працює</span>':'<span class="state" style="color:var(--mut)">чекає свого часу</span>'}</dd></dl>`;if(reduce)frame(performance.now())}
+  function show(a){sel=a;const R=a.R;$("#side").innerHTML=`<div class="dept" style="color:${R.color}">${esc(R.name)}</div><h3>${esc(a.name)}</h3><p>${esc(a.role)}</p><dl><dt>Розклад</dt><dd>${esc(a.schedule)}</dd><dt>Ціль</dt><dd>${esc(a.kpi)}</dd><dt>Зараз</dt><dd>${a.busy==="work"?'<span class="state ok">працює</span>':a.busy==="hung"?'<span class="state warn">завис?</span>':'<span class="state" style="color:var(--mut)">вільний — немає відкритої задачі</span>'}${a.task?`<div style="font-size:12px;margin-top:4px">${esc(a.task.task)} <span style="color:var(--mut)">· з ${when(a.task.started)}</span></div>`:""}</dd></dl>`;if(reduce)frame(performance.now())}
   cv.addEventListener("click",e=>{const r=cv.getBoundingClientRect(),mx=(e.clientX-r.left)*W/r.width,my=(e.clientY-r.top)*H/r.height;
     let best=null,bd=40;ag.forEach(a=>{const d=Math.hypot(a.x-mx,a.y-my);if(d<bd){bd=d;best=a}});if(best)show(best)});
   $("#roster").innerHTML=ag.map((a,i)=>`<button class="chip" data-i="${i}" style="border-left:3px solid ${a.R.color}">${esc(a.name)}</button>`).join("");
   $("#roster").addEventListener("click",e=>{const b=e.target.closest(".chip");if(b)show(ag[+b.dataset.i])});
-  show(sel);ag.forEach(pick);requestAnimationFrame(frame);
+  const first=ag.find(a=>a.busy)||ag[0]; show(first);ag.forEach(pick);requestAnimationFrame(frame);
+  /* живе оновлення: hq/live приходить — стани агентів перераховуються без перезавантаження */
+  window.__office=Dx=>{ag.forEach(a=>{a.busy=busy(Dx,a.id);a.task=task(Dx,a.id)});show(sel)};
 }
 </script>
