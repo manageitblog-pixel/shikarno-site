@@ -1,11 +1,11 @@
 {
- "generated": "2026-11-23T03:49:58Z",
+ "generated": "2026-11-23T04:49:43Z",
  "kpi": {
   "subs": 314,
   "subs_goal": 1000,
   "long_hours": 10.5,
   "long_hours_goal": 4000,
-  "views_total": 11913,
+  "views_total": 11961,
   "views_7d": 750,
   "pct_7d": 44.2,
   "subs_7d": 2,
