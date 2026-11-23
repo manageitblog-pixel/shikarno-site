@@ -144,3 +144,4 @@
 {"ev": "part", "part": 9, "take": 1, "f0": 115.1, "f0_ok": false, "dur": 85.7, "audit": [{"seg": 26, "ratio": 0.94, "match": 0.73}, {"seg": 27, "ratio": 0.98, "match": 0.76}, {"seg": 28, "ratio": 0.93, "match": 0.77}], "repeat_suspect": false, "t": "19:21:46Z"}
 {"ev": "part_final", "part": 9, "take": 1, "f0": 115.1, "clean": false, "note": "take2 quota", "t": "19:23:16Z"}
 {"ev": "STOP", "reason": "TTS quota exhausted: 4 consecutive HTTP 429 from Gemini (gemini-3.8-flash-tts); try later or another key/model", "ok_requests": 1, "t": "19:23:16Z"}
+{"ev": "STOP", "reason": "TTS quota exhausted: 4 consecutive HTTP 429 from Gemini (gemini-3.8-flash-tts); try later or another key/model", "ok_requests": 0, "t": "20:20:02Z"}
