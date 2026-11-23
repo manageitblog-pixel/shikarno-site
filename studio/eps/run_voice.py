@@ -5,6 +5,7 @@ import numpy as np, soundfile as sf
 sys.path.insert(0, "/home/claude/eps"); sys.path.insert(0, "/home/claude/gem")
 import gen_full as G
 import gtts
+import voice_check as VC  # REF — еталон F0 у шкалі чекера (v2: 141.5)
 LOG = os.environ.get("VOICE_LOG", "/home/claude/eps/voice_log.jsonl")
 MODEL, VOICE = "gemini-3.8-flash-tts", "Sadachbia"
 REQ = {"ok": 0}
@@ -49,7 +50,7 @@ def guide_part(dg, D, pi, idxs):
         json.dump(dict(f0=F, ok=ok, audit=[dict(seg=i, **a) for i, a in zip(idxs, au)]),
                   open(f"{tk}/part{pi}_take{take}_audit.json", "w"), ensure_ascii=False, indent=1)
         sc = (0 if ok else 1) + (1 if rep else 0)
-        if best is None or sc < best[0] or (sc == best[0] and abs(F - 143) < abs(best[2] - 143)): best = (sc, take, F)
+        if best is None or sc < best[0] or (sc == best[0] and abs(F - VC.REF) < abs(best[2] - VC.REF)): best = (sc, take, F)
         if ok and not rep: break
     shutil.copy(f"{tk}/part{pi}_take{best[1]}_f0_{best[2]:.1f}.wav", raw)
     log(ev="part_final", part=pi, take=best[1], f0=best[2], clean=best[0] == 0)
@@ -73,7 +74,7 @@ def short(mod):
         F, ok = f0(D)
         for f in ("vo_raw.wav", "vo_tl.json"): shutil.copy(f"{D}/{f}", f"{D}/takes/take{take}_{f}")
         log(ev="short", ep=mod, take=take, f0=F, f0_ok=ok, scenes=[l for l in r.stdout.splitlines() if re.match(r"^\d+ ", l)])
-        if best is None or abs(F - 143) < abs(best[1] - 143): best = (take, F)
+        if best is None or abs(F - VC.REF) < abs(best[1] - VC.REF): best = (take, F)
         if ok: break
     for f in ("vo_raw.wav", "vo_tl.json"): shutil.copy(f"{D}/takes/take{best[0]}_{f}", f"{D}/{f}")
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", f"{D}/vo_raw.wav", "-af",

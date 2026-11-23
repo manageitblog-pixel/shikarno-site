@@ -10,9 +10,12 @@ STYLE=("# AUDIO PROFILE: Bait, a witty Ukrainian tech YouTuber (male, 25–30).\
        "Read ONLY the transcript below, nothing else.\n"
        "#### TRANSCRIPT\n")
 STYLE_HYPE=STYLE.replace("Pace: fast and punchy, no long pauses between sentences.","Pace: VERY fast and high-energy, like a hype movie-trailer narrator who is genuinely excited; punchy short phrases, no pauses at all between sentences, strong emphasis and rising energy towards the end of each sentence. Still crisp, clear Ukrainian.")
-STYLE_CALM=STYLE.replace("Pace: fast and punchy, no long pauses between sentences.","Pace: medium, like a confident news anchor — lively but NOT rushed; clear articulation of every word; short natural pauses between sentences and before key numbers.")
+STYLE_CALM_V1=STYLE.replace("Pace: fast and punchy, no long pauses between sentences.","Pace: medium, like a confident news anchor — lively but NOT rushed; clear articulation of every word; short natural pauses between sentences and before key numbers.")
+# calm v2 (23.11, docs/research/voice-f0-2026-11-23.md): v1 «news anchor» дає ~127 Гц на весь файл (еталон 141.5) —
+# той самий темп, але явно тримаємо висоту/енергію Shorts до кінця. Відкат: TTS_PACE=calm_v1.
+STYLE_CALM=STYLE.replace("Pace: fast and punchy, no long pauses between sentences.","Pace: medium — a little slower than in the Shorts, NOT rushed; clear articulation of every word; short natural pauses between sentences. Voice: exactly the same bright, youthful, mid-high pitch and smile as in the fast Shorts — do NOT drop into a deep, low news-anchor or narrator register, and keep the pitch and energy up to the very last sentence of every paragraph.")
 def tts(text, voice, out, model="gemini-3.8-flash-tts", style=None):
-    style = style or {"calm": STYLE_CALM, "hype": STYLE_HYPE}.get(os.environ.get("TTS_PACE",""), STYLE)
+    style = style or {"calm": STYLE_CALM, "calm_v1": STYLE_CALM_V1, "hype": STYLE_HYPE}.get(os.environ.get("TTS_PACE",""), STYLE)
     body={"contents":[{"parts":[{"text":style+text}]}],
           "generationConfig":{"responseModalities":["AUDIO"],
               "speechConfig":{"voiceConfig":{"prebuiltVoiceConfig":{"voiceName":voice}}}}}
