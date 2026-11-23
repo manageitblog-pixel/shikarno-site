@@ -1039,6 +1039,38 @@
    "started": "2026-11-23T20:05:54Z",
    "finished": "2026-11-23T20:08:55Z",
    "result": "HQ «Сайт»: живий блок Cloudflare (сьогодні 4 / вчора 16 переглядів, 41 за 7 днів, 14-денні стовпчики, топ сторінок і джерел) над Search Console; site_rum_daily; growth_snapshot +site_pageloads"
+  },
+  {
+   "id": "131",
+   "agent": "seo",
+   "task": "SEO: переписати сторінки з GSC (покази ≥50, позиція 4–20), ще не переписані",
+   "started": "2026-11-23T20:18:31Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "132",
+   "agent": "community",
+   "task": "Коментарі YouTube без відповіді + група TG",
+   "started": "2026-11-23T20:18:31Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "133",
+   "agent": "analyst",
+   "task": "Аудит прогнозів роликів, яким виповнилось 7 днів",
+   "started": "2026-11-23T20:18:31Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "134",
+   "agent": "niche",
+   "task": "фон: аномалії українських ШІ-каналів + TikTok-тренди → ідеї",
+   "started": "2026-11-23T20:18:31Z",
+   "finished": null,
+   "result": ""
   }
  ]
 }

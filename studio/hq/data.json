@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-23T20:08:40Z",
+ "generated": "2026-11-23T20:19:20Z",
  "fresh": {
-  "yt_live": "2026-11-23T20:08:40Z",
+  "yt_live": "2026-11-23T20:19:20Z",
   "yt_analytics": "2026-11-20",
-  "tg_members": "2026-11-23T20:08:41Z",
-  "tg_posts": "2026-11-23T19:55:47Z",
+  "tg_members": "2026-11-23T20:19:22Z",
+  "tg_posts": "2026-11-23T20:19:24Z",
   "ideas": "2026-11-23T17:22:59Z",
   "news": "2026-11-23 16:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-23T16",
   "site": "2026-11-21",
-  "site_live": "2026-11-23T20:07:27Z",
-  "activity": "2026-11-23T20:05:54Z",
+  "site_live": "2026-11-23T20:19:30Z",
+  "activity": "2026-11-23T20:18:31Z",
   "asks": "2026-11-23T19:55:00Z"
  },
  "notes": [],
@@ -535,7 +535,7 @@
    "subs": 315,
    "views_total": 11961,
    "videos": 96,
-   "live_at": "2026-11-23T20:08:40Z",
+   "live_at": "2026-11-23T20:19:20Z",
    "views_7d": 815,
    "pct_7d": 51.0,
    "subs_7d": 2,
@@ -601,7 +601,7 @@
     },
     {
      "title": "ШІ для вчителя: план уроку і тест за 5 хвилин у Google Classroom 🍎",
-     "views": 74,
+     "views": 60,
      "id": "ENKGdbr04h0"
     }
    ]
@@ -736,7 +736,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-23T20:07:27Z",
+    "updated": "2026-11-23T20:19:30Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 4,
@@ -1152,7 +1152,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 1
+   "total": 6
   },
   {
    "id": "ENKGdbr04h0",
@@ -1163,7 +1163,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 74
+   "total": 60
   },
   {
    "id": "LtNuOtQe0pc",
@@ -1174,7 +1174,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 52
+   "total": 56
   },
   {
    "id": "aTUsauz53rs",
@@ -1185,7 +1185,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 8
+   "total": 9
   },
   {
    "id": "gljrHADi4aU",
@@ -1207,7 +1207,7 @@
    "views7": 2,
    "pct": 64.2,
    "complete": false,
-   "total": 3
+   "total": 4
   },
   {
    "id": "0Kb6AamTRQo",
@@ -1570,7 +1570,7 @@
   "videos": 94,
   "daily": 773,
   "news": 1913,
-  "niche": 806,
+  "niche": 828,
   "comp": 511,
   "comp_videos": 62794,
   "research": 70,
@@ -1772,39 +1772,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "91",
-   "agent": "factcheck",
-   "task": "Незалежний фактчек ep87 «Чорна пʼятниця»",
-   "started": "2026-11-22T23:20:28Z",
-   "finished": "2026-11-22T23:23:19Z",
-   "result": "Фактчек ep87: PASS. 26/26 OK: дата 27.11 (День подяки 26.11), ціни ChatGPT — за довідкою OpenAI з атрибуцією, Lume — Chrome Web Store + dev.ua, графік Hotline є. Обовʼязкових правок нема; бажано gsay «на Хотлайні»."
-  },
-  {
-   "id": "92",
-   "agent": "cm",
-   "task": "Чернетки TG-постів на 24–26.11 (стаття про ШІ-голоси шахраїв, нарізки clip1–3, guide1) — реальна цінність, промпти/чеклисти",
-   "started": "2026-11-22T23:21:55Z",
-   "finished": "2026-11-22T23:23:44Z",
-   "result": "Чернетки TG-постів на 24–26.11 у docs/research/tg-posts-2026-11-24-26.md: 24.11 10:00 — чек-лист «дзвінок з IT-підтримки: 4 перевірки» + стаття (цифри поліції з атрибуцією); 25.11 19:30 — гайд ChatGPT з нуля + 3 промпти…"
-  },
-  {
-   "id": "93",
-   "agent": "post",
-   "task": "Фікс Generic.tsx: список ≥4 пунктів не заходить під кутового Байта (за специфікацією design-guide 22.11 ніч), ≤3 — без змін",
-   "started": "2026-11-22T23:22:15Z",
-   "finished": "2026-11-22T23:25:14Z",
-   "result": "Баг List ≥ 4 пунктів у Generic.tsx виправлено (коміт 1121277): ширина 760, зсув −70 px, gap 24, менші padding/іконка, 50 px для довгих пунктів. Списки ≤ 3 пунктів попіксельно ідентичні (ep24, кадри 0 і 370); 4-й пункт e…",
-   "agent_raw": "production"
-  },
-  {
-   "id": "94",
-   "agent": "shorts",
-   "task": "Озвучка наперед (квота знову доступна 00:18Z): guide1 ч.5+ → ep83–86, до реального 429",
-   "started": "2026-11-23T00:18:43Z",
-   "finished": "2026-11-23T00:24:52Z",
-   "result": "guide1 ч.5 готова (F0 140), 2 запити, далі 429 о 00:24Z"
-  },
   {
    "id": "95",
    "agent": "cm",
@@ -2092,8 +2059,43 @@
    "agent": "coo",
    "task": "Дашборд: живий блок сайту з Cloudflare Web Analytics (перегляди сторінок сьогодні/вчора/7 днів, топ сторінок)",
    "started": "2026-11-23T20:05:54Z",
+   "finished": "2026-11-23T20:08:55Z",
+   "result": "HQ «Сайт»: живий блок Cloudflare (сьогодні 4 / вчора 16 переглядів, 41 за 7 днів, 14-денні стовпчики, топ сторінок і джерел) над Search Console; site_rum_daily; growth_snapshot +site_pageloads"
+  },
+  {
+   "id": "131",
+   "agent": "seo",
+   "task": "SEO: переписати сторінки з GSC (покази ≥50, позиція 4–20), ще не переписані",
+   "started": "2026-11-23T20:18:31Z",
    "finished": null,
    "result": ""
+  },
+  {
+   "id": "132",
+   "agent": "cm",
+   "task": "Коментарі YouTube без відповіді + група TG",
+   "started": "2026-11-23T20:18:31Z",
+   "finished": null,
+   "result": "",
+   "agent_raw": "community"
+  },
+  {
+   "id": "133",
+   "agent": "da",
+   "task": "Аудит прогнозів роликів, яким виповнилось 7 днів",
+   "started": "2026-11-23T20:18:31Z",
+   "finished": null,
+   "result": "",
+   "agent_raw": "analyst"
+  },
+  {
+   "id": "134",
+   "agent": "trend",
+   "task": "фон: аномалії українських ШІ-каналів + TikTok-тренди → ідеї",
+   "started": "2026-11-23T20:18:31Z",
+   "finished": null,
+   "result": "",
+   "agent_raw": "niche"
   }
  ],
  "agents": [
