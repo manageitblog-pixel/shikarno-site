@@ -1079,6 +1079,14 @@
    "started": "2026-11-23T20:35:01Z",
    "finished": null,
    "result": ""
+  },
+  {
+   "id": "136",
+   "agent": "distribution",
+   "task": "Meta напряму: інструкція для власника (Instagram + Threads API) і сторінки, які вимагає Meta",
+   "started": "2026-11-23T20:40:16Z",
+   "finished": null,
+   "result": ""
   }
  ]
 }
