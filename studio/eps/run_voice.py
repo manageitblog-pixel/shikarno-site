@@ -55,6 +55,7 @@ def guide_part(dg, D, pi, idxs):
     log(ev="part_final", part=pi, take=best[1], f0=best[2], clean=best[0] == 0)
 def short(mod):
     ep = importlib.import_module(mod); D = f"/home/claude/eps/{ep.SLUG}"; os.makedirs(f"{D}/takes", exist_ok=True)
+    if os.path.exists(f"{D}/vo.wav"): return  # уже озвучено — не витрачати квоту
     env = dict(os.environ, TTS_PACE="hype"); best = None
     for take in (1, 2):
         for f in os.listdir(D):
@@ -84,11 +85,15 @@ def short(mod):
         segs=[(s["i"], s["len_ratio"], s["match"]) for s in js["segments"]], dur=js["duration_s"])
 if __name__ == "__main__":
     try:
-        dg = importlib.import_module("guide1"); D = f"/home/claude/eps/{dg.SLUG}"
-        for pi, idxs in enumerate(dg.PARTS):
-            if os.path.exists(f"{D}/part{pi}.wav"): continue
-            os.environ["TTS_PACE"] = "calm"; guide_part(dg, D, pi, idxs)
+        def guide(name):
+            dg = importlib.import_module(name); D = f"/home/claude/eps/{dg.SLUG}"; os.makedirs(D, exist_ok=True)
+            for pi, idxs in enumerate(dg.PARTS):
+                if os.path.exists(f"{D}/part{pi}.wav"): continue
+                os.environ["TTS_PACE"] = "calm"; guide_part(dg, D, pi, idxs)
+        # Черга за датами виходу (оновлювати): guide1 25.11 → ep83 26.11 → ep84–86 → guide2 2.12 (незалежний PASS 23.11)
+        guide("guide1")
         for mod in ("ep83", "ep84", "ep85", "ep86"): short(mod)
+        guide("guide2")
         log(ev="all_done", ok_requests=REQ["ok"])
     except RuntimeError as e:
         log(ev="STOP", reason=str(e)[:300], ok_requests=REQ["ok"])
