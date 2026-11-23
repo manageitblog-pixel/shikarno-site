@@ -39,7 +39,14 @@ def guide_part(dg, D, pi, idxs):
     best = None
     for take in (1, 2):
         if os.path.exists(raw): os.remove(raw)
-        tts_call("\n\n".join(texts), raw)
+        try:
+            tts_call("\n\n".join(texts), raw)
+        except RuntimeError:
+            if best is None: raise
+            # 429 на другому дублі: не губити перший (23.11 — втрачено дубль guide2 ч.2) — фіксуємо найкращий і зупиняємось
+            shutil.copy(f"{tk}/part{pi}_take{best[1]}_f0_{best[2]:.1f}.wav", raw)
+            log(ev="part_final", part=pi, take=best[1], f0=best[2], clean=best[0] == 0, note="take2 quota")
+            raise
         F, ok = f0(raw); w, sr = sf.read(raw, dtype="float32")
         segs = [G.trim(x, sr) for x in G.split_scenes(w, sr, texts)]
         au = [audit_seg(x, sr, dg.SEGS[i]["gsay"]) for i, x in zip(idxs, segs)]
@@ -99,6 +106,7 @@ if __name__ == "__main__":
         # guide1: частини 0–9 озвучено старим calm (за v2-вимірювачем медіана 128,5 Гц) → решту частин тим самим промптом
         # і в межах власної смуги відео 128,5±8, щоб висота не стрибала посеред ролика (рішення COO 23.11, ops policy).
         PER_GUIDE = {"guide1": {"TTS_PACE": "calm_v1", "VC_REF": "128.5", "VC_TOL": "8"},
+                     "guide2": {"VC_REF": "130", "VC_TOL": "8"},  # calm v2 дав 135,6/129,9/128,5/126,1 — тест v2 не пройшов (≥133,5 у 2 з 3); смуга власної медіани, щоб не палити квоту
                      "weekly3": {"UPTO": "11"}}  # остання частина (оновлення 28.11 + outro) — окремо 28.11
         def guide(name):
             for k in ("VC_REF", "VC_TOL"): os.environ.pop(k, None)
