@@ -1,9 +1,9 @@
 {
- "generated": "2026-11-23T21:28:26Z",
+ "generated": "2026-11-23T21:31:40Z",
  "fresh": {
-  "yt_live": "2026-11-23T21:28:26Z",
+  "yt_live": "2026-11-23T21:31:40Z",
   "yt_analytics": "2026-11-20",
-  "tg_members": "2026-11-23T21:28:27Z",
+  "tg_members": "2026-11-23T21:31:41Z",
   "tg_posts": "2026-11-23T21:18:36Z",
   "ideas": "2026-11-23T21:22:26Z",
   "news": "2026-11-23 21:16",
@@ -11,7 +11,7 @@
   "tiktok": "2026-11-23T21",
   "instagram": "2026-11-23T21",
   "site": "2026-11-21",
-  "site_live": "2026-11-23T21:18:38Z",
+  "site_live": "2026-11-23T21:31:43Z",
   "activity": "2026-11-23T21:25:31Z",
   "asks": "2026-11-23T19:55:00Z"
  },
@@ -21,7 +21,7 @@
   "subs_goal": 1000,
   "long_hours": 10.7,
   "long_hours_goal": 4000,
-  "views_total": 11961,
+  "views_total": 11982,
   "videos": 96,
   "views_7d": 815,
   "pct_7d": 51.0,
@@ -534,9 +534,9 @@
  "platforms": {
   "youtube": {
    "subs": 315,
-   "views_total": 11961,
+   "views_total": 11982,
    "videos": 96,
-   "live_at": "2026-11-23T21:28:26Z",
+   "live_at": "2026-11-23T21:31:40Z",
    "views_7d": 815,
    "pct_7d": 51.0,
    "subs_7d": 2,
@@ -596,14 +596,14 @@
      "id": "Vp1PPNxtcrI"
     },
     {
-     "title": "ШІ для вчителя: план уроку і тест за 5 хвилин у Google Classroom 🍎",
-     "views": 86,
-     "id": "ENKGdbr04h0"
-    },
-    {
      "title": "Що ШІ знає про тебе: як вимкнути навчання в ChatGPT, Gemini, Claude, Meta AI і Copilot (2026)",
      "views": 77,
      "id": "GNqU-wcz9Ws"
+    },
+    {
+     "title": "ШІ для вчителя: план уроку і тест за 5 хвилин у Google Classroom 🍎",
+     "views": 74,
+     "id": "ENKGdbr04h0"
     }
    ]
   },
@@ -674,6 +674,8 @@
    ]
   },
   "instagram": {
+   "ig_goal": 100,
+   "ig_goal_note": "до 1.12; далі 500 до 31.01 (поріг «Подарунків» — перевірити для України)",
    "followers": 4,
    "views_30d": 5,
    "reach_30d": 8,
@@ -786,15 +788,15 @@
     }
    ],
    "live": {
-    "updated": "2026-11-23T21:18:38Z",
+    "updated": "2026-11-23T21:31:43Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 10,
     "today_visits": 10,
     "yesterday_pageloads": 16,
     "yesterday_visits": 14,
-    "pageloads_7d": 60,
-    "visits_7d": 50,
+    "pageloads_7d": 47,
+    "visits_7d": 43,
     "last24h": {
      "pageloads": 10,
      "visits": 10,
@@ -966,9 +968,9 @@
      },
      {
       "d": "2026-11-17",
-      "pageloads": 20,
-      "visits": 20,
-      "sampled": true
+      "pageloads": 5,
+      "visits": 5,
+      "sampled": false
      },
      {
       "d": "2026-11-18",
@@ -1217,7 +1219,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 86
+   "total": 74
   },
   {
    "id": "LtNuOtQe0pc",
@@ -1228,7 +1230,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 56
+   "total": 58
   },
   {
    "id": "aTUsauz53rs",
@@ -1239,7 +1241,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 9
+   "total": 10
   },
   {
    "id": "gljrHADi4aU",
@@ -1261,7 +1263,7 @@
    "views7": 2,
    "pct": 64.2,
    "complete": false,
-   "total": 4
+   "total": 3
   },
   {
    "id": "0Kb6AamTRQo",

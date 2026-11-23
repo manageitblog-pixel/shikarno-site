@@ -372,7 +372,7 @@ def main():
             pass
         a = iacc[-1] if iacc else (None, None, None, None)
         ihs = q("select ts, sum(plays) from ig_snap group by ts order by ts")
-        ig = dict(followers=a[1], views_30d=a[2], reach_30d=a[3], reels=len(irows), plays_total=sum(r[2] or 0 for r in irows),
+        ig = dict(ig_goal=100, ig_goal_note="до 1.12; далі 500 до 31.01 (поріг «Подарунків» — перевірити для України)", followers=a[1], views_30d=a[2], reach_30d=a[3], reels=len(irows), plays_total=sum(r[2] or 0 for r in irows),
                   likes_total=sum(r[3] or 0 for r in irows), saves_total=sum(r[4] or 0 for r in irows), last_snapshot=il,
                   best=[dict(shortcode=r[0], title=caps.get(r[0]) or r[0], plays=r[2], pct=(round(r[6]) if r[6] else None), published=(r[1] or "")[:10]) for r in irows[:3]],
                   history=[dict(x=t, v=v or 0) for t, v in ihs], followers_hist=[dict(x=t, v=f) for t, f, _, _ in iacc])
