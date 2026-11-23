@@ -6,15 +6,24 @@
     "posted_at": "2026-11-22T21:03:30+02:00",
     "title": "ChatGPT: живе диктування без ліміту 10 хв на всіх тарифах",
     "metrics": {
-      "measured_at": "2026-11-23T16:55Z",
-      "age_h": 21.9,
+      "measured_at": "2026-11-23T21:20Z",
+      "age_h": 26.3,
       "tg_views": 3,
       "tg_members": 6,
       "source": "https://t.me/s/shikarno_ai_ua (публічна сторінка)",
-      "tiktok_views": "немає ролика в TikTok за цією темою (знімок vidIQ 23.11 16Z)",
-      "note": "≈24-годинний замір (~22 год від публікації)"
+      "tiktok_views": "немає ролика в TikTok за цією темою (знімок vidIQ 23.11 21Z)",
+      "note": "24-годинний замір (>24 год від публікації)"
     },
     "history": [
+      {
+        "measured_at": "2026-11-23T16:55Z",
+        "age_h": 21.9,
+        "tg_views": 3,
+        "tg_members": 6,
+        "source": "https://t.me/s/shikarno_ai_ua (публічна сторінка)",
+        "tiktok_views": "немає ролика в TikTok за цією темою (знімок vidIQ 23.11 16Z)",
+        "note": "≈24-годинний замір (~22 год від публікації)"
+      },
       {
         "measured_at": "2026-11-23T08:58Z",
         "age_h": 11.9,
@@ -33,14 +42,22 @@
     "posted_at": "2026-11-22T21:00:00+02:00",
     "title": "Голосовий ввід у ChatGPT без ліміту 10 хвилин: живе диктування на всіх тарифах",
     "metrics": {
-      "measured_at": "2026-11-23T16:55Z",
-      "age_h": 21.9,
+      "measured_at": "2026-11-23T21:20Z",
+      "age_h": 26.3,
       "gsc_impressions": null,
       "gsc_clicks": null,
-      "note": "Search Console відстає на ~2 дні: дані лише до 21.11, сторінки ще немає у звіті (dataState=all теж порожньо) — показати після 24–25.11",
+      "note": "site_pages: дані GSC лише до 21.11 (період 2026-10-01..2026-11-21), сторінки ще немає — повторити після 25.11",
       "tiktok_views": "немає ролика в TikTok за цією темою"
     },
     "history": [
+      {
+        "measured_at": "2026-11-23T16:55Z",
+        "age_h": 21.9,
+        "gsc_impressions": null,
+        "gsc_clicks": null,
+        "note": "Search Console відстає на ~2 дні: дані лише до 21.11, сторінки ще немає у звіті (dataState=all теж порожньо) — показати після 24–25.11",
+        "tiktok_views": "немає ролика в TikTok за цією темою"
+      },
       {
         "measured_at": "2026-11-23T08:58Z",
         "age_h": 12,
@@ -58,15 +75,24 @@
     "posted_at": "2026-11-22T21:44:05+02:00",
     "title": "Як вимкнути ШІ в Canva: перемикач у Settings > Permissions",
     "metrics": {
-      "measured_at": "2026-11-23T16:55Z",
-      "age_h": 21.2,
-      "tg_views": 3,
+      "measured_at": "2026-11-23T21:20Z",
+      "age_h": 25.6,
+      "tg_views": 4,
       "tg_members": 6,
       "source": "https://t.me/s/shikarno_ai_ua (публічна сторінка)",
-      "tiktok_views": "немає ролика в TikTok за цією темою (знімок vidIQ 23.11 16Z)",
-      "note": "≈24-годинний замір (~22 год від публікації)"
+      "tiktok_views": "немає ролика в TikTok за цією темою (знімок vidIQ 23.11 21Z)",
+      "note": "24-годинний замір (>24 год від публікації)"
     },
     "history": [
+      {
+        "measured_at": "2026-11-23T16:55Z",
+        "age_h": 21.2,
+        "tg_views": 3,
+        "tg_members": 6,
+        "source": "https://t.me/s/shikarno_ai_ua (публічна сторінка)",
+        "tiktok_views": "немає ролика в TikTok за цією темою (знімок vidIQ 23.11 16Z)",
+        "note": "≈24-годинний замір (~22 год від публікації)"
+      },
       {
         "measured_at": "2026-11-23T08:58Z",
         "age_h": 11.2,

@@ -1563,5 +1563,110 @@
   "status": "new",
   "added": "2026-11-23",
   "id": "79"
+ },
+ {
+  "title": "Google тепер бачить твої витрати: AI Mode у Пошуку підключає Google Wallet (а згодом Drive і Gemini) — що він знатиме і де вимкнути",
+  "format": "sec",
+  "channels": [
+   "short",
+   "tiktok",
+   "site",
+   "tg"
+  ],
+  "demand": 4,
+  "fresh": 5,
+  "show": 4,
+  "fit": 5,
+  "length": 33,
+  "hook": "you",
+  "source": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
+  "by": "researcher-news",
+  "note": "Google 23.11: Personal Intelligence в AI Mode — Wallet з сьогодні (opt-in), Drive і Gemini app «у найближчі тижні»; вже були Gmail, Calendar, Photos. Керування: Search Personalization → Connected Apps. Доступність в Україні перевірити під час написання. Додатково: TechCrunch 23.11.",
+  "status": "approved",
+  "added": "2026-11-23",
+  "id": "80",
+  "decision": "Бал 354 (sec, твої дані + свіжий реліз Google 23.11): Short 19:00 Київ найближчим вільним слотом + сайт + TG; перевірити доступність в Україні й показати, де вимкнути (Search Personalization → Connected Apps)."
+ },
+ {
+  "title": "Байт пробує Gemini Canvas: з конспекту — тест і картки за хвилину, з таблиці — калькулятор цін (4 фішки, про які мало хто знає)",
+  "format": "try",
+  "channels": [
+   "short",
+   "tiktok",
+   "site"
+  ],
+  "demand": 4,
+  "fresh": 4,
+  "show": 5,
+  "fit": 5,
+  "length": 33,
+  "source": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-canvas-tasks/",
+  "by": "researcher-news",
+  "note": "Google 23.11: 4 способи — веб-застосунки/міні-ігри, навчальні інструменти з нотаток/PDF (квізи, картки), офісні (таблиця → трекер продажів, калькулятор), правка тексту виділенням. Показати реальний тест українською; пара до тір-листа «ШІ для дітей/вчителя».",
+  "status": "new",
+  "added": "2026-11-23",
+  "id": "81"
+ },
+ {
+  "title": "Позов проти SpaceX через діпфейки Grok: Орегон і Вірджинія кажуть, що слабкий захист був «фічею» — як захистити свої фото",
+  "format": "sec",
+  "channels": [
+   "short",
+   "tiktok",
+   "site",
+   "tg"
+  ],
+  "demand": 3,
+  "fresh": 5,
+  "show": 3,
+  "fit": 5,
+  "length": 35,
+  "source": "https://www.theverge.com/ai-artificial-intelligence/1040255/x-grok-ai-deepfakes-oregon-virginia-lawsuit",
+  "by": "researcher-news",
+  "note": "23.11: генпрокурори Орегону (Dan Rayfield) і Вірджинії (Jay Jones) подали окремі позови — порушення законів про захист споживачів; у центрі Grok Imagine (spicy mode з серпня 2025, редагування будь-якого фото з січня 2026). Першоджерело — пресрелізи генпрокурорів, знайти під час написання. Без відвертих прикладів; фокус — що робити, якщо твоє фото підробили.",
+  "status": "new",
+  "added": "2026-11-23",
+  "id": "82"
+ },
+ {
+  "title": "Навушники, що записують розмову і пишуть конспект: Nothing Ear Note — запис навіть із кейса, вихід 8 грудня",
+  "format": "news",
+  "channels": [
+   "short",
+   "tiktok",
+   "site"
+  ],
+  "demand": 3,
+  "fresh": 5,
+  "show": 3,
+  "fit": 4,
+  "length": 30,
+  "source": "https://www.theverge.com/gadgets/1040357/nothing-ear-note-earbuds-ai-recording",
+  "by": "researcher-news",
+  "note": "23.11 (за Bloomberg/The Verge): навушники й кейс з мікрофонами записують і транскрибують, застосунок робить ШІ-підсумки; запуск 8.12, ціни ще немає. Першоджерело — пост Карла Пея в X. Кут для людей: чи законно записувати співрозмовника + альтернатива вже зараз (диктофон+ChatGPT). Окремим Short лише якщо масовий кут; інакше — у недільне шоу.",
+  "status": "new",
+  "added": "2026-11-23",
+  "id": "83"
+ },
+ {
+  "title": "Claude Ship: Claude сам виправляє код і схвалює pull request — PR Steward і Claude Approvals (бета для Team/Enterprise)",
+  "format": "news",
+  "channels": [
+   "show",
+   "site",
+   "tg"
+  ],
+  "demand": 2,
+  "fresh": 5,
+  "show": 3,
+  "fit": 3,
+  "length": 35,
+  "hook": "release",
+  "source": "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
+  "by": "researcher-news",
+  "note": "23.11: Anthropic анонсувала Claude Ship; агенти PR Steward (лагодить падіння CI, конфлікти злиття, відповідає на ревʼю) і Claude Approvals (схвалює рутинні зміни за політикою організації) — бета; для Team і Enterprise, працює з GitHub. Першоджерело — anthropic.com, знайти під час написання. Вузька dev-новина → рубрика ІТ у шоу/сайт, не окремий Short.",
+  "status": "new",
+  "added": "2026-11-23",
+  "id": "84"
  }
 ]
