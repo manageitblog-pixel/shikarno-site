@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-23T00:56:42Z",
+ "generated": "2026-11-23T01:49:42Z",
  "kpi": {
-  "subs": 313,
+  "subs": 314,
   "subs_goal": 1000,
   "long_hours": 10.5,
   "long_hours_goal": 4000,
@@ -477,7 +477,7 @@
  ],
  "platforms": {
   "youtube": {
-   "subs": 313,
+   "subs": 314,
    "views_7d": 750,
    "long_hours": 10.5,
    "history": [
