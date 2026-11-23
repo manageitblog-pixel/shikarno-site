@@ -59,3 +59,30 @@
 {"ev": "part_final", "part": 10, "take": 1, "f0": 131.1, "clean": false, "t": "06:23:25Z"}
 {"ev": "STOP", "reason": "TTS quota exhausted: 4 consecutive HTTP 429 from Gemini (gemini-3.8-flash-tts); try later or another key/model", "ok_requests": 2, "t": "06:24:56Z"}
 {"ev": "STOP", "reason": "TTS quota exhausted: 4 consecutive HTTP 429 from Gemini (gemini-3.8-flash-tts); try later or another key/model", "ok_requests": 0, "t": "07:19:44Z"}
+{"ev": "tts_ok", "n": 1, "out": "/home/claude/eps/guide1/part11.wav", "res": "(52.92, 24000, 'audio/wav')", "t": "08:06:46Z"}
+{"ev": "part", "part": 11, "take": 1, "f0": 113.5, "f0_ok": false, "dur": 52.9, "audit": [{"seg": 33, "ratio": 0.85, "match": 0.7}, {"seg": 34, "ratio": 0.97, "match": 0.7}], "repeat_suspect": false, "t": "08:07:31Z"}
+{"ev": "tts_ok", "n": 2, "out": "/home/claude/eps/guide1/part11.wav", "res": "(49.32, 24000, 'audio/wav')", "t": "08:07:43Z"}
+{"ev": "part", "part": 11, "take": 2, "f0": 147.5, "f0_ok": false, "dur": 49.3, "audit": [{"seg": 33, "ratio": 0.93, "match": 0.7}, {"seg": 34, "ratio": 0.94, "match": 0.73}], "repeat_suspect": false, "t": "08:08:22Z"}
+{"ev": "part_final", "part": 11, "take": 1, "f0": 113.5, "clean": false, "t": "08:08:22Z"}
+{"ev": "tts_ok", "n": 3, "out": "/home/claude/eps/guide1/part12.wav", "res": "(78.64, 24000, 'audio/wav')", "t": "08:08:37Z"}
+{"ev": "part", "part": 12, "take": 1, "f0": 122.4, "f0_ok": true, "dur": 78.6, "audit": [{"seg": 35, "ratio": 1.2, "match": 0.8}, {"seg": 36, "ratio": 0.94, "match": 0.73}, {"seg": 37, "ratio": 0.98, "match": 0.62}, {"seg": 38, "ratio": 0.82, "match": 0.65}], "repeat_suspect": false, "t": "08:10:00Z"}
+{"ev": "part_final", "part": 12, "take": 1, "f0": 122.4, "clean": true, "t": "08:10:00Z"}
+{"ev": "tts_ok", "n": 4, "out": "/home/claude/eps/guide1/part13.wav", "res": "(85.56, 24000, 'audio/wav')", "t": "08:10:15Z"}
+{"ev": "part", "part": 13, "take": 1, "f0": 123.8, "f0_ok": true, "dur": 85.6, "audit": [{"seg": 39, "ratio": 0.92, "match": 0.76}, {"seg": 40, "ratio": 1.11, "match": 0.89}, {"seg": 41, "ratio": 1.0, "match": 0.9}, {"seg": 42, "ratio": 1.0, "match": 0.92}], "repeat_suspect": false, "t": "08:11:41Z"}
+{"ev": "part_final", "part": 13, "take": 1, "f0": 123.8, "clean": true, "t": "08:11:41Z"}
+{"ev": "tts_ok", "n": 5, "out": "/home/claude/eps/guide1/part14.wav", "res": "(75.2, 24000, 'audio/wav')", "t": "08:11:54Z"}
+{"ev": "part", "part": 14, "take": 1, "f0": 131.7, "f0_ok": true, "dur": 75.2, "audit": [{"seg": 43, "ratio": 1.02, "match": 0.91}, {"seg": 44, "ratio": 0.91, "match": 0.66}, {"seg": 45, "ratio": 0.94, "match": 0.71}], "repeat_suspect": false, "t": "08:13:04Z"}
+{"ev": "part_final", "part": 14, "take": 1, "f0": 131.7, "clean": true, "t": "08:13:04Z"}
+{"ev": "tts_ok", "n": 6, "out": "/home/claude/eps/guide1/part15.wav", "res": "(56.6, 24000, 'audio/wav')", "t": "08:13:15Z"}
+{"ev": "part", "part": 15, "take": 1, "f0": 128.6, "f0_ok": true, "dur": 56.6, "audit": [{"seg": 46, "ratio": 0.79, "match": 0.66}, {"seg": 47, "ratio": 0.87, "match": 0.64}], "repeat_suspect": false, "t": "08:14:03Z"}
+{"ev": "part_final", "part": 15, "take": 1, "f0": 128.6, "clean": true, "t": "08:14:03Z"}
+{"ev": "tts_ok", "n": 7, "out": "ep83", "http_notes": "", "t": "08:15:26Z"}
+{"ev": "short", "ep": "ep83", "take": 1, "f0": 122.6, "f0_ok": false, "scenes": ["0 0.8 6.0s Шахраїські СМС лізуть над Вій-айфон, Мун Лок від Київської Мак-По об", "1 0.38 7.1s Плюси - ховає підозрілі СМС Успам, перевіряє скрінчі QR-код і пояснює, що не так. Мі", "2 0.18 10.0s після тижня тріалу майже 60 доларів на рік. Лише англійською тільки iOS26. А чи розуміє український SMS компанія не пише?", "3 0.39 6.0s 6 з 10. Без грошей, скрін у чаджі Пт без своїх даних, а в банк звонить сам.", "4 0.44 2.5s Що Шаїз знає про тебе у відеопідр"], "t": "08:15:26Z"}
+{"ev": "tts_ok", "n": 8, "out": "ep83", "http_notes": "", "t": "08:17:06Z"}
+{"ev": "short", "ep": "ep83", "take": 2, "f0": 122.9, "f0_ok": false, "scenes": ["0 0.53 6.4s Шахрайські СМС лізуть на твій айфон? Монлок від Київської Мак-По обіц", "1 0.38 6.0s Плюси - Huawei підозріли SMS Успам, перевіряє скрінчу QR-код і пояснює, що не так.", "2 0.23 9.8s Мінуси після тижня тріалу майже 60 доларів на рік. Лише англійською тільки iOS26. А через умії українські, CMS компанія не пише.", "3 0.39 6.7s Вердикт Байта – 60. Без грошей скрінучат GPT без своїх даних, а в банк звони сам.", "4 0.11 3.1s Що СІ знає про тебе, - у відео під роликом."], "t": "08:17:07Z"}
+{"ev": "short_final", "ep": "ep83", "take": 2, "f0": 122.9, "overall_match": 0.575, "segs": [[0, 0.867, 0.6], [1, 0.824, 0.471], [2, 0.88, 0.56], [3, 0.714, 0.524], [4, 1.0, 0.889]], "dur": 32.77, "t": "08:17:26Z"}
+{"ev": "tts_ok", "n": 9, "out": "ep84", "http_notes": "", "t": "08:18:05Z"}
+{"ev": "short", "ep": "ep84", "take": 1, "f0": 138.3, "f0_ok": true, "scenes": ["0 0.49 23.8s Твоя дитина не вимовляє R – штучний інтелект для логопета. Картки з Гугла малювати, Джеміні намолює картки на звук R. Гра, лото, ті самі, Джеміні Кенва зробить гру на пам'ять. Домашка, усно, ксерокс, клад напише пам'ять кубатькам. Звід, відруки, шаблон, чат GPT у тимчасовому чаті без імені діагнозу. Вим", "1 0.6 3.4s довір шеї заняття, ша для вчителя у відеопедр"], "t": "08:18:05Z"}
+{"ev": "short_final", "ep": "ep84", "take": 1, "f0": 138.3, "overall_match": 0.507, "segs": [[0, 0.746, 0.524], [1, 0.8, 0.4]], "dur": 27.68, "t": "08:18:22Z"}
+{"ev": "tts_ok", "n": 10, "out": "ep85", "http_notes": "", "t": "08:19:06Z"}
+{"ev": "short", "ep": "ep85", "take": 1, "f0": 114.3, "f0_ok": false, "scenes": ["0 0.45 24.6s Куди поїдеш на вихідні? Місце, навмення, блогери - найкращі джеміні. Без Google Maps адреси, рейтинги і години роботи. План - як вийде, нотатки, кладру спише день за днем таблицею. Валіза - забути, список, чаджі, піті гляни погодучі розпушук і складечі, кліст. Мова - жести, розмовник, Google-перекладач, наводекамеру на вив", "1 0.42 3.6s А куди ти поїдеш, як почати з Чен-Джип'яті у"], "t": "08:19:07Z"}
