@@ -1093,5 +1093,112 @@
   "status": "new",
   "added": "2026-11-23",
   "id": "56"
+ },
+ {
+  "title": "Банк каже: «ШІ-агент — на твій ризик». Wells Fargo з 24.11 вважає кожну дію агента твоєю — 3 правила, перш ніж дати ШІ доступ до банку",
+  "format": "sec",
+  "channels": [
+   "short",
+   "tiktok",
+   "site",
+   "tg"
+  ],
+  "demand": 4,
+  "fresh": 5,
+  "show": 4,
+  "fit": 5,
+  "hook": "you",
+  "length": 35,
+  "by": "researcher-news",
+  "source": "https://www.wellsfargo.com/online-banking/online-access-agreement/upcoming/",
+  "note": "Перевірено 23.11 у першоджерелі: нова Online Access Agreement Wells Fargo, Version Effective November 24, 2026, розділ 15 «AI Agents»: дії агента з твоїм логіном вважаються авторизованими тобою, «AT YOUR OWN RISK», банк може блокувати агентів. Контекст — Wired 22.11 (https://www.wired.com/story/banks-are-cracking-down-on-ai-agents/): JPMorgan Chase заборонив стороннім агентам входити з твоїми даними, Bank of America застеріг не давати логін агентам; Amazon блокує покупки Meta Muse. Для UA: правило «не давай ШІ-агенту пароль від банку» — продовження №27 (Muse показав чужий баланс), але інша новина. Українські банки не перевіряли — не стверджувати про них.",
+  "status": "approved",
+  "added": "2026-11-23",
+  "id": "57",
+  "decision": "Схвалено 23.11 (score 354 ≥300): свіжа перевірена зміна умов Wells Fargo з 24.11, безпекова тема з прямою порадою глядачу; формат sec у Shorts/TikTok + сторінка сайту й TG."
+ },
+ {
+  "title": "ChatGPT на Super Nintendo 1990 року: ШІ з 2,2 млн параметрів у картриджі — і що він відповідає (спробуй в браузері)",
+  "format": "try",
+  "channels": [
+   "short",
+   "tiktok",
+   "site"
+  ],
+  "demand": 3,
+  "fresh": 5,
+  "show": 5,
+  "fit": 3,
+  "hook": "you",
+  "length": 30,
+  "by": "researcher-news",
+  "source": "https://www.bxfoundry.com/chatgpt_snes/",
+  "note": "Перевірено 23.11: сторінка проєкту — онлайн-емулятор + ROM v0.7 (1,5 МБ; версія з «довідником» 17 МБ zip, потрібні Super FX і MSU-1). Автор — журналіст Бендж Едвардс; за The Register (21.11, https://www.theregister.com/offbeat/2026/11/21/chatgpt-shrunk-down-to-run-on-a-super-nintendo/5311418) модель 2,2 млн параметрів, дистильована з діалогів відкритої GPT-OSS-120b; факти з ~150 тис. статей Simple English Wikipedia. Назва неофіційна (не продукт OpenAI) — сказати це. Показ: Байт питає приставку українською/англійською → смішні відповіді. Розважальний формат, фіт помірний.",
+  "status": "new",
+  "added": "2026-11-23",
+  "id": "58"
+ },
+ {
+  "title": "Флот ШІ-агентів у прямому ефірі штурмує P vs NP — найвідомішу нерозв’язану задачу інформатики: що реально перевірено, а що ні",
+  "format": "news",
+  "channels": [
+   "short",
+   "site",
+   "tg"
+  ],
+  "demand": 2,
+  "fresh": 5,
+  "show": 4,
+  "fit": 3,
+  "hook": "topic",
+  "length": 40,
+  "by": "researcher-news",
+  "source": "https://pequalnp.com/",
+  "note": "Перевірено 23.11 на сайті: координований флот агентів (Claude Code, Cursor, Codex, Gemini CLI — будь-хто може підключити свого) доводить леми в Lean; кожен результат перевіряє автоматичний чекер; сайт сам пише, що «вага» — не ймовірність і жодна сторона не є доведенням. HN 22.11 — 144 бали; огляд CACM «What Happened in Fall 2026: AI and P vs. NP». Пара до №50 (Ріман + Claude) — можна зробити спільний ролик «ШІ і великі задачі математики: де хайп». Не обіцяти розв’язання.",
+  "status": "new",
+  "added": "2026-11-23",
+  "id": "59"
+ },
+ {
+  "title": "ООН тиждень не змогла домовитися про контроль над ШІ-зброєю: росія заблокувала договір — що це означає для дронів на фронті",
+  "format": "news",
+  "channels": [
+   "short",
+   "site",
+   "tg"
+  ],
+  "demand": 3,
+  "fresh": 5,
+  "show": 3,
+  "fit": 4,
+  "hook": "topic",
+  "length": 40,
+  "by": "researcher-news",
+  "source": "https://www.theguardian.com/science/2026/nov/22/red-cross-warns-too-late-regulate-autonomous-weapons-united-nations",
+  "note": "Перевірено 23.11 (Guardian 22.11): понад 120 держав Конвенції ООН про звичайну зброю (CCW) завершили тижневу конференцію в Женеві; погодили лише обговорювати інструмент регулювання ще 2 роки, без обов’язкового договору; МКЧХ попереджає, що скоро буде пізно («джина не загнати в пляшку»). За dev.ua 23.11 (з посиланням на Guardian 21.11) заперечувала росія, США теж не хотіли обов’язкового протоколу — роль росії перевірити ще раз у першоджерелі (сторінка Guardian 21.11 не відкрилась). Тема чутлива — без деталей про конкретні системи.",
+  "status": "new",
+  "added": "2026-11-23",
+  "id": "60"
+ },
+ {
+  "title": "16-річний з Латвії кинув школу й отримав $500 000 від Y Combinator на дешеві ШІ-ракети — і каже, що надихнула війна в Україні",
+  "format": "news",
+  "channels": [
+   "short",
+   "tiktok",
+   "site"
+  ],
+  "demand": 3,
+  "fresh": 5,
+  "show": 3,
+  "fit": 3,
+  "hook": "topic",
+  "length": 35,
+  "by": "researcher-news",
+  "source": "https://www.ycombinator.com/companies/polemos-industries",
+  "note": "Перевірено 23.11 на сторінці YC: Polemos Industries (YC Fall 2026, Сан-Франциско) — «AI-guided ballistic missiles, built for mass manufacturing», компактні пускові установки, ціль дає розвідувальний дрон. Вік 16, сума $500 000 і мотив (війна в Україні) — з dev.ua 23.11 (https://dev.ua/news/henriis-dandzberhs-1795418855), на сторінці YC цього немає → подати як «за даними медіа». Історія про молодь і ШІ; фіт помірний (оборонка).",
+  "status": "new",
+  "added": "2026-11-23",
+  "id": "61"
  }
 ]
