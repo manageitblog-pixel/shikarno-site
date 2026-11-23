@@ -1,16 +1,17 @@
 {
- "generated": "2026-11-23T20:00:06Z",
+ "generated": "2026-11-23T20:07:57Z",
  "fresh": {
-  "yt_live": "2026-11-23T20:00:07Z",
+  "yt_live": "2026-11-23T20:07:57Z",
   "yt_analytics": "2026-11-20",
-  "tg_members": "2026-11-23T20:00:07Z",
+  "tg_members": "2026-11-23T20:07:58Z",
   "tg_posts": "2026-11-23T19:55:47Z",
   "ideas": "2026-11-23T17:22:59Z",
   "news": "2026-11-23 16:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-23T16",
   "site": "2026-11-21",
-  "activity": "2026-11-23T19:59:17Z",
+  "site_live": "2026-11-23T20:07:27Z",
+  "activity": "2026-11-23T20:05:54Z",
   "asks": "2026-11-23T19:55:00Z"
  },
  "notes": [],
@@ -534,7 +535,7 @@
    "subs": 315,
    "views_total": 11961,
    "videos": 96,
-   "live_at": "2026-11-23T20:00:07Z",
+   "live_at": "2026-11-23T20:07:57Z",
    "views_7d": 815,
    "pct_7d": 51.0,
    "subs_7d": 2,
@@ -600,7 +601,7 @@
     },
     {
      "title": "ШІ для вчителя: план уроку і тест за 5 хвилин у Google Classroom 🍎",
-     "views": 60,
+     "views": 74,
      "id": "ENKGdbr04h0"
     }
    ]
@@ -733,7 +734,292 @@
      "v": 852,
      "p": true
     }
-   ]
+   ],
+   "live": {
+    "updated": "2026-11-23T20:07:27Z",
+    "source": "Cloudflare Web Analytics",
+    "tz": "Europe/Kyiv",
+    "today_pageloads": 4,
+    "today_visits": 4,
+    "yesterday_pageloads": 16,
+    "yesterday_visits": 14,
+    "pageloads_7d": 41,
+    "visits_7d": 37,
+    "last24h": {
+     "pageloads": 5,
+     "visits": 5,
+     "hours": [
+      {
+       "h": "2026-11-22T21:00:00Z",
+       "pageloads": 1,
+       "visits": 1
+      },
+      {
+       "h": "2026-11-22T22:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-22T23:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-23T00:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-23T01:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-23T02:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-23T03:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-23T04:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-23T05:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-23T06:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-23T07:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-23T08:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-23T09:00:00Z",
+       "pageloads": 1,
+       "visits": 1
+      },
+      {
+       "h": "2026-11-23T10:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-23T11:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-23T12:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-23T13:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-23T14:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-23T15:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-23T16:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-23T17:00:00Z",
+       "pageloads": 2,
+       "visits": 2
+      },
+      {
+       "h": "2026-11-23T18:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-23T19:00:00Z",
+       "pageloads": 1,
+       "visits": 1
+      },
+      {
+       "h": "2026-11-23T20:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      }
+     ]
+    },
+    "days": [
+     {
+      "d": "2026-11-10",
+      "pageloads": 10,
+      "visits": 10,
+      "sampled": true
+     },
+     {
+      "d": "2026-11-11",
+      "pageloads": 40,
+      "visits": 40,
+      "sampled": true
+     },
+     {
+      "d": "2026-11-12",
+      "pageloads": 60,
+      "visits": 40,
+      "sampled": true
+     },
+     {
+      "d": "2026-11-13",
+      "pageloads": 20,
+      "visits": 20,
+      "sampled": true
+     },
+     {
+      "d": "2026-11-14",
+      "pageloads": 0,
+      "visits": 0,
+      "sampled": false
+     },
+     {
+      "d": "2026-11-15",
+      "pageloads": 10,
+      "visits": 10,
+      "sampled": true
+     },
+     {
+      "d": "2026-11-16",
+      "pageloads": 5,
+      "visits": 5,
+      "sampled": false
+     },
+     {
+      "d": "2026-11-17",
+      "pageloads": 5,
+      "visits": 5,
+      "sampled": false
+     },
+     {
+      "d": "2026-11-18",
+      "pageloads": 2,
+      "visits": 2,
+      "sampled": false
+     },
+     {
+      "d": "2026-11-19",
+      "pageloads": 5,
+      "visits": 5,
+      "sampled": false
+     },
+     {
+      "d": "2026-11-20",
+      "pageloads": 7,
+      "visits": 5,
+      "sampled": false
+     },
+     {
+      "d": "2026-11-21",
+      "pageloads": 2,
+      "visits": 2,
+      "sampled": false
+     },
+     {
+      "d": "2026-11-22",
+      "pageloads": 16,
+      "visits": 14,
+      "sampled": false
+     },
+     {
+      "d": "2026-11-23",
+      "pageloads": 4,
+      "visits": 4,
+      "sampled": false
+     }
+    ],
+    "top_pages_7d": [
+     {
+      "path": "/",
+      "count": 12
+     },
+     {
+      "path": "/novyny/claude-bezkoshtovno/",
+      "count": 7
+     },
+     {
+      "path": "/novyny/promty-dlya-chatgpt/",
+      "count": 3
+     },
+     {
+      "path": "/rozbory/skily-mcp-konektory-rozbir-1/",
+      "count": 3
+     },
+     {
+      "path": "/novyny/moonlock-iphone-shakhrajski-sms/",
+      "count": 2
+     }
+    ],
+    "top_referrers_7d": [
+     {
+      "host": "(прямі / без реферера)",
+      "count": 24
+     },
+     {
+      "host": "www.google.com",
+      "count": 10
+     },
+     {
+      "host": "www.bing.com",
+      "count": 2
+     },
+     {
+      "host": "www.youtube.com",
+      "count": 1
+     }
+    ],
+    "top_countries_7d": [
+     {
+      "country": "UA",
+      "count": 27
+     },
+     {
+      "country": "US",
+      "count": 4
+     },
+     {
+      "country": "PL",
+      "count": 3
+     },
+     {
+      "country": "NL",
+      "count": 2
+     },
+     {
+      "country": "GB",
+      "count": 1
+     }
+    ]
+   }
   },
   "telegram": {
    "members": 6,
@@ -866,7 +1152,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 6
+   "total": 1
   },
   {
    "id": "ENKGdbr04h0",
@@ -877,7 +1163,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 60
+   "total": 74
   },
   {
    "id": "LtNuOtQe0pc",
@@ -888,7 +1174,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 56
+   "total": 52
   },
   {
    "id": "aTUsauz53rs",
@@ -899,7 +1185,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 9
+   "total": 8
   },
   {
    "id": "gljrHADi4aU",
@@ -921,7 +1207,7 @@
    "views7": 2,
    "pct": 64.2,
    "complete": false,
-   "total": 4
+   "total": 3
   },
   {
    "id": "0Kb6AamTRQo",
@@ -1487,15 +1773,6 @@
  ],
  "activity": [
   {
-   "id": "90",
-   "agent": "da",
-   "task": "фон: якість даталейку і перевірка експериментів у ops.py",
-   "started": "2026-11-22T23:18:15Z",
-   "finished": "2026-11-22T23:23:20Z",
-   "result": "Якість даних: виправлено channel_daily.avg_pct=0→NULL (sync_channel + тест, 3 рядки); TikTok — округлені 1.2K і пропущений ролик; ep79 тір-лист записано як sec. frame0: контроль чистий, база 5/10 = 22 перегл./48 год, оц…",
-   "agent_raw": "analyst"
-  },
-  {
    "id": "91",
    "agent": "factcheck",
    "task": "Незалежний фактчек ep87 «Чорна пʼятниця»",
@@ -1809,6 +2086,14 @@
    "started": "2026-11-23T19:51:32Z",
    "finished": "2026-11-23T19:59:17Z",
    "result": "HQ: мітки свіжості на кожному блоці, YouTube наживо, TikTok 15 304 по 11 відео, TG 16 постів/7 дн з t.me, реальний розклад, asks.json, «завис?» (коміт 6397b8b)"
+  },
+  {
+   "id": "130",
+   "agent": "coo",
+   "task": "Дашборд: живий блок сайту з Cloudflare Web Analytics (перегляди сторінок сьогодні/вчора/7 днів, топ сторінок)",
+   "started": "2026-11-23T20:05:54Z",
+   "finished": null,
+   "result": ""
   }
  ],
  "agents": [

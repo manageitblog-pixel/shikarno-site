@@ -118,6 +118,89 @@ def tg_public(max_age_min=15):
         return dict(fetched=None, posts=[], subscribers=None, error=f"немає даних: t.me не відповів ({type(e).__name__})")
 
 
+CF_CACHE = os.path.expanduser("~/.cache/shikarno_cf.json") if os.access(os.path.expanduser("~"), os.W_OK) else "/tmp/shikarno_cf.json"
+CF_GQL = "https://api.cloudflare.com/client/v4/graphql"
+
+
+def cf_live(max_age_min=10):
+    """Cloudflare Web Analytics (RUM) наживо: перегляди сторінок (pageloads) і візити сайту.
+    Ключ читання підставляє проксі середовища (у запиті — заглушка), Account ID — config.SITE["cf_account"].
+    Дні — київські (00:00–24:00 Europe/Kyiv). Кожен день — окремий аліас із вузьким фільтром: широкий діапазон
+    Cloudflare семплює (×10), а вузький віддає точні числа; дні старші ~9 діб CF уже зберігає семпльовано — позначаємо sampled.
+    Кеш 10 хв (~/.cache/shikarno_cf.json), таймаут 10 с; при помилці — кеш з позначкою або dict(error="немає даних …")."""
+    import urllib.request
+    from zoneinfo import ZoneInfo
+    cache = None
+    try: cache = json.load(open(CF_CACHE))
+    except Exception: pass
+    if cache and cache.get("updated") and (now_utc() - datetime.datetime.fromisoformat(cache["updated"].replace("Z", "+00:00"))).total_seconds() < max_age_min * 60:
+        return cache
+    try:
+        sys.path.insert(0, ROOT); import config
+        acct = config.SITE.get("cf_account")
+        if not acct: raise RuntimeError("немає cf_account у config.py")
+        KY = ZoneInfo("Europe/Kyiv"); now = now_utc(); today = now.astimezone(KY).date()
+        def kb(d):  # межі київського дня в UTC
+            a = datetime.datetime.combine(d, datetime.time(), KY).astimezone(datetime.timezone.utc)
+            b = datetime.datetime.combine(d + datetime.timedelta(days=1), datetime.time(), KY).astimezone(datetime.timezone.utc)
+            return iso(a), iso(b)
+        G = "rumPageloadEventsAdaptiveGroups"; parts = []
+        days = [today - datetime.timedelta(days=i) for i in range(13, -1, -1)]
+        for i, d in enumerate(days):
+            a, b = kb(d)
+            parts.append(f'd{i}: {G}(limit:1, filter:{{datetime_geq:"{a}", datetime_lt:"{b}"}}) {{ count sum {{ visits }} confidence(level:0.95) {{ count {{ sampleSize }} }} }}')
+        h0 = iso((now - datetime.timedelta(hours=23)).replace(minute=0, second=0, microsecond=0)); w7 = kb(today - datetime.timedelta(days=6))[0]
+        parts.append(f'h: {G}(limit:100, filter:{{datetime_geq:"{h0}"}}, orderBy:[datetimeHour_ASC]) {{ count sum {{ visits }} dimensions {{ datetimeHour }} }}')
+        for k, dim in (("p", "requestPath"), ("r", "refererHost"), ("c", "countryName")):
+            parts.append(f'{k}: {G}(limit:{6 if k == "r" else 5}, filter:{{datetime_geq:"{w7}"}}, orderBy:[count_DESC]) {{ count dimensions {{ {dim} }} }}')
+        parts.append(f't: {G}(limit:1, filter:{{datetime_geq:"{w7}"}}) {{ count sum {{ visits }} }}')
+        query = '{ viewer { accounts(filter:{accountTag:"%s"}) { %s } } }' % (acct, "\n".join(parts))
+        req = urllib.request.Request(CF_GQL, data=json.dumps({"query": query}).encode(),
+                                     headers={"Authorization": "Bearer proxy-injected", "Content-Type": "application/json"})
+        r = json.load(urllib.request.urlopen(req, timeout=10))
+        if r.get("errors"): raise RuntimeError(str(r["errors"][0].get("message", "помилка GraphQL"))[:160])
+        A = r["data"]["viewer"]["accounts"][0]
+        dl = []
+        for i, d in enumerate(days):
+            g = A[f"d{i}"][0] if A[f"d{i}"] else None
+            n = g["count"] if g else 0; ss = g["confidence"]["count"]["sampleSize"] if g else 0
+            dl.append(dict(d=d.isoformat(), pageloads=n, visits=(g["sum"]["visits"] if g else 0), sampled=bool(g and ss < n)))
+        # погодинно за останні 24 год (з нулями для годин без переглядів)
+        hm = {x["dimensions"]["datetimeHour"]: x for x in A["h"]}; hours = []
+        t0 = datetime.datetime.fromisoformat(h0.replace("Z", "+00:00"))
+        for i in range(24):
+            k = iso(t0 + datetime.timedelta(hours=i)); x = hm.get(k)
+            hours.append(dict(h=k, pageloads=x["count"] if x else 0, visits=x["sum"]["visits"] if x else 0))
+        ref = lambda h: h or "(прямі / без реферера)"
+        t7 = A["t"][0] if A["t"] else {"count": 0, "sum": {"visits": 0}}
+        res = dict(updated=iso(now), source="Cloudflare Web Analytics", tz="Europe/Kyiv",
+                   today_pageloads=dl[-1]["pageloads"], today_visits=dl[-1]["visits"],
+                   yesterday_pageloads=dl[-2]["pageloads"], yesterday_visits=dl[-2]["visits"],
+                   pageloads_7d=t7["count"], visits_7d=t7["sum"]["visits"],
+                   last24h=dict(pageloads=sum(h["pageloads"] for h in hours), visits=sum(h["visits"] for h in hours), hours=hours),
+                   days=dl,
+                   top_pages_7d=[dict(path=x["dimensions"]["requestPath"], count=x["count"]) for x in A["p"]][:5],
+                   top_referrers_7d=[dict(host=ref(x["dimensions"]["refererHost"]), count=x["count"]) for x in A["r"] if x["dimensions"]["refererHost"] != "shikarno.com.ua"][:5],
+                   top_countries_7d=[dict(country=x["dimensions"]["countryName"], count=x["count"]) for x in A["c"]][:5])
+        try:
+            os.makedirs(os.path.dirname(CF_CACHE), exist_ok=True); json.dump(res, open(CF_CACHE, "w"), ensure_ascii=False)
+        except Exception: pass
+        return res
+    except Exception as e:
+        why = str(e)[:120] if isinstance(e, RuntimeError) else type(e).__name__
+        if cache: cache = dict(cache); cache["error"] = f"кеш: Cloudflare не відповів ({why})"; return cache
+        return dict(updated=None, error=f"немає даних: Cloudflare не відповів ({why})")
+
+
+def cf_store(c, live):
+    """Денні рядки (київські дні) у site_rum_daily — щоб історія накопичувалась і за межами вікна CF."""
+    if not live or not live.get("days") or live.get("error"): return
+    c.execute("create table if not exists site_rum_daily(date text primary key, pageloads int, visits int, sampled int default 0, updated text)")
+    c.executemany("insert or replace into site_rum_daily(date, pageloads, visits, sampled, updated) values(?,?,?,?,?)",
+                  [(d["d"], d["pageloads"], d["visits"], int(d.get("sampled", False)), live["updated"]) for d in live["days"]])
+    c.commit()
+
+
 def yt_live():
     """YouTube Data API наживо: статистика каналу (1 од.) + 15 останніх завантажень з переглядами (2 од.)."""
     sys.path.insert(0, "/home/claude/yt"); import yt
@@ -277,6 +360,13 @@ def main():
                 views_7d=sum(v7) if v7 else None, views_avg=round(sum(v7) / len(v7), 1) if v7 else None, posts_error=tp.get("error"),
                 best=[dict(id=p["id"], text=p["text"], views=p["views"], date=p["date"]) for p in sorted(p7, key=lambda p: -(p["views"] or 0))[:3]],
                 history=[dict(x=t["d"], v=t["n"]) for t in tg_hist], since=tg_hist[0]["d"] if tg_hist else None)
+    # --- Сайт наживо: Cloudflare Web Analytics (перегляди сторінок за сьогодні/вчора/14 днів) ---
+    cf = cf_live()
+    if cf.get("updated"): fresh["site_live"] = cf["updated"]
+    if cf.get("error"): notes.append("Cloudflare: " + cf["error"])
+    try: cf_store(c, cf)
+    except Exception as e: notes.append(f"site_rum_daily не записано ({type(e).__name__})")
+    site_p["live"] = cf
     platforms = dict(youtube=yt_p, tiktok=tk, site=site_p, telegram=tg_p)
 
     # --- журнал агентів: аліаси → реальні ролі ---

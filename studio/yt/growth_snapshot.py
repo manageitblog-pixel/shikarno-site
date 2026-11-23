@@ -7,6 +7,7 @@
   кліки/покази Google 28д — Search Console (lake.gsc), вікно = 28 днів до останньої дати з даними
   Telegram                — Bot API getChatMemberCount
   TikTok                  — останній знімок studio/data/tiktok/*.json (vidIQ; сам скрипт TikTok не знімає)
+  Сайт наживо             — Cloudflare Web Analytics (hq_data.cf_live): перегляди сторінок сьогодні (Київ) і за 7 днів
 Якщо джерело впало — значення null і текст помилки в "errors"; вигаданих цифр немає.
 
 usage: python3 studio/yt/growth_snapshot.py          # зняти й дописати рядок
@@ -61,12 +62,20 @@ def tiktok():
             "tiktok_snapshot": max(r[2] for r in rows)}
 
 
+def site_live():
+    import hq_data
+    r = hq_data.cf_live()
+    if r.get("error") and not r.get("days"): raise RuntimeError(r["error"])
+    return {"site_pageloads_today": r["today_pageloads"], "site_pageloads_7d": r["pageloads_7d"]}
+
+
 def main():
     rec = {"at": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%MZ"), "date": datetime.date.today().isoformat()}
     errors = {}
     for name, fn, keys in (("youtube", yt_channel, ["yt_subs"]), ("analytics", long_hours, ["long_hours_12m"]),
                            ("search_console", gsc_28d, ["gsc_clicks_28d", "gsc_impr_28d"]), ("telegram", telegram, ["tg_members"]),
-                           ("tiktok", tiktok, ["tiktok_views"])):
+                           ("tiktok", tiktok, ["tiktok_views"]),
+                           ("cloudflare", site_live, ["site_pageloads_today", "site_pageloads_7d"])):
         try: rec.update(fn())
         except Exception as e:
             errors[name] = str(e)[:300]

@@ -84,6 +84,12 @@ a{color:var(--cyan)}
 .htab{margin-top:10px;font-size:13px}.htab table{margin-top:8px}
 .fr{display:inline-block;font-family:var(--mono);font-size:11px;font-weight:500;color:var(--mut);background:#ffffff0a;border:1px solid var(--line);border-radius:20px;padding:0 8px;line-height:18px;white-space:normal}
 .fr.old{color:var(--warn);border-color:#FFA94D66}.fr.live{color:var(--good);border-color:#7DF29B55}
+.slive{display:grid;gap:8px;padding-bottom:12px;border-bottom:1px dashed var(--line)}
+.slive .bars{display:grid;grid-template-columns:repeat(14,minmax(0,1fr));gap:3px;align-items:end;height:64px}
+.slive .bars i{display:block;background:#9B87FF;border-radius:3px 3px 0 0;min-height:2px;position:relative}
+.slive .bars i.s{background:repeating-linear-gradient(135deg,#9B87FF 0 3px,#9B87FF55 3px 6px)}.slive .bars i.t{background:var(--yellow)}
+.slive .bx{display:flex;justify-content:space-between;font-size:10px;color:var(--mut);font-family:var(--mono)}
+.slive .lab2{font-size:11px;color:var(--mut)}
 .upd{font-family:var(--mono);font-size:13px;color:var(--fg)}.upd.old{color:var(--warn)}
 .notes{font-size:13px;color:var(--warn);margin:0}
 .tl.hung{background:#FFA94D14;outline:1px solid #FFA94D88}
@@ -193,7 +199,7 @@ const kyivDay=d=>d.toLocaleDateString("uk-UA",KY);
 const when=x=>{const d=parseT(x);if(!d)return "—";if(/^\d{4}-\d\d-\d\d$/.test(String(x)))return ddmm(x);return kyivDay(d)===kyivDay(new Date())?hhmm(x):ddmm(d.toLocaleDateString("sv-SE",KY))+" "+hhmm(x)};
 const ageH=x=>{const d=parseT(x);return d?(Date.now()-d)/3.6e6:Infinity};
 function fr(id,text,old,live){const el=document.getElementById(id);if(!el)return;el.textContent=text;el.className="fr"+(old?" old":live?" live":"")}
-const AF={yt_live:2,tiktok:6,tg_posts:3,tg_members:3,news:6,yt_analytics:24*4,site:24*4,ideas:24,comp:24*8};
+const AF={yt_live:2,site_live:2,tiktok:6,tg_posts:3,tg_members:3,news:6,yt_analytics:24*4,site:24*4,ideas:24,comp:24*8};
 const isOld=(F,k)=>ageH(F[k])>(AF[k]||24);
 
 let LIVE=null;
@@ -301,7 +307,8 @@ function platforms(D){
      sec:T?[[fmt(T.views_7d),"переглядів роликів за 7 днів ("+T.new_7d+")"],[fmt(T.saves_total),"збережень"],[fmt(T.likes_total),"лайків"]]:[],
      h:T?(T.history||[]).map(h=>({x:dm(h.x)+(h.x.length>10?" "+h.x.slice(11,13)+"Z":""),v:h.v})):[],hl:"сума переглядів по знімках (кожне відео — останнє відоме значення)",
      best:best("Найкраще — перегляди · збереження",T?(T.best||[]).map(b=>[cut(b.title,60),fmt(b.views)+" · "+fmt(b.saves)]):[])},
-    {n:"Сайт",col:"#9B87FF",fr:badge("Search Console станом на "+dm(S.last_day),isOld(F,"site")),big:fmt(S.impr_28d),bl:"показів у Google за 28 днів ("+dm(S.first_day)+"–"+dm(S.last_day)+")",
+    {n:"Сайт",col:"#9B87FF",fr:S.live&&S.live.updated?badge("наживо, "+hhmm(S.live.updated)+" · Cloudflare",!!S.live.error||isOld(F,"site_live"),1):badge("наживо: немає даних",1),
+     pre:siteLive(S.live,badge,best,sec,cut),fr0:badge("Search Console станом на "+dm(S.last_day),isOld(F,"site")),big:fmt(S.impr_28d),bl:"показів у Google за 28 днів ("+dm(S.first_day)+"–"+dm(S.last_day)+")",
      sec:[[fmt(S.clicks_28d),"кліків"],[S.ctr!=null?String(S.ctr).replace(".",",")+"%":"—","CTR"],[S.avg_pos!=null?String(S.avg_pos).replace(".",","):"—","сер. позиція"]],
      h:(S.history||[]).map(h=>({x:dm(h.x),v:h.v,p:h.p})),hl:"покази за тиждень",
      best:best("Топ запитів — кліки · покази (4 тижні)",(S.top_queries||[]).map(q=>[cut(q.q,60),fmt(q.clicks)+" · "+fmt(q.impr)]))},
@@ -313,11 +320,27 @@ function platforms(D){
   ];
   box.innerHTML="";
   C.forEach(c=>{
-    box.insertAdjacentHTML("beforeend",`<div class="pc" style="--pcol:${c.col}"><h3>${c.n} ${c.fr}</h3><div class="big">${c.big} <small>${esc(c.bl)}</small></div>${c.sec.length?sec(c.sec):""}${c.fr2?`<div>${c.fr2}</div>`:""}<div><div style="font-size:11px;color:var(--mut);margin-bottom:2px">${esc(c.hl)}</div><svg role="img" aria-label="${esc(c.n+": "+c.hl)}"></svg></div><div class="tip"></div>${c.best}</div>`);
+    box.insertAdjacentHTML("beforeend",`<div class="pc" style="--pcol:${c.col}"><h3>${c.n} ${c.fr}</h3>${c.pre||""}${c.fr0?`<div>${c.fr0}</div>`:""}<div class="big">${c.big} <small>${esc(c.bl)}</small></div>${c.sec.length?sec(c.sec):""}${c.fr2?`<div>${c.fr2}</div>`:""}<div><div style="font-size:11px;color:var(--mut);margin-bottom:2px">${esc(c.hl)}</div><svg role="img" aria-label="${esc(c.n+": "+c.hl)}"></svg></div><div class="tip"></div>${c.best}</div>`);
     const card=box.lastElementChild;
     if(c.h.length>1) hline(card,c.h,{c:c.col,f:fmt});
     else card.querySelector("svg").outerHTML=`<p class="wait">Історія збирається з 22.11${c.h.length?" — поки 1 точка ("+fmt(c.h[0].v)+")":""}; лінія з'явиться з другого знімка.</p>`;
   });
+}
+/* Сайт наживо (Cloudflare Web Analytics): сьогодні vs вчора, 14 київських днів стовпчиками, топ сторінок і джерел за 7 днів. */
+function siteLive(L,badge,best,sec,cut){
+  if(!L||!L.days) return `<div class="slive"><p class="wait">Cloudflare: ${esc((L&&L.error)||"немає даних")}</p></div>`;
+  const ds=L.days,mx=Math.max(...ds.map(d=>d.pageloads),1),diff=L.today_pageloads-L.yesterday_pageloads,anyS=ds.some(d=>d.sampled);
+  const bars=ds.map((d,i)=>`<i class="${i===ds.length-1?"t":d.sampled?"s":""}" style="height:${Math.max(3,d.pageloads/mx*100)}%" title="${ddmm(d.d)}: ${d.pageloads} переглядів · ${d.visits} візитів${d.sampled?" (оцінка CF)":""}"></i>`).join("");
+  return `<div class="slive">
+    <div class="big">${fmt(L.today_pageloads)} <small>переглядів сторінок сьогодні (Київ) · вчора ${fmt(L.yesterday_pageloads)} (${diff>0?"+":diff<0?"−":"±"}${Math.abs(diff)})</small></div>
+    ${sec([[fmt(L.last24h?L.last24h.pageloads:null),"переглядів за 24 год"],[fmt(L.pageloads_7d),"переглядів за 7 днів"],[fmt(L.visits_7d),"візитів за 7 днів"]])}
+    ${L.error?`<div>${badge(L.error,1)}</div>`:""}
+    <div><div class="lab2">перегляди сторінок по днях, 14 днів${anyS?" · штрих — оцінка Cloudflare (старі дні семпльовані)":""}</div>
+    <div class="bars" role="img" aria-label="Перегляди сторінок за 14 днів: ${ds.map(d=>ddmm(d.d)+" "+d.pageloads).join(", ")}">${bars}</div>
+    <div class="bx"><span>${ddmm(ds[0].d)}</span><span>макс ${fmt(mx)}</span><span>сьогодні</span></div></div>
+    ${best("Топ сторінок за 7 днів — перегляди",(L.top_pages_7d||[]).map(p=>[p.path==="/"?"/ (головна)":cut((()=>{try{return decodeURI(p.path)}catch(e){return p.path}})(),60),fmt(p.count)]))}
+    ${best("Звідки приходять (7 днів)",(L.top_referrers_7d||[]).map(r=>[r.host,fmt(r.count)]))}
+  </div>`;
 }
 function hline(card,pts,c){
   const svg=card.querySelector("svg"),tip=card.querySelector(".tip"); if(!pts.length){return}
