@@ -39,3 +39,5 @@
 {"ev": "tts_ok", "n": 2, "out": "/home/claude/eps/guide1/part7.wav", "res": "(70.16, 24000, 'audio/wav')", "t": "03:20:37Z"}
 {"ev": "part", "part": 7, "take": 1, "f0": 117.6, "f0_ok": false, "dur": 70.2, "audit": [{"seg": 21, "ratio": 0.9, "match": 0.73}, {"seg": 22, "ratio": 0.99, "match": 0.75}], "repeat_suspect": false, "t": "03:21:30Z"}
 {"ev": "tts_ok", "n": 3, "out": "/home/claude/eps/guide1/part7.wav", "res": "(66.76, 24000, 'audio/wav')", "t": "03:21:43Z"}
+{"ev": "part", "part": 7, "take": 2, "f0": 138.7, "f0_ok": true, "dur": 66.8, "audit": [{"seg": 21, "ratio": 0.95, "match": 0.73}, {"seg": 22, "ratio": 0.94, "match": 0.78}], "repeat_suspect": false, "t": "03:22:36Z"}
+{"ev": "part_final", "part": 7, "take": 2, "f0": 138.7, "clean": true, "t": "03:22:36Z"}
