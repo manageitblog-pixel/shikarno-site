@@ -27,7 +27,7 @@ import yt, audit
 DB = os.path.join(os.path.dirname(__file__), "..", "data", "analytics.sqlite")
 UP = "/home/claude/eps/uploaded.json"
 OVERRIDES = os.path.join(os.path.dirname(__file__), "..", "data", "format_overrides.json")
-FORMATS = {"tier", "prof", "sec", "skills", "digest", "free", "try", "check", "news", "guide"}
+FORMATS = {"tier", "prof", "sec", "skills", "digest", "free", "try", "check", "news", "guide", "clip"}
 
 
 def db():
@@ -118,11 +118,11 @@ def fmt(title, pls):
 
 
 def load_overrides(path=None):
-    """{video_id: format} з format_overrides.json; ключі на «_» — коментарі. Невідомий формат → ValueError (щоб не зіпсувати медіани)."""
+    """{video_id: format} з format_overrides.json; ключі «_comment*» — коментарі (ID відео теж можуть починатись з «_»). Невідомий формат → ValueError (щоб не зіпсувати медіани)."""
     path = path or OVERRIDES
     if not os.path.exists(path): return {}
     raw = json.load(open(path, encoding="utf-8"))
-    ov = {k: v for k, v in raw.items() if not k.startswith("_")}
+    ov = {k: v for k, v in raw.items() if not k.startswith("_comment")}
     bad = {k: v for k, v in ov.items() if v not in FORMATS}
     if bad: raise ValueError(f"format_overrides: невідомі формати {bad}")
     return ov
