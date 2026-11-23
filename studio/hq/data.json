@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-23T07:50:12Z",
+ "generated": "2026-11-23T08:49:59Z",
  "kpi": {
   "subs": 314,
   "subs_goal": 1000,
@@ -11,8 +11,8 @@
   "subs_7d": 2,
   "tg": 6,
   "tg_goal": 150,
-  "site_clicks_28d": 43,
-  "site_impr_28d": 3669,
+  "site_clicks_28d": 44,
+  "site_impr_28d": 3776,
   "tiktok_auto": 2
  },
  "days": [
@@ -322,6 +322,12 @@
    "c": 3,
    "i": 130,
    "pos": 9.3
+  },
+  {
+   "d": "2026-11-21",
+   "c": 1,
+   "i": 107,
+   "pos": 10.2
   }
  ],
  "history": [
@@ -463,8 +469,8 @@
    "subs": 1,
    "long_h": 2.0,
    "short_views": 424,
-   "clicks": 8,
-   "impr": 745,
+   "clicks": 9,
+   "impr": 852,
    "partial": true,
    "subs_cum": 161,
    "long_cum": 10.2
@@ -581,11 +587,11 @@
    ]
   },
   "site": {
-   "impr_28d": 3669,
-   "clicks_28d": 43,
+   "impr_28d": 3776,
+   "clicks_28d": 44,
    "ctr": 1.17,
    "avg_pos": 8.2,
-   "last_day": "2026-11-20",
+   "last_day": "2026-11-21",
    "weeks": "2026-W44…2026-W47",
    "top_queries": [
     {
@@ -642,7 +648,7 @@
     },
     {
      "x": "2026-11-16",
-     "v": 745,
+     "v": 852,
      "p": true
     }
    ]
@@ -1081,6 +1087,28 @@
    "score": 236.8
   },
   {
+   "title": "Як зробити, щоб текст від ChatGPT не виглядав як ШІ: 5 ознак «ШІ-тексту» з довідника Вікіпедії — і промпт, що їх прибирає",
+   "format": "skills",
+   "channels": [
+    "short",
+    "site",
+    "tg"
+   ],
+   "demand": 4,
+   "fresh": 3,
+   "show": 4,
+   "fit": 5,
+   "hook": "you",
+   "length": 35,
+   "by": "researcher-niche",
+   "source": "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing",
+   "note": "Аномалії тижня 23.11: Dmytro Matniak «Як розпізнати текст ШІ: StoryScope і скіл для Claude, щоб писати по-людськи» 10236 / медіана 815,5 (12,6×); Максим Шаповал «Як навчити ШІ писати по-людськи: сторінка Вікіпедії» 1014 / 241 (4,2×). Перед сценарієм перевірити сторінку Вікіпедії та дослідження StoryScope першоджерелом; приклад — до/після на українському тексті. Не дубль №23 (лестощі ШІ).",
+   "status": "new",
+   "added": "2026-11-23",
+   "id": "55",
+   "score": 234.6
+  },
+  {
    "title": "Гайд #3 «Gemini безкоштовно українською» 18–20 хв (відео + сторінка сайту)",
    "format": "guide",
    "channels": [
@@ -1101,44 +1129,26 @@
    "score": 234.0
   },
   {
-   "title": "Як вимкнути ШІ в Canva: новий перемикач — і що все одно залишиться",
-   "format": "try",
+   "title": "ШІ чи справжнє фото? Вгадай 5 з 5 — і 3 ознаки, які видають ШІ-картинку (тест Байта)",
+   "format": "check",
    "channels": [
-    "show",
     "short",
-    "site",
+    "tiktok",
     "tg"
    ],
    "demand": 4,
-   "fresh": 4,
-   "show": 5,
-   "fit": 4,
-   "source": "https://www.canva.com/help/manage-ai-features/",
-   "by": "researcher-web",
-   "status": "new",
-   "added": "2026-11-22",
-   "id": "26",
-   "decision": "сигнал TG 141 22.11",
-   "score": 225.6
-  },
-  {
-   "title": "ChatGPT з нуля українською — гайд 12–15 хв",
-   "format": "guide",
-   "channels": [
-    "long",
-    "site"
-   ],
-   "demand": 5,
    "fresh": 3,
    "show": 5,
    "fit": 5,
-   "by": "researcher-search",
-   "source": "Search Console: «чат gpt українською безкоштовно» 577 показів",
+   "hook": "you",
+   "length": 30,
+   "by": "researcher-niche",
+   "source": "https://www.youtube.com/watch?v=KxFlhNMkojs",
+   "note": "Аномалія тижня 23.11: Академія Yours «ШІ чи справжнє фото? Я вгадав лише 2 з 6» — 1107 переглядів при медіані каналу 97 (11,4×, comp_videos 22.11). Поруч Matniak «Як розпізнати текст ШІ» 12,6×. Формат-квіз: глядач вгадує сам, відповідь у кінці → коментарі. Ознаки брати з перевірених джерел під час сценарію, фото — власні/згенеровані нами (без чужих). Відрізняється від №38 (діпфейки журналісток, безпека).",
    "status": "new",
-   "added": "2026-11-22",
-   "id": "2",
-   "kw": "chatgpt уроки (178); chatgpt як користуватися (20); що таке chatgpt (10)",
-   "score": 225.0
+   "added": "2026-11-23",
+   "id": "54",
+   "score": 233.6
   }
  ],
  "lake": {
@@ -1146,12 +1156,12 @@
   "daily": 773,
   "news": 1867,
   "niche": 604,
-  "comp": 504,
-  "comp_videos": 62243,
-  "research": 65,
-  "posts": 98,
-  "site_queries": 79,
-  "comp_ai": 235
+  "comp": 1015,
+  "comp_videos": 62794,
+  "research": 70,
+  "posts": 103,
+  "site_queries": 163,
+  "comp_ai": 241
  },
  "news": [
   {
@@ -1244,133 +1254,109 @@
    "channel": "Орлов вигорів з АІ",
    "subs": 12700,
    "lang": "uk",
-   "avg": 18059,
-   "n": 15
+   "avg": 18569,
+   "n": 30
   },
   {
    "channel": "DOU",
    "subs": 104000,
    "lang": "uk",
-   "avg": 15409,
-   "n": 98
+   "avg": 15499,
+   "n": 196
   },
   {
    "channel": "Serhii Nemchynskyi",
    "subs": 333000,
    "lang": "uk",
-   "avg": 15095,
-   "n": 42
+   "avg": 15199,
+   "n": 84
   },
   {
    "channel": "КОЖОКАР  про Ютуб ",
    "subs": 18100,
    "lang": "uk",
-   "avg": 10634,
-   "n": 12
+   "avg": 10673,
+   "n": 24
   },
   {
    "channel": "Відчайдушний програміст",
    "subs": 18300,
    "lang": "uk",
-   "avg": 10417,
-   "n": 35
+   "avg": 10436,
+   "n": 70
   },
   {
    "channel": "dev ua   ",
    "subs": 8480,
    "lang": "uk",
-   "avg": 9722,
-   "n": 11
+   "avg": 9724,
+   "n": 22
   },
   {
    "channel": "Markel Kori",
    "subs": 3740,
    "lang": "uk",
-   "avg": 4694,
-   "n": 4
+   "avg": 4695,
+   "n": 8
   },
   {
    "channel": "Red Sneakers Production",
    "subs": 15900,
    "lang": "uk",
-   "avg": 4369,
-   "n": 16
-  },
-  {
-   "channel": "ЧЕТВЕРТА ПРОМИСЛОВА",
-   "subs": 1250,
-   "lang": "uk",
-   "avg": 4194,
-   "n": 60
+   "avg": 4388,
+   "n": 34
   },
   {
    "channel": "Простий Фронтенд",
    "subs": 7240,
    "lang": "uk",
-   "avg": 4186,
-   "n": 1
+   "avg": 4187,
+   "n": 2
+  },
+  {
+   "channel": "ЧЕТВЕРТА ПРОМИСЛОВА",
+   "subs": 1250,
+   "lang": "uk",
+   "avg": 4130,
+   "n": 122
   },
   {
    "channel": "TechAkshay 2.0",
    "subs": 334000,
    "lang": "en",
-   "avg": 2301903,
-   "n": 47
+   "avg": 2318363,
+   "n": 94
   },
   {
    "channel": "ExpHub - Prashant Kirad",
    "subs": 12500000,
    "lang": "en",
-   "avg": 1936739,
-   "n": 3
+   "avg": 1560320,
+   "n": 8
   },
   {
    "channel": "Paul J Lipsky",
    "subs": 535000,
    "lang": "en",
-   "avg": 1552458,
-   "n": 49
+   "avg": 1553702,
+   "n": 98
   },
   {
    "channel": "Shark Numbers",
    "subs": 2010000,
    "lang": "en",
-   "avg": 1250873,
-   "n": 9
+   "avg": 1276821,
+   "n": 18
   },
   {
    "channel": "Vicky x Vlogs",
    "subs": 101000,
    "lang": "en",
-   "avg": 1130611,
-   "n": 108
+   "avg": 1115846,
+   "n": 220
   }
  ],
  "activity": [
-  {
-   "id": "77",
-   "agent": "seo",
-   "task": "Ріст до 1.12: CTR — нові title/description для 5 сторінок з найбільшими показами і низьким CTR",
-   "started": "2026-11-22T22:03:48Z",
-   "finished": "2026-11-22T22:09:37Z",
-   "result": "SEO: нові title/description для 4 сторінок з найбільшими показами й найнижчим CTR (ChatGPT безкоштовно, вимкнути Gemini, Anthropic IPO, скачати ChatGPT), коміт 6096092; контроль експерименту G1 не чіпали"
-  },
-  {
-   "id": "78",
-   "agent": "clip",
-   "task": "Ріст до 1.12: 3 нарізки з довгих (без озвучки) для Shorts/TikTok цього тижня",
-   "started": "2026-11-22T22:03:48Z",
-   "finished": "2026-11-22T22:46:48Z",
-   "result": "3 кліпи-воронки з довгих без нової озвучки (голос з vo.wav, межі речень з align.json, −14 LUFS, 1080×1920, кадр 0 з плашкою серії й Байтом, картка «Повний розбір ↓»): clip1 вчитель (6-2a9ncHaz4 0:31.8–1:05.1) → ENKGdbr04h0, 23.11 13Z, PASS; clip2 SMM (6-2a9ncHaz4 4:09–4:44) → _wp0rz8edB8, 24.11 13Z, PASS; clip3 реклама в ChatGPT (FcWmonPhvqE 5:08–5:40) відрендерено, не залито — квота YouTube API на 22.11 вичерпана (~9,7 тис./10 тис.); після 08Z 23.11: python3 studio/eps/upload_clip.py clip3 2026-11-25T13:00:00Z"
-  },
-  {
-   "id": "79",
-   "agent": "cm",
-   "task": "Ріст до 1.12: воронки в Telegram (опис YouTube, закріпи, сайт, TikTok-біо) + безкоштовний взаємопіар",
-   "started": "2026-11-22T22:03:48Z",
-   "finished": "2026-11-22T22:14:43Z",
-   "result": "Воронки в TG: на сайті блок «Промпти — у Telegram» після «Коротко» в кожній статті + кнопка «50 промптів» у hero головної; yt.upload сам дописує рядок t.me/shikarno_ai_ua, якщо його нема (усі 86 META і топ-10 роликів посилання вже мають). Знайдено 10 укр. ШІ/tech-каналів 60–2,7K для взаємопіару, шаблон листа і біо TikTok — docs/research/tg-crosspromo-2026-11-22.md"
-  },
   {
    "id": "80",
    "agent": "dist",
@@ -1586,6 +1572,30 @@
    "started": "2026-11-23T07:32:17Z",
    "finished": "2026-11-23T07:32:59Z",
    "result": "Гайд #2: перевірка diff 23.11 — PASS. Усі 4 обов'язкові правки й правка сегмента 8 застосовані точно, нових фактів немає, gsay [12,13,14]=1296≤1300, «Opus 4.5» на g2_age.png розмито"
+  },
+  {
+   "id": "107",
+   "agent": "longs",
+   "task": "Гайд #1: збірка (vo → audit_vo → align → prep_digest → build_digest.sh), обкладинка, meta, стаття, заливка 25.11 17:00Z",
+   "started": "2026-11-23T08:18:54Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "108",
+   "agent": "qa",
+   "task": "QA озвучки ep84–86 (F0 v2 127–138, ASR 0,46–0,58): порівняти з базою опублікованих Shorts, вирішити переозвучку",
+   "started": "2026-11-23T08:27:55Z",
+   "finished": "2026-11-23T08:46:49Z",
+   "result": "QA озвучки: база ep73–80 (F0 мед. 135,4; ASR тір-листів 0,54–0,59) — 0,46–0,58 норма, обрізань/повторів немає. ep84, ep86 KEEP; ep85 RETAKE (127,6, фолбек збережено з tl); ep83 RETAKE у черзі. docs/research/voice-qa-2026-11-23.md"
+  },
+  {
+   "id": "109",
+   "agent": "niche",
+   "task": "Конкуренти (пн): ingest, аналіз українських каналів за тиждень (ріст, вистріли ≥3×), ідеї, звіт власнику",
+   "started": "2026-11-23T08:38:09Z",
+   "finished": "2026-11-23T08:42:08Z",
+   "result": "Конкуренти 23.11: UA-ріст за добу (Аксіома +19%, Matniak +5,6%), 71 аномалія за 14 днів, ідеї 54–56, звіт docs/research/competitors-2026-11-23.md"
   }
  ],
  "agents": [
