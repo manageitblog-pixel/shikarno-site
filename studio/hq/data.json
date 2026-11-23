@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-23T20:25:57Z",
+ "generated": "2026-11-23T21:18:34Z",
  "fresh": {
-  "yt_live": "2026-11-23T20:25:57Z",
+  "yt_live": "2026-11-23T21:18:35Z",
   "yt_analytics": "2026-11-20",
-  "tg_members": "2026-11-23T20:26:00Z",
-  "tg_posts": "2026-11-23T20:19:24Z",
+  "tg_members": "2026-11-23T21:18:36Z",
+  "tg_posts": "2026-11-23T21:18:36Z",
   "ideas": "2026-11-23T20:21:06Z",
-  "news": "2026-11-23 16:53",
+  "news": "2026-11-23 21:16",
   "comp": "2026-11-23",
   "tiktok": "2026-11-23T16",
   "site": "2026-11-21",
-  "site_live": "2026-11-23T20:19:30Z",
-  "activity": "2026-11-23T20:18:31Z",
+  "site_live": "2026-11-23T21:18:38Z",
+  "activity": "2026-11-23T21:17:50Z",
   "asks": "2026-11-23T19:55:00Z"
  },
  "notes": [],
@@ -535,7 +535,7 @@
    "subs": 315,
    "views_total": 11961,
    "videos": 96,
-   "live_at": "2026-11-23T20:25:57Z",
+   "live_at": "2026-11-23T21:18:35Z",
    "views_7d": 815,
    "pct_7d": 51.0,
    "subs_7d": 2,
@@ -607,12 +607,12 @@
    ]
   },
   "tiktok": {
-   "videos": 11,
-   "views_total": 15304,
-   "views_7d": 1220,
-   "new_7d": 5,
-   "saves_total": 122,
-   "likes_total": 302,
+   "videos": 12,
+   "views_total": 15409,
+   "views_7d": 1325,
+   "new_7d": 6,
+   "saves_total": 123,
+   "likes_total": 305,
    "last_snapshot": "2026-11-23T16",
    "best": [
     {
@@ -647,24 +647,28 @@
      "v": 12387
     },
     {
+     "x": "2026-11-23",
+     "v": 12658
+    },
+    {
      "x": "2026-11-23T00",
-     "v": 12479
+     "v": 12653
     },
     {
      "x": "2026-11-23T04",
-     "v": 15265
+     "v": 15439
     },
     {
      "x": "2026-11-23T08",
-     "v": 15266
+     "v": 15440
     },
     {
      "x": "2026-11-23T12",
-     "v": 15267
+     "v": 15441
     },
     {
      "x": "2026-11-23T16",
-     "v": 15304
+     "v": 15409
     }
    ]
   },
@@ -736,24 +740,19 @@
     }
    ],
    "live": {
-    "updated": "2026-11-23T20:19:30Z",
+    "updated": "2026-11-23T21:18:38Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
-    "today_pageloads": 4,
-    "today_visits": 4,
+    "today_pageloads": 10,
+    "today_visits": 10,
     "yesterday_pageloads": 16,
     "yesterday_visits": 14,
-    "pageloads_7d": 41,
-    "visits_7d": 37,
+    "pageloads_7d": 60,
+    "visits_7d": 50,
     "last24h": {
-     "pageloads": 5,
-     "visits": 5,
+     "pageloads": 10,
+     "visits": 10,
      "hours": [
-      {
-       "h": "2026-11-22T21:00:00Z",
-       "pageloads": 1,
-       "visits": 1
-      },
       {
        "h": "2026-11-22T22:00:00Z",
        "pageloads": 0,
@@ -866,6 +865,11 @@
       },
       {
        "h": "2026-11-23T20:00:00Z",
+       "pageloads": 6,
+       "visits": 6
+      },
+      {
+       "h": "2026-11-23T21:00:00Z",
        "pageloads": 0,
        "visits": 0
       }
@@ -916,9 +920,9 @@
      },
      {
       "d": "2026-11-17",
-      "pageloads": 5,
-      "visits": 5,
-      "sampled": false
+      "pageloads": 20,
+      "visits": 20,
+      "sampled": true
      },
      {
       "d": "2026-11-18",
@@ -952,15 +956,15 @@
      },
      {
       "d": "2026-11-23",
-      "pageloads": 4,
-      "visits": 4,
+      "pageloads": 10,
+      "visits": 10,
       "sampled": false
      }
     ],
     "top_pages_7d": [
      {
       "path": "/",
-      "count": 12
+      "count": 18
      },
      {
       "path": "/novyny/claude-bezkoshtovno/",
@@ -989,12 +993,16 @@
       "count": 10
      },
      {
+      "host": "m.facebook.com",
+      "count": 4
+     },
+     {
       "host": "www.bing.com",
       "count": 2
      },
      {
-      "host": "www.youtube.com",
-      "count": 1
+      "host": "www.facebook.com",
+      "count": 2
      }
     ],
     "top_countries_7d": [
@@ -1004,7 +1012,7 @@
      },
      {
       "country": "US",
-      "count": 4
+      "count": 10
      },
      {
       "country": "PL",
@@ -1152,7 +1160,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 6
+   "total": 7
   },
   {
    "id": "ENKGdbr04h0",
@@ -1571,7 +1579,7 @@
  "lake": {
   "videos": 94,
   "daily": 773,
-  "news": 1913,
+  "news": 1940,
   "niche": 828,
   "comp": 511,
   "comp_videos": 62794,
@@ -1583,87 +1591,87 @@
  "news": [
   {
    "date": "2026-11-23",
+   "source": "openai",
+   "title": "Connected intelligence for in-house legal",
+   "score": null,
+   "url": "https://openai.com/business/learn/connected-intelligence-for-in-house-legal"
+  },
+  {
+   "date": "2026-11-23",
+   "source": "google",
+   "title": "A more tailored Google Search that’s uniquely yours",
+   "score": null,
+   "url": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/"
+  },
+  {
+   "date": "2026-11-23",
+   "source": "gemini",
+   "title": "See what 6 builders are making with Gemini 4 Hydrogen",
+   "score": null,
+   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-hydrogen-builders/"
+  },
+  {
+   "date": "2026-11-23",
+   "source": "gemini",
+   "title": "Here are 4 things you didn’t know you could do with Gemini Canvas.",
+   "score": null,
+   "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-canvas-tasks/"
+  },
+  {
+   "date": "2026-11-23",
+   "source": "deepmind",
+   "title": "Finding faster quantum algorithms with agents and formal verification",
+   "score": null,
+   "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/"
+  },
+  {
+   "date": "2026-11-23",
+   "source": "meta",
+   "title": "Researchers Are Using Meta’s Open-Weight AI Models to Transform Medicine",
+   "score": null,
+   "url": "https://about.fb.com/news/2026/11/researchers-using-meta-open-weight-ai-models-medical-breakthroughs/"
+  },
+  {
+   "date": "2026-11-23",
    "source": "hf",
-   "title": "How to build and maintain an agentic evaluation",
+   "title": "RoboTrack: Point tracking for real-world robotic manipulation",
    "score": null,
-   "url": "https://huggingface.co/blog/agentic-evals"
+   "url": "https://huggingface.co/blog/allenai/robotrack"
   },
   {
    "date": "2026-11-23",
    "source": "techcrunch",
-   "title": "Trump reportedly called into Nvidia board meeting to advocate for Huang’s return",
+   "title": "Nvidia employees greet Jensen Huang like a hero as he returns to company’s HQ",
    "score": null,
-   "url": "https://techcrunch.com/2026/11/23/trump-reportedly-called-into-nvidia-board-meeting-to-advocate-for-huangs-return/"
+   "url": "https://techcrunch.com/2026/11/23/nvidia-employees-greet-jensen-huang-like-a-hero-as-he-returns-to-companys-hq/"
   },
   {
    "date": "2026-11-23",
    "source": "techcrunch",
-   "title": "Trump endorses Jensen Huang’s return to Nvidia, says US has no evidence of wrongdoing",
+   "title": "Google Search’s AI Mode can now tap into Drive and Wallet for more personalized responses",
    "score": null,
-   "url": "https://techcrunch.com/2026/11/23/trump-endorses-jensen-huangs-return-to-nvidia-says-us-has-no-evidence-of-wrongdoing/"
+   "url": "https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses/"
   },
   {
    "date": "2026-11-23",
    "source": "techcrunch",
-   "title": "Sierra doubles valuation to $30B within six months as demand for AI in CX takes off",
+   "title": "Jensen Huang scheduled to testify next week in Senate following reinstatement as Nvidia CEO",
    "score": null,
-   "url": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/"
+   "url": "https://techcrunch.com/2026/11/23/jensen-huang-scheduled-to-testify-next-week-in-senate-following-reinstatement-as-nvidia-ceo/"
   },
   {
    "date": "2026-11-23",
    "source": "techcrunch",
-   "title": "Nvidia reverses course and brings Jensen Huang back as CEO",
+   "title": "Amazon snaps up Decart’s AI optimization tech for $7.5B as it prepares to sell Trainium chips",
    "score": null,
-   "url": "https://techcrunch.com/2026/11/23/nvidia-reverses-course-and-brings-jensen-huang-back-as-ceo/"
+   "url": "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/"
   },
   {
    "date": "2026-11-23",
-   "source": "verge",
-   "title": "Tech leaders are celebrating Jensen Huang’s return",
+   "source": "techcrunch",
+   "title": "Jensen Huang isn’t out of the woods yet",
    "score": null,
-   "url": "https://www.theverge.com/tech/1040069/jensen-huang-return-elon-musk-sam-altman-yay"
-  },
-  {
-   "date": "2026-11-23",
-   "source": "verge",
-   "title": "Jensen Huang is back as Nvidia’s CEO",
-   "score": null,
-   "url": "https://www.theverge.com/tech/1039937/nvidia-ceo-jensen-huang-reinstated"
-  },
-  {
-   "date": "2026-11-23",
-   "source": "venturebeat",
-   "title": "AI is changing who gets a say in IT decisions",
-   "score": null,
-   "url": "https://venturebeat.com/security/ai-is-changing-who-gets-a-say-in-it-decisions"
-  },
-  {
-   "date": "2026-11-23",
-   "source": "venturebeat",
-   "title": "AI agents have permission. Who’s checking the blast radius?",
-   "score": null,
-   "url": "https://venturebeat.com/security/ai-agents-have-permission-whos-checking-the-blast-radius"
-  },
-  {
-   "date": "2026-11-23",
-   "source": "ars",
-   "title": "Jensen Huang reinstated as Nvidia CEO, board chair",
-   "score": null,
-   "url": "https://arstechnica.com/ai/2026/11/jensen-huang-reinstated-as-nvidia-ceo-board-chair/"
-  },
-  {
-   "date": "2026-11-23",
-   "source": "wired",
-   "title": "Jensen Huang Is Back as Nvidia CEO",
-   "score": null,
-   "url": "https://www.wired.com/story/jensen-huang-is-back-as-nvidia-ceo/"
-  },
-  {
-   "date": "2026-11-23",
-   "source": "wired",
-   "title": "Nvidia Is Powering Brain-Computer Interfaces Now",
-   "score": null,
-   "url": "https://www.wired.com/story/nvidia-is-powering-brain-computer-interfaces-now/"
+   "url": "https://techcrunch.com/2026/11/23/jensen-huang-isnt-out-of-the-woods-yet/"
   }
  ],
  "competitors": [
@@ -1774,54 +1782,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "95",
-   "agent": "cm",
-   "task": "Коментарі YouTube і група TG без відповіді — відповісти (≤ 200 од. API)",
-   "started": "2026-11-23T00:18:48Z",
-   "finished": "2026-11-23T00:20:39Z",
-   "result": "Коментарі перевірено: YouTube — 100 гілок, нових глядацьких без відповіді немає (старий рос. троль пропущено, не видалено), перші коментарі на публічних усі є, черга 5 — у майбутньому; TG-група — лише автопересилання, с…"
-  },
-  {
-   "id": "96",
-   "agent": "de",
-   "task": "Збирач даталейку 00:53Z: новини, TikTok/TG-знімок, сигнали",
-   "started": "2026-11-23T00:53:11Z",
-   "finished": "2026-11-23T00:56:30Z",
-   "result": "Даталейк 23.11 00Z: +22 новини, TikTok-знімок (7 відео), TG 6 підписників, ідеї 43–47 (топ — Signal проти ШІ телефона, 265,6); сигнали ще молодші 24 год"
-  },
-  {
-   "id": "97",
-   "agent": "trend",
-   "task": "фон: веб-скан 02:20Z — новини за 12 год, кандидати в шоу #3 (29.11)",
-   "started": "2026-11-23T02:18:16Z",
-   "finished": "2026-11-23T02:23:39Z",
-   "result": "Веб-скан 12 год (~20 пошуків EN/UA): вихідні тихі. Додав 1 ідею: №48 «2 тижні без ChatGPT — менше самотності» (arXiv 2611.25263), кандидат у шоу #3 у парі з №40. Рейтинг кандидатів шоу #3 → docs/research/show3-candidate…"
-  },
-  {
-   "id": "98",
-   "agent": "seo",
-   "task": "фон: нова стаття під запит з попитом, якого сайт не покриває (кандидати: №44 імпорт історії ChatGPT у Gemini, №43 Signal vs ШІ в телефоні)",
-   "started": "2026-11-23T03:17:51Z",
-   "finished": "2026-11-23T03:22:05Z",
-   "result": "Опубліковано (авто 23.11 18:00) статтю «Як перенести чати з ChatGPT у Gemini» — /novyny/perenesty-chaty-chatgpt-v-gemini/. Ключ: «перенести чати з ChatGPT у Gemini»; попит в UA малий (gemini import chatgpt ≈10/міс за Ub…"
-  },
-  {
-   "id": "99",
-   "agent": "de",
-   "task": "Збирач даталейку 04:53Z: новини, TikTok/TG-знімок, сигнали",
-   "started": "2026-11-23T04:53:10Z",
-   "finished": "2026-11-23T04:56:51Z",
-   "result": "Збір даних 04Z: новини +18, TikTok-знімок, TG 6, ідеї 49–53 (без схвалених)"
-  },
-  {
-   "id": "100",
-   "agent": "cm",
-   "task": "Telegram-відділ 23.11: метрика, воронки, план і експеримент тижня (пост дня — «Чорна пʼятниця» о 09:05 Київ, вже заплановано)",
-   "started": "2026-11-23T06:42:02Z",
-   "finished": "2026-11-23T06:50:00Z",
-   "result": "TG: 6 учасників (0/д, +1/тиж); CTA «50 промптів» → пост №37 (закріп показував іншу PDF), 5 перших коментарів A/B + TG; експеримент tg-specific-cta запущено"
-  },
   {
    "id": "101",
    "agent": "eic",
@@ -2098,6 +2058,60 @@
    "finished": null,
    "result": "",
    "agent_raw": "niche"
+  },
+  {
+   "id": "135",
+   "agent": "designer",
+   "task": "Instagram: обкладинки Reels під сітку 3:4 (кадр 0) для 5 свіжих Shorts + обкладинки хайлайтів",
+   "started": "2026-11-23T20:35:01Z",
+   "finished": null,
+   "result": "",
+   "agent_raw": "design"
+  },
+  {
+   "id": "136",
+   "agent": "dist",
+   "task": "Meta напряму: інструкція для власника (Instagram + Threads API) і сторінки, які вимагає Meta",
+   "started": "2026-11-23T20:40:16Z",
+   "finished": null,
+   "result": "",
+   "agent_raw": "distribution"
+  },
+  {
+   "id": "137",
+   "agent": "de",
+   "task": "Збирач даталейку 21:20Z: новини, TikTok/TG-знімок, сигнали",
+   "started": "2026-11-23T21:17:50Z",
+   "finished": null,
+   "result": "",
+   "agent_raw": "data"
+  },
+  {
+   "id": "138",
+   "agent": "trend",
+   "task": "фон: веб-скан трендів 21Z (12 год) → ідеї, кандидати в шоу #3",
+   "started": "2026-11-23T21:17:50Z",
+   "finished": null,
+   "result": "",
+   "agent_raw": "research"
+  },
+  {
+   "id": "139",
+   "agent": "designer",
+   "task": "фон: ресерч обкладинок/кадру 0 українських аномалій → design-guide",
+   "started": "2026-11-23T21:17:50Z",
+   "finished": null,
+   "result": "",
+   "agent_raw": "design"
+  },
+  {
+   "id": "140",
+   "agent": "da",
+   "task": "фон: якість даталейку + перевірка експериментів (ops.py)",
+   "started": "2026-11-23T21:17:50Z",
+   "finished": null,
+   "result": "",
+   "agent_raw": "analyst"
   }
  ],
  "agents": [

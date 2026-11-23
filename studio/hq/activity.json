@@ -1087,6 +1087,38 @@
    "started": "2026-11-23T20:40:16Z",
    "finished": null,
    "result": ""
+  },
+  {
+   "id": "137",
+   "agent": "data",
+   "task": "Збирач даталейку 21:20Z: новини, TikTok/TG-знімок, сигнали",
+   "started": "2026-11-23T21:17:50Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "138",
+   "agent": "research",
+   "task": "фон: веб-скан трендів 21Z (12 год) → ідеї, кандидати в шоу #3",
+   "started": "2026-11-23T21:17:50Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "139",
+   "agent": "design",
+   "task": "фон: ресерч обкладинок/кадру 0 українських аномалій → design-guide",
+   "started": "2026-11-23T21:17:50Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "140",
+   "agent": "analyst",
+   "task": "фон: якість даталейку + перевірка експериментів (ops.py)",
+   "started": "2026-11-23T21:17:50Z",
+   "finished": null,
+   "result": ""
   }
  ]
 }
