@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-23T04:49:43Z",
+ "generated": "2026-11-23T04:57:04Z",
  "kpi": {
   "subs": 314,
   "subs_goal": 1000,
@@ -526,13 +526,13 @@
    ]
   },
   "tiktok": {
-   "videos": 7,
-   "views_total": 12479,
-   "views_7d": 1179,
+   "videos": 10,
+   "views_total": 15265,
+   "views_7d": 1181,
    "new_7d": 4,
-   "saves_total": 93,
-   "likes_total": 224,
-   "last_snapshot": "2026-11-23T00",
+   "saves_total": 121,
+   "likes_total": 300,
+   "last_snapshot": "2026-11-23T04",
    "best": [
     {
      "title": "Український ШІ Сяйво: коли вийде",
@@ -549,11 +549,11 @@
      "posted": "2026-11-12"
     },
     {
-     "title": "Gemini читає твою пошту?",
-     "views": 1200,
-     "saves": 12,
-     "id": "7707003510256192776",
-     "posted": "2026-11-11"
+     "title": "Дав ШІ роль таксиста",
+     "views": 2100,
+     "saves": 27,
+     "id": "7705840932226141448",
+     "posted": "2026-11-08"
     }
    ],
    "history": [
@@ -568,6 +568,10 @@
     {
      "x": "2026-11-23T00",
      "v": 12479
+    },
+    {
+     "x": "2026-11-23T04",
+     "v": 15265
     }
    ]
   },
@@ -1129,7 +1133,7 @@
  "lake": {
   "videos": 93,
   "daily": 746,
-  "news": 1865,
+  "news": 1867,
   "niche": 604,
   "comp": 504,
   "comp_videos": 62243,
@@ -1139,6 +1143,20 @@
   "comp_ai": 235
  },
  "news": [
+  {
+   "date": "2026-11-23",
+   "source": "techcrunch",
+   "title": "How Notable Capital, GIC, and Baillie Gifford bet big on Anthropic before its IPO",
+   "score": null,
+   "url": "https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo/"
+  },
+  {
+   "date": "2026-11-23",
+   "source": "hn",
+   "title": "LiberNT: An AI-Fueled Fork of ReactOS Focused on Windows 11 Compatibility",
+   "score": 7,
+   "url": "https://www.phoronix.com/news/LiberNT"
+  },
   {
    "date": "2026-11-22",
    "source": "verge",
@@ -1150,28 +1168,28 @@
    "date": "2026-11-22",
    "source": "hn",
    "title": "0rwx – A simple model of AI usage, inspired by Unix permissions",
-   "score": 8,
+   "score": 33,
    "url": "https://0rwx.com/"
   },
   {
    "date": "2026-11-22",
    "source": "hn",
    "title": "Agent swarm trying to solve P vs. NP",
-   "score": 89,
+   "score": 136,
    "url": "https://pequalnp.com/"
   },
   {
    "date": "2026-11-22",
    "source": "hn",
    "title": "Localcode, open source agentic coding on your Mac with one command",
-   "score": 13,
+   "score": 41,
    "url": "https://github.com/mjwsolo/localcode"
   },
   {
    "date": "2026-11-22",
    "source": "hn",
    "title": "What Happened in Fall 2026: AI and P vs. NP",
-   "score": 13,
+   "score": 20,
    "url": "https://cacm.acm.org/blogcacm/what-happened-in-fall-2026-ai-and-p-vs-np"
   },
   {
@@ -1185,7 +1203,7 @@
    "date": "2026-11-22",
    "source": "hn",
    "title": "Arizona grandfather hailed as a hero after finding missing toddler in desert",
-   "score": 8,
+   "score": 13,
    "url": "https://www.theguardian.com/us-news/2026/nov/22/arizona-grandfather-toddler-missing-desert"
   },
   {
@@ -1208,20 +1226,6 @@
    "title": "Your ML model passed every test. Here’s what those tests might have missed",
    "score": null,
    "url": "https://venturebeat.com/orchestration/your-ml-model-passed-every-test-heres-what-those-tests-might-have-missed"
-  },
-  {
-   "date": "2026-11-22",
-   "source": "hn",
-   "title": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
-   "score": 171,
-   "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth"
-  },
-  {
-   "date": "2026-11-22",
-   "source": "hn",
-   "title": "Harvard CS 2881R AI Safety",
-   "score": 33,
-   "url": "https://boazbk.github.io/mltheoryseminar/"
   }
  ],
  "competitors": [
@@ -1332,14 +1336,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "69",
-   "agent": "cm",
-   "task": "Дослідження: де і в кого купити пости в TG (укр ШІ/tech-канали), ціни, очікуваний ефект → презентація власнику",
-   "started": "2026-11-22T19:14:40Z",
-   "finished": "2026-11-22T19:25:37Z",
-   "result": "TG платні пости: 15 укр каналів (прайс за запитом), Telegram Ads від €500 — не для нас; 0→15–30 підп. (оцінка)"
-  },
   {
    "id": "70",
    "agent": "algo",
@@ -1571,6 +1567,14 @@
    "started": "2026-11-23T03:17:51Z",
    "finished": "2026-11-23T03:22:05Z",
    "result": "Опубліковано (авто 23.11 18:00) статтю «Як перенести чати з ChatGPT у Gemini» — /novyny/perenesty-chaty-chatgpt-v-gemini/. Ключ: «перенести чати з ChatGPT у Gemini»; попит в UA малий (gemini import chatgpt ≈10/міс за Ubersuggest), але тема свіжа (Google, 19.11) і в автодоповненнях багато варіантів. Факти перевірено в довідці Google і OpenAI; в Україні працює (обмеження — ЄЕЗ, CH, UK). Ідея №43 (Signal) вже покрита статтею 25.11."
+  },
+  {
+   "id": "99",
+   "agent": "de",
+   "task": "Збирач даталейку 04:53Z: новини, TikTok/TG-знімок, сигнали",
+   "started": "2026-11-23T04:53:10Z",
+   "finished": "2026-11-23T04:56:51Z",
+   "result": "Збір даних 04Z: новини +18, TikTok-знімок, TG 6, ідеї 49–53 (без схвалених)"
   }
  ],
  "agents": [
