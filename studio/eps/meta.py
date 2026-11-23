@@ -372,3 +372,58 @@ META23.update({'weekly2': dict(title='Новини ШІ за тиждень: Ant
  tags=['новини ШІ', 'новини штучного інтелекту', 'ШІ за тиждень', 'Anthropic IPO', 'Anthropic біржа', 'Gemini Tasks', 'Gemini 4 Neon', 'GPT-6.2', 'Signal ШІ', 'Claude', 'AI news', 'ШІ', 'штучний інтелект', 'ШІкарно'])})
 META23.update({'ep81_tier_kids': dict(title='Штучний інтелект для дітей: який ШІ обрати? 🧒 Тір-лист Байта #6 #ШІ #shorts', description='Штучний інтелект для дітей — тір-лист Байта для батьків: домашка, англійська, казка на ніч, безпека і гра про ШІ.\n\n• Домашка — Gemini: попроси пояснити кроками, а не дати готову відповідь.\n• Англійська — ChatGPT: розмова голосом. ChatGPT не для дітей до 13, з 13 до 18 — з дозволу батьків.\n• Казка на ніч — Gemini Storybook: ілюстрована книжка на 10 сторінок. Лише для 18+, тож створюєш її ти.\n• Безпека — Family Link: дитині до 13 Gemini доступний лише в контрольованому акаунті, якщо батьки ввімкнуть.\n• Про ШІ — AI Quests: безкоштовна веб-гра Google Research українською для 11–14 років, без реєстрації.\n\nClaude — лише для користувачів від 18 років. Суб\'єктивний рейтинг Байта; вікові правила — з офіційних довідок сервісів.\n\nДжерела:\n• OpenAI, вік для ChatGPT: https://help.openai.com/en/articles/8313401-is-chatgpt-safe-for-all-ages\n• Google, Gemini для дітей у Family Link: https://support.google.com/gemini/answer/16109150\n• Google, Gemini Storybook: https://gemini.google/overview/storybook/\n• Anthropic, вік для Claude: https://support.claude.com/en/articles/13117299-minimum-age-requirement-access-restriction\n• AI Quests українською: https://research.google/ai-quests/intl/uk_ua/faq\n• DOU про запуск AI Quests: https://dou.ua/lenta/news/google-ai-quests-ukraine-kids/'+FOOT+'\n\n#shorts #ШІ #тірліст #ШІдлядітей', tags=['штучний інтелект для дітей', 'ШІ для дітей', 'ШІ для школярів', 'ШІ для домашки', 'з якого віку ChatGPT', 'Gemini для дітей', 'Family Link', 'AI Quests', 'Gemini Storybook', 'ChatGPT', 'тір-лист ШІ', 'ШІ', 'штучний інтелект', 'ШІкарно'])})
 META23.update({'ep82_tier_kitchen': dict(title='Меню на тиждень і що приготувати з того, що є: який ШІ? 🍳 Тір-лист Байта #7 #ШІ #shorts', description='Меню на тиждень, вечеря з того, що є в холодильнику, і список покупок — тір-лист Байта: який ШІ найкращий для кухні.\n\n• Що приготувати з того, що є — ChatGPT: сфоткай полиці холодильника й попроси рецепт. Фото можна надсилати й на безкоштовному плані (з лімітами).\n• Меню на тиждень — Claude: попроси розписати його таблицею по днях.\n• Список покупок — Gemini: може створити список у Google Keep або додати в нього пункти (потрібні підключені застосунки Google і ввімкнена історія Gemini).\n• Калорії — етикетка: ШІ з фото лише прикидає, тож для точних цифр дивись склад на упаковці. Це не медична й не дієтологічна порада.\n• Заміна інгредієнта — ChatGPT голосом: питаєш, коли руки в тісті.\n\nФото вміють читати всі три — ChatGPT, Gemini і Claude. Суб\'єктивний рейтинг Байта; можливості — з офіційних довідок сервісів.\n\nДжерела:\n• OpenAI, фото в ChatGPT: https://help.openai.com/en/articles/8400551-chatgpt-image-inputs-faq\n• OpenAI, голосовий режим: https://help.openai.com/en/articles/8400625-voice-mode-faq\n• Google, Gemini і Google Keep: https://support.google.com/gemini/answer/15230597\n• Google, файли й фото в Gemini: https://support.google.com/gemini/answer/14903178\n• Anthropic, файли й фото в Claude: https://support.claude.com/en/articles/8241126-uploading-files-to-claude'+FOOT+'\n\n#shorts #ШІ #тірліст #менюнатиждень #рецепти', tags=['меню на тиждень', 'що приготувати з того що є', 'що приготувати на вечерю', 'рецепти ChatGPT', 'ШІ рецепти', 'ШІ для кухні', 'список покупок', 'ChatGPT', 'Gemini', 'Claude', 'тір-лист ШІ', 'ШІ', 'штучний інтелект', 'ШІкарно'])})
+
+# Гайд #1 (довге 16:9, 19:03): вихід ср 25.11 17:00Z. Таймкоди — з guide1/props.json після рендеру. Обкладинка — thumb_B (Thumb4Wide v4), A/B у Studio «Test & compare» з thumb_A — вручну (API не вміє).
+META23.update({'guide1': dict(
+ title='ChatGPT українською з нуля: як користуватися безкоштовно і без VPN | Гайд 2026',
+ description='''Повний гайд для новачка: заходиш у ChatGPT без VPN і без грошей, вмикаєш українську і робиш 5 реальних справ з готовими промптами. Плюс ліміти безкоштовної версії, тарифи, безпека і 3 помилки новачків. Факти — зі сторінок OpenAI станом на 22.11.2026.
+
+0:00 Вступ: що вмітимеш після гайда
+0:31 План
+0:56 Вхід без VPN: сайт і застосунки
+2:21 Реєстрація за хвилину
+3:15 Перший екран: що де
+3:46 ChatGPT українською: кнопки і відповіді
+4:46 Що вміє безкоштовна версія
+6:13 Голосовий режим
+6:36 Формула гарного запиту
+7:20 Задача 1: лист
+7:52 Задача 2: план на тиждень
+8:21 Задача 3: пояснити документ
+8:53 Задача 4: фото чека → таблиця
+9:28 Задача 5: вивчити тему
+10:18 Ще 2 промпти в запас
+10:45 Коли закінчився ліміт
+11:39 Тарифи: Free, Go, Plus, Pro, Business
+12:49 Скільки це в Україні
+13:40 Платити чи ні?
+14:09 Безпека: що не писати в чат
+15:27 Пам'ять ChatGPT
+15:55 3 помилки новачків
+17:16 Якщо ChatGPT замало: Claude і Gemini
+17:40 Вердикт Байта
+18:06 3 кроки на сьогодні
+
+Усі промпти з гайда і покрокова інструкція: https://shikarno.com.ua/novyny/chatgpt-bezkoshtovno-v-ukraini/
+
+Джерела (перевірено 22.11.2026):
+• Країни, де працює ChatGPT: https://help.openai.com/en/articles/7947663-chatgpt-supported-countries
+• Безкоштовний тариф, ліміти: https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq
+• Проблеми зі входом: https://help.openai.com/en/articles/7426629-why-cant-i-log-in-to-chatgpt
+• Мова інтерфейсу: https://help.openai.com/en/articles/8357869-how-to-change-your-language-setting-in-chatgpt
+• ChatGPT Go: https://help.openai.com/en/articles/11989085-what-is-chatgpt-go
+• ChatGPT Plus: https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus
+• ChatGPT Pro: https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers
+• Реклама в ChatGPT: https://help.openai.com/en/articles/20001047-ads-in-chatgpt
+• Керування даними: https://help.openai.com/en/articles/7730893-data-controls-faq
+• Тимчасовий чат: https://help.openai.com/en/articles/8914046-temporary-chat-faq
+• Пам'ять: https://help.openai.com/en/articles/8590148-memory-faq
+• Згортання GPT (11.12.2026): https://help.openai.com/en/articles/8554397-creating-and-editing-gpts
+• Чи можна вірити ChatGPT: https://help.openai.com/en/articles/8313428-does-chatgpt-tell-the-truth
+• ChatGPT в App Store (Україна): https://apps.apple.com/ua/app/chatgpt/id6448311069
+
+Ціни для США — з офіційних сторінок OpenAI; ціни в українському App Store — станом на 22.11.2026, можуть змінитися.''',
+ tags=['ChatGPT українською', 'ChatGPT з нуля', 'як користуватися ChatGPT', 'ChatGPT безкоштовно', 'ChatGPT без VPN', 'ChatGPT в Україні', 'промпти ChatGPT', 'ChatGPT гайд', 'ChatGPT', 'OpenAI', 'ChatGPT tutorial', 'ШІ', 'штучний інтелект', 'ШІкарно'],
+ playlists=['free'],
+ first_comment='Що першим зробиш у ChatGPT: А — лист, який не соромно надіслати, Б — фото чека → таблиця? Пиши А чи Б 👇\n🎁 Промпти «Діловий лист» і «Таблиця з тексту» + ще 48, PDF безкоштовно — у Telegram: t.me/shikarno_ai_ua/37',
+)})
