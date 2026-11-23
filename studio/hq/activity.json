@@ -1037,8 +1037,8 @@
    "agent": "coo",
    "task": "Дашборд: живий блок сайту з Cloudflare Web Analytics (перегляди сторінок сьогодні/вчора/7 днів, топ сторінок)",
    "started": "2026-11-23T20:05:54Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-23T20:08:55Z",
+   "result": "HQ «Сайт»: живий блок Cloudflare (сьогодні 4 / вчора 16 переглядів, 41 за 7 днів, 14-денні стовпчики, топ сторінок і джерел) над Search Console; site_rum_daily; growth_snapshot +site_pageloads"
   }
  ]
 }
