@@ -17,6 +17,7 @@ usage:
   python3 studio/yt/analytics_db.py sync [--days 120]   # оновити все (щодня зранку в радарі)
   python3 studio/yt/analytics_db.py report               # формати: медіана переглядів на 7-й день, % перегляду, підписки/1000
   python3 studio/yt/analytics_db.py top [N]              # топ і низ роликів за переглядами 7 днів
+  python3 studio/yt/analytics_db.py formats              # застосувати studio/data/format_overrides.json без звернень до API
   python3 studio/yt/analytics_db.py hours                # години перегляду довгих (videoOnDemand) за 365 днів — для YPP
 """
 import sys, os, json, sqlite3, datetime, statistics, urllib.request, urllib.parse
@@ -25,6 +26,8 @@ import yt, audit
 
 DB = os.path.join(os.path.dirname(__file__), "..", "data", "analytics.sqlite")
 UP = "/home/claude/eps/uploaded.json"
+OVERRIDES = os.path.join(os.path.dirname(__file__), "..", "data", "format_overrides.json")
+FORMATS = {"tier", "prof", "sec", "skills", "digest", "free", "try", "check", "news", "guide"}
 
 
 def db():
@@ -114,6 +117,28 @@ def fmt(title, pls):
     return "news"
 
 
+def load_overrides(path=None):
+    """{video_id: format} з format_overrides.json; ключі на «_» — коментарі. Невідомий формат → ValueError (щоб не зіпсувати медіани)."""
+    path = path or OVERRIDES
+    if not os.path.exists(path): return {}
+    raw = json.load(open(path, encoding="utf-8"))
+    ov = {k: v for k, v in raw.items() if not k.startswith("_")}
+    bad = {k: v for k, v in ov.items() if v not in FORMATS}
+    if bad: raise ValueError(f"format_overrides: невідомі формати {bad}")
+    return ov
+
+
+def apply_overrides(c, ov=None):
+    """Ручні виправлення формату поверх плейлиста (data-quality 23.11): плейлист/регекс помиляються, override — ні.
+    Викликається в sync після запису videos, тож повторний sync не відкочує правку. Повертає [(id, було, стало)]."""
+    ov = load_overrides() if ov is None else ov; changed = []
+    for vid, f in ov.items():
+        r = c.execute("select format from videos where id=?", (vid,)).fetchone()
+        if r and r[0] != f:
+            c.execute("update videos set format=? where id=?", (f, vid)); changed.append((vid, r[0], f))
+    return changed
+
+
 def sync(days=120):
     c = db(); today = datetime.date.today()
     slug_by_id = {v: k for k, v in json.load(open(UP)).items()}
@@ -126,6 +151,7 @@ def sync(days=120):
             c.execute("insert or replace into videos values(?,?,?,?,?,?,?,?)",
                       (v["id"], slug_by_id.get(v["id"], ""), t, v["snippet"]["publishedAt"], d, int(d <= 180), fmt(t, p), ",".join(p)))
             c.execute("insert or replace into snap values(?,?,?)", (v["id"], today.isoformat(), int(v["statistics"].get("viewCount", 0))))
+    print("format overrides:", len(apply_overrides(c)), "змінено")
     start = (today - datetime.timedelta(days=days)).isoformat(); end = today.isoformat()
     # API не дає day×video разом для всіх → по ролику
     vids = [r[0] for r in c.execute("select id from videos")]
@@ -202,5 +228,9 @@ if __name__ == "__main__":
     a = sys.argv[1:] or ["report"]
     if a[0] == "sync": sync(int(a[2]) if len(a) > 2 and a[1] == "--days" else 120)
     elif a[0] == "hours": print(f"довгі (videoOnDemand), 365 днів: {long_hours_12m()} год")
+    elif a[0] == "formats":
+        c = db(); ch = apply_overrides(c); c.commit()
+        for vid, old, new in ch: print(f"{vid}: {old} → {new}")
+        print(f"format overrides: {len(ch)} змінено, {len(load_overrides())} у файлі")
     elif a[0] == "top": top(int(a[1]) if len(a) > 1 else 10)
     else: report()

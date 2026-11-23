@@ -46,5 +46,48 @@ class ChannelDaily(unittest.TestCase):
         c.close()
 
 
+class FormatOverrides(unittest.TestCase):
+    """Формат з плейлиста помиляється (тір-лист у плейлисті sec) — override з JSON має перемагати й переживати re-sync."""
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self._db = analytics_db.DB
+        analytics_db.DB = os.path.join(self.tmp.name, "a.sqlite")
+        self.path = os.path.join(self.tmp.name, "ov.json")
+        with open(self.path, "w", encoding="utf-8") as f:
+            f.write('{"_comment": "x", "vidTIER": "tier", "vidPROF": "prof", "missing": "news"}')
+
+    def tearDown(self):
+        analytics_db.DB = self._db
+        self.tmp.cleanup()
+
+    def test_override_applied_after_playlist_mapping(self):
+        c = analytics_db.db()
+        for vid, title, pls in (("vidTIER", "Сімейний бюджет: який ШІ для грошей? Тір-лист Байта #5", ["sec"]),
+                                ("vidPROF", "Як продати на OLX з ШІ | ШІ для професій #9", ["prof", "tier"]),
+                                ("vidNEWS", "Новина", ["news"])):
+            c.execute("insert into videos values(?,?,?,?,?,?,?,?)",
+                      (vid, "", title, "2026-11-21T10:00:00Z", 30, 1, analytics_db.fmt(title, pls), ",".join(pls)))
+        self.assertEqual(c.execute("select format from videos where id='vidTIER'").fetchone()[0], "sec")
+        ov = analytics_db.load_overrides(self.path)
+        self.assertNotIn("_comment", ov)
+        ch = analytics_db.apply_overrides(c, ov)
+        self.assertEqual(sorted(ch), [("vidPROF", "tier", "prof"), ("vidTIER", "sec", "tier")])
+        got = dict(c.execute("select id, format from videos"))
+        self.assertEqual(got, {"vidTIER": "tier", "vidPROF": "prof", "vidNEWS": "news"})
+        self.assertEqual(analytics_db.apply_overrides(c, ov), [])  # ідемпотентно
+        c.close()
+
+    def test_unknown_format_rejected(self):
+        with open(self.path, "w", encoding="utf-8") as f:
+            f.write('{"x": "tierlist"}')
+        with self.assertRaises(ValueError):
+            analytics_db.load_overrides(self.path)
+
+    def test_repo_overrides_valid(self):
+        ov = analytics_db.load_overrides()
+        self.assertEqual(ov.get("gljrHADi4aU"), "tier")
+        self.assertEqual(ov.get("LtNuOtQe0pc"), "prof")
+
+
 if __name__ == "__main__":
     unittest.main()
