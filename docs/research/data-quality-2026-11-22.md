@@ -118,3 +118,54 @@
 ### Зроблено цієї ночі в коді
 - `studio/yt/analytics_db.py`: `sync_channel` пише `avg_pct=NULL` замість 0, коли API не дав утримання. У докстрінгу `channel_daily` поправлено діапазон і семантику пропусків.
 - `studio/tests/test_analytics_db.py`: 3 тести (no_retention і sync_channel з фейковим API). `unittest discover`: 54 OK.
+
+## 23.11: override форматів
+
+**Проблема.** `videos.format` бере `analytics_db.fmt()`: спершу плейлист у фіксованому порядку `tier → prof → sec → …`, а якщо плейлиста формату немає, то регекс `audit.PL_RULES` по назві. Звідси три типи помилок:
+1. ролик лежить у двох плейлистах (`prof,tier`), і `tier` перемагає серію «ШІ для професій»;
+2. ролик потрапив не в той плейлист (ep79 `gljrHADi4aU`, «Тір-лист Байта #5», лежить лише в `sec`);
+3. регекс ловить підрядки: `hr` знаходиться в «C**hr**ome» та «Ant**hr**opic» (тому prof), а «злам» знаходиться в «зламатися» (тому sec).
+
+**Механізм.** Тепер є `studio/data/format_overrides.json` у вигляді `{video_id: format}`. Ключі на `_` вважаються коментарями, а невідомий формат дає ValueError. `analytics_db.apply_overrides()` викликається в `sync` одразу після запису `videos`, тому повторний sync правку не відкочує. Окрема команда `python3 studio/yt/analytics_db.py formats` застосовує файл без жодного виклику API. Тести: `FormatOverrides` у `studio/tests/test_analytics_db.py` (3 шт.), `unittest discover` дає 57 OK.
+
+**Аудит усіх 92 відео.** Formats звірено з назвою та slug епізоду з `uploaded.json`. Override отримали лише явні помилки, 11 шт.:
+
+| id | епізод | було | стало | чому |
+|---|---|---|---|---|
+| gljrHADi4aU | ep79_tier_money | sec | tier | «Тір-лист Байта #5» |
+| LtNuOtQe0pc | ep80_prof_olx | tier | prof | «ШІ для професій #9» |
+| WKvVIB9cugQ | ep31_prof_teacher | tier | prof | «ШІ для професій #1» |
+| 8PkvPh5Ij9o | ep32_prof_student | tier | prof | «ШІ для професій #2» |
+| Iv5uSMwqAOA | ep33_prof_fop | tier | prof | «ШІ для професій #3» |
+| jsyUTrw6hvI | ep34_prof_smm | tier | prof | «ШІ для SMM», серія prof |
+| -QfxU9v03dE | ep36_prof_driver | tier | prof | «ШІ для професій #5» |
+| 8Paum6UQ6Zo | ep37_ne_platy_1 | tier | free | «Не плати за це #1: безкоштовні ШІ», у назві немає «Тір-лист» |
+| biSJLBhwIRE | ep2_chatgpt_chrome | prof | news | регекс `hr` спрацював на «Chrome», плейлист news |
+| g99aVmNXhVs | scion1 (L) | prof | news | регекс `hr` спрацював на «Anthropic», ІТ-розбір, плейлист news |
+| hiUk0MF91SQ | ep57_gemini_25_vymykayut | sec | news | регекс «злам» спрацював на «зламатися», це новина для розробників, плейлист news |
+
+**Неоднозначні (не змінював, вирішує шоураннер):**
+- `raAU0wNcxYs` (ep29_scam_tier) і `SfMbPLIU1Ag` (ep38_safety_tier): «Тір-лист безпеки», зараз tier, але тема sec;
+- `KRm46ScK2Bc` (ep71 Gemini 4 Hydrogen «безкоштовно»): зараз free, плейлист news;
+- `ZSOH2sXLI_Y` (ep74 ChatGPT Wallet): sec чи news;
+- `cpk0jBsJOtA` (ep64 SynthID-перевірка): sec, але можна вважати й check/free;
+- `cSrZ33nAKn4`, `-9JCYEvwrrE`, `kIbdPmG0sT4` (Gems/скіли, Claude Sheets, конектори): skills чи news;
+- `RRbc__OEMJs` (ep21 «Байт перевіряє», плейлисти tier,check): tier чи check;
+- `VhE7-xUvztw` (ep35 кешбек mono): news чи free;
+- `uuzSF8xOWCU` (ep28 «Тір-лист Байта #3: ШІ для роботи», плейлисти prof,tier): залишено tier, бо в назві є «Тір-лист».
+
+**Медіани до і після** (`analytics_db.py report`, ролики старші за 9 днів; gljrHADi4aU і LtNuOtQe0pc ще не потрапляють у вікно):
+
+| формат | до: n / мед.7д / %перегл | після: n / мед.7д / %перегл |
+|---|---|---|
+| S:tier | 17 / 200 / 66,3% | 11 / 200 / 66,8% |
+| S:prof | 4 / 42 / 49,8% | 8 / 84 / 52,6% |
+| S:free | 6 / 118 / 56,9% | 7 / 121 / 56,4% |
+| S:news | 17 / 48 / 37,6% | 19 / 48 / 37,2% |
+| S:sec | 12 / 36 / 40,3% | 11 / 36 / 43,2% |
+| L:prof | 3 / 29 / 10,2% | 2 / 187 / 9,4% |
+| L:news | немає | 1 / 28 / 35,6% |
+
+Решта форматів (check, skills, try, digest, L:skills, L:sec) не змінилися. Prior в `ideas.py` після правки: tier 1,0, free 0,91, **prof 0,76** (Shorts prof: P25–мед–P75 = 27–55–191, n=8), skills 0,75, news 0,73, sec 0,68. Висновок: серія «ШІ для професій» насправді вдвічі сильніша, ніж показувала база (мед. 84 проти 42). Медіана tier не змінилася, але тепер її рахують на чистих тір-листах.
+
+**Не зроблено (наступний крок для власника коду):** у `audit.PL_RULES` треба додати межі слова (`\bhr\b`, `злам(?!ат)`), бо той самий регекс сам розкладає нові ролики по плейлистах. Поки що це страхує override.
