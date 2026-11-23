@@ -1,23 +1,23 @@
 {
- "generated": "2026-11-23T19:59:09Z",
+ "generated": "2026-11-23T20:00:06Z",
  "fresh": {
-  "yt_live": "2026-11-23T19:59:09Z",
+  "yt_live": "2026-11-23T20:00:07Z",
   "yt_analytics": "2026-11-20",
-  "tg_members": "2026-11-23T19:59:10Z",
+  "tg_members": "2026-11-23T20:00:07Z",
   "tg_posts": "2026-11-23T19:55:47Z",
   "ideas": "2026-11-23T17:22:59Z",
   "news": "2026-11-23 16:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-23T16",
   "site": "2026-11-21",
-  "activity": "2026-11-23T19:51:32Z",
+  "activity": "2026-11-23T19:59:17Z",
   "asks": "2026-11-23T19:55:00Z"
  },
  "notes": [],
  "kpi": {
   "subs": 315,
   "subs_goal": 1000,
-  "long_hours": 10.5,
+  "long_hours": 10.7,
   "long_hours_goal": 4000,
   "views_total": 11961,
   "videos": 96,
@@ -534,7 +534,7 @@
    "subs": 315,
    "views_total": 11961,
    "videos": 96,
-   "live_at": "2026-11-23T19:59:09Z",
+   "live_at": "2026-11-23T20:00:07Z",
    "views_7d": 815,
    "pct_7d": 51.0,
    "subs_7d": 2,
@@ -542,7 +542,7 @@
     "2026-11-14",
     "2026-11-20"
    ],
-   "long_hours": 10.5,
+   "long_hours": 10.7,
    "history": [
     {
      "x": "2026-10-19",
@@ -600,7 +600,7 @@
     },
     {
      "title": "ШІ для вчителя: план уроку і тест за 5 хвилин у Google Classroom 🍎",
-     "views": 74,
+     "views": 60,
      "id": "ENKGdbr04h0"
     }
    ]
@@ -866,7 +866,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 1
+   "total": 6
   },
   {
    "id": "ENKGdbr04h0",
@@ -877,7 +877,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 74
+   "total": 60
   },
   {
    "id": "LtNuOtQe0pc",
@@ -888,7 +888,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 52
+   "total": 56
   },
   {
    "id": "aTUsauz53rs",
@@ -899,7 +899,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 8
+   "total": 9
   },
   {
    "id": "gljrHADi4aU",
@@ -921,7 +921,7 @@
    "views7": 2,
    "pct": 64.2,
    "complete": false,
-   "total": 3
+   "total": 4
   },
   {
    "id": "0Kb6AamTRQo",
@@ -1807,8 +1807,8 @@
    "agent": "coo",
    "task": "Дашборд HQ: аудит повноти й свіжості (власник 23.11: «купа неповних даних»), виправлення + мітки «станом на»",
    "started": "2026-11-23T19:51:32Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-23T19:59:17Z",
+   "result": "HQ: мітки свіжості на кожному блоці, YouTube наживо, TikTok 15 304 по 11 відео, TG 16 постів/7 дн з t.me, реальний розклад, asks.json, «завис?» (коміт 6397b8b)"
   }
  ],
  "agents": [
