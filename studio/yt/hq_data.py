@@ -59,7 +59,8 @@ SCHEDULE = [  # (Київ, що, агент)
 # Старі/неточні agent_id у журналі activity.json → реальні ролі з AGENTS (інакше офіс не бачить, хто працює)
 ALIASES = {"editor": "shorts", "voice": "post", "production": "post", "design": "designer", "analyst": "da",
            "niche": "trend", "dispatcher": "coo", "writer": "shorts", "showrunner": "longs", "data": "de",
-           "community": "cm", "tg": "cm", "distribution": "dist", "algorithms": "algo", "research": "trend"}
+           "community": "cm", "tg": "cm", "distribution": "dist", "algorithms": "algo", "research": "trend",
+           "instagram": "dist", "ig": "dist"}
 ASKS = os.path.join(ROOT, "studio", "hq", "asks.json")
 TG_CACHE = os.path.expanduser("~/.cache/shikarno_tg_public.json") if os.access(os.path.expanduser("~"), os.W_OK) else "/tmp/shikarno_tg_public.json"
 TG_PUBLIC = "https://t.me/s/shikarno_ai_ua"
@@ -351,6 +352,30 @@ def main():
         tk = dict(videos=len(rows), views_total=sum(r[3] or 0 for r in rows), views_7d=sum(r[3] or 0 for r in rows if (r[1] or "") >= c7t), new_7d=sum(1 for r in rows if (r[1] or "") >= c7t),
                   saves_total=sum(r[5] or 0 for r in rows), likes_total=sum(r[4] or 0 for r in rows), last_snapshot=tl,
                   best=[dict(title=r[2], views=r[3], saves=r[5], id=r[0], posted=r[1]) for r in rows[:3]], history=th)
+    # --- Instagram (@shikarno_ai_ua, з 23.11): останній знімок кожного Reel з ig_snap + підписники з ig_account (instagram_ingest.py) ---
+    ig = None
+    try:
+        irows = q("""select s.shortcode, s.published, s.plays, s.likes, s.saves, s.shares, s.avg_watched_pct, s.ts from ig_snap s
+            join (select shortcode, max(ts) t from ig_snap group by shortcode) m on m.shortcode=s.shortcode and m.t=s.ts order by s.plays desc, s.avg_watched_pct desc""")
+        iacc = q("select ts, followers, views_30d, reach_30d from ig_account order by ts")
+    except sqlite3.OperationalError:
+        irows, iacc = [], []
+    if irows:
+        il = max(r[7] for r in irows); fresh["instagram"] = il
+        caps = {}
+        try:  # підписи Reels беремо з останнього сирого знімка (у таблиці їх немає)
+            import glob as _g, re as _re
+            lastf = sorted(_g.glob(os.path.join(ROOT, "studio", "data", "instagram", "*.json")))[-1]
+            for r in json.load(open(lastf, encoding="utf-8")).get("reels_response", {}).get("reels", []):
+                caps[r["shortcode"]] = _re.split(r"[\U0001F000-\U0001FFFF☀-➿]", r.get("caption") or "")[0].strip()
+        except Exception:
+            pass
+        a = iacc[-1] if iacc else (None, None, None, None)
+        ihs = q("select ts, sum(plays) from ig_snap group by ts order by ts")
+        ig = dict(followers=a[1], views_30d=a[2], reach_30d=a[3], reels=len(irows), plays_total=sum(r[2] or 0 for r in irows),
+                  likes_total=sum(r[3] or 0 for r in irows), saves_total=sum(r[4] or 0 for r in irows), last_snapshot=il,
+                  best=[dict(shortcode=r[0], title=caps.get(r[0]) or r[0], plays=r[2], pct=(round(r[6]) if r[6] else None), published=(r[1] or "")[:10]) for r in irows[:3]],
+                  history=[dict(x=t, v=v or 0) for t, v in ihs], followers_hist=[dict(x=t, v=f) for t, f, _, _ in iacc])
     weeks = [w for (w,) in q("select distinct week from site_queries_weekly order by week desc limit 4")]
     tq = q(f"select query, sum(clicks), sum(impressions), sum(position*impressions)/max(sum(impressions),1) from site_queries_weekly where week in ({','.join('?'*len(weeks))}) group by query order by sum(clicks) desc, sum(impressions) desc limit 5", *weeks) if weeks else []
     s28 = site[-28:]; ic = sum(r[2] or 0 for r in s28); cc = sum(r[1] or 0 for r in s28)
@@ -371,7 +396,7 @@ def main():
     try: cf_store(c, cf)
     except Exception as e: notes.append(f"site_rum_daily не записано ({type(e).__name__})")
     site_p["live"] = cf
-    platforms = dict(youtube=yt_p, tiktok=tk, site=site_p, telegram=tg_p)
+    platforms = dict(youtube=yt_p, tiktok=tk, instagram=ig, site=site_p, telegram=tg_p)
 
     # --- журнал агентів: аліаси → реальні ролі ---
     act = (json.load(open(os.path.join(ROOT, "studio", "hq", "activity.json"))) if os.path.exists(os.path.join(ROOT, "studio", "hq", "activity.json")) else {"items": []})["items"]

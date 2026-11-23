@@ -111,7 +111,7 @@ a{color:var(--cyan)}
   </section>
 
   <section aria-labelledby="h-plat">
-    <h2 id="h-plat">Платформи <span>YouTube, TikTok, сайт і Telegram разом · головна цифра, історія і що зараз працює найкраще</span></h2>
+    <h2 id="h-plat">Платформи <span>YouTube, TikTok, Instagram, сайт і Telegram разом · головна цифра, історія і що зараз працює найкраще</span></h2>
     <div class="plat" id="plat"></div>
   </section>
 
@@ -199,7 +199,7 @@ const kyivDay=d=>d.toLocaleDateString("uk-UA",KY);
 const when=x=>{const d=parseT(x);if(!d)return "—";if(/^\d{4}-\d\d-\d\d$/.test(String(x)))return ddmm(x);return kyivDay(d)===kyivDay(new Date())?hhmm(x):ddmm(d.toLocaleDateString("sv-SE",KY))+" "+hhmm(x)};
 const ageH=x=>{const d=parseT(x);return d?(Date.now()-d)/3.6e6:Infinity};
 function fr(id,text,old,live){const el=document.getElementById(id);if(!el)return;el.textContent=text;el.className="fr"+(old?" old":live?" live":"")}
-const AF={yt_live:2,site_live:2,tiktok:6,tg_posts:3,tg_members:3,news:6,yt_analytics:24*4,site:24*4,ideas:24,comp:24*8};
+const AF={yt_live:2,site_live:2,tiktok:6,instagram:6,tg_posts:3,tg_members:3,news:6,yt_analytics:24*4,site:24*4,ideas:24,comp:24*8};
 const isOld=(F,k)=>ageH(F[k])>(AF[k]||24);
 
 let LIVE=null;
@@ -296,7 +296,7 @@ function platforms(D){
   const sec=a=>`<div class="sec">${a.map(([v,l])=>`<div><b>${v}</b><span>${l}</span></div>`).join("")}</div>`;
   const best=(lab,rows)=>`<div class="best"><div class="lab">${lab}</div>${rows.length?rows.map(([t,v])=>`<div class="r"><span>${esc(t)}</span><span>${v}</span></div>`).join(""):'<div style="color:var(--mut)">за 7 днів нічого немає</div>'}</div>`;
   const badge=(t,old,lv)=>`<span class="fr${old?" old":lv?" live":""}">${esc(t)}</span>`;
-  const Y=P.youtube||{},T=P.tiktok,S=P.site||{},G=P.telegram||{},W=Y.window||[];
+  const Y=P.youtube||{},T=P.tiktok,I=P.instagram,S=P.site||{},G=P.telegram||{},W=Y.window||[];
   const C=[
     {n:"YouTube",col:"#FF4F8B",fr:badge(Y.live_at?"наживо, "+when(Y.live_at):"наживо: немає",isOld(F,"yt_live"),1),big:fmt(Y.subs),bl:"підписників / 1000 · "+fmt(Y.views_total)+" переглядів усього",
      sec:[[fmt(Y.views_7d),"переглядів "+dm(W[0])+"–"+dm(W[1])],[fmt(Y.long_hours),"год довгих (12 міс)"],[Y.subs!=null?Math.round(Y.subs/10)+"%":"—","до 1000 підп."]],
@@ -307,6 +307,10 @@ function platforms(D){
      sec:T?[[fmt(T.views_7d),"переглядів роликів за 7 днів ("+T.new_7d+")"],[fmt(T.saves_total),"збережень"],[fmt(T.likes_total),"лайків"]]:[],
      h:T?(T.history||[]).map(h=>({x:dm(h.x)+(h.x.length>10?" "+h.x.slice(11,13)+"Z":""),v:h.v})):[],hl:"сума переглядів по знімках (кожне відео — останнє відоме значення)",
      best:best("Найкраще — перегляди · збереження",T?(T.best||[]).map(b=>[cut(b.title,60),fmt(b.views)+" · "+fmt(b.saves)]):[])},
+    {n:"Instagram",col:"#7C5CFF",since:"23.11",fr:I?badge("знімок "+when(I.last_snapshot),isOld(F,"instagram")):badge("немає знімків",1),big:I?fmt(I.followers):"—",bl:I?"підписників · "+fmt(I.plays_total)+" переглядів у "+I.reels+" Reels":"знімків ще немає",
+     sec:I?[[fmt(I.views_30d),"переглядів акаунта за 30 днів"],[fmt(I.reach_30d),"охоплення за 30 днів"],[fmt(I.saves_total),"збережень"]]:[],
+     h:I?(I.history||[]).map(h=>({x:dm(h.x)+(h.x.length>10?" "+h.x.slice(11,13)+"Z":""),v:h.v})):[],hl:"сума переглядів Reels по знімках",
+     best:best("Найкращі Reels — перегляди · % перегляду",I?(I.best||[]).map(b=>[cut(b.title,60),fmt(b.plays)+" · "+(b.pct==null?"—":b.pct+"%")]):[])},
     {n:"Сайт",col:"#9B87FF",fr:S.live&&S.live.updated?badge("наживо, "+hhmm(S.live.updated)+" · Cloudflare",!!S.live.error||isOld(F,"site_live"),1):badge("наживо: немає даних",1),
      pre:siteLive(S.live,badge,best,sec,cut),fr0:badge("Search Console станом на "+dm(S.last_day),isOld(F,"site")),big:fmt(S.impr_28d),bl:"показів у Google за 28 днів ("+dm(S.first_day)+"–"+dm(S.last_day)+")",
      sec:[[fmt(S.clicks_28d),"кліків"],[S.ctr!=null?String(S.ctr).replace(".",",")+"%":"—","CTR"],[S.avg_pos!=null?String(S.avg_pos).replace(".",","):"—","сер. позиція"]],
@@ -323,7 +327,7 @@ function platforms(D){
     box.insertAdjacentHTML("beforeend",`<div class="pc" style="--pcol:${c.col}"><h3>${c.n} ${c.fr}</h3>${c.pre||""}${c.fr0?`<div>${c.fr0}</div>`:""}<div class="big">${c.big} <small>${esc(c.bl)}</small></div>${c.sec.length?sec(c.sec):""}${c.fr2?`<div>${c.fr2}</div>`:""}<div><div style="font-size:11px;color:var(--mut);margin-bottom:2px">${esc(c.hl)}</div><svg role="img" aria-label="${esc(c.n+": "+c.hl)}"></svg></div><div class="tip"></div>${c.best}</div>`);
     const card=box.lastElementChild;
     if(c.h.length>1) hline(card,c.h,{c:c.col,f:fmt});
-    else card.querySelector("svg").outerHTML=`<p class="wait">Історія збирається з 22.11${c.h.length?" — поки 1 точка ("+fmt(c.h[0].v)+")":""}; лінія з'явиться з другого знімка.</p>`;
+    else card.querySelector("svg").outerHTML=`<p class="wait">Історія збирається з ${c.since||"22.11"}${c.h.length?" — поки 1 точка ("+fmt(c.h[0].v)+")":""}; лінія з'явиться з другого знімка.</p>`;
   });
 }
 /* Сайт наживо (Cloudflare Web Analytics): сьогодні vs вчора, 14 київських днів стовпчиками, топ сторінок і джерел за 7 днів. */
