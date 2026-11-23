@@ -9,7 +9,7 @@
     <p class="hero-kicker">Свіже · <time datetime="{{ h.iso }}">{{ h.human }}</time></p>
     <h1 class="hero-title"><a href="{{ u(h.path) }}" style="view-transition-name:t-{{ h.slug }}">{{ h.title }}</a></h1>
     <p class="hero-lede">{{ h.description }}</p>
-    <p class="hero-btns"><a class="btn" href="{{ u(h.path) }}">Читати розбір</a> <a class="btn btn-alt" href="{{ site.telegram }}" rel="noopener">🎁 50 промптів — у Telegram</a></p>
+    <p class="hero-btns"><a class="btn" href="{{ u(h.path) }}">Читати розбір</a> <a class="btn btn-alt" href="{{ site.tg_pdf }}" rel="noopener">🎁 50 промптів — у Telegram</a></p>
   </div>
   <figure class="hero-bait" aria-hidden="true">
     <blockquote class="bubble">Що це означає для тебе? Зараз поясню.</blockquote>
@@ -32,7 +32,7 @@
   {{ bait("happy", 88, "live") }}
   <div>
     <h2>Новина дня, промпт дня і опитування — у Telegram</h2>
-    <p>Те, що не влазить у 45 секунд відео, Байт пише текстом. У закріпі — безкоштовний PDF «50 промптів українською».</p>
+    <p>Те, що не влазить у 45 секунд відео, Байт пише текстом. А ще там безкоштовний <a href="{{ site.tg_pdf }}" rel="noopener">PDF «50 промптів українською»</a>.</p>
   </div>
   <a class="btn btn-alt" href="{{ site.telegram }}" rel="noopener">Підписатись</a>
 </section>

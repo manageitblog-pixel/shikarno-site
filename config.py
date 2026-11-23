@@ -9,6 +9,7 @@ SITE = {
     "telegram": "https://t.me/shikarno_ai_ua",
     "tiktok": "https://www.tiktok.com/@shikarno_ai_ua",
     "contact": "https://t.me/ShikarnoPartnersBot?start=site",   # бот заявок на співпрацю
+    "tg_pdf": "https://t.me/shikarno_ai_ua/37",  # пост із PDF «50 промптів» (закріп №64 — інша шпаргалка, тож ведемо прямо на пост)
     "tg_channel": "shikarno_ai_ua",   # для віджета коментарів (обговорення під постом каналу)
     "lang": "uk",
     "gsc_verify": "xNv9qJb2dgq3CcsirKKTJhuSh3afZ4NeuRTEdxDvdqs",  # Google Search Console: content з мета-тегу підтвердження (ресурс «Префікс URL»)
