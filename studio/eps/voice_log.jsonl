@@ -41,3 +41,4 @@
 {"ev": "tts_ok", "n": 3, "out": "/home/claude/eps/guide1/part7.wav", "res": "(66.76, 24000, 'audio/wav')", "t": "03:21:43Z"}
 {"ev": "part", "part": 7, "take": 2, "f0": 138.7, "f0_ok": true, "dur": 66.8, "audit": [{"seg": 21, "ratio": 0.95, "match": 0.73}, {"seg": 22, "ratio": 0.94, "match": 0.78}], "repeat_suspect": false, "t": "03:22:36Z"}
 {"ev": "part_final", "part": 7, "take": 2, "f0": 138.7, "clean": true, "t": "03:22:36Z"}
+{"ev": "STOP", "reason": "TTS quota exhausted: 4 consecutive HTTP 429 from Gemini (gemini-3.8-flash-tts); try later or another key/model", "ok_requests": 3, "t": "03:24:07Z"}
