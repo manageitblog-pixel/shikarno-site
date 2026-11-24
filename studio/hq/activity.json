@@ -1143,6 +1143,14 @@
    "started": "2026-11-24T00:17:54Z",
    "finished": null,
    "result": ""
+  },
+  {
+   "id": "144",
+   "agent": "data",
+   "task": "Збирач даталейку 00:52Z: новини, TikTok/Instagram/TG-знімок, сигнали",
+   "started": "2026-11-24T00:52:36Z",
+   "finished": null,
+   "result": ""
   }
  ]
 }
