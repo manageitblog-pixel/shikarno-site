@@ -1,18 +1,18 @@
 {
- "generated": "2026-11-24T16:07:10Z",
+ "generated": "2026-11-24T16:56:41Z",
  "fresh": {
-  "yt_live": "2026-11-24T16:07:10Z",
+  "yt_live": "2026-11-24T16:56:41Z",
   "yt_analytics": "2026-11-21",
-  "tg_members": "2026-11-24T16:07:11Z",
-  "tg_posts": "2026-11-24T16:07:12Z",
-  "ideas": "2026-11-24T13:24:41Z",
-  "news": "2026-11-24 12:53",
+  "tg_members": "2026-11-24T16:56:42Z",
+  "tg_posts": "2026-11-24T16:56:43Z",
+  "ideas": "2026-11-24T16:55:56Z",
+  "news": "2026-11-24 16:53",
   "comp": "2026-11-23",
-  "tiktok": "2026-11-24T12",
-  "instagram": "2026-11-24T12",
+  "tiktok": "2026-11-24T16",
+  "instagram": "2026-11-24T16",
   "site": "2026-11-22",
-  "site_live": "2026-11-24T16:07:13Z",
-  "activity": "2026-11-24T13:18:14Z",
+  "site_live": "2026-11-24T16:56:44Z",
+  "activity": "2026-11-24T16:52:55Z",
   "asks": "2026-11-24T08:20Z"
  },
  "notes": [],
@@ -21,7 +21,7 @@
   "subs_goal": 1000,
   "long_hours": 10.7,
   "long_hours_goal": 4000,
-  "views_total": 12193,
+  "views_total": 12275,
   "videos": 97,
   "views_7d": 736,
   "pct_7d": 51.1,
@@ -549,9 +549,9 @@
  "platforms": {
   "youtube": {
    "subs": 315,
-   "views_total": 12193,
+   "views_total": 12275,
    "videos": 97,
-   "live_at": "2026-11-24T16:07:10Z",
+   "live_at": "2026-11-24T16:56:41Z",
    "views_7d": 736,
    "pct_7d": 51.1,
    "subs_7d": 0,
@@ -623,13 +623,13 @@
    ]
   },
   "tiktok": {
-   "videos": 12,
-   "views_total": 15705,
-   "views_7d": 1621,
-   "new_7d": 6,
+   "videos": 13,
+   "views_total": 15746,
+   "views_7d": 1662,
+   "new_7d": 7,
    "saves_total": 126,
-   "likes_total": 313,
-   "last_snapshot": "2026-11-24T12",
+   "likes_total": 314,
+   "last_snapshot": "2026-11-24T16",
    "best": [
     {
      "title": "Український ШІ Сяйво: коли вийде",
@@ -701,41 +701,45 @@
     {
      "x": "2026-11-24T12",
      "v": 15705
+    },
+    {
+     "x": "2026-11-24T16",
+     "v": 15746
     }
    ]
   },
   "instagram": {
    "ig_goal": 100,
    "ig_goal_note": "до 1.12; далі 500 до 31.01 (поріг «Подарунків» — перевірити для України)",
-   "followers": 4,
+   "followers": 7,
    "views_30d": 252,
    "reach_30d": 220,
    "acc_at": "24.11 08Z",
-   "reels": 9,
-   "plays_total": 260,
+   "reels": 10,
+   "plays_total": 300,
    "likes_total": 3,
-   "saves_total": 1,
-   "last_snapshot": "2026-11-24T12",
+   "saves_total": 6,
+   "last_snapshot": "2026-11-24T16",
    "best": [
     {
      "shortcode": "DgGRAlDjqkk",
      "title": "Як продати на OLX швидше з ШІ",
-     "plays": 57,
+     "plays": 58,
      "pct": 3,
      "published": "2026-11-23"
     },
     {
      "shortcode": "DgGRAVLFORb",
      "title": "Інкогніто в ШІ — не сейф",
-     "plays": 51,
+     "plays": 54,
      "pct": 8,
      "published": "2026-11-23"
     },
     {
      "shortcode": "DgGQ8fODsVW",
      "title": "Сімейний бюджет з ШІ",
-     "plays": 49,
-     "pct": 4,
+     "plays": 52,
+     "pct": 6,
      "published": "2026-11-23"
     }
    ],
@@ -759,6 +763,10 @@
     {
      "x": "2026-11-24T12",
      "v": 260
+    },
+    {
+     "x": "2026-11-24T16",
+     "v": 300
     }
    ],
    "followers_hist": [
@@ -781,6 +789,10 @@
     {
      "x": "2026-11-24T12",
      "v": 4
+    },
+    {
+     "x": "2026-11-24T16",
+     "v": 7
     }
    ]
   },
@@ -852,7 +864,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-24T16:07:13Z",
+    "updated": "2026-11-24T16:56:44Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 7,
@@ -1144,8 +1156,8 @@
   "telegram": {
    "members": 6,
    "tg_goal": 150,
-   "posts_7d": 17,
-   "views_7d": 54,
+   "posts_7d": 16,
+   "views_7d": 51,
    "views_avg": 3.2,
    "posts_error": null,
    "best": [
@@ -1320,7 +1332,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 53
+   "total": 54
   },
   {
    "id": "gljrHADi4aU",
@@ -1698,13 +1710,13 @@
   }
  ],
  "ideas_count": {
-  "total": 108,
-  "open": 103
+  "total": 111,
+  "open": 106
  },
  "lake": {
   "videos": 96,
   "daily": 800,
-  "news": 1987,
+  "news": 2009,
   "niche": 1035,
   "comp": 511,
   "comp_videos": 62794,
@@ -1716,87 +1728,87 @@
  "news": [
   {
    "date": "2026-11-24",
+   "source": "google",
+   "title": "How Gemini is changing the game for Golden State's organization and fans.",
+   "score": null,
+   "url": "https://blog.google/products-and-platforms/products/gemini/gemini-golden-state/"
+  },
+  {
+   "date": "2026-11-24",
+   "source": "hf",
+   "title": "Microduck Obstacle Avoidance: A Sim2Real Workflow with Isaac Lab and Newton",
+   "score": null,
+   "url": "https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance"
+  },
+  {
+   "date": "2026-11-24",
+   "source": "techcrunch",
+   "title": "Tidal to ban and remove millions of AI-generated tracks as AI slop inundates music streaming",
+   "score": null,
+   "url": "https://techcrunch.com/2026/11/24/tidal-to-ban-and-remove-millions-of-ai-generated-tracks-as-ai-slop-inundates-music-streaming/"
+  },
+  {
+   "date": "2026-11-24",
+   "source": "techcrunch",
+   "title": "Why a Crusoe investor is betting on solar and batteries to power future AI data centers",
+   "score": null,
+   "url": "https://techcrunch.com/2026/11/24/why-a-crusoe-investor-is-betting-on-solar-and-batteries-to-power-future-ai-data-centers/"
+  },
+  {
+   "date": "2026-11-24",
+   "source": "techcrunch",
+   "title": "Pinterest will now let parents limit the AI-generated content their teens see",
+   "score": null,
+   "url": "https://techcrunch.com/2026/11/24/pinterest-will-now-let-parents-limit-the-ai-generated-content-their-teens-see/"
+  },
+  {
+   "date": "2026-11-24",
+   "source": "techcrunch",
+   "title": "Amazon’s Decart acquisition is a bet on using software to narrow the gap with Nvidia in the AI chip race",
+   "score": null,
+   "url": "https://techcrunch.com/2026/11/24/amazons-decart-acquisition-is-a-bet-on-using-software-to-narrow-the-gap-with-nvidia-in-the-ai-chip-race/"
+  },
+  {
+   "date": "2026-11-24",
+   "source": "verge",
+   "title": "Jensen Huang deepfakes are the hot new AI slop",
+   "score": null,
+   "url": "https://www.theverge.com/tech/1041222/jensen-huang-nvidia-scandal-deepfakes"
+  },
+  {
+   "date": "2026-11-24",
+   "source": "verge",
+   "title": "The New York Times warns photographers not to update Photoshop over AI features",
+   "score": null,
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features"
+  },
+  {
+   "date": "2026-11-24",
    "source": "ars",
-   "title": "Amazon says hackers' AI agents found and exploited 0-day with little human input",
+   "title": "How Trump and Silicon Valley forced Nvidia to take Jensen Huang back",
    "score": null,
-   "url": "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/"
+   "url": "https://arstechnica.com/tech-policy/2026/11/how-trump-and-silicon-valley-forced-nvidia-to-take-jensen-huang-back/"
+  },
+  {
+   "date": "2026-11-24",
+   "source": "mittr",
+   "title": "Raising the stakes for enterprise networks with AI modernization",
+   "score": null,
+   "url": "https://www.technologyreview.com/2026/11/24/1148091/raising-the-stakes-for-enterprise-networks-with-ai-modernization/"
   },
   {
    "date": "2026-11-24",
    "source": "wired",
-   "title": "Don’t Bring Up AI if You Want to Enjoy Your Thanksgiving",
+   "title": "Anthropic Created a Honeypot to Lure AI Agents Into Misbehaving",
    "score": null,
-   "url": "https://www.wired.com/story/dont-bring-up-ai-if-you-want-to-enjoy-your-thanksgiving/"
-  },
-  {
-   "date": "2026-11-24",
-   "source": "wired",
-   "title": "AI Solved Math’s Most Famous Problem. Now Humans Are Struggling to Understand It",
-   "score": null,
-   "url": "https://www.wired.com/story/ai-solved-maths-most-famous-problem/"
+   "url": "https://www.wired.com/story/ai-agents-can-get-honeypotted-too-aw/"
   },
   {
    "date": "2026-11-24",
    "source": "devua",
-   "title": "Anthropic запустила Claude Ship — набір інструментів для автоматизації код-рев'ю. Що вони вміють?",
+   "title": "Українська DroneMate AI розробляє альтернативу Raspberry Pi Compute Module 5 для виробників дронів. Чим відрізняється її мікрокомп'ютер?",
    "score": null,
-   "url": "https://dev.ua/news/claude-ship-1795514757"
-  },
-  {
-   "date": "2026-11-24",
-   "source": "devua",
-   "title": "Як підготувати інфраструктуру до масштабування ШІ",
-   "score": null,
-   "url": "https://dev.ua/news/yak-pidhotuvaty-infrastrukturu-do-masshtabuvannia-shi-1795517702"
-  },
-  {
-   "date": "2026-11-24",
-   "source": "devua",
-   "title": "Signal посилює захист від ШІ-агентів Gemini та Siri, які можуть сканувати екран",
-   "score": null,
-   "url": "https://dev.ua/news/signal-posyliuie-zakhyst-vid-shi-ahentiv-gemini-ta-siri-iaki-mozhut-skanuvaty-ekran-1795508107"
-  },
-  {
-   "date": "2026-11-24",
-   "source": "devua",
-   "title": "Українські оборонні компанії стали більш ніж утричі частіше шукати AI/ML-інженерів. Скільки платять та кого готові наймати?",
-   "score": null,
-   "url": "https://dev.ua/news/oboronka-aiml-1795507904"
-  },
-  {
-   "date": "2026-11-24",
-   "source": "speka",
-   "title": "Канабіс пов’язали з раннім початком психозу: різниця може перевищувати шість років",
-   "score": null,
-   "url": "https://speka.ua/news/kanabis-psykhoz-ranishe-doslidzhennya-unsw-p6wk5l"
-  },
-  {
-   "date": "2026-11-24",
-   "source": "speka",
-   "title": "В Україні реєструють найменше ІТ-ФОПів за шість років: у чому причина",
-   "score": null,
-   "url": "https://speka.ua/news/v-ukrayini-rejestruyut-naimense-it-fopiv-za-sist-rokiv-u-comu-pricina-98kd5k"
-  },
-  {
-   "date": "2026-11-24",
-   "source": "speka",
-   "title": "Суперінтелект впирається у фізичний світ: що насправді гальмує розвиток ШІ",
-   "score": null,
-   "url": "https://speka.ua/videos-and-podcasts/eksdirektor-openai-sprostuvav-teoriyu-singulyarnosti-shho-naspravdi-galmuje-si-vz8l8w"
-  },
-  {
-   "date": "2026-11-24",
-   "source": "liga",
-   "title": "Huawei представила новий Mate 90 Air: які характеристики отримав смартфон",
-   "score": null,
-   "url": "https://tech.liga.net/ua/gadgets/news/huawei-predstavyla-novyy-mate-90-air-iaki-kharakterystyky-otrymav-smartfon"
-  },
-  {
-   "date": "2026-11-24",
-   "source": "liga",
-   "title": "ШІ почав матюкатися частіше: дослідники з’ясували, коли це відбувається",
-   "score": null,
-   "url": "https://tech.liga.net/ua/ai/news/shi-pochav-matiukatysia-chastishe-doslidnyky-ziasuvaly-koly-tse-vidbuvaietsia"
+   "url": "https://dev.ua/news/dronemate-ai-1795523246"
   }
  ],
  "competitors": [
@@ -1907,30 +1919,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "122",
-   "agent": "seo",
-   "task": "Гайд #1: окрема стаття на сайт (youtube M-KQwpDwpA4 + chapters), дата 25.11 19:00; оновити посилання в описі YouTube",
-   "started": "2026-11-23T12:49:06Z",
-   "finished": "2026-11-23T12:55:09Z",
-   "result": "https://shikarno.com.ua/rozbory/yak-korystuvatysya-chatgpt/"
-  },
-  {
-   "id": "123",
-   "agent": "de",
-   "task": "Збирач даталейку 12:53Z: новини, TikTok/TG-знімок, сигнали",
-   "started": "2026-11-23T12:52:41Z",
-   "finished": "2026-11-23T12:57:13Z",
-   "result": "Даталейк 12Z: news +32, TikTok-знімок (дім 308, OLX 320), TG 6 підписників, сигнали TG142+сайт Чорна пʼятниця, ідеї 63–66 (усі <300)"
-  },
-  {
-   "id": "124",
-   "agent": "designer",
-   "task": "Дизайнер 23.11: кадри 0/1 с/80% і обкладинки сьогоднішніх clip1 (13Z) та ep81 (17Z)",
-   "started": "2026-11-23T13:08:33Z",
-   "finished": "2026-11-23T13:11:20Z",
-   "result": "clip1: кадр 0/картка/обкладинка ОК, 3 дефекти шаблону (Байт на іконці f0, кутовий Байт у колонці кнопок, перенос у list) → журнал; ep81 контроль — лише звіт"
-  },
   {
    "id": "125",
    "agent": "shorts",
@@ -2247,6 +2235,33 @@
    "finished": null,
    "result": "",
    "agent_raw": "research"
+  },
+  {
+   "id": "162",
+   "agent": "post",
+   "task": "Рендер ep83 (вихід 26.11) і ep85 (28.11) + QA + черга заливки на 25.11",
+   "started": "2026-11-24T16:20:45Z",
+   "finished": null,
+   "result": "",
+   "agent_raw": "production"
+  },
+  {
+   "id": "163",
+   "agent": "post",
+   "task": "ep83: виправити «ШІ» в outro (1–2 TTS) + статті ep83/ep85",
+   "started": "2026-11-24T16:42:51Z",
+   "finished": null,
+   "result": "",
+   "agent_raw": "production"
+  },
+  {
+   "id": "164",
+   "agent": "de",
+   "task": "Збирач даталейку 16:52Z: новини, TikTok/IG/TG-знімок",
+   "started": "2026-11-24T16:52:55Z",
+   "finished": null,
+   "result": "",
+   "agent_raw": "data"
   }
  ],
  "agents": [
