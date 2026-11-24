@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-23T23:06:29Z",
+ "generated": "2026-11-24T00:07:04Z",
  "fresh": {
-  "yt_live": "2026-11-23T23:06:29Z",
+  "yt_live": "2026-11-24T00:07:04Z",
   "yt_analytics": "2026-11-20",
-  "tg_members": "2026-11-23T23:06:30Z",
-  "tg_posts": "2026-11-23T23:06:31Z",
+  "tg_members": "2026-11-24T00:07:05Z",
+  "tg_posts": "2026-11-24T00:07:05Z",
   "ideas": "2026-11-23T21:22:26Z",
   "news": "2026-11-23 21:16",
   "comp": "2026-11-23",
   "tiktok": "2026-11-23T21",
   "instagram": "2026-11-23T21",
   "site": "2026-11-21",
-  "site_live": "2026-11-23T23:06:32Z",
+  "site_live": "2026-11-24T00:07:07Z",
   "activity": "2026-11-23T22:18:03Z",
   "asks": "2026-11-23T19:55:00Z"
  },
@@ -536,7 +536,7 @@
    "subs": 315,
    "views_total": 11982,
    "videos": 96,
-   "live_at": "2026-11-23T23:06:29Z",
+   "live_at": "2026-11-24T00:07:04Z",
    "views_7d": 815,
    "pct_7d": 51.0,
    "subs_7d": 2,
@@ -591,18 +591,18 @@
    ],
    "best_live": [
     {
+     "title": "ШІ для вчителя: план уроку і тест за 5 хвилин у Google Classroom 🍎",
+     "views": 96,
+     "id": "ENKGdbr04h0"
+    },
+    {
      "title": "ChatGPT вчиться на твоїх чатах — як вимкнути за 30 секунд 🔐",
      "views": 96,
      "id": "Vp1PPNxtcrI"
     },
     {
-     "title": "ШІ для вчителя: план уроку і тест за 5 хвилин у Google Classroom 🍎",
-     "views": 86,
-     "id": "ENKGdbr04h0"
-    },
-    {
      "title": "Що ШІ знає про тебе: як вимкнути навчання в ChatGPT, Gemini, Claude, Meta AI і Copilot (2026)",
-     "views": 77,
+     "views": 78,
      "id": "GNqU-wcz9Ws"
     }
    ]
@@ -788,7 +788,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-23T23:06:32Z",
+    "updated": "2026-11-24T00:07:07Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 0,
@@ -801,11 +801,6 @@
      "pageloads": 10,
      "visits": 10,
      "hours": [
-      {
-       "h": "2026-11-23T00:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
       {
        "h": "2026-11-23T01:00:00Z",
        "pageloads": 0,
@@ -920,6 +915,11 @@
        "h": "2026-11-23T23:00:00Z",
        "pageloads": 0,
        "visits": 0
+      },
+      {
+       "h": "2026-11-24T00:00:00Z",
+       "pageloads": 0,
+       "visits": 0
       }
      ]
     },
@@ -956,8 +956,8 @@
      },
      {
       "d": "2026-11-16",
-      "pageloads": 5,
-      "visits": 5,
+      "pageloads": 0,
+      "visits": 0,
       "sampled": false
      },
      {
@@ -1219,7 +1219,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 86
+   "total": 96
   },
   {
    "id": "LtNuOtQe0pc",
@@ -1230,7 +1230,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 56
+   "total": 64
   },
   {
    "id": "aTUsauz53rs",
@@ -1307,7 +1307,7 @@
    "views7": 38,
    "pct": 68.5,
    "complete": false,
-   "total": 41
+   "total": 43
   },
   {
    "id": "Bh-YF2BbuiQ",
@@ -1329,7 +1329,7 @@
    "views7": 42,
    "pct": 9.7,
    "complete": true,
-   "total": 77
+   "total": 78
   },
   {
    "id": "ZSOH2sXLI_Y",
@@ -1738,8 +1738,8 @@
    "channel": "DOU",
    "subs": 104000,
    "lang": "uk",
-   "avg": 15499,
-   "n": 98
+   "avg": 15427,
+   "n": 97
   },
   {
    "channel": "Serhii Nemchynskyi",
@@ -1752,15 +1752,15 @@
    "channel": "КОЖОКАР  про Ютуб ",
    "subs": 18100,
    "lang": "uk",
-   "avg": 10673,
-   "n": 12
+   "avg": 11109,
+   "n": 11
   },
   {
    "channel": "Відчайдушний програміст",
    "subs": 18300,
    "lang": "uk",
-   "avg": 10436,
-   "n": 35
+   "avg": 10608,
+   "n": 34
   },
   {
    "channel": "dev ua   ",
@@ -1777,13 +1777,6 @@
    "n": 4
   },
   {
-   "channel": "Red Sneakers Production",
-   "subs": 16000,
-   "lang": "uk",
-   "avg": 4388,
-   "n": 17
-  },
-  {
    "channel": "Простий Фронтенд",
    "subs": 7240,
    "lang": "uk",
@@ -1796,6 +1789,13 @@
    "lang": "uk",
    "avg": 4130,
    "n": 61
+  },
+  {
+   "channel": "Аксіома",
+   "subs": 229,
+   "lang": "uk",
+   "avg": 3652,
+   "n": 13
   },
   {
    "channel": "TechAkshay 2.0",
