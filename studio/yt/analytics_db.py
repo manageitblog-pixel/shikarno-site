@@ -11,7 +11,7 @@ studio/data/analytics.sqlite:
   channel_daily(date, views, watch_min, subs_gained, subs_lost, avg_pct, long_watch_min, short_views) — канал по днях (у базі з 25.07; sync тягне з 2026-10-01);
                                                                                      дні без переглядів API не віддає (пропуск = 0); avg_pct NULL = немає утримання
   traffic_daily(video_id, date, source, views)                                     — джерела трафіку по днях (останні 60 днів, історія не перезаписується)
-  tg_daily(date, members)                                                           — підписники Telegram-каналу на дату
+  tg_daily(date, members, posts_today)                                                    — підписники Telegram-каналу на дату
 
 usage:
   python3 studio/yt/analytics_db.py sync [--days 120]   # оновити все (щодня зранку в радарі)
@@ -84,7 +84,10 @@ def sync_channel(c, start="2026-10-01", end=None):
 def sync_tg(c):
     sys.path.insert(0, "/home/claude/tg"); import tg
     n = tg.call("getChatMemberCount", chat_id=tg.CH)["result"]
-    c.execute("insert or replace into tg_daily values(?,?)", (datetime.date.today().isoformat(), n))
+    if "posts_today" not in [r[1] for r in c.execute("pragma table_info(tg_daily)")]:
+        c.execute("alter table tg_daily add column posts_today int")  # 24.11, TG-відділ: пости каналу за день (з t.me/s)
+    c.execute("insert into tg_daily(date, members) values(?,?) on conflict(date) do update set members=excluded.members",
+              (datetime.date.today().isoformat(), n))
     return n
 
 
