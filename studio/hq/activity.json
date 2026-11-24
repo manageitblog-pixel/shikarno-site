@@ -1287,6 +1287,14 @@
    "started": "2026-11-24T13:18:14Z",
    "finished": null,
    "result": ""
+  },
+  {
+   "id": "162",
+   "agent": "production",
+   "task": "Рендер ep83 (вихід 26.11) і ep85 (28.11) + QA + черга заливки на 25.11",
+   "started": "2026-11-24T16:20:45Z",
+   "finished": null,
+   "result": ""
   }
  ]
 }
