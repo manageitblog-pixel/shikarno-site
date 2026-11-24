@@ -1215,6 +1215,14 @@
    "started": "2026-11-24T07:27:45Z",
    "finished": "2026-11-24T07:37:28Z",
    "result": "ep82 стаття; прогноз при заливці; tg_daily окремо; TikTok-пагінація; HQ: 20 завислих закрито, IG, розклад"
+  },
+  {
+   "id": "153",
+   "agent": "data",
+   "task": "Збирач даталейку 08:52Z (щоденний): sync, ingest, outliers, знімки TikTok/IG/TG, snapshot",
+   "started": "2026-11-24T08:52:50Z",
+   "finished": null,
+   "result": ""
   }
  ]
 }
