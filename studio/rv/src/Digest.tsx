@@ -8,7 +8,7 @@ import { UiMock } from "./UiMock";
 export type DSeg = { kind: string; from: number; to: number; n?: number; icon?: string; title?: string; source?: string;
   points?: string[]; items?: any[]; score?: number; plus?: string; minus?: string; label?: string; at?: number[]; sub?: string;
   image?: string; hl?: { x: number; y: number; w: number; h: number }; url?: string; left?: { title: string; items: string[] }; right?: { title: string; items: string[] }; video?: string; vstart?: number; term?: { cmd: string; out: string; error?: boolean }[]; link?: string; zoom?: number[]; ui?: any[]; src?: string };
-export type DData = { total: number; num: number; dates: string; segs: DSeg[]; words: { w: string; s: number; e: number; g: string }[]; mouth: number[]; titles: string[]; kicker?: string; sub?: string; big?: string; agendaTitle?: string; red?: boolean; bigSize?: number };
+export type DData = { total: number; num: number; dates: string; segs: DSeg[]; words: { w: string; s: number; e: number; g: string }[]; mouth: number[]; titles: string[]; kicker?: string; sub?: string; big?: string; agendaTitle?: string; red?: boolean; bigSize?: number; outroQ?: string };
 const Ctx = createContext<DData>({ total: 300, num: 1, dates: "", segs: [], words: [], mouth: [], titles: [] });
 const useD = () => useContext(Ctx);
 const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
@@ -302,7 +302,7 @@ const Verdict: React.FC<{ s: DSeg; off: number }> = ({ s, off }) => {
           <div style={{ fontWeight: 800, fontSize: 48, opacity: 0.7 }}>/ 10</div>
         </AbsoluteFill>
       </div>
-      <div style={{ position: "absolute", left: 820, top: 250, display: "flex", flexDirection: "column", gap: 24 }}>
+      <div style={{ position: "absolute", left: 820, top: 250, maxWidth: 700, display: "flex", flexDirection: "column", gap: 24 }}>
         <div style={{ alignSelf: "flex-start", background: C.yellow, color: C.ink, fontFamily: FONT, fontWeight: 900, fontSize: 36, padding: "8px 24px", borderRadius: 12, letterSpacing: 2 }}>{s.label ?? "ВЕРДИКТ БАЙТА"}</div>
         {chip(30, true, s.plus)}{chip(55, false, s.minus)}
       </div>
@@ -374,15 +374,15 @@ const Facts: React.FC<{ s: DSeg; dur: number; off: number }> = ({ s, dur, off })
 };
 
 const Outro: React.FC<{ off: number }> = ({ off }) => {
-  const f = useCurrentFrame();
+  const f = useCurrentFrame(); const { outroQ } = useD();
   const tap = 150; const sub = f >= tap; const pressed = f >= tap && f < tap + 5;
   const cx = interpolate(f, [110, 145], [1500, 1180], { ...clamp, easing: Easing.out(Easing.cubic) });
   const cy = interpolate(f, [110, 145], [1000, 560], { ...clamp, easing: Easing.out(Easing.cubic) });
   return (
     <AbsoluteFill>
       <Host size={440} x={220} y={240} mood={sub ? "happy" : "talk"} offset={off} />
-      <div style={{ position: "absolute", left: 820, top: 230, display: "flex", flexDirection: "column", gap: 34 }}>
-        <div style={{ fontFamily: FONT, fontWeight: 900, fontSize: 60, color: "white", opacity: sp(f, 12) }}>Яка новина тижня — твоя?</div>
+      <div style={{ position: "absolute", left: 820, top: outroQ ? 156 : 230, display: "flex", flexDirection: "column", gap: 34 }}>
+        <div style={{ fontFamily: FONT, fontWeight: 900, fontSize: 60, color: "white", maxWidth: 1040, opacity: sp(f, 12) }}>{outroQ ?? "Яка новина тижня — твоя?"}</div>
         <div style={{ display: "flex", alignItems: "center", gap: 26, scale: `${sp(f - 20, 10) * (pressed ? 0.93 : 1)}`, transformOrigin: "left center" }}>
           <div style={{ padding: "26px 56px", borderRadius: 60, background: sub ? "#3A3A4A" : "#FF2D2D", color: "white", fontFamily: FONT, fontWeight: 900, fontSize: 50, boxShadow: sub ? "none" : "0 0 50px rgba(255,45,45,0.6)" }}>{sub ? "Ви підписані ✓" : "ПІДПИСАТИСЬ"}</div>
           <svg width="90" height="90" viewBox="0 0 24 24" style={{ rotate: `${sub ? Math.sin((f - tap) * 1.2) * 22 * Math.exp(-(f - tap) / 14) : 0}deg`, transformOrigin: "50% 10%" }}><path d="M12 2a6 6 0 0 0-6 6v4l-2 4h16l-2-4V8a6 6 0 0 0-6-6zm-2.5 16a2.5 2.5 0 0 0 5 0z" fill={sub ? C.yellow : "white"} /></svg>
