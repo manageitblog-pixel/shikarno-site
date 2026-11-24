@@ -1,18 +1,18 @@
 {
- "generated": "2026-11-24T08:57:42Z",
+ "generated": "2026-11-24T10:07:02Z",
  "fresh": {
-  "yt_live": "2026-11-24T08:57:43Z",
+  "yt_live": "2026-11-24T10:07:02Z",
   "yt_analytics": "2026-11-21",
-  "tg_members": "2026-11-24T08:57:43Z",
-  "tg_posts": "2026-11-24T08:57:44Z",
+  "tg_members": "2026-11-24T10:07:03Z",
+  "tg_posts": "2026-11-24T10:07:04Z",
   "ideas": "2026-11-24T08:56:55Z",
   "news": "2026-11-24 08:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-24T08",
   "instagram": "2026-11-24T08",
   "site": "2026-11-22",
-  "site_live": "2026-11-24T08:57:46Z",
-  "activity": "2026-11-24T08:52:50Z",
+  "site_live": "2026-11-24T10:07:06Z",
+  "activity": "2026-11-24T09:19:47Z",
   "asks": "2026-11-24T08:20Z"
  },
  "notes": [],
@@ -551,7 +551,7 @@
    "subs": 315,
    "views_total": 12193,
    "videos": 96,
-   "live_at": "2026-11-24T08:57:43Z",
+   "live_at": "2026-11-24T10:07:02Z",
    "views_7d": 736,
    "pct_7d": 51.1,
    "subs_7d": 0,
@@ -840,7 +840,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-24T08:57:46Z",
+    "updated": "2026-11-24T10:07:06Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 3,
@@ -850,19 +850,9 @@
     "pageloads_7d": 45,
     "visits_7d": 39,
     "last24h": {
-     "pageloads": 13,
-     "visits": 11,
+     "pageloads": 12,
+     "visits": 10,
      "hours": [
-      {
-       "h": "2026-11-23T09:00:00Z",
-       "pageloads": 1,
-       "visits": 1
-      },
-      {
-       "h": "2026-11-23T10:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
       {
        "h": "2026-11-23T11:00:00Z",
        "pageloads": 0,
@@ -970,6 +960,16 @@
       },
       {
        "h": "2026-11-24T08:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-24T09:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-24T10:00:00Z",
        "pageloads": 0,
        "visits": 0
       }
@@ -1882,14 +1882,6 @@
  ],
  "activity": [
   {
-   "id": "114",
-   "agent": "seo",
-   "task": "SEO-відділ 23.11: ключові слова для ідей, YouTube-SEO (поза експериментами), 1 сторінка сайту поза SEO-експериментом",
-   "started": "2026-11-23T10:13:27Z",
-   "finished": "2026-11-23T10:18:35Z",
-   "result": "SEO: promty-dlya-chatgpt + промпти для фото (база 83 пок/4 кл/поз 6.3), kw для ідей 30/35/57, YT audit 0 проблем"
-  },
-  {
    "id": "115",
    "agent": "longs",
    "task": "Шоу #3 (29.11): довести weekly3.py до фінального сценарію раніше (теми стабільні) — щоб озвучка встигла попри guide2 27.11",
@@ -2219,6 +2211,14 @@
    "finished": null,
    "result": "",
    "agent_raw": "data"
+  },
+  {
+   "id": "154",
+   "agent": "cso",
+   "task": "CSO 24.11: трекер 5 платформ + рішення по yt-related-cta",
+   "started": "2026-11-24T09:19:47Z",
+   "finished": null,
+   "result": ""
   }
  ],
  "agents": [
