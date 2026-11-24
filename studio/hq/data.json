@@ -1,9 +1,9 @@
 {
- "generated": "2026-11-24T16:56:41Z",
+ "generated": "2026-11-24T17:07:45Z",
  "fresh": {
-  "yt_live": "2026-11-24T16:56:41Z",
+  "yt_live": "2026-11-24T17:07:45Z",
   "yt_analytics": "2026-11-21",
-  "tg_members": "2026-11-24T16:56:42Z",
+  "tg_members": "2026-11-24T17:07:46Z",
   "tg_posts": "2026-11-24T16:56:43Z",
   "ideas": "2026-11-24T16:55:56Z",
   "news": "2026-11-24 16:53",
@@ -11,7 +11,7 @@
   "tiktok": "2026-11-24T16",
   "instagram": "2026-11-24T16",
   "site": "2026-11-22",
-  "site_live": "2026-11-24T16:56:44Z",
+  "site_live": "2026-11-24T17:07:48Z",
   "activity": "2026-11-24T16:52:55Z",
   "asks": "2026-11-24T08:20Z"
  },
@@ -22,7 +22,7 @@
   "long_hours": 10.7,
   "long_hours_goal": 4000,
   "views_total": 12275,
-  "videos": 97,
+  "videos": 98,
   "views_7d": 736,
   "pct_7d": 51.1,
   "subs_7d": 0,
@@ -550,8 +550,8 @@
   "youtube": {
    "subs": 315,
    "views_total": 12275,
-   "videos": 97,
-   "live_at": "2026-11-24T16:56:41Z",
+   "videos": 98,
+   "live_at": "2026-11-24T17:07:45Z",
    "views_7d": 736,
    "pct_7d": 51.1,
    "subs_7d": 0,
@@ -864,7 +864,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-24T16:56:44Z",
+    "updated": "2026-11-24T17:07:48Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 7,
@@ -874,14 +874,9 @@
     "pageloads_7d": 49,
     "visits_7d": 41,
     "last24h": {
-     "pageloads": 16,
-     "visits": 12,
+     "pageloads": 14,
+     "visits": 10,
      "hours": [
-      {
-       "h": "2026-11-23T17:00:00Z",
-       "pageloads": 2,
-       "visits": 2
-      },
       {
        "h": "2026-11-23T18:00:00Z",
        "pageloads": 0,
@@ -994,6 +989,11 @@
       },
       {
        "h": "2026-11-24T16:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-24T17:00:00Z",
        "pageloads": 0,
        "visits": 0
       }
@@ -1280,6 +1280,17 @@
  "formats_cutoff": "2026-11-15",
  "videos": [
   {
+   "id": "bvS0k_r3_bs",
+   "title": "Меню на тиждень і вечеря з того, що є 🍳 Тір-лист Байта #7",
+   "format": null,
+   "short": true,
+   "published": "2026-11-24",
+   "views7": null,
+   "pct": null,
+   "complete": false,
+   "total": 0
+  },
+  {
    "id": "_wp0rz8edB8",
    "title": "ШІ для SMM: контент-план і голос бренду без пояснень щоразу 📱 ChatGPT, Gemini, Claude",
    "format": null,
@@ -1288,7 +1299,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 12
+   "total": 16
   },
   {
    "id": "xaYHobFNYHo",
@@ -1299,7 +1310,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 20
+   "total": 19
   },
   {
    "id": "ENKGdbr04h0",
@@ -1321,7 +1332,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 79
+   "total": 82
   },
   {
    "id": "aTUsauz53rs",
@@ -1332,7 +1343,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 54
+   "total": 56
   },
   {
    "id": "gljrHADi4aU",
@@ -1365,7 +1376,7 @@
    "views7": 37,
    "pct": 47.9,
    "complete": false,
-   "total": 45
+   "total": 46
   },
   {
    "id": "bRanUVdt2Pw",
@@ -1421,17 +1432,6 @@
    "pct": 9.7,
    "complete": true,
    "total": 83
-  },
-  {
-   "id": "ZSOH2sXLI_Y",
-   "title": "ChatGPT Wallet: ШІ платить твоєю карткою, а United блокує ШІ-агентів 💳",
-   "format": "sec",
-   "short": true,
-   "published": "2026-11-14",
-   "views7": 35,
-   "pct": 25.5,
-   "complete": true,
-   "total": 38
   }
  ],
  "ideas": [
