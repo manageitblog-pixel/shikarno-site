@@ -1223,6 +1223,14 @@
    "started": "2026-11-24T08:52:50Z",
    "finished": null,
    "result": ""
+  },
+  {
+   "id": "154",
+   "agent": "cso",
+   "task": "CSO 24.11: трекер 5 платформ + рішення по yt-related-cta",
+   "started": "2026-11-24T09:19:47Z",
+   "finished": null,
+   "result": ""
   }
  ]
 }
