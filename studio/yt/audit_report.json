@@ -1,5 +1,21 @@
 [
  {
+  "id": "xaYHobFNYHo",
+  "title": "Штучний інтелект для дітей: який ШІ обрати? 🧒 Тір-лист Байта #6 #ШІ #shorts",
+  "short": true,
+  "issues": [],
+  "tags": 14,
+  "status": "public"
+ },
+ {
+  "id": "M-KQwpDwpA4",
+  "title": "ChatGPT українською з нуля: як користуватися безкоштовно і без VPN | Гайд 2026",
+  "short": false,
+  "issues": [],
+  "tags": 14,
+  "status": "private"
+ },
+ {
   "id": "6mIdp843fKo",
   "title": "Реклама в ChatGPT вже в Україні: як не сплутати її з порадою ШІ 📢 #ШІ #shorts",
   "short": true,
@@ -30,14 +46,6 @@
   "issues": [],
   "tags": 14,
   "status": "public"
- },
- {
-  "id": "xaYHobFNYHo",
-  "title": "Штучний інтелект для дітей: який ШІ обрати? 🧒 Тір-лист Байта #6 #ШІ #shorts",
-  "short": true,
-  "issues": [],
-  "tags": 14,
-  "status": "private"
  },
  {
   "id": "aTUsauz53rs",
@@ -368,16 +376,16 @@
   "status": "public"
  },
  {
-  "id": "VuEiIte0i7k",
-  "title": "Скарга сусіду через ШІ: чемно, але щоб подіяло 🤫 Байт пробує #ШІ #shorts",
+  "id": "DMSoAoXDlp8",
+  "title": "Який ШІ для фото й відео? Nano Banana, Gemini Omni, CapCut 🎬 Тір-лист Байта #ШІ #shorts",
   "short": true,
   "issues": [],
-  "tags": 15,
+  "tags": 14,
   "status": "public"
  },
  {
-  "id": "DMSoAoXDlp8",
-  "title": "Який ШІ для фото й відео? Nano Banana, Gemini Omni, CapCut 🎬 Тір-лист Байта #ШІ #shorts",
+  "id": "maIz2Jq1FhA",
+  "title": "Спитав ШІ, як це — говорити зі мною 😬 тренд з TikTok #ШІ #shorts",
   "short": true,
   "issues": [],
   "tags": 14,
@@ -738,6 +746,14 @@
  {
   "id": "J3fkrWp64UE",
   "title": "Google зробив ШІ для зустрічей без інтернету 💻 Gemma 4 на Mac #ШІ #shorts",
+  "short": true,
+  "issues": [],
+  "tags": 11,
+  "status": "public"
+ },
+ {
+  "id": "VJnUKMatmJ8",
+  "title": "⚡ Друга дірка в PHP за 2 дні: CVE-2026-115560 — чи варто панікувати? #ШІ #shorts",
   "short": true,
   "issues": [],
   "tags": 11,
