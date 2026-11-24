@@ -1,18 +1,18 @@
 {
- "generated": "2026-11-24T21:06:59Z",
+ "generated": "2026-11-24T21:18:02Z",
  "fresh": {
-  "yt_live": "2026-11-24T21:07:00Z",
+  "yt_live": "2026-11-24T21:18:02Z",
   "yt_analytics": "2026-11-21",
-  "tg_members": "2026-11-24T21:07:00Z",
-  "tg_posts": "2026-11-24T20:56:55Z",
+  "tg_members": "2026-11-24T21:18:03Z",
+  "tg_posts": "2026-11-24T21:18:03Z",
   "ideas": "2026-11-24T20:56:16Z",
   "news": "2026-11-24 20:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-24T20",
   "instagram": "2026-11-24T20",
   "site": "2026-11-22",
-  "site_live": "2026-11-24T21:07:02Z",
-  "activity": "2026-11-24T20:56:53Z",
+  "site_live": "2026-11-24T21:18:05Z",
+  "activity": "2026-11-24T21:18:01Z",
   "asks": "2026-11-24T18:40Z"
  },
  "notes": [],
@@ -551,7 +551,7 @@
    "subs": 315,
    "views_total": 12275,
    "videos": 98,
-   "live_at": "2026-11-24T21:07:00Z",
+   "live_at": "2026-11-24T21:18:02Z",
    "views_7d": 736,
    "pct_7d": 51.1,
    "subs_7d": 0,
@@ -876,7 +876,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-24T21:07:02Z",
+    "updated": "2026-11-24T21:18:05Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 8,
@@ -1322,7 +1322,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 19
+   "total": 22
   },
   {
    "id": "ENKGdbr04h0",
@@ -1366,7 +1366,7 @@
    "views7": 2,
    "pct": null,
    "complete": false,
-   "total": 5
+   "total": 6
   },
   {
    "id": "CfHTFrYH_z4",
@@ -1377,7 +1377,7 @@
    "views7": 3,
    "pct": 64.2,
    "complete": false,
-   "total": 4
+   "total": 5
   },
   {
    "id": "0Kb6AamTRQo",
@@ -1936,15 +1936,6 @@
  ],
  "activity": [
   {
-   "id": "139",
-   "agent": "designer",
-   "task": "фон: ресерч обкладинок/кадру 0 українських аномалій → design-guide",
-   "started": "2026-11-23T21:17:50Z",
-   "finished": "2026-11-23T21:45:00Z",
-   "result": "3 гіпотези кадру 0 у design-guide (закрив COO за dispatch-log)",
-   "agent_raw": "design"
-  },
-  {
    "id": "140",
    "agent": "da",
    "task": "фон: якість даталейку + перевірка експериментів (ops.py)",
@@ -2279,6 +2270,15 @@
    "finished": "2026-11-24T20:56:53Z",
    "result": "+37 новин; TikTok 16 відео (2 сторінки); IG 8 підписників, 732 перегляди/30д; TG 6; ідеї #114–118",
    "agent_raw": "data"
+  },
+  {
+   "id": "179",
+   "agent": "post",
+   "task": "Озвучка: оркестратор 21:18Z",
+   "started": "2026-11-24T21:18:01Z",
+   "finished": null,
+   "result": "",
+   "agent_raw": "production"
   }
  ],
  "agents": [
