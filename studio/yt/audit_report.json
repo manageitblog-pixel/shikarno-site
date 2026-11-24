@@ -1,5 +1,21 @@
 [
  {
+  "id": "xYez8pJmL4E",
+  "title": "Манікюр і ШІ: дизайн нігтів, відповіді в директ, ціна | ШІ для професій #11 #ШІ #shorts",
+  "short": true,
+  "issues": [],
+  "tags": 15,
+  "status": "private"
+ },
+ {
+  "id": "RIt-PqOGJTg",
+  "title": "Логопедичні заняття з ШІ: картки на Р, ігри, звіти | ШІ для професій #10 #ШІ #shorts",
+  "short": true,
+  "issues": [],
+  "tags": 15,
+  "status": "private"
+ },
+ {
   "id": "xaYHobFNYHo",
   "title": "Штучний інтелект для дітей: який ШІ обрати? 🧒 Тір-лист Байта #6 #ШІ #shorts",
   "short": true,
@@ -360,11 +376,11 @@
   "status": "public"
  },
  {
-  "id": "CElgVrS_GIA",
-  "title": "Презентація з нотаток за хвилину: скіл PowerPoint у Claude 🎤 Скіли #2 #ШІ #shorts",
+  "id": "DMSoAoXDlp8",
+  "title": "Який ШІ для фото й відео? Nano Banana, Gemini Omni, CapCut 🎬 Тір-лист Байта #ШІ #shorts",
   "short": true,
   "issues": [],
-  "tags": 13,
+  "tags": 14,
   "status": "public"
  },
  {
@@ -376,11 +392,11 @@
   "status": "public"
  },
  {
-  "id": "DMSoAoXDlp8",
-  "title": "Який ШІ для фото й відео? Nano Banana, Gemini Omni, CapCut 🎬 Тір-лист Байта #ШІ #shorts",
+  "id": "VuEiIte0i7k",
+  "title": "Скарга сусіду через ШІ: чемно, але щоб подіяло 🤫 Байт пробує #ШІ #shorts",
   "short": true,
   "issues": [],
-  "tags": 14,
+  "tags": 15,
   "status": "public"
  },
  {
@@ -696,22 +712,6 @@
   "status": "public"
  },
  {
-  "id": "0vQVLBHUM9U",
-  "title": "PHP2Shell: дірка в PHP на 9.2/10 і роль ШІ ⚡ Повний розбір",
-  "short": false,
-  "issues": [],
-  "tags": 17,
-  "status": "public"
- },
- {
-  "id": "EwbIWlSKnWg",
-  "title": "Claude Duet: ШІ, який пише тобі першим — що вміє #ШІ #shorts",
-  "short": true,
-  "issues": [],
-  "tags": 14,
-  "status": "public"
- },
- {
   "id": "6h_3_wnO3Z0",
   "title": "Дипфейк-дзвінок: «мама» просить гроші? Це може бути ШІ 😨 ШІ-шахраї #1 #ШІ #shorts",
   "short": true,
@@ -720,11 +720,27 @@
   "status": "public"
  },
  {
+  "id": "IiXA_z7ObFc",
+  "title": "Новини ШІ за тиждень #1: ШІ-агенти зламали 100+ компаній, ChatGPT у браузері, Gemini в авто",
+  "short": false,
+  "issues": [],
+  "tags": 20,
+  "status": "public"
+ },
+ {
   "id": "Gp5ZTU6pynY",
   "title": "ШІ-агенти купують замість тебе: Walmart пускає, Amazon блокує 🛒 #ШІ #shorts",
   "short": true,
   "issues": [],
   "tags": 13,
+  "status": "public"
+ },
+ {
+  "id": "0vQVLBHUM9U",
+  "title": "PHP2Shell: дірка в PHP на 9.2/10 і роль ШІ ⚡ Повний розбір",
+  "short": false,
+  "issues": [],
+  "tags": 17,
   "status": "public"
  },
  {
