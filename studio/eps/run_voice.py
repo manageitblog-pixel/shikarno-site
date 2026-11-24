@@ -37,15 +37,23 @@ def guide_part(dg, D, pi, idxs):
     raw = f"{D}/part{pi}.wav"; texts = [dg.SEGS[i]["gsay"] for i in idxs]
     tk = f"{D}/takes"; os.makedirs(tk, exist_ok=True)
     best = None
-    for take in (1, 2):
+    # 24.11 власник: «Чому якість страждає?» — у guide1 ч.3/ч.11 пішли фолбеки 139/113 Гц (норма 128,5±8), бо після 2 дублів
+    # брали найкращий будь-який. Тепер: дублі нумеруються наскрізно між запусками, і поза нормою частина НЕ стає partN.wav,
+    # доки не вичерпано MAX_TAKES (за замовчуванням 6) — оркестратор перезапише її в наступному вікні квоти.
+    prev = len([f for f in os.listdir(tk) if re.match(rf"part{pi}_take\d+_f0_", f)])
+    max_takes = int(os.environ.get("MAX_TAKES", "6"))
+    for take in (prev + 1, prev + 2):
         if os.path.exists(raw): os.remove(raw)
         try:
             tts_call("\n\n".join(texts), raw)
         except RuntimeError:
             if best is None: raise
-            # 429 на другому дублі: не губити перший (23.11 — втрачено дубль guide2 ч.2) — фіксуємо найкращий і зупиняємось
-            shutil.copy(f"{tk}/part{pi}_take{best[1]}_f0_{best[2]:.1f}.wav", raw)
-            log(ev="part_final", part=pi, take=best[1], f0=best[2], clean=best[0] == 0, note="take2 quota")
+            # 429 на другому дублі: дубль збережено в takes/; у partN.wav — лише чистий (24.11: брудний чекає наступного вікна)
+            if best[0] == 0:
+                shutil.copy(f"{tk}/part{pi}_take{best[1]}_f0_{best[2]:.1f}.wav", raw)
+                log(ev="part_final", part=pi, take=best[1], f0=best[2], clean=True, note="take2 quota")
+            else:
+                log(ev="part_retry_later", part=pi, best_take=best[1], f0=best[2], note="take2 quota")
             raise
         F, ok = f0(raw); w, sr = sf.read(raw, dtype="float32")
         segs = [G.trim(x, sr) for x in G.split_scenes(w, sr, texts)]
@@ -60,8 +68,11 @@ def guide_part(dg, D, pi, idxs):
         sc = (0 if ok else 1) + (1 if rep else 0)
         if best is None or sc < best[0] or (sc == best[0] and abs(F - float(os.environ.get("VC_REF", VC.REF))) < abs(best[2] - float(os.environ.get("VC_REF", VC.REF)))): best = (sc, take, F)
         if ok and not rep: break
+    if os.path.exists(raw): os.remove(raw)
+    if best[0] > 0 and take < max_takes:
+        log(ev="part_retry_later", part=pi, best_take=best[1], f0=best[2], takes=take, max_takes=max_takes); return
     shutil.copy(f"{tk}/part{pi}_take{best[1]}_f0_{best[2]:.1f}.wav", raw)
-    log(ev="part_final", part=pi, take=best[1], f0=best[2], clean=best[0] == 0)
+    log(ev="part_final", part=pi, take=best[1], f0=best[2], clean=best[0] == 0, **({} if best[0] == 0 else {"needs_review": True}))
 def short(mod):
     ep = importlib.import_module(mod); D = f"/home/claude/eps/{ep.SLUG}"; os.makedirs(f"{D}/takes", exist_ok=True)
     if os.path.exists(f"{D}/vo.wav"): return  # уже озвучено — не витрачати квоту
@@ -110,7 +121,7 @@ if __name__ == "__main__":
     try:
         # guide1: частини 0–9 озвучено старим calm (за v2-вимірювачем медіана 128,5 Гц) → решту частин тим самим промптом
         # і в межах власної смуги відео 128,5±8, щоб висота не стрибала посеред ролика (рішення COO 23.11, ops policy).
-        PER_GUIDE = {"guide1": {"TTS_PACE": "calm_v1", "VC_REF": "128.5", "VC_TOL": "8"},
+        PER_GUIDE = {"guide1": {"TTS_PACE": "calm_v1", "VC_REF": "128.5", "VC_TOL": "6"},
                      "guide2": {"VC_REF": "130", "VC_TOL": "8"},  # calm v2 дав 135,6/129,9/128,5/126,1 — тест v2 не пройшов (≥133,5 у 2 з 3); смуга власної медіани, щоб не палити квоту
                      # шоу #3: смуга шоу #1–#2 (весь файл v2: 128,5 і 129,6; частини 121,4–136,4), а не 141,5 — інакше палить по 2 запити
                      # на частину (ч.0: 114,5/116,5/126,9). docs/research/voice-weekly3-2026-11-24.md. Остання частина (оновлення 28.11 + outro) — окремо 28.11
