@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-24T17:07:45Z",
+ "generated": "2026-11-24T18:06:37Z",
  "fresh": {
-  "yt_live": "2026-11-24T17:07:45Z",
+  "yt_live": "2026-11-24T18:06:37Z",
   "yt_analytics": "2026-11-21",
-  "tg_members": "2026-11-24T17:07:46Z",
-  "tg_posts": "2026-11-24T16:56:43Z",
+  "tg_members": "2026-11-24T18:06:38Z",
+  "tg_posts": "2026-11-24T18:06:39Z",
   "ideas": "2026-11-24T16:55:56Z",
   "news": "2026-11-24 16:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-24T16",
   "instagram": "2026-11-24T16",
   "site": "2026-11-22",
-  "site_live": "2026-11-24T17:07:48Z",
+  "site_live": "2026-11-24T18:06:40Z",
   "activity": "2026-11-24T16:52:55Z",
   "asks": "2026-11-24T08:20Z"
  },
@@ -34,7 +34,7 @@
   "tg_goal": 150,
   "site_clicks_28d": 46,
   "site_impr_28d": 3893,
-  "tiktok_auto": 6
+  "tiktok_auto": 8
  },
  "days": [
   {
@@ -551,7 +551,7 @@
    "subs": 315,
    "views_total": 12275,
    "videos": 98,
-   "live_at": "2026-11-24T17:07:45Z",
+   "live_at": "2026-11-24T18:06:37Z",
    "views_7d": 736,
    "pct_7d": 51.1,
    "subs_7d": 0,
@@ -607,7 +607,7 @@
    "best_live": [
     {
      "title": "ШІ для вчителя: план уроку і тест за 5 хвилин у Google Classroom 🍎",
-     "views": 103,
+     "views": 104,
      "id": "ENKGdbr04h0"
     },
     {
@@ -864,7 +864,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-24T17:07:48Z",
+    "updated": "2026-11-24T18:06:40Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 7,
@@ -877,11 +877,6 @@
      "pageloads": 14,
      "visits": 10,
      "hours": [
-      {
-       "h": "2026-11-23T18:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
       {
        "h": "2026-11-23T19:00:00Z",
        "pageloads": 1,
@@ -994,6 +989,11 @@
       },
       {
        "h": "2026-11-24T17:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-24T18:00:00Z",
        "pageloads": 0,
        "visits": 0
       }
@@ -1288,7 +1288,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 0
+   "total": 5
   },
   {
    "id": "_wp0rz8edB8",
@@ -1299,7 +1299,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 16
+   "total": 12
   },
   {
    "id": "xaYHobFNYHo",
@@ -1310,7 +1310,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 19
+   "total": 20
   },
   {
    "id": "ENKGdbr04h0",
@@ -1321,7 +1321,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 103
+   "total": 104
   },
   {
    "id": "LtNuOtQe0pc",
@@ -1332,7 +1332,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 82
+   "total": 79
   },
   {
    "id": "aTUsauz53rs",
@@ -1343,7 +1343,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 56
+   "total": 54
   },
   {
    "id": "gljrHADi4aU",
@@ -1376,7 +1376,7 @@
    "views7": 37,
    "pct": 47.9,
    "complete": false,
-   "total": 46
+   "total": 45
   },
   {
    "id": "bRanUVdt2Pw",
