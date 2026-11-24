@@ -1,9 +1,9 @@
 {
- "generated": "2026-11-24T20:06:41Z",
+ "generated": "2026-11-24T20:18:31Z",
  "fresh": {
-  "yt_live": "2026-11-24T20:06:41Z",
+  "yt_live": "2026-11-24T20:18:31Z",
   "yt_analytics": "2026-11-21",
-  "tg_members": "2026-11-24T20:06:43Z",
+  "tg_members": "2026-11-24T20:18:32Z",
   "tg_posts": "2026-11-24T20:06:44Z",
   "ideas": "2026-11-24T19:30:29Z",
   "news": "2026-11-24 16:53",
@@ -11,8 +11,8 @@
   "tiktok": "2026-11-24T16",
   "instagram": "2026-11-24T16",
   "site": "2026-11-22",
-  "site_live": "2026-11-24T20:06:45Z",
-  "activity": "2026-11-24T19:31:26Z",
+  "site_live": "2026-11-24T20:18:34Z",
+  "activity": "2026-11-24T20:18:07Z",
   "asks": "2026-11-24T18:40Z"
  },
  "notes": [],
@@ -551,7 +551,7 @@
    "subs": 315,
    "views_total": 12275,
    "videos": 98,
-   "live_at": "2026-11-24T20:06:41Z",
+   "live_at": "2026-11-24T20:18:31Z",
    "views_7d": 736,
    "pct_7d": 51.1,
    "subs_7d": 0,
@@ -607,7 +607,7 @@
    "best_live": [
     {
      "title": "ШІ для вчителя: план уроку і тест за 5 хвилин у Google Classroom 🍎",
-     "views": 104,
+     "views": 103,
      "id": "ENKGdbr04h0"
     },
     {
@@ -617,7 +617,7 @@
     },
     {
      "title": "Що ШІ знає про тебе: як вимкнути навчання в ChatGPT, Gemini, Claude, Meta AI і Copilot (2026)",
-     "views": 83,
+     "views": 85,
      "id": "GNqU-wcz9Ws"
     }
    ]
@@ -864,7 +864,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-24T20:06:45Z",
+    "updated": "2026-11-24T20:18:34Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 8,
@@ -1288,7 +1288,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 72
+   "total": 78
   },
   {
    "id": "_wp0rz8edB8",
@@ -1299,7 +1299,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 16
+   "total": 20
   },
   {
    "id": "xaYHobFNYHo",
@@ -1310,7 +1310,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 21
+   "total": 19
   },
   {
    "id": "ENKGdbr04h0",
@@ -1321,7 +1321,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 104
+   "total": 103
   },
   {
    "id": "LtNuOtQe0pc",
@@ -1332,7 +1332,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 79
+   "total": 84
   },
   {
    "id": "aTUsauz53rs",
@@ -1343,7 +1343,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 59
+   "total": 60
   },
   {
    "id": "gljrHADi4aU",
@@ -1354,7 +1354,7 @@
    "views7": 2,
    "pct": null,
    "complete": false,
-   "total": 5
+   "total": 6
   },
   {
    "id": "CfHTFrYH_z4",
@@ -1365,7 +1365,7 @@
    "views7": 3,
    "pct": 64.2,
    "complete": false,
-   "total": 4
+   "total": 5
   },
   {
    "id": "0Kb6AamTRQo",
@@ -1431,7 +1431,7 @@
    "views7": 42,
    "pct": 9.7,
    "complete": true,
-   "total": 83
+   "total": 85
   }
  ],
  "ideas": [
@@ -1924,33 +1924,6 @@
  ],
  "activity": [
   {
-   "id": "135",
-   "agent": "designer",
-   "task": "Instagram: обкладинки Reels під сітку 3:4 (кадр 0) для 5 свіжих Shorts + обкладинки хайлайтів",
-   "started": "2026-11-23T20:35:01Z",
-   "finished": "2026-11-23T21:20:00Z",
-   "result": "5 свіжих Reels з обкладинками 3:4 (закрив COO за dispatch-log)",
-   "agent_raw": "design"
-  },
-  {
-   "id": "136",
-   "agent": "dist",
-   "task": "Meta напряму: інструкція для власника (Instagram + Threads API) і сторінки, які вимагає Meta",
-   "started": "2026-11-23T20:40:16Z",
-   "finished": "2026-11-23T21:00:00Z",
-   "result": "план Meta API (сторіз/Threads) — docs/playbooks/meta-direct-api.md (закрив COO за dispatch-log)",
-   "agent_raw": "distribution"
-  },
-  {
-   "id": "137",
-   "agent": "de",
-   "task": "Збирач даталейку 21:20Z: новини, TikTok/TG-знімок, сигнали",
-   "started": "2026-11-23T21:17:50Z",
-   "finished": "2026-11-23T21:25:00Z",
-   "result": "знімок 21Z: новини, TikTok, TG (закрив COO за dispatch-log)",
-   "agent_raw": "data"
-  },
-  {
    "id": "138",
    "agent": "trend",
    "task": "фон: веб-скан трендів 21Z (12 год) → ідеї, кандидати в шоу #3",
@@ -2268,6 +2241,32 @@
    "started": "2026-11-24T19:27:42Z",
    "finished": "2026-11-24T19:30:19Z",
    "result": "ep88/89/90 PASS (2 дрібні правки); у черзі озвучки"
+  },
+  {
+   "id": "175",
+   "agent": "post",
+   "task": "Озвучка: оркестратор 20:18Z",
+   "started": "2026-11-24T20:18:07Z",
+   "finished": null,
+   "result": "",
+   "agent_raw": "production"
+  },
+  {
+   "id": "176",
+   "agent": "designer",
+   "task": "фон: ресерч дизайну — обкладинки/кадр 0 укр. аномалій",
+   "started": "2026-11-24T20:18:07Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "177",
+   "agent": "de",
+   "task": "фон: якість даталейку + перевірка експериментів ops.py",
+   "started": "2026-11-24T20:18:07Z",
+   "finished": null,
+   "result": "",
+   "agent_raw": "data"
   }
  ],
  "agents": [
