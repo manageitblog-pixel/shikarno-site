@@ -1327,6 +1327,46 @@
    "started": "2026-11-24T18:28:01Z",
    "finished": "2026-11-24T18:35:46Z",
    "result": "release-timer, правило обсягу довгих, gsay_lint, 14 задач закрито, звіт підготовано"
+  },
+  {
+   "id": "167",
+   "agent": "editor",
+   "task": "Сценарії Shorts 30.11–2.12 (контроль без CTA, без «ШІ» у gsay)",
+   "started": "2026-11-24T19:18:44Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "168",
+   "agent": "designer",
+   "task": "Упаковка 25–27.11: guide1, ep83, guide2 — кадр 0, обкладинки",
+   "started": "2026-11-24T19:18:44Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "169",
+   "agent": "seo",
+   "task": "SEO: сторінки 4–20 позиції без переписування (поза замороженими)",
+   "started": "2026-11-24T19:18:44Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "170",
+   "agent": "data",
+   "task": "Аудит прогнозів роликів, яким 7 днів",
+   "started": "2026-11-24T19:18:44Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "171",
+   "agent": "production",
+   "task": "Озвучка: оркестратор 19:18Z (guide3 → Shorts)",
+   "started": "2026-11-24T19:18:44Z",
+   "finished": null,
+   "result": ""
   }
  ]
 }
