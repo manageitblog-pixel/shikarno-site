@@ -1,18 +1,18 @@
 {
- "generated": "2026-11-24T07:06:32Z",
+ "generated": "2026-11-24T07:37:28Z",
  "fresh": {
-  "yt_live": "2026-11-24T07:06:32Z",
+  "yt_live": "2026-11-24T07:37:28Z",
   "yt_analytics": "2026-11-21",
-  "tg_members": "2026-11-24T07:06:33Z",
-  "tg_posts": "2026-11-24T07:06:34Z",
-  "ideas": "2026-11-24T06:51:55Z",
+  "tg_members": "2026-11-24T07:37:29Z",
+  "tg_posts": "2026-11-24T07:32:43Z",
+  "ideas": "2026-11-24T07:31:05Z",
   "news": "2026-11-24 04:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-24T04",
   "instagram": "2026-11-24T04",
   "site": "2026-11-21",
-  "site_live": "2026-11-24T07:06:35Z",
-  "activity": "2026-11-24T06:53:57Z",
+  "site_live": "2026-11-24T07:32:45Z",
+  "activity": "2026-11-24T07:37:28Z",
   "asks": "2026-11-23T19:55:00Z"
  },
  "notes": [],
@@ -545,7 +545,7 @@
    "subs": 315,
    "views_total": 12193,
    "videos": 96,
-   "live_at": "2026-11-24T07:06:32Z",
+   "live_at": "2026-11-24T07:37:28Z",
    "views_7d": 736,
    "pct_7d": 51.1,
    "subs_7d": 0,
@@ -694,8 +694,9 @@
    "ig_goal": 100,
    "ig_goal_note": "до 1.12; далі 500 до 31.01 (поріг «Подарунків» — перевірити для України)",
    "followers": 4,
-   "views_30d": null,
-   "reach_30d": null,
+   "views_30d": 5,
+   "reach_30d": 8,
+   "acc_at": "23.11 21Z",
    "reels": 9,
    "plays_total": 224,
    "likes_total": 2,
@@ -821,18 +822,18 @@
     }
    ],
    "live": {
-    "updated": "2026-11-24T07:06:35Z",
+    "updated": "2026-11-24T07:32:45Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
-    "today_pageloads": 0,
-    "today_visits": 0,
+    "today_pageloads": 3,
+    "today_visits": 1,
     "yesterday_pageloads": 10,
     "yesterday_visits": 10,
-    "pageloads_7d": 42,
-    "visits_7d": 38,
+    "pageloads_7d": 45,
+    "visits_7d": 39,
     "last24h": {
-     "pageloads": 10,
-     "visits": 10,
+     "pageloads": 13,
+     "visits": 11,
      "hours": [
       {
        "h": "2026-11-23T08:00:00Z",
@@ -951,8 +952,8 @@
       },
       {
        "h": "2026-11-24T07:00:00Z",
-       "pageloads": 0,
-       "visits": 0
+       "pageloads": 3,
+       "visits": 1
       }
      ]
     },
@@ -1037,15 +1038,15 @@
      },
      {
       "d": "2026-11-24",
-      "pageloads": 0,
-      "visits": 0,
+      "pageloads": 3,
+      "visits": 1,
       "sampled": false
      }
     ],
     "top_pages_7d": [
      {
       "path": "/",
-      "count": 17
+      "count": 19
      },
      {
       "path": "/novyny/claude-bezkoshtovno/",
@@ -1056,7 +1057,7 @@
       "count": 3
      },
      {
-      "path": "/novyny/anthropic-ipo-83-dolary/",
+      "path": "/novyny/shtuchnyj-intelekt-dlya-ditej-tir-lyst/",
       "count": 2
      },
      {
@@ -1067,7 +1068,7 @@
     "top_referrers_7d": [
      {
       "host": "(прямі / без реферера)",
-      "count": 21
+      "count": 22
      },
      {
       "host": "www.google.com",
@@ -1089,7 +1090,7 @@
     "top_countries_7d": [
      {
       "country": "UA",
-      "count": 23
+      "count": 26
      },
      {
       "country": "US",
@@ -1439,28 +1440,6 @@
    "score": 458.2
   },
   {
-   "title": "Який ШІ для дітей? Тір-лист #6 (AI Quests українською)",
-   "format": "tier",
-   "channels": [
-    "short",
-    "site",
-    "tg",
-    "tiktok"
-   ],
-   "demand": 4,
-   "fresh": 4,
-   "show": 5,
-   "fit": 5,
-   "by": "researcher-search",
-   "source": "https://dou.ua/lenta/news/google-ai-quests-ukraine-kids/ + kw.py «штучний інтелект для дітей»",
-   "status": "approved",
-   "added": "2026-11-22",
-   "id": "1",
-   "kw": "штучний інтелект для дітей (70); ші для дітей (20); нейроігри для дітей (10)",
-   "decision": "Short 23.11 19:00 (тір-лист #6), сценарій сьогодні",
-   "score": 400.0
-  },
-  {
    "title": "Куди поїхати на вихідні: який ШІ? Тір-лист #8 (подорожі)",
    "format": "tier",
    "channels": [
@@ -1658,11 +1637,36 @@
    "added": "2026-11-23",
    "id": "81",
    "score": 282.0
+  },
+  {
+   "title": "«Ведуча ТСН» у TikTok каже підписати петицію? Це діпфейк: 595 ШІ-підробок українських журналісток і 3 ознаки",
+   "format": "sec",
+   "channels": [
+    "show",
+    "short",
+    "site",
+    "tg",
+    "tiktok"
+   ],
+   "demand": 4,
+   "fresh": 3,
+   "show": 5,
+   "fit": 5,
+   "hook": "you",
+   "length": 35,
+   "source": "https://texty.org.ua/projects/116211/shtuchnyj-intelekt-i-tiktok-yak-vidomyx-zhurnalistok-peretvoryuyut-na-fejky/",
+   "by": "researcher-web",
+   "note": "Тексти + «Жінки в медіа»: 595 відео (328 — лише підроблений голос, 267 — голос і відео), разом понад 24 млн переглядів, найчастіше підробляють Вітвіцьку, Даугуле, Мазур; 45% — фейкові петиції й опитування, ~24% — «гроші/гуманітарка» (збір персональних даних). Дані за 10.2023–09.2025, тож це не новина тижня: тема знову в стрічках завдяки подкасту Детектор медіа 20.11.2026 (https://detector.media/mediumy/article/254150/2026-11-20-piv-milyona-pereglyadiv-odnogo-dypfeyku-yak-u-tiktoku-ekspluatuyut-doviru-do-ukrainskykh-zhurnalistok/). Для глядача: фейк зі знайомим обличчям з телебачення веде на сторінку, де в тебе беруть дані. Формат: Short «3 ознаки» (TikTok) + стаття на сайті з чеклістом від Текстів.",
+   "decision": "кандидат у шоу #3 29.11 (веб-скан 22.11 ввечері): казати чесно, що дослідження 2025 року, а свіжий привід — подкаст 20.11",
+   "status": "new",
+   "added": "2026-11-22",
+   "id": "38",
+   "score": 263.6
   }
  ],
  "ideas_count": {
   "total": 99,
-  "open": 99
+  "open": 96
  },
  "lake": {
   "videos": 96,
@@ -1871,14 +1875,6 @@
  ],
  "activity": [
   {
-   "id": "112",
-   "agent": "trend",
-   "task": "фон: веб-скан 09:20Z (12 год), кандидати в шоу #3",
-   "started": "2026-11-23T09:19:17Z",
-   "finished": "2026-11-23T09:23:47Z",
-   "result": "Веб-скан 23.11 ранок: великих анонсів за 12 год немає; +1 ідея №62 (ЄСПЛ і вигадані ШІ справи, echr.coe.int), у рейтинг шоу #3 як запасна 7a; топ без змін. Коміт 40f57f1"
-  },
-  {
    "id": "113",
    "agent": "cso",
    "task": "CSO понеділок: факт тижня vs план по 4 платформах, темп до STAR, рішення тижня, експеримент",
@@ -2027,16 +2023,16 @@
    "agent": "seo",
    "task": "SEO: переписати сторінки з GSC (покази ≥50, позиція 4–20), ще не переписані",
    "started": "2026-11-23T20:18:31Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-23T20:45:00Z",
+   "result": "кандидатів немає: усі сторінки ≥50 показів уже в експерименті або переписані (закрив COO за dispatch-log)"
   },
   {
    "id": "132",
    "agent": "cm",
    "task": "Коментарі YouTube без відповіді + група TG",
    "started": "2026-11-23T20:18:31Z",
-   "finished": null,
-   "result": "",
+   "finished": "2026-11-23T20:20:00Z",
+   "result": "YouTube 72 год: коментарів глядачів 0, TG-група тиша (закрив COO за dispatch-log)",
    "agent_raw": "community"
   },
   {
@@ -2044,8 +2040,8 @@
    "agent": "da",
    "task": "Аудит прогнозів роликів, яким виповнилось 7 днів",
    "started": "2026-11-23T20:18:31Z",
-   "finished": null,
-   "result": "",
+   "finished": "2026-11-23T20:30:00Z",
+   "result": "аудит 15–16.11: Lovable 6 vs 22,5; «7 речей» 41 vs 36 → поправки моделі (закрив COO за dispatch-log)",
    "agent_raw": "analyst"
   },
   {
@@ -2053,8 +2049,8 @@
    "agent": "trend",
    "task": "фон: аномалії українських ШІ-каналів + TikTok-тренди → ідеї",
    "started": "2026-11-23T20:18:31Z",
-   "finished": null,
-   "result": "",
+   "finished": "2026-11-23T20:21:00Z",
+   "result": "ідеї #75–79, docs/research/niche-outliers-2026-11-23.md (закрив COO за dispatch-log)",
    "agent_raw": "niche"
   },
   {
@@ -2062,8 +2058,8 @@
    "agent": "designer",
    "task": "Instagram: обкладинки Reels під сітку 3:4 (кадр 0) для 5 свіжих Shorts + обкладинки хайлайтів",
    "started": "2026-11-23T20:35:01Z",
-   "finished": null,
-   "result": "",
+   "finished": "2026-11-23T21:20:00Z",
+   "result": "5 свіжих Reels з обкладинками 3:4 (закрив COO за dispatch-log)",
    "agent_raw": "design"
   },
   {
@@ -2071,8 +2067,8 @@
    "agent": "dist",
    "task": "Meta напряму: інструкція для власника (Instagram + Threads API) і сторінки, які вимагає Meta",
    "started": "2026-11-23T20:40:16Z",
-   "finished": null,
-   "result": "",
+   "finished": "2026-11-23T21:00:00Z",
+   "result": "план Meta API (сторіз/Threads) — docs/playbooks/meta-direct-api.md (закрив COO за dispatch-log)",
    "agent_raw": "distribution"
   },
   {
@@ -2080,8 +2076,8 @@
    "agent": "de",
    "task": "Збирач даталейку 21:20Z: новини, TikTok/TG-знімок, сигнали",
    "started": "2026-11-23T21:17:50Z",
-   "finished": null,
-   "result": "",
+   "finished": "2026-11-23T21:25:00Z",
+   "result": "знімок 21Z: новини, TikTok, TG (закрив COO за dispatch-log)",
    "agent_raw": "data"
   },
   {
@@ -2089,8 +2085,8 @@
    "agent": "trend",
    "task": "фон: веб-скан трендів 21Z (12 год) → ідеї, кандидати в шоу #3",
    "started": "2026-11-23T21:17:50Z",
-   "finished": null,
-   "result": "",
+   "finished": "2026-11-23T21:35:00Z",
+   "result": "ідеї #85–88, trend-scan-2026-11-23-21z.md (закрив COO за dispatch-log)",
    "agent_raw": "research"
   },
   {
@@ -2098,8 +2094,8 @@
    "agent": "designer",
    "task": "фон: ресерч обкладинок/кадру 0 українських аномалій → design-guide",
    "started": "2026-11-23T21:17:50Z",
-   "finished": null,
-   "result": "",
+   "finished": "2026-11-23T21:45:00Z",
+   "result": "3 гіпотези кадру 0 у design-guide (закрив COO за dispatch-log)",
    "agent_raw": "design"
   },
   {
@@ -2107,8 +2103,8 @@
    "agent": "da",
    "task": "фон: якість даталейку + перевірка експериментів (ops.py)",
    "started": "2026-11-23T21:17:50Z",
-   "finished": null,
-   "result": "",
+   "finished": "2026-11-23T21:30:00Z",
+   "result": "data-quality-2026-11-23.md: TikTok-знімок виправлено, ризики передано (закрив COO за dispatch-log)",
    "agent_raw": "analyst"
   },
   {
@@ -2116,8 +2112,8 @@
    "agent": "de",
    "task": "Instagram-аналітика: instagram_ingest.py (ig_snap), блок Instagram на дашборді HQ і в знімку росту",
    "started": "2026-11-23T21:25:31Z",
-   "finished": null,
-   "result": "",
+   "finished": "2026-11-23T22:00:00Z",
+   "result": "ig_snap + блок Instagram на HQ (закрив COO за dispatch-log)",
    "agent_raw": "data"
   },
   {
@@ -2125,16 +2121,16 @@
    "agent": "seo",
    "task": "фон: нова вічнозелена стаття під запит із попитом, якого сайт не покриває",
    "started": "2026-11-23T22:18:03Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-23T22:22:00Z",
+   "result": "стаття «DeepSeek українською» (вихід 24.11 10:00) (закрив COO за dispatch-log)"
   },
   {
    "id": "143",
    "agent": "trend",
    "task": "фон: аномалії TikTok/Reels у ніші ШІ українською за добу → ідеї",
    "started": "2026-11-24T00:17:54Z",
-   "finished": null,
-   "result": "",
+   "finished": "2026-11-24T00:19:00Z",
+   "result": "ідеї #89–92, reels-outliers-2026-11-24.md (закрив COO за dispatch-log)",
    "agent_raw": "niche"
   },
   {
@@ -2142,8 +2138,8 @@
    "agent": "de",
    "task": "Збирач даталейку 00:52Z: новини, TikTok/Instagram/TG-знімок, сигнали",
    "started": "2026-11-24T00:52:36Z",
-   "finished": null,
-   "result": "",
+   "finished": "2026-11-24T01:05:00Z",
+   "result": "знімок 00Z: TikTok/Instagram, ідеї #93–95 (закрив COO за dispatch-log)",
    "agent_raw": "data"
   },
   {
@@ -2151,8 +2147,8 @@
    "agent": "de",
    "task": "Збирач даталейку 04:52Z: новини, TikTok/Instagram/TG-знімок, сигнали",
    "started": "2026-11-24T04:53:13Z",
-   "finished": null,
-   "result": "",
+   "finished": "2026-11-24T05:00:00Z",
+   "result": "знімок 04Z: TikTok/Instagram (закрив COO за dispatch-log)",
    "agent_raw": "data"
   },
   {
@@ -2160,8 +2156,8 @@
    "agent": "trend",
    "task": "фон: ранковий веб-скан трендів (з 21Z 23.11) → ідеї, кандидати в шоу #3",
    "started": "2026-11-24T05:17:31Z",
-   "finished": null,
-   "result": "",
+   "finished": "2026-11-24T05:35:00Z",
+   "result": "ідеї #96–98, trend-scan-2026-11-24-05z.md (закрив COO за dispatch-log)",
    "agent_raw": "research"
   },
   {
@@ -2178,8 +2174,8 @@
    "agent": "post",
    "task": "Шоу #3: чому ч.0 двічі 114–117 Гц (поза 141,5±8) — аналіз без TTS, смуга для weekly3",
    "started": "2026-11-24T06:24:15Z",
-   "finished": null,
-   "result": "",
+   "finished": "2026-11-24T06:40:00Z",
+   "result": "weekly3 смуга 129±8, ч.0 ← 126,9 Гц (закрив COO за dispatch-log)",
    "agent_raw": "voice"
   },
   {
@@ -2187,8 +2183,8 @@
    "agent": "cm",
    "task": "Telegram-відділ 24.11: метрика, воронки, експеримент тижня, група",
    "started": "2026-11-24T06:42:03Z",
-   "finished": null,
-   "result": "",
+   "finished": "2026-11-24T06:50:00Z",
+   "result": "TG 6 (Δ0), пост дня готовий, IG-підписи без «перешли» (закрив COO за dispatch-log)",
    "agent_raw": "tg"
   },
   {
@@ -2196,8 +2192,8 @@
    "agent": "trend",
    "task": "Ранковий радар 24.11: аналітика, редколегія, топ-3, аудит",
    "started": "2026-11-24T06:43:48Z",
-   "finished": null,
-   "result": "",
+   "finished": "2026-11-24T07:30:00Z",
+   "result": "№89 approved → Short 30.11; №99 у роботу; radar-2026-11-24.md (закрив COO за dispatch-log)",
    "agent_raw": "research"
   },
   {
@@ -2205,8 +2201,16 @@
    "agent": "seo",
    "task": "ШІ-пісня на «Голосі країни»: перевірка першоджерел → стаття на сайт + пост TG (якщо підтверджено)",
    "started": "2026-11-24T06:53:57Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-24T06:59:00Z",
+   "result": "стаття «ШІ-пісня на Голосі країни» (13:00) + TG-текст (закрив COO за dispatch-log)"
+  },
+  {
+   "id": "152",
+   "agent": "coo",
+   "task": "COO ранок 24.11: ≥3 покращення до власника, дашборд очима власника, стан конвеєра",
+   "started": "2026-11-24T07:27:45Z",
+   "finished": "2026-11-24T07:37:28Z",
+   "result": "ep82 стаття; прогноз при заливці; tg_daily окремо; TikTok-пагінація; HQ: 20 завислих закрито, IG, розклад"
   }
  ],
  "agents": [
@@ -2494,6 +2498,16 @@
    "time": "15:07",
    "what": "Дизайнер: кадр 0 і обкладинка дня (ср — ресерч стилю)",
    "agent": "designer"
+  },
+  {
+   "time": "15:00 за планом",
+   "what": "Вихід кліпу-воронки (YouTube Short з довгого) + TikTok",
+   "agent": "clip"
+  },
+  {
+   "time": "15:23 і 19:23",
+   "what": "Менеджер дистрибуції: Instagram Reels — дзеркало кліпу й Short дня",
+   "agent": "dist"
   },
   {
    "time": "19:00",

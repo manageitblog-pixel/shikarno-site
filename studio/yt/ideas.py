@@ -17,6 +17,8 @@ usage:
   python3 studio/yt/ideas.py add '{"title":"...","format":"tier","channels":["short","site"],"demand":4,"fresh":3,"show":5,"fit":5,"source":"...","length":30}'
   python3 studio/yt/ideas.py board [N]        # рейтинг відкритих ідей + кандидати на рімейк
   python3 studio/yt/ideas.py set <id> status=approved decision="..."
+  python3 studio/yt/ideas.py link <id> <video_id> [--at 2026-11-24T17:00:00Z]   # при заливці/виході: фіксує прогноз (prior, бал, P25–P75) у момент виходу
+                                                                              # (finalize.py --idea <id> робить це сам; аудит 23.11: 0 з 74 ідей були прив'язані)
 """
 import sys, os, re, json, sqlite3, datetime, statistics, math
 D = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data")
@@ -124,6 +126,27 @@ def remakes(n=5):
     return sorted(out, reverse=True)[:n]
 
 
+def link(idea_id, vid, at=None):
+    """Прив'язати ролик до ідеї й записати прогноз станом на зараз (один раз; повторний виклик прогноз не переписує)."""
+    S = stats(); P = priors(S)
+    with locked(F):
+        x = load(); hit = None
+        for i in x:
+            if i["id"] == str(idea_id):
+                hit = i; i["video_id"] = vid
+                if at: i["published_at"] = at
+                if i.get("status") in ("new", "approved", "in_work", None): i["status"] = "done"
+                if "prior_at_publish" not in i:
+                    f = i.get("format", "news"); st = S.get(f) or {}
+                    i["prior_at_publish"] = round(P.get(f, P.get("news", 0.3)), 3); i["score_at_publish"] = score(i, P)
+                    i["forecast_at_publish"] = {"at": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%MZ"), "format": f,
+                                                "p25": st.get("p25"), "med": st.get("med"), "p75": st.get("p75"), "n": st.get("n"),
+                                                "hook_mult": hook_mult(i), "length_mult": length_mult(i)}
+        if hit is None: sys.exit(f"ідеї {idea_id} немає")
+        save(x)
+    print("linked", idea_id, vid, hit.get("score_at_publish"), hit.get("forecast_at_publish"))
+
+
 def board(n=15):
     S = stats(); P = priors(S); xs = [i for i in load() if i.get("status", "new") in ("new", "approved")]
     for i in xs: i["score"] = score(i, P)
@@ -155,5 +178,7 @@ if __name__ == "__main__":
                     if "prior_at_publish" not in i and (i.get("video_id") or i.get("url") or i.get("status") == "done"):
                         P = P or priors(); i["prior_at_publish"] = P.get(i.get("format", "news"), P.get("news", 0.3)); i["score_at_publish"] = score(i, P)
             save(x); print("ok")
+    elif a[0] == "link":
+        link(a[1], a[2], a[a.index("--at") + 1] if "--at" in a else None)
     else:
         board(int(a[1]) if len(a) > 1 else 15)

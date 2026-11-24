@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """ОДИН крок після заливки (власник 14.11: «перевіряй все і пофікси пайплайн»).
-usage: python3 studio/yt/finalize.py <vid> <playlist-key...> --thumb <jpg> --comment "<питання>" [--at 2026-11-14T12:00:00Z] [--style v2|v3|v4]
+usage: python3 studio/yt/finalize.py <vid> <playlist-key...> --thumb <jpg> --comment "<питання>" [--at 2026-11-14T12:00:00Z] [--style v2|v3|v4] [--idea <id>]
 Робить: обкладинка → плейлист(и) → хвіст-хештеги/теги за правилами (audit.fix) → коментар у pending_comments → запис у thumb_test.json →
 перевіряє ролик audit.check і друкує PASS або список проблем. Без PASS ролик не вважається готовим.
 """
@@ -13,6 +13,7 @@ ap = argparse.ArgumentParser()
 ap.add_argument("vid"); ap.add_argument("pl", nargs="+")
 ap.add_argument("--thumb", required=True); ap.add_argument("--comment", required=True)
 ap.add_argument("--at"); ap.add_argument("--style", default="")
+ap.add_argument("--idea", help="id ідеї з ideas.json: зафіксувати прогноз у момент заливки (ideas.py link)")
 a = ap.parse_args()
 import time
 # YouTube віддає застарілий snippet ~30 с після заливки/зміни (15.11: теги «зникли», а fix перезаписав опис) → чекаємо, поки теги з'являться
@@ -36,6 +37,9 @@ update_json(pc, lambda p: p.__setitem__(a.vid, {"at": a.at or v["status"].get("p
 if a.style:
     tt = "/home/claude/eps/thumb_test.json"
     update_json(tt, lambda d: d.__setitem__(a.vid, {"ep": v["snippet"]["title"][:40], "style": a.style, "set": v["status"].get("publishAt", "")}), {})
+if a.idea:  # 24.11 COO: прогноз фіксується в момент заливки, а не відтворюється заднім числом (forecast-audit-2026-11-23)
+    subprocess.run(["python3", os.path.join(os.path.dirname(os.path.abspath(__file__)), "ideas.py"), "link", a.idea, a.vid,
+                    "--at", a.at or v["status"].get("publishAt") or ""], check=False)
 time.sleep(20); v = fresh(a.vid)
 r = audit.check(v, audit.playlist_map(), None)
 iss = [i for i in r["issues"] if i != "C1"]  # коментар з'явиться після publishAt (post_comments.py)

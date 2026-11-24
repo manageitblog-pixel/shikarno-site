@@ -14,11 +14,25 @@
   "fit": 5,
   "by": "researcher-search",
   "source": "https://dou.ua/lenta/news/google-ai-quests-ukraine-kids/ + kw.py «штучний інтелект для дітей»",
-  "status": "approved",
+  "status": "done",
   "added": "2026-11-22",
   "id": "1",
   "kw": "штучний інтелект для дітей (70); ші для дітей (20); нейроігри для дітей (10)",
-  "decision": "Short 23.11 19:00 (тір-лист #6), сценарій сьогодні"
+  "decision": "Short 23.11 19:00 (тір-лист #6), сценарій сьогодні",
+  "video_id": "xaYHobFNYHo",
+  "published_at": "2026-11-23T17:00:00Z",
+  "prior_at_publish": 1.0,
+  "score_at_publish": 400.0,
+  "forecast_at_publish": {
+   "at": "2026-11-24T07:31Z",
+   "format": "tier",
+   "p25": 87,
+   "med": 200,
+   "p75": 395,
+   "n": 11,
+   "hook_mult": 1.0,
+   "length_mult": 1.0
+  }
  },
  {
   "title": "ChatGPT з нуля українською — гайд 12–15 хв",
@@ -33,10 +47,24 @@
   "fit": 5,
   "by": "researcher-search",
   "source": "Search Console: «чат gpt українською безкоштовно» 577 показів",
-  "status": "new",
+  "status": "done",
   "added": "2026-11-22",
   "id": "2",
-  "kw": "chatgpt уроки (178); chatgpt як користуватися (20); що таке chatgpt (10)"
+  "kw": "chatgpt уроки (178); chatgpt як користуватися (20); що таке chatgpt (10)",
+  "video_id": "M-KQwpDwpA4",
+  "published_at": "2026-11-25T17:00:00Z",
+  "prior_at_publish": 0.6,
+  "score_at_publish": 225.0,
+  "forecast_at_publish": {
+   "at": "2026-11-24T07:31Z",
+   "format": "guide",
+   "p25": null,
+   "med": null,
+   "p75": null,
+   "n": null,
+   "hook_mult": 1.0,
+   "length_mult": 1.0
+  }
  },
  {
   "title": "ШІ для логопеда / вузькі професії",
@@ -87,11 +115,25 @@
   "fit": 5,
   "by": "owner",
   "source": "рішення власника 21.11",
-  "status": "approved",
+  "status": "done",
   "added": "2026-11-22",
   "id": "5",
   "kw": "зерно «ші для кухні» без релевантного попиту: бізнес на кухні (8); дитячі кухні (10, нерелевантно) — спробувати «рецепти chatgpt»",
-  "decision": "Short 24.11 19:00 (тір-лист кухня), сценарій 22.11"
+  "decision": "Short 24.11 19:00 (тір-лист кухня), сценарій 22.11",
+  "video_id": "bvS0k_r3_bs",
+  "published_at": "2026-11-24T17:00:00Z",
+  "prior_at_publish": 1.0,
+  "score_at_publish": 225.0,
+  "forecast_at_publish": {
+   "at": "2026-11-24T07:31Z",
+   "format": "tier",
+   "p25": 87,
+   "med": 200,
+   "p75": 395,
+   "n": 11,
+   "hook_mult": 1.0,
+   "length_mult": 1.0
+  }
  },
  {
   "title": "ШІ для перукаря/майстра краси",

@@ -1045,128 +1045,128 @@
    "agent": "seo",
    "task": "SEO: переписати сторінки з GSC (покази ≥50, позиція 4–20), ще не переписані",
    "started": "2026-11-23T20:18:31Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-23T20:45:00Z",
+   "result": "кандидатів немає: усі сторінки ≥50 показів уже в експерименті або переписані (закрив COO за dispatch-log)"
   },
   {
    "id": "132",
    "agent": "community",
    "task": "Коментарі YouTube без відповіді + група TG",
    "started": "2026-11-23T20:18:31Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-23T20:20:00Z",
+   "result": "YouTube 72 год: коментарів глядачів 0, TG-група тиша (закрив COO за dispatch-log)"
   },
   {
    "id": "133",
    "agent": "analyst",
    "task": "Аудит прогнозів роликів, яким виповнилось 7 днів",
    "started": "2026-11-23T20:18:31Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-23T20:30:00Z",
+   "result": "аудит 15–16.11: Lovable 6 vs 22,5; «7 речей» 41 vs 36 → поправки моделі (закрив COO за dispatch-log)"
   },
   {
    "id": "134",
    "agent": "niche",
    "task": "фон: аномалії українських ШІ-каналів + TikTok-тренди → ідеї",
    "started": "2026-11-23T20:18:31Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-23T20:21:00Z",
+   "result": "ідеї #75–79, docs/research/niche-outliers-2026-11-23.md (закрив COO за dispatch-log)"
   },
   {
    "id": "135",
    "agent": "design",
    "task": "Instagram: обкладинки Reels під сітку 3:4 (кадр 0) для 5 свіжих Shorts + обкладинки хайлайтів",
    "started": "2026-11-23T20:35:01Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-23T21:20:00Z",
+   "result": "5 свіжих Reels з обкладинками 3:4 (закрив COO за dispatch-log)"
   },
   {
    "id": "136",
    "agent": "distribution",
    "task": "Meta напряму: інструкція для власника (Instagram + Threads API) і сторінки, які вимагає Meta",
    "started": "2026-11-23T20:40:16Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-23T21:00:00Z",
+   "result": "план Meta API (сторіз/Threads) — docs/playbooks/meta-direct-api.md (закрив COO за dispatch-log)"
   },
   {
    "id": "137",
    "agent": "data",
    "task": "Збирач даталейку 21:20Z: новини, TikTok/TG-знімок, сигнали",
    "started": "2026-11-23T21:17:50Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-23T21:25:00Z",
+   "result": "знімок 21Z: новини, TikTok, TG (закрив COO за dispatch-log)"
   },
   {
    "id": "138",
    "agent": "research",
    "task": "фон: веб-скан трендів 21Z (12 год) → ідеї, кандидати в шоу #3",
    "started": "2026-11-23T21:17:50Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-23T21:35:00Z",
+   "result": "ідеї #85–88, trend-scan-2026-11-23-21z.md (закрив COO за dispatch-log)"
   },
   {
    "id": "139",
    "agent": "design",
    "task": "фон: ресерч обкладинок/кадру 0 українських аномалій → design-guide",
    "started": "2026-11-23T21:17:50Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-23T21:45:00Z",
+   "result": "3 гіпотези кадру 0 у design-guide (закрив COO за dispatch-log)"
   },
   {
    "id": "140",
    "agent": "analyst",
    "task": "фон: якість даталейку + перевірка експериментів (ops.py)",
    "started": "2026-11-23T21:17:50Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-23T21:30:00Z",
+   "result": "data-quality-2026-11-23.md: TikTok-знімок виправлено, ризики передано (закрив COO за dispatch-log)"
   },
   {
    "id": "141",
    "agent": "data",
    "task": "Instagram-аналітика: instagram_ingest.py (ig_snap), блок Instagram на дашборді HQ і в знімку росту",
    "started": "2026-11-23T21:25:31Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-23T22:00:00Z",
+   "result": "ig_snap + блок Instagram на HQ (закрив COO за dispatch-log)"
   },
   {
    "id": "142",
    "agent": "seo",
    "task": "фон: нова вічнозелена стаття під запит із попитом, якого сайт не покриває",
    "started": "2026-11-23T22:18:03Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-23T22:22:00Z",
+   "result": "стаття «DeepSeek українською» (вихід 24.11 10:00) (закрив COO за dispatch-log)"
   },
   {
    "id": "143",
    "agent": "niche",
    "task": "фон: аномалії TikTok/Reels у ніші ШІ українською за добу → ідеї",
    "started": "2026-11-24T00:17:54Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-24T00:19:00Z",
+   "result": "ідеї #89–92, reels-outliers-2026-11-24.md (закрив COO за dispatch-log)"
   },
   {
    "id": "144",
    "agent": "data",
    "task": "Збирач даталейку 00:52Z: новини, TikTok/Instagram/TG-знімок, сигнали",
    "started": "2026-11-24T00:52:36Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-24T01:05:00Z",
+   "result": "знімок 00Z: TikTok/Instagram, ідеї #93–95 (закрив COO за dispatch-log)"
   },
   {
    "id": "145",
    "agent": "data",
    "task": "Збирач даталейку 04:52Z: новини, TikTok/Instagram/TG-знімок, сигнали",
    "started": "2026-11-24T04:53:13Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-24T05:00:00Z",
+   "result": "знімок 04Z: TikTok/Instagram (закрив COO за dispatch-log)"
   },
   {
    "id": "146",
    "agent": "research",
    "task": "фон: ранковий веб-скан трендів (з 21Z 23.11) → ідеї, кандидати в шоу #3",
    "started": "2026-11-24T05:17:31Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-24T05:35:00Z",
+   "result": "ідеї #96–98, trend-scan-2026-11-24-05z.md (закрив COO за dispatch-log)"
   },
   {
    "id": "147",
@@ -1181,40 +1181,40 @@
    "agent": "voice",
    "task": "Шоу #3: чому ч.0 двічі 114–117 Гц (поза 141,5±8) — аналіз без TTS, смуга для weekly3",
    "started": "2026-11-24T06:24:15Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-24T06:40:00Z",
+   "result": "weekly3 смуга 129±8, ч.0 ← 126,9 Гц (закрив COO за dispatch-log)"
   },
   {
    "id": "149",
    "agent": "tg",
    "task": "Telegram-відділ 24.11: метрика, воронки, експеримент тижня, група",
    "started": "2026-11-24T06:42:03Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-24T06:50:00Z",
+   "result": "TG 6 (Δ0), пост дня готовий, IG-підписи без «перешли» (закрив COO за dispatch-log)"
   },
   {
    "id": "150",
    "agent": "research",
    "task": "Ранковий радар 24.11: аналітика, редколегія, топ-3, аудит",
    "started": "2026-11-24T06:43:48Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-24T07:30:00Z",
+   "result": "№89 approved → Short 30.11; №99 у роботу; radar-2026-11-24.md (закрив COO за dispatch-log)"
   },
   {
    "id": "151",
    "agent": "seo",
    "task": "ШІ-пісня на «Голосі країни»: перевірка першоджерел → стаття на сайт + пост TG (якщо підтверджено)",
    "started": "2026-11-24T06:53:57Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-24T06:59:00Z",
+   "result": "стаття «ШІ-пісня на Голосі країни» (13:00) + TG-текст (закрив COO за dispatch-log)"
   },
   {
    "id": "152",
    "agent": "coo",
    "task": "COO ранок 24.11: ≥3 покращення до власника, дашборд очима власника, стан конвеєра",
    "started": "2026-11-24T07:27:45Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-24T07:37:28Z",
+   "result": "ep82 стаття; прогноз при заливці; tg_daily окремо; TikTok-пагінація; HQ: 20 завислих закрито, IG, розклад"
   }
  ]
 }

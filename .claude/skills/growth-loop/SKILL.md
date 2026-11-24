@@ -8,7 +8,7 @@ description: Щотижневий цикл росту ШІкарно (неділ
 2. **Формати**: згрупувати ролики за форматом (тір-лист, шахраї, новина, Байт пробує, гумор, скіли/професії) — медіана % перегляду і підписок/1000.
 3. **Telegram**: `tg.call('getChatMemberCount', chat_id=tg.CH)`.
 4. **Сайт**: Search Console `searchAnalytics/query` (покази, кліки, позиція, топ-запити); Cloudflare — лише якщо є CF_TOKEN.
-5. **TikTok**: скріни власника → eps/tiktok.json (views_*).
+5. **TikTok**: повний обхід профілю через vidIQ `vidiq_tiktok_profile_videos` (handle shikarno_ai_ua; далі `until`=nextUntil, доки сторінки не скінчаться; ~5 кр./сторінка) → один файл studio/data/tiktok/<дата>T<год>.json з усіма відео → `python3 studio/yt/tiktok_ingest.py`. Щоденні знімки бачать лише ~10 найновіших (рішення COO 24.11). Скріни власника — лише як запасний варіант → eps/tiktok.json.
 6. **Рішення**: нижні 20% форматів — прибрати з розкладу; верхні — +1 слот. Записати в docs/RUNBOOK.md (МІКС SHORTS) з датою.
 7. **Звіт власнику** (tg.call sendMessage chat_id=133254760): 5 рядків цифр vs цілі з плану, 3 рішення на тиждень, 1 прохання до власника (якщо є). Без води.
 

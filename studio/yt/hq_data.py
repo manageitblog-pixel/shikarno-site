@@ -36,7 +36,7 @@ DEPTS = [
   dict(id="design", name="Дизайн", color="#FF8FD8"), dict(id="research", name="Дослідження та аналітика", color="#4CF2FF"),
   dict(id="growth", name="Зростання (Growth)", color="#FFA94D"), dict(id="dist", name="Дистрибуція", color="#C792FF"),
 ]
-# Реальний розклад (звірено з list_triggers 23.11; час — Київ). Час виходу роликів — це publish_at у YouTube, не запуск агента.
+# Реальний розклад (звірено з list_triggers 24.11; час — Київ). Час виходу роликів — це publish_at у YouTube, не запуск агента.
 SCHEDULE = [  # (Київ, що, агент)
   ("щогодини :06", "Асистент власника: перевірка бота, відкладені статті, оновлення HQ", "ea"),
   ("щогодини :17", "Диспетчер: пул 5 агентів, самоперевірка, оновлення HQ", "coo"),
@@ -52,6 +52,8 @@ SCHEDULE = [  # (Київ, що, агент)
   ("14:00 нд", "Вихід шоу «ШІ за тиждень» (YouTube)", "longs"),
   ("14:13", "Дослідник алгоритмів платформ: зміни, лайфхаки, експерименти", "algo"),
   ("15:07", "Дизайнер: кадр 0 і обкладинка дня (ср — ресерч стилю)", "designer"),
+  ("15:00 за планом", "Вихід кліпу-воронки (YouTube Short з довгого) + TikTok", "clip"),
+  ("15:23 і 19:23", "Менеджер дистрибуції: Instagram Reels — дзеркало кліпу й Short дня", "dist"),
   ("19:00", "Вихід Short дня (YouTube) + TikTok + стаття + TG", "dist"),
   ("19:00 ср", "Вихід гайду (довге відео)", "longs"),
   ("20:27", "Директор студії: вечірній звіт власнику", "coo"),
@@ -371,8 +373,12 @@ def main():
         except Exception:
             pass
         a = iacc[-1] if iacc else (None, None, None, None)
+        # mode=account знімається раз на добу, а 4-годинні знімки пишуть views/reach = NULL → беремо останнє відоме значення (COO 24.11: було «—»)
+        acc = next((r for r in reversed(iacc) if r[2] is not None or r[3] is not None), None)
+        if acc: a = (a[0], a[1], acc[2], acc[3])
+        acc_at = (f"{acc[0][8:10]}.{acc[0][5:7]} {acc[0][11:13]}Z" if acc and len(acc[0]) >= 13 else None) if acc else None
         ihs = q("select ts, sum(plays) from ig_snap group by ts order by ts")
-        ig = dict(ig_goal=100, ig_goal_note="до 1.12; далі 500 до 31.01 (поріг «Подарунків» — перевірити для України)", followers=a[1], views_30d=a[2], reach_30d=a[3], reels=len(irows), plays_total=sum(r[2] or 0 for r in irows),
+        ig = dict(ig_goal=100, ig_goal_note="до 1.12; далі 500 до 31.01 (поріг «Подарунків» — перевірити для України)", followers=a[1], views_30d=a[2], reach_30d=a[3], acc_at=acc_at, reels=len(irows), plays_total=sum(r[2] or 0 for r in irows),
                   likes_total=sum(r[3] or 0 for r in irows), saves_total=sum(r[4] or 0 for r in irows), last_snapshot=il,
                   best=[dict(shortcode=r[0], title=caps.get(r[0]) or r[0], plays=r[2], pct=(round(r[6]) if r[6] else None), published=(r[1] or "")[:10]) for r in irows[:3]],
                   history=[dict(x=t, v=v or 0) for t, v in ihs], followers_hist=[dict(x=t, v=f) for t, f, _, _ in iacc])

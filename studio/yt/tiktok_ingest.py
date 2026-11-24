@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """TikTok у даталейк: studio/data/tiktok/<дата>.json (знімки профілю через vidIQ) → таблиця tiktok_snap в analytics.sqlite.
 Власник 22.11: «має бути аналітика по TikTok, сайту і Telegram, а не тільки YouTube».
+Повнота: vidIQ tiktok_profile_videos віддає ~10 найновіших за виклик (5 кредитів); старші — параметр until=<nextUntil попередньої сторінки>.
+  Щоденні знімки — лише 1-ша сторінка; повний обхід (until до кінця) — раз на тиждень у неділю (growth-loop), файл <дата>T<год>.json зі всіма сторінками.
 Запуск: python3 studio/yt/tiktok_ingest.py   (ідемпотентно: insert or replace по (date, video_id))."""
 import os, glob, json, sqlite3
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
@@ -13,7 +15,8 @@ def main():
     c.execute("create table if not exists tiktok_snap(date text, video_id text, posted text, title text, views int, likes int, comments int, shares int, saves int, dur int, primary key(date, video_id))")
     files = sorted(glob.glob(os.path.join(SRC, "*.json"))); n = 0
     for f in files:
-        d = json.load(open(f, encoding="utf-8")); date = d.get("date") or os.path.basename(f)[:10]
+        d = json.load(open(f, encoding="utf-8")); stem = os.path.basename(f)[:-5]; date = d.get("date") or stem
+        if "T" not in date and "T" in stem: date = stem  # 23.11: знімок без години сортувався раніше за T00 → max(date) брав старий (data-quality-2026-11-23)
         for v in d.get("videos", []):
             c.execute("insert or replace into tiktok_snap values(?,?,?,?,?,?,?,?,?,?)",
                       (date, str(v["id"]), v.get("posted"), v.get("title"), v.get("views"), v.get("likes"), v.get("comments"), v.get("shares"), v.get("saves"), v.get("dur")))

@@ -18,6 +18,7 @@ usage:
   python3 studio/yt/analytics_db.py report               # формати: медіана переглядів на 7-й день, % перегляду, підписки/1000
   python3 studio/yt/analytics_db.py top [N]              # топ і низ роликів за переглядами 7 днів
   python3 studio/yt/analytics_db.py formats              # застосувати studio/data/format_overrides.json без звернень до API
+  python3 studio/yt/analytics_db.py tg                   # лише tg_daily (Bot API), без квоти YouTube — щовечора з growth_snapshot
   python3 studio/yt/analytics_db.py hours                # години перегляду довгих (videoOnDemand) за 365 днів — для YPP
 """
 import sys, os, json, sqlite3, datetime, statistics, urllib.request, urllib.parse
@@ -230,6 +231,8 @@ def top(n=10):
 if __name__ == "__main__":
     a = sys.argv[1:] or ["report"]
     if a[0] == "sync": sync(int(a[2]) if len(a) > 2 and a[1] == "--days" else 120)
+    elif a[0] == "tg":  # 24.11 COO: Telegram окремо від YouTube-квоти (growth_snapshot теж викликає sync_tg)
+        c = db(); print("tg_daily: учасників", sync_tg(c)); c.commit()
     elif a[0] == "hours": print(f"довгі (videoOnDemand), 365 днів: {long_hours_12m()} год")
     elif a[0] == "formats":
         c = db(); ch = apply_overrides(c); c.commit()

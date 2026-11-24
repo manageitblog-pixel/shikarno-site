@@ -39,7 +39,8 @@ for slug in sys.argv[1:]:
         print(slug, vid, yt.schedule(vid, m["publish_at"]))
         update_json("/home/claude/eps/uploaded.json", lambda d: d.__setitem__(slug, vid), {})
     subprocess.run(["python3", "studio/yt/finalize.py", vid, *m["playlists"], "--thumb", f"/home/claude/eps/{slug}/thumb.jpg",
-                    "--comment", m["comment"], "--at", m["publish_at"], "--style", "v4"], check=False)
+                    "--comment", m["comment"], "--at", m["publish_at"], "--style", "v4",
+                    "--idea", {"ep84_prof_logoped": "3", "ep86_prof_manikyur": "21"}[slug]], check=False)  # 24.11 COO: прогноз у ideas.json
     subprocess.run(["python3", "studio/ops.py", "exp", "add", "exp-2026-11-22-frame0", slug, "--agent", "production"], check=False)
     print("RELATED (власник у Studio):", vid, "→", m["related"])
 PY

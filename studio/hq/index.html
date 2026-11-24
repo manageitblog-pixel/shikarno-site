@@ -139,7 +139,7 @@ a{color:var(--cyan)}
   </section>
 
   <section aria-labelledby="h-day">
-    <h2 id="h-day">Конвеєр дня <span>що і коли запускається (час Київ)</span> <span class="fr">звірено з розкладом задач 23.11</span></h2>
+    <h2 id="h-day">Конвеєр дня <span>що і коли запускається (час Київ)</span> <span class="fr">звірено з розкладом задач 24.11</span></h2>
     <div class="timeline" id="timeline"></div>
   </section>
 
@@ -308,7 +308,7 @@ function platforms(D){
      h:T?(T.history||[]).map(h=>({x:dm(h.x)+(h.x.length>10?" "+h.x.slice(11,13)+"Z":""),v:h.v})):[],hl:"сума переглядів по знімках (кожне відео — останнє відоме значення)",
      best:best("Найкраще — перегляди · збереження",T?(T.best||[]).map(b=>[cut(b.title,60),fmt(b.views)+" · "+fmt(b.saves)]):[])},
     {n:"Instagram",col:"#7C5CFF",since:"23.11",fr:I?badge("знімок "+when(I.last_snapshot),isOld(F,"instagram")):badge("немає знімків",1),big:I?fmt(I.followers):"—",bl:I?"підписників / "+fmt(I.ig_goal)+" (ціль "+esc(I.ig_goal_note||"")+") · "+fmt(I.plays_total)+" переглядів у "+I.reels+" Reels":"знімків ще немає",
-     sec:I?[[fmt(I.views_30d),"переглядів акаунта за 30 днів"],[fmt(I.reach_30d),"охоплення за 30 днів"],[fmt(I.saves_total),"збережень"]]:[],
+     sec:I?[[fmt(I.views_30d),"переглядів акаунта за 30 днів"+(I.acc_at?" · станом на "+I.acc_at:"")],[fmt(I.reach_30d),"охоплення за 30 днів"],[fmt(I.saves_total),"збережень"]]:[],
      h:I?(I.history||[]).map(h=>({x:dm(h.x)+(h.x.length>10?" "+h.x.slice(11,13)+"Z":""),v:h.v})):[],hl:"сума переглядів Reels по знімках",
      best:best("Найкращі Reels — перегляди · % перегляду",I?(I.best||[]).map(b=>[cut(b.title,60),fmt(b.plays)+" · "+(b.pct==null?"—":b.pct+"%")]):[])},
     {n:"Сайт",col:"#9B87FF",fr:S.live&&S.live.updated?badge("наживо, "+hhmm(S.live.updated)+" · Cloudflare",!!S.live.error||isOld(F,"site_live"),1):badge("наживо: немає даних",1),

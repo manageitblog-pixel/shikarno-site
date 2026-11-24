@@ -46,8 +46,11 @@ def gsc_28d():
 
 
 def telegram():
-    sys.path.insert(0, "/home/claude/tg"); import tg
-    return {"tg_members": int(tg.call("getChatMemberCount", chat_id=tg.CH)["result"])}
+    """Учасники TG + запис дня в tg_daily (analytics_db.sync_tg) — щоб день Telegram не залежав від YouTube-sync/квоти (24.11)."""
+    import analytics_db
+    c = analytics_db.db(); n = analytics_db.sync_tg(c)
+    if "--dry" not in sys.argv: c.commit()
+    return {"tg_members": int(n)}
 
 
 def tiktok():
