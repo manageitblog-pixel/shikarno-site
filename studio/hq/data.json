@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-24T19:31:26Z",
+ "generated": "2026-11-24T20:06:41Z",
  "fresh": {
-  "yt_live": "2026-11-24T19:31:26Z",
+  "yt_live": "2026-11-24T20:06:41Z",
   "yt_analytics": "2026-11-21",
-  "tg_members": "2026-11-24T19:31:27Z",
-  "tg_posts": "2026-11-24T19:31:28Z",
+  "tg_members": "2026-11-24T20:06:43Z",
+  "tg_posts": "2026-11-24T20:06:44Z",
   "ideas": "2026-11-24T19:30:29Z",
   "news": "2026-11-24 16:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-24T16",
   "instagram": "2026-11-24T16",
   "site": "2026-11-22",
-  "site_live": "2026-11-24T19:31:29Z",
+  "site_live": "2026-11-24T20:06:45Z",
   "activity": "2026-11-24T19:31:26Z",
   "asks": "2026-11-24T18:40Z"
  },
@@ -19,7 +19,7 @@
  "kpi": {
   "subs": 315,
   "subs_goal": 1000,
-  "long_hours": 10.7,
+  "long_hours": 11.2,
   "long_hours_goal": 4000,
   "views_total": 12275,
   "videos": 98,
@@ -551,7 +551,7 @@
    "subs": 315,
    "views_total": 12275,
    "videos": 98,
-   "live_at": "2026-11-24T19:31:26Z",
+   "live_at": "2026-11-24T20:06:41Z",
    "views_7d": 736,
    "pct_7d": 51.1,
    "subs_7d": 0,
@@ -559,7 +559,7 @@
     "2026-11-15",
     "2026-11-21"
    ],
-   "long_hours": 10.7,
+   "long_hours": 11.2,
    "history": [
     {
      "x": "2026-10-19",
@@ -616,9 +616,9 @@
      "id": "Vp1PPNxtcrI"
     },
     {
-     "title": "Як продати на OLX швидше з ШІ: опис, ціна, шахраї 🛍️ ШІ для професій #9",
+     "title": "Що ШІ знає про тебе: як вимкнути навчання в ChatGPT, Gemini, Claude, Meta AI і Copilot (2026)",
      "views": 83,
-     "id": "LtNuOtQe0pc"
+     "id": "GNqU-wcz9Ws"
     }
    ]
   },
@@ -864,7 +864,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-24T19:31:29Z",
+    "updated": "2026-11-24T20:06:45Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 8,
@@ -874,14 +874,9 @@
     "pageloads_7d": 50,
     "visits_7d": 42,
     "last24h": {
-     "pageloads": 14,
-     "visits": 10,
+     "pageloads": 8,
+     "visits": 4,
      "hours": [
-      {
-       "h": "2026-11-23T20:00:00Z",
-       "pageloads": 6,
-       "visits": 6
-      },
       {
        "h": "2026-11-23T21:00:00Z",
        "pageloads": 0,
@@ -994,6 +989,11 @@
       },
       {
        "h": "2026-11-24T19:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-24T20:00:00Z",
        "pageloads": 0,
        "visits": 0
       }
@@ -1288,7 +1288,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 52
+   "total": 72
   },
   {
    "id": "_wp0rz8edB8",
@@ -1299,7 +1299,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 19
+   "total": 16
   },
   {
    "id": "xaYHobFNYHo",
@@ -1310,7 +1310,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 19
+   "total": 21
   },
   {
    "id": "ENKGdbr04h0",
@@ -1332,7 +1332,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 83
+   "total": 79
   },
   {
    "id": "aTUsauz53rs",
@@ -1343,7 +1343,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 54
+   "total": 59
   },
   {
    "id": "gljrHADi4aU",
