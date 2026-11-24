@@ -1295,6 +1295,14 @@
    "started": "2026-11-24T16:20:45Z",
    "finished": null,
    "result": ""
+  },
+  {
+   "id": "163",
+   "agent": "production",
+   "task": "ep83: виправити «ШІ» в outro (1–2 TTS) + статті ep83/ep85",
+   "started": "2026-11-24T16:42:51Z",
+   "finished": null,
+   "result": ""
   }
  ]
 }
