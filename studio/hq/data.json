@@ -1,18 +1,18 @@
 {
- "generated": "2026-11-24T20:18:31Z",
+ "generated": "2026-11-24T20:56:53Z",
  "fresh": {
-  "yt_live": "2026-11-24T20:18:31Z",
+  "yt_live": "2026-11-24T20:56:53Z",
   "yt_analytics": "2026-11-21",
-  "tg_members": "2026-11-24T20:18:32Z",
-  "tg_posts": "2026-11-24T20:06:44Z",
-  "ideas": "2026-11-24T19:30:29Z",
-  "news": "2026-11-24 16:53",
+  "tg_members": "2026-11-24T20:56:54Z",
+  "tg_posts": "2026-11-24T20:56:55Z",
+  "ideas": "2026-11-24T20:56:16Z",
+  "news": "2026-11-24 20:53",
   "comp": "2026-11-23",
-  "tiktok": "2026-11-24T16",
-  "instagram": "2026-11-24T16",
+  "tiktok": "2026-11-24T20",
+  "instagram": "2026-11-24T20",
   "site": "2026-11-22",
-  "site_live": "2026-11-24T20:18:34Z",
-  "activity": "2026-11-24T20:18:07Z",
+  "site_live": "2026-11-24T20:56:56Z",
+  "activity": "2026-11-24T20:56:53Z",
   "asks": "2026-11-24T18:40Z"
  },
  "notes": [],
@@ -551,7 +551,7 @@
    "subs": 315,
    "views_total": 12275,
    "videos": 98,
-   "live_at": "2026-11-24T20:18:31Z",
+   "live_at": "2026-11-24T20:56:53Z",
    "views_7d": 736,
    "pct_7d": 51.1,
    "subs_7d": 0,
@@ -611,25 +611,25 @@
      "id": "ENKGdbr04h0"
     },
     {
+     "title": "Меню на тиждень і вечеря з того, що є 🍳 Тір-лист Байта #7",
+     "views": 100,
+     "id": "bvS0k_r3_bs"
+    },
+    {
      "title": "ChatGPT вчиться на твоїх чатах — як вимкнути за 30 секунд 🔐",
      "views": 97,
      "id": "Vp1PPNxtcrI"
-    },
-    {
-     "title": "Що ШІ знає про тебе: як вимкнути навчання в ChatGPT, Gemini, Claude, Meta AI і Copilot (2026)",
-     "views": 85,
-     "id": "GNqU-wcz9Ws"
     }
    ]
   },
   "tiktok": {
-   "videos": 13,
-   "views_total": 15746,
-   "views_7d": 1662,
-   "new_7d": 7,
-   "saves_total": 126,
-   "likes_total": 314,
-   "last_snapshot": "2026-11-24T16",
+   "videos": 16,
+   "views_total": 16857,
+   "views_7d": 1755,
+   "new_7d": 8,
+   "saves_total": 135,
+   "likes_total": 344,
+   "last_snapshot": "2026-11-24T20",
    "best": [
     {
      "title": "Український ШІ Сяйво: коли вийде",
@@ -705,21 +705,25 @@
     {
      "x": "2026-11-24T16",
      "v": 15746
+    },
+    {
+     "x": "2026-11-24T20",
+     "v": 16857
     }
    ]
   },
   "instagram": {
    "ig_goal": 100,
    "ig_goal_note": "до 1.12; далі 500 до 31.01 (поріг «Подарунків» — перевірити для України)",
-   "followers": 7,
-   "views_30d": 252,
-   "reach_30d": 220,
-   "acc_at": "24.11 08Z",
-   "reels": 10,
-   "plays_total": 300,
+   "followers": 8,
+   "views_30d": 732,
+   "reach_30d": 595,
+   "acc_at": "24.11 20Z",
+   "reels": 11,
+   "plays_total": 309,
    "likes_total": 3,
    "saves_total": 6,
-   "last_snapshot": "2026-11-24T16",
+   "last_snapshot": "2026-11-24T20",
    "best": [
     {
      "shortcode": "DgGRAlDjqkk",
@@ -731,14 +735,14 @@
     {
      "shortcode": "DgGRAVLFORb",
      "title": "Інкогніто в ШІ — не сейф",
-     "plays": 54,
+     "plays": 55,
      "pct": 8,
      "published": "2026-11-23"
     },
     {
      "shortcode": "DgGQ8fODsVW",
-     "title": "Сімейний бюджет з ШІ",
-     "plays": 52,
+     "title": "Сімейний бюджет з ШІ. Тір-лист Байта #5",
+     "plays": 54,
      "pct": 6,
      "published": "2026-11-23"
     }
@@ -767,6 +771,10 @@
     {
      "x": "2026-11-24T16",
      "v": 300
+    },
+    {
+     "x": "2026-11-24T20",
+     "v": 309
     }
    ],
    "followers_hist": [
@@ -793,6 +801,10 @@
     {
      "x": "2026-11-24T16",
      "v": 7
+    },
+    {
+     "x": "2026-11-24T20",
+     "v": 8
     }
    ]
   },
@@ -864,7 +876,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-24T20:18:34Z",
+    "updated": "2026-11-24T20:56:56Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 8,
@@ -1288,7 +1300,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 78
+   "total": 100
   },
   {
    "id": "_wp0rz8edB8",
@@ -1299,7 +1311,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 20
+   "total": 22
   },
   {
    "id": "xaYHobFNYHo",
@@ -1714,13 +1726,13 @@
   }
  ],
  "ideas_count": {
-  "total": 113,
-  "open": 108
+  "total": 118,
+  "open": 113
  },
  "lake": {
   "videos": 96,
   "daily": 800,
-  "news": 2009,
+  "news": 2037,
   "niche": 1035,
   "comp": 511,
   "comp_videos": 62794,
@@ -1732,87 +1744,87 @@
  "news": [
   {
    "date": "2026-11-24",
-   "source": "google",
-   "title": "How Gemini is changing the game for Golden State's organization and fans.",
+   "source": "openai",
+   "title": "Searching for distant planets with Astra",
    "score": null,
-   "url": "https://blog.google/products-and-platforms/products/gemini/gemini-golden-state/"
+   "url": "https://openai.com/index/searching-for-distant-planets-with-astra"
   },
   {
    "date": "2026-11-24",
-   "source": "hf",
-   "title": "Microduck Obstacle Avoidance: A Sim2Real Workflow with Isaac Lab and Newton",
+   "source": "openai",
+   "title": "How Intentful uses dots to make more time for growth",
    "score": null,
-   "url": "https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance"
+   "url": "https://openai.com/business/customer-stories/intentful-dots"
   },
   {
    "date": "2026-11-24",
-   "source": "techcrunch",
-   "title": "Tidal to ban and remove millions of AI-generated tracks as AI slop inundates music streaming",
+   "source": "openai",
+   "title": "How iFood scales coding agents across 15,000 repositories",
    "score": null,
-   "url": "https://techcrunch.com/2026/11/24/tidal-to-ban-and-remove-millions-of-ai-generated-tracks-as-ai-slop-inundates-music-streaming/"
+   "url": "https://openai.com/business/customer-stories/ifood"
   },
   {
    "date": "2026-11-24",
-   "source": "techcrunch",
-   "title": "Why a Crusoe investor is betting on solar and batteries to power future AI data centers",
+   "source": "gemini",
+   "title": "See what 5 builders are making with Gemini 4 Neon",
    "score": null,
-   "url": "https://techcrunch.com/2026/11/24/why-a-crusoe-investor-is-betting-on-solar-and-batteries-to-power-future-ai-data-centers/"
-  },
-  {
-   "date": "2026-11-24",
-   "source": "techcrunch",
-   "title": "Pinterest will now let parents limit the AI-generated content their teens see",
-   "score": null,
-   "url": "https://techcrunch.com/2026/11/24/pinterest-will-now-let-parents-limit-the-ai-generated-content-their-teens-see/"
+   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-neon-builders/"
   },
   {
    "date": "2026-11-24",
    "source": "techcrunch",
-   "title": "Amazon’s Decart acquisition is a bet on using software to narrow the gap with Nvidia in the AI chip race",
+   "title": "Anthropic shares fall below IPO price, a worrying sign for AI startups",
    "score": null,
-   "url": "https://techcrunch.com/2026/11/24/amazons-decart-acquisition-is-a-bet-on-using-software-to-narrow-the-gap-with-nvidia-in-the-ai-chip-race/"
+   "url": "https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups/"
+  },
+  {
+   "date": "2026-11-24",
+   "source": "techcrunch",
+   "title": "UK warns AI-driven cyberattacks are exposing years of weak security",
+   "score": null,
+   "url": "https://techcrunch.com/2026/11/24/uk-warns-ai-driven-cyberattacks-are-exposing-years-of-weak-security/"
+  },
+  {
+   "date": "2026-11-24",
+   "source": "techcrunch",
+   "title": "Meta brings its Muse AI assistant directly into Instagram DMs",
+   "score": null,
+   "url": "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/"
   },
   {
    "date": "2026-11-24",
    "source": "verge",
-   "title": "Jensen Huang deepfakes are the hot new AI slop",
+   "title": "Jensen Huang reportedly tells Nvidia staff it’s ‘not true’ Trump got him rehired",
    "score": null,
-   "url": "https://www.theverge.com/tech/1041222/jensen-huang-nvidia-scandal-deepfakes"
+   "url": "https://www.theverge.com/tech/1041571/jensen-huang-all-hands-nvidia-apology"
   },
   {
    "date": "2026-11-24",
    "source": "verge",
-   "title": "The New York Times warns photographers not to update Photoshop over AI features",
+   "title": "David Fincher is being dragged for suspected use of AI in his latest film",
    "score": null,
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features"
+   "url": "https://www.theverge.com/entertainment/1041417/david-fincher-netflix-cliff-booth-ai-interpositive"
   },
   {
    "date": "2026-11-24",
-   "source": "ars",
-   "title": "How Trump and Silicon Valley forced Nvidia to take Jensen Huang back",
+   "source": "verge",
+   "title": "Tidal will start banning AI-generated music next month",
    "score": null,
-   "url": "https://arstechnica.com/tech-policy/2026/11/how-trump-and-silicon-valley-forced-nvidia-to-take-jensen-huang-back/"
+   "url": "https://www.theverge.com/entertainment/1041362/tidal-ai-music-ban"
   },
   {
    "date": "2026-11-24",
-   "source": "mittr",
-   "title": "Raising the stakes for enterprise networks with AI modernization",
+   "source": "venturebeat",
+   "title": "Nearly half of surveyed engineers and leaders say the AI agents that write their code also review it",
    "score": null,
-   "url": "https://www.technologyreview.com/2026/11/24/1148091/raising-the-stakes-for-enterprise-networks-with-ai-modernization/"
+   "url": "https://venturebeat.com/technology/nearly-half-of-surveyed-engineers-and-leaders-say-the-ai-agents-that-write-their-code-also-review-it"
   },
   {
    "date": "2026-11-24",
-   "source": "wired",
-   "title": "Anthropic Created a Honeypot to Lure AI Agents Into Misbehaving",
+   "source": "venturebeat",
+   "title": "After token leaderboards and spending caps, Snowflake has a third idea: Keep the cap, then learn from whoever breaks it",
    "score": null,
-   "url": "https://www.wired.com/story/ai-agents-can-get-honeypotted-too-aw/"
-  },
-  {
-   "date": "2026-11-24",
-   "source": "devua",
-   "title": "Українська DroneMate AI розробляє альтернативу Raspberry Pi Compute Module 5 для виробників дронів. Чим відрізняється її мікрокомп'ютер?",
-   "score": null,
-   "url": "https://dev.ua/news/dronemate-ai-1795523246"
+   "url": "https://venturebeat.com/orchestration/after-token-leaderboards-and-spending-caps-snowflake-has-a-third-idea-keep-the-cap-then-learn-from-whoever-breaks-it"
   }
  ],
  "competitors": [
@@ -1923,15 +1935,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "138",
-   "agent": "trend",
-   "task": "фон: веб-скан трендів 21Z (12 год) → ідеї, кандидати в шоу #3",
-   "started": "2026-11-23T21:17:50Z",
-   "finished": "2026-11-23T21:35:00Z",
-   "result": "ідеї #85–88, trend-scan-2026-11-23-21z.md (закрив COO за dispatch-log)",
-   "agent_raw": "research"
-  },
   {
    "id": "139",
    "agent": "designer",
@@ -2247,8 +2250,8 @@
    "agent": "post",
    "task": "Озвучка: оркестратор 20:18Z",
    "started": "2026-11-24T20:18:07Z",
-   "finished": null,
-   "result": "",
+   "finished": "2026-11-24T20:19:54Z",
+   "result": "429 з першого запиту (0 ок); повтор 21:17Z",
    "agent_raw": "production"
   },
   {
@@ -2256,16 +2259,25 @@
    "agent": "designer",
    "task": "фон: ресерч дизайну — обкладинки/кадр 0 укр. аномалій",
    "started": "2026-11-24T20:18:07Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-24T20:22:50Z",
+   "result": "12 аномалій 17–22.11: суб'єкт у 12/12; гіпотези H4–H6 на тест після 2.12"
   },
   {
    "id": "177",
    "agent": "de",
    "task": "фон: якість даталейку + перевірка експериментів ops.py",
    "started": "2026-11-24T20:18:07Z",
-   "finished": null,
-   "result": "",
+   "finished": "2026-11-24T20:24:39Z",
+   "result": "Даталейк ок; 7 карток → published; знайдено 2 прострочені перші коментарі → запощено, post_comments у щогодинній перевірці",
+   "agent_raw": "data"
+  },
+  {
+   "id": "178",
+   "agent": "de",
+   "task": "Збирач даталейку 20:52Z: новини, TikTok/IG/TG-знімок, сигнали",
+   "started": "2026-11-24T20:52:51Z",
+   "finished": "2026-11-24T20:56:53Z",
+   "result": "+37 новин; TikTok 16 відео (2 сторінки); IG 8 підписників, 732 перегляди/30д; TG 6; ідеї #114–118",
    "agent_raw": "data"
   }
  ],
