@@ -8,7 +8,7 @@ import { UiMock } from "./UiMock";
 export type DSeg = { kind: string; from: number; to: number; n?: number; icon?: string; title?: string; source?: string;
   points?: string[]; items?: any[]; score?: number; plus?: string; minus?: string; label?: string; at?: number[]; sub?: string;
   image?: string; hl?: { x: number; y: number; w: number; h: number }; url?: string; left?: { title: string; items: string[] }; right?: { title: string; items: string[] }; video?: string; vstart?: number; term?: { cmd: string; out: string; error?: boolean }[]; link?: string; zoom?: number[]; ui?: any[]; src?: string };
-export type DData = { total: number; num: number; dates: string; segs: DSeg[]; words: { w: string; s: number; e: number; g: string }[]; mouth: number[]; titles: string[]; kicker?: string; sub?: string; big?: string; agendaTitle?: string; red?: boolean };
+export type DData = { total: number; num: number; dates: string; segs: DSeg[]; words: { w: string; s: number; e: number; g: string }[]; mouth: number[]; titles: string[]; kicker?: string; sub?: string; big?: string; agendaTitle?: string; red?: boolean; bigSize?: number };
 const Ctx = createContext<DData>({ total: 300, num: 1, dates: "", segs: [], words: [], mouth: [], titles: [] });
 const useD = () => useContext(Ctx);
 const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
@@ -88,7 +88,7 @@ const Host: React.FC<{ size?: number; x: number; y: number; mood?: any; offset: 
 };
 
 const Intro: React.FC<{ off: number }> = ({ off }) => {
-  const f = useCurrentFrame(); const { num, dates, kicker, sub, big, red } = useD();
+  const f = useCurrentFrame(); const { num, dates, kicker, sub, big, red, bigSize } = useD();
   const t = sp(f - 6, 10), n = sp(f - 16, 8);
   const rays = interpolate(f, [0, 30], [0, 1], clamp);
   return (
@@ -101,7 +101,7 @@ const Intro: React.FC<{ off: number }> = ({ off }) => {
         <div style={{ alignSelf: "flex-start", background: C.yellow, color: C.ink, fontFamily: FONT, fontWeight: 900, fontSize: 40, padding: "10px 28px", borderRadius: 14, letterSpacing: 4, scale: `${t}`, ...(red ? { background: "#FF2D55", color: "white", boxShadow: "0 0 40px rgba(255,45,85,0.7)" } : {}) }}>{kicker ?? "ДАЙДЖЕСТ"}</div>
         <div style={{ display: "flex", alignItems: "center", gap: 30, scale: `${n}`, transformOrigin: "left center" }}>
           {!big && <Wordmark size={150} />}
-          <span style={{ fontFamily: FONT, fontWeight: 900, fontSize: big ? 150 : 170, color: C.yellow, textShadow: "0 0 60px rgba(255,214,10,0.5)" }}>{big ?? `#${num}`}</span>
+          <span style={{ fontFamily: FONT, fontWeight: 900, fontSize: big ? (bigSize ?? 150) : 170, color: C.yellow, textShadow: "0 0 60px rgba(255,214,10,0.5)" }}>{big ?? `#${num}`}</span>
         </div>
         <div style={{ fontFamily: FONT, fontWeight: 800, fontSize: 52, color: "white", opacity: t }}>{sub ?? `Головне за тиждень · ${dates}`}</div>
       </div>
