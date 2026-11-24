@@ -1175,6 +1175,14 @@
    "started": "2026-11-24T06:18:09Z",
    "finished": null,
    "result": ""
+  },
+  {
+   "id": "148",
+   "agent": "voice",
+   "task": "Шоу #3: чому ч.0 двічі 114–117 Гц (поза 141,5±8) — аналіз без TTS, смуга для weekly3",
+   "started": "2026-11-24T06:24:15Z",
+   "finished": null,
+   "result": ""
   }
  ]
 }
