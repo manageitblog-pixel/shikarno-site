@@ -110,7 +110,9 @@ if __name__ == "__main__":
                      "guide2": {"VC_REF": "130", "VC_TOL": "8"},  # calm v2 дав 135,6/129,9/128,5/126,1 — тест v2 не пройшов (≥133,5 у 2 з 3); смуга власної медіани, щоб не палити квоту
                      # шоу #3: смуга шоу #1–#2 (весь файл v2: 128,5 і 129,6; частини 121,4–136,4), а не 141,5 — інакше палить по 2 запити
                      # на частину (ч.0: 114,5/116,5/126,9). docs/research/voice-weekly3-2026-11-24.md. Остання частина (оновлення 28.11 + outro) — окремо 28.11
-                     "weekly3": {"VC_REF": "129", "VC_TOL": "8", "UPTO": "11"}}
+                     "weekly3": {"VC_REF": "129", "VC_TOL": "8", "UPTO": "11"},
+                     # гайд #3 (вихід 9.12): смуга як у гайдів #1–#2 (~128–130); 24.11 — озвучка наперед, бо черга порожня. Перед виходом — повторний фактчек (Gemini міняється швидко)
+                     "guide3": {"VC_REF": "130", "VC_TOL": "8"}}
         def guide(name):
             for k in ("VC_REF", "VC_TOL"): os.environ.pop(k, None)
             os.environ.update({k: v for k, v in PER_GUIDE.get(name, {}).items() if k != "UPTO"})
@@ -126,6 +128,7 @@ if __name__ == "__main__":
         guide("weekly3")  # шоу #3, вихід 29.11 12:00Z; фактчек PASS 23.11 (гайд #2 → пт 27.11, якщо QA до 26.11 20:00; у ep83/ep85 є запасні дублі)
         for k in ("VC_REF", "VC_TOL"): os.environ.pop(k, None)
         for mod in ("ep83", "ep84", "ep85", "ep86"): short(mod)
+        guide("guide3")  # 24.11: черга Shorts закрита → гайд #3 наперед (вихід 9.12)
         log(ev="all_done", ok_requests=REQ["ok"])
     except RuntimeError as e:
         log(ev="STOP", reason=str(e)[:300], ok_requests=REQ["ok"])
