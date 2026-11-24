@@ -1319,6 +1319,14 @@
    "started": "2026-11-24T18:13:55Z",
    "finished": null,
    "result": ""
+  },
+  {
+   "id": "166",
+   "agent": "coo",
+   "task": "COO вечір 24.11: покращення (cron pages.yml, обсяг довгих), дашборд, звіт власнику",
+   "started": "2026-11-24T18:28:01Z",
+   "finished": null,
+   "result": ""
   }
  ]
 }
