@@ -1,0 +1,35 @@
+name: Release timer
+# Надійний вихід відкладених статей (24.11): GitHub `schedule` скидає запуски під навантаженням
+# (23–24.11: 3 з ~120 cron-запусків pages.yml). Таймер стартує від push у main (надійно), чекає до
+# найближчої статті з майбутньою датою (tools/next_release.py) і запускає pages.yml через
+# workflow_dispatch — GITHUB_TOKEN це дозволяє (виняток із правила «токен не запускає workflow»).
+# Потім перезапускає сам себе під наступну статтю. Секретів не треба. Репо публічне — хвилини безкоштовні.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: "41 3,9,15,21 * * *"   # підстраховка, якщо ланцюжок обірвався (best-effort)
+permissions:
+  contents: read
+  actions: write
+concurrency:
+  group: release-timer
+  cancel-in-progress: true          # новий push/запуск перераховує час — старий таймер не потрібен
+jobs:
+  wait:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: n
+        run: python3 tools/next_release.py | tee -a "$GITHUB_OUTPUT"
+      - if: steps.n.outputs.wait != ''
+        run: sleep ${{ steps.n.outputs.wait }}
+      - if: steps.n.outputs.release == '1'
+        run: gh workflow run pages.yml --ref main
+      - if: steps.n.outputs.wait != ''
+        run: sleep 60 && gh workflow run release-timer.yml --ref main

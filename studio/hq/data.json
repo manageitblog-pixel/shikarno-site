@@ -1,19 +1,19 @@
 {
- "generated": "2026-11-24T18:06:37Z",
+ "generated": "2026-11-24T18:35:46Z",
  "fresh": {
-  "yt_live": "2026-11-24T18:06:37Z",
+  "yt_live": "2026-11-24T18:35:46Z",
   "yt_analytics": "2026-11-21",
-  "tg_members": "2026-11-24T18:06:38Z",
-  "tg_posts": "2026-11-24T18:06:39Z",
+  "tg_members": "2026-11-24T18:35:47Z",
+  "tg_posts": "2026-11-24T18:32:07Z",
   "ideas": "2026-11-24T16:55:56Z",
   "news": "2026-11-24 16:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-24T16",
   "instagram": "2026-11-24T16",
   "site": "2026-11-22",
-  "site_live": "2026-11-24T18:06:40Z",
-  "activity": "2026-11-24T16:52:55Z",
-  "asks": "2026-11-24T08:20Z"
+  "site_live": "2026-11-24T18:32:09Z",
+  "activity": "2026-11-24T18:35:46Z",
+  "asks": "2026-11-24T18:40Z"
  },
  "notes": [],
  "kpi": {
@@ -551,7 +551,7 @@
    "subs": 315,
    "views_total": 12275,
    "videos": 98,
-   "live_at": "2026-11-24T18:06:37Z",
+   "live_at": "2026-11-24T18:35:46Z",
    "views_7d": 736,
    "pct_7d": 51.1,
    "subs_7d": 0,
@@ -616,9 +616,9 @@
      "id": "Vp1PPNxtcrI"
     },
     {
-     "title": "Що ШІ знає про тебе: як вимкнути навчання в ChatGPT, Gemini, Claude, Meta AI і Copilot (2026)",
+     "title": "Як продати на OLX швидше з ШІ: опис, ціна, шахраї 🛍️ ШІ для професій #9",
      "views": 83,
-     "id": "GNqU-wcz9Ws"
+     "id": "LtNuOtQe0pc"
     }
    ]
   },
@@ -864,18 +864,18 @@
     }
    ],
    "live": {
-    "updated": "2026-11-24T18:06:40Z",
+    "updated": "2026-11-24T18:32:09Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
-    "today_pageloads": 7,
-    "today_visits": 3,
+    "today_pageloads": 8,
+    "today_visits": 4,
     "yesterday_pageloads": 10,
     "yesterday_visits": 10,
-    "pageloads_7d": 49,
-    "visits_7d": 41,
+    "pageloads_7d": 50,
+    "visits_7d": 42,
     "last24h": {
-     "pageloads": 14,
-     "visits": 10,
+     "pageloads": 15,
+     "visits": 11,
      "hours": [
       {
        "h": "2026-11-23T19:00:00Z",
@@ -994,8 +994,8 @@
       },
       {
        "h": "2026-11-24T18:00:00Z",
-       "pageloads": 0,
-       "visits": 0
+       "pageloads": 1,
+       "visits": 1
       }
      ]
     },
@@ -1080,8 +1080,8 @@
      },
      {
       "d": "2026-11-24",
-      "pageloads": 7,
-      "visits": 3,
+      "pageloads": 8,
+      "visits": 4,
       "sampled": false
      }
     ],
@@ -1096,7 +1096,7 @@
      },
      {
       "path": "/novyny/promty-dlya-chatgpt/",
-      "count": 4
+      "count": 5
      },
      {
       "path": "/novyny/shtuchnyj-intelekt-dlya-ditej-tir-lyst/",
@@ -1114,7 +1114,7 @@
      },
      {
       "host": "www.google.com",
-      "count": 9
+      "count": 10
      },
      {
       "host": "m.facebook.com",
@@ -1132,7 +1132,7 @@
     "top_countries_7d": [
      {
       "country": "UA",
-      "count": 30
+      "count": 31
      },
      {
       "country": "US",
@@ -1288,7 +1288,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 5
+   "total": 22
   },
   {
    "id": "_wp0rz8edB8",
@@ -1299,7 +1299,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 12
+   "total": 19
   },
   {
    "id": "xaYHobFNYHo",
@@ -1310,7 +1310,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 20
+   "total": 19
   },
   {
    "id": "ENKGdbr04h0",
@@ -1332,7 +1332,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 79
+   "total": 83
   },
   {
    "id": "aTUsauz53rs",
@@ -1376,7 +1376,7 @@
    "views7": 37,
    "pct": 47.9,
    "complete": false,
-   "total": 45
+   "total": 46
   },
   {
    "id": "bRanUVdt2Pw",
@@ -1920,22 +1920,6 @@
  ],
  "activity": [
   {
-   "id": "125",
-   "agent": "shorts",
-   "task": "Рендер Shorts ep84 (27.11) і ep86 (29.11) — озвучка готова; заливка завтра після 08:00Z (квота)",
-   "started": "2026-11-23T13:18:36Z",
-   "finished": "2026-11-23T13:31:33Z",
-   "result": "ep84/ep86 відрендерено (29.7/31.8 с, −12.1/−11.5 LUFS), кадри 0/1/80% ок, Thumb4 готові; заливка 24.11 однією командою — docs/research/upload-queue-2026-11-24.md"
-  },
-  {
-   "id": "126",
-   "agent": "dist",
-   "task": "Черга TikTok 24–30.11 (з даних, без vidIQ): найкращі Shorts, яких нема в TikTok + підписи-пошук",
-   "started": "2026-11-23T14:10:08Z",
-   "finished": "2026-11-23T14:16:50Z",
-   "result": "Черга TikTok 24–30.11: 15 слотів (9 релізів + 6 архівних), підписи й файли — docs/research/tiktok-queue-2026-11-23.md"
-  },
-  {
    "id": "127",
    "agent": "de",
    "task": "Збирач даталейку 16:53Z: новини, TikTok/TG-знімок, сигнали",
@@ -2114,8 +2098,8 @@
    "agent": "post",
    "task": "Гайд #2: рендер (озвучка 16/16 у смузі) + QA до 26.11 20:00 → вихід 27.11",
    "started": "2026-11-24T06:18:09Z",
-   "finished": null,
-   "result": "",
+   "finished": "2026-11-24T18:33:19Z",
+   "result": "QA PASS 19:30, −13,1 LUFS; вихід 27.11 (закрив COO за dispatch-log 12:20Z)",
    "agent_raw": "production"
   },
   {
@@ -2166,8 +2150,8 @@
    "agent": "de",
    "task": "Збирач даталейку 08:52Z (щоденний): sync, ingest, outliers, знімки TikTok/IG/TG, snapshot",
    "started": "2026-11-24T08:52:50Z",
-   "finished": null,
-   "result": "",
+   "finished": "2026-11-24T18:33:19Z",
+   "result": "знімки TikTok/IG/TG 08Z, sync/ingest, snapshot 5602d52 (закрив COO)",
    "agent_raw": "data"
   },
   {
@@ -2175,48 +2159,48 @@
    "agent": "cso",
    "task": "CSO 24.11: трекер 5 платформ + рішення по yt-related-cta",
    "started": "2026-11-24T09:19:47Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-24T18:33:19Z",
+   "result": "трекер: YT 10,7 год/315 підп.; yt-related-cta-v2 (закрив COO за dispatch-log 09:25Z)"
   },
   {
    "id": "155",
    "agent": "seo",
    "task": "SEO-відділ 24.11: kw для approved-ідей, YouTube-SEO свіжих Shorts",
    "started": "2026-11-24T10:13:59Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-24T18:33:19Z",
+   "result": "kw для #89/#34/#19; audit 105/0; ретайтлів 0 (закрив COO за dispatch-log 10:20Z)"
   },
   {
    "id": "156",
    "agent": "seo",
    "task": "фон: нова вічнозелена стаття (кліки −45% за тиждень)",
    "started": "2026-11-24T10:18:04Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-24T18:33:19Z",
+   "result": "стаття /novyny/yak-korystuvatysya-gemini-ukrainskoyu/ на 25.11 (закрив COO)"
   },
   {
    "id": "157",
    "agent": "algo",
    "task": "Алгоритми 24.11 (вт → TikTok): офіційні зміни, лайфхаки практиків, наші дані vs плейбуки, експерименти",
    "started": "2026-11-24T12:14:26Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-24T18:33:19Z",
+   "result": "офіц. змін нема; playbooks/instagram.md; exp ig-trial-reels (закрив COO за 12:23Z)"
   },
   {
    "id": "158",
    "agent": "seo",
    "task": "Статті до ep84 (27.11) і ep86 (29.11) + привʼязка YouTube id до експерименту",
    "started": "2026-11-24T12:24:10Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-24T18:33:19Z",
+   "result": "статті ep84/ep86 + backfill yt-related-cta-v2 (закрив COO за 12:27Z)"
   },
   {
    "id": "159",
    "agent": "de",
    "task": "Збирач даталейку 12:52Z: новини, TikTok/IG/TG-знімок, сигнали",
    "started": "2026-11-24T12:53:20Z",
-   "finished": null,
-   "result": "",
+   "finished": "2026-11-24T18:33:19Z",
+   "result": "знімок 12Z TikTok/IG/TG (studio/data/tiktok/2026-11-24T12.json) (закрив COO)",
    "agent_raw": "data"
   },
   {
@@ -2224,16 +2208,16 @@
    "agent": "designer",
    "task": "Дизайнер 24.11: кадри 0/1/80% і обкладинки ep82 (17Z) і clip2",
    "started": "2026-11-24T13:08:19Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-24T18:33:19Z",
+   "result": "ep82 без вад; clip2 — у Журнал design-guide (закрив COO за 13:15Z)"
   },
   {
    "id": "161",
    "agent": "trend",
    "task": "фон: денний веб-скан трендів 13Z + перевірка GPT-6.2 Free і джерела ГУР",
    "started": "2026-11-24T13:18:14Z",
-   "finished": null,
-   "result": "",
+   "finished": "2026-11-24T18:33:19Z",
+   "result": "день тихий; №96 джерело ГУР; ідеї №107–108 (закрив COO за 13:25Z)",
    "agent_raw": "research"
   },
   {
@@ -2241,8 +2225,8 @@
    "agent": "post",
    "task": "Рендер ep83 (вихід 26.11) і ep85 (28.11) + QA + черга заливки на 25.11",
    "started": "2026-11-24T16:20:45Z",
-   "finished": null,
-   "result": "",
+   "finished": "2026-11-24T18:33:19Z",
+   "result": "ep83/ep85 QA PASS, черга заливки 25.11 (закрив COO за 16:55Z)",
    "agent_raw": "production"
   },
   {
@@ -2250,8 +2234,8 @@
    "agent": "post",
    "task": "ep83: виправити «ШІ» в outro (1–2 TTS) + статті ep83/ep85",
    "started": "2026-11-24T16:42:51Z",
-   "finished": null,
-   "result": "",
+   "finished": "2026-11-24T18:33:19Z",
+   "result": "TTS 175,6 Гц — не підмінено, повтор 25.11 06:30Z; статті ep83/ep85 готові (закрив COO)",
    "agent_raw": "production"
   },
   {
@@ -2259,9 +2243,26 @@
    "agent": "de",
    "task": "Збирач даталейку 16:52Z: новини, TikTok/IG/TG-знімок",
    "started": "2026-11-24T16:52:55Z",
-   "finished": null,
-   "result": "",
+   "finished": "2026-11-24T18:33:19Z",
+   "result": "знімок 16Z TikTok/IG/TG (2026-11-24T16.json) (закрив COO)",
    "agent_raw": "data"
+  },
+  {
+   "id": "165",
+   "agent": "trend",
+   "task": "Концепт «челендж-лічильник підписників» з Байтом: аномалії, правила платформ, вартість озвучки, 2–3 варіанти",
+   "started": "2026-11-24T18:13:55Z",
+   "finished": "2026-11-24T18:33:19Z",
+   "result": "концепт надіслано: 3 варіанти, реком. «Байт вчить ШІ говорити» (закрив COO за 18:45Z)",
+   "agent_raw": "research"
+  },
+  {
+   "id": "166",
+   "agent": "coo",
+   "task": "COO вечір 24.11: покращення (cron pages.yml, обсяг довгих), дашборд, звіт власнику",
+   "started": "2026-11-24T18:28:01Z",
+   "finished": "2026-11-24T18:35:46Z",
+   "result": "release-timer, правило обсягу довгих, gsay_lint, 14 задач закрито, звіт підготовано"
   }
  ],
  "agents": [
@@ -2603,7 +2604,7 @@
   },
   {
    "what": "Related video для ep84 (RIt-PqOGJTg) і ep86 (xYez8pJmL4E) → 6-2a9ncHaz4 «ШІ для професій #1» (YouTube Studio)",
-   "why": "Shorts «ШІ для професій» мають вести на перший ролик серії; ep84/86 — контроль експерименту yt-related-cta (Related ставиться, голосового заклику немає)",
+   "why": "Shorts «ШІ для професій» мають вести на перший ролик серії; ep84/86 — варіант exp yt-related-cta-v2 (голосовий заклик в outro є; час, коли поставив Related, — для заміру)",
    "when": "до 27.11 19:00 (вихід ep84)",
    "status": "чекає власника"
   }

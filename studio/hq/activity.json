@@ -1173,8 +1173,8 @@
    "agent": "production",
    "task": "Гайд #2: рендер (озвучка 16/16 у смузі) + QA до 26.11 20:00 → вихід 27.11",
    "started": "2026-11-24T06:18:09Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-24T18:33:19Z",
+   "result": "QA PASS 19:30, −13,1 LUFS; вихід 27.11 (закрив COO за dispatch-log 12:20Z)"
   },
   {
    "id": "148",
@@ -1221,112 +1221,112 @@
    "agent": "data",
    "task": "Збирач даталейку 08:52Z (щоденний): sync, ingest, outliers, знімки TikTok/IG/TG, snapshot",
    "started": "2026-11-24T08:52:50Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-24T18:33:19Z",
+   "result": "знімки TikTok/IG/TG 08Z, sync/ingest, snapshot 5602d52 (закрив COO)"
   },
   {
    "id": "154",
    "agent": "cso",
    "task": "CSO 24.11: трекер 5 платформ + рішення по yt-related-cta",
    "started": "2026-11-24T09:19:47Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-24T18:33:19Z",
+   "result": "трекер: YT 10,7 год/315 підп.; yt-related-cta-v2 (закрив COO за dispatch-log 09:25Z)"
   },
   {
    "id": "155",
    "agent": "seo",
    "task": "SEO-відділ 24.11: kw для approved-ідей, YouTube-SEO свіжих Shorts",
    "started": "2026-11-24T10:13:59Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-24T18:33:19Z",
+   "result": "kw для #89/#34/#19; audit 105/0; ретайтлів 0 (закрив COO за dispatch-log 10:20Z)"
   },
   {
    "id": "156",
    "agent": "seo",
    "task": "фон: нова вічнозелена стаття (кліки −45% за тиждень)",
    "started": "2026-11-24T10:18:04Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-24T18:33:19Z",
+   "result": "стаття /novyny/yak-korystuvatysya-gemini-ukrainskoyu/ на 25.11 (закрив COO)"
   },
   {
    "id": "157",
    "agent": "algo",
    "task": "Алгоритми 24.11 (вт → TikTok): офіційні зміни, лайфхаки практиків, наші дані vs плейбуки, експерименти",
    "started": "2026-11-24T12:14:26Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-24T18:33:19Z",
+   "result": "офіц. змін нема; playbooks/instagram.md; exp ig-trial-reels (закрив COO за 12:23Z)"
   },
   {
    "id": "158",
    "agent": "seo",
    "task": "Статті до ep84 (27.11) і ep86 (29.11) + привʼязка YouTube id до експерименту",
    "started": "2026-11-24T12:24:10Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-24T18:33:19Z",
+   "result": "статті ep84/ep86 + backfill yt-related-cta-v2 (закрив COO за 12:27Z)"
   },
   {
    "id": "159",
    "agent": "data",
    "task": "Збирач даталейку 12:52Z: новини, TikTok/IG/TG-знімок, сигнали",
    "started": "2026-11-24T12:53:20Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-24T18:33:19Z",
+   "result": "знімок 12Z TikTok/IG/TG (studio/data/tiktok/2026-11-24T12.json) (закрив COO)"
   },
   {
    "id": "160",
    "agent": "designer",
    "task": "Дизайнер 24.11: кадри 0/1/80% і обкладинки ep82 (17Z) і clip2",
    "started": "2026-11-24T13:08:19Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-24T18:33:19Z",
+   "result": "ep82 без вад; clip2 — у Журнал design-guide (закрив COO за 13:15Z)"
   },
   {
    "id": "161",
    "agent": "research",
    "task": "фон: денний веб-скан трендів 13Z + перевірка GPT-6.2 Free і джерела ГУР",
    "started": "2026-11-24T13:18:14Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-24T18:33:19Z",
+   "result": "день тихий; №96 джерело ГУР; ідеї №107–108 (закрив COO за 13:25Z)"
   },
   {
    "id": "162",
    "agent": "production",
    "task": "Рендер ep83 (вихід 26.11) і ep85 (28.11) + QA + черга заливки на 25.11",
    "started": "2026-11-24T16:20:45Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-24T18:33:19Z",
+   "result": "ep83/ep85 QA PASS, черга заливки 25.11 (закрив COO за 16:55Z)"
   },
   {
    "id": "163",
    "agent": "production",
    "task": "ep83: виправити «ШІ» в outro (1–2 TTS) + статті ep83/ep85",
    "started": "2026-11-24T16:42:51Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-24T18:33:19Z",
+   "result": "TTS 175,6 Гц — не підмінено, повтор 25.11 06:30Z; статті ep83/ep85 готові (закрив COO)"
   },
   {
    "id": "164",
    "agent": "data",
    "task": "Збирач даталейку 16:52Z: новини, TikTok/IG/TG-знімок",
    "started": "2026-11-24T16:52:55Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-24T18:33:19Z",
+   "result": "знімок 16Z TikTok/IG/TG (2026-11-24T16.json) (закрив COO)"
   },
   {
    "id": "165",
    "agent": "research",
    "task": "Концепт «челендж-лічильник підписників» з Байтом: аномалії, правила платформ, вартість озвучки, 2–3 варіанти",
    "started": "2026-11-24T18:13:55Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-24T18:33:19Z",
+   "result": "концепт надіслано: 3 варіанти, реком. «Байт вчить ШІ говорити» (закрив COO за 18:45Z)"
   },
   {
    "id": "166",
    "agent": "coo",
    "task": "COO вечір 24.11: покращення (cron pages.yml, обсяг довгих), дашборд, звіт власнику",
    "started": "2026-11-24T18:28:01Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-24T18:35:46Z",
+   "result": "release-timer, правило обсягу довгих, gsay_lint, 14 задач закрито, звіт підготовано"
   }
  ]
 }

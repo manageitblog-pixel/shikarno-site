@@ -65,6 +65,10 @@ def guide_part(dg, D, pi, idxs):
 def short(mod):
     ep = importlib.import_module(mod); D = f"/home/claude/eps/{ep.SLUG}"; os.makedirs(f"{D}/takes", exist_ok=True)
     if os.path.exists(f"{D}/vo.wav"): return  # уже озвучено — не витрачати квоту
+    # 24.11: «ШІ» великими в gsay TTS читає як «ей-ай»/«ша» (ep83 outro, ASR ep84 «ша для вчителя»); довгі мають
+    # tts-заміну ШІ→«штучний інтелект», Shorts — ні. Не палимо квоту: спершу виправити gsay у сценарії.
+    bad = [i for i, s in enumerate(ep.SCENES) if re.search(r"(?<![А-ЯІЇЄҐа-яіїєґ])ШІ(?![а-яіїєґ])", s.get("gsay", ""))]
+    if bad: log(ev="gsay_lint", ep=mod, scenes=bad, fix="ШІ → «штучний інтелект» або «ші» у gsay"); return
     env = dict(os.environ, TTS_PACE="hype"); best = None
     for take in (1, 2):
         for f in os.listdir(D):
