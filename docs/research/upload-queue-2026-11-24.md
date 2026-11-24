@@ -1,8 +1,8 @@
 # Черга заливки 24.11.2026 — ep84 і ep86 (Shorts, «ШІ для професій» #10 і #11)
 
 Підготував: продакшн Shorts, 23.11.2026 (activity 125). Сьогодні НЕ заливали — квоту YouTube 23.11 зарезервовано.
-Обидва ролики — VARIANT в `exp-2026-11-22-frame0` (FRAME0=True) і CONTROL в `exp-2026-11-22-yt-related-cta`
-(Related ставить власник у Studio; голосового заклику в останні 5 с немає). Шаблон той самий, що в ep82 (Generic.tsx не чіпали).
+Обидва ролики — VARIANT в `exp-2026-11-22-frame0` (FRAME0=True) і VARIANT в `exp-2026-11-24-yt-related-cta-v2`
+(Related ставить власник у Studio; голосовий заклик «…у відео під роликом» в outro Є — виправлено CSO 24.11 за ASR vo.wav; старий `exp-2026-11-22-yt-related-cta` замінено). Шаблон той самий, що в ep82 (Generic.tsx не чіпали).
 
 | | ep84_prof_logoped | ep86_prof_manikyur |
 |---|---|---|
