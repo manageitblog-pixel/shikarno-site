@@ -1,18 +1,18 @@
 {
- "generated": "2026-11-24T12:57:13Z",
+ "generated": "2026-11-24T14:07:16Z",
  "fresh": {
-  "yt_live": "2026-11-24T12:57:13Z",
+  "yt_live": "2026-11-24T14:07:17Z",
   "yt_analytics": "2026-11-21",
-  "tg_members": "2026-11-24T12:57:14Z",
-  "tg_posts": "2026-11-24T12:57:15Z",
-  "ideas": "2026-11-24T12:56:28Z",
+  "tg_members": "2026-11-24T14:07:19Z",
+  "tg_posts": "2026-11-24T14:07:20Z",
+  "ideas": "2026-11-24T13:24:41Z",
   "news": "2026-11-24 12:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-24T12",
   "instagram": "2026-11-24T12",
   "site": "2026-11-22",
-  "site_live": "2026-11-24T12:57:18Z",
-  "activity": "2026-11-24T12:53:20Z",
+  "site_live": "2026-11-24T14:07:22Z",
+  "activity": "2026-11-24T13:18:14Z",
   "asks": "2026-11-24T08:20Z"
  },
  "notes": [],
@@ -22,7 +22,7 @@
   "long_hours": 10.7,
   "long_hours_goal": 4000,
   "views_total": 12193,
-  "videos": 96,
+  "videos": 97,
   "views_7d": 736,
   "pct_7d": 51.1,
   "subs_7d": 0,
@@ -550,8 +550,8 @@
   "youtube": {
    "subs": 315,
    "views_total": 12193,
-   "videos": 96,
-   "live_at": "2026-11-24T12:57:13Z",
+   "videos": 97,
+   "live_at": "2026-11-24T14:07:17Z",
    "views_7d": 736,
    "pct_7d": 51.1,
    "subs_7d": 0,
@@ -607,7 +607,7 @@
    "best_live": [
     {
      "title": "ШІ для вчителя: план уроку і тест за 5 хвилин у Google Classroom 🍎",
-     "views": 99,
+     "views": 103,
      "id": "ENKGdbr04h0"
     },
     {
@@ -617,7 +617,7 @@
     },
     {
      "title": "Що ШІ знає про тебе: як вимкнути навчання в ChatGPT, Gemini, Claude, Meta AI і Copilot (2026)",
-     "views": 80,
+     "views": 82,
      "id": "GNqU-wcz9Ws"
     }
    ]
@@ -852,7 +852,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-24T12:57:18Z",
+    "updated": "2026-11-24T14:07:22Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 5,
@@ -865,16 +865,6 @@
      "pageloads": 14,
      "visits": 11,
      "hours": [
-      {
-       "h": "2026-11-23T13:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
-      {
-       "h": "2026-11-23T14:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
       {
        "h": "2026-11-23T15:00:00Z",
        "pageloads": 0,
@@ -982,6 +972,16 @@
       },
       {
        "h": "2026-11-24T12:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-24T13:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-24T14:00:00Z",
        "pageloads": 0,
        "visits": 0
       }
@@ -1268,6 +1268,17 @@
  "formats_cutoff": "2026-11-15",
  "videos": [
   {
+   "id": "_wp0rz8edB8",
+   "title": "ШІ для SMM: контент-план і голос бренду без пояснень щоразу 📱 ChatGPT, Gemini, Claude",
+   "format": null,
+   "short": true,
+   "published": "2026-11-24",
+   "views7": null,
+   "pct": null,
+   "complete": false,
+   "total": 4
+  },
+  {
    "id": "xaYHobFNYHo",
    "title": "Штучний інтелект для дітей: який ШІ обрати? 🧒 Тір-лист Байта #6",
    "format": "tier",
@@ -1276,7 +1287,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 19
+   "total": 20
   },
   {
    "id": "ENKGdbr04h0",
@@ -1287,7 +1298,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 99
+   "total": 103
   },
   {
    "id": "LtNuOtQe0pc",
@@ -1397,7 +1408,7 @@
    "views7": 42,
    "pct": 9.7,
    "complete": true,
-   "total": 80
+   "total": 82
   },
   {
    "id": "ZSOH2sXLI_Y",
@@ -1570,6 +1581,7 @@
    "added": "2026-11-22",
    "id": "35",
    "kw": "«ші для фоп» без прямого попиту; суміжні: фоп 2 група звіт (23); фоп для фрілансерів (28); фоп звіт (9) — у назву «звіт ФОП» + ШІ",
+   "note": "24.11 13Z (researcher-trends): ChatGPT release notes 18.11 — плагін Accounting (desktop macOS/Windows, через computer use): звірка транзакцій, чернетки записів по рахунках, звіти на кінець місяця з твоїх файлів і шаблонів; тарифи/регіони не вказані («якщо доступний для твого плану»). Може бути одним пунктом «що можна довірити ШІ», але першоджерело Дія/ДПС усе ще потрібне.",
    "score": 296.0
   },
   {
@@ -1686,8 +1698,8 @@
   }
  ],
  "ideas_count": {
-  "total": 106,
-  "open": 101
+  "total": 108,
+  "open": 103
  },
  "lake": {
   "videos": 96,
@@ -1895,22 +1907,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "120",
-   "agent": "factcheck",
-   "task": "Гайд #2: перевірка META й обкладинок після фактчеку («Claude = $0» не вводить в оману?)",
-   "started": "2026-11-23T11:24:20Z",
-   "finished": "2026-11-23T11:25:56Z",
-   "result": "Вердикт: PASS — META відповідає сценарію і сторінкам Anthropic (23.11); «CLAUDE = $0» ок, пігулка «ліміт 5 год» читається в 320×180"
-  },
-  {
-   "id": "121",
-   "agent": "algo",
-   "task": "Алгоритми 23.11 (пн → YouTube): офіційні зміни, лайфхаки практиків, наші дані vs плейбуки, експерименти",
-   "started": "2026-11-23T12:14:11Z",
-   "finished": "2026-11-23T12:21:40Z",
-   "result": "Офіц. змін нема; П19–П26 у youtube.md §5; END_SCREEN=0 на 13 довгих → exp-2026-11-23-yt-endscreen-named (designed); пропозиції CSO щодо E1/ep82"
-  },
   {
    "id": "122",
    "agent": "seo",
@@ -2234,6 +2230,23 @@
    "finished": null,
    "result": "",
    "agent_raw": "data"
+  },
+  {
+   "id": "160",
+   "agent": "designer",
+   "task": "Дизайнер 24.11: кадри 0/1/80% і обкладинки ep82 (17Z) і clip2",
+   "started": "2026-11-24T13:08:19Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "161",
+   "agent": "trend",
+   "task": "фон: денний веб-скан трендів 13Z + перевірка GPT-6.2 Free і джерела ГУР",
+   "started": "2026-11-24T13:18:14Z",
+   "finished": null,
+   "result": "",
+   "agent_raw": "research"
   }
  ],
  "agents": [
