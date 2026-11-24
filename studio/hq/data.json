@@ -1,18 +1,18 @@
 {
- "generated": "2026-11-24T22:07:06Z",
+ "generated": "2026-11-24T23:06:49Z",
  "fresh": {
-  "yt_live": "2026-11-24T22:07:06Z",
+  "yt_live": "2026-11-24T23:06:50Z",
   "yt_analytics": "2026-11-21",
-  "tg_members": "2026-11-24T22:07:07Z",
-  "tg_posts": "2026-11-24T22:07:08Z",
+  "tg_members": "2026-11-24T23:06:51Z",
+  "tg_posts": "2026-11-24T23:06:52Z",
   "ideas": "2026-11-24T20:56:16Z",
   "news": "2026-11-24 20:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-24T20",
   "instagram": "2026-11-24T20",
   "site": "2026-11-22",
-  "site_live": "2026-11-24T22:07:10Z",
-  "activity": "2026-11-24T21:19:41Z",
+  "site_live": "2026-11-24T23:06:53Z",
+  "activity": "2026-11-24T22:21:52Z",
   "asks": "2026-11-24T18:40Z"
  },
  "notes": [],
@@ -551,7 +551,7 @@
    "subs": 315,
    "views_total": 12275,
    "videos": 98,
-   "live_at": "2026-11-24T22:07:06Z",
+   "live_at": "2026-11-24T23:06:50Z",
    "views_7d": 736,
    "pct_7d": 51.1,
    "subs_7d": 0,
@@ -606,14 +606,14 @@
    ],
    "best_live": [
     {
+     "title": "ШІ для вчителя: план уроку і тест за 5 хвилин у Google Classroom 🍎",
+     "views": 108,
+     "id": "ENKGdbr04h0"
+    },
+    {
      "title": "Меню на тиждень і вечеря з того, що є 🍳 Тір-лист Байта #7",
      "views": 107,
      "id": "bvS0k_r3_bs"
-    },
-    {
-     "title": "ШІ для вчителя: план уроку і тест за 5 хвилин у Google Classroom 🍎",
-     "views": 104,
-     "id": "ENKGdbr04h0"
     },
     {
      "title": "ChatGPT вчиться на твоїх чатах — як вимкнути за 30 секунд 🔐",
@@ -876,24 +876,19 @@
     }
    ],
    "live": {
-    "updated": "2026-11-24T22:07:10Z",
+    "updated": "2026-11-24T23:06:53Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
-    "today_pageloads": 0,
-    "today_visits": 0,
+    "today_pageloads": 1,
+    "today_visits": 1,
     "yesterday_pageloads": 9,
     "yesterday_visits": 5,
-    "pageloads_7d": 49,
-    "visits_7d": 41,
+    "pageloads_7d": 50,
+    "visits_7d": 42,
     "last24h": {
-     "pageloads": 9,
-     "visits": 5,
+     "pageloads": 10,
+     "visits": 6,
      "hours": [
-      {
-       "h": "2026-11-23T23:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
       {
        "h": "2026-11-24T00:00:00Z",
        "pageloads": 0,
@@ -1006,6 +1001,11 @@
       },
       {
        "h": "2026-11-24T22:00:00Z",
+       "pageloads": 1,
+       "visits": 1
+      },
+      {
+       "h": "2026-11-24T23:00:00Z",
        "pageloads": 0,
        "visits": 0
       }
@@ -1044,9 +1044,9 @@
      },
      {
       "d": "2026-11-17",
-      "pageloads": 20,
-      "visits": 20,
-      "sampled": true
+      "pageloads": 5,
+      "visits": 5,
+      "sampled": false
      },
      {
       "d": "2026-11-18",
@@ -1092,8 +1092,8 @@
      },
      {
       "d": "2026-11-25",
-      "pageloads": 0,
-      "visits": 0,
+      "pageloads": 1,
+      "visits": 1,
       "sampled": false
      }
     ],
@@ -1111,7 +1111,7 @@
       "count": 4
      },
      {
-      "path": "/novyny/shtuchnyj-intelekt-dlya-ditej-tir-lyst/",
+      "path": "/novyny/claude-code-shcho-tse/",
       "count": 2
      },
      {
@@ -1126,7 +1126,7 @@
      },
      {
       "host": "www.google.com",
-      "count": 10
+      "count": 11
      },
      {
       "host": "m.facebook.com",
@@ -1144,7 +1144,7 @@
     "top_countries_7d": [
      {
       "country": "UA",
-      "count": 30
+      "count": 31
      },
      {
       "country": "US",
@@ -1333,7 +1333,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 104
+   "total": 108
   },
   {
    "id": "LtNuOtQe0pc",
@@ -1936,15 +1936,6 @@
  ],
  "activity": [
   {
-   "id": "140",
-   "agent": "da",
-   "task": "фон: якість даталейку + перевірка експериментів (ops.py)",
-   "started": "2026-11-23T21:17:50Z",
-   "finished": "2026-11-23T21:30:00Z",
-   "result": "data-quality-2026-11-23.md: TikTok-знімок виправлено, ризики передано (закрив COO за dispatch-log)",
-   "agent_raw": "analyst"
-  },
-  {
    "id": "141",
    "agent": "de",
    "task": "Instagram-аналітика: instagram_ingest.py (ig_snap), блок Instagram на дашборді HQ і в знімку росту",
@@ -2278,6 +2269,15 @@
    "started": "2026-11-24T21:18:01Z",
    "finished": "2026-11-24T21:19:41Z",
    "result": "429 одразу (0 ок); 4-а поспіль; повтор 22:17Z",
+   "agent_raw": "production"
+  },
+  {
+   "id": "180",
+   "agent": "post",
+   "task": "Озвучка 22:18Z: guide1 ч.3/11 (перезапис), далі черга",
+   "started": "2026-11-24T22:18:01Z",
+   "finished": "2026-11-24T22:21:52Z",
+   "result": "guide1 ч.3 дубль 2: 139,0 Гц (поза 128,5±6) → не в фінал, чекає вікна; далі 429 (1 ок)",
    "agent_raw": "production"
   }
  ],
