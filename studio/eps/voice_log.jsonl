@@ -257,3 +257,8 @@
 {"ev": "tts_ok", "ep": "ep83", "part": "outro_fix", "text": "Що штучний інтелект знає про тебе — у відео під роликом.", "res": "(3.44, 24000, 'audio/wav')", "t": "16:46:02Z"}
 {"ev": "tts_fail", "ep": "ep83", "part": "outro_fix_take2", "text": "Що штучний інтелект знає про тебе — у відео під роликом.", "res": "TTS quota exhausted: 4 consecutive HTTP 429 from Gemini (gemini-3.8-flash-tts); try later or another key/model", "t": "16:48:13Z"}
 {"ev": "tts_ok", "n": 1, "out": "/home/claude/eps/guide3/part0.wav", "res": "(64.8, 24000, 'audio/wav')", "t": "18:18:56Z"}
+{"ev": "part", "part": 0, "take": 1, "f0": 117.8, "f0_ok": false, "dur": 64.8, "audit": [{"seg": 0, "ratio": 0.92, "match": 0.68}, {"seg": 1, "ratio": 0.96, "match": 0.77}], "repeat_suspect": false, "t": "18:20:04Z"}
+{"ev": "tts_ok", "n": 2, "out": "/home/claude/eps/guide3/part0.wav", "res": "(63.44, 24000, 'audio/wav')", "t": "18:21:46Z"}
+{"ev": "part", "part": 0, "take": 2, "f0": 122.1, "f0_ok": true, "dur": 63.4, "audit": [{"seg": 0, "ratio": 0.96, "match": 0.76}, {"seg": 1, "ratio": 0.93, "match": 0.74}], "repeat_suspect": false, "t": "18:22:53Z"}
+{"ev": "part_final", "part": 0, "take": 2, "f0": 122.1, "clean": true, "t": "18:22:53Z"}
+{"ev": "STOP", "reason": "TTS quota exhausted: 4 consecutive HTTP 429 from Gemini (gemini-3.8-flash-tts); try later or another key/model", "ok_requests": 2, "t": "18:24:24Z"}
