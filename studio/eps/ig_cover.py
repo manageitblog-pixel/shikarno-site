@@ -35,6 +35,8 @@ REELS = {
     "ep76_inkognito_shi": ("ep76_inkognito_shi/final.mp4", "ep76_inkognito_shi/thumb.png", "ep76_inkognito_shi"),
     "clip2": ("clip2/final.mp4", "clip2/thumb.png", "clip2"),
     "ep82_tier_kitchen": ("ep82_tier_kitchen/final.mp4", "ep82_tier_kitchen/thumb.png", "ep82_tier_kitchen"),
+    "ep83_moonlock_chesno": ("ep83_moonlock_chesno/final.mp4", "ep83_moonlock_chesno/thumb.png", "ep83_moonlock_chesno"),
+    "ep84_prof_logoped": ("ep84_prof_logoped/final.mp4", "ep84_prof_logoped/thumb.png", "ep84_prof_logoped"),
 }
 
 

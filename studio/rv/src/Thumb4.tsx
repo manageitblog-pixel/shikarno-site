@@ -22,7 +22,15 @@ export const Thumb4: React.FC<P> = (p) => {
   const parts = p.text.split("*");
   const words = (size: number) => (
     <div style={{ color: "#fff", fontWeight: 900, fontSize: size, lineHeight: 0.98, letterSpacing: -2, textTransform: "uppercase", WebkitTextStroke: `${Math.round(size/22)}px #0E0B24`, paintOrder: "stroke fill", textShadow: "0 8px 0 rgba(0,0,0,0.5)" }}>
-      {parts.map((t, i) => i % 2 ? <span key={i} style={{ background: C.yellow, color: "#0E0B24", padding: "0 16px", borderRadius: 14, display: "inline-block", textShadow: "none", WebkitTextStroke: "0", transform: "rotate(-1.5deg)" }}>{t}</span> : <span key={i}>{t}</span>)}
+      {parts.map((t, i) => {
+        if (i % 2) return null;
+        const acc = parts[i + 1];
+        const plate = acc !== undefined ? <span style={{ background: C.yellow, color: "#0E0B24", padding: "0 16px", borderRadius: 14, display: "inline-block", textShadow: "none", WebkitTextStroke: "0", transform: "rotate(-1.5deg)" }}>{acc}</span> : null;
+        // 25.11: нерозривний пробіл перед *акцентом* («і *грошей*») — останнє слово тримається з плашкою (без висячого «І» в кінці рядка)
+        const m = acc !== undefined && t.endsWith(" ") ? t.match(/^(.*?)(\S+ )$/s) : null;
+        return m ? <React.Fragment key={i}>{m[1]}<span style={{ whiteSpace: "nowrap" }}>{m[2]}{plate}</span></React.Fragment>
+          : <React.Fragment key={i}><span>{t}</span>{plate}</React.Fragment>;
+      })}
     </div>
   );
   const bg = (
