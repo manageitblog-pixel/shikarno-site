@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-24T14:07:16Z",
+ "generated": "2026-11-24T15:08:16Z",
  "fresh": {
-  "yt_live": "2026-11-24T14:07:17Z",
+  "yt_live": "2026-11-24T15:08:16Z",
   "yt_analytics": "2026-11-21",
-  "tg_members": "2026-11-24T14:07:19Z",
-  "tg_posts": "2026-11-24T14:07:20Z",
+  "tg_members": "2026-11-24T15:08:17Z",
+  "tg_posts": "2026-11-24T15:08:18Z",
   "ideas": "2026-11-24T13:24:41Z",
   "news": "2026-11-24 12:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-24T12",
   "instagram": "2026-11-24T12",
   "site": "2026-11-22",
-  "site_live": "2026-11-24T14:07:22Z",
+  "site_live": "2026-11-24T15:08:19Z",
   "activity": "2026-11-24T13:18:14Z",
   "asks": "2026-11-24T08:20Z"
  },
@@ -551,7 +551,7 @@
    "subs": 315,
    "views_total": 12193,
    "videos": 97,
-   "live_at": "2026-11-24T14:07:17Z",
+   "live_at": "2026-11-24T15:08:16Z",
    "views_7d": 736,
    "pct_7d": 51.1,
    "subs_7d": 0,
@@ -617,7 +617,7 @@
     },
     {
      "title": "Що ШІ знає про тебе: як вимкнути навчання в ChatGPT, Gemini, Claude, Meta AI і Copilot (2026)",
-     "views": 82,
+     "views": 80,
      "id": "GNqU-wcz9Ws"
     }
    ]
@@ -852,24 +852,19 @@
     }
    ],
    "live": {
-    "updated": "2026-11-24T14:07:22Z",
+    "updated": "2026-11-24T15:08:19Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
-    "today_pageloads": 5,
-    "today_visits": 2,
+    "today_pageloads": 7,
+    "today_visits": 3,
     "yesterday_pageloads": 10,
     "yesterday_visits": 10,
-    "pageloads_7d": 47,
-    "visits_7d": 40,
+    "pageloads_7d": 49,
+    "visits_7d": 41,
     "last24h": {
-     "pageloads": 14,
-     "visits": 11,
+     "pageloads": 16,
+     "visits": 12,
      "hours": [
-      {
-       "h": "2026-11-23T15:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
       {
        "h": "2026-11-23T16:00:00Z",
        "pageloads": 0,
@@ -982,6 +977,11 @@
       },
       {
        "h": "2026-11-24T14:00:00Z",
+       "pageloads": 2,
+       "visits": 1
+      },
+      {
+       "h": "2026-11-24T15:00:00Z",
        "pageloads": 0,
        "visits": 0
       }
@@ -1068,8 +1068,8 @@
      },
      {
       "d": "2026-11-24",
-      "pageloads": 5,
-      "visits": 2,
+      "pageloads": 7,
+      "visits": 3,
       "sampled": false
      }
     ],
@@ -1084,14 +1084,14 @@
      },
      {
       "path": "/novyny/promty-dlya-chatgpt/",
-      "count": 3
-     },
-     {
-      "path": "/novyny/moonlock-iphone-shakhrajski-sms/",
-      "count": 2
+      "count": 4
      },
      {
       "path": "/novyny/shtuchnyj-intelekt-dlya-ditej-tir-lyst/",
+      "count": 2
+     },
+     {
+      "path": "/novyny/moonlock-iphone-shakhrajski-sms/",
       "count": 2
      }
     ],
@@ -1102,7 +1102,7 @@
      },
      {
       "host": "www.google.com",
-      "count": 8
+      "count": 9
      },
      {
       "host": "m.facebook.com",
@@ -1120,7 +1120,7 @@
     "top_countries_7d": [
      {
       "country": "UA",
-      "count": 28
+      "count": 30
      },
      {
       "country": "US",
@@ -1276,7 +1276,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 4
+   "total": 12
   },
   {
    "id": "xaYHobFNYHo",
@@ -1309,7 +1309,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 72
+   "total": 79
   },
   {
    "id": "aTUsauz53rs",
@@ -1408,7 +1408,7 @@
    "views7": 42,
    "pct": 9.7,
    "complete": true,
-   "total": 82
+   "total": 80
   },
   {
    "id": "ZSOH2sXLI_Y",
