@@ -2346,5 +2346,100 @@
   "status": "new",
   "added": "2026-11-24",
   "id": "113"
+ },
+ {
+  "title": "Meta Muse тепер прямо в директі Instagram: з рецепт-рілса — список покупок, зі збережених — маршрут. Де вже працює і що він не робить без твого «так»",
+  "format": "news",
+  "channels": [
+   "insta",
+   "short",
+   "tiktok",
+   "site"
+  ],
+  "demand": 3,
+  "fresh": 5,
+  "show": 4,
+  "fit": 4,
+  "source": "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/",
+  "by": "researcher-news",
+  "length": 30,
+  "status": "new",
+  "added": "2026-11-24",
+  "id": "114"
+ },
+ {
+  "title": "Шукав планети з ChatGPT: засновник стартапу з GPT-6 Astra перебрав дані TESS по ~19 млн зір — 49 кандидатів (жодного ще не підтверджено)",
+  "format": "news",
+  "channels": [
+   "short",
+   "tiktok",
+   "site"
+  ],
+  "demand": 2,
+  "fresh": 5,
+  "show": 3,
+  "fit": 3,
+  "source": "https://openai.com/index/searching-for-distant-planets-with-astra",
+  "by": "researcher-news",
+  "length": 30,
+  "status": "new",
+  "added": "2026-11-24",
+  "id": "115"
+ },
+ {
+  "title": "Gemini 4 Neon: 3D-Земля, чорна діра і метелики з одного промпту — що зробили 5 розробників і хто може спробувати (Pro/Ultra, AI Studio)",
+  "format": "try",
+  "channels": [
+   "short",
+   "tiktok",
+   "site"
+  ],
+  "demand": 3,
+  "fresh": 4,
+  "show": 5,
+  "fit": 3,
+  "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-neon-builders/",
+  "by": "researcher-news",
+  "length": 30,
+  "status": "new",
+  "added": "2026-11-24",
+  "id": "116"
+ },
+ {
+  "title": "Акції Anthropic уже нижчі за ціну IPO: $83 на старті, $76 у вівторок — чому інвестори нервують і що це означає для ШІ-стартапів",
+  "format": "news",
+  "channels": [
+   "short",
+   "site",
+   "tg"
+  ],
+  "demand": 3,
+  "fresh": 5,
+  "show": 2,
+  "fit": 3,
+  "source": "https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups/",
+  "by": "researcher-news",
+  "length": 30,
+  "status": "new",
+  "added": "2026-11-24",
+  "id": "117"
+ },
+ {
+  "title": "Amazon купує Decart (за даними Bloomberg — $7,5 млрд): софт, що жене ШІ не лише на чипах Nvidia — навіщо це AWS і чому Anthropic відмовилась",
+  "format": "news",
+  "channels": [
+   "site",
+   "tg"
+  ],
+  "demand": 2,
+  "fresh": 5,
+  "show": 2,
+  "fit": 2,
+  "source": "https://techcrunch.com/2026/11/24/amazons-decart-acquisition-is-a-bet-on-using-software-to-narrow-the-gap-with-nvidia-in-the-ai-chip-race/",
+  "by": "researcher-news",
+  "length": 30,
+  "status": "new",
+  "added": "2026-11-24",
+  "id": "118"
  }
 ]
