@@ -51,7 +51,8 @@ def guide_part(dg, D, pi, idxs):
         segs = [G.trim(x, sr) for x in G.split_scenes(w, sr, texts)]
         au = [audit_seg(x, sr, dg.SEGS[i]["gsay"]) for i, x in zip(idxs, segs)]
         shutil.copy(raw, f"{tk}/part{pi}_take{take}_f0_{F:.1f}.wav")
-        rep = any(a["ratio"] > 1.3 for a in au)
+        # повтор — лише на абзацах ≥ 8 слів: заголовок «Розділ перший — безпека» (3 слова) ASR чує як «без пека» → 1,33 (хибно, weekly3 ч.0)
+        rep = any(a["ratio"] > 1.3 and len(words(dg.SEGS[i]["gsay"])) >= 8 for i, a in zip(idxs, au))
         log(ev="part", part=pi, take=take, f0=F, f0_ok=ok, dur=round(len(w) / sr, 1),
             audit=[dict(seg=i, ratio=a["ratio"], match=a["match"]) for i, a in zip(idxs, au)], repeat_suspect=rep)
         json.dump(dict(f0=F, ok=ok, audit=[dict(seg=i, **a) for i, a in zip(idxs, au)]),
@@ -107,7 +108,9 @@ if __name__ == "__main__":
         # і в межах власної смуги відео 128,5±8, щоб висота не стрибала посеред ролика (рішення COO 23.11, ops policy).
         PER_GUIDE = {"guide1": {"TTS_PACE": "calm_v1", "VC_REF": "128.5", "VC_TOL": "8"},
                      "guide2": {"VC_REF": "130", "VC_TOL": "8"},  # calm v2 дав 135,6/129,9/128,5/126,1 — тест v2 не пройшов (≥133,5 у 2 з 3); смуга власної медіани, щоб не палити квоту
-                     "weekly3": {"UPTO": "11"}}  # остання частина (оновлення 28.11 + outro) — окремо 28.11
+                     # шоу #3: смуга шоу #1–#2 (весь файл v2: 128,5 і 129,6; частини 121,4–136,4), а не 141,5 — інакше палить по 2 запити
+                     # на частину (ч.0: 114,5/116,5/126,9). docs/research/voice-weekly3-2026-11-24.md. Остання частина (оновлення 28.11 + outro) — окремо 28.11
+                     "weekly3": {"VC_REF": "129", "VC_TOL": "8", "UPTO": "11"}}
         def guide(name):
             for k in ("VC_REF", "VC_TOL"): os.environ.pop(k, None)
             os.environ.update({k: v for k, v in PER_GUIDE.get(name, {}).items() if k != "UPTO"})
