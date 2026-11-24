@@ -1838,5 +1838,63 @@
   "status": "new",
   "added": "2026-11-24",
   "id": "92"
+ },
+ {
+  "title": "Дорожча модель ≠ краща: у тесті VentureBeat Claude Fable 5.2 виправила 10 багів із 15 за $89, Opus 5.5 — 9 за $29. Як рахувати «ціну за успішну правку» на своєму коді",
+  "format": "news",
+  "channels": [
+   "short",
+   "site",
+   "tg"
+  ],
+  "demand": 3,
+  "fresh": 5,
+  "show": 3,
+  "fit": 3,
+  "length": 35,
+  "source": "https://venturebeat.com/orchestration/claude-fable-5-2-cost-three-times-as-much-as-opus-5-5-for-nearly-the-same-results-in-a-venturebeat-bug-fixing-test",
+  "by": "researcher-news",
+  "note": "VB 23.11: 4 моделі (Fable 5.2, Opus 5.5, Kimi K3.1 Pro, DeepSeek V4.1 Flash), 5 багів у кодбазі 8400 рядків, 3 спроби. Kimi 5/15 за $10, Flash 4/15 за $1. Самі автори: 15 спроб — замало для висновку. Кут: як обрати модель/тариф за ціною успіху, а не за токенами.",
+  "status": "new",
+  "added": "2026-11-24",
+  "id": "93"
+ },
+ {
+  "title": "OpenAI і Cisco випустили Shirudo — відкритий «щит» для Linux: блокує експлойт ще до патча, без перезапуску сервера",
+  "format": "news",
+  "channels": [
+   "site",
+   "tg"
+  ],
+  "demand": 2,
+  "fresh": 5,
+  "show": 2,
+  "fit": 2,
+  "length": 30,
+  "source": "https://openai.com/index/introducing-shirudo",
+  "by": "researcher-news",
+  "note": "OpenAI 23.11: eBPF-«щити», BSD-2 (BPF — BSD/GPL), GitHub; тест: щит від Codex заблокував Java4Shell на Elasticsearch без рестарту. Цифр немає. Нішево (ІТ/адміни) — сайт+TG.",
+  "status": "new",
+  "added": "2026-11-24",
+  "id": "94"
+ },
+ {
+  "title": "GLM-5.4 від Z.ai: модель «проганяє» 28 шарів двічі, щоб зрівнятися з учетверо більшими — вже в Z.ai Chat, ваги обіцяють пізніше",
+  "format": "news",
+  "channels": [
+   "site",
+   "tg"
+  ],
+  "demand": 2,
+  "fresh": 5,
+  "show": 2,
+  "fit": 2,
+  "length": 30,
+  "source": "https://venturebeat.com/technology/z-ais-glm-5-4-aims-to-match-models-up-to-four-times-its-size-by-running-28-layers-twice",
+  "by": "researcher-news",
+  "note": "VB 24.11: Loop Transformer, ~750B, зір + «Generalized Coding»; доступ — GLM Coding Plan, ZCode, Z.ai Chat; API «скоро»; ваги — без дати й ліцензії; бенчмарки компанії без методики (позначати як їхні).",
+  "status": "new",
+  "added": "2026-11-24",
+  "id": "95"
  }
 ]
