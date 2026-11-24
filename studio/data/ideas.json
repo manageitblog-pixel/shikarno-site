@@ -2237,5 +2237,67 @@
   "status": "new",
   "added": "2026-11-24",
   "id": "108"
+ },
+ {
+  "title": "Tidal видаляє ШІ-музику: з 9 грудня — геть повністю згенеровані треки, понад 29 млн пісень до кінця року. Як зрозуміти, що в твоєму плейлисті ШІ-пісня",
+  "format": "news",
+  "channels": [
+   "short",
+   "tiktok",
+   "insta",
+   "site"
+  ],
+  "demand": 3,
+  "fresh": 5,
+  "show": 4,
+  "fit": 4,
+  "length": 30,
+  "source": "https://techcrunch.com/2026/11/24/tidal-to-ban-and-remove-millions-of-ai-generated-tracks-as-ai-slop-inundates-music-streaming/",
+  "by": "researcher-news",
+  "note": "TechCrunch 24.11 (дані Tidal — їхні власні): >43% завантажень за 90 днів — ШІ; 27 млн треків (6,3% каталогу) повністю ШІ, 96% без прослуховувань; ШІ-асистовані пісні лишаються. Контекст: Deezer — фільтр, Spotify/YouTube Music — мітки. Звʼязок з #99 (Suno, як відрізнити на слух).",
+  "status": "new",
+  "added": "2026-11-24",
+  "id": "109"
+ },
+ {
+  "title": "Pinterest дав батькам повзунок «менше ШІ-контенту» в рекомендаціях підлітка: де нова сторінка батьківського контролю і що ще там закрити паролем",
+  "format": "guide",
+  "channels": [
+   "short",
+   "tiktok",
+   "insta",
+   "site"
+  ],
+  "demand": 3,
+  "fresh": 5,
+  "show": 3,
+  "fit": 4,
+  "length": 30,
+  "source": "https://newsroom.pinterest.com/news/helping-families-navigate-controls-for-teens-on-pinterest/",
+  "by": "researcher-news",
+  "note": "Pinterest Newsroom 23.11 (TechCrunch 24.11): нова сторінка Parental Controls — обсяг ШІ-контенту в рекомендаціях, автоплей, сповіщення, коментарі/згадки, персоналізація реклами; все під Parental Passcode; акаунти до 16 — приватні за замовчуванням. Країни й вікові межі в джерелі не вказано — перевірити в UA перед зйомкою. Пара до тір-листа #6 (ШІ для дітей).",
+  "status": "new",
+  "added": "2026-11-24",
+  "id": "110"
+ },
+ {
+  "title": "«Не звільняємо, але й не наймаємо»: Anthropic опитала 58 компаній — ШІ рідко забирає посади, зате гальмує найм і першими ріже підрядників. Що це означає для твоєї роботи",
+  "format": "prof",
+  "channels": [
+   "short",
+   "site",
+   "tg"
+  ],
+  "demand": 3,
+  "fresh": 4,
+  "show": 3,
+  "fit": 4,
+  "length": 35,
+  "source": "https://www.anthropic.com/research/working-with-ai",
+  "by": "researcher-news",
+  "note": "Anthropic Research 23.11: 66 інтервʼю у 58 компаніях США (клієнти Anthropic, якісне, не репрезентативне — так і казати). Лише 2 компанії — посада повністю зникла; ~2/3 наймають менше; 10 — більше (ШІ, IT-підтримка); 9 скоротили підрядників, часто офшорних. Порада: починай із роботи, яку знаєш, і закладай час на перевірку.",
+  "status": "new",
+  "added": "2026-11-24",
+  "id": "111"
  }
 ]
