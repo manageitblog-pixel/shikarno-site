@@ -1,18 +1,18 @@
 {
- "generated": "2026-11-24T04:06:42Z",
+ "generated": "2026-11-24T04:55:06Z",
  "fresh": {
-  "yt_live": "2026-11-24T04:06:42Z",
+  "yt_live": "2026-11-24T04:55:06Z",
   "yt_analytics": "2026-11-20",
-  "tg_members": "2026-11-24T04:06:44Z",
-  "tg_posts": "2026-11-24T04:06:44Z",
+  "tg_members": "2026-11-24T04:55:07Z",
+  "tg_posts": "2026-11-24T04:55:08Z",
   "ideas": "2026-11-24T00:54:45Z",
-  "news": "2026-11-24 00:52",
+  "news": "2026-11-24 04:53",
   "comp": "2026-11-23",
-  "tiktok": "2026-11-24T00",
-  "instagram": "2026-11-24T00",
+  "tiktok": "2026-11-24T04",
+  "instagram": "2026-11-24T04",
   "site": "2026-11-21",
-  "site_live": "2026-11-24T04:06:46Z",
-  "activity": "2026-11-24T00:52:36Z",
+  "site_live": "2026-11-24T04:55:09Z",
+  "activity": "2026-11-24T04:53:13Z",
   "asks": "2026-11-23T19:55:00Z"
  },
  "notes": [],
@@ -540,7 +540,7 @@
    "subs": 315,
    "views_total": 11982,
    "videos": 96,
-   "live_at": "2026-11-24T04:06:42Z",
+   "live_at": "2026-11-24T04:55:06Z",
    "views_7d": 815,
    "pct_7d": 51.0,
    "subs_7d": 2,
@@ -596,7 +596,7 @@
    "best_live": [
     {
      "title": "ШІ для вчителя: план уроку і тест за 5 хвилин у Google Classroom 🍎",
-     "views": 97,
+     "views": 99,
      "id": "ENKGdbr04h0"
     },
     {
@@ -613,12 +613,12 @@
   },
   "tiktok": {
    "videos": 12,
-   "views_total": 15575,
-   "views_7d": 1491,
+   "views_total": 15592,
+   "views_7d": 1508,
    "new_7d": 6,
-   "saves_total": 123,
-   "likes_total": 307,
-   "last_snapshot": "2026-11-24T00",
+   "saves_total": 124,
+   "likes_total": 309,
+   "last_snapshot": "2026-11-24T04",
    "best": [
     {
      "title": "Український ШІ Сяйво: коли вийде",
@@ -630,7 +630,7 @@
     {
      "title": "Як видалити пам'ять ChatGPT",
      "views": 4900,
-     "saves": 65,
+     "saves": 66,
      "id": "7707376178234936584",
      "posted": "2026-11-12"
     },
@@ -678,6 +678,10 @@
     {
      "x": "2026-11-24T00",
      "v": 15575
+    },
+    {
+     "x": "2026-11-24T04",
+     "v": 15592
     }
    ]
   },
@@ -688,10 +692,10 @@
    "views_30d": null,
    "reach_30d": null,
    "reels": 9,
-   "plays_total": 210,
+   "plays_total": 224,
    "likes_total": 2,
    "saves_total": 1,
-   "last_snapshot": "2026-11-24T00",
+   "last_snapshot": "2026-11-24T04",
    "best": [
     {
      "shortcode": "DgGRAlDjqkk",
@@ -703,8 +707,8 @@
     {
      "shortcode": "DgGRAVLFORb",
      "title": "Інкогніто в ШІ — не сейф",
-     "plays": 44,
-     "pct": 7,
+     "plays": 46,
+     "pct": 8,
      "published": "2026-11-23"
     },
     {
@@ -723,6 +727,10 @@
     {
      "x": "2026-11-24T00",
      "v": 210
+    },
+    {
+     "x": "2026-11-24T04",
+     "v": 224
     }
    ],
    "followers_hist": [
@@ -732,6 +740,10 @@
     },
     {
      "x": "2026-11-24T00",
+     "v": 4
+    },
+    {
+     "x": "2026-11-24T04",
      "v": 4
     }
    ]
@@ -804,7 +816,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-24T04:06:46Z",
+    "updated": "2026-11-24T04:55:09Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 0,
@@ -1239,7 +1251,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 97
+   "total": 99
   },
   {
    "id": "LtNuOtQe0pc",
@@ -1649,7 +1661,7 @@
  "lake": {
   "videos": 94,
   "daily": 773,
-  "news": 1957,
+  "news": 1964,
   "niche": 828,
   "comp": 511,
   "comp_videos": 62794,
@@ -1659,6 +1671,48 @@
   "comp_ai": 241
  },
  "news": [
+  {
+   "date": "2026-11-24",
+   "source": "speka",
+   "title": "Чи заплатить Rockstar $25 000 за баг у GTA 6, який знайшов штучний інтелект",
+   "score": null,
+   "url": "https://speka.ua/news/ci-zaplatit-rockstar-25-000-za-bag-u-gta-6-yakii-znaisov-stucnii-intelekt-9ezy61"
+  },
+  {
+   "date": "2026-11-24",
+   "source": "hn",
+   "title": "Declare is a UI language for you and your AI",
+   "score": 15,
+   "url": "https://davidtemkin.github.io/declarelang/"
+  },
+  {
+   "date": "2026-11-24",
+   "source": "hn",
+   "title": "Show HN: Juncts, one DM inbox for five apps that Claude and ChatGPT can work in",
+   "score": 6,
+   "url": "https://juncts.com/app?demo=1&utm_source=hackernews&utm_medium=launch&utm_campaign=launch-nov26"
+  },
+  {
+   "date": "2026-11-24",
+   "source": "hn",
+   "title": "Toolfence-scan – static checks for Cursor/Claude/Copilot skills",
+   "score": 6,
+   "url": "https://github.com/StockGorilla/skill-scan"
+  },
+  {
+   "date": "2026-11-24",
+   "source": "hn",
+   "title": "Show HN: Agent-first-browse – Web automation with delta snapshots and LangGraph",
+   "score": 6,
+   "url": "https://github.com/SandeepAi369/Agent-first-browse"
+  },
+  {
+   "date": "2026-11-24",
+   "source": "hn",
+   "title": "Incognide, the AI-native IDE for research and development, reaches 500 gh stars",
+   "score": 5,
+   "url": "https://github.com/NPC-Worldwide/incognide"
+  },
   {
    "date": "2026-11-24",
    "source": "venturebeat",
@@ -1700,48 +1754,6 @@
    "title": "Elon Musk and others rejoice as Jensen Huang is reinstated at Nvidia amid scandal",
    "score": null,
    "url": "https://techcrunch.com/2026/11/23/elon-musk-and-others-rejoice-as-jensen-huang-is-reinstated-at-nvidia-amid-scandal/"
-  },
-  {
-   "date": "2026-11-23",
-   "source": "techcrunch",
-   "title": "Megaspeed, the company at the center of the Jensen Huang scandal, appears headed for a US blacklist",
-   "score": null,
-   "url": "https://techcrunch.com/2026/11/23/megaspeed-the-company-at-the-center-of-the-jensen-huang-scandal-appears-headed-for-a-u-s-blacklist/"
-  },
-  {
-   "date": "2026-11-23",
-   "source": "verge",
-   "title": "Trump engineered a risky comeback for Jensen Huang",
-   "score": null,
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1040652/jensen-huang-nvidia-trump-reinstated"
-  },
-  {
-   "date": "2026-11-23",
-   "source": "verge",
-   "title": "Nvidia CEO Jensen Huang is back. What happens next?",
-   "score": null,
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang"
-  },
-  {
-   "date": "2026-11-23",
-   "source": "verge",
-   "title": "Welcome to elite impunity, Jensen Huang",
-   "score": null,
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1040819/welcome-to-elite-impunity-jensen-huang"
-  },
-  {
-   "date": "2026-11-23",
-   "source": "venturebeat",
-   "title": "Claude Fable 5.2 cost three times as much as Opus 5.5 for nearly the same results in a VentureBeat bug-fixing test",
-   "score": null,
-   "url": "https://venturebeat.com/orchestration/claude-fable-5-2-cost-three-times-as-much-as-opus-5-5-for-nearly-the-same-results-in-a-venturebeat-bug-fixing-test"
-  },
-  {
-   "date": "2026-11-23",
-   "source": "ars",
-   "title": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
-   "score": null,
-   "url": "https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn/"
   }
  ],
  "competitors": [
@@ -1852,14 +1864,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "105",
-   "agent": "longs",
-   "task": "Гайд #2: 4 правки за фактчеком (веб/ПК уточнення, скрін g2_age без «Opus 4.5»), далі перевірка diff іншим агентом",
-   "started": "2026-11-23T07:30:25Z",
-   "finished": "2026-11-23T07:31:47Z",
-   "result": "Гайд #2: застосовано 4 обов'язкові правки фактчеку 23.11 + сегмент 8 (доросла аудиторія). Сегменти 45 minus і 12 title уточнено «веб і ПК»; сегмент 14 — «на вебі й у програмі для комп'ютера» (gsay частини [12,13,14] = 1…"
-  },
   {
    "id": "106",
    "agent": "factcheck",
@@ -2181,6 +2185,15 @@
    "agent": "de",
    "task": "Збирач даталейку 00:52Z: новини, TikTok/Instagram/TG-знімок, сигнали",
    "started": "2026-11-24T00:52:36Z",
+   "finished": null,
+   "result": "",
+   "agent_raw": "data"
+  },
+  {
+   "id": "145",
+   "agent": "de",
+   "task": "Збирач даталейку 04:52Z: новини, TikTok/Instagram/TG-знімок, сигнали",
+   "started": "2026-11-24T04:53:13Z",
    "finished": null,
    "result": "",
    "agent_raw": "data"
