@@ -132,7 +132,7 @@ if __name__ == "__main__":
         guide("weekly3")  # шоу #3, вихід 29.11 12:00Z; фактчек PASS 23.11 (гайд #2 → пт 27.11, якщо QA до 26.11 20:00; у ep83/ep85 є запасні дублі)
         guide("guide3")  # 24.11 власник: «спершу результат» → довгі в черзі першими; гайд #3 (9.12, спроба 2.12)
         for k in ("VC_REF", "VC_TOL"): os.environ.pop(k, None)
-        for mod in ("ep83", "ep84", "ep85", "ep86"): short(mod)
+        for mod in ("ep83", "ep84", "ep85", "ep86", "ep88", "ep89", "ep90"): short(mod)  # ep88–90: фактчек PASS 24.11, вихід 30.11–2.12
         log(ev="all_done", ok_requests=REQ["ok"])
     except RuntimeError as e:
         log(ev="STOP", reason=str(e)[:300], ok_requests=REQ["ok"])
