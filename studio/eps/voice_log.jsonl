@@ -228,3 +228,8 @@
 {"ev": "STOP", "reason": "TTS quota exhausted: 4 consecutive HTTP 429 from Gemini (gemini-3.8-flash-tts); try later or another key/model", "ok_requests": 13, "t": "08:50:52Z"}
 {"ev": "STOP", "reason": "TTS quota exhausted: 4 consecutive HTTP 429 from Gemini (gemini-3.8-flash-tts); try later or another key/model", "ok_requests": 0, "t": "09:19:57Z"}
 {"ev": "STOP", "reason": "TTS quota exhausted: 4 consecutive HTTP 429 from Gemini (gemini-3.8-flash-tts); try later or another key/model", "ok_requests": 0, "t": "10:19:36Z"}
+{"ev": "tts_ok", "n": 1, "out": "/home/claude/eps/weekly3/part10.wav", "res": "(58.16, 24000, 'audio/wav')", "t": "11:20:00Z"}
+{"ev": "part", "part": 10, "take": 1, "f0": 125.2, "f0_ok": true, "dur": 58.2, "audit": [{"seg": 30, "ratio": 1.02, "match": 0.75}, {"seg": 31, "ratio": 0.94, "match": 0.81}], "repeat_suspect": false, "t": "11:21:14Z"}
+{"ev": "part_final", "part": 10, "take": 1, "f0": 125.2, "clean": true, "t": "11:21:14Z"}
+{"ev": "short_fail", "ep": "ep83", "take": 1, "err": "r current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceede\nHTTP 429 {\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceede\n    raise RuntimeError(f\"TTS quota exhausted: 4 consecutive HTTP 429 from Gemini ({model}); try later or another key/model\")\nRuntimeError: TTS quota exhausted: 4 consecutive HTTP 429 from Gemini (gemini-3.8-flash-tts); try later or another key/model", "t": "11:22:48Z"}
+{"ev": "STOP", "reason": "quota: ep83", "ok_requests": 1, "t": "11:22:48Z"}
