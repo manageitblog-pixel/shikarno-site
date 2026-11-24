@@ -1333,8 +1333,8 @@
    "agent": "editor",
    "task": "Сценарії Shorts 30.11–2.12 (контроль без CTA, без «ШІ» у gsay)",
    "started": "2026-11-24T19:18:44Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-24T19:27:41Z",
+   "result": "ep88 (30.11 ChatGPT Plus), ep89 (1.12 тір відео безкоштовно), ep90 (2.12 13Z ШІ-агент і банк) — контроль v2; на фактчек"
   },
   {
    "id": "168",
@@ -1381,6 +1381,14 @@
    "agent": "research",
    "task": "фон: вечірній веб-скан трендів 19:35Z (світ+Україна, 12 год)",
    "started": "2026-11-24T19:25:31Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "174",
+   "agent": "factcheck",
+   "task": "Незалежний фактчек ep88–ep90",
+   "started": "2026-11-24T19:27:42Z",
    "finished": null,
    "result": ""
   }
