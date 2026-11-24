@@ -256,3 +256,4 @@
 {"ev": "all_done", "ok_requests": 1, "t": "16:20:14Z"}
 {"ev": "tts_ok", "ep": "ep83", "part": "outro_fix", "text": "Що штучний інтелект знає про тебе — у відео під роликом.", "res": "(3.44, 24000, 'audio/wav')", "t": "16:46:02Z"}
 {"ev": "tts_fail", "ep": "ep83", "part": "outro_fix_take2", "text": "Що штучний інтелект знає про тебе — у відео під роликом.", "res": "TTS quota exhausted: 4 consecutive HTTP 429 from Gemini (gemini-3.8-flash-tts); try later or another key/model", "t": "16:48:13Z"}
+{"ev": "tts_ok", "n": 1, "out": "/home/claude/eps/guide3/part0.wav", "res": "(64.8, 24000, 'audio/wav')", "t": "18:18:56Z"}
