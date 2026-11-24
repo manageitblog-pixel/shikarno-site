@@ -1,18 +1,18 @@
 {
- "generated": "2026-11-24T04:55:06Z",
+ "generated": "2026-11-24T06:07:06Z",
  "fresh": {
-  "yt_live": "2026-11-24T04:55:06Z",
+  "yt_live": "2026-11-24T06:07:06Z",
   "yt_analytics": "2026-11-20",
-  "tg_members": "2026-11-24T04:55:07Z",
-  "tg_posts": "2026-11-24T04:55:08Z",
-  "ideas": "2026-11-24T00:54:45Z",
+  "tg_members": "2026-11-24T06:07:07Z",
+  "tg_posts": "2026-11-24T06:07:08Z",
+  "ideas": "2026-11-24T05:24:37Z",
   "news": "2026-11-24 04:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-24T04",
   "instagram": "2026-11-24T04",
   "site": "2026-11-21",
-  "site_live": "2026-11-24T04:55:09Z",
-  "activity": "2026-11-24T04:53:13Z",
+  "site_live": "2026-11-24T06:07:10Z",
+  "activity": "2026-11-24T05:17:31Z",
   "asks": "2026-11-23T19:55:00Z"
  },
  "notes": [],
@@ -21,7 +21,7 @@
   "subs_goal": 1000,
   "long_hours": 10.7,
   "long_hours_goal": 4000,
-  "views_total": 11982,
+  "views_total": 12193,
   "videos": 96,
   "views_7d": 815,
   "pct_7d": 51.0,
@@ -538,9 +538,9 @@
  "platforms": {
   "youtube": {
    "subs": 315,
-   "views_total": 11982,
+   "views_total": 12193,
    "videos": 96,
-   "live_at": "2026-11-24T04:55:06Z",
+   "live_at": "2026-11-24T06:07:06Z",
    "views_7d": 815,
    "pct_7d": 51.0,
    "subs_7d": 2,
@@ -816,7 +816,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-24T04:55:09Z",
+    "updated": "2026-11-24T06:07:10Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 0,
@@ -829,16 +829,6 @@
      "pageloads": 10,
      "visits": 10,
      "hours": [
-      {
-       "h": "2026-11-23T05:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
-      {
-       "h": "2026-11-23T06:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
       {
        "h": "2026-11-23T07:00:00Z",
        "pageloads": 0,
@@ -946,6 +936,16 @@
       },
       {
        "h": "2026-11-24T04:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-24T05:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-24T06:00:00Z",
        "pageloads": 0,
        "visits": 0
       }
@@ -1273,7 +1273,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 14
+   "total": 20
   },
   {
    "id": "gljrHADi4aU",
@@ -1655,8 +1655,8 @@
   }
  ],
  "ideas_count": {
-  "total": 95,
-  "open": 95
+  "total": 98,
+  "open": 98
  },
  "lake": {
   "videos": 94,
@@ -1864,14 +1864,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "106",
-   "agent": "factcheck",
-   "task": "Гайд #2: перевірка diff правок 23.11 (інший агент)",
-   "started": "2026-11-23T07:32:17Z",
-   "finished": "2026-11-23T07:32:59Z",
-   "result": "Гайд #2: перевірка diff 23.11 — PASS. Усі 4 обов'язкові правки й правка сегмента 8 застосовані точно, нових фактів немає, gsay [12,13,14]=1296≤1300, «Opus 4.5» на g2_age.png розмито"
-  },
   {
    "id": "107",
    "agent": "longs",
@@ -2197,6 +2189,15 @@
    "finished": null,
    "result": "",
    "agent_raw": "data"
+  },
+  {
+   "id": "146",
+   "agent": "trend",
+   "task": "фон: ранковий веб-скан трендів (з 21Z 23.11) → ідеї, кандидати в шоу #3",
+   "started": "2026-11-24T05:17:31Z",
+   "finished": null,
+   "result": "",
+   "agent_raw": "research"
   }
  ],
  "agents": [
