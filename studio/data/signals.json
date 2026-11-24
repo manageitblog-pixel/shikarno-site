@@ -110,15 +110,24 @@
     "posted_at": "2026-11-23T09:07:16+02:00",
     "title": "Чорна п'ятниця — 27 листопада. Перевір знижку за 1 хвилину з ChatGPT",
     "metrics": {
-      "measured_at": "2026-11-23T16:55Z",
-      "age_h": 9.8,
-      "tg_views": 2,
+      "measured_at": "2026-11-24T08:58Z",
+      "age_h": 25.9,
+      "tg_views": 3,
       "tg_members": 6,
       "source": "https://t.me/s/shikarno_ai_ua (публічна сторінка)",
-      "tiktok_views": "немає ролика в TikTok за цією темою (знімок vidIQ 23.11 16Z)",
-      "note": "проміжний замір (<24 год); повний — після 24.11 07:07Z"
+      "tiktok_views": "немає ролика в TikTok за цією темою (знімок vidIQ 24.11 08Z)",
+      "note": "24-годинний замір (>24 год від публікації)"
     },
     "history": [
+      {
+        "measured_at": "2026-11-23T16:55Z",
+        "age_h": 9.8,
+        "tg_views": 2,
+        "tg_members": 6,
+        "source": "https://t.me/s/shikarno_ai_ua (публічна сторінка)",
+        "tiktok_views": "немає ролика в TikTok за цією темою (знімок vidIQ 23.11 16Z)",
+        "note": "проміжний замір (<24 год); повний — після 24.11 07:07Z"
+      },
       {
         "measured_at": "2026-11-23T12:58Z",
         "age_h": 5.9,
@@ -138,12 +147,22 @@
     "posted_at": "2026-11-23T09:00:00+02:00",
     "title": "Чорна п'ятниця 2026: як перевірити знижку з ChatGPT і Gemini",
     "metrics": {
-      "measured_at": "2026-11-23T12:58Z",
-      "age_h": 6,
+      "measured_at": "2026-11-24T08:58Z",
+      "age_h": 25.9,
       "gsc_impressions": null,
       "gsc_clicks": null,
-      "note": "Search Console відстає на 2 дні (дані лише до 21.11) — покази/кліки будуть після 25.11",
-      "tiktok_views": "немає ролика в TikTok за цією темою"
-    }
+      "note": "24-годинний замір: Search Console у даталейку лише до 22.11 (стаття від 23.11) — сторінки ще немає в site_pages; покази/кліки — після 25.11",
+      "tiktok_views": "немає ролика в TikTok за цією темою (знімок vidIQ 24.11 08Z)"
+    },
+    "history": [
+      {
+        "measured_at": "2026-11-23T12:58Z",
+        "age_h": 6,
+        "gsc_impressions": null,
+        "gsc_clicks": null,
+        "note": "Search Console відстає на 2 дні (дані лише до 21.11) — покази/кліки будуть після 25.11",
+        "tiktok_views": "немає ролика в TikTok за цією темою"
+      }
+    ]
   }
 ]
