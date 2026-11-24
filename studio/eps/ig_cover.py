@@ -21,7 +21,7 @@ from PIL import Image, ImageDraw, ImageFilter
 EPS = Path(__file__).resolve().parent
 W, H = 1080, 1920
 CROP_TOP, CROP_H = 240, 1440          # центральний кроп 3:4
-COVER_SEC = 0.5
+COVER_SEC = float(__import__("os").environ.get("IG_COVER_SEC", "0.1"))  # 24.11: 0.5 → 0.1 с — статичний кадр на старті міг давати свайпи (свіжі Reels 2–7% перегляду); обкладинкою IG бере кадр 0
 
 YELLOW, PURPLE, PINK, CYAN = (255, 214, 10), (124, 92, 255), (255, 79, 139), (76, 242, 255)
 BG0, BG1 = (11, 10, 28), (26, 18, 64)
