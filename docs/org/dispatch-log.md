@@ -189,3 +189,4 @@
 - 24.11 16:52Z продакшн/редактор: ep83 outro «ШІ» — 1 TTS-запит («штучний інтелект») дав F0 175,6 (поза смугою), 2-й — 429 → не підмінено, ep83 заливаємо як є; статті без youtube: /novyny/moonlock-chy-varto-platyty/ (26.11) і /novyny/kudy-poikhaty-na-vykhidni-shi-tir-lyst/ (28.11), build --future OK; slug-и й backfill — у upload-queue-2026-11-25.md.
 - 24.11 17:00Z Instagram: перший Reel з обкладинкою 0,1 с (clip2) — 34,7% перегляду, skip 50% (за 3,5 год, 6 переглядів) проти 2–8% / 82–100% у Reels з 0,5 с. Підписники IG 4→7. Ранній сигнал, мала вибірка — висновок у неділю.
 - 24.11 17:08Z стаття ep82 /novyny/menyu-na-tyzhden-shi-tir-lyst/ була 404 (cron знову не спрацював) → pages.yml вручну → 200.
+- 24.11 17:30Z TikTok: clip2 і ep82 опубліковано (посилання власнику); заплановано 25.11 clip3 13:00Z і ep78 17:00Z (vidIQ, публічно). Instagram: Reel ep82 (DgIfOmSgRBd). Рестарт воркера ~17:20Z — вотчер перезапущено.

@@ -187,12 +187,26 @@
   "clip2": {
    "scheduled": "2026-11-24T13:00:00Z",
    "via": "vidIQ",
-   "postId": "3cf5ebb5-6d20-4e43-8a91-022c9e9e05b8"
+   "postId": "3cf5ebb5-6d20-4e43-8a91-022c9e9e05b8",
+   "url": "https://www.tiktok.com/@shikarno_ai_ua/video/7711722258531749138",
+   "status": "published"
   },
   "ep82_tier_kitchen": {
    "scheduled": "2026-11-24T17:00:00Z",
    "via": "vidIQ",
-   "postId": "25460846-86ec-468a-90f9-be3a8d5ea473"
+   "postId": "25460846-86ec-468a-90f9-be3a8d5ea473",
+   "url": "https://www.tiktok.com/@shikarno_ai_ua/video/7711784437977009429",
+   "status": "published"
+  },
+  "clip3": {
+   "postId": "8c417860-1720-49b9-b154-e06ba16978ed",
+   "scheduled": "2026-11-25T13:00:00Z",
+   "status": "scheduled"
+  },
+  "ep78_signal_shi_agent": {
+   "postId": "ea3ffa9c-9eee-407e-848c-1913253d28f5",
+   "scheduled": "2026-11-25T17:00:00Z",
+   "status": "scheduled"
   }
  },
  "settings_owner_2211": {
