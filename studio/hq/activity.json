@@ -1167,6 +1167,14 @@
    "started": "2026-11-24T05:17:31Z",
    "finished": null,
    "result": ""
+  },
+  {
+   "id": "147",
+   "agent": "production",
+   "task": "Гайд #2: рендер (озвучка 16/16 у смузі) + QA до 26.11 20:00 → вихід 27.11",
+   "started": "2026-11-24T06:18:09Z",
+   "finished": null,
+   "result": ""
   }
  ]
 }
