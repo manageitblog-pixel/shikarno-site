@@ -1,19 +1,19 @@
 {
- "generated": "2026-11-24T08:06:37Z",
+ "generated": "2026-11-24T08:57:42Z",
  "fresh": {
-  "yt_live": "2026-11-24T08:06:37Z",
+  "yt_live": "2026-11-24T08:57:43Z",
   "yt_analytics": "2026-11-21",
-  "tg_members": "2026-11-24T08:06:38Z",
-  "tg_posts": "2026-11-24T08:06:38Z",
-  "ideas": "2026-11-24T07:31:05Z",
-  "news": "2026-11-24 04:53",
+  "tg_members": "2026-11-24T08:57:43Z",
+  "tg_posts": "2026-11-24T08:57:44Z",
+  "ideas": "2026-11-24T08:56:55Z",
+  "news": "2026-11-24 08:53",
   "comp": "2026-11-23",
-  "tiktok": "2026-11-24T04",
-  "instagram": "2026-11-24T04",
-  "site": "2026-11-21",
-  "site_live": "2026-11-24T08:06:40Z",
-  "activity": "2026-11-24T07:37:28Z",
-  "asks": "2026-11-23T19:55:00Z"
+  "tiktok": "2026-11-24T08",
+  "instagram": "2026-11-24T08",
+  "site": "2026-11-22",
+  "site_live": "2026-11-24T08:57:46Z",
+  "activity": "2026-11-24T08:52:50Z",
+  "asks": "2026-11-24T08:20Z"
  },
  "notes": [],
  "kpi": {
@@ -32,8 +32,8 @@
   ],
   "tg": 6,
   "tg_goal": 150,
-  "site_clicks_28d": 44,
-  "site_impr_28d": 3776,
+  "site_clicks_28d": 46,
+  "site_impr_28d": 3893,
   "tiktok_auto": 6
  },
  "days": [
@@ -354,6 +354,12 @@
    "c": 1,
    "i": 107,
    "pos": 10.2
+  },
+  {
+   "d": "2026-11-22",
+   "c": 2,
+   "i": 117,
+   "pos": 8.6
   }
  ],
  "history": [
@@ -517,10 +523,10 @@
    "subs": 0,
    "long_h": 2.2,
    "short_views": 466,
-   "clicks": 9,
-   "impr": 852,
+   "clicks": 11,
+   "impr": 969,
    "partial": true,
-   "partial_site": true,
+   "partial_site": false,
    "subs_cum": 160,
    "long_cum": 10.5,
    "subs_total": 315
@@ -545,7 +551,7 @@
    "subs": 315,
    "views_total": 12193,
    "videos": 96,
-   "live_at": "2026-11-24T08:06:37Z",
+   "live_at": "2026-11-24T08:57:43Z",
    "views_7d": 736,
    "pct_7d": 51.1,
    "subs_7d": 0,
@@ -588,14 +594,14 @@
      "id": "Vp1PPNxtcrI"
     },
     {
-     "title": "Сяйво від Київстару: український штучний інтелект — коли вийде і що відомо 🇺🇦",
-     "views": 52,
-     "id": "Vv5pl-AFtgA"
-    },
-    {
      "title": "Meta AI у WhatsApp: що він запам'ятовує і де справжній інкогніто-чат 💬",
      "views": 42,
      "id": "bRanUVdt2Pw"
+    },
+    {
+     "title": "Що ШІ знає про тебе: як вимкнути навчання в ChatGPT, Gemini, Claude, Meta AI і Copilot (2026)",
+     "views": 42,
+     "id": "GNqU-wcz9Ws"
     }
    ],
    "best_live": [
@@ -618,12 +624,12 @@
   },
   "tiktok": {
    "videos": 12,
-   "views_total": 15592,
-   "views_7d": 1508,
+   "views_total": 15671,
+   "views_7d": 1587,
    "new_7d": 6,
-   "saves_total": 124,
-   "likes_total": 309,
-   "last_snapshot": "2026-11-24T04",
+   "saves_total": 125,
+   "likes_total": 313,
+   "last_snapshot": "2026-11-24T08",
    "best": [
     {
      "title": "Український ШІ Сяйво: коли вийде",
@@ -687,6 +693,10 @@
     {
      "x": "2026-11-24T04",
      "v": 15592
+    },
+    {
+     "x": "2026-11-24T08",
+     "v": 15671
     }
    ]
   },
@@ -694,34 +704,34 @@
    "ig_goal": 100,
    "ig_goal_note": "до 1.12; далі 500 до 31.01 (поріг «Подарунків» — перевірити для України)",
    "followers": 4,
-   "views_30d": 5,
-   "reach_30d": 8,
-   "acc_at": "23.11 21Z",
+   "views_30d": 252,
+   "reach_30d": 220,
+   "acc_at": "24.11 08Z",
    "reels": 9,
-   "plays_total": 224,
-   "likes_total": 2,
+   "plays_total": 252,
+   "likes_total": 3,
    "saves_total": 1,
-   "last_snapshot": "2026-11-24T04",
+   "last_snapshot": "2026-11-24T08",
    "best": [
     {
      "shortcode": "DgGRAlDjqkk",
      "title": "Як продати на OLX швидше з ШІ",
-     "plays": 55,
-     "pct": 2,
+     "plays": 57,
+     "pct": 3,
      "published": "2026-11-23"
     },
     {
      "shortcode": "DgGRAVLFORb",
      "title": "Інкогніто в ШІ — не сейф",
-     "plays": 46,
+     "plays": 51,
      "pct": 8,
      "published": "2026-11-23"
     },
     {
      "shortcode": "DgGQ8fODsVW",
      "title": "Сімейний бюджет з ШІ",
-     "plays": 44,
-     "pct": 2,
+     "plays": 47,
+     "pct": 4,
      "published": "2026-11-23"
     }
    ],
@@ -737,6 +747,10 @@
     {
      "x": "2026-11-24T04",
      "v": 224
+    },
+    {
+     "x": "2026-11-24T08",
+     "v": 252
     }
    ],
    "followers_hist": [
@@ -751,15 +765,19 @@
     {
      "x": "2026-11-24T04",
      "v": 4
+    },
+    {
+     "x": "2026-11-24T08",
+     "v": 4
     }
    ]
   },
   "site": {
-   "impr_28d": 3776,
-   "clicks_28d": 44,
-   "ctr": 1.17,
-   "avg_pos": 8.2,
-   "last_day": "2026-11-21",
+   "impr_28d": 3893,
+   "clicks_28d": 46,
+   "ctr": 1.18,
+   "avg_pos": 8.3,
+   "last_day": "2026-11-22",
    "first_day": "2026-10-27",
    "weeks": "2026-W44…2026-W47",
    "top_queries": [
@@ -817,12 +835,12 @@
     },
     {
      "x": "2026-11-16",
-     "v": 852,
-     "p": true
+     "v": 969,
+     "p": false
     }
    ],
    "live": {
-    "updated": "2026-11-24T08:06:40Z",
+    "updated": "2026-11-24T08:57:46Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 3,
@@ -960,32 +978,32 @@
     "days": [
      {
       "d": "2026-11-11",
+      "pageloads": 40,
+      "visits": 40,
+      "sampled": true
+     },
+     {
+      "d": "2026-11-12",
+      "pageloads": 60,
+      "visits": 40,
+      "sampled": true
+     },
+     {
+      "d": "2026-11-13",
       "pageloads": 20,
       "visits": 20,
       "sampled": true
      },
      {
-      "d": "2026-11-12",
+      "d": "2026-11-14",
       "pageloads": 0,
       "visits": 0,
       "sampled": false
      },
      {
-      "d": "2026-11-13",
-      "pageloads": 30,
-      "visits": 30,
-      "sampled": true
-     },
-     {
-      "d": "2026-11-14",
-      "pageloads": 10,
-      "visits": 10,
-      "sampled": true
-     },
-     {
       "d": "2026-11-15",
       "pageloads": 10,
-      "visits": 0,
+      "visits": 10,
       "sampled": true
      },
      {
@@ -1115,7 +1133,7 @@
    "members": 6,
    "tg_goal": 150,
    "posts_7d": 16,
-   "views_7d": 51,
+   "views_7d": 52,
    "views_avg": 3.2,
    "posts_error": null,
    "best": [
@@ -1246,7 +1264,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 14
+   "total": 15
   },
   {
    "id": "ENKGdbr04h0",
@@ -1290,7 +1308,7 @@
    "views7": 2,
    "pct": null,
    "complete": false,
-   "total": 4
+   "total": 5
   },
   {
    "id": "CfHTFrYH_z4",
@@ -1379,17 +1397,6 @@
    "pct": 25.5,
    "complete": true,
    "total": 38
-  },
-  {
-   "id": "Vv5pl-AFtgA",
-   "title": "Сяйво від Київстару: український штучний інтелект — коли вийде і що відомо 🇺🇦",
-   "format": "news",
-   "short": true,
-   "published": "2026-11-14",
-   "views7": 52,
-   "pct": 32.4,
-   "complete": true,
-   "total": 57
   }
  ],
  "ideas": [
@@ -1665,22 +1672,71 @@
   }
  ],
  "ideas_count": {
-  "total": 99,
-  "open": 96
+  "total": 103,
+  "open": 98
  },
  "lake": {
   "videos": 96,
   "daily": 800,
-  "news": 1964,
-  "niche": 1030,
+  "news": 1971,
+  "niche": 1035,
   "comp": 511,
   "comp_videos": 62794,
-  "research": 70,
-  "posts": 103,
-  "site_queries": 163,
+  "research": 74,
+  "posts": 108,
+  "site_queries": 249,
   "comp_ai": 241
  },
  "news": [
+  {
+   "date": "2026-11-24",
+   "source": "meta",
+   "title": "Introducing Muse in the UK: A Personal AI Agent You Control",
+   "score": null,
+   "url": "https://about.fb.com/news/2026/11/introducing-muse-in-the-uk-a-personal-ai-agent-you-control/"
+  },
+  {
+   "date": "2026-11-24",
+   "source": "devua",
+   "title": "Google подала патентну заявку на ШІ-телеканал, який генерує шоу під глядача та робить його головним героєм",
+   "score": null,
+   "url": "https://dev.ua/news/google-podala-patentnu-zaiavku-na-shi-telekanal-iakyi-heneruie-shou-pid-hliadacha-ta-robyt-ioho-holovnym-heroiem-1795505050"
+  },
+  {
+   "date": "2026-11-24",
+   "source": "devua",
+   "title": "Новий претендент на світове лідерство серед eCommerce SaaS: BooStore — швидкість, автоматизація та повна кастомізація",
+   "score": null,
+   "url": "https://dev.ua/news/novyi-pretendent-na-svitove-liderstvo-sered-ecommerce-saas-boostore-shvydkist-avtomatyzatsiia-ta-povna-kastomizatsiia-1795436894"
+  },
+  {
+   "date": "2026-11-24",
+   "source": "devua",
+   "title": "Intellias використовує ШІ у 60% проєктів і планує наростити виторг на 8–9% до кінця року",
+   "score": null,
+   "url": "https://dev.ua/news/intellias-transformuietsia-1795505647"
+  },
+  {
+   "date": "2026-11-24",
+   "source": "devua",
+   "title": "Що малому бізнесу насправді потрібно від IT: CRM, облік і сайт, а не штучний інтелект",
+   "score": null,
+   "url": "https://dev.ua/news/shcho-malomu-biznesu-naspravdi-potribno-vid-it-crm-oblik-i-sait-a-ne-shtuchnyi-intelekt-1795505786"
+  },
+  {
+   "date": "2026-11-24",
+   "source": "devua",
+   "title": "«Напишу промпт у Suno і я вже композитор?». Артем Пивоваров посварився з Могилевською та фанами через ШІ-пісню на «Голосі країни»",
+   "score": null,
+   "url": "https://dev.ua/news/napyshu-prompt-u-suno-i-ia-vzhe-kompozytor"
+  },
+  {
+   "date": "2026-11-24",
+   "source": "hn",
+   "title": "Show HN: Genesis Map – Visualize your agent's changes. See where they can break",
+   "score": 7,
+   "url": "https://github.com/GenesisAgentInfra/genesis"
+  },
   {
    "date": "2026-11-24",
    "source": "speka",
@@ -1692,7 +1748,7 @@
    "date": "2026-11-24",
    "source": "hn",
    "title": "Declare is a UI language for you and your AI",
-   "score": 15,
+   "score": 51,
    "url": "https://davidtemkin.github.io/declarelang/"
   },
   {
@@ -1706,7 +1762,7 @@
    "date": "2026-11-24",
    "source": "hn",
    "title": "Toolfence-scan – static checks for Cursor/Claude/Copilot skills",
-   "score": 6,
+   "score": 7,
    "url": "https://github.com/StockGorilla/skill-scan"
   },
   {
@@ -1715,55 +1771,6 @@
    "title": "Show HN: Agent-first-browse – Web automation with delta snapshots and LangGraph",
    "score": 6,
    "url": "https://github.com/SandeepAi369/Agent-first-browse"
-  },
-  {
-   "date": "2026-11-24",
-   "source": "hn",
-   "title": "Incognide, the AI-native IDE for research and development, reaches 500 gh stars",
-   "score": 5,
-   "url": "https://github.com/NPC-Worldwide/incognide"
-  },
-  {
-   "date": "2026-11-24",
-   "source": "venturebeat",
-   "title": "Z.ai's GLM-5.4 aims to match models up to four times its size by running 28 layers twice",
-   "score": null,
-   "url": "https://venturebeat.com/technology/z-ais-glm-5-4-aims-to-match-models-up-to-four-times-its-size-by-running-28-layers-twice"
-  },
-  {
-   "date": "2026-11-23",
-   "source": "openai",
-   "title": "OpenAI and Cisco introduce Shirudo",
-   "score": null,
-   "url": "https://openai.com/index/introducing-shirudo"
-  },
-  {
-   "date": "2026-11-23",
-   "source": "openai",
-   "title": "Richpanel helps companies automate 50% of support in 30 days",
-   "score": null,
-   "url": "https://openai.com/business/customer-stories/richpanel-ai-customer-support"
-  },
-  {
-   "date": "2026-11-23",
-   "source": "techcrunch",
-   "title": "Anthropic launches Claude Ship, letting AI agents review, fix, and approve code changes",
-   "score": null,
-   "url": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/"
-  },
-  {
-   "date": "2026-11-23",
-   "source": "techcrunch",
-   "title": "Supertake raises $20M to let AI agents turn your market predictions into stock portfolios",
-   "score": null,
-   "url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/"
-  },
-  {
-   "date": "2026-11-23",
-   "source": "techcrunch",
-   "title": "Elon Musk and others rejoice as Jensen Huang is reinstated at Nvidia amid scandal",
-   "score": null,
-   "url": "https://techcrunch.com/2026/11/23/elon-musk-and-others-rejoice-as-jensen-huang-is-reinstated-at-nvidia-amid-scandal/"
   }
  ],
  "competitors": [
@@ -1874,14 +1881,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "113",
-   "agent": "cso",
-   "task": "CSO понеділок: факт тижня vs план по 4 платформах, темп до STAR, рішення тижня, експеримент",
-   "started": "2026-11-23T09:20:12Z",
-   "finished": "2026-11-23T09:25:05Z",
-   "result": "CSO 23.11: факт/план 4 платформ (години в графіку, підп −86%, кліки −43%, TG −87%), гайд #2 → пт 27.11, Shorts лише tier/prof/free, старт E1 yt-related-cta з 30.11"
-  },
   {
    "id": "114",
    "agent": "seo",
@@ -2211,6 +2210,15 @@
    "started": "2026-11-24T07:27:45Z",
    "finished": "2026-11-24T07:37:28Z",
    "result": "ep82 стаття; прогноз при заливці; tg_daily окремо; TikTok-пагінація; HQ: 20 завислих закрито, IG, розклад"
+  },
+  {
+   "id": "153",
+   "agent": "de",
+   "task": "Збирач даталейку 08:52Z (щоденний): sync, ingest, outliers, знімки TikTok/IG/TG, snapshot",
+   "started": "2026-11-24T08:52:50Z",
+   "finished": null,
+   "result": "",
+   "agent_raw": "data"
   }
  ],
  "agents": [
@@ -2548,6 +2556,12 @@
    "what": "Related video для ep85 → M-KQwpDwpA4 (гайд #1)",
    "why": "Short веде на гайд",
    "when": "після виходу ep85 28.11",
+   "status": "чекає власника"
+  },
+  {
+   "what": "Related video для ep84 (RIt-PqOGJTg) і ep86 (xYez8pJmL4E) → 6-2a9ncHaz4 «ШІ для професій #1» (YouTube Studio)",
+   "why": "Shorts «ШІ для професій» мають вести на перший ролик серії; ep84/86 — контроль експерименту yt-related-cta (Related ставиться, голосового заклику немає)",
+   "when": "до 27.11 19:00 (вихід ep84)",
    "status": "чекає власника"
   }
  ]
