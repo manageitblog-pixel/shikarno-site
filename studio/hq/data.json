@@ -1,18 +1,18 @@
 {
- "generated": "2026-11-24T21:18:02Z",
+ "generated": "2026-11-24T22:07:06Z",
  "fresh": {
-  "yt_live": "2026-11-24T21:18:02Z",
+  "yt_live": "2026-11-24T22:07:06Z",
   "yt_analytics": "2026-11-21",
-  "tg_members": "2026-11-24T21:18:03Z",
-  "tg_posts": "2026-11-24T21:18:03Z",
+  "tg_members": "2026-11-24T22:07:07Z",
+  "tg_posts": "2026-11-24T22:07:08Z",
   "ideas": "2026-11-24T20:56:16Z",
   "news": "2026-11-24 20:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-24T20",
   "instagram": "2026-11-24T20",
   "site": "2026-11-22",
-  "site_live": "2026-11-24T21:18:05Z",
-  "activity": "2026-11-24T21:18:01Z",
+  "site_live": "2026-11-24T22:07:10Z",
+  "activity": "2026-11-24T21:19:41Z",
   "asks": "2026-11-24T18:40Z"
  },
  "notes": [],
@@ -551,7 +551,7 @@
    "subs": 315,
    "views_total": 12275,
    "videos": 98,
-   "live_at": "2026-11-24T21:18:02Z",
+   "live_at": "2026-11-24T22:07:06Z",
    "views_7d": 736,
    "pct_7d": 51.1,
    "subs_7d": 0,
@@ -606,14 +606,14 @@
    ],
    "best_live": [
     {
+     "title": "Меню на тиждень і вечеря з того, що є 🍳 Тір-лист Байта #7",
+     "views": 107,
+     "id": "bvS0k_r3_bs"
+    },
+    {
      "title": "ШІ для вчителя: план уроку і тест за 5 хвилин у Google Classroom 🍎",
      "views": 104,
      "id": "ENKGdbr04h0"
-    },
-    {
-     "title": "Меню на тиждень і вечеря з того, що є 🍳 Тір-лист Байта #7",
-     "views": 101,
-     "id": "bvS0k_r3_bs"
     },
     {
      "title": "ChatGPT вчиться на твоїх чатах — як вимкнути за 30 секунд 🔐",
@@ -876,24 +876,19 @@
     }
    ],
    "live": {
-    "updated": "2026-11-24T21:18:05Z",
+    "updated": "2026-11-24T22:07:10Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
-    "today_pageloads": 8,
-    "today_visits": 4,
-    "yesterday_pageloads": 10,
-    "yesterday_visits": 10,
-    "pageloads_7d": 50,
-    "visits_7d": 42,
+    "today_pageloads": 0,
+    "today_visits": 0,
+    "yesterday_pageloads": 9,
+    "yesterday_visits": 5,
+    "pageloads_7d": 49,
+    "visits_7d": 41,
     "last24h": {
-     "pageloads": 8,
-     "visits": 4,
+     "pageloads": 9,
+     "visits": 5,
      "hours": [
-      {
-       "h": "2026-11-23T22:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
       {
        "h": "2026-11-23T23:00:00Z",
        "pageloads": 0,
@@ -1006,18 +1001,17 @@
       },
       {
        "h": "2026-11-24T21:00:00Z",
+       "pageloads": 1,
+       "visits": 1
+      },
+      {
+       "h": "2026-11-24T22:00:00Z",
        "pageloads": 0,
        "visits": 0
       }
      ]
     },
     "days": [
-     {
-      "d": "2026-11-11",
-      "pageloads": 40,
-      "visits": 40,
-      "sampled": true
-     },
      {
       "d": "2026-11-12",
       "pageloads": 60,
@@ -1050,9 +1044,9 @@
      },
      {
       "d": "2026-11-17",
-      "pageloads": 5,
-      "visits": 5,
-      "sampled": false
+      "pageloads": 20,
+      "visits": 20,
+      "sampled": true
      },
      {
       "d": "2026-11-18",
@@ -1092,8 +1086,14 @@
      },
      {
       "d": "2026-11-24",
-      "pageloads": 8,
-      "visits": 4,
+      "pageloads": 9,
+      "visits": 5,
+      "sampled": false
+     },
+     {
+      "d": "2026-11-25",
+      "pageloads": 0,
+      "visits": 0,
       "sampled": false
      }
     ],
@@ -1104,18 +1104,18 @@
      },
      {
       "path": "/novyny/claude-bezkoshtovno/",
-      "count": 5
+      "count": 4
      },
      {
       "path": "/novyny/promty-dlya-chatgpt/",
-      "count": 5
+      "count": 4
      },
      {
       "path": "/novyny/shtuchnyj-intelekt-dlya-ditej-tir-lyst/",
       "count": 2
      },
      {
-      "path": "/novyny/moonlock-iphone-shakhrajski-sms/",
+      "path": "/novyny/gemini-dlya-studentiv-bezkoshtovno/",
       "count": 2
      }
     ],
@@ -1137,14 +1137,14 @@
       "count": 2
      },
      {
-      "host": "www.bing.com",
+      "host": "www.facebook.com",
       "count": 2
      }
     ],
     "top_countries_7d": [
      {
       "country": "UA",
-      "count": 31
+      "count": 30
      },
      {
       "country": "US",
@@ -1300,7 +1300,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 101
+   "total": 107
   },
   {
    "id": "_wp0rz8edB8",
@@ -2276,8 +2276,8 @@
    "agent": "post",
    "task": "Озвучка: оркестратор 21:18Z",
    "started": "2026-11-24T21:18:01Z",
-   "finished": null,
-   "result": "",
+   "finished": "2026-11-24T21:19:41Z",
+   "result": "429 одразу (0 ок); 4-а поспіль; повтор 22:17Z",
    "agent_raw": "production"
   }
  ],
