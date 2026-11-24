@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-24T15:08:16Z",
+ "generated": "2026-11-24T16:07:10Z",
  "fresh": {
-  "yt_live": "2026-11-24T15:08:16Z",
+  "yt_live": "2026-11-24T16:07:10Z",
   "yt_analytics": "2026-11-21",
-  "tg_members": "2026-11-24T15:08:17Z",
-  "tg_posts": "2026-11-24T15:08:18Z",
+  "tg_members": "2026-11-24T16:07:11Z",
+  "tg_posts": "2026-11-24T16:07:12Z",
   "ideas": "2026-11-24T13:24:41Z",
   "news": "2026-11-24 12:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-24T12",
   "instagram": "2026-11-24T12",
   "site": "2026-11-22",
-  "site_live": "2026-11-24T15:08:19Z",
+  "site_live": "2026-11-24T16:07:13Z",
   "activity": "2026-11-24T13:18:14Z",
   "asks": "2026-11-24T08:20Z"
  },
@@ -551,7 +551,7 @@
    "subs": 315,
    "views_total": 12193,
    "videos": 97,
-   "live_at": "2026-11-24T15:08:16Z",
+   "live_at": "2026-11-24T16:07:10Z",
    "views_7d": 736,
    "pct_7d": 51.1,
    "subs_7d": 0,
@@ -617,7 +617,7 @@
     },
     {
      "title": "Що ШІ знає про тебе: як вимкнути навчання в ChatGPT, Gemini, Claude, Meta AI і Copilot (2026)",
-     "views": 80,
+     "views": 83,
      "id": "GNqU-wcz9Ws"
     }
    ]
@@ -852,7 +852,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-24T15:08:19Z",
+    "updated": "2026-11-24T16:07:13Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 7,
@@ -865,11 +865,6 @@
      "pageloads": 16,
      "visits": 12,
      "hours": [
-      {
-       "h": "2026-11-23T16:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
       {
        "h": "2026-11-23T17:00:00Z",
        "pageloads": 2,
@@ -982,6 +977,11 @@
       },
       {
        "h": "2026-11-24T15:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-24T16:00:00Z",
        "pageloads": 0,
        "visits": 0
       }
@@ -1408,7 +1408,7 @@
    "views7": 42,
    "pct": 9.7,
    "complete": true,
-   "total": 80
+   "total": 83
   },
   {
    "id": "ZSOH2sXLI_Y",
