@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-24T00:55:16Z",
+ "generated": "2026-11-24T02:06:44Z",
  "fresh": {
-  "yt_live": "2026-11-24T00:55:16Z",
+  "yt_live": "2026-11-24T02:06:44Z",
   "yt_analytics": "2026-11-20",
-  "tg_members": "2026-11-24T00:55:17Z",
-  "tg_posts": "2026-11-24T00:55:18Z",
+  "tg_members": "2026-11-24T02:06:45Z",
+  "tg_posts": "2026-11-24T02:06:46Z",
   "ideas": "2026-11-24T00:54:45Z",
   "news": "2026-11-24 00:52",
   "comp": "2026-11-23",
   "tiktok": "2026-11-24T00",
   "instagram": "2026-11-24T00",
   "site": "2026-11-21",
-  "site_live": "2026-11-24T00:55:21Z",
+  "site_live": "2026-11-24T02:06:47Z",
   "activity": "2026-11-24T00:52:36Z",
   "asks": "2026-11-23T19:55:00Z"
  },
@@ -540,7 +540,7 @@
    "subs": 315,
    "views_total": 11982,
    "videos": 96,
-   "live_at": "2026-11-24T00:55:16Z",
+   "live_at": "2026-11-24T02:06:44Z",
    "views_7d": 815,
    "pct_7d": 51.0,
    "subs_7d": 2,
@@ -596,12 +596,12 @@
    "best_live": [
     {
      "title": "ШІ для вчителя: план уроку і тест за 5 хвилин у Google Classroom 🍎",
-     "views": 96,
+     "views": 97,
      "id": "ENKGdbr04h0"
     },
     {
      "title": "ChatGPT вчиться на твоїх чатах — як вимкнути за 30 секунд 🔐",
-     "views": 96,
+     "views": 97,
      "id": "Vp1PPNxtcrI"
     },
     {
@@ -804,7 +804,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-24T00:55:21Z",
+    "updated": "2026-11-24T02:06:47Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 0,
@@ -817,16 +817,6 @@
      "pageloads": 10,
      "visits": 10,
      "hours": [
-      {
-       "h": "2026-11-23T01:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
-      {
-       "h": "2026-11-23T02:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
       {
        "h": "2026-11-23T03:00:00Z",
        "pageloads": 0,
@@ -934,6 +924,16 @@
       },
       {
        "h": "2026-11-24T00:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-24T01:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-24T02:00:00Z",
        "pageloads": 0,
        "visits": 0
       }
@@ -1228,7 +1228,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 7
+   "total": 13
   },
   {
    "id": "ENKGdbr04h0",
@@ -1239,7 +1239,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 96
+   "total": 97
   },
   {
    "id": "LtNuOtQe0pc",
@@ -1250,7 +1250,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 64
+   "total": 66
   },
   {
    "id": "aTUsauz53rs",
@@ -1261,7 +1261,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 13
+   "total": 14
   },
   {
    "id": "gljrHADi4aU",
@@ -1316,7 +1316,7 @@
    "views7": 81,
    "pct": 49.7,
    "complete": false,
-   "total": 96
+   "total": 97
   },
   {
    "id": "RbyuepKjOig",
