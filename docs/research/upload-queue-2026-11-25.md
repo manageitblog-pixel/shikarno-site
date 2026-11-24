@@ -15,9 +15,15 @@
 | Плейлисти | sec (як ep77/ep78 — audit.playlist_map 24.11) | tier (як ep81/ep82) |
 | Ідея (ideas.json) | 17 | 20 |
 | Related (власник, Studio) | GNqU-wcz9Ws «Що ШІ знає про тебе» | M-KQwpDwpA4 (гайд #1 ChatGPT, вихід 25.11 17Z — до 28.11 перевірити, що public) |
-| Стаття сайту | оновити наявну /novyny/moonlock-iphone-shakhrajski-sms/ (ep77, та сама тема — без канібалізації) | нова /novyny/kudy-poikhaty-na-vykhidni-shi-tir-lyst/ |
+| Стаття сайту | **нова** /novyny/moonlock-chy-varto-platyty/ (24.11, продовження ep77; наявну /novyny/moonlock-iphone-shakhrajski-sms/ НЕ чіпаємо) | нова /novyny/kudy-poikhaty-na-vykhidni-shi-tir-lyst/ (24.11) |
 
 **vid:** — (заповнити після заливки)
+
+**Статті сайту (написано 24.11, без `youtube:` — додати ПІСЛЯ заливки):**
+- ep83 → `content/posts/2026-11-26-moonlock-chy-varto-platyty.md`, slug **moonlock-chy-varto-platyty** (date 2026-11-26T19:00:00+02:00)
+- ep85 → `content/posts/2026-11-28-kudy-poikhaty-na-vykhidni-shi-tir-lyst.md`, slug **kudy-poikhaty-na-vykhidni-shi-tir-lyst** (date 2026-11-28T19:00:00+02:00)
+- Після заливки: `youtube: <vid>` у front matter обох → `python3 build.py --future` → `python3 studio/ops.py backfill` → commit/push.
+  Опис YouTube ep83 веде на стару статтю (ep77) — за бажанням замінити «Стаття:» на /novyny/moonlock-chy-varto-platyty/ (до заливки, у JSON нижче).
 
 ## 1. Заливка — ОДНА команда (обидва ролики)
 
@@ -96,12 +102,10 @@ ep85 — Карти в Gemini з увімкненою історією, 18+ ли
 Для ep83 — 26.11, для ep85 — 28.11 (усе до/о 17:00Z):
 
 1. **Сайт** (до виходу):
-   - ep83: наявна стаття `content/posts/2026-11-20-moonlock-iphone-shakhrajski-sms.md` (ep77, youtube CfHTFrYH_z4) — додати
-     розділ «Чесно: чи варто?» (плюси/мінуси/ціна App Store UA/6/10) з ep83_factcheck*, `updated:`; slug НЕ міняти.
-     Другий ролик у статтю — посиланням у тексті (фронтматер `youtube` лишається ep77). Нову статтю на ту саму тему не робити.
-   - ep85: нова `content/posts/2026-11-28-kudy-poikhaty-na-vykhidni-shi-tir-lyst.md`, `kind: news`,
-     `date: 2026-11-28T19:00:00+02:00`, slug **саме такий, як у «Стаття:» опису**, `youtube: <vid>`, тір-лист таблицею,
-     «Коротко», вердикт, FAQ ×3, джерела з фактчеку, теги з config.TAG_NAMES → `python3 build.py --future` → push.
+   - ep83: (змінено 24.11 головною сесією) окрема коротка стаття `content/posts/2026-11-26-moonlock-chy-varto-platyty.md`
+     (кут «ціна/мінуси/6/10», посилання на ep77-статтю; ту сторінку НЕ змінювати) — лише додати `youtube: <vid>`.
+   - ep85: стаття `content/posts/2026-11-28-kudy-poikhaty-na-vykhidni-shi-tir-lyst.md` уже написана 24.11 (slug = «Стаття:» опису)
+     — лише додати `youtube: <vid>` → `python3 build.py --future` → `python3 studio/ops.py backfill` → push.
 2. **Перевірка в момент виходу** (RUNBOOK, рядок про audit): `python3 -c "import sys;sys.path[:0]=['studio/yt','/home/claude/yt'];import audit,yt;v=yt.api('videos',part='snippet,status,contentDetails',id='<vid>')['items'][0];print(audit.check(v,audit.playlist_map(),None)['issues'])"` → порожньо (або лише C1 до post_comments).
 3. **Telegram**: `tg.video` з /home/claude/eps/<slug>/tg.mp4, підпис у стилі блогу 600–950 знаків → message_id →
    `telegram_post: <id>` у статтю → build → push.
@@ -161,3 +165,8 @@ ep85 — «нотатки», «жести», «навіть офлайн, а з 
 - props: /home/claude/eps/<slug>/thumb.props.json; png + jpg поруч.
 
 Висновок: обидва готові до заливки 25.11 (QA PASS); ≤ 35 с, гучність на рівні ep84, кадр 0 відповідає варіанту exp-frame0.
+
+**Outro ep83 («ШІ» → «ей-ай»), 24.11:** 1 TTS-запит (gemini-3.8-flash-tts Sadachbia, hype, текст для TTS «Що штучний інтелект знає
+про тебе — у відео під роликом.») → F0 175,6 Гц (BAD: смуга 141,5±8; решта vo ~135, стара outro 107,9), ASR «Що ж, тучної інтелекти…»;
+2-й запит (спокійніший стиль) — 429 (квота). Фрагмент НЕ підставлено: vo.wav/final/tg/tiktok ep83 без змін — заливаємо як є.
+Невикористаний дубль: /home/claude/eps/ep83_moonlock_chesno/takes/outro_fix_take1.wav.
