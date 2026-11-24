@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-24T18:35:46Z",
+ "generated": "2026-11-24T19:07:07Z",
  "fresh": {
-  "yt_live": "2026-11-24T18:35:46Z",
+  "yt_live": "2026-11-24T19:07:07Z",
   "yt_analytics": "2026-11-21",
-  "tg_members": "2026-11-24T18:35:47Z",
-  "tg_posts": "2026-11-24T18:32:07Z",
+  "tg_members": "2026-11-24T19:07:08Z",
+  "tg_posts": "2026-11-24T19:07:09Z",
   "ideas": "2026-11-24T16:55:56Z",
   "news": "2026-11-24 16:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-24T16",
   "instagram": "2026-11-24T16",
   "site": "2026-11-22",
-  "site_live": "2026-11-24T18:32:09Z",
+  "site_live": "2026-11-24T19:07:10Z",
   "activity": "2026-11-24T18:35:46Z",
   "asks": "2026-11-24T18:40Z"
  },
@@ -551,7 +551,7 @@
    "subs": 315,
    "views_total": 12275,
    "videos": 98,
-   "live_at": "2026-11-24T18:35:46Z",
+   "live_at": "2026-11-24T19:07:07Z",
    "views_7d": 736,
    "pct_7d": 51.1,
    "subs_7d": 0,
@@ -864,7 +864,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-24T18:32:09Z",
+    "updated": "2026-11-24T19:07:10Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 8,
@@ -874,14 +874,9 @@
     "pageloads_7d": 50,
     "visits_7d": 42,
     "last24h": {
-     "pageloads": 15,
-     "visits": 11,
+     "pageloads": 14,
+     "visits": 10,
      "hours": [
-      {
-       "h": "2026-11-23T19:00:00Z",
-       "pageloads": 1,
-       "visits": 1
-      },
       {
        "h": "2026-11-23T20:00:00Z",
        "pageloads": 6,
@@ -996,6 +991,11 @@
        "h": "2026-11-24T18:00:00Z",
        "pageloads": 1,
        "visits": 1
+      },
+      {
+       "h": "2026-11-24T19:00:00Z",
+       "pageloads": 0,
+       "visits": 0
       }
      ]
     },
@@ -1288,7 +1288,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 22
+   "total": 38
   },
   {
    "id": "_wp0rz8edB8",
