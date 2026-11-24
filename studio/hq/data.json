@@ -1,18 +1,18 @@
 {
- "generated": "2026-11-24T00:07:04Z",
+ "generated": "2026-11-24T00:55:16Z",
  "fresh": {
-  "yt_live": "2026-11-24T00:07:04Z",
+  "yt_live": "2026-11-24T00:55:16Z",
   "yt_analytics": "2026-11-20",
-  "tg_members": "2026-11-24T00:07:05Z",
-  "tg_posts": "2026-11-24T00:07:05Z",
-  "ideas": "2026-11-23T21:22:26Z",
-  "news": "2026-11-23 21:16",
+  "tg_members": "2026-11-24T00:55:17Z",
+  "tg_posts": "2026-11-24T00:55:18Z",
+  "ideas": "2026-11-24T00:54:45Z",
+  "news": "2026-11-24 00:52",
   "comp": "2026-11-23",
-  "tiktok": "2026-11-23T21",
-  "instagram": "2026-11-23T21",
+  "tiktok": "2026-11-24T00",
+  "instagram": "2026-11-24T00",
   "site": "2026-11-21",
-  "site_live": "2026-11-24T00:07:07Z",
-  "activity": "2026-11-23T22:18:03Z",
+  "site_live": "2026-11-24T00:55:21Z",
+  "activity": "2026-11-24T00:52:36Z",
   "asks": "2026-11-23T19:55:00Z"
  },
  "notes": [],
@@ -529,6 +529,10 @@
   {
    "d": "2026-11-23",
    "n": 6
+  },
+  {
+   "d": "2026-11-24",
+   "n": 6
   }
  ],
  "platforms": {
@@ -536,7 +540,7 @@
    "subs": 315,
    "views_total": 11982,
    "videos": 96,
-   "live_at": "2026-11-24T00:07:04Z",
+   "live_at": "2026-11-24T00:55:16Z",
    "views_7d": 815,
    "pct_7d": 51.0,
    "subs_7d": 2,
@@ -609,12 +613,12 @@
   },
   "tiktok": {
    "videos": 12,
-   "views_total": 15442,
-   "views_7d": 1358,
+   "views_total": 15575,
+   "views_7d": 1491,
    "new_7d": 6,
    "saves_total": 123,
    "likes_total": 307,
-   "last_snapshot": "2026-11-23T21",
+   "last_snapshot": "2026-11-24T00",
    "best": [
     {
      "title": "Український ШІ Сяйво: коли вийде",
@@ -670,6 +674,10 @@
     {
      "x": "2026-11-23T21",
      "v": 15442
+    },
+    {
+     "x": "2026-11-24T00",
+     "v": 15575
     }
    ]
   },
@@ -677,33 +685,33 @@
    "ig_goal": 100,
    "ig_goal_note": "до 1.12; далі 500 до 31.01 (поріг «Подарунків» — перевірити для України)",
    "followers": 4,
-   "views_30d": 5,
-   "reach_30d": 8,
+   "views_30d": null,
+   "reach_30d": null,
    "reels": 9,
-   "plays_total": 10,
-   "likes_total": 0,
+   "plays_total": 210,
+   "likes_total": 2,
    "saves_total": 1,
-   "last_snapshot": "2026-11-23T21",
+   "last_snapshot": "2026-11-24T00",
    "best": [
     {
-     "shortcode": "DgGPYVlji9v",
-     "title": "Не плати за це #1",
-     "plays": 5,
-     "pct": 32,
+     "shortcode": "DgGRAlDjqkk",
+     "title": "Як продати на OLX швидше з ШІ",
+     "plays": 55,
+     "pct": 2,
      "published": "2026-11-23"
     },
     {
-     "shortcode": "DgGPtQrEhZZ",
-     "title": "Який ШІ для роботи?",
-     "plays": 4,
-     "pct": 54,
+     "shortcode": "DgGRAVLFORb",
+     "title": "Інкогніто в ШІ — не сейф",
+     "plays": 44,
+     "pct": 7,
      "published": "2026-11-23"
     },
     {
-     "shortcode": "DgGPnnkgnyk",
-     "title": "ChatGPT, Gemini чи Claude: який ШІ для чого?",
-     "plays": 1,
-     "pct": 45,
+     "shortcode": "DgGQ8fODsVW",
+     "title": "Сімейний бюджет з ШІ",
+     "plays": 44,
+     "pct": 2,
      "published": "2026-11-23"
     }
    ],
@@ -711,11 +719,19 @@
     {
      "x": "2026-11-23T21",
      "v": 10
+    },
+    {
+     "x": "2026-11-24T00",
+     "v": 210
     }
    ],
    "followers_hist": [
     {
      "x": "2026-11-23T21",
+     "v": 4
+    },
+    {
+     "x": "2026-11-24T00",
      "v": 4
     }
    ]
@@ -788,7 +804,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-24T00:07:07Z",
+    "updated": "2026-11-24T00:55:21Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 0,
@@ -1112,6 +1128,10 @@
     {
      "x": "2026-11-23",
      "v": 6
+    },
+    {
+     "x": "2026-11-24",
+     "v": 6
     }
    ],
    "since": "2026-11-22"
@@ -1241,7 +1261,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 9
+   "total": 13
   },
   {
    "id": "gljrHADi4aU",
@@ -1274,7 +1294,7 @@
    "views7": 33,
    "pct": 52.1,
    "complete": false,
-   "total": 42
+   "total": 44
   },
   {
    "id": "bRanUVdt2Pw",
@@ -1355,6 +1375,29 @@
   }
  ],
  "ideas": [
+  {
+   "title": "Не плати за ChatGPT Plus, поки не перевіриш 3 речі: що вже є безкоштовно, як вимкнути автопродовження і де пробний період",
+   "format": "free",
+   "channels": [
+    "short",
+    "tiktok",
+    "insta",
+    "site"
+   ],
+   "demand": 4,
+   "fresh": 4,
+   "show": 5,
+   "fit": 5,
+   "length": 35,
+   "hook": "you",
+   "source": "https://www.instagram.com/reel/Df7GKE2tpbw",
+   "by": "researcher-niche",
+   "note": "Аномалії 17–21.11: Reels @kalinina_business «Не купуйте ChatGPT Pro, пока не проверите одну вещь» 504x/104K (рос., закінчується рекламою іноземних карток — НЕ повторювати); TikTok @movtobase «срочно отменяйте автопродление Claude Code/Codex» 4,6x/630K (рос.); Reels @ierey_investor «Лайфхак проти Дії» 896x/236K (укр.) — той самий гачок «не роби X, поки не...». Чорна пʼятниця 28.11 — пік. Факти (тарифи, що є у free, шлях скасування в налаштуваннях) брати з help.openai.com у день запису. Reels: кінець «збережи», текст-обкладинка 3:4 «НЕ ПЛАТИ, ПОКИ…»; TikTok: той самий ролик, капс-наслідок у перші 3 с.",
+   "status": "new",
+   "added": "2026-11-24",
+   "id": "89",
+   "score": 471.1
+  },
   {
    "title": "Чорна пʼятниця з ChatGPT: перевір знижку за 30 секунд — справжня чи накручена ціна",
    "format": "try",
@@ -1534,6 +1577,29 @@
    "score": 293.3
   },
   {
+   "title": "5 коротких команд для ChatGPT, які варто зберегти: «коротше», «таблицею», «як для 10-річного», «перевір себе», «3 варіанти»",
+   "format": "skills",
+   "channels": [
+    "insta",
+    "short",
+    "tiktok",
+    "site"
+   ],
+   "demand": 4,
+   "fresh": 3,
+   "show": 5,
+   "fit": 5,
+   "length": 30,
+   "hook": "you",
+   "source": "https://www.instagram.com/reel/Df61fN1RO07",
+   "by": "researcher-niche",
+   "note": "Reels @by.valtron «10 коротких команд для ChatGPT. Сохраняй» 101,6x/124K при 7,7K підписників (рос.) — лістикл «чит-коди», швидкі склейки, екран-до/після. Робимо 5 (не 10 — ≤35 с), кожна команда = 1 екран результату в одному інтерфейсі, українською. Відрізняється від #77 (одна фраза-уточнення) і #55 (антиШІ-текст). Reels-first: заклик «збережи» + підпис-шпаргалка з усіма 5 командами текстом (збереження — сигнал Reels); у TikTok — той самий ролик, але гачок «ти пишеш ChatGPT занадто довго».",
+   "status": "new",
+   "added": "2026-11-24",
+   "id": "90",
+   "score": 293.3
+  },
+  {
    "title": "Надиктуй ChatGPT хоч годину: живий диктант — текст з’являється, поки говориш (і безкоштовно)",
    "format": "try",
    "channels": [
@@ -1574,64 +1640,16 @@
    "added": "2026-11-23",
    "id": "81",
    "score": 282.0
-  },
-  {
-   "title": "«Ведуча ТСН» у TikTok каже підписати петицію? Це діпфейк: 595 ШІ-підробок українських журналісток і 3 ознаки",
-   "format": "sec",
-   "channels": [
-    "show",
-    "short",
-    "site",
-    "tg",
-    "tiktok"
-   ],
-   "demand": 4,
-   "fresh": 3,
-   "show": 5,
-   "fit": 5,
-   "hook": "you",
-   "length": 35,
-   "source": "https://texty.org.ua/projects/116211/shtuchnyj-intelekt-i-tiktok-yak-vidomyx-zhurnalistok-peretvoryuyut-na-fejky/",
-   "by": "researcher-web",
-   "note": "Тексти + «Жінки в медіа»: 595 відео (328 — лише підроблений голос, 267 — голос і відео), разом понад 24 млн переглядів, найчастіше підробляють Вітвіцьку, Даугуле, Мазур; 45% — фейкові петиції й опитування, ~24% — «гроші/гуманітарка» (збір персональних даних). Дані за 10.2023–09.2025, тож це не новина тижня: тема знову в стрічках завдяки подкасту Детектор медіа 20.11.2026 (https://detector.media/mediumy/article/254150/2026-11-20-piv-milyona-pereglyadiv-odnogo-dypfeyku-yak-u-tiktoku-ekspluatuyut-doviru-do-ukrainskykh-zhurnalistok/). Для глядача: фейк зі знайомим обличчям з телебачення веде на сторінку, де в тебе беруть дані. Формат: Short «3 ознаки» (TikTok) + стаття на сайті з чеклістом від Текстів.",
-   "decision": "кандидат у шоу #3 29.11 (веб-скан 22.11 ввечері): казати чесно, що дослідження 2025 року, а свіжий привід — подкаст 20.11",
-   "status": "new",
-   "added": "2026-11-22",
-   "id": "38",
-   "score": 265.6
-  },
-  {
-   "title": "Signal ховає твої чати від ШІ телефона: блок Siri AI на iOS 27 і «Захист екрана» від Gemini на Android",
-   "format": "sec",
-   "channels": [
-    "short",
-    "tiktok",
-    "site",
-    "tg"
-   ],
-   "demand": 3,
-   "fresh": 4,
-   "show": 5,
-   "fit": 5,
-   "hook": "you",
-   "length": 30,
-   "source": "https://signal.org/blog/protecting-your-privacy/",
-   "by": "researcher-news",
-   "note": "Signal, 20.11.2026 (в укр. медіа 22.11): на iOS 27 Signal блокує скриншоти в застосунку, щоб Siri AI не зчитувала листування, — налаштування «Block Siri AI»; на Android автоматично вмикає «Screen security», коли бачить, що ШІ-асистент (напр. Gemini) намагається читати екран, — лише там, де це можна виявити; на Windows 11 скриншоти вже блокуються проти Recall; macOS не покрито — порада: додати Signal у Excluded Apps (System Settings > Siri). Захист можна вимкнути, але тоді чати (і чати співрозмовників) бачитиме агент; доступ через файлову систему це не зупиняє. Подача: «твій телефонний ШІ читає екран — ось 1 перемикач». Продовжує успішну серію приватності в TikTok (пам’ять ChatGPT 4,9K, Gemini/Gmail 1,2K).",
-   "status": "new",
-   "added": "2026-11-23",
-   "id": "43",
-   "score": 265.6
   }
  ],
  "ideas_count": {
-  "total": 88,
-  "open": 88
+  "total": 95,
+  "open": 95
  },
  "lake": {
   "videos": 94,
   "daily": 773,
-  "news": 1940,
+  "news": 1957,
   "niche": 828,
   "comp": 511,
   "comp_videos": 62794,
@@ -1642,88 +1660,88 @@
  },
  "news": [
   {
+   "date": "2026-11-24",
+   "source": "venturebeat",
+   "title": "Z.ai's GLM-5.4 aims to match models up to four times its size by running 28 layers twice",
+   "score": null,
+   "url": "https://venturebeat.com/technology/z-ais-glm-5-4-aims-to-match-models-up-to-four-times-its-size-by-running-28-layers-twice"
+  },
+  {
    "date": "2026-11-23",
    "source": "openai",
-   "title": "Connected intelligence for in-house legal",
+   "title": "OpenAI and Cisco introduce Shirudo",
    "score": null,
-   "url": "https://openai.com/business/learn/connected-intelligence-for-in-house-legal"
+   "url": "https://openai.com/index/introducing-shirudo"
   },
   {
    "date": "2026-11-23",
-   "source": "google",
-   "title": "A more tailored Google Search that’s uniquely yours",
+   "source": "openai",
+   "title": "Richpanel helps companies automate 50% of support in 30 days",
    "score": null,
-   "url": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/"
-  },
-  {
-   "date": "2026-11-23",
-   "source": "gemini",
-   "title": "See what 6 builders are making with Gemini 4 Hydrogen",
-   "score": null,
-   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-hydrogen-builders/"
-  },
-  {
-   "date": "2026-11-23",
-   "source": "gemini",
-   "title": "Here are 4 things you didn’t know you could do with Gemini Canvas.",
-   "score": null,
-   "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-canvas-tasks/"
-  },
-  {
-   "date": "2026-11-23",
-   "source": "deepmind",
-   "title": "Finding faster quantum algorithms with agents and formal verification",
-   "score": null,
-   "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/"
-  },
-  {
-   "date": "2026-11-23",
-   "source": "meta",
-   "title": "Researchers Are Using Meta’s Open-Weight AI Models to Transform Medicine",
-   "score": null,
-   "url": "https://about.fb.com/news/2026/11/researchers-using-meta-open-weight-ai-models-medical-breakthroughs/"
-  },
-  {
-   "date": "2026-11-23",
-   "source": "hf",
-   "title": "RoboTrack: Point tracking for real-world robotic manipulation",
-   "score": null,
-   "url": "https://huggingface.co/blog/allenai/robotrack"
+   "url": "https://openai.com/business/customer-stories/richpanel-ai-customer-support"
   },
   {
    "date": "2026-11-23",
    "source": "techcrunch",
-   "title": "Nvidia employees greet Jensen Huang like a hero as he returns to company’s HQ",
+   "title": "Anthropic launches Claude Ship, letting AI agents review, fix, and approve code changes",
    "score": null,
-   "url": "https://techcrunch.com/2026/11/23/nvidia-employees-greet-jensen-huang-like-a-hero-as-he-returns-to-companys-hq/"
+   "url": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/"
   },
   {
    "date": "2026-11-23",
    "source": "techcrunch",
-   "title": "Google Search’s AI Mode can now tap into Drive and Wallet for more personalized responses",
+   "title": "Supertake raises $20M to let AI agents turn your market predictions into stock portfolios",
    "score": null,
-   "url": "https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses/"
+   "url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/"
   },
   {
    "date": "2026-11-23",
    "source": "techcrunch",
-   "title": "Jensen Huang scheduled to testify next week in Senate following reinstatement as Nvidia CEO",
+   "title": "Elon Musk and others rejoice as Jensen Huang is reinstated at Nvidia amid scandal",
    "score": null,
-   "url": "https://techcrunch.com/2026/11/23/jensen-huang-scheduled-to-testify-next-week-in-senate-following-reinstatement-as-nvidia-ceo/"
+   "url": "https://techcrunch.com/2026/11/23/elon-musk-and-others-rejoice-as-jensen-huang-is-reinstated-at-nvidia-amid-scandal/"
   },
   {
    "date": "2026-11-23",
    "source": "techcrunch",
-   "title": "Amazon snaps up Decart’s AI optimization tech for $7.5B as it prepares to sell Trainium chips",
+   "title": "Megaspeed, the company at the center of the Jensen Huang scandal, appears headed for a US blacklist",
    "score": null,
-   "url": "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/"
+   "url": "https://techcrunch.com/2026/11/23/megaspeed-the-company-at-the-center-of-the-jensen-huang-scandal-appears-headed-for-a-u-s-blacklist/"
   },
   {
    "date": "2026-11-23",
-   "source": "techcrunch",
-   "title": "Jensen Huang isn’t out of the woods yet",
+   "source": "verge",
+   "title": "Trump engineered a risky comeback for Jensen Huang",
    "score": null,
-   "url": "https://techcrunch.com/2026/11/23/jensen-huang-isnt-out-of-the-woods-yet/"
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1040652/jensen-huang-nvidia-trump-reinstated"
+  },
+  {
+   "date": "2026-11-23",
+   "source": "verge",
+   "title": "Nvidia CEO Jensen Huang is back. What happens next?",
+   "score": null,
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang"
+  },
+  {
+   "date": "2026-11-23",
+   "source": "verge",
+   "title": "Welcome to elite impunity, Jensen Huang",
+   "score": null,
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1040819/welcome-to-elite-impunity-jensen-huang"
+  },
+  {
+   "date": "2026-11-23",
+   "source": "venturebeat",
+   "title": "Claude Fable 5.2 cost three times as much as Opus 5.5 for nearly the same results in a VentureBeat bug-fixing test",
+   "score": null,
+   "url": "https://venturebeat.com/orchestration/claude-fable-5-2-cost-three-times-as-much-as-opus-5-5-for-nearly-the-same-results-in-a-venturebeat-bug-fixing-test"
+  },
+  {
+   "date": "2026-11-23",
+   "source": "ars",
+   "title": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
+   "score": null,
+   "url": "https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn/"
   }
  ],
  "competitors": [
@@ -1834,23 +1852,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "103",
-   "agent": "post",
-   "task": "COO-ініціатива: чому дубль 1 часто з F0 117–131 Гц (норма 143±8) — половина квоти TTS іде на перезаписи; знайти причину і зменшити",
-   "started": "2026-11-23T07:28:50Z",
-   "finished": "2026-11-23T07:44:41Z",
-   "result": "F0 без жодного запиту TTS: voice_check v1 був зміщений (лише перші 25 с + октавні помилки, +5,8 Гц vs Praat; через це 2 правильні дублі guide1 відкинуто, взято гірші). v2: весь файл, = Praat ±2 Гц, тест studio/tests/tes…",
-   "agent_raw": "production"
-  },
-  {
-   "id": "104",
-   "agent": "da",
-   "task": "COO-ініціатива: override формату в аналітиці (gljrHADi4aU → tier, LtNuOtQe0pc → prof), перерахунок медіан",
-   "started": "2026-11-23T07:28:50Z",
-   "finished": "2026-11-23T07:31:39Z",
-   "result": "Override форматів: studio/data/format_overrides.json (11 явних помилок: ep79→tier, 6 роликів «ШІ для професій» tier→prof, ep37→free, 3 регекс-хиби→news), застосовується в sync після плейлиста й командою analytics_db.py …"
-  },
   {
    "id": "105",
    "agent": "longs",
@@ -2165,6 +2166,24 @@
    "started": "2026-11-23T22:18:03Z",
    "finished": null,
    "result": ""
+  },
+  {
+   "id": "143",
+   "agent": "trend",
+   "task": "фон: аномалії TikTok/Reels у ніші ШІ українською за добу → ідеї",
+   "started": "2026-11-24T00:17:54Z",
+   "finished": null,
+   "result": "",
+   "agent_raw": "niche"
+  },
+  {
+   "id": "144",
+   "agent": "de",
+   "task": "Збирач даталейку 00:52Z: новини, TikTok/Instagram/TG-знімок, сигнали",
+   "started": "2026-11-24T00:52:36Z",
+   "finished": null,
+   "result": "",
+   "agent_raw": "data"
   }
  ],
  "agents": [
