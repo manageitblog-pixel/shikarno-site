@@ -1183,6 +1183,14 @@
    "started": "2026-11-24T06:24:15Z",
    "finished": null,
    "result": ""
+  },
+  {
+   "id": "149",
+   "agent": "tg",
+   "task": "Telegram-відділ 24.11: метрика, воронки, експеримент тижня, група",
+   "started": "2026-11-24T06:42:03Z",
+   "finished": null,
+   "result": ""
   }
  ]
 }
