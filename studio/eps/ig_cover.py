@@ -33,6 +33,8 @@ REELS = {
     "ep80_prof_olx": ("ep80_prof_olx/final.mp4", "ep80_prof_olx/thumb.png", "ep80_prof_olx"),
     "cut6_c1_chatgpt": ("cuts6/c1_chatgpt.mp4", "cuts6/c1_thumb.png", "cut6_c1_chatgpt"),
     "ep76_inkognito_shi": ("ep76_inkognito_shi/final.mp4", "ep76_inkognito_shi/thumb.png", "ep76_inkognito_shi"),
+    "clip2": ("clip2/final.mp4", "clip2/thumb.png", "clip2"),
+    "ep82_tier_kitchen": ("ep82_tier_kitchen/final.mp4", "ep82_tier_kitchen/thumb.png", "ep82_tier_kitchen"),
 }
 
 
