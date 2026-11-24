@@ -1,18 +1,18 @@
 {
- "generated": "2026-11-24T12:07:10Z",
+ "generated": "2026-11-24T12:57:13Z",
  "fresh": {
-  "yt_live": "2026-11-24T12:07:11Z",
+  "yt_live": "2026-11-24T12:57:13Z",
   "yt_analytics": "2026-11-21",
-  "tg_members": "2026-11-24T12:07:12Z",
-  "tg_posts": "2026-11-24T12:07:12Z",
-  "ideas": "2026-11-24T10:14:44Z",
-  "news": "2026-11-24 08:53",
+  "tg_members": "2026-11-24T12:57:14Z",
+  "tg_posts": "2026-11-24T12:57:15Z",
+  "ideas": "2026-11-24T12:56:28Z",
+  "news": "2026-11-24 12:53",
   "comp": "2026-11-23",
-  "tiktok": "2026-11-24T08",
-  "instagram": "2026-11-24T08",
+  "tiktok": "2026-11-24T12",
+  "instagram": "2026-11-24T12",
   "site": "2026-11-22",
-  "site_live": "2026-11-24T12:07:14Z",
-  "activity": "2026-11-24T10:18:04Z",
+  "site_live": "2026-11-24T12:57:18Z",
+  "activity": "2026-11-24T12:53:20Z",
   "asks": "2026-11-24T08:20Z"
  },
  "notes": [],
@@ -551,7 +551,7 @@
    "subs": 315,
    "views_total": 12193,
    "videos": 96,
-   "live_at": "2026-11-24T12:07:11Z",
+   "live_at": "2026-11-24T12:57:13Z",
    "views_7d": 736,
    "pct_7d": 51.1,
    "subs_7d": 0,
@@ -617,19 +617,19 @@
     },
     {
      "title": "Що ШІ знає про тебе: як вимкнути навчання в ChatGPT, Gemini, Claude, Meta AI і Copilot (2026)",
-     "views": 79,
+     "views": 80,
      "id": "GNqU-wcz9Ws"
     }
    ]
   },
   "tiktok": {
    "videos": 12,
-   "views_total": 15671,
-   "views_7d": 1587,
+   "views_total": 15705,
+   "views_7d": 1621,
    "new_7d": 6,
-   "saves_total": 125,
+   "saves_total": 126,
    "likes_total": 313,
-   "last_snapshot": "2026-11-24T08",
+   "last_snapshot": "2026-11-24T12",
    "best": [
     {
      "title": "Український ШІ Сяйво: коли вийде",
@@ -697,6 +697,10 @@
     {
      "x": "2026-11-24T08",
      "v": 15671
+    },
+    {
+     "x": "2026-11-24T12",
+     "v": 15705
     }
    ]
   },
@@ -708,10 +712,10 @@
    "reach_30d": 220,
    "acc_at": "24.11 08Z",
    "reels": 9,
-   "plays_total": 252,
+   "plays_total": 260,
    "likes_total": 3,
    "saves_total": 1,
-   "last_snapshot": "2026-11-24T08",
+   "last_snapshot": "2026-11-24T12",
    "best": [
     {
      "shortcode": "DgGRAlDjqkk",
@@ -730,7 +734,7 @@
     {
      "shortcode": "DgGQ8fODsVW",
      "title": "Сімейний бюджет з ШІ",
-     "plays": 47,
+     "plays": 49,
      "pct": 4,
      "published": "2026-11-23"
     }
@@ -751,6 +755,10 @@
     {
      "x": "2026-11-24T08",
      "v": 252
+    },
+    {
+     "x": "2026-11-24T12",
+     "v": 260
     }
    ],
    "followers_hist": [
@@ -768,6 +776,10 @@
     },
     {
      "x": "2026-11-24T08",
+     "v": 4
+    },
+    {
+     "x": "2026-11-24T12",
      "v": 4
     }
    ]
@@ -840,7 +852,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-24T12:07:14Z",
+    "updated": "2026-11-24T12:57:18Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 5,
@@ -978,32 +990,32 @@
     "days": [
      {
       "d": "2026-11-11",
+      "pageloads": 40,
+      "visits": 40,
+      "sampled": true
+     },
+     {
+      "d": "2026-11-12",
+      "pageloads": 60,
+      "visits": 40,
+      "sampled": true
+     },
+     {
+      "d": "2026-11-13",
       "pageloads": 20,
       "visits": 20,
       "sampled": true
      },
      {
-      "d": "2026-11-12",
+      "d": "2026-11-14",
       "pageloads": 0,
       "visits": 0,
       "sampled": false
      },
      {
-      "d": "2026-11-13",
-      "pageloads": 30,
-      "visits": 30,
-      "sampled": true
-     },
-     {
-      "d": "2026-11-14",
-      "pageloads": 10,
-      "visits": 10,
-      "sampled": true
-     },
-     {
       "d": "2026-11-15",
       "pageloads": 10,
-      "visits": 0,
+      "visits": 10,
       "sampled": true
      },
      {
@@ -1264,7 +1276,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 15
+   "total": 19
   },
   {
    "id": "ENKGdbr04h0",
@@ -1286,7 +1298,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 68
+   "total": 72
   },
   {
    "id": "aTUsauz53rs",
@@ -1297,7 +1309,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 51
+   "total": 53
   },
   {
    "id": "gljrHADi4aU",
@@ -1330,7 +1342,7 @@
    "views7": 37,
    "pct": 47.9,
    "complete": false,
-   "total": 44
+   "total": 45
   },
   {
    "id": "bRanUVdt2Pw",
@@ -1363,7 +1375,7 @@
    "views7": 38,
    "pct": 68.5,
    "complete": false,
-   "total": 43
+   "total": 44
   },
   {
    "id": "Bh-YF2BbuiQ",
@@ -1385,7 +1397,7 @@
    "views7": 42,
    "pct": 9.7,
    "complete": true,
-   "total": 79
+   "total": 80
   },
   {
    "id": "ZSOH2sXLI_Y",
@@ -1674,13 +1686,13 @@
   }
  ],
  "ideas_count": {
-  "total": 103,
-  "open": 98
+  "total": 106,
+  "open": 101
  },
  "lake": {
   "videos": 96,
   "daily": 800,
-  "news": 1971,
+  "news": 1987,
   "niche": 1035,
   "comp": 511,
   "comp_videos": 62794,
@@ -1692,87 +1704,87 @@
  "news": [
   {
    "date": "2026-11-24",
-   "source": "meta",
-   "title": "Introducing Muse in the UK: A Personal AI Agent You Control",
+   "source": "ars",
+   "title": "Amazon says hackers' AI agents found and exploited 0-day with little human input",
    "score": null,
-   "url": "https://about.fb.com/news/2026/11/introducing-muse-in-the-uk-a-personal-ai-agent-you-control/"
+   "url": "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/"
+  },
+  {
+   "date": "2026-11-24",
+   "source": "wired",
+   "title": "Don’t Bring Up AI if You Want to Enjoy Your Thanksgiving",
+   "score": null,
+   "url": "https://www.wired.com/story/dont-bring-up-ai-if-you-want-to-enjoy-your-thanksgiving/"
+  },
+  {
+   "date": "2026-11-24",
+   "source": "wired",
+   "title": "AI Solved Math’s Most Famous Problem. Now Humans Are Struggling to Understand It",
+   "score": null,
+   "url": "https://www.wired.com/story/ai-solved-maths-most-famous-problem/"
   },
   {
    "date": "2026-11-24",
    "source": "devua",
-   "title": "Google подала патентну заявку на ШІ-телеканал, який генерує шоу під глядача та робить його головним героєм",
+   "title": "Anthropic запустила Claude Ship — набір інструментів для автоматизації код-рев'ю. Що вони вміють?",
    "score": null,
-   "url": "https://dev.ua/news/google-podala-patentnu-zaiavku-na-shi-telekanal-iakyi-heneruie-shou-pid-hliadacha-ta-robyt-ioho-holovnym-heroiem-1795505050"
+   "url": "https://dev.ua/news/claude-ship-1795514757"
   },
   {
    "date": "2026-11-24",
    "source": "devua",
-   "title": "Новий претендент на світове лідерство серед eCommerce SaaS: BooStore — швидкість, автоматизація та повна кастомізація",
+   "title": "Як підготувати інфраструктуру до масштабування ШІ",
    "score": null,
-   "url": "https://dev.ua/news/novyi-pretendent-na-svitove-liderstvo-sered-ecommerce-saas-boostore-shvydkist-avtomatyzatsiia-ta-povna-kastomizatsiia-1795436894"
+   "url": "https://dev.ua/news/yak-pidhotuvaty-infrastrukturu-do-masshtabuvannia-shi-1795517702"
   },
   {
    "date": "2026-11-24",
    "source": "devua",
-   "title": "Intellias використовує ШІ у 60% проєктів і планує наростити виторг на 8–9% до кінця року",
+   "title": "Signal посилює захист від ШІ-агентів Gemini та Siri, які можуть сканувати екран",
    "score": null,
-   "url": "https://dev.ua/news/intellias-transformuietsia-1795505647"
+   "url": "https://dev.ua/news/signal-posyliuie-zakhyst-vid-shi-ahentiv-gemini-ta-siri-iaki-mozhut-skanuvaty-ekran-1795508107"
   },
   {
    "date": "2026-11-24",
    "source": "devua",
-   "title": "Що малому бізнесу насправді потрібно від IT: CRM, облік і сайт, а не штучний інтелект",
+   "title": "Українські оборонні компанії стали більш ніж утричі частіше шукати AI/ML-інженерів. Скільки платять та кого готові наймати?",
    "score": null,
-   "url": "https://dev.ua/news/shcho-malomu-biznesu-naspravdi-potribno-vid-it-crm-oblik-i-sait-a-ne-shtuchnyi-intelekt-1795505786"
-  },
-  {
-   "date": "2026-11-24",
-   "source": "devua",
-   "title": "«Напишу промпт у Suno і я вже композитор?». Артем Пивоваров посварився з Могилевською та фанами через ШІ-пісню на «Голосі країни»",
-   "score": null,
-   "url": "https://dev.ua/news/napyshu-prompt-u-suno-i-ia-vzhe-kompozytor"
-  },
-  {
-   "date": "2026-11-24",
-   "source": "hn",
-   "title": "Show HN: Genesis Map – Visualize your agent's changes. See where they can break",
-   "score": 7,
-   "url": "https://github.com/GenesisAgentInfra/genesis"
+   "url": "https://dev.ua/news/oboronka-aiml-1795507904"
   },
   {
    "date": "2026-11-24",
    "source": "speka",
-   "title": "Чи заплатить Rockstar $25 000 за баг у GTA 6, який знайшов штучний інтелект",
+   "title": "Канабіс пов’язали з раннім початком психозу: різниця може перевищувати шість років",
    "score": null,
-   "url": "https://speka.ua/news/ci-zaplatit-rockstar-25-000-za-bag-u-gta-6-yakii-znaisov-stucnii-intelekt-9ezy61"
+   "url": "https://speka.ua/news/kanabis-psykhoz-ranishe-doslidzhennya-unsw-p6wk5l"
   },
   {
    "date": "2026-11-24",
-   "source": "hn",
-   "title": "Declare is a UI language for you and your AI",
-   "score": 51,
-   "url": "https://davidtemkin.github.io/declarelang/"
+   "source": "speka",
+   "title": "В Україні реєструють найменше ІТ-ФОПів за шість років: у чому причина",
+   "score": null,
+   "url": "https://speka.ua/news/v-ukrayini-rejestruyut-naimense-it-fopiv-za-sist-rokiv-u-comu-pricina-98kd5k"
   },
   {
    "date": "2026-11-24",
-   "source": "hn",
-   "title": "Show HN: Juncts, one DM inbox for five apps that Claude and ChatGPT can work in",
-   "score": 6,
-   "url": "https://juncts.com/app?demo=1&utm_source=hackernews&utm_medium=launch&utm_campaign=launch-nov26"
+   "source": "speka",
+   "title": "Суперінтелект впирається у фізичний світ: що насправді гальмує розвиток ШІ",
+   "score": null,
+   "url": "https://speka.ua/videos-and-podcasts/eksdirektor-openai-sprostuvav-teoriyu-singulyarnosti-shho-naspravdi-galmuje-si-vz8l8w"
   },
   {
    "date": "2026-11-24",
-   "source": "hn",
-   "title": "Toolfence-scan – static checks for Cursor/Claude/Copilot skills",
-   "score": 7,
-   "url": "https://github.com/StockGorilla/skill-scan"
+   "source": "liga",
+   "title": "Huawei представила новий Mate 90 Air: які характеристики отримав смартфон",
+   "score": null,
+   "url": "https://tech.liga.net/ua/gadgets/news/huawei-predstavyla-novyy-mate-90-air-iaki-kharakterystyky-otrymav-smartfon"
   },
   {
    "date": "2026-11-24",
-   "source": "hn",
-   "title": "Show HN: Agent-first-browse – Web automation with delta snapshots and LangGraph",
-   "score": 6,
-   "url": "https://github.com/SandeepAi369/Agent-first-browse"
+   "source": "liga",
+   "title": "ШІ почав матюкатися частіше: дослідники з’ясували, коли це відбувається",
+   "score": null,
+   "url": "https://tech.liga.net/ua/ai/news/shi-pochav-matiukatysia-chastishe-doslidnyky-ziasuvaly-koly-tse-vidbuvaietsia"
   }
  ],
  "competitors": [
@@ -1883,30 +1895,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "117",
-   "agent": "longs",
-   "task": "Шоу #3: 4 правки за фактчеком (isolated incidents, 30 днів аудіо, «частково», атрибуція DWL+Gallup) + необов'язкові",
-   "started": "2026-11-23T10:40:56Z",
-   "finished": "2026-11-23T10:42:08Z",
-   "result": "weekly3: 4 правки фактчеку + 4 необов'язкові застосовано, max TTS 1217 зн., 89ccaaf"
-  },
-  {
-   "id": "118",
-   "agent": "factcheck",
-   "task": "Шоу #3: перевірка diff правок 23.11 (інший агент)",
-   "started": "2026-11-23T10:42:21Z",
-   "finished": "2026-11-23T10:45:00Z",
-   "result": "Вердикт: PASS — 4 обов'язкові правки й необов'язкові перевірено за diff і джерелами (FAQ OpenAI, arXiv)"
-  },
-  {
-   "id": "119",
-   "agent": "designer",
-   "task": "Гайд #2 (27.11): обкладинки A/B (Thumb4Wide v4), назва, опис, перший коментар — заздалегідь, до озвучки",
-   "started": "2026-11-23T11:18:34Z",
-   "finished": "2026-11-23T11:23:41Z",
-   "result": "Гайд #2: обкладинки A/B Thumb4Wide (H-D: «Claude = $0» vs «За Claude платиш?»), META у guide2.py, нотатка docs/research/guide2-packaging-2026-11-23.md; вбудування в claude-bezkoshtovno — лише з 21.12"
-  },
   {
    "id": "120",
    "agent": "factcheck",
@@ -2221,6 +2209,31 @@
    "started": "2026-11-24T10:18:04Z",
    "finished": null,
    "result": ""
+  },
+  {
+   "id": "157",
+   "agent": "algo",
+   "task": "Алгоритми 24.11 (вт → TikTok): офіційні зміни, лайфхаки практиків, наші дані vs плейбуки, експерименти",
+   "started": "2026-11-24T12:14:26Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "158",
+   "agent": "seo",
+   "task": "Статті до ep84 (27.11) і ep86 (29.11) + привʼязка YouTube id до експерименту",
+   "started": "2026-11-24T12:24:10Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "159",
+   "agent": "de",
+   "task": "Збирач даталейку 12:52Z: новини, TikTok/IG/TG-знімок, сигнали",
+   "started": "2026-11-24T12:53:20Z",
+   "finished": null,
+   "result": "",
+   "agent_raw": "data"
   }
  ],
  "agents": [
