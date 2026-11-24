@@ -1279,6 +1279,14 @@
    "started": "2026-11-24T13:08:19Z",
    "finished": null,
    "result": ""
+  },
+  {
+   "id": "161",
+   "agent": "research",
+   "task": "фон: денний веб-скан трендів 13Z + перевірка GPT-6.2 Free і джерела ГУР",
+   "started": "2026-11-24T13:18:14Z",
+   "finished": null,
+   "result": ""
   }
  ]
 }
