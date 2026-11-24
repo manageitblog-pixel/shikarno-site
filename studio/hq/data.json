@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-24T11:06:39Z",
+ "generated": "2026-11-24T12:07:10Z",
  "fresh": {
-  "yt_live": "2026-11-24T11:06:39Z",
+  "yt_live": "2026-11-24T12:07:11Z",
   "yt_analytics": "2026-11-21",
-  "tg_members": "2026-11-24T11:06:40Z",
-  "tg_posts": "2026-11-24T11:06:41Z",
+  "tg_members": "2026-11-24T12:07:12Z",
+  "tg_posts": "2026-11-24T12:07:12Z",
   "ideas": "2026-11-24T10:14:44Z",
   "news": "2026-11-24 08:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-24T08",
   "instagram": "2026-11-24T08",
   "site": "2026-11-22",
-  "site_live": "2026-11-24T11:06:42Z",
+  "site_live": "2026-11-24T12:07:14Z",
   "activity": "2026-11-24T10:18:04Z",
   "asks": "2026-11-24T08:20Z"
  },
@@ -551,7 +551,7 @@
    "subs": 315,
    "views_total": 12193,
    "videos": 96,
-   "live_at": "2026-11-24T11:06:39Z",
+   "live_at": "2026-11-24T12:07:11Z",
    "views_7d": 736,
    "pct_7d": 51.1,
    "subs_7d": 0,
@@ -840,24 +840,19 @@
     }
    ],
    "live": {
-    "updated": "2026-11-24T11:06:42Z",
+    "updated": "2026-11-24T12:07:14Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
-    "today_pageloads": 3,
-    "today_visits": 1,
+    "today_pageloads": 5,
+    "today_visits": 2,
     "yesterday_pageloads": 10,
     "yesterday_visits": 10,
-    "pageloads_7d": 45,
-    "visits_7d": 39,
+    "pageloads_7d": 47,
+    "visits_7d": 40,
     "last24h": {
-     "pageloads": 12,
-     "visits": 10,
+     "pageloads": 14,
+     "visits": 11,
      "hours": [
-      {
-       "h": "2026-11-23T12:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
       {
        "h": "2026-11-23T13:00:00Z",
        "pageloads": 0,
@@ -970,6 +965,11 @@
       },
       {
        "h": "2026-11-24T11:00:00Z",
+       "pageloads": 2,
+       "visits": 1
+      },
+      {
+       "h": "2026-11-24T12:00:00Z",
        "pageloads": 0,
        "visits": 0
       }
@@ -978,32 +978,32 @@
     "days": [
      {
       "d": "2026-11-11",
-      "pageloads": 40,
-      "visits": 40,
-      "sampled": true
-     },
-     {
-      "d": "2026-11-12",
-      "pageloads": 60,
-      "visits": 40,
-      "sampled": true
-     },
-     {
-      "d": "2026-11-13",
       "pageloads": 20,
       "visits": 20,
       "sampled": true
      },
      {
-      "d": "2026-11-14",
+      "d": "2026-11-12",
       "pageloads": 0,
       "visits": 0,
       "sampled": false
      },
      {
-      "d": "2026-11-15",
+      "d": "2026-11-13",
+      "pageloads": 30,
+      "visits": 30,
+      "sampled": true
+     },
+     {
+      "d": "2026-11-14",
       "pageloads": 10,
       "visits": 10,
+      "sampled": true
+     },
+     {
+      "d": "2026-11-15",
+      "pageloads": 10,
+      "visits": 0,
       "sampled": true
      },
      {
@@ -1056,15 +1056,15 @@
      },
      {
       "d": "2026-11-24",
-      "pageloads": 3,
-      "visits": 1,
+      "pageloads": 5,
+      "visits": 2,
       "sampled": false
      }
     ],
     "top_pages_7d": [
      {
       "path": "/",
-      "count": 19
+      "count": 20
      },
      {
       "path": "/novyny/claude-bezkoshtovno/",
@@ -1075,11 +1075,11 @@
       "count": 3
      },
      {
-      "path": "/novyny/shtuchnyj-intelekt-dlya-ditej-tir-lyst/",
+      "path": "/novyny/moonlock-iphone-shakhrajski-sms/",
       "count": 2
      },
      {
-      "path": "/novyny/moonlock-iphone-shakhrajski-sms/",
+      "path": "/novyny/shtuchnyj-intelekt-dlya-ditej-tir-lyst/",
       "count": 2
      }
     ],
@@ -1097,18 +1097,18 @@
       "count": 4
      },
      {
-      "host": "www.bing.com",
+      "host": "www.youtube.com",
       "count": 2
      },
      {
-      "host": "www.facebook.com",
+      "host": "www.bing.com",
       "count": 2
      }
     ],
     "top_countries_7d": [
      {
       "country": "UA",
-      "count": 26
+      "count": 28
      },
      {
       "country": "US",
@@ -1132,8 +1132,8 @@
   "telegram": {
    "members": 6,
    "tg_goal": 150,
-   "posts_7d": 16,
-   "views_7d": 52,
+   "posts_7d": 17,
+   "views_7d": 54,
    "views_avg": 3.2,
    "posts_error": null,
    "best": [
@@ -1264,7 +1264,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 17
+   "total": 15
   },
   {
    "id": "ENKGdbr04h0",
@@ -1297,7 +1297,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 21
+   "total": 51
   },
   {
    "id": "gljrHADi4aU",
