@@ -1,14 +1,6 @@
 {
  "items": [
   {
-   "id": "2",
-   "agent": "seo",
-   "task": "Сторінка «Промпти для ChatGPT» → гайд",
-   "started": "2026-11-22T12:18:00Z",
-   "finished": "2026-11-22T12:24:00Z",
-   "result": "~1 500 слів, 24 промпти, FAQ"
-  },
-  {
    "id": "3",
    "agent": "shorts",
    "task": "Тір-лист #6 «ШІ для дітей»: сценарій",
@@ -1599,6 +1591,14 @@
    "started": "2026-11-25T08:40:47Z",
    "finished": "2026-11-25T08:45:45Z",
    "result": "ep83 cw7Qm4AMP3U (26.11), ep85 B4hDo15vi6o (28.11), finalize PASS, статті з youtube, квота ~4700 лишилось"
+  },
+  {
+   "id": "202",
+   "agent": "data",
+   "task": "Збирач даталейку 08:52Z (щоденний): sync, ingest, знімки, snapshot",
+   "started": "2026-11-25T08:53:26Z",
+   "finished": null,
+   "result": ""
   }
  ]
 }
