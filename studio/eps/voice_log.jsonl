@@ -285,3 +285,12 @@
 {"ev": "STOP", "reason": "TTS quota exhausted: 4 consecutive HTTP 429 from Gemini (gemini-3.8-flash-tts); try later or another key/model", "ok_requests": 0, "t": "05:19:15Z"}
 {"ev": "STOP", "reason": "TTS quota exhausted: 4 consecutive HTTP 429 from Gemini (gemini-3.8-flash-tts); try later or another key/model", "ok_requests": 0, "t": "06:19:47Z"}
 {"ev": "STOP", "reason": "TTS quota exhausted: 4 consecutive HTTP 429 from Gemini (gemini-3.8-flash-tts); try later or another key/model", "ok_requests": 0, "t": "07:19:57Z"}
+{"ev": "tts_ok", "n": 1, "out": "/home/claude/eps/guide1/part11.wav", "res": "(51.92, 24000, 'audio/wav')", "t": "08:02:14Z", "d": "2026-11-25"}
+{"ev": "part", "part": 11, "take": 3, "f0": 130.5, "f0_ok": true, "dur": 51.9, "audit": [{"seg": 33, "ratio": 0.89, "match": 0.67}, {"seg": 34, "ratio": 0.9, "match": 0.67}], "repeat_suspect": false, "t": "08:03:07Z", "d": "2026-11-25"}
+{"ev": "part_final", "part": 11, "take": 3, "f0": 130.5, "clean": true, "t": "08:03:07Z", "d": "2026-11-25"}
+{"ev": "tts_ok", "n": 2, "out": "/home/claude/eps/guide2/part4.wav", "res": "(87.52, 24000, 'audio/wav')", "t": "08:03:20Z", "d": "2026-11-25"}
+{"ev": "part", "part": 4, "take": 3, "f0": 131.2, "f0_ok": false, "dur": 87.5, "audit": [{"seg": 12, "ratio": 0.95, "match": 0.76}, {"seg": 13, "ratio": 0.98, "match": 0.77}, {"seg": 14, "ratio": 0.99, "match": 0.81}], "repeat_suspect": false, "t": "08:04:46Z", "d": "2026-11-25"}
+{"ev": "tts_ok", "n": 3, "out": "/home/claude/eps/guide2/part4.wav", "res": "(91.6, 24000, 'audio/wav')", "t": "08:04:59Z", "d": "2026-11-25"}
+{"ev": "part", "part": 4, "take": 4, "f0": 124.3, "f0_ok": true, "dur": 91.6, "audit": [{"seg": 12, "ratio": 0.98, "match": 0.79}, {"seg": 13, "ratio": 0.94, "match": 0.74}, {"seg": 14, "ratio": 0.99, "match": 0.76}], "repeat_suspect": false, "t": "08:06:30Z", "d": "2026-11-25"}
+{"ev": "part_final", "part": 4, "take": 4, "f0": 124.3, "clean": true, "t": "08:06:30Z", "d": "2026-11-25"}
+{"ev": "tts_ok", "n": 4, "out": "/home/claude/eps/guide2/part9.wav", "res": "(82.52, 24000, 'audio/wav')", "t": "08:06:44Z", "d": "2026-11-25"}
