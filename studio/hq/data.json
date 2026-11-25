@@ -1,25 +1,25 @@
 {
- "generated": "2026-11-25T19:07:02Z",
+ "generated": "2026-11-25T20:06:53Z",
  "fresh": {
-  "yt_live": "2026-11-25T19:07:02Z",
+  "yt_live": "2026-11-25T20:06:53Z",
   "yt_analytics": "2026-11-22",
-  "tg_members": "2026-11-25T19:07:03Z",
-  "tg_posts": "2026-11-25T19:07:05Z",
+  "tg_members": "2026-11-25T20:06:54Z",
+  "tg_posts": "2026-11-25T20:06:56Z",
   "ideas": "2026-11-25T18:21:48Z",
   "news": "2026-11-25 16:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-25T16",
   "instagram": "2026-11-25T16",
   "site": "2026-11-23",
-  "site_live": "2026-11-25T19:07:06Z",
-  "activity": "2026-11-25T18:35:58Z",
+  "site_live": "2026-11-25T20:06:57Z",
+  "activity": "2026-11-25T19:19:38Z",
   "asks": "2026-11-25T18:45Z"
  },
  "notes": [],
  "kpi": {
   "subs": 324,
   "subs_goal": 1000,
-  "long_hours": 11.2,
+  "long_hours": 12.1,
   "long_hours_goal": 4000,
   "views_total": 12624,
   "videos": 101,
@@ -580,7 +580,7 @@
    "subs": 324,
    "views_total": 12624,
    "videos": 101,
-   "live_at": "2026-11-25T19:07:02Z",
+   "live_at": "2026-11-25T20:06:53Z",
    "views_7d": 740,
    "pct_7d": 51.2,
    "subs_7d": 3,
@@ -588,7 +588,7 @@
     "2026-11-16",
     "2026-11-22"
    ],
-   "long_hours": 11.2,
+   "long_hours": 12.1,
    "history": [
     {
      "x": "2026-10-19",
@@ -975,7 +975,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-25T19:07:06Z",
+    "updated": "2026-11-25T20:06:57Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 8,
@@ -988,11 +988,6 @@
      "pageloads": 9,
      "visits": 9,
      "hours": [
-      {
-       "h": "2026-11-24T20:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
       {
        "h": "2026-11-24T21:00:00Z",
        "pageloads": 1,
@@ -1105,6 +1100,11 @@
       },
       {
        "h": "2026-11-25T19:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-25T20:00:00Z",
        "pageloads": 0,
        "visits": 0
       }
@@ -1431,7 +1431,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 3
+   "total": 8
   },
   {
    "id": "bvS0k_r3_bs",
@@ -2061,15 +2061,6 @@
  ],
  "activity": [
   {
-   "id": "191",
-   "agent": "post",
-   "task": "Озвучка 05:18Z: guide1 ч.11",
-   "started": "2026-11-25T05:17:43Z",
-   "finished": "2026-11-25T05:19:22Z",
-   "result": "429 одразу (0 ок); ч.11 чекає",
-   "agent_raw": "production"
-  },
-  {
    "id": "192",
    "agent": "post",
    "task": "Озвучка 06:18Z: guide1 ч.11",
@@ -2408,6 +2399,15 @@
    "started": "2026-11-25T18:28:15Z",
    "finished": "2026-11-25T18:35:58Z",
    "result": "5 ініціатив (черга озвучки за датою, exp pause, дедуп новин, страховка growth, TG взаємопіар); дашборд виправлено (v59); звіт власнику надіслано"
+  },
+  {
+   "id": "231",
+   "agent": "post",
+   "task": "Озвучка 19:18Z: шоу #3",
+   "started": "2026-11-25T19:17:57Z",
+   "finished": "2026-11-25T19:19:38Z",
+   "result": "STOP 429",
+   "agent_raw": "production"
   }
  ],
  "agents": [
