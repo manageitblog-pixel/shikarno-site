@@ -1,18 +1,18 @@
 {
- "generated": "2026-11-25T16:21:40Z",
+ "generated": "2026-11-25T16:57:10Z",
  "fresh": {
-  "yt_live": "2026-11-25T16:21:40Z",
+  "yt_live": "2026-11-25T16:57:10Z",
   "yt_analytics": "2026-11-22",
-  "tg_members": "2026-11-25T16:21:41Z",
-  "tg_posts": "2026-11-25T16:07:23Z",
-  "ideas": "2026-11-25T16:20:31Z",
-  "news": "2026-11-25 12:53",
+  "tg_members": "2026-11-25T16:57:11Z",
+  "tg_posts": "2026-11-25T16:57:12Z",
+  "ideas": "2026-11-25T16:56:38Z",
+  "news": "2026-11-25 16:53",
   "comp": "2026-11-23",
-  "tiktok": "2026-11-25T12",
-  "instagram": "2026-11-25T12",
+  "tiktok": "2026-11-25T16",
+  "instagram": "2026-11-25T16",
   "site": "2026-11-23",
-  "site_live": "2026-11-25T16:19:06Z",
-  "activity": "2026-11-25T16:21:40Z",
+  "site_live": "2026-11-25T16:57:13Z",
+  "activity": "2026-11-25T16:57:10Z",
   "asks": "2026-11-25T08:50Z"
  },
  "notes": [],
@@ -580,7 +580,7 @@
    "subs": 324,
    "views_total": 12536,
    "videos": 100,
-   "live_at": "2026-11-25T16:21:40Z",
+   "live_at": "2026-11-25T16:57:10Z",
    "views_7d": 740,
    "pct_7d": 51.2,
    "subs_7d": 3,
@@ -641,12 +641,12 @@
    "best_live": [
     {
      "title": "Меню на тиждень і вечеря з того, що є 🍳 Тір-лист Байта #7",
-     "views": 141,
+     "views": 143,
      "id": "bvS0k_r3_bs"
     },
     {
      "title": "ШІ для вчителя: план уроку і тест за 5 хвилин у Google Classroom 🍎",
-     "views": 113,
+     "views": 116,
      "id": "ENKGdbr04h0"
     },
     {
@@ -657,13 +657,13 @@
    ]
   },
   "tiktok": {
-   "videos": 20,
-   "views_total": 19040,
-   "views_7d": 2231,
-   "new_7d": 8,
+   "videos": 21,
+   "views_total": 19083,
+   "views_7d": 2274,
+   "new_7d": 9,
    "saves_total": 141,
-   "likes_total": 389,
-   "last_snapshot": "2026-11-25T12",
+   "likes_total": 390,
+   "last_snapshot": "2026-11-25T16",
    "best": [
     {
      "title": "Український ШІ Сяйво: коли вийде",
@@ -759,40 +759,44 @@
     {
      "x": "2026-11-25T12",
      "v": 19040
+    },
+    {
+     "x": "2026-11-25T16",
+     "v": 19083
     }
    ]
   },
   "instagram": {
    "ig_goal": 100,
    "ig_goal_note": "до 1.12; далі 500 до 31.01 (поріг «Подарунків» — перевірити для України)",
-   "followers": 14,
-   "views_30d": 1086,
-   "reach_30d": 819,
-   "acc_at": "25.11 12Z",
+   "followers": 19,
+   "views_30d": 1303,
+   "reach_30d": 971,
+   "acc_at": "25.11 16Z",
    "reels": 11,
-   "plays_total": 367,
+   "plays_total": 394,
    "likes_total": 6,
    "saves_total": 13,
-   "last_snapshot": "2026-11-25T12",
+   "last_snapshot": "2026-11-25T16",
    "best": [
     {
      "shortcode": "DgGRAlDjqkk",
      "title": "Як продати на OLX швидше з ШІ",
-     "plays": 63,
-     "pct": 5,
+     "plays": 66,
+     "pct": 6,
      "published": "2026-11-23"
     },
     {
      "shortcode": "DgGRAVLFORb",
      "title": "Інкогніто в ШІ — не сейф",
-     "plays": 61,
-     "pct": 11,
+     "plays": 62,
+     "pct": 13,
      "published": "2026-11-23"
     },
     {
      "shortcode": "DgGQ8fODsVW",
      "title": "Сімейний бюджет з ШІ. Тір-лист Байта #5",
-     "plays": 57,
+     "plays": 59,
      "pct": 8,
      "published": "2026-11-23"
     }
@@ -841,6 +845,10 @@
     {
      "x": "2026-11-25T12",
      "v": 367
+    },
+    {
+     "x": "2026-11-25T16",
+     "v": 394
     }
    ],
    "followers_hist": [
@@ -887,6 +895,10 @@
     {
      "x": "2026-11-25T12",
      "v": 14
+    },
+    {
+     "x": "2026-11-25T16",
+     "v": 19
     }
    ]
   },
@@ -963,7 +975,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-25T16:19:06Z",
+    "updated": "2026-11-25T16:57:13Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 6,
@@ -1419,7 +1431,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 141
+   "total": 143
   },
   {
    "id": "_wp0rz8edB8",
@@ -1452,7 +1464,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 113
+   "total": 116
   },
   {
    "id": "LtNuOtQe0pc",
@@ -1474,7 +1486,7 @@
    "views7": 6,
    "pct": 59.2,
    "complete": false,
-   "total": 72
+   "total": 69
   },
   {
    "id": "gljrHADi4aU",
@@ -1839,13 +1851,13 @@
   }
  ],
  "ideas_count": {
-  "total": 155,
-  "open": 146
+  "total": 160,
+  "open": 151
  },
  "lake": {
   "videos": 98,
   "daily": 828,
-  "news": 2093,
+  "news": 2114,
   "niche": 1035,
   "comp": 511,
   "comp_videos": 62794,
@@ -1857,87 +1869,87 @@
  "news": [
   {
    "date": "2026-11-25",
-   "source": "hf",
-   "title": "An Indic Voice Agent with CUGA",
+   "source": "techcrunch",
+   "title": "AI data centers are becoming harder to build, and neoclouds are feeling it",
    "score": null,
-   "url": "https://huggingface.co/blog/ibm-research/an-indic-voice-agent-with-cuga"
+   "url": "https://techcrunch.com/podcast/ai-data-centers-are-becoming-harder-to-build-and-neoclouds-are-feeling-it/"
+  },
+  {
+   "date": "2026-11-25",
+   "source": "techcrunch",
+   "title": "Amazon and Meta reportedly in talks to lift blockade on AI agent Muse",
+   "score": null,
+   "url": "https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/"
+  },
+  {
+   "date": "2026-11-25",
+   "source": "techcrunch",
+   "title": "The questions Jensen Huang and Nvidia will still have to answer about Megaspeed",
+   "score": null,
+   "url": "https://techcrunch.com/2026/11/25/the-questions-jensen-huang-and-nvidia-will-still-have-to-answer-about-megaspeed/"
+  },
+  {
+   "date": "2026-11-25",
+   "source": "verge",
+   "title": "Nothing offers a full look at its AI earbuds and charging case",
+   "score": null,
+   "url": "https://www.theverge.com/gadgets/1042162/nothing-ear-note-ai-earbuds-reveal"
+  },
+  {
+   "date": "2026-11-25",
+   "source": "verge",
+   "title": "Amazon is reportedly in talks to end Muse AI shopping block",
+   "score": null,
+   "url": "https://www.theverge.com/tech/1042071/meta-amazon-muse-ai-shopping-discussions"
+  },
+  {
+   "date": "2026-11-25",
+   "source": "verge",
+   "title": "Has vibe coding made open source the new normal for synths?",
+   "score": null,
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1040081/vibe-coding-open-source-music-firmware"
+  },
+  {
+   "date": "2026-11-25",
+   "source": "venturebeat",
+   "title": "Can you give AI agents live data without rebuilding your data stack?",
+   "score": null,
+   "url": "https://venturebeat.com/data/can-you-give-ai-agents-live-data-without-rebuilding-your-data-stack"
   },
   {
    "date": "2026-11-25",
    "source": "ars",
-   "title": "AI may soon change what it means to be a theoretical physicist",
+   "title": "Ars Live recap: Don’t expect military attacks on data centers to stop",
    "score": null,
-   "url": "https://arstechnica.com/ai/2026/11/ai-can-do-the-calculations-physicists-are-figuring-out-what-comes-next/"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "mittr",
-   "title": "AI is straining America’s open records systems",
-   "score": null,
-   "url": "https://www.technologyreview.com/2026/11/25/1149702/ai-is-straining-americas-open-records-systems/"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "wired",
-   "title": "Airplane Turbulence Is Extremely Hard to Predict, but Maybe Not for Long",
-   "score": null,
-   "url": "https://www.wired.com/story/airplane-turbulence-is-extremely-hard-to-predict-and-avoid/"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "ain",
-   "title": "Хакери зламали систему ЦРУ та інших розвідслужб США за допомогою ШІ",
-   "score": null,
-   "url": "https://ain.ua/2026/11/25/xakeri-zlamali-sistemu-cru-ta-insix-rozvidsluzb-ssa-za-dopomogoiu-si/"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "ain",
-   "title": "DOD Solution інтегрує свою систему автономності AURA AI в канадський дрон Draganfly Flex FPV",
-   "score": null,
-   "url": "https://ain.ua/2026/11/24/dod-solution-integruje-svoiu-sistemu-avtonomnosti-aura-ai-v-kanadskii-dron-draganfly-flex-fpv/"
+   "url": "https://arstechnica.com/gadgets/2026/11/ars-live-recap-dont-expect-military-attacks-on-data-centers-to-stop/"
   },
   {
    "date": "2026-11-25",
    "source": "devua",
-   "title": "Claude навчився перетворювати артефакти на окремі десктопні застосунки для macOS і Windows",
+   "title": "Отримавши 2000 заявок на одну вакансію, рекрутерка сховала у вакансіях інструкцію проти ШІ-агентів",
    "score": null,
-   "url": "https://dev.ua/news/claude-navchyvsia-peretvoriuvaty-artefakty-na-okremi-desktopni-zastosunky-1795608617"
+   "url": "https://dev.ua/news/otrymavshy-2000-zaiavok-na-odnu-vakansiiu-rekruterka-skhovala-u-vakansiiakh-instruktsiiu-proty-shi-ahentiv-1795624113"
   },
   {
    "date": "2026-11-25",
    "source": "devua",
-   "title": "Троє співзасновників xAI створили стартап Epochal, який навчатиме ШІ передбачати майбутнє. Як його навчатимуть?",
+   "title": "Не до хакерів: під час зламу Мінфіну США його ІТ-директор вайбкодив клон Civilization",
    "score": null,
-   "url": "https://dev.ua/news/epochal-1795605912"
+   "url": "https://dev.ua/news/holovnyi-it-dyrektor-minfinu-ssha-vaibkodyv-klon-civilization-pid-chas-kiberataky-na-vidomstvo-1795617215"
   },
   {
    "date": "2026-11-25",
    "source": "devua",
-   "title": "ШІ пише до 100% коду для половини розробників, але послаблює їхні навички — дослідження",
+   "title": "Гадаєте, ви зберігаєте анонімність онлайн? ШІ може викрити людину за дрібними деталями в тексті менш ніж за хвилину",
    "score": null,
-   "url": "https://dev.ua/news/ai-pyshe-do-100-kodu-dlia-polovyny-rozrobnykiv-1795604875"
+   "url": "https://dev.ua/news/hadaiete-zberihaiete-anonimnist-onlain"
   },
   {
    "date": "2026-11-25",
    "source": "devua",
-   "title": "Українська Air3F представила цифрову наземну станцію керування дронами T-Bone Digital",
+   "title": "Стартап колишньої CTO OpenAI випустив Inkling 2 Mini — ШІ-модель для програмування без інтернету. Для її запуску достатньо близько 20 ГБ пам’яті",
    "score": null,
-   "url": "https://dev.ua/news/t-bone-digital-1795602470"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "devua",
-   "title": "Компанії, пов'язані з китайською коханкою CEO Nvidia, задекларували ШІ-сервери в Китаї на $270 млн — Reuters",
-   "score": null,
-   "url": "https://dev.ua/news/kompanii-poviazani-z-kytaiskoiu-kokhankoiu-holovy-nvidia-zadeklaruvaly-shi-servery-v-kytai-na-270-mln-1795597464"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "speka",
-   "title": "Модулі NVIDIA знайшли в російських дронах і ракетах з ШІ",
-   "score": null,
-   "url": "https://speka.ua/news/moduli-nvidia-znaisli-v-rosiiskix-dronax-i-raketax-z-si-py15ek"
+   "url": "https://dev.ua/news/inkling-2-mini-1795611097"
   }
  ],
  "competitors": [
@@ -2048,15 +2060,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "183",
-   "agent": "post",
-   "task": "Озвучка 00:18Z: guide1 ч.3/11",
-   "started": "2026-11-25T00:18:15Z",
-   "finished": "2026-11-25T00:19:58Z",
-   "result": "429 одразу (0 ок)",
-   "agent_raw": "production"
-  },
   {
    "id": "184",
    "agent": "seo",
@@ -2398,6 +2401,15 @@
    "finished": "2026-11-25T16:21:14Z",
    "result": "+3 ідеї #153–155 (даталейк, 114 аномалій ≥3×), docs/research/niche-anomalies-2026-11-25.md",
    "agent_raw": "researcher"
+  },
+  {
+   "id": "223",
+   "agent": "de",
+   "task": "Збирач даталейку 16:52Z: новини, TikTok/IG/TG-знімок, сигнали",
+   "started": "2026-11-25T16:52:49Z",
+   "finished": "2026-11-25T16:57:10Z",
+   "result": "+37 новин; TikTok 8 відео, IG 19 підп., TG 6; ідеї #156–160 (макс 263.6); vidIQ 5 кр.",
+   "agent_raw": "data"
   }
  ],
  "agents": [
