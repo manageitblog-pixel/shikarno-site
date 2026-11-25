@@ -247,5 +247,27 @@ class ExpLifecycle(Base):
             ops.exp_start("nope", "2026-11-24", ["a"], conn=self.c)
 
 
+
+class DumpRestore(Base):
+    def test_dump_restore_roundtrip(self):
+        ops.decide("policy", "de", {"x": 1}, {"ok": True}, conn=self.c)
+        ops.pub_create("ep1", "youtube", conn=self.c)
+        ops.exp_design("exp-t", "de", hypothesis="h", variant="v", control="c", success_metric="m", threshold="t",
+                       sample_size=2, conn=self.c)
+        dump = ops.dump(self.c, self.dir / "d.sql")
+        v = ops.restore(dump, self.dir / "r.sqlite")
+        self.assertTrue(v["ok"], v["errors"]); self.assertEqual((v["decisions"], v["events"]), (2, 1))
+        r = ops.db(self.dir / "r.sqlite")
+        self.assertEqual(r.execute("select status from experiments").fetchone()[0], "designed")
+        with self.assertRaises(sqlite3.IntegrityError):   # тригери append-only відновлено
+            r.execute("delete from agent_decisions")
+        with self.assertRaises(FileExistsError):          # не затирає непорожню базу
+            ops.restore(dump, self.dir / "r.sqlite")
+
+    def test_test_db_does_not_touch_repo_dump(self):
+        before = ops.DUMP_PATH.stat().st_mtime if ops.DUMP_PATH.exists() else None
+        ops.decide("policy", "de", {"x": 1}, conn=self.c)
+        self.assertEqual(before, ops.DUMP_PATH.stat().st_mtime if ops.DUMP_PATH.exists() else None)
+
 if __name__ == "__main__":
     unittest.main()

@@ -16,7 +16,7 @@ usage:
   python3 studio/yt/lake.py comp [500]         # ≥500 каналів-конкурентів: знімок статистики + останні 15 відео (щотижня)
   python3 studio/yt/lake.py news                # новини: ~22 RSS (компанії, світові й UA ШІ-медіа), Anthropic, HN (ШІ), dou → news (кожні 4 год)
   python3 studio/yt/lake.py history [365]        # усі відео ШІ-конкурентів за рік (≈1 од. квоти на 50 відео)
-  python3 studio/yt/lake.py snapshot             # знімок живої бази в studio/data/snapshot/ (комітиться раз на добу)
+  python3 studio/yt/lake.py snapshot             # знімок живої бази в studio/data/snapshot/ + studio/data/ops_dump.sql (комітити обидва раз на добу)
   python3 studio/yt/lake.py ask "<тема>"        # що ми знаємо про тему: наші ролики й цифри, статті, радари, ніша, пошук
   python3 studio/yt/lake.py sql "select ..."    # довільний запит
   python3 studio/yt/lake.py stats               # скільки чого в лейку
@@ -385,6 +385,11 @@ if __name__ == "__main__":
     elif a[0] == "niche": niche()
     elif a[0] == "snapshot":  # жива база не в git (її постійно пишуть збирачі); у git — щоденний знімок
         import shutil; src = sqlite3.connect(DB); dst = sqlite3.connect(os.path.join(ROOT, "studio", "data", "snapshot", "analytics.sqlite")); src.backup(dst); dst.close(); print("snapshot OK")
+        # 25.11: ops.sqlite теж поза git → текстовий дамп studio/data/ops_dump.sql комітиться разом зі знімком
+        try:
+            sys.path.insert(0, os.path.join(ROOT, "studio")); import ops
+            if os.path.exists(ops.DB_PATH): print("ops dump OK", ops.dump())
+        except Exception as e: print("ops dump ERR", e)
     elif a[0] == "news": news()
     elif a[0] == "history": history(int(a[1]) if len(a) > 1 else 365)
     elif a[0] == "comp": competitors(int(a[1]) if len(a) > 1 else 500)

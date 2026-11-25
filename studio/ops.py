@@ -9,12 +9,18 @@ publications змінюються лише через transition() дозвол�
 
 Поки що (до кроку 4, після 25.11 18Z) ЖОДЕН наявний код ops.py не викликає. backfill лише читає JSON.
 
-CLI: python3 studio/ops.py verify | backfill | report [--date YYYY-MM-DD] | stats
+CLI: python3 studio/ops.py verify | backfill | report [--date YYYY-MM-DD] | stats | dump | restore [--force]
      python3 studio/ops.py decide --type T --agent A --input @in.json [--output @out.json] [--content ID] ...
      python3 studio/ops.py run start TASK [--agent A] | run finish RUN_ID [--status ok|failed] [--error ...]
      python3 studio/ops.py exp list | exp status ID | exp start ID --date YYYY-MM-DD --control a,b [--variant x]
      python3 studio/ops.py exp add ID CONTENT_ID [--arm variant|control] | exp redesign ID --reason ... --set f=v
+     python3 studio/ops.py exp design ID --agent A --reason ... --set hypothesis=... --set variant=... (новий designed)
 БД можна підмінити змінною SHK_OPS_DB (тести).
+
+ЗАХИСТ ВІД РЕСТАРТУ (25.11: рестарт контейнера стер ops.sqlite, бо він у .gitignore): після кожної успішної транзакції
+(_tx commit, run start/finish) жива база пишеться текстовим SQL-дампом у studio/data/ops_dump.sql (у git; лише для
+бойової БД DB_PATH, не для тестових). Дамп комітиться разом зі щоденним `lake.py snapshot`. Відновлення:
+`python3 studio/ops.py restore` (bootstrap.sh робить це сам, якщо ops.sqlite немає).
 """
 import argparse, datetime as dt, hashlib, json, os, re, sqlite3, subprocess, sys, uuid
 from pathlib import Path
@@ -25,6 +31,7 @@ sys.path.insert(0, str(HERE))
 import util  # noqa: E402
 
 DB_PATH = HERE / "data" / "ops.sqlite"
+DUMP_PATH = HERE / "data" / "ops_dump.sql"
 SNAP_DIR = HERE / "data" / "snapshots"
 GENESIS = "0" * 64
 SNAPSHOT_MAX = 64 * 1024
@@ -185,7 +192,77 @@ class _tx:
         if self.own: self.c.execute("begin immediate")
         return self.c
     def __exit__(self, et, *_):
-        if self.own: self.c.execute("rollback" if et else "commit")
+        if self.own:
+            self.c.execute("rollback" if et else "commit")
+            if not et: _after_commit(self.c)
+
+
+# ---------- текстовий дамп у git (захист від рестарту контейнера) ----------
+def _db_file(c):
+    for r in c.execute("pragma database_list"):
+        if r[1] == "main": return r[2] or ""
+    return ""
+
+
+def dump(conn=None, path=None):
+    """Пише всю БД (схема, тригери, рядки) як SQL у path (типово studio/data/ops_dump.sql), атомарно.
+    Читання в одній транзакції — дамп узгоджений, навіть якщо паралельно пишуть інші процеси."""
+    c = conn or db(); path = Path(path or DUMP_PATH)
+    own = not c.in_transaction
+    if own: c.execute("begin")
+    try:
+        lines = list(c.iterdump())
+    finally:
+        if own: c.execute("commit")
+    tmp = path.with_name(f".{path.name}.{os.getpid()}.tmp")
+    tmp.write_text("-- ШІкарно ops.sqlite dump (studio/ops.py dump); відновлення: python3 studio/ops.py restore\n"
+                   + "\n".join(lines) + "\n", encoding="utf-8")
+    os.replace(tmp, path)
+    return str(path)
+
+
+_DEFER = {"n": 0, "pending": None}
+
+
+class deferred_dump:
+    """Пакетні записи (backfill): один дамп у кінці замість дампу після кожної транзакції."""
+    def __enter__(self): _DEFER["n"] += 1
+    def __exit__(self, *_):
+        _DEFER["n"] -= 1
+        c, _DEFER["pending"] = _DEFER["pending"], None
+        if c is not None and _DEFER["n"] == 0: _after_commit(c)
+
+
+def _after_commit(c):
+    """Легкий гачок після commit: лише для бойової БД. Без git; помилка дампу не ламає запис."""
+    if _DEFER["n"]:
+        _DEFER["pending"] = c; return
+    try:
+        f = _db_file(c)
+        if f and os.path.realpath(f) == os.path.realpath(DB_PATH):
+            dump(c)
+    except Exception as e:  # noqa: BLE001
+        print(f"ops dump: {e}", file=sys.stderr)
+
+
+def restore(dump_path=None, path=None, force=False):
+    """Створює ops.sqlite з дампу. Якщо база вже є і в ній є рядки — відмова (без force)."""
+    dump_path = Path(dump_path or DUMP_PATH); path = Path(path or os.environ.get("SHK_OPS_DB") or DB_PATH)
+    if not dump_path.exists(): raise FileNotFoundError(dump_path)
+    if path.exists() and not force:
+        c = sqlite3.connect(str(path))
+        try:
+            n = sum(c.execute(f"select count(*) from {t}").fetchone()[0] for t in ("agent_decisions", "pub_events", "experiments")
+                    if c.execute("select 1 from sqlite_master where name=?", (t,)).fetchone())
+        finally:
+            c.close()
+        if n: raise FileExistsError(f"{path} уже має {n} рядків; --force, щоб перезаписати")
+    for ext in ("", "-wal", "-shm"):
+        if os.path.exists(str(path) + ext): os.remove(str(path) + ext)
+    c = sqlite3.connect(str(path))
+    c.executescript(dump_path.read_text(encoding="utf-8")); c.close()
+    v = verify(db(path))
+    return {"restored": str(path), "from": str(dump_path), **v}
 
 
 # ---------- decisions ----------
@@ -222,10 +299,11 @@ def decide(decision_type, agent_name, input_snapshot, output=None, *, run_id=Non
 
 # ---------- runs ----------
 def run_start(task, agent_name=None, trigger_id=None, conn=None):
-    rid = str(uuid.uuid4()); ts = now()
-    (conn or db()).execute("insert into runs(run_id,task,trigger_id,agent_name,started_at,status,heartbeat_at,"
-                           "api_calls,retries,tokens) values(?,?,?,?,?,'running',?,0,0,0)",
-                           (rid, task, trigger_id, agent_name, ts, ts))
+    rid = str(uuid.uuid4()); ts = now(); c = conn or db()
+    c.execute("insert into runs(run_id,task,trigger_id,agent_name,started_at,status,heartbeat_at,"
+              "api_calls,retries,tokens) values(?,?,?,?,?,'running',?,0,0,0)",
+              (rid, task, trigger_id, agent_name, ts, ts))
+    if not c.in_transaction: _after_commit(c)
     return rid
 
 
@@ -234,12 +312,13 @@ def heartbeat(run_id, conn=None):
 
 
 def run_finish(run_id, status="ok", error=None, api_calls=None, retries=None, tokens=None, conn=None):
-    ts = now()
-    cur = (conn or db()).execute(
+    ts = now(); c = conn or db()
+    cur = c.execute(
         "update runs set finished_at=?, heartbeat_at=?, status=?, error=?, api_calls=coalesce(?,api_calls),"
         " retries=coalesce(?,retries), tokens=coalesce(?,tokens) where run_id=?",
         (ts, ts, status, error, api_calls, retries, tokens, run_id))
     if cur.rowcount != 1: raise KeyError(run_id)
+    if not c.in_transaction: _after_commit(c)
 
 
 # ---------- publications ----------
@@ -365,7 +444,12 @@ def backfill_sources(eps=None, posts=None):
 
 def backfill(conn=None, eps=None, posts=None, now_dt=None):
     """legacy=1 картки з наявних файлів. Ідемпотентно: існуюча (content_id, platform) не чіпається."""
-    c = conn or db(); src = backfill_sources(eps, posts)
+    with deferred_dump():
+        return _backfill(conn or db(), eps, posts, now_dt)
+
+
+def _backfill(c, eps, posts, now_dt):
+    src = backfill_sources(eps, posts)
     t0 = now_dt or dt.datetime.now(dt.timezone.utc)
     uploaded = util.read_json(src["uploaded"], {}) or {}
     tiktok = (util.read_json(src["tiktok"], {}) or {}).get("posted_auto") or {}
@@ -432,6 +516,25 @@ def _exp(c, experiment_id):
     return r
 
 
+def exp_design(experiment_id, created_by, reason=None, conn=None, **fields):
+    """Новий експеримент у статусі designed + рядок agent_decisions(experiment, action=design).
+    Обов'язкові: hypothesis, variant, control, success_metric, threshold, sample_size. Дубль id — ValueError."""
+    bad = set(fields) - set(EXP_DESIGN_FIELDS)
+    if bad: raise ValueError(f"поля {sorted(bad)} не є полями дизайну")
+    miss = [k for k in ("hypothesis", "variant", "control", "success_metric", "threshold", "sample_size") if not fields.get(k)]
+    if miss: raise ValueError(f"бракує полів {miss}")
+    c = conn or db()
+    with _tx(c):
+        if c.execute("select 1 from experiments where experiment_id=?", (experiment_id,)).fetchone():
+            raise ValueError(f"{experiment_id} уже існує")
+        row = dict(fields, experiment_id=experiment_id, created_by=created_by, status="designed")
+        c.execute(f"insert into experiments({','.join(row)}) values({','.join('?' * len(row))})", list(row.values()))
+        inp = {"action": "design", "experiment_id": experiment_id}
+        if reason: inp["reason"] = reason
+        return decide("experiment", created_by, inp, {"status": "designed", "design": fields}, model="rule",
+                      confidence=1.0, status="executed", conn=c)
+
+
 def exp_redesign(experiment_id, reason, agent="data_engineer", conn=None, **fields):
     """Правка дизайну, поки status='designed' (після running це блокує тригер exp_frozen). Пише decision з before/after."""
     bad = set(fields) - set(EXP_DESIGN_FIELDS)
@@ -450,7 +553,7 @@ def exp_redesign(experiment_id, reason, agent="data_engineer", conn=None, **fiel
                       status="executed", conn=c)
 
 
-def exp_start(experiment_id, start_date, control_ids, variant_ids=(), agent="data_engineer", conn=None):
+def exp_start(experiment_id, start_date, control_ids, variant_ids=(), agent="data_engineer", conn=None, note=None):
     """designed → running: фіксує experiment_items (control/variant), start_date, publications.experiment_id
     для варіанта, рядок agent_decisions(experiment). Повторний старт — ValueError. Повертає decision_id."""
     control_ids, variant_ids = list(dict.fromkeys(control_ids or [])), list(dict.fromkeys(variant_ids or []))
@@ -473,13 +576,14 @@ def exp_start(experiment_id, start_date, control_ids, variant_ids=(), agent="dat
         if variant_ids:
             c.execute(f"update publications set experiment_id=? where content_id in ({','.join('?' * len(variant_ids))})",
                       [experiment_id, *variant_ids])
-        return decide("experiment", agent, {"action": "start", "experiment_id": experiment_id,
-                                            "design": {k: e[k] for k in EXP_DESIGN_FIELDS}},
+        inp = {"action": "start", "experiment_id": experiment_id, "design": {k: e[k] for k in EXP_DESIGN_FIELDS}}
+        if note: inp["note"] = note
+        return decide("experiment", agent, inp,
                       {"status": "running", "start_date": start_date, "control": control_ids, "variant": variant_ids},
                       model="rule", confidence=1.0, status="executed", conn=c)
 
 
-def exp_add(experiment_id, content_id, arm="variant", agent="data_engineer", conn=None):
+def exp_add(experiment_id, content_id, arm="variant", agent="data_engineer", conn=None, note=None):
     """Додати ролик у running-експеримент (variant — після заливки). Дубль або перевищення sample_size — ValueError."""
     if arm not in ("variant", "control"): raise ValueError(f"arm {arm!r}")
     c = conn or db()
@@ -498,7 +602,9 @@ def exp_add(experiment_id, content_id, arm="variant", agent="data_engineer", con
                   (experiment_id, content_id, arm))
         if arm == "variant":
             c.execute("update publications set experiment_id=? where content_id=?", (experiment_id, content_id))
-        return decide("experiment", agent, {"action": "add", "experiment_id": experiment_id},
+        inp = {"action": "add", "experiment_id": experiment_id}
+        if note: inp["note"] = note
+        return decide("experiment", agent, inp,
                       {"content_id": content_id, "arm": arm}, model="rule", confidence=1.0, status="executed",
                       related_content_id=content_id, conn=c)
 
@@ -573,7 +679,8 @@ def _arg_json(v):
 def main(argv=None):
     ap = argparse.ArgumentParser(prog="ops.py")
     sp = ap.add_subparsers(dest="cmd", required=True)
-    sp.add_parser("verify"); sp.add_parser("backfill"); sp.add_parser("stats")
+    sp.add_parser("verify"); sp.add_parser("backfill"); sp.add_parser("stats"); sp.add_parser("dump")
+    rs = sp.add_parser("restore"); rs.add_argument("--force", action="store_true"); rs.add_argument("--from", dest="src")
     r = sp.add_parser("report"); r.add_argument("--date")
     d = sp.add_parser("decide")
     d.add_argument("--type", required=True); d.add_argument("--agent", required=True)
@@ -584,7 +691,7 @@ def main(argv=None):
     ru = sp.add_parser("run"); ru.add_argument("action", choices=["start", "finish"]); ru.add_argument("ref")
     ru.add_argument("--agent"); ru.add_argument("--trigger"); ru.add_argument("--status", default="ok")
     ru.add_argument("--error")
-    ex = sp.add_parser("exp"); ex.add_argument("action", choices=["start", "add", "status", "list", "redesign"])
+    ex = sp.add_parser("exp"); ex.add_argument("action", choices=["start", "add", "status", "list", "redesign", "design"])
     ex.add_argument("id", nargs="?"); ex.add_argument("content", nargs="?")
     ex.add_argument("--date"); ex.add_argument("--control", default=""); ex.add_argument("--variant", default="")
     ex.add_argument("--arm", default="variant"); ex.add_argument("--agent", default="data_engineer")
@@ -605,9 +712,19 @@ def main(argv=None):
         elif a.action == "redesign":
             if not a.reason or not a.set: ap.error("exp redesign ID --reason ... --set field=value")
             out = {"decision_id": exp_redesign(a.id, a.reason, a.agent, **dict(s.split("=", 1) for s in a.set))}
+        elif a.action == "design":
+            if not a.set: ap.error("exp design ID --agent A [--reason ...] --set field=value ...")
+            f = dict(s.split("=", 1) for s in a.set)
+            if "sample_size" in f: f["sample_size"] = int(f["sample_size"])
+            if "max_share" in f: f["max_share"] = float(f["max_share"])
+            out = {"decision_id": exp_design(a.id, a.agent, a.reason, **f)}
         print(json.dumps(out, ensure_ascii=False, indent=1)); return 0
     if a.cmd == "verify":
         v = verify(); print(json.dumps(v, ensure_ascii=False, indent=1)); return 0 if v["ok"] else 1
+    if a.cmd == "dump":
+        print(dump()); return 0
+    if a.cmd == "restore":
+        v = restore(a.src, force=a.force); print(json.dumps(v, ensure_ascii=False, indent=1)); return 0 if v["ok"] else 1
     if a.cmd == "backfill":
         print(json.dumps(backfill(), ensure_ascii=False)); return 0
     if a.cmd == "stats":
