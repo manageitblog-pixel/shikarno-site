@@ -3161,10 +3161,14 @@
   "source": "https://status.openai.com/incidents/01M898HVZGXFV2XC4775CG9GF8",
   "by": "researcher-news",
   "note": "Перевірено 25.11 ~13:20Z на status.openai.com (API incidents.json): інцидент «ChatGPT, ChatGPT Work, and Codex Cloud are experiencing elevated conversation errors» відкрито 25.11 11:48Z, impact minor, о 13:07Z «improvements following our mitigations», ще не resolved. Попередні: 23.11 16:38Z «Elevated errors with GPT-6 conversations on paid ChatGPT plans», 18.11 «Elevated conversation errors for Free and Go users» — тобто 3 збої розмов за 8 днів (усі — за статус-сторінкою OpenAI). UA-медіа (РБК-Україна 12:26Z, УНН 12:29Z) пишуть про «глобальний збій». Подача — корисність: 1) глянь status.openai.com, а не перезавантажуй 10 разів; 2) скопіюй довгий промпт перед відправкою; 3) запасний безкоштовний ШІ (Claude Free, Gemini) — доступність в Україні звірити на живих акаунтах перед публікацією. Не перебільшувати масштаб: OpenAI позначає impact minor. Пара до №123/№140 (експорт чатів).",
-  "status": "approved",
+  "status": "done",
   "added": "2026-11-25",
   "id": "149",
-  "decision": "Скан 25.11 день: бал 376,9 ≥300 (free, «твоє + дія», подія сьогодні 11:48Z). Слот: «сигнал» за години — TG-пост 25.11 до 16Z + коротка новина на сайті (300–600 слів) 25.11 до 18Z; TikTok чт 26.11 вечір (≥3 год від інших). Short — ні: слоти до 5.12 зайняті, а тема згасне. Перед публікацією: статус інциденту (resolved?) і доступність Claude Free / Gemini в Україні на живих акаунтах; impact у OpenAI — minor, не роздувати."
+  "decision": "Скан 25.11 день: бал 376,9. Сайт+TG зроблено 25.11 13:47Z (новина chatgpt-ne-pratsyuie-zbij-25-lystopada, TG 147; інцидент станом на 13:45Z — Monitoring). TikTok 26.11 вечір — ще в плані.",
+  "url": "https://shikarno.com.ua/novyny/chatgpt-ne-pratsyuie-zbij-25-lystopada/",
+  "telegram_post": "147",
+  "prior_at_publish": 0.906,
+  "score_at_publish": 376.9
  },
  {
   "title": "TikTok дав безкоштовну перевірку «це ШІ чи ні?» — Байт тестує: ловить відео з CapCut, а з Sora чи Veo — ні",
