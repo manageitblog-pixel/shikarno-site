@@ -1,22 +1,6 @@
 {
  "items": [
   {
-   "id": "15",
-   "agent": "de",
-   "task": "P0: yt.py — timeout, retry, квота, ідемпотентна заливка; баг gtts",
-   "started": "2026-11-22T13:09:59Z",
-   "finished": "2026-11-22T13:11:34Z",
-   "result": "retry/timeout/квота-лог, захист від дублю заливки, gtts — зрозуміла помилка квоти"
-  },
-  {
-   "id": "16",
-   "agent": "de",
-   "task": "P0: історія метрик і час перегляду в даталейку",
-   "started": "2026-11-22T13:09:59Z",
-   "finished": "2026-11-22T13:16:18Z",
-   "result": "channel_daily, traffic_daily, tg_daily, watch_min; години довгих з API (10.1 год)"
-  },
-  {
    "id": "17",
    "agent": "de",
    "task": "Дашборд: історичні графіки замість «Для CEO»",
@@ -1599,6 +1583,22 @@
    "started": "2026-11-25T13:28:08Z",
    "finished": "2026-11-25T13:47:14Z",
    "result": "Новина /novyny/chatgpt-ne-pratsyuie-zbij-25-lystopada/ (200), TG №147"
+  },
+  {
+   "id": "215",
+   "agent": "production",
+   "task": "Озвучка 14:18Z: шоу #3",
+   "started": "2026-11-25T14:18:02Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "216",
+   "agent": "seo",
+   "task": "Стаття #151 «Фейкові магазини на Чорну п'ятницю» (26.11 ранок)",
+   "started": "2026-11-25T14:18:02Z",
+   "finished": null,
+   "result": ""
   }
  ]
 }
