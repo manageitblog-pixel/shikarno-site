@@ -1,18 +1,18 @@
 {
- "generated": "2026-11-25T06:06:57Z",
+ "generated": "2026-11-25T07:06:51Z",
  "fresh": {
-  "yt_live": "2026-11-25T06:06:57Z",
-  "yt_analytics": "2026-11-21",
-  "tg_members": "2026-11-25T06:06:58Z",
-  "tg_posts": "2026-11-25T06:06:59Z",
-  "ideas": "2026-11-25T04:57:13Z",
+  "yt_live": "2026-11-25T07:06:51Z",
+  "yt_analytics": "2026-11-22",
+  "tg_members": "2026-11-25T07:06:52Z",
+  "tg_posts": "2026-11-25T07:06:53Z",
+  "ideas": "2026-11-25T06:51:29Z",
   "news": "2026-11-25 04:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-25T04",
   "instagram": "2026-11-25T04",
   "site": "2026-11-22",
-  "site_live": "2026-11-25T06:07:00Z",
-  "activity": "2026-11-25T05:19:22Z",
+  "site_live": "2026-11-25T07:06:54Z",
+  "activity": "2026-11-25T07:02:17Z",
   "asks": "2026-11-24T18:40Z"
  },
  "notes": [],
@@ -23,12 +23,12 @@
   "long_hours_goal": 4000,
   "views_total": 12275,
   "videos": 98,
-  "views_7d": 736,
-  "pct_7d": 51.1,
-  "subs_7d": 0,
+  "views_7d": 740,
+  "pct_7d": 51.2,
+  "subs_7d": 3,
   "window": [
-   "2026-11-15",
-   "2026-11-21"
+   "2026-11-16",
+   "2026-11-22"
   ],
   "tg": 6,
   "tg_goal": 150,
@@ -190,12 +190,17 @@
   {
    "d": "2026-11-20",
    "v": 65,
-   "p": 49.3
+   "p": 49.4
   },
   {
    "d": "2026-11-21",
    "v": 72,
    "p": 35.3
+  },
+  {
+   "d": "2026-11-22",
+   "v": 120,
+   "p": 49.7
   }
  ],
  "site": [
@@ -375,7 +380,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 155
+   "subs_total": 152
   },
   {
    "w": "2026-08-03",
@@ -389,7 +394,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 155
+   "subs_total": 152
   },
   {
    "w": "2026-08-17",
@@ -403,7 +408,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 155
+   "subs_total": 152
   },
   {
    "w": "2026-08-24",
@@ -417,7 +422,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 155
+   "subs_total": 152
   },
   {
    "w": "2026-08-31",
@@ -431,7 +436,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 155
+   "subs_total": 152
   },
   {
    "w": "2026-09-07",
@@ -445,7 +450,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 155
+   "subs_total": 152
   },
   {
    "w": "2026-09-28",
@@ -459,11 +464,11 @@
    "partial_site": false,
    "subs_cum": -1,
    "long_cum": 0.0,
-   "subs_total": 154
+   "subs_total": 151
   },
   {
    "w": "2026-10-19",
-   "views": 567,
+   "views": 565,
    "subs": 1,
    "long_h": 0.2,
    "short_views": 555,
@@ -473,7 +478,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.2,
-   "subs_total": 155
+   "subs_total": 152
   },
   {
    "w": "2026-10-26",
@@ -487,7 +492,7 @@
    "partial_site": false,
    "subs_cum": 6,
    "long_cum": 0.7,
-   "subs_total": 161
+   "subs_total": 158
   },
   {
    "w": "2026-11-02",
@@ -501,7 +506,7 @@
    "partial_site": false,
    "subs_cum": 155,
    "long_cum": 5.5,
-   "subs_total": 310
+   "subs_total": 307
   },
   {
    "w": "2026-11-09",
@@ -515,20 +520,20 @@
    "partial_site": false,
    "subs_cum": 160,
    "long_cum": 8.2,
-   "subs_total": 315
+   "subs_total": 312
   },
   {
    "w": "2026-11-16",
-   "views": 622,
-   "subs": 0,
-   "long_h": 2.2,
-   "short_views": 466,
+   "views": 742,
+   "subs": 3,
+   "long_h": 2.7,
+   "short_views": 549,
    "clicks": 11,
    "impr": 969,
-   "partial": true,
+   "partial": false,
    "partial_site": false,
-   "subs_cum": 160,
-   "long_cum": 10.5,
+   "subs_cum": 163,
+   "long_cum": 10.9,
    "subs_total": 315
   }
  ],
@@ -555,19 +560,19 @@
    "subs": 315,
    "views_total": 12275,
    "videos": 98,
-   "live_at": "2026-11-25T06:06:57Z",
-   "views_7d": 736,
-   "pct_7d": 51.1,
-   "subs_7d": 0,
+   "live_at": "2026-11-25T07:06:51Z",
+   "views_7d": 740,
+   "pct_7d": 51.2,
+   "subs_7d": 3,
    "window": [
-    "2026-11-15",
-    "2026-11-21"
+    "2026-11-16",
+    "2026-11-22"
    ],
    "long_hours": 11.2,
    "history": [
     {
      "x": "2026-10-19",
-     "v": 567,
+     "v": 565,
      "p": false
     },
     {
@@ -587,25 +592,25 @@
     },
     {
      "x": "2026-11-16",
-     "v": 622,
-     "p": true
+     "v": 742,
+     "p": false
     }
    ],
    "best": [
     {
      "title": "ChatGPT вчиться на твоїх чатах — як вимкнути за 30 секунд 🔐",
-     "views": 86,
+     "views": 93,
      "id": "Vp1PPNxtcrI"
+    },
+    {
+     "title": "Як продати на OLX швидше з ШІ: опис, ціна, шахраї 🛍️ ШІ для професій #9",
+     "views": 42,
+     "id": "LtNuOtQe0pc"
     },
     {
      "title": "Meta AI у WhatsApp: що він запам'ятовує і де справжній інкогніто-чат 💬",
      "views": 42,
      "id": "bRanUVdt2Pw"
-    },
-    {
-     "title": "Що ШІ знає про тебе: як вимкнути навчання в ChatGPT, Gemini, Claude, Meta AI і Copilot (2026)",
-     "views": 42,
-     "id": "GNqU-wcz9Ws"
     }
    ],
    "best_live": [
@@ -904,7 +909,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-25T06:07:00Z",
+    "updated": "2026-11-25T07:06:54Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 1,
@@ -914,14 +919,9 @@
     "pageloads_7d": 50,
     "visits_7d": 42,
     "last24h": {
-     "pageloads": 10,
-     "visits": 6,
+     "pageloads": 7,
+     "visits": 5,
      "hours": [
-      {
-       "h": "2026-11-24T07:00:00Z",
-       "pageloads": 3,
-       "visits": 1
-      },
       {
        "h": "2026-11-24T08:00:00Z",
        "pageloads": 0,
@@ -1034,6 +1034,11 @@
       },
       {
        "h": "2026-11-25T06:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-25T07:00:00Z",
        "pageloads": 0,
        "visits": 0
       }
@@ -1197,8 +1202,8 @@
    "members": 6,
    "tg_goal": 150,
    "posts_7d": 16,
-   "views_7d": 51,
-   "views_avg": 3.2,
+   "views_7d": 58,
+   "views_avg": 3.6,
    "posts_error": null,
    "best": [
     {
@@ -1208,16 +1213,16 @@
      "date": "2026-11-22T12:05:22Z"
     },
     {
-     "id": 133,
-     "text": "🤖 Google випустив Gemini 4 Neon Нова модель у сімействі Gemini 4 — для складних задач з купою інструментів: код, аналітика, наука. Може й са",
-     "views": 4,
-     "date": "2026-11-19T12:03:37Z"
+     "id": 141,
+     "text": "🎨 Як вимкнути ШІ в Canva: з'явився окремий перемикач Набридли Magic-кнопки всюди? Тепер генеративний ШІ можна вимкнути одним тумблером, на б",
+     "views": 5,
+     "date": "2026-11-22T19:44:05Z"
     },
     {
-     "id": 136,
-     "text": "🚨 Підозріле SMS? Не тисни — перевір за 10 секунд Три червоні прапорці: 1️⃣ квапить — «терміново, картку заблоковано» 2️⃣ дивне посилання із ",
+     "id": 132,
+     "text": "Anthropic виходить на біржу: акції по $83 — дорожче, ніж планували Компанія, що робить Claude, визначила ціну IPO. Ще 10 листопада обіцяли $",
      "views": 4,
-     "date": "2026-11-20T17:05:54Z"
+     "date": "2026-11-19T06:49:05Z"
     }
    ],
    "history": [
@@ -1297,6 +1302,12 @@
    "pct": 51.9
   },
   {
+   "name": "Short · clip",
+   "n": 1,
+   "views": 39,
+   "pct": 68.5
+  },
+  {
    "name": "Short · sec",
    "n": 12,
    "views": 35.5,
@@ -1321,12 +1332,12 @@
    "pct": 30.1
   }
  ],
- "formats_cutoff": "2026-11-15",
+ "formats_cutoff": "2026-11-16",
  "videos": [
   {
    "id": "bvS0k_r3_bs",
    "title": "Меню на тиждень і вечеря з того, що є 🍳 Тір-лист Байта #7",
-   "format": null,
+   "format": "tier",
    "short": true,
    "published": "2026-11-24",
    "views7": null,
@@ -1337,7 +1348,7 @@
   {
    "id": "_wp0rz8edB8",
    "title": "ШІ для SMM: контент-план і голос бренду без пояснень щоразу 📱 ChatGPT, Gemini, Claude",
-   "format": null,
+   "format": "clip",
    "short": true,
    "published": "2026-11-24",
    "views7": null,
@@ -1373,8 +1384,8 @@
    "format": "prof",
    "short": true,
    "published": "2026-11-22",
-   "views7": null,
-   "pct": null,
+   "views7": 42,
+   "pct": 60.1,
    "complete": false,
    "total": 89
   },
@@ -1384,8 +1395,8 @@
    "format": "digest",
    "short": false,
    "published": "2026-11-22",
-   "views7": null,
-   "pct": null,
+   "views7": 6,
+   "pct": 59.2,
    "complete": false,
    "total": 62
   },
@@ -1395,8 +1406,8 @@
    "format": "tier",
    "short": true,
    "published": "2026-11-21",
-   "views7": 2,
-   "pct": null,
+   "views7": 3,
+   "pct": 79.0,
    "complete": false,
    "total": 6
   },
@@ -1417,7 +1428,7 @@
    "format": "sec",
    "short": true,
    "published": "2026-11-19",
-   "views7": 37,
+   "views7": 41,
    "pct": 47.9,
    "complete": false,
    "total": 46
@@ -1431,7 +1442,7 @@
    "views7": 42,
    "pct": 37.4,
    "complete": false,
-   "total": 44
+   "total": 45
   },
   {
    "id": "Vp1PPNxtcrI",
@@ -1439,8 +1450,8 @@
    "format": "clip",
    "short": true,
    "published": "2026-11-17",
-   "views7": 86,
-   "pct": 47.6,
+   "views7": 93,
+   "pct": 46.2,
    "complete": false,
    "total": 99
   },
@@ -1450,9 +1461,9 @@
    "format": "clip",
    "short": true,
    "published": "2026-11-16",
-   "views7": 38,
+   "views7": 39,
    "pct": 68.5,
-   "complete": false,
+   "complete": true,
    "total": 45
   },
   {
@@ -1527,6 +1538,32 @@
    "decision": "бал 458 ≥300: сценарій уже є — ep87 (Чорна пʼятниця, PASS), вийти до 28.11",
    "kw": "чорна п'ятниця (35); чорна п'ятниця маркетинг (11); чорна п'ятниця в атб (9) — kw.py 24.11",
    "score": 458.2
+  },
+  {
+   "title": "Claude склав тобі «підсумок місяця»: що він помітив у твоїх чатах — де глянути безкоштовно і як видалити",
+   "format": "free",
+   "channels": [
+    "short",
+    "tiktok",
+    "insta",
+    "site",
+    "tg"
+   ],
+   "demand": 3,
+   "fresh": 5,
+   "show": 5,
+   "fit": 5,
+   "length": 32,
+   "hook": "you",
+   "source": "https://support.claude.com/en/articles/15672559-see-your-monthly-recap",
+   "by": "researcher-news",
+   "note": "Claude release notes 24.11.2026: monthly recap (Reflect) вийшов з бети для Free/Pro/Max/Ultra на вебі, Desktop, iOS, Android; довідка: лише з увімкненою пам'яттю, не для Team/Enterprise, «у всіх регіонах, де доступний Claude»; Settings > Wellbeing > Reflect > View; періоди місяць/3/6/12 міс; збережені підсумки можна видалити. Розгортається поступово — перевірити на реальному акаунті в Україні в день запису. Сезон Spotify Wrapped (початок грудня). kw.py 25.11: claude 41, claude безкоштовно 29, claude українською 29; spotify wrapped 10.",
+   "kw": "claude (41); claude безкоштовно (29); claude українською (29) — kw.py 25.11",
+   "status": "approved",
+   "added": "2026-11-25",
+   "id": "133",
+   "decision": "Радар 25.11: бал 441,7 (free, «твоє + дія», реліз Claude 24.11 для Free, у всіх регіонах; сезон Wrapped). Short сб 5.12 17:00Z (19:00 Київ) — найближчий вільний слот Short (26.11–4.12 зайняті ep83–90, #122, #119; ротація: 3.12 free, 4.12 sec, 5.12 free — ок) + TikTok/Reels + сайт + TG. Сценарій не раніше 2.12 (черга озвучки повна). Шлях Settings > Wellbeing > Reflect звірити на реальному акаунті в Україні; без пам'яті підсумку нема — сказати чесно; незалежний фактчек; link при заливці",
+   "score": 441.7
   },
   {
    "title": "Куди поїхати на вихідні: який ШІ? Тір-лист #8 (подорожі)",
@@ -1671,6 +1708,30 @@
    "score": 351.5
   },
   {
+   "title": "ПДВ для ФОПів з 2028: спитав ChatGPT, Gemini і Claude про нові правила — хто вигадав, а хто чесно сказав «це лише проєкт»",
+   "format": "check",
+   "channels": [
+    "short",
+    "site",
+    "tg"
+   ],
+   "demand": 5,
+   "fresh": 5,
+   "show": 4,
+   "fit": 4,
+   "length": 35,
+   "hook": "you",
+   "source": "https://dou.ua/lenta/news/new-taxes-for-businesses-2028/",
+   "by": "researcher-search",
+   "note": "DOU 24.11 і dev.ua 25.11: Мінфін оновив законопроєкт (документи від 21.11, офіційно не зареєстрований, за Железняком): ПДВ для ФОП/спрощенців з 1.01.2028 при обороті >€85 тис. за 12 міс; 3 група 5%→3% + ПДВ; е-резиденти не підпадають. kw.py 25.11: «фоп з пдв» 333, «фоп платник пдв» 247, «пдв для фоп 2026» 18. Наш кут — перевірка ШІ на свіжому податковому питанні, без порад з податків; першоджерело (таблиця Железняка / Мінфін) відкрити перед записом.",
+   "kw": "фоп з пдв (333); фоп платник пдв (247); фоп єсв (195) — kw.py 25.11",
+   "status": "new",
+   "added": "2026-11-25",
+   "id": "134",
+   "decision": "Радар 25.11: бал 311,5, попит «фоп з пдв» 333 — найвищий за тиждень. Не approved: законопроєкт не зареєстрований, правила можуть змінитись; check-прайор слабкий (мед. 23). Спершу TG/сайт, Short — якщо законопроєкт зареєструють (тоді оцінити разом з №35)",
+   "score": 311.5
+  },
+  {
    "title": "ШІ для ФОПа: рахунок, акт і нагадування про податок за 5 хвилин — що можна довірити ШІ, а що ні",
    "format": "prof",
    "channels": [
@@ -1714,59 +1775,15 @@
    "added": "2026-11-23",
    "id": "77",
    "score": 293.3
-  },
-  {
-   "title": "5 коротких команд для ChatGPT, які варто зберегти: «коротше», «таблицею», «як для 10-річного», «перевір себе», «3 варіанти»",
-   "format": "skills",
-   "channels": [
-    "insta",
-    "short",
-    "tiktok",
-    "site"
-   ],
-   "demand": 4,
-   "fresh": 3,
-   "show": 5,
-   "fit": 5,
-   "length": 30,
-   "hook": "you",
-   "source": "https://www.instagram.com/reel/Df61fN1RO07",
-   "by": "researcher-niche",
-   "note": "Reels @by.valtron «10 коротких команд для ChatGPT. Сохраняй» 101,6x/124K при 7,7K підписників (рос.) — лістикл «чит-коди», швидкі склейки, екран-до/після. Робимо 5 (не 10 — ≤35 с), кожна команда = 1 екран результату в одному інтерфейсі, українською. Відрізняється від #77 (одна фраза-уточнення) і #55 (антиШІ-текст). Reels-first: заклик «збережи» + підпис-шпаргалка з усіма 5 командами текстом (збереження — сигнал Reels); у TikTok — той самий ролик, але гачок «ти пишеш ChatGPT занадто довго».",
-   "status": "new",
-   "added": "2026-11-24",
-   "id": "90",
-   "score": 293.3
-  },
-  {
-   "title": "Надиктуй ChatGPT хоч годину: живий диктант — текст з’являється, поки говориш (і безкоштовно)",
-   "format": "try",
-   "channels": [
-    "show",
-    "short",
-    "site",
-    "tg"
-   ],
-   "demand": 4,
-   "fresh": 4,
-   "show": 5,
-   "fit": 5,
-   "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
-   "by": "researcher-web",
-   "status": "new",
-   "added": "2026-11-22",
-   "id": "25",
-   "decision": "сигнал TG 140 22.11",
-   "score": 282.0
   }
  ],
  "ideas_count": {
-  "total": 132,
-  "open": 127
+  "total": 135,
+  "open": 130
  },
  "lake": {
-  "videos": 96,
-  "daily": 800,
+  "videos": 98,
+  "daily": 828,
   "news": 2058,
   "niche": 1035,
   "comp": 511,
@@ -1970,31 +1987,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "152",
-   "agent": "coo",
-   "task": "COO ранок 24.11: ≥3 покращення до власника, дашборд очима власника, стан конвеєра",
-   "started": "2026-11-24T07:27:45Z",
-   "finished": "2026-11-24T07:37:28Z",
-   "result": "ep82 стаття; прогноз при заливці; tg_daily окремо; TikTok-пагінація; HQ: 20 завислих закрито, IG, розклад"
-  },
-  {
-   "id": "153",
-   "agent": "de",
-   "task": "Збирач даталейку 08:52Z (щоденний): sync, ingest, outliers, знімки TikTok/IG/TG, snapshot",
-   "started": "2026-11-24T08:52:50Z",
-   "finished": "2026-11-24T18:33:19Z",
-   "result": "знімки TikTok/IG/TG 08Z, sync/ingest, snapshot 5602d52 (закрив COO)",
-   "agent_raw": "data"
-  },
-  {
-   "id": "154",
-   "agent": "cso",
-   "task": "CSO 24.11: трекер 5 платформ + рішення по yt-related-cta",
-   "started": "2026-11-24T09:19:47Z",
-   "finished": "2026-11-24T18:33:19Z",
-   "result": "трекер: YT 10,7 год/315 підп.; yt-related-cta-v2 (закрив COO за dispatch-log 09:25Z)"
-  },
   {
    "id": "155",
    "agent": "seo",
@@ -2315,6 +2307,33 @@
    "finished": "2026-11-25T05:19:22Z",
    "result": "429 одразу (0 ок); ч.11 чекає",
    "agent_raw": "production"
+  },
+  {
+   "id": "192",
+   "agent": "post",
+   "task": "Озвучка 06:18Z: guide1 ч.11",
+   "started": "2026-11-25T06:18:14Z",
+   "finished": "2026-11-25T06:19:54Z",
+   "result": "429 одразу (0 ок)",
+   "agent_raw": "production"
+  },
+  {
+   "id": "193",
+   "agent": "cm",
+   "task": "TG-відділ 25.11: метрика, пост дня, воронки, група",
+   "started": "2026-11-25T06:42:09Z",
+   "finished": "2026-11-25T07:02:17Z",
+   "result": "6 учасників (Δ0); пост дня №146 «промпт: хай ChatGPT спершу спитає»; перші коментарі ep84/ep86 → «А чи Б» + /37",
+   "agent_raw": "tg"
+  },
+  {
+   "id": "194",
+   "agent": "trend",
+   "task": "Ранкова редакція 25.11: аналітика, радар, редколегія, топ-3 власнику",
+   "started": "2026-11-25T06:44:17Z",
+   "finished": "2026-11-25T06:53:00Z",
+   "result": "Радар: дані 22.11 120 переглядів/33%/63% пошук; ідеї #133–135, approved #133 (5.12); власнику msg 2387",
+   "agent_raw": "research"
   }
  ],
  "agents": [
