@@ -17,7 +17,8 @@ while time.time() < end:
             try:
                 sys.path.insert(0, '/home/claude/yt'); import auth
                 res = auth.code(m['text']); ok = 'yt-analytics' in res
-                inbox.tg.call('sendMessage', chat_id=OWNER, text='✅ Вхід у YouTube оновлено' + (' — аналітика підключена.' if ok else '.') + ' Дякую!')
+                msg = '✅ Google Drive підключено — резерв медіа увімкнено. Дякую!' if 'drive.file' in res and 'youtube' not in res else '✅ Вхід у YouTube оновлено' + (' — аналітика підключена.' if ok else '.') + ' Дякую!'
+                inbox.tg.call('sendMessage', chat_id=OWNER, text=msg)
                 print('OAUTH_OK', res)
             except Exception as e:
                 inbox.tg.call('sendMessage', chat_id=OWNER, text='⚠️ Код не прийнявся (' + str(e)[:80] + '). Зараз надішлю нове посилання.')

@@ -6,32 +6,33 @@ import base64, hashlib, json, os, secrets, sys, time, urllib.parse, urllib.reque
 D = os.path.dirname(os.path.realpath(__file__))
 SCOPES = ["https://www.googleapis.com/auth/youtube.upload", "https://www.googleapis.com/auth/youtube",
           "https://www.googleapis.com/auth/youtube.force-ssl", "https://www.googleapis.com/auth/yt-analytics.readonly",
-          "https://www.googleapis.com/auth/webmasters.readonly", "https://www.googleapis.com/auth/analytics.readonly",
-          "https://www.googleapis.com/auth/drive.file"]  # drive.file (власник 25.11: «відразу заливай десь») — лише файли, створені студією, приватно  # + Search Console і GA4 — лише читання (погоджено власником 28.10)
+          "https://www.googleapis.com/auth/webmasters.readonly", "https://www.googleapis.com/auth/analytics.readonly"]  # + Search Console і GA4 — лише читання (погоджено власником 28.10)
+DRIVE_SCOPES = ["https://www.googleapis.com/auth/drive.file"]  # окремий вхід: Google не дає просити drive разом із youtube (25.11); лише файли студії
 REDIRECT = "http://localhost"
 
 def client():
     return json.load(open(f"{D}/client_secret.json"))["installed"]
 
-def link():
+def link(kind="yt"):
     v = secrets.token_urlsafe(64)
     ch = base64.urlsafe_b64encode(hashlib.sha256(v.encode()).digest()).rstrip(b"=").decode()
-    open(f"{D}/.pkce", "w").write(v)
-    q = {"client_id": client()["client_id"], "redirect_uri": REDIRECT, "response_type": "code", "scope": " ".join(SCOPES),
+    open(f"{D}/.pkce" + ("_drive" if kind == "drive" else ""), "w").write(v)
+    q = {"client_id": client()["client_id"], "redirect_uri": REDIRECT, "response_type": "code", "scope": " ".join(DRIVE_SCOPES if kind == "drive" else SCOPES),
          "access_type": "offline", "prompt": "consent", "code_challenge": ch, "code_challenge_method": "S256"}
     return "https://accounts.google.com/o/oauth2/v2/auth?" + urllib.parse.urlencode(q)
 
 def code(s):
     c = client(); s = s.strip()
+    drive = "drive.file" in s and "youtube" not in s
     if s.startswith("http"):
         s = urllib.parse.parse_qs(urllib.parse.urlparse(s).query)["code"][0]
     data = urllib.parse.urlencode({"client_id": c["client_id"], "client_secret": c["client_secret"], "code": s,
-                                   "code_verifier": open(f"{D}/.pkce").read().strip(), "grant_type": "authorization_code",
+                                   "code_verifier": open(f"{D}/.pkce" + ("_drive" if drive else "")).read().strip(), "grant_type": "authorization_code",
                                    "redirect_uri": REDIRECT}).encode()
     t = json.load(urllib.request.urlopen("https://oauth2.googleapis.com/token", data=data))
     t["obtained"] = time.time(); t["refreshed_at"] = time.strftime("%Y-%m-%dT%H:%MZ", time.gmtime())
-    json.dump(t, open(f"{D}/token.json", "w"))
+    json.dump(t, open(f"{D}/" + ("drive_token.json" if drive else "token.json"), "w"))
     return "ok, scope: " + t.get("scope", "")
 
 if __name__ == "__main__":
-    print(link() if sys.argv[1] == "link" else code(sys.argv[2]))
+    print(link(sys.argv[2] if len(sys.argv) > 2 else "yt") if sys.argv[1] == "link" else code(sys.argv[2]))

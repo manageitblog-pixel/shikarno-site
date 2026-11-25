@@ -35,13 +35,13 @@ def _req(url, data=None, method=None, headers=None, tries=3, timeout=60, log=Tru
             if i<tries-1:
                 print(f"yt: мережева помилка ({_scrub(e)}), повтор {i+2}/{tries}", file=sys.stderr); time.sleep(4**i); continue
             raise RuntimeError(f"YouTube API {method} {urllib.parse.urlparse(url).path}: мережа: {_scrub(e)}") from None
-def token():
-    t=json.load(open(f"{D}/token.json")); c=json.load(open(f"{D}/client_secret.json"))["installed"]
+def token(name="token.json"):
+    t=json.load(open(f"{D}/{name}")); c=json.load(open(f"{D}/client_secret.json"))["installed"]
     if time.time() > t.get("obtained",0)+t.get("expires_in",0)-120:
         data=urllib.parse.urlencode({"client_id":c["client_id"],"client_secret":c["client_secret"],
             "refresh_token":t["refresh_token"],"grant_type":"refresh_token"}).encode()
         n=json.load(urllib.request.urlopen("https://oauth2.googleapis.com/token",data=data,timeout=60))
-        t.update(n); t["obtained"]=time.time(); sys.path.insert(0,os.path.join(os.path.dirname(os.path.realpath(__file__)),"..")); from util import write_json_atomic; write_json_atomic(f"{D}/token.json",t,indent=None,ensure_ascii=True)
+        t.update(n); t["obtained"]=time.time(); sys.path.insert(0,os.path.join(os.path.dirname(os.path.realpath(__file__)),"..")); from util import write_json_atomic; write_json_atomic(f"{D}/{name}",t,indent=None,ensure_ascii=True)
     return t["access_token"]
 def api(path, **q):
     url="https://www.googleapis.com/youtube/v3/"+path+"?"+urllib.parse.urlencode(q)

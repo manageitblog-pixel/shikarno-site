@@ -4,6 +4,8 @@ gem/.key
 yt/client_secret.json
 yt/token.json
 yt/.pkce
+yt/drive_token.json
+yt/.pkce_drive
 tg/owner.json
 tg/inbox.json
 tg/updates.json
