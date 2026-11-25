@@ -1581,8 +1581,8 @@
    "agent": "seo",
    "task": "SEO: сторінки Search Console (покази ≥50, поз. 4–20) → переписати title/description",
    "started": "2026-11-25T16:18:35Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-25T16:21:40Z",
+   "result": "0 правок: 11 кандидатів — 8 в експерименті seo-title-ctr, 2 переписані 22.11, головна без запитів"
   },
   {
    "id": "221",

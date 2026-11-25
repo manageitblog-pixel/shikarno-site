@@ -1,18 +1,18 @@
 {
- "generated": "2026-11-25T16:19:03Z",
+ "generated": "2026-11-25T16:21:40Z",
  "fresh": {
-  "yt_live": "2026-11-25T16:19:04Z",
+  "yt_live": "2026-11-25T16:21:40Z",
   "yt_analytics": "2026-11-22",
-  "tg_members": "2026-11-25T16:19:05Z",
+  "tg_members": "2026-11-25T16:21:41Z",
   "tg_posts": "2026-11-25T16:07:23Z",
-  "ideas": "2026-11-25T14:22:16Z",
+  "ideas": "2026-11-25T16:20:31Z",
   "news": "2026-11-25 12:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-25T12",
   "instagram": "2026-11-25T12",
   "site": "2026-11-23",
   "site_live": "2026-11-25T16:19:06Z",
-  "activity": "2026-11-25T16:18:35Z",
+  "activity": "2026-11-25T16:21:40Z",
   "asks": "2026-11-25T08:50Z"
  },
  "notes": [],
@@ -580,7 +580,7 @@
    "subs": 324,
    "views_total": 12536,
    "videos": 100,
-   "live_at": "2026-11-25T16:19:04Z",
+   "live_at": "2026-11-25T16:21:40Z",
    "views_7d": 740,
    "pct_7d": 51.2,
    "subs_7d": 3,
@@ -641,12 +641,12 @@
    "best_live": [
     {
      "title": "Меню на тиждень і вечеря з того, що є 🍳 Тір-лист Байта #7",
-     "views": 143,
+     "views": 141,
      "id": "bvS0k_r3_bs"
     },
     {
      "title": "ШІ для вчителя: план уроку і тест за 5 хвилин у Google Classroom 🍎",
-     "views": 116,
+     "views": 113,
      "id": "ENKGdbr04h0"
     },
     {
@@ -1419,7 +1419,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 143
+   "total": 141
   },
   {
    "id": "_wp0rz8edB8",
@@ -1452,7 +1452,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 116
+   "total": 113
   },
   {
    "id": "LtNuOtQe0pc",
@@ -1474,7 +1474,7 @@
    "views7": 6,
    "pct": 59.2,
    "complete": false,
-   "total": 69
+   "total": 72
   },
   {
    "id": "gljrHADi4aU",
@@ -1839,8 +1839,8 @@
   }
  ],
  "ideas_count": {
-  "total": 152,
-  "open": 143
+  "total": 155,
+  "open": 146
  },
  "lake": {
   "videos": 98,
@@ -2369,8 +2369,8 @@
    "agent": "post",
    "task": "Озвучка 16:19Z: шоу #3",
    "started": "2026-11-25T16:18:35Z",
-   "finished": null,
-   "result": "",
+   "finished": "2026-11-25T16:20:56Z",
+   "result": "STOP 16:20Z: 429, 0 запитів",
    "agent_raw": "production"
   },
   {
@@ -2378,16 +2378,16 @@
    "agent": "seo",
    "task": "SEO: сторінки Search Console (покази ≥50, поз. 4–20) → переписати title/description",
    "started": "2026-11-25T16:18:35Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-25T16:21:40Z",
+   "result": "0 правок: 11 кандидатів — 8 в експерименті seo-title-ctr, 2 переписані 22.11, головна без запитів"
   },
   {
    "id": "221",
    "agent": "da",
    "task": "Аудит прогнозів роликів, яким виповнилось 7 днів",
    "started": "2026-11-25T16:18:35Z",
-   "finished": null,
-   "result": "",
+   "finished": "2026-11-25T16:21:31Z",
+   "result": "bRanUVdt2Pw: прогноз 40.8 → факт 45 (×1.10); news-кліпи занижені ~×1.1, формати з власною медіаною завищені ~×0.72",
    "agent_raw": "analyst"
   },
   {
@@ -2395,8 +2395,8 @@
    "agent": "coo",
    "task": "фон: аномалії українських ШІ-каналів (даталейк) → ідеї",
    "started": "2026-11-25T16:18:35Z",
-   "finished": null,
-   "result": "",
+   "finished": "2026-11-25T16:21:14Z",
+   "result": "+3 ідеї #153–155 (даталейк, 114 аномалій ≥3×), docs/research/niche-anomalies-2026-11-25.md",
    "agent_raw": "researcher"
   }
  ],
