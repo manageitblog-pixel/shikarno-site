@@ -1589,8 +1589,8 @@
    "agent": "production",
    "task": "Інфра: резерв озвучених частин поза контейнером (opus у git) + відновлення",
    "started": "2026-11-25T12:18:29Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-25T12:20:50Z",
+   "result": "vo_backup.py після кожного фіналу → Opus 48k у git (~0,3–0,5 МБ/частина), restore_vo.py у bootstrap; тест F0 128,2→128,2"
   },
   {
    "id": "210",
