@@ -1,18 +1,18 @@
 {
- "generated": "2026-11-25T02:07:06Z",
+ "generated": "2026-11-25T03:06:40Z",
  "fresh": {
-  "yt_live": "2026-11-25T02:07:06Z",
+  "yt_live": "2026-11-25T03:06:40Z",
   "yt_analytics": "2026-11-21",
-  "tg_members": "2026-11-25T02:07:06Z",
-  "tg_posts": "2026-11-25T02:07:07Z",
+  "tg_members": "2026-11-25T03:06:41Z",
+  "tg_posts": "2026-11-25T03:06:42Z",
   "ideas": "2026-11-25T00:56:18Z",
   "news": "2026-11-25 00:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-25T00",
   "instagram": "2026-11-25T00",
   "site": "2026-11-22",
-  "site_live": "2026-11-25T02:07:09Z",
-  "activity": "2026-11-25T01:19:41Z",
+  "site_live": "2026-11-25T03:06:43Z",
+  "activity": "2026-11-25T02:19:53Z",
   "asks": "2026-11-24T18:40Z"
  },
  "notes": [],
@@ -555,7 +555,7 @@
    "subs": 315,
    "views_total": 12275,
    "videos": 98,
-   "live_at": "2026-11-25T02:07:06Z",
+   "live_at": "2026-11-25T03:06:40Z",
    "views_7d": 736,
    "pct_7d": 51.1,
    "subs_7d": 0,
@@ -892,7 +892,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-25T02:07:09Z",
+    "updated": "2026-11-25T03:06:43Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 1,
@@ -905,11 +905,6 @@
      "pageloads": 10,
      "visits": 6,
      "hours": [
-      {
-       "h": "2026-11-24T03:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
       {
        "h": "2026-11-24T04:00:00Z",
        "pageloads": 0,
@@ -1022,6 +1017,11 @@
       },
       {
        "h": "2026-11-25T02:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-25T03:00:00Z",
        "pageloads": 0,
        "visits": 0
       }
@@ -1959,15 +1959,6 @@
  ],
  "activity": [
   {
-   "id": "147",
-   "agent": "post",
-   "task": "Гайд #2: рендер (озвучка 16/16 у смузі) + QA до 26.11 20:00 → вихід 27.11",
-   "started": "2026-11-24T06:18:09Z",
-   "finished": "2026-11-24T18:33:19Z",
-   "result": "QA PASS 19:30, −13,1 LUFS; вихід 27.11 (закрив COO за dispatch-log 12:20Z)",
-   "agent_raw": "production"
-  },
-  {
    "id": "148",
    "agent": "post",
    "task": "Шоу #3: чому ч.0 двічі 114–117 Гц (поза 141,5±8) — аналіз без TTS, смуга для weekly3",
@@ -2300,6 +2291,15 @@
    "task": "Озвучка 01:18Z: guide1 ч.3/11",
    "started": "2026-11-25T01:17:45Z",
    "finished": "2026-11-25T01:19:41Z",
+   "result": "429 одразу (0 ок)",
+   "agent_raw": "production"
+  },
+  {
+   "id": "187",
+   "agent": "post",
+   "task": "Озвучка 02:18Z: guide1 ч.3/11",
+   "started": "2026-11-25T02:18:09Z",
+   "finished": "2026-11-25T02:19:53Z",
    "result": "429 одразу (0 ок)",
    "agent_raw": "production"
   }
