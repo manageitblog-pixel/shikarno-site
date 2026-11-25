@@ -1,0 +1,1304 @@
+{
+ "files": {
+  "claude:workflow/Розклад задач.md": {
+   "dir": "Воркфлоу",
+   "id": "1iGeKXdwsPTo5p8XBWO_EaU2kHD1a52cZ",
+   "md5": "d48ac14234cace08e85c7647264d6f76",
+   "parent": "1JWYMlBo-u9kopghLBZMdU2ABIPi9UsjH",
+   "size": 2733
+  },
+  "repo:.github/workflows/bait-bot.yml": {
+   "dir": "Воркфлоу/GitHub Actions",
+   "id": "1dhWudoOIw8bWFanuswF5Rke3holbAC0U",
+   "md5": "4359b840a4501303e4987b5985862c41",
+   "parent": "1mSFsO1SdV3cOvZ84NOVNeXhk-q3K22XB",
+   "size": 546
+  },
+  "repo:.github/workflows/bot.yml": {
+   "dir": "Воркфлоу/GitHub Actions",
+   "id": "1A9tQsB1rAfj4OEp_mDxfEmF3F9jBKQeY",
+   "md5": "cb2486266445c2cb224d0bac9bf2db81",
+   "parent": "1mSFsO1SdV3cOvZ84NOVNeXhk-q3K22XB",
+   "size": 1373
+  },
+  "repo:.github/workflows/pages.yml": {
+   "dir": "Воркфлоу/GitHub Actions",
+   "id": "15O7ztB4YdyU92IDzErbXUteBWPoUQg1n",
+   "md5": "63e006a45abea86761ead18ad27c09a7",
+   "parent": "1mSFsO1SdV3cOvZ84NOVNeXhk-q3K22XB",
+   "size": 1463
+  },
+  "repo:.github/workflows/pult.yml": {
+   "dir": "Воркфлоу/GitHub Actions",
+   "id": "10yZUI9dMoG6ykhudY1yhZgtTaJH7cUsw",
+   "md5": "97f7c64b5b3ed575784a28b50a0b3cfb",
+   "parent": "1mSFsO1SdV3cOvZ84NOVNeXhk-q3K22XB",
+   "size": 431
+  },
+  "repo:.github/workflows/release-timer.yml": {
+   "dir": "Воркфлоу/GitHub Actions",
+   "id": "1FVCCY1YTzP3PvXixRHkcfu22noSQz5mc",
+   "md5": "564b7c1716798abac3ac3237759d4cac",
+   "parent": "1mSFsO1SdV3cOvZ84NOVNeXhk-q3K22XB",
+   "size": 1777
+  },
+  "repo:docs/RUNBOOK.md": {
+   "dir": "Документи",
+   "id": "1I4maTNOsa_9zo0OiVYnMPju20EEKSqKV",
+   "md5": "4d276df6236f3feb7ac8b292bfb736d1",
+   "parent": "19vvaUngaxs49llfpnzma9_QThHCJ9lB2",
+   "size": 120905
+  },
+  "repo:docs/agents-farm.md": {
+   "dir": "Документи",
+   "id": "1eXJOJW9DqsgDGs9WL-daWi1cm1KK-Ihu",
+   "md5": "bfb963be3b8d43e0db7d939551ae55be",
+   "parent": "19vvaUngaxs49llfpnzma9_QThHCJ9lB2",
+   "size": 6383
+  },
+  "repo:docs/content-backlog.md": {
+   "dir": "Документи",
+   "id": "1XBGkINWfpPIQtv5O8T1qIK3dYBXTOdTx",
+   "md5": "09adc3570bd405c4400f08337435fbf1",
+   "parent": "19vvaUngaxs49llfpnzma9_QThHCJ9lB2",
+   "size": 6744
+  },
+  "repo:docs/content-guide.md": {
+   "dir": "Документи",
+   "id": "1lH__6Kr98IMdQVBGaYktdOoIRicbh6Tz",
+   "md5": "c5e567d9c4403c1458087e17975e8c1f",
+   "parent": "19vvaUngaxs49llfpnzma9_QThHCJ9lB2",
+   "size": 3721
+  },
+  "repo:docs/design-guide.md": {
+   "dir": "Документи",
+   "id": "1I4PHHO1JUcoayACtxz9A_vN0uW2-8aW_",
+   "md5": "736f5eca5b7bb4f9a77faa33e4df7fae",
+   "parent": "19vvaUngaxs49llfpnzma9_QThHCJ9lB2",
+   "size": 58165
+  },
+  "repo:docs/growth-plan-2026-11.md": {
+   "dir": "Документи",
+   "id": "1zw37L2y-b2aorSgpqsKrKKn77TdysizC",
+   "md5": "0498d711a29ea01e77a95c2a86313c3d",
+   "parent": "19vvaUngaxs49llfpnzma9_QThHCJ9lB2",
+   "size": 9369
+  },
+  "repo:docs/growth-plan.md": {
+   "dir": "Документи",
+   "id": "1nB3WgyhTIFGdW8AHBpSj6rN_0Ala72F4",
+   "md5": "420ea75f4e0e5cf4435cfaa34a34b0f7",
+   "parent": "19vvaUngaxs49llfpnzma9_QThHCJ9lB2",
+   "size": 9026
+  },
+  "repo:docs/keywords-autocomplete.md": {
+   "dir": "Документи",
+   "id": "1mV1w5CJU5HB32gHUeKk2urQ6ybf4jvht",
+   "md5": "0d542fa59b4d6e0ca2fbff0908686571",
+   "parent": "19vvaUngaxs49llfpnzma9_QThHCJ9lB2",
+   "size": 23272
+  },
+  "repo:docs/keywords.md": {
+   "dir": "Документи",
+   "id": "1tNZxWIRGtr74XKQHaWoXJLN4zu8xn62d",
+   "md5": "58d8acb79757372fcec355730e8d1713",
+   "parent": "19vvaUngaxs49llfpnzma9_QThHCJ9lB2",
+   "size": 3850
+  },
+  "repo:docs/org/audit-2026-11-22.md": {
+   "dir": "Документи/org",
+   "id": "12Yjdafbh_IfYoUFhXsu904fKnVx1F2E7",
+   "md5": "82a7659e5996f945f8bcd920f38500d4",
+   "parent": "1EFth4FQVRWNEj0FZrH9OBDWqOPdy9nem",
+   "size": 43515
+  },
+  "repo:docs/org/autonomy-decisions-2026-11-22.md": {
+   "dir": "Документи/org",
+   "id": "1fXRNNhPN_nPmZIHFVPit6F0Chc102QSU",
+   "md5": "1d6be608bdfb7366ec21beebcf05965e",
+   "parent": "1EFth4FQVRWNEj0FZrH9OBDWqOPdy9nem",
+   "size": 2411
+  },
+  "repo:docs/org/autonomy-plan-2026-11-22.md": {
+   "dir": "Документи/org",
+   "id": "1F5IEc_3BTrGPuxliHOyJpvpqfj_WH5ym",
+   "md5": "ecef298b68f48bed59769dfca5dd15fc",
+   "parent": "1EFth4FQVRWNEj0FZrH9OBDWqOPdy9nem",
+   "size": 103525
+  },
+  "repo:docs/org/dispatch-log.md": {
+   "dir": "Документи/org",
+   "id": "1e7ZVkTE-3-bOFsg5rTN1ttq1cNjeEI2q",
+   "md5": "f5bd7378f2a2be84a8fcccc416e852e4",
+   "parent": "1EFth4FQVRWNEj0FZrH9OBDWqOPdy9nem",
+   "size": 133690
+  },
+  "repo:docs/org/initiatives.md": {
+   "dir": "Документи/org",
+   "id": "1gCWWtMsZwh2ZWiHqIpqjRjM4xG-JALSD",
+   "md5": "e45008fb7952fcf9c948aa6a0eec72d6",
+   "parent": "1EFth4FQVRWNEj0FZrH9OBDWqOPdy9nem",
+   "size": 21624
+  },
+  "repo:docs/org/org-design-2026-11-22.md": {
+   "dir": "Документи/org",
+   "id": "1Qy33DGGBfba-vDgfv3ZYm_QTW8oDyD9c",
+   "md5": "68e640320a31ca8708dd825ece26f277",
+   "parent": "1EFth4FQVRWNEj0FZrH9OBDWqOPdy9nem",
+   "size": 29368
+  },
+  "repo:docs/org/policy-shadow-2026-11-22.md": {
+   "dir": "Документи/org",
+   "id": "1dgElS9rrA9azU3Tp36tJBGpoOA0cOrSG",
+   "md5": "ce02a4d5301e6554b03e9e6b88bc2511",
+   "parent": "1EFth4FQVRWNEj0FZrH9OBDWqOPdy9nem",
+   "size": 7589
+  },
+  "repo:docs/org/rollout.md": {
+   "dir": "Документи/org",
+   "id": "1CamJtTMCEKaFYFJnfpXYGnU8ueskBhgH",
+   "md5": "52c59c98a1720e4cf8611a425ebe4dfd",
+   "parent": "1EFth4FQVRWNEj0FZrH9OBDWqOPdy9nem",
+   "size": 2482
+  },
+  "repo:docs/org/rubrics.md": {
+   "dir": "Документи/org",
+   "id": "18dTX8VhLsiXJPLiE6vZVvuzvAULosMwG",
+   "md5": "6c339fe9029b851fb080544d735fbb81",
+   "parent": "1EFth4FQVRWNEj0FZrH9OBDWqOPdy9nem",
+   "size": 1829
+  },
+  "repo:docs/org/strategy.md": {
+   "dir": "Документи/org",
+   "id": "1aI3vyprEyyKH2HjUg7TG9cK7_wHMTGuY",
+   "md5": "21d6bbd4f5cffb5530ab66375f68237b",
+   "parent": "1EFth4FQVRWNEj0FZrH9OBDWqOPdy9nem",
+   "size": 61780
+  },
+  "repo:docs/org/system-2026-11-22.html": {
+   "dir": "Документи/org",
+   "id": "1Pv95XMFV2Z_vqvVEDFM8484bOdgwKzer",
+   "md5": "24da28254753522b18178952993bedc0",
+   "parent": "1EFth4FQVRWNEj0FZrH9OBDWqOPdy9nem",
+   "size": 75707
+  },
+  "repo:docs/org/system-2026-11-22.md": {
+   "dir": "Документи/org",
+   "id": "1nSR38mWXiFT4UjsoLdcrbl_wz2wi6w8_",
+   "md5": "5764bf4fa051a61cbadfd6beea72d5b4",
+   "parent": "1EFth4FQVRWNEj0FZrH9OBDWqOPdy9nem",
+   "size": 57044
+  },
+  "repo:docs/plan-2026-11-04_10.md": {
+   "dir": "Документи",
+   "id": "183t7U2ZVKd-3dGQS28mNpwVTXOHXA5Ue",
+   "md5": "dfc41e75084da127d3bb1d8d6751ccb4",
+   "parent": "19vvaUngaxs49llfpnzma9_QThHCJ9lB2",
+   "size": 2173
+  },
+  "repo:docs/plan/lystopad-2026-gen.py": {
+   "dir": "Документи/plan",
+   "id": "1KxVEJLz9vN3zflWQxhhxhxx3GZ7sSTfy",
+   "md5": "d351cb008df81dccf859975bffb2084e",
+   "parent": "1Ukw7EfuxZBYYKpKJa6lUicAux5LLgxbe",
+   "size": 4847
+  },
+  "repo:docs/plan/lystopad-2026.png": {
+   "dir": "Документи/plan",
+   "id": "12dw65bHPlVDMh-0NoPE1lD1I04pJMCA-",
+   "md5": "f1e01aa79571fa4475511131e3bc4f1a",
+   "parent": "1Ukw7EfuxZBYYKpKJa6lUicAux5LLgxbe",
+   "size": 985796
+  },
+  "repo:docs/playbooks/google-ads-2026-11-24.md": {
+   "dir": "Документи/playbooks",
+   "id": "1oAQf8AXgwODiuNOMmAYx80rJgFEYQpMg",
+   "md5": "8068998d3bac2b62823f1fa08fcd511b",
+   "parent": "1LEo79RWn2qgh8NMTGitMfkWDPKuqzuPu",
+   "size": 5633
+  },
+  "repo:docs/playbooks/google-seo.md": {
+   "dir": "Документи/playbooks",
+   "id": "1s-Als5_bS4FTnboZfiGemakF1wLoVfgQ",
+   "md5": "d543b8fcfa33b4322c0ac16263f2049a",
+   "parent": "1LEo79RWn2qgh8NMTGitMfkWDPKuqzuPu",
+   "size": 34694
+  },
+  "repo:docs/playbooks/instagram.md": {
+   "dir": "Документи/playbooks",
+   "id": "114GPT1yM1hhS_Rix_wea72qG_7sRLHPl",
+   "md5": "4a868b0070d0c3e6d4edd3de3bf08be9",
+   "parent": "1LEo79RWn2qgh8NMTGitMfkWDPKuqzuPu",
+   "size": 10488
+  },
+  "repo:docs/playbooks/meta-direct-api.md": {
+   "dir": "Документи/playbooks",
+   "id": "1eXYThFLymPPMerPr2FkoPkGQFpFKbteF",
+   "md5": "b3a485fc2b0071625200758b59607cc0",
+   "parent": "1LEo79RWn2qgh8NMTGitMfkWDPKuqzuPu",
+   "size": 14180
+  },
+  "repo:docs/playbooks/telegram.md": {
+   "dir": "Документи/playbooks",
+   "id": "1UphCHom0IFqOuZENM5jL5niKpEWqtjTg",
+   "md5": "9626cca0728361f81cbcced386a5aa2a",
+   "parent": "1LEo79RWn2qgh8NMTGitMfkWDPKuqzuPu",
+   "size": 17054
+  },
+  "repo:docs/playbooks/tiktok.md": {
+   "dir": "Документи/playbooks",
+   "id": "1jK0EoKm0jn6uk18kxLbIsUR9ut28yCZ9",
+   "md5": "2f5d48be25960bd542a6de3ada6b4748",
+   "parent": "1LEo79RWn2qgh8NMTGitMfkWDPKuqzuPu",
+   "size": 21452
+  },
+  "repo:docs/playbooks/youtube.md": {
+   "dir": "Документи/playbooks",
+   "id": "1JaGQkBtJpSK0-lfFEHiHZuA9tOrTesLP",
+   "md5": "c29e34f5e266c8cc681f3d2771d24e4b",
+   "parent": "1LEo79RWn2qgh8NMTGitMfkWDPKuqzuPu",
+   "size": 47791
+  },
+  "repo:docs/project-state.md": {
+   "dir": "Документи",
+   "id": "13Ud-CPP-GgcMClybdhxaQarRXEc9t8sa",
+   "md5": "28dcc87fc3fc25e97a73a3f81f520b5d",
+   "parent": "19vvaUngaxs49llfpnzma9_QThHCJ9lB2",
+   "size": 8785
+  },
+  "repo:docs/research/broad-short-2026-11-09.md": {
+   "dir": "Документи/research",
+   "id": "17FKQR03rrNy903a1uL2IsnWR-BmNJnqU",
+   "md5": "bb27b1112d1c954782c4f271e1c3be6a",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 5552
+  },
+  "repo:docs/research/comments-2026-11-23.md": {
+   "dir": "Документи/research",
+   "id": "14T5aTZAFIxMWIct5mlKatfACjjElY_sb",
+   "md5": "d408cc214faeab1acd88b8c3608453e1",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 2802
+  },
+  "repo:docs/research/competitor-imatrof-2026-11-05.md": {
+   "dir": "Документи/research",
+   "id": "1c8eKNpbr4vFeG3_SNEVhzaZaAHqGQo-k",
+   "md5": "08b3ca491bb8c2026b412cadd05b95f8",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 3697
+  },
+  "repo:docs/research/competitors-2026-11-23.md": {
+   "dir": "Документи/research",
+   "id": "1q3qi_4RWjJSX166kEP788oeDdqgEItIK",
+   "md5": "ce33fd2a11388f3dba9a14bcb42e503c",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 12246
+  },
+  "repo:docs/research/data-quality-2026-11-22.md": {
+   "dir": "Документи/research",
+   "id": "1W7oPRfD0vXb493B-emNRUX6h7Dy01Bf5",
+   "md5": "3490c4b0b355c68a3f80f03d7a46fd7f",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 33675
+  },
+  "repo:docs/research/data-quality-2026-11-23.md": {
+   "dir": "Документи/research",
+   "id": "1qC2j2EuLcvg2vjZ9mXKLNlLZ0YuAPA-T",
+   "md5": "43c08871ae8f6f52fbe65e737a1cdf76",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 14347
+  },
+  "repo:docs/research/data-quality-2026-11-24.md": {
+   "dir": "Документи/research",
+   "id": "1xlp8RC7ksh1-N1p1tLanWhqn9QeI7hi2",
+   "md5": "33bee3772825603d6270798eb9a13ac5",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 11515
+  },
+  "repo:docs/research/data-quality-2026-11-25.md": {
+   "dir": "Документи/research",
+   "id": "15H1mHuf9ySj7Ps4_8B6_QB7k1tTJxVWQ",
+   "md5": "f943b69a71ba4b93d5744c8ab64f7e34",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 11289
+  },
+  "repo:docs/research/design-outliers-2026-11-23.md": {
+   "dir": "Документи/research",
+   "id": "1Xg0QkLPAH9TyaW77b3WSdtjBkwGTCT1T",
+   "md5": "14369bfb4be78af9091cd2d2cca27d3b",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 13581
+  },
+  "repo:docs/research/design-outliers-2026-11-24.md": {
+   "dir": "Документи/research",
+   "id": "1skbeKeOTgUvaMhf1Z5INPB_MXYa2VWWV",
+   "md5": "31a9d6eb5ff8640b258b0375b95325d1",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 16575
+  },
+  "repo:docs/research/ep23-gemini-chat-log-2026-10-29.json": {
+   "dir": "Документи/research",
+   "id": "1wqdqBcnXFhZcCK7puUF3HL0sLXp8vpVE",
+   "md5": "05b6c2247a4bfe6b9594479abc0cbf5a",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 1076
+  },
+  "repo:docs/research/exp-frame0-plan.md": {
+   "dir": "Документи/research",
+   "id": "1wIwB0tgPYo_DTjhu752m6mqqtw_uUt2h",
+   "md5": "833be414c4bb1817e91e03fcd3fa3f1e",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 6671
+  },
+  "repo:docs/research/forecast-audit-2026-11-22.md": {
+   "dir": "Документи/research",
+   "id": "1cYBfz-iADYvzrpsxJ7rNky-cwvvIQYWk",
+   "md5": "3ee3d746fbeeefe9b40b55c476d83ab1",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 34811
+  },
+  "repo:docs/research/forecast-audit-2026-11-23.md": {
+   "dir": "Документи/research",
+   "id": "1oBhwu0TtYXwVbOXHv2WAHu_MNEIKZpEn",
+   "md5": "7f178825792a66fee1a03c7dba4c4703",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 11131
+  },
+  "repo:docs/research/forecast-audit-2026-11-24.md": {
+   "dir": "Документи/research",
+   "id": "1oDPTbNj-vPYOxlZYH8YJ7gy8ooxHzH7f",
+   "md5": "e8cb63eeeb6d66deeaca6698c8354ba4",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 11645
+  },
+  "repo:docs/research/forecast-audit-2026-11-25.md": {
+   "dir": "Документи/research",
+   "id": "1OrNMx9SpNGd_TE-UqgnXY3-YopXNj7U9",
+   "md5": "13a96cada4953e262afb1a33292c306a",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 3165
+  },
+  "repo:docs/research/format-3-kontseptsiyi-2026-11-12.md": {
+   "dir": "Документи/research",
+   "id": "1V6blrqEJF0MBv21bLiDBCRI2OTQ2ZwXE",
+   "md5": "fd6d2c3c9bdd0f779a3842b73dbd48cb",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 4338
+  },
+  "repo:docs/research/format-boli-auditoriyi-2026-11-12.md": {
+   "dir": "Документи/research",
+   "id": "1O1gx9YS-Iaq0AA7Z-7eCxPxfTZsqOH61",
+   "md5": "d3b357d542848616c25fb9b5d080813a",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 15236
+  },
+  "repo:docs/research/format-long-imatrof-fable-2026-11-14.md": {
+   "dir": "Документи/research",
+   "id": "1fj8sdnG21xjiT_FUB6tl2WmUK3DFGqJd",
+   "md5": "61a6281423950cda890758f84fc339c8",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 4892
+  },
+  "repo:docs/research/format-nasha-audytoriya-2026-11-12.md": {
+   "dir": "Документи/research",
+   "id": "1mP84iQsaE8KqiJRqkYdcF96S9hN5JE-2",
+   "md5": "eeaba6cad3617147495d80aa7fefc5c1",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 2609
+  },
+  "repo:docs/research/format-patterny-2026-11-12.md": {
+   "dir": "Документи/research",
+   "id": "1S7kYjXiXauTQOkeNUoBbeO40nnHWyq8B",
+   "md5": "80291e756e1fe1049aa3ddc5af936eaa",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 13630
+  },
+  "repo:docs/research/free-ai-services-2026-10-30.md": {
+   "dir": "Документи/research",
+   "id": "1lkLDaMTv5fTCDOik0Z2lZHGBGZ0ZC-gp",
+   "md5": "baaf6f621b9c0b7f72cf9e377bce4b20",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 4250
+  },
+  "repo:docs/research/git-vs-scion-2026-11-09.md": {
+   "dir": "Документи/research",
+   "id": "1pDkt4bL_0g4l4mEbnPJCKLpH5R3m_e6f",
+   "md5": "762d5c0dd0b84cb6da8e3b2020387137",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 3034
+  },
+  "repo:docs/research/guide2-packaging-2026-11-23.md": {
+   "dir": "Документи/research",
+   "id": "1k4U9Iz8Ury9LddvOFaifTGE2rCSUOuEg",
+   "md5": "b08df81a113fbd17f3448b31b845c776",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 8983
+  },
+  "repo:docs/research/guide2-qa-2026-11-24.md": {
+   "dir": "Документи/research",
+   "id": "1bjhiWSQjnskcDG7MiMOvbStJUkzz2OMi",
+   "md5": "7b57622490abc8891d4fe664b5dac6d8",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 11315
+  },
+  "repo:docs/research/hashtags-2026-11-01.md": {
+   "dir": "Документи/research",
+   "id": "12g7Jk3vbNlF2fAbxNfUWWlxvToIT6Div",
+   "md5": "404d4deaa70398e30eaa1d908afea2fd",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 23755
+  },
+  "repo:docs/research/impeccable-2026-10-30.md": {
+   "dir": "Документи/research",
+   "id": "1NjadbdTHG74bvzW5ZhD9qLpBuMdHo5gs",
+   "md5": "aa2b5b86da32fdf9fc2c971057012f59",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 2201
+  },
+  "repo:docs/research/konektory-a-ya-2026-11-08.md": {
+   "dir": "Документи/research",
+   "id": "1aDf7vOnFgyoJSSkqZaEzyunP3apnjcfH",
+   "md5": "8908d9bc78d4d7b42fbbab5324925c69",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 25679
+  },
+  "repo:docs/research/niche-anomalies-2026-11-25.md": {
+   "dir": "Документи/research",
+   "id": "1xYreFfnuVfEm-rrn0CFkKZfuubA4kUJ6",
+   "md5": "45129c5a749b1e2e3e37774b7c58764f",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 7554
+  },
+  "repo:docs/research/niche-outliers-2026-11-23.md": {
+   "dir": "Документи/research",
+   "id": "13SdNxmOOXbskp0x1awkGdcrrtC_PiGns",
+   "md5": "b4414262326b01013e81202b9bf0e400",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 3761
+  },
+  "repo:docs/research/niche-scan-2026-11-24-night.md": {
+   "dir": "Документи/research",
+   "id": "1fw-vDLSIa1XmKOYyNDwHTMOB0zhOg2za",
+   "md5": "4595220bc358b2b3f5e0b9d0202c3233",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 11062
+  },
+  "repo:docs/research/packaging-check-2026-11-22.md": {
+   "dir": "Документи/research",
+   "id": "1idsFlt07Ti9i_uvQhqBIDuouVdk7jLKR",
+   "md5": "9fa429789395847dcd51e8c5f7b04624",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 6943
+  },
+  "repo:docs/research/paid-promo-2026-11-06.md": {
+   "dir": "Документи/research",
+   "id": "1wsHAPOyaz6URlHLJ8gpbP1bNYYhm6QRk",
+   "md5": "917d03fa44386a809c18cec4a7e56481",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 4480
+  },
+  "repo:docs/research/plan-2026-11-10.md": {
+   "dir": "Документи/research",
+   "id": "1hiZxZgfxd6seM0XOo9B7dUemQtuMH58t",
+   "md5": "47f1ad779aec556c4f3fceb7d3ae1903",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 1659
+  },
+  "repo:docs/research/professions-ai-2026-10-31.md": {
+   "dir": "Документи/research",
+   "id": "1552Zw-zRVG8FJ0_s8uHnIE9tX4qv3D0n",
+   "md5": "6568095981fbe374f5eecd767a89746a",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 15833
+  },
+  "repo:docs/research/professions-ai-2026-11-02.md": {
+   "dir": "Документи/research",
+   "id": "1m9Wci3Mvo2RT1EBNo1p-D169RK_VAarS",
+   "md5": "c00ea9caa23dec8159ab136593f39110",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 24411
+  },
+  "repo:docs/research/professions-ai-2026-11-09-hr.md": {
+   "dir": "Документи/research",
+   "id": "1ShKs0HClV9laGjpSMm44Gy4kAQpcIgMY",
+   "md5": "c9f835ecf4ff030b175faa111d3bb70d",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 10657
+  },
+  "repo:docs/research/pryvatnist-shi-2026-11-12.md": {
+   "dir": "Документи/research",
+   "id": "1NXcBATsliC7xcpnPEGW9XKmHQxZDhJ8T",
+   "md5": "649d059fe6214d04fcf8756d34ab07d9",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 18630
+  },
+  "repo:docs/research/radar-2026-11-10.md": {
+   "dir": "Документи/research",
+   "id": "1UmTgpAIAqvzlR5zk-kUD1Q1OyGEl05Z5",
+   "md5": "8e7908e3a9724e9e17b05344e23703ef",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 5069
+  },
+  "repo:docs/research/radar-2026-11-11.md": {
+   "dir": "Документи/research",
+   "id": "1w81fLuakC1mLN3aPnoFWGs9enQL8bspH",
+   "md5": "064e50003290b83314ced2d216588837",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 6185
+  },
+  "repo:docs/research/radar-2026-11-12.md": {
+   "dir": "Документи/research",
+   "id": "1HAAaP03YGJFvyl4DINK7_AXHTvP0pRIS",
+   "md5": "7a21b81dba1c5dbd79c45f4a6c15a053",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 5085
+  },
+  "repo:docs/research/radar-2026-11-13.md": {
+   "dir": "Документи/research",
+   "id": "1uhrBH5ENIvvWnbwyjtzhFUXGvejBlUxt",
+   "md5": "2df2dbb318be11a50e828e3a4a19e7ab",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 7167
+  },
+  "repo:docs/research/radar-2026-11-14.md": {
+   "dir": "Документи/research",
+   "id": "1S3G5ToPqMt7s-i2EFO7aiGRUY4kc6O5Z",
+   "md5": "6ee1f13c4cebf5d1642dfbb402d1a268",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 5575
+  },
+  "repo:docs/research/radar-2026-11-15.md": {
+   "dir": "Документи/research",
+   "id": "1FK2PqbYHavCDodeHr8lvQL9uT3hVyE2v",
+   "md5": "f8ccb9bd537a1afa137e5d61c21b9f7e",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 5017
+  },
+  "repo:docs/research/radar-2026-11-16.md": {
+   "dir": "Документи/research",
+   "id": "1LxcljOb_1c8F_nukHoooZfbErEsRDgXs",
+   "md5": "faf6d49eb566b9d427b43feb4e980ac1",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 5870
+  },
+  "repo:docs/research/radar-2026-11-17.md": {
+   "dir": "Документи/research",
+   "id": "1_562bboDR-T6d2QpPgvRSnKGxOp_vhJ4",
+   "md5": "0f85b47dce61e22bf44e4809d85d0b9f",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 6153
+  },
+  "repo:docs/research/radar-2026-11-18.md": {
+   "dir": "Документи/research",
+   "id": "1Snz8SBtwhOI62UGwrV2tT6TcEhsMCGNU",
+   "md5": "13c5e7bb7cfd0a4c47149a30b9684313",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 5135
+  },
+  "repo:docs/research/radar-2026-11-19.md": {
+   "dir": "Документи/research",
+   "id": "1SYtnaKIEFNXqwxJj0vD7xUkexPSMlsX-",
+   "md5": "ca98fab02c9e222b410f7d5b0fe02be1",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 5160
+  },
+  "repo:docs/research/radar-2026-11-20.md": {
+   "dir": "Документи/research",
+   "id": "1L0IrFn363zm35UTDkmxfatlE3HMzzW_6",
+   "md5": "fb5ee3616eb8f7eac5455a87f7dcb2ee",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 6079
+  },
+  "repo:docs/research/radar-2026-11-21.md": {
+   "dir": "Документи/research",
+   "id": "11DWeZI_WYbnr2jfsttI0Yl-cRmw7Jc0e",
+   "md5": "d1240efff8dd08f3b721c95f9207e2eb",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 4703
+  },
+  "repo:docs/research/radar-2026-11-22.md": {
+   "dir": "Документи/research",
+   "id": "1I1E4Uqo1n7Dy4lwSTUjOMzJDNDrTsPl-",
+   "md5": "c9de88ce7cc955209c43933cbe9e335d",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 4961
+  },
+  "repo:docs/research/radar-2026-11-23.md": {
+   "dir": "Документи/research",
+   "id": "1vGrlKHMh5laOXeC1bJWbouKH6PjNSVo9",
+   "md5": "622763d8b6144758bfb101ab0451a2a6",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 12779
+  },
+  "repo:docs/research/radar-2026-11-24.md": {
+   "dir": "Документи/research",
+   "id": "1g5bjMi8zKTbzhcdrPNl7l382jbw2ZT4q",
+   "md5": "64f5e3fbe61b5c7ce97f08f7017a1d03",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 8618
+  },
+  "repo:docs/research/radar-2026-11-25.md": {
+   "dir": "Документи/research",
+   "id": "1MQs8yZCEOaDfRn2kPMUsx5chrlEuxxv7",
+   "md5": "f446ba2e891f0aa3d25f2b015fe9098e",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 8821
+  },
+  "repo:docs/research/reels-outliers-2026-11-24.md": {
+   "dir": "Документи/research",
+   "id": "1xdBovPgvKlJ95nSjTJgadINOj_I5153k",
+   "md5": "486f4de5f0099979cc166bd4c825a91c",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 7736
+  },
+  "repo:docs/research/related-video-table-2026-11-22.md": {
+   "dir": "Документи/research",
+   "id": "13MFXID9SsvRZUZ5n9V6_RhAwt1W-GeXk",
+   "md5": "6f8bb1865e30534484ca29f42fb66626",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 27689
+  },
+  "repo:docs/research/seo-log.md": {
+   "dir": "Документи/research",
+   "id": "1y1VKzczolPPTSEKKXA_3gu4pqgym-cSV",
+   "md5": "292993cff10720b7de1600d49ddd8b0d",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 2682
+  },
+  "repo:docs/research/seo-youtube-2026-11-22.md": {
+   "dir": "Документи/research",
+   "id": "1WjbN8dTwXdKKpKe6zUf7YEEuN23vJzvi",
+   "md5": "49ba0be94aefea5a2056bebdd2e53067",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 2765
+  },
+  "repo:docs/research/show3-candidates-2026-11-23.md": {
+   "dir": "Документи/research",
+   "id": "19dHKBkOBe1sJyBE2LeS2sPTFg-eGBORL",
+   "md5": "7119c9f1c69a944611e58ead6cf7d5ff",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 12138
+  },
+  "repo:docs/research/show3-script-2026-11-23.md": {
+   "dir": "Документи/research",
+   "id": "178U2u-oG38_zMZnVD0Uu30KoWp5ZWl1b",
+   "md5": "cbd40b83bc0d5813d0f2c20ee1fedd00",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 11089
+  },
+  "repo:docs/research/skills-mcp-2026-11-05.md": {
+   "dir": "Документи/research",
+   "id": "1D4H81tU_la0p43Y4viBa1Rdb3S8n4llD",
+   "md5": "99204465f8ca12352eae3d9cef48f558",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 4505
+  },
+  "repo:docs/research/sub-challenge-concept-2026-11-24.md": {
+   "dir": "Документи/research",
+   "id": "1WtHJEF4gpmMC6hq0RBC-bSAT6unJrlSY",
+   "md5": "781e413f428ed26d7f1c7c4a014aee79",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 20307
+  },
+  "repo:docs/research/telegram-2026-10-28.md": {
+   "dir": "Документи/research",
+   "id": "1BwyEeZ0D0chJ7ddzryCKZzzrbu7_H2bY",
+   "md5": "b04265529cec78b15f67d7e4939f9201",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 3745
+  },
+  "repo:docs/research/telegram-growth.md": {
+   "dir": "Документи/research",
+   "id": "1HHS5J-87Pm55a5xpiA6Pi0uh06RHe5M9",
+   "md5": "6dc610e63a8b96dad4b29f67dd8dcdaa",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 16111
+  },
+  "repo:docs/research/tg-crosspromo-2026-11-22.md": {
+   "dir": "Документи/research",
+   "id": "1ab82wTVN4zo7sQLiuI_xEnwrK_PAkIxY",
+   "md5": "85986b6ea2a96cbb324065c9351af466",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 10595
+  },
+  "repo:docs/research/tg-drafts/2026-11-24-shi-pisnya.html": {
+   "dir": "Документи/research/tg-drafts",
+   "id": "1IHuiz6iIvWpx8TR0BRu5Eq3tKD5t8340",
+   "md5": "4e314d1218a35660048598b11cbeb157",
+   "parent": "1uTBn_Dsvq5l_HEKgNWUD6ljlMAZPCIZ_",
+   "size": 1034
+  },
+  "repo:docs/research/tg-drafts/2026-11-25-prompt-dnya-utochnennya.html": {
+   "dir": "Документи/research/tg-drafts",
+   "id": "1fcCwgBjFHfDOdrOwJwMmZ_xxCTL_sPuS",
+   "md5": "0c022af43063d8d0ade3fc7d932529e8",
+   "parent": "1uTBn_Dsvq5l_HEKgNWUD6ljlMAZPCIZ_",
+   "size": 1512
+  },
+  "repo:docs/research/tg-paid-posts-2026-11-22.md": {
+   "dir": "Документи/research",
+   "id": "1iJAriRaMCN9kY_7cOqJBtAp7DSD7YO2Y",
+   "md5": "ddbff4b6bfefcec40bdbc9204260766d",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 41736
+  },
+  "repo:docs/research/tg-post-blackfriday-2026-11-23.md": {
+   "dir": "Документи/research",
+   "id": "1VF9wXoAz0tt824TWk6Pbn-1jfBAFjmk8",
+   "md5": "10664b9446494385d65bcc592a1278e7",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 2766
+  },
+  "repo:docs/research/tg-posts-2026-11-24-26.md": {
+   "dir": "Документи/research",
+   "id": "1ytaDEb23vqVkcYfokgXgpMZA9z_VvYEP",
+   "md5": "b499b6bc38ec24cdf215041326dfe65b",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 8374
+  },
+  "repo:docs/research/tg-posts-2026-11-27.md": {
+   "dir": "Документи/research",
+   "id": "1_ZcwFmow02e15clzAPscpvm0ckZ6_46B",
+   "md5": "6e30d203eccb32cf678aa1b0e71c9fdc",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 3503
+  },
+  "repo:docs/research/tiktok-queue-2026-11-23.md": {
+   "dir": "Документи/research",
+   "id": "1p9StRd0SQvwiEoVmw8qbnm_hI0UCHLcH",
+   "md5": "48f6a4d0a82b8d22559c32e119ec976f",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 23948
+  },
+  "repo:docs/research/tiktok-ua-trends-2026-11-22.md": {
+   "dir": "Документи/research",
+   "id": "1rFi2XmjLNJJPCGtNVDsEAl4ow-FtmvL_",
+   "md5": "65c44eee21536ee698b64e42ffa90a04",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 8281
+  },
+  "repo:docs/research/trend-scan-2026-11-23-21z.md": {
+   "dir": "Документи/research",
+   "id": "1WSOXx63BZelABZv6nh7yTB387SDbCbSO",
+   "md5": "5c4b32e2c5c746964dc29eff2e72c271",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 5838
+  },
+  "repo:docs/research/trend-scan-2026-11-24-05z.md": {
+   "dir": "Документи/research",
+   "id": "1h_nMn5AABmemLDcF5h7uv5FZ4zUAoV2X",
+   "md5": "58da2bd3dbe5ceece78d8b6893d3cbcf",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 7392
+  },
+  "repo:docs/research/trend-scan-2026-11-24-13z.md": {
+   "dir": "Документи/research",
+   "id": "1HHNwoWGUNg3B2wydXOv9XNieKiO5HIsq",
+   "md5": "ddce0750f993e45c8ceb060a303cbd3e",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 7706
+  },
+  "repo:docs/research/trend-scan-2026-11-24-evening.md": {
+   "dir": "Документи/research",
+   "id": "18ZsV23VwBa44pJkQoM8WCLaFPrSmAhvF",
+   "md5": "33b0c2f53663ac22e271a200d528a023",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 6606
+  },
+  "repo:docs/research/trend-scan-2026-11-25-day.md": {
+   "dir": "Документи/research",
+   "id": "1tdSi34AM7WWlm1sM32GJI2Q0Zl0R7LGg",
+   "md5": "a4ca3e9714f563a89cb39bb4d2c9d130",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 11698
+  },
+  "repo:docs/research/trend-scan-2026-11-25-evening.md": {
+   "dir": "Документи/research",
+   "id": "1JNCWUKC6MoMKLOTsPMsSmW9KaxSBp8Zy",
+   "md5": "d088e8f3d212e4f61a726f742422a985",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 11728
+  },
+  "repo:docs/research/trend-scan-2026-11-25-morning.md": {
+   "dir": "Документи/research",
+   "id": "1XkLH8fYEul3XczNymC34qP5aeXpMuxD4",
+   "md5": "294d85c1a9fc2581daabaa5a01242c29",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 8860
+  },
+  "repo:docs/research/trends-2026-10-29.md": {
+   "dir": "Документи/research",
+   "id": "1FmA7KPp75lQ-aI5oL9ORVijySHjtg1YM",
+   "md5": "adf3ff492ccc2da88276d088a831451e",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 2090
+  },
+  "repo:docs/research/trends-2026-10-30.md": {
+   "dir": "Документи/research",
+   "id": "1vJN2N-RflXfbWiZQ_ZSvFLDj1e4_e6an",
+   "md5": "37aabca91c0118f688749593bcc650bf",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 2436
+  },
+  "repo:docs/research/ua-niche-outliers-2026-11-22.md": {
+   "dir": "Документи/research",
+   "id": "1MI2ktDYdX_LrMaCkXDDY1cneI4UCHowO",
+   "md5": "854ac820b8dc3446590b5517ac88ab3c",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 21563
+  },
+  "repo:docs/research/upload-queue-2026-11-24.md": {
+   "dir": "Документи/research",
+   "id": "1UvIcW1ws0wX0gJ40WW4F_GV9SqEuDRCZ",
+   "md5": "f8817c2f1c0a4ecb1b88dbbdd89b9bdf",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 16644
+  },
+  "repo:docs/research/upload-queue-2026-11-25.md": {
+   "dir": "Документи/research",
+   "id": "1sVTiP2U0omclAvDLogmpRX24j1tZ8Zpy",
+   "md5": "d5bbe7cc4da9cff90c5648f76f8d318d",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 21551
+  },
+  "repo:docs/research/vidiq-2026-10-28.md": {
+   "dir": "Документи/research",
+   "id": "1fO4T1ruBmVDvf4eYZRG0_p0pn0etuB7I",
+   "md5": "2295a3921f6b2faaf29ac1d1064e5770",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 13268
+  },
+  "repo:docs/research/vidiq-tags-2026-11-09.md": {
+   "dir": "Документи/research",
+   "id": "1XVUY1udfYpHcRdmLLNzb6HcAt2enorwh",
+   "md5": "b3606e69db986f128cd8a646cfd02aae",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 3325
+  },
+  "repo:docs/research/voice-f0-2026-11-23.md": {
+   "dir": "Документи/research",
+   "id": "1Al1fU83ZV5EQK2HFJWZXGSnRppY8GxuD",
+   "md5": "ae978fada1d11b865db47b8906ae8fc6",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 12000
+  },
+  "repo:docs/research/voice-qa-2026-11-23.md": {
+   "dir": "Документи/research",
+   "id": "1dKXPVBuI4_s8O2k7_HUfrIDUs3bdChZe",
+   "md5": "e22200b9ea1867641747045c689aa1c1",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 10387
+  },
+  "repo:docs/research/voice-weekly3-2026-11-24.md": {
+   "dir": "Документи/research",
+   "id": "1mDj1UPO7d2W6ipcklC_MZ4L9g57AJ8Gm",
+   "md5": "964f1041f2afc5cc1ea0466f211c1751",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 6934
+  },
+  "repo:docs/research/volgin-method-2026-11-06.md": {
+   "dir": "Документи/research",
+   "id": "1JbYgoUv3pyZX8Yva2qCo3rMiFrIN6osW",
+   "md5": "7fc75074647b2401ad9d9509db5a7d67",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 3170
+  },
+  "repo:docs/research/web-scan-2026-11-22.md": {
+   "dir": "Документи/research",
+   "id": "1LCVrGQqRfliHAvQ7rCM9mxYHLag56RUd",
+   "md5": "e74c8b8604670d7974003080d5cbefd8",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 10505
+  },
+  "repo:docs/research/yt-search-check-2026-11-23.md": {
+   "dir": "Документи/research",
+   "id": "1lHaX3cEye7NUMqiop2tgoUZYzP9EQ5WM",
+   "md5": "864bc3b815d750a20c8768c45783dc75",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 774
+  },
+  "repo:docs/research/yt-seo-2026-11-25.md": {
+   "dir": "Документи/research",
+   "id": "16tSuX-59mUB69VUyG1GurVlobFH9FjrR",
+   "md5": "e5506f441de2f66d8fb363b99e4fef24",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 5072
+  },
+  "repo:docs/seo-core-2026-11.md": {
+   "dir": "Документи",
+   "id": "1DExKiS9SHo0xHPs-16tg0aEiolN1I8GZ",
+   "md5": "55d4d1253c3a72e7bc2d7436af7fb14c",
+   "parent": "19vvaUngaxs49llfpnzma9_QThHCJ9lB2",
+   "size": 4787
+  },
+  "repo:docs/seo-strategy.md": {
+   "dir": "Документи",
+   "id": "1ip7U076kK403rs_gI5lsiMCdQ9TNrOG6",
+   "md5": "11ca06c58c90b11f2198296ead712967",
+   "parent": "19vvaUngaxs49llfpnzma9_QThHCJ9lB2",
+   "size": 9744
+  },
+  "repo:docs/shorts-checklist.md": {
+   "dir": "Документи",
+   "id": "1aG6CKj4NkHNiNcrB5tZYS5zKTkL2lmui",
+   "md5": "85b1f0db054ce38c46a53ff0d8d5886f",
+   "parent": "19vvaUngaxs49llfpnzma9_QThHCJ9lB2",
+   "size": 4868
+  },
+  "repo:docs/strategy/rozbir-kanalu-2026-11-10.md": {
+   "dir": "Документи/strategy",
+   "id": "1AN5-OeS7zzk9pzM0eJ9bwdnY3L0ibs0M",
+   "md5": "42d9bd193c66d58039e81a6dd2ed8034",
+   "parent": "1VPm6vvpCkm9703M8rm0BOC_Nz048ODIY",
+   "size": 7751
+  },
+  "repo:docs/tasks/2026-11-05-onovyty-chatgpt-bezkoshtovno.md": {
+   "dir": "Документи/tasks",
+   "id": "1wlvxCy0H9S7poj9mOhbOQVwfG4PWaLG4",
+   "md5": "1ab2ea552987c5b3b7c4d49f262d22f8",
+   "parent": "1737janBv_GTAxDO8Q0cROOXKcSN8BPlJ",
+   "size": 918
+  },
+  "repo:docs/tasks/2026-11-11-dovgyi-pryvatnist-shi.md": {
+   "dir": "Документи/tasks",
+   "id": "1orqhsShOFK-xFLyB5YekoG67VYQ9XxEr",
+   "md5": "8229aec018ebb79088c6c78dd33dfbbf",
+   "parent": "1737janBv_GTAxDO8Q0cROOXKcSN8BPlJ",
+   "size": 2457
+  },
+  "repo:docs/tasks/2026-11-12-pomichnyk-mekhaniky.md": {
+   "dir": "Документи/tasks",
+   "id": "1q9M9HgHcbxtfPCDxdIEBelaAS-ObXMNW",
+   "md5": "32bc6310c91f77f8ff393de60f4afa00",
+   "parent": "1737janBv_GTAxDO8Q0cROOXKcSN8BPlJ",
+   "size": 8441
+  },
+  "repo:docs/tasks/2026-11-12-vlasnyi-format-korysnoho-materialu.md": {
+   "dir": "Документи/tasks",
+   "id": "1BT5tms7o8uNkG6uB5uMtRWOCoff5MYqE",
+   "md5": "79944635e3f394c35e9ace14db5d4fb7",
+   "parent": "1737janBv_GTAxDO8Q0cROOXKcSN8BPlJ",
+   "size": 1570
+  },
+  "repo:docs/tasks/done/2026-10-23-site-links.md": {
+   "dir": "Документи/tasks/done",
+   "id": "1et_9JyUpGgjTxM6VyCzioCEL1k5jICp7",
+   "md5": "b0b523dc53b6098bf9a2aa124c203736",
+   "parent": "16tmfcJsy07cIy1PUcVcOkNGrKc5qUNAE",
+   "size": 6930
+  },
+  "repo:docs/tasks/done/2026-10-24-keywords.md": {
+   "dir": "Документи/tasks/done",
+   "id": "1YZVfEr4VDBXvF0UN40lTBW0vUtsMaIw_",
+   "md5": "6b31d3951a6228ebc5c5a9d09c6b305b",
+   "parent": "16tmfcJsy07cIy1PUcVcOkNGrKc5qUNAE",
+   "size": 3471
+  },
+  "repo:docs/tasks/done/2026-10-24-short-gemini-carplay.md": {
+   "dir": "Документи/tasks/done",
+   "id": "1skx9SZO8NCN0k9rels-6A7MZOR5zgdRs",
+   "md5": "93c6be02abd5a375b2446dac4e2cc776",
+   "parent": "16tmfcJsy07cIy1PUcVcOkNGrKc5qUNAE",
+   "size": 3310
+  },
+  "repo:docs/tasks/done/2026-11-05-dashboard-analityky.md": {
+   "dir": "Документи/tasks/done",
+   "id": "1wymbgxjaIXrPj_RyL_H6M40DgPvD_rJn",
+   "md5": "d958408211b8d7040f6073c5b9448a2c",
+   "parent": "16tmfcJsy07cIy1PUcVcOkNGrKc5qUNAE",
+   "size": 1386
+  },
+  "repo:docs/tasks/instagram-2026-10-30.md": {
+   "dir": "Документи/tasks",
+   "id": "1s_2x9u_L2hXaWYZaH_IBmaKQUgQZdSE5",
+   "md5": "1ccfca15dfb5e50b606cd9c572631f07",
+   "parent": "1737janBv_GTAxDO8Q0cROOXKcSN8BPlJ",
+   "size": 933
+  },
+  "repo:docs/tasks/long-videos-2026-10-30.md": {
+   "dir": "Документи/tasks",
+   "id": "1K1ky-ofXbAoxLHmPIyOFiJ2mm7HEA_oU",
+   "md5": "996889edaab07086680f1115c6cd4dfb",
+   "parent": "1737janBv_GTAxDO8Q0cROOXKcSN8BPlJ",
+   "size": 2853
+  },
+  "repo:docs/tasks/rubric-comparisons-2026-10-31.md": {
+   "dir": "Документи/tasks",
+   "id": "1a2ORzvj-Y3L9alBzp-h0Q2zGA-cW6MtT",
+   "md5": "ff03c5029cca42e063a3b8de80176145",
+   "parent": "1737janBv_GTAxDO8Q0cROOXKcSN8BPlJ",
+   "size": 7367
+  },
+  "repo:docs/telegram/prompts_1.md": {
+   "dir": "Документи/telegram",
+   "id": "14F8Apj7mtGayKTGfL0DSbLs--6rf_Kv7",
+   "md5": "3915cede916b7a52fc919c66e8d8ec24",
+   "parent": "1J4idLEV15pwy0-m1RtXzSCFUBLLv3vav",
+   "size": 2167
+  },
+  "repo:docs/trend-scan.md": {
+   "dir": "Документи",
+   "id": "1C1Hjcko27LCCrxfRy1RgcYcG-B_YjjAx",
+   "md5": "0a3ad67e60b8b936b20bb882cb991c1d",
+   "parent": "19vvaUngaxs49llfpnzma9_QThHCJ9lB2",
+   "size": 1920
+  },
+  "repo:docs/video-principles.md": {
+   "dir": "Документи",
+   "id": "1HROaSlL8z_kY8QAF2BR89-1_n1tbNyte",
+   "md5": "ac02e7112995332d5418c7d4875befe6",
+   "parent": "19vvaUngaxs49llfpnzma9_QThHCJ9lB2",
+   "size": 22086
+  },
+  "repo:docs/youtube-playbook.md": {
+   "dir": "Документи",
+   "id": "1KX7DNjWIxk0k23h0JtYTSNZDZdXCyO_s",
+   "md5": "b7de36a7370f3ab30b86494611cf57cf",
+   "parent": "19vvaUngaxs49llfpnzma9_QThHCJ9lB2",
+   "size": 18787
+  },
+  "repo:studio/data/analytics.sqlite": {
+   "dir": "Дані",
+   "id": "16c9NiaxL5ArFEldZCPBa97EB8wxy17s_",
+   "md5": "444dde0b27022ca9720793d79e829b39",
+   "parent": "1z3DkcLIg1zzlwhJLIJKllirRHsyZGuH3",
+   "size": 13656064
+  },
+  "repo:studio/data/ops.sqlite": {
+   "dir": "Дані",
+   "id": "1Pt_lDyIwxAhttiL39XMyPn6KXC3t5Fcv",
+   "md5": "c6afc3ad6634858c6f7bd808bde5db4c",
+   "parent": "1z3DkcLIg1zzlwhJLIJKllirRHsyZGuH3",
+   "size": 397312
+  },
+  "repo:studio/data/ops_dump.sql": {
+   "dir": "Дані",
+   "id": "1ejyiThZqww-isxoXKdYRUqSoTmPe0giY",
+   "md5": "b4438c81a6c38cc4550d8841a15ac846",
+   "parent": "1z3DkcLIg1zzlwhJLIJKllirRHsyZGuH3",
+   "size": 300594
+  },
+  "repo:studio/data/snapshot/analytics.sqlite": {
+   "dir": "Дані/snapshot",
+   "id": "11HsRG-FJrIHZcMwIKDZAnXv5_iEC273b",
+   "md5": "1f73703b9dda5465be2c0db055e7f337",
+   "parent": "1KWcOEnrBK_80Y4aaru7u0f91VSbCmI69",
+   "size": 13623296
+  },
+  "repo:studio/eps/digest1/meta.json": {
+   "dir": "Відео й озвучка/digest1",
+   "id": "146yNn1OUPWm96DADwMrkrpjS_Vv4Fxpd",
+   "md5": "4a597d38f5642ad85c3a087571af7ebd",
+   "parent": "1S0VUvuaoCaonN2q-bk29NzOVdvG_Lz1i",
+   "size": 2920
+  },
+  "repo:studio/eps/ig_prompts_guide1/c_0.png": {
+   "dir": "Відео й озвучка/ig_prompts_guide1",
+   "id": "1UIP_HZXaaSATkDQl2Fj9vD2XTbsq5-U6",
+   "md5": "cd3b052a8ef828dc7c9c8a226733aba0",
+   "parent": "1iWjvgU5FWH9OImByiAkNmgvNfOko7qpv",
+   "size": 537902
+  },
+  "repo:studio/eps/ig_prompts_guide1/c_13.png": {
+   "dir": "Відео й озвучка/ig_prompts_guide1",
+   "id": "1pIL-U_Qqb9_7s1bblnB3roRhBSXHh0Xu",
+   "md5": "1ba2646127dd1e14e977deb511dbcebe",
+   "parent": "1iWjvgU5FWH9OImByiAkNmgvNfOko7qpv",
+   "size": 578745
+  },
+  "repo:studio/eps/ig_prompts_guide1/c_22.5.png": {
+   "dir": "Відео й озвучка/ig_prompts_guide1",
+   "id": "1RxunU-zHuHjE8o3tgS3VzCg3fh2EUcfT",
+   "md5": "ab21daf51945b0a85da4c1efc189cce1",
+   "parent": "1iWjvgU5FWH9OImByiAkNmgvNfOko7qpv",
+   "size": 595144
+  },
+  "repo:studio/eps/ig_prompts_guide1/c_3.5.png": {
+   "dir": "Відео й озвучка/ig_prompts_guide1",
+   "id": "1UIAwqEL2hEDQ9JoOKzkWNbk4gspMH_IB",
+   "md5": "b3b2407c4929a637d909093e71a7e4fa",
+   "parent": "1iWjvgU5FWH9OImByiAkNmgvNfOko7qpv",
+   "size": 576530
+  },
+  "repo:studio/eps/ig_prompts_guide1/crop34.png": {
+   "dir": "Відео й озвучка/ig_prompts_guide1",
+   "id": "1QGqm1YT1ArJMDn2Y3yBOvDC-PGdXWsu9",
+   "md5": "8c786da59507042a3c7db0d162ade3ce",
+   "parent": "1iWjvgU5FWH9OImByiAkNmgvNfOko7qpv",
+   "size": 174465
+  },
+  "repo:studio/eps/ig_prompts_guide1/f0.png": {
+   "dir": "Відео й озвучка/ig_prompts_guide1",
+   "id": "1s-tBxAJbDBzzEAILzkJfalU1vkknYyAM",
+   "md5": "5f0e327dd03f7dfe28853533fe618adf",
+   "parent": "1iWjvgU5FWH9OImByiAkNmgvNfOko7qpv",
+   "size": 1671654
+  },
+  "repo:studio/eps/ig_prompts_guide1/f120.png": {
+   "dir": "Відео й озвучка/ig_prompts_guide1",
+   "id": "1Y1MNcqKxWngJ2GUe1VxDYacxblMsTxe4",
+   "md5": "c34f90997e9f3b61284de0c17a9eab01",
+   "parent": "1iWjvgU5FWH9OImByiAkNmgvNfOko7qpv",
+   "size": 1390478
+  },
+  "repo:studio/eps/ig_prompts_guide1/f400.png": {
+   "dir": "Відео й озвучка/ig_prompts_guide1",
+   "id": "1NW6a_eV-_8jWhmy_GAZiF40b9JVIdIXJ",
+   "md5": "49435d5b59da360498cb56b9ee6a29fc",
+   "parent": "1iWjvgU5FWH9OImByiAkNmgvNfOko7qpv",
+   "size": 1241416
+  },
+  "repo:studio/eps/ig_prompts_guide1/f680.png": {
+   "dir": "Відео й озвучка/ig_prompts_guide1",
+   "id": "1YIzh4gm29Q-zDxSpXNkPqEC9folF52yX",
+   "md5": "0fc1ca088bb26f0e8f7a9e5d3aefdfc3",
+   "parent": "1iWjvgU5FWH9OImByiAkNmgvNfOko7qpv",
+   "size": 1618546
+  },
+  "repo:studio/eps/ig_prompts_guide1/ig.mp4": {
+   "dir": "Відео й озвучка/ig_prompts_guide1",
+   "id": "1qfaWRDgUss9zP2TCq03X8Wvx1b0b4XXa",
+   "md5": "2863c8981a40b7594b4df9aa54510fb6",
+   "parent": "1iWjvgU5FWH9OImByiAkNmgvNfOko7qpv",
+   "size": 1866584
+  },
+  "repo:studio/eps/ig_prompts_guide1/raw.mp4": {
+   "dir": "Відео й озвучка/ig_prompts_guide1",
+   "id": "1Pi9ffEj4z6-DafHI-c_oUFMTuP21aDWW",
+   "md5": "7d3df79ce3f8ed6739f6117b8c8d9412",
+   "parent": "1iWjvgU5FWH9OImByiAkNmgvNfOko7qpv",
+   "size": 1841401
+  },
+  "repo:studio/eps/ig_prompts_guide1/sheet.png": {
+   "dir": "Відео й озвучка/ig_prompts_guide1",
+   "id": "1AJQ9AvoZy2WpDCudASS7ckdsGTCzAE1t",
+   "md5": "2a92030d68f2966e9f250f256f91bf52",
+   "parent": "1iWjvgU5FWH9OImByiAkNmgvNfOko7qpv",
+   "size": 345944
+  },
+  "repo:studio/eps/ig_prompts_guide1/sheet2.png": {
+   "dir": "Відео й озвучка/ig_prompts_guide1",
+   "id": "19Xo8yL1iwkjSWjEqtLEGBxZ33Z1THNbJ",
+   "md5": "897345d91cac45ac9ce2260f6085e37b",
+   "parent": "1iWjvgU5FWH9OImByiAkNmgvNfOko7qpv",
+   "size": 355851
+  },
+  "repo:studio/eps/ig_prompts_guide1/sheet3.png": {
+   "dir": "Відео й озвучка/ig_prompts_guide1",
+   "id": "1HqZdGBGZfC8upyZQhglNcWWyVKk6YzeB",
+   "md5": "5941201b259d27d9d374ff189a64d1b9",
+   "parent": "1iWjvgU5FWH9OImByiAkNmgvNfOko7qpv",
+   "size": 483243
+  },
+  "repo:studio/eps/month_oct/research.md": {
+   "dir": "Відео й озвучка/month_oct",
+   "id": "1M4x7liiMD-pIQoVXqgi4gg2aIlIkIA5-",
+   "md5": "1572fe5d55af651417e0f0e664d37cb9",
+   "parent": "1GeOLqdyO_yHz8tcx9kkpWhsEMV9oHM0M",
+   "size": 45517
+  },
+  "repo:studio/eps/prof2/chapters.json": {
+   "dir": "Відео й озвучка/prof2",
+   "id": "1lyjVVQPzxH0aCJnJD2gxWx8ui0WIlkJP",
+   "md5": "1cb490ba53c4c75fe70cfc9ad306d5dd",
+   "parent": "1-1B73Rllwe3FbkOFytMZdhZX8EtCCPvO",
+   "size": 435
+  },
+  "repo:studio/eps/prof2/meta.json": {
+   "dir": "Відео й озвучка/prof2",
+   "id": "1r674pnPfQ3uVlWymeC81G51X1rpYJXSF",
+   "md5": "3c1bb7642f054933b7ea8ec0081b5c19",
+   "parent": "1-1B73Rllwe3FbkOFytMZdhZX8EtCCPvO",
+   "size": 2733
+  },
+  "repo:studio/eps/prof2/meta_out.json": {
+   "dir": "Відео й озвучка/prof2",
+   "id": "1weXblH3AKgnD4Rxjz18AkzrrkFTUy-BU",
+   "md5": "871d7fb978fbf119368e3b81f33fddb0",
+   "parent": "1-1B73Rllwe3FbkOFytMZdhZX8EtCCPvO",
+   "size": 465
+  },
+  "repo:studio/eps/weekly3/part0.wav": {
+   "dir": "Відео й озвучка/weekly3",
+   "id": "17pKY6N7TU2yCnRwQLX-NRWJ15Qz2QxPU",
+   "md5": "90e1abdb0b427a82f6685a2546d81fe8",
+   "parent": "1HFbqalYwbEGal5JGIiz9KWgL-irbPhM0",
+   "size": 2842108
+  },
+  "repo:studio/eps/weekly3/takes/part0_take1_audit.json": {
+   "dir": "Відео й озвучка/weekly3/takes",
+   "id": "1nUaMPdlYNhhsI5kAjF6O2FejtloYUn03",
+   "md5": "dbdce43687d82395549ab9ca2a188d77",
+   "parent": "1N1PU2lJE3mLV0RNsA3xPe3OQacSqBesZ",
+   "size": 1663
+  },
+  "repo:studio/eps/weekly3/takes/part0_take1_f0_127.4.wav": {
+   "dir": "Відео й озвучка/weekly3/takes",
+   "id": "1ureq5fY2AWI9xK3wdGwjMf_CUhLAfUYq",
+   "md5": "90e1abdb0b427a82f6685a2546d81fe8",
+   "parent": "1N1PU2lJE3mLV0RNsA3xPe3OQacSqBesZ",
+   "size": 2842108
+  },
+  "repo:studio/eps/weekly3/takes/part1_take1_audit.json": {
+   "dir": "Відео й озвучка/weekly3/takes",
+   "id": "1_U_b8dPFF2jS65Sw9OA4-XKV8edW3ctC",
+   "md5": "2345eab540249b2e87874624d885fbb6",
+   "parent": "1N1PU2lJE3mLV0RNsA3xPe3OQacSqBesZ",
+   "size": 2132
+  },
+  "repo:studio/eps/weekly3/takes/part1_take1_f0_134.8.wav": {
+   "dir": "Відео й озвучка/weekly3/takes",
+   "id": "15bFENJ27sRO1vM-tE6zLDgLmISFOAVVr",
+   "md5": "671cf33b11377fe5df9f4a41d7282595",
+   "parent": "1N1PU2lJE3mLV0RNsA3xPe3OQacSqBesZ",
+   "size": 3893788
+  },
+  "repo:studio/hq/asks.json": {
+   "dir": "Артефакти/HQ-дашборд",
+   "id": "1ZVP_g43YCeJ0KuDOMpccn9Hr5Beh6cSq",
+   "md5": "bbcd4de31b579efa37efb495c2d49772",
+   "parent": "1bwqefibAikV-M3ebrF57Rv3xWgxSdk-j",
+   "size": 4001
+  },
+  "repo:studio/hq/data.json": {
+   "dir": "Артефакти/HQ-дашборд",
+   "id": "1nnnUOgSvPj9L3bhJylEzWxWWW1ImSwrm",
+   "md5": "136aba758a185b4b02eb9c5425f5157d",
+   "parent": "1bwqefibAikV-M3ebrF57Rv3xWgxSdk-j",
+   "size": 85033
+  },
+  "repo:studio/hq/index.html": {
+   "dir": "Артефакти/HQ-дашборд",
+   "id": "1MGCu0btwQ8SkXw-fMkzjGR-gfVH-Ant-",
+   "md5": "5eeab8b475b9bec78cd2c27fa8bdc20b",
+   "parent": "1bwqefibAikV-M3ebrF57Rv3xWgxSdk-j",
+   "size": 50636
+  }
+ },
+ "folders": {
+  "": "1cpDcxbVx_Y8BMJSjWLoH8B7Mzxy-2L30",
+  "Артефакти": "1mST-qyR1pv-JyWdUopmYdPrKNkCRhsTW",
+  "Артефакти/HQ-дашборд": "1bwqefibAikV-M3ebrF57Rv3xWgxSdk-j",
+  "Воркфлоу": "1JWYMlBo-u9kopghLBZMdU2ABIPi9UsjH",
+  "Воркфлоу/GitHub Actions": "1mSFsO1SdV3cOvZ84NOVNeXhk-q3K22XB",
+  "Відео й озвучка": "1LN8Z1Lh6LHTdD4DHqeWvPGKYe8EPaI_a",
+  "Відео й озвучка/digest1": "1S0VUvuaoCaonN2q-bk29NzOVdvG_Lz1i",
+  "Відео й озвучка/ig_prompts_guide1": "1iWjvgU5FWH9OImByiAkNmgvNfOko7qpv",
+  "Відео й озвучка/month_oct": "1GeOLqdyO_yHz8tcx9kkpWhsEMV9oHM0M",
+  "Відео й озвучка/prof2": "1-1B73Rllwe3FbkOFytMZdhZX8EtCCPvO",
+  "Відео й озвучка/weekly3": "1HFbqalYwbEGal5JGIiz9KWgL-irbPhM0",
+  "Відео й озвучка/weekly3/takes": "1N1PU2lJE3mLV0RNsA3xPe3OQacSqBesZ",
+  "Дані": "1z3DkcLIg1zzlwhJLIJKllirRHsyZGuH3",
+  "Дані/snapshot": "1KWcOEnrBK_80Y4aaru7u0f91VSbCmI69",
+  "Документи": "19vvaUngaxs49llfpnzma9_QThHCJ9lB2",
+  "Документи/org": "1EFth4FQVRWNEj0FZrH9OBDWqOPdy9nem",
+  "Документи/plan": "1Ukw7EfuxZBYYKpKJa6lUicAux5LLgxbe",
+  "Документи/playbooks": "1LEo79RWn2qgh8NMTGitMfkWDPKuqzuPu",
+  "Документи/research": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+  "Документи/research/tg-drafts": "1uTBn_Dsvq5l_HEKgNWUD6ljlMAZPCIZ_",
+  "Документи/strategy": "1VPm6vvpCkm9703M8rm0BOC_Nz048ODIY",
+  "Документи/tasks": "1737janBv_GTAxDO8Q0cROOXKcSN8BPlJ",
+  "Документи/tasks/done": "16tmfcJsy07cIy1PUcVcOkNGrKc5qUNAE",
+  "Документи/telegram": "1J4idLEV15pwy0-m1RtXzSCFUBLLv3vav"
+ }
+}

@@ -114,11 +114,21 @@ def ok(p):
     return True
 
 
+def dedup(d):
+    for k in [k for k in d['files'] if k.startswith('claude:eps/')]:
+        twin = 'repo:studio/' + k[len('claude:'):]
+        if twin in d['files'] and d['files'][twin]['md5'] == d['files'][k]['md5']:
+            try: req(f"{API}/files/{d['files'][k]['id']}", method='DELETE')
+            except Exception as e: print('del?', k, e)
+            d['files'].pop(k); print('dedup', k)
+    save(d)
+
+
 def push(paths):
     d = idx(); n = 0
     for a in paths:
         if not os.path.exists(a): continue
-        it = [os.path.join(r, f) for r, ds, fs in os.walk(a) for f in fs if '/.' not in r and '__pycache__' not in r] if os.path.isdir(a) else [a]
+        it = [os.path.join(r, f) for r, ds, fs in os.walk(a) for f in fs if '/.' not in r[len(a):] and '__pycache__' not in r] if os.path.isdir(a) else [a]
         for p in sorted(it):
             try:
                 if ok(p) and upload(p, d): n += 1; print('up', key_of(p))
@@ -149,7 +159,7 @@ def restore(prefix=''):
 if __name__ == '__main__':
     a = sys.argv[1:] or ['status']
     if a[0] == 'push': push(a[1:])
-    elif a[0] == 'all': push(all_paths())
+    elif a[0] == 'all': push(all_paths()); dedup(idx())
     elif a[0] == 'restore': restore(a[1] if len(a) > 1 else '')
     else:
         d = idx(); print('files', len(d['files']), 'MB', round(sum(x['size'] for x in d['files'].values()) / 1e6, 1), 'folders', len(d['folders']))
