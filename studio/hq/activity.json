@@ -1487,6 +1487,14 @@
    "started": "2026-11-25T01:17:45Z",
    "finished": "2026-11-25T01:19:41Z",
    "result": "429 одразу (0 ок)"
+  },
+  {
+   "id": "187",
+   "agent": "production",
+   "task": "Озвучка 02:18Z: guide1 ч.3/11",
+   "started": "2026-11-25T02:18:09Z",
+   "finished": null,
+   "result": ""
   }
  ]
 }
