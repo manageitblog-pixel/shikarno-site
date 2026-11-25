@@ -214,10 +214,24 @@
   "fit": 5,
   "by": "cso",
   "source": "strategy.md §5; Search Console claude-bezkoshtovno",
-  "status": "approved",
+  "status": "done",
   "decision": "Довгий ср 2.12 19:00, сценарій 22–23.11",
   "added": "2026-11-22",
-  "id": "9"
+  "id": "9",
+  "video_id": "h5aUeuaD8OE",
+  "published_at": "2026-11-27T17:00:00Z",
+  "prior_at_publish": 0.6,
+  "score_at_publish": 180.0,
+  "forecast_at_publish": {
+   "at": "2026-11-25T08:28Z",
+   "format": "guide",
+   "p25": null,
+   "med": null,
+   "p75": null,
+   "n": null,
+   "hook_mult": 1.0,
+   "length_mult": 1.0
+  }
  },
  {
   "title": "OpenAI проти «крадіжки» моделей через дистиляцію",
