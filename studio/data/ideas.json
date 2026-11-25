@@ -3449,5 +3449,110 @@
   "status": "new",
   "added": "2026-11-25",
   "id": "162"
+ },
+ {
+  "title": "Твій ліміт у ChatGPT з грудня спільний з Codex: що не рахується (Instant) і де за 10 секунд глянути залишок",
+  "format": "news",
+  "channels": [
+   "short",
+   "tiktok",
+   "site",
+   "tg"
+  ],
+  "demand": 4,
+  "fresh": 5,
+  "show": 4,
+  "fit": 5,
+  "length": 30,
+  "hook": "you",
+  "by": "researcher-news",
+  "source": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits",
+  "note": "Довідка OpenAI: з грудня Plus, Pro і Business мають один спільний ліміт ChatGPT+Codex, рахується в токенах; Instant-чат не витрачає ліміт; залишок і час скидання — Settings → Usage; частина користувачів отримає раніше. TechCrunch 25.11: об'єднання Chat і Work, найактивніші можуть упиратися в ліміт швидше (це слова OpenAI). Free/Go не згадані. Показати екран Settings → Usage.",
+  "status": "approved",
+  "added": "2026-11-25",
+  "id": "163",
+  "decision": "Бал 381.7 (≥300): масова зміна для платних ChatGPT з грудня, першоджерело — довідка OpenAI; Short «твій ліміт» з екраном Settings → Usage + новина на сайт і TG до 1.12"
+ },
+ {
+  "title": "Character.AI продає чати 21 млн людей на аукціоні 1 грудня: 42 генпрокурори США проти — що це каже про твої переписки з ШІ",
+  "format": "sec",
+  "channels": [
+   "short",
+   "tiktok",
+   "insta",
+   "site",
+   "tg"
+  ],
+  "demand": 3,
+  "fresh": 5,
+  "show": 4,
+  "fit": 5,
+  "length": 35,
+  "hook": "you",
+  "by": "researcher-news",
+  "source": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-opposes-asset-sale-characterai-amid-child-safety-concerns",
+  "note": "Прес-реліз генпрокурора Каліфорнії 24.11: банкрутство Character.AI (Chapter 11, жовтень), аукціон 1.12 — платформа й історії чатів >21 млн акаунтів США, з них >2,1 млн неповнолітніх; коаліція 42 генпрокурорів проти (у релізі розбіжність 42/45 — писати «понад 40»). TechCrunch 25.11: єдиний відомий покупець — анонімна ТОВ із Делавера, створена 13.11. Мораль для глядача: при продажу/банкрутстві компанії чати можуть стати активом — що не писати чат-боту, як видалити історію в ChatGPT/Gemini/Claude.",
+  "status": "new",
+  "added": "2026-11-25",
+  "id": "164"
+ },
+ {
+  "title": "Google дав ШІ-агенту Antigravity навички хіміка: вгадує молекулу за мас-спектром у 97% тестів (без навичок — менше 4%)",
+  "format": "news",
+  "channels": [
+   "site"
+  ],
+  "demand": 1,
+  "fresh": 4,
+  "show": 3,
+  "fit": 2,
+  "length": 30,
+  "hook": "release",
+  "by": "researcher-news",
+  "source": "https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity/",
+  "note": "DeepMind 25.11: Mass Spec Skills — плагін для Antigravity; на 100 тестових сполуках ~97% точних збігів з інтернетом і навичками (три моделі Gemini, включно з Flash), без них <4% — цифри Google про себе. 10 000 науковців отримають найвищий тариф Antigravity на 6 міс безкоштовно (за відбором). Нішево — у рубрику ІТ/наука на сайті або згадка в недільному шоу як приклад «скілів».",
+  "status": "new",
+  "added": "2026-11-25",
+  "id": "165"
+ },
+ {
+  "title": "Що науковці не віддадуть ШІ-агентам: Ai2 поговорив із 17 дослідниками — код і дані так, ідеї й рецензії ні",
+  "format": "news",
+  "channels": [
+   "site",
+   "tg"
+  ],
+  "demand": 1,
+  "fresh": 5,
+  "show": 2,
+  "fit": 3,
+  "length": 30,
+  "hook": "plain",
+  "by": "researcher-news",
+  "source": "https://huggingface.co/blog/allenai/where-scientists-draw-the-line-on-ai-agents",
+  "note": "Ai2 25.11: якісне інтерв'ю-дослідження, 17 науковців США, не репрезентативне (позначити). Довіряють: обробку великих даних, код, документування методів, адмінроботу; не довіряють: генерацію ідей, рецензування неопублікованих робіт. 5 вимірів довіри: перевірка, приватність, об'єктивність, підзвітність, прозорість. Для TG — «де межа для тебе» опитування.",
+  "status": "new",
+  "added": "2026-11-25",
+  "id": "166"
+ },
+ {
+  "title": "Амодей: «абсурд», що Anthropic хоче віддати ШІ контроль над людьми — але Claude вже пише понад 80% їхнього коду",
+  "format": "news",
+  "channels": [
+   "site",
+   "show"
+  ],
+  "demand": 2,
+  "fresh": 5,
+  "show": 2,
+  "fit": 3,
+  "length": 30,
+  "hook": "plain",
+  "by": "researcher-news",
+  "source": "https://x.com/DarioAmodei/status/2125656399392690605",
+  "note": "Довгий пост Даріо Амодея в X 25.11 (TechCrunch того ж дня): відкидає закиди конкурентів (Altman, Wang), за демократичний нагляд; пропонує обмеження на рекурсивне самопокращення; небезпечно, щоб Claude будував наступні моделі «повністю автономно». Контекст TechCrunch: Claude нібито написав >80% змерженого коду (позначити «за даними»), METR — пришвидшення ~2× через ШІ в R&D. Для недільного шоу «ШІ за тиждень».",
+  "status": "new",
+  "added": "2026-11-25",
+  "id": "167"
  }
 ]
