@@ -1,18 +1,18 @@
 {
- "generated": "2026-11-25T00:06:56Z",
+ "generated": "2026-11-25T00:56:46Z",
  "fresh": {
-  "yt_live": "2026-11-25T00:06:56Z",
+  "yt_live": "2026-11-25T00:56:46Z",
   "yt_analytics": "2026-11-21",
-  "tg_members": "2026-11-25T00:06:57Z",
-  "tg_posts": "2026-11-25T00:06:58Z",
-  "ideas": "2026-11-24T23:21:18Z",
-  "news": "2026-11-24 20:53",
+  "tg_members": "2026-11-25T00:56:47Z",
+  "tg_posts": "2026-11-25T00:56:48Z",
+  "ideas": "2026-11-25T00:56:18Z",
+  "news": "2026-11-25 00:53",
   "comp": "2026-11-23",
-  "tiktok": "2026-11-24T20",
-  "instagram": "2026-11-24T20",
+  "tiktok": "2026-11-25T00",
+  "instagram": "2026-11-25T00",
   "site": "2026-11-22",
-  "site_live": "2026-11-25T00:06:59Z",
-  "activity": "2026-11-24T23:22:46Z",
+  "site_live": "2026-11-25T00:56:49Z",
+  "activity": "2026-11-25T00:56:46Z",
   "asks": "2026-11-24T18:40Z"
  },
  "notes": [],
@@ -544,6 +544,10 @@
   {
    "d": "2026-11-24",
    "n": 6
+  },
+  {
+   "d": "2026-11-25",
+   "n": 6
   }
  ],
  "platforms": {
@@ -551,7 +555,7 @@
    "subs": 315,
    "views_total": 12275,
    "videos": 98,
-   "live_at": "2026-11-25T00:06:56Z",
+   "live_at": "2026-11-25T00:56:46Z",
    "views_7d": 736,
    "pct_7d": 51.1,
    "subs_7d": 0,
@@ -607,12 +611,12 @@
    "best_live": [
     {
      "title": "Меню на тиждень і вечеря з того, що є 🍳 Тір-лист Байта #7",
-     "views": 119,
+     "views": 120,
      "id": "bvS0k_r3_bs"
     },
     {
      "title": "ШІ для вчителя: план уроку і тест за 5 хвилин у Google Classroom 🍎",
-     "views": 109,
+     "views": 108,
      "id": "ENKGdbr04h0"
     },
     {
@@ -624,12 +628,12 @@
   },
   "tiktok": {
    "videos": 16,
-   "views_total": 16857,
-   "views_7d": 1755,
+   "views_total": 17019,
+   "views_7d": 1917,
    "new_7d": 8,
    "saves_total": 135,
-   "likes_total": 344,
-   "last_snapshot": "2026-11-24T20",
+   "likes_total": 346,
+   "last_snapshot": "2026-11-25T00",
    "best": [
     {
      "title": "Український ШІ Сяйво: коли вийде",
@@ -709,41 +713,45 @@
     {
      "x": "2026-11-24T20",
      "v": 16857
+    },
+    {
+     "x": "2026-11-25T00",
+     "v": 17019
     }
    ]
   },
   "instagram": {
    "ig_goal": 100,
    "ig_goal_note": "до 1.12; далі 500 до 31.01 (поріг «Подарунків» — перевірити для України)",
-   "followers": 8,
-   "views_30d": 732,
-   "reach_30d": 595,
-   "acc_at": "24.11 20Z",
+   "followers": 10,
+   "views_30d": 864,
+   "reach_30d": 657,
+   "acc_at": "25.11 00Z",
    "reels": 11,
-   "plays_total": 309,
-   "likes_total": 3,
-   "saves_total": 6,
-   "last_snapshot": "2026-11-24T20",
+   "plays_total": 345,
+   "likes_total": 5,
+   "saves_total": 11,
+   "last_snapshot": "2026-11-25T00",
    "best": [
     {
      "shortcode": "DgGRAlDjqkk",
      "title": "Як продати на OLX швидше з ШІ",
-     "plays": 58,
-     "pct": 3,
+     "plays": 61,
+     "pct": 5,
      "published": "2026-11-23"
     },
     {
      "shortcode": "DgGRAVLFORb",
      "title": "Інкогніто в ШІ — не сейф",
-     "plays": 55,
-     "pct": 8,
+     "plays": 60,
+     "pct": 11,
      "published": "2026-11-23"
     },
     {
      "shortcode": "DgGQ8fODsVW",
      "title": "Сімейний бюджет з ШІ. Тір-лист Байта #5",
-     "plays": 54,
-     "pct": 6,
+     "plays": 56,
+     "pct": 8,
      "published": "2026-11-23"
     }
    ],
@@ -775,6 +783,10 @@
     {
      "x": "2026-11-24T20",
      "v": 309
+    },
+    {
+     "x": "2026-11-25T00",
+     "v": 345
     }
    ],
    "followers_hist": [
@@ -805,6 +817,10 @@
     {
      "x": "2026-11-24T20",
      "v": 8
+    },
+    {
+     "x": "2026-11-25T00",
+     "v": 10
     }
    ]
   },
@@ -876,7 +892,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-25T00:06:59Z",
+    "updated": "2026-11-25T00:56:49Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 1,
@@ -1204,6 +1220,10 @@
     {
      "x": "2026-11-24",
      "v": 6
+    },
+    {
+     "x": "2026-11-25",
+     "v": 6
     }
    ],
    "since": "2026-11-22"
@@ -1300,7 +1320,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 119
+   "total": 120
   },
   {
    "id": "_wp0rz8edB8",
@@ -1333,7 +1353,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 109
+   "total": 108
   },
   {
    "id": "LtNuOtQe0pc",
@@ -1377,7 +1397,7 @@
    "views7": 3,
    "pct": 64.2,
    "complete": false,
-   "total": 8
+   "total": 7
   },
   {
    "id": "0Kb6AamTRQo",
@@ -1443,7 +1463,7 @@
    "views7": 42,
    "pct": 9.7,
    "complete": true,
-   "total": 86
+   "total": 87
   }
  ],
  "ideas": [
@@ -1729,13 +1749,13 @@
   }
  ],
  "ideas_count": {
-  "total": 122,
-  "open": 117
+  "total": 127,
+  "open": 122
  },
  "lake": {
   "videos": 96,
   "daily": 800,
-  "news": 2037,
+  "news": 2054,
   "niche": 1035,
   "comp": 511,
   "comp_videos": 62794,
@@ -1746,88 +1766,88 @@
  },
  "news": [
   {
-   "date": "2026-11-24",
-   "source": "openai",
-   "title": "Searching for distant planets with Astra",
+   "date": "2026-11-25",
+   "source": "techcrunch",
+   "title": "Yale’s Sonnenfeld: Nvidia is a ‘detriment’ to U.S. industrial might — not a champion",
    "score": null,
-   "url": "https://openai.com/index/searching-for-distant-planets-with-astra"
-  },
-  {
-   "date": "2026-11-24",
-   "source": "openai",
-   "title": "How Intentful uses dots to make more time for growth",
-   "score": null,
-   "url": "https://openai.com/business/customer-stories/intentful-dots"
+   "url": "https://techcrunch.com/2026/11/24/yales-sonnenfeld-nvidia-is-a-detriment-to-u-s-industrial-might-not-a-champion/"
   },
   {
    "date": "2026-11-24",
    "source": "openai",
-   "title": "How iFood scales coding agents across 15,000 repositories",
+   "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
    "score": null,
-   "url": "https://openai.com/business/customer-stories/ifood"
+   "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities"
   },
   {
    "date": "2026-11-24",
-   "source": "gemini",
-   "title": "See what 5 builders are making with Gemini 4 Neon",
+   "source": "openai",
+   "title": "Clay helps sales teams win with Codex and ChatGPT",
    "score": null,
-   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-neon-builders/"
-  },
-  {
-   "date": "2026-11-24",
-   "source": "techcrunch",
-   "title": "Anthropic shares fall below IPO price, a worrying sign for AI startups",
-   "score": null,
-   "url": "https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups/"
+   "url": "https://openai.com/business/customer-stories/clay-plugins-openai"
   },
   {
    "date": "2026-11-24",
    "source": "techcrunch",
-   "title": "UK warns AI-driven cyberattacks are exposing years of weak security",
+   "title": "Jensen Huang still thinks a succession plan creates unnecessary hierarchy",
    "score": null,
-   "url": "https://techcrunch.com/2026/11/24/uk-warns-ai-driven-cyberattacks-are-exposing-years-of-weak-security/"
+   "url": "https://techcrunch.com/2026/11/24/jensen-huang-still-thinks-a-succession-plan-creates-unnecessary-hierarchy/"
   },
   {
    "date": "2026-11-24",
    "source": "techcrunch",
-   "title": "Meta brings its Muse AI assistant directly into Instagram DMs",
+   "title": "In all-hands meeting, Jensen Huang thanks White House and says he’s in therapy",
    "score": null,
-   "url": "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/"
+   "url": "https://techcrunch.com/2026/11/24/in-all-hands-meeting-jensen-huang-thanks-white-house-and-says-hes-in-therapy/"
   },
   {
    "date": "2026-11-24",
-   "source": "verge",
-   "title": "Jensen Huang reportedly tells Nvidia staff it’s ‘not true’ Trump got him rehired",
+   "source": "techcrunch",
+   "title": "Even the best AI agents struggle with everyday life",
    "score": null,
-   "url": "https://www.theverge.com/tech/1041571/jensen-huang-all-hands-nvidia-apology"
+   "url": "https://techcrunch.com/2026/11/24/even-the-best-ai-agents-struggle-with-everyday-life/"
   },
   {
    "date": "2026-11-24",
-   "source": "verge",
-   "title": "David Fincher is being dragged for suspected use of AI in his latest film",
+   "source": "techcrunch",
+   "title": "Walmart teams up with Meta to bring Black Friday deals to AI agent Muse",
    "score": null,
-   "url": "https://www.theverge.com/entertainment/1041417/david-fincher-netflix-cliff-booth-ai-interpositive"
+   "url": "https://techcrunch.com/2026/11/24/walmart-teams-up-with-meta-to-bring-black-friday-deals-to-ai-agent-muse/"
   },
   {
    "date": "2026-11-24",
-   "source": "verge",
-   "title": "Tidal will start banning AI-generated music next month",
+   "source": "techcrunch",
+   "title": "Maple raises $5.3M to build AI products that protect your data, even from itself",
    "score": null,
-   "url": "https://www.theverge.com/entertainment/1041362/tidal-ai-music-ban"
+   "url": "https://techcrunch.com/2026/11/24/maple-raises-5-3m-to-build-ai-products-that-protect-your-data-even-from-itself/"
   },
   {
    "date": "2026-11-24",
    "source": "venturebeat",
-   "title": "Nearly half of surveyed engineers and leaders say the AI agents that write their code also review it",
+   "title": "CrowdStrike’s Zscaler deal aims to give security teams a single kill switch for rogue AI agents",
    "score": null,
-   "url": "https://venturebeat.com/technology/nearly-half-of-surveyed-engineers-and-leaders-say-the-ai-agents-that-write-their-code-also-review-it"
+   "url": "https://venturebeat.com/security/crowdstrikes-zscaler-deal-aims-to-give-security-teams-a-single-kill-switch-for-rogue-ai-agents"
   },
   {
    "date": "2026-11-24",
-   "source": "venturebeat",
-   "title": "After token leaderboards and spending caps, Snowflake has a third idea: Keep the cap, then learn from whoever breaks it",
+   "source": "wired",
+   "title": "Jensen Huang’s Return Shows Nvidia Is Too Big to Police",
    "score": null,
-   "url": "https://venturebeat.com/orchestration/after-token-leaderboards-and-spending-caps-snowflake-has-a-third-idea-keep-the-cap-then-learn-from-whoever-breaks-it"
+   "url": "https://www.wired.com/story/jensen-huang-nvidia-us-national-security-risks/"
+  },
+  {
+   "date": "2026-11-24",
+   "source": "hn",
+   "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+   "score": 145,
+   "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/"
+  },
+  {
+   "date": "2026-11-24",
+   "source": "hn",
+   "title": "Fable 5.2 Tries Less on Some Hard Tasks When a Shortcut Is Available",
+   "score": 40,
+   "url": "https://goodhartlabs.com/blog/fable-5-2-tries-less-on-some-hard-tasks-when-a-shortcut-is-available"
   }
  ],
  "competitors": [
@@ -1938,33 +1958,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "143",
-   "agent": "trend",
-   "task": "фон: аномалії TikTok/Reels у ніші ШІ українською за добу → ідеї",
-   "started": "2026-11-24T00:17:54Z",
-   "finished": "2026-11-24T00:19:00Z",
-   "result": "ідеї #89–92, reels-outliers-2026-11-24.md (закрив COO за dispatch-log)",
-   "agent_raw": "niche"
-  },
-  {
-   "id": "144",
-   "agent": "de",
-   "task": "Збирач даталейку 00:52Z: новини, TikTok/Instagram/TG-знімок, сигнали",
-   "started": "2026-11-24T00:52:36Z",
-   "finished": "2026-11-24T01:05:00Z",
-   "result": "знімок 00Z: TikTok/Instagram, ідеї #93–95 (закрив COO за dispatch-log)",
-   "agent_raw": "data"
-  },
-  {
-   "id": "145",
-   "agent": "de",
-   "task": "Збирач даталейку 04:52Z: новини, TikTok/Instagram/TG-знімок, сигнали",
-   "started": "2026-11-24T04:53:13Z",
-   "finished": "2026-11-24T05:00:00Z",
-   "result": "знімок 04Z: TikTok/Instagram (закрив COO за dispatch-log)",
-   "agent_raw": "data"
-  },
   {
    "id": "146",
    "agent": "trend",
@@ -2283,6 +2276,32 @@
    "finished": "2026-11-24T23:22:46Z",
    "result": "34 аномалії укр. YouTube (нових тем нема, #55 підтверджено); TikTok: «приховані фішки», «команда для фото»; ідеї #119–122, approved #122 (3.12) і #119 (4.12)",
    "agent_raw": "research"
+  },
+  {
+   "id": "183",
+   "agent": "post",
+   "task": "Озвучка 00:18Z: guide1 ч.3/11",
+   "started": "2026-11-25T00:18:15Z",
+   "finished": "2026-11-25T00:19:58Z",
+   "result": "429 одразу (0 ок)",
+   "agent_raw": "production"
+  },
+  {
+   "id": "184",
+   "agent": "seo",
+   "task": "фон: нова стаття під непокритий запит (2-а за добу)",
+   "started": "2026-11-25T00:18:15Z",
+   "finished": "2026-11-25T00:26:23Z",
+   "result": "Стаття «Презентація ШІ безкоштовно: 7 способів» (5 400/міс), 27.11 13:00"
+  },
+  {
+   "id": "185",
+   "agent": "de",
+   "task": "Збирач даталейку 00:52Z: новини, TikTok/IG/TG-знімок, сигнали",
+   "started": "2026-11-25T00:53:08Z",
+   "finished": "2026-11-25T00:56:46Z",
+   "result": "+29 новин; TikTok 16 відео / 17 019; IG 10 підписників (+2), 864 перегляди/30д; TG 6; ідеї #123–127",
+   "agent_raw": "data"
   }
  ],
  "agents": [
