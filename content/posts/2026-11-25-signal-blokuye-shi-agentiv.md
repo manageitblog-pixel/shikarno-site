@@ -3,7 +3,7 @@ kind: news
 title: "ШІ в телефоні читає твою переписку? Signal блокує ШІ-агентів в iOS 27 і Android"
 slug: signal-blokuye-shi-agentiv
 date: 2026-11-25T17:00:00+02:00
-description: "Signal блокує скріншоти в iOS 27 і на Android, бо ШІ-асистенти Gemini і Siri сканують екран і бачать переписку. Що сталося, як це вимкнути і 3 кроки для твоєї приватності."
+description: "Signal блокує скріншоти в iOS 27 і на Android, бо ШІ-асистенти Gemini і Siri сканують екран і бачать переписку. Що сталося, як це вимкнути і 3 кроки для приватності."
 tags: [bezpeka, gemini, agenty]
 youtube: Rlm1u-I6x00
 source: {name: "Signal: Signal is Serious About Protecting Your Privacy (20.11.2026)", url: "https://signal.org/blog/protecting-your-privacy/"}
@@ -50,7 +50,7 @@ Signal чесно каже, що захист неповний: скріншот
 2. **Не вимикай його** без справжньої потреби.
 3. **Не давай ШІ-агентам «спеціальні можливості»** телефону, якщо не розумієш, навіщо вони їм.
 
-А якщо хочеш менше ШІ в телефоні загалом — ось [як вимкнути Gemini](/novyny/yak-vidklyuchyty-gemini/). І нагадування, що [Gemini тримає чати близько двох місяців](/novyny/gemini-zberigaye-chaty-dva-misyatsi/) навіть з вимкненою історією.
+А якщо хочеш менше ШІ в телефоні загалом — ось [як вимкнути Gemini](/novyny/yak-vidklyuchyty-gemini/). І нагадування, що [Gemini тримає чати близько двох місяців](/novyny/gemini-zberigaye-chaty-dva-misyatsi/) навіть з вимкненою історією. Що ще ШІ-асистенти знають про тебе і як це стерти — у [розборі про приватність](/rozbory/shcho-shi-znaye-pro-tebe-pryvatnist/).
 
 ## Байт каже
 
