@@ -1,22 +1,6 @@
 {
  "items": [
   {
-   "id": "32",
-   "agent": "factcheck",
-   "task": "Повторний незалежний фактчек guide3 після виправлень",
-   "started": "2026-11-22T13:48:24Z",
-   "finished": "2026-11-22T13:50:50Z",
-   "result": "guide3 повторно: PASS — готовий до озвучки за планом TTS"
-  },
-  {
-   "id": "33",
-   "agent": "shorts",
-   "task": "ep83 (чт 26.11 17Z): Moonlock від MacPaw проти шахраїв (ідея 17)",
-   "started": "2026-11-22T14:18:35Z",
-   "finished": "2026-11-22T14:23:23Z",
-   "result": "ep83 «Moonlock — чесно, чи варто?» (26.11): 483 знаки, вердикт Байта 6/10, самоперевірка 13/13"
-  },
-  {
    "id": "34",
    "agent": "shorts",
    "task": "ep84 (пт 27.11 17Z): ШІ для логопеда (ідея 3)",
@@ -1599,6 +1583,22 @@
    "started": "2026-11-25T19:17:57Z",
    "finished": "2026-11-25T19:19:38Z",
    "result": "STOP 429"
+  },
+  {
+   "id": "232",
+   "agent": "production",
+   "task": "Озвучка 20:18Z: шоу #3",
+   "started": "2026-11-25T20:17:56Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "233",
+   "agent": "researcher",
+   "task": "фон: TikTok-тренди ніші ШІ (vidIQ ≤20 кр.) → ідеї",
+   "started": "2026-11-25T20:17:56Z",
+   "finished": null,
+   "result": ""
   }
  ]
 }
