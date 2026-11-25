@@ -1597,8 +1597,8 @@
    "agent": "production",
    "task": "Озвучка 19:18Z: шоу #3",
    "started": "2026-11-25T19:17:57Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-25T19:19:38Z",
+   "result": "STOP 429"
   }
  ]
 }
