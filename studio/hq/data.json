@@ -1,28 +1,29 @@
 {
- "generated": "2026-11-25T11:06:37Z",
+ "generated": "2026-11-25T12:09:35Z",
  "fresh": {
-  "yt_live": "2026-11-25T11:06:37Z",
   "yt_analytics": "2026-11-22",
-  "tg_members": "2026-11-25T11:06:38Z",
-  "tg_posts": "2026-11-25T11:06:39Z",
-  "ideas": "2026-11-25T10:15:20Z",
+  "tg_members": "2026-11-25T12:09:35Z",
+  "tg_posts": "2026-11-25T12:09:36Z",
+  "ideas": "2026-11-25T12:06:54Z",
   "news": "2026-11-25 08:54",
   "comp": "2026-11-23",
   "tiktok": "2026-11-25T08",
   "instagram": "2026-11-25T08",
   "site": "2026-11-23",
-  "site_live": "2026-11-25T11:06:40Z",
+  "site_live": "2026-11-25T12:09:37Z",
   "activity": "2026-11-25T10:20:00Z",
   "asks": "2026-11-25T08:50Z"
  },
- "notes": [],
+ "notes": [
+  "YouTube Data API недоступний (FileNotFoundError) — живих лічильників немає"
+ ],
  "kpi": {
-  "subs": 317,
+  "subs": null,
   "subs_goal": 1000,
-  "long_hours": 11.2,
+  "long_hours": 10.9,
   "long_hours_goal": 4000,
-  "views_total": 12536,
-  "videos": 98,
+  "views_total": null,
+  "videos": null,
   "views_7d": 740,
   "pct_7d": 51.2,
   "subs_7d": 3,
@@ -385,8 +386,7 @@
    "partial": false,
    "partial_site": false,
    "subs_cum": 0,
-   "long_cum": 0.0,
-   "subs_total": 154
+   "long_cum": 0.0
   },
   {
    "w": "2026-08-03",
@@ -399,8 +399,7 @@
    "partial": false,
    "partial_site": false,
    "subs_cum": 0,
-   "long_cum": 0.0,
-   "subs_total": 154
+   "long_cum": 0.0
   },
   {
    "w": "2026-08-17",
@@ -413,8 +412,7 @@
    "partial": false,
    "partial_site": false,
    "subs_cum": 0,
-   "long_cum": 0.0,
-   "subs_total": 154
+   "long_cum": 0.0
   },
   {
    "w": "2026-08-24",
@@ -427,8 +425,7 @@
    "partial": false,
    "partial_site": false,
    "subs_cum": 0,
-   "long_cum": 0.0,
-   "subs_total": 154
+   "long_cum": 0.0
   },
   {
    "w": "2026-08-31",
@@ -441,8 +438,7 @@
    "partial": false,
    "partial_site": false,
    "subs_cum": 0,
-   "long_cum": 0.0,
-   "subs_total": 154
+   "long_cum": 0.0
   },
   {
    "w": "2026-09-07",
@@ -455,8 +451,7 @@
    "partial": false,
    "partial_site": false,
    "subs_cum": 0,
-   "long_cum": 0.0,
-   "subs_total": 154
+   "long_cum": 0.0
   },
   {
    "w": "2026-09-28",
@@ -469,8 +464,7 @@
    "partial": false,
    "partial_site": false,
    "subs_cum": -1,
-   "long_cum": 0.0,
-   "subs_total": 153
+   "long_cum": 0.0
   },
   {
    "w": "2026-10-19",
@@ -483,8 +477,7 @@
    "partial": false,
    "partial_site": false,
    "subs_cum": 0,
-   "long_cum": 0.2,
-   "subs_total": 154
+   "long_cum": 0.2
   },
   {
    "w": "2026-10-26",
@@ -497,8 +490,7 @@
    "partial": false,
    "partial_site": false,
    "subs_cum": 6,
-   "long_cum": 0.7,
-   "subs_total": 160
+   "long_cum": 0.7
   },
   {
    "w": "2026-11-02",
@@ -511,8 +503,7 @@
    "partial": false,
    "partial_site": false,
    "subs_cum": 155,
-   "long_cum": 5.5,
-   "subs_total": 309
+   "long_cum": 5.5
   },
   {
    "w": "2026-11-09",
@@ -525,8 +516,7 @@
    "partial": false,
    "partial_site": false,
    "subs_cum": 160,
-   "long_cum": 8.2,
-   "subs_total": 314
+   "long_cum": 8.2
   },
   {
    "w": "2026-11-16",
@@ -539,8 +529,7 @@
    "partial": false,
    "partial_site": false,
    "subs_cum": 163,
-   "long_cum": 10.9,
-   "subs_total": 317
+   "long_cum": 10.9
   },
   {
    "w": "2026-11-23",
@@ -553,8 +542,7 @@
    "partial": true,
    "partial_site": true,
    "subs_cum": 163,
-   "long_cum": 10.9,
-   "subs_total": 317
+   "long_cum": 10.9
   }
  ],
  "tg_hist": [
@@ -577,10 +565,10 @@
  ],
  "platforms": {
   "youtube": {
-   "subs": 317,
-   "views_total": 12536,
-   "videos": 98,
-   "live_at": "2026-11-25T11:06:37Z",
+   "subs": null,
+   "views_total": null,
+   "videos": null,
+   "live_at": null,
    "views_7d": 740,
    "pct_7d": 51.2,
    "subs_7d": 3,
@@ -588,7 +576,7 @@
     "2026-11-16",
     "2026-11-22"
    ],
-   "long_hours": 11.2,
+   "long_hours": 10.9,
    "history": [
     {
      "x": "2026-10-19",
@@ -951,24 +939,19 @@
     }
    ],
    "live": {
-    "updated": "2026-11-25T11:06:40Z",
+    "updated": "2026-11-25T12:09:37Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
-    "today_pageloads": 1,
-    "today_visits": 1,
+    "today_pageloads": 3,
+    "today_visits": 3,
     "yesterday_pageloads": 9,
     "yesterday_visits": 5,
-    "pageloads_7d": 50,
-    "visits_7d": 42,
+    "pageloads_7d": 52,
+    "visits_7d": 44,
     "last24h": {
-     "pageloads": 5,
-     "visits": 4,
+     "pageloads": 7,
+     "visits": 6,
      "hours": [
-      {
-       "h": "2026-11-24T12:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
       {
        "h": "2026-11-24T13:00:00Z",
        "pageloads": 0,
@@ -1081,6 +1064,11 @@
       },
       {
        "h": "2026-11-25T11:00:00Z",
+       "pageloads": 2,
+       "visits": 2
+      },
+      {
+       "h": "2026-11-25T12:00:00Z",
        "pageloads": 0,
        "visits": 0
       }
@@ -1155,8 +1143,8 @@
      },
      {
       "d": "2026-11-23",
-      "pageloads": 0,
-      "visits": 0,
+      "pageloads": 10,
+      "visits": 10,
       "sampled": false
      },
      {
@@ -1167,15 +1155,15 @@
      },
      {
       "d": "2026-11-25",
-      "pageloads": 1,
-      "visits": 1,
+      "pageloads": 3,
+      "visits": 3,
       "sampled": false
      }
     ],
     "top_pages_7d": [
      {
       "path": "/",
-      "count": 20
+      "count": 21
      },
      {
       "path": "/novyny/claude-bezkoshtovno/",
@@ -1197,7 +1185,7 @@
     "top_referrers_7d": [
      {
       "host": "(прямі / без реферера)",
-      "count": 22
+      "count": 23
      },
      {
       "host": "www.google.com",
@@ -1209,7 +1197,7 @@
      },
      {
       "host": "www.youtube.com",
-      "count": 2
+      "count": 3
      },
      {
       "host": "www.facebook.com",
@@ -1219,7 +1207,7 @@
     "top_countries_7d": [
      {
       "country": "UA",
-      "count": 31
+      "count": 32
      },
      {
       "country": "US",
@@ -1227,7 +1215,7 @@
      },
      {
       "country": "PL",
-      "count": 3
+      "count": 4
      },
      {
       "country": "NL",
@@ -1407,7 +1395,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 34
+   "total": 33
   },
   {
    "id": "ENKGdbr04h0",
@@ -1507,6 +1495,28 @@
    "pct": 68.5,
    "complete": true,
    "total": 45
+  },
+  {
+   "id": "Bh-YF2BbuiQ",
+   "title": "Lovable: сайти, зроблені ШІ, світять дані клієнтів — 24 тисячі без захисту ⚠️",
+   "format": "sec",
+   "short": true,
+   "published": "2026-11-15",
+   "views7": 6,
+   "pct": 74.3,
+   "complete": true,
+   "total": 6
+  },
+  {
+   "id": "GNqU-wcz9Ws",
+   "title": "Що ШІ знає про тебе: як вимкнути навчання в ChatGPT, Gemini, Claude, Meta AI і Copilot (2026)",
+   "format": "sec",
+   "short": false,
+   "published": "2026-11-14",
+   "views7": 42,
+   "pct": 9.7,
+   "complete": true,
+   "total": 90
   }
  ],
  "ideas": [
