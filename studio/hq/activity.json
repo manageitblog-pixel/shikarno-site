@@ -1575,6 +1575,22 @@
    "started": "2026-11-25T08:07:39Z",
    "finished": null,
    "result": ""
+  },
+  {
+   "id": "198",
+   "agent": "production",
+   "task": "guide2: ребілд з чистими ч.4/9 → final_v2 (без заливки, чекаємо «так» власника)",
+   "started": "2026-11-25T08:18:16Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "199",
+   "agent": "research",
+   "task": "фон: ранковий веб-скан трендів 25.11",
+   "started": "2026-11-25T08:18:16Z",
+   "finished": null,
+   "result": ""
   }
  ]
 }
