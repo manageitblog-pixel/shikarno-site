@@ -1,14 +1,6 @@
 {
  "items": [
   {
-   "id": "14",
-   "agent": "de",
-   "task": "P0: атомарний запис і блокування спільних JSON",
-   "started": "2026-11-22T13:09:59Z",
-   "finished": "2026-11-22T13:14:31Z",
-   "result": "studio/util.py: блокування й атомарний запис; busy_timeout у SQLite"
-  },
-  {
    "id": "15",
    "agent": "de",
    "task": "P0: yt.py — timeout, retry, квота, ідемпотентна заливка; баг gtts",
@@ -1597,6 +1589,14 @@
    "agent": "research",
    "task": "фон: денний веб-скан трендів 25.11",
    "started": "2026-11-25T13:18:36Z",
+   "finished": "2026-11-25T13:28:08Z",
+   "result": "#149 збій ChatGPT (approved: TG+сайт сьогодні), #151 фейкові магазини ЧП (26.11), #150/#152 new"
+  },
+  {
+   "id": "214",
+   "agent": "seo",
+   "task": "#149 збій ChatGPT: новина на сайт + TG-пост (сьогодні)",
+   "started": "2026-11-25T13:28:08Z",
    "finished": null,
    "result": ""
   }
