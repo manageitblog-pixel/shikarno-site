@@ -1,18 +1,18 @@
 {
- "generated": "2026-11-25T17:18:23Z",
+ "generated": "2026-11-25T18:06:41Z",
  "fresh": {
-  "yt_live": "2026-11-25T17:18:23Z",
+  "yt_live": "2026-11-25T18:06:41Z",
   "yt_analytics": "2026-11-22",
-  "tg_members": "2026-11-25T17:18:24Z",
-  "tg_posts": "2026-11-25T17:18:24Z",
+  "tg_members": "2026-11-25T18:06:43Z",
+  "tg_posts": "2026-11-25T18:06:44Z",
   "ideas": "2026-11-25T16:56:38Z",
   "news": "2026-11-25 16:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-25T16",
   "instagram": "2026-11-25T16",
   "site": "2026-11-23",
-  "site_live": "2026-11-25T17:18:26Z",
-  "activity": "2026-11-25T17:17:56Z",
+  "site_live": "2026-11-25T18:06:46Z",
+  "activity": "2026-11-25T17:24:30Z",
   "asks": "2026-11-25T08:50Z"
  },
  "notes": [],
@@ -580,7 +580,7 @@
    "subs": 324,
    "views_total": 12624,
    "videos": 101,
-   "live_at": "2026-11-25T17:18:23Z",
+   "live_at": "2026-11-25T18:06:41Z",
    "views_7d": 740,
    "pct_7d": 51.2,
    "subs_7d": 3,
@@ -641,7 +641,7 @@
    "best_live": [
     {
      "title": "Меню на тиждень і вечеря з того, що є 🍳 Тір-лист Байта #7",
-     "views": 141,
+     "views": 144,
      "id": "bvS0k_r3_bs"
     },
     {
@@ -975,7 +975,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-25T17:18:26Z",
+    "updated": "2026-11-25T18:06:46Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 8,
@@ -985,14 +985,9 @@
     "pageloads_7d": 57,
     "visits_7d": 49,
     "last24h": {
-     "pageloads": 10,
-     "visits": 10,
+     "pageloads": 9,
+     "visits": 9,
      "hours": [
-      {
-       "h": "2026-11-24T18:00:00Z",
-       "pageloads": 1,
-       "visits": 1
-      },
       {
        "h": "2026-11-24T19:00:00Z",
        "pageloads": 0,
@@ -1107,6 +1102,11 @@
        "h": "2026-11-25T17:00:00Z",
        "pageloads": 2,
        "visits": 2
+      },
+      {
+       "h": "2026-11-25T18:00:00Z",
+       "pageloads": 0,
+       "visits": 0
       }
      ]
     },
@@ -1267,9 +1267,9 @@
   "telegram": {
    "members": 6,
    "tg_goal": 150,
-   "posts_7d": 17,
-   "views_7d": 62,
-   "views_avg": 3.6,
+   "posts_7d": 18,
+   "views_7d": 66,
+   "views_avg": 3.7,
    "posts_error": null,
    "best": [
     {
@@ -1442,7 +1442,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 141
+   "total": 144
   },
   {
    "id": "_wp0rz8edB8",
@@ -1464,7 +1464,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 35
+   "total": 34
   },
   {
    "id": "ENKGdbr04h0",
@@ -1486,7 +1486,7 @@
    "views7": 42,
    "pct": 60.1,
    "complete": false,
-   "total": 94
+   "total": 95
   },
   {
    "id": "aTUsauz53rs",
@@ -1497,7 +1497,7 @@
    "views7": 6,
    "pct": 59.2,
    "complete": false,
-   "total": 72
+   "total": 69
   },
   {
    "id": "gljrHADi4aU",
@@ -2390,8 +2390,8 @@
    "agent": "post",
    "task": "Озвучка 17:18Z: шоу #3",
    "started": "2026-11-25T17:17:56Z",
-   "finished": null,
-   "result": "",
+   "finished": "2026-11-25T17:19:35Z",
+   "result": "STOP 429",
    "agent_raw": "production"
   },
   {
@@ -2399,16 +2399,16 @@
    "agent": "designer",
    "task": "фон: ресерч дизайну — обкладинки/кадр 0 українських аномалій",
    "started": "2026-11-25T17:17:56Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-25T17:21:06Z",
+   "result": "4 гіпотези H7–H10 у design-guide (погляд у камеру 5/13 аномалій vs 0/7)"
   },
   {
    "id": "226",
    "agent": "da",
    "task": "фон: якість даталейку і перевірка експериментів (ops.py)",
    "started": "2026-11-25T17:17:56Z",
-   "finished": null,
-   "result": "",
+   "finished": "2026-11-25T17:24:30Z",
+   "result": "лейк цілий; експерименти без дати оцінки; проблеми в docs/research/data-quality-2026-11-25.md",
    "agent_raw": "analyst"
   }
  ],
