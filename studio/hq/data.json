@@ -1,9 +1,9 @@
 {
- "generated": "2026-11-25T18:06:41Z",
+ "generated": "2026-11-25T18:18:53Z",
  "fresh": {
-  "yt_live": "2026-11-25T18:06:41Z",
+  "yt_live": "2026-11-25T18:18:54Z",
   "yt_analytics": "2026-11-22",
-  "tg_members": "2026-11-25T18:06:43Z",
+  "tg_members": "2026-11-25T18:18:54Z",
   "tg_posts": "2026-11-25T18:06:44Z",
   "ideas": "2026-11-25T16:56:38Z",
   "news": "2026-11-25 16:53",
@@ -11,8 +11,8 @@
   "tiktok": "2026-11-25T16",
   "instagram": "2026-11-25T16",
   "site": "2026-11-23",
-  "site_live": "2026-11-25T18:06:46Z",
-  "activity": "2026-11-25T17:24:30Z",
+  "site_live": "2026-11-25T18:18:56Z",
+  "activity": "2026-11-25T18:18:29Z",
   "asks": "2026-11-25T08:50Z"
  },
  "notes": [],
@@ -580,7 +580,7 @@
    "subs": 324,
    "views_total": 12624,
    "videos": 101,
-   "live_at": "2026-11-25T18:06:41Z",
+   "live_at": "2026-11-25T18:18:54Z",
    "views_7d": 740,
    "pct_7d": 51.2,
    "subs_7d": 3,
@@ -641,7 +641,7 @@
    "best_live": [
     {
      "title": "Меню на тиждень і вечеря з того, що є 🍳 Тір-лист Байта #7",
-     "views": 144,
+     "views": 141,
      "id": "bvS0k_r3_bs"
     },
     {
@@ -975,7 +975,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-25T18:06:46Z",
+    "updated": "2026-11-25T18:18:56Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 8,
@@ -1442,7 +1442,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 144
+   "total": 141
   },
   {
    "id": "_wp0rz8edB8",
@@ -1453,7 +1453,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 26
+   "total": 33
   },
   {
    "id": "xaYHobFNYHo",
@@ -1464,7 +1464,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 34
+   "total": 35
   },
   {
    "id": "ENKGdbr04h0",
@@ -1497,7 +1497,7 @@
    "views7": 6,
    "pct": 59.2,
    "complete": false,
-   "total": 69
+   "total": 72
   },
   {
    "id": "gljrHADi4aU",
@@ -1508,7 +1508,7 @@
    "views7": 3,
    "pct": 79.0,
    "complete": false,
-   "total": 7
+   "total": 8
   },
   {
    "id": "CfHTFrYH_z4",
@@ -1519,7 +1519,7 @@
    "views7": 3,
    "pct": 64.2,
    "complete": false,
-   "total": 8
+   "total": 9
   },
   {
    "id": "0Kb6AamTRQo",
@@ -1541,7 +1541,7 @@
    "views7": 42,
    "pct": 37.4,
    "complete": false,
-   "total": 45
+   "total": 46
   },
   {
    "id": "Vp1PPNxtcrI",
@@ -2061,33 +2061,6 @@
  ],
  "activity": [
   {
-   "id": "187",
-   "agent": "post",
-   "task": "Озвучка 02:18Z: guide1 ч.3/11",
-   "started": "2026-11-25T02:18:09Z",
-   "finished": "2026-11-25T02:19:53Z",
-   "result": "429 одразу (0 ок)",
-   "agent_raw": "production"
-  },
-  {
-   "id": "188",
-   "agent": "post",
-   "task": "Озвучка 03:18Z: guide1 ч.3/11",
-   "started": "2026-11-25T03:17:46Z",
-   "finished": "2026-11-25T03:19:25Z",
-   "result": "429 одразу (0 ок); план Б готовий",
-   "agent_raw": "production"
-  },
-  {
-   "id": "189",
-   "agent": "post",
-   "task": "Озвучка 04:18Z: guide1 ч.3/11",
-   "started": "2026-11-25T04:18:21Z",
-   "finished": "2026-11-25T04:21:57Z",
-   "result": "guide1 ч.3 ЧИСТИЙ дубль 4: 123,2 Гц (сусіди 122/125,5); ч.11 чекає; 429",
-   "agent_raw": "production"
-  },
-  {
    "id": "190",
    "agent": "de",
    "task": "Збирач даталейку 04:52Z: новини, TikTok/IG/TG-знімок, сигнали",
@@ -2410,6 +2383,32 @@
    "finished": "2026-11-25T17:24:30Z",
    "result": "лейк цілий; експерименти без дати оцінки; проблеми в docs/research/data-quality-2026-11-25.md",
    "agent_raw": "analyst"
+  },
+  {
+   "id": "227",
+   "agent": "post",
+   "task": "Озвучка 18:19Z: шоу #3",
+   "started": "2026-11-25T18:18:29Z",
+   "finished": null,
+   "result": "",
+   "agent_raw": "production"
+  },
+  {
+   "id": "228",
+   "agent": "coo",
+   "task": "фон: веб-скан трендів (вечір) 13:30–18:20Z",
+   "started": "2026-11-25T18:18:29Z",
+   "finished": null,
+   "result": "",
+   "agent_raw": "researcher"
+  },
+  {
+   "id": "229",
+   "agent": "seo",
+   "task": "фон: нова SEO-стаття під непокритий запит",
+   "started": "2026-11-25T18:18:29Z",
+   "finished": null,
+   "result": ""
   }
  ],
  "agents": [
