@@ -3039,5 +3039,109 @@
   "status": "new",
   "added": "2026-11-25",
   "id": "143"
+ },
+ {
+  "title": "Claude тепер сам кладе файл у твій Google Drive чи Notion: надсилання й збереження файлів у підключених застосунках — як це працює (бета)",
+  "format": "try",
+  "channels": [
+   "short",
+   "tiktok",
+   "site",
+   "tg"
+  ],
+  "demand": 3,
+  "fresh": 5,
+  "show": 4,
+  "fit": 4,
+  "length": 32,
+  "hook": "you",
+  "source": "https://support.claude.com/en/articles/12138966-release-notes",
+  "by": "researcher-news",
+  "note": "Release notes Claude 24.11: Claude може надіслати файл у підключений застосунок або зберегти файл, який застосунок пропонує; бета, розгортається поступово; Pro, Max, Ultra; Team/Enterprise — коли власник увімкне. Які саме конектори підтримуються — не названо (Drive/Notion у заголовку — перевірити на акаунті перед записом). Не дублює №123 (артефакти як застосунки) і №133 (підсумок місяця).",
+  "status": "new",
+  "added": "2026-11-25",
+  "id": "144"
+ },
+ {
+  "title": "Новий вигляд Claude на iPhone: що змінилося в застосунку і чому на старій iOS оновлення не прийде",
+  "format": "news",
+  "channels": [
+   "site",
+   "tg"
+  ],
+  "demand": 3,
+  "fresh": 4,
+  "show": 3,
+  "fit": 3,
+  "length": 30,
+  "hook": "plain",
+  "source": "https://support.claude.com/en/articles/12138966-release-notes",
+  "by": "researcher-news",
+  "note": "Release notes Claude 20.11: оновлений дизайн мобільного Claude розгортається поступово, спершу iOS; чати, проєкти й план не змінюються, нічого вмикати не треба; потрібна iOS 26 або новіша. Там же 20.11: Computer use (бета) для Team/Enterprise; 17.11: канали оновлень Stable/Latest у Claude Desktop — можна об'єднати в «що нового в Claude за тиждень».",
+  "status": "new",
+  "added": "2026-11-25",
+  "id": "145"
+ },
+ {
+  "title": "ШІ пише до 100% коду в половини розробників — і 76% відчувають, що слабшають як інженери: українське дослідження Mate academy і Solidgate",
+  "format": "news",
+  "channels": [
+   "site",
+   "tg",
+   "short"
+  ],
+  "demand": 3,
+  "fresh": 5,
+  "show": 3,
+  "fit": 4,
+  "length": 30,
+  "hook": "plain",
+  "source": "https://dev.ua/news/ai-pyshe-do-100-kodu-dlia-polovyny-rozrobnykiv-1795604875",
+  "by": "researcher-news",
+  "note": "dev.ua 25.11 (оригінальний звіт не прилинкований; пошук першоджерела на сайтах Mate academy/Solidgate — не знайдено, перевірити перед публікацією): опитування вер–жов 2026, 414 інженерів (66% Україна); ~половина — ШІ пише 80–100% коду; 71% працюють через CLI, майже половина запускає 3+ агенти; Claude — найпопулярніша модель; 76% кажуть про ослаблення навичок (ручне кодування 61%, глибоке розв'язання задач 44%); 18% перевіряють ШІ-код м'якше, 7% не перевіряють. Автори: кореляції, не причинність. Не дублює №141 (Лютке) і №46 (N-iX рівні).",
+  "status": "new",
+  "added": "2026-11-25",
+  "id": "146"
+ },
+ {
+  "title": "Gemini у Chrome відповідає просто на сторінці: підсумуй довгий звіт чи порівняй товари без нової вкладки — Байт перевіряє, чи працює в Україні",
+  "format": "try",
+  "channels": [
+   "short",
+   "tiktok",
+   "site"
+  ],
+  "demand": 4,
+  "fresh": 3,
+  "show": 5,
+  "fit": 5,
+  "length": 30,
+  "hook": "you",
+  "source": "https://blog.google/innovation-and-ai/products/gemini-app/research-with-gemini-in-chrome/",
+  "by": "researcher-news",
+  "note": "Google Blog 12.11: Gemini у Chrome — бічна панель (іконка Gemini на панелі Chrome), підсумок довгого звіту, порівняння характеристик товарів, пояснення простими словами, не залишаючи сторінку. Країни, мови й плани в пості не названі — доступність в Україні перевірити на реальному Chrome перед записом. Кут під Чорну п'ятницю: порівняти товари на сторінці магазину. Не дублює №28 (бічна панель Google Search).",
+  "status": "new",
+  "added": "2026-11-25",
+  "id": "147"
+ },
+ {
+  "title": "Хакери зламали розвідсистему ЦРУ за допомогою ШІ-інструмента для «тестів безпеки»: що таке Artex і чому такі інструменти тепер атакують і звичайні компанії",
+  "format": "sec",
+  "channels": [
+   "site",
+   "tg"
+  ],
+  "demand": 2,
+  "fresh": 5,
+  "show": 2,
+  "fit": 3,
+  "length": 30,
+  "hook": "plain",
+  "source": "https://www.nytimes.com/2026/11/24/us/politics/spy-agencies-computer-network-breaches.html",
+  "by": "researcher-news",
+  "note": "NYT 24.11 (через AIN 25.11 https://ain.ua/2026/11/25/xakeri-zlamali-sistemu-cru-ta-insix-rozvidsluzb-ssa-za-dopomogoiu-si/; сам NYT не прочитано — за пейволом, звірити): можливо уражено OSINT-систему ЦРУ, NGA та ODNI (несекретні дані); за джерелами NYT, хакери могли використати Artex — китайський ШІ-інструмент автоматизації атак, опублікований у липні 2026 для тестування безпеки; виконавців не встановлено, ранні ознаки вказують на Китай. Суміжне з №104 (AWS: агенти знайшли 0-day) — можна об'єднати в одну статтю про ШІ-атаки.",
+  "status": "new",
+  "added": "2026-11-25",
+  "id": "148"
  }
 ]
