@@ -6,6 +6,7 @@ date: 2026-11-25T17:00:00+02:00
 description: "Signal блокує скріншоти в iOS 27 і на Android, бо ШІ-асистенти Gemini і Siri сканують екран і бачать переписку. Що сталося, як це вимкнути і 3 кроки для приватності."
 tags: [bezpeka, gemini, agenty]
 youtube: Rlm1u-I6x00
+telegram_post: 148
 source: {name: "Signal: Signal is Serious About Protecting Your Privacy (20.11.2026)", url: "https://signal.org/blog/protecting-your-privacy/"}
 summary:
   - "ШІ-асистенти, вбудовані в Android та iOS, сканують екран, щоб відповідати на твої питання, — і так бачать переписку в месенджерах."
