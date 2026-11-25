@@ -1,14 +1,6 @@
 {
  "items": [
   {
-   "id": "1",
-   "agent": "da",
-   "task": "Аудит прогнозів Shorts 08–15.11",
-   "started": "2026-11-22T12:18:00Z",
-   "finished": "2026-11-22T12:21:00Z",
-   "result": "Бал ідей слабо передбачає перегляди (ρ=0,24); 8 пропозицій"
-  },
-  {
    "id": "2",
    "agent": "seo",
    "task": "Сторінка «Промпти для ChatGPT» → гайд",
@@ -1599,6 +1591,14 @@
    "started": "2026-11-25T08:20:44Z",
    "finished": "2026-11-25T08:33:39Z",
    "result": "h5aUeuaD8OE, finalize PASS, стаття 27.11 19:00, TG-чернетка; власнику Test&compare + Related (thumb_B надіслано файлом)"
+  },
+  {
+   "id": "201",
+   "agent": "production",
+   "task": "Заливка ep83 (26.11) і ep85 (28.11) + статті + exp v2",
+   "started": "2026-11-25T08:40:47Z",
+   "finished": null,
+   "result": ""
   }
  ]
 }
