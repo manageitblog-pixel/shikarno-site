@@ -1,18 +1,18 @@
 {
- "generated": "2026-11-25T20:06:53Z",
+ "generated": "2026-11-25T21:08:27Z",
  "fresh": {
-  "yt_live": "2026-11-25T20:06:53Z",
+  "yt_live": "2026-11-25T21:08:27Z",
   "yt_analytics": "2026-11-22",
-  "tg_members": "2026-11-25T20:06:54Z",
-  "tg_posts": "2026-11-25T20:06:56Z",
-  "ideas": "2026-11-25T18:21:48Z",
-  "news": "2026-11-25 16:53",
+  "tg_members": "2026-11-25T21:08:28Z",
+  "tg_posts": "2026-11-25T21:08:30Z",
+  "ideas": "2026-11-25T20:57:42Z",
+  "news": "2026-11-25 20:53",
   "comp": "2026-11-23",
-  "tiktok": "2026-11-25T16",
-  "instagram": "2026-11-25T16",
+  "tiktok": "2026-11-25T20",
+  "instagram": "2026-11-25T20",
   "site": "2026-11-23",
-  "site_live": "2026-11-25T20:06:57Z",
-  "activity": "2026-11-25T19:19:38Z",
+  "site_live": "2026-11-25T21:08:31Z",
+  "activity": "2026-11-25T21:01:52Z",
   "asks": "2026-11-25T18:45Z"
  },
  "notes": [],
@@ -580,7 +580,7 @@
    "subs": 324,
    "views_total": 12624,
    "videos": 101,
-   "live_at": "2026-11-25T20:06:53Z",
+   "live_at": "2026-11-25T21:08:27Z",
    "views_7d": 740,
    "pct_7d": 51.2,
    "subs_7d": 3,
@@ -641,7 +641,7 @@
    "best_live": [
     {
      "title": "Меню на тиждень і вечеря з того, що є 🍳 Тір-лист Байта #7",
-     "views": 144,
+     "views": 149,
      "id": "bvS0k_r3_bs"
     },
     {
@@ -657,13 +657,13 @@
    ]
   },
   "tiktok": {
-   "videos": 21,
-   "views_total": 19083,
-   "views_7d": 2274,
-   "new_7d": 9,
-   "saves_total": 141,
-   "likes_total": 390,
-   "last_snapshot": "2026-11-25T16",
+   "videos": 22,
+   "views_total": 19237,
+   "views_7d": 2428,
+   "new_7d": 10,
+   "saves_total": 142,
+   "likes_total": 393,
+   "last_snapshot": "2026-11-25T20",
    "best": [
     {
      "title": "Український ШІ Сяйво: коли вийде",
@@ -763,40 +763,44 @@
     {
      "x": "2026-11-25T16",
      "v": 19083
+    },
+    {
+     "x": "2026-11-25T20",
+     "v": 19237
     }
    ]
   },
   "instagram": {
    "ig_goal": 100,
    "ig_goal_note": "до 1.12; далі 500 до 31.01 (поріг «Подарунків» — перевірити для України)",
-   "followers": 19,
+   "followers": 23,
    "views_30d": 1303,
    "reach_30d": 971,
    "acc_at": "25.11 16Z",
    "reels": 11,
-   "plays_total": 394,
-   "likes_total": 6,
-   "saves_total": 13,
-   "last_snapshot": "2026-11-25T16",
+   "plays_total": 404,
+   "likes_total": 7,
+   "saves_total": 14,
+   "last_snapshot": "2026-11-25T20",
    "best": [
     {
      "shortcode": "DgGRAlDjqkk",
      "title": "Як продати на OLX швидше з ШІ",
-     "plays": 66,
-     "pct": 6,
+     "plays": 68,
+     "pct": 8,
      "published": "2026-11-23"
     },
     {
      "shortcode": "DgGRAVLFORb",
      "title": "Інкогніто в ШІ — не сейф",
-     "plays": 62,
-     "pct": 13,
+     "plays": 65,
+     "pct": 14,
      "published": "2026-11-23"
     },
     {
      "shortcode": "DgGQ8fODsVW",
      "title": "Сімейний бюджет з ШІ. Тір-лист Байта #5",
-     "plays": 59,
+     "plays": 60,
      "pct": 8,
      "published": "2026-11-23"
     }
@@ -849,6 +853,10 @@
     {
      "x": "2026-11-25T16",
      "v": 394
+    },
+    {
+     "x": "2026-11-25T20",
+     "v": 404
     }
    ],
    "followers_hist": [
@@ -899,6 +907,10 @@
     {
      "x": "2026-11-25T16",
      "v": 19
+    },
+    {
+     "x": "2026-11-25T20",
+     "v": 23
     }
    ]
   },
@@ -975,7 +987,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-25T20:06:57Z",
+    "updated": "2026-11-25T21:08:31Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 8,
@@ -985,14 +997,9 @@
     "pageloads_7d": 57,
     "visits_7d": 49,
     "last24h": {
-     "pageloads": 9,
-     "visits": 9,
+     "pageloads": 8,
+     "visits": 8,
      "hours": [
-      {
-       "h": "2026-11-24T21:00:00Z",
-       "pageloads": 1,
-       "visits": 1
-      },
       {
        "h": "2026-11-24T22:00:00Z",
        "pageloads": 1,
@@ -1105,6 +1112,11 @@
       },
       {
        "h": "2026-11-25T20:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-25T21:00:00Z",
        "pageloads": 0,
        "visits": 0
       }
@@ -1442,7 +1454,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 144
+   "total": 149
   },
   {
    "id": "_wp0rz8edB8",
@@ -1453,7 +1465,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 33
+   "total": 34
   },
   {
    "id": "xaYHobFNYHo",
@@ -1464,7 +1476,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 36
+   "total": 39
   },
   {
    "id": "ENKGdbr04h0",
@@ -1497,7 +1509,7 @@
    "views7": 6,
    "pct": 59.2,
    "complete": false,
-   "total": 73
+   "total": 93
   },
   {
    "id": "gljrHADi4aU",
@@ -1677,6 +1689,30 @@
    "score": 400.0
   },
   {
+   "title": "Твій ліміт у ChatGPT з грудня спільний з Codex: що не рахується (Instant) і де за 10 секунд глянути залишок",
+   "format": "news",
+   "channels": [
+    "short",
+    "tiktok",
+    "site",
+    "tg"
+   ],
+   "demand": 4,
+   "fresh": 5,
+   "show": 4,
+   "fit": 5,
+   "length": 30,
+   "hook": "you",
+   "by": "researcher-news",
+   "source": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits",
+   "note": "Довідка OpenAI: з грудня Plus, Pro і Business мають один спільний ліміт ChatGPT+Codex, рахується в токенах; Instant-чат не витрачає ліміт; залишок і час скидання — Settings → Usage; частина користувачів отримає раніше. TechCrunch 25.11: об'єднання Chat і Work, найактивніші можуть упиратися в ліміт швидше (це слова OpenAI). Free/Go не згадані. Показати екран Settings → Usage.",
+   "status": "approved",
+   "added": "2026-11-25",
+   "id": "163",
+   "decision": "Бал 381.7 (≥300): масова зміна для платних ChatGPT з грудня, першоджерело — довідка OpenAI; Short «твій ліміт» з екраном Settings → Usage + новина на сайт і TG до 1.12",
+   "score": 381.7
+  },
+  {
    "title": "3 приховані ШІ-фішки, які вже є у твоєму Android безкоштовно: обвести й знайти, переклад усього екрана, текст із камери — про які мало хто знає",
    "format": "free",
    "channels": [
@@ -1825,39 +1861,16 @@
    "id": "134",
    "decision": "Радар 25.11: бал 311,5, попит «фоп з пдв» 333 — найвищий за тиждень. Не approved: законопроєкт не зареєстрований, правила можуть змінитись; check-прайор слабкий (мед. 23). Спершу TG/сайт, Short — якщо законопроєкт зареєструють (тоді оцінити разом з №35)",
    "score": 311.5
-  },
-  {
-   "title": "ШІ для ФОПа: рахунок, акт і нагадування про податок за 5 хвилин — що можна довірити ШІ, а що ні",
-   "format": "prof",
-   "channels": [
-    "short",
-    "site",
-    "tg"
-   ],
-   "demand": 4,
-   "fresh": 3,
-   "show": 5,
-   "fit": 5,
-   "hook": "you",
-   "length": 35,
-   "source": "https://www.youtube.com/watch?v=ZtbpANr-ZDo",
-   "by": "researcher-niche",
-   "status": "new",
-   "added": "2026-11-22",
-   "id": "35",
-   "kw": "«ші для фоп» без прямого попиту; суміжні: фоп 2 група звіт (23); фоп для фрілансерів (28); фоп звіт (9) — у назву «звіт ФОП» + ШІ",
-   "note": "24.11 13Z (researcher-trends): ChatGPT release notes 18.11 — плагін Accounting (desktop macOS/Windows, через computer use): звірка транзакцій, чернетки записів по рахунках, звіти на кінець місяця з твоїх файлів і шаблонів; тарифи/регіони не вказані («якщо доступний для твого плану»). Може бути одним пунктом «що можна довірити ШІ», але першоджерело Дія/ДПС усе ще потрібне.",
-   "score": 296.0
   }
  ],
  "ideas_count": {
-  "total": 161,
-  "open": 152
+  "total": 167,
+  "open": 158
  },
  "lake": {
   "videos": 98,
   "daily": 828,
-  "news": 2114,
+  "news": 2131,
   "niche": 1035,
   "comp": 511,
   "comp_videos": 62794,
@@ -1869,87 +1882,87 @@
  "news": [
   {
    "date": "2026-11-25",
+   "source": "hf",
+   "title": "Where scientists draw the line on AI agents",
+   "score": null,
+   "url": "https://huggingface.co/blog/allenai/where-scientists-draw-the-line-on-ai-agents"
+  },
+  {
+   "date": "2026-11-25",
+   "source": "hf",
+   "title": "Hill-climbing Inkling 2 Mini inference on one RTX PRO 6000",
+   "score": null,
+   "url": "https://huggingface.co/blog/inkling-2-mini-inference-hillclimb"
+  },
+  {
+   "date": "2026-11-25",
+   "source": "techcrunch",
+   "title": "OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work",
+   "score": null,
+   "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/"
+  },
+  {
+   "date": "2026-11-25",
+   "source": "techcrunch",
+   "title": "Jensen Huang broke Nvidia’s code of conduct, and his employees may not forget it",
+   "score": null,
+   "url": "https://techcrunch.com/2026/11/25/jensen-huang-broke-nvidias-code-of-conduct-and-his-employees-may-not-forget-it/"
+  },
+  {
+   "date": "2026-11-25",
+   "source": "techcrunch",
+   "title": "Anthropic’s Dario Amodei calls accusations of surrendering human control to AI ‘absurd’",
+   "score": null,
+   "url": "https://techcrunch.com/2026/11/25/anthropics-dario-amodei-calls-accusations-of-surrendering-human-control-to-ai-absurd/"
+  },
+  {
+   "date": "2026-11-25",
+   "source": "techcrunch",
+   "title": "Want to buy your kid an AI toy this Christmas? Not in New York",
+   "score": null,
+   "url": "https://techcrunch.com/2026/11/25/want-to-buy-your-kid-an-ai-toy-this-christmas-not-in-new-york/"
+  },
+  {
+   "date": "2026-11-25",
+   "source": "techcrunch",
+   "title": "Character.AI’s plan to auction off users’ private chats challenged by state AGs",
+   "score": null,
+   "url": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/"
+  },
+  {
+   "date": "2026-11-25",
+   "source": "verge",
+   "title": "FCC signs off on SpaceX’s plan to put up to 1 million data center satellites into space",
+   "score": null,
+   "url": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers"
+  },
+  {
+   "date": "2026-11-25",
+   "source": "speka",
+   "title": "Signal посилює захист листування від ШІ: месенджер блокуватиме скриншоти на iPhone та Android",
+   "score": null,
+   "url": "https://speka.ua/news/signal-posilyuje-zaxist-listuvannya-vid-si-mesendzer-blokuvatime-skrinsoti-na-iphone-ta-android-por66y"
+  },
+  {
+   "date": "2026-11-25",
+   "source": "hn",
+   "title": "Britain's ghost stations",
+   "score": 51,
+   "url": "https://spectator.com/article/britains-ghost-stations-are-fascinating/"
+  },
+  {
+   "date": "2026-11-25",
+   "source": "hn",
+   "title": "New York bans AI toys, including those using internet to talk to children",
+   "score": 28,
+   "url": "https://www.theguardian.com/us-news/2026/nov/25/new-york-bans-ai-toys"
+  },
+  {
+   "date": "2026-11-25",
    "source": "techcrunch",
    "title": "AI data centers are becoming harder to build, and neoclouds are feeling it",
    "score": null,
    "url": "https://techcrunch.com/podcast/ai-data-centers-are-becoming-harder-to-build-and-neoclouds-are-feeling-it/"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "techcrunch",
-   "title": "Amazon and Meta reportedly in talks to lift blockade on AI agent Muse",
-   "score": null,
-   "url": "https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "techcrunch",
-   "title": "The questions Jensen Huang and Nvidia will still have to answer about Megaspeed",
-   "score": null,
-   "url": "https://techcrunch.com/2026/11/25/the-questions-jensen-huang-and-nvidia-will-still-have-to-answer-about-megaspeed/"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "verge",
-   "title": "Nothing offers a full look at its AI earbuds and charging case",
-   "score": null,
-   "url": "https://www.theverge.com/gadgets/1042162/nothing-ear-note-ai-earbuds-reveal"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "verge",
-   "title": "Amazon is reportedly in talks to end Muse AI shopping block",
-   "score": null,
-   "url": "https://www.theverge.com/tech/1042071/meta-amazon-muse-ai-shopping-discussions"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "verge",
-   "title": "Has vibe coding made open source the new normal for synths?",
-   "score": null,
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1040081/vibe-coding-open-source-music-firmware"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "venturebeat",
-   "title": "Can you give AI agents live data without rebuilding your data stack?",
-   "score": null,
-   "url": "https://venturebeat.com/data/can-you-give-ai-agents-live-data-without-rebuilding-your-data-stack"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "ars",
-   "title": "Ars Live recap: Don’t expect military attacks on data centers to stop",
-   "score": null,
-   "url": "https://arstechnica.com/gadgets/2026/11/ars-live-recap-dont-expect-military-attacks-on-data-centers-to-stop/"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "devua",
-   "title": "Отримавши 2000 заявок на одну вакансію, рекрутерка сховала у вакансіях інструкцію проти ШІ-агентів",
-   "score": null,
-   "url": "https://dev.ua/news/otrymavshy-2000-zaiavok-na-odnu-vakansiiu-rekruterka-skhovala-u-vakansiiakh-instruktsiiu-proty-shi-ahentiv-1795624113"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "devua",
-   "title": "Не до хакерів: під час зламу Мінфіну США його ІТ-директор вайбкодив клон Civilization",
-   "score": null,
-   "url": "https://dev.ua/news/holovnyi-it-dyrektor-minfinu-ssha-vaibkodyv-klon-civilization-pid-chas-kiberataky-na-vidomstvo-1795617215"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "devua",
-   "title": "Гадаєте, ви зберігаєте анонімність онлайн? ШІ може викрити людину за дрібними деталями в тексті менш ніж за хвилину",
-   "score": null,
-   "url": "https://dev.ua/news/hadaiete-zberihaiete-anonimnist-onlain"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "devua",
-   "title": "Стартап колишньої CTO OpenAI випустив Inkling 2 Mini — ШІ-модель для програмування без інтернету. Для її запуску достатньо близько 20 ГБ пам’яті",
-   "score": null,
-   "url": "https://dev.ua/news/inkling-2-mini-1795611097"
   }
  ],
  "competitors": [
@@ -2060,42 +2073,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "192",
-   "agent": "post",
-   "task": "Озвучка 06:18Z: guide1 ч.11",
-   "started": "2026-11-25T06:18:14Z",
-   "finished": "2026-11-25T06:19:54Z",
-   "result": "429 одразу (0 ок)",
-   "agent_raw": "production"
-  },
-  {
-   "id": "193",
-   "agent": "cm",
-   "task": "TG-відділ 25.11: метрика, пост дня, воронки, група",
-   "started": "2026-11-25T06:42:09Z",
-   "finished": "2026-11-25T07:02:17Z",
-   "result": "6 учасників (Δ0); пост дня №146 «промпт: хай ChatGPT спершу спитає»; перші коментарі ep84/ep86 → «А чи Б» + /37",
-   "agent_raw": "tg"
-  },
-  {
-   "id": "194",
-   "agent": "trend",
-   "task": "Ранкова редакція 25.11: аналітика, радар, редколегія, топ-3 власнику",
-   "started": "2026-11-25T06:44:17Z",
-   "finished": "2026-11-25T06:53:00Z",
-   "result": "Радар: дані 22.11 120 переглядів/33%/63% пошук; ідеї #133–135, approved #133 (5.12); власнику msg 2387",
-   "agent_raw": "research"
-  },
-  {
-   "id": "195",
-   "agent": "post",
-   "task": "Озвучка 07:18Z: guide1 ч.11",
-   "started": "2026-11-25T07:18:24Z",
-   "finished": "2026-11-25T07:20:06Z",
-   "result": "429 одразу (0 ок)",
-   "agent_raw": "production"
-  },
   {
    "id": "196",
    "agent": "coo",
@@ -2408,6 +2385,42 @@
    "finished": "2026-11-25T19:19:38Z",
    "result": "STOP 429",
    "agent_raw": "production"
+  },
+  {
+   "id": "232",
+   "agent": "post",
+   "task": "Озвучка 20:18Z: шоу #3",
+   "started": "2026-11-25T20:17:56Z",
+   "finished": "2026-11-25T20:19:35Z",
+   "result": "STOP 429",
+   "agent_raw": "production"
+  },
+  {
+   "id": "233",
+   "agent": "trend",
+   "task": "фон: TikTok-тренди ніші ШІ (vidIQ ≤20 кр.) → ідеї",
+   "started": "2026-11-25T20:17:56Z",
+   "finished": "2026-11-25T20:20:00Z",
+   "result": "+1 ідея #162 «ChatGPT — 4 роки» (211); тренд — побутове «спитав ШІ»; vidIQ 15 кр.",
+   "agent_raw": "researcher"
+  },
+  {
+   "id": "234",
+   "agent": "de",
+   "task": "Збирач даталейку 20:53Z: новини, TikTok/IG/TG-знімок, сигнали",
+   "started": "2026-11-25T20:53:16Z",
+   "finished": "2026-11-25T20:58:35Z",
+   "result": "+31 новин; TikTok 8, IG 23 підп./1491 перегл.; ідеї #163 (381.7, approved) – #167; vidIQ 5",
+   "agent_raw": "data"
+  },
+  {
+   "id": "235",
+   "agent": "dist",
+   "task": "IG: текстовий Reel без голосу «3 промпти з гайду ChatGPT» (прохання власника 25.11)",
+   "started": "2026-11-25T20:55:43Z",
+   "finished": "2026-11-25T21:01:52Z",
+   "result": "Reel без голосу «3 промпти» опубліковано: instagram.com/reel/DgLcnH3NVFb (24 с)",
+   "agent_raw": "ig"
   }
  ],
  "agents": [

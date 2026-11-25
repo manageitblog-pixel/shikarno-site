@@ -30,3 +30,5 @@ echo "BOOTSTRAP OK. Тепер секрети: $H/tg/.token, $H/gem/.key, $H/yt/
 [ -f $S/data/ops.sqlite ] || { [ -f $S/data/ops_dump.sql ] && python3 $S/ops.py restore || echo "ops restore: помилка — див. вище"; }
 # Резерв озвучки (25.11): studio/eps/_vo_backup/<slug>/*.opus → /home/claude/eps/<slug>/*.wav, лише відсутні (не валить bootstrap)
 python3 $S/eps/restore_vo.py || echo "restore_vo: помилки — див. вище"
+# Резерв у Google Drive (25.11): відео/озвучка/бази, яких немає локально — якщо є drive_token.json
+[ -f $S/yt/drive_token.json ] && { python3 $S/yt/drive_sync.py restore claude: || echo "drive restore: помилки"; python3 $S/yt/drive_sync.py restore repo:studio/data/analytics.sqlite || true; }
