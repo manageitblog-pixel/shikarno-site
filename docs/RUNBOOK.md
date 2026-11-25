@@ -238,3 +238,9 @@
 
 ## INSTAGRAM REELS (з 23.11)
 Акаунт @shikarno_ai_ua, публікує vidIQ (`vidiq_instagram_publish_reel`, videoUrl = посилання на YouTube Short, isAiGenerated true; далі mcpJobId → повторювати виклик до PUBLISHED). Дозвіл власника на автопублікацію — 23.11 («Так… від завтра в звичайному режимі»). Ритм — як TikTok: ролик дня після виходу на YouTube. ЛИШЕ ролики з озвучкою після контролю висоти (≈ з 16.11) — старі власник забракував за голосом. Обкладинка: сітка ріже до 3:4, тому публікуємо ig.mp4 (обкладинка 0,1 с першим кадром — з 24.11, було 0,5, `python3 studio/eps/ig_cover.py reels`) через vidiq_video_upload localFile → videoUrl. Після підключення Meta API — cover_url (docs/playbooks/meta-direct-api.md). Облік — studio/eps/instagram.json (posted_auto).
+
+## РЕЗЕРВ У GOOGLE DRIVE (25.11, власник: «відразу заливай десь… і гарно по папках»)
+- `python3 studio/yt/drive_sync.py push <тека|файл>` — після КОЖНОГО готового mp4/обкладинки/озвучки; `drive_sync.py all` — щоночі (документи, воркфлоу, артефакти HQ, бази, усі eps/<slug>). Теки в Drive: «ШІкарно студія/{Відео й озвучка/<slug>, Документи, Воркфлоу, Артефакти/HQ-дашборд, Дані}». Секрети не заливаються (фільтр у скрипті).
+- Окремий вхід Google лише з drive.file (`auth.py link drive` → watcher сам обмінює код → yt/drive_token.json, поза git). Разом з YouTube-скоупами Google не дозволяє.
+- Після рестарту контейнера: якщо yt/drive_token.json немає — одразу `auth.py link drive` власнику (1 клік), потім `drive_sync.py restore repo:studio/eps/` і `restore repo:studio/data/analytics.sqlite`. Режим Testing — токен живе ~7 днів, оновлювати разом з YouTube-токеном.
+- Знімок розкладу задач — /home/claude/workflow/Розклад задач.md → Drive «Воркфлоу» (оновлювати при зміні планувальника).
