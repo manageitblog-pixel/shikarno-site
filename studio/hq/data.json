@@ -1,23 +1,23 @@
 {
- "generated": "2026-11-25T10:07:00Z",
+ "generated": "2026-11-25T11:06:37Z",
  "fresh": {
-  "yt_live": "2026-11-25T10:07:00Z",
+  "yt_live": "2026-11-25T11:06:37Z",
   "yt_analytics": "2026-11-22",
-  "tg_members": "2026-11-25T10:07:01Z",
-  "tg_posts": "2026-11-25T10:07:02Z",
-  "ideas": "2026-11-25T09:21:07Z",
+  "tg_members": "2026-11-25T11:06:38Z",
+  "tg_posts": "2026-11-25T11:06:39Z",
+  "ideas": "2026-11-25T10:15:20Z",
   "news": "2026-11-25 08:54",
   "comp": "2026-11-23",
   "tiktok": "2026-11-25T08",
   "instagram": "2026-11-25T08",
   "site": "2026-11-23",
-  "site_live": "2026-11-25T10:07:03Z",
-  "activity": "2026-11-25T09:23:17Z",
+  "site_live": "2026-11-25T11:06:40Z",
+  "activity": "2026-11-25T10:20:00Z",
   "asks": "2026-11-25T08:50Z"
  },
  "notes": [],
  "kpi": {
-  "subs": 316,
+  "subs": 317,
   "subs_goal": 1000,
   "long_hours": 11.2,
   "long_hours_goal": 4000,
@@ -386,7 +386,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 153
+   "subs_total": 154
   },
   {
    "w": "2026-08-03",
@@ -400,7 +400,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 153
+   "subs_total": 154
   },
   {
    "w": "2026-08-17",
@@ -414,7 +414,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 153
+   "subs_total": 154
   },
   {
    "w": "2026-08-24",
@@ -428,7 +428,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 153
+   "subs_total": 154
   },
   {
    "w": "2026-08-31",
@@ -442,7 +442,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 153
+   "subs_total": 154
   },
   {
    "w": "2026-09-07",
@@ -456,7 +456,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 153
+   "subs_total": 154
   },
   {
    "w": "2026-09-28",
@@ -470,7 +470,7 @@
    "partial_site": false,
    "subs_cum": -1,
    "long_cum": 0.0,
-   "subs_total": 152
+   "subs_total": 153
   },
   {
    "w": "2026-10-19",
@@ -484,7 +484,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.2,
-   "subs_total": 153
+   "subs_total": 154
   },
   {
    "w": "2026-10-26",
@@ -498,7 +498,7 @@
    "partial_site": false,
    "subs_cum": 6,
    "long_cum": 0.7,
-   "subs_total": 159
+   "subs_total": 160
   },
   {
    "w": "2026-11-02",
@@ -512,7 +512,7 @@
    "partial_site": false,
    "subs_cum": 155,
    "long_cum": 5.5,
-   "subs_total": 308
+   "subs_total": 309
   },
   {
    "w": "2026-11-09",
@@ -526,7 +526,7 @@
    "partial_site": false,
    "subs_cum": 160,
    "long_cum": 8.2,
-   "subs_total": 313
+   "subs_total": 314
   },
   {
    "w": "2026-11-16",
@@ -540,7 +540,7 @@
    "partial_site": false,
    "subs_cum": 163,
    "long_cum": 10.9,
-   "subs_total": 316
+   "subs_total": 317
   },
   {
    "w": "2026-11-23",
@@ -554,7 +554,7 @@
    "partial_site": true,
    "subs_cum": 163,
    "long_cum": 10.9,
-   "subs_total": 316
+   "subs_total": 317
   }
  ],
  "tg_hist": [
@@ -577,10 +577,10 @@
  ],
  "platforms": {
   "youtube": {
-   "subs": 316,
+   "subs": 317,
    "views_total": 12536,
    "videos": 98,
-   "live_at": "2026-11-25T10:07:00Z",
+   "live_at": "2026-11-25T11:06:37Z",
    "views_7d": 740,
    "pct_7d": 51.2,
    "subs_7d": 3,
@@ -951,7 +951,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-25T10:07:03Z",
+    "updated": "2026-11-25T11:06:40Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 1,
@@ -961,14 +961,9 @@
     "pageloads_7d": 50,
     "visits_7d": 42,
     "last24h": {
-     "pageloads": 7,
-     "visits": 5,
+     "pageloads": 5,
+     "visits": 4,
      "hours": [
-      {
-       "h": "2026-11-24T11:00:00Z",
-       "pageloads": 2,
-       "visits": 1
-      },
       {
        "h": "2026-11-24T12:00:00Z",
        "pageloads": 0,
@@ -1083,6 +1078,11 @@
        "h": "2026-11-25T10:00:00Z",
        "pageloads": 0,
        "visits": 0
+      },
+      {
+       "h": "2026-11-25T11:00:00Z",
+       "pageloads": 0,
+       "visits": 0
       }
      ]
     },
@@ -1095,9 +1095,9 @@
      },
      {
       "d": "2026-11-13",
-      "pageloads": 0,
-      "visits": 0,
-      "sampled": false
+      "pageloads": 20,
+      "visits": 20,
+      "sampled": true
      },
      {
       "d": "2026-11-14",
@@ -1137,9 +1137,9 @@
      },
      {
       "d": "2026-11-20",
-      "pageloads": 10,
-      "visits": 0,
-      "sampled": true
+      "pageloads": 7,
+      "visits": 5,
+      "sampled": false
      },
      {
       "d": "2026-11-21",
@@ -1155,8 +1155,8 @@
      },
      {
       "d": "2026-11-23",
-      "pageloads": 10,
-      "visits": 10,
+      "pageloads": 0,
+      "visits": 0,
       "sampled": false
      },
      {
@@ -1407,7 +1407,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 33
+   "total": 34
   },
   {
    "id": "ENKGdbr04h0",
@@ -1652,6 +1652,7 @@
    "added": "2026-11-24",
    "id": "122",
    "decision": "Бал 353 ≥300 (free, формат «приховані фішки» злітає в UA TikTok 11,8x/16,2x): Short чт 3.12 17:00Z (19:00 Київ) + TikTok/Reels + сайт; сценарій до 1.12, кожну фішку перевірити на реальному Android в Україні, незалежний фактчек, link при заливці",
+   "kw": "android для пк (18); як користуватися android auto (16); android курс (26) — kw.py 25.11; запитів про ШІ-фішки Android немає",
    "score": 353.3
   },
   {
@@ -1703,6 +1704,7 @@
    "id": "80",
    "decision": "Бал 354 (sec, твої дані + свіжий реліз Google 23.11): Short 19:00 Київ найближчим вільним слотом + сайт + TG; перевірити доступність в Україні й показати, де вимкнути (Search Personalization → Connected Apps).",
    "note2": "24.11 ep-редактор: не взято на 2.12 — Personal Intelligence в AI Mode лише для особистих акаунтів у США (преса; blog.google країн не називає); для UA лише з чесним «в Україні поки нема»",
+   "kw": "google wallet (88); google гаманець (18); google wallet android (9) — kw.py 25.11",
    "score": 351.5
   },
   {
@@ -1728,6 +1730,7 @@
    "added": "2026-11-24",
    "id": "119",
    "decision": "Бал 351 ≥300 (sec, «твоє + дія», TikTok-аналог 569K): Short пт 4.12 17:00Z (19:00 Київ) + TikTok/Reels + сайт + TG; шлях у налаштуваннях лише з Memory FAQ OpenAI, звірити укр. інтерфейс під час запису, незалежний фактчек, link при заливці",
+   "kw": "chatgpt як користуватися (10); пам'ять на телефоні (27) — kw.py 25.11; прямих запитів «пам'ять chatgpt» немає",
    "score": 351.5
   },
   {
@@ -2010,14 +2013,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "166",
-   "agent": "coo",
-   "task": "COO вечір 24.11: покращення (cron pages.yml, обсяг довгих), дашборд, звіт власнику",
-   "started": "2026-11-24T18:28:01Z",
-   "finished": "2026-11-24T18:35:46Z",
-   "result": "release-timer, правило обсягу довгих, gsay_lint, 14 задач закрито, звіт підготовано"
-  },
   {
    "id": "167",
    "agent": "shorts",
@@ -2359,6 +2354,14 @@
    "started": "2026-11-25T09:19:59Z",
    "finished": "2026-11-25T09:23:17Z",
    "result": "YT 316 підп/11,2 год (−90/−93%); TikTok +587/добу; IG 14; сайт 46 кл; TG 6; рішення: гайд #3 → 2.12 за умов (фактчек 30.11)"
+  },
+  {
+   "id": "206",
+   "agent": "seo",
+   "task": "SEO-відділ 25.11: kw для нових ідей, YouTube-SEO свіжих (без змін через API — квота)",
+   "started": "2026-11-25T10:14:08Z",
+   "finished": "2026-11-25T10:20:00Z",
+   "result": "kw для 8 ідей; audit 0 проблем; 4 пропозиції назв на 26.11; биті посилання виправлено; GSC тиждень 11 кл (−42%)"
   }
  ],
  "agents": [
