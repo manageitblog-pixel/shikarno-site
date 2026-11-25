@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-25T15:06:45Z",
+ "generated": "2026-11-25T16:07:21Z",
  "fresh": {
   "yt_analytics": "2026-11-22",
-  "tg_members": "2026-11-25T15:06:46Z",
-  "tg_posts": "2026-11-25T15:06:48Z",
+  "tg_members": "2026-11-25T16:07:22Z",
+  "tg_posts": "2026-11-25T16:07:23Z",
   "ideas": "2026-11-25T14:22:16Z",
   "news": "2026-11-25 12:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-25T12",
   "instagram": "2026-11-25T12",
   "site": "2026-11-23",
-  "site_live": "2026-11-25T15:06:49Z",
-  "activity": "2026-11-25T14:22:42Z",
+  "site_live": "2026-11-25T16:07:25Z",
+  "activity": "2026-11-25T15:19:46Z",
   "asks": "2026-11-25T08:50Z"
  },
  "notes": [
@@ -951,7 +951,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-25T15:06:49Z",
+    "updated": "2026-11-25T16:07:25Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 6,
@@ -964,11 +964,6 @@
      "pageloads": 8,
      "visits": 8,
      "hours": [
-      {
-       "h": "2026-11-24T16:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
       {
        "h": "2026-11-24T17:00:00Z",
        "pageloads": 0,
@@ -1083,32 +1078,37 @@
        "h": "2026-11-25T15:00:00Z",
        "pageloads": 2,
        "visits": 2
+      },
+      {
+       "h": "2026-11-25T16:00:00Z",
+       "pageloads": 0,
+       "visits": 0
       }
      ]
     },
     "days": [
      {
       "d": "2026-11-12",
-      "pageloads": 60,
-      "visits": 40,
-      "sampled": true
-     },
-     {
-      "d": "2026-11-13",
-      "pageloads": 20,
-      "visits": 20,
-      "sampled": true
-     },
-     {
-      "d": "2026-11-14",
       "pageloads": 0,
       "visits": 0,
       "sampled": false
      },
      {
-      "d": "2026-11-15",
+      "d": "2026-11-13",
+      "pageloads": 30,
+      "visits": 30,
+      "sampled": true
+     },
+     {
+      "d": "2026-11-14",
       "pageloads": 10,
       "visits": 10,
+      "sampled": true
+     },
+     {
+      "d": "2026-11-15",
+      "pageloads": 10,
+      "visits": 0,
       "sampled": true
      },
      {
@@ -1119,9 +1119,9 @@
      },
      {
       "d": "2026-11-17",
-      "pageloads": 20,
-      "visits": 20,
-      "sampled": true
+      "pageloads": 0,
+      "visits": 0,
+      "sampled": false
      },
      {
       "d": "2026-11-18",
@@ -2037,24 +2037,6 @@
  ],
  "activity": [
   {
-   "id": "177",
-   "agent": "de",
-   "task": "фон: якість даталейку + перевірка експериментів ops.py",
-   "started": "2026-11-24T20:18:07Z",
-   "finished": "2026-11-24T20:24:39Z",
-   "result": "Даталейк ок; 7 карток → published; знайдено 2 прострочені перші коментарі → запощено, post_comments у щогодинній перевірці",
-   "agent_raw": "data"
-  },
-  {
-   "id": "178",
-   "agent": "de",
-   "task": "Збирач даталейку 20:52Z: новини, TikTok/IG/TG-знімок, сигнали",
-   "started": "2026-11-24T20:52:51Z",
-   "finished": "2026-11-24T20:56:53Z",
-   "result": "+37 новин; TikTok 16 відео (2 сторінки); IG 8 підписників, 732 перегляди/30д; TG 6; ідеї #114–118",
-   "agent_raw": "data"
-  },
-  {
    "id": "179",
    "agent": "post",
    "task": "Озвучка: оркестратор 21:18Z",
@@ -2387,6 +2369,24 @@
    "started": "2026-11-25T14:18:02Z",
    "finished": "2026-11-25T14:22:42Z",
    "result": "«Як перевірити інтернет-магазин на шахрайство» 26.11 09:00 (UK Finance, Scamwise, кіберполіція, НБУ)"
+  },
+  {
+   "id": "217",
+   "agent": "post",
+   "task": "Озвучка 15:18Z: шоу #3",
+   "started": "2026-11-25T15:18:09Z",
+   "finished": null,
+   "result": "",
+   "agent_raw": "production"
+  },
+  {
+   "id": "218",
+   "agent": "cm",
+   "task": "TikTok-коментарі за добу (vidIQ) → готові відповіді власнику",
+   "started": "2026-11-25T15:18:09Z",
+   "finished": "2026-11-25T15:19:46Z",
+   "result": "нових немає; 5 кр. vidIQ; власнику не писав",
+   "agent_raw": "community"
   }
  ],
  "agents": [
