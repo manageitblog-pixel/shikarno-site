@@ -1,9 +1,9 @@
 {
- "generated": "2026-11-25T16:57:10Z",
+ "generated": "2026-11-25T17:07:30Z",
  "fresh": {
-  "yt_live": "2026-11-25T16:57:10Z",
+  "yt_live": "2026-11-25T17:07:30Z",
   "yt_analytics": "2026-11-22",
-  "tg_members": "2026-11-25T16:57:11Z",
+  "tg_members": "2026-11-25T17:07:31Z",
   "tg_posts": "2026-11-25T16:57:12Z",
   "ideas": "2026-11-25T16:56:38Z",
   "news": "2026-11-25 16:53",
@@ -11,7 +11,7 @@
   "tiktok": "2026-11-25T16",
   "instagram": "2026-11-25T16",
   "site": "2026-11-23",
-  "site_live": "2026-11-25T16:57:13Z",
+  "site_live": "2026-11-25T17:07:32Z",
   "activity": "2026-11-25T16:57:10Z",
   "asks": "2026-11-25T08:50Z"
  },
@@ -21,8 +21,8 @@
   "subs_goal": 1000,
   "long_hours": 11.2,
   "long_hours_goal": 4000,
-  "views_total": 12536,
-  "videos": 100,
+  "views_total": 12624,
+  "videos": 101,
   "views_7d": 740,
   "pct_7d": 51.2,
   "subs_7d": 3,
@@ -578,9 +578,9 @@
  "platforms": {
   "youtube": {
    "subs": 324,
-   "views_total": 12536,
-   "videos": 100,
-   "live_at": "2026-11-25T16:57:10Z",
+   "views_total": 12624,
+   "videos": 101,
+   "live_at": "2026-11-25T17:07:30Z",
    "views_7d": 740,
    "pct_7d": 51.2,
    "subs_7d": 3,
@@ -975,24 +975,19 @@
     }
    ],
    "live": {
-    "updated": "2026-11-25T16:57:13Z",
+    "updated": "2026-11-25T17:07:32Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
-    "today_pageloads": 6,
-    "today_visits": 6,
+    "today_pageloads": 8,
+    "today_visits": 8,
     "yesterday_pageloads": 9,
     "yesterday_visits": 5,
-    "pageloads_7d": 55,
-    "visits_7d": 47,
+    "pageloads_7d": 57,
+    "visits_7d": 49,
     "last24h": {
-     "pageloads": 8,
-     "visits": 8,
+     "pageloads": 10,
+     "visits": 10,
      "hours": [
-      {
-       "h": "2026-11-24T17:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
       {
        "h": "2026-11-24T18:00:00Z",
        "pageloads": 1,
@@ -1107,6 +1102,11 @@
        "h": "2026-11-25T16:00:00Z",
        "pageloads": 0,
        "visits": 0
+      },
+      {
+       "h": "2026-11-25T17:00:00Z",
+       "pageloads": 2,
+       "visits": 2
       }
      ]
     },
@@ -1191,8 +1191,8 @@
      },
      {
       "d": "2026-11-25",
-      "pageloads": 6,
-      "visits": 6,
+      "pageloads": 8,
+      "visits": 8,
       "sampled": false
      }
     ],
@@ -1210,18 +1210,18 @@
       "count": 4
      },
      {
-      "path": "/novyny/gemini-dlya-studentiv-bezkoshtovno/",
+      "path": "/novyny/claude-code-shcho-tse/",
       "count": 2
      },
      {
-      "path": "/novyny/claude-code-shcho-tse/",
+      "path": "/novyny/gemini-dlya-studentiv-bezkoshtovno/",
       "count": 2
      }
     ],
     "top_referrers_7d": [
      {
       "host": "(прямі / без реферера)",
-      "count": 25
+      "count": 27
      },
      {
       "host": "www.google.com",
@@ -1243,7 +1243,7 @@
     "top_countries_7d": [
      {
       "country": "UA",
-      "count": 35
+      "count": 37
      },
      {
       "country": "US",
@@ -1401,6 +1401,17 @@
  "formats_cutoff": "2026-11-16",
  "videos": [
   {
+   "id": "M-KQwpDwpA4",
+   "title": "ChatGPT українською з нуля: як користуватися безкоштовно і без VPN | Гайд 2026",
+   "format": null,
+   "short": false,
+   "published": "2026-11-25",
+   "views7": null,
+   "pct": null,
+   "complete": false,
+   "total": 3
+  },
+  {
    "id": "Rlm1u-I6x00",
    "title": "ШІ в телефоні читає твою переписку? Що зробив Signal 👀",
    "format": null,
@@ -1542,17 +1553,6 @@
    "pct": 46.2,
    "complete": false,
    "total": 101
-  },
-  {
-   "id": "RbyuepKjOig",
-   "title": "Ніколи не давай ШІ ці 7 речей: паролі, картки, паспорт і ще 4 🔒",
-   "format": "clip",
-   "short": true,
-   "published": "2026-11-16",
-   "views7": 39,
-   "pct": 68.5,
-   "complete": true,
-   "total": 45
   }
  ],
  "ideas": [
