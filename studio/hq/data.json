@@ -1,8 +1,9 @@
 {
- "generated": "2026-11-25T16:07:21Z",
+ "generated": "2026-11-25T16:14:36Z",
  "fresh": {
+  "yt_live": "2026-11-25T16:14:36Z",
   "yt_analytics": "2026-11-22",
-  "tg_members": "2026-11-25T16:07:22Z",
+  "tg_members": "2026-11-25T16:14:37Z",
   "tg_posts": "2026-11-25T16:07:23Z",
   "ideas": "2026-11-25T14:22:16Z",
   "news": "2026-11-25 12:53",
@@ -14,16 +15,14 @@
   "activity": "2026-11-25T15:19:46Z",
   "asks": "2026-11-25T08:50Z"
  },
- "notes": [
-  "YouTube Data API недоступний (FileNotFoundError) — живих лічильників немає"
- ],
+ "notes": [],
  "kpi": {
-  "subs": null,
+  "subs": 324,
   "subs_goal": 1000,
-  "long_hours": 10.9,
+  "long_hours": 11.2,
   "long_hours_goal": 4000,
-  "views_total": null,
-  "videos": null,
+  "views_total": 12536,
+  "videos": 100,
   "views_7d": 740,
   "pct_7d": 51.2,
   "subs_7d": 3,
@@ -386,7 +385,8 @@
    "partial": false,
    "partial_site": false,
    "subs_cum": 0,
-   "long_cum": 0.0
+   "long_cum": 0.0,
+   "subs_total": 161
   },
   {
    "w": "2026-08-03",
@@ -399,7 +399,8 @@
    "partial": false,
    "partial_site": false,
    "subs_cum": 0,
-   "long_cum": 0.0
+   "long_cum": 0.0,
+   "subs_total": 161
   },
   {
    "w": "2026-08-17",
@@ -412,7 +413,8 @@
    "partial": false,
    "partial_site": false,
    "subs_cum": 0,
-   "long_cum": 0.0
+   "long_cum": 0.0,
+   "subs_total": 161
   },
   {
    "w": "2026-08-24",
@@ -425,7 +427,8 @@
    "partial": false,
    "partial_site": false,
    "subs_cum": 0,
-   "long_cum": 0.0
+   "long_cum": 0.0,
+   "subs_total": 161
   },
   {
    "w": "2026-08-31",
@@ -438,7 +441,8 @@
    "partial": false,
    "partial_site": false,
    "subs_cum": 0,
-   "long_cum": 0.0
+   "long_cum": 0.0,
+   "subs_total": 161
   },
   {
    "w": "2026-09-07",
@@ -451,7 +455,8 @@
    "partial": false,
    "partial_site": false,
    "subs_cum": 0,
-   "long_cum": 0.0
+   "long_cum": 0.0,
+   "subs_total": 161
   },
   {
    "w": "2026-09-28",
@@ -464,7 +469,8 @@
    "partial": false,
    "partial_site": false,
    "subs_cum": -1,
-   "long_cum": 0.0
+   "long_cum": 0.0,
+   "subs_total": 160
   },
   {
    "w": "2026-10-19",
@@ -477,7 +483,8 @@
    "partial": false,
    "partial_site": false,
    "subs_cum": 0,
-   "long_cum": 0.2
+   "long_cum": 0.2,
+   "subs_total": 161
   },
   {
    "w": "2026-10-26",
@@ -490,7 +497,8 @@
    "partial": false,
    "partial_site": false,
    "subs_cum": 6,
-   "long_cum": 0.7
+   "long_cum": 0.7,
+   "subs_total": 167
   },
   {
    "w": "2026-11-02",
@@ -503,7 +511,8 @@
    "partial": false,
    "partial_site": false,
    "subs_cum": 155,
-   "long_cum": 5.5
+   "long_cum": 5.5,
+   "subs_total": 316
   },
   {
    "w": "2026-11-09",
@@ -516,7 +525,8 @@
    "partial": false,
    "partial_site": false,
    "subs_cum": 160,
-   "long_cum": 8.2
+   "long_cum": 8.2,
+   "subs_total": 321
   },
   {
    "w": "2026-11-16",
@@ -529,7 +539,8 @@
    "partial": false,
    "partial_site": false,
    "subs_cum": 163,
-   "long_cum": 10.9
+   "long_cum": 10.9,
+   "subs_total": 324
   },
   {
    "w": "2026-11-23",
@@ -542,7 +553,8 @@
    "partial": true,
    "partial_site": true,
    "subs_cum": 163,
-   "long_cum": 10.9
+   "long_cum": 10.9,
+   "subs_total": 324
   }
  ],
  "tg_hist": [
@@ -565,10 +577,10 @@
  ],
  "platforms": {
   "youtube": {
-   "subs": null,
-   "views_total": null,
-   "videos": null,
-   "live_at": null,
+   "subs": 324,
+   "views_total": 12536,
+   "videos": 100,
+   "live_at": "2026-11-25T16:14:36Z",
    "views_7d": 740,
    "pct_7d": 51.2,
    "subs_7d": 3,
@@ -576,7 +588,7 @@
     "2026-11-16",
     "2026-11-22"
    ],
-   "long_hours": 10.9,
+   "long_hours": 11.2,
    "history": [
     {
      "x": "2026-10-19",
@@ -629,17 +641,17 @@
    "best_live": [
     {
      "title": "Меню на тиждень і вечеря з того, що є 🍳 Тір-лист Байта #7",
-     "views": 135,
+     "views": 143,
      "id": "bvS0k_r3_bs"
     },
     {
      "title": "ШІ для вчителя: план уроку і тест за 5 хвилин у Google Classroom 🍎",
-     "views": 113,
+     "views": 116,
      "id": "ENKGdbr04h0"
     },
     {
      "title": "ChatGPT вчиться на твоїх чатах — як вимкнути за 30 секунд 🔐",
-     "views": 99,
+     "views": 101,
      "id": "Vp1PPNxtcrI"
     }
    ]
@@ -1377,6 +1389,28 @@
  "formats_cutoff": "2026-11-16",
  "videos": [
   {
+   "id": "Rlm1u-I6x00",
+   "title": "ШІ в телефоні читає твою переписку? Що зробив Signal 👀",
+   "format": null,
+   "short": true,
+   "published": "2026-11-25",
+   "views7": null,
+   "pct": null,
+   "complete": false,
+   "total": 2
+  },
+  {
+   "id": "6mIdp843fKo",
+   "title": "Реклама в ChatGPT вже в Україні: як не сплутати її з порадою ШІ 📢",
+   "format": null,
+   "short": true,
+   "published": "2026-11-25",
+   "views7": null,
+   "pct": null,
+   "complete": false,
+   "total": 3
+  },
+  {
    "id": "bvS0k_r3_bs",
    "title": "Меню на тиждень і вечеря з того, що є 🍳 Тір-лист Байта #7",
    "format": "tier",
@@ -1385,7 +1419,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 135
+   "total": 143
   },
   {
    "id": "_wp0rz8edB8",
@@ -1396,7 +1430,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 25
+   "total": 26
   },
   {
    "id": "xaYHobFNYHo",
@@ -1407,7 +1441,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 33
+   "total": 34
   },
   {
    "id": "ENKGdbr04h0",
@@ -1418,7 +1452,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 113
+   "total": 116
   },
   {
    "id": "LtNuOtQe0pc",
@@ -1429,7 +1463,7 @@
    "views7": 42,
    "pct": 60.1,
    "complete": false,
-   "total": 89
+   "total": 94
   },
   {
    "id": "aTUsauz53rs",
@@ -1440,7 +1474,7 @@
    "views7": 6,
    "pct": 59.2,
    "complete": false,
-   "total": 62
+   "total": 69
   },
   {
    "id": "gljrHADi4aU",
@@ -1495,7 +1529,7 @@
    "views7": 93,
    "pct": 46.2,
    "complete": false,
-   "total": 99
+   "total": 101
   },
   {
    "id": "RbyuepKjOig",
@@ -1507,28 +1541,6 @@
    "pct": 68.5,
    "complete": true,
    "total": 45
-  },
-  {
-   "id": "Bh-YF2BbuiQ",
-   "title": "Lovable: сайти, зроблені ШІ, світять дані клієнтів — 24 тисячі без захисту ⚠️",
-   "format": "sec",
-   "short": true,
-   "published": "2026-11-15",
-   "views7": 6,
-   "pct": 74.3,
-   "complete": true,
-   "total": 6
-  },
-  {
-   "id": "GNqU-wcz9Ws",
-   "title": "Що ШІ знає про тебе: як вимкнути навчання в ChatGPT, Gemini, Claude, Meta AI і Copilot (2026)",
-   "format": "sec",
-   "short": false,
-   "published": "2026-11-14",
-   "views7": 42,
-   "pct": 9.7,
-   "complete": true,
-   "total": 90
   }
  ],
  "ideas": [
