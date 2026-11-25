@@ -150,12 +150,13 @@ if __name__ == "__main__":
                 if os.path.exists(f"{D}/part{pi}.wav"): continue
                 os.environ["TTS_PACE"] = PER_GUIDE.get(name, {}).get("TTS_PACE", "calm"); guide_part(dg, D, pi, idxs)
         # Черга (оновлювати): guide1 25.11 → guide2 27.11 → шоу #3 29.11 (ч.0–10) → повтори Shorts ep83/ep85 (є запасні дублі)
-        guide("guide1")
-        guide("guide2")  # CSO 23.11
+        # 25.11 12:10Z: рестарт контейнера стер усі part*.wav; guide1 і guide2 вже залиті на YouTube — не переозвучувати (заміна копій скасована)
+        # guide("guide1")
+        # guide("guide2")  # CSO 23.11 — залито h5aUeuaD8OE
         guide("weekly3")  # шоу #3, вихід 29.11 12:00Z; фактчек PASS 23.11 (гайд #2 → пт 27.11, якщо QA до 26.11 20:00; у ep83/ep85 є запасні дублі)
         guide("guide3")  # 24.11 власник: «спершу результат» → довгі в черзі першими; гайд #3 (9.12, спроба 2.12)
         for k in ("VC_REF", "VC_TOL"): os.environ.pop(k, None)
-        for mod in ("ep83", "ep84", "ep85", "ep86", "ep88", "ep89", "ep90"): short(mod)  # ep88–90: фактчек PASS 24.11, вихід 30.11–2.12
+        for mod in ("ep88", "ep89", "ep90"): short(mod)  # 25.11: ep83–86 уже залиті (медіа стерто рестартом) — не переозвучувати; ep88–90 вихід 30.11–2.12
         log(ev="all_done", ok_requests=REQ["ok"])
     except RuntimeError as e:
         log(ev="STOP", reason=str(e)[:300], ok_requests=REQ["ok"])
