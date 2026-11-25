@@ -1589,8 +1589,8 @@
    "agent": "production",
    "task": "Озвучка 09:18Z",
    "started": "2026-11-25T09:17:53Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-25T09:19:31Z",
+   "result": "429 (квота після ранкового вікна)"
   },
   {
    "id": "204",
