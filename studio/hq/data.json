@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-25T22:06:40Z",
+ "generated": "2026-11-25T23:06:37Z",
  "fresh": {
-  "yt_live": "2026-11-25T22:06:40Z",
+  "yt_live": "2026-11-25T23:06:37Z",
   "yt_analytics": "2026-11-22",
-  "tg_members": "2026-11-25T22:06:41Z",
-  "tg_posts": "2026-11-25T22:06:43Z",
+  "tg_members": "2026-11-25T23:06:38Z",
+  "tg_posts": "2026-11-25T23:06:40Z",
   "ideas": "2026-11-25T20:57:42Z",
   "news": "2026-11-25 20:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-25T20",
   "instagram": "2026-11-25T20",
   "site": "2026-11-23",
-  "site_live": "2026-11-25T22:06:44Z",
+  "site_live": "2026-11-25T23:06:41Z",
   "activity": "2026-11-25T21:01:52Z",
   "asks": "2026-11-25T18:45Z"
  },
@@ -580,7 +580,7 @@
    "subs": 324,
    "views_total": 12624,
    "videos": 101,
-   "live_at": "2026-11-25T22:06:40Z",
+   "live_at": "2026-11-25T23:06:37Z",
    "views_7d": 740,
    "pct_7d": 51.2,
    "subs_7d": 3,
@@ -651,7 +651,7 @@
     },
     {
      "title": "ChatGPT вчиться на твоїх чатах — як вимкнути за 30 секунд 🔐",
-     "views": 102,
+     "views": 101,
      "id": "Vp1PPNxtcrI"
     }
    ]
@@ -987,7 +987,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-25T22:06:44Z",
+    "updated": "2026-11-25T23:06:41Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 0,
@@ -1000,11 +1000,6 @@
      "pageloads": 7,
      "visits": 7,
      "hours": [
-      {
-       "h": "2026-11-24T23:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
       {
        "h": "2026-11-25T00:00:00Z",
        "pageloads": 0,
@@ -1117,6 +1112,11 @@
       },
       {
        "h": "2026-11-25T22:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-25T23:00:00Z",
        "pageloads": 0,
        "visits": 0
       }
@@ -1509,7 +1509,7 @@
    "views7": 6,
    "pct": 59.2,
    "complete": false,
-   "total": 95
+   "total": 93
   },
   {
    "id": "gljrHADi4aU",
@@ -1564,7 +1564,7 @@
    "views7": 93,
    "pct": 46.2,
    "complete": false,
-   "total": 102
+   "total": 101
   }
  ],
  "ideas": [
