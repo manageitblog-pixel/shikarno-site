@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-25T14:06:56Z",
+ "generated": "2026-11-25T15:06:45Z",
  "fresh": {
   "yt_analytics": "2026-11-22",
-  "tg_members": "2026-11-25T14:06:56Z",
-  "tg_posts": "2026-11-25T14:06:57Z",
-  "ideas": "2026-11-25T13:45:28Z",
+  "tg_members": "2026-11-25T15:06:46Z",
+  "tg_posts": "2026-11-25T15:06:48Z",
+  "ideas": "2026-11-25T14:22:16Z",
   "news": "2026-11-25 12:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-25T12",
   "instagram": "2026-11-25T12",
   "site": "2026-11-23",
-  "site_live": "2026-11-25T14:06:58Z",
-  "activity": "2026-11-25T13:47:14Z",
+  "site_live": "2026-11-25T15:06:49Z",
+  "activity": "2026-11-25T14:22:42Z",
   "asks": "2026-11-25T08:50Z"
  },
  "notes": [
@@ -951,24 +951,19 @@
     }
    ],
    "live": {
-    "updated": "2026-11-25T14:06:58Z",
+    "updated": "2026-11-25T15:06:49Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
-    "today_pageloads": 3,
-    "today_visits": 3,
+    "today_pageloads": 6,
+    "today_visits": 6,
     "yesterday_pageloads": 9,
     "yesterday_visits": 5,
-    "pageloads_7d": 52,
-    "visits_7d": 44,
+    "pageloads_7d": 55,
+    "visits_7d": 47,
     "last24h": {
-     "pageloads": 5,
-     "visits": 5,
+     "pageloads": 8,
+     "visits": 8,
      "hours": [
-      {
-       "h": "2026-11-24T15:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
       {
        "h": "2026-11-24T16:00:00Z",
        "pageloads": 0,
@@ -1081,8 +1076,13 @@
       },
       {
        "h": "2026-11-25T14:00:00Z",
-       "pageloads": 0,
-       "visits": 0
+       "pageloads": 1,
+       "visits": 1
+      },
+      {
+       "h": "2026-11-25T15:00:00Z",
+       "pageloads": 2,
+       "visits": 2
       }
      ]
     },
@@ -1167,15 +1167,15 @@
      },
      {
       "d": "2026-11-25",
-      "pageloads": 3,
-      "visits": 3,
+      "pageloads": 6,
+      "visits": 6,
       "sampled": false
      }
     ],
     "top_pages_7d": [
      {
       "path": "/",
-      "count": 21
+      "count": 22
      },
      {
       "path": "/novyny/claude-bezkoshtovno/",
@@ -1186,18 +1186,18 @@
       "count": 4
      },
      {
-      "path": "/novyny/claude-code-shcho-tse/",
+      "path": "/novyny/gemini-dlya-studentiv-bezkoshtovno/",
       "count": 2
      },
      {
-      "path": "/novyny/gemini-dlya-studentiv-bezkoshtovno/",
+      "path": "/novyny/claude-code-shcho-tse/",
       "count": 2
      }
     ],
     "top_referrers_7d": [
      {
       "host": "(прямі / без реферера)",
-      "count": 23
+      "count": 25
      },
      {
       "host": "www.google.com",
@@ -1219,7 +1219,7 @@
     "top_countries_7d": [
      {
       "country": "UA",
-      "count": 32
+      "count": 35
      },
      {
       "country": "US",
@@ -1243,11 +1243,17 @@
   "telegram": {
    "members": 6,
    "tg_goal": 150,
-   "posts_7d": 16,
-   "views_7d": 56,
-   "views_avg": 3.5,
+   "posts_7d": 17,
+   "views_7d": 62,
+   "views_avg": 3.6,
    "posts_error": null,
    "best": [
+    {
+     "id": 132,
+     "text": "Anthropic виходить на біржу: акції по $83 — дорожче, ніж планували Компанія, що робить Claude, визначила ціну IPO. Ще 10 листопада обіцяли $",
+     "views": 5,
+     "date": "2026-11-19T06:49:05Z"
+    },
     {
      "id": 138,
      "text": "📺 ШІ за тиждень з Байтом #2 — вже на YouTube (6 хв) Що всередині: 0:41 — Gemini тепер пам'ятає чати ~2 місяці навіть без історії 1:18 — Sign",
@@ -1259,12 +1265,6 @@
      "text": "🎨 Як вимкнути ШІ в Canva: з'явився окремий перемикач Набридли Magic-кнопки всюди? Тепер генеративний ШІ можна вимкнути одним тумблером, на б",
      "views": 5,
      "date": "2026-11-22T19:44:05Z"
-    },
-    {
-     "id": 132,
-     "text": "Anthropic виходить на біржу: акції по $83 — дорожче, ніж планували Компанія, що робить Claude, визначила ціну IPO. Ще 10 листопада обіцяли $",
-     "views": 4,
-     "date": "2026-11-19T06:49:05Z"
     }
    ],
    "history": [
@@ -1772,10 +1772,10 @@
    "source": "https://www.ukfinance.org.uk/news-and-insight/press-release/ps660-million-stolen-fraudsters-uk-finance-calls-tougher-action",
    "by": "researcher-news",
    "note": "Перевірено 25.11 ~13:25Z. UK Finance, 25.11.2026 (H1 2026 vs H1 2025): усього £659,5 млн (+8%); APP-шахрайство £316 млн (+22%), 138 345 випадків (+25%); шахрайство з покупками — 69% APP-випадків, втрати +24% до £66 млн; 58% випадків почалися онлайн. Сам реліз UK Finance ШІ НЕ згадує (зв'язок з ШІ — у подачі FT, не перевірено) — у тексті не приписувати їм ШІ. Про ШІ: Savi Security (Scamwise), звіт 20.10.2026 — за словами CEO Patrick Coughlin (WATE), ~75% проаналізованих фейкових магазинів мали ШІ-згенеровані фото й тексти; вибірка — сайти, які люди самі надсилали на перевірку (не репрезентативна), цифра компанії. Поради: перевірити домен і дату реєстрації (whois), не платити переказом на картку/IBAN — лише карткою з chargeback, шукати магазин у відгуках поза сайтом. Перевірити, чи є свіжі попередження Кіберполіції до 27.11 (сайт cyberpolice.gov.ua фетчером не читається). Пара до №34 і №136.",
-   "status": "approved",
+   "status": "in_work",
    "added": "2026-11-25",
    "id": "151",
-   "decision": "Скан 25.11 день: бал 351,5 ≥300 (sec, сезон до 30.11). Слот: сайт + TG чт 26.11 до 10Z (за добу до Чорної пʼятниці; №136 — пт 27.11, №34 ep87 — до 28.11), TikTok чт 26.11 вечір або пт 27.11 зранку. Short — ні (слоти до 5.12 зайняті). Цифри UK Finance подавати без ШІ (у релізі ШІ немає); 75% — заява Savi Security, вибірка не репрезентативна. Перед публікацією — свіжі попередження Кіберполіції.",
+   "decision": "Скан 25.11 день: бал 351,5 ≥300 (sec, сезон до 30.11). Слот: сайт + TG чт 26.11 до 10Z (за добу до Чорної пʼятниці; №136 — пт 27.11, №34 ep87 — до 28.11), TikTok чт 26.11 вечір або пт 27.11 зранку. Short — ні (слоти до 5.12 зайняті). Цифри UK Finance подавати без ШІ (у релізі ШІ немає); 75% — заява Savi Security, вибірка не репрезентативна. Перед публікацією — свіжі попередження Кіберполіції. Сайт done 25.11: /novyny/yak-pereviryty-internet-magazyn-na-shakhrajstvo/ (чт 26.11 09:00 Київ). TG-пост — TG-відділ 26.11; TikTok — окремо.",
    "score": 351.5
   },
   {
@@ -2036,23 +2036,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "175",
-   "agent": "post",
-   "task": "Озвучка: оркестратор 20:18Z",
-   "started": "2026-11-24T20:18:07Z",
-   "finished": "2026-11-24T20:19:54Z",
-   "result": "429 з першого запиту (0 ок); повтор 21:17Z",
-   "agent_raw": "production"
-  },
-  {
-   "id": "176",
-   "agent": "designer",
-   "task": "фон: ресерч дизайну — обкладинки/кадр 0 укр. аномалій",
-   "started": "2026-11-24T20:18:07Z",
-   "finished": "2026-11-24T20:22:50Z",
-   "result": "12 аномалій 17–22.11: суб'єкт у 12/12; гіпотези H4–H6 на тест після 2.12"
-  },
   {
    "id": "177",
    "agent": "de",
@@ -2387,6 +2370,23 @@
    "started": "2026-11-25T13:28:08Z",
    "finished": "2026-11-25T13:47:14Z",
    "result": "Новина /novyny/chatgpt-ne-pratsyuie-zbij-25-lystopada/ (200), TG №147"
+  },
+  {
+   "id": "215",
+   "agent": "post",
+   "task": "Озвучка 14:18Z: шоу #3",
+   "started": "2026-11-25T14:18:02Z",
+   "finished": "2026-11-25T14:19:41Z",
+   "result": "див. voice_log",
+   "agent_raw": "production"
+  },
+  {
+   "id": "216",
+   "agent": "seo",
+   "task": "Стаття #151 «Фейкові магазини на Чорну п'ятницю» (26.11 ранок)",
+   "started": "2026-11-25T14:18:02Z",
+   "finished": "2026-11-25T14:22:42Z",
+   "result": "«Як перевірити інтернет-магазин на шахрайство» 26.11 09:00 (UK Finance, Scamwise, кіберполіція, НБУ)"
   }
  ],
  "agents": [
