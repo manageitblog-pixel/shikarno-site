@@ -1527,6 +1527,14 @@
    "started": "2026-11-25T05:17:43Z",
    "finished": "2026-11-25T05:19:22Z",
    "result": "429 одразу (0 ок); ч.11 чекає"
+  },
+  {
+   "id": "192",
+   "agent": "production",
+   "task": "Озвучка 06:18Z: guide1 ч.11",
+   "started": "2026-11-25T06:18:14Z",
+   "finished": null,
+   "result": ""
   }
  ]
 }
