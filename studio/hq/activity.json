@@ -1597,8 +1597,8 @@
    "agent": "data",
    "task": "Відновити ops.sqlite (експерименти, рішення, публікації) з docs/логів + дамп у git і відновлення в bootstrap",
    "started": "2026-11-25T12:20:42Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-25T12:30:49Z",
+   "result": "ops.sqlite відновлено: 20 експериментів (5 running), 49 рішень, 331 публікація; ops_dump.sql у git після кожної зміни + restore у bootstrap"
   }
  ]
 }
