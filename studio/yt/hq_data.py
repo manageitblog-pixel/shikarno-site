@@ -62,7 +62,7 @@ SCHEDULE = [  # (Київ, що, агент)
 ALIASES = {"editor": "shorts", "voice": "post", "production": "post", "design": "designer", "analyst": "da",
            "niche": "trend", "dispatcher": "coo", "writer": "shorts", "showrunner": "longs", "data": "de",
            "community": "cm", "tg": "cm", "distribution": "dist", "algorithms": "algo", "research": "trend",
-           "instagram": "dist", "ig": "dist"}
+           "instagram": "dist", "ig": "dist", "researcher": "trend", "designer_research": "designer"}
 ASKS = os.path.join(ROOT, "studio", "hq", "asks.json")
 TG_CACHE = os.path.expanduser("~/.cache/shikarno_tg_public.json") if os.access(os.path.expanduser("~"), os.W_OK) else "/tmp/shikarno_tg_public.json"
 TG_PUBLIC = "https://t.me/s/shikarno_ai_ua"
@@ -443,5 +443,24 @@ def _short_dur(d):
     h, mi, se = (int(x or 0) for x in m.groups()); return h * 3600 + mi * 60 + se <= 180
 
 
+def ensure_growth_row():
+    """COO 25.11: рядок growth_1201.jsonl за 24.11 пропав — вечірній COO його не зняв (крок не був у промпті запуску).
+    hq_data.py крутить Диспетчер щогодини → після 19:00Z, якщо рядка за сьогодні немає, знімаємо його тут."""
+    now = datetime.datetime.now(datetime.timezone.utc)
+    if now.hour < 19: return
+    g = os.path.join(ROOT, "studio", "data", "growth_1201.jsonl"); today = now.strftime("%Y-%m-%d")
+    try:
+        if any(json.loads(l).get("date") == today for l in open(g) if l.strip()): return
+    except FileNotFoundError: pass
+    except Exception: return
+    import subprocess
+    try:
+        subprocess.run([sys.executable, os.path.join(ROOT, "studio", "yt", "growth_snapshot.py")], cwd=os.path.join(ROOT, "studio", "yt"),
+                       timeout=300, capture_output=True)
+        print("growth_1201: знято рядок за", today)
+    except Exception as e: print("growth_1201 ERR", str(e)[:120])
+
+
 if __name__ == "__main__":
     main()
+    ensure_growth_row()

@@ -609,6 +609,24 @@ def exp_add(experiment_id, content_id, arm="variant", agent="data_engineer", con
                       related_content_id=content_id, conn=c)
 
 
+def exp_pause(experiment_id, reason, agent="coo", date=None, conn=None):
+    """Закрити running-експеримент без вердикту (status decided, decision pause) — напр., дизайн суперечить фактам.
+    COO 25.11: yt-related-cta v1 «заморожено» рішенням 24.11, але статус лишався running поряд з v2."""
+    if not reason: raise ValueError("потрібна --reason")
+    c = conn or db()
+    with _tx(c):
+        e = _exp(c, experiment_id)
+        if e["status"] not in ("running", "collecting", "designed"):
+            raise ValueError(f"{experiment_id}: status={e['status']}")
+        end = date or dt.date.today().isoformat()
+        did = decide("experiment", agent, {"action": "pause", "experiment_id": experiment_id, "reason": reason},
+                     {"status": "decided", "decision": "pause", "end_date": end}, model="rule", confidence=1.0,
+                     status="executed", conn=c)
+        c.execute("update experiments set status='decided', decision='pause', end_date=?, result=?, decision_id=? "
+                  "where experiment_id=?", (end, reason, did, experiment_id))
+        return did
+
+
 def exp_status(experiment_id, conn=None):
     c = conn or db()
     e = dict(_exp(c, experiment_id))
@@ -691,7 +709,7 @@ def main(argv=None):
     ru = sp.add_parser("run"); ru.add_argument("action", choices=["start", "finish"]); ru.add_argument("ref")
     ru.add_argument("--agent"); ru.add_argument("--trigger"); ru.add_argument("--status", default="ok")
     ru.add_argument("--error")
-    ex = sp.add_parser("exp"); ex.add_argument("action", choices=["start", "add", "status", "list", "redesign", "design"])
+    ex = sp.add_parser("exp"); ex.add_argument("action", choices=["start", "add", "status", "list", "redesign", "design", "pause"])
     ex.add_argument("id", nargs="?"); ex.add_argument("content", nargs="?")
     ex.add_argument("--date"); ex.add_argument("--control", default=""); ex.add_argument("--variant", default="")
     ex.add_argument("--arm", default="variant"); ex.add_argument("--agent", default="data_engineer")
@@ -702,6 +720,7 @@ def main(argv=None):
         if a.action == "list": out = exp_list()
         elif not a.id: ap.error("потрібен experiment_id")
         elif a.action == "status": out = exp_status(a.id)
+        elif a.action == "pause": out = {"decision_id": exp_pause(a.id, a.reason, a.agent, a.date)}
         elif a.action == "start":
             if not a.date: ap.error("exp start потребує --date YYYY-MM-DD")
             split = lambda s: [x.strip() for x in s.split(",") if x.strip()]

@@ -270,6 +270,14 @@ def news():
     def get(u):
         return urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0 shikarno-lake"}), timeout=20).read().decode("utf-8", "ignore")
     rx_ai = re.compile(r"(?<!\w)" + AI_RX, re.I); per = {}
+    # COO 25.11 (data-quality): 10 пар «та сама назва, різні URL» (blog.google ↔ deepmind.google, gpt-4 ↔ gpt-4-research) → дублі ідей.
+    # Дедуп у збирачі, не в базі: нова URL з уже відомою нормалізованою назвою (за 30 днів) не записується.
+    norm = lambda t: re.sub(r"\W+", " ", (t or "").lower()).strip()
+    seen = {norm(r[0]) for r in c.execute("select title from news where fetched >= date('now','-30 day')")}
+    def dup(ti):
+        k = norm(ti)
+        if len(k) >= 12 and k in seen: return True
+        seen.add(k); return False
     for src, (u, filt) in FEEDS.items():
         try:
             k = 0
@@ -277,6 +285,7 @@ def news():
                 if k >= FEED_MAX: break
                 ti = H.unescape(ti)
                 if filt and not rx_ai.search(ti): continue
+                if c.execute("select 1 from news where url=?", (link,)).fetchone() is None and dup(ti): continue
                 k += 1; per[src] = per.get(src, 0) + c.execute("insert or ignore into news values(?,?,?,?,?,?)", (link, src, pub, ti, None, today)).rowcount
         except Exception as e: print("feed ERR", src, str(e)[:120])
     n += sum(per.values()); print("rss нових:", ", ".join(f"{k} {v}" for k, v in sorted(per.items(), key=lambda x: -x[1])) or "0")

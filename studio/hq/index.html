@@ -256,10 +256,10 @@ function render(D){
 
   fr("fr-vids","всього — наживо, "+when(F.yt_live)+" · 7 днів — "+yaTxt,isOld(F,"yt_live"),true);
   const v7=v=>v.views7==null?`<span style="color:var(--mut)" title="YouTube Analytics ще не має днів цього ролика">чекаємо</span>`:fmt(v.views7)+(v.complete?"":`<span class="src"> неповн.</span>`);
-  $("#videos").innerHTML="<tr><th>Дата</th><th>Відео</th><th>Формат</th><th>Перші 7 днів</th><th>% перегл.</th><th>Всього</th></tr>"+D.videos.map(v=>`<tr><td style="font-family:var(--mono)">${ddmm(v.published)}</td><td><a href="https://youtu.be/${esc(v.id)}" target="_blank" rel="noopener">${esc(v.title)}</a></td><td>${v.format?esc(nm[v.format]||v.format):(v.short?"Short":"")}${v.short?"":" · довгий"}</td><td class="num">${v7(v)}</td><td class="num">${v.pct!=null?v.pct+"%":v.views7==null?"":"—"}</td><td class="num">${fmt(v.total)}</td></tr>`).join("")+`<tr><td colspan="6" class="src">«чекаємо» — YouTube Analytics має дані лише до ${ddmm(YA)}; «неповн.» — 7 днів ще не минуло.</td></tr>`;
+  $("#videos").innerHTML="<tr><th>Дата</th><th>Відео</th><th>Формат</th><th>Перші 7 днів</th><th>% перегл.</th><th>Всього</th></tr>"+D.videos.map(v=>`<tr><td style="font-family:var(--mono)">${ddmm(v.published)}</td><td><a href="https://youtu.be/${esc(v.id)}" target="_blank" rel="noopener">${esc(v.title)}</a></td><td>${v.format?esc(nm[v.format]||v.format)+(v.short?"":" · довгий"):(v.short?"Short":"довгий")}</td><td class="num">${v7(v)}</td><td class="num">${v.pct!=null?v.pct+"%":v.views7==null?"":"—"}</td><td class="num">${fmt(v.total)}</td></tr>`).join("")+`<tr><td colspan="6" class="src">«чекаємо» — YouTube Analytics має дані лише до ${ddmm(YA)}; «неповн.» — 7 днів ще не минуло.</td></tr>`;
   fr("fr-news","останній збір "+when(F.news),isOld(F,"news"));
   $("#news").innerHTML="<tr><th>Дата</th><th>Джерело</th><th>Новина</th></tr>"+D.news.map(n=>`<tr><td style="font-family:var(--mono)">${esc(ddmm(n.date))}</td><td>${esc(n.source)}${n.score?` <span style="color:var(--mut)">${n.score}</span>`:""}</td><td><a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a></td></tr>`).join("");
-  fr("fr-comp","знімок каналів "+ddmm(F.comp),isOld(F,"comp"));
+  fr("fr-comp","знімок каналів "+ddmm(F.comp)+" · оновлюється щопонеділка",isOld(F,"comp"));
   {const row=c=>`<tr><td>${esc(c.channel)}</td><td class="num">${fmt(c.subs)}</td><td class="num">${fmt(c.avg)}</td></tr>`,uk=D.competitors.filter(c=>c.lang==="uk"),en=D.competitors.filter(c=>c.lang!=="uk");
   $("#comp").innerHTML="<tr><th>Канал</th><th>Підписники</th><th>Сер. перегл.</th></tr>"+`<tr><th colspan="3" style="color:var(--yellow)">🇺🇦 Україномовні (${uk.length})</th></tr>`+uk.map(row).join("")+`<tr><th colspan="3" style="color:var(--mut)">Англомовні — орієнтир (${en.length})</th></tr>`+en.map(row).join("");}
   fr("fr-lake","станом на "+when(D.generated));
@@ -283,7 +283,7 @@ function history(D){
     {k:"clicks",t:"Сайт: кліки з Google за тиждень",c:"#9B87FF",f:fmt,ps:1},
   ];
   const box=$("#hist"); box.innerHTML="";
-  C.forEach(c=>{const pts=Hs.map(h=>({x:wl(h.w),v:h[c.k]||0,p:c.ps?h.partial_site:h.partial}));const lastFull=c.cum?{...pts[pts.length-1],x:c.k==="subs_total"?"наживо":"на "+ddmm((D.fresh||{}).yt_analytics),cur:1}:([...pts].reverse().find(p=>!p.p)||pts[pts.length-1]);
+  C.forEach(c=>{const pts=Hs.map(h=>({x:wl(h.w),v:h[c.k]||0,p:c.ps?h.partial_site:h.partial}));const lastFull=c.cum?{...pts[pts.length-1],x:c.k==="subs_total"?"наживо":"на "+ddmm((D.fresh||{}).yt_analytics),cur:1,...(c.k==="long_cum"&&D.kpi&&D.kpi.long_hours!=null?{v:D.kpi.long_hours,x:"за 12 міс. (як у цілях)"}:{})}:([...pts].reverse().find(p=>!p.p)||pts[pts.length-1]);
     box.insertAdjacentHTML("beforeend",`<div class="hc"><h3>${c.t}</h3><div class="big">${lastFull?c.f(lastFull.v):"—"} <small>${lastFull?(lastFull.cur?lastFull.x:"тиждень з "+lastFull.x):""}</small></div><svg role="img" aria-label="${esc(c.t)}"></svg><div class="tip"></div></div>`);
     hline(box.lastElementChild,pts,c)});
   box.insertAdjacentHTML("beforeend",`<div class="hc"><h3>Telegram: учасники каналу</h3><div class="big">${fmt(tgp.length?tgp[tgp.length-1].n:D.kpi.tg)} <small>/ ${fmt(D.kpi.tg_goal)}</small></div><svg role="img" aria-label="Telegram по днях"></svg><div class="tip"></div></div>`);

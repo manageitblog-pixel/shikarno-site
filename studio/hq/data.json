@@ -1,9 +1,9 @@
 {
- "generated": "2026-11-25T18:23:15Z",
+ "generated": "2026-11-25T18:33:39Z",
  "fresh": {
-  "yt_live": "2026-11-25T18:23:15Z",
+  "yt_live": "2026-11-25T18:33:39Z",
   "yt_analytics": "2026-11-22",
-  "tg_members": "2026-11-25T18:23:16Z",
+  "tg_members": "2026-11-25T18:33:40Z",
   "tg_posts": "2026-11-25T18:23:18Z",
   "ideas": "2026-11-25T18:21:48Z",
   "news": "2026-11-25 16:53",
@@ -11,9 +11,9 @@
   "tiktok": "2026-11-25T16",
   "instagram": "2026-11-25T16",
   "site": "2026-11-23",
-  "site_live": "2026-11-25T18:18:56Z",
-  "activity": "2026-11-25T18:23:15Z",
-  "asks": "2026-11-25T08:50Z"
+  "site_live": "2026-11-25T18:30:45Z",
+  "activity": "2026-11-25T18:28:15Z",
+  "asks": "2026-11-25T18:45Z"
  },
  "notes": [],
  "kpi": {
@@ -580,7 +580,7 @@
    "subs": 324,
    "views_total": 12624,
    "videos": 101,
-   "live_at": "2026-11-25T18:23:15Z",
+   "live_at": "2026-11-25T18:33:39Z",
    "views_7d": 740,
    "pct_7d": 51.2,
    "subs_7d": 3,
@@ -641,7 +641,7 @@
    "best_live": [
     {
      "title": "Меню на тиждень і вечеря з того, що є 🍳 Тір-лист Байта #7",
-     "views": 146,
+     "views": 141,
      "id": "bvS0k_r3_bs"
     },
     {
@@ -975,18 +975,18 @@
     }
    ],
    "live": {
-    "updated": "2026-11-25T18:18:56Z",
+    "updated": "2026-11-25T18:30:45Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
-    "today_pageloads": 8,
-    "today_visits": 8,
-    "yesterday_pageloads": 9,
-    "yesterday_visits": 5,
+    "today_pageloads": 0,
+    "today_visits": 0,
+    "yesterday_pageloads": 0,
+    "yesterday_visits": 0,
     "pageloads_7d": 57,
     "visits_7d": 49,
     "last24h": {
-     "pageloads": 9,
-     "visits": 9,
+     "pageloads": 0,
+     "visits": 0,
      "hours": [
       {
        "h": "2026-11-24T19:00:00Z",
@@ -1000,13 +1000,13 @@
       },
       {
        "h": "2026-11-24T21:00:00Z",
-       "pageloads": 1,
-       "visits": 1
+       "pageloads": 0,
+       "visits": 0
       },
       {
        "h": "2026-11-24T22:00:00Z",
-       "pageloads": 1,
-       "visits": 1
+       "pageloads": 0,
+       "visits": 0
       },
       {
        "h": "2026-11-24T23:00:00Z",
@@ -1070,8 +1070,8 @@
       },
       {
        "h": "2026-11-25T11:00:00Z",
-       "pageloads": 2,
-       "visits": 2
+       "pageloads": 0,
+       "visits": 0
       },
       {
        "h": "2026-11-25T12:00:00Z",
@@ -1085,13 +1085,13 @@
       },
       {
        "h": "2026-11-25T14:00:00Z",
-       "pageloads": 1,
-       "visits": 1
+       "pageloads": 0,
+       "visits": 0
       },
       {
        "h": "2026-11-25T15:00:00Z",
-       "pageloads": 2,
-       "visits": 2
+       "pageloads": 0,
+       "visits": 0
       },
       {
        "h": "2026-11-25T16:00:00Z",
@@ -1100,8 +1100,8 @@
       },
       {
        "h": "2026-11-25T17:00:00Z",
-       "pageloads": 2,
-       "visits": 2
+       "pageloads": 0,
+       "visits": 0
       },
       {
        "h": "2026-11-25T18:00:00Z",
@@ -1113,9 +1113,9 @@
     "days": [
      {
       "d": "2026-11-12",
-      "pageloads": 60,
-      "visits": 40,
-      "sampled": true
+      "pageloads": 0,
+      "visits": 0,
+      "sampled": false
      },
      {
       "d": "2026-11-13",
@@ -1167,14 +1167,14 @@
      },
      {
       "d": "2026-11-21",
-      "pageloads": 2,
-      "visits": 2,
+      "pageloads": 0,
+      "visits": 0,
       "sampled": false
      },
      {
       "d": "2026-11-22",
-      "pageloads": 16,
-      "visits": 14,
+      "pageloads": 0,
+      "visits": 0,
       "sampled": false
      },
      {
@@ -1185,14 +1185,14 @@
      },
      {
       "d": "2026-11-24",
-      "pageloads": 9,
-      "visits": 5,
+      "pageloads": 0,
+      "visits": 0,
       "sampled": false
      },
      {
       "d": "2026-11-25",
-      "pageloads": 8,
-      "visits": 8,
+      "pageloads": 0,
+      "visits": 0,
       "sampled": false
      }
     ],
@@ -1431,7 +1431,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 4
+   "total": 3
   },
   {
    "id": "bvS0k_r3_bs",
@@ -1442,7 +1442,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 146
+   "total": 141
   },
   {
    "id": "_wp0rz8edB8",
@@ -1453,7 +1453,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 34
+   "total": 33
   },
   {
    "id": "xaYHobFNYHo",
@@ -1464,7 +1464,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 36
+   "total": 35
   },
   {
    "id": "ENKGdbr04h0",
@@ -1497,7 +1497,7 @@
    "views7": 6,
    "pct": 59.2,
    "complete": false,
-   "total": 81
+   "total": 72
   },
   {
    "id": "gljrHADi4aU",
@@ -2061,15 +2061,6 @@
  ],
  "activity": [
   {
-   "id": "190",
-   "agent": "de",
-   "task": "Збирач даталейку 04:52Z: новини, TikTok/IG/TG-знімок, сигнали",
-   "started": "2026-11-25T04:53:21Z",
-   "finished": "2026-11-25T04:57:48Z",
-   "result": "+15 новин; TikTok 18,8K; IG 10 підписників, 891 переглядів/30д; TG 6; ідеї #128–132",
-   "agent_raw": "data"
-  },
-  {
    "id": "191",
    "agent": "post",
    "task": "Озвучка 05:18Z: guide1 ч.11",
@@ -2342,7 +2333,7 @@
   },
   {
    "id": "222",
-   "agent": "coo",
+   "agent": "trend",
    "task": "фон: аномалії українських ШІ-каналів (даталейк) → ідеї",
    "started": "2026-11-25T16:18:35Z",
    "finished": "2026-11-25T16:21:14Z",
@@ -2395,7 +2386,7 @@
   },
   {
    "id": "228",
-   "agent": "coo",
+   "agent": "trend",
    "task": "фон: веб-скан трендів (вечір) 13:30–18:20Z",
    "started": "2026-11-25T18:18:29Z",
    "finished": "2026-11-25T18:23:15Z",
@@ -2409,6 +2400,14 @@
    "started": "2026-11-25T18:18:29Z",
    "finished": "2026-11-25T18:22:42Z",
    "result": "стаття /novyny/rezyume-z-shi-bezkoshtovno/ на 26.11 16:00 (Suggest: 12 підказок)"
+  },
+  {
+   "id": "230",
+   "agent": "coo",
+   "task": "COO вечір 25.11: думати, дашборд очима власника, конвеєр, звіт власнику",
+   "started": "2026-11-25T18:28:15Z",
+   "finished": null,
+   "result": ""
   }
  ],
  "agents": [
@@ -2725,12 +2724,6 @@
  ],
  "asks": [
   {
-   "what": "Оновити доступ YouTube: відкрити посилання від бота (~10:00 Київ) і переслати адресу http://localhost/?code=…",
-   "why": "refresh-токен (режим Testing, 7 днів) спливає ~25.11 12:00 Київ — без нього стоп заливки (заміна гайда #1), перші коментарі й моніторинг коментарів",
-   "when": "25.11 10:00–12:00 Київ",
-   "status": "чекає власника"
-  },
-  {
    "what": "Кінцеві заставки (End screens) на довгих відео в YouTube Studio",
    "why": "на 13 довгих END_SCREEN=0 — глядач не переходить на наступне відео",
    "when": "зараз",
@@ -2745,24 +2738,24 @@
   {
    "what": "Гайд #1 (M-KQwpDwpA4): закріпити перший коментар і запустити Test & compare обкладинок",
    "why": "A/B обкладинок робиться лише вручну в Studio",
-   "when": "після виходу 25.11 19:00",
+   "when": "зараз (вийшов 25.11 19:00 Київ; перший коментар уже запощено 19:07)",
    "status": "чекає власника"
   },
   {
-   "what": "Related video для ep85 (B4hDo15vi6o) → M-KQwpDwpA4 (гайд #1) — оновити після заміни гайду #1, якщо id зміниться",
-   "why": "Short веде на гайд; ep85 — варіант exp yt-related-cta-v2 (голосовий заклик в outro є; час, коли поставив Related, — для заміру)",
+   "what": "Related video для ep85 (B4hDo15vi6o) → M-KQwpDwpA4 (гайд #1, вийшов 25.11; id остаточний)",
+   "why": "Short веде на гайд; ep85 — варіант exp yt-related-cta-v2 (голосовий заклик в outro є; коли поставиш — напиши боту «related готово» (час потрібен для заміру експерименту))",
    "when": "до 28.11 19:00 Київ (вихід ep85)",
    "status": "чекає власника"
   },
   {
    "what": "Related video для ep84 (RIt-PqOGJTg) і ep86 (xYez8pJmL4E) → 6-2a9ncHaz4 «ШІ для професій #1» (YouTube Studio)",
-   "why": "Shorts «ШІ для професій» мають вести на перший ролик серії; ep84/86 — варіант exp yt-related-cta-v2 (голосовий заклик в outro є; час, коли поставив Related, — для заміру)",
+   "why": "Shorts «ШІ для професій» мають вести на перший ролик серії; ep84/86 — варіант exp yt-related-cta-v2 (голосовий заклик в outro є; коли поставиш — напиши боту «related готово» (час потрібен для заміру експерименту))",
    "when": "до 27.11 19:00 (вихід ep84)",
    "status": "чекає власника"
   },
   {
    "what": "Related video для ep83 (cw7Qm4AMP3U) → GNqU-wcz9Ws «Що ШІ знає про тебе» (YouTube Studio)",
-   "why": "Short веде на довге відео; ep83 — варіант exp yt-related-cta-v2 (голосовий заклик в outro є; час, коли поставив Related, — для заміру)",
+   "why": "Short веде на довге відео; ep83 — варіант exp yt-related-cta-v2 (голосовий заклик в outro є; коли поставиш — напиши боту «related готово» (час потрібен для заміру експерименту))",
    "when": "до 26.11 19:00 Київ (вихід ep83)",
    "status": "чекає власника"
   }
