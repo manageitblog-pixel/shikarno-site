@@ -1,18 +1,18 @@
 {
- "generated": "2026-11-25T17:07:30Z",
+ "generated": "2026-11-25T17:18:23Z",
  "fresh": {
-  "yt_live": "2026-11-25T17:07:30Z",
+  "yt_live": "2026-11-25T17:18:23Z",
   "yt_analytics": "2026-11-22",
-  "tg_members": "2026-11-25T17:07:31Z",
-  "tg_posts": "2026-11-25T16:57:12Z",
+  "tg_members": "2026-11-25T17:18:24Z",
+  "tg_posts": "2026-11-25T17:18:24Z",
   "ideas": "2026-11-25T16:56:38Z",
   "news": "2026-11-25 16:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-25T16",
   "instagram": "2026-11-25T16",
   "site": "2026-11-23",
-  "site_live": "2026-11-25T17:07:32Z",
-  "activity": "2026-11-25T16:57:10Z",
+  "site_live": "2026-11-25T17:18:26Z",
+  "activity": "2026-11-25T17:17:56Z",
   "asks": "2026-11-25T08:50Z"
  },
  "notes": [],
@@ -580,7 +580,7 @@
    "subs": 324,
    "views_total": 12624,
    "videos": 101,
-   "live_at": "2026-11-25T17:07:30Z",
+   "live_at": "2026-11-25T17:18:23Z",
    "views_7d": 740,
    "pct_7d": 51.2,
    "subs_7d": 3,
@@ -641,7 +641,7 @@
    "best_live": [
     {
      "title": "Меню на тиждень і вечеря з того, що є 🍳 Тір-лист Байта #7",
-     "views": 143,
+     "views": 141,
      "id": "bvS0k_r3_bs"
     },
     {
@@ -975,7 +975,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-25T17:07:32Z",
+    "updated": "2026-11-25T17:18:26Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 8,
@@ -1442,7 +1442,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 143
+   "total": 141
   },
   {
    "id": "_wp0rz8edB8",
@@ -1464,7 +1464,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 34
+   "total": 35
   },
   {
    "id": "ENKGdbr04h0",
@@ -1497,7 +1497,7 @@
    "views7": 6,
    "pct": 59.2,
    "complete": false,
-   "total": 69
+   "total": 72
   },
   {
    "id": "gljrHADi4aU",
@@ -2061,32 +2061,6 @@
  ],
  "activity": [
   {
-   "id": "184",
-   "agent": "seo",
-   "task": "фон: нова стаття під непокритий запит (2-а за добу)",
-   "started": "2026-11-25T00:18:15Z",
-   "finished": "2026-11-25T00:26:23Z",
-   "result": "Стаття «Презентація ШІ безкоштовно: 7 способів» (5 400/міс), 27.11 13:00"
-  },
-  {
-   "id": "185",
-   "agent": "de",
-   "task": "Збирач даталейку 00:52Z: новини, TikTok/IG/TG-знімок, сигнали",
-   "started": "2026-11-25T00:53:08Z",
-   "finished": "2026-11-25T00:56:46Z",
-   "result": "+29 новин; TikTok 16 відео / 17 019; IG 10 підписників (+2), 864 перегляди/30д; TG 6; ідеї #123–127",
-   "agent_raw": "data"
-  },
-  {
-   "id": "186",
-   "agent": "post",
-   "task": "Озвучка 01:18Z: guide1 ч.3/11",
-   "started": "2026-11-25T01:17:45Z",
-   "finished": "2026-11-25T01:19:41Z",
-   "result": "429 одразу (0 ок)",
-   "agent_raw": "production"
-  },
-  {
    "id": "187",
    "agent": "post",
    "task": "Озвучка 02:18Z: guide1 ч.3/11",
@@ -2410,6 +2384,32 @@
    "finished": "2026-11-25T16:57:10Z",
    "result": "+37 новин; TikTok 8 відео, IG 19 підп., TG 6; ідеї #156–160 (макс 263.6); vidIQ 5 кр.",
    "agent_raw": "data"
+  },
+  {
+   "id": "224",
+   "agent": "post",
+   "task": "Озвучка 17:18Z: шоу #3",
+   "started": "2026-11-25T17:17:56Z",
+   "finished": null,
+   "result": "",
+   "agent_raw": "production"
+  },
+  {
+   "id": "225",
+   "agent": "designer",
+   "task": "фон: ресерч дизайну — обкладинки/кадр 0 українських аномалій",
+   "started": "2026-11-25T17:17:56Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "226",
+   "agent": "da",
+   "task": "фон: якість даталейку і перевірка експериментів (ops.py)",
+   "started": "2026-11-25T17:17:56Z",
+   "finished": null,
+   "result": "",
+   "agent_raw": "analyst"
   }
  ],
  "agents": [
