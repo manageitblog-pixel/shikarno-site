@@ -1597,8 +1597,8 @@
    "agent": "analyst",
    "task": "фон: якість даталейку і перевірка експериментів (ops.py)",
    "started": "2026-11-25T17:17:56Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-25T17:24:30Z",
+   "result": "лейк цілий; експерименти без дати оцінки; проблеми в docs/research/data-quality-2026-11-25.md"
   }
  ]
 }
