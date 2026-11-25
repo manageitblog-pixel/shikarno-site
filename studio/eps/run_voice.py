@@ -16,6 +16,12 @@ def log(**k):
 def f0(path):
     r = subprocess.run([sys.executable, "/home/claude/eps/voice_check.py", path], capture_output=True, text=True)
     m = re.search(r"F0 ([\d.]+)", r.stdout); return float(m.group(1)), r.returncode == 0
+def vo_bk(slug, wavs, label, extra=()):
+    # 25.11: резерв фіналу в studio/eps/_vo_backup (git) — рестарт контейнера стер усі part*.wav; помилки не валять озвучку
+    try:
+        import vo_backup; vo_backup.backup(slug, wavs, label, extra=extra)
+    except Exception as e:  # noqa: BLE001
+        log(ev="vo_backup_fail", slug=slug, label=label, err=str(e)[:300])
 def words(s): return re.findall(r"[а-яіїєґa-z0-9']+", s.lower().replace("ʼ", "'"))
 def audit_seg(x, sr, exp):
     ps = [b for a, b in G.pauses(x, sr) if b - a > 2400] + [len(x)]; pieces = []; cur = 0
@@ -53,6 +59,7 @@ def guide_part(dg, D, pi, idxs):
             if best[0] == 0:
                 shutil.copy(f"{tk}/part{pi}_take{best[1]}_f0_{best[2]:.1f}.wav", raw)
                 log(ev="part_final", part=pi, take=best[1], f0=best[2], clean=True, note="take2 quota")
+                vo_bk(dg.SLUG, [raw], f"part{pi}")
             else:
                 log(ev="part_retry_later", part=pi, best_take=best[1], f0=best[2], note="take2 quota")
             raise
@@ -74,6 +81,7 @@ def guide_part(dg, D, pi, idxs):
         log(ev="part_retry_later", part=pi, best_take=best[1], f0=best[2], takes=take, max_takes=max_takes); return
     shutil.copy(f"{tk}/part{pi}_take{best[1]}_f0_{best[2]:.1f}.wav", raw)
     log(ev="part_final", part=pi, take=best[1], f0=best[2], clean=best[0] == 0, **({} if best[0] == 0 else {"needs_review": True}))
+    vo_bk(dg.SLUG, [raw], f"part{pi}")
 def short(mod):
     ep = importlib.import_module(mod); D = f"/home/claude/eps/{ep.SLUG}"; os.makedirs(f"{D}/takes", exist_ok=True)
     if os.path.exists(f"{D}/vo.wav"): return  # уже озвучено — не витрачати квоту
@@ -118,6 +126,7 @@ def short(mod):
     js = json.loads(a.stdout.strip().splitlines()[-1])
     log(ev="short_final", ep=mod, take=best[0], f0=best[1], overall_match=js["overall_match"],
         segs=[(s["i"], s["len_ratio"], s["match"]) for s in js["segments"]], dur=js["duration_s"])
+    vo_bk(ep.SLUG, [f"{D}/vo_raw.wav", f"{D}/vo.wav"], "short", extra=[f"{D}/vo_tl.json"])
 if __name__ == "__main__":
     # 25.11 COO: один оркестратор за раз — Диспетчер :17, нагадування guide1 09:00Z і ручні запуски перетинались би
     # у вікні 08–09Z (пачка ~30 хв) і писали б той самий partN.wav. Другий запуск просто виходить.

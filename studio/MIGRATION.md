@@ -7,6 +7,7 @@
 bash studio/bootstrap.sh
 ```
 Створює /home/claude/{rv,eps,tg,yt,gem,pdf} як симлінки на studio/, ставить numpy/soundfile/sherpa-onnx/playwright, whisper-small для звірки озвучки, ffmpeg, npm ci для Remotion. Усі скрипти розраховані на шляхи /home/claude/... — нічого не переписувати.
+Наприкінці bootstrap запускає `studio/eps/restore_vo.py`: озвучені частини й Shorts з резерву studio/eps/_vo_backup/<slug>/*.opus (у git; пише run_voice.py після кожного фіналу) розпаковуються у /home/claude/eps/<slug>/*.wav, лише якщо WAV немає — переозвучувати їх НЕ треба (квота TTS ~15/добу).
 
 ## 2. Секрети (НЕ в репозиторій — він публічний)
 Відкрий приватний артефакт власника «Доступи ШІкарно» https://claude.ai/artifact/4gHKdHWPS6jDMuY2RygU7x (Artifact read) і запиши:

@@ -26,3 +26,5 @@ npx remotion browser ensure >/dev/null 2>&1 || true
 echo "BOOTSTRAP OK. Тепер секрети: $H/tg/.token, $H/gem/.key, $H/yt/client_secret.json, $H/yt/token.json (див. studio/MIGRATION.md)"
 # Даталейк: жива база не в git — після перезапуску контейнера відновити з щоденного знімка
 [ -f $S/data/analytics.sqlite ] || { [ -f $S/data/snapshot/analytics.sqlite ] && cp $S/data/snapshot/analytics.sqlite $S/data/analytics.sqlite; }
+# Резерв озвучки (25.11): studio/eps/_vo_backup/<slug>/*.opus → /home/claude/eps/<slug>/*.wav, лише відсутні (не валить bootstrap)
+python3 $S/eps/restore_vo.py || echo "restore_vo: помилки — див. вище"

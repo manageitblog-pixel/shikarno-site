@@ -13,6 +13,7 @@ tg/offset.txt
 rv/node_modules/
 rv/out/
 eps/*/
+!eps/_vo_backup/
 !eps/month_oct/
 eps/month_oct/*
 !eps/month_oct/research.md
