@@ -299,3 +299,6 @@
 {"ev": "part", "part": 9, "take": 4, "f0": 125.3, "f0_ok": true, "dur": 88.3, "audit": [{"seg": 26, "ratio": 0.87, "match": 0.69}, {"seg": 27, "ratio": 1.0, "match": 0.71}, {"seg": 28, "ratio": 0.96, "match": 0.82}], "repeat_suspect": false, "t": "08:10:02Z", "d": "2026-11-25"}
 {"ev": "part_final", "part": 9, "take": 4, "f0": 125.3, "clean": true, "t": "08:10:02Z", "d": "2026-11-25"}
 {"ev": "tts_ok", "n": 6, "out": "/home/claude/eps/weekly3/part2.wav", "res": "(61.32, 24000, 'audio/wav')", "t": "08:10:13Z", "d": "2026-11-25"}
+{"ev": "part", "part": 2, "take": 3, "f0": 130.5, "f0_ok": true, "dur": 61.3, "audit": [{"seg": 6, "ratio": 0.9, "match": 0.69}, {"seg": 7, "ratio": 1.04, "match": 0.78}], "repeat_suspect": false, "t": "08:11:16Z", "d": "2026-11-25"}
+{"ev": "part_final", "part": 2, "take": 3, "f0": 130.5, "clean": true, "t": "08:11:16Z", "d": "2026-11-25"}
+{"ev": "tts_ok", "n": 7, "out": "/home/claude/eps/weekly3/part3.wav", "res": "(78.2, 24000, 'audio/wav')", "t": "08:11:28Z", "d": "2026-11-25"}
