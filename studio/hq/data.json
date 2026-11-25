@@ -1,18 +1,18 @@
 {
- "generated": "2026-11-25T18:33:39Z",
+ "generated": "2026-11-25T19:07:02Z",
  "fresh": {
-  "yt_live": "2026-11-25T18:33:39Z",
+  "yt_live": "2026-11-25T19:07:02Z",
   "yt_analytics": "2026-11-22",
-  "tg_members": "2026-11-25T18:33:40Z",
-  "tg_posts": "2026-11-25T18:23:18Z",
+  "tg_members": "2026-11-25T19:07:03Z",
+  "tg_posts": "2026-11-25T19:07:05Z",
   "ideas": "2026-11-25T18:21:48Z",
   "news": "2026-11-25 16:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-25T16",
   "instagram": "2026-11-25T16",
   "site": "2026-11-23",
-  "site_live": "2026-11-25T18:30:45Z",
-  "activity": "2026-11-25T18:28:15Z",
+  "site_live": "2026-11-25T19:07:06Z",
+  "activity": "2026-11-25T18:35:58Z",
   "asks": "2026-11-25T18:45Z"
  },
  "notes": [],
@@ -580,7 +580,7 @@
    "subs": 324,
    "views_total": 12624,
    "videos": 101,
-   "live_at": "2026-11-25T18:33:39Z",
+   "live_at": "2026-11-25T19:07:02Z",
    "views_7d": 740,
    "pct_7d": 51.2,
    "subs_7d": 3,
@@ -641,7 +641,7 @@
    "best_live": [
     {
      "title": "Меню на тиждень і вечеря з того, що є 🍳 Тір-лист Байта #7",
-     "views": 141,
+     "views": 144,
      "id": "bvS0k_r3_bs"
     },
     {
@@ -975,24 +975,19 @@
     }
    ],
    "live": {
-    "updated": "2026-11-25T18:30:45Z",
+    "updated": "2026-11-25T19:07:06Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
-    "today_pageloads": 0,
-    "today_visits": 0,
-    "yesterday_pageloads": 0,
-    "yesterday_visits": 0,
+    "today_pageloads": 8,
+    "today_visits": 8,
+    "yesterday_pageloads": 9,
+    "yesterday_visits": 5,
     "pageloads_7d": 57,
     "visits_7d": 49,
     "last24h": {
-     "pageloads": 0,
-     "visits": 0,
+     "pageloads": 9,
+     "visits": 9,
      "hours": [
-      {
-       "h": "2026-11-24T19:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
       {
        "h": "2026-11-24T20:00:00Z",
        "pageloads": 0,
@@ -1000,13 +995,13 @@
       },
       {
        "h": "2026-11-24T21:00:00Z",
-       "pageloads": 0,
-       "visits": 0
+       "pageloads": 1,
+       "visits": 1
       },
       {
        "h": "2026-11-24T22:00:00Z",
-       "pageloads": 0,
-       "visits": 0
+       "pageloads": 1,
+       "visits": 1
       },
       {
        "h": "2026-11-24T23:00:00Z",
@@ -1070,8 +1065,8 @@
       },
       {
        "h": "2026-11-25T11:00:00Z",
-       "pageloads": 0,
-       "visits": 0
+       "pageloads": 2,
+       "visits": 2
       },
       {
        "h": "2026-11-25T12:00:00Z",
@@ -1085,13 +1080,13 @@
       },
       {
        "h": "2026-11-25T14:00:00Z",
-       "pageloads": 0,
-       "visits": 0
+       "pageloads": 1,
+       "visits": 1
       },
       {
        "h": "2026-11-25T15:00:00Z",
-       "pageloads": 0,
-       "visits": 0
+       "pageloads": 2,
+       "visits": 2
       },
       {
        "h": "2026-11-25T16:00:00Z",
@@ -1100,11 +1095,16 @@
       },
       {
        "h": "2026-11-25T17:00:00Z",
+       "pageloads": 2,
+       "visits": 2
+      },
+      {
+       "h": "2026-11-25T18:00:00Z",
        "pageloads": 0,
        "visits": 0
       },
       {
-       "h": "2026-11-25T18:00:00Z",
+       "h": "2026-11-25T19:00:00Z",
        "pageloads": 0,
        "visits": 0
       }
@@ -1113,9 +1113,9 @@
     "days": [
      {
       "d": "2026-11-12",
-      "pageloads": 0,
-      "visits": 0,
-      "sampled": false
+      "pageloads": 60,
+      "visits": 40,
+      "sampled": true
      },
      {
       "d": "2026-11-13",
@@ -1167,14 +1167,14 @@
      },
      {
       "d": "2026-11-21",
-      "pageloads": 0,
-      "visits": 0,
+      "pageloads": 2,
+      "visits": 2,
       "sampled": false
      },
      {
       "d": "2026-11-22",
-      "pageloads": 0,
-      "visits": 0,
+      "pageloads": 16,
+      "visits": 14,
       "sampled": false
      },
      {
@@ -1185,14 +1185,14 @@
      },
      {
       "d": "2026-11-24",
-      "pageloads": 0,
-      "visits": 0,
+      "pageloads": 9,
+      "visits": 5,
       "sampled": false
      },
      {
       "d": "2026-11-25",
-      "pageloads": 0,
-      "visits": 0,
+      "pageloads": 8,
+      "visits": 8,
       "sampled": false
      }
     ],
@@ -1442,7 +1442,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 141
+   "total": 144
   },
   {
    "id": "_wp0rz8edB8",
@@ -1464,7 +1464,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 35
+   "total": 36
   },
   {
    "id": "ENKGdbr04h0",
@@ -1497,7 +1497,7 @@
    "views7": 6,
    "pct": 59.2,
    "complete": false,
-   "total": 72
+   "total": 73
   },
   {
    "id": "gljrHADi4aU",
@@ -2406,8 +2406,8 @@
    "agent": "coo",
    "task": "COO вечір 25.11: думати, дашборд очима власника, конвеєр, звіт власнику",
    "started": "2026-11-25T18:28:15Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-25T18:35:58Z",
+   "result": "5 ініціатив (черга озвучки за датою, exp pause, дедуп новин, страховка growth, TG взаємопіар); дашборд виправлено (v59); звіт власнику надіслано"
   }
  ],
  "agents": [
