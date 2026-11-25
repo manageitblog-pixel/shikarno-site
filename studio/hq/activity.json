@@ -1567,6 +1567,14 @@
    "started": "2026-11-25T07:27:35Z",
    "finished": null,
    "result": ""
+  },
+  {
+   "id": "197",
+   "agent": "production",
+   "task": "guide1: ребілд з чистими ч.3/11, QA, заміна приватної копії (дозвіл власника)",
+   "started": "2026-11-25T08:07:39Z",
+   "finished": null,
+   "result": ""
   }
  ]
 }
