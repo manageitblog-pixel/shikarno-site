@@ -1573,8 +1573,8 @@
    "agent": "production",
    "task": "Озвучка 16:19Z: шоу #3",
    "started": "2026-11-25T16:18:35Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-25T16:20:56Z",
+   "result": "STOP 16:20Z: 429, 0 запитів"
   },
   {
    "id": "220",
