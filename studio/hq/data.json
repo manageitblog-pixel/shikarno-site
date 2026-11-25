@@ -1,9 +1,9 @@
 {
- "generated": "2026-11-25T16:14:36Z",
+ "generated": "2026-11-25T16:19:03Z",
  "fresh": {
-  "yt_live": "2026-11-25T16:14:36Z",
+  "yt_live": "2026-11-25T16:19:04Z",
   "yt_analytics": "2026-11-22",
-  "tg_members": "2026-11-25T16:14:37Z",
+  "tg_members": "2026-11-25T16:19:05Z",
   "tg_posts": "2026-11-25T16:07:23Z",
   "ideas": "2026-11-25T14:22:16Z",
   "news": "2026-11-25 12:53",
@@ -11,8 +11,8 @@
   "tiktok": "2026-11-25T12",
   "instagram": "2026-11-25T12",
   "site": "2026-11-23",
-  "site_live": "2026-11-25T16:07:25Z",
-  "activity": "2026-11-25T15:19:46Z",
+  "site_live": "2026-11-25T16:19:06Z",
+  "activity": "2026-11-25T16:18:35Z",
   "asks": "2026-11-25T08:50Z"
  },
  "notes": [],
@@ -580,7 +580,7 @@
    "subs": 324,
    "views_total": 12536,
    "videos": 100,
-   "live_at": "2026-11-25T16:14:36Z",
+   "live_at": "2026-11-25T16:19:04Z",
    "views_7d": 740,
    "pct_7d": 51.2,
    "subs_7d": 3,
@@ -963,7 +963,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-25T16:07:25Z",
+    "updated": "2026-11-25T16:19:06Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 6,
@@ -1101,26 +1101,26 @@
     "days": [
      {
       "d": "2026-11-12",
+      "pageloads": 60,
+      "visits": 40,
+      "sampled": true
+     },
+     {
+      "d": "2026-11-13",
+      "pageloads": 20,
+      "visits": 20,
+      "sampled": true
+     },
+     {
+      "d": "2026-11-14",
       "pageloads": 0,
       "visits": 0,
       "sampled": false
      },
      {
-      "d": "2026-11-13",
-      "pageloads": 30,
-      "visits": 30,
-      "sampled": true
-     },
-     {
-      "d": "2026-11-14",
-      "pageloads": 10,
-      "visits": 10,
-      "sampled": true
-     },
-     {
       "d": "2026-11-15",
       "pageloads": 10,
-      "visits": 0,
+      "visits": 10,
       "sampled": true
      },
      {
@@ -1131,9 +1131,9 @@
      },
      {
       "d": "2026-11-17",
-      "pageloads": 0,
-      "visits": 0,
-      "sampled": false
+      "pageloads": 20,
+      "visits": 20,
+      "sampled": true
      },
      {
       "d": "2026-11-18",
@@ -2049,42 +2049,6 @@
  ],
  "activity": [
   {
-   "id": "179",
-   "agent": "post",
-   "task": "Озвучка: оркестратор 21:18Z",
-   "started": "2026-11-24T21:18:01Z",
-   "finished": "2026-11-24T21:19:41Z",
-   "result": "429 одразу (0 ок); 4-а поспіль; повтор 22:17Z",
-   "agent_raw": "production"
-  },
-  {
-   "id": "180",
-   "agent": "post",
-   "task": "Озвучка 22:18Z: guide1 ч.3/11 (перезапис), далі черга",
-   "started": "2026-11-24T22:18:01Z",
-   "finished": "2026-11-24T22:21:52Z",
-   "result": "guide1 ч.3 дубль 2: 139,0 Гц (поза 128,5±6) → не в фінал, чекає вікна; далі 429 (1 ок)",
-   "agent_raw": "production"
-  },
-  {
-   "id": "181",
-   "agent": "post",
-   "task": "Озвучка 23:18Z: guide1 ч.3/11",
-   "started": "2026-11-24T23:18:32Z",
-   "finished": "2026-11-24T23:22:33Z",
-   "result": "guide1 ч.3 дубль 3: 136,3 Гц (ближче, але поза ±6) → чекає; 429 після 1",
-   "agent_raw": "production"
-  },
-  {
-   "id": "182",
-   "agent": "trend",
-   "task": "фон: дослідник ніші — аномалії укр. ШІ-каналів + TikTok-тренди",
-   "started": "2026-11-24T23:18:32Z",
-   "finished": "2026-11-24T23:22:46Z",
-   "result": "34 аномалії укр. YouTube (нових тем нема, #55 підтверджено); TikTok: «приховані фішки», «команда для фото»; ідеї #119–122, approved #122 (3.12) і #119 (4.12)",
-   "agent_raw": "research"
-  },
-  {
    "id": "183",
    "agent": "post",
    "task": "Озвучка 00:18Z: guide1 ч.3/11",
@@ -2387,8 +2351,8 @@
    "agent": "post",
    "task": "Озвучка 15:18Z: шоу #3",
    "started": "2026-11-25T15:18:09Z",
-   "finished": null,
-   "result": "",
+   "finished": "2026-11-25T16:18:35Z",
+   "result": "STOP 15:21Z: 429 після 1 запиту (закрив Диспетчер)",
    "agent_raw": "production"
   },
   {
@@ -2399,6 +2363,41 @@
    "finished": "2026-11-25T15:19:46Z",
    "result": "нових немає; 5 кр. vidIQ; власнику не писав",
    "agent_raw": "community"
+  },
+  {
+   "id": "219",
+   "agent": "post",
+   "task": "Озвучка 16:19Z: шоу #3",
+   "started": "2026-11-25T16:18:35Z",
+   "finished": null,
+   "result": "",
+   "agent_raw": "production"
+  },
+  {
+   "id": "220",
+   "agent": "seo",
+   "task": "SEO: сторінки Search Console (покази ≥50, поз. 4–20) → переписати title/description",
+   "started": "2026-11-25T16:18:35Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "221",
+   "agent": "da",
+   "task": "Аудит прогнозів роликів, яким виповнилось 7 днів",
+   "started": "2026-11-25T16:18:35Z",
+   "finished": null,
+   "result": "",
+   "agent_raw": "analyst"
+  },
+  {
+   "id": "222",
+   "agent": "coo",
+   "task": "фон: аномалії українських ШІ-каналів (даталейк) → ідеї",
+   "started": "2026-11-25T16:18:35Z",
+   "finished": null,
+   "result": "",
+   "agent_raw": "researcher"
   }
  ],
  "agents": [
