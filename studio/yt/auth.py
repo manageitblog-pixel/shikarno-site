@@ -6,7 +6,8 @@ import base64, hashlib, json, os, secrets, sys, time, urllib.parse, urllib.reque
 D = os.path.dirname(os.path.realpath(__file__))
 SCOPES = ["https://www.googleapis.com/auth/youtube.upload", "https://www.googleapis.com/auth/youtube",
           "https://www.googleapis.com/auth/youtube.force-ssl", "https://www.googleapis.com/auth/yt-analytics.readonly",
-          "https://www.googleapis.com/auth/webmasters.readonly", "https://www.googleapis.com/auth/analytics.readonly"]  # + Search Console і GA4 — лише читання (погоджено власником 28.10)
+          "https://www.googleapis.com/auth/webmasters.readonly", "https://www.googleapis.com/auth/analytics.readonly",
+          "https://www.googleapis.com/auth/drive.file"]  # drive.file (власник 25.11: «відразу заливай десь») — лише файли, створені студією, приватно  # + Search Console і GA4 — лише читання (погоджено власником 28.10)
 REDIRECT = "http://localhost"
 
 def client():
