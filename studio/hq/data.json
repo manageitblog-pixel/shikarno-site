@@ -1,18 +1,18 @@
 {
- "generated": "2026-11-25T09:06:44Z",
+ "generated": "2026-11-25T10:07:00Z",
  "fresh": {
-  "yt_live": "2026-11-25T09:06:44Z",
+  "yt_live": "2026-11-25T10:07:00Z",
   "yt_analytics": "2026-11-22",
-  "tg_members": "2026-11-25T09:06:45Z",
-  "tg_posts": "2026-11-25T09:00:31Z",
-  "ideas": "2026-11-25T08:59:45Z",
+  "tg_members": "2026-11-25T10:07:01Z",
+  "tg_posts": "2026-11-25T10:07:02Z",
+  "ideas": "2026-11-25T09:21:07Z",
   "news": "2026-11-25 08:54",
   "comp": "2026-11-23",
   "tiktok": "2026-11-25T08",
   "instagram": "2026-11-25T08",
   "site": "2026-11-23",
-  "site_live": "2026-11-25T09:00:32Z",
-  "activity": "2026-11-25T09:00:29Z",
+  "site_live": "2026-11-25T10:07:03Z",
+  "activity": "2026-11-25T09:23:17Z",
   "asks": "2026-11-25T08:50Z"
  },
  "notes": [],
@@ -580,7 +580,7 @@
    "subs": 316,
    "views_total": 12536,
    "videos": 98,
-   "live_at": "2026-11-25T09:06:44Z",
+   "live_at": "2026-11-25T10:07:00Z",
    "views_7d": 740,
    "pct_7d": 51.2,
    "subs_7d": 3,
@@ -951,28 +951,23 @@
     }
    ],
    "live": {
-    "updated": "2026-11-25T09:00:32Z",
+    "updated": "2026-11-25T10:07:03Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
-    "today_pageloads": 0,
-    "today_visits": 0,
+    "today_pageloads": 1,
+    "today_visits": 1,
     "yesterday_pageloads": 9,
     "yesterday_visits": 5,
-    "pageloads_7d": 0,
-    "visits_7d": 0,
+    "pageloads_7d": 50,
+    "visits_7d": 42,
     "last24h": {
-     "pageloads": 20,
-     "visits": 10,
+     "pageloads": 7,
+     "visits": 5,
      "hours": [
       {
-       "h": "2026-11-24T10:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
-      {
        "h": "2026-11-24T11:00:00Z",
-       "pageloads": 0,
-       "visits": 0
+       "pageloads": 2,
+       "visits": 1
       },
       {
        "h": "2026-11-24T12:00:00Z",
@@ -986,8 +981,8 @@
       },
       {
        "h": "2026-11-24T14:00:00Z",
-       "pageloads": 10,
-       "visits": 0
+       "pageloads": 2,
+       "visits": 1
       },
       {
        "h": "2026-11-24T15:00:00Z",
@@ -1006,8 +1001,8 @@
       },
       {
        "h": "2026-11-24T18:00:00Z",
-       "pageloads": 10,
-       "visits": 10
+       "pageloads": 1,
+       "visits": 1
       },
       {
        "h": "2026-11-24T19:00:00Z",
@@ -1021,13 +1016,13 @@
       },
       {
        "h": "2026-11-24T21:00:00Z",
-       "pageloads": 0,
-       "visits": 0
+       "pageloads": 1,
+       "visits": 1
       },
       {
        "h": "2026-11-24T22:00:00Z",
-       "pageloads": 0,
-       "visits": 0
+       "pageloads": 1,
+       "visits": 1
       },
       {
        "h": "2026-11-24T23:00:00Z",
@@ -1083,21 +1078,26 @@
        "h": "2026-11-25T09:00:00Z",
        "pageloads": 0,
        "visits": 0
+      },
+      {
+       "h": "2026-11-25T10:00:00Z",
+       "pageloads": 0,
+       "visits": 0
       }
      ]
     },
     "days": [
      {
       "d": "2026-11-12",
-      "pageloads": 0,
-      "visits": 0,
-      "sampled": false
+      "pageloads": 60,
+      "visits": 40,
+      "sampled": true
      },
      {
       "d": "2026-11-13",
-      "pageloads": 20,
-      "visits": 20,
-      "sampled": true
+      "pageloads": 0,
+      "visits": 0,
+      "sampled": false
      },
      {
       "d": "2026-11-14",
@@ -1107,9 +1107,9 @@
      },
      {
       "d": "2026-11-15",
-      "pageloads": 0,
-      "visits": 0,
-      "sampled": false
+      "pageloads": 10,
+      "visits": 10,
+      "sampled": true
      },
      {
       "d": "2026-11-16",
@@ -1119,32 +1119,32 @@
      },
      {
       "d": "2026-11-17",
-      "pageloads": 0,
-      "visits": 0,
-      "sampled": false
+      "pageloads": 20,
+      "visits": 20,
+      "sampled": true
      },
      {
       "d": "2026-11-18",
-      "pageloads": 0,
-      "visits": 0,
+      "pageloads": 2,
+      "visits": 2,
       "sampled": false
      },
      {
       "d": "2026-11-19",
-      "pageloads": 0,
-      "visits": 0,
-      "sampled": false
-     },
-     {
-      "d": "2026-11-20",
-      "pageloads": 7,
+      "pageloads": 5,
       "visits": 5,
       "sampled": false
      },
      {
-      "d": "2026-11-21",
-      "pageloads": 0,
+      "d": "2026-11-20",
+      "pageloads": 10,
       "visits": 0,
+      "sampled": true
+     },
+     {
+      "d": "2026-11-21",
+      "pageloads": 2,
+      "visits": 2,
       "sampled": false
      },
      {
@@ -1167,8 +1167,8 @@
      },
      {
       "d": "2026-11-25",
-      "pageloads": 0,
-      "visits": 0,
+      "pageloads": 1,
+      "visits": 1,
       "sampled": false
      }
     ],
@@ -1197,14 +1197,47 @@
     "top_referrers_7d": [
      {
       "host": "(прямі / без реферера)",
-      "count": 20
+      "count": 22
      },
      {
       "host": "www.google.com",
-      "count": 10
+      "count": 11
+     },
+     {
+      "host": "m.facebook.com",
+      "count": 4
+     },
+     {
+      "host": "www.youtube.com",
+      "count": 2
+     },
+     {
+      "host": "www.facebook.com",
+      "count": 2
      }
     ],
-    "top_countries_7d": []
+    "top_countries_7d": [
+     {
+      "country": "UA",
+      "count": 31
+     },
+     {
+      "country": "US",
+      "count": 10
+     },
+     {
+      "country": "PL",
+      "count": 3
+     },
+     {
+      "country": "NL",
+      "count": 2
+     },
+     {
+      "country": "MD",
+      "count": 1
+     }
+    ]
    }
   },
   "telegram": {
@@ -1521,10 +1554,10 @@
    "by": "researcher-news",
    "note": "Перевірено 25.11 ~08:15Z на офіційних сторінках. gemini.google/ua/subscriptions: банер «Рання пропозиція для передплатників: заощадьте до 50% на вибраних планах Google AI у Чорну пʼятницю» — які плани, не сказано; умови one.google.com/offer/specialoffer (оновл. 17.11.2026): лише нові користувачі Google One, не поєднується з іншими, після періоду — автопродовження за стандартною ціною, вимоги залежать від країни. Ціни UA-сторінки: AI Plus 224,99 грн, AI Pro 909,99 грн, Ultra від 4 599 грн/міс. chatgpt.com/pricing: споживчої знижки немає; є лише ChatGPT Business — підписка до 30.11 дає 2× ліміти і fast mode до 31.12 (B2B). claude.com/pricing: акцій немає, Pro $20/міс або $17/міс при оплаті за рік. Perplexity: офіційна сторінка не відкрилась — не стверджувати. «Промокоди» з агрегаторів не брати. Перед публікацією: відкрити банер з українського акаунта і подивитись, який план і ціна реально пропонуються.",
    "kw": "chatgpt plus (129); google ai (158); google ai pro стоит ли покупать (26); чорна пʼятниця (27) — kw.py 25.11",
-   "status": "approved",
+   "status": "in_work",
    "added": "2026-11-25",
    "id": "136",
-   "decision": "Скан 25.11 ранок: бал 471,1 ≥300. Сезонне (до 30.11), Short-слоти 26.11–4.12 зайняті (ep83–90, №122, №119) → слот: сайт + TG пт 27.11 до 10Z (Київ 12:00, у день Чорної пʼятниці) у парі з ep87 (№34) і ep88 (№89, вихід 30.11), TikTok 27.11 вечір (окремий кліп 30 с без YouTube-квоти) + блок у шоу #3 29.11. Факти лише з офіційних сторінок (звірено 25.11 ~08:15Z); перед публікацією — переглянути банер Google з українського акаунта; не обіцяти −50% усім: лише нові користувачі Google One, автопродовження. Незалежний фактчек.",
+   "decision": "Скан 25.11 ранок: бал 471,1 ≥300. Сезонне (до 30.11), Short-слоти 26.11–4.12 зайняті (ep83–90, №122, №119) → слот: сайт + TG пт 27.11 до 10Z (Київ 12:00, у день Чорної пʼятниці) у парі з ep87 (№34) і ep88 (№89, вихід 30.11), TikTok 27.11 вечір (окремий кліп 30 с без YouTube-квоти) + блок у шоу #3 29.11. Факти лише з офіційних сторінок (звірено 25.11 ~08:15Z); перед публікацією — переглянути банер Google з українського акаунта; не обіцяти −50% усім: лише нові користувачі Google One, автопродовження. Незалежний фактчек. | Сайт 25.11 ~09:30Z: стаття готова — /novyny/chorna-pyatnytsya-shi-pidpysky-znyzhky/ (date 27.11 10:00 Київ, факти перезвірено 25.11 на gemini.google/ua/subscriptions, one.google.com/offer/specialoffer [оновл. 17.11, дати завершення немає], chatgpt.com/pricing, claude.com/pricing). Сайт — done; TG-пост — за TG-відділом, потім done.",
    "score": 471.1
   },
   {
@@ -1978,33 +2011,6 @@
  ],
  "activity": [
   {
-   "id": "163",
-   "agent": "post",
-   "task": "ep83: виправити «ШІ» в outro (1–2 TTS) + статті ep83/ep85",
-   "started": "2026-11-24T16:42:51Z",
-   "finished": "2026-11-24T18:33:19Z",
-   "result": "TTS 175,6 Гц — не підмінено, повтор 25.11 06:30Z; статті ep83/ep85 готові (закрив COO)",
-   "agent_raw": "production"
-  },
-  {
-   "id": "164",
-   "agent": "de",
-   "task": "Збирач даталейку 16:52Z: новини, TikTok/IG/TG-знімок",
-   "started": "2026-11-24T16:52:55Z",
-   "finished": "2026-11-24T18:33:19Z",
-   "result": "знімок 16Z TikTok/IG/TG (2026-11-24T16.json) (закрив COO)",
-   "agent_raw": "data"
-  },
-  {
-   "id": "165",
-   "agent": "trend",
-   "task": "Концепт «челендж-лічильник підписників» з Байтом: аномалії, правила платформ, вартість озвучки, 2–3 варіанти",
-   "started": "2026-11-24T18:13:55Z",
-   "finished": "2026-11-24T18:33:19Z",
-   "result": "концепт надіслано: 3 варіанти, реком. «Байт вчить ШІ говорити» (закрив COO за 18:45Z)",
-   "agent_raw": "research"
-  },
-  {
    "id": "166",
    "agent": "coo",
    "task": "COO вечір 24.11: покращення (cron pages.yml, обсяг довгих), дашборд, звіт власнику",
@@ -2328,6 +2334,31 @@
    "finished": "2026-11-25T09:00:29Z",
    "result": "IG 14 підписників (+4 за 8 год), 1009 переглядів/30д; TikTok 16; TG 6; YouTube sync; ідеї #139–143; snapshot",
    "agent_raw": "data"
+  },
+  {
+   "id": "203",
+   "agent": "post",
+   "task": "Озвучка 09:18Z",
+   "started": "2026-11-25T09:17:53Z",
+   "finished": "2026-11-25T09:19:31Z",
+   "result": "429 (квота після ранкового вікна)",
+   "agent_raw": "production"
+  },
+  {
+   "id": "204",
+   "agent": "seo",
+   "task": "Стаття #136 «Чорна п'ятниця на ШІ-підписки» (сайт 27.11 до 10Z)",
+   "started": "2026-11-25T09:17:53Z",
+   "finished": "2026-11-25T09:21:39Z",
+   "result": "Стаття «Чорна п'ятниця на ChatGPT, Gemini і Claude» 27.11 10:00 (Google до −50% нові користувачі; ChatGPT/Claude — нема)"
+  },
+  {
+   "id": "205",
+   "agent": "cso",
+   "task": "CSO 25.11: трекер 4 платформ + обсяг довгих + Google Ads як новий фактор",
+   "started": "2026-11-25T09:19:59Z",
+   "finished": "2026-11-25T09:23:17Z",
+   "result": "YT 316 підп/11,2 год (−90/−93%); TikTok +587/добу; IG 14; сайт 46 кл; TG 6; рішення: гайд #3 → 2.12 за умов (фактчек 30.11)"
   }
  ],
  "agents": [
