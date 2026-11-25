@@ -1,9 +1,9 @@
 {
- "generated": "2026-11-25T09:00:29Z",
+ "generated": "2026-11-25T09:06:44Z",
  "fresh": {
-  "yt_live": "2026-11-25T09:00:29Z",
+  "yt_live": "2026-11-25T09:06:44Z",
   "yt_analytics": "2026-11-22",
-  "tg_members": "2026-11-25T09:00:30Z",
+  "tg_members": "2026-11-25T09:06:45Z",
   "tg_posts": "2026-11-25T09:00:31Z",
   "ideas": "2026-11-25T08:59:45Z",
   "news": "2026-11-25 08:54",
@@ -17,7 +17,7 @@
  },
  "notes": [],
  "kpi": {
-  "subs": 315,
+  "subs": 316,
   "subs_goal": 1000,
   "long_hours": 11.2,
   "long_hours_goal": 4000,
@@ -386,7 +386,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 152
+   "subs_total": 153
   },
   {
    "w": "2026-08-03",
@@ -400,7 +400,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 152
+   "subs_total": 153
   },
   {
    "w": "2026-08-17",
@@ -414,7 +414,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 152
+   "subs_total": 153
   },
   {
    "w": "2026-08-24",
@@ -428,7 +428,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 152
+   "subs_total": 153
   },
   {
    "w": "2026-08-31",
@@ -442,7 +442,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 152
+   "subs_total": 153
   },
   {
    "w": "2026-09-07",
@@ -456,7 +456,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 152
+   "subs_total": 153
   },
   {
    "w": "2026-09-28",
@@ -470,7 +470,7 @@
    "partial_site": false,
    "subs_cum": -1,
    "long_cum": 0.0,
-   "subs_total": 151
+   "subs_total": 152
   },
   {
    "w": "2026-10-19",
@@ -484,7 +484,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.2,
-   "subs_total": 152
+   "subs_total": 153
   },
   {
    "w": "2026-10-26",
@@ -498,7 +498,7 @@
    "partial_site": false,
    "subs_cum": 6,
    "long_cum": 0.7,
-   "subs_total": 158
+   "subs_total": 159
   },
   {
    "w": "2026-11-02",
@@ -512,7 +512,7 @@
    "partial_site": false,
    "subs_cum": 155,
    "long_cum": 5.5,
-   "subs_total": 307
+   "subs_total": 308
   },
   {
    "w": "2026-11-09",
@@ -526,7 +526,7 @@
    "partial_site": false,
    "subs_cum": 160,
    "long_cum": 8.2,
-   "subs_total": 312
+   "subs_total": 313
   },
   {
    "w": "2026-11-16",
@@ -540,7 +540,7 @@
    "partial_site": false,
    "subs_cum": 163,
    "long_cum": 10.9,
-   "subs_total": 315
+   "subs_total": 316
   },
   {
    "w": "2026-11-23",
@@ -554,7 +554,7 @@
    "partial_site": true,
    "subs_cum": 163,
    "long_cum": 10.9,
-   "subs_total": 315
+   "subs_total": 316
   }
  ],
  "tg_hist": [
@@ -577,10 +577,10 @@
  ],
  "platforms": {
   "youtube": {
-   "subs": 315,
+   "subs": 316,
    "views_total": 12536,
    "videos": 98,
-   "live_at": "2026-11-25T09:00:29Z",
+   "live_at": "2026-11-25T09:06:44Z",
    "views_7d": 740,
    "pct_7d": 51.2,
    "subs_7d": 3,
