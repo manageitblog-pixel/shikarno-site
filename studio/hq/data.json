@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-25T12:30:49Z",
+ "generated": "2026-11-25T12:57:18Z",
  "fresh": {
   "yt_analytics": "2026-11-22",
-  "tg_members": "2026-11-25T12:30:50Z",
-  "tg_posts": "2026-11-25T12:30:50Z",
-  "ideas": "2026-11-25T12:06:54Z",
-  "news": "2026-11-25 08:54",
+  "tg_members": "2026-11-25T12:57:19Z",
+  "tg_posts": "2026-11-25T12:57:19Z",
+  "ideas": "2026-11-25T12:56:49Z",
+  "news": "2026-11-25 12:53",
   "comp": "2026-11-23",
-  "tiktok": "2026-11-25T08",
-  "instagram": "2026-11-25T08",
+  "tiktok": "2026-11-25T12",
+  "instagram": "2026-11-25T12",
   "site": "2026-11-23",
-  "site_live": "2026-11-25T12:30:52Z",
-  "activity": "2026-11-25T12:30:49Z",
+  "site_live": "2026-11-25T12:57:21Z",
+  "activity": "2026-11-25T12:57:18Z",
   "asks": "2026-11-25T08:50Z"
  },
  "notes": [
@@ -646,12 +646,12 @@
   },
   "tiktok": {
    "videos": 20,
-   "views_total": 18983,
-   "views_7d": 2174,
+   "views_total": 19040,
+   "views_7d": 2231,
    "new_7d": 8,
    "saves_total": 141,
    "likes_total": 389,
-   "last_snapshot": "2026-11-25T08",
+   "last_snapshot": "2026-11-25T12",
    "best": [
     {
      "title": "Український ШІ Сяйво: коли вийде",
@@ -743,6 +743,10 @@
     {
      "x": "2026-11-25T08",
      "v": 18983
+    },
+    {
+     "x": "2026-11-25T12",
+     "v": 19040
     }
    ]
   },
@@ -750,14 +754,14 @@
    "ig_goal": 100,
    "ig_goal_note": "до 1.12; далі 500 до 31.01 (поріг «Подарунків» — перевірити для України)",
    "followers": 14,
-   "views_30d": 1009,
-   "reach_30d": 757,
-   "acc_at": "25.11 08Z",
+   "views_30d": 1086,
+   "reach_30d": 819,
+   "acc_at": "25.11 12Z",
    "reels": 11,
-   "plays_total": 363,
+   "plays_total": 367,
    "likes_total": 6,
    "saves_total": 13,
-   "last_snapshot": "2026-11-25T08",
+   "last_snapshot": "2026-11-25T12",
    "best": [
     {
      "shortcode": "DgGRAlDjqkk",
@@ -821,6 +825,10 @@
     {
      "x": "2026-11-25T08",
      "v": 363
+    },
+    {
+     "x": "2026-11-25T12",
+     "v": 367
     }
    ],
    "followers_hist": [
@@ -862,6 +870,10 @@
     },
     {
      "x": "2026-11-25T08",
+     "v": 14
+    },
+    {
+     "x": "2026-11-25T12",
      "v": 14
     }
    ]
@@ -939,15 +951,15 @@
     }
    ],
    "live": {
-    "updated": "2026-11-25T12:30:52Z",
+    "updated": "2026-11-25T12:57:21Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 3,
     "today_visits": 3,
-    "yesterday_pageloads": 0,
-    "yesterday_visits": 0,
-    "pageloads_7d": 0,
-    "visits_7d": 0,
+    "yesterday_pageloads": 9,
+    "yesterday_visits": 5,
+    "pageloads_7d": 52,
+    "visits_7d": 44,
     "last24h": {
      "pageloads": 7,
      "visits": 6,
@@ -1149,8 +1161,8 @@
      },
      {
       "d": "2026-11-24",
-      "pageloads": 0,
-      "visits": 0,
+      "pageloads": 9,
+      "visits": 5,
       "sampled": false
      },
      {
@@ -1814,13 +1826,13 @@
   }
  ],
  "ideas_count": {
-  "total": 143,
-  "open": 135
+  "total": 148,
+  "open": 140
  },
  "lake": {
   "videos": 98,
   "daily": 828,
-  "news": 2071,
+  "news": 2093,
   "niche": 1035,
   "comp": 511,
   "comp_videos": 62794,
@@ -1832,87 +1844,87 @@
  "news": [
   {
    "date": "2026-11-25",
-   "source": "devua",
-   "title": "CEO Shopify вважає, що програмістам доведеться переписати весь код на продакшені у світі за допомогою ШІ вже за 12 місяців",
+   "source": "hf",
+   "title": "An Indic Voice Agent with CUGA",
    "score": null,
-   "url": "https://dev.ua/news/uves-svit-u-vaibkodi-1795593341"
+   "url": "https://huggingface.co/blog/ibm-research/an-indic-voice-agent-with-cuga"
+  },
+  {
+   "date": "2026-11-25",
+   "source": "ars",
+   "title": "AI may soon change what it means to be a theoretical physicist",
+   "score": null,
+   "url": "https://arstechnica.com/ai/2026/11/ai-can-do-the-calculations-physicists-are-figuring-out-what-comes-next/"
+  },
+  {
+   "date": "2026-11-25",
+   "source": "mittr",
+   "title": "AI is straining America’s open records systems",
+   "score": null,
+   "url": "https://www.technologyreview.com/2026/11/25/1149702/ai-is-straining-americas-open-records-systems/"
+  },
+  {
+   "date": "2026-11-25",
+   "source": "wired",
+   "title": "Airplane Turbulence Is Extremely Hard to Predict, but Maybe Not for Long",
+   "score": null,
+   "url": "https://www.wired.com/story/airplane-turbulence-is-extremely-hard-to-predict-and-avoid/"
+  },
+  {
+   "date": "2026-11-25",
+   "source": "ain",
+   "title": "Хакери зламали систему ЦРУ та інших розвідслужб США за допомогою ШІ",
+   "score": null,
+   "url": "https://ain.ua/2026/11/25/xakeri-zlamali-sistemu-cru-ta-insix-rozvidsluzb-ssa-za-dopomogoiu-si/"
+  },
+  {
+   "date": "2026-11-25",
+   "source": "ain",
+   "title": "DOD Solution інтегрує свою систему автономності AURA AI в канадський дрон Draganfly Flex FPV",
+   "score": null,
+   "url": "https://ain.ua/2026/11/24/dod-solution-integruje-svoiu-sistemu-avtonomnosti-aura-ai-v-kanadskii-dron-draganfly-flex-fpv/"
   },
   {
    "date": "2026-11-25",
    "source": "devua",
-   "title": "НАБУ планує витратити понад пів мільйона гривень на доступ до Claude. Які завдання Бюро хоче доручити штучному інтелекту?",
+   "title": "Claude навчився перетворювати артефакти на окремі десктопні застосунки для macOS і Windows",
    "score": null,
-   "url": "https://dev.ua/news/nabu-shi-1795593165"
+   "url": "https://dev.ua/news/claude-navchyvsia-peretvoriuvaty-artefakty-na-okremi-desktopni-zastosunky-1795608617"
   },
   {
    "date": "2026-11-25",
    "source": "devua",
-   "title": "НБУ використовує платну версію ChatGPT Enterprise за $63 000. Що робить ШІ OpenAI в Нацбанку",
+   "title": "Троє співзасновників xAI створили стартап Epochal, який навчатиме ШІ передбачати майбутнє. Як його навчатимуть?",
    "score": null,
-   "url": "https://dev.ua/news/nbu-prydbav-korporatyvnyi-dostup-do-chatgpt-enterprise-za-63-000-1795590538"
+   "url": "https://dev.ua/news/epochal-1795605912"
+  },
+  {
+   "date": "2026-11-25",
+   "source": "devua",
+   "title": "ШІ пише до 100% коду для половини розробників, але послаблює їхні навички — дослідження",
+   "score": null,
+   "url": "https://dev.ua/news/ai-pyshe-do-100-kodu-dlia-polovyny-rozrobnykiv-1795604875"
+  },
+  {
+   "date": "2026-11-25",
+   "source": "devua",
+   "title": "Українська Air3F представила цифрову наземну станцію керування дронами T-Bone Digital",
+   "score": null,
+   "url": "https://dev.ua/news/t-bone-digital-1795602470"
+  },
+  {
+   "date": "2026-11-25",
+   "source": "devua",
+   "title": "Компанії, пов'язані з китайською коханкою CEO Nvidia, задекларували ШІ-сервери в Китаї на $270 млн — Reuters",
+   "score": null,
+   "url": "https://dev.ua/news/kompanii-poviazani-z-kytaiskoiu-kokhankoiu-holovy-nvidia-zadeklaruvaly-shi-servery-v-kytai-na-270-mln-1795597464"
   },
   {
    "date": "2026-11-25",
    "source": "speka",
-   "title": "ШІ-агенти в смартфонах можуть читати ваші листування: чому Signal почав блокувати скриншоти",
+   "title": "Модулі NVIDIA знайшли в російських дронах і ракетах з ШІ",
    "score": null,
-   "url": "https://speka.ua/news/si-agenti-v-smartfonax-mozut-citati-vasi-listuvannya-comu-signal-pocav-blokuvati-skrinsoti-9x15x5"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "speka",
-   "title": "Оси розпізнають обличчя одна одної завдяки особливим нейронам — як і люди",
-   "score": null,
-   "url": "https://speka.ua/news/osi-rozpiznayut-obliccya-odna-odnoyi-zavdyaki-osoblivim-neironam-yak-i-lyudi-938jr1"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "hn",
-   "title": "Show HN: Old Nvidia and ATI tech demos, running again in the browser",
-   "score": 92,
-   "url": "https://gpu-demo-gallery.pages.dev/"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "hn",
-   "title": "Taking over US Treasury subdomains for $3 each",
-   "score": 66,
-   "url": "https://www.intruder.io/research/taking-over-us-treasury-subdomains-for-3-each"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "hn",
-   "title": "Ghost strikes: the new drone superpowers raining death from above",
-   "score": 7,
-   "url": "https://www.theguardian.com/global-development/ng-interactive/2026/nov/25/ghost-strikes-the-rise-of-drone-superpowers-fuelling-remote-killing-of-thousands-of-civilians-with-impunity"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "hn",
-   "title": "Show HN: Carry – Save every AI conversations as Markdown, in a folder you Own",
-   "score": 16,
-   "url": "https://carry.md/"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "dou",
-   "title": "Уряд змінив правила бронювання для оборонних компаній",
-   "score": null,
-   "url": "https://dou.ua/lenta/news/defense-companies-reservation-rules/"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "hn",
-   "title": "Marginalia Search, Money, C++, Rust, AI, Stuff",
-   "score": 97,
-   "url": "https://www.marginalia.nu/log/a_141_marginalia_update/"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "hn",
-   "title": "PenGPT: A Generative Transformer for Handwriting and Sketches",
-   "score": 228,
-   "url": "https://greydanus.github.io/2026/11/12/pengpt/"
+   "url": "https://speka.ua/news/moduli-nvidia-znaisli-v-rosiiskix-dronax-i-raketax-z-si-py15ek"
   }
  ],
  "competitors": [
@@ -2023,15 +2035,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "171",
-   "agent": "post",
-   "task": "Озвучка: оркестратор 19:18Z (guide3 → Shorts)",
-   "started": "2026-11-24T19:18:44Z",
-   "finished": "2026-11-24T19:20:29Z",
-   "result": "429 одразу (0 запитів) — квота ще не звільнилась; наступна спроба на диспетчері 20:17Z",
-   "agent_raw": "production"
-  },
   {
    "id": "172",
    "agent": "seo",
@@ -2372,6 +2375,15 @@
    "started": "2026-11-25T12:20:42Z",
    "finished": "2026-11-25T12:30:49Z",
    "result": "ops.sqlite відновлено: 20 експериментів (5 running), 49 рішень, 331 публікація; ops_dump.sql у git після кожної зміни + restore у bootstrap",
+   "agent_raw": "data"
+  },
+  {
+   "id": "211",
+   "agent": "de",
+   "task": "Збирач даталейку 12:52Z: новини, TikTok/IG/TG-знімок, сигнали (без YouTube API)",
+   "started": "2026-11-25T12:53:14Z",
+   "finished": "2026-11-25T12:57:18Z",
+   "result": "+40 новин; TikTok 16 (Дім 310, діти 328, OLX 329); IG 14 підп., 1086 переглядів/30д; TG 6; ідеї #144–148",
    "agent_raw": "data"
   }
  ],
