@@ -302,3 +302,13 @@
 {"ev": "part", "part": 2, "take": 3, "f0": 130.5, "f0_ok": true, "dur": 61.3, "audit": [{"seg": 6, "ratio": 0.9, "match": 0.69}, {"seg": 7, "ratio": 1.04, "match": 0.78}], "repeat_suspect": false, "t": "08:11:16Z", "d": "2026-11-25"}
 {"ev": "part_final", "part": 2, "take": 3, "f0": 130.5, "clean": true, "t": "08:11:16Z", "d": "2026-11-25"}
 {"ev": "tts_ok", "n": 7, "out": "/home/claude/eps/weekly3/part3.wav", "res": "(78.2, 24000, 'audio/wav')", "t": "08:11:28Z", "d": "2026-11-25"}
+{"ev": "part", "part": 3, "take": 3, "f0": 137.9, "f0_ok": false, "dur": 78.2, "audit": [{"seg": 8, "ratio": 0.94, "match": 0.81}, {"seg": 9, "ratio": 0.88, "match": 0.72}, {"seg": 10, "ratio": 0.93, "match": 0.69}], "repeat_suspect": false, "t": "08:12:53Z", "d": "2026-11-25"}
+{"ev": "tts_ok", "n": 8, "out": "/home/claude/eps/weekly3/part3.wav", "res": "(75.48, 24000, 'audio/wav')", "t": "08:13:04Z", "d": "2026-11-25"}
+{"ev": "part", "part": 3, "take": 4, "f0": 126.1, "f0_ok": true, "dur": 75.5, "audit": [{"seg": 8, "ratio": 0.92, "match": 0.73}, {"seg": 9, "ratio": 0.95, "match": 0.78}, {"seg": 10, "ratio": 0.87, "match": 0.62}], "repeat_suspect": false, "t": "08:14:31Z", "d": "2026-11-25"}
+{"ev": "part_final", "part": 3, "take": 4, "f0": 126.1, "clean": true, "t": "08:14:31Z", "d": "2026-11-25"}
+{"ev": "tts_ok", "n": 9, "out": "/home/claude/eps/guide3/part1.wav", "res": "(67.96, 24000, 'audio/wav')", "t": "08:14:43Z", "d": "2026-11-25"}
+{"ev": "part", "part": 1, "take": 1, "f0": 127.7, "f0_ok": true, "dur": 68.0, "audit": [{"seg": 2, "ratio": 1.0, "match": 1.0}, {"seg": 3, "ratio": 0.97, "match": 0.72}, {"seg": 4, "ratio": 0.89, "match": 0.7}], "repeat_suspect": false, "t": "08:16:03Z", "d": "2026-11-25"}
+{"ev": "part_final", "part": 1, "take": 1, "f0": 127.7, "clean": true, "t": "08:16:03Z", "d": "2026-11-25"}
+{"ev": "tts_ok", "n": 10, "out": "/home/claude/eps/guide3/part2.wav", "res": "(82.68, 24000, 'audio/wav')", "t": "08:16:15Z", "d": "2026-11-25"}
+{"ev": "part", "part": 2, "take": 1, "f0": 116.5, "f0_ok": false, "dur": 82.7, "audit": [{"seg": 5, "ratio": 1.0, "match": 1.0}, {"seg": 6, "ratio": 0.92, "match": 0.6}, {"seg": 7, "ratio": 1.02, "match": 0.87}, {"seg": 8, "ratio": 0.88, "match": 0.54}], "repeat_suspect": false, "t": "08:17:54Z", "d": "2026-11-25"}
+{"ev": "tts_ok", "n": 11, "out": "/home/claude/eps/guide3/part2.wav", "res": "(81.32, 24000, 'audio/wav')", "t": "08:18:36Z", "d": "2026-11-25"}
