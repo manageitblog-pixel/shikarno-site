@@ -10,7 +10,8 @@ LOG = os.environ.get("VOICE_LOG", "/home/claude/eps/voice_log.jsonl")
 MODEL, VOICE = "gemini-3.8-flash-tts", "Sadachbia"
 REQ = {"ok": 0}
 def log(**k):
-    k["t"] = time.strftime("%H:%M:%SZ", time.gmtime()); print(json.dumps(k, ensure_ascii=False), flush=True)
+    # 25.11: поле "d" (дата UTC) — інакше доби в voice_log плутаються
+    k["t"] = time.strftime("%H:%M:%SZ", time.gmtime()); k["d"] = time.strftime("%Y-%m-%d", time.gmtime()); print(json.dumps(k, ensure_ascii=False), flush=True)
     open(LOG, "a").write(json.dumps(k, ensure_ascii=False) + "\n")
 def f0(path):
     r = subprocess.run([sys.executable, "/home/claude/eps/voice_check.py", path], capture_output=True, text=True)
@@ -118,14 +119,25 @@ def short(mod):
     log(ev="short_final", ep=mod, take=best[0], f0=best[1], overall_match=js["overall_match"],
         segs=[(s["i"], s["len_ratio"], s["match"]) for s in js["segments"]], dur=js["duration_s"])
 if __name__ == "__main__":
+    # 25.11 COO: один оркестратор за раз — Диспетчер :17, нагадування guide1 09:00Z і ручні запуски перетинались би
+    # у вікні 08–09Z (пачка ~30 хв) і писали б той самий partN.wav. Другий запуск просто виходить.
+    import fcntl
+    _lk = open("/home/claude/eps/.run_voice.lock", "w")
+    try:
+        fcntl.flock(_lk, fcntl.LOCK_EX | fcntl.LOCK_NB)
+    except BlockingIOError:
+        log(ev="skip_locked", note="інший run_voice.py уже працює"); sys.exit(0)
     try:
         # guide1: частини 0–9 озвучено старим calm (за v2-вимірювачем медіана 128,5 Гц) → решту частин тим самим промптом
         # і в межах власної смуги відео 128,5±8, щоб висота не стрибала посеред ролика (рішення COO 23.11, ops policy).
         PER_GUIDE = {"guide1": {"TTS_PACE": "calm_v1", "VC_REF": "128.5", "VC_TOL": "6"},
-                     "guide2": {"VC_REF": "130", "VC_TOL": "8"},  # calm v2 дав 135,6/129,9/128,5/126,1 — тест v2 не пройшов (≥133,5 у 2 з 3); смуга власної медіани, щоб не палити квоту
+                     # 25.11 COO: перезапис ч.4 (121,2 BAD) і ч.9 (136,7 — стрибок +11/−12 Гц до сусідів 125,3/124,2) — смуга сусідів
+                     # 126±5, інакше 136 знову «OK» у 130±8. Інші частини вже є й не перезаписуються.
+                     "guide2": {"VC_REF": "126", "VC_TOL": "5"},  # calm v2 дав 135,6/129,9/128,5/126,1 — тест v2 не пройшов (≥133,5 у 2 з 3); смуга власної медіани, щоб не палити квоту
                      # шоу #3: смуга шоу #1–#2 (весь файл v2: 128,5 і 129,6; частини 121,4–136,4), а не 141,5 — інакше палить по 2 запити
                      # на частину (ч.0: 114,5/116,5/126,9). docs/research/voice-weekly3-2026-11-24.md. Остання частина (оновлення 28.11 + outro) — окремо 28.11
-                     "weekly3": {"VC_REF": "129", "VC_TOL": "8", "UPTO": "11"},
+                     # 25.11 COO: ч.2 120,3 BAD і ч.3 135,9 (стрибок +15,6 Гц) → перезапис у смузі сусідів 126±5 (медіана частин 125,3)
+                     "weekly3": {"VC_REF": "126", "VC_TOL": "5", "UPTO": "11"},
                      # гайд #3 (вихід 9.12): смуга як у гайдів #1–#2 (~128–130); 24.11 — озвучка наперед, бо черга порожня. Перед виходом — повторний фактчек (Gemini міняється швидко)
                      "guide3": {"VC_REF": "130", "VC_TOL": "8"}}
         def guide(name):
