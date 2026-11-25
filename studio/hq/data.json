@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-25T21:08:27Z",
+ "generated": "2026-11-25T22:06:40Z",
  "fresh": {
-  "yt_live": "2026-11-25T21:08:27Z",
+  "yt_live": "2026-11-25T22:06:40Z",
   "yt_analytics": "2026-11-22",
-  "tg_members": "2026-11-25T21:08:28Z",
-  "tg_posts": "2026-11-25T21:08:30Z",
+  "tg_members": "2026-11-25T22:06:41Z",
+  "tg_posts": "2026-11-25T22:06:43Z",
   "ideas": "2026-11-25T20:57:42Z",
   "news": "2026-11-25 20:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-25T20",
   "instagram": "2026-11-25T20",
   "site": "2026-11-23",
-  "site_live": "2026-11-25T21:08:31Z",
+  "site_live": "2026-11-25T22:06:44Z",
   "activity": "2026-11-25T21:01:52Z",
   "asks": "2026-11-25T18:45Z"
  },
@@ -580,7 +580,7 @@
    "subs": 324,
    "views_total": 12624,
    "videos": 101,
-   "live_at": "2026-11-25T21:08:27Z",
+   "live_at": "2026-11-25T22:06:40Z",
    "views_7d": 740,
    "pct_7d": 51.2,
    "subs_7d": 3,
@@ -651,7 +651,7 @@
     },
     {
      "title": "ChatGPT вчиться на твоїх чатах — як вимкнути за 30 секунд 🔐",
-     "views": 101,
+     "views": 102,
      "id": "Vp1PPNxtcrI"
     }
    ]
@@ -987,24 +987,19 @@
     }
    ],
    "live": {
-    "updated": "2026-11-25T21:08:31Z",
+    "updated": "2026-11-25T22:06:44Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
-    "today_pageloads": 8,
-    "today_visits": 8,
-    "yesterday_pageloads": 9,
-    "yesterday_visits": 5,
-    "pageloads_7d": 57,
-    "visits_7d": 49,
+    "today_pageloads": 0,
+    "today_visits": 0,
+    "yesterday_pageloads": 8,
+    "yesterday_visits": 8,
+    "pageloads_7d": 52,
+    "visits_7d": 44,
     "last24h": {
-     "pageloads": 8,
-     "visits": 8,
+     "pageloads": 7,
+     "visits": 7,
      "hours": [
-      {
-       "h": "2026-11-24T22:00:00Z",
-       "pageloads": 1,
-       "visits": 1
-      },
       {
        "h": "2026-11-24T23:00:00Z",
        "pageloads": 0,
@@ -1119,16 +1114,15 @@
        "h": "2026-11-25T21:00:00Z",
        "pageloads": 0,
        "visits": 0
+      },
+      {
+       "h": "2026-11-25T22:00:00Z",
+       "pageloads": 0,
+       "visits": 0
       }
      ]
     },
     "days": [
-     {
-      "d": "2026-11-12",
-      "pageloads": 60,
-      "visits": 40,
-      "sampled": true
-     },
      {
       "d": "2026-11-13",
       "pageloads": 20,
@@ -1206,6 +1200,12 @@
       "pageloads": 8,
       "visits": 8,
       "sampled": false
+     },
+     {
+      "d": "2026-11-26",
+      "pageloads": 0,
+      "visits": 0,
+      "sampled": false
      }
     ],
     "top_pages_7d": [
@@ -1214,30 +1214,30 @@
       "count": 22
      },
      {
-      "path": "/novyny/claude-bezkoshtovno/",
-      "count": 4
-     },
-     {
       "path": "/novyny/promty-dlya-chatgpt/",
-      "count": 4
+      "count": 3
      },
      {
-      "path": "/novyny/claude-code-shcho-tse/",
+      "path": "/novyny/shtuchnyj-intelekt-dlya-ditej-tir-lyst/",
       "count": 2
      },
      {
-      "path": "/novyny/gemini-dlya-studentiv-bezkoshtovno/",
+      "path": "/novyny/moonlock-iphone-shakhrajski-sms/",
+      "count": 2
+     },
+     {
+      "path": "/novyny/claude-code-shcho-tse/",
       "count": 2
      }
     ],
     "top_referrers_7d": [
      {
       "host": "(прямі / без реферера)",
-      "count": 27
+      "count": 25
      },
      {
       "host": "www.google.com",
-      "count": 11
+      "count": 9
      },
      {
       "host": "m.facebook.com",
@@ -1255,7 +1255,7 @@
     "top_countries_7d": [
      {
       "country": "UA",
-      "count": 37
+      "count": 32
      },
      {
       "country": "US",
@@ -1509,7 +1509,7 @@
    "views7": 6,
    "pct": 59.2,
    "complete": false,
-   "total": 93
+   "total": 95
   },
   {
    "id": "gljrHADi4aU",
@@ -1564,7 +1564,7 @@
    "views7": 93,
    "pct": 46.2,
    "complete": false,
-   "total": 101
+   "total": 102
   }
  ],
  "ideas": [
