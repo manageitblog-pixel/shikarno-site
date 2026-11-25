@@ -1,18 +1,18 @@
 {
- "generated": "2026-11-25T04:06:32Z",
+ "generated": "2026-11-25T04:57:48Z",
  "fresh": {
-  "yt_live": "2026-11-25T04:06:32Z",
+  "yt_live": "2026-11-25T04:57:49Z",
   "yt_analytics": "2026-11-21",
-  "tg_members": "2026-11-25T04:06:33Z",
-  "tg_posts": "2026-11-25T04:06:34Z",
-  "ideas": "2026-11-25T00:56:18Z",
-  "news": "2026-11-25 00:53",
+  "tg_members": "2026-11-25T04:57:49Z",
+  "tg_posts": "2026-11-25T04:57:50Z",
+  "ideas": "2026-11-25T04:57:13Z",
+  "news": "2026-11-25 04:53",
   "comp": "2026-11-23",
-  "tiktok": "2026-11-25T00",
-  "instagram": "2026-11-25T00",
+  "tiktok": "2026-11-25T04",
+  "instagram": "2026-11-25T04",
   "site": "2026-11-22",
-  "site_live": "2026-11-25T04:06:35Z",
-  "activity": "2026-11-25T03:19:25Z",
+  "site_live": "2026-11-25T04:57:52Z",
+  "activity": "2026-11-25T04:57:48Z",
   "asks": "2026-11-24T18:40Z"
  },
  "notes": [],
@@ -555,7 +555,7 @@
    "subs": 315,
    "views_total": 12275,
    "videos": 98,
-   "live_at": "2026-11-25T04:06:32Z",
+   "live_at": "2026-11-25T04:57:49Z",
    "views_7d": 736,
    "pct_7d": 51.1,
    "subs_7d": 0,
@@ -627,13 +627,13 @@
    ]
   },
   "tiktok": {
-   "videos": 16,
-   "views_total": 17019,
-   "views_7d": 1917,
+   "videos": 20,
+   "views_total": 18800,
+   "views_7d": 1991,
    "new_7d": 8,
-   "saves_total": 135,
-   "likes_total": 346,
-   "last_snapshot": "2026-11-25T00",
+   "saves_total": 140,
+   "likes_total": 387,
+   "last_snapshot": "2026-11-25T04",
    "best": [
     {
      "title": "Український ШІ Сяйво: коли вийде",
@@ -717,6 +717,10 @@
     {
      "x": "2026-11-25T00",
      "v": 17019
+    },
+    {
+     "x": "2026-11-25T04",
+     "v": 18800
     }
    ]
   },
@@ -724,14 +728,14 @@
    "ig_goal": 100,
    "ig_goal_note": "до 1.12; далі 500 до 31.01 (поріг «Подарунків» — перевірити для України)",
    "followers": 10,
-   "views_30d": 864,
-   "reach_30d": 657,
-   "acc_at": "25.11 00Z",
+   "views_30d": 891,
+   "reach_30d": 675,
+   "acc_at": "25.11 04Z",
    "reels": 11,
-   "plays_total": 345,
+   "plays_total": 347,
    "likes_total": 5,
    "saves_total": 11,
-   "last_snapshot": "2026-11-25T00",
+   "last_snapshot": "2026-11-25T04",
    "best": [
     {
      "shortcode": "DgGRAlDjqkk",
@@ -787,6 +791,10 @@
     {
      "x": "2026-11-25T00",
      "v": 345
+    },
+    {
+     "x": "2026-11-25T04",
+     "v": 347
     }
    ],
    "followers_hist": [
@@ -820,6 +828,10 @@
     },
     {
      "x": "2026-11-25T00",
+     "v": 10
+    },
+    {
+     "x": "2026-11-25T04",
      "v": 10
     }
    ]
@@ -892,7 +904,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-25T04:06:35Z",
+    "updated": "2026-11-25T04:57:52Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 1,
@@ -1749,13 +1761,13 @@
   }
  ],
  "ideas_count": {
-  "total": 127,
-  "open": 122
+  "total": 132,
+  "open": 127
  },
  "lake": {
   "videos": 96,
   "daily": 800,
-  "news": 2054,
+  "news": 2058,
   "niche": 1035,
   "comp": 511,
   "comp_videos": 62794,
@@ -1765,6 +1777,34 @@
   "comp_ai": 241
  },
  "news": [
+  {
+   "date": "2026-11-25",
+   "source": "hn",
+   "title": "Marginalia Search, Money, C++, Rust, AI, Stuff",
+   "score": 28,
+   "url": "https://www.marginalia.nu/log/a_141_marginalia_update/"
+  },
+  {
+   "date": "2026-11-25",
+   "source": "hn",
+   "title": "PenGPT: A Generative Transformer for Handwriting and Sketches",
+   "score": 137,
+   "url": "https://greydanus.github.io/2026/11/12/pengpt/"
+  },
+  {
+   "date": "2026-11-25",
+   "source": "hn",
+   "title": "Gemini refused to give me the lyrics to Twinkle Twinkle Little Star",
+   "score": 8,
+   "url": "https://www.comentr.com/technology/01M88DWQ0R4NCMYR17AFEWRG1F"
+  },
+  {
+   "date": "2026-11-25",
+   "source": "hn",
+   "title": "Top open problems in mathematics ranked by LLM-assessed importance",
+   "score": 13,
+   "url": "https://www.proofatlas.ai/open-problems/"
+  },
   {
    "date": "2026-11-25",
    "source": "techcrunch",
@@ -1820,34 +1860,6 @@
    "title": "Maple raises $5.3M to build AI products that protect your data, even from itself",
    "score": null,
    "url": "https://techcrunch.com/2026/11/24/maple-raises-5-3m-to-build-ai-products-that-protect-your-data-even-from-itself/"
-  },
-  {
-   "date": "2026-11-24",
-   "source": "venturebeat",
-   "title": "CrowdStrike’s Zscaler deal aims to give security teams a single kill switch for rogue AI agents",
-   "score": null,
-   "url": "https://venturebeat.com/security/crowdstrikes-zscaler-deal-aims-to-give-security-teams-a-single-kill-switch-for-rogue-ai-agents"
-  },
-  {
-   "date": "2026-11-24",
-   "source": "wired",
-   "title": "Jensen Huang’s Return Shows Nvidia Is Too Big to Police",
-   "score": null,
-   "url": "https://www.wired.com/story/jensen-huang-nvidia-us-national-security-risks/"
-  },
-  {
-   "date": "2026-11-24",
-   "source": "hn",
-   "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
-   "score": 145,
-   "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/"
-  },
-  {
-   "date": "2026-11-24",
-   "source": "hn",
-   "title": "Fable 5.2 Tries Less on Some Hard Tasks When a Shortcut Is Available",
-   "score": 40,
-   "url": "https://goodhartlabs.com/blog/fable-5-2-tries-less-on-some-hard-tasks-when-a-shortcut-is-available"
   }
  ],
  "competitors": [
@@ -1958,24 +1970,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "149",
-   "agent": "cm",
-   "task": "Telegram-відділ 24.11: метрика, воронки, експеримент тижня, група",
-   "started": "2026-11-24T06:42:03Z",
-   "finished": "2026-11-24T06:50:00Z",
-   "result": "TG 6 (Δ0), пост дня готовий, IG-підписи без «перешли» (закрив COO за dispatch-log)",
-   "agent_raw": "tg"
-  },
-  {
-   "id": "150",
-   "agent": "trend",
-   "task": "Ранковий радар 24.11: аналітика, редколегія, топ-3, аудит",
-   "started": "2026-11-24T06:43:48Z",
-   "finished": "2026-11-24T07:30:00Z",
-   "result": "№89 approved → Short 30.11; №99 у роботу; radar-2026-11-24.md (закрив COO за dispatch-log)",
-   "agent_raw": "research"
-  },
   {
    "id": "151",
    "agent": "seo",
@@ -2302,6 +2296,24 @@
    "finished": "2026-11-25T03:19:25Z",
    "result": "429 одразу (0 ок); план Б готовий",
    "agent_raw": "production"
+  },
+  {
+   "id": "189",
+   "agent": "post",
+   "task": "Озвучка 04:18Z: guide1 ч.3/11",
+   "started": "2026-11-25T04:18:21Z",
+   "finished": "2026-11-25T04:21:57Z",
+   "result": "guide1 ч.3 ЧИСТИЙ дубль 4: 123,2 Гц (сусіди 122/125,5); ч.11 чекає; 429",
+   "agent_raw": "production"
+  },
+  {
+   "id": "190",
+   "agent": "de",
+   "task": "Збирач даталейку 04:52Z: новини, TikTok/IG/TG-знімок, сигнали",
+   "started": "2026-11-25T04:53:21Z",
+   "finished": "2026-11-25T04:57:48Z",
+   "result": "+15 новин; TikTok 18,8K; IG 10 підписників, 891 переглядів/30д; TG 6; ідеї #128–132",
+   "agent_raw": "data"
   }
  ],
  "agents": [
