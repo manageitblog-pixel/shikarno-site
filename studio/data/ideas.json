@@ -3406,5 +3406,26 @@
   "status": "new",
   "added": "2026-11-25",
   "id": "160"
+ },
+ {
+  "title": "ІТ-директор Мінфіну США навайбкодив клон Civilization з Claude і Codex — Байт пробує зробити свою браузерну гру за вечір",
+  "format": "try",
+  "channels": [
+   "short",
+   "tiktok",
+   "site"
+  ],
+  "demand": 3,
+  "fresh": 5,
+  "show": 5,
+  "fit": 3,
+  "length": 35,
+  "hook": "plain",
+  "source": "https://www.404media.co/sam-corcos-legatum-treasury-cio-is-vibe-coding-a-civilization-clone-during-treasury-department-hack/",
+  "by": "researcher-news",
+  "note": "404 Media 25.11 (Jason Koebler): CIO Мінфіну США Сем Коркос комітив у свою гру Legatum (покрокова стратегія «в традиції Civilization VI», браузер playlegatum.com, код github.com/samcorcos/legatum, open source), поки FinCEN розслідував кіберінцидент. За readme гри: зроблена здебільшого ШІ-агентами Claude і OpenAI Codex, графіка — моделі OpenAI через ChatGPT. Заява FinCEN — несанкціонований доступ до обмеженої частини систем, частину сервісів вимкнули. Подача: не політика, а «що реально можна навайбкодити»; Байт робить міні-гру в Claude-артефакті. Перед записом відкрити playlegatum.com і репозиторій. UA: dev.ua 25.11 14:55Z.",
+  "status": "new",
+  "added": "2026-11-25",
+  "id": "161"
  }
 ]
