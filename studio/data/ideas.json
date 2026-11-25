@@ -2924,5 +2924,112 @@
   "added": "2026-11-25",
   "id": "138",
   "decision": "Скан 25.11 ранок: news, лише сайт/TG (у Shorts новин не робимо). Кандидат в український блок шоу #3 29.11 (одна фраза, ≈10 с). Перед публікацією — картка закупівлі на prozorro і стаття «Діла»"
+ },
+ {
+  "title": "ШІ, що розв'язує олімпіади, плутає кольори букв: Google зібрав 544 «простих» питання, на яких сиплються моделі — перевір свій ChatGPT (і хакатон Kaggle до 15 грудня)",
+  "format": "check",
+  "channels": [
+   "short",
+   "tiktok",
+   "insta",
+   "site",
+   "tg"
+  ],
+  "demand": 2,
+  "fresh": 5,
+  "show": 5,
+  "fit": 4,
+  "length": 30,
+  "hook": "you",
+  "source": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/humanitys-first-exam/",
+  "by": "researcher-news",
+  "note": "blog.google 24.11 (Google DeepMind): Humanity's First Exam — бенчмарк на Kaggle, 544 текстові й графічні завдання з 20 базових навичок; перевіряє, чи модель стабільно розв'язує задачу і її легкі варіації. Тритижневе змагання Kaggle: надсилай буденні питання, на яких моделі досі помиляються, дедлайн 15 грудня; призів у пості не названо. Приклад із поста: назвати колір третьої літери кожного слова неонової вивіски. Кут: Байт дає 3 таких питання ChatGPT/Gemini/Claude у кадрі.",
+  "status": "new",
+  "added": "2026-11-25",
+  "id": "139"
+ },
+ {
+  "title": "Як зберегти всі свої чати з ChatGPT, Claude і Gemini у себе на комп'ютері: безкоштовний експорт проти розширення Carry — що краще і що воно бачить",
+  "format": "sec",
+  "channels": [
+   "short",
+   "tiktok",
+   "insta",
+   "site"
+  ],
+  "demand": 3,
+  "fresh": 4,
+  "show": 5,
+  "fit": 4,
+  "length": 35,
+  "hook": "you",
+  "source": "https://carry.md/",
+  "by": "researcher-news",
+  "note": "carry.md (Show HN 25.11): розширення Chrome/Edge, бекап чатів, проєктів і файлів ChatGPT, Claude, Gemini, Grok у Markdown у твою папку кожні кілька годин через залогінені сесії (без API-ключів); пошук і продовження чату в іншому ШІ. 14 днів пробно (25 останніх чатів на застосунок), далі $59 довічно (чорноп'ятнична ціна, звичайна $79), до 5 комп'ютерів. Їхні слова: чати не йдуть на їхні сервери, але перевірка сумісності шле IP і User-Agent на carry.md. Перед сценарієм звірити офіційний безкоштовний експорт (ChatGPT Settings > Data controls > Export, Claude, Google Takeout) з довідок.",
+  "status": "new",
+  "added": "2026-11-25",
+  "id": "140"
+ },
+ {
+  "title": "«Весь код у світі перепишуть за рік»: CEO Shopify Тобі Лютке про ШІ-програмістів — що це означає для айтівців в Україні",
+  "format": "news",
+  "channels": [
+   "site",
+   "tg"
+  ],
+  "demand": 1,
+  "fresh": 5,
+  "show": 2,
+  "fit": 3,
+  "length": 30,
+  "hook": "plain",
+  "source": "https://www.youtube.com/watch?v=w0oOxs0WKNk",
+  "by": "researcher-news",
+  "note": "Інтерв'ю Тобі Лютке на каналі David Senra («Jensen Huang, AI & Why Founders Are Irreplaceable | Tobi Lütke, Shopify» — назву й автора звірено через YouTube oEmbed 25.11). Переказ dev.ua 25.11: людський код у продакшені, ймовірно, замінять за 6–12 місяців; агенти знаходять приховані вразливості; формальна верифікація важливіша за ручне рев'ю. Сам відрізок у відео не переглядав — перед публікацією знайти таймкод і цитату. Позначати як прогноз CEO, не факт.",
+  "status": "new",
+  "added": "2026-11-25",
+  "id": "141"
+ },
+ {
+  "title": "Gemini відмовився дати слова «Twinkle Twinkle Little Star»: Байт перевіряє ChatGPT, Gemini і Claude на колисанках і народних піснях — хто дає текст, а хто боїться авторського права",
+  "format": "check",
+  "channels": [
+   "short",
+   "tiktok",
+   "insta",
+   "site"
+  ],
+  "demand": 2,
+  "fresh": 5,
+  "show": 5,
+  "fit": 4,
+  "length": 30,
+  "hook": "plain",
+  "source": "https://www.comentr.com/technology/01M88DWQ0R4NCMYR17AFEWRG1F",
+  "by": "researcher-news",
+  "note": "Пост користувача 25.11 (HN 166 балів): Gemini почав виводити текст колискової, потім прибрав і показав відмову (лише на скріні; версія Gemini не вказана, відповіді Google немає). Це не першоджерело компанії — тільки привід для власного експерименту: записати в кадрі запити «Ой, люлі, люлі», «Щедрик», «Twinkle Twinkle» в трьох ШІ з українського акаунта; результат — лише те, що побачили самі.",
+  "status": "new",
+  "added": "2026-11-25",
+  "id": "142"
+ },
+ {
+  "title": "Apple перевіряє «ШІ-лікаря» на 200 тисячах людей: відповіді з посиланнями на дослідження — 3 правила, як питати ChatGPT про здоров'я, щоб не нашкодити",
+  "format": "news",
+  "channels": [
+   "site",
+   "tg"
+  ],
+  "demand": 3,
+  "fresh": 3,
+  "show": 3,
+  "fit": 4,
+  "length": 30,
+  "hook": "you",
+  "source": "https://www.apple.com/newsroom/2026/11/apple-launches-research-study-to-explore-the-use-of-ai-for-health/",
+  "by": "researcher-news",
+  "note": "Apple Newsroom 15.11: Apple Health AI Study з OpenEvidence, лише США, 21+, до 200 000 учасників, iPhone 15 Pro і новіші з iOS 26+; відповіді простою мовою з посиланнями на рецензовані клінічні джерела, запобіжники радять звернутися до лікаря; HealthKit-дані — за бажанням; Apple: дані дослідження не використовуються для навчання моделей; не для діагностики. В Україні недоступно — кут «як питати ШІ про здоров'я». Не дублює №121 (оксфордський тест) і №98 (опитування МОЗ) — можна об'єднати в одну статтю.",
+  "status": "new",
+  "added": "2026-11-25",
+  "id": "143"
  }
 ]
