@@ -1,18 +1,18 @@
 {
- "generated": "2026-11-24T23:06:49Z",
+ "generated": "2026-11-25T00:06:56Z",
  "fresh": {
-  "yt_live": "2026-11-24T23:06:50Z",
+  "yt_live": "2026-11-25T00:06:56Z",
   "yt_analytics": "2026-11-21",
-  "tg_members": "2026-11-24T23:06:51Z",
-  "tg_posts": "2026-11-24T23:06:52Z",
-  "ideas": "2026-11-24T20:56:16Z",
+  "tg_members": "2026-11-25T00:06:57Z",
+  "tg_posts": "2026-11-25T00:06:58Z",
+  "ideas": "2026-11-24T23:21:18Z",
   "news": "2026-11-24 20:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-24T20",
   "instagram": "2026-11-24T20",
   "site": "2026-11-22",
-  "site_live": "2026-11-24T23:06:53Z",
-  "activity": "2026-11-24T22:21:52Z",
+  "site_live": "2026-11-25T00:06:59Z",
+  "activity": "2026-11-24T23:22:46Z",
   "asks": "2026-11-24T18:40Z"
  },
  "notes": [],
@@ -551,7 +551,7 @@
    "subs": 315,
    "views_total": 12275,
    "videos": 98,
-   "live_at": "2026-11-24T23:06:50Z",
+   "live_at": "2026-11-25T00:06:56Z",
    "views_7d": 736,
    "pct_7d": 51.1,
    "subs_7d": 0,
@@ -606,14 +606,14 @@
    ],
    "best_live": [
     {
-     "title": "ШІ для вчителя: план уроку і тест за 5 хвилин у Google Classroom 🍎",
-     "views": 108,
-     "id": "ENKGdbr04h0"
+     "title": "Меню на тиждень і вечеря з того, що є 🍳 Тір-лист Байта #7",
+     "views": 119,
+     "id": "bvS0k_r3_bs"
     },
     {
-     "title": "Меню на тиждень і вечеря з того, що є 🍳 Тір-лист Байта #7",
-     "views": 107,
-     "id": "bvS0k_r3_bs"
+     "title": "ШІ для вчителя: план уроку і тест за 5 хвилин у Google Classroom 🍎",
+     "views": 109,
+     "id": "ENKGdbr04h0"
     },
     {
      "title": "ChatGPT вчиться на твоїх чатах — як вимкнути за 30 секунд 🔐",
@@ -876,7 +876,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-24T23:06:53Z",
+    "updated": "2026-11-25T00:06:59Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 1,
@@ -889,11 +889,6 @@
      "pageloads": 10,
      "visits": 6,
      "hours": [
-      {
-       "h": "2026-11-24T00:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
       {
        "h": "2026-11-24T01:00:00Z",
        "pageloads": 0,
@@ -1008,6 +1003,11 @@
        "h": "2026-11-24T23:00:00Z",
        "pageloads": 0,
        "visits": 0
+      },
+      {
+       "h": "2026-11-25T00:00:00Z",
+       "pageloads": 0,
+       "visits": 0
       }
      ]
     },
@@ -1044,9 +1044,9 @@
      },
      {
       "d": "2026-11-17",
-      "pageloads": 5,
-      "visits": 5,
-      "sampled": false
+      "pageloads": 20,
+      "visits": 20,
+      "sampled": true
      },
      {
       "d": "2026-11-18",
@@ -1300,7 +1300,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 107
+   "total": 119
   },
   {
    "id": "_wp0rz8edB8",
@@ -1311,7 +1311,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 22
+   "total": 23
   },
   {
    "id": "xaYHobFNYHo",
@@ -1322,7 +1322,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 22
+   "total": 31
   },
   {
    "id": "ENKGdbr04h0",
@@ -1333,7 +1333,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 108
+   "total": 109
   },
   {
    "id": "LtNuOtQe0pc",
@@ -1355,7 +1355,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 60
+   "total": 61
   },
   {
    "id": "gljrHADi4aU",
@@ -1377,7 +1377,7 @@
    "views7": 3,
    "pct": 64.2,
    "complete": false,
-   "total": 5
+   "total": 8
   },
   {
    "id": "0Kb6AamTRQo",
@@ -1443,7 +1443,7 @@
    "views7": 42,
    "pct": 9.7,
    "complete": true,
-   "total": 85
+   "total": 86
   }
  ],
  "ideas": [
@@ -1539,6 +1539,30 @@
    "score": 400.0
   },
   {
+   "title": "3 приховані ШІ-фішки, які вже є у твоєму Android безкоштовно: обвести й знайти, переклад усього екрана, текст із камери — про які мало хто знає",
+   "format": "free",
+   "channels": [
+    "short",
+    "tiktok",
+    "insta",
+    "site"
+   ],
+   "demand": 4,
+   "fresh": 3,
+   "show": 5,
+   "fit": 5,
+   "length": 30,
+   "hook": "you",
+   "source": "https://support.google.com/websearch/answer/14508957",
+   "by": "researcher-niche",
+   "note": "TikTok UA: @adel_resort «Я в шоці» — приховані фішки інтерфейсу TikTok 11,8x / 724K (17.11), @kibernetiki.com.ua «Приховані фішки iPad» 16,2x / 49K (20.11) — формат «приховані фішки» + split screen (обличчя/Байт + запис екрана) зараз злітає в українському TikTok. Наша версія — ШІ-функції Google: Circle to Search (переклад усього екрана — лише на окремих пристроях, за support.google.com), Google Lens (текст з камери, понад 100 мов, android.com). Під час запису перевірити на реальному телефоні, що працює в Україні українською; якщо щось ні — сказати чесно. iPhone-версія — окремий ролик.",
+   "status": "approved",
+   "added": "2026-11-24",
+   "id": "122",
+   "decision": "Бал 353 ≥300 (free, формат «приховані фішки» злітає в UA TikTok 11,8x/16,2x): Short чт 3.12 17:00Z (19:00 Київ) + TikTok/Reels + сайт; сценарій до 1.12, кожну фішку перевірити на реальному Android в Україні, незалежний фактчек, link при заливці",
+   "score": 353.3
+  },
+  {
    "title": "Банк каже: «ШІ-агент — на твій ризик». Wells Fargo з 24.11 вважає кожну дію агента твоєю — 3 правила, перш ніж дати ШІ доступ до банку",
    "format": "sec",
    "channels": [
@@ -1587,6 +1611,31 @@
    "id": "80",
    "decision": "Бал 354 (sec, твої дані + свіжий реліз Google 23.11): Short 19:00 Київ найближчим вільним слотом + сайт + TG; перевірити доступність в Україні й показати, де вимкнути (Search Personalization → Connected Apps).",
    "note2": "24.11 ep-редактор: не взято на 2.12 — Personal Intelligence в AI Mode лише для особистих акаунтів у США (преса; blog.google країн не називає); для UA лише з чесним «в Україні поки нема»",
+   "score": 351.5
+  },
+  {
+   "title": "«Шпигун уже в телефоні»? Що ChatGPT справді пам’ятає про тебе — де за 20 секунд подивитись і стерти пам’ять (і чат, який нічого не запам’ятовує)",
+   "format": "sec",
+   "channels": [
+    "short",
+    "tiktok",
+    "insta",
+    "site",
+    "tg"
+   ],
+   "demand": 4,
+   "fresh": 4,
+   "show": 5,
+   "fit": 5,
+   "length": 32,
+   "hook": "you",
+   "source": "https://help.openai.com/en/articles/8590148-memory-faq",
+   "by": "researcher-niche",
+   "note": "TikTok @oksana.richi «Шпиён уже в твоем телефоне» (ChatGPT і твої дані) 9,6x / 569K, 18.11 (рос., 102 с, talking head без доказів). Наша чесна версія — не страх, а показ на екрані: Settings → Personalization → Memory (підсумок пам’яті, «Reference chat history» вимикається — дані з минулих чатів видаляються протягом 30 днів), видалення чату НЕ стирає збережений спогад, тимчасовий чат не створює спогадів. Усе — з Memory FAQ OpenAI; назви пунктів звірити в українському інтерфейсі під час запису. Не дублює #28/#44 (Google/Gemini).",
+   "status": "approved",
+   "added": "2026-11-24",
+   "id": "119",
+   "decision": "Бал 351 ≥300 (sec, «твоє + дія», TikTok-аналог 569K): Short пт 4.12 17:00Z (19:00 Київ) + TikTok/Reels + сайт + TG; шлях у налаштуваннях лише з Memory FAQ OpenAI, звірити укр. інтерфейс під час запису, незалежний фактчек, link при заливці",
    "score": 351.5
   },
   {
@@ -1677,57 +1726,11 @@
    "id": "25",
    "decision": "сигнал TG 140 22.11",
    "score": 282.0
-  },
-  {
-   "title": "Байт пробує Gemini Canvas: з конспекту — тест і картки за хвилину, з таблиці — калькулятор цін (4 фішки, про які мало хто знає)",
-   "format": "try",
-   "channels": [
-    "short",
-    "tiktok",
-    "site"
-   ],
-   "demand": 4,
-   "fresh": 4,
-   "show": 5,
-   "fit": 5,
-   "length": 33,
-   "source": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-canvas-tasks/",
-   "by": "researcher-news",
-   "note": "Google 23.11: 4 способи — веб-застосунки/міні-ігри, навчальні інструменти з нотаток/PDF (квізи, картки), офісні (таблиця → трекер продажів, калькулятор), правка тексту виділенням. Показати реальний тест українською; пара до тір-листа «ШІ для дітей/вчителя».",
-   "status": "new",
-   "added": "2026-11-23",
-   "id": "81",
-   "score": 282.0
-  },
-  {
-   "title": "«Ведуча ТСН» у TikTok каже підписати петицію? Це діпфейк: 595 ШІ-підробок українських журналісток і 3 ознаки",
-   "format": "sec",
-   "channels": [
-    "show",
-    "short",
-    "site",
-    "tg",
-    "tiktok"
-   ],
-   "demand": 4,
-   "fresh": 3,
-   "show": 5,
-   "fit": 5,
-   "hook": "you",
-   "length": 35,
-   "source": "https://texty.org.ua/projects/116211/shtuchnyj-intelekt-i-tiktok-yak-vidomyx-zhurnalistok-peretvoryuyut-na-fejky/",
-   "by": "researcher-web",
-   "note": "Тексти + «Жінки в медіа»: 595 відео (328 — лише підроблений голос, 267 — голос і відео), разом понад 24 млн переглядів, найчастіше підробляють Вітвіцьку, Даугуле, Мазур; 45% — фейкові петиції й опитування, ~24% — «гроші/гуманітарка» (збір персональних даних). Дані за 10.2023–09.2025, тож це не новина тижня: тема знову в стрічках завдяки подкасту Детектор медіа 20.11.2026 (https://detector.media/mediumy/article/254150/2026-11-20-piv-milyona-pereglyadiv-odnogo-dypfeyku-yak-u-tiktoku-ekspluatuyut-doviru-do-ukrainskykh-zhurnalistok/). Для глядача: фейк зі знайомим обличчям з телебачення веде на сторінку, де в тебе беруть дані. Формат: Short «3 ознаки» (TikTok) + стаття на сайті з чеклістом від Текстів.",
-   "decision": "кандидат у шоу #3 29.11 (веб-скан 22.11 ввечері): казати чесно, що дослідження 2025 року, а свіжий привід — подкаст 20.11",
-   "status": "new",
-   "added": "2026-11-22",
-   "id": "38",
-   "score": 263.6
   }
  ],
  "ideas_count": {
-  "total": 118,
-  "open": 113
+  "total": 122,
+  "open": 117
  },
  "lake": {
   "videos": 96,
@@ -1839,15 +1842,15 @@
    "channel": "DOU",
    "subs": 104000,
    "lang": "uk",
-   "avg": 15427,
-   "n": 97
+   "avg": 15714,
+   "n": 95
   },
   {
    "channel": "Serhii Nemchynskyi",
    "subs": 333000,
    "lang": "uk",
-   "avg": 15199,
-   "n": 42
+   "avg": 15041,
+   "n": 41
   },
   {
    "channel": "КОЖОКАР  про Ютуб ",
@@ -1909,8 +1912,8 @@
    "channel": "ExpHub - Prashant Kirad",
    "subs": 12500000,
    "lang": "en",
-   "avg": 1560320,
-   "n": 4
+   "avg": 1579343,
+   "n": 3
   },
   {
    "channel": "Paul J Lipsky",
@@ -1935,23 +1938,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "141",
-   "agent": "de",
-   "task": "Instagram-аналітика: instagram_ingest.py (ig_snap), блок Instagram на дашборді HQ і в знімку росту",
-   "started": "2026-11-23T21:25:31Z",
-   "finished": "2026-11-23T22:00:00Z",
-   "result": "ig_snap + блок Instagram на HQ (закрив COO за dispatch-log)",
-   "agent_raw": "data"
-  },
-  {
-   "id": "142",
-   "agent": "seo",
-   "task": "фон: нова вічнозелена стаття під запит із попитом, якого сайт не покриває",
-   "started": "2026-11-23T22:18:03Z",
-   "finished": "2026-11-23T22:22:00Z",
-   "result": "стаття «DeepSeek українською» (вихід 24.11 10:00) (закрив COO за dispatch-log)"
-  },
   {
    "id": "143",
    "agent": "trend",
@@ -2279,6 +2265,24 @@
    "finished": "2026-11-24T22:21:52Z",
    "result": "guide1 ч.3 дубль 2: 139,0 Гц (поза 128,5±6) → не в фінал, чекає вікна; далі 429 (1 ок)",
    "agent_raw": "production"
+  },
+  {
+   "id": "181",
+   "agent": "post",
+   "task": "Озвучка 23:18Z: guide1 ч.3/11",
+   "started": "2026-11-24T23:18:32Z",
+   "finished": "2026-11-24T23:22:33Z",
+   "result": "guide1 ч.3 дубль 3: 136,3 Гц (ближче, але поза ±6) → чекає; 429 після 1",
+   "agent_raw": "production"
+  },
+  {
+   "id": "182",
+   "agent": "trend",
+   "task": "фон: дослідник ніші — аномалії укр. ШІ-каналів + TikTok-тренди",
+   "started": "2026-11-24T23:18:32Z",
+   "finished": "2026-11-24T23:22:46Z",
+   "result": "34 аномалії укр. YouTube (нових тем нема, #55 підтверджено); TikTok: «приховані фішки», «команда для фото»; ідеї #119–122, approved #122 (3.12) і #119 (4.12)",
+   "agent_raw": "research"
   }
  ],
  "agents": [
