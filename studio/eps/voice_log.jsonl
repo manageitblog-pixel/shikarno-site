@@ -312,3 +312,6 @@
 {"ev": "tts_ok", "n": 10, "out": "/home/claude/eps/guide3/part2.wav", "res": "(82.68, 24000, 'audio/wav')", "t": "08:16:15Z", "d": "2026-11-25"}
 {"ev": "part", "part": 2, "take": 1, "f0": 116.5, "f0_ok": false, "dur": 82.7, "audit": [{"seg": 5, "ratio": 1.0, "match": 1.0}, {"seg": 6, "ratio": 0.92, "match": 0.6}, {"seg": 7, "ratio": 1.02, "match": 0.87}, {"seg": 8, "ratio": 0.88, "match": 0.54}], "repeat_suspect": false, "t": "08:17:54Z", "d": "2026-11-25"}
 {"ev": "tts_ok", "n": 11, "out": "/home/claude/eps/guide3/part2.wav", "res": "(81.32, 24000, 'audio/wav')", "t": "08:18:36Z", "d": "2026-11-25"}
+{"ev": "part", "part": 2, "take": 2, "f0": 114.0, "f0_ok": false, "dur": 81.3, "audit": [{"seg": 5, "ratio": 1.0, "match": 1.0}, {"seg": 6, "ratio": 0.9, "match": 0.67}, {"seg": 7, "ratio": 1.0, "match": 0.79}, {"seg": 8, "ratio": 0.93, "match": 0.53}], "repeat_suspect": false, "t": "08:20:30Z", "d": "2026-11-25"}
+{"ev": "part_retry_later", "part": 2, "best_take": 1, "f0": 116.5, "takes": 2, "max_takes": 6, "t": "08:20:30Z", "d": "2026-11-25"}
+{"ev": "tts_ok", "n": 12, "out": "/home/claude/eps/guide3/part3.wav", "res": "(55.48, 24000, 'audio/wav')", "t": "08:20:41Z", "d": "2026-11-25"}
