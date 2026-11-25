@@ -11,6 +11,7 @@ import { Thumb3 } from "./Thumb3";
 import { Thumb4 } from "./Thumb4";
 import { Cine } from "./Cine";
 import { Chat, ChatData } from "./Chat";
+import { IgPrompts, IgPromptsData } from "./IgPrompts";
 
 export const Root: React.FC = () => (
   <>
@@ -25,6 +26,9 @@ export const Root: React.FC = () => (
     <Composition id="Chat" component={Chat as any} durationInFrames={300} fps={30} width={1080} height={1920}
       defaultProps={{ total: 300, question: "", model: "Gemini", prompt: "", promptFrom: 0, promptTo: 60, turns: [], reveal: 150, answer: "", reactions: [], outroFrom: 270, mouth: [] } as ChatData}
       calculateMetadata={({ props }) => ({ durationInFrames: (props as ChatData).total })} />
+    <Composition id="IgPrompts" component={IgPrompts as any} durationInFrames={720} fps={30} width={1080} height={1920}
+      defaultProps={{ total: 720, hookEnd: 66, per: 180, hook: "", model: "ChatGPT", prompts: [], outro: { a: "", b: "" } } as IgPromptsData}
+      calculateMetadata={({ props }) => ({ durationInFrames: (props as IgPromptsData).total })} />
     <Composition id="Digest" component={DigestVideo as any} durationInFrames={300} fps={30} width={1920} height={1080}
       defaultProps={{ total: 300, num: 1, dates: "", segs: [], words: [], mouth: [], titles: [] } as DData}
       calculateMetadata={({ props }) => ({ durationInFrames: (props as DData).total })} />
