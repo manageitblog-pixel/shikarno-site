@@ -1,18 +1,18 @@
 {
- "generated": "2026-11-25T18:18:53Z",
+ "generated": "2026-11-25T18:23:15Z",
  "fresh": {
-  "yt_live": "2026-11-25T18:18:54Z",
+  "yt_live": "2026-11-25T18:23:15Z",
   "yt_analytics": "2026-11-22",
-  "tg_members": "2026-11-25T18:18:54Z",
-  "tg_posts": "2026-11-25T18:06:44Z",
-  "ideas": "2026-11-25T16:56:38Z",
+  "tg_members": "2026-11-25T18:23:16Z",
+  "tg_posts": "2026-11-25T18:23:18Z",
+  "ideas": "2026-11-25T18:21:48Z",
   "news": "2026-11-25 16:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-25T16",
   "instagram": "2026-11-25T16",
   "site": "2026-11-23",
   "site_live": "2026-11-25T18:18:56Z",
-  "activity": "2026-11-25T18:18:29Z",
+  "activity": "2026-11-25T18:23:15Z",
   "asks": "2026-11-25T08:50Z"
  },
  "notes": [],
@@ -580,7 +580,7 @@
    "subs": 324,
    "views_total": 12624,
    "videos": 101,
-   "live_at": "2026-11-25T18:18:54Z",
+   "live_at": "2026-11-25T18:23:15Z",
    "views_7d": 740,
    "pct_7d": 51.2,
    "subs_7d": 3,
@@ -641,7 +641,7 @@
    "best_live": [
     {
      "title": "Меню на тиждень і вечеря з того, що є 🍳 Тір-лист Байта #7",
-     "views": 141,
+     "views": 146,
      "id": "bvS0k_r3_bs"
     },
     {
@@ -1431,7 +1431,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 3
+   "total": 4
   },
   {
    "id": "bvS0k_r3_bs",
@@ -1442,7 +1442,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 141
+   "total": 146
   },
   {
    "id": "_wp0rz8edB8",
@@ -1453,7 +1453,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 33
+   "total": 34
   },
   {
    "id": "xaYHobFNYHo",
@@ -1464,7 +1464,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 35
+   "total": 36
   },
   {
    "id": "ENKGdbr04h0",
@@ -1497,7 +1497,7 @@
    "views7": 6,
    "pct": 59.2,
    "complete": false,
-   "total": 72
+   "total": 81
   },
   {
    "id": "gljrHADi4aU",
@@ -1851,8 +1851,8 @@
   }
  ],
  "ideas_count": {
-  "total": 160,
-  "open": 151
+  "total": 161,
+  "open": 152
  },
  "lake": {
   "videos": 98,
@@ -2389,8 +2389,8 @@
    "agent": "post",
    "task": "Озвучка 18:19Z: шоу #3",
    "started": "2026-11-25T18:18:29Z",
-   "finished": null,
-   "result": "",
+   "finished": "2026-11-25T18:22:16Z",
+   "result": "STOP 429",
    "agent_raw": "production"
   },
   {
@@ -2398,8 +2398,8 @@
    "agent": "coo",
    "task": "фон: веб-скан трендів (вечір) 13:30–18:20Z",
    "started": "2026-11-25T18:18:29Z",
-   "finished": null,
-   "result": "",
+   "finished": "2026-11-25T18:23:15Z",
+   "result": "вечір бідний: 1 ідея #161 (158.6), звіт trend-scan-2026-11-25-evening.md",
    "agent_raw": "researcher"
   },
   {
@@ -2407,8 +2407,8 @@
    "agent": "seo",
    "task": "фон: нова SEO-стаття під непокритий запит",
    "started": "2026-11-25T18:18:29Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-25T18:22:42Z",
+   "result": "стаття /novyny/rezyume-z-shi-bezkoshtovno/ на 26.11 16:00 (Suggest: 12 підказок)"
   }
  ],
  "agents": [
