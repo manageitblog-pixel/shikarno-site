@@ -17,7 +17,7 @@
 | Related (власник, Studio) | GNqU-wcz9Ws «Що ШІ знає про тебе» | M-KQwpDwpA4 (гайд #1 ChatGPT, вихід 25.11 17Z — до 28.11 перевірити, що public) |
 | Стаття сайту | **нова** /novyny/moonlock-chy-varto-platyty/ (24.11, продовження ep77; наявну /novyny/moonlock-iphone-shakhrajski-sms/ НЕ чіпаємо) | нова /novyny/kudy-poikhaty-na-vykhidni-shi-tir-lyst/ (24.11) |
 
-**vid:** — (заповнити після заливки)
+**vid:** ep83 → **cw7Qm4AMP3U**, ep85 → **B4hDo15vi6o** (залито 25.11 08:43Z, private → publishAt; finalize PASS обидва)
 
 **Статті сайту (написано 24.11, без `youtube:` — додати ПІСЛЯ заливки):**
 - ep83 → `content/posts/2026-11-26-moonlock-chy-varto-platyty.md`, slug **moonlock-chy-varto-platyty** (date 2026-11-26T19:00:00+02:00)

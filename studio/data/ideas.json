@@ -378,10 +378,24 @@
   "source": "https://apps.apple.com/ua/app/moonlock/id6799935865",
   "by": "researcher-news",
   "note": "App Store: безкоштовно + підписка $11.99/міс або $59.99/рік, 7 дн тріал, iOS 26+, мова лише англійська; kw «moonlock» 290 (змішаний)",
-  "status": "in_work",
+  "status": "done",
   "added": "2026-11-22",
   "id": "17",
-  "decision": "ep83 26.11"
+  "decision": "ep83 26.11",
+  "video_id": "cw7Qm4AMP3U",
+  "published_at": "2026-11-26T17:00:00Z",
+  "prior_at_publish": 0.676,
+  "score_at_publish": 202.8,
+  "forecast_at_publish": {
+   "at": "2026-11-25T08:42Z",
+   "format": "sec",
+   "p25": 23,
+   "med": 35,
+   "p75": 53,
+   "n": 12,
+   "hook_mult": 1.0,
+   "length_mult": 1.0
+  }
  },
  {
   "title": "Уряд створює корпус українських текстів для ШІ — хто отримає доступ",
@@ -438,10 +452,24 @@
   "source": "kw.py: «куди поїхати на вихідні» 169, «куди поїхати відпочивати» 231",
   "length": 30,
   "by": "researcher-search",
-  "status": "approved",
+  "status": "done",
   "decision": "ep85 28.11",
   "added": "2026-11-22",
-  "id": "20"
+  "id": "20",
+  "video_id": "B4hDo15vi6o",
+  "published_at": "2026-11-28T17:00:00Z",
+  "prior_at_publish": 1.0,
+  "score_at_publish": 400.0,
+  "forecast_at_publish": {
+   "at": "2026-11-25T08:43Z",
+   "format": "tier",
+   "p25": 87,
+   "med": 200,
+   "p75": 395,
+   "n": 11,
+   "hook_mult": 1.0,
+   "length_mult": 1.0
+  }
  },
  {
   "title": "Манікюр і ШІ: дизайн нігтів, відповіді в директ, ціна | ШІ для професій #11",
