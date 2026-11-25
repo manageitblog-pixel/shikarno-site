@@ -2747,5 +2747,73 @@
   "status": "new",
   "added": "2026-11-25",
   "id": "132"
+ },
+ {
+  "title": "Claude склав тобі «підсумок місяця»: що він помітив у твоїх чатах — де глянути безкоштовно і як видалити",
+  "format": "free",
+  "channels": [
+   "short",
+   "tiktok",
+   "insta",
+   "site",
+   "tg"
+  ],
+  "demand": 3,
+  "fresh": 5,
+  "show": 5,
+  "fit": 5,
+  "length": 32,
+  "hook": "you",
+  "source": "https://support.claude.com/en/articles/15672559-see-your-monthly-recap",
+  "by": "researcher-news",
+  "note": "Claude release notes 24.11.2026: monthly recap (Reflect) вийшов з бети для Free/Pro/Max/Ultra на вебі, Desktop, iOS, Android; довідка: лише з увімкненою пам'яттю, не для Team/Enterprise, «у всіх регіонах, де доступний Claude»; Settings > Wellbeing > Reflect > View; періоди місяць/3/6/12 міс; збережені підсумки можна видалити. Розгортається поступово — перевірити на реальному акаунті в Україні в день запису. Сезон Spotify Wrapped (початок грудня). kw.py 25.11: claude 41, claude безкоштовно 29, claude українською 29; spotify wrapped 10.",
+  "kw": "claude (41); claude безкоштовно (29); claude українською (29) — kw.py 25.11",
+  "status": "approved",
+  "added": "2026-11-25",
+  "id": "133",
+  "decision": "Радар 25.11: бал 441,7 (free, «твоє + дія», реліз Claude 24.11 для Free, у всіх регіонах; сезон Wrapped). Short сб 5.12 17:00Z (19:00 Київ) — найближчий вільний слот Short (26.11–4.12 зайняті ep83–90, #122, #119; ротація: 3.12 free, 4.12 sec, 5.12 free — ок) + TikTok/Reels + сайт + TG. Сценарій не раніше 2.12 (черга озвучки повна). Шлях Settings > Wellbeing > Reflect звірити на реальному акаунті в Україні; без пам'яті підсумку нема — сказати чесно; незалежний фактчек; link при заливці"
+ },
+ {
+  "title": "ПДВ для ФОПів з 2028: спитав ChatGPT, Gemini і Claude про нові правила — хто вигадав, а хто чесно сказав «це лише проєкт»",
+  "format": "check",
+  "channels": [
+   "short",
+   "site",
+   "tg"
+  ],
+  "demand": 5,
+  "fresh": 5,
+  "show": 4,
+  "fit": 4,
+  "length": 35,
+  "hook": "you",
+  "source": "https://dou.ua/lenta/news/new-taxes-for-businesses-2028/",
+  "by": "researcher-search",
+  "note": "DOU 24.11 і dev.ua 25.11: Мінфін оновив законопроєкт (документи від 21.11, офіційно не зареєстрований, за Железняком): ПДВ для ФОП/спрощенців з 1.01.2028 при обороті >€85 тис. за 12 міс; 3 група 5%→3% + ПДВ; е-резиденти не підпадають. kw.py 25.11: «фоп з пдв» 333, «фоп платник пдв» 247, «пдв для фоп 2026» 18. Наш кут — перевірка ШІ на свіжому податковому питанні, без порад з податків; першоджерело (таблиця Железняка / Мінфін) відкрити перед записом.",
+  "kw": "фоп з пдв (333); фоп платник пдв (247); фоп єсв (195) — kw.py 25.11",
+  "status": "new",
+  "added": "2026-11-25",
+  "id": "134",
+  "decision": "Радар 25.11: бал 311,5, попит «фоп з пдв» 333 — найвищий за тиждень. Не approved: законопроєкт не зареєстрований, правила можуть змінитись; check-прайор слабкий (мед. 23). Спершу TG/сайт, Short — якщо законопроєкт зареєструють (тоді оцінити разом з №35)"
+ },
+ {
+  "title": "GPT-6.2 у ChatGPT сам запропонує стежити за ціною: «скажу, коли подешевшає» — як це працює на Чорну пʼятницю і чому лише в Plus",
+  "format": "news",
+  "channels": [
+   "site",
+   "tg"
+  ],
+  "demand": 3,
+  "fresh": 5,
+  "show": 3,
+  "fit": 4,
+  "length": 30,
+  "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+  "by": "researcher-news",
+  "note": "ChatGPT release notes 23.11: GPT-6.2 у чаті для Plus/Pro/Business/Enterprise; «if you ask whether something is on sale, ChatGPT can offer to let you know when the price drops». Лише TG/сайт до 27.11 у парі з ep87; у Shorts новин не робимо.",
+  "status": "new",
+  "added": "2026-11-25",
+  "id": "135",
+  "decision": "Радар 25.11: лише TG/сайт 26–27.11 у парі з ep87 (Чорна пʼятниця); у Shorts новин не робимо"
  }
 ]
