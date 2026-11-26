@@ -1,14 +1,6 @@
 {
  "items": [
   {
-   "id": "56",
-   "agent": "de",
-   "task": "lake.py news: +25 RSS-джерел (світові ШІ-медіа, блоги компаній, українські tech-медіа)",
-   "started": "2026-11-22T18:39:37Z",
-   "finished": "2026-11-22T18:42:33Z",
-   "result": "22 RSS-стрічки (було 3): +264 новини, 1851 у лейку"
-  },
-  {
    "id": "57",
    "agent": "trend",
    "task": "фон: TikTok-тренди української ШІ-ніші (vidIQ ≤20 кредитів) → ідеї",
@@ -1599,6 +1591,14 @@
    "started": "2026-11-26T13:23:44Z",
    "finished": "2026-11-26T13:26:59Z",
    "result": "Reel ep78 опубліковано: instagram.com/reel/DgNNT4FgxWy (імпорт з YouTube)"
+  },
+  {
+   "id": "256",
+   "agent": "community",
+   "task": "TikTok-коментарі за добу 26.11 (vidIQ) → відповіді власнику, лише якщо нові",
+   "started": "2026-11-26T15:18:37Z",
+   "finished": null,
+   "result": ""
   }
  ]
 }
