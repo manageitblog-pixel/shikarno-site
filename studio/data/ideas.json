@@ -3999,5 +3999,101 @@
   "status": "new",
   "added": "2026-11-26",
   "id": "187"
+ },
+ {
+  "title": "Чи потягне твій ноутбук на AMD локальний ШІ: llama.cpp запустила щотижневий дашборд швидкості для Ryzen і Radeon",
+  "format": "news",
+  "channels": [
+   "site",
+   "tg"
+  ],
+  "demand": 2,
+  "fresh": 5,
+  "show": 4,
+  "fit": 3,
+  "length": 30,
+  "hook": "you",
+  "source": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
+  "by": "researcher-news",
+  "note": "HF/ggml-org 26.11.2026: дашборд PP512/TG128 (токени/с) за збірками llama.cpp, моделями й квантуваннями; Radeon 8060S і Radeon AI Pro R9700S; Qwen, Gemma, gpt-oss, LFM; щотижня, 10 повторів, Flash Attention вкл/викл.",
+  "status": "new",
+  "added": "2026-11-26",
+  "id": "188"
+ },
+ {
+  "title": "4 маленькі ШІ-агенти навчилися працювати командою: успіх з 6,6% до 82% — Hugging Face показав, як тренують «рій»",
+  "format": "news",
+  "channels": [
+   "site"
+  ],
+  "demand": 1,
+  "fresh": 5,
+  "show": 2,
+  "fit": 2,
+  "length": 30,
+  "source": "https://huggingface.co/blog/training-swarms",
+  "by": "researcher-news",
+  "note": "HF 26.11.2026 (Burtenshaw, Rasul): 4 агенти на спільній Qwen3-0.6B, командна винагорода зі штрафом за токени; 75 оновлень — успіх 6,6%→82,3%, токенів −37,4%, 26/32 відкладених задач; відтворення ~5 год на 2×H200 ≈ $50 (за їхніми даними).",
+  "status": "new",
+  "added": "2026-11-26",
+  "id": "189"
+ },
+ {
+  "title": "Голосовий ШІ-агроном рідною мовою: IBM зробила відкритого агента, що відповідає фермерам з 154-сторінкового посібника",
+  "format": "news",
+  "channels": [
+   "site",
+   "tg"
+  ],
+  "demand": 2,
+  "fresh": 5,
+  "show": 3,
+  "fit": 3,
+  "length": 30,
+  "source": "https://huggingface.co/blog/ibm-research/an-indic-voice-agent-with-cuga",
+  "by": "researcher-news",
+  "note": "IBM Research 25.11.2026: CUGA (Apache 2.0), гінді/тамільська/телугу/гуджараті/маратхі, multilingual-e5-large для пошуку по англ. посібнику, відповіді 2–4 речення; мовлення — Sarvam AI API або відкриті SraVaani/Svara на своєму сервері. Кут для UA: такий же агент українською для аграріїв.",
+  "status": "new",
+  "added": "2026-11-26",
+  "id": "190"
+ },
+ {
+  "title": "Nvidia зупинила відвантаження ШІ-серверів у Малайзію, Сінгапур, Таїланд та Індонезію: як Китай обходив санкції через чужі датацентри",
+  "format": "news",
+  "channels": [
+   "site",
+   "tg"
+  ],
+  "demand": 2,
+  "fresh": 5,
+  "show": 2,
+  "fit": 2,
+  "length": 30,
+  "source": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
+  "by": "researcher-news",
+  "note": "TechCrunch 26.11.2026 з посиланням на WSJ: партнерам (Dell, Super Micro) сказали призупинити поставки на невизначений строк для перевірки дотримання експортних правил США; лазівку з віддаленим доступом китайських компаній Мінторгівлі США закрило раніше в листопаді. Першоджерело — WSJ, не Nvidia.",
+  "status": "new",
+  "added": "2026-11-26",
+  "id": "191"
+ },
+ {
+  "title": "Диктуєш ШІ беззвучно — лише губами: плагін для Claude Code читає з вебкамери прямо на Mac, без запису звуку",
+  "format": "try",
+  "channels": [
+   "short",
+   "tiktok",
+   "site"
+  ],
+  "demand": 2,
+  "fresh": 5,
+  "show": 5,
+  "fit": 2,
+  "length": 30,
+  "source": "https://github.com/batanus/lip-dictation",
+  "by": "researcher-news",
+  "note": "GitHub (Show HN 26.11.2026): Auto-AVSR локально, macOS Apple Silicon + вебкамера, ~2,5 ГБ, Claude Code ≥2.1.287; лише англійська; код MIT, ваги моделі — без явної ліцензії, датасети лише для досліджень/некомерційного використання. Ніша: розробники.",
+  "status": "new",
+  "added": "2026-11-26",
+  "id": "192"
  }
 ]
