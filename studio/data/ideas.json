@@ -3554,5 +3554,25 @@
   "status": "new",
   "added": "2026-11-25",
   "id": "167"
+ },
+ {
+  "title": "Claude тепер бере «навички» прямо з сервісів: Shopify, HubSpot і Atlassian підключаються разом зі своїми інструкціями — і чому кожну треба схвалити",
+  "format": "news",
+  "channels": [
+   "site",
+   "tg"
+  ],
+  "demand": 2,
+  "fresh": 5,
+  "show": 3,
+  "fit": 3,
+  "length": 30,
+  "hook": "release",
+  "by": "researcher-news",
+  "source": "https://claude.com/resources/articles/skills-over-mcp-tasks-and-more",
+  "note": "Anthropic 24.11: Skills over MCP (публічна бета) — MCP-сервер постачає skills разом з інструментами, Claude вантажить skill лише коли треба; увімкнено за замовчуванням для Pro/Max/Ultra, Team — через адміна, Enterprise — згодом. Tasks і Elicitation (сервер питає підтвердження посеред дії: Supabase, Railway, GitHub) — GA. File Uploads — скоро. Специфікація позначає skills від сервера як ризик prompt injection: потрібне явне схвалення кожного, повторне — при зміні файлів (modelcontextprotocol.io/extensions/skills/overview). VS Code 1.147+ теж підтримує (VentureBeat 25.11). Ніша ІТ/бізнес.",
+  "status": "new",
+  "added": "2026-11-26",
+  "id": "168"
  }
 ]
