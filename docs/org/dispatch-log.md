@@ -351,3 +351,4 @@
 - 26.11 16:55Z збирач: news +25 (всього 2184); TikTok знімок (Signal 146→168), IG Reels (ep78 DgNNT4FgxWy: 1 play, 0 %), TG 6; signals — усі з метриками; ідеї +3 (#182–184, бали 132/79/29, без approved); vidIQ 5 кредитів
 - 26.11 17:13Z вихід ep83 (cw7Qm4AMP3U): public ✓, стаття /novyny/moonlock-chy-varto-platyty/ 200 ✓, TG-пост №151 (+ посилання на статтю) → telegram_post у статті, push main; перший коментар — 17:07Z ✓; TikTok — агент через імпорт YouTube; IG — тригер 17:23Z
 - 26.11 17:18Z диспетчер: самоперевірка — у роботі TikTok ep83 (чекає дозволу на інструмент vidIQ від власника); озвучка (спроба); IG ep83 — 17:23Z
+- 26.11 17:27Z TikTok-відділ: ep83 Moonlock (cw7Qm4AMP3U) → TikTok через vidIQ, імпорт з YouTube (uploadId c5a67d2a…) → https://www.tiktok.com/@shikarno_ai_ua/video/7712532442124471553 ✓ (completed); підпис: гачок SMS + ціни App Store UA + «6/10 — думка Байта, не реклама» + Telegram у профілі, 5 хештегів; vidIQ 0 кредитів
