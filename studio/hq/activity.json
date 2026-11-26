@@ -1,14 +1,6 @@
 {
  "items": [
   {
-   "id": "58",
-   "agent": "da",
-   "task": "фон: якість даталейку (порожні поля, дублі, застарілі знімки)",
-   "started": "2026-11-22T18:42:11Z",
-   "finished": "2026-11-22T18:45:31Z",
-   "result": "Лейк: 245 рядків daily з 0 замість NULL, posts.kind порожній 80/98; ops verify OK; для exp frame0 бракує exp_start і контролю"
-  },
-  {
    "id": "59",
    "agent": "designer",
    "task": "фон: ресерч дизайну — обкладинки й кадр 0 українських аномалій",
@@ -1599,6 +1591,14 @@
    "started": "2026-11-26T16:53:05Z",
    "finished": "2026-11-26T16:55:45Z",
    "result": "+25 новин; TikTok Signal 168; IG 30 підп.; Reel ep78 1 перегляд; ідеї #182–184"
+  },
+  {
+   "id": "258",
+   "agent": "tiktok",
+   "task": "TikTok ep83 через імпорт з YouTube (vidIQ)",
+   "started": "2026-11-26T17:11:45Z",
+   "finished": null,
+   "result": ""
   }
  ]
 }
