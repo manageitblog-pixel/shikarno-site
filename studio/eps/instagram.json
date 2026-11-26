@@ -95,7 +95,12 @@
     },
     "ep83_moonlock_chesno": {
       "yt": "cw7Qm4AMP3U",
-      "when": "26.11 19:23 Київ, після public 17Z"
+      "when": "26.11 19:23 Київ, після public 17Z",
+      "uploadId": "3d7d8798-43e1-4b9f-a1fc-1320ba526ea4",
+      "done": false,
+      "failed": true,
+      "at": "2026-11-26T17:26Z",
+      "error": "vidiq_instagram_publish_reel: job_48788e09… refunded на етапі обробки Instagram; у профілі немає (перевірено ig_profile_reels); автоповтор інструмент забороняє — чекає «так» власника"
     },
     "clip3": {
       "yt": "6mIdp843fKo",
