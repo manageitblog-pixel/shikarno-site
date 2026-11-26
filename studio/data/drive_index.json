@@ -213,16 +213,16 @@
   "repo:docs/playbooks/google-ads-2026-11-24.md": {
    "dir": "Документи/playbooks",
    "id": "1oAQf8AXgwODiuNOMmAYx80rJgFEYQpMg",
-   "md5": "8068998d3bac2b62823f1fa08fcd511b",
+   "md5": "63b804cdeaf32610576c4ed675463354",
    "parent": "1LEo79RWn2qgh8NMTGitMfkWDPKuqzuPu",
-   "size": 5633
+   "size": 7325
   },
   "repo:docs/playbooks/google-seo.md": {
    "dir": "Документи/playbooks",
    "id": "1s-Als5_bS4FTnboZfiGemakF1wLoVfgQ",
-   "md5": "d543b8fcfa33b4322c0ac16263f2049a",
+   "md5": "46497283c88e2eb7c060caf7c43ac59b",
    "parent": "1LEo79RWn2qgh8NMTGitMfkWDPKuqzuPu",
-   "size": 34694
+   "size": 36580
   },
   "repo:docs/playbooks/instagram.md": {
    "dir": "Документи/playbooks",
@@ -238,26 +238,33 @@
    "parent": "1LEo79RWn2qgh8NMTGitMfkWDPKuqzuPu",
    "size": 14180
   },
+  "repo:docs/playbooks/server-studio.md": {
+   "dir": "Документи/playbooks",
+   "id": "1tIJ507FHfXpu6BzizU7lw0hYFIozlFKW",
+   "md5": "ca9e1c0c5bca3acc2bfb100a3f304dc2",
+   "parent": "1LEo79RWn2qgh8NMTGitMfkWDPKuqzuPu",
+   "size": 19397
+  },
   "repo:docs/playbooks/telegram.md": {
    "dir": "Документи/playbooks",
    "id": "1UphCHom0IFqOuZENM5jL5niKpEWqtjTg",
-   "md5": "9626cca0728361f81cbcced386a5aa2a",
+   "md5": "a07a6835e523c757f0db335a513aaa4c",
    "parent": "1LEo79RWn2qgh8NMTGitMfkWDPKuqzuPu",
-   "size": 17054
+   "size": 17503
   },
   "repo:docs/playbooks/tiktok.md": {
    "dir": "Документи/playbooks",
    "id": "1jK0EoKm0jn6uk18kxLbIsUR9ut28yCZ9",
-   "md5": "2f5d48be25960bd542a6de3ada6b4748",
+   "md5": "e9838212def3f731cb96c2f91377a328",
    "parent": "1LEo79RWn2qgh8NMTGitMfkWDPKuqzuPu",
-   "size": 21452
+   "size": 21918
   },
   "repo:docs/playbooks/youtube.md": {
    "dir": "Документи/playbooks",
    "id": "1JaGQkBtJpSK0-lfFEHiHZuA9tOrTesLP",
-   "md5": "c29e34f5e266c8cc681f3d2771d24e4b",
+   "md5": "6abcdcc36533a452b1950c7b339772fa",
    "parent": "1LEo79RWn2qgh8NMTGitMfkWDPKuqzuPu",
-   "size": 47791
+   "size": 62949
   },
   "repo:docs/project-state.md": {
    "dir": "Документи",
@@ -322,6 +329,13 @@
    "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
    "size": 11289
   },
+  "repo:docs/research/datalake-quality-2026-11-26.md": {
+   "dir": "Документи/research",
+   "id": "1q4o3ZjilBkKk_BftH0FlVCX-wDgcOwcc",
+   "md5": "4f0258b21009ee70df575a2fa2fb2a0e",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 14060
+  },
   "repo:docs/research/design-outliers-2026-11-23.md": {
    "dir": "Документи/research",
    "id": "1Xg0QkLPAH9TyaW77b3WSdtjBkwGTCT1T",
@@ -374,9 +388,9 @@
   "repo:docs/research/forecast-audit-2026-11-25.md": {
    "dir": "Документи/research",
    "id": "1OrNMx9SpNGd_TE-UqgnXY3-YopXNj7U9",
-   "md5": "13a96cada4953e262afb1a33292c306a",
+   "md5": "1cb959523f234a7061baf8647187aa83",
    "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
-   "size": 3165
+   "size": 6997
   },
   "repo:docs/research/format-3-kontseptsiyi-2026-11-12.md": {
    "dir": "Документи/research",
@@ -468,6 +482,13 @@
    "md5": "45129c5a749b1e2e3e37774b7c58764f",
    "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
    "size": 7554
+  },
+  "repo:docs/research/niche-anomalies-2026-11-26.md": {
+   "dir": "Документи/research",
+   "id": "19CtHTmxfmRZ2C5f2bNkEQba1wCLDO4Df",
+   "md5": "8bb14242136a9b64b04324ce2161203b",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 7538
   },
   "repo:docs/research/niche-outliers-2026-11-23.md": {
    "dir": "Документи/research",
@@ -644,6 +665,13 @@
    "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
    "size": 8821
   },
+  "repo:docs/research/radar-2026-11-26.md": {
+   "dir": "Документи/research",
+   "id": "1-agL-Z6gNqFh8onFbX0guRCV9xRCr1de",
+   "md5": "e0caa6184eede27e328b0c97df11ba22",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 10226
+  },
   "repo:docs/research/reels-outliers-2026-11-24.md": {
    "dir": "Документи/research",
    "id": "1xdBovPgvKlJ95nSjTJgadINOj_I5153k",
@@ -664,6 +692,13 @@
    "md5": "292993cff10720b7de1600d49ddd8b0d",
    "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
    "size": 2682
+  },
+  "repo:docs/research/seo-title-drop-2026-11-26.md": {
+   "dir": "Документи/research",
+   "id": "1HvOSZmZ5FEVExjvDdtjWv3HbS-THznLj",
+   "md5": "c998697b93381b8f6bb8704142cb9982",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 3953
   },
   "repo:docs/research/seo-youtube-2026-11-22.md": {
    "dir": "Документи/research",
@@ -710,9 +745,16 @@
   "repo:docs/research/telegram-growth.md": {
    "dir": "Документи/research",
    "id": "1HHS5J-87Pm55a5xpiA6Pi0uh06RHe5M9",
-   "md5": "6dc610e63a8b96dad4b29f67dd8dcdaa",
+   "md5": "6d9030861066914ce3a82eebc0d3b706",
    "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
-   "size": 16111
+   "size": 17903
+  },
+  "repo:docs/research/tg-cross-promo-2026-11-26.md": {
+   "dir": "Документи/research",
+   "id": "1wxmk_1zxQveKmErdu33hhP3Ut23AlwLj",
+   "md5": "ea7a9413a2935a1f1787c97d1e7adc8b",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 7509
   },
   "repo:docs/research/tg-crosspromo-2026-11-22.md": {
    "dir": "Документи/research",
@@ -826,6 +868,20 @@
    "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
    "size": 8860
   },
+  "repo:docs/research/trend-scan-2026-11-26-day.md": {
+   "dir": "Документи/research",
+   "id": "1X49p49GljDWKwAq-zUzt43cb55s3z7ha",
+   "md5": "b42c8dd6724571afd3948e13f2eb040c",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 13712
+  },
+  "repo:docs/research/trend-scan-2026-11-26-evening.md": {
+   "dir": "Документи/research",
+   "id": "1Htb5zBHzDaxexMlsIvxRK6aWEErWjRqY",
+   "md5": "5694dadad89ab1905fd2c247c5001b30",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 12681
+  },
   "repo:docs/research/trends-2026-10-29.md": {
    "dir": "Документи/research",
    "id": "1FmA7KPp75lQ-aI5oL9ORVijySHjtg1YM",
@@ -910,6 +966,13 @@
    "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
    "size": 10505
   },
+  "repo:docs/research/weekly4-draft-notes.md": {
+   "dir": "Документи/research",
+   "id": "1WyhAo2t_sQWyX0xyd3RQ1T-1FVEy7yHU",
+   "md5": "26e17bb641ab44f0cef6e2bbf7ab698c",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 7922
+  },
   "repo:docs/research/yt-search-check-2026-11-23.md": {
    "dir": "Документи/research",
    "id": "1lHaX3cEye7NUMqiop2tgoUZYzP9EQ5WM",
@@ -920,9 +983,16 @@
   "repo:docs/research/yt-seo-2026-11-25.md": {
    "dir": "Документи/research",
    "id": "16tSuX-59mUB69VUyG1GurVlobFH9FjrR",
-   "md5": "e5506f441de2f66d8fb363b99e4fef24",
+   "md5": "063b838e6a4d6532617584e83bfb2021",
    "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
-   "size": 5072
+   "size": 9377
+  },
+  "repo:docs/research/yt-seo-2026-11-26.md": {
+   "dir": "Документи/research",
+   "id": "1LA1xFy0ZJDQwjxb3wBvR0_7igflm9dYX",
+   "md5": "533f378ac121c622766a556040fce3bb",
+   "parent": "1mtZt-PokjrXpV25q_NGmc9J0PmItnAMr",
+   "size": 6583
   },
   "repo:docs/seo-core-2026-11.md": {
    "dir": "Документи",
@@ -969,9 +1039,9 @@
   "repo:docs/tasks/2026-11-12-pomichnyk-mekhaniky.md": {
    "dir": "Документи/tasks",
    "id": "1q9M9HgHcbxtfPCDxdIEBelaAS-ObXMNW",
-   "md5": "32bc6310c91f77f8ff393de60f4afa00",
+   "md5": "1abbd73acb3dc18e3695fcff8022155f",
    "parent": "1737janBv_GTAxDO8Q0cROOXKcSN8BPlJ",
-   "size": 8441
+   "size": 13262
   },
   "repo:docs/tasks/2026-11-12-vlasnyi-format-korysnoho-materialu.md": {
    "dir": "Документи/tasks",
@@ -1060,30 +1130,30 @@
   "repo:studio/data/analytics.sqlite": {
    "dir": "Дані",
    "id": "16c9NiaxL5ArFEldZCPBa97EB8wxy17s_",
-   "md5": "444dde0b27022ca9720793d79e829b39",
+   "md5": "d2b612fbba81f754185aaefe5eede27a",
    "parent": "1z3DkcLIg1zzlwhJLIJKllirRHsyZGuH3",
-   "size": 13656064
+   "size": 13783040
   },
   "repo:studio/data/ops.sqlite": {
    "dir": "Дані",
    "id": "1Pt_lDyIwxAhttiL39XMyPn6KXC3t5Fcv",
-   "md5": "c6afc3ad6634858c6f7bd808bde5db4c",
+   "md5": "92083b7ce0c97435f9eab5ecf705fa18",
    "parent": "1z3DkcLIg1zzlwhJLIJKllirRHsyZGuH3",
-   "size": 397312
+   "size": 417792
   },
   "repo:studio/data/ops_dump.sql": {
    "dir": "Дані",
    "id": "1ejyiThZqww-isxoXKdYRUqSoTmPe0giY",
-   "md5": "b4438c81a6c38cc4550d8841a15ac846",
+   "md5": "90b423820d35a2b221e01e0c1a813184",
    "parent": "1z3DkcLIg1zzlwhJLIJKllirRHsyZGuH3",
-   "size": 300594
+   "size": 315478
   },
   "repo:studio/data/snapshot/analytics.sqlite": {
    "dir": "Дані/snapshot",
    "id": "11HsRG-FJrIHZcMwIKDZAnXv5_iEC273b",
-   "md5": "1f73703b9dda5465be2c0db055e7f337",
+   "md5": "1a84db01f728b311d4f5d8e5615759b2",
    "parent": "1KWcOEnrBK_80Y4aaru7u0f91VSbCmI69",
-   "size": 13623296
+   "size": 13762560
   },
   "repo:studio/eps/digest1/meta.json": {
    "dir": "Відео й озвучка/digest1",
@@ -1232,6 +1302,13 @@
    "parent": "1HFbqalYwbEGal5JGIiz9KWgL-irbPhM0",
    "size": 3785308
   },
+  "repo:studio/eps/weekly3/part10.wav": {
+   "dir": "Відео й озвучка/weekly3",
+   "id": "1UC8dFWpts0p8W3YLGdZ4n5jCkaZvRbux",
+   "md5": "4b5ad24eac23dd0b4765ec35c673e427",
+   "parent": "1HFbqalYwbEGal5JGIiz9KWgL-irbPhM0",
+   "size": 2903548
+  },
   "repo:studio/eps/weekly3/part2.wav": {
    "dir": "Відео й озвучка/weekly3",
    "id": "1Q110cJvJoxcTuwdEnJS0Wfxwm3YozLwX",
@@ -1301,6 +1378,20 @@
    "md5": "90e1abdb0b427a82f6685a2546d81fe8",
    "parent": "1N1PU2lJE3mLV0RNsA3xPe3OQacSqBesZ",
    "size": 2842108
+  },
+  "repo:studio/eps/weekly3/takes/part10_take1_audit.json": {
+   "dir": "Відео й озвучка/weekly3/takes",
+   "id": "15yRV-GN2mtVnWr1qPvd5t5nwpf1upm26",
+   "md5": "2ff781cab2507a0cdc72ffb566894adf",
+   "parent": "1N1PU2lJE3mLV0RNsA3xPe3OQacSqBesZ",
+   "size": 1604
+  },
+  "repo:studio/eps/weekly3/takes/part10_take1_f0_121.4.wav": {
+   "dir": "Відео й озвучка/weekly3/takes",
+   "id": "1MlIcyBdYLaAYTiFr1Dgpk9etxbQM3OTj",
+   "md5": "4b5ad24eac23dd0b4765ec35c673e427",
+   "parent": "1N1PU2lJE3mLV0RNsA3xPe3OQacSqBesZ",
+   "size": 2903548
   },
   "repo:studio/eps/weekly3/takes/part1_take1_audit.json": {
    "dir": "Відео й озвучка/weekly3/takes",
@@ -1557,23 +1648,23 @@
   "repo:studio/hq/asks.json": {
    "dir": "Артефакти/HQ-дашборд",
    "id": "1ZVP_g43YCeJ0KuDOMpccn9Hr5Beh6cSq",
-   "md5": "bbcd4de31b579efa37efb495c2d49772",
+   "md5": "1ca5a4272b23edb1e6bb592747eb88ce",
    "parent": "1bwqefibAikV-M3ebrF57Rv3xWgxSdk-j",
-   "size": 4001
+   "size": 6097
   },
   "repo:studio/hq/data.json": {
    "dir": "Артефакти/HQ-дашборд",
    "id": "1nnnUOgSvPj9L3bhJylEzWxWWW1ImSwrm",
-   "md5": "136aba758a185b4b02eb9c5425f5157d",
+   "md5": "4c26487e2693973fcfc048bba665c00e",
    "parent": "1bwqefibAikV-M3ebrF57Rv3xWgxSdk-j",
-   "size": 85033
+   "size": 91563
   },
   "repo:studio/hq/index.html": {
    "dir": "Артефакти/HQ-дашборд",
    "id": "1MGCu0btwQ8SkXw-fMkzjGR-gfVH-Ant-",
-   "md5": "5eeab8b475b9bec78cd2c27fa8bdc20b",
+   "md5": "539ab345f25c5cdb912890ae431f47b7",
    "parent": "1bwqefibAikV-M3ebrF57Rv3xWgxSdk-j",
-   "size": 50636
+   "size": 52100
   }
  },
  "folders": {
