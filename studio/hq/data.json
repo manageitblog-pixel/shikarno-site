@@ -1,23 +1,23 @@
 {
- "generated": "2026-11-26T02:06:57Z",
+ "generated": "2026-11-26T03:06:57Z",
  "fresh": {
-  "yt_live": "2026-11-26T02:06:57Z",
+  "yt_live": "2026-11-26T03:06:57Z",
   "yt_analytics": "2026-11-22",
-  "tg_members": "2026-11-26T02:06:58Z",
-  "tg_posts": "2026-11-26T02:07:00Z",
+  "tg_members": "2026-11-26T03:06:59Z",
+  "tg_posts": "2026-11-26T03:07:01Z",
   "ideas": "2026-11-26T00:55:42Z",
   "news": "2026-11-26 00:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-26T00",
   "instagram": "2026-11-26T00",
   "site": "2026-11-23",
-  "site_live": "2026-11-26T02:07:01Z",
+  "site_live": "2026-11-26T03:07:02Z",
   "activity": "2026-11-26T00:56:13Z",
   "asks": "2026-11-25T18:45Z"
  },
  "notes": [],
  "kpi": {
-  "subs": 325,
+  "subs": 326,
   "subs_goal": 1000,
   "long_hours": 12.1,
   "long_hours_goal": 4000,
@@ -386,7 +386,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 162
+   "subs_total": 163
   },
   {
    "w": "2026-08-03",
@@ -400,7 +400,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 162
+   "subs_total": 163
   },
   {
    "w": "2026-08-17",
@@ -414,7 +414,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 162
+   "subs_total": 163
   },
   {
    "w": "2026-08-24",
@@ -428,7 +428,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 162
+   "subs_total": 163
   },
   {
    "w": "2026-08-31",
@@ -442,7 +442,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 162
+   "subs_total": 163
   },
   {
    "w": "2026-09-07",
@@ -456,7 +456,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 162
+   "subs_total": 163
   },
   {
    "w": "2026-09-28",
@@ -470,7 +470,7 @@
    "partial_site": false,
    "subs_cum": -1,
    "long_cum": 0.0,
-   "subs_total": 161
+   "subs_total": 162
   },
   {
    "w": "2026-10-19",
@@ -484,7 +484,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.2,
-   "subs_total": 162
+   "subs_total": 163
   },
   {
    "w": "2026-10-26",
@@ -498,7 +498,7 @@
    "partial_site": false,
    "subs_cum": 6,
    "long_cum": 0.7,
-   "subs_total": 168
+   "subs_total": 169
   },
   {
    "w": "2026-11-02",
@@ -512,7 +512,7 @@
    "partial_site": false,
    "subs_cum": 155,
    "long_cum": 5.5,
-   "subs_total": 317
+   "subs_total": 318
   },
   {
    "w": "2026-11-09",
@@ -526,7 +526,7 @@
    "partial_site": false,
    "subs_cum": 160,
    "long_cum": 8.2,
-   "subs_total": 322
+   "subs_total": 323
   },
   {
    "w": "2026-11-16",
@@ -540,7 +540,7 @@
    "partial_site": false,
    "subs_cum": 163,
    "long_cum": 10.9,
-   "subs_total": 325
+   "subs_total": 326
   },
   {
    "w": "2026-11-23",
@@ -554,7 +554,7 @@
    "partial_site": true,
    "subs_cum": 163,
    "long_cum": 10.9,
-   "subs_total": 325
+   "subs_total": 326
   }
  ],
  "tg_hist": [
@@ -581,10 +581,10 @@
  ],
  "platforms": {
   "youtube": {
-   "subs": 325,
+   "subs": 326,
    "views_total": 12624,
    "videos": 101,
-   "live_at": "2026-11-26T02:06:57Z",
+   "live_at": "2026-11-26T03:06:57Z",
    "views_7d": 740,
    "pct_7d": 51.2,
    "subs_7d": 3,
@@ -645,7 +645,7 @@
    "best_live": [
     {
      "title": "Меню на тиждень і вечеря з того, що є 🍳 Тір-лист Байта #7",
-     "views": 151,
+     "views": 152,
      "id": "bvS0k_r3_bs"
     },
     {
@@ -655,7 +655,7 @@
     },
     {
      "title": "ChatGPT вчиться на твоїх чатах — як вимкнути за 30 секунд 🔐",
-     "views": 102,
+     "views": 101,
      "id": "Vp1PPNxtcrI"
     }
    ]
@@ -1003,7 +1003,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-26T02:07:01Z",
+    "updated": "2026-11-26T03:07:02Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 0,
@@ -1016,11 +1016,6 @@
      "pageloads": 7,
      "visits": 7,
      "hours": [
-      {
-       "h": "2026-11-25T03:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
       {
        "h": "2026-11-25T04:00:00Z",
        "pageloads": 0,
@@ -1133,6 +1128,11 @@
       },
       {
        "h": "2026-11-26T02:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-26T03:00:00Z",
        "pageloads": 0,
        "visits": 0
       }
@@ -1463,7 +1463,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 13
+   "total": 11
   },
   {
    "id": "bvS0k_r3_bs",
@@ -1474,7 +1474,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 151
+   "total": 152
   },
   {
    "id": "_wp0rz8edB8",
@@ -1485,7 +1485,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 34
+   "total": 35
   },
   {
    "id": "xaYHobFNYHo",
@@ -1529,7 +1529,7 @@
    "views7": 6,
    "pct": 59.2,
    "complete": false,
-   "total": 93
+   "total": 95
   },
   {
    "id": "gljrHADi4aU",
@@ -1584,7 +1584,7 @@
    "views7": 93,
    "pct": 46.2,
    "complete": false,
-   "total": 102
+   "total": 101
   }
  ],
  "ideas": [
