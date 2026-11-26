@@ -1,18 +1,18 @@
 {
- "generated": "2026-11-26T04:06:52Z",
+ "generated": "2026-11-26T04:55:21Z",
  "fresh": {
-  "yt_live": "2026-11-26T04:06:52Z",
+  "yt_live": "2026-11-26T04:55:21Z",
   "yt_analytics": "2026-11-22",
-  "tg_members": "2026-11-26T04:06:53Z",
-  "tg_posts": "2026-11-26T04:06:55Z",
-  "ideas": "2026-11-26T00:55:42Z",
-  "news": "2026-11-26 00:53",
+  "tg_members": "2026-11-26T04:55:22Z",
+  "tg_posts": "2026-11-26T04:55:24Z",
+  "ideas": "2026-11-26T04:54:51Z",
+  "news": "2026-11-26 04:52",
   "comp": "2026-11-23",
-  "tiktok": "2026-11-26T00",
-  "instagram": "2026-11-26T00",
+  "tiktok": "2026-11-26T04",
+  "instagram": "2026-11-26T04",
   "site": "2026-11-23",
-  "site_live": "2026-11-26T04:06:56Z",
-  "activity": "2026-11-26T00:56:13Z",
+  "site_live": "2026-11-26T04:55:25Z",
+  "activity": "2026-11-26T04:55:21Z",
   "asks": "2026-11-25T18:45Z"
  },
  "notes": [],
@@ -584,7 +584,7 @@
    "subs": 326,
    "views_total": 12624,
    "videos": 101,
-   "live_at": "2026-11-26T04:06:52Z",
+   "live_at": "2026-11-26T04:55:21Z",
    "views_7d": 740,
    "pct_7d": 51.2,
    "subs_7d": 3,
@@ -645,29 +645,29 @@
    "best_live": [
     {
      "title": "Меню на тиждень і вечеря з того, що є 🍳 Тір-лист Байта #7",
-     "views": 151,
+     "views": 152,
      "id": "bvS0k_r3_bs"
     },
     {
      "title": "ШІ для вчителя: план уроку і тест за 5 хвилин у Google Classroom 🍎",
-     "views": 118,
+     "views": 117,
      "id": "ENKGdbr04h0"
     },
     {
      "title": "ChatGPT вчиться на твоїх чатах — як вимкнути за 30 секунд 🔐",
-     "views": 102,
+     "views": 101,
      "id": "Vp1PPNxtcrI"
     }
    ]
   },
   "tiktok": {
    "videos": 22,
-   "views_total": 19375,
-   "views_7d": 2211,
+   "views_total": 19418,
+   "views_7d": 2254,
    "new_7d": 9,
    "saves_total": 143,
    "likes_total": 395,
-   "last_snapshot": "2026-11-26T00",
+   "last_snapshot": "2026-11-26T04",
    "best": [
     {
      "title": "Український ШІ Сяйво: коли вийде",
@@ -775,6 +775,10 @@
     {
      "x": "2026-11-26T00",
      "v": 19375
+    },
+    {
+     "x": "2026-11-26T04",
+     "v": 19418
     }
    ]
   },
@@ -786,10 +790,10 @@
    "reach_30d": 971,
    "acc_at": "25.11 16Z",
    "reels": 12,
-   "plays_total": 413,
+   "plays_total": 416,
    "likes_total": 7,
    "saves_total": 14,
-   "last_snapshot": "2026-11-26T00",
+   "last_snapshot": "2026-11-26T04",
    "best": [
     {
      "shortcode": "DgGRAlDjqkk",
@@ -869,6 +873,10 @@
     {
      "x": "2026-11-26T00",
      "v": 413
+    },
+    {
+     "x": "2026-11-26T04",
+     "v": 416
     }
    ],
    "followers_hist": [
@@ -926,6 +934,10 @@
     },
     {
      "x": "2026-11-26T00",
+     "v": 25
+    },
+    {
+     "x": "2026-11-26T04",
      "v": 25
     }
    ]
@@ -1003,7 +1015,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-26T04:06:56Z",
+    "updated": "2026-11-26T04:55:25Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 0,
@@ -1463,7 +1475,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 13
+   "total": 14
   },
   {
    "id": "bvS0k_r3_bs",
@@ -1474,7 +1486,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 151
+   "total": 152
   },
   {
    "id": "_wp0rz8edB8",
@@ -1485,7 +1497,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 34
+   "total": 35
   },
   {
    "id": "xaYHobFNYHo",
@@ -1507,7 +1519,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 118
+   "total": 117
   },
   {
    "id": "LtNuOtQe0pc",
@@ -1584,7 +1596,7 @@
    "views7": 93,
    "pct": 46.2,
    "complete": false,
-   "total": 102
+   "total": 101
   }
  ],
  "ideas": [
@@ -1884,13 +1896,13 @@
   }
  ],
  "ideas_count": {
-  "total": 168,
-  "open": 159
+  "total": 169,
+  "open": 160
  },
  "lake": {
   "videos": 98,
   "daily": 828,
-  "news": 2139,
+  "news": 2142,
   "niche": 1035,
   "comp": 511,
   "comp_videos": 62794,
@@ -1900,6 +1912,20 @@
   "comp_ai": 241
  },
  "news": [
+  {
+   "date": "2026-11-26",
+   "source": "hn",
+   "title": "OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster",
+   "score": 44,
+   "url": "https://twitter.com/thsottiaux/status/2125784147889393806"
+  },
+  {
+   "date": "2026-11-26",
+   "source": "hn",
+   "title": "Proving a Fixed Upper Bound on Jensen's Affairs",
+   "score": 16,
+   "url": "https://bitbanter.com/posts/2026-11-25/proving-a-fixed-upper-bound-on-jensens-affairs/"
+  },
   {
    "date": "2026-11-26",
    "source": "speka",
@@ -1932,21 +1958,21 @@
    "date": "2026-11-25",
    "source": "hn",
    "title": "Much shorter version of GRH Lean verification from Anthropic",
-   "score": 233,
+   "score": 353,
    "url": "https://github.com/lsernau/grh-lean"
   },
   {
    "date": "2026-11-25",
    "source": "hn",
    "title": "Multiagent coding is the future",
-   "score": 13,
+   "score": 56,
    "url": "https://www.kalzumeus.com/2026/11/25/multiagent-coding-is-the-future/"
   },
   {
    "date": "2026-11-25",
    "source": "hn",
    "title": "When the Air Force Needed a Supercomputer, They Built It Out of PS3 Consoles",
-   "score": 11,
+   "score": 16,
    "url": "https://www.warhistoryonline.com/war-articles/ps3-supercomputer.html"
   },
   {
@@ -1969,20 +1995,6 @@
    "title": "Hill-climbing Inkling 2 Mini inference on one RTX PRO 6000",
    "score": null,
    "url": "https://huggingface.co/blog/inkling-2-mini-inference-hillclimb"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "techcrunch",
-   "title": "OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work",
-   "score": null,
-   "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "techcrunch",
-   "title": "Jensen Huang broke Nvidia’s code of conduct, and his employees may not forget it",
-   "score": null,
-   "url": "https://techcrunch.com/2026/11/25/jensen-huang-broke-nvidias-code-of-conduct-and-his-employees-may-not-forget-it/"
   }
  ],
  "competitors": [
@@ -2093,15 +2105,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "197",
-   "agent": "post",
-   "task": "guide1: ребілд з чистими ч.3/11, QA, заміна приватної копії (дозвіл власника)",
-   "started": "2026-11-25T08:07:39Z",
-   "finished": "2026-11-25T12:18:29Z",
-   "result": "Скасовано: рестарт контейнера 12:05Z стер рендер і частини; гайд #1 виходить поточною версією (закрив Диспетчер)",
-   "agent_raw": "production"
-  },
   {
    "id": "198",
    "agent": "post",
@@ -2441,6 +2444,15 @@
    "started": "2026-11-26T00:53:25Z",
    "finished": "2026-11-26T00:56:13Z",
    "result": "+24 новин; TikTok 10 (Signal 73, реклама ChatGPT 180), IG 25 підп.; ідея #168; Reel-тест 1 play",
+   "agent_raw": "data"
+  },
+  {
+   "id": "237",
+   "agent": "de",
+   "task": "Збирач даталейку 04:52Z: новини, TikTok/IG/TG-знімок",
+   "started": "2026-11-26T04:52:45Z",
+   "finished": "2026-11-26T04:55:21Z",
+   "result": "+20 новин; TikTok 8 (SMM 320), IG 1651 перегл.; ідея #169 (172, не перевірена); Reel-тест 4 перегляди, 23.6%",
    "agent_raw": "data"
   }
  ],
