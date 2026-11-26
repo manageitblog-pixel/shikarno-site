@@ -1,23 +1,23 @@
 {
- "generated": "2026-11-26T08:06:31Z",
+ "generated": "2026-11-26T08:57:34Z",
  "fresh": {
-  "yt_live": "2026-11-26T08:06:31Z",
+  "yt_live": "2026-11-26T08:57:34Z",
   "yt_analytics": "2026-11-23",
-  "tg_members": "2026-11-26T08:06:32Z",
-  "tg_posts": "2026-11-26T08:06:33Z",
-  "ideas": "2026-11-26T07:34:38Z",
-  "news": "2026-11-26 04:52",
+  "tg_members": "2026-11-26T08:57:35Z",
+  "tg_posts": "2026-11-26T08:57:36Z",
+  "ideas": "2026-11-26T08:57:03Z",
+  "news": "2026-11-26 08:53",
   "comp": "2026-11-23",
-  "tiktok": "2026-11-26T04",
-  "instagram": "2026-11-26T04",
-  "site": "2026-11-23",
-  "site_live": "2026-11-26T08:06:35Z",
-  "activity": "2026-11-26T07:36:37Z",
+  "tiktok": "2026-11-26T08",
+  "instagram": "2026-11-26T08",
+  "site": "2026-11-24",
+  "site_live": "2026-11-26T08:57:37Z",
+  "activity": "2026-11-26T08:57:34Z",
   "asks": "2026-11-26T07:50Z"
  },
  "notes": [],
  "kpi": {
-  "subs": 327,
+  "subs": 330,
   "subs_goal": 1000,
   "long_hours": 12.1,
   "long_hours_goal": 4000,
@@ -32,8 +32,8 @@
   ],
   "tg": 6,
   "tg_goal": 150,
-  "site_clicks_28d": 46,
-  "site_impr_28d": 4026,
+  "site_clicks_28d": 47,
+  "site_impr_28d": 3921,
   "tiktok_auto": 8
  },
  "days": [
@@ -376,6 +376,12 @@
    "c": 0,
    "i": 133,
    "pos": 8.5
+  },
+  {
+   "d": "2026-11-24",
+   "c": 4,
+   "i": 85,
+   "pos": 9.9
   }
  ],
  "history": [
@@ -391,7 +397,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 163
+   "subs_total": 166
   },
   {
    "w": "2026-08-03",
@@ -405,7 +411,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 163
+   "subs_total": 166
   },
   {
    "w": "2026-08-17",
@@ -419,7 +425,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 163
+   "subs_total": 166
   },
   {
    "w": "2026-08-24",
@@ -433,7 +439,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 163
+   "subs_total": 166
   },
   {
    "w": "2026-08-31",
@@ -447,7 +453,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 163
+   "subs_total": 166
   },
   {
    "w": "2026-09-07",
@@ -461,7 +467,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 163
+   "subs_total": 166
   },
   {
    "w": "2026-09-28",
@@ -475,7 +481,7 @@
    "partial_site": false,
    "subs_cum": -1,
    "long_cum": 0.0,
-   "subs_total": 162
+   "subs_total": 165
   },
   {
    "w": "2026-10-19",
@@ -489,7 +495,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.2,
-   "subs_total": 163
+   "subs_total": 166
   },
   {
    "w": "2026-10-26",
@@ -503,7 +509,7 @@
    "partial_site": false,
    "subs_cum": 6,
    "long_cum": 0.7,
-   "subs_total": 169
+   "subs_total": 172
   },
   {
    "w": "2026-11-02",
@@ -517,7 +523,7 @@
    "partial_site": false,
    "subs_cum": 155,
    "long_cum": 5.5,
-   "subs_total": 318
+   "subs_total": 321
   },
   {
    "w": "2026-11-09",
@@ -531,7 +537,7 @@
    "partial_site": false,
    "subs_cum": 160,
    "long_cum": 8.2,
-   "subs_total": 323
+   "subs_total": 326
   },
   {
    "w": "2026-11-16",
@@ -545,7 +551,7 @@
    "partial_site": false,
    "subs_cum": 163,
    "long_cum": 10.9,
-   "subs_total": 326
+   "subs_total": 329
   },
   {
    "w": "2026-11-23",
@@ -553,13 +559,13 @@
    "subs": 1,
    "long_h": 0.9,
    "short_views": 178,
-   "clicks": 0,
-   "impr": 133,
+   "clicks": 4,
+   "impr": 218,
    "partial": true,
    "partial_site": true,
    "subs_cum": 164,
    "long_cum": 11.8,
-   "subs_total": 327
+   "subs_total": 330
   }
  ],
  "tg_hist": [
@@ -586,10 +592,10 @@
  ],
  "platforms": {
   "youtube": {
-   "subs": 327,
+   "subs": 330,
    "views_total": 12983,
    "videos": 101,
-   "live_at": "2026-11-26T08:06:31Z",
+   "live_at": "2026-11-26T08:57:34Z",
    "views_7d": 875,
    "pct_7d": 48.1,
    "subs_7d": 4,
@@ -667,12 +673,12 @@
   },
   "tiktok": {
    "videos": 22,
-   "views_total": 19418,
-   "views_7d": 2254,
+   "views_total": 19534,
+   "views_7d": 2370,
    "new_7d": 9,
    "saves_total": 143,
-   "likes_total": 395,
-   "last_snapshot": "2026-11-26T04",
+   "likes_total": 399,
+   "last_snapshot": "2026-11-26T08",
    "best": [
     {
      "title": "Український ШІ Сяйво: коли вийде",
@@ -784,40 +790,44 @@
     {
      "x": "2026-11-26T04",
      "v": 19418
+    },
+    {
+     "x": "2026-11-26T08",
+     "v": 19534
     }
    ]
   },
   "instagram": {
    "ig_goal": 100,
    "ig_goal_note": "до 1.12; далі 500 до 31.01 (поріг «Подарунків» — перевірити для України)",
-   "followers": 25,
-   "views_30d": 1303,
-   "reach_30d": 971,
-   "acc_at": "25.11 16Z",
+   "followers": 28,
+   "views_30d": 1735,
+   "reach_30d": 1273,
+   "acc_at": "26.11 08Z",
    "reels": 12,
-   "plays_total": 416,
-   "likes_total": 7,
-   "saves_total": 14,
-   "last_snapshot": "2026-11-26T04",
+   "plays_total": 434,
+   "likes_total": 9,
+   "saves_total": 17,
+   "last_snapshot": "2026-11-26T08",
    "best": [
     {
      "shortcode": "DgGRAlDjqkk",
      "title": "Як продати на OLX швидше з ШІ",
-     "plays": 69,
+     "plays": 70,
      "pct": 8,
      "published": "2026-11-23"
     },
     {
      "shortcode": "DgGRAVLFORb",
      "title": "Інкогніто в ШІ — не сейф",
-     "plays": 66,
+     "plays": 68,
      "pct": 14,
      "published": "2026-11-23"
     },
     {
      "shortcode": "DgGQ8fODsVW",
      "title": "Сімейний бюджет з ШІ",
-     "plays": 61,
+     "plays": 63,
      "pct": 8,
      "published": "2026-11-23"
     }
@@ -882,6 +892,10 @@
     {
      "x": "2026-11-26T04",
      "v": 416
+    },
+    {
+     "x": "2026-11-26T08",
+     "v": 434
     }
    ],
    "followers_hist": [
@@ -944,16 +958,20 @@
     {
      "x": "2026-11-26T04",
      "v": 25
+    },
+    {
+     "x": "2026-11-26T08",
+     "v": 28
     }
    ]
   },
   "site": {
-   "impr_28d": 4026,
-   "clicks_28d": 46,
-   "ctr": 1.14,
+   "impr_28d": 3921,
+   "clicks_28d": 47,
+   "ctr": 1.2,
    "avg_pos": 8.3,
-   "last_day": "2026-11-23",
-   "first_day": "2026-10-27",
+   "last_day": "2026-11-24",
+   "first_day": "2026-10-28",
    "weeks": "2026-W45…2026-W48",
    "top_queries": [
     {
@@ -1015,12 +1033,12 @@
     },
     {
      "x": "2026-11-23",
-     "v": 133,
+     "v": 218,
      "p": true
     }
    ],
    "live": {
-    "updated": "2026-11-26T08:06:35Z",
+    "updated": "2026-11-26T08:57:37Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 2,
@@ -1656,6 +1674,30 @@
    "score": 471.1
   },
   {
+   "title": "Договір, акт і рахунок для ФОП з ШІ: український сервіс робить DOCX за описом — що безкоштовно",
+   "format": "try",
+   "channels": [
+    "short",
+    "site",
+    "tg",
+    "tiktok"
+   ],
+   "demand": 4,
+   "fresh": 5,
+   "show": 5,
+   "fit": 5,
+   "source": "https://icodelab.dev/tools/moia-bukhhalteriia-fop",
+   "by": "researcher-news",
+   "hook": "you",
+   "length": 32,
+   "note": "dev.ua 26.11: «Моя бухгалтерія для ФОП» (Максим Ненька); акти й рахунки безкоштовно, договір — 70 балів (70 пробних). Пара до #35",
+   "status": "approved",
+   "added": "2026-11-26",
+   "id": "172",
+   "decision": "Бал 458 ≥300: Short «спробуй» + абзац у SEO-статтю #35 (ФОП, 27.11); безкоштовне (акти/рахунки) vs платне (договір 70 балів) звірити на icodelab.dev перед записом",
+   "score": 458.2
+  },
+  {
    "title": "Claude склав тобі «підсумок місяця»: що він помітив у твоїх чатах — де глянути безкоштовно і як видалити",
    "format": "free",
    "channels": [
@@ -1876,61 +1918,100 @@
    "id": "151",
    "decision": "Скан 25.11 день: бал 351,5 ≥300 (sec, сезон до 30.11). Слот: сайт + TG чт 26.11 до 10Z (за добу до Чорної пʼятниці; №136 — пт 27.11, №34 ep87 — до 28.11), TikTok чт 26.11 вечір або пт 27.11 зранку. Short — ні (слоти до 5.12 зайняті). Цифри UK Finance подавати без ШІ (у релізі ШІ немає); 75% — заява Savi Security, вибірка не репрезентативна. Перед публікацією — свіжі попередження Кіберполіції. Сайт done 25.11: /novyny/yak-pereviryty-internet-magazyn-na-shakhrajstvo/ (чт 26.11 09:00 Київ). TG-пост — TG-відділ 26.11; TikTok — окремо.",
    "score": 351.5
-  },
-  {
-   "title": "ПДВ для ФОПів з 2028: спитав ChatGPT, Gemini і Claude про нові правила — хто вигадав, а хто чесно сказав «це лише проєкт»",
-   "format": "check",
-   "channels": [
-    "short",
-    "site",
-    "tg"
-   ],
-   "demand": 5,
-   "fresh": 5,
-   "show": 4,
-   "fit": 4,
-   "length": 35,
-   "hook": "you",
-   "source": "https://dou.ua/lenta/news/new-taxes-for-businesses-2028/",
-   "by": "researcher-search",
-   "note": "DOU 24.11 і dev.ua 25.11: Мінфін оновив законопроєкт (документи від 21.11, офіційно не зареєстрований, за Железняком): ПДВ для ФОП/спрощенців з 1.01.2028 при обороті >€85 тис. за 12 міс; 3 група 5%→3% + ПДВ; е-резиденти не підпадають. kw.py 25.11: «фоп з пдв» 333, «фоп платник пдв» 247, «пдв для фоп 2026» 18. Наш кут — перевірка ШІ на свіжому податковому питанні, без порад з податків; першоджерело (таблиця Железняка / Мінфін) відкрити перед записом.",
-   "kw": "фоп з пдв (333); фоп платник пдв (247); фоп єсв (195) — kw.py 25.11",
-   "status": "new",
-   "added": "2026-11-25",
-   "id": "134",
-   "decision": "Радар 25.11: бал 311,5, попит «фоп з пдв» 333 — найвищий за тиждень. Не approved: законопроєкт не зареєстрований, правила можуть змінитись; check-прайор слабкий (мед. 23). Спершу TG/сайт, Short — якщо законопроєкт зареєструють (тоді оцінити разом з №35)",
-   "score": 311.5
   }
  ],
  "ideas_count": {
-  "total": 171,
-  "open": 161
+  "total": 174,
+  "open": 164
  },
  "lake": {
   "videos": 101,
   "daily": 862,
-  "news": 2142,
-  "niche": 1035,
+  "news": 2152,
+  "niche": 1235,
   "comp": 511,
   "comp_videos": 62794,
-  "research": 77,
-  "posts": 116,
-  "site_queries": 339,
+  "research": 81,
+  "posts": 121,
+  "site_queries": 431,
   "comp_ai": 241
  },
  "news": [
   {
    "date": "2026-11-26",
+   "source": "hf",
+   "title": "Building on Nemotron 3.5 Parse: Open Data, Fine-Tuning, and Faster Inference",
+   "score": null,
+   "url": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin"
+  },
+  {
+   "date": "2026-11-26",
+   "source": "devua",
+   "title": "«Я — продакт і дизайнер, Claude Code — розробник». 16-річний розробник із Полтавщини створив маркетплейс рибальських товарів Fishly, на якому вже понад 18 000 товарів",
+   "score": null,
+   "url": "https://dev.ua/news/ya-prodakt-i-dyzainer-claude-code-rozrobnyk-16-richnyi-rozrobnyk-iz-poltavshchyny-stvoryv-marketpleis-rybalskykh-tovariv-fishly-na-iakomu-vzhe-ponad-18-000-tovariv-1795668852"
+  },
+  {
+   "date": "2026-11-26",
+   "source": "devua",
+   "title": "Український розробник створив ШІ-сервіс, який генерує договори, акти й рахунки для ФОП",
+   "score": null,
+   "url": "https://dev.ua/news/nenka-1795670172"
+  },
+  {
+   "date": "2026-11-26",
+   "source": "speka",
+   "title": "Крипта і ШІ змінюють ринок праці: кого насправді шукають у 2026 році",
+   "score": null,
+   "url": "https://speka.ua/crypt/kripta-i-si-zminyuyut-rinok-praci-kogo-naspravdi-sukayut-u-2026-roci-vmdm87"
+  },
+  {
+   "date": "2026-11-26",
+   "source": "speka",
+   "title": "Як Nvidia стала ключовою компанією в епоху ШІ та чому її чипи так важко замінити",
+   "score": null,
+   "url": "https://speka.ua/news/chomu-chypy-nvidia-tak-vazhlyvi-dlia-shi-98kdr0"
+  },
+  {
+   "date": "2026-11-26",
+   "source": "speka",
+   "title": "2016 vs 2026: десять років AI, які змінили технології, бізнес і наше уявлення про майбутнє",
+   "score": null,
+   "url": "https://speka.ua/business/2016-vs-2026-desyat-rokiv-ai-yaki-zminili-texnologiyi-biznes-i-nase-uyavlennya-pro-maibutnje-por6xq"
+  },
+  {
+   "date": "2026-11-26",
+   "source": "speka",
+   "title": "З чого складається думка: вчені припускають, що ШІ може ніколи не отримати людську свідомість",
+   "score": null,
+   "url": "https://speka.ua/news/svidomist-shi-khimichna-pamyat-mozku-hipoteza-9ezy8x"
+  },
+  {
+   "date": "2026-11-26",
+   "source": "hn",
+   "title": "An algebraic quantization of gravity from the null cone",
+   "score": 12,
+   "url": "https://arxiv.org/abs/2611.34924"
+  },
+  {
+   "date": "2026-11-26",
+   "source": "dou",
+   "title": "Мінцифри звузило критерії критичності для IT-компаній",
+   "score": null,
+   "url": "https://dou.ua/lenta/news/ministry-it-criticality-criteria/"
+  },
+  {
+   "date": "2026-11-26",
    "source": "hn",
    "title": "OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster",
-   "score": 44,
+   "score": 212,
    "url": "https://twitter.com/thsottiaux/status/2125784147889393806"
   },
   {
    "date": "2026-11-26",
    "source": "hn",
    "title": "Proving a Fixed Upper Bound on Jensen's Affairs",
-   "score": 16,
+   "score": 30,
    "url": "https://bitbanter.com/posts/2026-11-25/proving-a-fixed-upper-bound-on-jensens-affairs/"
   },
   {
@@ -1939,69 +2020,6 @@
    "title": "Хроніки Anthropic",
    "score": null,
    "url": "https://speka.ua/business/xroniki-anthropic-9q4mqk"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "techcrunch",
-   "title": "S&P considers Nvidia credit downgrade over governance and ‘key man’ risks",
-   "score": null,
-   "url": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "verge",
-   "title": "Google’s patent for custom AI video feeds paints a bleak picture of entertainment’s future",
-   "score": null,
-   "url": "https://www.theverge.com/entertainment/1042221/google-my-channel-ai-video-patent"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "venturebeat",
-   "title": "MCP servers can now deliver AI agent skills, changing what companies approve when they connect one",
-   "score": null,
-   "url": "https://venturebeat.com/technology/mcp-servers-can-now-deliver-ai-agent-skills-changing-what-companies-approve-when-they-connect-one"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "hn",
-   "title": "Much shorter version of GRH Lean verification from Anthropic",
-   "score": 353,
-   "url": "https://github.com/lsernau/grh-lean"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "hn",
-   "title": "Multiagent coding is the future",
-   "score": 56,
-   "url": "https://www.kalzumeus.com/2026/11/25/multiagent-coding-is-the-future/"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "hn",
-   "title": "When the Air Force Needed a Supercomputer, They Built It Out of PS3 Consoles",
-   "score": 16,
-   "url": "https://www.warhistoryonline.com/war-articles/ps3-supercomputer.html"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "hn",
-   "title": "The USAID Files",
-   "score": 14,
-   "url": "https://reclaimthenet.org/usaid-files"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "hf",
-   "title": "Where scientists draw the line on AI agents",
-   "score": null,
-   "url": "https://huggingface.co/blog/allenai/where-scientists-draw-the-line-on-ai-agents"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "hf",
-   "title": "Hill-climbing Inkling 2 Mini inference on one RTX PRO 6000",
-   "score": null,
-   "url": "https://huggingface.co/blog/inkling-2-mini-inference-hillclimb"
   }
  ],
  "competitors": [
@@ -2112,41 +2130,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "201",
-   "agent": "post",
-   "task": "Заливка ep83 (26.11) і ep85 (28.11) + статті + exp v2",
-   "started": "2026-11-25T08:40:47Z",
-   "finished": "2026-11-25T08:45:45Z",
-   "result": "ep83 cw7Qm4AMP3U (26.11), ep85 B4hDo15vi6o (28.11), finalize PASS, статті з youtube, квота ~4700 лишилось",
-   "agent_raw": "production"
-  },
-  {
-   "id": "202",
-   "agent": "de",
-   "task": "Збирач даталейку 08:52Z (щоденний): sync, ingest, знімки, snapshot",
-   "started": "2026-11-25T08:53:26Z",
-   "finished": "2026-11-25T09:00:29Z",
-   "result": "IG 14 підписників (+4 за 8 год), 1009 переглядів/30д; TikTok 16; TG 6; YouTube sync; ідеї #139–143; snapshot",
-   "agent_raw": "data"
-  },
-  {
-   "id": "203",
-   "agent": "post",
-   "task": "Озвучка 09:18Z",
-   "started": "2026-11-25T09:17:53Z",
-   "finished": "2026-11-25T09:19:31Z",
-   "result": "429 (квота після ранкового вікна)",
-   "agent_raw": "production"
-  },
-  {
-   "id": "204",
-   "agent": "seo",
-   "task": "Стаття #136 «Чорна п'ятниця на ШІ-підписки» (сайт 27.11 до 10Z)",
-   "started": "2026-11-25T09:17:53Z",
-   "finished": "2026-11-25T09:21:39Z",
-   "result": "Стаття «Чорна п'ятниця на ChatGPT, Gemini і Claude» 27.11 10:00 (Google до −50% нові користувачі; ChatGPT/Claude — нема)"
-  },
   {
    "id": "205",
    "agent": "cso",
@@ -2460,6 +2443,40 @@
    "started": "2026-11-26T07:28:16Z",
    "finished": "2026-11-26T07:36:37Z",
    "result": "4 ініціативи (IG/TikTok через імпорт з YouTube у vidIQ, видимість ліміту TTS), ep87 знято, дашборд v60"
+  },
+  {
+   "id": "241",
+   "agent": "da",
+   "task": "Аудит прогнозів роликів, яким виповнилось 7 днів (19.11)",
+   "started": "2026-11-26T08:17:57Z",
+   "finished": "2026-11-26T08:20:32Z",
+   "result": "ep76 (19.11): прогноз 36 → факт 46 (×1.28, у смузі); формулу не чіпаємо, перевірка 01.12",
+   "agent_raw": "analyst"
+  },
+  {
+   "id": "242",
+   "agent": "seo",
+   "task": "фон: нова SEO-стаття під непокритий запит (27.11)",
+   "started": "2026-11-26T08:17:57Z",
+   "finished": "2026-11-26T08:23:02Z",
+   "result": "стаття /novyny/rakhunok-na-oplatu-fop-shi/ на 27.11 16:00 (140/міс)"
+  },
+  {
+   "id": "243",
+   "agent": "coo",
+   "task": "План сервера-студії для власника (Docker, сховище, рендер, бот 24/7)",
+   "started": "2026-11-26T08:45:56Z",
+   "finished": "2026-11-26T08:49:37Z",
+   "result": "план: CPX32 HEL1 €30,49 + Storage Box BX11 €3,20 = €33,69/міс (26.11, без ПДВ); надіслано власнику"
+  },
+  {
+   "id": "244",
+   "agent": "de",
+   "task": "Збирач даталейку 08:52Z (щоденний): sync, ingest, outliers, знімок",
+   "started": "2026-11-26T08:52:56Z",
+   "finished": "2026-11-26T08:57:34Z",
+   "result": "+23 новин; sync 101 відео; outliers +200; TikTok Signal 112, реклама ChatGPT 269; IG 28 підп.; ідеї #172 (458, approved), #173, #174",
+   "agent_raw": "data"
   }
  ],
  "agents": [
@@ -2808,8 +2825,8 @@
  "pipe": [
   {
    "name": "Озвучка",
-   "state": "ok",
-   "text": "працює: сьогодні 4 успішних запитів, останній 26.11 10:05 Київ"
+   "state": "warn",
+   "text": "ліміт Gemini TTS вичерпано (429) з 26.11 10:54 Київ; за 24 год успішних запитів 19 — денний ліміт ковзний (~15–19 запитів), слоти повертаються через добу після використаних. Наступне вікно — 10:02–10:52 Київ."
   },
   {
    "name": "Instagram Reels",

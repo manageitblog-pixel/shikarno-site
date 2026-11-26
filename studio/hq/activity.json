@@ -1597,8 +1597,8 @@
    "agent": "data",
    "task": "Збирач даталейку 08:52Z (щоденний): sync, ingest, outliers, знімок",
    "started": "2026-11-26T08:52:56Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-26T08:57:34Z",
+   "result": "+23 новин; sync 101 відео; outliers +200; TikTok Signal 112, реклама ChatGPT 269; IG 28 підп.; ідеї #172 (458, approved), #173, #174"
   }
  ]
 }
