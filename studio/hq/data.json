@@ -1,9 +1,9 @@
 {
- "generated": "2026-11-26T04:55:21Z",
+ "generated": "2026-11-26T05:06:20Z",
  "fresh": {
-  "yt_live": "2026-11-26T04:55:21Z",
+  "yt_live": "2026-11-26T05:06:20Z",
   "yt_analytics": "2026-11-22",
-  "tg_members": "2026-11-26T04:55:22Z",
+  "tg_members": "2026-11-26T05:06:21Z",
   "tg_posts": "2026-11-26T04:55:24Z",
   "ideas": "2026-11-26T04:54:51Z",
   "news": "2026-11-26 04:52",
@@ -11,7 +11,7 @@
   "tiktok": "2026-11-26T04",
   "instagram": "2026-11-26T04",
   "site": "2026-11-23",
-  "site_live": "2026-11-26T04:55:25Z",
+  "site_live": "2026-11-26T05:06:22Z",
   "activity": "2026-11-26T04:55:21Z",
   "asks": "2026-11-25T18:45Z"
  },
@@ -584,7 +584,7 @@
    "subs": 326,
    "views_total": 12624,
    "videos": 101,
-   "live_at": "2026-11-26T04:55:21Z",
+   "live_at": "2026-11-26T05:06:20Z",
    "views_7d": 740,
    "pct_7d": 51.2,
    "subs_7d": 3,
@@ -650,7 +650,7 @@
     },
     {
      "title": "ШІ для вчителя: план уроку і тест за 5 хвилин у Google Classroom 🍎",
-     "views": 117,
+     "views": 118,
      "id": "ENKGdbr04h0"
     },
     {
@@ -1015,7 +1015,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-26T04:55:25Z",
+    "updated": "2026-11-26T05:06:22Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 0,
@@ -1028,11 +1028,6 @@
      "pageloads": 7,
      "visits": 7,
      "hours": [
-      {
-       "h": "2026-11-25T05:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
       {
        "h": "2026-11-25T06:00:00Z",
        "pageloads": 0,
@@ -1145,6 +1140,11 @@
       },
       {
        "h": "2026-11-26T04:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-26T05:00:00Z",
        "pageloads": 0,
        "visits": 0
       }
@@ -1519,7 +1519,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 117
+   "total": 118
   },
   {
    "id": "LtNuOtQe0pc",
