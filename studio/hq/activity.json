@@ -1,14 +1,6 @@
 {
  "items": [
   {
-   "id": "60",
-   "agent": "de",
-   "task": "ops.py exp_start + контроль для експерименту кадру 0 (старт 24.11); daily 0→NULL",
-   "started": "2026-11-22T18:45:31Z",
-   "finished": "2026-11-22T18:51:41Z",
-   "result": "ops exp_start/add/status; контроль frame0 (ep71–81) готовий, старт після заливки ep82; daily 245 рядків → NULL"
-  },
-  {
    "id": "61",
    "agent": "longs",
    "task": "Озвучка зараз (квота є!): ep82 → гайд #1 частини 1–16 → ep83 → ep84, до першого 429",
@@ -1597,6 +1589,14 @@
    "agent": "ig",
    "task": "IG: Reel ep83 Moonlock (імпорт з YouTube через vidIQ)",
    "started": "2026-11-26T17:23:51Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "260",
+   "agent": "coo",
+   "task": "COO вечір 26.11: думати, дашборд, конвеєр, звіт власнику",
+   "started": "2026-11-26T18:27:44Z",
    "finished": null,
    "result": ""
   }
