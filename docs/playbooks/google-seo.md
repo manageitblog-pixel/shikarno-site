@@ -89,6 +89,11 @@
 - **Search Analytics API** (16.11; назву поста перевірено в архіві Search Central Blog, деталі — з вторинних джерел [seroundtable](https://seroundtable.com/google-search-analytics-api-addition-42544.html)): вимір `brandedClassification` (BRANDED/NON_BRANDED, дані з 21.02.2026; не комбінується з фільтром `query`), тип пошуку `webMultimodalData` (Lens, Circle to Search) і фільтр одразу за кількома країнами чи пристроями. **Для нас:** збирачу GSC варто тягнути `page×date` і окремо `NON_BRANDED`, бо брендових запитів «шікарно» майже немає, і CTR небрендових — чистіша метрика для G1.
 - Crawling/Indexing/Serving: інцидентів у листопаді немає. Інші пости блогу за добу: немає.
 
+## 5b. Офіційні зміни (перевірка 26.11, дослідник алгоритмів)
+- [Search Status Dashboard](https://status.search.google.com/summary): після 24.11 нових інцидентів немає. Ranking: November core update завершено (13 дн 20 год), а December 2026 core update анонсовано (без дати, «scheduled to be released in December 2026»). Crawling/Indexing: «No recent incidents». Усе як у §5a.
+- Search Central Blog: нових постів за 25–26.11 немає. Пропущений раніше пост **«Moving to a CDN without overwhelming your origin (or blocking Googlebot)»**, 11.11.2026 (Gary Illyes, Cherry Prommawin; [переказ SEJ](https://searchenginejournal.com/google-explains-how-to-avoid-cdn-migration-seo-problems/597888)) [О, деталі з вторинного джерела]. Його суть: під час запуску CDN вузьким місцем лишається origin-сервер, тому кеш треба прогріти, а перевірених краулерів — виключити з бот-захисту. **Для нас:** зараз ми на GitHub Pages, тож нічого робити не треба. Якщо сайт переїде на сервер-студію (`docs/playbooks/server-studio.md`, Caddy), у Caddy/фаєрволі не блокувати перевіреного Googlebot і не ставити rate limit на `/novyny/*`.
+- [Д] GSC 24.11: 85 показів (база 15–23.11 — 107–166 на день), 4 кліки, позиція 9,9. Це перший день після завершення апдейту. Висновків не робимо до 1.12. Тригер для SEO: <100 показів на день 3 дні поспіль (25–27.11), див. youtube.md §6.2 Р3.
+
 ## 6. Лайфхаки практиків (25.11) — **досвід практиків**, не офіційне
 Фокус: малі сайти, CTR, AI Overviews і Discover. Російських джерел і авторів немає. Українських кейсів із цифрами не знайдено: dev.ua/Promodo 16.01.2026 подає лише агреговане «−20–35 % охоплення інфосайтів» без кейсу, тож у таблицю не взято.
 
