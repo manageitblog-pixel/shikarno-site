@@ -1,14 +1,6 @@
 {
  "items": [
   {
-   "id": "62",
-   "agent": "de",
-   "task": "policy: тести на фікстурах (не живі файли) + UNVERIFIED, закритий у наступному раунді, не рахувати",
-   "started": "2026-11-22T18:52:08Z",
-   "finished": "2026-11-22T18:54:54Z",
-   "result": "policy: тести на фікстурах (51/51 OK); закриті в наступному раунді UNVERIFIED не рахуються; guide1 fact ALLOW"
-  },
-  {
    "id": "63",
    "agent": "de",
    "task": "Дашборд: аналітика всіх платформ — YouTube, TikTok, сайт, Telegram (історія)",
@@ -1599,6 +1591,14 @@
    "started": "2026-11-26T18:38:39Z",
    "finished": "2026-11-26T18:40:51Z",
    "result": "Reel ep83 опубліковано з 2-ї спроби: instagram.com/reel/DgNxPDNJ0u0"
+  },
+  {
+   "id": "262",
+   "agent": "researcher",
+   "task": "фон: вечірній веб-скан трендів 26.11 (11:20–19:20Z) + кандидати UPDATE_28",
+   "started": "2026-11-26T19:18:10Z",
+   "finished": null,
+   "result": ""
   }
  ]
 }
