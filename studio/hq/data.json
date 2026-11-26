@@ -1,18 +1,18 @@
 {
- "generated": "2026-11-26T00:06:47Z",
+ "generated": "2026-11-26T00:56:13Z",
  "fresh": {
-  "yt_live": "2026-11-26T00:06:48Z",
+  "yt_live": "2026-11-26T00:56:13Z",
   "yt_analytics": "2026-11-22",
-  "tg_members": "2026-11-26T00:06:48Z",
-  "tg_posts": "2026-11-26T00:06:50Z",
-  "ideas": "2026-11-25T20:57:42Z",
-  "news": "2026-11-25 20:53",
+  "tg_members": "2026-11-26T00:56:14Z",
+  "tg_posts": "2026-11-26T00:56:16Z",
+  "ideas": "2026-11-26T00:55:42Z",
+  "news": "2026-11-26 00:53",
   "comp": "2026-11-23",
-  "tiktok": "2026-11-25T20",
-  "instagram": "2026-11-25T20",
+  "tiktok": "2026-11-26T00",
+  "instagram": "2026-11-26T00",
   "site": "2026-11-23",
-  "site_live": "2026-11-26T00:06:51Z",
-  "activity": "2026-11-25T21:01:52Z",
+  "site_live": "2026-11-26T00:56:17Z",
+  "activity": "2026-11-26T00:56:13Z",
   "asks": "2026-11-25T18:45Z"
  },
  "notes": [],
@@ -573,6 +573,10 @@
   {
    "d": "2026-11-25",
    "n": 6
+  },
+  {
+   "d": "2026-11-26",
+   "n": 6
   }
  ],
  "platforms": {
@@ -580,7 +584,7 @@
    "subs": 325,
    "views_total": 12624,
    "videos": 101,
-   "live_at": "2026-11-26T00:06:48Z",
+   "live_at": "2026-11-26T00:56:13Z",
    "views_7d": 740,
    "pct_7d": 51.2,
    "subs_7d": 3,
@@ -658,12 +662,12 @@
   },
   "tiktok": {
    "videos": 22,
-   "views_total": 19237,
-   "views_7d": 2428,
-   "new_7d": 10,
-   "saves_total": 142,
-   "likes_total": 393,
-   "last_snapshot": "2026-11-25T20",
+   "views_total": 19375,
+   "views_7d": 2211,
+   "new_7d": 9,
+   "saves_total": 143,
+   "likes_total": 395,
+   "last_snapshot": "2026-11-26T00",
    "best": [
     {
      "title": "Український ШІ Сяйво: коли вийде",
@@ -767,40 +771,44 @@
     {
      "x": "2026-11-25T20",
      "v": 19237
+    },
+    {
+     "x": "2026-11-26T00",
+     "v": 19375
     }
    ]
   },
   "instagram": {
    "ig_goal": 100,
    "ig_goal_note": "до 1.12; далі 500 до 31.01 (поріг «Подарунків» — перевірити для України)",
-   "followers": 23,
+   "followers": 25,
    "views_30d": 1303,
    "reach_30d": 971,
    "acc_at": "25.11 16Z",
-   "reels": 11,
-   "plays_total": 404,
+   "reels": 12,
+   "plays_total": 413,
    "likes_total": 7,
    "saves_total": 14,
-   "last_snapshot": "2026-11-25T20",
+   "last_snapshot": "2026-11-26T00",
    "best": [
     {
      "shortcode": "DgGRAlDjqkk",
      "title": "Як продати на OLX швидше з ШІ",
-     "plays": 68,
+     "plays": 69,
      "pct": 8,
      "published": "2026-11-23"
     },
     {
      "shortcode": "DgGRAVLFORb",
      "title": "Інкогніто в ШІ — не сейф",
-     "plays": 65,
+     "plays": 66,
      "pct": 14,
      "published": "2026-11-23"
     },
     {
      "shortcode": "DgGQ8fODsVW",
-     "title": "Сімейний бюджет з ШІ. Тір-лист Байта #5",
-     "plays": 60,
+     "title": "Сімейний бюджет з ШІ",
+     "plays": 61,
      "pct": 8,
      "published": "2026-11-23"
     }
@@ -857,6 +865,10 @@
     {
      "x": "2026-11-25T20",
      "v": 404
+    },
+    {
+     "x": "2026-11-26T00",
+     "v": 413
     }
    ],
    "followers_hist": [
@@ -911,6 +923,10 @@
     {
      "x": "2026-11-25T20",
      "v": 23
+    },
+    {
+     "x": "2026-11-26T00",
+     "v": 25
     }
    ]
   },
@@ -987,7 +1003,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-26T00:06:51Z",
+    "updated": "2026-11-26T00:56:17Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 0,
@@ -1318,6 +1334,10 @@
     },
     {
      "x": "2026-11-25",
+     "v": 6
+    },
+    {
+     "x": "2026-11-26",
      "v": 6
     }
    ],
@@ -1864,13 +1884,13 @@
   }
  ],
  "ideas_count": {
-  "total": 167,
-  "open": 158
+  "total": 168,
+  "open": 159
  },
  "lake": {
   "videos": 98,
   "daily": 828,
-  "news": 2131,
+  "news": 2139,
   "niche": 1035,
   "comp": 511,
   "comp_videos": 62794,
@@ -1880,6 +1900,62 @@
   "comp_ai": 241
  },
  "news": [
+  {
+   "date": "2026-11-26",
+   "source": "speka",
+   "title": "Хроніки Anthropic",
+   "score": null,
+   "url": "https://speka.ua/business/xroniki-anthropic-9q4mqk"
+  },
+  {
+   "date": "2026-11-25",
+   "source": "techcrunch",
+   "title": "S&P considers Nvidia credit downgrade over governance and ‘key man’ risks",
+   "score": null,
+   "url": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/"
+  },
+  {
+   "date": "2026-11-25",
+   "source": "verge",
+   "title": "Google’s patent for custom AI video feeds paints a bleak picture of entertainment’s future",
+   "score": null,
+   "url": "https://www.theverge.com/entertainment/1042221/google-my-channel-ai-video-patent"
+  },
+  {
+   "date": "2026-11-25",
+   "source": "venturebeat",
+   "title": "MCP servers can now deliver AI agent skills, changing what companies approve when they connect one",
+   "score": null,
+   "url": "https://venturebeat.com/technology/mcp-servers-can-now-deliver-ai-agent-skills-changing-what-companies-approve-when-they-connect-one"
+  },
+  {
+   "date": "2026-11-25",
+   "source": "hn",
+   "title": "Much shorter version of GRH Lean verification from Anthropic",
+   "score": 233,
+   "url": "https://github.com/lsernau/grh-lean"
+  },
+  {
+   "date": "2026-11-25",
+   "source": "hn",
+   "title": "Multiagent coding is the future",
+   "score": 13,
+   "url": "https://www.kalzumeus.com/2026/11/25/multiagent-coding-is-the-future/"
+  },
+  {
+   "date": "2026-11-25",
+   "source": "hn",
+   "title": "When the Air Force Needed a Supercomputer, They Built It Out of PS3 Consoles",
+   "score": 11,
+   "url": "https://www.warhistoryonline.com/war-articles/ps3-supercomputer.html"
+  },
+  {
+   "date": "2026-11-25",
+   "source": "hn",
+   "title": "The USAID Files",
+   "score": 14,
+   "url": "https://reclaimthenet.org/usaid-files"
+  },
   {
    "date": "2026-11-25",
    "source": "hf",
@@ -1907,62 +1983,6 @@
    "title": "Jensen Huang broke Nvidia’s code of conduct, and his employees may not forget it",
    "score": null,
    "url": "https://techcrunch.com/2026/11/25/jensen-huang-broke-nvidias-code-of-conduct-and-his-employees-may-not-forget-it/"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "techcrunch",
-   "title": "Anthropic’s Dario Amodei calls accusations of surrendering human control to AI ‘absurd’",
-   "score": null,
-   "url": "https://techcrunch.com/2026/11/25/anthropics-dario-amodei-calls-accusations-of-surrendering-human-control-to-ai-absurd/"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "techcrunch",
-   "title": "Want to buy your kid an AI toy this Christmas? Not in New York",
-   "score": null,
-   "url": "https://techcrunch.com/2026/11/25/want-to-buy-your-kid-an-ai-toy-this-christmas-not-in-new-york/"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "techcrunch",
-   "title": "Character.AI’s plan to auction off users’ private chats challenged by state AGs",
-   "score": null,
-   "url": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "verge",
-   "title": "FCC signs off on SpaceX’s plan to put up to 1 million data center satellites into space",
-   "score": null,
-   "url": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "speka",
-   "title": "Signal посилює захист листування від ШІ: месенджер блокуватиме скриншоти на iPhone та Android",
-   "score": null,
-   "url": "https://speka.ua/news/signal-posilyuje-zaxist-listuvannya-vid-si-mesendzer-blokuvatime-skrinsoti-na-iphone-ta-android-por66y"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "hn",
-   "title": "Britain's ghost stations",
-   "score": 51,
-   "url": "https://spectator.com/article/britains-ghost-stations-are-fascinating/"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "hn",
-   "title": "New York bans AI toys, including those using internet to talk to children",
-   "score": 28,
-   "url": "https://www.theguardian.com/us-news/2026/nov/25/new-york-bans-ai-toys"
-  },
-  {
-   "date": "2026-11-25",
-   "source": "techcrunch",
-   "title": "AI data centers are becoming harder to build, and neoclouds are feeling it",
-   "score": null,
-   "url": "https://techcrunch.com/podcast/ai-data-centers-are-becoming-harder-to-build-and-neoclouds-are-feeling-it/"
   }
  ],
  "competitors": [
@@ -2073,14 +2093,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "196",
-   "agent": "coo",
-   "task": "COO ранок 25.11: ≥3 покращення, дашборд очима власника, конвеєр",
-   "started": "2026-11-25T07:27:35Z",
-   "finished": "2026-11-25T08:18:23Z",
-   "result": "guide2 ч.4/9 і weekly3 ч.2/3 у перезапис; lock+дата в run_voice; ep78 стаття 15Z; пропозиція розкладу TTS (закрив Диспетчер)"
-  },
   {
    "id": "197",
    "agent": "post",
@@ -2421,6 +2433,15 @@
    "finished": "2026-11-25T21:01:52Z",
    "result": "Reel без голосу «3 промпти» опубліковано: instagram.com/reel/DgLcnH3NVFb (24 с)",
    "agent_raw": "ig"
+  },
+  {
+   "id": "236",
+   "agent": "de",
+   "task": "Збирач даталейку 00:53Z: новини, TikTok/IG/TG-знімок",
+   "started": "2026-11-26T00:53:25Z",
+   "finished": "2026-11-26T00:56:13Z",
+   "result": "+24 новин; TikTok 10 (Signal 73, реклама ChatGPT 180), IG 25 підп.; ідея #168; Reel-тест 1 play",
+   "agent_raw": "data"
   }
  ],
  "agents": [
