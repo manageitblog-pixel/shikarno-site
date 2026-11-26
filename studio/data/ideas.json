@@ -3860,5 +3860,71 @@
   "status": "new",
   "added": "2026-11-26",
   "id": "181"
+ },
+ {
+  "title": "Підробив пенсійне посвідчення з ChatGPT і подав через «Дію»: суд в Ізмаїлі дав штраф — чому ШІ-фальшивку все одно видно",
+  "format": "news",
+  "channels": [
+   "short",
+   "tiktok",
+   "site",
+   "tg"
+  ],
+  "demand": 3,
+  "fresh": 5,
+  "show": 3,
+  "fit": 4,
+  "length": 30,
+  "by": "researcher-news",
+  "source": "https://dev.ua/news/na-odeshchyni-cholovik-za-dopomohoiu-chatgpt-pidrobyv-pensiine-posvidchennia-z-dovichnoiu-invalidnistiu-1795704422",
+  "note": "dev.ua 26.11 17:03 (Київ), за вироком Ізмаїльського міськрайонного суду від 05.11.2026: чоловік знайшов бланк, у ChatGPT на смартфоні вписав серію, дату, «довічну» II групу інвалідності; надрукував у копіцентрі; 04.05.2026 у ЦНАПі подав заяву через «Дію» зі сканом. Ст. 358 ч.1 і ч.4 ККУ, визнав вину; штраф 1700 грн (поглинання 850). Пенсію не отримав. Кут: ШІ малює папір, а не запис у реєстрі. Дошка: #62 (ChatGPT вигадав справи) — інший кут, не дубль.",
+  "status": "new",
+  "added": "2026-11-26",
+  "id": "182"
+ },
+ {
+  "title": "Claude допоміг витягти 90 «відео НЛО» з японської гри для PlayStation 1: що реально знайшли і чому «архів NASA» — лише слова",
+  "format": "news",
+  "channels": [
+   "short",
+   "tiktok",
+   "site"
+  ],
+  "demand": 3,
+  "fresh": 5,
+  "show": 4,
+  "fit": 3,
+  "length": 30,
+  "by": "researcher-news",
+  "source": "https://dev.ua/news/prykhovani-video-z-nlo-vytiahly-z-hry-za-dopomohoiu-shi-1795699588",
+  "sources": [
+   {
+    "name": "Reddit r/UFOs",
+    "url": "https://www.reddit.com/r/UFOs/"
+   }
+  ],
+  "note": "dev.ua 26.11 15:46 (Київ): гра Junichi Yaoi: Top Secret Project: Chase the UFO (PS1, 1996); u/mattperkins86 на Linux розібрав рідкісний ISO; Claude написав Python-скрипт: нормалізував нестандартні кадри, зібрав послідовності, синхронізував звук. 90 роликів, частина вже ходила мережею. Версію про копії архівів NASA (монах Джосен Такано, подкаст Джессі Майклса) ніхто не підтвердив — так і подавати. Першоджерело — пост у r/UFOs (знайти точний URL перед сценарієм).",
+  "status": "new",
+  "added": "2026-11-26",
+  "id": "183"
+ },
+ {
+  "title": "Федоров: його нова AI-native компанія шукатиме захист від російського «Рассвета» — чому супутники загрожують дронам на Starlink",
+  "format": "news",
+  "channels": [
+   "site",
+   "tg"
+  ],
+  "demand": 2,
+  "fresh": 5,
+  "show": 2,
+  "fit": 2,
+  "length": 30,
+  "by": "researcher-news",
+  "source": "https://dev.ua/news/my-100-budemo-nad-tsym-pratsiuvaty-fedorov-rozpoviv-shcho-ioho-novostvorena-ai-native-kompaniia-shukatyme-rishennia-proty-rosiiskoho-rassveta-1795710837",
+  "note": "dev.ua 26.11 18:50 (Київ), панель Forbes Tech: «Рассвет» — угруповання рос. супутників; Федоров: треба швидко РЕБ проти нього, його компанія працюватиме; ще — власний супутниковий зв’язок з партнерами. Його оцінка: 5–8 з 10 дронів на Starlink можуть губитися (його слова). Компанія — оборонна, багато під NDA. Мілтех, низький fit для каналу про ШІ для людей; дошка: #176, #180 — оборонний ШІ, не дубль.",
+  "status": "new",
+  "added": "2026-11-26",
+  "id": "184"
  }
 ]
