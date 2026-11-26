@@ -401,3 +401,4 @@
 {"ev": "part", "part": 9, "take": 1, "f0": 128.6, "f0_ok": true, "dur": 75.6, "audit": [{"seg": 27, "ratio": 0.96, "match": 0.76}, {"seg": 28, "ratio": 0.9, "match": 0.79}, {"seg": 29, "ratio": 0.94, "match": 0.79}], "repeat_suspect": false, "t": "08:21:17Z", "d": "2026-11-26"}
 {"ev": "part_final", "part": 9, "take": 1, "f0": 128.6, "clean": true, "t": "08:21:17Z", "d": "2026-11-26"}
 {"ev": "STOP", "reason": "TTS quota exhausted: 4 consecutive HTTP 429 from Gemini (gemini-3.8-flash-tts); try later or another key/model", "ok_requests": 13, "t": "08:22:51Z", "d": "2026-11-26"}
+{"ev": "tts_ok", "n": 1, "out": "/home/claude/eps/weekly3/part2.wav", "res": "(63.6, 24000, 'audio/wav')", "t": "08:23:35Z", "d": "2026-11-26"}
