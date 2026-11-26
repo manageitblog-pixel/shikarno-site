@@ -1,23 +1,23 @@
 {
- "generated": "2026-11-26T17:06:29Z",
+ "generated": "2026-11-26T18:06:38Z",
  "fresh": {
-  "yt_live": "2026-11-26T17:06:30Z",
+  "yt_live": "2026-11-26T18:06:38Z",
   "yt_analytics": "2026-11-23",
-  "tg_members": "2026-11-26T17:06:31Z",
-  "tg_posts": "2026-11-26T16:55:47Z",
+  "tg_members": "2026-11-26T18:06:39Z",
+  "tg_posts": "2026-11-26T18:06:41Z",
   "ideas": "2026-11-26T16:55:10Z",
   "news": "2026-11-26 16:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-26T16",
   "instagram": "2026-11-26T16",
   "site": "2026-11-24",
-  "site_live": "2026-11-26T17:06:32Z",
-  "activity": "2026-11-26T16:55:45Z",
+  "site_live": "2026-11-26T18:06:42Z",
+  "activity": "2026-11-26T17:27:31Z",
   "asks": "2026-11-26T07:50Z"
  },
  "notes": [],
  "kpi": {
-  "subs": 389,
+  "subs": 394,
   "subs_goal": 1000,
   "long_hours": 12.1,
   "long_hours_goal": 4000,
@@ -34,7 +34,7 @@
   "tg_goal": 150,
   "site_clicks_28d": 47,
   "site_impr_28d": 3921,
-  "tiktok_auto": 8
+  "tiktok_auto": 9
  },
  "days": [
   {
@@ -397,7 +397,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 225
+   "subs_total": 230
   },
   {
    "w": "2026-08-03",
@@ -411,7 +411,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 225
+   "subs_total": 230
   },
   {
    "w": "2026-08-17",
@@ -425,7 +425,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 225
+   "subs_total": 230
   },
   {
    "w": "2026-08-24",
@@ -439,7 +439,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 225
+   "subs_total": 230
   },
   {
    "w": "2026-08-31",
@@ -453,7 +453,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 225
+   "subs_total": 230
   },
   {
    "w": "2026-09-07",
@@ -467,7 +467,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 225
+   "subs_total": 230
   },
   {
    "w": "2026-09-28",
@@ -481,7 +481,7 @@
    "partial_site": false,
    "subs_cum": -1,
    "long_cum": 0.0,
-   "subs_total": 224
+   "subs_total": 229
   },
   {
    "w": "2026-10-19",
@@ -495,7 +495,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.2,
-   "subs_total": 225
+   "subs_total": 230
   },
   {
    "w": "2026-10-26",
@@ -509,7 +509,7 @@
    "partial_site": false,
    "subs_cum": 6,
    "long_cum": 0.7,
-   "subs_total": 231
+   "subs_total": 236
   },
   {
    "w": "2026-11-02",
@@ -523,7 +523,7 @@
    "partial_site": false,
    "subs_cum": 155,
    "long_cum": 5.5,
-   "subs_total": 380
+   "subs_total": 385
   },
   {
    "w": "2026-11-09",
@@ -537,7 +537,7 @@
    "partial_site": false,
    "subs_cum": 160,
    "long_cum": 8.2,
-   "subs_total": 385
+   "subs_total": 390
   },
   {
    "w": "2026-11-16",
@@ -551,7 +551,7 @@
    "partial_site": false,
    "subs_cum": 163,
    "long_cum": 10.9,
-   "subs_total": 388
+   "subs_total": 393
   },
   {
    "w": "2026-11-23",
@@ -565,7 +565,7 @@
    "partial_site": true,
    "subs_cum": 164,
    "long_cum": 11.8,
-   "subs_total": 389
+   "subs_total": 394
   }
  ],
  "tg_hist": [
@@ -592,10 +592,10 @@
  ],
  "platforms": {
   "youtube": {
-   "subs": 389,
+   "subs": 394,
    "views_total": 13137,
    "videos": 102,
-   "live_at": "2026-11-26T17:06:30Z",
+   "live_at": "2026-11-26T18:06:38Z",
    "views_7d": 875,
    "pct_7d": 48.1,
    "subs_7d": 4,
@@ -1062,7 +1062,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-26T17:06:32Z",
+    "updated": "2026-11-26T18:06:42Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 4,
@@ -1075,11 +1075,6 @@
      "pageloads": 4,
      "visits": 4,
      "hours": [
-      {
-       "h": "2026-11-25T18:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
       {
        "h": "2026-11-25T19:00:00Z",
        "pageloads": 0,
@@ -1192,6 +1187,11 @@
       },
       {
        "h": "2026-11-26T17:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-26T18:00:00Z",
        "pageloads": 0,
        "visits": 0
       }
@@ -1511,7 +1511,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 10
+   "total": 13
   },
   {
    "id": "Rlm1u-I6x00",
@@ -2157,24 +2157,6 @@
  ],
  "activity": [
   {
-   "id": "218",
-   "agent": "cm",
-   "task": "TikTok-коментарі за добу (vidIQ) → готові відповіді власнику",
-   "started": "2026-11-25T15:18:09Z",
-   "finished": "2026-11-25T15:19:46Z",
-   "result": "нових немає; 5 кр. vidIQ; власнику не писав",
-   "agent_raw": "community"
-  },
-  {
-   "id": "219",
-   "agent": "post",
-   "task": "Озвучка 16:19Z: шоу #3",
-   "started": "2026-11-25T16:18:35Z",
-   "finished": "2026-11-25T16:20:56Z",
-   "result": "STOP 16:20Z: 429, 0 запитів",
-   "agent_raw": "production"
-  },
-  {
    "id": "220",
    "agent": "seo",
    "task": "SEO: сторінки Search Console (покази ≥50, поз. 4–20) → переписати title/description",
@@ -2501,6 +2483,24 @@
    "finished": "2026-11-26T16:55:45Z",
    "result": "+25 новин; TikTok Signal 168; IG 30 підп.; Reel ep78 1 перегляд; ідеї #182–184",
    "agent_raw": "data"
+  },
+  {
+   "id": "258",
+   "agent": "coo",
+   "task": "TikTok ep83 через імпорт з YouTube (vidIQ)",
+   "started": "2026-11-26T17:11:45Z",
+   "finished": "2026-11-26T17:27:31Z",
+   "result": "TikTok ep83: tiktok.com/@shikarno_ai_ua/video/7712532442124471553",
+   "agent_raw": "tiktok"
+  },
+  {
+   "id": "259",
+   "agent": "dist",
+   "task": "IG: Reel ep83 Moonlock (імпорт з YouTube через vidIQ)",
+   "started": "2026-11-26T17:23:51Z",
+   "finished": null,
+   "result": "",
+   "agent_raw": "ig"
   }
  ],
  "agents": [
@@ -2860,7 +2860,7 @@
   {
    "name": "TikTok",
    "state": "ok",
-   "text": "усі Shorts з 23.11 опубліковано · останній пост 25.11"
+   "text": "усі Shorts з 23.11 опубліковано · останній пост 26.11"
   }
  ]
 }
