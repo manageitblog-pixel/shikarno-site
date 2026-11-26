@@ -1,14 +1,6 @@
 {
  "items": [
   {
-   "id": "67",
-   "agent": "seo",
-   "task": "Плейбуки: Google Search (SEO/Discover) + Telegram ріст — офіційні джерела → правила",
-   "started": "2026-11-22T19:05:28Z",
-   "finished": "2026-11-22T19:13:15Z",
-   "result": "Плейбуки Google (17 правил) і Telegram (15); 6 експериментів designed; проблема сайту — CTR, не позиції"
-  },
-  {
    "id": "68",
    "agent": "shorts",
    "task": "ep82: рендер (новий кадр 0) → QA → заливка на 24.11 17Z → finalize PASS → старт експерименту frame0",
@@ -1599,6 +1591,14 @@
    "started": "2026-11-26T20:52:52Z",
    "finished": "2026-11-26T20:56:41Z",
    "result": "news +24 (2198); TikTok 7 відео; IG 12 Reels, 32 підп.; TG 6; ідеї №188–192 (макс. 114.5); vidIQ 5 кр."
+  },
+  {
+   "id": "267",
+   "agent": "seo",
+   "task": "фон: нова SEO-стаття під непокритий запит (26.11 вечір)",
+   "started": "2026-11-26T21:18:00Z",
+   "finished": null,
+   "result": ""
   }
  ]
 }

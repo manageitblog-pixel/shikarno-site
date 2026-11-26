@@ -1,18 +1,18 @@
 {
- "generated": "2026-11-26T21:06:43Z",
+ "generated": "2026-11-26T21:18:20Z",
  "fresh": {
-  "yt_live": "2026-11-26T21:06:43Z",
+  "yt_live": "2026-11-26T21:18:20Z",
   "yt_analytics": "2026-11-23",
-  "tg_members": "2026-11-26T21:06:44Z",
-  "tg_posts": "2026-11-26T20:56:44Z",
+  "tg_members": "2026-11-26T21:18:21Z",
+  "tg_posts": "2026-11-26T21:18:23Z",
   "ideas": "2026-11-26T20:56:08Z",
   "news": "2026-11-26 20:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-26T20",
   "instagram": "2026-11-26T20",
   "site": "2026-11-24",
-  "site_live": "2026-11-26T21:06:45Z",
-  "activity": "2026-11-26T20:56:41Z",
+  "site_live": "2026-11-26T21:18:24Z",
+  "activity": "2026-11-26T21:18:00Z",
   "asks": "2026-11-26T18:35Z"
  },
  "notes": [],
@@ -601,7 +601,7 @@
    "subs": 393,
    "views_total": 13137,
    "videos": 102,
-   "live_at": "2026-11-26T21:06:43Z",
+   "live_at": "2026-11-26T21:18:20Z",
    "views_7d": 875,
    "pct_7d": 48.1,
    "subs_7d": 4,
@@ -1080,7 +1080,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-26T21:06:45Z",
+    "updated": "2026-11-26T21:18:24Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 7,
@@ -2175,15 +2175,6 @@
  ],
  "activity": [
   {
-   "id": "227",
-   "agent": "post",
-   "task": "Озвучка 18:19Z: шоу #3",
-   "started": "2026-11-25T18:18:29Z",
-   "finished": "2026-11-25T18:22:16Z",
-   "result": "STOP 429",
-   "agent_raw": "production"
-  },
-  {
    "id": "228",
    "agent": "trend",
    "task": "фон: веб-скан трендів (вечір) 13:30–18:20Z",
@@ -2519,6 +2510,14 @@
    "finished": "2026-11-26T20:56:41Z",
    "result": "news +24 (2198); TikTok 7 відео; IG 12 Reels, 32 підп.; TG 6; ідеї №188–192 (макс. 114.5); vidIQ 5 кр.",
    "agent_raw": "data"
+  },
+  {
+   "id": "267",
+   "agent": "seo",
+   "task": "фон: нова SEO-стаття під непокритий запит (26.11 вечір)",
+   "started": "2026-11-26T21:18:00Z",
+   "finished": null,
+   "result": ""
   }
  ],
  "agents": [
