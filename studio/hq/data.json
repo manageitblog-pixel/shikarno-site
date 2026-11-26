@@ -1,9 +1,9 @@
 {
- "generated": "2026-11-26T16:55:45Z",
+ "generated": "2026-11-26T17:06:29Z",
  "fresh": {
-  "yt_live": "2026-11-26T16:55:45Z",
+  "yt_live": "2026-11-26T17:06:30Z",
   "yt_analytics": "2026-11-23",
-  "tg_members": "2026-11-26T16:55:46Z",
+  "tg_members": "2026-11-26T17:06:31Z",
   "tg_posts": "2026-11-26T16:55:47Z",
   "ideas": "2026-11-26T16:55:10Z",
   "news": "2026-11-26 16:53",
@@ -11,7 +11,7 @@
   "tiktok": "2026-11-26T16",
   "instagram": "2026-11-26T16",
   "site": "2026-11-24",
-  "site_live": "2026-11-26T16:55:48Z",
+  "site_live": "2026-11-26T17:06:32Z",
   "activity": "2026-11-26T16:55:45Z",
   "asks": "2026-11-26T07:50Z"
  },
@@ -22,7 +22,7 @@
   "long_hours": 12.1,
   "long_hours_goal": 4000,
   "views_total": 13137,
-  "videos": 101,
+  "videos": 102,
   "views_7d": 875,
   "pct_7d": 48.1,
   "subs_7d": 4,
@@ -594,8 +594,8 @@
   "youtube": {
    "subs": 389,
    "views_total": 13137,
-   "videos": 101,
-   "live_at": "2026-11-26T16:55:45Z",
+   "videos": 102,
+   "live_at": "2026-11-26T17:06:30Z",
    "views_7d": 875,
    "pct_7d": 48.1,
    "subs_7d": 4,
@@ -643,20 +643,20 @@
      "id": "ENKGdbr04h0"
     },
     {
-     "title": "ChatGPT вчиться на твоїх чатах — як вимкнути за 30 секунд 🔐",
-     "views": 97,
-     "id": "Vp1PPNxtcrI"
-    },
-    {
      "title": "Як продати на OLX швидше з ШІ: опис, ціна, шахраї 🛍️ ШІ для професій #9",
      "views": 69,
      "id": "LtNuOtQe0pc"
+    },
+    {
+     "title": "Новини ШІ за тиждень (листопад 2026): Anthropic на біржі, Gemini платить сам | #2",
+     "views": 51,
+     "id": "aTUsauz53rs"
     }
    ],
    "best_live": [
     {
      "title": "Меню на тиждень і вечеря з того, що є 🍳 Тір-лист Байта #7",
-     "views": 157,
+     "views": 160,
      "id": "bvS0k_r3_bs"
     },
     {
@@ -665,9 +665,9 @@
      "id": "ENKGdbr04h0"
     },
     {
-     "title": "ChatGPT вчиться на твоїх чатах — як вимкнути за 30 секунд 🔐",
-     "views": 101,
-     "id": "Vp1PPNxtcrI"
+     "title": "Новини ШІ за тиждень (листопад 2026): Anthropic на біржі, Gemini платить сам | #2",
+     "views": 98,
+     "id": "aTUsauz53rs"
     }
    ]
   },
@@ -1062,7 +1062,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-26T16:55:48Z",
+    "updated": "2026-11-26T17:06:32Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 4,
@@ -1072,14 +1072,9 @@
     "pageloads_7d": 56,
     "visits_7d": 48,
     "last24h": {
-     "pageloads": 6,
-     "visits": 6,
+     "pageloads": 4,
+     "visits": 4,
      "hours": [
-      {
-       "h": "2026-11-25T17:00:00Z",
-       "pageloads": 2,
-       "visits": 2
-      },
       {
        "h": "2026-11-25T18:00:00Z",
        "pageloads": 0,
@@ -1192,6 +1187,11 @@
       },
       {
        "h": "2026-11-26T16:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-26T17:00:00Z",
        "pageloads": 0,
        "visits": 0
       }
@@ -1492,6 +1492,17 @@
  "formats_cutoff": "2026-11-17",
  "videos": [
   {
+   "id": "cw7Qm4AMP3U",
+   "title": "Шахрайські SMS на iPhone: Moonlock від MacPaw — чесно, чи варто?",
+   "format": null,
+   "short": true,
+   "published": "2026-11-26",
+   "views7": null,
+   "pct": null,
+   "complete": false,
+   "total": 0
+  },
+  {
    "id": "M-KQwpDwpA4",
    "title": "ChatGPT українською з нуля: як користуватися безкоштовно і без VPN | Гайд 2026",
    "format": "guide",
@@ -1533,7 +1544,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 157
+   "total": 160
   },
   {
    "id": "_wp0rz8edB8",
@@ -1555,7 +1566,7 @@
    "views7": 15,
    "pct": 26.9,
    "complete": false,
-   "total": 46
+   "total": 47
   },
   {
    "id": "ENKGdbr04h0",
@@ -1633,17 +1644,6 @@
    "pct": 37.7,
    "complete": false,
    "total": 46
-  },
-  {
-   "id": "Vp1PPNxtcrI",
-   "title": "ChatGPT вчиться на твоїх чатах — як вимкнути за 30 секунд 🔐",
-   "format": "clip",
-   "short": true,
-   "published": "2026-11-17",
-   "views7": 97,
-   "pct": 44.2,
-   "complete": true,
-   "total": 101
   }
  ],
  "ideas": [
