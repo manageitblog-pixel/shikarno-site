@@ -1,9 +1,9 @@
 {
- "generated": "2026-11-26T08:57:34Z",
+ "generated": "2026-11-26T09:06:49Z",
  "fresh": {
-  "yt_live": "2026-11-26T08:57:34Z",
+  "yt_live": "2026-11-26T09:06:50Z",
   "yt_analytics": "2026-11-23",
-  "tg_members": "2026-11-26T08:57:35Z",
+  "tg_members": "2026-11-26T09:06:51Z",
   "tg_posts": "2026-11-26T08:57:36Z",
   "ideas": "2026-11-26T08:57:03Z",
   "news": "2026-11-26 08:53",
@@ -12,12 +12,12 @@
   "instagram": "2026-11-26T08",
   "site": "2026-11-24",
   "site_live": "2026-11-26T08:57:37Z",
-  "activity": "2026-11-26T08:57:34Z",
+  "activity": "2026-11-26T09:01:14Z",
   "asks": "2026-11-26T07:50Z"
  },
  "notes": [],
  "kpi": {
-  "subs": 330,
+  "subs": 336,
   "subs_goal": 1000,
   "long_hours": 12.1,
   "long_hours_goal": 4000,
@@ -397,7 +397,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 166
+   "subs_total": 172
   },
   {
    "w": "2026-08-03",
@@ -411,7 +411,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 166
+   "subs_total": 172
   },
   {
    "w": "2026-08-17",
@@ -425,7 +425,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 166
+   "subs_total": 172
   },
   {
    "w": "2026-08-24",
@@ -439,7 +439,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 166
+   "subs_total": 172
   },
   {
    "w": "2026-08-31",
@@ -453,7 +453,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 166
+   "subs_total": 172
   },
   {
    "w": "2026-09-07",
@@ -467,7 +467,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 166
+   "subs_total": 172
   },
   {
    "w": "2026-09-28",
@@ -481,7 +481,7 @@
    "partial_site": false,
    "subs_cum": -1,
    "long_cum": 0.0,
-   "subs_total": 165
+   "subs_total": 171
   },
   {
    "w": "2026-10-19",
@@ -495,7 +495,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.2,
-   "subs_total": 166
+   "subs_total": 172
   },
   {
    "w": "2026-10-26",
@@ -509,7 +509,7 @@
    "partial_site": false,
    "subs_cum": 6,
    "long_cum": 0.7,
-   "subs_total": 172
+   "subs_total": 178
   },
   {
    "w": "2026-11-02",
@@ -523,7 +523,7 @@
    "partial_site": false,
    "subs_cum": 155,
    "long_cum": 5.5,
-   "subs_total": 321
+   "subs_total": 327
   },
   {
    "w": "2026-11-09",
@@ -537,7 +537,7 @@
    "partial_site": false,
    "subs_cum": 160,
    "long_cum": 8.2,
-   "subs_total": 326
+   "subs_total": 332
   },
   {
    "w": "2026-11-16",
@@ -551,7 +551,7 @@
    "partial_site": false,
    "subs_cum": 163,
    "long_cum": 10.9,
-   "subs_total": 329
+   "subs_total": 335
   },
   {
    "w": "2026-11-23",
@@ -565,7 +565,7 @@
    "partial_site": true,
    "subs_cum": 164,
    "long_cum": 11.8,
-   "subs_total": 330
+   "subs_total": 336
   }
  ],
  "tg_hist": [
@@ -592,10 +592,10 @@
  ],
  "platforms": {
   "youtube": {
-   "subs": 330,
+   "subs": 336,
    "views_total": 12983,
    "videos": 101,
-   "live_at": "2026-11-26T08:57:34Z",
+   "live_at": "2026-11-26T09:06:50Z",
    "views_7d": 875,
    "pct_7d": 48.1,
    "subs_7d": 4,
@@ -656,7 +656,7 @@
    "best_live": [
     {
      "title": "Меню на тиждень і вечеря з того, що є 🍳 Тір-лист Байта #7",
-     "views": 153,
+     "views": 154,
      "id": "bvS0k_r3_bs"
     },
     {
@@ -1509,7 +1509,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 153
+   "total": 154
   },
   {
    "id": "_wp0rz8edB8",
@@ -2131,14 +2131,6 @@
  ],
  "activity": [
   {
-   "id": "205",
-   "agent": "cso",
-   "task": "CSO 25.11: трекер 4 платформ + обсяг довгих + Google Ads як новий фактор",
-   "started": "2026-11-25T09:19:59Z",
-   "finished": "2026-11-25T09:23:17Z",
-   "result": "YT 316 підп/11,2 год (−90/−93%); TikTok +587/добу; IG 14; сайт 46 кл; TG 6; рішення: гайд #3 → 2.12 за умов (фактчек 30.11)"
-  },
-  {
    "id": "206",
    "agent": "seo",
    "task": "SEO-відділ 25.11: kw для нових ідей, YouTube-SEO свіжих (без змін через API — квота)",
@@ -2477,6 +2469,14 @@
    "finished": "2026-11-26T08:57:34Z",
    "result": "+23 новин; sync 101 відео; outliers +200; TikTok Signal 112, реклама ChatGPT 269; IG 28 підп.; ідеї #172 (458, approved), #173, #174",
    "agent_raw": "data"
+  },
+  {
+   "id": "245",
+   "agent": "seo",
+   "task": "Фактчек правових джерел у наборах pomichnyk-* перед відкриттям для Google",
+   "started": "2026-11-26T09:01:14Z",
+   "finished": null,
+   "result": ""
   }
  ],
  "agents": [
