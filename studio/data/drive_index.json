@@ -45,9 +45,9 @@
   "repo:docs/RUNBOOK.md": {
    "dir": "Документи",
    "id": "1I4maTNOsa_9zo0OiVYnMPju20EEKSqKV",
-   "md5": "8eaea13b3cd324ecfe53fef1d72ada94",
+   "md5": "2581c9d56eab03babccedaa972b02392",
    "parent": "19vvaUngaxs49llfpnzma9_QThHCJ9lB2",
-   "size": 122374
+   "size": 127709
   },
   "repo:docs/agents-farm.md": {
    "dir": "Документи",
@@ -73,9 +73,9 @@
   "repo:docs/design-guide.md": {
    "dir": "Документи",
    "id": "1I4PHHO1JUcoayACtxz9A_vN0uW2-8aW_",
-   "md5": "736f5eca5b7bb4f9a77faa33e4df7fae",
+   "md5": "da131438726cae43716457a24fe3b2a8",
    "parent": "19vvaUngaxs49llfpnzma9_QThHCJ9lB2",
-   "size": 58165
+   "size": 69063
   },
   "repo:docs/growth-plan-2026-11.md": {
    "dir": "Документи",
@@ -129,16 +129,16 @@
   "repo:docs/org/dispatch-log.md": {
    "dir": "Документи/org",
    "id": "1e7ZVkTE-3-bOFsg5rTN1ttq1cNjeEI2q",
-   "md5": "96416bf38bb4ed598760b3225291c20c",
+   "md5": "486c0cf0e79e312e9d619a561829364f",
    "parent": "1EFth4FQVRWNEj0FZrH9OBDWqOPdy9nem",
-   "size": 134524
+   "size": 161221
   },
   "repo:docs/org/initiatives.md": {
    "dir": "Документи/org",
    "id": "1gCWWtMsZwh2ZWiHqIpqjRjM4xG-JALSD",
-   "md5": "e45008fb7952fcf9c948aa6a0eec72d6",
+   "md5": "953c1e027959d716f0d41dd962ef71e7",
    "parent": "1EFth4FQVRWNEj0FZrH9OBDWqOPdy9nem",
-   "size": 21624
+   "size": 29780
   },
   "repo:docs/org/org-design-2026-11-22.md": {
    "dir": "Документи/org",
@@ -157,9 +157,9 @@
   "repo:docs/org/rollout.md": {
    "dir": "Документи/org",
    "id": "1CamJtTMCEKaFYFJnfpXYGnU8ueskBhgH",
-   "md5": "52c59c98a1720e4cf8611a425ebe4dfd",
+   "md5": "38f56dbf4af970b61c7b4d29ffb92e03",
    "parent": "1EFth4FQVRWNEj0FZrH9OBDWqOPdy9nem",
-   "size": 2482
+   "size": 3079
   },
   "repo:docs/org/rubrics.md": {
    "dir": "Документи/org",
@@ -171,9 +171,9 @@
   "repo:docs/org/strategy.md": {
    "dir": "Документи/org",
    "id": "1aI3vyprEyyKH2HjUg7TG9cK7_wHMTGuY",
-   "md5": "21d6bbd4f5cffb5530ab66375f68237b",
+   "md5": "f0f58cd08f07c6954589b56d1c8cb6c3",
    "parent": "1EFth4FQVRWNEj0FZrH9OBDWqOPdy9nem",
-   "size": 61780
+   "size": 69250
   },
   "repo:docs/org/system-2026-11-22.html": {
    "dir": "Документи/org",
