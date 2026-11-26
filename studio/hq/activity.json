@@ -1,14 +1,6 @@
 {
  "items": [
   {
-   "id": "36",
-   "agent": "factcheck",
-   "task": "Незалежний фактчек ep84 «ШІ для логопеда»",
-   "started": "2026-11-22T14:22:16Z",
-   "finished": "2026-11-22T14:23:58Z",
-   "result": "ep84: PASS (12 PASS, 0 FAIL; 1 UNVERIFIED лише в коментарі файлу)"
-  },
-  {
    "id": "37",
    "agent": "factcheck",
    "task": "Незалежний фактчек ep83 Moonlock",
@@ -1599,6 +1591,14 @@
    "started": "2026-11-25T20:55:43Z",
    "finished": "2026-11-25T21:01:52Z",
    "result": "Reel без голосу «3 промпти» опубліковано: instagram.com/reel/DgLcnH3NVFb (24 с)"
+  },
+  {
+   "id": "236",
+   "agent": "data",
+   "task": "Збирач даталейку 00:53Z: новини, TikTok/IG/TG-знімок",
+   "started": "2026-11-26T00:53:25Z",
+   "finished": null,
+   "result": ""
   }
  ]
 }
