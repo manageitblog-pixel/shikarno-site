@@ -1,23 +1,23 @@
 {
- "generated": "2026-11-25T23:06:37Z",
+ "generated": "2026-11-26T00:06:47Z",
  "fresh": {
-  "yt_live": "2026-11-25T23:06:37Z",
+  "yt_live": "2026-11-26T00:06:48Z",
   "yt_analytics": "2026-11-22",
-  "tg_members": "2026-11-25T23:06:38Z",
-  "tg_posts": "2026-11-25T23:06:40Z",
+  "tg_members": "2026-11-26T00:06:48Z",
+  "tg_posts": "2026-11-26T00:06:50Z",
   "ideas": "2026-11-25T20:57:42Z",
   "news": "2026-11-25 20:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-25T20",
   "instagram": "2026-11-25T20",
   "site": "2026-11-23",
-  "site_live": "2026-11-25T23:06:41Z",
+  "site_live": "2026-11-26T00:06:51Z",
   "activity": "2026-11-25T21:01:52Z",
   "asks": "2026-11-25T18:45Z"
  },
  "notes": [],
  "kpi": {
-  "subs": 324,
+  "subs": 325,
   "subs_goal": 1000,
   "long_hours": 12.1,
   "long_hours_goal": 4000,
@@ -386,7 +386,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 161
+   "subs_total": 162
   },
   {
    "w": "2026-08-03",
@@ -400,7 +400,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 161
+   "subs_total": 162
   },
   {
    "w": "2026-08-17",
@@ -414,7 +414,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 161
+   "subs_total": 162
   },
   {
    "w": "2026-08-24",
@@ -428,7 +428,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 161
+   "subs_total": 162
   },
   {
    "w": "2026-08-31",
@@ -442,7 +442,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 161
+   "subs_total": 162
   },
   {
    "w": "2026-09-07",
@@ -456,7 +456,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 161
+   "subs_total": 162
   },
   {
    "w": "2026-09-28",
@@ -470,7 +470,7 @@
    "partial_site": false,
    "subs_cum": -1,
    "long_cum": 0.0,
-   "subs_total": 160
+   "subs_total": 161
   },
   {
    "w": "2026-10-19",
@@ -484,7 +484,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.2,
-   "subs_total": 161
+   "subs_total": 162
   },
   {
    "w": "2026-10-26",
@@ -498,7 +498,7 @@
    "partial_site": false,
    "subs_cum": 6,
    "long_cum": 0.7,
-   "subs_total": 167
+   "subs_total": 168
   },
   {
    "w": "2026-11-02",
@@ -512,7 +512,7 @@
    "partial_site": false,
    "subs_cum": 155,
    "long_cum": 5.5,
-   "subs_total": 316
+   "subs_total": 317
   },
   {
    "w": "2026-11-09",
@@ -526,7 +526,7 @@
    "partial_site": false,
    "subs_cum": 160,
    "long_cum": 8.2,
-   "subs_total": 321
+   "subs_total": 322
   },
   {
    "w": "2026-11-16",
@@ -540,7 +540,7 @@
    "partial_site": false,
    "subs_cum": 163,
    "long_cum": 10.9,
-   "subs_total": 324
+   "subs_total": 325
   },
   {
    "w": "2026-11-23",
@@ -554,7 +554,7 @@
    "partial_site": true,
    "subs_cum": 163,
    "long_cum": 10.9,
-   "subs_total": 324
+   "subs_total": 325
   }
  ],
  "tg_hist": [
@@ -577,10 +577,10 @@
  ],
  "platforms": {
   "youtube": {
-   "subs": 324,
+   "subs": 325,
    "views_total": 12624,
    "videos": 101,
-   "live_at": "2026-11-25T23:06:37Z",
+   "live_at": "2026-11-26T00:06:48Z",
    "views_7d": 740,
    "pct_7d": 51.2,
    "subs_7d": 3,
@@ -651,7 +651,7 @@
     },
     {
      "title": "ChatGPT вчиться на твоїх чатах — як вимкнути за 30 секунд 🔐",
-     "views": 101,
+     "views": 102,
      "id": "Vp1PPNxtcrI"
     }
    ]
@@ -987,7 +987,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-25T23:06:41Z",
+    "updated": "2026-11-26T00:06:51Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 0,
@@ -1000,11 +1000,6 @@
      "pageloads": 7,
      "visits": 7,
      "hours": [
-      {
-       "h": "2026-11-25T00:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
       {
        "h": "2026-11-25T01:00:00Z",
        "pageloads": 0,
@@ -1119,6 +1114,11 @@
        "h": "2026-11-25T23:00:00Z",
        "pageloads": 0,
        "visits": 0
+      },
+      {
+       "h": "2026-11-26T00:00:00Z",
+       "pageloads": 0,
+       "visits": 0
       }
      ]
     },
@@ -1155,9 +1155,9 @@
      },
      {
       "d": "2026-11-18",
-      "pageloads": 2,
-      "visits": 2,
-      "sampled": false
+      "pageloads": 10,
+      "visits": 10,
+      "sampled": true
      },
      {
       "d": "2026-11-19",
@@ -1443,7 +1443,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 8
+   "total": 11
   },
   {
    "id": "bvS0k_r3_bs",
@@ -1509,7 +1509,7 @@
    "views7": 6,
    "pct": 59.2,
    "complete": false,
-   "total": 93
+   "total": 95
   },
   {
    "id": "gljrHADi4aU",
@@ -1564,7 +1564,7 @@
    "views7": 93,
    "pct": 46.2,
    "complete": false,
-   "total": 101
+   "total": 102
   }
  ],
  "ideas": [
@@ -1984,8 +1984,8 @@
    "channel": "Serhii Nemchynskyi",
    "subs": 333000,
    "lang": "uk",
-   "avg": 15041,
-   "n": 41
+   "avg": 15269,
+   "n": 40
   },
   {
    "channel": "КОЖОКАР  про Ютуб ",
@@ -2005,8 +2005,8 @@
    "channel": "dev ua   ",
    "subs": 8480,
    "lang": "uk",
-   "avg": 9724,
-   "n": 11
+   "avg": 8235,
+   "n": 10
   },
   {
    "channel": "Markel Kori",
@@ -2051,13 +2051,6 @@
    "n": 3
   },
   {
-   "channel": "Paul J Lipsky",
-   "subs": 535000,
-   "lang": "en",
-   "avg": 1553702,
-   "n": 49
-  },
-  {
    "channel": "Shark Numbers",
    "subs": 2010000,
    "lang": "en",
@@ -2068,8 +2061,15 @@
    "channel": "Vicky x Vlogs",
    "subs": 102000,
    "lang": "en",
-   "avg": 1115846,
-   "n": 110
+   "avg": 1146529,
+   "n": 107
+  },
+  {
+   "channel": "Iman Gadzhi",
+   "subs": 6380000,
+   "lang": "en",
+   "avg": 889025,
+   "n": 4
   }
  ],
  "activity": [
