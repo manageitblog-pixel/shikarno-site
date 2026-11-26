@@ -1,23 +1,23 @@
 {
- "generated": "2026-11-26T09:06:49Z",
+ "generated": "2026-11-26T10:06:45Z",
  "fresh": {
-  "yt_live": "2026-11-26T09:06:50Z",
+  "yt_live": "2026-11-26T10:06:45Z",
   "yt_analytics": "2026-11-23",
-  "tg_members": "2026-11-26T09:06:51Z",
-  "tg_posts": "2026-11-26T08:57:36Z",
+  "tg_members": "2026-11-26T10:06:46Z",
+  "tg_posts": "2026-11-26T10:06:47Z",
   "ideas": "2026-11-26T08:57:03Z",
   "news": "2026-11-26 08:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-26T08",
   "instagram": "2026-11-26T08",
   "site": "2026-11-24",
-  "site_live": "2026-11-26T08:57:37Z",
-  "activity": "2026-11-26T09:01:14Z",
+  "site_live": "2026-11-26T10:06:49Z",
+  "activity": "2026-11-26T09:37:07Z",
   "asks": "2026-11-26T07:50Z"
  },
  "notes": [],
  "kpi": {
-  "subs": 336,
+  "subs": 349,
   "subs_goal": 1000,
   "long_hours": 12.1,
   "long_hours_goal": 4000,
@@ -397,7 +397,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 172
+   "subs_total": 185
   },
   {
    "w": "2026-08-03",
@@ -411,7 +411,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 172
+   "subs_total": 185
   },
   {
    "w": "2026-08-17",
@@ -425,7 +425,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 172
+   "subs_total": 185
   },
   {
    "w": "2026-08-24",
@@ -439,7 +439,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 172
+   "subs_total": 185
   },
   {
    "w": "2026-08-31",
@@ -453,7 +453,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 172
+   "subs_total": 185
   },
   {
    "w": "2026-09-07",
@@ -467,7 +467,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 172
+   "subs_total": 185
   },
   {
    "w": "2026-09-28",
@@ -481,7 +481,7 @@
    "partial_site": false,
    "subs_cum": -1,
    "long_cum": 0.0,
-   "subs_total": 171
+   "subs_total": 184
   },
   {
    "w": "2026-10-19",
@@ -495,7 +495,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.2,
-   "subs_total": 172
+   "subs_total": 185
   },
   {
    "w": "2026-10-26",
@@ -509,7 +509,7 @@
    "partial_site": false,
    "subs_cum": 6,
    "long_cum": 0.7,
-   "subs_total": 178
+   "subs_total": 191
   },
   {
    "w": "2026-11-02",
@@ -523,7 +523,7 @@
    "partial_site": false,
    "subs_cum": 155,
    "long_cum": 5.5,
-   "subs_total": 327
+   "subs_total": 340
   },
   {
    "w": "2026-11-09",
@@ -537,7 +537,7 @@
    "partial_site": false,
    "subs_cum": 160,
    "long_cum": 8.2,
-   "subs_total": 332
+   "subs_total": 345
   },
   {
    "w": "2026-11-16",
@@ -551,7 +551,7 @@
    "partial_site": false,
    "subs_cum": 163,
    "long_cum": 10.9,
-   "subs_total": 335
+   "subs_total": 348
   },
   {
    "w": "2026-11-23",
@@ -565,7 +565,7 @@
    "partial_site": true,
    "subs_cum": 164,
    "long_cum": 11.8,
-   "subs_total": 336
+   "subs_total": 349
   }
  ],
  "tg_hist": [
@@ -592,10 +592,10 @@
  ],
  "platforms": {
   "youtube": {
-   "subs": 336,
+   "subs": 349,
    "views_total": 12983,
    "videos": 101,
-   "live_at": "2026-11-26T09:06:50Z",
+   "live_at": "2026-11-26T10:06:45Z",
    "views_7d": 875,
    "pct_7d": 48.1,
    "subs_7d": 4,
@@ -656,7 +656,7 @@
    "best_live": [
     {
      "title": "Меню на тиждень і вечеря з того, що є 🍳 Тір-лист Байта #7",
-     "views": 154,
+     "views": 153,
      "id": "bvS0k_r3_bs"
     },
     {
@@ -1038,29 +1038,19 @@
     }
    ],
    "live": {
-    "updated": "2026-11-26T08:57:37Z",
+    "updated": "2026-11-26T10:06:49Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
-    "today_pageloads": 2,
-    "today_visits": 2,
+    "today_pageloads": 3,
+    "today_visits": 3,
     "yesterday_pageloads": 8,
     "yesterday_visits": 8,
-    "pageloads_7d": 54,
-    "visits_7d": 46,
+    "pageloads_7d": 55,
+    "visits_7d": 47,
     "last24h": {
-     "pageloads": 9,
-     "visits": 9,
+     "pageloads": 10,
+     "visits": 10,
      "hours": [
-      {
-       "h": "2026-11-25T09:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
-      {
-       "h": "2026-11-25T10:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
       {
        "h": "2026-11-25T11:00:00Z",
        "pageloads": 2,
@@ -1170,6 +1160,16 @@
        "h": "2026-11-26T08:00:00Z",
        "pageloads": 0,
        "visits": 0
+      },
+      {
+       "h": "2026-11-26T09:00:00Z",
+       "pageloads": 1,
+       "visits": 1
+      },
+      {
+       "h": "2026-11-26T10:00:00Z",
+       "pageloads": 0,
+       "visits": 0
       }
      ]
     },
@@ -1254,8 +1254,8 @@
      },
      {
       "d": "2026-11-26",
-      "pageloads": 2,
-      "visits": 2,
+      "pageloads": 3,
+      "visits": 3,
       "sampled": false
      }
     ],
@@ -1269,15 +1269,15 @@
       "count": 3
      },
      {
-      "path": "/novyny/gemini-dlya-studentiv-bezkoshtovno/",
+      "path": "/novyny/shtuchnyj-intelekt-dlya-ditej-tir-lyst/",
+      "count": 2
+     },
+     {
+      "path": "/novyny/moonlock-iphone-shakhrajski-sms/",
       "count": 2
      },
      {
       "path": "/novyny/claude-code-shcho-tse/",
-      "count": 2
-     },
-     {
-      "path": "/novyny/signal-blokuye-shi-agentiv/",
       "count": 2
      }
     ],
@@ -1288,7 +1288,7 @@
      },
      {
       "host": "www.google.com",
-      "count": 9
+      "count": 10
      },
      {
       "host": "m.facebook.com",
@@ -1306,7 +1306,7 @@
     "top_countries_7d": [
      {
       "country": "UA",
-      "count": 32
+      "count": 33
      },
      {
       "country": "US",
@@ -1476,7 +1476,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 6
+   "total": 8
   },
   {
    "id": "Rlm1u-I6x00",
@@ -1509,7 +1509,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 154
+   "total": 153
   },
   {
    "id": "_wp0rz8edB8",
@@ -1524,14 +1524,14 @@
   },
   {
    "id": "xaYHobFNYHo",
-   "title": "Штучний інтелект для дітей: який ШІ обрати? 🧒 Тір-лист Байта #6",
+   "title": "Штучний інтелект для дітей: який ШІ безпечний? 🧒 Тір-лист Байта #6",
    "format": "tier",
    "short": true,
    "published": "2026-11-23",
    "views7": 15,
    "pct": 26.9,
    "complete": false,
-   "total": 41
+   "total": 43
   },
   {
    "id": "ENKGdbr04h0",
@@ -1557,7 +1557,7 @@
   },
   {
    "id": "aTUsauz53rs",
-   "title": "Новини ШІ за тиждень: Anthropic на біржі, Gemini платить сам | ШІ за тиждень з Байтом #2",
+   "title": "Новини ШІ за тиждень (листопад 2026): Anthropic на біржі, Gemini платить сам | #2",
    "format": "digest",
    "short": false,
    "published": "2026-11-22",
@@ -1568,7 +1568,7 @@
   },
   {
    "id": "gljrHADi4aU",
-   "title": "Сімейний бюджет з ШІ: який ШІ для грошей? 💸 Тір-лист Байта #5",
+   "title": "Сімейний бюджет з ШІ: який ШІ рахує гроші? 💸 Тір-лист Байта #5",
    "format": "tier",
    "short": true,
    "published": "2026-11-21",
@@ -2131,40 +2131,6 @@
  ],
  "activity": [
   {
-   "id": "206",
-   "agent": "seo",
-   "task": "SEO-відділ 25.11: kw для нових ідей, YouTube-SEO свіжих (без змін через API — квота)",
-   "started": "2026-11-25T10:14:08Z",
-   "finished": "2026-11-25T10:20:00Z",
-   "result": "kw для 8 ідей; audit 0 проблем; 4 пропозиції назв на 26.11; биті посилання виправлено; GSC тиждень 11 кл (−42%)"
-  },
-  {
-   "id": "207",
-   "agent": "algo",
-   "task": "Алгоритми 25.11 (ср → Google): офіційні зміни, лайфхаки практиків, наші дані, експерименти",
-   "started": "2026-11-25T12:13:47Z",
-   "finished": "2026-11-25T12:20:21Z",
-   "result": "Google Dec core update анонс; 6 лайфхаків; G4 designed; падіння «чат gpt безкоштовно» почалось до правки title — не відкочувати; ops.sqlite втрачено"
-  },
-  {
-   "id": "208",
-   "agent": "post",
-   "task": "Озвучка 12:18Z: шоу #3 з нуля",
-   "started": "2026-11-25T12:18:29Z",
-   "finished": "2026-11-25T12:20:11Z",
-   "result": "429 (квота); шоу #3 — у вікно 26.11 08–09Z",
-   "agent_raw": "production"
-  },
-  {
-   "id": "209",
-   "agent": "post",
-   "task": "Інфра: резерв озвучених частин поза контейнером (opus у git) + відновлення",
-   "started": "2026-11-25T12:18:29Z",
-   "finished": "2026-11-25T12:20:50Z",
-   "result": "vo_backup.py після кожного фіналу → Opus 48k у git (~0,3–0,5 МБ/частина), restore_vo.py у bootstrap; тест F0 128,2→128,2",
-   "agent_raw": "production"
-  },
-  {
    "id": "210",
    "agent": "de",
    "task": "Відновити ops.sqlite (експерименти, рішення, публікації) з docs/логів + дамп у git і відновлення в bootstrap",
@@ -2475,8 +2441,41 @@
    "agent": "seo",
    "task": "Фактчек правових джерел у наборах pomichnyk-* перед відкриттям для Google",
    "started": "2026-11-26T09:01:14Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-26T09:11:30Z",
+   "result": "12 джерел: 9 OK, 1 виправлено (ст.42 «Про освіту» → 4742-IX), 2 не звірено (hsc, tax — 403)"
+  },
+  {
+   "id": "246",
+   "agent": "cso",
+   "task": "CSO 26.11: трекер 4 платформ, обсяг довгих",
+   "started": "2026-11-26T09:19:53Z",
+   "finished": "2026-11-26T09:21:53Z",
+   "result": "години 12,1 (−92% темпу), підп. 336 (+20/добу), TikTok 19,5 тис.; рішення: шоу #4 сценарій сьогодні, гайд #3 ≥12/17 до 30.11 або 9.12"
+  },
+  {
+   "id": "247",
+   "agent": "shorts",
+   "task": "Сценарій шоу #4 (weekly4.py, 6.12) — заздалегідь, рішення CSO 26.11",
+   "started": "2026-11-26T09:21:54Z",
+   "finished": "2026-11-26T09:32:20Z",
+   "result": "weekly4.py: 7 сюжетів (2 укр.), 15 частин, ~12,1 хв; UPDATE_05=None",
+   "agent_raw": "editor"
+  },
+  {
+   "id": "248",
+   "agent": "seo",
+   "task": "SEO: назви/теги роликів ≤14 днів (yt-seo-2026-11-25) + розслідування падіння «чат gpt українською безкоштовно»",
+   "started": "2026-11-26T09:31:09Z",
+   "finished": "2026-11-26T09:35:07Z",
+   "result": "4 ролики: нові назви/теги (205 од.), оцінка 03.12; падіння запиту з 15.11 — не через title, відкат не треба"
+  },
+  {
+   "id": "249",
+   "agent": "factcheck",
+   "task": "Незалежний фактчек weekly4.py (шоу #4, 6.12)",
+   "started": "2026-11-26T09:32:20Z",
+   "finished": "2026-11-26T09:37:07Z",
+   "result": "weekly4 PASS з умовами: 31 твердження, 10 правок; у чергу озвучки після guide3"
   }
  ],
  "agents": [
