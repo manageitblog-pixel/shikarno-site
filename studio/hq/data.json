@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-26T05:06:20Z",
+ "generated": "2026-11-26T06:06:57Z",
  "fresh": {
-  "yt_live": "2026-11-26T05:06:20Z",
+  "yt_live": "2026-11-26T06:06:57Z",
   "yt_analytics": "2026-11-22",
-  "tg_members": "2026-11-26T05:06:21Z",
-  "tg_posts": "2026-11-26T04:55:24Z",
+  "tg_members": "2026-11-26T06:06:58Z",
+  "tg_posts": "2026-11-26T06:07:00Z",
   "ideas": "2026-11-26T04:54:51Z",
   "news": "2026-11-26 04:52",
   "comp": "2026-11-23",
   "tiktok": "2026-11-26T04",
   "instagram": "2026-11-26T04",
   "site": "2026-11-23",
-  "site_live": "2026-11-26T05:06:22Z",
+  "site_live": "2026-11-26T06:07:01Z",
   "activity": "2026-11-26T04:55:21Z",
   "asks": "2026-11-25T18:45Z"
  },
@@ -584,7 +584,7 @@
    "subs": 326,
    "views_total": 12624,
    "videos": 101,
-   "live_at": "2026-11-26T05:06:20Z",
+   "live_at": "2026-11-26T06:06:57Z",
    "views_7d": 740,
    "pct_7d": 51.2,
    "subs_7d": 3,
@@ -645,7 +645,7 @@
    "best_live": [
     {
      "title": "Меню на тиждень і вечеря з того, що є 🍳 Тір-лист Байта #7",
-     "views": 152,
+     "views": 153,
      "id": "bvS0k_r3_bs"
     },
     {
@@ -1015,7 +1015,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-26T05:06:22Z",
+    "updated": "2026-11-26T06:07:01Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 0,
@@ -1028,11 +1028,6 @@
      "pageloads": 7,
      "visits": 7,
      "hours": [
-      {
-       "h": "2026-11-25T06:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
       {
        "h": "2026-11-25T07:00:00Z",
        "pageloads": 0,
@@ -1145,6 +1140,11 @@
       },
       {
        "h": "2026-11-26T05:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-26T06:00:00Z",
        "pageloads": 0,
        "visits": 0
       }
@@ -1453,7 +1453,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 4
+   "total": 6
   },
   {
    "id": "Rlm1u-I6x00",
@@ -1486,7 +1486,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 152
+   "total": 153
   },
   {
    "id": "_wp0rz8edB8",
