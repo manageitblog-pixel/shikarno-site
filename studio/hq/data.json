@@ -1,23 +1,23 @@
 {
- "generated": "2026-11-26T14:07:01Z",
+ "generated": "2026-11-26T15:06:33Z",
  "fresh": {
-  "yt_live": "2026-11-26T14:07:01Z",
+  "yt_live": "2026-11-26T15:06:33Z",
   "yt_analytics": "2026-11-23",
-  "tg_members": "2026-11-26T14:07:02Z",
-  "tg_posts": "2026-11-26T14:07:03Z",
+  "tg_members": "2026-11-26T15:06:34Z",
+  "tg_posts": "2026-11-26T15:06:35Z",
   "ideas": "2026-11-26T12:56:59Z",
   "news": "2026-11-26 12:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-26T12",
   "instagram": "2026-11-26T12",
   "site": "2026-11-24",
-  "site_live": "2026-11-26T14:07:05Z",
+  "site_live": "2026-11-26T15:06:36Z",
   "activity": "2026-11-26T13:26:59Z",
   "asks": "2026-11-26T07:50Z"
  },
  "notes": [],
  "kpi": {
-  "subs": 396,
+  "subs": 388,
   "subs_goal": 1000,
   "long_hours": 12.1,
   "long_hours_goal": 4000,
@@ -397,7 +397,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 232
+   "subs_total": 224
   },
   {
    "w": "2026-08-03",
@@ -411,7 +411,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 232
+   "subs_total": 224
   },
   {
    "w": "2026-08-17",
@@ -425,7 +425,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 232
+   "subs_total": 224
   },
   {
    "w": "2026-08-24",
@@ -439,7 +439,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 232
+   "subs_total": 224
   },
   {
    "w": "2026-08-31",
@@ -453,7 +453,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 232
+   "subs_total": 224
   },
   {
    "w": "2026-09-07",
@@ -467,7 +467,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 232
+   "subs_total": 224
   },
   {
    "w": "2026-09-28",
@@ -481,7 +481,7 @@
    "partial_site": false,
    "subs_cum": -1,
    "long_cum": 0.0,
-   "subs_total": 231
+   "subs_total": 223
   },
   {
    "w": "2026-10-19",
@@ -495,7 +495,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.2,
-   "subs_total": 232
+   "subs_total": 224
   },
   {
    "w": "2026-10-26",
@@ -509,7 +509,7 @@
    "partial_site": false,
    "subs_cum": 6,
    "long_cum": 0.7,
-   "subs_total": 238
+   "subs_total": 230
   },
   {
    "w": "2026-11-02",
@@ -523,7 +523,7 @@
    "partial_site": false,
    "subs_cum": 155,
    "long_cum": 5.5,
-   "subs_total": 387
+   "subs_total": 379
   },
   {
    "w": "2026-11-09",
@@ -537,7 +537,7 @@
    "partial_site": false,
    "subs_cum": 160,
    "long_cum": 8.2,
-   "subs_total": 392
+   "subs_total": 384
   },
   {
    "w": "2026-11-16",
@@ -551,7 +551,7 @@
    "partial_site": false,
    "subs_cum": 163,
    "long_cum": 10.9,
-   "subs_total": 395
+   "subs_total": 387
   },
   {
    "w": "2026-11-23",
@@ -565,7 +565,7 @@
    "partial_site": true,
    "subs_cum": 164,
    "long_cum": 11.8,
-   "subs_total": 396
+   "subs_total": 388
   }
  ],
  "tg_hist": [
@@ -592,10 +592,10 @@
  ],
  "platforms": {
   "youtube": {
-   "subs": 396,
+   "subs": 388,
    "views_total": 12983,
    "videos": 101,
-   "live_at": "2026-11-26T14:07:01Z",
+   "live_at": "2026-11-26T15:06:33Z",
    "views_7d": 875,
    "pct_7d": 48.1,
    "subs_7d": 4,
@@ -1050,24 +1050,19 @@
     }
    ],
    "live": {
-    "updated": "2026-11-26T14:07:05Z",
+    "updated": "2026-11-26T15:06:36Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
-    "today_pageloads": 0,
-    "today_visits": 0,
+    "today_pageloads": 4,
+    "today_visits": 4,
     "yesterday_pageloads": 8,
     "yesterday_visits": 8,
     "pageloads_7d": 56,
     "visits_7d": 48,
     "last24h": {
-     "pageloads": 8,
-     "visits": 8,
+     "pageloads": 6,
+     "visits": 6,
      "hours": [
-      {
-       "h": "2026-11-25T15:00:00Z",
-       "pageloads": 2,
-       "visits": 2
-      },
       {
        "h": "2026-11-25T16:00:00Z",
        "pageloads": 0,
@@ -1182,6 +1177,11 @@
        "h": "2026-11-26T14:00:00Z",
        "pageloads": 0,
        "visits": 0
+      },
+      {
+       "h": "2026-11-26T15:00:00Z",
+       "pageloads": 0,
+       "visits": 0
       }
      ]
     },
@@ -1266,8 +1266,8 @@
      },
      {
       "d": "2026-11-26",
-      "pageloads": 0,
-      "visits": 0,
+      "pageloads": 4,
+      "visits": 4,
       "sampled": false
      }
     ],
@@ -1488,7 +1488,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 8
+   "total": 10
   },
   {
    "id": "Rlm1u-I6x00",
@@ -1510,7 +1510,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 14
+   "total": 15
   },
   {
    "id": "bvS0k_r3_bs",
