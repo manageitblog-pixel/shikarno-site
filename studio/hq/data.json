@@ -1,25 +1,25 @@
 {
- "generated": "2026-11-26T19:06:39Z",
+ "generated": "2026-11-26T20:06:47Z",
  "fresh": {
-  "yt_live": "2026-11-26T19:06:39Z",
+  "yt_live": "2026-11-26T20:06:47Z",
   "yt_analytics": "2026-11-23",
-  "tg_members": "2026-11-26T19:06:40Z",
-  "tg_posts": "2026-11-26T19:06:41Z",
-  "ideas": "2026-11-26T16:55:10Z",
+  "tg_members": "2026-11-26T20:06:48Z",
+  "tg_posts": "2026-11-26T20:06:49Z",
+  "ideas": "2026-11-26T19:21:19Z",
   "news": "2026-11-26 16:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-26T16",
   "instagram": "2026-11-26T16",
   "site": "2026-11-24",
-  "site_live": "2026-11-26T19:06:43Z",
-  "activity": "2026-11-26T18:40:51Z",
+  "site_live": "2026-11-26T20:06:51Z",
+  "activity": "2026-11-26T19:22:37Z",
   "asks": "2026-11-26T18:35Z"
  },
  "notes": [],
  "kpi": {
   "subs": 395,
   "subs_goal": 1000,
-  "long_hours": 12.1,
+  "long_hours": 12.6,
   "long_hours_goal": 4000,
   "views_total": 13137,
   "videos": 102,
@@ -601,7 +601,7 @@
    "subs": 395,
    "views_total": 13137,
    "videos": 102,
-   "live_at": "2026-11-26T19:06:39Z",
+   "live_at": "2026-11-26T20:06:47Z",
    "views_7d": 875,
    "pct_7d": 48.1,
    "subs_7d": 4,
@@ -609,7 +609,7 @@
     "2026-11-17",
     "2026-11-23"
    ],
-   "long_hours": 12.1,
+   "long_hours": 12.6,
    "history": [
     {
      "x": "2026-10-19",
@@ -662,12 +662,12 @@
    "best_live": [
     {
      "title": "Меню на тиждень і вечеря з того, що є 🍳 Тір-лист Байта #7",
-     "views": 160,
+     "views": 166,
      "id": "bvS0k_r3_bs"
     },
     {
      "title": "ШІ для вчителя: план уроку і тест за 5 хвилин у Google Classroom 🍎",
-     "views": 122,
+     "views": 124,
      "id": "ENKGdbr04h0"
     },
     {
@@ -1068,7 +1068,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-26T19:06:43Z",
+    "updated": "2026-11-26T20:06:51Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 7,
@@ -1081,11 +1081,6 @@
      "pageloads": 7,
      "visits": 7,
      "hours": [
-      {
-       "h": "2026-11-25T20:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
       {
        "h": "2026-11-25T21:00:00Z",
        "pageloads": 0,
@@ -1198,6 +1193,11 @@
       },
       {
        "h": "2026-11-26T19:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-26T20:00:00Z",
        "pageloads": 0,
        "visits": 0
       }
@@ -1550,7 +1550,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 160
+   "total": 166
   },
   {
    "id": "_wp0rz8edB8",
@@ -1572,7 +1572,7 @@
    "views7": 15,
    "pct": 26.9,
    "complete": false,
-   "total": 47
+   "total": 48
   },
   {
    "id": "ENKGdbr04h0",
@@ -1583,7 +1583,7 @@
    "views7": 100,
    "pct": 43.0,
    "complete": false,
-   "total": 122
+   "total": 124
   },
   {
    "id": "LtNuOtQe0pc",
@@ -1953,8 +1953,8 @@
   }
  ],
  "ideas_count": {
-  "total": 184,
-  "open": 174
+  "total": 185,
+  "open": 175
  },
  "lake": {
   "videos": 101,
@@ -2162,15 +2162,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "222",
-   "agent": "trend",
-   "task": "фон: аномалії українських ШІ-каналів (даталейк) → ідеї",
-   "started": "2026-11-25T16:18:35Z",
-   "finished": "2026-11-25T16:21:14Z",
-   "result": "+3 ідеї #153–155 (даталейк, 114 аномалій ≥3×), docs/research/niche-anomalies-2026-11-25.md",
-   "agent_raw": "researcher"
-  },
   {
    "id": "223",
    "agent": "de",
@@ -2507,6 +2498,15 @@
    "finished": "2026-11-26T18:40:51Z",
    "result": "Reel ep83 опубліковано з 2-ї спроби: instagram.com/reel/DgNxPDNJ0u0",
    "agent_raw": "ig"
+  },
+  {
+   "id": "262",
+   "agent": "trend",
+   "task": "фон: вечірній веб-скан трендів 26.11 (11:20–19:20Z) + кандидати UPDATE_28",
+   "started": "2026-11-26T19:18:10Z",
+   "finished": "2026-11-26T19:22:37Z",
+   "result": "релізів немає; нова ідея #185 FCA (ШІ-шахрайство з інвестиціями) → рекомендація UPDATE_28; запас #175 Talkie",
+   "agent_raw": "researcher"
   }
  ],
  "agents": [
