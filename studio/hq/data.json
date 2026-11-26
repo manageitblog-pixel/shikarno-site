@@ -1,23 +1,23 @@
 {
- "generated": "2026-11-26T13:06:56Z",
+ "generated": "2026-11-26T14:07:01Z",
  "fresh": {
-  "yt_live": "2026-11-26T13:06:56Z",
+  "yt_live": "2026-11-26T14:07:01Z",
   "yt_analytics": "2026-11-23",
-  "tg_members": "2026-11-26T13:06:56Z",
-  "tg_posts": "2026-11-26T12:57:36Z",
+  "tg_members": "2026-11-26T14:07:02Z",
+  "tg_posts": "2026-11-26T14:07:03Z",
   "ideas": "2026-11-26T12:56:59Z",
   "news": "2026-11-26 12:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-26T12",
   "instagram": "2026-11-26T12",
   "site": "2026-11-24",
-  "site_live": "2026-11-26T12:57:37Z",
-  "activity": "2026-11-26T12:57:34Z",
+  "site_live": "2026-11-26T14:07:05Z",
+  "activity": "2026-11-26T13:26:59Z",
   "asks": "2026-11-26T07:50Z"
  },
  "notes": [],
  "kpi": {
-  "subs": 377,
+  "subs": 396,
   "subs_goal": 1000,
   "long_hours": 12.1,
   "long_hours_goal": 4000,
@@ -397,7 +397,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 213
+   "subs_total": 232
   },
   {
    "w": "2026-08-03",
@@ -411,7 +411,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 213
+   "subs_total": 232
   },
   {
    "w": "2026-08-17",
@@ -425,7 +425,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 213
+   "subs_total": 232
   },
   {
    "w": "2026-08-24",
@@ -439,7 +439,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 213
+   "subs_total": 232
   },
   {
    "w": "2026-08-31",
@@ -453,7 +453,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 213
+   "subs_total": 232
   },
   {
    "w": "2026-09-07",
@@ -467,7 +467,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 213
+   "subs_total": 232
   },
   {
    "w": "2026-09-28",
@@ -481,7 +481,7 @@
    "partial_site": false,
    "subs_cum": -1,
    "long_cum": 0.0,
-   "subs_total": 212
+   "subs_total": 231
   },
   {
    "w": "2026-10-19",
@@ -495,7 +495,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.2,
-   "subs_total": 213
+   "subs_total": 232
   },
   {
    "w": "2026-10-26",
@@ -509,7 +509,7 @@
    "partial_site": false,
    "subs_cum": 6,
    "long_cum": 0.7,
-   "subs_total": 219
+   "subs_total": 238
   },
   {
    "w": "2026-11-02",
@@ -523,7 +523,7 @@
    "partial_site": false,
    "subs_cum": 155,
    "long_cum": 5.5,
-   "subs_total": 368
+   "subs_total": 387
   },
   {
    "w": "2026-11-09",
@@ -537,7 +537,7 @@
    "partial_site": false,
    "subs_cum": 160,
    "long_cum": 8.2,
-   "subs_total": 373
+   "subs_total": 392
   },
   {
    "w": "2026-11-16",
@@ -551,7 +551,7 @@
    "partial_site": false,
    "subs_cum": 163,
    "long_cum": 10.9,
-   "subs_total": 376
+   "subs_total": 395
   },
   {
    "w": "2026-11-23",
@@ -565,7 +565,7 @@
    "partial_site": true,
    "subs_cum": 164,
    "long_cum": 11.8,
-   "subs_total": 377
+   "subs_total": 396
   }
  ],
  "tg_hist": [
@@ -592,10 +592,10 @@
  ],
  "platforms": {
   "youtube": {
-   "subs": 377,
+   "subs": 396,
    "views_total": 12983,
    "videos": 101,
-   "live_at": "2026-11-26T13:06:56Z",
+   "live_at": "2026-11-26T14:07:01Z",
    "views_7d": 875,
    "pct_7d": 48.1,
    "subs_7d": 4,
@@ -1050,29 +1050,19 @@
     }
    ],
    "live": {
-    "updated": "2026-11-26T12:57:37Z",
+    "updated": "2026-11-26T14:07:05Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
-    "today_pageloads": 4,
-    "today_visits": 4,
+    "today_pageloads": 0,
+    "today_visits": 0,
     "yesterday_pageloads": 8,
     "yesterday_visits": 8,
     "pageloads_7d": 56,
     "visits_7d": 48,
     "last24h": {
-     "pageloads": 9,
-     "visits": 9,
+     "pageloads": 8,
+     "visits": 8,
      "hours": [
-      {
-       "h": "2026-11-25T13:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
-      {
-       "h": "2026-11-25T14:00:00Z",
-       "pageloads": 1,
-       "visits": 1
-      },
       {
        "h": "2026-11-25T15:00:00Z",
        "pageloads": 2,
@@ -1182,6 +1172,16 @@
        "h": "2026-11-26T12:00:00Z",
        "pageloads": 1,
        "visits": 1
+      },
+      {
+       "h": "2026-11-26T13:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-26T14:00:00Z",
+       "pageloads": 0,
+       "visits": 0
       }
      ]
     },
@@ -1266,8 +1266,8 @@
      },
      {
       "d": "2026-11-26",
-      "pageloads": 4,
-      "visits": 4,
+      "pageloads": 0,
+      "visits": 0,
       "sampled": false
      }
     ],
@@ -2145,23 +2145,6 @@
  ],
  "activity": [
   {
-   "id": "214",
-   "agent": "seo",
-   "task": "#149 збій ChatGPT: новина на сайт + TG-пост (сьогодні)",
-   "started": "2026-11-25T13:28:08Z",
-   "finished": "2026-11-25T13:47:14Z",
-   "result": "Новина /novyny/chatgpt-ne-pratsyuie-zbij-25-lystopada/ (200), TG №147"
-  },
-  {
-   "id": "215",
-   "agent": "post",
-   "task": "Озвучка 14:18Z: шоу #3",
-   "started": "2026-11-25T14:18:02Z",
-   "finished": "2026-11-25T14:19:41Z",
-   "result": "див. voice_log",
-   "agent_raw": "production"
-  },
-  {
    "id": "216",
    "agent": "seo",
    "task": "Стаття #151 «Фейкові магазини на Чорну п'ятницю» (26.11 ранок)",
@@ -2488,6 +2471,23 @@
    "finished": "2026-11-26T12:57:34Z",
    "result": "+32 новин; TikTok Signal 146; IG 1816 перегл.; ідеї #178–181",
    "agent_raw": "data"
+  },
+  {
+   "id": "254",
+   "agent": "designer",
+   "task": "Дизайнер 26.11: обкладинки ep83 (сьогодні), гайд #2 і ep84 (27.11)",
+   "started": "2026-11-26T13:08:44Z",
+   "finished": "2026-11-26T13:10:02Z",
+   "result": "обкладинки ep83/ep84/гайд #2 ок; відомі дрібні вади Thumb4 — після 2.12"
+  },
+  {
+   "id": "255",
+   "agent": "dist",
+   "task": "IG: догнати Reel ep78 (імпорт з YouTube через vidIQ)",
+   "started": "2026-11-26T13:23:44Z",
+   "finished": "2026-11-26T13:26:59Z",
+   "result": "Reel ep78 опубліковано: instagram.com/reel/DgNNT4FgxWy (імпорт з YouTube)",
+   "agent_raw": "ig"
   }
  ],
  "agents": [
@@ -2837,12 +2837,12 @@
   {
    "name": "Озвучка",
    "state": "warn",
-   "text": "ліміт Gemini TTS вичерпано (429) з 26.11 10:54 Київ; за 24 год успішних запитів 17 — денний ліміт ковзний (~15–19 запитів), слоти повертаються через добу після використаних. Наступне вікно — 10:02–10:52 Київ."
+   "text": "ліміт Gemini TTS вичерпано (429) з 26.11 15:24 Київ; за 24 год успішних запитів 19 — денний ліміт ковзний (~15–19 запитів), слоти повертаються через добу після використаних. Наступне вікно — 10:02–10:52 Київ."
   },
   {
    "name": "Instagram Reels",
    "state": "bad",
-   "text": "без публікації: 25.11 clip3, 25.11 ep78_signal_shi_agent (останній пост 25.11). Немає mp4 — не причина: vidIQ імпортує сам Short за YouTube-посиланням (RUNBOOK «МЕДІА СТЕРТО»)."
+   "text": "без публікації: 25.11 clip3 (останній пост 26.11). Немає mp4 — не причина: vidIQ імпортує сам Short за YouTube-посиланням (RUNBOOK «МЕДІА СТЕРТО»)."
   },
   {
    "name": "TikTok",
