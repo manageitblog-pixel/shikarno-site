@@ -1,14 +1,6 @@
 {
  "items": [
   {
-   "id": "45",
-   "agent": "seo",
-   "task": "SEO: gemini-dlya-studentiv-bezkoshtovno (136 показів, поз. 7.9)",
-   "started": "2026-11-22T15:18:10Z",
-   "finished": "2026-11-22T15:22:22Z",
-   "result": "gemini-dlya-studentiv: Pro лише США, в Україні рік AI Plus до 31.12; узгоджено з гайдом #3"
-  },
-  {
    "id": "46",
    "agent": "da",
    "task": "Аудит прогнозів: Shorts, яким виповнилось 7 днів (15–16.11)",
@@ -1599,6 +1591,14 @@
    "started": "2026-11-26T08:52:56Z",
    "finished": "2026-11-26T08:57:34Z",
    "result": "+23 новин; sync 101 відео; outliers +200; TikTok Signal 112, реклама ChatGPT 269; IG 28 підп.; ідеї #172 (458, approved), #173, #174"
+  },
+  {
+   "id": "245",
+   "agent": "seo",
+   "task": "Фактчек правових джерел у наборах pomichnyk-* перед відкриттям для Google",
+   "started": "2026-11-26T09:01:14Z",
+   "finished": null,
+   "result": ""
   }
  ]
 }
