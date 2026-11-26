@@ -402,3 +402,9 @@
 {"ev": "part_final", "part": 9, "take": 1, "f0": 128.6, "clean": true, "t": "08:21:17Z", "d": "2026-11-26"}
 {"ev": "STOP", "reason": "TTS quota exhausted: 4 consecutive HTTP 429 from Gemini (gemini-3.8-flash-tts); try later or another key/model", "ok_requests": 13, "t": "08:22:51Z", "d": "2026-11-26"}
 {"ev": "tts_ok", "n": 1, "out": "/home/claude/eps/weekly3/part2.wav", "res": "(63.6, 24000, 'audio/wav')", "t": "08:23:35Z", "d": "2026-11-26"}
+{"ev": "part", "part": 2, "take": 3, "f0": 119.5, "f0_ok": false, "dur": 63.6, "audit": [{"seg": 6, "ratio": 0.96, "match": 0.82}, {"seg": 7, "ratio": 0.96, "match": 0.74}], "repeat_suspect": false, "t": "08:24:26Z", "d": "2026-11-26"}
+{"ev": "part_retry_later", "part": 2, "best_take": 3, "f0": 119.5, "note": "take2 quota", "t": "08:25:57Z", "d": "2026-11-26"}
+{"ev": "STOP", "reason": "TTS quota exhausted: 4 consecutive HTTP 429 from Gemini (gemini-3.8-flash-tts); try later or another key/model", "ok_requests": 1, "t": "08:25:57Z", "d": "2026-11-26"}
+{"ev": "STOP", "reason": "TTS quota exhausted: 4 consecutive HTTP 429 from Gemini (gemini-3.8-flash-tts); try later or another key/model", "ok_requests": 0, "t": "08:27:29Z", "d": "2026-11-26"}
+{"ev": "STOP", "reason": "TTS quota exhausted: 4 consecutive HTTP 429 from Gemini (gemini-3.8-flash-tts); try later or another key/model", "ok_requests": 0, "t": "08:33:34Z", "d": "2026-11-26"}
+{"ev": "STOP", "reason": "TTS quota exhausted: 4 consecutive HTTP 429 from Gemini (gemini-3.8-flash-tts); try later or another key/model", "ok_requests": 0, "t": "08:43:34Z", "d": "2026-11-26"}
