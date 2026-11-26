@@ -1,18 +1,18 @@
 {
- "generated": "2026-11-26T21:18:20Z",
+ "generated": "2026-11-26T22:06:46Z",
  "fresh": {
-  "yt_live": "2026-11-26T21:18:20Z",
+  "yt_live": "2026-11-26T22:06:46Z",
   "yt_analytics": "2026-11-23",
-  "tg_members": "2026-11-26T21:18:21Z",
-  "tg_posts": "2026-11-26T21:18:23Z",
+  "tg_members": "2026-11-26T22:06:47Z",
+  "tg_posts": "2026-11-26T22:06:48Z",
   "ideas": "2026-11-26T20:56:08Z",
   "news": "2026-11-26 20:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-26T20",
   "instagram": "2026-11-26T20",
   "site": "2026-11-24",
-  "site_live": "2026-11-26T21:18:24Z",
-  "activity": "2026-11-26T21:18:00Z",
+  "site_live": "2026-11-26T22:06:50Z",
+  "activity": "2026-11-26T21:24:12Z",
   "asks": "2026-11-26T18:35Z"
  },
  "notes": [],
@@ -601,7 +601,7 @@
    "subs": 393,
    "views_total": 13137,
    "videos": 102,
-   "live_at": "2026-11-26T21:18:20Z",
+   "live_at": "2026-11-26T22:06:46Z",
    "views_7d": 875,
    "pct_7d": 48.1,
    "subs_7d": 4,
@@ -1080,24 +1080,19 @@
     }
    ],
    "live": {
-    "updated": "2026-11-26T21:18:24Z",
+    "updated": "2026-11-26T22:06:50Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
-    "today_pageloads": 7,
-    "today_visits": 7,
-    "yesterday_pageloads": 8,
-    "yesterday_visits": 8,
-    "pageloads_7d": 59,
-    "visits_7d": 51,
+    "today_pageloads": 0,
+    "today_visits": 0,
+    "yesterday_pageloads": 7,
+    "yesterday_visits": 7,
+    "pageloads_7d": 52,
+    "visits_7d": 46,
     "last24h": {
      "pageloads": 7,
      "visits": 7,
      "hours": [
-      {
-       "h": "2026-11-25T22:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
       {
        "h": "2026-11-25T23:00:00Z",
        "pageloads": 0,
@@ -1212,16 +1207,15 @@
        "h": "2026-11-26T21:00:00Z",
        "pageloads": 0,
        "visits": 0
+      },
+      {
+       "h": "2026-11-26T22:00:00Z",
+       "pageloads": 0,
+       "visits": 0
       }
      ]
     },
     "days": [
-     {
-      "d": "2026-11-13",
-      "pageloads": 20,
-      "visits": 20,
-      "sampled": true
-     },
      {
       "d": "2026-11-14",
       "pageloads": 0,
@@ -1299,38 +1293,44 @@
       "pageloads": 7,
       "visits": 7,
       "sampled": false
+     },
+     {
+      "d": "2026-11-27",
+      "pageloads": 0,
+      "visits": 0,
+      "sampled": false
      }
     ],
     "top_pages_7d": [
      {
       "path": "/",
-      "count": 26
-     },
-     {
-      "path": "/novyny/promty-dlya-chatgpt/",
-      "count": 3
+      "count": 25
      },
      {
       "path": "/novyny/shtuchnyj-intelekt-dlya-ditej-tir-lyst/",
       "count": 2
      },
      {
-      "path": "/novyny/moonlock-iphone-shakhrajski-sms/",
+      "path": "/novyny/gemini-dlya-studentiv-bezkoshtovno/",
       "count": 2
      },
      {
       "path": "/novyny/claude-code-shcho-tse/",
+      "count": 2
+     },
+     {
+      "path": "/novyny/signal-blokuye-shi-agentiv/",
       "count": 2
      }
     ],
     "top_referrers_7d": [
      {
       "host": "(прямі / без реферера)",
-      "count": 31
+      "count": 28
      },
      {
       "host": "www.google.com",
-      "count": 10
+      "count": 8
      },
      {
       "host": "m.facebook.com",
@@ -1348,7 +1348,7 @@
     "top_countries_7d": [
      {
       "country": "UA",
-      "count": 33
+      "count": 26
      },
      {
       "country": "US",
@@ -2516,8 +2516,8 @@
    "agent": "seo",
    "task": "фон: нова SEO-стаття під непокритий запит (26.11 вечір)",
    "started": "2026-11-26T21:18:00Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-26T21:24:12Z",
+   "result": "стаття «Оживити фото з ШІ безкоштовно» (запит 1300/міс, Ubersuggest) на 28.11 10:00, у main"
   }
  ],
  "agents": [
