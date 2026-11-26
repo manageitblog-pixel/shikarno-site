@@ -1597,8 +1597,8 @@
    "agent": "factcheck",
    "task": "Незалежний фактчек weekly4.py (шоу #4, 6.12)",
    "started": "2026-11-26T09:32:20Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-26T09:37:07Z",
+   "result": "weekly4 PASS з умовами: 31 твердження, 10 правок; у чергу озвучки після guide3"
   }
  ]
 }

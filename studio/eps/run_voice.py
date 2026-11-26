@@ -167,6 +167,7 @@ if __name__ == "__main__":
         for k in ("VC_REF", "VC_TOL"): os.environ.pop(k, None)
         for mod in ("ep88", "ep89", "ep90"): short(mod)  # 25.11: ep83–86 уже залиті (медіа стерто рестартом) — не переозвучувати; ep88–90 вихід 30.11–2.12
         guide("guide3")  # 24.11 власник: «спершу результат» → довгі в черзі першими; гайд #3 (9.12, спроба 2.12)
+        guide("weekly4")  # шоу #4, вихід 6.12 12:00Z; незалежний фактчек PASS з умовами 26.11 (5.12 — дописати аукціон Character.AI, перевідкрити довідку про ліміти)
         log(ev="all_done", ok_requests=REQ["ok"])
     except RuntimeError as e:
         log(ev="STOP", reason=str(e)[:300], ok_requests=REQ["ok"])
