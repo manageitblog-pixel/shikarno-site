@@ -3640,5 +3640,68 @@
   "status": "new",
   "added": "2026-11-26",
   "id": "171"
+ },
+ {
+  "title": "Договір, акт і рахунок для ФОП з ШІ: український сервіс робить DOCX за описом — що безкоштовно",
+  "format": "try",
+  "channels": [
+   "short",
+   "site",
+   "tg",
+   "tiktok"
+  ],
+  "demand": 4,
+  "fresh": 5,
+  "show": 5,
+  "fit": 5,
+  "source": "https://icodelab.dev/tools/moia-bukhhalteriia-fop",
+  "by": "researcher-news",
+  "hook": "you",
+  "length": 32,
+  "note": "dev.ua 26.11: «Моя бухгалтерія для ФОП» (Максим Ненька); акти й рахунки безкоштовно, договір — 70 балів (70 пробних). Пара до #35",
+  "status": "approved",
+  "added": "2026-11-26",
+  "id": "172",
+  "decision": "Бал 458 ≥300: Short «спробуй» + абзац у SEO-статтю #35 (ФОП, 27.11); безкоштовне (акти/рахунки) vs платне (договір 70 балів) звірити на icodelab.dev перед записом"
+ },
+ {
+  "title": "16-річний з Гадяча зробив маркетплейс з Claude Code за кілька тижнів: $25 на місяць і 18 000 товарів",
+  "format": "news",
+  "channels": [
+   "short",
+   "tg",
+   "tiktok"
+  ],
+  "demand": 2,
+  "fresh": 5,
+  "show": 4,
+  "fit": 4,
+  "source": "https://dev.ua/news/ya-prodakt-i-dyzainer-claude-code-rozrobnyk-16-richnyi-rozrobnyk-iz-poltavshchyny-stvoryv-marketpleis-rybalskykh-tovariv-fishly-na-iakomu-vzhe-ponad-18-000-tovariv-1795668852",
+  "by": "researcher-news",
+  "length": 30,
+  "note": "Fishly (fishly.site), Андрій Козуб; Next.js+Supabase+Vercel; 1100 відвідувачів за тиждень, продажів ще нема",
+  "status": "new",
+  "added": "2026-11-26",
+  "id": "173"
+ },
+ {
+  "title": "Nvidia відкрила дані для Nemotron 3.5 Parse: модель 0.6B перетворює скани на таблиці — 20 сторінок за секунду",
+  "format": "news",
+  "channels": [
+   "tg",
+   "site"
+  ],
+  "demand": 1,
+  "fresh": 5,
+  "show": 3,
+  "fit": 2,
+  "source": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
+  "by": "researcher-news",
+  "hook": "release",
+  "length": 30,
+  "note": "3 відкриті датасети (графіки 9,98 млн, таблиці 1 млн, OCR 7,9 млн), DFlash2: 20,44 стор/с на H200 проти 2,98 у Parse 2.0 — цифри Nvidia",
+  "status": "new",
+  "added": "2026-11-26",
+  "id": "174"
  }
 ]
