@@ -74,5 +74,21 @@
       "note": "без голосу, прохання власника; 24 с, тиха aac-доріжка; промпти дослівно з TG-поста 25.11 (guide1, фактчек PASS)"
     }
   },
-  "paused": "23.11: старі (до ~16.11) не публікувати — озвучка до контролю висоти. Свіжі — лише ig.mp4 з обкладинкою першим кадром (python3 studio/eps/ig_cover.py reels), поки не підключено Meta API з cover_url."
+  "paused": "23.11: старі (до ~16.11) не публікувати — озвучка до контролю висоти. Свіжі — лише ig.mp4 з обкладинкою першим кадром (python3 studio/eps/ig_cover.py reels), поки не підключено Meta API з cover_url.",
+  "catchup_2611": {
+    "note": "COO 26.11: догін ≤1/день через vidIQ-імпорт YouTube Short (RUNBOOK «МЕДІА СТЕРТО ≠ ПРОПУСК»)",
+    "ep78_signal_shi_agent": {
+      "yt": "Rlm1u-I6x00",
+      "uploadId": "a6931f0f-56f2-4f3e-a4c6-c3feabe42659",
+      "when": "26.11 15:23 Київ"
+    },
+    "ep83_moonlock_chesno": {
+      "yt": "cw7Qm4AMP3U",
+      "when": "26.11 19:23 Київ, після public 17Z"
+    },
+    "clip3": {
+      "yt": "6mIdp843fKo",
+      "when": "27.11 15:23 Київ"
+    }
+  }
 }

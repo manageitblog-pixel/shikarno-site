@@ -1,19 +1,19 @@
 {
- "generated": "2026-11-26T07:06:59Z",
+ "generated": "2026-11-26T07:35:34Z",
  "fresh": {
-  "yt_live": "2026-11-26T07:06:59Z",
+  "yt_live": "2026-11-26T07:35:34Z",
   "yt_analytics": "2026-11-23",
-  "tg_members": "2026-11-26T07:07:00Z",
-  "tg_posts": "2026-11-26T07:03:31Z",
-  "ideas": "2026-11-26T06:50:05Z",
+  "tg_members": "2026-11-26T07:35:35Z",
+  "tg_posts": "2026-11-26T07:30:22Z",
+  "ideas": "2026-11-26T07:34:38Z",
   "news": "2026-11-26 04:52",
   "comp": "2026-11-23",
   "tiktok": "2026-11-26T04",
   "instagram": "2026-11-26T04",
   "site": "2026-11-23",
-  "site_live": "2026-11-26T07:03:32Z",
-  "activity": "2026-11-26T07:03:28Z",
-  "asks": "2026-11-26T06:50Z"
+  "site_live": "2026-11-26T07:30:23Z",
+  "activity": "2026-11-26T07:28:16Z",
+  "asks": "2026-11-26T07:50Z"
  },
  "notes": [],
  "kpi": {
@@ -589,7 +589,7 @@
    "subs": 326,
    "views_total": 12983,
    "videos": 101,
-   "live_at": "2026-11-26T07:06:59Z",
+   "live_at": "2026-11-26T07:35:34Z",
    "views_7d": 875,
    "pct_7d": 48.1,
    "subs_7d": 4,
@@ -1020,18 +1020,18 @@
     }
    ],
    "live": {
-    "updated": "2026-11-26T07:03:32Z",
+    "updated": "2026-11-26T07:30:23Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
-    "today_pageloads": 0,
-    "today_visits": 0,
+    "today_pageloads": 2,
+    "today_visits": 2,
     "yesterday_pageloads": 8,
     "yesterday_visits": 8,
-    "pageloads_7d": 52,
-    "visits_7d": 44,
+    "pageloads_7d": 54,
+    "visits_7d": 46,
     "last24h": {
-     "pageloads": 7,
-     "visits": 7,
+     "pageloads": 9,
+     "visits": 9,
      "hours": [
       {
        "h": "2026-11-25T08:00:00Z",
@@ -1150,8 +1150,8 @@
       },
       {
        "h": "2026-11-26T07:00:00Z",
-       "pageloads": 0,
-       "visits": 0
+       "pageloads": 2,
+       "visits": 2
       }
      ]
     },
@@ -1236,37 +1236,37 @@
      },
      {
       "d": "2026-11-26",
-      "pageloads": 0,
-      "visits": 0,
+      "pageloads": 2,
+      "visits": 2,
       "sampled": false
      }
     ],
     "top_pages_7d": [
      {
       "path": "/",
-      "count": 22
+      "count": 23
      },
      {
       "path": "/novyny/promty-dlya-chatgpt/",
       "count": 3
      },
      {
-      "path": "/novyny/shtuchnyj-intelekt-dlya-ditej-tir-lyst/",
-      "count": 2
-     },
-     {
-      "path": "/novyny/moonlock-iphone-shakhrajski-sms/",
+      "path": "/novyny/gemini-dlya-studentiv-bezkoshtovno/",
       "count": 2
      },
      {
       "path": "/novyny/claude-code-shcho-tse/",
+      "count": 2
+     },
+     {
+      "path": "/novyny/signal-blokuye-shi-agentiv/",
       "count": 2
      }
     ],
     "top_referrers_7d": [
      {
       "host": "(прямі / без реферера)",
-      "count": 25
+      "count": 27
      },
      {
       "host": "www.google.com",
@@ -1292,7 +1292,7 @@
      },
      {
       "country": "US",
-      "count": 10
+      "count": 11
      },
      {
       "country": "PL",
@@ -1303,7 +1303,7 @@
       "count": 2
      },
      {
-      "country": "MD",
+      "country": "GB",
       "count": 1
      }
     ]
@@ -1656,29 +1656,6 @@
    "score": 471.1
   },
   {
-   "title": "Чорна пʼятниця з ChatGPT: перевір знижку за 30 секунд — справжня чи накручена ціна",
-   "format": "try",
-   "channels": [
-    "short",
-    "tiktok",
-    "site"
-   ],
-   "demand": 4,
-   "fresh": 5,
-   "show": 5,
-   "fit": 5,
-   "hook": "you",
-   "length": 30,
-   "source": "https://www.youtube.com/watch?v=qaqYqjPjpeU",
-   "by": "researcher-niche",
-   "status": "approved",
-   "added": "2026-11-22",
-   "id": "34",
-   "decision": "бал 458 ≥300: сценарій уже є — ep87 (Чорна пʼятниця, PASS), вийти до 28.11",
-   "kw": "чорна п'ятниця (35); чорна п'ятниця маркетинг (11); чорна п'ятниця в атб (9) — kw.py 24.11",
-   "score": 458.2
-  },
-  {
    "title": "Claude склав тобі «підсумок місяця»: що він помітив у твоїх чатах — де глянути безкоштовно і як видалити",
    "format": "free",
    "channels": [
@@ -1899,11 +1876,35 @@
    "id": "151",
    "decision": "Скан 25.11 день: бал 351,5 ≥300 (sec, сезон до 30.11). Слот: сайт + TG чт 26.11 до 10Z (за добу до Чорної пʼятниці; №136 — пт 27.11, №34 ep87 — до 28.11), TikTok чт 26.11 вечір або пт 27.11 зранку. Short — ні (слоти до 5.12 зайняті). Цифри UK Finance подавати без ШІ (у релізі ШІ немає); 75% — заява Savi Security, вибірка не репрезентативна. Перед публікацією — свіжі попередження Кіберполіції. Сайт done 25.11: /novyny/yak-pereviryty-internet-magazyn-na-shakhrajstvo/ (чт 26.11 09:00 Київ). TG-пост — TG-відділ 26.11; TikTok — окремо.",
    "score": 351.5
+  },
+  {
+   "title": "ПДВ для ФОПів з 2028: спитав ChatGPT, Gemini і Claude про нові правила — хто вигадав, а хто чесно сказав «це лише проєкт»",
+   "format": "check",
+   "channels": [
+    "short",
+    "site",
+    "tg"
+   ],
+   "demand": 5,
+   "fresh": 5,
+   "show": 4,
+   "fit": 4,
+   "length": 35,
+   "hook": "you",
+   "source": "https://dou.ua/lenta/news/new-taxes-for-businesses-2028/",
+   "by": "researcher-search",
+   "note": "DOU 24.11 і dev.ua 25.11: Мінфін оновив законопроєкт (документи від 21.11, офіційно не зареєстрований, за Железняком): ПДВ для ФОП/спрощенців з 1.01.2028 при обороті >€85 тис. за 12 міс; 3 група 5%→3% + ПДВ; е-резиденти не підпадають. kw.py 25.11: «фоп з пдв» 333, «фоп платник пдв» 247, «пдв для фоп 2026» 18. Наш кут — перевірка ШІ на свіжому податковому питанні, без порад з податків; першоджерело (таблиця Железняка / Мінфін) відкрити перед записом.",
+   "kw": "фоп з пдв (333); фоп платник пдв (247); фоп єсв (195) — kw.py 25.11",
+   "status": "new",
+   "added": "2026-11-25",
+   "id": "134",
+   "decision": "Радар 25.11: бал 311,5, попит «фоп з пдв» 333 — найвищий за тиждень. Не approved: законопроєкт не зареєстрований, правила можуть змінитись; check-прайор слабкий (мед. 23). Спершу TG/сайт, Short — якщо законопроєкт зареєструють (тоді оцінити разом з №35)",
+   "score": 311.5
   }
  ],
  "ideas_count": {
   "total": 171,
-  "open": 162
+  "open": 161
  },
  "lake": {
   "videos": 101,
@@ -2111,15 +2112,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "200",
-   "agent": "post",
-   "task": "Заливка гайду #2 (вихід 27.11 17Z) + стаття + TG",
-   "started": "2026-11-25T08:20:44Z",
-   "finished": "2026-11-25T08:33:39Z",
-   "result": "h5aUeuaD8OE, finalize PASS, стаття 27.11 19:00, TG-чернетка; власнику Test&compare + Related (thumb_B надіслано файлом)",
-   "agent_raw": "production"
-  },
   {
    "id": "201",
    "agent": "post",
@@ -2460,6 +2452,14 @@
    "finished": "2026-11-26T06:51:43Z",
    "result": "аналітика 23.11: 246 перегл.; топ-3: #35 ФОП (394.7, approved/next), #133, #170 → UPDATE_28 шоу #3; ідеї #170, #171",
    "agent_raw": "researcher"
+  },
+  {
+   "id": "240",
+   "agent": "coo",
+   "task": "COO ранок 26.11: думати, дашборд очима власника, конвеєр",
+   "started": "2026-11-26T07:28:16Z",
+   "finished": null,
+   "result": ""
   }
  ],
  "agents": [
@@ -2704,6 +2704,11 @@
    "agent": "eic"
   },
   {
+   "time": "10:02–10:52",
+   "what": "Вікно озвучки Gemini TTS: цикл кожні 10 хв, черга за датою виходу (шоу → Shorts → гайд)",
+   "agent": "post"
+  },
+  {
    "time": "09:23 пн/сб",
    "what": "Шоуранер: гайд (пн) і шоу «ШІ за тиждень» (сб)",
    "agent": "longs"
@@ -2776,14 +2781,14 @@
  ],
  "asks": [
   {
-   "what": "Кінцеві заставки (End screens) на довгих відео в YouTube Studio",
-   "why": "на 13 довгих END_SCREEN=0 — глядач не переходить на наступне відео",
-   "when": "зараз",
+   "what": "Related video одним заходом у YouTube Studio (7 Shorts, ~5 хв): ep83 cw7Qm4AMP3U → GNqU-wcz9Ws; ep84 RIt-PqOGJTg і ep86 xYez8pJmL4E → 6-2a9ncHaz4; ep85 B4hDo15vi6o → M-KQwpDwpA4; clip1 і clip2 → 6-2a9ncHaz4; clip3 → FcWmonPhvqE",
+   "why": "Shorts і нарізки ведуть на довгі (години для YPP); ep83–86 — варіант exp yt-related-cta-v2: коли поставиш — напиши боту «related готово» (час потрібен для заміру). Об'єднано 26.11 з 4 окремих прохань",
+   "when": "до 26.11 19:00 Київ (першим виходить ep83)",
    "status": "чекає власника"
   },
   {
-   "what": "Related video для clip1 і clip2 → 6-2a9ncHaz4; для clip3 → FcWmonPhvqE (YouTube Studio)",
-   "why": "нарізки мають вести на довге відео",
+   "what": "Кінцеві заставки (End screens) на довгих відео в YouTube Studio",
+   "why": "на 13 довгих END_SCREEN=0 — глядач не переходить на наступне відео",
    "when": "зараз",
    "status": "чекає власника"
   },
@@ -2794,28 +2799,27 @@
    "status": "чекає власника"
   },
   {
-   "what": "Related video для ep85 (B4hDo15vi6o) → M-KQwpDwpA4 (гайд #1, вийшов 25.11; id остаточний)",
-   "why": "Short веде на гайд; ep85 — варіант exp yt-related-cta-v2 (голосовий заклик в outro є; коли поставиш — напиши боту «related готово» (час потрібен для заміру експерименту))",
-   "when": "до 28.11 19:00 Київ (вихід ep85)",
-   "status": "чекає власника"
-  },
-  {
-   "what": "Related video для ep84 (RIt-PqOGJTg) і ep86 (xYez8pJmL4E) → 6-2a9ncHaz4 «ШІ для професій #1» (YouTube Studio)",
-   "why": "Shorts «ШІ для професій» мають вести на перший ролик серії; ep84/86 — варіант exp yt-related-cta-v2 (голосовий заклик в outro є; коли поставиш — напиши боту «related готово» (час потрібен для заміру експерименту))",
-   "when": "до 27.11 19:00 (вихід ep84)",
-   "status": "чекає власника"
-  },
-  {
-   "what": "Related video для ep83 (cw7Qm4AMP3U) → GNqU-wcz9Ws «Що ШІ знає про тебе» (YouTube Studio)",
-   "why": "Short веде на довге відео; ep83 — варіант exp yt-related-cta-v2 (голосовий заклик в outro є; коли поставиш — напиши боту «related готово» (час потрібен для заміру експерименту))",
-   "when": "до 26.11 19:00 Київ (вихід ep83)",
-   "status": "чекає власника"
-  },
-  {
    "what": "Telegram-взаємопіар: надіслати 3 повідомлення адмінам від свого акаунта — @kirioswriter (@gptmike), @hworknet (Hworknet Community), @mrvooooo (@llms_ua)",
    "why": "TG стоїть на 6 учасниках 4–5 днів; рішення COO 25.11 — безкоштовний взаємопіар. Шаблон і персональний рядок для кожного — docs/research/tg-cross-promo-2026-11-26.md. Бот першим писати не може; по одному, без масових розсилок. Коли надішлеш — напиши боту «взаємопіар надіслано»",
    "when": "26–27.11 (перевірка 29.11: tg_daily ≥ 8 або ≥ 1 домовленість)",
    "status": "чекає власника"
+  }
+ ],
+ "pipe": [
+  {
+   "name": "Озвучка",
+   "state": "warn",
+   "text": "ліміт Gemini TTS вичерпано (429) з 25.11 20:22 Київ; за 24 год успішних запитів 19 — денний ліміт ковзний (~15–19 запитів), слоти повертаються через добу після використаних. Наступне вікно — 10:02–10:52 Київ."
+  },
+  {
+   "name": "Instagram Reels",
+   "state": "bad",
+   "text": "без публікації: 25.11 clip3, 25.11 ep78_signal_shi_agent (останній пост 25.11). Немає mp4 — не причина: vidIQ імпортує сам Short за YouTube-посиланням (RUNBOOK «МЕДІА СТЕРТО»)."
+  },
+  {
+   "name": "TikTok",
+   "state": "ok",
+   "text": "усі Shorts з 23.11 опубліковано · останній пост 25.11"
   }
  ]
 }

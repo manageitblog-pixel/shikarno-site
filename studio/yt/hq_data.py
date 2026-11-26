@@ -36,13 +36,14 @@ DEPTS = [
   dict(id="design", name="Дизайн", color="#FF8FD8"), dict(id="research", name="Дослідження та аналітика", color="#4CF2FF"),
   dict(id="growth", name="Зростання (Growth)", color="#FFA94D"), dict(id="dist", name="Дистрибуція", color="#C792FF"),
 ]
-# Реальний розклад (звірено з list_triggers 24.11; час — Київ). Час виходу роликів — це publish_at у YouTube, не запуск агента.
+# Реальний розклад (звірено з list_triggers 24.11, вікно TTS — 26.11; час — Київ). Час виходу роликів — це publish_at у YouTube, не запуск агента.
 SCHEDULE = [  # (Київ, що, агент)
   ("щогодини :06", "Асистент власника: перевірка бота, відкладені статті, оновлення HQ", "ea"),
   ("щогодини :17", "Диспетчер: пул 5 агентів, самоперевірка, оновлення HQ", "coo"),
   ("кожні 4 год :52", "Інженер даних: даталейк, TikTok/TG-знімок, HQ (02:52, 06:52, 10:52, 14:52, 18:52, 22:52)", "de"),
   ("08:41", "Комʼюніті-менеджер: Telegram-відділ (метрика, пост дня, воронки)", "cm"),
   ("08:43", "Ранкова редакція: аналітика, радар, редколегія, автоаудит", "eic"),
+  ("10:02–10:52", "Вікно озвучки Gemini TTS: цикл кожні 10 хв, черга за датою виходу (шоу → Shorts → гайд)", "post"),
   ("09:23 пн/сб", "Шоуранер: гайд (пн) і шоу «ШІ за тиждень» (сб)", "longs"),
   ("09:27", "Директор студії: стан конвеєра й ініціативи", "coo"),
   ("10:37 пн", "Дослідник трендів: конкуренти (спершу українські)", "trend"),
@@ -227,6 +228,63 @@ def yt_live():
         out["recent_error"] = type(e).__name__
     return out
 
+
+def pipeline_status(meta):
+    """26.11 (власник сам знайшов: Instagram пропущено 2 рази 25.11 мовчки; озвучка 429 з 15Z без пояснення) —
+    блок «Ліміти й пропуски»: стан TTS сьогодні і Shorts без Reel/TikTok. Пропуск видно на HQ без питання власника."""
+    from zoneinfo import ZoneInfo
+    kyiv = ZoneInfo("Europe/Kyiv"); out = []
+    def kt(d, t):
+        try: return datetime.datetime.fromisoformat(f"{d}T{t.rstrip('Z')}+00:00").astimezone(kyiv).strftime("%d.%m %H:%M")
+        except Exception: return t
+    # --- озвучка (studio/eps/voice_log.jsonl) ---
+    try:
+        ev = []
+        for l in open(os.path.join(ROOT, "studio", "eps", "voice_log.jsonl")):
+            try: r = json.loads(l)
+            except Exception: continue
+            if r.get("d") and r.get("t"): ev.append(r)
+        day = now_utc().date().isoformat()
+        ok = [r for r in ev if r.get("ev") == "tts_ok"]
+        ok_today = sum(1 for r in ok if r["d"] == day)
+        ok_24 = sum(1 for r in ok if (r["d"], r["t"]) >= ((now_utc() - datetime.timedelta(hours=24)).date().isoformat(), (now_utc() - datetime.timedelta(hours=24)).strftime("%H:%M:%SZ")))
+        last = ev[-1] if ev else None
+        last_ok = ok[-1] if ok else None
+        if last and last.get("ev") == "STOP":
+            first_stop = last
+            for r in reversed(ev):
+                if r.get("ev") == "tts_ok": break
+                if r.get("ev") == "STOP": first_stop = r
+            txt = (f"ліміт Gemini TTS вичерпано (429) з {kt(first_stop['d'], first_stop['t'])} Київ; за 24 год успішних запитів {ok_24}"
+                   f" — денний ліміт ковзний (~15–19 запитів), слоти повертаються через добу після використаних. Наступне вікно — 10:02–10:52 Київ.")
+            out.append(dict(name="Озвучка", state="warn", text=txt))
+        else:
+            out.append(dict(name="Озвучка", state="ok", text=f"працює: сьогодні {ok_today} успішних запитів" + (f", останній {kt(last_ok['d'], last_ok['t'])} Київ" if last_ok else "")))
+    except Exception as e:
+        out.append(dict(name="Озвучка", state="warn", text=f"voice_log не прочитано ({type(e).__name__})"))
+    # --- Shorts без Reel / TikTok ---
+    try:
+        up = json.load(open(os.path.join(ROOT, "studio", "eps", "uploaded.json")))
+        ig = json.load(open(os.path.join(ROOT, "studio", "eps", "instagram.json"))).get("posted_auto", {})
+        tt = json.load(open(os.path.join(ROOT, "studio", "eps", "tiktok.json"))).get("posted_auto", {})
+        ig_yt = {v.get("yt") for v in ig.values() if isinstance(v, dict)}
+        today = now_utc().date().isoformat()
+        for name, posted, ids, since in (("Instagram Reels", ig, ig_yt, "2026-11-24"), ("TikTok", tt, set(), "2026-11-23")):
+            miss = []
+            for slug, vid in up.items():
+                m = meta.get(vid)
+                if not m or not m[2] or not m[3] or m[3][:10] < since or m[3][:10] >= today: continue
+                if slug in posted or vid in ids: continue
+                miss.append(f"{m[3][8:10]}.{m[3][5:7]} {slug}")
+            last = max((str(v.get("at") or v.get("scheduled") or "")[:10] for v in posted.values() if isinstance(v, dict)), default="")
+            if miss:
+                out.append(dict(name=name, state="bad", text=f"без публікації: {', '.join(sorted(miss))} (останній пост {last[8:10]}.{last[5:7]}). "
+                                 "Немає mp4 — не причина: vidIQ імпортує сам Short за YouTube-посиланням (RUNBOOK «МЕДІА СТЕРТО»)."))
+            else:
+                out.append(dict(name=name, state="ok", text=f"усі Shorts з {since[8:10]}.{since[5:7]} опубліковано · останній пост {last[8:10]}.{last[5:7]}"))
+    except Exception as e:
+        out.append(dict(name="Дзеркала Shorts", state="warn", text=f"облік не прочитано ({type(e).__name__})"))
+    return out
 
 def main():
     c = sqlite3.connect(DB); c.create_function("ul", 1, lambda x: (x or "").lower())
@@ -429,7 +487,7 @@ def main():
         days=[dict(d=d, v=v, p=round(p or 0, 1)) for d, v, p in days], site=[dict(d=d, c=cl, i=im, pos=round(po, 1)) for d, cl, im, po in site],
         history=hist, tg_hist=tg_hist, platforms=platforms, formats=formats, formats_cutoff=cutoff, videos=vids, ideas=ideas_open[:12],
         ideas_count=dict(total=len(ideas), open=len(ideas_open)), lake=lake, news=news, competitors=comp_top,
-        activity=acts, agents=AGENTS, depts=DEPTS, schedule=[dict(time=a, what=b, agent=c_) for a, b, c_ in SCHEDULE], asks=asks_items,
+        activity=acts, agents=AGENTS, depts=DEPTS, schedule=[dict(time=a, what=b, agent=c_) for a, b, c_ in SCHEDULE], asks=asks_items, pipe=pipeline_status(meta),
     )
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     json.dump(data, open(OUT, "w"), ensure_ascii=False, indent=1)

@@ -753,10 +753,10 @@
   "length": 30,
   "source": "https://www.youtube.com/watch?v=qaqYqjPjpeU",
   "by": "researcher-niche",
-  "status": "approved",
+  "status": "rejected",
   "added": "2026-11-22",
   "id": "34",
-  "decision": "бал 458 ≥300: сценарій уже є — ep87 (Чорна пʼятниця, PASS), вийти до 28.11",
+  "decision": "26.11 COO: ep87 знято (ops e879950d) — TTS-слоти 26–27.11 на шоу #3 і ep88; ЧП покрита статтями 23/26/27.11 і TG №142/№150; сценарій+PASS в архіві studio/eps/ep87.py",
   "kw": "чорна п'ятниця (35); чорна п'ятниця маркетинг (11); чорна п'ятниця в атб (9) — kw.py 24.11"
  },
  {
