@@ -262,6 +262,11 @@ def pipeline_status(meta):
             out.append(dict(name="Озвучка", state="ok", text=f"працює: сьогодні {ok_today} успішних запитів" + (f", останній {kt(last_ok['d'], last_ok['t'])} Київ" if last_ok else "")))
     except Exception as e:
         out.append(dict(name="Озвучка", state="warn", text=f"voice_log не прочитано ({type(e).__name__})"))
+    try:
+        names = {"weekly3": "шоу #3", "weekly4": "шоу #4", "guide3": "гайд #3"}
+        vp = [f"{names.get(s_, s_)} {h}/{t}" + (f" (лишились ч.{', '.join(map(str, m))})" if m and len(m) <= 4 else "") for s_, h, t, m in voice_progress()]
+        if vp and out and out[-1]["name"] == "Озвучка": out[-1]["text"] += " Готово частин: " + "; ".join(vp) + "."
+    except Exception: pass
     # --- Shorts без Reel / TikTok ---
     try:
         up = json.load(open(os.path.join(ROOT, "studio", "eps", "uploaded.json")))
@@ -482,7 +487,7 @@ def main():
     data = dict(
         generated=iso(gen), fresh=fresh, notes=notes,
         kpi=dict(subs=subs, subs_goal=1000, long_hours=long_hours, long_hours_goal=4000, views_total=views_total, videos=yt_p["videos"],
-                 views_7d=last7[0], pct_7d=yt_p["pct_7d"], subs_7d=ch7[1], window=[w0, ya_last],
+                 views_7d=last7[0], pct_7d=yt_p["pct_7d"], subs_7d=ch7[1], window=[w0, ya_last], subs_since=subs_since(subs),
                  tg=members, tg_goal=150, site_clicks_28d=cc, site_impr_28d=ic, tiktok_auto=len(tt)),
         days=[dict(d=d, v=v, p=round(p or 0, 1)) for d, v, p in days], site=[dict(d=d, c=cl, i=im, pos=round(po, 1)) for d, cl, im, po in site],
         history=hist, tg_hist=tg_hist, platforms=platforms, formats=formats, formats_cutoff=cutoff, videos=vids, ideas=ideas_open[:12],
@@ -499,6 +504,42 @@ def _short_dur(d):
     m = re.fullmatch(r"PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?", d or "")
     if not m: return False
     h, mi, se = (int(x or 0) for x in m.groups()); return h * 3600 + mi * 60 + se <= 180
+
+
+def subs_since(subs):
+    """COO 26.11 веч.: плитка «Підписки нетто, 7 днів» показувала +4 (Analytics до 23.11), коли наживо за добу +70 (Google Ads з 25.11).
+    Поруч — живий приріст від останнього вечірнього знімка growth_1201 за попередній день (той самий YouTube API)."""
+    if subs is None: return None
+    try:
+        today = now_utc().date().isoformat()
+        rows = [json.loads(l) for l in open(os.path.join(ROOT, "studio", "data", "growth_1201.jsonl")) if l.strip()]
+        rows = [r for r in rows if r.get("date", "") < today and r.get("yt_subs") is not None]
+        if not rows: return None
+        r = rows[-1]; return dict(base=r["yt_subs"], d=subs - r["yt_subs"], at=r.get("at"), **{"from": r["date"]})
+    except Exception: return None
+
+
+def voice_progress():
+    """COO 26.11 веч.: dispatch-log 13:24Z записав «лишились ч.2 і ч.10» шоу #3, хоча ч.2 стала чистою о 13:20Z (take5, 125,1 Гц) —
+    прогрес довгих ніде не рахувався з файлів. Тепер HQ рахує partN.wav у /home/claude/eps/<slug> проти PARTS (з урахуванням UPTO)."""
+    import re as _re
+    rv = os.path.join(ROOT, "studio", "eps", "run_voice.py"); out = []
+    try: src = open(rv).read()
+    except Exception: return out
+    queue = [m for m in _re.findall(r'^\s*guide\("(\w+)"\)', src, _re.M)]
+    upto = {k: int(v) for k, v in _re.findall(r'"(\w+)": \{[^}]*"UPTO": "(\d+)"', src)}
+    for slug in queue:
+        f = os.path.join(ROOT, "studio", "eps", f"{slug}.py")
+        try:
+            import importlib.util, io, contextlib
+            spec = importlib.util.spec_from_file_location(f"_vp_{slug}", f); mod = importlib.util.module_from_spec(spec)
+            with contextlib.redirect_stdout(io.StringIO()): spec.loader.exec_module(mod)
+            total = upto.get(slug, len(mod.PARTS)); d = f"/home/claude/eps/{getattr(mod, 'SLUG', slug)}"
+        except Exception: continue
+        have = [i for i in range(total) if os.path.exists(f"{d}/part{i}.wav")]
+        miss = [i for i in range(total) if i not in have]
+        out.append((slug, len(have), total, miss))
+    return out
 
 
 def ensure_growth_row():

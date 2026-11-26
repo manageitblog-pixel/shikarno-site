@@ -53,6 +53,7 @@ td{padding:7px 8px;border-bottom:1px solid #ffffff0a;vertical-align:top}
 td.num{text-align:right;font-family:var(--mono)}
 .timeline{display:grid;gap:6px}
 .tl{display:grid;grid-template-columns:120px 1fr auto;gap:10px;align-items:center;font-size:13px;padding:6px 10px;border-radius:8px;background:#ffffff08}
+.tl>span{min-width:0;overflow-wrap:anywhere}
 .tl .t{font-family:var(--mono);color:var(--cyan)}
 .tl.now{background:#FFD60A1a;outline:1px solid var(--yellow)}
 .fbar{display:grid;grid-template-columns:150px 1fr 56px;gap:8px;align-items:center;font-size:13px}
@@ -81,7 +82,7 @@ a{color:var(--cyan)}
 .hc .big small{font-size:12px;color:var(--mut);font-family:inherit;font-weight:400}
 .hc svg{width:100%;height:110px;display:block;overflow:visible}.hc .ax{font-size:10px;fill:#A9A3D6}
 .tip{position:absolute;pointer-events:none;background:#0B0A1C;border:1px solid #ffffff2a;border-radius:8px;padding:5px 8px;font-size:12px;white-space:nowrap;transform:translate(-50%,-110%);display:none;z-index:2}
-.htab{margin-top:10px;font-size:13px}.htab table{margin-top:8px}
+.htab{margin-top:10px;font-size:13px;min-width:0;max-width:100%;overflow-x:auto}.htab table{margin-top:8px}
 .fr{display:inline-block;font-family:var(--mono);font-size:11px;font-weight:500;color:var(--mut);background:#ffffff0a;border:1px solid var(--line);border-radius:20px;padding:0 8px;line-height:18px;white-space:normal}
 .fr.old{color:var(--warn);border-color:#FFA94D66}.fr.live{color:var(--good);border-color:#7DF29B55}
 .slive{display:grid;gap:8px;padding-bottom:12px;border-bottom:1px dashed var(--line)}
@@ -123,7 +124,7 @@ a{color:var(--cyan)}
   <section aria-labelledby="h-hist">
     <h2 id="h-hist">Історія результатів <span>по тижнях (з понеділка) · наведи на точку · пунктир — тиждень ще не повний</span> <span class="fr" id="fr-hist"></span></h2>
     <div class="hist" id="hist"></div>
-    <details class="htab"><summary>Таблиця цифр</summary><table id="histtab"></table></details>
+    <details class="htab"><summary>Таблиця цифр</summary><div class="tbl"><table id="histtab"></table></div></details>
   </section>
 
   <section aria-labelledby="h-live">
@@ -224,7 +225,7 @@ function render(D){
     {lab:"Години довгих (12 міс)",val:fmt(K.long_hours),sub:"/ "+fmt(K.long_hours_goal),p:K.long_hours/K.long_hours_goal,note:"YouTube Analytics станом на "+ddmm(YA)},
     {lab:"Перегляди за 7 днів",val:fmt(K.views_7d),sub:"",note:ddmm(W[0])+"–"+ddmm(W[1])+" (Analytics) · всього наживо "+fmt(K.views_total)+(K.videos?" у "+K.videos+" відео":"")},
     {lab:"Сер. % перегляду",val:K.pct_7d==null?"—":String(K.pct_7d).replace(".",",")+"%",sub:"",note:"ціль ≥ 60% · "+ddmm(W[0])+"–"+ddmm(W[1]),st:K.pct_7d==null?"":K.pct_7d>=60?"ok":K.pct_7d>=45?"warn":"bad"},
-    {lab:"Підписки нетто, 7 днів",val:(K.subs_7d>0?"+":"")+fmt(K.subs_7d),sub:"",note:ddmm(W[0])+"–"+ddmm(W[1])+" (Analytics)"},
+    {lab:"Підписки нетто, 7 днів",val:(K.subs_7d>0?"+":"")+fmt(K.subs_7d),sub:"",note:ddmm(W[0])+"–"+ddmm(W[1])+" (Analytics)"+(K.subs_since&&K.subs_since.d!=null?" · наживо "+(K.subs_since.d>0?"+":"")+fmt(K.subs_since.d)+" з "+ddmm(K.subs_since.from)+" (знімок "+fmt(K.subs_since.base)+")":"")},
     {lab:"Telegram",val:fmt(K.tg),sub:"/ "+fmt(K.tg_goal),p:(K.tg||0)/K.tg_goal,note:"наживо, "+when(F.tg_members)+" · ціль до кінця грудня"},
     {lab:"Сайт: кліки з Google",val:fmt(K.site_clicks_28d),sub:"",note:fmt(K.site_impr_28d)+" показів за 28 днів · Search Console станом на "+ddmm(F.site)},
   ];
@@ -263,7 +264,7 @@ function render(D){
 
   fr("fr-vids","всього — наживо, "+when(F.yt_live)+" · 7 днів — "+yaTxt,isOld(F,"yt_live"),true);
   const v7=v=>v.views7==null?`<span style="color:var(--mut)" title="YouTube Analytics ще не має днів цього ролика">чекаємо</span>`:fmt(v.views7)+(v.complete?"":`<span class="src"> неповн.</span>`);
-  $("#videos").innerHTML="<tr><th>Дата</th><th>Відео</th><th>Формат</th><th>Перші 7 днів</th><th>% перегл.</th><th>Всього</th></tr>"+D.videos.map(v=>`<tr><td style="font-family:var(--mono)">${ddmm(v.published)}</td><td><a href="https://youtu.be/${esc(v.id)}" target="_blank" rel="noopener">${esc(v.title)}</a></td><td>${v.format?esc(nm[v.format]||v.format)+(v.short?"":" · довгий"):(v.short?"Short":"довгий")}</td><td class="num">${v7(v)}</td><td class="num">${v.pct!=null?v.pct+"%":v.views7==null?"":"—"}</td><td class="num">${fmt(v.total)}</td></tr>`).join("")+`<tr><td colspan="6" class="src">«чекаємо» — YouTube Analytics має дані лише до ${ddmm(YA)}; «неповн.» — 7 днів ще не минуло.</td></tr>`;
+  $("#videos").innerHTML="<tr><th>Дата</th><th>Відео</th><th>Формат</th><th>Перші 7 днів</th><th>% перегл.</th><th>Всього</th></tr>"+D.videos.map(v=>`<tr><td style="font-family:var(--mono)">${ddmm(v.published)}</td><td><a href="https://youtu.be/${esc(v.id)}" target="_blank" rel="noopener">${esc(v.title)}</a></td><td>${v.format?esc(nm[v.format]||v.format)+(v.short?"":" · довгий"):(v.short?"Short":"довгий")}</td><td class="num">${v7(v)}</td><td class="num">${v.pct!=null?String(v.pct).replace(".",",")+"%":v.views7==null?"":"—"}</td><td class="num">${fmt(v.total)}</td></tr>`).join("")+`<tr><td colspan="6" class="src">«чекаємо» — YouTube Analytics має дані лише до ${ddmm(YA)}; «неповн.» — 7 днів ще не минуло.</td></tr>`;
   fr("fr-news","останній збір "+when(F.news),isOld(F,"news"));
   $("#news").innerHTML="<tr><th>Дата</th><th>Джерело</th><th>Новина</th></tr>"+D.news.map(n=>`<tr><td style="font-family:var(--mono)">${esc(ddmm(n.date))}</td><td>${esc(n.source)}${n.score?` <span style="color:var(--mut)">${n.score}</span>`:""}</td><td><a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a></td></tr>`).join("");
   fr("fr-comp","знімок каналів "+ddmm(F.comp)+" · оновлюється щопонеділка",isOld(F,"comp"));
@@ -317,7 +318,7 @@ function platforms(D){
     {n:"Instagram",col:"#7C5CFF",since:"23.11",fr:I?badge("знімок "+when(I.last_snapshot),isOld(F,"instagram")):badge("немає знімків",1),big:I?fmt(I.followers):"—",bl:I?"підписників / "+fmt(I.ig_goal)+" (ціль "+esc(I.ig_goal_note||"")+") · "+fmt(I.plays_total)+" переглядів у "+I.reels+" Reels":"знімків ще немає",
      sec:I?[[fmt(I.views_30d),"переглядів акаунта за 30 днів"+(I.acc_at?" · станом на "+I.acc_at:"")],[fmt(I.reach_30d),"охоплення за 30 днів"],[fmt(I.saves_total),"збережень"]]:[],
      h:I?(I.history||[]).map(h=>({x:dm(h.x)+(h.x.length>10?" "+h.x.slice(11,13)+"Z":""),v:h.v})):[],hl:"сума переглядів Reels по знімках",
-     best:best("Найкращі Reels — перегляди · % перегляду",I?(I.best||[]).map(b=>[cut(b.title,60),fmt(b.plays)+" · "+(b.pct==null?"—":b.pct+"%")]):[])},
+     best:best("Найкращі Reels — перегляди · % перегляду",I?(I.best||[]).map(b=>[cut(b.title,60),fmt(b.plays)+" · "+(b.pct==null?"—":String(b.pct).replace(".",",")+"%")]):[])},
     {n:"Сайт",col:"#9B87FF",fr:S.live&&S.live.updated?badge("наживо, "+hhmm(S.live.updated)+" · Cloudflare",!!S.live.error||isOld(F,"site_live"),1):badge("наживо: немає даних",1),
      pre:siteLive(S.live,badge,best,sec,cut),fr0:badge("Search Console станом на "+dm(S.last_day),isOld(F,"site")),big:fmt(S.impr_28d),bl:"показів у Google за 28 днів ("+dm(S.first_day)+"–"+dm(S.last_day)+")",
      sec:[[fmt(S.clicks_28d),"кліків"],[S.ctr!=null?String(S.ctr).replace(".",",")+"%":"—","CTR"],[S.avg_pos!=null?String(S.avg_pos).replace(".",","):"—","сер. позиція"]],

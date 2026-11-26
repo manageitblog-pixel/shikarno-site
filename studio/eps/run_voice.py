@@ -1,6 +1,6 @@
 """Оркестратор озвучки наперед: guide1 (по частинах, calm) потім Shorts ep83..ep86 (hype, через gen_full).
 Зупиняється на першому RuntimeError квоти. Лог у LOG (JSON-рядки)."""
-import sys, os, json, time, subprocess, shutil, re, difflib, importlib
+import datetime, sys, os, json, time, subprocess, shutil, re, difflib, importlib
 import numpy as np, soundfile as sf
 sys.path.insert(0, "/home/claude/eps"); sys.path.insert(0, "/home/claude/gem")
 import gen_full as G
@@ -166,6 +166,11 @@ if __name__ == "__main__":
         # COO 25.11 веч.: за датою виходу — Shorts 30.11–2.12 (по 1 запиту) ДО гайду #3 (~16 запитів, 2.12/9.12): інакше guide3 з'їдає вікна 27–28.11 і 30.11 лишається без Short
         for k in ("VC_REF", "VC_TOL"): os.environ.pop(k, None)
         for mod in ("ep88", "ep89", "ep90"): short(mod)  # 25.11: ep83–86 уже залиті (медіа стерто рестартом) — не переозвучувати; ep88–90 вихід 30.11–2.12
+        # COO 26.11 веч.: 28.11 о 08:30Z тригер збірки шоу #3 озвучує останню частину (UPDATE_28 + outro) — ліміт скидається о 08:00Z,
+        # і цикл 08:02–08:22 інакше витратив би його на guide3 (вихід 9.12/2.12) раніше, ніж на шоу 29.11. Поки part11 шоу #3 немає — guide3 не чіпаємо.
+        _w3 = importlib.import_module("weekly3")
+        if datetime.date.today().isoformat() in ("2026-11-28", "2026-11-29") and not os.path.exists(f"/home/claude/eps/{_w3.SLUG}/part{len(_w3.PARTS) - 1}.wav"):
+            log(ev="reserve_weekly3", note="квота 28–29.11 — спершу остання частина шоу #3 (тригер 08:30Z), guide3 після неї", ok_requests=REQ["ok"]); sys.exit(0)
         guide("guide3")  # 24.11 власник: «спершу результат» → довгі в черзі першими; гайд #3 (9.12, спроба 2.12)
         guide("weekly4")  # шоу #4, вихід 6.12 12:00Z; незалежний фактчек PASS з умовами 26.11 (5.12 — дописати аукціон Character.AI, перевідкрити довідку про ліміти)
         log(ev="all_done", ok_requests=REQ["ok"])
