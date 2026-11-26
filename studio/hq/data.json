@@ -1,23 +1,23 @@
 {
- "generated": "2026-11-26T07:36:23Z",
+ "generated": "2026-11-26T08:06:31Z",
  "fresh": {
-  "yt_live": "2026-11-26T07:36:23Z",
+  "yt_live": "2026-11-26T08:06:31Z",
   "yt_analytics": "2026-11-23",
-  "tg_members": "2026-11-26T07:36:24Z",
-  "tg_posts": "2026-11-26T07:30:22Z",
+  "tg_members": "2026-11-26T08:06:32Z",
+  "tg_posts": "2026-11-26T08:06:33Z",
   "ideas": "2026-11-26T07:34:38Z",
   "news": "2026-11-26 04:52",
   "comp": "2026-11-23",
   "tiktok": "2026-11-26T04",
   "instagram": "2026-11-26T04",
   "site": "2026-11-23",
-  "site_live": "2026-11-26T07:30:23Z",
-  "activity": "2026-11-26T07:28:16Z",
+  "site_live": "2026-11-26T08:06:35Z",
+  "activity": "2026-11-26T07:36:37Z",
   "asks": "2026-11-26T07:50Z"
  },
  "notes": [],
  "kpi": {
-  "subs": 326,
+  "subs": 327,
   "subs_goal": 1000,
   "long_hours": 12.1,
   "long_hours_goal": 4000,
@@ -391,7 +391,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 162
+   "subs_total": 163
   },
   {
    "w": "2026-08-03",
@@ -405,7 +405,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 162
+   "subs_total": 163
   },
   {
    "w": "2026-08-17",
@@ -419,7 +419,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 162
+   "subs_total": 163
   },
   {
    "w": "2026-08-24",
@@ -433,7 +433,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 162
+   "subs_total": 163
   },
   {
    "w": "2026-08-31",
@@ -447,7 +447,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 162
+   "subs_total": 163
   },
   {
    "w": "2026-09-07",
@@ -461,7 +461,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 162
+   "subs_total": 163
   },
   {
    "w": "2026-09-28",
@@ -475,7 +475,7 @@
    "partial_site": false,
    "subs_cum": -1,
    "long_cum": 0.0,
-   "subs_total": 161
+   "subs_total": 162
   },
   {
    "w": "2026-10-19",
@@ -489,7 +489,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.2,
-   "subs_total": 162
+   "subs_total": 163
   },
   {
    "w": "2026-10-26",
@@ -503,7 +503,7 @@
    "partial_site": false,
    "subs_cum": 6,
    "long_cum": 0.7,
-   "subs_total": 168
+   "subs_total": 169
   },
   {
    "w": "2026-11-02",
@@ -517,7 +517,7 @@
    "partial_site": false,
    "subs_cum": 155,
    "long_cum": 5.5,
-   "subs_total": 317
+   "subs_total": 318
   },
   {
    "w": "2026-11-09",
@@ -531,7 +531,7 @@
    "partial_site": false,
    "subs_cum": 160,
    "long_cum": 8.2,
-   "subs_total": 322
+   "subs_total": 323
   },
   {
    "w": "2026-11-16",
@@ -545,7 +545,7 @@
    "partial_site": false,
    "subs_cum": 163,
    "long_cum": 10.9,
-   "subs_total": 325
+   "subs_total": 326
   },
   {
    "w": "2026-11-23",
@@ -559,7 +559,7 @@
    "partial_site": true,
    "subs_cum": 164,
    "long_cum": 11.8,
-   "subs_total": 326
+   "subs_total": 327
   }
  ],
  "tg_hist": [
@@ -586,10 +586,10 @@
  ],
  "platforms": {
   "youtube": {
-   "subs": 326,
+   "subs": 327,
    "views_total": 12983,
    "videos": 101,
-   "live_at": "2026-11-26T07:36:23Z",
+   "live_at": "2026-11-26T08:06:31Z",
    "views_7d": 875,
    "pct_7d": 48.1,
    "subs_7d": 4,
@@ -1020,7 +1020,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-26T07:30:23Z",
+    "updated": "2026-11-26T08:06:35Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 2,
@@ -1033,11 +1033,6 @@
      "pageloads": 9,
      "visits": 9,
      "hours": [
-      {
-       "h": "2026-11-25T08:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
       {
        "h": "2026-11-25T09:00:00Z",
        "pageloads": 0,
@@ -1152,6 +1147,11 @@
        "h": "2026-11-26T07:00:00Z",
        "pageloads": 2,
        "visits": 2
+      },
+      {
+       "h": "2026-11-26T08:00:00Z",
+       "pageloads": 0,
+       "visits": 0
       }
      ]
     },
@@ -2458,8 +2458,8 @@
    "agent": "coo",
    "task": "COO ранок 26.11: думати, дашборд очима власника, конвеєр",
    "started": "2026-11-26T07:28:16Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-26T07:36:37Z",
+   "result": "4 ініціативи (IG/TikTok через імпорт з YouTube у vidIQ, видимість ліміту TTS), ep87 знято, дашборд v60"
   }
  ],
  "agents": [
@@ -2808,8 +2808,8 @@
  "pipe": [
   {
    "name": "Озвучка",
-   "state": "warn",
-   "text": "ліміт Gemini TTS вичерпано (429) з 25.11 20:22 Київ; за 24 год успішних запитів 19 — денний ліміт ковзний (~15–19 запитів), слоти повертаються через добу після використаних. Наступне вікно — 10:02–10:52 Київ."
+   "state": "ok",
+   "text": "працює: сьогодні 4 успішних запитів, останній 26.11 10:05 Київ"
   },
   {
    "name": "Instagram Reels",
