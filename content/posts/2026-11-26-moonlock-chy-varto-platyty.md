@@ -6,6 +6,7 @@ date: 2026-11-26T19:00:00+02:00
 description: "Moonlock від MacPaw для iPhone: скільки коштує в App Store Україна ($11.99/міс або $59.99/рік), що вміє, які мінуси і чи варто платити. Чесна оцінка Байта 6/10."
 tags: [bezpeka, instrumenty, chatgpt]
 youtube: cw7Qm4AMP3U
+telegram_post: 151
 source: {name: "App Store Україна: Moonlock", url: "https://apps.apple.com/ua/app/moonlock/id6799935865"}
 sources:
   - {name: "MacPaw: Moonlock для iPhone (18.11.2026)", url: "https://macpaw.com/news/moonlock-iphone"}
