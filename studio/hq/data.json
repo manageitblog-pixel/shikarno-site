@@ -1,9 +1,9 @@
 {
- "generated": "2026-11-26T12:57:34Z",
+ "generated": "2026-11-26T13:06:56Z",
  "fresh": {
-  "yt_live": "2026-11-26T12:57:34Z",
+  "yt_live": "2026-11-26T13:06:56Z",
   "yt_analytics": "2026-11-23",
-  "tg_members": "2026-11-26T12:57:35Z",
+  "tg_members": "2026-11-26T13:06:56Z",
   "tg_posts": "2026-11-26T12:57:36Z",
   "ideas": "2026-11-26T12:56:59Z",
   "news": "2026-11-26 12:53",
@@ -17,7 +17,7 @@
  },
  "notes": [],
  "kpi": {
-  "subs": 373,
+  "subs": 377,
   "subs_goal": 1000,
   "long_hours": 12.1,
   "long_hours_goal": 4000,
@@ -397,7 +397,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 209
+   "subs_total": 213
   },
   {
    "w": "2026-08-03",
@@ -411,7 +411,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 209
+   "subs_total": 213
   },
   {
    "w": "2026-08-17",
@@ -425,7 +425,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 209
+   "subs_total": 213
   },
   {
    "w": "2026-08-24",
@@ -439,7 +439,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 209
+   "subs_total": 213
   },
   {
    "w": "2026-08-31",
@@ -453,7 +453,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 209
+   "subs_total": 213
   },
   {
    "w": "2026-09-07",
@@ -467,7 +467,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 209
+   "subs_total": 213
   },
   {
    "w": "2026-09-28",
@@ -481,7 +481,7 @@
    "partial_site": false,
    "subs_cum": -1,
    "long_cum": 0.0,
-   "subs_total": 208
+   "subs_total": 212
   },
   {
    "w": "2026-10-19",
@@ -495,7 +495,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.2,
-   "subs_total": 209
+   "subs_total": 213
   },
   {
    "w": "2026-10-26",
@@ -509,7 +509,7 @@
    "partial_site": false,
    "subs_cum": 6,
    "long_cum": 0.7,
-   "subs_total": 215
+   "subs_total": 219
   },
   {
    "w": "2026-11-02",
@@ -523,7 +523,7 @@
    "partial_site": false,
    "subs_cum": 155,
    "long_cum": 5.5,
-   "subs_total": 364
+   "subs_total": 368
   },
   {
    "w": "2026-11-09",
@@ -537,7 +537,7 @@
    "partial_site": false,
    "subs_cum": 160,
    "long_cum": 8.2,
-   "subs_total": 369
+   "subs_total": 373
   },
   {
    "w": "2026-11-16",
@@ -551,7 +551,7 @@
    "partial_site": false,
    "subs_cum": 163,
    "long_cum": 10.9,
-   "subs_total": 372
+   "subs_total": 376
   },
   {
    "w": "2026-11-23",
@@ -565,7 +565,7 @@
    "partial_site": true,
    "subs_cum": 164,
    "long_cum": 11.8,
-   "subs_total": 373
+   "subs_total": 377
   }
  ],
  "tg_hist": [
@@ -592,10 +592,10 @@
  ],
  "platforms": {
   "youtube": {
-   "subs": 373,
+   "subs": 377,
    "views_total": 12983,
    "videos": 101,
-   "live_at": "2026-11-26T12:57:34Z",
+   "live_at": "2026-11-26T13:06:56Z",
    "views_7d": 875,
    "pct_7d": 48.1,
    "subs_7d": 4,
@@ -656,7 +656,7 @@
    "best_live": [
     {
      "title": "Меню на тиждень і вечеря з того, що є 🍳 Тір-лист Байта #7",
-     "views": 154,
+     "views": 157,
      "id": "bvS0k_r3_bs"
     },
     {
@@ -1521,7 +1521,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 154
+   "total": 157
   },
   {
    "id": "_wp0rz8edB8",
@@ -1543,7 +1543,7 @@
    "views7": 15,
    "pct": 26.9,
    "complete": false,
-   "total": 43
+   "total": 46
   },
   {
    "id": "ENKGdbr04h0",
@@ -1565,7 +1565,7 @@
    "views7": 69,
    "pct": 59.6,
    "complete": false,
-   "total": 95
+   "total": 97
   },
   {
    "id": "aTUsauz53rs",
