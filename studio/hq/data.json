@@ -1,23 +1,23 @@
 {
- "generated": "2026-11-26T12:06:47Z",
+ "generated": "2026-11-26T12:22:54Z",
  "fresh": {
-  "yt_live": "2026-11-26T12:06:47Z",
+  "yt_live": "2026-11-26T12:22:54Z",
   "yt_analytics": "2026-11-23",
-  "tg_members": "2026-11-26T12:06:48Z",
-  "tg_posts": "2026-11-26T12:06:49Z",
+  "tg_members": "2026-11-26T12:22:55Z",
+  "tg_posts": "2026-11-26T12:22:56Z",
   "ideas": "2026-11-26T11:22:13Z",
   "news": "2026-11-26 08:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-26T08",
   "instagram": "2026-11-26T08",
   "site": "2026-11-24",
-  "site_live": "2026-11-26T12:06:51Z",
-  "activity": "2026-11-26T11:23:32Z",
+  "site_live": "2026-11-26T12:22:57Z",
+  "activity": "2026-11-26T12:22:54Z",
   "asks": "2026-11-26T07:50Z"
  },
  "notes": [],
  "kpi": {
-  "subs": 352,
+  "subs": 355,
   "subs_goal": 1000,
   "long_hours": 12.1,
   "long_hours_goal": 4000,
@@ -397,7 +397,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 188
+   "subs_total": 191
   },
   {
    "w": "2026-08-03",
@@ -411,7 +411,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 188
+   "subs_total": 191
   },
   {
    "w": "2026-08-17",
@@ -425,7 +425,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 188
+   "subs_total": 191
   },
   {
    "w": "2026-08-24",
@@ -439,7 +439,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 188
+   "subs_total": 191
   },
   {
    "w": "2026-08-31",
@@ -453,7 +453,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 188
+   "subs_total": 191
   },
   {
    "w": "2026-09-07",
@@ -467,7 +467,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 188
+   "subs_total": 191
   },
   {
    "w": "2026-09-28",
@@ -481,7 +481,7 @@
    "partial_site": false,
    "subs_cum": -1,
    "long_cum": 0.0,
-   "subs_total": 187
+   "subs_total": 190
   },
   {
    "w": "2026-10-19",
@@ -495,7 +495,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.2,
-   "subs_total": 188
+   "subs_total": 191
   },
   {
    "w": "2026-10-26",
@@ -509,7 +509,7 @@
    "partial_site": false,
    "subs_cum": 6,
    "long_cum": 0.7,
-   "subs_total": 194
+   "subs_total": 197
   },
   {
    "w": "2026-11-02",
@@ -523,7 +523,7 @@
    "partial_site": false,
    "subs_cum": 155,
    "long_cum": 5.5,
-   "subs_total": 343
+   "subs_total": 346
   },
   {
    "w": "2026-11-09",
@@ -537,7 +537,7 @@
    "partial_site": false,
    "subs_cum": 160,
    "long_cum": 8.2,
-   "subs_total": 348
+   "subs_total": 351
   },
   {
    "w": "2026-11-16",
@@ -551,7 +551,7 @@
    "partial_site": false,
    "subs_cum": 163,
    "long_cum": 10.9,
-   "subs_total": 351
+   "subs_total": 354
   },
   {
    "w": "2026-11-23",
@@ -565,7 +565,7 @@
    "partial_site": true,
    "subs_cum": 164,
    "long_cum": 11.8,
-   "subs_total": 352
+   "subs_total": 355
   }
  ],
  "tg_hist": [
@@ -592,10 +592,10 @@
  ],
  "platforms": {
   "youtube": {
-   "subs": 352,
+   "subs": 355,
    "views_total": 12983,
    "videos": 101,
-   "live_at": "2026-11-26T12:06:47Z",
+   "live_at": "2026-11-26T12:22:54Z",
    "views_7d": 875,
    "pct_7d": 48.1,
    "subs_7d": 4,
@@ -656,12 +656,12 @@
    "best_live": [
     {
      "title": "Меню на тиждень і вечеря з того, що є 🍳 Тір-лист Байта #7",
-     "views": 156,
+     "views": 154,
      "id": "bvS0k_r3_bs"
     },
     {
      "title": "ШІ для вчителя: план уроку і тест за 5 хвилин у Google Classroom 🍎",
-     "views": 121,
+     "views": 118,
      "id": "ENKGdbr04h0"
     },
     {
@@ -1038,7 +1038,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-26T12:06:51Z",
+    "updated": "2026-11-26T12:22:57Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 3,
@@ -1476,7 +1476,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 10
+   "total": 8
   },
   {
    "id": "Rlm1u-I6x00",
@@ -1509,7 +1509,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 156
+   "total": 154
   },
   {
    "id": "_wp0rz8edB8",
@@ -1531,7 +1531,7 @@
    "views7": 15,
    "pct": 26.9,
    "complete": false,
-   "total": 46
+   "total": 43
   },
   {
    "id": "ENKGdbr04h0",
@@ -1542,7 +1542,7 @@
    "views7": 100,
    "pct": 43.0,
    "complete": false,
-   "total": 121
+   "total": 118
   },
   {
    "id": "LtNuOtQe0pc",
@@ -1553,7 +1553,7 @@
    "views7": 69,
    "pct": 59.6,
    "complete": false,
-   "total": 96
+   "total": 95
   },
   {
    "id": "aTUsauz53rs",
@@ -1579,7 +1579,7 @@
   },
   {
    "id": "CfHTFrYH_z4",
-   "title": "Шахраї по телефону і в SMS: перевір повідомлення з ШІ за 10 секунд 🚨",
+   "title": "Шахрайське SMS: як перевірити за 10 секунд з ШІ 🚨",
    "format": "sec",
    "short": true,
    "published": "2026-11-20",
@@ -2133,15 +2133,6 @@
  ],
  "activity": [
   {
-   "id": "212",
-   "agent": "post",
-   "task": "Озвучка 13:18Z: шоу #3",
-   "started": "2026-11-25T13:18:36Z",
-   "finished": "2026-11-25T13:20:16Z",
-   "result": "див. voice_log",
-   "agent_raw": "production"
-  },
-  {
    "id": "213",
    "agent": "trend",
    "task": "фон: денний веб-скан трендів 25.11",
@@ -2477,6 +2468,14 @@
    "finished": "2026-11-26T11:23:32Z",
    "result": "релізів немає; нові: #175 Talkie (263,6), #176 СБУ ШІ-фото, #177 Muse/FCA; кандидати UPDATE_28: Talkie, Muse/FCA",
    "agent_raw": "researcher"
+  },
+  {
+   "id": "252",
+   "agent": "algo",
+   "task": "Дослідник алгоритмів 26.11 (чт — YouTube): офіційні зміни, лайфхаки практиків, експерименти",
+   "started": "2026-11-26T12:14:05Z",
+   "finished": "2026-11-26T12:22:54Z",
+   "result": "офіційних змін нема; П27–П30 (довгі судимо на 28-й день); 3 розбіжності; пропозиція: назви розділів шоу як пошукові запити"
   }
  ],
  "agents": [
