@@ -1,23 +1,23 @@
 {
- "generated": "2026-11-26T10:06:45Z",
+ "generated": "2026-11-26T11:06:44Z",
  "fresh": {
-  "yt_live": "2026-11-26T10:06:45Z",
+  "yt_live": "2026-11-26T11:06:45Z",
   "yt_analytics": "2026-11-23",
-  "tg_members": "2026-11-26T10:06:46Z",
-  "tg_posts": "2026-11-26T10:06:47Z",
-  "ideas": "2026-11-26T08:57:03Z",
+  "tg_members": "2026-11-26T11:06:45Z",
+  "tg_posts": "2026-11-26T11:06:46Z",
+  "ideas": "2026-11-26T10:15:02Z",
   "news": "2026-11-26 08:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-26T08",
   "instagram": "2026-11-26T08",
   "site": "2026-11-24",
-  "site_live": "2026-11-26T10:06:49Z",
-  "activity": "2026-11-26T09:37:07Z",
+  "site_live": "2026-11-26T11:06:48Z",
+  "activity": "2026-11-26T10:18:30Z",
   "asks": "2026-11-26T07:50Z"
  },
  "notes": [],
  "kpi": {
-  "subs": 349,
+  "subs": 350,
   "subs_goal": 1000,
   "long_hours": 12.1,
   "long_hours_goal": 4000,
@@ -397,7 +397,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 185
+   "subs_total": 186
   },
   {
    "w": "2026-08-03",
@@ -411,7 +411,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 185
+   "subs_total": 186
   },
   {
    "w": "2026-08-17",
@@ -425,7 +425,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 185
+   "subs_total": 186
   },
   {
    "w": "2026-08-24",
@@ -439,7 +439,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 185
+   "subs_total": 186
   },
   {
    "w": "2026-08-31",
@@ -453,7 +453,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 185
+   "subs_total": 186
   },
   {
    "w": "2026-09-07",
@@ -467,7 +467,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 185
+   "subs_total": 186
   },
   {
    "w": "2026-09-28",
@@ -481,7 +481,7 @@
    "partial_site": false,
    "subs_cum": -1,
    "long_cum": 0.0,
-   "subs_total": 184
+   "subs_total": 185
   },
   {
    "w": "2026-10-19",
@@ -495,7 +495,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.2,
-   "subs_total": 185
+   "subs_total": 186
   },
   {
    "w": "2026-10-26",
@@ -509,7 +509,7 @@
    "partial_site": false,
    "subs_cum": 6,
    "long_cum": 0.7,
-   "subs_total": 191
+   "subs_total": 192
   },
   {
    "w": "2026-11-02",
@@ -523,7 +523,7 @@
    "partial_site": false,
    "subs_cum": 155,
    "long_cum": 5.5,
-   "subs_total": 340
+   "subs_total": 341
   },
   {
    "w": "2026-11-09",
@@ -537,7 +537,7 @@
    "partial_site": false,
    "subs_cum": 160,
    "long_cum": 8.2,
-   "subs_total": 345
+   "subs_total": 346
   },
   {
    "w": "2026-11-16",
@@ -551,7 +551,7 @@
    "partial_site": false,
    "subs_cum": 163,
    "long_cum": 10.9,
-   "subs_total": 348
+   "subs_total": 349
   },
   {
    "w": "2026-11-23",
@@ -565,7 +565,7 @@
    "partial_site": true,
    "subs_cum": 164,
    "long_cum": 11.8,
-   "subs_total": 349
+   "subs_total": 350
   }
  ],
  "tg_hist": [
@@ -592,10 +592,10 @@
  ],
  "platforms": {
   "youtube": {
-   "subs": 349,
+   "subs": 350,
    "views_total": 12983,
    "videos": 101,
-   "live_at": "2026-11-26T10:06:45Z",
+   "live_at": "2026-11-26T11:06:45Z",
    "views_7d": 875,
    "pct_7d": 48.1,
    "subs_7d": 4,
@@ -656,7 +656,7 @@
    "best_live": [
     {
      "title": "Меню на тиждень і вечеря з того, що є 🍳 Тір-лист Байта #7",
-     "views": 153,
+     "views": 154,
      "id": "bvS0k_r3_bs"
     },
     {
@@ -1038,7 +1038,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-26T10:06:49Z",
+    "updated": "2026-11-26T11:06:48Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 3,
@@ -1048,14 +1048,9 @@
     "pageloads_7d": 55,
     "visits_7d": 47,
     "last24h": {
-     "pageloads": 10,
-     "visits": 10,
+     "pageloads": 8,
+     "visits": 8,
      "hours": [
-      {
-       "h": "2026-11-25T11:00:00Z",
-       "pageloads": 2,
-       "visits": 2
-      },
       {
        "h": "2026-11-25T12:00:00Z",
        "pageloads": 0,
@@ -1168,6 +1163,11 @@
       },
       {
        "h": "2026-11-26T10:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-26T11:00:00Z",
        "pageloads": 0,
        "visits": 0
       }
@@ -1509,7 +1509,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 153
+   "total": 154
   },
   {
    "id": "_wp0rz8edB8",
@@ -1524,7 +1524,7 @@
   },
   {
    "id": "xaYHobFNYHo",
-   "title": "Штучний інтелект для дітей: який ШІ безпечний? 🧒 Тір-лист Байта #6",
+   "title": "Штучний інтелект для дітей: який ШІ обрати? 🧒 Тір-лист Байта #6",
    "format": "tier",
    "short": true,
    "published": "2026-11-23",
@@ -1579,7 +1579,7 @@
   },
   {
    "id": "CfHTFrYH_z4",
-   "title": "Шахрайське SMS: як перевірити за 10 секунд з ШІ 🚨",
+   "title": "Шахраї по телефону і в SMS: перевір повідомлення з ШІ за 10 секунд 🚨",
    "format": "sec",
    "short": true,
    "published": "2026-11-20",
@@ -1695,6 +1695,7 @@
    "added": "2026-11-26",
    "id": "172",
    "decision": "Бал 458 ≥300: Short «спробуй» + абзац у SEO-статтю #35 (ФОП, 27.11); безкоштовне (акти/рахунки) vs платне (договір 70 балів) звірити на icodelab.dev перед записом",
+   "kw": "договір про надання послуг (19); договір фоп з новою поштою (40); фоп податки (9) — kw.py 26.11; «договір фоп ші» без прямого попиту; конкуренція: «договір комісії/поставки» 9/10 укр., медіана ~300 — у назву «договір і акт ФОП» + ШІ",
    "score": 458.2
   },
   {
@@ -1791,6 +1792,7 @@
    "added": "2026-11-25",
    "id": "163",
    "decision": "Бал 381.7 (≥300): масова зміна для платних ChatGPT з грудня, першоджерело — довідка OpenAI; Short «твій ліміт» з екраном Settings → Usage + новина на сайт і TG до 1.12",
+   "kw": "chatgpt limits (5); chatgpt limit reset (6); chatgpt як користуватися (10) — kw.py 26.11; «ліміт chatgpt» укр. попиту майже немає (топ — ліміти банків, 4/10 укр., медіана 5404); у назву «ліміт ChatGPT» + Codex",
    "score": 381.7
   },
   {
@@ -2131,15 +2133,6 @@
  ],
  "activity": [
   {
-   "id": "210",
-   "agent": "de",
-   "task": "Відновити ops.sqlite (експерименти, рішення, публікації) з docs/логів + дамп у git і відновлення в bootstrap",
-   "started": "2026-11-25T12:20:42Z",
-   "finished": "2026-11-25T12:30:49Z",
-   "result": "ops.sqlite відновлено: 20 експериментів (5 running), 49 рішень, 331 публікація; ops_dump.sql у git після кожної зміни + restore у bootstrap",
-   "agent_raw": "data"
-  },
-  {
    "id": "211",
    "agent": "de",
    "task": "Збирач даталейку 12:52Z: новини, TikTok/IG/TG-знімок, сигнали (без YouTube API)",
@@ -2476,6 +2469,14 @@
    "started": "2026-11-26T09:32:20Z",
    "finished": "2026-11-26T09:37:07Z",
    "result": "weekly4 PASS з умовами: 31 твердження, 10 правок; у чергу озвучки після guide3"
+  },
+  {
+   "id": "250",
+   "agent": "seo",
+   "task": "SEO-відділ 26.11: kw для нових ідей, звіт тижня",
+   "started": "2026-11-26T10:13:33Z",
+   "finished": "2026-11-26T10:18:30Z",
+   "result": "kw для 11 ідей; audit 108/0; сайт 17–23.11: 11 кліків (−42%), 936 показів, поз. 8,4"
   }
  ],
  "agents": [
