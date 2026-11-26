@@ -1,18 +1,18 @@
 {
- "generated": "2026-11-26T16:06:37Z",
+ "generated": "2026-11-26T16:55:45Z",
  "fresh": {
-  "yt_live": "2026-11-26T16:06:37Z",
+  "yt_live": "2026-11-26T16:55:45Z",
   "yt_analytics": "2026-11-23",
-  "tg_members": "2026-11-26T16:06:38Z",
-  "tg_posts": "2026-11-26T16:06:39Z",
-  "ideas": "2026-11-26T12:56:59Z",
-  "news": "2026-11-26 12:53",
+  "tg_members": "2026-11-26T16:55:46Z",
+  "tg_posts": "2026-11-26T16:55:47Z",
+  "ideas": "2026-11-26T16:55:10Z",
+  "news": "2026-11-26 16:53",
   "comp": "2026-11-23",
-  "tiktok": "2026-11-26T12",
-  "instagram": "2026-11-26T12",
+  "tiktok": "2026-11-26T16",
+  "instagram": "2026-11-26T16",
   "site": "2026-11-24",
-  "site_live": "2026-11-26T16:06:40Z",
-  "activity": "2026-11-26T15:19:45Z",
+  "site_live": "2026-11-26T16:55:48Z",
+  "activity": "2026-11-26T16:55:45Z",
   "asks": "2026-11-26T07:50Z"
  },
  "notes": [],
@@ -595,7 +595,7 @@
    "subs": 389,
    "views_total": 13137,
    "videos": 101,
-   "live_at": "2026-11-26T16:06:37Z",
+   "live_at": "2026-11-26T16:55:45Z",
    "views_7d": 875,
    "pct_7d": 48.1,
    "subs_7d": 4,
@@ -661,7 +661,7 @@
     },
     {
      "title": "ШІ для вчителя: план уроку і тест за 5 хвилин у Google Classroom 🍎",
-     "views": 121,
+     "views": 122,
      "id": "ENKGdbr04h0"
     },
     {
@@ -673,12 +673,12 @@
   },
   "tiktok": {
    "videos": 22,
-   "views_total": 19574,
-   "views_7d": 2410,
+   "views_total": 19601,
+   "views_7d": 2437,
    "new_7d": 9,
    "saves_total": 144,
    "likes_total": 400,
-   "last_snapshot": "2026-11-26T12",
+   "last_snapshot": "2026-11-26T16",
    "best": [
     {
      "title": "Український ШІ Сяйво: коли вийде",
@@ -798,41 +798,45 @@
     {
      "x": "2026-11-26T12",
      "v": 19574
+    },
+    {
+     "x": "2026-11-26T16",
+     "v": 19601
     }
    ]
   },
   "instagram": {
    "ig_goal": 100,
    "ig_goal_note": "до 1.12; далі 500 до 31.01 (поріг «Подарунків» — перевірити для України)",
-   "followers": 28,
+   "followers": 30,
    "views_30d": 1816,
    "reach_30d": 1318,
    "acc_at": "26.11 12Z",
-   "reels": 12,
-   "plays_total": 434,
-   "likes_total": 9,
-   "saves_total": 17,
-   "last_snapshot": "2026-11-26T12",
+   "reels": 13,
+   "plays_total": 466,
+   "likes_total": 10,
+   "saves_total": 19,
+   "last_snapshot": "2026-11-26T16",
    "best": [
     {
      "shortcode": "DgGRAlDjqkk",
      "title": "Як продати на OLX швидше з ШІ",
-     "plays": 70,
+     "plays": 73,
      "pct": 8,
      "published": "2026-11-23"
     },
     {
      "shortcode": "DgGRAVLFORb",
      "title": "Інкогніто в ШІ — не сейф",
-     "plays": 68,
+     "plays": 71,
      "pct": 14,
      "published": "2026-11-23"
     },
     {
      "shortcode": "DgGQ8fODsVW",
      "title": "Сімейний бюджет з ШІ",
-     "plays": 63,
-     "pct": 8,
+     "plays": 66,
+     "pct": 10,
      "published": "2026-11-23"
     }
    ],
@@ -904,6 +908,10 @@
     {
      "x": "2026-11-26T12",
      "v": 434
+    },
+    {
+     "x": "2026-11-26T16",
+     "v": 440
     }
    ],
    "followers_hist": [
@@ -974,6 +982,10 @@
     {
      "x": "2026-11-26T12",
      "v": 28
+    },
+    {
+     "x": "2026-11-26T16",
+     "v": 30
     }
    ]
   },
@@ -1050,7 +1062,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-26T16:06:40Z",
+    "updated": "2026-11-26T16:55:48Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 4,
@@ -1554,7 +1566,7 @@
    "views7": 100,
    "pct": 43.0,
    "complete": false,
-   "total": 121
+   "total": 122
   },
   {
    "id": "LtNuOtQe0pc",
@@ -1935,13 +1947,13 @@
   }
  ],
  "ideas_count": {
-  "total": 181,
-  "open": 171
+  "total": 184,
+  "open": 174
  },
  "lake": {
   "videos": 101,
   "daily": 862,
-  "news": 2171,
+  "news": 2184,
   "niche": 1235,
   "comp": 511,
   "comp_videos": 62794,
@@ -1953,87 +1965,87 @@
  "news": [
   {
    "date": "2026-11-26",
-   "source": "hf",
-   "title": "Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon",
+   "source": "techcrunch",
+   "title": "As Anthropic IPOs, Grand Theft Auto VI proves why efficiency isn’t a virtue",
    "score": null,
-   "url": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench"
-  },
-  {
-   "date": "2026-11-26",
-   "source": "hf",
-   "title": "Swarms, Flocks, Gangs: How to build, train, and evaluate multi-agent systems",
-   "score": null,
-   "url": "https://huggingface.co/blog/training-swarms"
-  },
-  {
-   "date": "2026-11-26",
-   "source": "verge",
-   "title": "42 state AGs are trying to stop Character.AI from selling users’ chats",
-   "score": null,
-   "url": "https://www.theverge.com/policy/1042620/character-ai-sale-state-ags-block-selling-users-chats"
-  },
-  {
-   "date": "2026-11-26",
-   "source": "wired",
-   "title": "Meta Refused to Share Muse for Testing, UK Financial Watchdog Complains",
-   "score": null,
-   "url": "https://www.wired.com/story/meta-refused-to-share-muse-for-testing-uk-financial-watchdog-complains/"
-  },
-  {
-   "date": "2026-11-26",
-   "source": "ain",
-   "title": "Ера фонових ШІ-агентів: як українські команди готують робочі місця до 2027 року",
-   "score": null,
-   "url": "https://ain.ua/2026/11/19/era-fonovix-si-agentiv-iak-ukrayinski-komandi-gotuiut-roboci-miscia-do-2027-roku/"
+   "url": "https://techcrunch.com/2026/11/26/as-anthropic-ipos-grand-theft-auto-vi-proves-why-efficiency-isnt-a-virtue/"
   },
   {
    "date": "2026-11-26",
    "source": "devua",
-   "title": "OpenAI виправила помилку в обліку лімітів ChatGPT. Тепер користувачі GPT-6.2 Astra досягатимуть обмежень на 40% швидше",
+   "title": "«Ми 100% будемо над цим працювати». Федоров розповів, що його новостворена AI-native-компанія шукатиме рішення проти російського «Рассвета»",
    "score": null,
-   "url": "https://dev.ua/news/ghatgpt-1795696453"
+   "url": "https://dev.ua/news/my-100-budemo-nad-tsym-pratsiuvaty-fedorov-rozpoviv-shcho-ioho-novostvorena-ai-native-kompaniia-shukatyme-rishennia-proty-rosiiskoho-rassveta-1795710837"
   },
   {
    "date": "2026-11-26",
    "source": "devua",
-   "title": "Ентузіасти запустили неофіційний порт GTA VI на PC зі стабільними 25–30 FPS завдяки ШІ-інструментам",
+   "title": "На Одещині чоловік за допомогою ChatGPT підробив пенсійне посвідчення з «довічною інвалідністю» і подав його через «Дію»",
    "score": null,
-   "url": "https://dev.ua/news/gta-6-na-pc-vzhe-vydaie-30-fps-1795694795"
+   "url": "https://dev.ua/news/na-odeshchyni-cholovik-za-dopomohoiu-chatgpt-pidrobyv-pensiine-posvidchennia-z-dovichnoiu-invalidnistiu-1795704422"
   },
   {
    "date": "2026-11-26",
    "source": "devua",
-   "title": "«Між повітряними тривогами та відключеннями світла». Київський соло-розробник за допомогою ШІ створює економічну стратегію Wainhold",
+   "title": "Платформи Brave1 Dataroom та Avengers Labs об’єднають для розвитку військового ШІ та перехоплення «Шахедів»",
    "score": null,
-   "url": "https://dev.ua/news/wainhold-1795689414"
+   "url": "https://dev.ua/news/platformy-brave1-dataroom-ta-avengers-labs-obiednaiut-dlia-rozvytku-viiskovoho-shi-1795703413"
   },
   {
    "date": "2026-11-26",
    "source": "devua",
-   "title": "«Втомився від ШІ-інструментів, які намагаються бути дизайнером замість мене»: український Senior UI/UX Designer запустив власний ШІ-редактор. Чим module.build відрізняється від Figma та Paper?",
+   "title": "Користувач Linux за допомогою Claude зламав гру для PlayStation 1 і витягнув приховані відео про НЛО, які нібито походять з NASA",
    "score": null,
-   "url": "https://dev.ua/news/ukrainskyi-dyzainer-stvoryv-shi-redaktor-modulebuild-1795684607"
+   "url": "https://dev.ua/news/prykhovani-video-z-nlo-vytiahly-z-hry-za-dopomohoiu-shi-1795699588"
   },
   {
    "date": "2026-11-26",
    "source": "speka",
-   "title": "Мільйон супутників-дата-центрів: США дозволили SpaceX перенести ШІ в космос",
+   "title": "Як заробляти на ШІ у 2026: професії і зарплати",
    "score": null,
-   "url": "https://speka.ua/news/milion-suputnikiv-data-centriv-ssa-dozvolili-spacex-perenesti-si-v-kosmos-py15rq"
+   "url": "https://speka.ua/news/yak-zaroblyati-na-si-u-2026-profesiyi-i-zarplati-vr1yyg"
   },
   {
    "date": "2026-11-26",
    "source": "speka",
-   "title": "Air3F показала цифрову станцію керування FPV-дронами: оператор може залишатися в укритті",
+   "title": "Ера ШІ-агентів. Більше можливостей для бізнесу, але хто відповідає за рішення?",
    "score": null,
-   "url": "https://speka.ua/news/air3f-pokazala-cifrovu-stanciyu-keruvannya-fpv-dronami-operator-moze-zalisatisya-v-ukritti-9gw6qn"
+   "url": "https://speka.ua/artificial-intelligence/era-si-agentiv-bilse-mozlivostei-dlya-biznesu-ale-xto-vidpovidaje-za-risennya-plqjdz"
   },
   {
    "date": "2026-11-26",
-   "source": "speka",
-   "title": "MacBook Air з OLED-екраном може вийти не раніше кінця 2027 року",
+   "source": "liga",
+   "title": "Я побудував 135 ШІ-функцій-агентів і побачив, що 80% мого часу – шум",
    "score": null,
-   "url": "https://speka.ua/news/macbook-air-z-oled-ekranom-moze-viiti-ne-ranise-kincya-2027-roku-pjzyr4"
+   "url": "https://tech.liga.net/ua/ai/opinion/ya-pobuduvav-135-shi-funktsiy-ahentiv-i-pobachyv-shcho-80-moho-chasu-shum"
+  },
+  {
+   "date": "2026-11-26",
+   "source": "hn",
+   "title": "Testers believe they're from Claude Opus 5.6 via 5.5 Extra",
+   "score": 14,
+   "url": "https://www.testingcatalog.com/testers-share-early-results-possible-claude-opus-5-6/"
+  },
+  {
+   "date": "2026-11-26",
+   "source": "hn",
+   "title": "US proposes 10% tariff on Brazilian aircraft in new Section 301 action",
+   "score": 3,
+   "url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/november/ustr-invites-public-comment-proposed-modifications-section-301-action-regarding-brazils-unreasonable"
+  },
+  {
+   "date": "2026-11-26",
+   "source": "hn",
+   "title": "OpenAI may be in cost control mode",
+   "score": 11,
+   "url": "https://micjm.com/blog/openai-is-in-cost-control-mode/"
+  },
+  {
+   "date": "2026-11-26",
+   "source": "hn",
+   "title": "Authority Instead of Substance: How AI Exposed the Emptiness of Expert Discourse",
+   "score": 4,
+   "url": "https://medium.com/@smoking2man/authority-instead-of-substance-how-ai-exposed-the-emptiness-of-expert-discourse-fe54780aba53"
   }
  ],
  "competitors": [
@@ -2144,15 +2156,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "217",
-   "agent": "post",
-   "task": "Озвучка 15:18Z: шоу #3",
-   "started": "2026-11-25T15:18:09Z",
-   "finished": "2026-11-25T16:18:35Z",
-   "result": "STOP 15:21Z: 429 після 1 запиту (закрив Диспетчер)",
-   "agent_raw": "production"
-  },
   {
    "id": "218",
    "agent": "cm",
@@ -2489,6 +2492,15 @@
    "finished": "2026-11-26T15:19:45Z",
    "result": "1 новий коментар (Signal-ролик) → готова відповідь надіслана власнику; vidIQ 5",
    "agent_raw": "community"
+  },
+  {
+   "id": "257",
+   "agent": "de",
+   "task": "Збирач даталейку 16:52Z: новини, TikTok/IG/TG-знімок",
+   "started": "2026-11-26T16:53:05Z",
+   "finished": "2026-11-26T16:55:45Z",
+   "result": "+25 новин; TikTok Signal 168; IG 30 підп.; Reel ep78 1 перегляд; ідеї #182–184",
+   "agent_raw": "data"
   }
  ],
  "agents": [
