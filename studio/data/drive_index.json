@@ -1232,12 +1232,26 @@
    "parent": "1HFbqalYwbEGal5JGIiz9KWgL-irbPhM0",
    "size": 3785308
   },
+  "repo:studio/eps/weekly3/part2.wav": {
+   "dir": "Відео й озвучка/weekly3",
+   "id": "1Q110cJvJoxcTuwdEnJS0Wfxwm3YozLwX",
+   "md5": "d454bd49f152470505b35b86bfaf32e1",
+   "parent": "1HFbqalYwbEGal5JGIiz9KWgL-irbPhM0",
+   "size": 3010108
+  },
   "repo:studio/eps/weekly3/part3.wav": {
    "dir": "Відео й озвучка/weekly3",
    "id": "1qPrvP6Co8WlR5rDAVPx0DNXZD8QXZYAE",
    "md5": "2bbb8be8f0ef323926b9572d4f7f0585",
    "parent": "1HFbqalYwbEGal5JGIiz9KWgL-irbPhM0",
    "size": 3553468
+  },
+  "repo:studio/eps/weekly3/part4.wav": {
+   "dir": "Відео й озвучка/weekly3",
+   "id": "1YSF5UjsCIHQaDwv6ffC5G8wCIac8FJi1",
+   "md5": "34ed22d98e8673973ecc8bf55fd24bed",
+   "parent": "1HFbqalYwbEGal5JGIiz9KWgL-irbPhM0",
+   "size": 3562108
   },
   "repo:studio/eps/weekly3/part5.wav": {
    "dir": "Відео й озвучка/weekly3",
@@ -1372,6 +1386,20 @@
    "parent": "1N1PU2lJE3mLV0RNsA3xPe3OQacSqBesZ",
    "size": 2927068
   },
+  "repo:studio/eps/weekly3/takes/part2_take5_audit.json": {
+   "dir": "Відео й озвучка/weekly3/takes",
+   "id": "1CRJje13-7oAAkawyVwxWIaf9243UfxHk",
+   "md5": "18f4e3df1b02f789ad140ad52a5020d5",
+   "parent": "1N1PU2lJE3mLV0RNsA3xPe3OQacSqBesZ",
+   "size": 1711
+  },
+  "repo:studio/eps/weekly3/takes/part2_take5_f0_125.1.wav": {
+   "dir": "Відео й озвучка/weekly3/takes",
+   "id": "1vLX63EZ6ZGT_0OFK3Sg9JWALCnkYAxpa",
+   "md5": "d454bd49f152470505b35b86bfaf32e1",
+   "parent": "1N1PU2lJE3mLV0RNsA3xPe3OQacSqBesZ",
+   "size": 3010108
+  },
   "repo:studio/eps/weekly3/takes/part3_take1_audit.json": {
    "dir": "Відео й озвучка/weekly3/takes",
    "id": "1nfyEdSlkz4N6wfVYe9m263u9-BCnX6D5",
@@ -1427,6 +1455,20 @@
    "md5": "6a53006ec0b54737e9649a4db87a1c5b",
    "parent": "1N1PU2lJE3mLV0RNsA3xPe3OQacSqBesZ",
    "size": 3592348
+  },
+  "repo:studio/eps/weekly3/takes/part4_take3_audit.json": {
+   "dir": "Відео й озвучка/weekly3/takes",
+   "id": "1xfZl7r0PM7RHW1Hj2Dgl-vKs27ZVqYJo",
+   "md5": "1e52907a928b20e17090cd3d643533a1",
+   "parent": "1N1PU2lJE3mLV0RNsA3xPe3OQacSqBesZ",
+   "size": 2161
+  },
+  "repo:studio/eps/weekly3/takes/part4_take3_f0_122.8.wav": {
+   "dir": "Відео й озвучка/weekly3/takes",
+   "id": "1GQdqGjDn2a9ftFp0fMR4asXYoISFK6YL",
+   "md5": "34ed22d98e8673973ecc8bf55fd24bed",
+   "parent": "1N1PU2lJE3mLV0RNsA3xPe3OQacSqBesZ",
+   "size": 3562108
   },
   "repo:studio/eps/weekly3/takes/part5_take1_audit.json": {
    "dir": "Відео й озвучка/weekly3/takes",
