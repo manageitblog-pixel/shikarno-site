@@ -1,23 +1,23 @@
 {
- "generated": "2026-11-26T12:22:54Z",
+ "generated": "2026-11-26T12:57:34Z",
  "fresh": {
-  "yt_live": "2026-11-26T12:22:54Z",
+  "yt_live": "2026-11-26T12:57:34Z",
   "yt_analytics": "2026-11-23",
-  "tg_members": "2026-11-26T12:22:55Z",
-  "tg_posts": "2026-11-26T12:22:56Z",
-  "ideas": "2026-11-26T11:22:13Z",
-  "news": "2026-11-26 08:53",
+  "tg_members": "2026-11-26T12:57:35Z",
+  "tg_posts": "2026-11-26T12:57:36Z",
+  "ideas": "2026-11-26T12:56:59Z",
+  "news": "2026-11-26 12:53",
   "comp": "2026-11-23",
-  "tiktok": "2026-11-26T08",
-  "instagram": "2026-11-26T08",
+  "tiktok": "2026-11-26T12",
+  "instagram": "2026-11-26T12",
   "site": "2026-11-24",
-  "site_live": "2026-11-26T12:22:57Z",
-  "activity": "2026-11-26T12:22:54Z",
+  "site_live": "2026-11-26T12:57:37Z",
+  "activity": "2026-11-26T12:57:34Z",
   "asks": "2026-11-26T07:50Z"
  },
  "notes": [],
  "kpi": {
-  "subs": 355,
+  "subs": 373,
   "subs_goal": 1000,
   "long_hours": 12.1,
   "long_hours_goal": 4000,
@@ -397,7 +397,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 191
+   "subs_total": 209
   },
   {
    "w": "2026-08-03",
@@ -411,7 +411,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 191
+   "subs_total": 209
   },
   {
    "w": "2026-08-17",
@@ -425,7 +425,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 191
+   "subs_total": 209
   },
   {
    "w": "2026-08-24",
@@ -439,7 +439,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 191
+   "subs_total": 209
   },
   {
    "w": "2026-08-31",
@@ -453,7 +453,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 191
+   "subs_total": 209
   },
   {
    "w": "2026-09-07",
@@ -467,7 +467,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 191
+   "subs_total": 209
   },
   {
    "w": "2026-09-28",
@@ -481,7 +481,7 @@
    "partial_site": false,
    "subs_cum": -1,
    "long_cum": 0.0,
-   "subs_total": 190
+   "subs_total": 208
   },
   {
    "w": "2026-10-19",
@@ -495,7 +495,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.2,
-   "subs_total": 191
+   "subs_total": 209
   },
   {
    "w": "2026-10-26",
@@ -509,7 +509,7 @@
    "partial_site": false,
    "subs_cum": 6,
    "long_cum": 0.7,
-   "subs_total": 197
+   "subs_total": 215
   },
   {
    "w": "2026-11-02",
@@ -523,7 +523,7 @@
    "partial_site": false,
    "subs_cum": 155,
    "long_cum": 5.5,
-   "subs_total": 346
+   "subs_total": 364
   },
   {
    "w": "2026-11-09",
@@ -537,7 +537,7 @@
    "partial_site": false,
    "subs_cum": 160,
    "long_cum": 8.2,
-   "subs_total": 351
+   "subs_total": 369
   },
   {
    "w": "2026-11-16",
@@ -551,7 +551,7 @@
    "partial_site": false,
    "subs_cum": 163,
    "long_cum": 10.9,
-   "subs_total": 354
+   "subs_total": 372
   },
   {
    "w": "2026-11-23",
@@ -565,7 +565,7 @@
    "partial_site": true,
    "subs_cum": 164,
    "long_cum": 11.8,
-   "subs_total": 355
+   "subs_total": 373
   }
  ],
  "tg_hist": [
@@ -592,10 +592,10 @@
  ],
  "platforms": {
   "youtube": {
-   "subs": 355,
+   "subs": 373,
    "views_total": 12983,
    "videos": 101,
-   "live_at": "2026-11-26T12:22:54Z",
+   "live_at": "2026-11-26T12:57:34Z",
    "views_7d": 875,
    "pct_7d": 48.1,
    "subs_7d": 4,
@@ -661,7 +661,7 @@
     },
     {
      "title": "ШІ для вчителя: план уроку і тест за 5 хвилин у Google Classroom 🍎",
-     "views": 118,
+     "views": 121,
      "id": "ENKGdbr04h0"
     },
     {
@@ -673,12 +673,12 @@
   },
   "tiktok": {
    "videos": 22,
-   "views_total": 19534,
-   "views_7d": 2370,
+   "views_total": 19574,
+   "views_7d": 2410,
    "new_7d": 9,
-   "saves_total": 143,
-   "likes_total": 399,
-   "last_snapshot": "2026-11-26T08",
+   "saves_total": 144,
+   "likes_total": 400,
+   "last_snapshot": "2026-11-26T12",
    "best": [
     {
      "title": "Український ШІ Сяйво: коли вийде",
@@ -794,6 +794,10 @@
     {
      "x": "2026-11-26T08",
      "v": 19534
+    },
+    {
+     "x": "2026-11-26T12",
+     "v": 19574
     }
    ]
   },
@@ -801,14 +805,14 @@
    "ig_goal": 100,
    "ig_goal_note": "до 1.12; далі 500 до 31.01 (поріг «Подарунків» — перевірити для України)",
    "followers": 28,
-   "views_30d": 1735,
-   "reach_30d": 1273,
-   "acc_at": "26.11 08Z",
+   "views_30d": 1816,
+   "reach_30d": 1318,
+   "acc_at": "26.11 12Z",
    "reels": 12,
    "plays_total": 434,
    "likes_total": 9,
    "saves_total": 17,
-   "last_snapshot": "2026-11-26T08",
+   "last_snapshot": "2026-11-26T12",
    "best": [
     {
      "shortcode": "DgGRAlDjqkk",
@@ -896,6 +900,10 @@
     {
      "x": "2026-11-26T08",
      "v": 434
+    },
+    {
+     "x": "2026-11-26T12",
+     "v": 434
     }
    ],
    "followers_hist": [
@@ -961,6 +969,10 @@
     },
     {
      "x": "2026-11-26T08",
+     "v": 28
+    },
+    {
+     "x": "2026-11-26T12",
      "v": 28
     }
    ]
@@ -1038,18 +1050,18 @@
     }
    ],
    "live": {
-    "updated": "2026-11-26T12:22:57Z",
+    "updated": "2026-11-26T12:57:37Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
-    "today_pageloads": 3,
-    "today_visits": 3,
+    "today_pageloads": 4,
+    "today_visits": 4,
     "yesterday_pageloads": 8,
     "yesterday_visits": 8,
-    "pageloads_7d": 55,
-    "visits_7d": 47,
+    "pageloads_7d": 56,
+    "visits_7d": 48,
     "last24h": {
-     "pageloads": 8,
-     "visits": 8,
+     "pageloads": 9,
+     "visits": 9,
      "hours": [
       {
        "h": "2026-11-25T13:00:00Z",
@@ -1168,8 +1180,8 @@
       },
       {
        "h": "2026-11-26T12:00:00Z",
-       "pageloads": 0,
-       "visits": 0
+       "pageloads": 1,
+       "visits": 1
       }
      ]
     },
@@ -1254,8 +1266,8 @@
      },
      {
       "d": "2026-11-26",
-      "pageloads": 3,
-      "visits": 3,
+      "pageloads": 4,
+      "visits": 4,
       "sampled": false
      }
     ],
@@ -1284,7 +1296,7 @@
     "top_referrers_7d": [
      {
       "host": "(прямі / без реферера)",
-      "count": 27
+      "count": 28
      },
      {
       "host": "www.google.com",
@@ -1310,7 +1322,7 @@
      },
      {
       "country": "US",
-      "count": 11
+      "count": 12
      },
      {
       "country": "PL",
@@ -1542,7 +1554,7 @@
    "views7": 100,
    "pct": 43.0,
    "complete": false,
-   "total": 118
+   "total": 121
   },
   {
    "id": "LtNuOtQe0pc",
@@ -1579,7 +1591,7 @@
   },
   {
    "id": "CfHTFrYH_z4",
-   "title": "Шахрайське SMS: як перевірити за 10 секунд з ШІ 🚨",
+   "title": "Шахраї по телефону і в SMS: перевір повідомлення з ШІ за 10 секунд 🚨",
    "format": "sec",
    "short": true,
    "published": "2026-11-20",
@@ -1923,13 +1935,13 @@
   }
  ],
  "ideas_count": {
-  "total": 177,
-  "open": 167
+  "total": 181,
+  "open": 171
  },
  "lake": {
   "videos": 101,
   "daily": 862,
-  "news": 2152,
+  "news": 2171,
   "niche": 1235,
   "comp": 511,
   "comp_videos": 62794,
@@ -1942,86 +1954,86 @@
   {
    "date": "2026-11-26",
    "source": "hf",
-   "title": "Building on Nemotron 3.5 Parse: Open Data, Fine-Tuning, and Faster Inference",
+   "title": "Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon",
    "score": null,
-   "url": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin"
+   "url": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench"
+  },
+  {
+   "date": "2026-11-26",
+   "source": "hf",
+   "title": "Swarms, Flocks, Gangs: How to build, train, and evaluate multi-agent systems",
+   "score": null,
+   "url": "https://huggingface.co/blog/training-swarms"
+  },
+  {
+   "date": "2026-11-26",
+   "source": "verge",
+   "title": "42 state AGs are trying to stop Character.AI from selling users’ chats",
+   "score": null,
+   "url": "https://www.theverge.com/policy/1042620/character-ai-sale-state-ags-block-selling-users-chats"
+  },
+  {
+   "date": "2026-11-26",
+   "source": "wired",
+   "title": "Meta Refused to Share Muse for Testing, UK Financial Watchdog Complains",
+   "score": null,
+   "url": "https://www.wired.com/story/meta-refused-to-share-muse-for-testing-uk-financial-watchdog-complains/"
+  },
+  {
+   "date": "2026-11-26",
+   "source": "ain",
+   "title": "Ера фонових ШІ-агентів: як українські команди готують робочі місця до 2027 року",
+   "score": null,
+   "url": "https://ain.ua/2026/11/19/era-fonovix-si-agentiv-iak-ukrayinski-komandi-gotuiut-roboci-miscia-do-2027-roku/"
   },
   {
    "date": "2026-11-26",
    "source": "devua",
-   "title": "«Я — продакт і дизайнер, Claude Code — розробник». 16-річний розробник із Полтавщини створив маркетплейс рибальських товарів Fishly, на якому вже понад 18 000 товарів",
+   "title": "OpenAI виправила помилку в обліку лімітів ChatGPT. Тепер користувачі GPT-6.2 Astra досягатимуть обмежень на 40% швидше",
    "score": null,
-   "url": "https://dev.ua/news/ya-prodakt-i-dyzainer-claude-code-rozrobnyk-16-richnyi-rozrobnyk-iz-poltavshchyny-stvoryv-marketpleis-rybalskykh-tovariv-fishly-na-iakomu-vzhe-ponad-18-000-tovariv-1795668852"
+   "url": "https://dev.ua/news/ghatgpt-1795696453"
   },
   {
    "date": "2026-11-26",
    "source": "devua",
-   "title": "Український розробник створив ШІ-сервіс, який генерує договори, акти й рахунки для ФОП",
+   "title": "Ентузіасти запустили неофіційний порт GTA VI на PC зі стабільними 25–30 FPS завдяки ШІ-інструментам",
    "score": null,
-   "url": "https://dev.ua/news/nenka-1795670172"
+   "url": "https://dev.ua/news/gta-6-na-pc-vzhe-vydaie-30-fps-1795694795"
+  },
+  {
+   "date": "2026-11-26",
+   "source": "devua",
+   "title": "«Між повітряними тривогами та відключеннями світла». Київський соло-розробник за допомогою ШІ створює економічну стратегію Wainhold",
+   "score": null,
+   "url": "https://dev.ua/news/wainhold-1795689414"
+  },
+  {
+   "date": "2026-11-26",
+   "source": "devua",
+   "title": "«Втомився від ШІ-інструментів, які намагаються бути дизайнером замість мене»: український Senior UI/UX Designer запустив власний ШІ-редактор. Чим module.build відрізняється від Figma та Paper?",
+   "score": null,
+   "url": "https://dev.ua/news/ukrainskyi-dyzainer-stvoryv-shi-redaktor-modulebuild-1795684607"
   },
   {
    "date": "2026-11-26",
    "source": "speka",
-   "title": "Крипта і ШІ змінюють ринок праці: кого насправді шукають у 2026 році",
+   "title": "Мільйон супутників-дата-центрів: США дозволили SpaceX перенести ШІ в космос",
    "score": null,
-   "url": "https://speka.ua/crypt/kripta-i-si-zminyuyut-rinok-praci-kogo-naspravdi-sukayut-u-2026-roci-vmdm87"
+   "url": "https://speka.ua/news/milion-suputnikiv-data-centriv-ssa-dozvolili-spacex-perenesti-si-v-kosmos-py15rq"
   },
   {
    "date": "2026-11-26",
    "source": "speka",
-   "title": "Як Nvidia стала ключовою компанією в епоху ШІ та чому її чипи так важко замінити",
+   "title": "Air3F показала цифрову станцію керування FPV-дронами: оператор може залишатися в укритті",
    "score": null,
-   "url": "https://speka.ua/news/chomu-chypy-nvidia-tak-vazhlyvi-dlia-shi-98kdr0"
+   "url": "https://speka.ua/news/air3f-pokazala-cifrovu-stanciyu-keruvannya-fpv-dronami-operator-moze-zalisatisya-v-ukritti-9gw6qn"
   },
   {
    "date": "2026-11-26",
    "source": "speka",
-   "title": "2016 vs 2026: десять років AI, які змінили технології, бізнес і наше уявлення про майбутнє",
+   "title": "MacBook Air з OLED-екраном може вийти не раніше кінця 2027 року",
    "score": null,
-   "url": "https://speka.ua/business/2016-vs-2026-desyat-rokiv-ai-yaki-zminili-texnologiyi-biznes-i-nase-uyavlennya-pro-maibutnje-por6xq"
-  },
-  {
-   "date": "2026-11-26",
-   "source": "speka",
-   "title": "З чого складається думка: вчені припускають, що ШІ може ніколи не отримати людську свідомість",
-   "score": null,
-   "url": "https://speka.ua/news/svidomist-shi-khimichna-pamyat-mozku-hipoteza-9ezy8x"
-  },
-  {
-   "date": "2026-11-26",
-   "source": "hn",
-   "title": "An algebraic quantization of gravity from the null cone",
-   "score": 12,
-   "url": "https://arxiv.org/abs/2611.34924"
-  },
-  {
-   "date": "2026-11-26",
-   "source": "dou",
-   "title": "Мінцифри звузило критерії критичності для IT-компаній",
-   "score": null,
-   "url": "https://dou.ua/lenta/news/ministry-it-criticality-criteria/"
-  },
-  {
-   "date": "2026-11-26",
-   "source": "hn",
-   "title": "OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster",
-   "score": 212,
-   "url": "https://twitter.com/thsottiaux/status/2125784147889393806"
-  },
-  {
-   "date": "2026-11-26",
-   "source": "hn",
-   "title": "Proving a Fixed Upper Bound on Jensen's Affairs",
-   "score": 30,
-   "url": "https://bitbanter.com/posts/2026-11-25/proving-a-fixed-upper-bound-on-jensens-affairs/"
-  },
-  {
-   "date": "2026-11-26",
-   "source": "speka",
-   "title": "Хроніки Anthropic",
-   "score": null,
-   "url": "https://speka.ua/business/xroniki-anthropic-9q4mqk"
+   "url": "https://speka.ua/news/macbook-air-z-oled-ekranom-moze-viiti-ne-ranise-kincya-2027-roku-pjzyr4"
   }
  ],
  "competitors": [
@@ -2132,15 +2144,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "213",
-   "agent": "trend",
-   "task": "фон: денний веб-скан трендів 25.11",
-   "started": "2026-11-25T13:18:36Z",
-   "finished": "2026-11-25T13:28:08Z",
-   "result": "#149 збій ChatGPT (approved: TG+сайт сьогодні), #151 фейкові магазини ЧП (26.11), #150/#152 new",
-   "agent_raw": "research"
-  },
   {
    "id": "214",
    "agent": "seo",
@@ -2476,6 +2479,15 @@
    "started": "2026-11-26T12:14:05Z",
    "finished": "2026-11-26T12:22:54Z",
    "result": "офіційних змін нема; П27–П30 (довгі судимо на 28-й день); 3 розбіжності; пропозиція: назви розділів шоу як пошукові запити"
+  },
+  {
+   "id": "253",
+   "agent": "de",
+   "task": "Збирач даталейку 12:53Z: новини, TikTok/IG/TG-знімок",
+   "started": "2026-11-26T12:53:23Z",
+   "finished": "2026-11-26T12:57:34Z",
+   "result": "+32 новин; TikTok Signal 146; IG 1816 перегл.; ідеї #178–181",
+   "agent_raw": "data"
   }
  ],
  "agents": [
