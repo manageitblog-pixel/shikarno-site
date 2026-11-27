@@ -4266,5 +4266,66 @@
   "status": "new",
   "added": "2026-11-27",
   "id": "198"
+ },
+ {
+  "title": "ChatGPT розгадав 200-річну загадку за 22 хвилини: історик дав GPT-6.2 Astra анонімний альбом 1808 року — як ШІ знайшов автора і що історик перевірив сам",
+  "format": "news",
+  "channels": [
+   "short",
+   "tiktok",
+   "site",
+   "tg"
+  ],
+  "demand": 2,
+  "fresh": 4,
+  "show": 4,
+  "fit": 3,
+  "length": 35,
+  "by": "researcher-news",
+  "source": "https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical",
+  "note": "Першоджерело — Substack історика Марка Гамфріса (Wilfrid Laurier), 24.11.2026, відкрито 27.11 ~19:40Z: анонімний альбом 1808 р. (Yale, Beinecke), Ultra effort + goal mode, «22 minutes and 1 second», ключ — щоденник Джозефа Фробішера; підтвердження — щоденник де Шабо (мікрофільм). Це розповідь самого автора, OpenAI не коментувала. В Україні — dev.ua 27.11 (через Business Insider). Подавати «за словами історика»; мораль: ШІ дає гіпотезу, людина перевіряє в архіві.",
+  "status": "new",
+  "added": "2026-11-27",
+  "id": "199"
+ },
+ {
+  "title": "Хочеш в AI в Україні? 59% вакансій — для сеньйорів, а 79% просять MLOps: що каже нове дослідження AI HOUSE і з чого почати новачку",
+  "format": "prof",
+  "channels": [
+   "short",
+   "site",
+   "tg"
+  ],
+  "demand": 3,
+  "fresh": 5,
+  "show": 3,
+  "fit": 4,
+  "length": 35,
+  "by": "researcher-news",
+  "source": "https://thedigital.gov.ua/news/shtuchnyy-intelekt/iak-pobuduvaty-karyeru-v-shi-ta-koho-naspravdi-shukaye-biznes-holovni-vysnovky-doslidzennia-ai-house",
+  "note": "Мінцифри 27.11.2026 14:00 Київ, відкрито 27.11 ~19:35Z: дослідження AI HOUSE «AI-сфера України 2026» (за підтримки Мінцифри, інфопартнер Forbes Ukraine; аналіз вакансій + опитування): 7 200 AI-спеціалістів (+18%); 59% вакансій Senior/Lead при 32% таких серед опитаних; новачків до 1 року 21% (було 10%); 79% вакансій — інфраструктура/MLOps, а високо оцінюють себе 19%; ~4 800 вступили на профільні програми за 3 роки, ~17% випускників стають AI-спеціалістами; прогноз до 13 000 у 2030. Повний звіт — aihouse.org.ua (не відкривав). Місток до №186 (IT-ринок) і №195 (Djinni); цифри — «за даними AI HOUSE».",
+  "status": "new",
+  "added": "2026-11-27",
+  "id": "200"
+ },
+ {
+  "title": "У Siri тепер денний ліміт: що буде, коли «просунуті» ШІ-запити закінчаться (таймер і SMS працюють) і що Apple дає за iCloud+",
+  "format": "news",
+  "channels": [
+   "short",
+   "site",
+   "tg"
+  ],
+  "demand": 2,
+  "fresh": 3,
+  "show": 4,
+  "fit": 2,
+  "length": 30,
+  "by": "researcher-news",
+  "source": "https://support.apple.com/en-us/127901",
+  "note": "Довідка Apple відкрита 27.11 ~19:40Z: з 27.3 частина функцій Siri AI/Apple Intelligence на серверних моделях має денні ліміти, більше — з iCloud+; після ліміту «advanced requests are paused», прості запити працюють; Apple чисел не називає. Конкретні числа (20 токенів Siri AI, 100 на 2 ТБ) — лише злив @itspdfu через 9to5Mac 27.11, НЕ подавати як факт. Фіт низький: Siri AI українською не підтримується — перевірити список мов перед сценарієм.",
+  "status": "new",
+  "added": "2026-11-27",
+  "id": "201"
  }
 ]
