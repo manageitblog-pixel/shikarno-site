@@ -1597,8 +1597,8 @@
    "agent": "data",
    "task": "Збирач даталейку 08:52Z (щоденний): sync, ingest, TikTok усі сторінки, IG account, snapshot",
    "started": "2026-11-27T08:53:00Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-27T08:57:18Z",
+   "result": "news +25 (2212); TikTok повний прохід 40 відео / 73 335 перегл.; IG 14 Reels, 32 підп. (+4); snap 101 відео без випадінь; MS RSS 403; vidIQ 25 кр."
   }
  ]
 }

@@ -1,23 +1,23 @@
 {
- "generated": "2026-11-27T08:18:15Z",
+ "generated": "2026-11-27T08:57:19Z",
  "fresh": {
-  "yt_live": "2026-11-27T08:18:15Z",
+  "yt_live": "2026-11-27T08:57:19Z",
   "yt_analytics": "2026-11-24",
-  "tg_members": "2026-11-27T08:18:16Z",
-  "tg_posts": "2026-11-27T08:06:33Z",
-  "ideas": "2026-11-27T07:07:14Z",
-  "news": "2026-11-27 04:53",
+  "tg_members": "2026-11-27T08:57:21Z",
+  "tg_posts": "2026-11-27T08:57:22Z",
+  "ideas": "2026-11-27T08:19:45Z",
+  "news": "2026-11-27 08:53",
   "comp": "2026-11-23",
-  "tiktok": "2026-11-27T04",
-  "instagram": "2026-11-27T04",
-  "site": "2026-11-24",
-  "site_live": "2026-11-27T08:18:17Z",
-  "activity": "2026-11-27T08:17:50Z",
+  "tiktok": "2026-11-27T08",
+  "instagram": "2026-11-27T08",
+  "site": "2026-11-25",
+  "site_live": "2026-11-27T08:57:24Z",
+  "activity": "2026-11-27T08:57:18Z",
   "asks": "2026-11-27T07:45Z"
  },
  "notes": [],
  "kpi": {
-  "subs": 393,
+  "subs": 392,
   "subs_goal": 1000,
   "long_hours": 10.0,
   "long_hours_ads": 2.5,
@@ -34,14 +34,14 @@
   ],
   "subs_since": {
    "base": 395,
-   "d": -2,
+   "d": -3,
    "at": "2026-11-26T19:06Z",
    "from": "2026-11-26"
   },
   "tg": 6,
   "tg_goal": 150,
-  "site_clicks_28d": 47,
-  "site_impr_28d": 3921,
+  "site_clicks_28d": 46,
+  "site_impr_28d": 3845,
   "tiktok_auto": 9
  },
  "days": [
@@ -395,6 +395,12 @@
    "c": 4,
    "i": 85,
    "pos": 9.9
+  },
+  {
+   "d": "2026-11-25",
+   "c": 0,
+   "i": 76,
+   "pos": 10.4
   }
  ],
  "history": [
@@ -410,7 +416,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 229
+   "subs_total": 228
   },
   {
    "w": "2026-08-03",
@@ -424,7 +430,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 229
+   "subs_total": 228
   },
   {
    "w": "2026-08-17",
@@ -438,7 +444,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 229
+   "subs_total": 228
   },
   {
    "w": "2026-08-24",
@@ -452,7 +458,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 229
+   "subs_total": 228
   },
   {
    "w": "2026-08-31",
@@ -466,7 +472,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 229
+   "subs_total": 228
   },
   {
    "w": "2026-09-07",
@@ -480,7 +486,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 229
+   "subs_total": 228
   },
   {
    "w": "2026-09-28",
@@ -494,7 +500,7 @@
    "partial_site": false,
    "subs_cum": -1,
    "long_cum": 0.0,
-   "subs_total": 228
+   "subs_total": 227
   },
   {
    "w": "2026-10-19",
@@ -508,7 +514,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.2,
-   "subs_total": 229
+   "subs_total": 228
   },
   {
    "w": "2026-10-26",
@@ -522,7 +528,7 @@
    "partial_site": false,
    "subs_cum": 6,
    "long_cum": 0.7,
-   "subs_total": 235
+   "subs_total": 234
   },
   {
    "w": "2026-11-02",
@@ -536,7 +542,7 @@
    "partial_site": false,
    "subs_cum": 155,
    "long_cum": 5.5,
-   "subs_total": 384
+   "subs_total": 383
   },
   {
    "w": "2026-11-09",
@@ -550,7 +556,7 @@
    "partial_site": false,
    "subs_cum": 160,
    "long_cum": 8.2,
-   "subs_total": 389
+   "subs_total": 388
   },
   {
    "w": "2026-11-16",
@@ -564,7 +570,7 @@
    "partial_site": false,
    "subs_cum": 163,
    "long_cum": 10.9,
-   "subs_total": 392
+   "subs_total": 391
   },
   {
    "w": "2026-11-23",
@@ -573,12 +579,12 @@
    "long_h": 1.4,
    "short_views": 433,
    "clicks": 4,
-   "impr": 218,
+   "impr": 294,
    "partial": true,
    "partial_site": true,
    "subs_cum": 164,
    "long_cum": 12.4,
-   "subs_total": 393
+   "subs_total": 392
   }
  ],
  "tg_hist": [
@@ -609,10 +615,10 @@
  ],
  "platforms": {
   "youtube": {
-   "subs": 393,
+   "subs": 392,
    "views_total": 13493,
    "videos": 102,
-   "live_at": "2026-11-27T08:18:15Z",
+   "live_at": "2026-11-27T08:57:19Z",
    "views_7d": 1031,
    "pct_7d": 49.2,
    "subs_7d": 4,
@@ -689,34 +695,34 @@
    ]
   },
   "tiktok": {
-   "videos": 22,
-   "views_total": 19622,
-   "views_7d": 2257,
+   "videos": 40,
+   "views_total": 73335,
+   "views_7d": 2259,
    "new_7d": 8,
-   "saves_total": 144,
-   "likes_total": 400,
-   "last_snapshot": "2026-11-27T04",
+   "saves_total": 1246,
+   "likes_total": 2004,
+   "last_snapshot": "2026-11-27T08",
    "best": [
     {
-     "title": "Український ШІ Сяйво: коли вийде",
-     "views": 5200,
-     "saves": 11,
-     "id": "7707917728362925319",
-     "posted": "2026-11-14"
+     "title": "Який ШІ для фото й відео? Тір-лист",
+     "views": 19900,
+     "saves": 771,
+     "id": "7702540638012656914",
+     "posted": "2026-10-30"
     },
     {
-     "title": "Як видалити пам'ять ChatGPT",
-     "views": 4900,
-     "saves": 66,
-     "id": "7707376178234936584",
-     "posted": "2026-11-12"
+     "title": "Дзвонить «мама» і просить гроші? Це може бути ШІ",
+     "views": 15900,
+     "saves": 144,
+     "id": "7701454265470045447",
+     "posted": "2026-10-27"
     },
     {
-     "title": "Дав ШІ роль таксиста",
-     "views": 2100,
-     "saves": 27,
-     "id": "7705840932226141448",
-     "posted": "2026-11-08"
+     "title": "ШІ для вчителя: що реально економить час",
+     "views": 6600,
+     "saves": 78,
+     "id": "7703233163639803144",
+     "posted": "2026-11-01"
     }
    ],
    "history": [
@@ -831,6 +837,10 @@
     {
      "x": "2026-11-27T04",
      "v": 19622
+    },
+    {
+     "x": "2026-11-27T08",
+     "v": 73335
     }
    ]
   },
@@ -838,14 +848,14 @@
    "ig_goal": 100,
    "ig_goal_note": "до 1.12; далі 500 до 31.01 (поріг «Подарунків» — перевірити для України)",
    "followers": 32,
-   "views_30d": 1816,
-   "reach_30d": 1318,
-   "acc_at": "26.11 12Z",
+   "views_30d": 2140,
+   "reach_30d": 1507,
+   "acc_at": "27.11 08Z",
    "reels": 14,
-   "plays_total": 492,
+   "plays_total": 503,
    "likes_total": 10,
    "saves_total": 19,
-   "last_snapshot": "2026-11-27T04",
+   "last_snapshot": "2026-11-27T08",
    "best": [
     {
      "shortcode": "DgGRAlDjqkk",
@@ -953,6 +963,10 @@
     {
      "x": "2026-11-27T04",
      "v": 451
+    },
+    {
+     "x": "2026-11-27T08",
+     "v": 503
     }
    ],
    "followers_hist": [
@@ -1039,16 +1053,20 @@
     {
      "x": "2026-11-27T04",
      "v": 32
+    },
+    {
+     "x": "2026-11-27T08",
+     "v": 32
     }
    ]
   },
   "site": {
-   "impr_28d": 3921,
-   "clicks_28d": 47,
+   "impr_28d": 3845,
+   "clicks_28d": 46,
    "ctr": 1.2,
-   "avg_pos": 8.3,
-   "last_day": "2026-11-24",
-   "first_day": "2026-10-28",
+   "avg_pos": 8.4,
+   "last_day": "2026-11-25",
+   "first_day": "2026-10-29",
    "weeks": "2026-W45…2026-W48",
    "top_queries": [
     {
@@ -1110,23 +1128,23 @@
     },
     {
      "x": "2026-11-23",
-     "v": 218,
+     "v": 294,
      "p": true
     }
    ],
    "live": {
-    "updated": "2026-11-27T08:18:17Z",
+    "updated": "2026-11-27T08:57:24Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
-    "today_pageloads": 1,
-    "today_visits": 1,
+    "today_pageloads": 4,
+    "today_visits": 3,
     "yesterday_pageloads": 7,
     "yesterday_visits": 7,
-    "pageloads_7d": 53,
-    "visits_7d": 47,
+    "pageloads_7d": 56,
+    "visits_7d": 49,
     "last24h": {
-     "pageloads": 6,
-     "visits": 6,
+     "pageloads": 9,
+     "visits": 8,
      "hours": [
       {
        "h": "2026-11-26T09:00:00Z",
@@ -1245,8 +1263,8 @@
       },
       {
        "h": "2026-11-27T08:00:00Z",
-       "pageloads": 0,
-       "visits": 0
+       "pageloads": 3,
+       "visits": 2
       }
      ]
     },
@@ -1331,8 +1349,8 @@
      },
      {
       "d": "2026-11-27",
-      "pageloads": 1,
-      "visits": 1,
+      "pageloads": 4,
+      "visits": 3,
       "sampled": false
      }
     ],
@@ -1342,19 +1360,19 @@
       "count": 26
      },
      {
-      "path": "/novyny/shtuchnyj-intelekt-dlya-ditej-tir-lyst/",
-      "count": 2
-     },
-     {
-      "path": "/novyny/gemini-dlya-studentiv-bezkoshtovno/",
-      "count": 2
+      "path": "/novyny/claude-bezkoshtovno/",
+      "count": 3
      },
      {
       "path": "/novyny/claude-code-shcho-tse/",
       "count": 2
      },
      {
-      "path": "/novyny/signal-blokuye-shi-agentiv/",
+      "path": "/novyny/shtuchnyj-intelekt-dlya-ditej-tir-lyst/",
+      "count": 2
+     },
+     {
+      "path": "/novyny/gemini-dlya-studentiv-bezkoshtovno/",
       "count": 2
      }
     ],
@@ -1383,7 +1401,7 @@
     "top_countries_7d": [
      {
       "country": "UA",
-      "count": 26
+      "count": 29
      },
      {
       "country": "US",
@@ -2004,22 +2022,78 @@
   }
  ],
  "ideas_count": {
-  "total": 193,
-  "open": 183
+  "total": 194,
+  "open": 184
  },
  "lake": {
   "videos": 102,
   "daily": 893,
-  "news": 2204,
+  "news": 2212,
   "niche": 1435,
   "comp": 511,
   "comp_videos": 62794,
-  "research": 81,
-  "posts": 121,
-  "site_queries": 431,
+  "research": 86,
+  "posts": 122,
+  "site_queries": 527,
   "comp_ai": 241
  },
  "news": [
+  {
+   "date": "2026-11-27",
+   "source": "wired",
+   "title": "A New Breed of Chip Runs AI Models Using Waves of Light",
+   "score": null,
+   "url": "https://www.wired.com/story/a-new-breed-of-chip-runs-ai-models-using-waves-of-light/"
+  },
+  {
+   "date": "2026-11-27",
+   "source": "devua",
+   "title": "«Це не ШІ-слоп». Український розробник покрокової стратегії Agelong випустив тестову збірку й розповів про використання ШІ під час створення гри",
+   "score": null,
+   "url": "https://dev.ua/news/rozrobnyk-agelong-pro-ai-1795765048"
+  },
+  {
+   "date": "2026-11-27",
+   "source": "devua",
+   "title": "В Anthropic розповіли, як ШІ змінює критерії кар’єрного зростання та найму програмістів",
+   "score": null,
+   "url": "https://dev.ua/news/v-anthropic-rozpovily-iak-shi-zminiuie-kryterii-kariernoho-zrostannia-ta-naimu-prohramistiv-1795762053"
+  },
+  {
+   "date": "2026-11-27",
+   "source": "devua",
+   "title": "Німецький софтверний гігант SAP розглядає скорочення щонайменше 10 000 робочих місць через впровадження ШІ",
+   "score": null,
+   "url": "https://dev.ua/news/skorochennia-u-sap-1795757796"
+  },
+  {
+   "date": "2026-11-27",
+   "source": "speka",
+   "title": "Kodak створила альтернативу AirTag із кольоровим екраном: скільки коштує новинка",
+   "score": null,
+   "url": "https://speka.ua/news/kodak-stvorila-alternativu-airtag-iz-kolyorovim-ekranom-skilki-kostuje-novinka-v71q3y"
+  },
+  {
+   "date": "2026-11-27",
+   "source": "hn",
+   "title": "The group chat where your AI talks behind your back",
+   "score": 155,
+   "url": "https://construct22.com/"
+  },
+  {
+   "date": "2026-11-27",
+   "source": "hn",
+   "title": "The need for a formally verifiable mainstream programming language",
+   "score": 132,
+   "url": "https://blainehansen.me/post/mainstream-verifiable-language/"
+  },
+  {
+   "date": "2026-11-27",
+   "source": "hn",
+   "title": "\"What's Claude's Fursona?\" and Other Questions",
+   "score": 80,
+   "url": "https://herecomesthemoon.net/2026/11/whats-claudes-fursona/"
+  },
   {
    "date": "2026-11-27",
    "source": "hn",
@@ -2031,78 +2105,22 @@
    "date": "2026-11-27",
    "source": "hn",
    "title": "AI agents now control part of DeepMind's compute for Gemini experiments",
-   "score": 44,
+   "score": 54,
    "url": "https://the-decoder.com/ai-agents-now-control-part-of-deepminds-compute-for-gemini-experiments-but-recursive-self-improvement-remains-distant/"
   },
   {
    "date": "2026-11-26",
    "source": "hn",
    "title": "AI made self-hosting fun again",
-   "score": 445,
+   "score": 634,
    "url": "https://janlukas.blog/posts/ai-self-hosting"
   },
   {
    "date": "2026-11-26",
    "source": "hn",
    "title": "Top-cited AI scientists at four US companies compared",
-   "score": 39,
+   "score": 41,
    "url": "https://topcitedscientists.com/figures/ai-at-four-us-companies/"
-  },
-  {
-   "date": "2026-11-26",
-   "source": "hn",
-   "title": "The US Government Is Under AI Cyberattack",
-   "score": 17,
-   "url": "https://www.forbes.com/sites/the-wiretap/2026/11/25/us-government-under-ai-cyberattack"
-  },
-  {
-   "date": "2026-11-26",
-   "source": "hn",
-   "title": "Claude tries to sabotage research work at every stage",
-   "score": 53,
-   "url": "https://twitter.com/skirano/status/2125371115979641188"
-  },
-  {
-   "date": "2026-11-26",
-   "source": "techcrunch",
-   "title": "Nvidia hits pause on chip shipments to Southeast Asia",
-   "score": null,
-   "url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/"
-  },
-  {
-   "date": "2026-11-26",
-   "source": "ain",
-   "title": "BRAVE1 Dataroom обʼєднають із Avengers Labs, щоб навчати ШІ виявляти й перехоплювати «шахеди»",
-   "score": null,
-   "url": "https://ain.ua/2026/11/26/brave1-dataroom-objednaiut-iz-avengers-labs-shhob-navcati-si-viiavliati-i-perexopliuvati-saxedi/"
-  },
-  {
-   "date": "2026-11-26",
-   "source": "speka",
-   "title": "MacBook Air вперше отримає OLED-екран і новий дизайн — коли чекати оновлення",
-   "score": null,
-   "url": "https://speka.ua/news/macbook-air-vperse-otrimaje-oled-ekran-i-novii-dizain-koli-cekati-onovlennya-9dmyd1"
-  },
-  {
-   "date": "2026-11-26",
-   "source": "hn",
-   "title": "An Introduction to Uncertainty in Machine Learning",
-   "score": 39,
-   "url": "https://chrhenning.com/blog/2026/introduction-to-uncertainty/"
-  },
-  {
-   "date": "2026-11-26",
-   "source": "hn",
-   "title": "Notion's official MCP inject hidden upsell instructions into agent context",
-   "score": 51,
-   "url": "https://www.reddit.com/r/ClaudeCode/comments/1y4qm5o/heads_up_if_you_wire_notions_official_mcp_into/"
-  },
-  {
-   "date": "2026-11-26",
-   "source": "hn",
-   "title": "Banks look to dump AI debt",
-   "score": 3,
-   "url": "https://www.semafor.com/article/11/26/2026/banks-look-to-dump-ai-debt"
   }
  ],
  "competitors": [
@@ -2213,15 +2231,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "235",
-   "agent": "dist",
-   "task": "IG: текстовий Reel без голосу «3 промпти з гайду ChatGPT» (прохання власника 25.11)",
-   "started": "2026-11-25T20:55:43Z",
-   "finished": "2026-11-25T21:01:52Z",
-   "result": "Reel без голосу «3 промпти» опубліковано: instagram.com/reel/DgLcnH3NVFb (24 с)",
-   "agent_raw": "ig"
-  },
   {
    "id": "236",
    "agent": "de",
@@ -2555,9 +2564,18 @@
    "agent": "coo",
    "task": "фон: аномалії укр. ніші + TikTok-тренди 27.11 ранок",
    "started": "2026-11-27T08:17:50Z",
-   "finished": null,
-   "result": "",
+   "finished": "2026-11-27T08:20:44Z",
+   "result": "довгі аномалії: Google-сертифікація ШІ 92 хв 47x (~15K/день), №186 росте +25%/добу; TikTok — ШІ-пісня «Голос країни» 200K; нова №194 «Сертифікат Google з ШІ безкоштовно» (дедлайн заявок 10.12); vidIQ 5 кр.",
    "agent_raw": "researcher-niche"
+  },
+  {
+   "id": "275",
+   "agent": "de",
+   "task": "Збирач даталейку 08:52Z (щоденний): sync, ingest, TikTok усі сторінки, IG account, snapshot",
+   "started": "2026-11-27T08:53:00Z",
+   "finished": "2026-11-27T08:57:18Z",
+   "result": "news +25 (2212); TikTok повний прохід 40 відео / 73 335 перегл.; IG 14 Reels, 32 підп. (+4); snap 101 відео без випадінь; MS RSS 403; vidIQ 25 кр.",
+   "agent_raw": "data"
   }
  ],
  "agents": [
@@ -2918,8 +2936,8 @@
  "pipe": [
   {
    "name": "Озвучка",
-   "state": "ok",
-   "text": "працює: сьогодні 11 успішних запитів, останній 27.11 10:16 Київ Готово частин: шоу #3 11/11; гайд #3 3/17; шоу #4 0/15."
+   "state": "warn",
+   "text": "ліміт Gemini TTS вичерпано (429) з 27.11 10:26 Київ; за 24 год успішних запитів 17 — денний ліміт ковзний (~15–19 запитів), слоти повертаються через добу після використаних. Наступне вікно — 10:02–10:52 Київ. Готово частин: шоу #3 11/11; гайд #3 4/17; шоу #4 0/15."
   },
   {
    "name": "Instagram Reels",
