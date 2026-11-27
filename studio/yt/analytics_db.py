@@ -99,6 +99,17 @@ def long_hours_12m():
     return round(((r.get("rows") or [[0]])[0][0] or 0) / 60, 1)
 
 
+def long_hours_split():
+    """COO 27.11: YPP не зараховує години з рекламних кампаній (support.google.com answer/72851) — HQ показує органіку.
+    Повертає dict(total, ads, organic) у годинах за 365 днів (довгі, videoOnDemand), розбивка за insightTrafficSourceType."""
+    end = datetime.date.today(); start = end - datetime.timedelta(days=365)
+    r = ya(startDate=start.isoformat(), endDate=end.isoformat(), metrics="estimatedMinutesWatched",
+           dimensions="insightTrafficSourceType", filters="creatorContentType==videoOnDemand")
+    rows = r.get("rows") or []
+    tot = sum(m or 0 for _, m in rows); ads = sum(m or 0 for s, m in rows if s == "ADVERTISING")
+    return dict(total=round(tot / 60, 1), ads=round(ads / 60, 1), organic=round((tot - ads) / 60, 1))
+
+
 def all_videos():
     ch = yt.api("channels", part="contentDetails", mine="true")["items"][0]
     up = ch["contentDetails"]["relatedPlaylists"]["uploads"]

@@ -289,6 +289,27 @@ def pipeline_status(meta):
                 out.append(dict(name=name, state="ok", text=f"усі Shorts з {since[8:10]}.{since[5:7]} опубліковано · останній пост {last[8:10]}.{last[5:7]}"))
     except Exception as e:
         out.append(dict(name="Дзеркала Shorts", state="warn", text=f"облік не прочитано ({type(e).__name__})"))
+    # --- COO 27.11: «нуль стрічки» Shorts — ранній сигнал без чекання Analytics (запізнення 2–3 дні) ---
+    # Аудит прогнозів 27.11: ролики без показу у стрічці мали ≤6 публічних переглядів у першому знімку snap (ep75 6, ep77 3, ep79 2, ep78 2, ep83 3),
+    # ролики зі стрічкою — 14–135. Поріг ≤6 у першому знімку ≥12 год після виходу (RUNBOOK «НУЛЬ СТРІЧКИ SHORTS»).
+    try:
+        c2 = sqlite3.connect(DB); since = (now_utc() - datetime.timedelta(days=10)).isoformat()[:10]
+        zero, fed = [], 0
+        for vid, (t, f, sh, pub) in meta.items():
+            if not sh or not pub or pub[:10] < since: continue
+            pdt = datetime.datetime.fromisoformat(pub.replace("Z", "+00:00"))
+            r = c2.execute("select date, views_public from snap where video_id=? order by date", (vid,)).fetchall()
+            r = [x for x in r if datetime.datetime.fromisoformat(x[0][:10] + "T23:59:00+00:00") - pdt >= datetime.timedelta(hours=12)]
+            if not r: continue
+            if (r[0][1] or 0) <= 6: zero.append(f"{pub[8:10]}.{pub[5:7]} {f or ''} «{(t or '')[:38]}» ({r[0][1]})")
+            else: fed += 1
+        if zero or fed:
+            out.append(dict(name="Стрічка Shorts", state="warn" if zero else "ok", label="увага",
+                            text=(f"без показу у стрічці (≤6 переглядів за першу добу) — {len(zero)} з {len(zero) + fed} за 10 днів: " + "; ".join(sorted(zero))
+                                  + ". Спільне (аудит COO 27.11, 15–26.11): 4 з 5 нулів — тривожний кадр 0 (⚠️/щит, «шахраї», «світить дані»). Перевірка — ep90 2.12 з нейтральним кадром 0 (RUNBOOK «НУЛЬ СТРІЧКИ SHORTS»).")
+                                 if zero else f"усі {fed} Shorts за 10 днів отримали показ у стрічці"))
+    except Exception as e:
+        out.append(dict(name="Стрічка Shorts", state="warn", text=f"snap не прочитано ({type(e).__name__})"))
     return out
 
 def main():
@@ -329,9 +350,12 @@ def main():
     # підписники загалом на кінець тижня: живе число мінус приріст після цього тижня (а не «+161 з початку обліку» поруч із 315)
     if subs is not None:
         for h in hist: h["subs_total"] = subs - (cs - h["subs_cum"])
-    long_hours = None
-    try: long_hours = analytics_db.long_hours_12m()
-    except Exception: long_hours = round(ch, 1)
+    long_hours = None; long_hours_ads = None
+    try:  # COO 27.11: у ціль — лише органіка (години з реклами YPP не зараховує)
+        _lh = analytics_db.long_hours_split(); long_hours, long_hours_ads = _lh["organic"], _lh["ads"]
+    except Exception:
+        try: long_hours = analytics_db.long_hours_12m()
+        except Exception: long_hours = round(ch, 1)
 
     # --- Telegram: учасники (Bot API → tg_daily) + пости з публічної сторінки t.me/s ---
     tg_hist = [dict(d=d, n=n) for d, n in q("select date, members from tg_daily order by date")]
@@ -486,7 +510,7 @@ def main():
 
     data = dict(
         generated=iso(gen), fresh=fresh, notes=notes,
-        kpi=dict(subs=subs, subs_goal=1000, long_hours=long_hours, long_hours_goal=4000, views_total=views_total, videos=yt_p["videos"],
+        kpi=dict(subs=subs, subs_goal=1000, long_hours=long_hours, long_hours_ads=long_hours_ads, long_hours_goal=4000, star_deadline="2027-01-31", views_total=views_total, videos=yt_p["videos"],
                  views_7d=last7[0], pct_7d=yt_p["pct_7d"], subs_7d=ch7[1], window=[w0, ya_last], subs_since=subs_since(subs),
                  tg=members, tg_goal=150, site_clicks_28d=cc, site_impr_28d=ic, tiktok_auto=len(tt)),
         days=[dict(d=d, v=v, p=round(p or 0, 1)) for d, v, p in days], site=[dict(d=d, c=cl, i=im, pos=round(po, 1)) for d, cl, im, po in site],

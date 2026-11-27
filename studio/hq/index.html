@@ -220,12 +220,15 @@ function render(D){
   const YA=F.yt_analytics, yaTxt="YouTube Analytics станом на "+ddmm(YA);
   fr("fr-kpi",(F.yt_live?"YouTube наживо, "+when(F.yt_live):"YouTube наживо: немає")+" · "+yaTxt,isOld(F,"yt_live"),true);
   const K=D.kpi, W=K.window||[];
+  // COO 27.11: STAR — жорсткий дедлайн 31.01 (з 1.02.2027 пороги YPP подвоюються); показуємо потрібний темп на день
+  const dl=K.star_deadline?Math.max(1,Math.ceil((new Date(K.star_deadline+"T23:59:59+02:00")-Date.now())/864e5)):null;
+  const pace=(left,u)=>dl&&left>0?" · до 31.01 ("+dl+" дн.) треба "+(left/dl).toFixed(left/dl<10?1:0).replace(".",",")+u+"/день":"";
   const tiles=[
-    {lab:"Підписники YouTube",val:fmt(K.subs),sub:"/ "+fmt(K.subs_goal),p:K.subs/K.subs_goal,note:"наживо, "+when(F.yt_live)+" · поріг монетизації"},
-    {lab:"Години довгих (12 міс)",val:fmt(K.long_hours),sub:"/ "+fmt(K.long_hours_goal),p:K.long_hours/K.long_hours_goal,note:"YouTube Analytics станом на "+ddmm(YA)},
+    {lab:"Підписники YouTube",val:fmt(K.subs),sub:"/ "+fmt(K.subs_goal),p:K.subs/K.subs_goal,note:"наживо, "+when(F.yt_live)+" · у YPP ідуть лише органічні (не з реклами)"+pace(K.subs_goal-K.subs," підп.")},
+    {lab:"Години довгих без реклами (12 міс)",val:fmt(K.long_hours),sub:"/ "+fmt(K.long_hours_goal),p:K.long_hours/K.long_hours_goal,note:"YouTube Analytics станом на "+ddmm(YA)+(K.long_hours_ads?" · ще "+fmt(K.long_hours_ads)+" год з реклами — у YPP не йдуть":"")+pace(K.long_hours_goal-K.long_hours," год")},
     {lab:"Перегляди за 7 днів",val:fmt(K.views_7d),sub:"",note:ddmm(W[0])+"–"+ddmm(W[1])+" (Analytics) · всього наживо "+fmt(K.views_total)+(K.videos?" у "+K.videos+" відео":"")},
     {lab:"Сер. % перегляду",val:K.pct_7d==null?"—":String(K.pct_7d).replace(".",",")+"%",sub:"",note:"ціль ≥ 60% · "+ddmm(W[0])+"–"+ddmm(W[1]),st:K.pct_7d==null?"":K.pct_7d>=60?"ok":K.pct_7d>=45?"warn":"bad"},
-    {lab:"Підписки нетто, 7 днів",val:(K.subs_7d>0?"+":"")+fmt(K.subs_7d),sub:"",note:ddmm(W[0])+"–"+ddmm(W[1])+" (Analytics)"+(K.subs_since&&K.subs_since.d!=null?" · наживо "+(K.subs_since.d>0?"+":"")+fmt(K.subs_since.d)+" з "+ddmm(K.subs_since.from)+" (знімок "+fmt(K.subs_since.base)+")":"")},
+    {lab:"Підписки нетто, 7 днів",val:(K.subs_7d>0?"+":"")+fmt(K.subs_7d),sub:"",note:ddmm(W[0])+"–"+ddmm(W[1])+" (Analytics)"+(K.subs_since&&K.subs_since.d!=null?" · наживо "+(K.subs_since.d>0?"+":K.subs_since.d<0?"−":"")+fmt(Math.abs(K.subs_since.d))+" з "+ddmm(K.subs_since.from)+" (знімок "+fmt(K.subs_since.base)+")":"")},
     {lab:"Telegram",val:fmt(K.tg),sub:"/ "+fmt(K.tg_goal),p:(K.tg||0)/K.tg_goal,note:"наживо, "+when(F.tg_members)+" · ціль до кінця грудня"},
     {lab:"Сайт: кліки з Google",val:fmt(K.site_clicks_28d),sub:"",note:fmt(K.site_impr_28d)+" показів за 28 днів · Search Console станом на "+ddmm(F.site)},
   ];
@@ -245,7 +248,7 @@ function render(D){
   // timeline
   const now=kyivNow(), hm=now.getHours()*60+now.getMinutes();
   const DOW=["нд","пн","вт","ср","чт","пт","сб"][now.getDay()];
-  $("#pipe").innerHTML=(D.pipe||[]).map(p=>`<div class="tl"><span class="t"><span class="state ${p.state==="ok"?"ok":p.state==="bad"?"bad":"warn"}">${p.state==="ok"?"ок":p.state==="bad"?"пропуск":"ліміт"}</span></span><span><b style="font-weight:600">${esc(p.name)}</b> — ${esc(p.text)}</span><span class="who"></span></div>`).join("")||`<div class="tl"><span class="t">—</span><span style="color:var(--mut)">Немає даних про ліміти й пропуски.</span><span></span></div>`;
+  $("#pipe").innerHTML=(D.pipe||[]).map(p=>`<div class="tl"><span class="t"><span class="state ${p.state==="ok"?"ok":p.state==="bad"?"bad":"warn"}">${p.state==="ok"?"ок":p.state==="bad"?"пропуск":p.label||"ліміт"}</span></span><span><b style="font-weight:600">${esc(p.name)}</b> — ${esc(p.text)}</span><span class="who"></span></div>`).join("")||`<div class="tl"><span class="t">—</span><span style="color:var(--mut)">Немає даних про ліміти й пропуски.</span><span></span></div>`;
   $("#timeline").innerHTML=D.schedule.map(s=>{const m=/^(\d\d):(\d\d)/.exec(s.time);const days=s.time.match(/(пн|вт|ср|чт|пт|сб|нд)/g);const today=!days||days.includes(DOW);const near=today&&m&&Math.abs(+m[1]*60+ +m[2]-hm)<=45;const a=D.agents.find(x=>x.id===s.agent);return `<div class="tl ${near?"now":""}"><span class="t">${esc(s.time)}</span><span>${esc(s.what)}</span><span class="who" style="color:var(--mut)">${esc(a?a.name.split(" (")[0]:"")}</span></div>`}).join("");
 
   // ideas
@@ -291,7 +294,7 @@ function history(D){
     {k:"clicks",t:"Сайт: кліки з Google за тиждень",c:"#9B87FF",f:fmt,ps:1},
   ];
   const box=$("#hist"); box.innerHTML="";
-  C.forEach(c=>{const pts=Hs.map(h=>({x:wl(h.w),v:h[c.k]||0,p:c.ps?h.partial_site:h.partial}));const lastFull=c.cum?{...pts[pts.length-1],x:c.k==="subs_total"?"наживо":"на "+ddmm((D.fresh||{}).yt_analytics),cur:1,...(c.k==="long_cum"&&D.kpi&&D.kpi.long_hours!=null?{v:D.kpi.long_hours,x:"за 12 міс. (як у цілях)"}:{})}:([...pts].reverse().find(p=>!p.p)||pts[pts.length-1]);
+  C.forEach(c=>{const pts=Hs.map(h=>({x:wl(h.w),v:h[c.k]||0,p:c.ps?h.partial_site:h.partial}));const lastFull=c.cum?{...pts[pts.length-1],x:c.k==="subs_total"?"наживо":"на "+ddmm((D.fresh||{}).yt_analytics),cur:1,...(c.k==="long_cum"&&D.kpi&&D.kpi.long_hours!=null?{v:D.kpi.long_hours,x:"12 міс. без реклами (як у цілях)"}:{})}:([...pts].reverse().find(p=>!p.p)||pts[pts.length-1]);
     box.insertAdjacentHTML("beforeend",`<div class="hc"><h3>${c.t}</h3><div class="big">${lastFull?c.f(lastFull.v):"—"} <small>${lastFull?(lastFull.cur?lastFull.x:"тиждень з "+lastFull.x):""}</small></div><svg role="img" aria-label="${esc(c.t)}"></svg><div class="tip"></div></div>`);
     hline(box.lastElementChild,pts,c)});
   box.insertAdjacentHTML("beforeend",`<div class="hc"><h3>Telegram: учасники каналу</h3><div class="big">${fmt(tgp.length?tgp[tgp.length-1].n:D.kpi.tg)} <small>/ ${fmt(D.kpi.tg_goal)}</small></div><svg role="img" aria-label="Telegram по днях"></svg><div class="tip"></div></div>`);
@@ -307,7 +310,7 @@ function platforms(D){
   const Y=P.youtube||{},T=P.tiktok,I=P.instagram,S=P.site||{},G=P.telegram||{},W=Y.window||[];
   const C=[
     {n:"YouTube",col:"#FF4F8B",fr:badge(Y.live_at?"наживо, "+when(Y.live_at):"наживо: немає",isOld(F,"yt_live"),1),big:fmt(Y.subs),bl:"підписників / 1000 · "+fmt(Y.views_total)+" переглядів усього",
-     sec:[[fmt(Y.views_7d),"переглядів "+dm(W[0])+"–"+dm(W[1])],[fmt(Y.long_hours),"год довгих (12 міс)"],[Y.subs!=null?Math.round(Y.subs/10)+"%":"—","до 1000 підп."]],
+     sec:[[fmt(Y.views_7d),"переглядів "+dm(W[0])+"–"+dm(W[1])],[fmt(Y.long_hours),"год довгих без реклами (12 міс)"],[Y.subs!=null?Math.round(Y.subs/10)+"%":"—","до 1000 підп."]],
      fr2:badge("дані YouTube Analytics станом на "+dm(F.yt_analytics),isOld(F,"yt_analytics")),
      h:(Y.history||[]).map(h=>({x:dm(h.x),v:h.v,p:h.p})),hl:"перегляди за тиждень (Analytics)",
      best:best("Найбільше переглядів зараз — останні ролики (наживо)",(Y.best_live||[]).map(b=>[cut(b.title,60),fmt(b.views)]))},
