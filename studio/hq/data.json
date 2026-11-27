@@ -1,18 +1,18 @@
 {
- "generated": "2026-11-27T09:06:48Z",
+ "generated": "2026-11-27T09:18:56Z",
  "fresh": {
-  "yt_live": "2026-11-27T09:06:48Z",
+  "yt_live": "2026-11-27T09:18:56Z",
   "yt_analytics": "2026-11-24",
-  "tg_members": "2026-11-27T09:06:52Z",
-  "tg_posts": "2026-11-27T08:57:22Z",
+  "tg_members": "2026-11-27T09:18:58Z",
+  "tg_posts": "2026-11-27T09:19:00Z",
   "ideas": "2026-11-27T08:19:45Z",
   "news": "2026-11-27 08:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-27T08",
   "instagram": "2026-11-27T08",
   "site": "2026-11-25",
-  "site_live": "2026-11-27T08:57:24Z",
-  "activity": "2026-11-27T08:57:18Z",
+  "site_live": "2026-11-27T09:19:01Z",
+  "activity": "2026-11-27T09:18:32Z",
   "asks": "2026-11-27T07:45Z"
  },
  "notes": [],
@@ -618,7 +618,7 @@
    "subs": 392,
    "views_total": 13493,
    "videos": 102,
-   "live_at": "2026-11-27T09:06:48Z",
+   "live_at": "2026-11-27T09:18:56Z",
    "views_7d": 1031,
    "pct_7d": 49.2,
    "subs_7d": 4,
@@ -684,7 +684,7 @@
     },
     {
      "title": "ШІ для вчителя: план уроку і тест за 5 хвилин у Google Classroom 🍎",
-     "views": 124,
+     "views": 123,
      "id": "ENKGdbr04h0"
     },
     {
@@ -1133,7 +1133,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-27T08:57:24Z",
+    "updated": "2026-11-27T09:19:01Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 4,
@@ -1143,14 +1143,9 @@
     "pageloads_7d": 56,
     "visits_7d": 49,
     "last24h": {
-     "pageloads": 9,
-     "visits": 8,
+     "pageloads": 8,
+     "visits": 7,
      "hours": [
-      {
-       "h": "2026-11-26T09:00:00Z",
-       "pageloads": 1,
-       "visits": 1
-      },
       {
        "h": "2026-11-26T10:00:00Z",
        "pageloads": 0,
@@ -1265,6 +1260,11 @@
        "h": "2026-11-27T08:00:00Z",
        "pageloads": 3,
        "visits": 2
+      },
+      {
+       "h": "2026-11-27T09:00:00Z",
+       "pageloads": 0,
+       "visits": 0
       }
      ]
     },
@@ -1652,7 +1652,7 @@
    "views7": 114,
    "pct": 47.5,
    "complete": false,
-   "total": 124
+   "total": 123
   },
   {
    "id": "LtNuOtQe0pc",
@@ -2232,15 +2232,6 @@
  ],
  "activity": [
   {
-   "id": "236",
-   "agent": "de",
-   "task": "Збирач даталейку 00:53Z: новини, TikTok/IG/TG-знімок",
-   "started": "2026-11-26T00:53:25Z",
-   "finished": "2026-11-26T00:56:13Z",
-   "result": "+24 новин; TikTok 10 (Signal 73, реклама ChatGPT 180), IG 25 підп.; ідея #168; Reel-тест 1 play",
-   "agent_raw": "data"
-  },
-  {
    "id": "237",
    "agent": "de",
    "task": "Збирач даталейку 04:52Z: новини, TikTok/IG/TG-знімок",
@@ -2576,6 +2567,14 @@
    "finished": "2026-11-27T08:57:18Z",
    "result": "news +25 (2212); TikTok повний прохід 40 відео / 73 335 перегл.; IG 14 Reels, 32 підп. (+4); snap 101 відео без випадінь; MS RSS 403; vidIQ 25 кр.",
    "agent_raw": "data"
+  },
+  {
+   "id": "276",
+   "agent": "designer",
+   "task": "ep90: нейтральний кадр 0 і назва без тривожних слів (тест «нуль стрічки» за COO)",
+   "started": "2026-11-27T09:18:32Z",
+   "finished": null,
+   "result": ""
   }
  ],
  "agents": [
