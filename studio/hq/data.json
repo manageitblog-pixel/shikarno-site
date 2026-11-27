@@ -1,23 +1,23 @@
 {
- "generated": "2026-11-27T20:19:23Z",
+ "generated": "2026-11-27T20:55:01Z",
  "fresh": {
-  "yt_live": "2026-11-27T20:19:23Z",
+  "yt_live": "2026-11-27T20:55:01Z",
   "yt_analytics": "2026-11-24",
-  "tg_members": "2026-11-27T20:19:25Z",
-  "tg_posts": "2026-11-27T20:06:43Z",
+  "tg_members": "2026-11-27T20:55:03Z",
+  "tg_posts": "2026-11-27T20:55:05Z",
   "ideas": "2026-11-27T19:22:18Z",
-  "news": "2026-11-27 16:53",
+  "news": "2026-11-27 20:53",
   "comp": "2026-11-23",
-  "tiktok": "2026-11-27T16",
-  "instagram": "2026-11-27T16",
+  "tiktok": "2026-11-27T20",
+  "instagram": "2026-11-27T20",
   "site": "2026-11-25",
-  "site_live": "2026-11-27T20:19:26Z",
-  "activity": "2026-11-27T19:23:32Z",
+  "site_live": "2026-11-27T20:55:06Z",
+  "activity": "2026-11-27T20:55:01Z",
   "asks": "2026-11-27T18:40Z"
  },
  "notes": [],
  "kpi": {
-  "subs": 441,
+  "subs": 439,
   "subs_goal": 1000,
   "long_hours": 11.2,
   "long_hours_ads": 6.3,
@@ -34,7 +34,7 @@
   ],
   "subs_since": {
    "base": 395,
-   "d": 46,
+   "d": 44,
    "at": "2026-11-26T19:06Z",
    "from": "2026-11-26"
   },
@@ -416,7 +416,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 277
+   "subs_total": 275
   },
   {
    "w": "2026-08-03",
@@ -430,7 +430,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 277
+   "subs_total": 275
   },
   {
    "w": "2026-08-17",
@@ -444,7 +444,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 277
+   "subs_total": 275
   },
   {
    "w": "2026-08-24",
@@ -458,7 +458,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 277
+   "subs_total": 275
   },
   {
    "w": "2026-08-31",
@@ -472,7 +472,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 277
+   "subs_total": 275
   },
   {
    "w": "2026-09-07",
@@ -486,7 +486,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 277
+   "subs_total": 275
   },
   {
    "w": "2026-09-28",
@@ -500,7 +500,7 @@
    "partial_site": false,
    "subs_cum": -1,
    "long_cum": 0.0,
-   "subs_total": 276
+   "subs_total": 274
   },
   {
    "w": "2026-10-19",
@@ -514,7 +514,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.2,
-   "subs_total": 277
+   "subs_total": 275
   },
   {
    "w": "2026-10-26",
@@ -528,7 +528,7 @@
    "partial_site": false,
    "subs_cum": 6,
    "long_cum": 0.7,
-   "subs_total": 283
+   "subs_total": 281
   },
   {
    "w": "2026-11-02",
@@ -542,7 +542,7 @@
    "partial_site": false,
    "subs_cum": 155,
    "long_cum": 5.5,
-   "subs_total": 432
+   "subs_total": 430
   },
   {
    "w": "2026-11-09",
@@ -556,7 +556,7 @@
    "partial_site": false,
    "subs_cum": 160,
    "long_cum": 8.2,
-   "subs_total": 437
+   "subs_total": 435
   },
   {
    "w": "2026-11-16",
@@ -570,7 +570,7 @@
    "partial_site": false,
    "subs_cum": 163,
    "long_cum": 10.9,
-   "subs_total": 440
+   "subs_total": 438
   },
   {
    "w": "2026-11-23",
@@ -584,7 +584,7 @@
    "partial_site": true,
    "subs_cum": 164,
    "long_cum": 12.4,
-   "subs_total": 441
+   "subs_total": 439
   }
  ],
  "tg_hist": [
@@ -615,10 +615,10 @@
  ],
  "platforms": {
   "youtube": {
-   "subs": 441,
+   "subs": 439,
    "views_total": 13536,
    "videos": 104,
-   "live_at": "2026-11-27T20:19:23Z",
+   "live_at": "2026-11-27T20:55:01Z",
    "views_7d": 1031,
    "pct_7d": 49.2,
    "subs_7d": 4,
@@ -688,20 +688,20 @@
      "id": "ENKGdbr04h0"
     },
     {
-     "title": "Новини ШІ за тиждень (листопад 2026): Anthropic на біржі, Gemini платить сам | #2",
-     "views": 101,
-     "id": "aTUsauz53rs"
+     "title": "Як продати на OLX швидше з ШІ: опис, ціна, шахраї 🛍️ ШІ для професій #9",
+     "views": 103,
+     "id": "LtNuOtQe0pc"
     }
    ]
   },
   "tiktok": {
-   "videos": 40,
-   "views_total": 73338,
-   "views_7d": 2262,
-   "new_7d": 8,
-   "saves_total": 1246,
-   "likes_total": 2004,
-   "last_snapshot": "2026-11-27T16",
+   "videos": 41,
+   "views_total": 73364,
+   "views_7d": 2288,
+   "new_7d": 9,
+   "saves_total": 1247,
+   "likes_total": 2006,
+   "last_snapshot": "2026-11-27T20",
    "best": [
     {
      "title": "Який ШІ для фото й відео? Тір-лист",
@@ -849,6 +849,10 @@
     {
      "x": "2026-11-27T16",
      "v": 73338
+    },
+    {
+     "x": "2026-11-27T20",
+     "v": 73364
     }
    ]
   },
@@ -859,11 +863,11 @@
    "views_30d": 2140,
    "reach_30d": 1507,
    "acc_at": "27.11 08Z",
-   "reels": 15,
-   "plays_total": 504,
+   "reels": 16,
+   "plays_total": 506,
    "likes_total": 10,
    "saves_total": 19,
-   "last_snapshot": "2026-11-27T16",
+   "last_snapshot": "2026-11-27T20",
    "best": [
     {
      "shortcode": "DgGRAlDjqkk",
@@ -881,7 +885,7 @@
     },
     {
      "shortcode": "DgGQ8fODsVW",
-     "title": "Сімейний бюджет з ШІ. Тір-лист Байта #5",
+     "title": "Сімейний бюджет з ШІ",
      "plays": 67,
      "pct": 10,
      "published": "2026-11-23"
@@ -983,6 +987,10 @@
     {
      "x": "2026-11-27T16",
      "v": 504
+    },
+    {
+     "x": "2026-11-27T20",
+     "v": 506
     }
    ],
    "followers_hist": [
@@ -1081,6 +1089,10 @@
     {
      "x": "2026-11-27T16",
      "v": 32
+    },
+    {
+     "x": "2026-11-27T20",
+     "v": 32
     }
    ]
   },
@@ -1157,7 +1169,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-27T20:19:26Z",
+    "updated": "2026-11-27T20:55:06Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 17,
@@ -1632,7 +1644,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 20
+   "total": 19
   },
   {
    "id": "Rlm1u-I6x00",
@@ -1709,7 +1721,7 @@
    "views7": 89,
    "pct": 63.8,
    "complete": false,
-   "total": 100
+   "total": 103
   },
   {
    "id": "aTUsauz53rs",
@@ -1720,7 +1732,7 @@
    "views7": 62,
    "pct": 26.1,
    "complete": false,
-   "total": 101
+   "total": 100
   },
   {
    "id": "gljrHADi4aU",
@@ -2060,7 +2072,7 @@
  "lake": {
   "videos": 102,
   "daily": 893,
-  "news": 2241,
+  "news": 2246,
   "niche": 1435,
   "comp": 511,
   "comp_videos": 62794,
@@ -2070,6 +2082,41 @@
   "comp_ai": 241
  },
  "news": [
+  {
+   "date": "2026-11-27",
+   "source": "venturebeat",
+   "title": "AI is collapsing centuries of math and science research into days — is The Singularity upon us?",
+   "score": null,
+   "url": "https://venturebeat.com/technology/ai-is-collapsing-centuries-of-math-and-science-research-into-days-is-the-singularity-upon-us"
+  },
+  {
+   "date": "2026-11-27",
+   "source": "speka",
+   "title": "Герой «Гри на пониження» Стів Айсман попереджає: крах двох гігантів ШІ обвалить ринок",
+   "score": null,
+   "url": "https://speka.ua/videos-and-podcasts/geroi-gri-na-ponizennya-stiv-aisman-poperedzaje-krax-dvox-gigantiv-si-obvalit-rinok-98kdg0"
+  },
+  {
+   "date": "2026-11-27",
+   "source": "liga",
+   "title": "Держава купує ШІ поштучно. Це дорого і ризиковано",
+   "score": null,
+   "url": "https://tech.liga.net/ua/ai/opinion/derzhava-kupuie-shi-poshtuchno-tse-doroho-i-ryzykovano"
+  },
+  {
+   "date": "2026-11-27",
+   "source": "hn",
+   "title": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
+   "score": 56,
+   "url": "https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform"
+  },
+  {
+   "date": "2026-11-27",
+   "source": "hn",
+   "title": "Dungeons and Dragons maker will pass AI settlement money to authors",
+   "score": 16,
+   "url": "https://www.seattletimes.com/business/dungeons-dragons-maker-will-pass-ai-settlement-money-to-authors/"
+  },
   {
    "date": "2026-11-27",
    "source": "verge",
@@ -2118,41 +2165,6 @@
    "title": "Японія за допомогою України запустила виробництво ШІ-перехоплювачів Terra B1",
    "score": null,
    "url": "https://speka.ua/news/yaponiya-za-dopomogoyu-ukrayini-zapustila-virobnictvo-shi-perehoplyuvachiv-terra-b1-v5m7kz"
-  },
-  {
-   "date": "2026-11-27",
-   "source": "speka",
-   "title": "AI-фахівців в Україні стало 7 200, але бізнес шукає переважно сеньйорів",
-   "score": null,
-   "url": "https://speka.ua/news/ai-faxivciv-v-ukrayini-stalo-7-200-ale-biznes-sukaje-perevazno-senioriv-pn4mjr"
-  },
-  {
-   "date": "2026-11-27",
-   "source": "liga",
-   "title": "Виробник дрона P1-SUN SkyFall шукає AI/ML-інженерів для розробки автономних систем",
-   "score": null,
-   "url": "https://tech.liga.net/ua/technology/news/vyrobnyk-drona-p1-sun-skyfall-shukaie-aiml-inzheneriv-dlia-rozrobky-avtonomnykh-system"
-  },
-  {
-   "date": "2026-11-27",
-   "source": "liga",
-   "title": "Український AI-ринок зріс до 7200 фахівців: кого тепер шукає бізнес",
-   "score": null,
-   "url": "https://tech.liga.net/ua/technology/news/ukrainskyy-ai-rynok-zris-do-7200-fakhivtsiv-koho-teper-shukaie-biznes"
-  },
-  {
-   "date": "2026-11-27",
-   "source": "hn",
-   "title": "US Air Force's cloud computing platform hacked",
-   "score": 171,
-   "url": "https://news.sky.com/story/us-air-forces-cloud-computing-platform-hacked-13617163"
-  },
-  {
-   "date": "2026-11-27",
-   "source": "hn",
-   "title": "GPT 6.2 Astra Solves a Historical Mystery",
-   "score": 74,
-   "url": "https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical"
   }
  ],
  "competitors": [
@@ -2263,15 +2275,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "258",
-   "agent": "coo",
-   "task": "TikTok ep83 через імпорт з YouTube (vidIQ)",
-   "started": "2026-11-26T17:11:45Z",
-   "finished": "2026-11-26T17:27:31Z",
-   "result": "TikTok ep83: tiktok.com/@shikarno_ai_ua/video/7712532442124471553",
-   "agent_raw": "tiktok"
-  },
   {
    "id": "259",
    "agent": "dist",
@@ -2607,6 +2610,15 @@
    "finished": "2026-11-27T19:23:32Z",
    "result": "тиха доба для великих; UPDATE_28 = №185 FCA остаточно (прес-реліз 200, цифри ті самі, 2 правки фактчеку в dict); нові №199–201 (макс. 136,6)",
    "agent_raw": "researcher"
+  },
+  {
+   "id": "298",
+   "agent": "de",
+   "task": "Збирач даталейку 20:52Z: новини, TikTok/IG/TG-знімок",
+   "started": "2026-11-27T20:52:51Z",
+   "finished": "2026-11-27T20:55:01Z",
+   "result": "news +19 (2246); TikTok ep84 24 перегл./1 збереження за ~3,5 год; IG ep84 1, clip3 0 plays; TG 6; deepmind RSS битий; vidIQ 5 кр.",
+   "agent_raw": "data"
   }
  ],
  "agents": [
@@ -2968,7 +2980,7 @@
   {
    "name": "Озвучка",
    "state": "warn",
-   "text": "ліміт Gemini TTS вичерпано (429) з 27.11 15:20 Київ; за 24 год успішних запитів 17 — денний ліміт ковзний (~15–19 запитів), слоти повертаються через добу після використаних. Наступне вікно — 10:02–10:52 Київ. Готово частин: шоу #3 11/12 (лишились ч.11); №186 «IT» (2.12) 0/12; №194 «Сертифікат» (4.12) 0/13; шоу #4 0/15; гайд #3 4/17."
+   "text": "ліміт Gemini TTS вичерпано (429) з 27.11 15:20 Київ; за 24 год успішних запитів 16 — денний ліміт ковзний (~15–19 запитів), слоти повертаються через добу після використаних. Наступне вікно — 10:02–10:52 Київ. Готово частин: шоу #3 11/12 (лишились ч.11); №186 «IT» (2.12) 0/12; №194 «Сертифікат» (4.12) 0/13; шоу #4 0/15; гайд #3 4/17."
   },
   {
    "name": "Instagram Reels",
