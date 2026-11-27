@@ -94,6 +94,9 @@
 - Search Central Blog: нових постів за 25–26.11 немає. Пропущений раніше пост **«Moving to a CDN without overwhelming your origin (or blocking Googlebot)»**, 11.11.2026 (Gary Illyes, Cherry Prommawin; [переказ SEJ](https://searchenginejournal.com/google-explains-how-to-avoid-cdn-migration-seo-problems/597888)) [О, деталі з вторинного джерела]. Його суть: під час запуску CDN вузьким місцем лишається origin-сервер, тому кеш треба прогріти, а перевірених краулерів — виключити з бот-захисту. **Для нас:** зараз ми на GitHub Pages, тож нічого робити не треба. Якщо сайт переїде на сервер-студію (`docs/playbooks/server-studio.md`, Caddy), у Caddy/фаєрволі не блокувати перевіреного Googlebot і не ставити rate limit на `/novyny/*`.
 - [Д] GSC 24.11: 85 показів (база 15–23.11 — 107–166 на день), 4 кліки, позиція 9,9. Це перший день після завершення апдейту. Висновків не робимо до 1.12. Тригер для SEO: <100 показів на день 3 дні поспіль (25–27.11), див. youtube.md §6.2 Р3.
 
+## 5c. Офіційні зміни (перевірка 27.11, дослідник алгоритмів)
+- [Status Dashboard, incidents.json](https://status.search.google.com/incidents.json): December 2026 core update досі лише **анонсовано** (24.11 15:02Z), розгортання не почалося. Нових інцидентів Crawling/Indexing/Serving немає. Search Central Blog: нових постів після вже врахованих (Search Analytics API 16.11, CDN 11.11) немає. Висновки §5a/§7 без змін. Вікно G1 «після» стартує 1.12.
+
 ## 6. Лайфхаки практиків (25.11) — **досвід практиків**, не офіційне
 Фокус: малі сайти, CTR, AI Overviews і Discover. Російських джерел і авторів немає. Українських кейсів із цифрами не знайдено: dev.ua/Promodo 16.01.2026 подає лише агреговане «−20–35 % охоплення інфосайтів» без кейсу, тож у таблицю не взято.
 
