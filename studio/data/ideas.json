@@ -4119,5 +4119,36 @@
   "status": "new",
   "added": "2026-11-27",
   "id": "193"
+ },
+ {
+  "title": "Сертифікат Google з ШІ безкоштовно: як подати заявку до 10 грудня, що всередині 8 курсів на Coursera і чи варто — Байт проходить перший модуль (гайд 12–15 хв)",
+  "format": "guide",
+  "channels": [
+   "long",
+   "site",
+   "short",
+   "tg"
+  ],
+  "demand": 4,
+  "fresh": 5,
+  "show": 4,
+  "fit": 5,
+  "hook": "you",
+  "by": "researcher-niche",
+  "source": "https://www.kmu.gov.ua/news/minekonomiky-google-vidkryv-reiestratsiiu-na-sertyfikatsiiu-z-profesiinoho-vykorystannia-shi",
+  "sources": [
+   {
+    "name": "YouTube Google Знання (аномалія)",
+    "url": "https://www.youtube.com/watch?v=hT9YZBCCKA4"
+   },
+   {
+    "name": "Google Career Certificates — AI Professional (UA)",
+    "url": "https://grow.google/intl/ua/google-career-certificates/ai-professional/"
+   }
+  ],
+  "note": "Аномалія 27.11 ранок (даталейк niche 27.11): Google Знання «Сертифікація Google з професійного використання ШІ: новий потік» (25.11, 92 хв) — 30,3K переглядів за 2 дні, 47x медіани каналу (640, n=110), ~15K/день — ДОВГИЙ формат з попитом. Факти перевірено 27.11 на kmu.gov.ua (Мінекономіки, 10.11.2026): 20 000 безоплатних ліцензій, 8 онлайн-курсів на Coursera, новий курс «ШІ для розгортання додатків» (вайбкодинг), заявка до 10.12.2026, відбір за якістю заявки й черговістю. Кут: не трансляція, а покроковий гайд — заявка на екрані, що в курсах, скільки часу, чи дає сертифікат щось роботодавцю (без обіцянок), + Байт проходить 1-й модуль. Дедлайн 10.12 → випуск до ~5.12. kw.py не запускав — SEO-відділу перевірити «сертифікат google ші», «google ai essentials українською». Не дубль: №2/№9/Gemini — гайди інструментів, тут — навчання/сертифікат.",
+  "status": "new",
+  "added": "2026-11-27",
+  "id": "194"
  }
 ]
