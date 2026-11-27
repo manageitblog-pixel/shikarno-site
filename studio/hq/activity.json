@@ -1597,8 +1597,8 @@
    "agent": "factcheck",
    "task": "Повторна перевірка правок guide194",
    "started": "2026-11-27T10:36:23Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-27T10:37:10Z",
+   "result": "guide194 правки: PASS — готовий до озвучки"
   }
  ]
 }

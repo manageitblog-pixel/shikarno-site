@@ -1,23 +1,23 @@
 {
- "generated": "2026-11-27T10:18:53Z",
+ "generated": "2026-11-27T10:37:10Z",
  "fresh": {
-  "yt_live": "2026-11-27T10:18:54Z",
+  "yt_live": "2026-11-27T10:37:10Z",
   "yt_analytics": "2026-11-24",
-  "tg_members": "2026-11-27T10:18:55Z",
-  "tg_posts": "2026-11-27T10:06:58Z",
+  "tg_members": "2026-11-27T10:37:12Z",
+  "tg_posts": "2026-11-27T10:37:14Z",
   "ideas": "2026-11-27T10:15:48Z",
   "news": "2026-11-27 08:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-27T08",
   "instagram": "2026-11-27T08",
   "site": "2026-11-25",
-  "site_live": "2026-11-27T10:18:56Z",
-  "activity": "2026-11-27T10:18:31Z",
+  "site_live": "2026-11-27T10:37:15Z",
+  "activity": "2026-11-27T10:37:10Z",
   "asks": "2026-11-27T07:45Z"
  },
  "notes": [],
  "kpi": {
-  "subs": 400,
+  "subs": 411,
   "subs_goal": 1000,
   "long_hours": 10.0,
   "long_hours_ads": 2.5,
@@ -34,7 +34,7 @@
   ],
   "subs_since": {
    "base": 395,
-   "d": 5,
+   "d": 16,
    "at": "2026-11-26T19:06Z",
    "from": "2026-11-26"
   },
@@ -416,7 +416,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 236
+   "subs_total": 247
   },
   {
    "w": "2026-08-03",
@@ -430,7 +430,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 236
+   "subs_total": 247
   },
   {
    "w": "2026-08-17",
@@ -444,7 +444,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 236
+   "subs_total": 247
   },
   {
    "w": "2026-08-24",
@@ -458,7 +458,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 236
+   "subs_total": 247
   },
   {
    "w": "2026-08-31",
@@ -472,7 +472,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 236
+   "subs_total": 247
   },
   {
    "w": "2026-09-07",
@@ -486,7 +486,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 236
+   "subs_total": 247
   },
   {
    "w": "2026-09-28",
@@ -500,7 +500,7 @@
    "partial_site": false,
    "subs_cum": -1,
    "long_cum": 0.0,
-   "subs_total": 235
+   "subs_total": 246
   },
   {
    "w": "2026-10-19",
@@ -514,7 +514,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.2,
-   "subs_total": 236
+   "subs_total": 247
   },
   {
    "w": "2026-10-26",
@@ -528,7 +528,7 @@
    "partial_site": false,
    "subs_cum": 6,
    "long_cum": 0.7,
-   "subs_total": 242
+   "subs_total": 253
   },
   {
    "w": "2026-11-02",
@@ -542,7 +542,7 @@
    "partial_site": false,
    "subs_cum": 155,
    "long_cum": 5.5,
-   "subs_total": 391
+   "subs_total": 402
   },
   {
    "w": "2026-11-09",
@@ -556,7 +556,7 @@
    "partial_site": false,
    "subs_cum": 160,
    "long_cum": 8.2,
-   "subs_total": 396
+   "subs_total": 407
   },
   {
    "w": "2026-11-16",
@@ -570,7 +570,7 @@
    "partial_site": false,
    "subs_cum": 163,
    "long_cum": 10.9,
-   "subs_total": 399
+   "subs_total": 410
   },
   {
    "w": "2026-11-23",
@@ -584,7 +584,7 @@
    "partial_site": true,
    "subs_cum": 164,
    "long_cum": 12.4,
-   "subs_total": 400
+   "subs_total": 411
   }
  ],
  "tg_hist": [
@@ -615,10 +615,10 @@
  ],
  "platforms": {
   "youtube": {
-   "subs": 400,
+   "subs": 411,
    "views_total": 13493,
    "videos": 102,
-   "live_at": "2026-11-27T10:18:54Z",
+   "live_at": "2026-11-27T10:37:10Z",
    "views_7d": 1031,
    "pct_7d": 49.2,
    "subs_7d": 4,
@@ -684,7 +684,7 @@
     },
     {
      "title": "ШІ для вчителя: план уроку і тест за 5 хвилин у Google Classroom 🍎",
-     "views": 124,
+     "views": 123,
      "id": "ENKGdbr04h0"
     },
     {
@@ -1133,7 +1133,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-27T10:18:56Z",
+    "updated": "2026-11-27T10:37:15Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 4,
@@ -1641,7 +1641,7 @@
    "views7": 34,
    "pct": 58.9,
    "complete": false,
-   "total": 50
+   "total": 52
   },
   {
    "id": "ENKGdbr04h0",
@@ -1652,7 +1652,7 @@
    "views7": 114,
    "pct": 47.5,
    "complete": false,
-   "total": 124
+   "total": 123
   },
   {
    "id": "LtNuOtQe0pc",
@@ -2232,31 +2232,6 @@
  ],
  "activity": [
   {
-   "id": "244",
-   "agent": "de",
-   "task": "Збирач даталейку 08:52Z (щоденний): sync, ingest, outliers, знімок",
-   "started": "2026-11-26T08:52:56Z",
-   "finished": "2026-11-26T08:57:34Z",
-   "result": "+23 новин; sync 101 відео; outliers +200; TikTok Signal 112, реклама ChatGPT 269; IG 28 підп.; ідеї #172 (458, approved), #173, #174",
-   "agent_raw": "data"
-  },
-  {
-   "id": "245",
-   "agent": "seo",
-   "task": "Фактчек правових джерел у наборах pomichnyk-* перед відкриттям для Google",
-   "started": "2026-11-26T09:01:14Z",
-   "finished": "2026-11-26T09:11:30Z",
-   "result": "12 джерел: 9 OK, 1 виправлено (ст.42 «Про освіту» → 4742-IX), 2 не звірено (hsc, tax — 403)"
-  },
-  {
-   "id": "246",
-   "agent": "cso",
-   "task": "CSO 26.11: трекер 4 платформ, обсяг довгих",
-   "started": "2026-11-26T09:19:53Z",
-   "finished": "2026-11-26T09:21:53Z",
-   "result": "години 12,1 (−92% темпу), підп. 336 (+20/добу), TikTok 19,5 тис.; рішення: шоу #4 сценарій сьогодні, гайд #3 ≥12/17 до 30.11 або 9.12"
-  },
-  {
    "id": "247",
    "agent": "shorts",
    "task": "Сценарій шоу #4 (weekly4.py, 6.12) — заздалегідь, рішення CSO 26.11",
@@ -2563,17 +2538,42 @@
    "agent": "seo",
    "task": "SEO-відділ 27.11: kw ідей, YouTube-SEO, 1 сторінка сайту з GSC",
    "started": "2026-11-27T10:13:32Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-27T10:19:25Z",
+   "result": "YT: тір-лист #7 назва/теги під «меню на тиждень»; kw+yt_title для №186 («IT ринок в Україні 2026…») і №194; сайт — черга заблокована експериментами; GSC 19–25.11: 12 кліків, 783 покази, поз. 8,9 (−25% кліків)"
   },
   {
    "id": "283",
    "agent": "shorts",
    "task": "Сценарій №194 «Сертифікат Google з ШІ безкоштовно» — довгий 12–15 хв на 4.12 (рішення CSO)",
    "started": "2026-11-27T10:18:31Z",
-   "finished": null,
-   "result": "",
+   "finished": "2026-11-27T10:29:01Z",
+   "result": "guide194.py: 32 сегменти, ~1780 слів (~12–13 хв), 13 частин; ключ — правила участі (PDF 9.11), kmu.gov.ua 10.11, Coursera",
    "agent_raw": "editor"
+  },
+  {
+   "id": "284",
+   "agent": "factcheck",
+   "task": "Незалежний фактчек guide194 (№194, 4.12)",
+   "started": "2026-11-27T10:29:01Z",
+   "finished": "2026-11-27T10:34:35Z",
+   "result": "guide194: PASS з умовами — 53 PASS / 7 FIX / 1 CUT; правки: цитата Кластера, «стартує з 13.11», «реєструватися не потрібно», без «за кілька хвилин», вебінар — організатори, «найкраща пропозиція» як думка Байта"
+  },
+  {
+   "id": "285",
+   "agent": "shorts",
+   "task": "guide194: правки фактчеку + у чергу TTS після rozbir186",
+   "started": "2026-11-27T10:34:36Z",
+   "finished": "2026-11-27T10:36:23Z",
+   "result": "guide194: 7 обов'язкових + тривалість внесено; у черзі TTS після rozbir186",
+   "agent_raw": "editor"
+  },
+  {
+   "id": "286",
+   "agent": "factcheck",
+   "task": "Повторна перевірка правок guide194",
+   "started": "2026-11-27T10:36:23Z",
+   "finished": "2026-11-27T10:37:10Z",
+   "result": "guide194 правки: PASS — готовий до озвучки"
   }
  ],
  "agents": [
@@ -2935,7 +2935,7 @@
   {
    "name": "Озвучка",
    "state": "warn",
-   "text": "ліміт Gemini TTS вичерпано (429) з 27.11 10:26 Київ; за 24 год успішних запитів 17 — денний ліміт ковзний (~15–19 запитів), слоти повертаються через добу після використаних. Наступне вікно — 10:02–10:52 Київ. Готово частин: шоу #3 11/11; rozbir186 0/12; гайд #3 4/17; шоу #4 0/15."
+   "text": "ліміт Gemini TTS вичерпано (429) з 27.11 10:26 Київ; за 24 год успішних запитів 17 — денний ліміт ковзний (~15–19 запитів), слоти повертаються через добу після використаних. Наступне вікно — 10:02–10:52 Київ. Готово частин: шоу #3 11/11; rozbir186 0/12; guide194 0/13; гайд #3 4/17; шоу #4 0/15."
   },
   {
    "name": "Instagram Reels",
