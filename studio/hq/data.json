@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-27T21:06:26Z",
+ "generated": "2026-11-27T21:19:54Z",
  "fresh": {
-  "yt_live": "2026-11-27T21:06:26Z",
+  "yt_live": "2026-11-27T21:19:54Z",
   "yt_analytics": "2026-11-24",
-  "tg_members": "2026-11-27T21:06:28Z",
-  "tg_posts": "2026-11-27T20:55:05Z",
+  "tg_members": "2026-11-27T21:19:55Z",
+  "tg_posts": "2026-11-27T21:19:57Z",
   "ideas": "2026-11-27T19:22:18Z",
   "news": "2026-11-27 20:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-27T20",
   "instagram": "2026-11-27T20",
   "site": "2026-11-25",
-  "site_live": "2026-11-27T21:06:29Z",
+  "site_live": "2026-11-27T21:19:58Z",
   "activity": "2026-11-27T20:55:01Z",
   "asks": "2026-11-27T18:40Z"
  },
@@ -618,7 +618,7 @@
    "subs": 438,
    "views_total": 13536,
    "videos": 104,
-   "live_at": "2026-11-27T21:06:26Z",
+   "live_at": "2026-11-27T21:19:54Z",
    "views_7d": 1031,
    "pct_7d": 49.2,
    "subs_7d": 4,
@@ -688,9 +688,9 @@
      "id": "ENKGdbr04h0"
     },
     {
-     "title": "Новини ШІ за тиждень (листопад 2026): Anthropic на біржі, Gemini платить сам | #2",
-     "views": 101,
-     "id": "aTUsauz53rs"
+     "title": "Як продати на OLX швидше з ШІ: опис, ціна, шахраї 🛍️ ШІ для професій #9",
+     "views": 103,
+     "id": "LtNuOtQe0pc"
     }
    ]
   },
@@ -1169,7 +1169,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-27T21:06:29Z",
+    "updated": "2026-11-27T21:19:58Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 17,
@@ -1644,7 +1644,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 20
+   "total": 22
   },
   {
    "id": "Rlm1u-I6x00",
@@ -1721,7 +1721,7 @@
    "views7": 89,
    "pct": 63.8,
    "complete": false,
-   "total": 100
+   "total": 103
   },
   {
    "id": "aTUsauz53rs",
@@ -1732,7 +1732,7 @@
    "views7": 62,
    "pct": 26.1,
    "complete": false,
-   "total": 101
+   "total": 100
   },
   {
    "id": "gljrHADi4aU",
