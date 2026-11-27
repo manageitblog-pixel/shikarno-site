@@ -1,9 +1,9 @@
 {
- "generated": "2026-11-27T04:06:55Z",
+ "generated": "2026-11-27T04:19:40Z",
  "fresh": {
-  "yt_live": "2026-11-27T04:06:55Z",
+  "yt_live": "2026-11-27T04:19:41Z",
   "yt_analytics": "2026-11-23",
-  "tg_members": "2026-11-27T04:06:56Z",
+  "tg_members": "2026-11-27T04:19:41Z",
   "tg_posts": "2026-11-27T04:06:58Z",
   "ideas": "2026-11-26T20:56:08Z",
   "news": "2026-11-27 00:53",
@@ -11,7 +11,7 @@
   "tiktok": "2026-11-27T00",
   "instagram": "2026-11-27T00",
   "site": "2026-11-24",
-  "site_live": "2026-11-27T04:06:59Z",
+  "site_live": "2026-11-27T04:19:43Z",
   "activity": "2026-11-27T00:55:01Z",
   "asks": "2026-11-26T18:35Z"
  },
@@ -21,7 +21,7 @@
   "subs_goal": 1000,
   "long_hours": 12.6,
   "long_hours_goal": 4000,
-  "views_total": 13493,
+  "views_total": 13137,
   "videos": 102,
   "views_7d": 875,
   "pct_7d": 48.1,
@@ -603,9 +603,9 @@
  "platforms": {
   "youtube": {
    "subs": 390,
-   "views_total": 13493,
+   "views_total": 13137,
    "videos": 102,
-   "live_at": "2026-11-27T04:06:55Z",
+   "live_at": "2026-11-27T04:19:41Z",
    "views_7d": 875,
    "pct_7d": 48.1,
    "subs_7d": 4,
@@ -1096,18 +1096,18 @@
     }
    ],
    "live": {
-    "updated": "2026-11-27T04:06:59Z",
+    "updated": "2026-11-27T04:19:43Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
-    "today_pageloads": 0,
-    "today_visits": 0,
+    "today_pageloads": 1,
+    "today_visits": 1,
     "yesterday_pageloads": 7,
     "yesterday_visits": 7,
-    "pageloads_7d": 52,
-    "visits_7d": 46,
+    "pageloads_7d": 53,
+    "visits_7d": 47,
     "last24h": {
-     "pageloads": 7,
-     "visits": 7,
+     "pageloads": 8,
+     "visits": 8,
      "hours": [
       {
        "h": "2026-11-26T05:00:00Z",
@@ -1226,8 +1226,8 @@
       },
       {
        "h": "2026-11-27T04:00:00Z",
-       "pageloads": 0,
-       "visits": 0
+       "pageloads": 1,
+       "visits": 1
       }
      ]
     },
@@ -1312,15 +1312,15 @@
      },
      {
       "d": "2026-11-27",
-      "pageloads": 0,
-      "visits": 0,
+      "pageloads": 1,
+      "visits": 1,
       "sampled": false
      }
     ],
     "top_pages_7d": [
      {
       "path": "/",
-      "count": 25
+      "count": 26
      },
      {
       "path": "/novyny/shtuchnyj-intelekt-dlya-ditej-tir-lyst/",
@@ -1342,7 +1342,7 @@
     "top_referrers_7d": [
      {
       "host": "(прямі / без реферера)",
-      "count": 28
+      "count": 29
      },
      {
       "host": "www.google.com",
@@ -1368,7 +1368,7 @@
      },
      {
       "country": "US",
-      "count": 12
+      "count": 13
      },
      {
       "country": "CN",
@@ -1637,7 +1637,7 @@
    "views7": 51,
    "pct": 31.6,
    "complete": false,
-   "total": 98
+   "total": 99
   },
   {
    "id": "gljrHADi4aU",
