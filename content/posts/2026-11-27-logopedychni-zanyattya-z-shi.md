@@ -6,6 +6,7 @@ date: 2026-11-27T19:00:00+02:00
 description: "Логопедичні заняття з ШІ: Gemini малює картки на звук Р, Gemini Canvas робить гру на пам'ять, Claude пише пам'ятку батькам, ChatGPT — звіт у тимчасовому чаті."
 tags: [biznes, gemini, claude, chatgpt, instrumenty]
 youtube: RIt-PqOGJTg
+telegram_post: 153
 source: {name: "Google: генерація зображень у Gemini", url: "https://support.google.com/gemini/answer/14286560"}
 sources:
   - {name: "Google: Canvas у Gemini", url: "https://gemini.google/overview/canvas/"}
