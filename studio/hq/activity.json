@@ -1,14 +1,6 @@
 {
  "items": [
   {
-   "id": "80",
-   "agent": "dist",
-   "task": "Ріст до 1.12: TikTok — найкращі YouTube Shorts, яких ще нема в TikTok (+1/день, підпис-запит)",
-   "started": "2026-11-22T22:03:48Z",
-   "finished": "2026-11-23T14:09:53Z",
-   "result": "TikTok clip1 опубліковано з головної сесії: tiktok.com/@shikarno_ai_ua/video/7711368603748158740"
-  },
-  {
    "id": "81",
    "agent": "voice",
    "task": "Озвучка наперед: guide1 ч.4+ → ep83–86, до реального 429",
@@ -1597,6 +1589,14 @@
    "agent": "factcheck",
    "task": "Незалежний фактчек rozbir186 (№186, 2.12)",
    "started": "2026-11-27T09:39:22Z",
+   "finished": "2026-11-27T09:45:30Z",
+   "result": "rozbir186: PASS з умовами — 37 PASS / 8 FIX / 0 CUT; SAP підтверджено CNBC/TNW; правки: «розглядає», Hardware у топі, Anthropic 35% Claude.ai, Djinni навесні, 49% формулювання, «майже рекордний»"
+  },
+  {
+   "id": "280",
+   "agent": "editor",
+   "task": "rozbir186: внести 8 правок фактчеку + у чергу озвучки (порядок CSO)",
+   "started": "2026-11-27T09:45:30Z",
    "finished": null,
    "result": ""
   }
