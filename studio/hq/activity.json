@@ -1597,8 +1597,8 @@
    "agent": "community",
    "task": "TikTok-коментарі за добу 27.11 (vidIQ) → відповіді власнику, лише якщо нові",
    "started": "2026-11-27T15:17:45Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-27T15:19:30Z",
+   "result": "TikTok: 16 відео з коментарями, нових 0 → власнику не писали; облік tiktok_comments_seen.json; vidIQ 20 кр."
   }
  ]
 }
