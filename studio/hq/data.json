@@ -1,10 +1,10 @@
 {
- "generated": "2026-11-27T18:35:27Z",
+ "generated": "2026-11-27T19:06:46Z",
  "fresh": {
-  "yt_live": "2026-11-27T18:35:27Z",
+  "yt_live": "2026-11-27T19:06:47Z",
   "yt_analytics": "2026-11-24",
-  "tg_members": "2026-11-27T18:35:28Z",
-  "tg_posts": "2026-11-27T18:29:06Z",
+  "tg_members": "2026-11-27T19:06:48Z",
+  "tg_posts": "2026-11-27T19:06:50Z",
   "ideas": "2026-11-27T11:24:38Z",
   "news": "2026-11-27 16:53",
   "comp": "2026-11-23",
@@ -15,9 +15,11 @@
   "activity": "2026-11-27T18:34:55Z",
   "asks": "2026-11-27T18:40Z"
  },
- "notes": [],
+ "notes": [
+  "Cloudflare: кеш: Cloudflare не відповів (HTTPError)"
+ ],
  "kpi": {
-  "subs": 440,
+  "subs": 439,
   "subs_goal": 1000,
   "long_hours": 10.0,
   "long_hours_ads": 2.5,
@@ -34,7 +36,7 @@
   ],
   "subs_since": {
    "base": 395,
-   "d": 45,
+   "d": 44,
    "at": "2026-11-26T19:06Z",
    "from": "2026-11-26"
   },
@@ -416,7 +418,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 276
+   "subs_total": 275
   },
   {
    "w": "2026-08-03",
@@ -430,7 +432,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 276
+   "subs_total": 275
   },
   {
    "w": "2026-08-17",
@@ -444,7 +446,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 276
+   "subs_total": 275
   },
   {
    "w": "2026-08-24",
@@ -458,7 +460,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 276
+   "subs_total": 275
   },
   {
    "w": "2026-08-31",
@@ -472,7 +474,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 276
+   "subs_total": 275
   },
   {
    "w": "2026-09-07",
@@ -486,7 +488,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 276
+   "subs_total": 275
   },
   {
    "w": "2026-09-28",
@@ -500,7 +502,7 @@
    "partial_site": false,
    "subs_cum": -1,
    "long_cum": 0.0,
-   "subs_total": 275
+   "subs_total": 274
   },
   {
    "w": "2026-10-19",
@@ -514,7 +516,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.2,
-   "subs_total": 276
+   "subs_total": 275
   },
   {
    "w": "2026-10-26",
@@ -528,7 +530,7 @@
    "partial_site": false,
    "subs_cum": 6,
    "long_cum": 0.7,
-   "subs_total": 282
+   "subs_total": 281
   },
   {
    "w": "2026-11-02",
@@ -542,7 +544,7 @@
    "partial_site": false,
    "subs_cum": 155,
    "long_cum": 5.5,
-   "subs_total": 431
+   "subs_total": 430
   },
   {
    "w": "2026-11-09",
@@ -556,7 +558,7 @@
    "partial_site": false,
    "subs_cum": 160,
    "long_cum": 8.2,
-   "subs_total": 436
+   "subs_total": 435
   },
   {
    "w": "2026-11-16",
@@ -570,7 +572,7 @@
    "partial_site": false,
    "subs_cum": 163,
    "long_cum": 10.9,
-   "subs_total": 439
+   "subs_total": 438
   },
   {
    "w": "2026-11-23",
@@ -584,7 +586,7 @@
    "partial_site": true,
    "subs_cum": 164,
    "long_cum": 12.4,
-   "subs_total": 440
+   "subs_total": 439
   }
  ],
  "tg_hist": [
@@ -615,10 +617,10 @@
  ],
  "platforms": {
   "youtube": {
-   "subs": 440,
+   "subs": 439,
    "views_total": 13536,
    "videos": 104,
-   "live_at": "2026-11-27T18:35:27Z",
+   "live_at": "2026-11-27T19:06:47Z",
    "views_7d": 1031,
    "pct_7d": 49.2,
    "subs_7d": 4,
@@ -1443,14 +1445,15 @@
       "country": "NL",
       "count": 2
      }
-    ]
+    ],
+    "error": "кеш: Cloudflare не відповів (HTTPError)"
    }
   },
   "telegram": {
    "members": 6,
    "tg_goal": 150,
    "posts_7d": 18,
-   "views_7d": 57,
+   "views_7d": 58,
    "views_avg": 3.2,
    "posts_error": null,
    "best": [
