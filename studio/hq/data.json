@@ -1,23 +1,23 @@
 {
- "generated": "2026-11-27T16:19:39Z",
+ "generated": "2026-11-27T16:56:27Z",
  "fresh": {
-  "yt_live": "2026-11-27T16:19:39Z",
+  "yt_live": "2026-11-27T16:56:27Z",
   "yt_analytics": "2026-11-24",
-  "tg_members": "2026-11-27T16:19:41Z",
-  "tg_posts": "2026-11-27T16:06:53Z",
+  "tg_members": "2026-11-27T16:56:29Z",
+  "tg_posts": "2026-11-27T16:56:30Z",
   "ideas": "2026-11-27T11:24:38Z",
-  "news": "2026-11-27 12:53",
+  "news": "2026-11-27 16:53",
   "comp": "2026-11-23",
-  "tiktok": "2026-11-27T12",
-  "instagram": "2026-11-27T12",
+  "tiktok": "2026-11-27T16",
+  "instagram": "2026-11-27T16",
   "site": "2026-11-25",
-  "site_live": "2026-11-27T16:19:42Z",
-  "activity": "2026-11-27T15:19:30Z",
+  "site_live": "2026-11-27T16:56:31Z",
+  "activity": "2026-11-27T16:56:27Z",
   "asks": "2026-11-27T07:45Z"
  },
  "notes": [],
  "kpi": {
-  "subs": 442,
+  "subs": 445,
   "subs_goal": 1000,
   "long_hours": 10.0,
   "long_hours_ads": 2.5,
@@ -34,7 +34,7 @@
   ],
   "subs_since": {
    "base": 395,
-   "d": 47,
+   "d": 50,
    "at": "2026-11-26T19:06Z",
    "from": "2026-11-26"
   },
@@ -416,7 +416,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 278
+   "subs_total": 281
   },
   {
    "w": "2026-08-03",
@@ -430,7 +430,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 278
+   "subs_total": 281
   },
   {
    "w": "2026-08-17",
@@ -444,7 +444,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 278
+   "subs_total": 281
   },
   {
    "w": "2026-08-24",
@@ -458,7 +458,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 278
+   "subs_total": 281
   },
   {
    "w": "2026-08-31",
@@ -472,7 +472,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 278
+   "subs_total": 281
   },
   {
    "w": "2026-09-07",
@@ -486,7 +486,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 278
+   "subs_total": 281
   },
   {
    "w": "2026-09-28",
@@ -500,7 +500,7 @@
    "partial_site": false,
    "subs_cum": -1,
    "long_cum": 0.0,
-   "subs_total": 277
+   "subs_total": 280
   },
   {
    "w": "2026-10-19",
@@ -514,7 +514,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.2,
-   "subs_total": 278
+   "subs_total": 281
   },
   {
    "w": "2026-10-26",
@@ -528,7 +528,7 @@
    "partial_site": false,
    "subs_cum": 6,
    "long_cum": 0.7,
-   "subs_total": 284
+   "subs_total": 287
   },
   {
    "w": "2026-11-02",
@@ -542,7 +542,7 @@
    "partial_site": false,
    "subs_cum": 155,
    "long_cum": 5.5,
-   "subs_total": 433
+   "subs_total": 436
   },
   {
    "w": "2026-11-09",
@@ -556,7 +556,7 @@
    "partial_site": false,
    "subs_cum": 160,
    "long_cum": 8.2,
-   "subs_total": 438
+   "subs_total": 441
   },
   {
    "w": "2026-11-16",
@@ -570,7 +570,7 @@
    "partial_site": false,
    "subs_cum": 163,
    "long_cum": 10.9,
-   "subs_total": 441
+   "subs_total": 444
   },
   {
    "w": "2026-11-23",
@@ -584,7 +584,7 @@
    "partial_site": true,
    "subs_cum": 164,
    "long_cum": 12.4,
-   "subs_total": 442
+   "subs_total": 445
   }
  ],
  "tg_hist": [
@@ -615,10 +615,10 @@
  ],
  "platforms": {
   "youtube": {
-   "subs": 442,
+   "subs": 445,
    "views_total": 13536,
    "videos": 102,
-   "live_at": "2026-11-27T16:19:39Z",
+   "live_at": "2026-11-27T16:56:27Z",
    "views_7d": 1031,
    "pct_7d": 49.2,
    "subs_7d": 4,
@@ -689,19 +689,19 @@
     },
     {
      "title": "Новини ШІ за тиждень (листопад 2026): Anthropic на біржі, Gemini платить сам | #2",
-     "views": 100,
+     "views": 101,
      "id": "aTUsauz53rs"
     }
    ]
   },
   "tiktok": {
    "videos": 40,
-   "views_total": 73335,
-   "views_7d": 2259,
+   "views_total": 73338,
+   "views_7d": 2262,
    "new_7d": 8,
    "saves_total": 1246,
    "likes_total": 2004,
-   "last_snapshot": "2026-11-27T12",
+   "last_snapshot": "2026-11-27T16",
    "best": [
     {
      "title": "Який ШІ для фото й відео? Тір-лист",
@@ -845,6 +845,10 @@
     {
      "x": "2026-11-27T12",
      "v": 73335
+    },
+    {
+     "x": "2026-11-27T16",
+     "v": 73338
     }
    ]
   },
@@ -855,11 +859,11 @@
    "views_30d": 2140,
    "reach_30d": 1507,
    "acc_at": "27.11 08Z",
-   "reels": 14,
-   "plays_total": 503,
+   "reels": 15,
+   "plays_total": 504,
    "likes_total": 10,
    "saves_total": 19,
-   "last_snapshot": "2026-11-27T12",
+   "last_snapshot": "2026-11-27T16",
    "best": [
     {
      "shortcode": "DgGRAlDjqkk",
@@ -975,6 +979,10 @@
     {
      "x": "2026-11-27T12",
      "v": 503
+    },
+    {
+     "x": "2026-11-27T16",
+     "v": 504
     }
    ],
    "followers_hist": [
@@ -1069,6 +1077,10 @@
     {
      "x": "2026-11-27T12",
      "v": 32
+    },
+    {
+     "x": "2026-11-27T16",
+     "v": 32
     }
    ]
   },
@@ -1145,7 +1157,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-27T16:19:42Z",
+    "updated": "2026-11-27T16:56:31Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 13,
@@ -1686,7 +1698,7 @@
    "views7": 62,
    "pct": 26.1,
    "complete": false,
-   "total": 100
+   "total": 101
   },
   {
    "id": "gljrHADi4aU",
@@ -2048,7 +2060,7 @@
  "lake": {
   "videos": 102,
   "daily": 893,
-  "news": 2226,
+  "news": 2241,
   "niche": 1435,
   "comp": 511,
   "comp_videos": 62794,
@@ -2060,87 +2072,87 @@
  "news": [
   {
    "date": "2026-11-27",
-   "source": "hf",
-   "title": "Taking Trainium3 to the Track: Generating Videos with LTX-2.5",
+   "source": "verge",
+   "title": "Android’s DIY widgets are a bit of vibe-coding fun",
    "score": null,
-   "url": "https://huggingface.co/blog/video-trainium3"
-  },
-  {
-   "date": "2026-11-27",
-   "source": "ain",
-   "title": "Нові обмеження США можуть відкласти вихід ШІ-моделей Z.AI та Moonshot до 2027 року",
-   "score": null,
-   "url": "https://ain.ua/2026/11/27/novi-obmezennia-ssa-mozut-vidklasti-vixid-si-modelei-zai-ta-moonshot-do-2027-roku/"
+   "url": "https://www.theverge.com/tech/1041801/android-intelligence-create-my-widget-gemini"
   },
   {
    "date": "2026-11-27",
    "source": "devua",
-   "title": "«Ми самі сформулювали в працівників відчуття гарантованої затребуваності. Таких гарантій більше немає». СЕО Intellias Віталій Седлер — про найм у епоху ШІ",
+   "title": "У SkyFall розширюють команду AI/ML-інженерів і готові брати фахівців із цивільного IT. Кого шукають?",
    "score": null,
-   "url": "https://dev.ua/news/my-sami-sformuliuvaly-v-pratsivnykiv-vidchuttia-harantovanoi-zatrebuvanosti-takykh-harantii-bilshe-nemaie-seo-intellias-vitalii-sedler-pro-naim-u-epokhu-shi-1795783450"
+   "url": "https://dev.ua/news/skyfall-shukaie-aiml-inzheneriv-1795788132"
   },
   {
    "date": "2026-11-27",
    "source": "devua",
-   "title": "«Загнані в кут генеративним ШІ». Співробітники Ubisoft поскаржилися на тиск керівництва щодо впровадження технології в розробку ігор",
+   "title": "Ложка слопу в «медовій пастці». СБУ затримала українського військового, якого росіяни завербували через жіночі ШІ-акаунти в соцмережах",
    "score": null,
-   "url": "https://dev.ua/news/v-ubisoft-poskarzhylysia-na-prymusove-vykorystannia-ai-1795780974"
+   "url": "https://dev.ua/news/lozhka-slopu-v-bochtsi-khani-trepu-1795787547"
   },
   {
    "date": "2026-11-27",
    "source": "devua",
-   "title": "Розробник створив повну українізацію інтерфейсу Orca для роботи з ШІ-агентами та виклав її у відкритий доступ",
+   "title": "Історик роками шукав автора малюнків, яким понад 200 років. GPT-6.2 Astra знайшла його за 22 хвилини",
    "score": null,
-   "url": "https://dev.ua/news/ukrainskyi-rozrobnyk-stvoryv-povnu-ukrainizatsiiu-interfeisu-orca-1795780612"
+   "url": "https://dev.ua/news/shi-rozhadav-istorychnu-zahadku-1795785533"
   },
   {
    "date": "2026-11-27",
    "source": "devua",
-   "title": "На росії використали ШІ «Сбєрбанка», щоб дописати «Мертві душі» Гоголя",
+   "title": "Активісти третій день голодують під офісом Anthropic у Сан-Франциско через «рекурсивне самовдосконалення» ШІ та погрожують далі взятися за OpenAI",
    "score": null,
-   "url": "https://dev.ua/news/rosiiska-shtuchna-dusha-dopysala-mertvi-dushi-hoholia-1795776784"
+   "url": "https://dev.ua/news/aktyvisty-tretii-den-holoduiut-pid-ofisom-anthropic-1795783083"
   },
   {
    "date": "2026-11-27",
    "source": "devua",
-   "title": "Djinni запустив ШІ-асистента для пошуку роботи: до профілю тепер можна підключити Claude або ChatGPT через MCP",
+   "title": "CEO LinkedIn розповів, чому ШІ може допомогти «зумерам» працевлаштуватися та дав пораду щодо пошуку роботи в сучасних умовах",
    "score": null,
-   "url": "https://dev.ua/news/djinni-zapustyv-shi-asystenta-1795776019"
+   "url": "https://dev.ua/news/ceo-linkedin-zumery-1795783214"
   },
   {
    "date": "2026-11-27",
-   "source": "devua",
-   "title": "Ферчук бачить розвиток автоматизованої логістики одним з пріоритетів Мінцифри на найближчі роки. Про що йдеться",
+   "source": "speka",
+   "title": "Японія за допомогою України запустила виробництво ШІ-перехоплювачів Terra B1",
    "score": null,
-   "url": "https://dev.ua/news/ferchuk-bachyt-rozvytok-avtomatyzovanoi-lohistyky-odnym-z-priorytetiv-mintsyfry-na-naiblyzhchi-roky-pro-shcho-idetsia-1795775938"
+   "url": "https://speka.ua/news/yaponiya-za-dopomogoyu-ukrayini-zapustila-virobnictvo-shi-perehoplyuvachiv-terra-b1-v5m7kz"
   },
   {
    "date": "2026-11-27",
-   "source": "devua",
-   "title": "«Не віддавайте ШІ-агентам всі каптчі підряд»: український розробник уперше натрапив на фейкову каптчу, яка просить відкрити Terminal",
+   "source": "speka",
+   "title": "AI-фахівців в Україні стало 7 200, але бізнес шукає переважно сеньйорів",
    "score": null,
-   "url": "https://dev.ua/news/ukrainskyi-rozrobnyk-upershe-natrapyv-na-feikovu-kaptchu-1795771596"
+   "url": "https://speka.ua/news/ai-faxivciv-v-ukrayini-stalo-7-200-ale-biznes-sukaje-perevazno-senioriv-pn4mjr"
   },
   {
    "date": "2026-11-27",
-   "source": "devua",
-   "title": "Розробник запустив 50 ШІ-агентів одночасно — і його Mac перестав справлятися. Що він придумав, щоб «не розплавити залізо»?",
+   "source": "liga",
+   "title": "Виробник дрона P1-SUN SkyFall шукає AI/ML-інженерів для розробки автономних систем",
    "score": null,
-   "url": "https://dev.ua/news/rozrobnyk-zapustyv-50-shi-ahentiv-odnochasno-i-ioho-mac-perestav-spravliatysia-1795768683"
+   "url": "https://tech.liga.net/ua/technology/news/vyrobnyk-drona-p1-sun-skyfall-shukaie-aiml-inzheneriv-dlia-rozrobky-avtonomnykh-system"
   },
   {
    "date": "2026-11-27",
-   "source": "devua",
-   "title": "«Рої ШІ-агентів уже активно атакують». CEO Cognition попередив про хвилю масштабних витоків даних у найближчі пів року",
+   "source": "liga",
+   "title": "Український AI-ринок зріс до 7200 фахівців: кого тепер шукає бізнес",
    "score": null,
-   "url": "https://dev.ua/news/ai-atakuie-1795769237"
+   "url": "https://tech.liga.net/ua/technology/news/ukrainskyy-ai-rynok-zris-do-7200-fakhivtsiv-koho-teper-shukaie-biznes"
   },
   {
    "date": "2026-11-27",
    "source": "hn",
-   "title": "Pizza history: AI agent's cardless purchase is a first for UK",
-   "score": 9,
-   "url": "https://www.theguardian.com/business/2026/nov/27/ai-agent-cardless-transaction-pizza-papa-john-uk-fca-truelayer"
+   "title": "US Air Force's cloud computing platform hacked",
+   "score": 171,
+   "url": "https://news.sky.com/story/us-air-forces-cloud-computing-platform-hacked-13617163"
+  },
+  {
+   "date": "2026-11-27",
+   "source": "hn",
+   "title": "GPT 6.2 Astra Solves a Historical Mystery",
+   "score": 74,
+   "url": "https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical"
   }
  ],
  "competitors": [
@@ -2251,14 +2263,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "254",
-   "agent": "designer",
-   "task": "Дизайнер 26.11: обкладинки ep83 (сьогодні), гайд #2 і ep84 (27.11)",
-   "started": "2026-11-26T13:08:44Z",
-   "finished": "2026-11-26T13:10:02Z",
-   "result": "обкладинки ep83/ep84/гайд #2 ок; відомі дрібні вади Thumb4 — після 2.12"
-  },
   {
    "id": "255",
    "agent": "dist",
@@ -2595,6 +2599,15 @@
    "finished": "2026-11-27T15:19:30Z",
    "result": "TikTok: 16 відео з коментарями, нових 0 → власнику не писали; облік tiktok_comments_seen.json; vidIQ 20 кр.",
    "agent_raw": "community"
+  },
+  {
+   "id": "294",
+   "agent": "de",
+   "task": "Збирач даталейку 16:52Z: новини, TikTok/IG/TG-знімок",
+   "started": "2026-11-27T16:53:00Z",
+   "finished": "2026-11-27T16:56:27Z",
+   "result": "news +29 (2241); TikTok +3; IG 15 Reels (clip3 новий); TG 6; IG 2128 = перегляди акаунта за 30 днів, 503 = сума playCount Reels — різні показники, не помилка",
+   "agent_raw": "data"
   }
  ],
  "agents": [

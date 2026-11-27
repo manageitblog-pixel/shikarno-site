@@ -1597,8 +1597,8 @@
    "agent": "data",
    "task": "Збирач даталейку 16:52Z: новини, TikTok/IG/TG-знімок",
    "started": "2026-11-27T16:53:00Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-27T16:56:27Z",
+   "result": "news +29 (2241); TikTok +3; IG 15 Reels (clip3 новий); TG 6; IG 2128 = перегляди акаунта за 30 днів, 503 = сума playCount Reels — різні показники, не помилка"
   }
  ]
 }
