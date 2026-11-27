@@ -1,9 +1,9 @@
 {
- "generated": "2026-11-27T11:06:58Z",
+ "generated": "2026-11-27T11:18:22Z",
  "fresh": {
-  "yt_live": "2026-11-27T11:06:58Z",
+  "yt_live": "2026-11-27T11:18:22Z",
   "yt_analytics": "2026-11-24",
-  "tg_members": "2026-11-27T11:07:00Z",
+  "tg_members": "2026-11-27T11:18:24Z",
   "tg_posts": "2026-11-27T11:07:02Z",
   "ideas": "2026-11-27T10:15:48Z",
   "news": "2026-11-27 08:53",
@@ -11,13 +11,13 @@
   "tiktok": "2026-11-27T08",
   "instagram": "2026-11-27T08",
   "site": "2026-11-25",
-  "site_live": "2026-11-27T11:07:03Z",
-  "activity": "2026-11-27T10:37:10Z",
+  "site_live": "2026-11-27T11:18:25Z",
+  "activity": "2026-11-27T11:18:03Z",
   "asks": "2026-11-27T07:45Z"
  },
  "notes": [],
  "kpi": {
-  "subs": 420,
+  "subs": 421,
   "subs_goal": 1000,
   "long_hours": 10.0,
   "long_hours_ads": 2.5,
@@ -34,7 +34,7 @@
   ],
   "subs_since": {
    "base": 395,
-   "d": 25,
+   "d": 26,
    "at": "2026-11-26T19:06Z",
    "from": "2026-11-26"
   },
@@ -416,7 +416,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 256
+   "subs_total": 257
   },
   {
    "w": "2026-08-03",
@@ -430,7 +430,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 256
+   "subs_total": 257
   },
   {
    "w": "2026-08-17",
@@ -444,7 +444,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 256
+   "subs_total": 257
   },
   {
    "w": "2026-08-24",
@@ -458,7 +458,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 256
+   "subs_total": 257
   },
   {
    "w": "2026-08-31",
@@ -472,7 +472,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 256
+   "subs_total": 257
   },
   {
    "w": "2026-09-07",
@@ -486,7 +486,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 256
+   "subs_total": 257
   },
   {
    "w": "2026-09-28",
@@ -500,7 +500,7 @@
    "partial_site": false,
    "subs_cum": -1,
    "long_cum": 0.0,
-   "subs_total": 255
+   "subs_total": 256
   },
   {
    "w": "2026-10-19",
@@ -514,7 +514,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.2,
-   "subs_total": 256
+   "subs_total": 257
   },
   {
    "w": "2026-10-26",
@@ -528,7 +528,7 @@
    "partial_site": false,
    "subs_cum": 6,
    "long_cum": 0.7,
-   "subs_total": 262
+   "subs_total": 263
   },
   {
    "w": "2026-11-02",
@@ -542,7 +542,7 @@
    "partial_site": false,
    "subs_cum": 155,
    "long_cum": 5.5,
-   "subs_total": 411
+   "subs_total": 412
   },
   {
    "w": "2026-11-09",
@@ -556,7 +556,7 @@
    "partial_site": false,
    "subs_cum": 160,
    "long_cum": 8.2,
-   "subs_total": 416
+   "subs_total": 417
   },
   {
    "w": "2026-11-16",
@@ -570,7 +570,7 @@
    "partial_site": false,
    "subs_cum": 163,
    "long_cum": 10.9,
-   "subs_total": 419
+   "subs_total": 420
   },
   {
    "w": "2026-11-23",
@@ -584,7 +584,7 @@
    "partial_site": true,
    "subs_cum": 164,
    "long_cum": 12.4,
-   "subs_total": 420
+   "subs_total": 421
   }
  ],
  "tg_hist": [
@@ -615,10 +615,10 @@
  ],
  "platforms": {
   "youtube": {
-   "subs": 420,
+   "subs": 421,
    "views_total": 13493,
    "videos": 102,
-   "live_at": "2026-11-27T11:06:58Z",
+   "live_at": "2026-11-27T11:18:22Z",
    "views_7d": 1031,
    "pct_7d": 49.2,
    "subs_7d": 4,
@@ -1133,7 +1133,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-27T11:07:03Z",
+    "updated": "2026-11-27T11:18:25Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 4,
@@ -2232,15 +2232,6 @@
  ],
  "activity": [
   {
-   "id": "247",
-   "agent": "shorts",
-   "task": "Сценарій шоу #4 (weekly4.py, 6.12) — заздалегідь, рішення CSO 26.11",
-   "started": "2026-11-26T09:21:54Z",
-   "finished": "2026-11-26T09:32:20Z",
-   "result": "weekly4.py: 7 сюжетів (2 укр.), 15 частин, ~12,1 хв; UPDATE_05=None",
-   "agent_raw": "editor"
-  },
-  {
    "id": "248",
    "agent": "seo",
    "task": "SEO: назви/теги роликів ≤14 днів (yt-seo-2026-11-25) + розслідування падіння «чат gpt українською безкоштовно»",
@@ -2574,6 +2565,15 @@
    "started": "2026-11-27T10:36:23Z",
    "finished": "2026-11-27T10:37:10Z",
    "result": "guide194 правки: PASS — готовий до озвучки"
+  },
+  {
+   "id": "287",
+   "agent": "trend",
+   "task": "фон: денний веб-скан трендів 27.11 + кандидати UPDATE_28 шоу #3 і шоу #4",
+   "started": "2026-11-27T11:18:03Z",
+   "finished": null,
+   "result": "",
+   "agent_raw": "researcher"
   }
  ],
  "agents": [
