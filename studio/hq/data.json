@@ -1,23 +1,23 @@
 {
- "generated": "2026-11-27T13:20:49Z",
+ "generated": "2026-11-27T14:06:40Z",
  "fresh": {
-  "yt_live": "2026-11-27T13:20:50Z",
+  "yt_live": "2026-11-27T14:06:40Z",
   "yt_analytics": "2026-11-24",
-  "tg_members": "2026-11-27T13:20:51Z",
-  "tg_posts": "2026-11-27T13:20:52Z",
+  "tg_members": "2026-11-27T14:06:42Z",
+  "tg_posts": "2026-11-27T14:06:43Z",
   "ideas": "2026-11-27T11:24:38Z",
   "news": "2026-11-27 12:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-27T12",
   "instagram": "2026-11-27T12",
   "site": "2026-11-25",
-  "site_live": "2026-11-27T13:20:53Z",
+  "site_live": "2026-11-27T14:06:44Z",
   "activity": "2026-11-27T13:09:12Z",
   "asks": "2026-11-27T07:45Z"
  },
  "notes": [],
  "kpi": {
-  "subs": 423,
+  "subs": 425,
   "subs_goal": 1000,
   "long_hours": 10.0,
   "long_hours_ads": 2.5,
@@ -34,7 +34,7 @@
   ],
   "subs_since": {
    "base": 395,
-   "d": 28,
+   "d": 30,
    "at": "2026-11-26T19:06Z",
    "from": "2026-11-26"
   },
@@ -416,7 +416,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 259
+   "subs_total": 261
   },
   {
    "w": "2026-08-03",
@@ -430,7 +430,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 259
+   "subs_total": 261
   },
   {
    "w": "2026-08-17",
@@ -444,7 +444,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 259
+   "subs_total": 261
   },
   {
    "w": "2026-08-24",
@@ -458,7 +458,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 259
+   "subs_total": 261
   },
   {
    "w": "2026-08-31",
@@ -472,7 +472,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 259
+   "subs_total": 261
   },
   {
    "w": "2026-09-07",
@@ -486,7 +486,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 259
+   "subs_total": 261
   },
   {
    "w": "2026-09-28",
@@ -500,7 +500,7 @@
    "partial_site": false,
    "subs_cum": -1,
    "long_cum": 0.0,
-   "subs_total": 258
+   "subs_total": 260
   },
   {
    "w": "2026-10-19",
@@ -514,7 +514,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.2,
-   "subs_total": 259
+   "subs_total": 261
   },
   {
    "w": "2026-10-26",
@@ -528,7 +528,7 @@
    "partial_site": false,
    "subs_cum": 6,
    "long_cum": 0.7,
-   "subs_total": 265
+   "subs_total": 267
   },
   {
    "w": "2026-11-02",
@@ -542,7 +542,7 @@
    "partial_site": false,
    "subs_cum": 155,
    "long_cum": 5.5,
-   "subs_total": 414
+   "subs_total": 416
   },
   {
    "w": "2026-11-09",
@@ -556,7 +556,7 @@
    "partial_site": false,
    "subs_cum": 160,
    "long_cum": 8.2,
-   "subs_total": 419
+   "subs_total": 421
   },
   {
    "w": "2026-11-16",
@@ -570,7 +570,7 @@
    "partial_site": false,
    "subs_cum": 163,
    "long_cum": 10.9,
-   "subs_total": 422
+   "subs_total": 424
   },
   {
    "w": "2026-11-23",
@@ -584,7 +584,7 @@
    "partial_site": true,
    "subs_cum": 164,
    "long_cum": 12.4,
-   "subs_total": 423
+   "subs_total": 425
   }
  ],
  "tg_hist": [
@@ -615,10 +615,10 @@
  ],
  "platforms": {
   "youtube": {
-   "subs": 423,
+   "subs": 425,
    "views_total": 13493,
    "videos": 102,
-   "live_at": "2026-11-27T13:20:50Z",
+   "live_at": "2026-11-27T14:06:40Z",
    "views_7d": 1031,
    "pct_7d": 49.2,
    "subs_7d": 4,
@@ -1145,24 +1145,19 @@
     }
    ],
    "live": {
-    "updated": "2026-11-27T13:20:53Z",
+    "updated": "2026-11-27T14:06:44Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
-    "today_pageloads": 5,
-    "today_visits": 4,
+    "today_pageloads": 7,
+    "today_visits": 6,
     "yesterday_pageloads": 7,
     "yesterday_visits": 7,
-    "pageloads_7d": 57,
-    "visits_7d": 50,
+    "pageloads_7d": 59,
+    "visits_7d": 52,
     "last24h": {
-     "pageloads": 8,
-     "visits": 7,
+     "pageloads": 10,
+     "visits": 9,
      "hours": [
-      {
-       "h": "2026-11-26T14:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
       {
        "h": "2026-11-26T15:00:00Z",
        "pageloads": 0,
@@ -1275,6 +1270,11 @@
       },
       {
        "h": "2026-11-27T13:00:00Z",
+       "pageloads": 2,
+       "visits": 2
+      },
+      {
+       "h": "2026-11-27T14:00:00Z",
        "pageloads": 0,
        "visits": 0
       }
@@ -1361,8 +1361,8 @@
      },
      {
       "d": "2026-11-27",
-      "pageloads": 5,
-      "visits": 4,
+      "pageloads": 7,
+      "visits": 6,
       "sampled": false
      }
     ],
@@ -1373,7 +1373,7 @@
      },
      {
       "path": "/novyny/claude-bezkoshtovno/",
-      "count": 3
+      "count": 5
      },
      {
       "path": "/novyny/claude-code-shcho-tse/",
@@ -1402,12 +1402,12 @@
       "count": 4
      },
      {
-      "host": "www.youtube.com",
-      "count": 3
+      "host": "www.bing.com",
+      "count": 4
      },
      {
-      "host": "www.facebook.com",
-      "count": 2
+      "host": "www.youtube.com",
+      "count": 3
      }
     ],
     "top_countries_7d": [
@@ -1420,11 +1420,11 @@
       "count": 13
      },
      {
-      "country": "CN",
+      "country": "PL",
       "count": 4
      },
      {
-      "country": "PL",
+      "country": "CN",
       "count": 4
      },
      {
@@ -2956,12 +2956,12 @@
   {
    "name": "Озвучка",
    "state": "warn",
-   "text": "ліміт Gemini TTS вичерпано (429) з 27.11 15:20 Київ; за 24 год успішних запитів 18 — денний ліміт ковзний (~15–19 запитів), слоти повертаються через добу після використаних. Наступне вікно — 10:02–10:52 Київ. Готово частин: шоу #3 11/11; rozbir186 0/12; guide194 0/13; гайд #3 4/17; шоу #4 0/15."
+   "text": "ліміт Gemini TTS вичерпано (429) з 27.11 15:20 Київ; за 24 год успішних запитів 17 — денний ліміт ковзний (~15–19 запитів), слоти повертаються через добу після використаних. Наступне вікно — 10:02–10:52 Київ. Готово частин: шоу #3 11/11; rozbir186 0/12; guide194 0/13; гайд #3 4/17; шоу #4 0/15."
   },
   {
    "name": "Instagram Reels",
-   "state": "bad",
-   "text": "без публікації: 25.11 clip3 (останній пост 26.11). Немає mp4 — не причина: vidIQ імпортує сам Short за YouTube-посиланням (RUNBOOK «МЕДІА СТЕРТО»)."
+   "state": "ok",
+   "text": "усі Shorts з 24.11 опубліковано · останній пост 27.11"
   },
   {
    "name": "TikTok",
