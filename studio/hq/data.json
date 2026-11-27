@@ -1,23 +1,23 @@
 {
- "generated": "2026-11-27T11:18:22Z",
+ "generated": "2026-11-27T12:06:35Z",
  "fresh": {
-  "yt_live": "2026-11-27T11:18:22Z",
+  "yt_live": "2026-11-27T12:06:35Z",
   "yt_analytics": "2026-11-24",
-  "tg_members": "2026-11-27T11:18:24Z",
-  "tg_posts": "2026-11-27T11:07:02Z",
-  "ideas": "2026-11-27T10:15:48Z",
+  "tg_members": "2026-11-27T12:06:37Z",
+  "tg_posts": "2026-11-27T12:06:38Z",
+  "ideas": "2026-11-27T11:24:38Z",
   "news": "2026-11-27 08:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-27T08",
   "instagram": "2026-11-27T08",
   "site": "2026-11-25",
-  "site_live": "2026-11-27T11:18:25Z",
-  "activity": "2026-11-27T11:18:03Z",
+  "site_live": "2026-11-27T12:06:39Z",
+  "activity": "2026-11-27T11:24:38Z",
   "asks": "2026-11-27T07:45Z"
  },
  "notes": [],
  "kpi": {
-  "subs": 421,
+  "subs": 420,
   "subs_goal": 1000,
   "long_hours": 10.0,
   "long_hours_ads": 2.5,
@@ -34,7 +34,7 @@
   ],
   "subs_since": {
    "base": 395,
-   "d": 26,
+   "d": 25,
    "at": "2026-11-26T19:06Z",
    "from": "2026-11-26"
   },
@@ -416,7 +416,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 257
+   "subs_total": 256
   },
   {
    "w": "2026-08-03",
@@ -430,7 +430,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 257
+   "subs_total": 256
   },
   {
    "w": "2026-08-17",
@@ -444,7 +444,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 257
+   "subs_total": 256
   },
   {
    "w": "2026-08-24",
@@ -458,7 +458,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 257
+   "subs_total": 256
   },
   {
    "w": "2026-08-31",
@@ -472,7 +472,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 257
+   "subs_total": 256
   },
   {
    "w": "2026-09-07",
@@ -486,7 +486,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 257
+   "subs_total": 256
   },
   {
    "w": "2026-09-28",
@@ -500,7 +500,7 @@
    "partial_site": false,
    "subs_cum": -1,
    "long_cum": 0.0,
-   "subs_total": 256
+   "subs_total": 255
   },
   {
    "w": "2026-10-19",
@@ -514,7 +514,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.2,
-   "subs_total": 257
+   "subs_total": 256
   },
   {
    "w": "2026-10-26",
@@ -528,7 +528,7 @@
    "partial_site": false,
    "subs_cum": 6,
    "long_cum": 0.7,
-   "subs_total": 263
+   "subs_total": 262
   },
   {
    "w": "2026-11-02",
@@ -542,7 +542,7 @@
    "partial_site": false,
    "subs_cum": 155,
    "long_cum": 5.5,
-   "subs_total": 412
+   "subs_total": 411
   },
   {
    "w": "2026-11-09",
@@ -556,7 +556,7 @@
    "partial_site": false,
    "subs_cum": 160,
    "long_cum": 8.2,
-   "subs_total": 417
+   "subs_total": 416
   },
   {
    "w": "2026-11-16",
@@ -570,7 +570,7 @@
    "partial_site": false,
    "subs_cum": 163,
    "long_cum": 10.9,
-   "subs_total": 420
+   "subs_total": 419
   },
   {
    "w": "2026-11-23",
@@ -584,7 +584,7 @@
    "partial_site": true,
    "subs_cum": 164,
    "long_cum": 12.4,
-   "subs_total": 421
+   "subs_total": 420
   }
  ],
  "tg_hist": [
@@ -615,10 +615,10 @@
  ],
  "platforms": {
   "youtube": {
-   "subs": 421,
+   "subs": 420,
    "views_total": 13493,
    "videos": 102,
-   "live_at": "2026-11-27T11:18:22Z",
+   "live_at": "2026-11-27T12:06:35Z",
    "views_7d": 1031,
    "pct_7d": 49.2,
    "subs_7d": 4,
@@ -1133,7 +1133,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-27T11:18:25Z",
+    "updated": "2026-11-27T12:06:39Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 4,
@@ -1143,14 +1143,9 @@
     "pageloads_7d": 56,
     "visits_7d": 49,
     "last24h": {
-     "pageloads": 8,
-     "visits": 7,
+     "pageloads": 7,
+     "visits": 6,
      "hours": [
-      {
-       "h": "2026-11-26T12:00:00Z",
-       "pageloads": 1,
-       "visits": 1
-      },
       {
        "h": "2026-11-26T13:00:00Z",
        "pageloads": 0,
@@ -1263,6 +1258,11 @@
       },
       {
        "h": "2026-11-27T11:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-27T12:00:00Z",
        "pageloads": 0,
        "visits": 0
       }
@@ -1425,9 +1425,9 @@
   "telegram": {
    "members": 6,
    "tg_goal": 150,
-   "posts_7d": 18,
-   "views_7d": 60,
-   "views_avg": 3.3,
+   "posts_7d": 17,
+   "views_7d": 58,
+   "views_avg": 3.4,
    "posts_error": null,
    "best": [
     {
@@ -1895,6 +1895,37 @@
    "score": 381.7
   },
   {
+   "title": "Підключи ChatGPT або Claude до свого Djinni: ШІ шукає вакансії, адаптує CV і пише супровідний — але відгукується лише після твого «так»",
+   "format": "try",
+   "channels": [
+    "short",
+    "tiktok",
+    "site",
+    "tg",
+    "show"
+   ],
+   "demand": 4,
+   "fresh": 5,
+   "show": 5,
+   "fit": 4,
+   "length": 30,
+   "hook": "you",
+   "by": "researcher-news",
+   "source": "https://t.me/djinni_official/2247",
+   "sources": [
+    {
+     "name": "dev.ua 27.11",
+     "url": "https://dev.ua/news/djinni-zapustyv-shi-asystenta-1795776019"
+    }
+   ],
+   "note": "Офіційний TG Djinni 27.11.2026 10:24Z (відкрито 27.11 ~11:40Z): «АІ-асистент від Djinni» — Claude або ChatGPT через MCP; шукає вакансії й підказує, на які відгукнутися; відгукується з адаптованим CV і супровідним — лише після підтвердження; оновлює профіль, навички, зарплатні очікування, підписки. dev.ua: вкладка «AI-асистенти» в кабінеті. Платно/безкоштовно — НЕ сказано; які плани ChatGPT/Claude підтримують MCP-конектори — звірити в день запису (інструкція в профілі Djinni). Зв’язок з №186 (IT-ринок) і шоу #4 («Будуємо з ШІ» / UA). Показати можна: кабінет Djinni + чат з конектором (на тестовому профілі, без персональних даних).",
+   "status": "approved",
+   "added": "2026-11-27",
+   "id": "195",
+   "decision": "бал 366,6 ≥300 (правило збирача): сюжет шоу #4 6.12 «Будуємо з ШІ»; до сценарію звірити безкоштовність і плани з конекторами",
+   "score": 366.6
+  },
+  {
    "title": "3 приховані ШІ-фішки, які вже є у твоєму Android безкоштовно: обвести й знайти, переклад усього екрана, текст із камери — про які мало хто знає",
    "format": "free",
    "channels": [
@@ -1996,34 +2027,11 @@
    "decision": "Бал 351 ≥300 (sec, «твоє + дія», TikTok-аналог 569K): Short пт 4.12 17:00Z (19:00 Київ) + TikTok/Reels + сайт + TG; шлях у налаштуваннях лише з Memory FAQ OpenAI, звірити укр. інтерфейс під час запису, незалежний фактчек, link при заливці",
    "kw": "chatgpt як користуватися (10); пам'ять на телефоні (27) — kw.py 25.11; прямих запитів «пам'ять chatgpt» немає",
    "score": 351.5
-  },
-  {
-   "title": "Фейковий магазин на Чорну пʼятницю тепер без жодної помилки: ШІ пише тексти й фото — 3 перевірки перед оплатою, що працюють досі",
-   "format": "sec",
-   "channels": [
-    "site",
-    "tg",
-    "tiktok"
-   ],
-   "demand": 4,
-   "fresh": 5,
-   "show": 4,
-   "fit": 5,
-   "length": 30,
-   "hook": "you",
-   "source": "https://www.ukfinance.org.uk/news-and-insight/press-release/ps660-million-stolen-fraudsters-uk-finance-calls-tougher-action",
-   "by": "researcher-news",
-   "note": "Перевірено 25.11 ~13:25Z. UK Finance, 25.11.2026 (H1 2026 vs H1 2025): усього £659,5 млн (+8%); APP-шахрайство £316 млн (+22%), 138 345 випадків (+25%); шахрайство з покупками — 69% APP-випадків, втрати +24% до £66 млн; 58% випадків почалися онлайн. Сам реліз UK Finance ШІ НЕ згадує (зв'язок з ШІ — у подачі FT, не перевірено) — у тексті не приписувати їм ШІ. Про ШІ: Savi Security (Scamwise), звіт 20.10.2026 — за словами CEO Patrick Coughlin (WATE), ~75% проаналізованих фейкових магазинів мали ШІ-згенеровані фото й тексти; вибірка — сайти, які люди самі надсилали на перевірку (не репрезентативна), цифра компанії. Поради: перевірити домен і дату реєстрації (whois), не платити переказом на картку/IBAN — лише карткою з chargeback, шукати магазин у відгуках поза сайтом. Перевірити, чи є свіжі попередження Кіберполіції до 27.11 (сайт cyberpolice.gov.ua фетчером не читається). Пара до №34 і №136.",
-   "status": "in_work",
-   "added": "2026-11-25",
-   "id": "151",
-   "decision": "Скан 25.11 день: бал 351,5 ≥300 (sec, сезон до 30.11). Слот: сайт + TG чт 26.11 до 10Z (за добу до Чорної пʼятниці; №136 — пт 27.11, №34 ep87 — до 28.11), TikTok чт 26.11 вечір або пт 27.11 зранку. Short — ні (слоти до 5.12 зайняті). Цифри UK Finance подавати без ШІ (у релізі ШІ немає); 75% — заява Savi Security, вибірка не репрезентативна. Перед публікацією — свіжі попередження Кіберполіції. Сайт done 25.11: /novyny/yak-pereviryty-internet-magazyn-na-shakhrajstvo/ (чт 26.11 09:00 Київ). TG-пост — TG-відділ 26.11; TikTok — окремо.",
-   "score": 351.5
   }
  ],
  "ideas_count": {
-  "total": 194,
-  "open": 184
+  "total": 198,
+  "open": 188
  },
  "lake": {
   "videos": 102,
@@ -2571,8 +2579,8 @@
    "agent": "trend",
    "task": "фон: денний веб-скан трендів 27.11 + кандидати UPDATE_28 шоу #3 і шоу #4",
    "started": "2026-11-27T11:18:03Z",
-   "finished": null,
-   "result": "",
+   "finished": "2026-11-27T11:24:38Z",
+   "result": "тиха доба (День подяки); UPDATE_28 = №185 FCA; шоу #4: №195 Djinni+MCP (approved, 366,6), №196 фейк-капча; нові №195–198",
    "agent_raw": "researcher"
   }
  ],
