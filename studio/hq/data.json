@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-27T21:19:54Z",
+ "generated": "2026-11-27T22:06:48Z",
  "fresh": {
-  "yt_live": "2026-11-27T21:19:54Z",
+  "yt_live": "2026-11-27T22:06:48Z",
   "yt_analytics": "2026-11-24",
-  "tg_members": "2026-11-27T21:19:55Z",
-  "tg_posts": "2026-11-27T21:19:57Z",
+  "tg_members": "2026-11-27T22:06:50Z",
+  "tg_posts": "2026-11-27T22:06:51Z",
   "ideas": "2026-11-27T19:22:18Z",
   "news": "2026-11-27 20:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-27T20",
   "instagram": "2026-11-27T20",
   "site": "2026-11-25",
-  "site_live": "2026-11-27T21:19:58Z",
+  "site_live": "2026-11-27T22:06:52Z",
   "activity": "2026-11-27T20:55:01Z",
   "asks": "2026-11-27T18:40Z"
  },
@@ -618,7 +618,7 @@
    "subs": 438,
    "views_total": 13536,
    "videos": 104,
-   "live_at": "2026-11-27T21:19:54Z",
+   "live_at": "2026-11-27T22:06:48Z",
    "views_7d": 1031,
    "pct_7d": 49.2,
    "subs_7d": 4,
@@ -1169,24 +1169,19 @@
     }
    ],
    "live": {
-    "updated": "2026-11-27T21:19:58Z",
+    "updated": "2026-11-27T22:06:52Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
-    "today_pageloads": 17,
-    "today_visits": 15,
-    "yesterday_pageloads": 7,
-    "yesterday_visits": 7,
-    "pageloads_7d": 69,
-    "visits_7d": 61,
+    "today_pageloads": 0,
+    "today_visits": 0,
+    "yesterday_pageloads": 17,
+    "yesterday_visits": 15,
+    "pageloads_7d": 67,
+    "visits_7d": 59,
     "last24h": {
      "pageloads": 17,
      "visits": 15,
      "hours": [
-      {
-       "h": "2026-11-26T22:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
       {
        "h": "2026-11-26T23:00:00Z",
        "pageloads": 0,
@@ -1301,16 +1296,15 @@
        "h": "2026-11-27T21:00:00Z",
        "pageloads": 0,
        "visits": 0
+      },
+      {
+       "h": "2026-11-27T22:00:00Z",
+       "pageloads": 0,
+       "visits": 0
       }
      ]
     },
     "days": [
-     {
-      "d": "2026-11-14",
-      "pageloads": 0,
-      "visits": 0,
-      "sampled": false
-     },
      {
       "d": "2026-11-15",
       "pageloads": 10,
@@ -1388,6 +1382,12 @@
       "pageloads": 17,
       "visits": 15,
       "sampled": false
+     },
+     {
+      "d": "2026-11-28",
+      "pageloads": 0,
+      "visits": 0,
+      "sampled": false
      }
     ],
     "top_pages_7d": [
@@ -1401,25 +1401,25 @@
      },
      {
       "path": "/novyny/claude-bezkoshtovno/",
-      "count": 6
+      "count": 5
      },
      {
-      "path": "/novyny/signal-blokuye-shi-agentiv/",
+      "path": "/novyny/gemini-dlya-studentiv-bezkoshtovno/",
       "count": 2
      },
      {
-      "path": "/novyny/claude-code-shcho-tse/",
+      "path": "/novyny/signal-blokuye-shi-agentiv/",
       "count": 2
      }
     ],
     "top_referrers_7d": [
      {
       "host": "(прямі / без реферера)",
-      "count": 33
+      "count": 32
      },
      {
       "host": "www.google.com",
-      "count": 14
+      "count": 13
      },
      {
       "host": "m.facebook.com",
@@ -1437,7 +1437,7 @@
     "top_countries_7d": [
      {
       "country": "UA",
-      "count": 40
+      "count": 38
      },
      {
       "country": "US",
@@ -1622,7 +1622,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 0
+   "total": 9
   },
   {
    "id": "cw7Qm4AMP3U",
@@ -1666,7 +1666,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 21
+   "total": 22
   },
   {
    "id": "bvS0k_r3_bs",
