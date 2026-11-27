@@ -1,26 +1,26 @@
 {
- "generated": "2026-11-27T19:18:45Z",
+ "generated": "2026-11-27T20:06:39Z",
  "fresh": {
-  "yt_live": "2026-11-27T19:18:45Z",
+  "yt_live": "2026-11-27T20:06:39Z",
   "yt_analytics": "2026-11-24",
-  "tg_members": "2026-11-27T19:18:47Z",
-  "tg_posts": "2026-11-27T19:06:50Z",
-  "ideas": "2026-11-27T11:24:38Z",
+  "tg_members": "2026-11-27T20:06:41Z",
+  "tg_posts": "2026-11-27T20:06:43Z",
+  "ideas": "2026-11-27T19:22:18Z",
   "news": "2026-11-27 16:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-27T16",
   "instagram": "2026-11-27T16",
   "site": "2026-11-25",
-  "site_live": "2026-11-27T19:18:48Z",
-  "activity": "2026-11-27T19:18:28Z",
+  "site_live": "2026-11-27T20:06:44Z",
+  "activity": "2026-11-27T19:23:32Z",
   "asks": "2026-11-27T18:40Z"
  },
  "notes": [],
  "kpi": {
-  "subs": 439,
+  "subs": 441,
   "subs_goal": 1000,
-  "long_hours": 10.0,
-  "long_hours_ads": 2.5,
+  "long_hours": 11.2,
+  "long_hours_ads": 6.3,
   "long_hours_goal": 4000,
   "star_deadline": "2027-01-31",
   "views_total": 13536,
@@ -34,7 +34,7 @@
   ],
   "subs_since": {
    "base": 395,
-   "d": 44,
+   "d": 46,
    "at": "2026-11-26T19:06Z",
    "from": "2026-11-26"
   },
@@ -416,7 +416,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 275
+   "subs_total": 277
   },
   {
    "w": "2026-08-03",
@@ -430,7 +430,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 275
+   "subs_total": 277
   },
   {
    "w": "2026-08-17",
@@ -444,7 +444,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 275
+   "subs_total": 277
   },
   {
    "w": "2026-08-24",
@@ -458,7 +458,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 275
+   "subs_total": 277
   },
   {
    "w": "2026-08-31",
@@ -472,7 +472,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 275
+   "subs_total": 277
   },
   {
    "w": "2026-09-07",
@@ -486,7 +486,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 275
+   "subs_total": 277
   },
   {
    "w": "2026-09-28",
@@ -500,7 +500,7 @@
    "partial_site": false,
    "subs_cum": -1,
    "long_cum": 0.0,
-   "subs_total": 274
+   "subs_total": 276
   },
   {
    "w": "2026-10-19",
@@ -514,7 +514,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.2,
-   "subs_total": 275
+   "subs_total": 277
   },
   {
    "w": "2026-10-26",
@@ -528,7 +528,7 @@
    "partial_site": false,
    "subs_cum": 6,
    "long_cum": 0.7,
-   "subs_total": 281
+   "subs_total": 283
   },
   {
    "w": "2026-11-02",
@@ -542,7 +542,7 @@
    "partial_site": false,
    "subs_cum": 155,
    "long_cum": 5.5,
-   "subs_total": 430
+   "subs_total": 432
   },
   {
    "w": "2026-11-09",
@@ -556,7 +556,7 @@
    "partial_site": false,
    "subs_cum": 160,
    "long_cum": 8.2,
-   "subs_total": 435
+   "subs_total": 437
   },
   {
    "w": "2026-11-16",
@@ -570,7 +570,7 @@
    "partial_site": false,
    "subs_cum": 163,
    "long_cum": 10.9,
-   "subs_total": 438
+   "subs_total": 440
   },
   {
    "w": "2026-11-23",
@@ -584,7 +584,7 @@
    "partial_site": true,
    "subs_cum": 164,
    "long_cum": 12.4,
-   "subs_total": 439
+   "subs_total": 441
   }
  ],
  "tg_hist": [
@@ -615,10 +615,10 @@
  ],
  "platforms": {
   "youtube": {
-   "subs": 439,
+   "subs": 441,
    "views_total": 13536,
    "videos": 104,
-   "live_at": "2026-11-27T19:18:45Z",
+   "live_at": "2026-11-27T20:06:39Z",
    "views_7d": 1031,
    "pct_7d": 49.2,
    "subs_7d": 4,
@@ -626,7 +626,7 @@
     "2026-11-18",
     "2026-11-24"
    ],
-   "long_hours": 10.0,
+   "long_hours": 11.2,
    "history": [
     {
      "x": "2026-10-19",
@@ -688,9 +688,9 @@
      "id": "ENKGdbr04h0"
     },
     {
-     "title": "Як продати на OLX швидше з ШІ: опис, ціна, шахраї 🛍️ ШІ для професій #9",
-     "views": 100,
-     "id": "LtNuOtQe0pc"
+     "title": "Новини ШІ за тиждень (листопад 2026): Anthropic на біржі, Gemini платить сам | #2",
+     "views": 101,
+     "id": "aTUsauz53rs"
     }
    ]
   },
@@ -1157,7 +1157,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-27T19:18:48Z",
+    "updated": "2026-11-27T20:06:44Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 17,
@@ -1170,11 +1170,6 @@
      "pageloads": 17,
      "visits": 15,
      "hours": [
-      {
-       "h": "2026-11-26T20:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
       {
        "h": "2026-11-26T21:00:00Z",
        "pageloads": 0,
@@ -1287,6 +1282,11 @@
       },
       {
        "h": "2026-11-27T19:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-27T20:00:00Z",
        "pageloads": 0,
        "visits": 0
       }
@@ -1610,7 +1610,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 1
+   "total": 0
   },
   {
    "id": "cw7Qm4AMP3U",
@@ -1632,7 +1632,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 19
+   "total": 20
   },
   {
    "id": "Rlm1u-I6x00",
@@ -1720,7 +1720,7 @@
    "views7": 62,
    "pct": 26.1,
    "complete": false,
-   "total": 100
+   "total": 101
   },
   {
    "id": "gljrHADi4aU",
@@ -2054,8 +2054,8 @@
   }
  ],
  "ideas_count": {
-  "total": 198,
-  "open": 188
+  "total": 201,
+  "open": 191
  },
  "lake": {
   "videos": 102,
@@ -2604,8 +2604,8 @@
    "agent": "trend",
    "task": "фон: вечірній веб-скан трендів 27.11 + фінальне рішення UPDATE_28",
    "started": "2026-11-27T19:18:28Z",
-   "finished": null,
-   "result": "",
+   "finished": "2026-11-27T19:23:32Z",
+   "result": "тиха доба для великих; UPDATE_28 = №185 FCA остаточно (прес-реліз 200, цифри ті самі, 2 правки фактчеку в dict); нові №199–201 (макс. 136,6)",
    "agent_raw": "researcher"
   }
  ],
