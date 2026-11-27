@@ -5,6 +5,7 @@ slug: rezyume-z-shi-bezkoshtovno
 date: 2026-11-26T16:00:00+02:00
 description: "Як створити резюме за допомогою ШІ безкоштовно: Кар'єрна студія Дія.Освіта, ChatGPT, Gemini чи Claude, 5 промптів під вакансію і що не вставляти в чат-бот."
 tags: [instrumenty, chatgpt, gemini, claude]
+telegram_post: 152
 source: {name: "dev.ua: у Дія.Освіта з'явилася Кар'єрна студія на основі ШІ (08.07.2026)", url: "https://dev.ua/news/u-diiaosvita-ziavylasia-karierna-studiia-na-osnovi-shi-1783496758"}
 sources:
   - {name: "Kyiv Post: Мінцифри запустило ШІ-сервіс для пошуку роботи", url: "https://www.kyivpost.com/uk/post/79823"}
