@@ -1597,8 +1597,8 @@
    "agent": "factcheck",
    "task": "Повторна перевірка правок rozbir186",
    "started": "2026-11-27T09:47:36Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-27T09:48:24Z",
+   "result": "rozbir186 правки: PASS; умова — у день озвучки перевідкрити новину SAP"
   }
  ]
 }
