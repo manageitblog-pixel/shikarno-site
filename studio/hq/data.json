@@ -1,23 +1,23 @@
 {
- "generated": "2026-11-27T13:06:45Z",
+ "generated": "2026-11-27T13:20:49Z",
  "fresh": {
-  "yt_live": "2026-11-27T13:06:45Z",
+  "yt_live": "2026-11-27T13:20:50Z",
   "yt_analytics": "2026-11-24",
-  "tg_members": "2026-11-27T13:06:46Z",
-  "tg_posts": "2026-11-27T12:56:38Z",
+  "tg_members": "2026-11-27T13:20:51Z",
+  "tg_posts": "2026-11-27T13:20:52Z",
   "ideas": "2026-11-27T11:24:38Z",
   "news": "2026-11-27 12:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-27T12",
   "instagram": "2026-11-27T12",
   "site": "2026-11-25",
-  "site_live": "2026-11-27T13:06:48Z",
-  "activity": "2026-11-27T12:56:35Z",
+  "site_live": "2026-11-27T13:20:53Z",
+  "activity": "2026-11-27T13:09:12Z",
   "asks": "2026-11-27T07:45Z"
  },
  "notes": [],
  "kpi": {
-  "subs": 422,
+  "subs": 423,
   "subs_goal": 1000,
   "long_hours": 10.0,
   "long_hours_ads": 2.5,
@@ -34,7 +34,7 @@
   ],
   "subs_since": {
    "base": 395,
-   "d": 27,
+   "d": 28,
    "at": "2026-11-26T19:06Z",
    "from": "2026-11-26"
   },
@@ -416,7 +416,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 258
+   "subs_total": 259
   },
   {
    "w": "2026-08-03",
@@ -430,7 +430,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 258
+   "subs_total": 259
   },
   {
    "w": "2026-08-17",
@@ -444,7 +444,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 258
+   "subs_total": 259
   },
   {
    "w": "2026-08-24",
@@ -458,7 +458,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 258
+   "subs_total": 259
   },
   {
    "w": "2026-08-31",
@@ -472,7 +472,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 258
+   "subs_total": 259
   },
   {
    "w": "2026-09-07",
@@ -486,7 +486,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 258
+   "subs_total": 259
   },
   {
    "w": "2026-09-28",
@@ -500,7 +500,7 @@
    "partial_site": false,
    "subs_cum": -1,
    "long_cum": 0.0,
-   "subs_total": 257
+   "subs_total": 258
   },
   {
    "w": "2026-10-19",
@@ -514,7 +514,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.2,
-   "subs_total": 258
+   "subs_total": 259
   },
   {
    "w": "2026-10-26",
@@ -528,7 +528,7 @@
    "partial_site": false,
    "subs_cum": 6,
    "long_cum": 0.7,
-   "subs_total": 264
+   "subs_total": 265
   },
   {
    "w": "2026-11-02",
@@ -542,7 +542,7 @@
    "partial_site": false,
    "subs_cum": 155,
    "long_cum": 5.5,
-   "subs_total": 413
+   "subs_total": 414
   },
   {
    "w": "2026-11-09",
@@ -556,7 +556,7 @@
    "partial_site": false,
    "subs_cum": 160,
    "long_cum": 8.2,
-   "subs_total": 418
+   "subs_total": 419
   },
   {
    "w": "2026-11-16",
@@ -570,7 +570,7 @@
    "partial_site": false,
    "subs_cum": 163,
    "long_cum": 10.9,
-   "subs_total": 421
+   "subs_total": 422
   },
   {
    "w": "2026-11-23",
@@ -584,7 +584,7 @@
    "partial_site": true,
    "subs_cum": 164,
    "long_cum": 12.4,
-   "subs_total": 422
+   "subs_total": 423
   }
  ],
  "tg_hist": [
@@ -615,10 +615,10 @@
  ],
  "platforms": {
   "youtube": {
-   "subs": 422,
+   "subs": 423,
    "views_total": 13493,
    "videos": 102,
-   "live_at": "2026-11-27T13:06:45Z",
+   "live_at": "2026-11-27T13:20:50Z",
    "views_7d": 1031,
    "pct_7d": 49.2,
    "subs_7d": 4,
@@ -1145,7 +1145,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-27T13:06:48Z",
+    "updated": "2026-11-27T13:20:53Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 5,
@@ -1598,7 +1598,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 16
+   "total": 17
   },
   {
    "id": "Rlm1u-I6x00",
@@ -1609,7 +1609,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 2
+   "total": 3
   },
   {
    "id": "6mIdp843fKo",
@@ -2252,14 +2252,6 @@
  ],
  "activity": [
   {
-   "id": "250",
-   "agent": "seo",
-   "task": "SEO-відділ 26.11: kw для нових ідей, звіт тижня",
-   "started": "2026-11-26T10:13:33Z",
-   "finished": "2026-11-26T10:18:30Z",
-   "result": "kw для 11 ідей; audit 108/0; сайт 17–23.11: 11 кліків (−42%), 936 показів, поз. 8,4"
-  },
-  {
    "id": "251",
    "agent": "trend",
    "task": "фон: веб-скан трендів (день 26.11) — кандидати для UPDATE_28 шоу #3",
@@ -2595,6 +2587,14 @@
    "finished": "2026-11-27T12:56:35Z",
    "result": "news +35 (2226), ідей 0; TikTok без змін; IG 14 Reels; TG 6; vidIQ 5 кр.; YT 530 од. з 08Z",
    "agent_raw": "data"
+  },
+  {
+   "id": "290",
+   "agent": "designer",
+   "task": "Дизайнер 27.11: кадри 0/1/80% і обкладинки ep84 і гайду #2 (вихід 17:00Z)",
+   "started": "2026-11-27T13:07:42Z",
+   "finished": "2026-11-27T13:09:12Z",
+   "result": "обкладинки ep84 і гайду #2 (YouTube API, медіа стерте) — явних вад немає, нічого не міняли; кадри 0/1/80% не перевірено (немає mp4)"
   }
  ],
  "agents": [
@@ -2956,7 +2956,7 @@
   {
    "name": "Озвучка",
    "state": "warn",
-   "text": "ліміт Gemini TTS вичерпано (429) з 27.11 14:20 Київ; за 24 год успішних запитів 18 — денний ліміт ковзний (~15–19 запитів), слоти повертаються через добу після використаних. Наступне вікно — 10:02–10:52 Київ. Готово частин: шоу #3 11/11; rozbir186 0/12; guide194 0/13; гайд #3 4/17; шоу #4 0/15."
+   "text": "ліміт Gemini TTS вичерпано (429) з 27.11 15:20 Київ; за 24 год успішних запитів 18 — денний ліміт ковзний (~15–19 запитів), слоти повертаються через добу після використаних. Наступне вікно — 10:02–10:52 Київ. Готово частин: шоу #3 11/11; rozbir186 0/12; guide194 0/13; гайд #3 4/17; шоу #4 0/15."
   },
   {
    "name": "Instagram Reels",

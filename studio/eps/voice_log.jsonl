@@ -507,3 +507,7 @@
 {"ev": "part", "part": 0, "take": 1, "f0": 130.6, "f0_ok": false, "dur": 62.5, "audit": [{"seg": 0, "ratio": 0.92, "match": 0.71}, {"seg": 1, "ratio": 0.97, "match": 0.82}], "repeat_suspect": false, "t": "12:19:18Z", "d": "2026-11-27"}
 {"ev": "part_retry_later", "part": 0, "best_take": 1, "f0": 130.6, "note": "take2 quota", "t": "12:20:48Z", "d": "2026-11-27"}
 {"ev": "STOP", "reason": "TTS quota exhausted: 4 consecutive HTTP 429 from Gemini (gemini-3.8-flash-tts); try later or another key/model", "ok_requests": 1, "t": "12:20:48Z", "d": "2026-11-27"}
+{"ev": "tts_ok", "n": 1, "out": "/home/claude/eps/rozbir186/part0.wav", "res": "(66.88, 24000, 'audio/wav')", "t": "13:18:24Z", "d": "2026-11-27"}
+{"ev": "part", "part": 0, "take": 2, "f0": 126.3, "f0_ok": false, "dur": 66.9, "audit": [{"seg": 0, "ratio": 0.93, "match": 0.69}, {"seg": 1, "ratio": 0.97, "match": 0.88}], "repeat_suspect": false, "t": "13:19:19Z", "d": "2026-11-27"}
+{"ev": "part_retry_later", "part": 0, "best_take": 2, "f0": 126.3, "note": "take2 quota", "t": "13:20:49Z", "d": "2026-11-27"}
+{"ev": "STOP", "reason": "TTS quota exhausted: 4 consecutive HTTP 429 from Gemini (gemini-3.8-flash-tts); try later or another key/model", "ok_requests": 1, "t": "13:20:49Z", "d": "2026-11-27"}
