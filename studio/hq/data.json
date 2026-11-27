@@ -1,18 +1,18 @@
 {
- "generated": "2026-11-27T04:19:40Z",
+ "generated": "2026-11-27T04:55:25Z",
  "fresh": {
-  "yt_live": "2026-11-27T04:19:41Z",
+  "yt_live": "2026-11-27T04:55:25Z",
   "yt_analytics": "2026-11-23",
-  "tg_members": "2026-11-27T04:19:41Z",
-  "tg_posts": "2026-11-27T04:06:58Z",
+  "tg_members": "2026-11-27T04:55:26Z",
+  "tg_posts": "2026-11-27T04:55:27Z",
   "ideas": "2026-11-26T20:56:08Z",
-  "news": "2026-11-27 00:53",
+  "news": "2026-11-27 04:53",
   "comp": "2026-11-23",
-  "tiktok": "2026-11-27T00",
-  "instagram": "2026-11-27T00",
+  "tiktok": "2026-11-27T04",
+  "instagram": "2026-11-27T04",
   "site": "2026-11-24",
-  "site_live": "2026-11-27T04:19:43Z",
-  "activity": "2026-11-27T00:55:01Z",
+  "site_live": "2026-11-27T04:55:28Z",
+  "activity": "2026-11-27T04:55:25Z",
   "asks": "2026-11-26T18:35Z"
  },
  "notes": [],
@@ -21,7 +21,7 @@
   "subs_goal": 1000,
   "long_hours": 12.6,
   "long_hours_goal": 4000,
-  "views_total": 13137,
+  "views_total": 13493,
   "videos": 102,
   "views_7d": 875,
   "pct_7d": 48.1,
@@ -603,9 +603,9 @@
  "platforms": {
   "youtube": {
    "subs": 390,
-   "views_total": 13137,
+   "views_total": 13493,
    "videos": 102,
-   "live_at": "2026-11-27T04:19:41Z",
+   "live_at": "2026-11-27T04:55:25Z",
    "views_7d": 875,
    "pct_7d": 48.1,
    "subs_7d": 4,
@@ -675,20 +675,20 @@
      "id": "ENKGdbr04h0"
     },
     {
-     "title": "Як продати на OLX швидше з ШІ: опис, ціна, шахраї 🛍️ ШІ для професій #9",
-     "views": 99,
-     "id": "LtNuOtQe0pc"
+     "title": "Новини ШІ за тиждень (листопад 2026): Anthropic на біржі, Gemini платить сам | #2",
+     "views": 100,
+     "id": "aTUsauz53rs"
     }
    ]
   },
   "tiktok": {
    "videos": 22,
-   "views_total": 19620,
-   "views_7d": 2255,
+   "views_total": 19622,
+   "views_7d": 2257,
    "new_7d": 8,
    "saves_total": 144,
    "likes_total": 400,
-   "last_snapshot": "2026-11-27T00",
+   "last_snapshot": "2026-11-27T04",
    "best": [
     {
      "title": "Український ШІ Сяйво: коли вийде",
@@ -820,6 +820,10 @@
     {
      "x": "2026-11-27T00",
      "v": 19620
+    },
+    {
+     "x": "2026-11-27T04",
+     "v": 19622
     }
    ]
   },
@@ -831,10 +835,10 @@
    "reach_30d": 1318,
    "acc_at": "26.11 12Z",
    "reels": 14,
-   "plays_total": 491,
+   "plays_total": 492,
    "likes_total": 10,
    "saves_total": 19,
-   "last_snapshot": "2026-11-27T00",
+   "last_snapshot": "2026-11-27T04",
    "best": [
     {
      "shortcode": "DgGRAlDjqkk",
@@ -938,6 +942,10 @@
     {
      "x": "2026-11-27T00",
      "v": 450
+    },
+    {
+     "x": "2026-11-27T04",
+     "v": 451
     }
    ],
    "followers_hist": [
@@ -1020,6 +1028,10 @@
     {
      "x": "2026-11-27T00",
      "v": 32
+    },
+    {
+     "x": "2026-11-27T04",
+     "v": 32
     }
    ]
   },
@@ -1096,7 +1108,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-27T04:19:43Z",
+    "updated": "2026-11-27T04:55:28Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 1,
@@ -1637,7 +1649,7 @@
    "views7": 51,
    "pct": 31.6,
    "complete": false,
-   "total": 99
+   "total": 100
   },
   {
    "id": "gljrHADi4aU",
@@ -1670,7 +1682,7 @@
    "views7": 44,
    "pct": 47.9,
    "complete": false,
-   "total": 46
+   "total": 47
   },
   {
    "id": "bRanUVdt2Pw",
@@ -1991,7 +2003,7 @@
  "lake": {
   "videos": 101,
   "daily": 862,
-  "news": 2203,
+  "news": 2204,
   "niche": 1235,
   "comp": 511,
   "comp_videos": 62794,
@@ -2004,22 +2016,29 @@
   {
    "date": "2026-11-27",
    "source": "hn",
+   "title": "Against the International Oligarchy",
+   "score": 18,
+   "url": "https://parismanifesto.world/en/"
+  },
+  {
+   "date": "2026-11-27",
+   "source": "hn",
    "title": "AI agents now control part of DeepMind's compute for Gemini experiments",
-   "score": 7,
+   "score": 44,
    "url": "https://the-decoder.com/ai-agents-now-control-part-of-deepminds-compute-for-gemini-experiments-but-recursive-self-improvement-remains-distant/"
   },
   {
    "date": "2026-11-26",
    "source": "hn",
    "title": "AI made self-hosting fun again",
-   "score": 243,
+   "score": 445,
    "url": "https://janlukas.blog/posts/ai-self-hosting"
   },
   {
    "date": "2026-11-26",
    "source": "hn",
    "title": "Top-cited AI scientists at four US companies compared",
-   "score": 30,
+   "score": 39,
    "url": "https://topcitedscientists.com/figures/ai-at-four-us-companies/"
   },
   {
@@ -2033,7 +2052,7 @@
    "date": "2026-11-26",
    "source": "hn",
    "title": "Claude tries to sabotage research work at every stage",
-   "score": 41,
+   "score": 53,
    "url": "https://twitter.com/skirano/status/2125371115979641188"
   },
   {
@@ -2061,14 +2080,14 @@
    "date": "2026-11-26",
    "source": "hn",
    "title": "An Introduction to Uncertainty in Machine Learning",
-   "score": 6,
+   "score": 39,
    "url": "https://chrhenning.com/blog/2026/introduction-to-uncertainty/"
   },
   {
    "date": "2026-11-26",
    "source": "hn",
    "title": "Notion's official MCP inject hidden upsell instructions into agent context",
-   "score": 45,
+   "score": 51,
    "url": "https://www.reddit.com/r/ClaudeCode/comments/1y4qm5o/heads_up_if_you_wire_notions_official_mcp_into/"
   },
   {
@@ -2077,13 +2096,6 @@
    "title": "Banks look to dump AI debt",
    "score": 3,
    "url": "https://www.semafor.com/article/11/26/2026/banks-look-to-dump-ai-debt"
-  },
-  {
-   "date": "2026-11-26",
-   "source": "hn",
-   "title": "Poland to create no-fly zone at border after repeated airspace violations",
-   "score": 26,
-   "url": "https://www.france24.com/en/poland-says-will-create-no-fly-zone-at-ukraine-border-after-repeated-airspace-violations"
   }
  ],
  "competitors": [
@@ -2194,14 +2206,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "230",
-   "agent": "coo",
-   "task": "COO вечір 25.11: думати, дашборд очима власника, конвеєр, звіт власнику",
-   "started": "2026-11-25T18:28:15Z",
-   "finished": "2026-11-25T18:35:58Z",
-   "result": "5 ініціатив (черга озвучки за датою, exp pause, дедуп новин, страховка growth, TG взаємопіар); дашборд виправлено (v59); звіт власнику надіслано"
-  },
   {
    "id": "231",
    "agent": "post",
@@ -2538,6 +2542,15 @@
    "started": "2026-11-27T00:53:13Z",
    "finished": "2026-11-27T00:55:01Z",
    "result": "news +19 (лише HN, першоджерела 0 → ідей 0); TikTok 7 відео; IG 12 Reels (2127); TG 6; deepmind RSS ERR; vidIQ 5 кр.",
+   "agent_raw": "data"
+  },
+  {
+   "id": "270",
+   "agent": "de",
+   "task": "Збирач даталейку 04:53Z: новини, TikTok/IG/TG-знімок",
+   "started": "2026-11-27T04:53:13Z",
+   "finished": "2026-11-27T04:55:25Z",
+   "result": "news +19 (лише HN → ідей 0); TikTok 10 відео; IG 12 Reels (2128); TG 6; speka timeout; vidIQ 5 кр. (баланс 1495)",
    "agent_raw": "data"
   }
  ],

@@ -1597,8 +1597,8 @@
    "agent": "data",
    "task": "Збирач даталейку 04:53Z: новини, TikTok/IG/TG-знімок",
    "started": "2026-11-27T04:53:13Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-27T04:55:25Z",
+   "result": "news +19 (лише HN → ідей 0); TikTok 10 відео; IG 12 Reels (2128); TG 6; speka timeout; vidIQ 5 кр. (баланс 1495)"
   }
  ]
 }
