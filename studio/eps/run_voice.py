@@ -169,6 +169,8 @@ if __name__ == "__main__":
         if datetime.date.today().isoformat() in ("2026-11-28", "2026-11-29") and not os.path.exists(f"/home/claude/eps/{_w3.SLUG}/part{len(_w3.PARTS) - 1}.wav"):
             log(ev="reserve_weekly3", note="квота 28–29.11 — спершу остання частина шоу #3, rozbir186 після неї", ok_requests=REQ["ok"])
         else:
+            # COO 27.11 веч.: ep90 (вихід 2.12) — F0 122,7 / match 0,54 нижче норми; vo.wav прибрано в takes/vo_fallback_* → 1–2 запити ДО №186
+            short("ep90")
             guide("rozbir186")
             guide("guide194")  # 27.11 продакшн: №194 (вихід 4.12), фактчек PASS з умовами, 7 правок внесено 27.11; та сама умова — після part11 шоу #3
         # COO 25.11 веч.: за датою виходу — Shorts 30.11–2.12 (по 1 запиту) ДО гайду #3 (~16 запитів, 2.12/9.12): інакше guide3 з'їдає вікна 27–28.11 і 30.11 лишається без Short
@@ -179,8 +181,8 @@ if __name__ == "__main__":
         _w3 = importlib.import_module("weekly3")
         if datetime.date.today().isoformat() in ("2026-11-28", "2026-11-29") and not os.path.exists(f"/home/claude/eps/{_w3.SLUG}/part{len(_w3.PARTS) - 1}.wav"):
             log(ev="reserve_weekly3", note="квота 28–29.11 — спершу остання частина шоу #3 (тригер 08:30Z), guide3 після неї", ok_requests=REQ["ok"]); sys.exit(0)
-        guide("guide3")  # 24.11 власник: «спершу результат» → довгі в черзі першими; гайд #3 (9.12, спроба 2.12)
         guide("weekly4")  # шоу #4, вихід 6.12 12:00Z; незалежний фактчек PASS з умовами 26.11 (5.12 — дописати аукціон Character.AI, перевідкрити довідку про ліміти)
+        guide("guide3")  # гайд #3 — ЛИШЕ 9.12 (CSO 27.11 §10: 2.12 = №186); COO 27.11 веч.: за датою виходу після шоу #4 (6.12)
         log(ev="all_done", ok_requests=REQ["ok"])
     except RuntimeError as e:
         log(ev="STOP", reason=str(e)[:300], ok_requests=REQ["ok"])

@@ -263,7 +263,7 @@ def pipeline_status(meta):
     except Exception as e:
         out.append(dict(name="Озвучка", state="warn", text=f"voice_log не прочитано ({type(e).__name__})"))
     try:
-        names = {"weekly3": "шоу #3", "weekly4": "шоу #4", "guide3": "гайд #3"}
+        names = {"weekly3": "шоу #3", "weekly4": "шоу #4", "guide3": "гайд #3", "rozbir186": "№186 «IT» (2.12)", "guide194": "№194 «Сертифікат» (4.12)"}
         vp = [f"{names.get(s_, s_)} {h}/{t}" + (f" (лишились ч.{', '.join(map(str, m))})" if m and len(m) <= 4 else "") for s_, h, t, m in voice_progress()]
         if vp and out and out[-1]["name"] == "Озвучка": out[-1]["text"] += " Готово частин: " + "; ".join(vp) + "."
     except Exception: pass
@@ -281,7 +281,7 @@ def pipeline_status(meta):
                 if not m or not m[2] or not m[3] or m[3][:10] < since or m[3][:10] >= today: continue
                 if slug in posted or vid in ids: continue
                 miss.append(f"{m[3][8:10]}.{m[3][5:7]} {slug}")
-            last = max((str(v.get("at") or v.get("scheduled") or "")[:10] for v in posted.values() if isinstance(v, dict)), default="")
+            last = max((str(v.get("posted") or v.get("at") or v.get("scheduled") or "")[:10] for v in posted.values() if isinstance(v, dict)), default="")  # COO 27.11 веч.: ep84 TikTok має лише «posted» → HQ казав «останній пост 26.11»
             if miss:
                 out.append(dict(name=name, state="bad", text=f"без публікації: {', '.join(sorted(miss))} (останній пост {last[8:10]}.{last[5:7]}). "
                                  "Немає mp4 — не причина: vidIQ імпортує сам Short за YouTube-посиланням (RUNBOOK «МЕДІА СТЕРТО»)."))
@@ -558,7 +558,9 @@ def voice_progress():
             import importlib.util, io, contextlib
             spec = importlib.util.spec_from_file_location(f"_vp_{slug}", f); mod = importlib.util.module_from_spec(spec)
             with contextlib.redirect_stdout(io.StringIO()): spec.loader.exec_module(mod)
-            total = upto.get(slug, len(mod.PARTS)); d = f"/home/claude/eps/{getattr(mod, 'SLUG', slug)}"
+            # COO 27.11 веч.: UPTO — лише межа озвучки наперед (weekly3: ч.11 = UPDATE_28 + outro 28.11); HQ показував «шоу #3 11/11»,
+            # ніби все готово. Рахуємо проти всіх PARTS → «11/12 (лишились ч.11)».
+            total = len(mod.PARTS); d = f"/home/claude/eps/{getattr(mod, 'SLUG', slug)}"
         except Exception: continue
         have = [i for i in range(total) if os.path.exists(f"{d}/part{i}.wav")]
         miss = [i for i in range(total) if i not in have]
