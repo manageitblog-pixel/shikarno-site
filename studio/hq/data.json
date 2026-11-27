@@ -1,9 +1,9 @@
 {
- "generated": "2026-11-27T15:06:55Z",
+ "generated": "2026-11-27T15:18:05Z",
  "fresh": {
-  "yt_live": "2026-11-27T15:06:55Z",
+  "yt_live": "2026-11-27T15:18:05Z",
   "yt_analytics": "2026-11-24",
-  "tg_members": "2026-11-27T15:06:57Z",
+  "tg_members": "2026-11-27T15:18:07Z",
   "tg_posts": "2026-11-27T15:06:58Z",
   "ideas": "2026-11-27T11:24:38Z",
   "news": "2026-11-27 12:53",
@@ -11,19 +11,19 @@
   "tiktok": "2026-11-27T12",
   "instagram": "2026-11-27T12",
   "site": "2026-11-25",
-  "site_live": "2026-11-27T15:06:59Z",
-  "activity": "2026-11-27T14:53:01Z",
+  "site_live": "2026-11-27T15:18:08Z",
+  "activity": "2026-11-27T15:17:45Z",
   "asks": "2026-11-27T07:45Z"
  },
  "notes": [],
  "kpi": {
-  "subs": 428,
+  "subs": 430,
   "subs_goal": 1000,
   "long_hours": 10.0,
   "long_hours_ads": 2.5,
   "long_hours_goal": 4000,
   "star_deadline": "2027-01-31",
-  "views_total": 13493,
+  "views_total": 13536,
   "videos": 102,
   "views_7d": 1031,
   "pct_7d": 49.2,
@@ -34,7 +34,7 @@
   ],
   "subs_since": {
    "base": 395,
-   "d": 33,
+   "d": 35,
    "at": "2026-11-26T19:06Z",
    "from": "2026-11-26"
   },
@@ -416,7 +416,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 264
+   "subs_total": 266
   },
   {
    "w": "2026-08-03",
@@ -430,7 +430,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 264
+   "subs_total": 266
   },
   {
    "w": "2026-08-17",
@@ -444,7 +444,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 264
+   "subs_total": 266
   },
   {
    "w": "2026-08-24",
@@ -458,7 +458,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 264
+   "subs_total": 266
   },
   {
    "w": "2026-08-31",
@@ -472,7 +472,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 264
+   "subs_total": 266
   },
   {
    "w": "2026-09-07",
@@ -486,7 +486,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 264
+   "subs_total": 266
   },
   {
    "w": "2026-09-28",
@@ -500,7 +500,7 @@
    "partial_site": false,
    "subs_cum": -1,
    "long_cum": 0.0,
-   "subs_total": 263
+   "subs_total": 265
   },
   {
    "w": "2026-10-19",
@@ -514,7 +514,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.2,
-   "subs_total": 264
+   "subs_total": 266
   },
   {
    "w": "2026-10-26",
@@ -528,7 +528,7 @@
    "partial_site": false,
    "subs_cum": 6,
    "long_cum": 0.7,
-   "subs_total": 270
+   "subs_total": 272
   },
   {
    "w": "2026-11-02",
@@ -542,7 +542,7 @@
    "partial_site": false,
    "subs_cum": 155,
    "long_cum": 5.5,
-   "subs_total": 419
+   "subs_total": 421
   },
   {
    "w": "2026-11-09",
@@ -556,7 +556,7 @@
    "partial_site": false,
    "subs_cum": 160,
    "long_cum": 8.2,
-   "subs_total": 424
+   "subs_total": 426
   },
   {
    "w": "2026-11-16",
@@ -570,7 +570,7 @@
    "partial_site": false,
    "subs_cum": 163,
    "long_cum": 10.9,
-   "subs_total": 427
+   "subs_total": 429
   },
   {
    "w": "2026-11-23",
@@ -584,7 +584,7 @@
    "partial_site": true,
    "subs_cum": 164,
    "long_cum": 12.4,
-   "subs_total": 428
+   "subs_total": 430
   }
  ],
  "tg_hist": [
@@ -615,10 +615,10 @@
  ],
  "platforms": {
   "youtube": {
-   "subs": 428,
-   "views_total": 13493,
+   "subs": 430,
+   "views_total": 13536,
    "videos": 102,
-   "live_at": "2026-11-27T15:06:55Z",
+   "live_at": "2026-11-27T15:18:05Z",
    "views_7d": 1031,
    "pct_7d": 49.2,
    "subs_7d": 4,
@@ -1145,7 +1145,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-27T15:06:59Z",
+    "updated": "2026-11-27T15:18:08Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 11,
@@ -2252,15 +2252,6 @@
  ],
  "activity": [
   {
-   "id": "253",
-   "agent": "de",
-   "task": "Збирач даталейку 12:53Z: новини, TikTok/IG/TG-знімок",
-   "started": "2026-11-26T12:53:23Z",
-   "finished": "2026-11-26T12:57:34Z",
-   "result": "+32 новин; TikTok Signal 146; IG 1816 перегл.; ідеї #178–181",
-   "agent_raw": "data"
-  },
-  {
    "id": "254",
    "agent": "designer",
    "task": "Дизайнер 26.11: обкладинки ep83 (сьогодні), гайд #2 і ep84 (27.11)",
@@ -2595,6 +2586,15 @@
    "finished": "2026-11-27T14:53:01Z",
    "result": "чернетка Demand Gen 24564765979 на паузі: аудиторія «Глядачі каналу 90 дн», 2 оголошення (гайд ChatGPT, шоу #2), бюджет-заглушка 196 грн/день (мінімум); поточна не змінена; власнику надіслано",
    "agent_raw": "ads"
+  },
+  {
+   "id": "293",
+   "agent": "cm",
+   "task": "TikTok-коментарі за добу 27.11 (vidIQ) → відповіді власнику, лише якщо нові",
+   "started": "2026-11-27T15:17:45Z",
+   "finished": null,
+   "result": "",
+   "agent_raw": "community"
   }
  ],
  "agents": [
