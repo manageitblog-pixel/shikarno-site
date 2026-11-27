@@ -1,9 +1,9 @@
 {
- "generated": "2026-11-27T19:06:46Z",
+ "generated": "2026-11-27T19:18:45Z",
  "fresh": {
-  "yt_live": "2026-11-27T19:06:47Z",
+  "yt_live": "2026-11-27T19:18:45Z",
   "yt_analytics": "2026-11-24",
-  "tg_members": "2026-11-27T19:06:48Z",
+  "tg_members": "2026-11-27T19:18:47Z",
   "tg_posts": "2026-11-27T19:06:50Z",
   "ideas": "2026-11-27T11:24:38Z",
   "news": "2026-11-27 16:53",
@@ -11,13 +11,11 @@
   "tiktok": "2026-11-27T16",
   "instagram": "2026-11-27T16",
   "site": "2026-11-25",
-  "site_live": "2026-11-27T18:33:01Z",
-  "activity": "2026-11-27T18:34:55Z",
+  "site_live": "2026-11-27T19:18:48Z",
+  "activity": "2026-11-27T19:18:28Z",
   "asks": "2026-11-27T18:40Z"
  },
- "notes": [
-  "Cloudflare: кеш: Cloudflare не відповів (HTTPError)"
- ],
+ "notes": [],
  "kpi": {
   "subs": 439,
   "subs_goal": 1000,
@@ -620,7 +618,7 @@
    "subs": 439,
    "views_total": 13536,
    "videos": 104,
-   "live_at": "2026-11-27T19:06:47Z",
+   "live_at": "2026-11-27T19:18:45Z",
    "views_7d": 1031,
    "pct_7d": 49.2,
    "subs_7d": 4,
@@ -690,9 +688,9 @@
      "id": "ENKGdbr04h0"
     },
     {
-     "title": "Новини ШІ за тиждень (листопад 2026): Anthropic на біржі, Gemini платить сам | #2",
-     "views": 101,
-     "id": "aTUsauz53rs"
+     "title": "Як продати на OLX швидше з ШІ: опис, ціна, шахраї 🛍️ ШІ для професій #9",
+     "views": 100,
+     "id": "LtNuOtQe0pc"
     }
    ]
   },
@@ -1159,24 +1157,19 @@
     }
    ],
    "live": {
-    "updated": "2026-11-27T18:33:01Z",
+    "updated": "2026-11-27T19:18:48Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
-    "today_pageloads": 16,
-    "today_visits": 14,
+    "today_pageloads": 17,
+    "today_visits": 15,
     "yesterday_pageloads": 7,
     "yesterday_visits": 7,
-    "pageloads_7d": 68,
-    "visits_7d": 60,
+    "pageloads_7d": 69,
+    "visits_7d": 61,
     "last24h": {
-     "pageloads": 16,
-     "visits": 14,
+     "pageloads": 17,
+     "visits": 15,
      "hours": [
-      {
-       "h": "2026-11-26T19:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
       {
        "h": "2026-11-26T20:00:00Z",
        "pageloads": 0,
@@ -1289,6 +1282,11 @@
       },
       {
        "h": "2026-11-27T18:00:00Z",
+       "pageloads": 1,
+       "visits": 1
+      },
+      {
+       "h": "2026-11-27T19:00:00Z",
        "pageloads": 0,
        "visits": 0
       }
@@ -1375,8 +1373,8 @@
      },
      {
       "d": "2026-11-27",
-      "pageloads": 16,
-      "visits": 14,
+      "pageloads": 17,
+      "visits": 15,
       "sampled": false
      }
     ],
@@ -1386,12 +1384,12 @@
       "count": 26
      },
      {
-      "path": "/novyny/claude-bezkoshtovno/",
+      "path": "/novyny/chorna-pyatnytsya-shi-pidpysky-znyzhky/",
       "count": 6
      },
      {
-      "path": "/novyny/chorna-pyatnytsya-shi-pidpysky-znyzhky/",
-      "count": 5
+      "path": "/novyny/claude-bezkoshtovno/",
+      "count": 6
      },
      {
       "path": "/novyny/signal-blokuye-shi-agentiv/",
@@ -1409,7 +1407,7 @@
      },
      {
       "host": "www.google.com",
-      "count": 13
+      "count": 14
      },
      {
       "host": "m.facebook.com",
@@ -1427,7 +1425,7 @@
     "top_countries_7d": [
      {
       "country": "UA",
-      "count": 39
+      "count": 40
      },
      {
       "country": "US",
@@ -1445,8 +1443,7 @@
       "country": "NL",
       "count": 2
      }
-    ],
-    "error": "кеш: Cloudflare не відповів (HTTPError)"
+    ]
    }
   },
   "telegram": {
@@ -1613,7 +1610,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 0
+   "total": 1
   },
   {
    "id": "cw7Qm4AMP3U",
@@ -1646,7 +1643,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 3
+   "total": 5
   },
   {
    "id": "6mIdp843fKo",
@@ -1723,7 +1720,7 @@
    "views7": 62,
    "pct": 26.1,
    "complete": false,
-   "total": 101
+   "total": 100
   },
   {
    "id": "gljrHADi4aU",
@@ -2267,15 +2264,6 @@
  ],
  "activity": [
   {
-   "id": "257",
-   "agent": "de",
-   "task": "Збирач даталейку 16:52Z: новини, TikTok/IG/TG-знімок",
-   "started": "2026-11-26T16:53:05Z",
-   "finished": "2026-11-26T16:55:45Z",
-   "result": "+25 новин; TikTok Signal 168; IG 30 підп.; Reel ep78 1 перегляд; ідеї #182–184",
-   "agent_raw": "data"
-  },
-  {
    "id": "258",
    "agent": "coo",
    "task": "TikTok ep83 через імпорт з YouTube (vidIQ)",
@@ -2610,6 +2598,15 @@
    "started": "2026-11-27T18:28:01Z",
    "finished": "2026-11-27T18:34:55Z",
    "result": "5 ініціатив (MCP лише в головній сесії, ep90 у черзі, слоти §10, Drive після рендеру, TTS-резерв), HQ asks, звіт власнику msg 2637"
+  },
+  {
+   "id": "297",
+   "agent": "trend",
+   "task": "фон: вечірній веб-скан трендів 27.11 + фінальне рішення UPDATE_28",
+   "started": "2026-11-27T19:18:28Z",
+   "finished": null,
+   "result": "",
+   "agent_raw": "researcher"
   }
  ],
  "agents": [
