@@ -163,6 +163,13 @@ if __name__ == "__main__":
         # guide("guide1")
         # guide("guide2")  # CSO 23.11 — залито h5aUeuaD8OE
         guide("weekly3")  # шоу #3, вихід 29.11 12:00Z; фактчек PASS 23.11 (гайд #2 → пт 27.11, якщо QA до 26.11 20:00; у ep83/ep85 є запасні дублі)
+        # CSO 27.11 (strategy.md §10): з 28.11 шоу #3 ч.11 → №186 → №194 → шоу #4 → гайд #3 → Shorts. №186 (вихід 2.12), фактчек PASS з умовами, 8 правок внесено 27.11.
+        # 28–29.11, поки немає part11 шоу #3 (тригер 08:30Z), №186 не чіпаємо — квота спершу на шоу (той самий резерв, що й для guide3 нижче).
+        _w3 = importlib.import_module("weekly3")
+        if datetime.date.today().isoformat() in ("2026-11-28", "2026-11-29") and not os.path.exists(f"/home/claude/eps/{_w3.SLUG}/part{len(_w3.PARTS) - 1}.wav"):
+            log(ev="reserve_weekly3", note="квота 28–29.11 — спершу остання частина шоу #3, rozbir186 після неї", ok_requests=REQ["ok"])
+        else:
+            guide("rozbir186")
         # COO 25.11 веч.: за датою виходу — Shorts 30.11–2.12 (по 1 запиту) ДО гайду #3 (~16 запитів, 2.12/9.12): інакше guide3 з'їдає вікна 27–28.11 і 30.11 лишається без Short
         for k in ("VC_REF", "VC_TOL"): os.environ.pop(k, None)
         for mod in ("ep88", "ep89", "ep90"): short(mod)  # 25.11: ep83–86 уже залиті (медіа стерто рестартом) — не переозвучувати; ep88–90 вихід 30.11–2.12
