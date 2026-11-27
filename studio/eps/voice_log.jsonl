@@ -478,3 +478,11 @@
 {"ev": "tts_ok", "n": 8, "out": "/home/claude/eps/guide3/part2.wav", "res": "(81.08, 24000, 'audio/wav')", "t": "08:11:49Z", "d": "2026-11-27"}
 {"ev": "part", "part": 2, "take": 1, "f0": 120.6, "f0_ok": false, "dur": 81.1, "audit": [{"seg": 5, "ratio": 1.0, "match": 0.67}, {"seg": 6, "ratio": 0.9, "match": 0.67}, {"seg": 7, "ratio": 0.94, "match": 0.7}, {"seg": 8, "ratio": 0.82, "match": 0.53}], "repeat_suspect": false, "t": "08:13:16Z", "d": "2026-11-27"}
 {"ev": "tts_ok", "n": 9, "out": "/home/claude/eps/guide3/part2.wav", "res": "(79.68, 24000, 'audio/wav')", "t": "08:13:28Z", "d": "2026-11-27"}
+{"ev": "part", "part": 2, "take": 2, "f0": 139.6, "f0_ok": false, "dur": 79.7, "audit": [{"seg": 5, "ratio": 1.17, "match": 0.83}, {"seg": 6, "ratio": 0.9, "match": 0.54}, {"seg": 7, "ratio": 1.04, "match": 0.89}, {"seg": 8, "ratio": 0.92, "match": 0.49}], "repeat_suspect": false, "t": "08:15:03Z", "d": "2026-11-27"}
+{"ev": "part_retry_later", "part": 2, "best_take": 1, "f0": 120.6, "takes": 2, "max_takes": 6, "t": "08:15:03Z", "d": "2026-11-27"}
+{"ev": "tts_ok", "n": 10, "out": "/home/claude/eps/guide3/part3.wav", "res": "(56.5, 24000, 'audio/wav')", "t": "08:15:14Z", "d": "2026-11-27"}
+{"ev": "part", "part": 3, "take": 1, "f0": 124.8, "f0_ok": true, "dur": 56.5, "audit": [{"seg": 9, "ratio": 0.83, "match": 0.54}, {"seg": 10, "ratio": 0.91, "match": 0.73}], "repeat_suspect": false, "t": "08:16:01Z", "d": "2026-11-27"}
+{"ev": "part_final", "part": 3, "take": 1, "f0": 124.8, "clean": true, "t": "08:16:01Z", "d": "2026-11-27"}
+{"ev": "tts_ok", "n": 11, "out": "/home/claude/eps/guide3/part4.wav", "res": "(71.51, 24000, 'audio/wav')", "t": "08:16:16Z", "d": "2026-11-27"}
+{"ev": "part", "part": 4, "take": 1, "f0": 122.3, "f0_ok": true, "dur": 71.5, "audit": [{"seg": 11, "ratio": 1.0, "match": 1.0}, {"seg": 12, "ratio": 0.93, "match": 0.68}, {"seg": 13, "ratio": 0.98, "match": 0.67}, {"seg": 14, "ratio": 1.02, "match": 0.78}], "repeat_suspect": false, "t": "08:17:40Z", "d": "2026-11-27"}
+{"ev": "part_final", "part": 4, "take": 1, "f0": 122.3, "clean": true, "t": "08:17:40Z", "d": "2026-11-27"}
