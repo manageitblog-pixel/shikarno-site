@@ -1,9 +1,9 @@
 {
- "generated": "2026-11-27T00:06:40Z",
+ "generated": "2026-11-27T00:20:02Z",
  "fresh": {
-  "yt_live": "2026-11-27T00:06:41Z",
+  "yt_live": "2026-11-27T00:20:02Z",
   "yt_analytics": "2026-11-23",
-  "tg_members": "2026-11-27T00:06:41Z",
+  "tg_members": "2026-11-27T00:20:03Z",
   "tg_posts": "2026-11-27T00:06:43Z",
   "ideas": "2026-11-26T20:56:08Z",
   "news": "2026-11-26 20:53",
@@ -11,8 +11,8 @@
   "tiktok": "2026-11-26T20",
   "instagram": "2026-11-26T20",
   "site": "2026-11-24",
-  "site_live": "2026-11-27T00:06:44Z",
-  "activity": "2026-11-26T21:24:12Z",
+  "site_live": "2026-11-27T00:20:05Z",
+  "activity": "2026-11-27T00:19:42Z",
   "asks": "2026-11-26T18:35Z"
  },
  "notes": [],
@@ -601,7 +601,7 @@
    "subs": 390,
    "views_total": 13137,
    "videos": 102,
-   "live_at": "2026-11-27T00:06:41Z",
+   "live_at": "2026-11-27T00:20:02Z",
    "views_7d": 875,
    "pct_7d": 48.1,
    "subs_7d": 4,
@@ -667,13 +667,13 @@
     },
     {
      "title": "ШІ для вчителя: план уроку і тест за 5 хвилин у Google Classroom 🍎",
-     "views": 123,
+     "views": 124,
      "id": "ENKGdbr04h0"
     },
     {
-     "title": "Як продати на OLX швидше з ШІ: опис, ціна, шахраї 🛍️ ШІ для професій #9",
-     "views": 99,
-     "id": "LtNuOtQe0pc"
+     "title": "Новини ШІ за тиждень (листопад 2026): Anthropic на біржі, Gemini платить сам | #2",
+     "views": 98,
+     "id": "aTUsauz53rs"
     }
    ]
   },
@@ -1080,7 +1080,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-27T00:06:44Z",
+    "updated": "2026-11-27T00:20:05Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 0,
@@ -1573,7 +1573,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 37
+   "total": 35
   },
   {
    "id": "xaYHobFNYHo",
@@ -1584,7 +1584,7 @@
    "views7": 15,
    "pct": 26.9,
    "complete": false,
-   "total": 50
+   "total": 49
   },
   {
    "id": "ENKGdbr04h0",
@@ -1595,7 +1595,7 @@
    "views7": 100,
    "pct": 43.0,
    "complete": false,
-   "total": 123
+   "total": 124
   },
   {
    "id": "LtNuOtQe0pc",
@@ -1606,7 +1606,7 @@
    "views7": 69,
    "pct": 59.6,
    "complete": false,
-   "total": 99
+   "total": 97
   },
   {
    "id": "aTUsauz53rs",
@@ -2175,15 +2175,6 @@
  ],
  "activity": [
   {
-   "id": "228",
-   "agent": "trend",
-   "task": "фон: веб-скан трендів (вечір) 13:30–18:20Z",
-   "started": "2026-11-25T18:18:29Z",
-   "finished": "2026-11-25T18:23:15Z",
-   "result": "вечір бідний: 1 ідея #161 (158.6), звіт trend-scan-2026-11-25-evening.md",
-   "agent_raw": "researcher"
-  },
-  {
    "id": "229",
    "agent": "seo",
    "task": "фон: нова SEO-стаття під непокритий запит",
@@ -2518,6 +2509,15 @@
    "started": "2026-11-26T21:18:00Z",
    "finished": "2026-11-26T21:24:12Z",
    "result": "стаття «Оживити фото з ШІ безкоштовно» (запит 1300/міс, Ubersuggest) на 28.11 10:00, у main"
+  },
+  {
+   "id": "268",
+   "agent": "de",
+   "task": "Аудит прогнозів: ролики, яким 7 днів (опубл. 19–20.11)",
+   "started": "2026-11-27T00:19:42Z",
+   "finished": null,
+   "result": "",
+   "agent_raw": "data"
   }
  ],
  "agents": [
