@@ -16,7 +16,7 @@ while time.time() < end:
         if 'localhost' in m.get('text', '') and 'code=' in m.get('text', ''):
             try:
                 sys.path.insert(0, '/home/claude/yt'); import auth
-                res = auth.code(m['text']); ok = 'yt-analytics' in res
+                res = auth.code((__import__('re').search(r'http://localhost\S+', m['text']) or __import__('re').search(r'\S*code=\S+', m['text'])).group(0))  # 27.11: власник надіслав ID акаунта і URL в одному повідомленні; ok = 'yt-analytics' in res
                 msg = '✅ Google Drive підключено — резерв медіа увімкнено. Дякую!' if 'drive.file' in res and 'youtube' not in res else '✅ Google Ads підключено — тепер бачу кампанії напряму. Дякую!' if 'adwords' in res and 'youtube' not in res else '✅ Вхід у YouTube оновлено' + (' — аналітика підключена.' if ok else '.') + ' Дякую!'
                 inbox.tg.call('sendMessage', chat_id=OWNER, text=msg)
                 print('OAUTH_OK', res)
