@@ -424,3 +424,4 @@
 - 27.11 13:35Z IG: Reel clip3 (реклама в ChatGPT) опубліковано — https://www.instagram.com/reel/DgPyRNOhS_J/ (догін 25.11 закрито); ep84 — о 19:23 Київ після public 17Z
 - 27.11 14:18Z диспетчер: самоперевірка — відкритих 0; озвучка — спроба у фоні; фон: нова SEO-стаття (291)
 - 27.11 ~14:22Z seo (фон): стаття «Google AI Studio: що це і як користуватися безкоштовно в Україні» під запит «google ai studio» (попит 49 500/міс UA, SD 24 — Ubersuggest; у GSC «google ai studio українською» без окремої сторінки), дата 30.11 10:00
+- 27.11 14:38Z власник: «маю час на підключення апі адс — шо робити» → перевірено developers.google.com: developer token/MCC скасовані з 9.09.2026, доступ на рівні Cloud-проєкту (Test → Explorer для продакшн-акаунта, 2 880 оп./добу); надіслано 3 кроки + OAuth-посилання (scope adwords, окремий вхід як Drive; auth.py link ads → yt/ads_token.json, gitignore). Чекаємо: API увімкнено, Explorer, ID акаунта, код

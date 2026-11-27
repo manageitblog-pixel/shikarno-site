@@ -32,3 +32,5 @@ __pycache__/
 pult/.token
 pult/.viewkey
 tg/.bait_token
+yt/ads_token.json
+yt/.pkce_ads
