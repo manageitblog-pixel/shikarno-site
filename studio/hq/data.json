@@ -1,23 +1,23 @@
 {
- "generated": "2026-11-27T14:18:29Z",
+ "generated": "2026-11-27T15:06:55Z",
  "fresh": {
-  "yt_live": "2026-11-27T14:18:29Z",
+  "yt_live": "2026-11-27T15:06:55Z",
   "yt_analytics": "2026-11-24",
-  "tg_members": "2026-11-27T14:18:30Z",
-  "tg_posts": "2026-11-27T14:06:43Z",
+  "tg_members": "2026-11-27T15:06:57Z",
+  "tg_posts": "2026-11-27T15:06:58Z",
   "ideas": "2026-11-27T11:24:38Z",
   "news": "2026-11-27 12:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-27T12",
   "instagram": "2026-11-27T12",
   "site": "2026-11-25",
-  "site_live": "2026-11-27T14:18:31Z",
-  "activity": "2026-11-27T14:18:10Z",
+  "site_live": "2026-11-27T15:06:59Z",
+  "activity": "2026-11-27T14:53:01Z",
   "asks": "2026-11-27T07:45Z"
  },
  "notes": [],
  "kpi": {
-  "subs": 425,
+  "subs": 428,
   "subs_goal": 1000,
   "long_hours": 10.0,
   "long_hours_ads": 2.5,
@@ -34,7 +34,7 @@
   ],
   "subs_since": {
    "base": 395,
-   "d": 30,
+   "d": 33,
    "at": "2026-11-26T19:06Z",
    "from": "2026-11-26"
   },
@@ -416,7 +416,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 261
+   "subs_total": 264
   },
   {
    "w": "2026-08-03",
@@ -430,7 +430,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 261
+   "subs_total": 264
   },
   {
    "w": "2026-08-17",
@@ -444,7 +444,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 261
+   "subs_total": 264
   },
   {
    "w": "2026-08-24",
@@ -458,7 +458,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 261
+   "subs_total": 264
   },
   {
    "w": "2026-08-31",
@@ -472,7 +472,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 261
+   "subs_total": 264
   },
   {
    "w": "2026-09-07",
@@ -486,7 +486,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 261
+   "subs_total": 264
   },
   {
    "w": "2026-09-28",
@@ -500,7 +500,7 @@
    "partial_site": false,
    "subs_cum": -1,
    "long_cum": 0.0,
-   "subs_total": 260
+   "subs_total": 263
   },
   {
    "w": "2026-10-19",
@@ -514,7 +514,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.2,
-   "subs_total": 261
+   "subs_total": 264
   },
   {
    "w": "2026-10-26",
@@ -528,7 +528,7 @@
    "partial_site": false,
    "subs_cum": 6,
    "long_cum": 0.7,
-   "subs_total": 267
+   "subs_total": 270
   },
   {
    "w": "2026-11-02",
@@ -542,7 +542,7 @@
    "partial_site": false,
    "subs_cum": 155,
    "long_cum": 5.5,
-   "subs_total": 416
+   "subs_total": 419
   },
   {
    "w": "2026-11-09",
@@ -556,7 +556,7 @@
    "partial_site": false,
    "subs_cum": 160,
    "long_cum": 8.2,
-   "subs_total": 421
+   "subs_total": 424
   },
   {
    "w": "2026-11-16",
@@ -570,7 +570,7 @@
    "partial_site": false,
    "subs_cum": 163,
    "long_cum": 10.9,
-   "subs_total": 424
+   "subs_total": 427
   },
   {
    "w": "2026-11-23",
@@ -584,7 +584,7 @@
    "partial_site": true,
    "subs_cum": 164,
    "long_cum": 12.4,
-   "subs_total": 425
+   "subs_total": 428
   }
  ],
  "tg_hist": [
@@ -615,10 +615,10 @@
  ],
  "platforms": {
   "youtube": {
-   "subs": 425,
+   "subs": 428,
    "views_total": 13493,
    "videos": 102,
-   "live_at": "2026-11-27T14:18:29Z",
+   "live_at": "2026-11-27T15:06:55Z",
    "views_7d": 1031,
    "pct_7d": 49.2,
    "subs_7d": 4,
@@ -1145,24 +1145,19 @@
     }
    ],
    "live": {
-    "updated": "2026-11-27T14:18:31Z",
+    "updated": "2026-11-27T15:06:59Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
-    "today_pageloads": 7,
-    "today_visits": 6,
+    "today_pageloads": 11,
+    "today_visits": 10,
     "yesterday_pageloads": 7,
     "yesterday_visits": 7,
-    "pageloads_7d": 59,
-    "visits_7d": 52,
+    "pageloads_7d": 63,
+    "visits_7d": 56,
     "last24h": {
-     "pageloads": 10,
-     "visits": 9,
+     "pageloads": 14,
+     "visits": 13,
      "hours": [
-      {
-       "h": "2026-11-26T15:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
       {
        "h": "2026-11-26T16:00:00Z",
        "pageloads": 0,
@@ -1275,6 +1270,11 @@
       },
       {
        "h": "2026-11-27T14:00:00Z",
+       "pageloads": 4,
+       "visits": 4
+      },
+      {
+       "h": "2026-11-27T15:00:00Z",
        "pageloads": 0,
        "visits": 0
       }
@@ -1361,8 +1361,8 @@
      },
      {
       "d": "2026-11-27",
-      "pageloads": 7,
-      "visits": 6,
+      "pageloads": 11,
+      "visits": 10,
       "sampled": false
      }
     ],
@@ -1373,14 +1373,14 @@
      },
      {
       "path": "/novyny/claude-bezkoshtovno/",
-      "count": 5
+      "count": 6
+     },
+     {
+      "path": "/novyny/chorna-pyatnytsya-shi-pidpysky-znyzhky/",
+      "count": 4
      },
      {
       "path": "/novyny/claude-code-shcho-tse/",
-      "count": 2
-     },
-     {
-      "path": "/novyny/shtuchnyj-intelekt-dlya-ditej-tir-lyst/",
       "count": 2
      },
      {
@@ -1391,11 +1391,11 @@
     "top_referrers_7d": [
      {
       "host": "(прямі / без реферера)",
-      "count": 29
+      "count": 32
      },
      {
       "host": "www.google.com",
-      "count": 9
+      "count": 10
      },
      {
       "host": "m.facebook.com",
@@ -1413,7 +1413,7 @@
     "top_countries_7d": [
      {
       "country": "UA",
-      "count": 30
+      "count": 34
      },
      {
       "country": "US",
@@ -1653,7 +1653,7 @@
    "views7": 34,
    "pct": 58.9,
    "complete": false,
-   "total": 52
+   "total": 53
   },
   {
    "id": "ENKGdbr04h0",
@@ -2252,14 +2252,6 @@
  ],
  "activity": [
   {
-   "id": "252",
-   "agent": "algo",
-   "task": "Дослідник алгоритмів 26.11 (чт — YouTube): офіційні зміни, лайфхаки практиків, експерименти",
-   "started": "2026-11-26T12:14:05Z",
-   "finished": "2026-11-26T12:22:54Z",
-   "result": "офіційних змін нема; П27–П30 (довгі судимо на 28-й день); 3 розбіжності; пропозиція: назви розділів шоу як пошукові запити"
-  },
-  {
    "id": "253",
    "agent": "de",
    "task": "Збирач даталейку 12:53Z: новини, TikTok/IG/TG-знімок",
@@ -2592,8 +2584,17 @@
    "agent": "seo",
    "task": "фон: нова SEO-стаття під непокритий запит (27.11)",
    "started": "2026-11-27T14:18:10Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-27T14:22:37Z",
+   "result": "стаття «Google AI Studio: що це і як користуватися безкоштовно в Україні» (запит 49 500/міс, SD 24) на 30.11 10:00, у main"
+  },
+  {
+   "id": "292",
+   "agent": "coo",
+   "task": "Чернетка Google Ads на довгі ролики — ЛИШЕ на паузі (власник: «Готуй»)",
+   "started": "2026-11-27T14:47:34Z",
+   "finished": "2026-11-27T14:53:01Z",
+   "result": "чернетка Demand Gen 24564765979 на паузі: аудиторія «Глядачі каналу 90 дн», 2 оголошення (гайд ChatGPT, шоу #2), бюджет-заглушка 196 грн/день (мінімум); поточна не змінена; власнику надіслано",
+   "agent_raw": "ads"
   }
  ],
  "agents": [
