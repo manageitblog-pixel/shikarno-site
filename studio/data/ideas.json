@@ -4158,5 +4158,112 @@
   "decision": "CSO 27.11: ДОВГИЙ гайд 12–15 хв у слот пт 4.12 19:00 Київ (запас — сб 5.12 12Z; дедлайн заявок КМУ 10.12) під години STAR; сценарій 29.11, фактчек 30.11 (kmu.gov.ua/grow.google у день запису), озвучка 1–3.12, qa_pass 4.12 12Z; Short-трейлер з Related на довге",
   "kw": "google ai (272); google ai essentials (10); google ai essentials certificate (9); курси айті (10) — kw.py 27.11, підказки YouTube UA/uk; «сертифікат google»/«сертифікація google» укр. попиту під тему немає (підказки — НМТ, Приватбанк; конкуренція «сертифікат нмт» 10/10 укр., медіана 3221 — нерелевантно) → у назву «сертифікат Google з ШІ» + «Google AI»; AI Essentials ≠ AI Professional — у назві не плутати",
   "yt_title": "Безкоштовний сертифікат Google з ШІ: як подати заявку до 10 грудня (Google AI, Coursera) — SEO 27.11 (ключ «сертифікат Google» + «Google AI» на початку, дедлайн — у назві; ~80 зн.)"
+ },
+ {
+  "title": "Підключи ChatGPT або Claude до свого Djinni: ШІ шукає вакансії, адаптує CV і пише супровідний — але відгукується лише після твого «так»",
+  "format": "try",
+  "channels": [
+   "short",
+   "tiktok",
+   "site",
+   "tg",
+   "show"
+  ],
+  "demand": 4,
+  "fresh": 5,
+  "show": 5,
+  "fit": 4,
+  "length": 30,
+  "hook": "you",
+  "by": "researcher-news",
+  "source": "https://t.me/djinni_official/2247",
+  "sources": [
+   {
+    "name": "dev.ua 27.11",
+    "url": "https://dev.ua/news/djinni-zapustyv-shi-asystenta-1795776019"
+   }
+  ],
+  "note": "Офіційний TG Djinni 27.11.2026 10:24Z (відкрито 27.11 ~11:40Z): «АІ-асистент від Djinni» — Claude або ChatGPT через MCP; шукає вакансії й підказує, на які відгукнутися; відгукується з адаптованим CV і супровідним — лише після підтвердження; оновлює профіль, навички, зарплатні очікування, підписки. dev.ua: вкладка «AI-асистенти» в кабінеті. Платно/безкоштовно — НЕ сказано; які плани ChatGPT/Claude підтримують MCP-конектори — звірити в день запису (інструкція в профілі Djinni). Зв’язок з №186 (IT-ринок) і шоу #4 («Будуємо з ШІ» / UA). Показати можна: кабінет Djinni + чат з конектором (на тестовому профілі, без персональних даних).",
+  "status": "new",
+  "added": "2026-11-27",
+  "id": "195"
+ },
+ {
+  "title": "Фейкова капча «натисни ⌘+Пробіл і встав команду»: чому не можна давати ШІ-агенту проходити «Я не робот» самому — український розробник показав пастку",
+  "format": "sec",
+  "channels": [
+   "short",
+   "tiktok",
+   "site",
+   "tg"
+  ],
+  "demand": 3,
+  "fresh": 5,
+  "show": 4,
+  "fit": 4,
+  "length": 30,
+  "hook": "you",
+  "by": "researcher-news",
+  "source": "https://dev.ua/news/ukrainskyi-rozrobnyk-upershe-natrapyv-na-feikovu-kaptchu-1795771596",
+  "sources": [
+   {
+    "name": "LinkedIn Василь Смуток (не відкрито)",
+    "url": "https://www.linkedin.com/posts/vsmutok_cybersecurity-clickfix-captcha-share-7531763145254768640-q-m0/"
+   },
+   {
+    "name": "CERT-UA/КМУ про ClickFix",
+    "url": "https://www.kmu.gov.ua/news/ia-ne-robot-cert-ua-fiksuie-masove-poshyrennia-shkidlyvoho-prohramnoho-zabezpechennia"
+   }
+  ],
+  "note": "dev.ua 27.11.2026 09:49 (Київ): Python-розробник Василь Смуток (open-source FuckCaptcha) натрапив на ClickFix/Fake CAPTCHA: замість картинок — інструкція ⌘+Space → Terminal → Cmd+V → Enter; сайт тихо кладе шкідливий код у буфер. Його застереження: автономний агент може виконати таку «вимогу сайту». Першоджерело (LinkedIn) з цієї мережі НЕ відкривав — подавати «за словами розробника, dev.ua». Відмінність від №137: там стілер/сесії, тут — агенти й капчі. Показати: макет фейкової капчі (свій, без живого шкідливого сайту) + правило «справжня капча ніколи не просить відкрити Термінал».",
+  "status": "new",
+  "added": "2026-11-27",
+  "id": "196"
+ },
+ {
+  "title": "Documents від Readdle тепер записує розмову і робить підсумок, транскрипт і список справ — пробуємо голосові нотатки з ШІ на iPhone",
+  "format": "try",
+  "channels": [
+   "site",
+   "tg",
+   "tiktok"
+  ],
+  "demand": 2,
+  "fresh": 5,
+  "show": 5,
+  "fit": 3,
+  "length": 30,
+  "hook": "release",
+  "by": "researcher-news",
+  "source": "https://apps.apple.com/us/app/documents-file-manager-docs/id364901807",
+  "sources": [
+   {
+    "name": "9to5Mac 26.11",
+    "url": "https://9to5mac.com/2026/11/26/readdles-documents-app-adds-voice-recording-with-transcripts-summaries-more/"
+   }
+  ],
+  "note": "App Store 27.11: версія 8.23 (~23.11) «Voice Notes arrive in Documents». 9to5Mac 26.11: запис з «+» або кнопки Action; вкладки summary / follow-ups / transcript; кілька мов в одній розмові (підсумок — мовою, якої найбільше); аудіо зазвичай не зберігають, транскрипт і підсумок — до 1 год (за thumbs down — до 6 міс); дані не для навчання моделей (слова Readdle). Лише для Documents Plus, 7 днів безкоштовно. Українську мову розпізнавання перевірити в день запису. Readdle — компанія з українським корінням: формулювання звірити з readdle.com перед публікацією.",
+  "status": "new",
+  "added": "2026-11-27",
+  "id": "197"
+ },
+ {
+  "title": "Apple рекламувала ШІ-функції iPhone 16, яких не було: у Кореї регулятор передав справу на розгляд — що це каже про обіцянки «ШІ скоро»",
+  "format": "news",
+  "channels": [
+   "site",
+   "tg"
+  ],
+  "demand": 2,
+  "fresh": 5,
+  "show": 2,
+  "fit": 3,
+  "length": 30,
+  "by": "researcher-news",
+  "source": "https://9to5mac.com/2026/11/26/south-korea-proceeds-with-case-over-allegedly-misleading-apple-intelligence-ads/",
+  "note": "9to5Mac 26.11.2026 з посиланням на прес-реліз KFTC (сам прес-реліз з цієї мережі НЕ відкрито): слідчі KFTC передали висновки на формальний розгляд Комісії — Apple «приховала, применшила або пропустила» суттєву інформацію; Genmoji, Image Playground, Siri з особистим контекстом — не як рекламувалося (Siri з контекстом — англ. лише 09.2026, корейська — 10.2026). Скарга Seoul YMCA — 03.2025. Рішення/штрафу ще немає. Для TG або як рядок у шоу #4; перед використанням відкрити ftc.go.kr.",
+  "status": "new",
+  "added": "2026-11-27",
+  "id": "198"
  }
 ]
