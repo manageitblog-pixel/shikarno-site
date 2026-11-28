@@ -19,6 +19,11 @@ usage:
   python3 studio/yt/ideas.py set <id> status=approved decision="..."
   python3 studio/yt/ideas.py link <id> <video_id> [--at 2026-11-24T17:00:00Z]   # при заливці/виході: фіксує прогноз (prior, бал, P25–P75) у момент виходу
                                                                               # (finalize.py --idea <id> робить це сам; аудит 23.11: 0 з 74 ідей були прив'язані)
+  python3 studio/yt/ideas.py forecast <video_id> '{"title":"...","format":"tier","length":30}' [--at ...]
+                                                                              # ролик БЕЗ ідеї на дошці → studio/data/forecasts.json (CSO 28.11,
+                                                                              # аудит прогнозів 28.11 п. 5: 4 з 4 роликів 20–22.11 без прогнозу)
+Прогноз Short — двома числами (CSO 28.11, аудит 28.11 п. 2): p_zero_feed — ймовірність «нуля стрічки» (RUNBOOK «НУЛЬ СТРІЧКИ»),
+  і P25–медіана–P75 формату за умови показу. На бал (рейтинг) p_zero не впливає: він однаковий для всіх Shorts.
 """
 import sys, os, re, json, sqlite3, datetime, statistics, math
 D = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data")
@@ -27,7 +32,11 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.realpath(__file__)), "..
 
 HALF_LIFE = 14      # днів: вага 0.5^(вік/14)
 REF = 200           # 7-денні перегляди, що дають prior = 1 (ln-шкала)
-MANUAL = {"guide": 0.6, "digest": 0.5}   # довгі формати: даних Shorts немає, ручні значення
+MANUAL = {"guide": 0.6, "digest": 0.74}  # довгі формати: даних Shorts немає. digest 0.74 = ln(51)/ln(201), медіана 4 випусків 11/48/51/101
+                                          # за 7 днів (CSO 28.11, аудит прогнозів 28.11 п. 3; було 0.5 ≈ 13 переглядів)
+LONG = set(MANUAL)                        # довгі: «нуль стрічки» Shorts до них не застосовний
+P_ZERO = 0.35                             # P(нуль стрічки) Short: 3 з 8 за 15–22.11 (аудит 28.11 п. 2); переглядати на бектесті 01.12
+FC = os.path.join(D, "forecasts.json")    # прогнози роликів без ідеї: {video_id: forecast}
 
 
 def load(): return read_json(F, [])
@@ -126,6 +135,29 @@ def remakes(n=5):
     return sorted(out, reverse=True)[:n]
 
 
+def forecast(i, S, P, at=None):
+    """Прогноз у момент виходу: P25–медіана–P75 формату (за умови показу), множники і p_zero_feed (лише Shorts)."""
+    f = i.get("format", "news"); st = S.get(f) or {}
+    out = {"at": at or datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%MZ"), "format": f,
+           "p25": st.get("p25"), "med": st.get("med"), "p75": st.get("p75"), "n": st.get("n"),
+           "hook_mult": hook_mult(i), "length_mult": length_mult(i)}
+    if f not in LONG: out["p_zero_feed"] = P_ZERO
+    return out
+
+
+def record(vid, i, at=None, path=None):
+    """Записати прогноз ролика без ідеї в forecasts.json (один раз; повторний виклик не переписує). Повертає запис."""
+    path = path or FC; S = stats(); P = priors(S)
+    with locked(path):
+        x = read_json(path, {})
+        if vid not in x:
+            f = i.get("format", "news")
+            x[vid] = dict(title=i.get("title"), length=i.get("length"), prior=round(P.get(f, P.get("news", 0.3)), 3),
+                          **forecast(i, S, P, at))
+            write_json_atomic(path, x)
+    return x[vid]
+
+
 def link(idea_id, vid, at=None):
     """Прив'язати ролик до ідеї й записати прогноз станом на зараз (один раз; повторний виклик прогноз не переписує)."""
     S = stats(); P = priors(S)
@@ -137,11 +169,9 @@ def link(idea_id, vid, at=None):
                 if at: i["published_at"] = at
                 if i.get("status") in ("new", "approved", "in_work", None): i["status"] = "done"
                 if "prior_at_publish" not in i:
-                    f = i.get("format", "news"); st = S.get(f) or {}
+                    f = i.get("format", "news")
                     i["prior_at_publish"] = round(P.get(f, P.get("news", 0.3)), 3); i["score_at_publish"] = score(i, P)
-                    i["forecast_at_publish"] = {"at": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%MZ"), "format": f,
-                                                "p25": st.get("p25"), "med": st.get("med"), "p75": st.get("p75"), "n": st.get("n"),
-                                                "hook_mult": hook_mult(i), "length_mult": length_mult(i)}
+                    i["forecast_at_publish"] = forecast(i, S, P)
         if hit is None: sys.exit(f"ідеї {idea_id} немає")
         save(x)
     print("linked", idea_id, vid, hit.get("score_at_publish"), hit.get("forecast_at_publish"))
@@ -152,6 +182,7 @@ def board(n=15):
     for i in xs: i["score"] = score(i, P)
     xs.sort(key=lambda i: -i["score"])
     print("prior:", {k: round(v, 2) for k, v in sorted(P.items(), key=lambda x: -x[1])})
+    print(f"Shorts: P(нуль стрічки) ≈ {P_ZERO}; діапазони нижче — за умови показу")
     print("7 дн, P25–медіана–P75 (n):", {k: f"{s['p25']}–{s['med']}–{s['p75']} ({s['n']})" for k, s in sorted(S.items(), key=lambda x: -x[1]['med'])})
     for i in xs[:n]:
         s = S.get(i.get("format", "")); rng = f"{s['p25']}–{s['p75']}" if s else "—"
@@ -180,5 +211,7 @@ if __name__ == "__main__":
             save(x); print("ok")
     elif a[0] == "link":
         link(a[1], a[2], a[a.index("--at") + 1] if "--at" in a else None)
+    elif a[0] == "forecast":
+        print("forecast", a[1], record(a[1], json.loads(a[2]), a[a.index("--at") + 1] if "--at" in a else None))
     else:
         board(int(a[1]) if len(a) > 1 else 15)
