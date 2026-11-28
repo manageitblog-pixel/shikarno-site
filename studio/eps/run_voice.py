@@ -183,6 +183,8 @@ if __name__ == "__main__":
             # COO 27.11 веч.: ep90 (вихід 2.12) — F0 122,7 / match 0,54 нижче норми; vo.wav прибрано в takes/vo_fallback_* → 1–2 запити ДО №186
             short("ep90")
             guide("rozbir186")
+            # CSO 28.11 (f): черга за датою виходу — ep91 (3.12, 1 запит) між №186 (2.12) і №194 (4.12)
+            if str(getattr(importlib.import_module("ep91"), "FACTCHECK", "")).startswith("PASS"): short("ep91")
             guide("guide194")  # 27.11 продакшн: №194 (вихід 4.12), фактчек PASS з умовами, 7 правок внесено 27.11; та сама умова — після part11 шоу #3
         # COO 25.11 веч.: за датою виходу — Shorts 30.11–2.12 (по 1 запиту) ДО гайду #3 (~16 запитів, 2.12/9.12): інакше guide3 з'їдає вікна 27–28.11 і 30.11 лишається без Short
         for k in ("VC_REF", "VC_TOL"): os.environ.pop(k, None)
