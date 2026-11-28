@@ -39,7 +39,8 @@ if a.style:
     update_json(tt, lambda d: d.__setitem__(a.vid, {"ep": v["snippet"]["title"][:40], "style": a.style, "set": v["status"].get("publishAt", "")}), {})
 if a.idea:  # 24.11 COO: прогноз фіксується в момент заливки, а не відтворюється заднім числом (forecast-audit-2026-11-23)
     subprocess.run(["python3", os.path.join(os.path.dirname(os.path.abspath(__file__)), "ideas.py"), "link", a.idea, a.vid,
-                    "--at", a.at or v["status"].get("publishAt") or ""], check=False)
+                    "--at", a.at or v["status"].get("publishAt") or "",
+                    "--dur", str(audit.iso_sec(v["contentDetails"].get("duration", "P0D")))], check=False)  # 28.11: p_zero_feed лише Shorts ≤180 с
 time.sleep(20); v = fresh(a.vid)
 r = audit.check(v, audit.playlist_map(), None)
 iss = [i for i in r["issues"] if i != "C1"]  # коментар з'явиться після publishAt (post_comments.py)

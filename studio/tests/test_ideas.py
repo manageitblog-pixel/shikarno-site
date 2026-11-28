@@ -32,6 +32,36 @@ class Forecast(unittest.TestCase):
         self.assertNotIn("p_zero_feed", f)
 
 
+class ShortOnly(unittest.TestCase):   # 28.11: шоу #3 S_6k_2vDGTM (13:30, формат sec) отримало p_zero_feed 0.35
+    def test_long_show_in_short_format(self):
+        f = ideas.forecast({"format": "sec", "length": 35, "hook": "you"}, S, ideas.priors(S), dur=810)
+        self.assertNotIn("p_zero_feed", f)
+        self.assertEqual(f["dur_s"], 810)
+
+    def test_short_by_duration(self):
+        self.assertEqual(ideas.forecast({"format": "sec"}, S, ideas.priors(S), dur=35)["p_zero_feed"], ideas.P_ZERO)
+        self.assertTrue(ideas.is_short({"format": "sec"}, 180))
+        self.assertFalse(ideas.is_short({"format": "sec"}, 181))
+
+    def test_flags_without_duration(self):
+        self.assertFalse(ideas.is_short({"format": "tier", "short": False}))
+        self.assertFalse(ideas.is_short({"format": "tier", "dur_s": 600}))
+        self.assertTrue(ideas.is_short({"format": "tier"}))
+        self.assertFalse(ideas.is_short({"format": "digest"}, 40))   # довгий формат лишається довгим
+
+    def test_link_uses_duration(self):
+        tmp = tempfile.TemporaryDirectory(); F, st = ideas.F, ideas.stats
+        try:
+            ideas.F = os.path.join(tmp.name, "ideas.json"); ideas.stats = lambda today=None: S
+            json.dump([{"id": "38", "format": "sec", "title": "Шоу", "status": "approved"}], open(ideas.F, "w"))
+            ideas.link("38", "vidL", at="2026-11-29T12:00:00Z", dur="810")
+            fc = json.load(open(ideas.F))[0]["forecast_at_publish"]
+            self.assertNotIn("p_zero_feed", fc)
+            self.assertEqual(fc["dur_s"], 810)
+        finally:
+            ideas.F, ideas.stats = F, st; tmp.cleanup()
+
+
 class Record(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()
@@ -50,6 +80,10 @@ class Record(unittest.TestCase):
         r2 = ideas.record("vid1", {"format": "news", "title": "Б"}, path=self.path)   # не переписує
         self.assertEqual(r2["format"], "tier")
         self.assertEqual(list(json.load(open(self.path))), ["vid1"])
+
+    def test_record_long_no_p_zero(self):
+        r = ideas.record("vidS", {"format": "sec", "title": "Шоу"}, path=self.path, dur=810)
+        self.assertNotIn("p_zero_feed", r)
 
 
 if __name__ == "__main__":

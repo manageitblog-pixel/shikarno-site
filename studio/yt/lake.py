@@ -130,9 +130,9 @@ def niche(days=60):
         sec = sum(int(a) * {"H": 3600, "M": 60, "S": 1}[u] for a, u in re.findall(r"(\d+)([HMS])", v["contentDetails"]["duration"]))
         t = v["snippet"]["title"]
         c.execute("insert or replace into niche values(?,?,?,?,?,?,?,?,?,?)", (k, today, ch["snippet"]["title"], t, v["snippet"]["publishedAt"][:10], sec, views, subs,
-                                                                           views / max(subs, 100), int(bool(re.search(r"[ыэъё]", t.lower())))))
+                                                                           views / max(subs, 100), int(is_ru(t, ch["snippet"]["title"], ch["snippet"].get("description", "")[:300]))))
         n += 1
-    c.commit(); print("niche +", n)
+    c.commit(); print("niche +", n, "| ru-каналів перекласифіковано:", recompute_ru(c))
 
 
 COMP_Q = NICHE_Q + ["нейромережі українською", "ChatGPT для початківців", "ШІ новини", "AI українською", "штучний інтелект для бізнесу",
@@ -140,12 +140,64 @@ COMP_Q = NICHE_Q + ["нейромережі українською", "ChatGPT д
           "AI explained", "ChatGPT vs Gemini", "AI automation", "n8n AI agent", "prompt engineering", "AI productivity tools", "AI shorts", "AI video generator"]
 
 
-def lang_of(title):
-    t = title.lower()
-    if re.search(r"[ыэъё]", t): return "ru"
-    if re.search(r"[іїєґ]", t): return "uk"
+RU_CH = re.compile(r"[ыэъё]"); UK_CH = re.compile(r"[іїєґ]")
+# 28.11: російські заголовки часто без ы/э/ъ/ё («Шкаф ниже потолка…» KurilinLab, «Gemini … бесплатно» «Абузим сервисы»),
+# тому ще й службові слова, яких в українській немає (у ній: і/та, що, як, це, або, безкоштовно…)
+RU_W = re.compile(r"(?<![а-яёіїєґ'’])(и|что|как|это|или|его|ещё|еще|нет|бесплатно|нейросет\w*|сервисы|когда|почему|теперь|сейчас|лучшие|можно)(?![а-яёіїєґ'’])")
+UK_W = re.compile(r"(?<![а-яёіїєґ'’])(та|що|як|це|або|безкоштовно|нейромереж\w*|коли|чому|тепер|зараз|найкращі|можна)(?![а-яёіїєґ'’])")
+
+
+def ru_uk(*texts):
+    """(рос. ознаки, укр. ознаки) у текстах: літери ы/э/ъ/ё і рос. службові слова проти і/ї/є/ґ і укр. слів."""
+    t = " ".join(x or "" for x in texts).lower()
+    return len(RU_CH.findall(t)) + len(RU_W.findall(t)), len(UK_CH.findall(t)) + len(UK_W.findall(t))
+
+
+def is_ru(*texts):
+    """Російська: є рос. ознаки й немає українських, або рос. переважають за частотою (кожен текст — назва/опис каналу, назви відео)."""
+    ru, uk = ru_uk(*texts)
+    return ru > 0 and ru > uk
+
+
+def lang_of(*texts):
+    t = " ".join(x or "" for x in texts).lower()
+    if is_ru(t): return "ru"
+    if UK_CH.search(t) or UK_W.search(t): return "uk"
     if re.search(r"[а-я]", t): return "cyr"
     return "en"
+
+
+def recompute_ru(c):
+    """Прапорець ru по КАНАЛУ, а не по одному заголовку: назва каналу + усі його заголовки в niche і comp_videos + comp.lang.
+    comp.lang: → «ru», якщо назва + заголовки відео російські; «ru» зі збору (старе правило «будь-яка ы/э/ъ/ё в описі») скидається,
+    якщо українських ознак у заголовках не менше; інші мови не чіпає. Повертає dict лічильників змін."""
+    n = dict(niche_to_ru=0, niche_from_ru=0, comp_to_ru=0, comp_from_ru=0)
+    vt = {}
+    for cid, t in c.execute("select channel_id, title from comp_videos"): vt.setdefault(cid, []).append(t)
+    comp = c.execute("select channel_id, title, lang from comp where (channel_id, date) in (select channel_id, max(date) from comp group by channel_id)").fetchall()
+    for cid, title, lang in comp:
+        ts = vt.get(cid, [])
+        uk = ru_uk(title, *ts)[1]
+        new = "ru" if is_ru(title, *ts) else lang if lang != "ru" or uk == 0 else lang_of(title, *ts)
+        if new != lang:
+            n["comp_to_ru" if new == "ru" else "comp_from_ru"] += 1
+            c.execute("update comp set lang=? where channel_id=?", (new, cid))
+    ru_comp = {t for (t,) in c.execute("select distinct title from comp where lang='ru'")}
+    nt = {}
+    for ch, t, r in c.execute("select channel, title, ru from niche"): nt.setdefault(ch, [set(), set()]); nt[ch][0].add(t); nt[ch][1].add(r)
+    for ch, (titles, olds) in nt.items():
+        ts = list(titles)
+        # outliers.py обрізає назву каналу до 25 знаків → збіг і за префіксом
+        for cid, title, _ in comp:
+            if ch and (title == ch or (len(ch) >= 20 and title.startswith(ch))): ts += vt.get(cid, [])
+        ru = int(bool(ch) and (is_ru(ch, *ts) or (ru_uk(ch, *ts)[1] == 0 and any(t == ch or (len(ch) >= 20 and t.startswith(ch)) for t in ru_comp))))
+        if olds != {ru}:
+            old = max((x or 0) for x in olds)
+            if ru and not old: n["niche_to_ru"] += 1
+            if old and not ru: n["niche_from_ru"] += 1
+            c.execute("update niche set ru=? where channel=?", (ru, ch))
+    c.commit()
+    return n
 
 
 def competitors(target=500, per_q=50, max_search=30):
@@ -176,7 +228,7 @@ def competitors(target=500, per_q=50, max_search=30):
         for ch in yt.api("channels", part="statistics,snippet,contentDetails", id=",".join(ids[i:i + 50]))["items"]:
             st = ch["statistics"]; sn = ch["snippet"]
             c.execute("insert or replace into comp values(?,?,?,?,?,?,?,?)", (ch["id"], today, sn["title"], int(st.get("subscriberCount", 0) or 0),
-                      int(st.get("viewCount", 0) or 0), int(st.get("videoCount", 0) or 0), sn.get("country", ""), lang_of(sn["title"] + " " + sn.get("description", "")[:200])))
+                      int(st.get("viewCount", 0) or 0), int(st.get("videoCount", 0) or 0), sn.get("country", ""), lang_of(sn["title"], sn.get("description", "")[:300])))
             up = ch["contentDetails"]["relatedPlaylists"]["uploads"]
             try:
                 vids = [x["contentDetails"]["videoId"] for x in yt.api("playlistItems", part="contentDetails", playlistId=up, maxResults=15)["items"]]
@@ -190,6 +242,7 @@ def competitors(target=500, per_q=50, max_search=30):
                               int(stt.get("viewCount", 0)), int(stt.get("likeCount", 0) or 0), int(stt.get("commentCount", 0) or 0), today))
             n += 1
         c.commit()
+    print("ru перераховано (niche, comp):", recompute_ru(c))
     print("ШІ-каналів (≥30% відео про ШІ):", ai_share(c))
     print(f"comp: {n} каналів оновлено, {c.execute('select count(*) from comp_videos').fetchone()[0]} відео конкурентів")
 
