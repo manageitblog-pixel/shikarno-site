@@ -6,6 +6,7 @@ date: 2026-11-28T19:00:00+02:00
 description: "Куди поїхати на вихідні і як спланувати поїздку з ШІ: місця з Google Карт у Gemini, план від Claude, чекліст валізи в ChatGPT і Перекладач. Тір-лист Байта #8."
 tags: [gemini, claude, chatgpt, google, instrumenty]
 youtube: B4hDo15vi6o
+telegram_post: 156
 source: {name: "Google: Карти в Gemini", url: "https://support.google.com/gemini/answer/16622866"}
 sources:
   - {name: "Google: історія Gemini і застосунки Google", url: "https://support.google.com/gemini/answer/13695044"}
