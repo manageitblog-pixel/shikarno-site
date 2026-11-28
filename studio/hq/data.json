@@ -1,25 +1,23 @@
 {
- "generated": "2026-11-28T13:06:41Z",
+ "generated": "2026-11-28T14:06:50Z",
  "fresh": {
-  "yt_live": "2026-11-28T13:06:41Z",
+  "yt_live": "2026-11-28T14:06:50Z",
   "yt_analytics": "2026-11-25",
-  "tg_members": "2026-11-28T13:06:43Z",
-  "tg_posts": "2026-11-28T12:56:16Z",
-  "ideas": "2026-11-28T12:55:40Z",
+  "tg_members": "2026-11-28T14:06:52Z",
+  "tg_posts": "2026-11-28T14:06:54Z",
+  "ideas": "2026-11-28T13:21:38Z",
   "news": "2026-11-28 12:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-28T12",
   "instagram": "2026-11-28T12",
   "site": "2026-11-26",
-  "site_live": "2026-11-28T12:56:18Z",
-  "activity": "2026-11-28T12:56:13Z",
+  "site_live": "2026-11-28T14:06:55Z",
+  "activity": "2026-11-28T13:28:05Z",
   "asks": "2026-11-28T07:40Z"
  },
- "notes": [
-  "Cloudflare: кеш: Cloudflare не відповів (HTTPError)"
- ],
+ "notes": [],
  "kpi": {
-  "subs": 479,
+  "subs": 475,
   "subs_goal": 1000,
   "long_hours": 11.2,
   "long_hours_ads": 6.3,
@@ -36,11 +34,11 @@
   ],
   "subs_since": {
    "base": 439,
-   "d": 40,
+   "d": 36,
    "at": "2026-11-27T19:06Z",
    "from": "2026-11-27"
   },
-  "tg": 6,
+  "tg": 7,
   "tg_goal": 150,
   "site_clicks_28d": 47,
   "site_impr_28d": 3771,
@@ -429,7 +427,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 304
+   "subs_total": 300
   },
   {
    "w": "2026-08-03",
@@ -443,7 +441,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 304
+   "subs_total": 300
   },
   {
    "w": "2026-08-17",
@@ -457,7 +455,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 304
+   "subs_total": 300
   },
   {
    "w": "2026-08-24",
@@ -471,7 +469,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 304
+   "subs_total": 300
   },
   {
    "w": "2026-08-31",
@@ -485,7 +483,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 304
+   "subs_total": 300
   },
   {
    "w": "2026-09-07",
@@ -499,7 +497,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 304
+   "subs_total": 300
   },
   {
    "w": "2026-09-28",
@@ -513,7 +511,7 @@
    "partial_site": false,
    "subs_cum": -1,
    "long_cum": 0.0,
-   "subs_total": 303
+   "subs_total": 299
   },
   {
    "w": "2026-10-19",
@@ -527,7 +525,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.2,
-   "subs_total": 304
+   "subs_total": 300
   },
   {
    "w": "2026-10-26",
@@ -541,7 +539,7 @@
    "partial_site": false,
    "subs_cum": 6,
    "long_cum": 0.7,
-   "subs_total": 310
+   "subs_total": 306
   },
   {
    "w": "2026-11-02",
@@ -555,7 +553,7 @@
    "partial_site": false,
    "subs_cum": 155,
    "long_cum": 5.5,
-   "subs_total": 459
+   "subs_total": 455
   },
   {
    "w": "2026-11-09",
@@ -569,7 +567,7 @@
    "partial_site": false,
    "subs_cum": 160,
    "long_cum": 8.2,
-   "subs_total": 464
+   "subs_total": 460
   },
   {
    "w": "2026-11-16",
@@ -583,7 +581,7 @@
    "partial_site": false,
    "subs_cum": 163,
    "long_cum": 10.9,
-   "subs_total": 467
+   "subs_total": 463
   },
   {
    "w": "2026-11-23",
@@ -597,7 +595,7 @@
    "partial_site": true,
    "subs_cum": 175,
    "long_cum": 17.2,
-   "subs_total": 479
+   "subs_total": 475
   }
  ],
  "tg_hist": [
@@ -632,10 +630,10 @@
  ],
  "platforms": {
   "youtube": {
-   "subs": 479,
+   "subs": 475,
    "views_total": 13861,
    "videos": 104,
-   "live_at": "2026-11-28T13:06:41Z",
+   "live_at": "2026-11-28T14:06:50Z",
    "views_7d": 1386,
    "pct_7d": 51.1,
    "subs_7d": 15,
@@ -1234,29 +1232,19 @@
     }
    ],
    "live": {
-    "updated": "2026-11-28T12:56:18Z",
+    "updated": "2026-11-28T14:06:55Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
-    "today_pageloads": 4,
+    "today_pageloads": 5,
     "today_visits": 4,
     "yesterday_pageloads": 17,
     "yesterday_visits": 15,
-    "pageloads_7d": 71,
+    "pageloads_7d": 72,
     "visits_7d": 63,
     "last24h": {
-     "pageloads": 16,
-     "visits": 15,
+     "pageloads": 11,
+     "visits": 9,
      "hours": [
-      {
-       "h": "2026-11-27T13:00:00Z",
-       "pageloads": 2,
-       "visits": 2
-      },
-      {
-       "h": "2026-11-27T14:00:00Z",
-       "pageloads": 4,
-       "visits": 4
-      },
       {
        "h": "2026-11-27T15:00:00Z",
        "pageloads": 0,
@@ -1366,6 +1354,16 @@
        "h": "2026-11-28T12:00:00Z",
        "pageloads": 1,
        "visits": 1
+      },
+      {
+       "h": "2026-11-28T13:00:00Z",
+       "pageloads": 1,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-28T14:00:00Z",
+       "pageloads": 0,
+       "visits": 0
       }
      ]
     },
@@ -1450,7 +1448,7 @@
      },
      {
       "d": "2026-11-28",
-      "pageloads": 4,
+      "pageloads": 5,
       "visits": 4,
       "sampled": false
      }
@@ -1502,7 +1500,7 @@
     "top_countries_7d": [
      {
       "country": "UA",
-      "count": 40
+      "count": 41
      },
      {
       "country": "US",
@@ -1520,16 +1518,15 @@
       "country": "NL",
       "count": 2
      }
-    ],
-    "error": "кеш: Cloudflare не відповів (HTTPError)"
+    ]
    }
   },
   "telegram": {
-   "members": 6,
+   "members": 7,
    "tg_goal": 150,
    "posts_7d": 19,
-   "views_7d": 59,
-   "views_avg": 3.1,
+   "views_7d": 64,
+   "views_avg": 3.4,
    "posts_error": null,
    "best": [
     {
@@ -1692,7 +1689,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 11
+   "total": 15
   },
   {
    "id": "cw7Qm4AMP3U",
@@ -2346,23 +2343,6 @@
  ],
  "activity": [
   {
-   "id": "282",
-   "agent": "seo",
-   "task": "SEO-відділ 27.11: kw ідей, YouTube-SEO, 1 сторінка сайту з GSC",
-   "started": "2026-11-27T10:13:32Z",
-   "finished": "2026-11-27T10:19:25Z",
-   "result": "YT: тір-лист #7 назва/теги під «меню на тиждень»; kw+yt_title для №186 («IT ринок в Україні 2026…») і №194; сайт — черга заблокована експериментами; GSC 19–25.11: 12 кліків, 783 покази, поз. 8,9 (−25% кліків)"
-  },
-  {
-   "id": "283",
-   "agent": "shorts",
-   "task": "Сценарій №194 «Сертифікат Google з ШІ безкоштовно» — довгий 12–15 хв на 4.12 (рішення CSO)",
-   "started": "2026-11-27T10:18:31Z",
-   "finished": "2026-11-27T10:29:01Z",
-   "result": "guide194.py: 32 сегменти, ~1780 слів (~12–13 хв), 13 частин; ключ — правила участі (PDF 9.11), kmu.gov.ua 10.11, Coursera",
-   "agent_raw": "editor"
-  },
-  {
    "id": "284",
    "agent": "factcheck",
    "task": "Незалежний фактчек guide194 (№194, 4.12)",
@@ -2687,6 +2667,22 @@
    "finished": "2026-11-28T12:56:13Z",
    "result": "+20 новин, TikTok 8 відео, IG 12 Reels (DgPyRNOhS_J 0 plays ~23 год), TG 6, ідеї №218–222 (<300); vidIQ 5",
    "agent_raw": "data"
+  },
+  {
+   "id": "322",
+   "agent": "designer",
+   "task": "Дизайнер 28.11 13Z: кадри 0/1/80% і обкладинки ep85 (17Z) і шоу #3 (29.11 12Z)",
+   "started": "2026-11-28T13:08:19Z",
+   "finished": "2026-11-28T13:10:31Z",
+   "result": "ep85 і шоу #3: вад немає (обкладинки/кадри ок), запис у журнал дизайну"
+  },
+  {
+   "id": "323",
+   "agent": "de",
+   "task": "Data engineer: прапорець ru у niche (рос. канали проходять) + p_zero_feed лише для Shorts у прогнозі",
+   "started": "2026-11-28T13:19:48Z",
+   "finished": "2026-11-28T13:28:05Z",
+   "result": "ru-класифікатор по каналу: +23 рос. канали в niche, 3 хибні виправлено; p_zero_feed лише Shorts (≤180 с); 80 тестів ok"
   }
  ],
  "agents": [
@@ -3054,7 +3050,7 @@
   {
    "name": "Озвучка",
    "state": "warn",
-   "text": "ліміт Gemini TTS вичерпано (429) з 28.11 10:45 Київ; за 24 год успішних запитів 21 — денний ліміт ковзний (~15–19 запитів), слоти повертаються через добу після використаних. Наступне вікно — 10:02–10:52 Київ. Готово частин: шоу #3 12/12; №186 «IT» (2.12) 4/12; №194 «Сертифікат» (4.12) 0/13; шоу #4 0/15; гайд #3 4/17."
+   "text": "ліміт Gemini TTS вичерпано (429) з 28.11 10:45 Київ; за 24 год успішних запитів 20 — денний ліміт ковзний (~15–19 запитів), слоти повертаються через добу після використаних. Наступне вікно — 10:02–10:52 Київ. Готово частин: шоу #3 12/12; №186 «IT» (2.12) 4/12; №194 «Сертифікат» (4.12) 0/13; шоу #4 0/15; гайд #3 4/17."
   },
   {
    "name": "Instagram Reels",
