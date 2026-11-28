@@ -1,18 +1,18 @@
 {
- "generated": "2026-11-28T12:20:59Z",
+ "generated": "2026-11-28T12:56:13Z",
  "fresh": {
-  "yt_live": "2026-11-28T12:21:00Z",
+  "yt_live": "2026-11-28T12:56:14Z",
   "yt_analytics": "2026-11-25",
-  "tg_members": "2026-11-28T12:21:01Z",
-  "tg_posts": "2026-11-28T12:06:58Z",
-  "ideas": "2026-11-28T11:47:42Z",
-  "news": "2026-11-28 08:53",
+  "tg_members": "2026-11-28T12:56:14Z",
+  "tg_posts": "2026-11-28T12:56:16Z",
+  "ideas": "2026-11-28T12:55:40Z",
+  "news": "2026-11-28 12:53",
   "comp": "2026-11-23",
-  "tiktok": "2026-11-28T08",
-  "instagram": "2026-11-28T08",
+  "tiktok": "2026-11-28T12",
+  "instagram": "2026-11-28T12",
   "site": "2026-11-26",
-  "site_live": "2026-11-28T12:21:02Z",
-  "activity": "2026-11-28T12:20:59Z",
+  "site_live": "2026-11-28T12:56:18Z",
+  "activity": "2026-11-28T12:56:13Z",
   "asks": "2026-11-28T07:40Z"
  },
  "notes": [],
@@ -633,7 +633,7 @@
    "subs": 479,
    "views_total": 13861,
    "videos": 104,
-   "live_at": "2026-11-28T12:21:00Z",
+   "live_at": "2026-11-28T12:56:14Z",
    "views_7d": 1386,
    "pct_7d": 51.1,
    "subs_7d": 15,
@@ -711,12 +711,12 @@
   },
   "tiktok": {
    "videos": 41,
-   "views_total": 73609,
-   "views_7d": 2529,
+   "views_total": 73614,
+   "views_7d": 2534,
    "new_7d": 9,
    "saves_total": 1248,
-   "likes_total": 2009,
-   "last_snapshot": "2026-11-28T08",
+   "likes_total": 2010,
+   "last_snapshot": "2026-11-28T12",
    "best": [
     {
      "title": "Який ШІ для фото й відео? Тір-лист",
@@ -880,6 +880,10 @@
     {
      "x": "2026-11-28T08",
      "v": 73609
+    },
+    {
+     "x": "2026-11-28T12",
+     "v": 73614
     }
    ]
   },
@@ -891,10 +895,10 @@
    "reach_30d": 1507,
    "acc_at": "28.11 08Z",
    "reels": 16,
-   "plays_total": 513,
+   "plays_total": 515,
    "likes_total": 10,
    "saves_total": 19,
-   "last_snapshot": "2026-11-28T08",
+   "last_snapshot": "2026-11-28T12",
    "best": [
     {
      "shortcode": "DgGRAlDjqkk",
@@ -1030,6 +1034,10 @@
     {
      "x": "2026-11-28T08",
      "v": 513
+    },
+    {
+     "x": "2026-11-28T12",
+     "v": 369
     }
    ],
    "followers_hist": [
@@ -1144,6 +1152,10 @@
     {
      "x": "2026-11-28T08",
      "v": 32
+    },
+    {
+     "x": "2026-11-28T12",
+     "v": 32
     }
    ]
   },
@@ -1220,18 +1232,18 @@
     }
    ],
    "live": {
-    "updated": "2026-11-28T12:21:02Z",
+    "updated": "2026-11-28T12:56:18Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
-    "today_pageloads": 3,
-    "today_visits": 3,
+    "today_pageloads": 4,
+    "today_visits": 4,
     "yesterday_pageloads": 17,
     "yesterday_visits": 15,
-    "pageloads_7d": 70,
-    "visits_7d": 62,
+    "pageloads_7d": 71,
+    "visits_7d": 63,
     "last24h": {
-     "pageloads": 15,
-     "visits": 14,
+     "pageloads": 16,
+     "visits": 15,
      "hours": [
       {
        "h": "2026-11-27T13:00:00Z",
@@ -1350,8 +1362,8 @@
       },
       {
        "h": "2026-11-28T12:00:00Z",
-       "pageloads": 0,
-       "visits": 0
+       "pageloads": 1,
+       "visits": 1
       }
      ]
     },
@@ -1436,8 +1448,8 @@
      },
      {
       "d": "2026-11-28",
-      "pageloads": 3,
-      "visits": 3,
+      "pageloads": 4,
+      "visits": 4,
       "sampled": false
      }
     ],
@@ -1459,7 +1471,7 @@
       "count": 2
      },
      {
-      "path": "/novyny/signal-blokuye-shi-agentiv/",
+      "path": "/rozbory/yak-korystuvatysya-claude/",
       "count": 2
      }
     ],
@@ -1482,13 +1494,13 @@
      },
      {
       "host": "www.youtube.com",
-      "count": 3
+      "count": 4
      }
     ],
     "top_countries_7d": [
      {
       "country": "UA",
-      "count": 39
+      "count": 40
      },
      {
       "country": "US",
@@ -1699,7 +1711,7 @@
    "views7": 5,
    "pct": 75.0,
    "complete": false,
-   "total": 23
+   "total": 25
   },
   {
    "id": "Rlm1u-I6x00",
@@ -1986,6 +1998,31 @@
    "score": 381.7
   },
   {
+   "title": "Маркетолог без програмування за 5 днів зробив з Claude Code застосунок для вишивки хрестиком — 911 користувачів за 10 днів і ~$5 на місяць",
+   "format": "news",
+   "channels": [
+    "short",
+    "tiktok",
+    "insta",
+    "site",
+    "tg"
+   ],
+   "demand": 4,
+   "fresh": 5,
+   "show": 4,
+   "fit": 5,
+   "hook": "you",
+   "length": 35,
+   "by": "researcher-news",
+   "source": "https://dev.ua/news/vyshyvka-1795856347",
+   "note": "dev.ua 28.11 ~09:04 Київ (М. Бровінська): Максим Кірієнко (маркетолог) зробив PWA Eugene Stitch для дівчини; код пише Claude Code, він — бачення, беклог, тести. Старт 13.11, відкрито 18.11, >700 комітів за 2 тижні. На 27.11: 911 зареєстрованих, 186 активних, 95 491 позначений хрестик, ~230 на день; 84% з телефонів, 9 з 10 обрали українську. Витрати: ~$5 Cloudflare + ~$1 розпізнавання (Claude) + домен і підписка Claude; реклама — один пост у групі за 50 грн. Безкоштовно, без реклами. Сайт eugenestitch.com/ua/ відкрито 28.11 (живий, 54 старовинні схеми, офлайн, OXS/XSD). Цифри — з тексту автора для dev.ua, не перевірені. Попит: «вишивка хрестиком» 284 (kw.py). Кут: «ти теж можеш» + чесно: тести і бекапи робив він, ШІ лише писав код. Пара до №160 (Anthropic переписала API на Rust з Claude).",
+   "status": "approved",
+   "added": "2026-11-28",
+   "id": "215",
+   "decision": "Бал 381,7 ≥300 → Short тиждень 30.11–6.12 (try/професія; цифри — автора застосунку, позначати як його)",
+   "score": 381.7
+  },
+  {
    "title": "Підключи ChatGPT або Claude до свого Djinni: ШІ шукає вакансії, адаптує CV і пише супровідний — але відгукується лише після твого «так»",
    "format": "try",
    "channels": [
@@ -2093,39 +2130,16 @@
    "decision": "Бал 351 ≥300 (sec, «твоє + дія», TikTok-аналог 569K): Short пт 4.12 17:00Z (19:00 Київ) + TikTok/Reels + сайт + TG; шлях у налаштуваннях лише з Memory FAQ OpenAI, звірити укр. інтерфейс під час запису, незалежний фактчек, link при заливці",
    "kw": "chatgpt як користуватися (10); пам'ять на телефоні (27) — kw.py 25.11; прямих запитів «пам'ять chatgpt» немає",
    "score": 354.1
-  },
-  {
-   "title": "Фейковий магазин на Чорну пʼятницю тепер без жодної помилки: ШІ пише тексти й фото — 3 перевірки перед оплатою, що працюють досі",
-   "format": "sec",
-   "channels": [
-    "site",
-    "tg",
-    "tiktok"
-   ],
-   "demand": 4,
-   "fresh": 5,
-   "show": 4,
-   "fit": 5,
-   "length": 30,
-   "hook": "you",
-   "source": "https://www.ukfinance.org.uk/news-and-insight/press-release/ps660-million-stolen-fraudsters-uk-finance-calls-tougher-action",
-   "by": "researcher-news",
-   "note": "Перевірено 25.11 ~13:25Z. UK Finance, 25.11.2026 (H1 2026 vs H1 2025): усього £659,5 млн (+8%); APP-шахрайство £316 млн (+22%), 138 345 випадків (+25%); шахрайство з покупками — 69% APP-випадків, втрати +24% до £66 млн; 58% випадків почалися онлайн. Сам реліз UK Finance ШІ НЕ згадує (зв'язок з ШІ — у подачі FT, не перевірено) — у тексті не приписувати їм ШІ. Про ШІ: Savi Security (Scamwise), звіт 20.10.2026 — за словами CEO Patrick Coughlin (WATE), ~75% проаналізованих фейкових магазинів мали ШІ-згенеровані фото й тексти; вибірка — сайти, які люди самі надсилали на перевірку (не репрезентативна), цифра компанії. Поради: перевірити домен і дату реєстрації (whois), не платити переказом на картку/IBAN — лише карткою з chargeback, шукати магазин у відгуках поза сайтом. Перевірити, чи є свіжі попередження Кіберполіції до 27.11 (сайт cyberpolice.gov.ua фетчером не читається). Пара до №34 і №136.",
-   "status": "in_work",
-   "added": "2026-11-25",
-   "id": "151",
-   "decision": "Скан 25.11 день: бал 351,5 ≥300 (sec, сезон до 30.11). Слот: сайт + TG чт 26.11 до 10Z (за добу до Чорної пʼятниці; №136 — пт 27.11, №34 ep87 — до 28.11), TikTok чт 26.11 вечір або пт 27.11 зранку. Short — ні (слоти до 5.12 зайняті). Цифри UK Finance подавати без ШІ (у релізі ШІ немає); 75% — заява Savi Security, вибірка не репрезентативна. Перед публікацією — свіжі попередження Кіберполіції. Сайт done 25.11: /novyny/yak-pereviryty-internet-magazyn-na-shakhrajstvo/ (чт 26.11 09:00 Київ). TG-пост — TG-відділ 26.11; TikTok — окремо.",
-   "score": 354.1
   }
  ],
  "ideas_count": {
-  "total": 214,
-  "open": 203
+  "total": 222,
+  "open": 211
  },
  "lake": {
   "videos": 104,
   "daily": 926,
-  "news": 2264,
+  "news": 2270,
   "niche": 1643,
   "comp": 511,
   "comp_videos": 62794,
@@ -2135,6 +2149,48 @@
   "comp_ai": 241
  },
  "news": [
+  {
+   "date": "2026-11-28",
+   "source": "devua",
+   "title": "Маркетолог за п’ять днів створив застосунок для вишивання хрестиком за допомогою Claude Code. За 10 днів він зібрав понад 900 користувачів",
+   "score": null,
+   "url": "https://dev.ua/news/vyshyvka-1795856347"
+  },
+  {
+   "date": "2026-11-28",
+   "source": "hn",
+   "title": "GGUF LLM Models with Hidden Malware on Hugging Face Reached 2400 Victims",
+   "score": 11,
+   "url": "https://malspark.com/blog/malicious-gguf-models-hugging-face/"
+  },
+  {
+   "date": "2026-11-28",
+   "source": "hn",
+   "title": "Show HN: Fleetlayer – Framework for running many AI agents on multiple machines",
+   "score": 10,
+   "url": "https://fleetlayer.ai/"
+  },
+  {
+   "date": "2026-11-28",
+   "source": "hn",
+   "title": "GTA 6: The AI race to clone the biggest video game for PC",
+   "score": 11,
+   "url": "https://www.bbc.co.uk/news/articles/c64gn8pe5eeqo"
+  },
+  {
+   "date": "2026-11-28",
+   "source": "hn",
+   "title": "Has AI just cracked Internet encryption? Rumoured 'bombshell' stuns scientists",
+   "score": 11,
+   "url": "https://www.nature.com/articles/d41586-026-03875-6"
+  },
+  {
+   "date": "2026-11-28",
+   "source": "hn",
+   "title": "What It Takes to Let AI Agents Work While You Walk Away",
+   "score": 4,
+   "url": "https://ivankahl.com/blog/what-it-takes-to-let-ai-agents-work-while-you-walk-away/"
+  },
   {
    "date": "2026-11-28",
    "source": "devua",
@@ -2153,7 +2209,7 @@
    "date": "2026-11-28",
    "source": "hn",
    "title": "Google adding official Google AI plan support to Pi coding agent",
-   "score": 13,
+   "score": 25,
    "url": "https://github.com/earendil-works/pi/pull/12614"
   },
   {
@@ -2176,48 +2232,6 @@
    "title": "Claude silently added rules to ignore users skintone preferences in our app",
    "score": 26,
    "url": "https://twitter.com/jakozloski/status/2126281598517576049"
-  },
-  {
-   "date": "2026-11-28",
-   "source": "hn",
-   "title": "Woman evicted after landlord's AI assistant told her she could delay rent",
-   "score": 166,
-   "url": "https://drmahfouz.substack.com/p/woman-evicted-after-landlords-ai"
-  },
-  {
-   "date": "2026-11-27",
-   "source": "hn",
-   "title": "Prospero: Bloat-free, native AI coding harness with ImGui",
-   "score": 66,
-   "url": "https://github.com/skeeto/prospero"
-  },
-  {
-   "date": "2026-11-27",
-   "source": "hn",
-   "title": "SessionGraph: Visualize all your coding agent sessions in one interactive graph",
-   "score": 52,
-   "url": "https://sessiongraph.ai/"
-  },
-  {
-   "date": "2026-11-27",
-   "source": "hn",
-   "title": "Painting 1990s anime scenes in Python",
-   "score": 3,
-   "url": "https://www.fofr.ai/greenhouse-after-the-typhoon"
-  },
-  {
-   "date": "2026-11-27",
-   "source": "hn",
-   "title": "Show HN: Getting 101 tok/s from Inkling 2 Mini in vLLM on one GB10",
-   "score": 55,
-   "url": "https://runtimenotes.com/blog/getting-101-tok-s-from-inkling-2-mini-in-vllm-on-one-gb10/"
-  },
-  {
-   "date": "2026-11-27",
-   "source": "hn",
-   "title": "Why drivers want cheap, dumb cars again",
-   "score": 55,
-   "url": "https://slate.com/business/2026/11/dumb-cars-cheap-low-tech.html"
   }
  ],
  "competitors": [
@@ -2328,14 +2342,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "281",
-   "agent": "factcheck",
-   "task": "Повторна перевірка правок rozbir186",
-   "started": "2026-11-27T09:47:36Z",
-   "finished": "2026-11-27T09:48:24Z",
-   "result": "rozbir186 правки: PASS; умова — у день озвучки перевідкрити новину SAP"
-  },
   {
    "id": "282",
    "agent": "seo",
@@ -2666,9 +2672,18 @@
    "agent": "trend",
    "task": "фон: денний веб-скан трендів 28.11 (12–24 год) → ідеї, кандидати шоу #4",
    "started": "2026-11-28T12:19:32Z",
-   "finished": null,
-   "result": "",
+   "finished": "2026-11-28T12:27:33Z",
+   "result": "№215 вишивка з Claude Code (381,7, approved), №216 помилка ліміту GPT-6.2 → шоу #4 розділ 1, №217 фейк-магазини Кіберпонеділок → TG до 30.11",
    "agent_raw": "researcher"
+  },
+  {
+   "id": "321",
+   "agent": "de",
+   "task": "Збирач даталейку 12:53Z: новини, TikTok/IG/TG",
+   "started": "2026-11-28T12:53:04Z",
+   "finished": "2026-11-28T12:56:13Z",
+   "result": "+20 новин, TikTok 8 відео, IG 12 Reels (DgPyRNOhS_J 0 plays ~23 год), TG 6, ідеї №218–222 (<300); vidIQ 5",
+   "agent_raw": "data"
   }
  ],
  "agents": [
