@@ -4496,5 +4496,105 @@
   "status": "new",
   "added": "2026-11-28",
   "id": "209"
+ },
+ {
+  "title": "ШІ-бот орендодавця дозволив заплатити 30-го — а її виселили 19-го: чи можна вірити обіцянкам чат-бота компанії",
+  "format": "sec",
+  "channels": [
+   "short",
+   "tiktok",
+   "tg",
+   "site"
+  ],
+  "demand": 3,
+  "fresh": 5,
+  "show": 4,
+  "fit": 5,
+  "hook": "you",
+  "length": 32,
+  "by": "researcher-news",
+  "source": "https://drmahfouz.substack.com/p/woman-evicted-after-landlords-ai",
+  "note": "Рейлі (Північна Кароліна): за листами, які бачив WRAL, ШІ-асистент «Olivia» апартаментів Colony Townhome 8.11 погодив оплату боргу $3934 до 30.11; 16.11 — повідомлення, 19.11 — виселення. Компанія не підтвердила, що відповідав бот і чи мав він право погоджувати. Кут для нас: обіцянка чат-бота сервісу ≠ договір — проси підтвердження від людини письмово, скрін і номер звернення (банк, ОСББ, провайдер). Знайти першоджерело WRAL перед публікацією.",
+  "status": "new",
+  "added": "2026-11-28",
+  "id": "210"
+ },
+ {
+  "title": "Посланець Путіна хоче, щоб ШІ писав «мирну угоду» під позицію Москви: чому ШІ-переговорник — погана ідея",
+  "format": "news",
+  "channels": [
+   "tg",
+   "site"
+  ],
+  "demand": 3,
+  "fresh": 5,
+  "show": 2,
+  "fit": 4,
+  "hook": "plain",
+  "length": 40,
+  "by": "researcher-news",
+  "source": "https://www.svoboda.org/a/kirill-dmitriev-ispoljzuet-ii-dlya-raboty-nad-soglasheniem-s-ukrainoy/33907190.html",
+  "note": "Кирило Дмитрієв на AI Journey 2026 (Сбер, 27.11): ШІ може допомагати готувати дипломатичні угоди й підлаштовувати формулювання під «занепокоєння Москви»; при цьому каже, що результат треба перевіряти. Моделі не назвав; чи використовував ШІ для конкретного документа — невідомо (dev.ua 28.11). Подача: обережно, без політичної агітації — як ШІ підлаштовується під того, хто питає (підлабузництво моделей), чому не варто довіряти ШІ формулювання в документах.",
+  "status": "new",
+  "added": "2026-11-28",
+  "id": "211"
+ },
+ {
+  "title": "Голодування під офісом Anthropic: активісти вимагають зупинити «самовдосконалення» ШІ — що таке RSI простими словами",
+  "format": "news",
+  "channels": [
+   "short",
+   "tg"
+  ],
+  "demand": 2,
+  "fresh": 5,
+  "show": 3,
+  "fit": 3,
+  "hook": "plain",
+  "length": 35,
+  "by": "researcher-news",
+  "source": "https://www.tomshardware.com/tech-industry/artificial-intelligence/activists-enter-third-day-of-hunger-strike-outside-anthropics-san-francisco-hq-over-recursive-ai-self-improvement-protester-threatens-to-go-40-days-and-target-openai-next",
+  "note": "Станом на 27.11 — 3-й день голодування двох активістів (ініціатор Elliot Callender) під штаб-квартирою Anthropic у Сан-Франциско: вимоги — зупинити роботи з рекурсивного самовдосконалення, лобіювати двосторонній договір про ШІ, попереджати користувачів про ризики; погрожує 40+ днями і далі OpenAI. Пояснювальний кут «що таке RSI»; можна в шоу неділі як короткий сюжет.",
+  "status": "new",
+  "added": "2026-11-28",
+  "id": "212"
+ },
+ {
+  "title": "10-секундне відео зі звуком у 2K за 22 секунди: LTX-2.5 на чипі Amazon Trainium3 — ШІ-відео дешевшає",
+  "format": "news",
+  "channels": [
+   "tg"
+  ],
+  "demand": 2,
+  "fresh": 5,
+  "show": 3,
+  "fit": 2,
+  "hook": "release",
+  "length": 35,
+  "by": "researcher-news",
+  "source": "https://huggingface.co/blog/video-trainium3",
+  "note": "Блог Hugging Face 27.11: LTX-2.5 (Lightricks, відео зі звуком) на AWS Trainium3 через diffusers — кліп 10 с 2048×1024 зі звуком за 22–23 с на 32 з 64 NeuronCores, ~14× швидше за першу спробу (5 хв 20 с, 960×544); пайплайн короткого фільму через спільні ключові кадри. Нішево (ІТ/креатори), для TG-добірки.",
+  "status": "new",
+  "added": "2026-11-28",
+  "id": "213"
+ },
+ {
+  "title": "Підписка Google AI тепер працює в сторонньому ШІ-агенті для коду Pi: Gemini 4 Hydrogen без API-ключа",
+  "format": "news",
+  "channels": [
+   "tg"
+  ],
+  "demand": 2,
+  "fresh": 5,
+  "show": 3,
+  "fit": 2,
+  "hook": "release",
+  "length": 35,
+  "by": "researcher-news",
+  "source": "https://github.com/earendil-works/pi/pull/12614",
+  "note": "PR #12614 у earendil-works/pi (відкрито 27.11, перший коміт 26.11): провайдер google-ai-plan — вхід через Google OAuth (PKCE, DPoP), моделі плану через Interactions API, модель за замовчуванням gemini-4-hydrogen. Статус — draft, не змерджено (лише у форках); перевірити, чи це офіційно від Google, перед публікацією. Лише для ІТ-аудиторії TG.",
+  "status": "new",
+  "added": "2026-11-28",
+  "id": "214"
  }
 ]
