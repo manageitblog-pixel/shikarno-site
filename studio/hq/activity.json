@@ -1589,8 +1589,8 @@
    "agent": "data",
    "task": "фон: якість даталейку + стан експериментів ops.py",
    "started": "2026-11-28T07:17:49Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-28T07:23:40Z",
+   "result": "2 фікси (snap ep53 з videos; Microsoft RSS → blogs.microsoft.com/feed); експерименти: T1 база/вікно не узгоджені, related-cta-v2 недосяжний — до CSO"
   },
   {
    "id": "308",
