@@ -580,3 +580,5 @@
 {"ev": "part", "part": 2, "take": 2, "f0": 128.1, "f0_ok": false, "dur": 62.7, "audit": [{"seg": 5, "ratio": 0.88, "match": 0.72}, {"seg": 6, "ratio": 1.0, "match": 0.83}, {"seg": 7, "ratio": 0.85, "match": 0.55}], "repeat_suspect": false, "t": "08:21:51Z", "d": "2026-11-28"}
 {"ev": "part_retry_later", "part": 2, "best_take": 2, "f0": 128.1, "takes": 2, "max_takes": 6, "t": "08:21:51Z", "d": "2026-11-28"}
 {"ev": "tts_ok", "n": 9, "out": "/home/claude/eps/rozbir186/part3.wav", "res": "(58.14, 24000, 'audio/wav')", "t": "08:22:32Z", "d": "2026-11-28"}
+{"ev": "part", "part": 3, "take": 1, "f0": 133.8, "f0_ok": true, "dur": 58.1, "audit": [{"seg": 8, "ratio": 0.87, "match": 0.54}, {"seg": 9, "ratio": 0.87, "match": 0.72}], "repeat_suspect": false, "t": "08:23:20Z", "d": "2026-11-28"}
+{"ev": "part_final", "part": 3, "take": 1, "f0": 133.8, "clean": true, "t": "08:23:20Z", "d": "2026-11-28"}
