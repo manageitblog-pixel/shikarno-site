@@ -1,9 +1,9 @@
 {
- "generated": "2026-11-28T07:06:23Z",
+ "generated": "2026-11-28T07:18:43Z",
  "fresh": {
-  "yt_live": "2026-11-28T07:06:24Z",
+  "yt_live": "2026-11-28T07:18:43Z",
   "yt_analytics": "2026-11-25",
-  "tg_members": "2026-11-28T07:06:25Z",
+  "tg_members": "2026-11-28T07:18:45Z",
   "tg_posts": "2026-11-28T07:06:27Z",
   "ideas": "2026-11-27T19:22:18Z",
   "news": "2026-11-28 04:53",
@@ -11,13 +11,13 @@
   "tiktok": "2026-11-28T04",
   "instagram": "2026-11-28T04",
   "site": "2026-11-25",
-  "site_live": "2026-11-28T07:06:28Z",
-  "activity": "2026-11-28T06:42:01Z",
+  "site_live": "2026-11-28T07:18:46Z",
+  "activity": "2026-11-28T07:17:49Z",
   "asks": "2026-11-27T18:40Z"
  },
  "notes": [],
  "kpi": {
-  "subs": 450,
+  "subs": 452,
   "subs_goal": 1000,
   "long_hours": 11.2,
   "long_hours_ads": 6.3,
@@ -34,7 +34,7 @@
   ],
   "subs_since": {
    "base": 439,
-   "d": 11,
+   "d": 13,
    "at": "2026-11-27T19:06Z",
    "from": "2026-11-27"
   },
@@ -421,7 +421,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 275
+   "subs_total": 277
   },
   {
    "w": "2026-08-03",
@@ -435,7 +435,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 275
+   "subs_total": 277
   },
   {
    "w": "2026-08-17",
@@ -449,7 +449,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 275
+   "subs_total": 277
   },
   {
    "w": "2026-08-24",
@@ -463,7 +463,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 275
+   "subs_total": 277
   },
   {
    "w": "2026-08-31",
@@ -477,7 +477,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 275
+   "subs_total": 277
   },
   {
    "w": "2026-09-07",
@@ -491,7 +491,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 275
+   "subs_total": 277
   },
   {
    "w": "2026-09-28",
@@ -505,7 +505,7 @@
    "partial_site": false,
    "subs_cum": -1,
    "long_cum": 0.0,
-   "subs_total": 274
+   "subs_total": 276
   },
   {
    "w": "2026-10-19",
@@ -519,7 +519,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.2,
-   "subs_total": 275
+   "subs_total": 277
   },
   {
    "w": "2026-10-26",
@@ -533,7 +533,7 @@
    "partial_site": false,
    "subs_cum": 6,
    "long_cum": 0.7,
-   "subs_total": 281
+   "subs_total": 283
   },
   {
    "w": "2026-11-02",
@@ -547,7 +547,7 @@
    "partial_site": false,
    "subs_cum": 155,
    "long_cum": 5.5,
-   "subs_total": 430
+   "subs_total": 432
   },
   {
    "w": "2026-11-09",
@@ -561,7 +561,7 @@
    "partial_site": false,
    "subs_cum": 160,
    "long_cum": 8.2,
-   "subs_total": 435
+   "subs_total": 437
   },
   {
    "w": "2026-11-16",
@@ -575,7 +575,7 @@
    "partial_site": false,
    "subs_cum": 163,
    "long_cum": 10.9,
-   "subs_total": 438
+   "subs_total": 440
   },
   {
    "w": "2026-11-23",
@@ -589,7 +589,7 @@
    "partial_site": true,
    "subs_cum": 175,
    "long_cum": 17.2,
-   "subs_total": 450
+   "subs_total": 452
   }
  ],
  "tg_hist": [
@@ -624,10 +624,10 @@
  ],
  "platforms": {
   "youtube": {
-   "subs": 450,
+   "subs": 452,
    "views_total": 13861,
    "videos": 104,
-   "live_at": "2026-11-28T07:06:24Z",
+   "live_at": "2026-11-28T07:18:43Z",
    "views_7d": 1386,
    "pct_7d": 51.1,
    "subs_7d": 15,
@@ -1202,7 +1202,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-28T07:06:28Z",
+    "updated": "2026-11-28T07:18:46Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 2,
@@ -2311,49 +2311,6 @@
  ],
  "activity": [
   {
-   "id": "263",
-   "agent": "coo",
-   "task": "фон: аномалії укр. ШІ-каналів (даталейк) + TikTok-тренди вечір 26.11",
-   "started": "2026-11-26T20:18:46Z",
-   "finished": "2026-11-26T20:22:21Z",
-   "result": "8 аномалій ≥3× (котики 85–198x → №154 першим); нові ідеї №186 IT вмирає через ШІ?, №187 чистка пам'яті ПК; vidIQ 10 кр.",
-   "agent_raw": "researcher-niche"
-  },
-  {
-   "id": "264",
-   "agent": "designer",
-   "task": "фон: ресерч дизайну — обкладинки/кадр 0 українських аномалій",
-   "started": "2026-11-26T20:18:46Z",
-   "finished": "2026-11-26T20:21:54Z",
-   "result": "8 укр. аномалій; гіпотези H11 ціна-предмет, H12 Байт у шоці + бірюзова плашка, H13 світла картка для практичних Shorts (vidIQ 5 кр.)"
-  },
-  {
-   "id": "265",
-   "agent": "de",
-   "task": "фон: якість даталейку і експерименти ops.py 26.11",
-   "started": "2026-11-26T20:18:46Z",
-   "finished": "2026-11-26T20:25:55Z",
-   "result": "даталейк без дублів; збої: TikTok лише 1-ша сторінка vidIQ (8/22), niche 25.11 порожньо, ep53 випав зі sync, MS RSS 403; експерименти — даних мало (tg-cta→«не підтверджено» 30.11)",
-   "agent_raw": "data"
-  },
-  {
-   "id": "266",
-   "agent": "de",
-   "task": "Збирач даталейку 20:52Z: новини, TikTok (усі сторінки — правило 26.11)/IG/TG-знімок",
-   "started": "2026-11-26T20:52:52Z",
-   "finished": "2026-11-26T20:56:41Z",
-   "result": "news +24 (2198); TikTok 7 відео; IG 12 Reels, 32 підп.; TG 6; ідеї №188–192 (макс. 114.5); vidIQ 5 кр.",
-   "agent_raw": "data"
-  },
-  {
-   "id": "267",
-   "agent": "seo",
-   "task": "фон: нова SEO-стаття під непокритий запит (26.11 вечір)",
-   "started": "2026-11-26T21:18:00Z",
-   "finished": "2026-11-26T21:24:12Z",
-   "result": "стаття «Оживити фото з ШІ безкоштовно» (запит 1300/міс, Ubersuggest) на 28.11 10:00, у main"
-  },
-  {
    "id": "268",
    "agent": "de",
    "task": "Аудит прогнозів: ролики, яким 7 днів (опубл. 19–20.11)",
@@ -2652,9 +2609,51 @@
    "agent": "cm",
    "task": "TG-відділ 28.11: метрика, чернетка промпту дня (публікує головна сесія), воронки, група",
    "started": "2026-11-28T06:42:01Z",
+   "finished": "2026-11-28T07:17:49Z",
+   "result": "пост дня в чернетці (вихід 08:35Z після 200 статті), 6 підписників Δ0, борг telegram_post 10 статей",
+   "agent_raw": "tg"
+  },
+  {
+   "id": "303",
+   "agent": "designer",
+   "task": "Дизайнер 28.11: упаковка роликів на 3 дні вперед (ep85, шоу #3, ep88/89, ep91) — обкладинки/кадр 0",
+   "started": "2026-11-28T07:17:49Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "304",
+   "agent": "clip",
+   "task": "Кліп-редактор: нарізки з гайду #2 Claude (27.11) за 48 год",
+   "started": "2026-11-28T07:17:49Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "305",
+   "agent": "seo",
+   "task": "SEO 28.11: сторінки GSC покази≥50 поз.4–20, ще не переписані",
+   "started": "2026-11-28T07:17:49Z",
+   "finished": null,
+   "result": ""
+  },
+  {
+   "id": "306",
+   "agent": "trend",
+   "task": "фон: веб-скан трендів 28.11 ранок (12–24 год) → ідеї",
+   "started": "2026-11-28T07:17:49Z",
    "finished": null,
    "result": "",
-   "agent_raw": "tg"
+   "agent_raw": "researcher"
+  },
+  {
+   "id": "307",
+   "agent": "de",
+   "task": "фон: якість даталейку + стан експериментів ops.py",
+   "started": "2026-11-28T07:17:49Z",
+   "finished": null,
+   "result": "",
+   "agent_raw": "data"
   }
  ],
  "agents": [
