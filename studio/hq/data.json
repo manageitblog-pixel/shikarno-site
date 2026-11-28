@@ -1,23 +1,23 @@
 {
- "generated": "2026-11-28T09:06:40Z",
+ "generated": "2026-11-28T10:06:42Z",
  "fresh": {
-  "yt_live": "2026-11-28T09:06:40Z",
+  "yt_live": "2026-11-28T10:06:42Z",
   "yt_analytics": "2026-11-25",
-  "tg_members": "2026-11-28T09:06:42Z",
-  "tg_posts": "2026-11-28T09:00:01Z",
+  "tg_members": "2026-11-28T10:06:43Z",
+  "tg_posts": "2026-11-28T10:06:45Z",
   "ideas": "2026-11-28T08:59:20Z",
   "news": "2026-11-28 08:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-28T08",
   "instagram": "2026-11-28T08",
   "site": "2026-11-26",
-  "site_live": "2026-11-28T09:00:03Z",
-  "activity": "2026-11-28T08:59:58Z",
+  "site_live": "2026-11-28T10:06:46Z",
+  "activity": "2026-11-28T09:28:05Z",
   "asks": "2026-11-28T07:40Z"
  },
  "notes": [],
  "kpi": {
-  "subs": 455,
+  "subs": 463,
   "subs_goal": 1000,
   "long_hours": 11.2,
   "long_hours_ads": 6.3,
@@ -34,7 +34,7 @@
   ],
   "subs_since": {
    "base": 439,
-   "d": 16,
+   "d": 24,
    "at": "2026-11-27T19:06Z",
    "from": "2026-11-27"
   },
@@ -427,7 +427,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 280
+   "subs_total": 288
   },
   {
    "w": "2026-08-03",
@@ -441,7 +441,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 280
+   "subs_total": 288
   },
   {
    "w": "2026-08-17",
@@ -455,7 +455,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 280
+   "subs_total": 288
   },
   {
    "w": "2026-08-24",
@@ -469,7 +469,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 280
+   "subs_total": 288
   },
   {
    "w": "2026-08-31",
@@ -483,7 +483,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 280
+   "subs_total": 288
   },
   {
    "w": "2026-09-07",
@@ -497,7 +497,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 280
+   "subs_total": 288
   },
   {
    "w": "2026-09-28",
@@ -511,7 +511,7 @@
    "partial_site": false,
    "subs_cum": -1,
    "long_cum": 0.0,
-   "subs_total": 279
+   "subs_total": 287
   },
   {
    "w": "2026-10-19",
@@ -525,7 +525,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.2,
-   "subs_total": 280
+   "subs_total": 288
   },
   {
    "w": "2026-10-26",
@@ -539,7 +539,7 @@
    "partial_site": false,
    "subs_cum": 6,
    "long_cum": 0.7,
-   "subs_total": 286
+   "subs_total": 294
   },
   {
    "w": "2026-11-02",
@@ -553,7 +553,7 @@
    "partial_site": false,
    "subs_cum": 155,
    "long_cum": 5.5,
-   "subs_total": 435
+   "subs_total": 443
   },
   {
    "w": "2026-11-09",
@@ -567,7 +567,7 @@
    "partial_site": false,
    "subs_cum": 160,
    "long_cum": 8.2,
-   "subs_total": 440
+   "subs_total": 448
   },
   {
    "w": "2026-11-16",
@@ -581,7 +581,7 @@
    "partial_site": false,
    "subs_cum": 163,
    "long_cum": 10.9,
-   "subs_total": 443
+   "subs_total": 451
   },
   {
    "w": "2026-11-23",
@@ -595,7 +595,7 @@
    "partial_site": true,
    "subs_cum": 175,
    "long_cum": 17.2,
-   "subs_total": 455
+   "subs_total": 463
   }
  ],
  "tg_hist": [
@@ -630,10 +630,10 @@
  ],
  "platforms": {
   "youtube": {
-   "subs": 455,
+   "subs": 463,
    "views_total": 13861,
    "videos": 104,
-   "live_at": "2026-11-28T09:06:40Z",
+   "live_at": "2026-11-28T10:06:42Z",
    "views_7d": 1386,
    "pct_7d": 51.1,
    "subs_7d": 15,
@@ -1220,7 +1220,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-28T09:00:03Z",
+    "updated": "2026-11-28T10:06:46Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 2,
@@ -1233,11 +1233,6 @@
      "pageloads": 15,
      "visits": 14,
      "hours": [
-      {
-       "h": "2026-11-27T10:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
       {
        "h": "2026-11-27T11:00:00Z",
        "pageloads": 0,
@@ -1352,6 +1347,11 @@
        "h": "2026-11-28T09:00:00Z",
        "pageloads": 0,
        "visits": 0
+      },
+      {
+       "h": "2026-11-28T10:00:00Z",
+       "pageloads": 0,
+       "visits": 0
       }
      ]
     },
@@ -1406,8 +1406,8 @@
      },
      {
       "d": "2026-11-23",
-      "pageloads": 0,
-      "visits": 0,
+      "pageloads": 10,
+      "visits": 10,
       "sampled": false
      },
      {
@@ -1441,8 +1441,50 @@
       "sampled": false
      }
     ],
-    "top_pages_7d": [],
-    "top_referrers_7d": [],
+    "top_pages_7d": [
+     {
+      "path": "/",
+      "count": 27
+     },
+     {
+      "path": "/novyny/chorna-pyatnytsya-shi-pidpysky-znyzhky/",
+      "count": 7
+     },
+     {
+      "path": "/novyny/claude-bezkoshtovno/",
+      "count": 5
+     },
+     {
+      "path": "/novyny/gemini-dlya-studentiv-bezkoshtovno/",
+      "count": 2
+     },
+     {
+      "path": "/novyny/signal-blokuye-shi-agentiv/",
+      "count": 2
+     }
+    ],
+    "top_referrers_7d": [
+     {
+      "host": "(прямі / без реферера)",
+      "count": 33
+     },
+     {
+      "host": "www.google.com",
+      "count": 14
+     },
+     {
+      "host": "m.facebook.com",
+      "count": 4
+     },
+     {
+      "host": "www.bing.com",
+      "count": 4
+     },
+     {
+      "host": "www.youtube.com",
+      "count": 3
+     }
+    ],
     "top_countries_7d": [
      {
       "country": "UA",
@@ -2287,15 +2329,6 @@
  ],
  "activity": [
   {
-   "id": "275",
-   "agent": "de",
-   "task": "Збирач даталейку 08:52Z (щоденний): sync, ingest, TikTok усі сторінки, IG account, snapshot",
-   "started": "2026-11-27T08:53:00Z",
-   "finished": "2026-11-27T08:57:18Z",
-   "result": "news +25 (2212); TikTok повний прохід 40 відео / 73 335 перегл.; IG 14 Reels, 32 підп. (+4); snap 101 відео без випадінь; MS RSS 403; vidIQ 25 кр.",
-   "agent_raw": "data"
-  },
-  {
    "id": "276",
    "agent": "designer",
    "task": "ep90: нейтральний кадр 0 і назва без тривожних слів (тест «нуль стрічки» за COO)",
@@ -2628,6 +2661,14 @@
    "finished": "2026-11-28T08:59:58Z",
    "result": "TikTok 41 відео/73,6K, IG 16 Reels/32 підп., Reel «Реклама в ChatGPT» 0 показів ~19 год, ep53 знову в snap, ідеї 210–214; vidIQ 25, YT 2283",
    "agent_raw": "data"
+  },
+  {
+   "id": "315",
+   "agent": "cso",
+   "task": "CSO 28.11: трекер 4 платформ, обсяг довгих, рішення по експериментах і прогнозу",
+   "started": "2026-11-28T09:19:18Z",
+   "finished": "2026-11-28T09:28:05Z",
+   "result": "трекер: органіка 11,2 год / −92% темпу, 455 підп.; рішення a–f: T1 7 днів/351, tg-cta pause, frame0 нулі окремо, related-v2 pause→v3, прогноз p0=0.35/digest 0.74, ep91 після №186"
   }
  ],
  "agents": [
