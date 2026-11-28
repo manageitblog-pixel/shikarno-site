@@ -2,7 +2,7 @@
 kind: news
 title: "ШІ-помічник: що це, який обрати і як користуватися безкоштовно"
 slug: shi-pomichnyk-shcho-tse
-date: 2026-11-29T10:00:00+03:00
+date: 2026-11-29T10:00:00+02:00
 description: "ШІ-помічник — що це простими словами: ChatGPT, Gemini, Claude, Galaxy AI і Siri, які з них розуміють українську, що є безкоштовно в Україні і чого не писати в чат."
 tags: [instrumenty, chatgpt, gemini]
 source: {name: "OpenAI Help Center — ChatGPT Free Tier FAQ", url: "https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq"}
