@@ -4687,5 +4687,113 @@
   "status": "new",
   "added": "2026-11-28",
   "id": "217"
+ },
+ {
+  "title": "Каптча просить відкрити Terminal і натиснути Cmd+V? Це не перевірка, а вірус: як працює фейкова каптча і чому ШІ-агенту не можна давати проходити їх самому",
+  "format": "sec",
+  "channels": [
+   "short",
+   "tiktok",
+   "insta",
+   "site",
+   "tg"
+  ],
+  "demand": 3,
+  "fresh": 5,
+  "show": 5,
+  "fit": 4,
+  "hook": "you",
+  "length": 30,
+  "by": "researcher-news",
+  "source": "https://dev.ua/news/ukrainskyi-rozrobnyk-upershe-natrapyv-na-feikovu-kaptchu-1795771596",
+  "note": "dev.ua 27.11 (перевірено 28.11 12:5xZ): Python-розробник Василь Смуток (проєкт FuckCaptcha) натрапив на «каптчу», що просить ⌘+Space → Terminal → Cmd+V → Enter; сайт тихо кладе шкідливий код у буфер. Конкретну команду не названо. Ризик для ШІ-агентів, що автоматично проходять каптчі. Кут: «справжня каптча ніколи не просить нічого вставляти в Terminal/Win+R». Не дубль №203/217 (там SMS/магазини).",
+  "status": "new",
+  "added": "2026-11-28",
+  "id": "218"
+ },
+ {
+  "title": "Віджет на Android за описом: Gemini «Create My Widget» робить його за ~20 секунд — що вийде, а що ні (бета, Pixel)",
+  "format": "try",
+  "channels": [
+   "short",
+   "tiktok",
+   "site",
+   "tg"
+  ],
+  "demand": 3,
+  "fresh": 4,
+  "show": 5,
+  "fit": 4,
+  "hook": "release",
+  "length": 32,
+  "by": "researcher-news",
+  "source": "https://www.theverge.com/tech/1041801/android-intelligence-create-my-widget-gemini",
+  "note": "The Verge 27.11 14:00Z (перевірено 28.11): Create My Widget — частина Gemini Intelligence в Android, анонс на I/O, бета, почала роздаватися на Pixel цього місяця; авторка тестувала на Pixel 11 Pro, віджет ~20 с; віджет з реальним часом прибуття автобуса не вийшов. Доступність в Україні не перевірено — перевірити перед роликом; без Pixel показати нема на чому → show під питанням.",
+  "status": "new",
+  "added": "2026-11-28",
+  "id": "219"
+ },
+ {
+  "title": "Модель з Hugging Face із вірусом: ~2 400 завантажень GGUF з трояном — не виконуй команди, які пропонує сама модель",
+  "format": "sec",
+  "channels": [
+   "short",
+   "site",
+   "tg"
+  ],
+  "demand": 2,
+  "fresh": 5,
+  "show": 3,
+  "fit": 3,
+  "hook": "plain",
+  "length": 32,
+  "by": "researcher-news",
+  "source": "https://malspark.com/blog/malicious-gguf-models-hugging-face/",
+  "note": "Malspark blog 27.11 (перевірено 28.11): Windows-троян «ollie», дописаний після останнього тензора GGUF (кампанія Mir2k); друга кампанія timdedid — отруєні chat template змушують агента качати PowerShell-скрипт. ~2 428 завантажень п’яти моделей (це завантаження, не унікальні люди — «до» 2 428). Захист: не виконувати команди від моделі, свій chat template (--chat-template-file у llama.cpp), сканер gguf-radar. Аудиторія вузька (локальні моделі) → fit 3. Дані — блог дослідника.",
+  "status": "new",
+  "added": "2026-11-28",
+  "id": "220"
+ },
+ {
+  "title": "Два штати США судяться з власником Grok через роздягнуті фото без згоди й «spicy mode»: що це означає для тебе, якщо твоє фото генерують ШІ",
+  "format": "news",
+  "channels": [
+   "short",
+   "site",
+   "tg"
+  ],
+  "demand": 3,
+  "fresh": 4,
+  "show": 3,
+  "fit": 4,
+  "hook": "you",
+  "length": 34,
+  "by": "researcher-news",
+  "source": "https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform",
+  "note": "Пресреліз генпрокурора Вірджинії 23.11 (перевірено 28.11): генпрокурори Вірджинії (Jay Jones) та Орегону (Dan Rayfield) — окремі подібні позови проти SpaceX (материнська X, xAI, Grok; xAI тепер «SpaceX Super Intelligence»). Закиди: Grok генерував сексуалізовані зображення людей, зокрема дітей, без згоди; «spicy mode»; оманливі заяви про безпеку. Це позиція позивачів, не рішення суду. Кут для UA: як поскаржитися на інтимне фото без згоди (перевірити український механізм окремо). Не дубль №63/79/82 (перевірити заголовки).",
+  "status": "new",
+  "added": "2026-11-28",
+  "id": "221"
+ },
+ {
+  "title": "Співбесіда в Anthropic: тепер перевіряють, як ти рев’юїш код ШІ-агента, а не як пишеш руками — і підвищують за результат, а не за години",
+  "format": "news",
+  "channels": [
+   "short",
+   "site",
+   "tg"
+  ],
+  "demand": 2,
+  "fresh": 4,
+  "show": 2,
+  "fit": 3,
+  "hook": "plain",
+  "length": 32,
+  "by": "researcher-news",
+  "source": "https://www.businessinsider.com/ai-changing-engineering-promotions-anthropic-2026-11",
+  "note": "Через dev.ua 27.11 (перевірено 28.11; першоджерело — Business Insider + подкаст The Pragmatic Engineer, BI не відкривав): Кейтлін Лессі (Anthropic, platform engineering) — час на проєкті більше не сигнал для підвищення, важить вплив; тестують інтерв’ю з рев’ю коду агента / побудовою системи разом з агентом. ІТ-аудиторія, слабко показується → низький пріоритет; перед роботою відкрити BI.",
+  "status": "new",
+  "added": "2026-11-28",
+  "id": "222"
  }
 ]
