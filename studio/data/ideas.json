@@ -4796,5 +4796,110 @@
   "status": "new",
   "added": "2026-11-28",
   "id": "222"
+ },
+ {
+  "title": "Orca для ШІ-агентів тепер українською: українець переклав увесь інтерфейс — безкоштовний плагін на GitHub",
+  "format": "try",
+  "channels": [
+   "short",
+   "site",
+   "tg"
+  ],
+  "demand": 2,
+  "fresh": 4,
+  "show": 3,
+  "fit": 4,
+  "hook": "plain",
+  "length": 30,
+  "by": "researcher-news",
+  "source": "https://github.com/olegoliyar-cmd/orca-ukrainian",
+  "note": "Через dev.ua 27.11 (перевірено 28.11 16Z): Олег Оліяр зробив плагін-переклад Orca (застосунок для роботи з ШІ-агентами) під MIT, 21 785 ключів для v1.4.278; dev.ua додає, що Orca згодом додала офіційну українську. Репозиторій не відкривав — перевірити перед роботою. Нішева ІТ-аудиторія.",
+  "status": "new",
+  "added": "2026-11-28",
+  "id": "223"
+ },
+ {
+  "title": "CEO LinkedIn: молодим легше знайти роботу завдяки ШІ — але резюме не головне. 3 поради Шаперо, як шукати роботу у «замороженому» ринку",
+  "format": "prof",
+  "channels": [
+   "short",
+   "site",
+   "tg",
+   "tiktok"
+  ],
+  "demand": 3,
+  "fresh": 3,
+  "show": 3,
+  "fit": 4,
+  "hook": "plain",
+  "length": 32,
+  "by": "researcher-news",
+  "source": "https://fortune.com/2026/11/23/linkedin-ceo-warns-job-market-is-frozen-gen-z-could-have-the-upper-hand-thanks-to-ai/",
+  "note": "Через dev.ua 27.11 (перевірено 28.11 16Z; Fortune 23.11 не відкривав): Деніел Шаперо — роботодавці бачать у молодих більше знань ШІ; найшвидше — знайомство з людьми в компанії; діяти як засновник, що шукає інвестиції; дивитися нові галузі. Пара до ідеї 195 (Djinni+ШІ).",
+  "status": "new",
+  "added": "2026-11-28",
+  "id": "224"
+ },
+ {
+  "title": "Ubisoft вимагає від команд пояснити, як вони використають ШІ — інакше проєкт не схвалять: співробітники кажуть «кошмар згори»",
+  "format": "news",
+  "channels": [
+   "short",
+   "site",
+   "tg"
+  ],
+  "demand": 2,
+  "fresh": 3,
+  "show": 3,
+  "fit": 2,
+  "hook": "plain",
+  "length": 30,
+  "by": "researcher-news",
+  "source": "https://www.verticalslice.news/ubisofts-internal-pitching-process-is-becoming-increasingly-ai-pilled/",
+  "note": "Через dev.ua 27.11 (перевірено 28.11 16Z; Vertical Slice не відкривав): анонімні співробітники; формально ШІ не обовязковий, але відмову треба обґрунтувати; Ubisoft заперечує примус. Геймерська тема, слабкий фіт → низький пріоритет.",
+  "status": "new",
+  "added": "2026-11-28",
+  "id": "225"
+ },
+ {
+  "title": "Нові Kimi й GLM можуть запізнитись до 2027: США обмежили китайським ШІ-лабам закордонні чипи Nvidia — що це означає для безкоштовних альтернатив ChatGPT",
+  "format": "news",
+  "channels": [
+   "short",
+   "site",
+   "tg"
+  ],
+  "demand": 2,
+  "fresh": 4,
+  "show": 2,
+  "fit": 3,
+  "hook": "plain",
+  "length": 32,
+  "by": "researcher-news",
+  "source": "https://www.reuters.com/world/china/us-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-2026-11-26/",
+  "note": "Через AIN 27.11 (перевірено 28.11 16Z; Reuters не відкривав): правило Мінторгу США з 19.11 — ліцензії на великі обчислення на передових Nvidia поза США; Z.AI відклала GLM-5.5 (можливо Q1 2027), випустила GLM-5.4; Kimi K4 — орієнтовно середина 2027; також тиснуть заходи OpenAI/Anthropic проти дистиляції. Повязано з ідеєю 95.",
+  "status": "new",
+  "added": "2026-11-28",
+  "id": "226"
+ },
+ {
+  "title": "Японія робить свій ШІ «для оборони і заводів»: Sakana AI почала модель Sawara — менша версія на початку 2027",
+  "format": "news",
+  "channels": [
+   "site",
+   "tg"
+  ],
+  "demand": 1,
+  "fresh": 5,
+  "show": 2,
+  "fit": 2,
+  "hook": "plain",
+  "length": 30,
+  "by": "researcher-news",
+  "source": "https://techcrunch.com/2026/11/28/sakana-ais-ceo-says-its-homegrown-models-are-about-more-than-japans-national-security/",
+  "note": "TechCrunch 28.11 (перевірено 28.11 16Z): CEO Девід Ха; Sawara — робота стартує цього місяця, менша модель на початку 2027; наявні Fugu (оркестрація LLM) і Namazu (донавчена на Meta/DeepSeek) — для бізнесу, споживчого продукту нема; контракт з Міноборони Японії з липня. Слабкий фіт для масової аудиторії.",
+  "status": "new",
+  "added": "2026-11-28",
+  "id": "227"
  }
 ]
