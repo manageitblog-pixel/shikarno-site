@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-28T14:06:50Z",
+ "generated": "2026-11-28T15:07:05Z",
  "fresh": {
-  "yt_live": "2026-11-28T14:06:50Z",
+  "yt_live": "2026-11-28T15:07:05Z",
   "yt_analytics": "2026-11-25",
-  "tg_members": "2026-11-28T14:06:52Z",
-  "tg_posts": "2026-11-28T14:06:54Z",
+  "tg_members": "2026-11-28T15:07:07Z",
+  "tg_posts": "2026-11-28T15:07:09Z",
   "ideas": "2026-11-28T13:21:38Z",
   "news": "2026-11-28 12:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-28T12",
   "instagram": "2026-11-28T12",
   "site": "2026-11-26",
-  "site_live": "2026-11-28T14:06:55Z",
+  "site_live": "2026-11-28T15:07:11Z",
   "activity": "2026-11-28T13:28:05Z",
   "asks": "2026-11-28T07:40Z"
  },
@@ -633,7 +633,7 @@
    "subs": 475,
    "views_total": 13861,
    "videos": 104,
-   "live_at": "2026-11-28T14:06:50Z",
+   "live_at": "2026-11-28T15:07:05Z",
    "views_7d": 1386,
    "pct_7d": 51.1,
    "subs_7d": 15,
@@ -1232,7 +1232,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-28T14:06:55Z",
+    "updated": "2026-11-28T15:07:11Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 5,
@@ -1245,11 +1245,6 @@
      "pageloads": 11,
      "visits": 9,
      "hours": [
-      {
-       "h": "2026-11-27T15:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
       {
        "h": "2026-11-27T16:00:00Z",
        "pageloads": 2,
@@ -1362,6 +1357,11 @@
       },
       {
        "h": "2026-11-28T14:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-28T15:00:00Z",
        "pageloads": 0,
        "visits": 0
       }
@@ -1689,7 +1689,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 15
+   "total": 13
   },
   {
    "id": "cw7Qm4AMP3U",
@@ -1766,7 +1766,7 @@
    "views7": 43,
    "pct": 67.8,
    "complete": false,
-   "total": 55
+   "total": 56
   },
   {
    "id": "ENKGdbr04h0",
@@ -1799,7 +1799,7 @@
    "views7": 98,
    "pct": 38.4,
    "complete": false,
-   "total": 102
+   "total": 104
   },
   {
    "id": "gljrHADi4aU",
