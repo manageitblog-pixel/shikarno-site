@@ -4901,5 +4901,70 @@
   "status": "new",
   "added": "2026-11-28",
   "id": "227"
+ },
+ {
+  "title": "OpenAI подала зустрічний позов на Apple: «тиснула на постачальників, щоб не працювали з OpenAI» — а ChatGPT досі в Siri",
+  "format": "news",
+  "channels": [
+   "short",
+   "site",
+   "tg"
+  ],
+  "demand": 3,
+  "fresh": 4,
+  "show": 2,
+  "fit": 3,
+  "hook": "plain",
+  "length": 30,
+  "by": "researcher-news",
+  "source": "https://techcrunch.com/2026/11/28/openais-new-countersuit-accuses-apple-of-unlawfully-pressuring-vendors/",
+  "note": "TechCrunch 28.11 (перевірено 28.11 20Z, з посиланням на Bloomberg): OpenAI звинувачує Apple у тиску на постачальників перед виходом OpenAI в «залізо», обмеженнях найму інженерів і крадіжці комерційних таємниць. Тло: Apple подала позов 10.07.2026 (Tang Tan нібито просив кандидатів приносити компоненти Apple). Apple (за FT): «прозора спроба відволікти». Суд і суми не названі; чи зачепить інтеграцію ChatGPT у Siri — у статті не сказано, не стверджувати.",
+  "status": "new",
+  "added": "2026-11-28",
+  "id": "228"
+ },
+ {
+  "title": "Дональд Кнут зупинив знамениті «чеки за помилки»: читачі з ШІ шлють звіти швидше, ніж він встигає перевірити — і більшість повтори",
+  "format": "news",
+  "channels": [
+   "short",
+   "site",
+   "tg"
+  ],
+  "demand": 2,
+  "fresh": 4,
+  "show": 2,
+  "fit": 3,
+  "hook": "plain",
+  "length": 30,
+  "by": "researcher-news",
+  "source": "https://cs.stanford.edu/~knuth/moratorium.html",
+  "note": "Сторінка Кнута (перевірено 28.11 20Z): звіти про помилки, надіслані після 25.11.2026, не розглядатиме, доки не оновить список відомих помилок; LLM зробили читачів продуктивнішими, вибірка показала, що більшість звітів дублюють уже надіслані. Точних чисел нема. Тема — «ШІ-спам ламає волонтерські процеси»; слабкий фіт для масової аудиторії, краще для TG/сайту.",
+  "status": "new",
+  "added": "2026-11-28",
+  "id": "229"
+ },
+ {
+  "title": "Samsung тестує ШІ, що змінює ракурс уже зробленого фото — схоже на Auto frame у Google Photos: що з цього вже є у твоєму телефоні",
+  "format": "free",
+  "channels": [
+   "short",
+   "tiktok",
+   "insta",
+   "site",
+   "tg"
+  ],
+  "demand": 3,
+  "fresh": 4,
+  "show": 4,
+  "fit": 4,
+  "hook": "plain",
+  "length": 30,
+  "by": "researcher-news",
+  "source": "https://www.theverge.com/tech/1045337/samsung-recompose-ai-camera",
+  "note": "Заголовок The Verge 28.11 з RSS (сторінка недоступна для перевірки 28.11 20Z — деталі: моделі, країни, дати ПЕРЕВІРИТИ перед сценарієм). Вже є: Galaxy AI Photo Assist → Move (One UI 8, водяний знак ШІ) за довідкою Samsung; Google Photos Auto frame (research.google). Reframe в iOS 27 — перевірити за apple.com. Подача як «що вже безкоштовно є в телефоні».",
+  "status": "new",
+  "added": "2026-11-28",
+  "id": "230"
  }
 ]
