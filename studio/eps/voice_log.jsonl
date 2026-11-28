@@ -582,3 +582,12 @@
 {"ev": "tts_ok", "n": 9, "out": "/home/claude/eps/rozbir186/part3.wav", "res": "(58.14, 24000, 'audio/wav')", "t": "08:22:32Z", "d": "2026-11-28"}
 {"ev": "part", "part": 3, "take": 1, "f0": 133.8, "f0_ok": true, "dur": 58.1, "audit": [{"seg": 8, "ratio": 0.87, "match": 0.54}, {"seg": 9, "ratio": 0.87, "match": 0.72}], "repeat_suspect": false, "t": "08:23:20Z", "d": "2026-11-28"}
 {"ev": "part_final", "part": 3, "take": 1, "f0": 133.8, "clean": true, "t": "08:23:20Z", "d": "2026-11-28"}
+{"ev": "tts_ok", "n": 10, "out": "/home/claude/eps/rozbir186/part4.wav", "res": "(57.27, 24000, 'audio/wav')", "t": "08:23:34Z", "d": "2026-11-28"}
+{"ev": "part", "part": 4, "take": 1, "f0": 130.1, "f0_ok": false, "dur": 57.3, "audit": [{"seg": 10, "ratio": 1.0, "match": 0.83}, {"seg": 11, "ratio": 0.92, "match": 0.79}, {"seg": 12, "ratio": 0.97, "match": 0.82}], "repeat_suspect": false, "t": "08:24:30Z", "d": "2026-11-28"}
+{"ev": "tts_ok", "n": 11, "out": "/home/claude/eps/rozbir186/part4.wav", "res": "(56.01, 24000, 'audio/wav')", "t": "08:25:10Z", "d": "2026-11-28"}
+{"ev": "part", "part": 4, "take": 2, "f0": 135.3, "f0_ok": true, "dur": 56.0, "audit": [{"seg": 10, "ratio": 0.83, "match": 0.67}, {"seg": 11, "ratio": 0.94, "match": 0.72}, {"seg": 12, "ratio": 0.93, "match": 0.82}], "repeat_suspect": false, "t": "08:26:13Z", "d": "2026-11-28"}
+{"ev": "part_final", "part": 4, "take": 2, "f0": 135.3, "clean": true, "t": "08:26:13Z", "d": "2026-11-28"}
+{"ev": "STOP", "reason": "TTS quota exhausted: 4 consecutive HTTP 429 from Gemini (gemini-3.8-flash-tts); try later or another key/model", "ok_requests": 11, "t": "08:27:46Z", "d": "2026-11-28"}
+{"ev": "tts_ok", "n": 1, "out": "/home/claude/eps/rozbir186/part1.wav", "res": "(64.97, 24000, 'audio/wav')", "t": "08:28:30Z", "d": "2026-11-28"}
+{"ev": "part", "part": 1, "take": 3, "f0": 127.5, "f0_ok": false, "dur": 65.0, "audit": [{"seg": 2, "ratio": 1.08, "match": 0.92}, {"seg": 3, "ratio": 0.91, "match": 0.74}, {"seg": 4, "ratio": 0.93, "match": 0.77}], "repeat_suspect": false, "t": "08:29:35Z", "d": "2026-11-28"}
+{"ev": "tts_ok", "n": 2, "out": "/home/claude/eps/rozbir186/part1.wav", "res": "(61.37, 24000, 'audio/wav')", "t": "08:30:16Z", "d": "2026-11-28"}
