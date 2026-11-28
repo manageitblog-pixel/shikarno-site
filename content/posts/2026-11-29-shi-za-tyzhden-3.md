@@ -8,6 +8,7 @@ description: "Головне про ШІ за 18–28 листопада 2026: 5
 tags: [bezpeka, agenty, chatgpt, openai]
 duration: "13:30"
 chapters: [{t: "0:00", title: "Вступ і план випуску"}, {t: "0:59", title: "Фейкові ведучі в TikTok: 595 відео"}, {t: "2:17", title: "Фейкова ведуча: 3 ознаки"}, {t: "2:55", title: "Дзвінок «з IT-підтримки» з ШІ-голосом", link: "/novyny/telefonni-shakhrai-it-pidtrymka-shi-holos/"}, {t: "4:47", title: "Meta Muse: що Reuters знайшов в агенті", link: "/novyny/meta-muse-shcho-tse/"}, {t: "6:18", title: "Банк: дії агента — на твій ризик + 3 правила"}, {t: "7:47", title: "Диктування в ChatGPT без ліміту", link: "/novyny/holosovyj-vvid-chatgpt-dyktuvannya/"}, {t: "8:55", title: "ШІ вигадав справи — адвокатку відсторонили"}, {t: "9:53", title: "ШІ і самотність: 2 дослідження"}, {t: "11:37", title: "Тиждень у цифрах"}, {t: "12:07", title: "3 дії на тиждень"}, {t: "12:37", title: "Свіже: ШІ-фейки в інвестрекламі (FCA)"}, {t: "13:04", title: "Фінал"}]
+youtube: S_6k_2vDGTM
 source: {name: "Тексти.org.ua: ШІ і TikTok — як відомих журналісток перетворюють на фейки", url: "https://texty.org.ua/projects/116211/shtuchnyj-intelekt-i-tiktok-yak-vidomyx-zhurnalistok-peretvoryuyut-na-fejky/"}
 sources:
   - {name: "Детектор медіа: подкаст «Медіуми» (20.11.2026)", url: "https://detector.media/mediumy/article/254150/2026-11-20-piv-milyona-pereglyadiv-odnogo-dypfeyku-yak-u-tiktoku-ekspluatuyut-doviru-do-ukrainskykh-zhurnalistok/"}
