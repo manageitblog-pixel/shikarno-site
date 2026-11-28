@@ -574,3 +574,4 @@
 {"ev": "tts_ok", "n": 6, "out": "/home/claude/eps/rozbir186/part1.wav", "res": "(63.95, 24000, 'audio/wav')", "t": "08:17:59Z", "d": "2026-11-28"}
 {"ev": "part", "part": 1, "take": 2, "f0": 128.1, "f0_ok": false, "dur": 64.0, "audit": [{"seg": 2, "ratio": 1.08, "match": 0.92}, {"seg": 3, "ratio": 0.83, "match": 0.73}, {"seg": 4, "ratio": 0.93, "match": 0.77}], "repeat_suspect": false, "t": "08:19:08Z", "d": "2026-11-28"}
 {"ev": "part_retry_later", "part": 1, "best_take": 2, "f0": 128.1, "takes": 2, "max_takes": 6, "t": "08:19:08Z", "d": "2026-11-28"}
+{"ev": "tts_ok", "n": 7, "out": "/home/claude/eps/rozbir186/part2.wav", "res": "(65.73, 24000, 'audio/wav')", "t": "08:19:20Z", "d": "2026-11-28"}
