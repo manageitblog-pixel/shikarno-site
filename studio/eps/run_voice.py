@@ -176,6 +176,9 @@ if __name__ == "__main__":
         # COO 25.11 веч.: за датою виходу — Shorts 30.11–2.12 (по 1 запиту) ДО гайду #3 (~16 запитів, 2.12/9.12): інакше guide3 з'їдає вікна 27–28.11 і 30.11 лишається без Short
         for k in ("VC_REF", "VC_TOL"): os.environ.pop(k, None)
         for mod in ("ep88", "ep89", "ep90"): short(mod)  # 25.11: ep83–86 уже залиті (медіа стерто рестартом) — не переозвучувати; ep88–90 вихід 30.11–2.12
+        # Радар 28.11: ep91 (тір-лист #10 «пошук роботи», вихід 3.12 17Z) — лише після незалежного фактчеку (ep91.FACTCHECK = "PASS…")
+        if str(getattr(importlib.import_module("ep91"), "FACTCHECK", "")).startswith("PASS"): short("ep91")
+        else: log(ev="skip_factcheck", ep="ep91", note="FACTCHECK не PASS — квоту не палимо")
         # COO 26.11 веч.: 28.11 о 08:30Z тригер збірки шоу #3 озвучує останню частину (UPDATE_28 + outro) — ліміт скидається о 08:00Z,
         # і цикл 08:02–08:22 інакше витратив би його на guide3 (вихід 9.12/2.12) раніше, ніж на шоу 29.11. Поки part11 шоу #3 немає — guide3 не чіпаємо.
         _w3 = importlib.import_module("weekly3")
