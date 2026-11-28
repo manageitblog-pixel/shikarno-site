@@ -1,30 +1,30 @@
 {
- "generated": "2026-11-28T16:06:28Z",
+ "generated": "2026-11-28T20:08:57Z",
  "fresh": {
-  "yt_live": "2026-11-28T16:06:28Z",
+  "yt_live": "2026-11-28T20:08:57Z",
   "yt_analytics": "2026-11-25",
-  "tg_members": "2026-11-28T16:06:31Z",
-  "tg_posts": "2026-11-28T16:06:33Z",
-  "ideas": "2026-11-28T13:21:38Z",
-  "news": "2026-11-28 12:53",
+  "tg_members": "2026-11-28T20:08:58Z",
+  "tg_posts": "2026-11-28T20:08:49Z",
+  "ideas": "2026-11-28T16:55:16Z",
+  "news": "2026-11-28 16:53",
   "comp": "2026-11-23",
-  "tiktok": "2026-11-28T12",
-  "instagram": "2026-11-28T12",
+  "tiktok": "2026-11-28T16",
+  "instagram": "2026-11-28T16",
   "site": "2026-11-26",
-  "site_live": "2026-11-28T16:06:36Z",
-  "activity": "2026-11-28T13:28:05Z",
+  "site_live": "2026-11-28T20:08:52Z",
+  "activity": "2026-11-28T16:52:55Z",
   "asks": "2026-11-28T07:40Z"
  },
  "notes": [],
  "kpi": {
-  "subs": 476,
+  "subs": 477,
   "subs_goal": 1000,
-  "long_hours": 11.2,
-  "long_hours_ads": 6.3,
+  "long_hours": 12.1,
+  "long_hours_ads": 7.0,
   "long_hours_goal": 4000,
   "star_deadline": "2027-01-31",
-  "views_total": 13861,
-  "videos": 104,
+  "views_total": 14203,
+  "videos": 105,
   "views_7d": 1386,
   "pct_7d": 51.1,
   "subs_7d": 15,
@@ -34,7 +34,7 @@
   ],
   "subs_since": {
    "base": 439,
-   "d": 37,
+   "d": 38,
    "at": "2026-11-27T19:06Z",
    "from": "2026-11-27"
   },
@@ -42,7 +42,7 @@
   "tg_goal": 150,
   "site_clicks_28d": 47,
   "site_impr_28d": 3771,
-  "tiktok_auto": 10
+  "tiktok_auto": 11
  },
  "days": [
   {
@@ -427,7 +427,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 301
+   "subs_total": 302
   },
   {
    "w": "2026-08-03",
@@ -441,7 +441,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 301
+   "subs_total": 302
   },
   {
    "w": "2026-08-17",
@@ -455,7 +455,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 301
+   "subs_total": 302
   },
   {
    "w": "2026-08-24",
@@ -469,7 +469,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 301
+   "subs_total": 302
   },
   {
    "w": "2026-08-31",
@@ -483,7 +483,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 301
+   "subs_total": 302
   },
   {
    "w": "2026-09-07",
@@ -497,7 +497,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 301
+   "subs_total": 302
   },
   {
    "w": "2026-09-28",
@@ -511,7 +511,7 @@
    "partial_site": false,
    "subs_cum": -1,
    "long_cum": 0.0,
-   "subs_total": 300
+   "subs_total": 301
   },
   {
    "w": "2026-10-19",
@@ -525,7 +525,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.2,
-   "subs_total": 301
+   "subs_total": 302
   },
   {
    "w": "2026-10-26",
@@ -539,7 +539,7 @@
    "partial_site": false,
    "subs_cum": 6,
    "long_cum": 0.7,
-   "subs_total": 307
+   "subs_total": 308
   },
   {
    "w": "2026-11-02",
@@ -553,7 +553,7 @@
    "partial_site": false,
    "subs_cum": 155,
    "long_cum": 5.5,
-   "subs_total": 456
+   "subs_total": 457
   },
   {
    "w": "2026-11-09",
@@ -567,7 +567,7 @@
    "partial_site": false,
    "subs_cum": 160,
    "long_cum": 8.2,
-   "subs_total": 461
+   "subs_total": 462
   },
   {
    "w": "2026-11-16",
@@ -581,7 +581,7 @@
    "partial_site": false,
    "subs_cum": 163,
    "long_cum": 10.9,
-   "subs_total": 464
+   "subs_total": 465
   },
   {
    "w": "2026-11-23",
@@ -595,7 +595,7 @@
    "partial_site": true,
    "subs_cum": 175,
    "long_cum": 17.2,
-   "subs_total": 476
+   "subs_total": 477
   }
  ],
  "tg_hist": [
@@ -625,15 +625,15 @@
   },
   {
    "d": "2026-11-28",
-   "n": 6
+   "n": 7
   }
  ],
  "platforms": {
   "youtube": {
-   "subs": 476,
-   "views_total": 13861,
-   "videos": 104,
-   "live_at": "2026-11-28T16:06:28Z",
+   "subs": 477,
+   "views_total": 14203,
+   "videos": 105,
+   "live_at": "2026-11-28T20:08:57Z",
    "views_7d": 1386,
    "pct_7d": 51.1,
    "subs_7d": 15,
@@ -641,7 +641,7 @@
     "2026-11-19",
     "2026-11-25"
    ],
-   "long_hours": 11.2,
+   "long_hours": 12.1,
    "history": [
     {
      "x": "2026-10-19",
@@ -711,12 +711,12 @@
   },
   "tiktok": {
    "videos": 41,
-   "views_total": 73614,
-   "views_7d": 2534,
+   "views_total": 73619,
+   "views_7d": 2539,
    "new_7d": 9,
    "saves_total": 1248,
    "likes_total": 2010,
-   "last_snapshot": "2026-11-28T12",
+   "last_snapshot": "2026-11-28T16",
    "best": [
     {
      "title": "Який ШІ для фото й відео? Тір-лист",
@@ -884,6 +884,10 @@
     {
      "x": "2026-11-28T12",
      "v": 73614
+    },
+    {
+     "x": "2026-11-28T16",
+     "v": 73619
     }
    ]
   },
@@ -895,28 +899,28 @@
    "reach_30d": 1507,
    "acc_at": "28.11 08Z",
    "reels": 16,
-   "plays_total": 515,
+   "plays_total": 523,
    "likes_total": 10,
    "saves_total": 19,
-   "last_snapshot": "2026-11-28T12",
+   "last_snapshot": "2026-11-28T16",
    "best": [
     {
      "shortcode": "DgGRAlDjqkk",
      "title": "Як продати на OLX швидше з ШІ",
-     "plays": 74,
+     "plays": 75,
      "pct": 9,
      "published": "2026-11-23"
     },
     {
      "shortcode": "DgGRAVLFORb",
      "title": "Інкогніто в ШІ — не сейф",
-     "plays": 71,
+     "plays": 72,
      "pct": 14,
      "published": "2026-11-23"
     },
     {
      "shortcode": "DgGQ8fODsVW",
-     "title": "Сімейний бюджет з ШІ",
+     "title": "Сімейний бюджет з ШІ. Тір-лист Байта #5",
      "plays": 67,
      "pct": 10,
      "published": "2026-11-23"
@@ -1038,6 +1042,10 @@
     {
      "x": "2026-11-28T12",
      "v": 369
+    },
+    {
+     "x": "2026-11-28T16",
+     "v": 377
     }
    ],
    "followers_hist": [
@@ -1156,6 +1164,10 @@
     {
      "x": "2026-11-28T12",
      "v": 32
+    },
+    {
+     "x": "2026-11-28T16",
+     "v": 32
     }
    ]
   },
@@ -1232,39 +1244,19 @@
     }
    ],
    "live": {
-    "updated": "2026-11-28T16:06:36Z",
+    "updated": "2026-11-28T20:08:52Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
-    "today_pageloads": 5,
-    "today_visits": 4,
+    "today_pageloads": 12,
+    "today_visits": 10,
     "yesterday_pageloads": 17,
     "yesterday_visits": 15,
-    "pageloads_7d": 72,
-    "visits_7d": 63,
+    "pageloads_7d": 79,
+    "visits_7d": 69,
     "last24h": {
-     "pageloads": 9,
-     "visits": 8,
+     "pageloads": 12,
+     "visits": 10,
      "hours": [
-      {
-       "h": "2026-11-27T17:00:00Z",
-       "pageloads": 3,
-       "visits": 3
-      },
-      {
-       "h": "2026-11-27T18:00:00Z",
-       "pageloads": 1,
-       "visits": 1
-      },
-      {
-       "h": "2026-11-27T19:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
-      {
-       "h": "2026-11-27T20:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
       {
        "h": "2026-11-27T21:00:00Z",
        "pageloads": 0,
@@ -1362,6 +1354,26 @@
       },
       {
        "h": "2026-11-28T16:00:00Z",
+       "pageloads": 3,
+       "visits": 3
+      },
+      {
+       "h": "2026-11-28T17:00:00Z",
+       "pageloads": 4,
+       "visits": 3
+      },
+      {
+       "h": "2026-11-28T18:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-28T19:00:00Z",
+       "pageloads": 0,
+       "visits": 0
+      },
+      {
+       "h": "2026-11-28T20:00:00Z",
        "pageloads": 0,
        "visits": 0
       }
@@ -1448,41 +1460,41 @@
      },
      {
       "d": "2026-11-28",
-      "pageloads": 5,
-      "visits": 4,
+      "pageloads": 12,
+      "visits": 10,
       "sampled": false
      }
     ],
     "top_pages_7d": [
      {
       "path": "/",
-      "count": 28
+      "count": 29
      },
      {
       "path": "/novyny/chorna-pyatnytsya-shi-pidpysky-znyzhky/",
-      "count": 7
+      "count": 10
      },
      {
       "path": "/novyny/claude-bezkoshtovno/",
       "count": 5
      },
      {
-      "path": "/novyny/gemini-dlya-studentiv-bezkoshtovno/",
-      "count": 2
+      "path": "/novyny/kudy-poikhaty-na-vykhidni-shi-tir-lyst/",
+      "count": 3
      },
      {
-      "path": "/rozbory/yak-korystuvatysya-claude/",
+      "path": "/novyny/gemini-dlya-studentiv-bezkoshtovno/",
       "count": 2
      }
     ],
     "top_referrers_7d": [
      {
       "host": "(прямі / без реферера)",
-      "count": 34
+      "count": 37
      },
      {
       "host": "www.google.com",
-      "count": 14
+      "count": 17
      },
      {
       "host": "m.facebook.com",
@@ -1500,7 +1512,7 @@
     "top_countries_7d": [
      {
       "country": "UA",
-      "count": 41
+      "count": 48
      },
      {
       "country": "US",
@@ -1542,10 +1554,10 @@
      "date": "2026-11-22T19:44:05Z"
     },
     {
-     "id": 137,
-     "text": "💸 Який ШІ для грошей? Тір-лист Байта #5 🔸 Бюджет — Claude : сам зробить таблицю з формулами 🔸 Чеки — ChatGPT : витрати за категоріями з фото",
+     "id": 139,
+     "text": "Як продати на OLX з ШІ — тір-лист Байта 📝 Опис — ChatGPT: дай фото, він напише опис з деталями 👕 Одяг — ШІ-помічник самого OLX: заголовок і ",
      "views": 4,
-     "date": "2026-11-21T17:05:46Z"
+     "date": "2026-11-22T17:05:09Z"
     }
    ],
    "history": [
@@ -1575,7 +1587,7 @@
     },
     {
      "x": "2026-11-28",
-     "v": 6
+     "v": 7
     }
    ],
    "since": "2026-11-22"
@@ -1670,6 +1682,17 @@
  "formats_cutoff": "2026-11-19",
  "videos": [
   {
+   "id": "B4hDo15vi6o",
+   "title": "Куди поїхати на вихідні: який ШІ спланує поїздку? 🧳 Тір-лист Байта #8",
+   "format": null,
+   "short": true,
+   "published": "2026-11-28",
+   "views7": null,
+   "pct": null,
+   "complete": false,
+   "total": 1
+  },
+  {
    "id": "RIt-PqOGJTg",
    "title": "Логопедичні заняття з ШІ: картки на Р, ігри, звіти | ШІ для професій #10",
    "format": "tier",
@@ -1689,7 +1712,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 15
+   "total": 21
   },
   {
    "id": "cw7Qm4AMP3U",
@@ -1711,7 +1734,7 @@
    "views7": 5,
    "pct": 75.0,
    "complete": false,
-   "total": 26
+   "total": 30
   },
   {
    "id": "Rlm1u-I6x00",
@@ -1722,7 +1745,7 @@
    "views7": 0,
    "pct": null,
    "complete": false,
-   "total": 6
+   "total": 7
   },
   {
    "id": "6mIdp843fKo",
@@ -1811,17 +1834,6 @@
    "pct": 87.1,
    "complete": false,
    "total": 12
-  },
-  {
-   "id": "CfHTFrYH_z4",
-   "title": "Шахраї по телефону і в SMS: перевір повідомлення з ШІ за 10 секунд 🚨",
-   "format": "sec",
-   "short": true,
-   "published": "2026-11-20",
-   "views7": 10,
-   "pct": 50.5,
-   "complete": false,
-   "total": 11
   }
  ],
  "ideas": [
@@ -2133,13 +2145,13 @@
   }
  ],
  "ideas_count": {
-  "total": 222,
-  "open": 211
+  "total": 227,
+  "open": 216
  },
  "lake": {
   "videos": 104,
   "daily": 926,
-  "news": 2270,
+  "news": 2276,
   "niche": 1643,
   "comp": 511,
   "comp_videos": 62794,
@@ -2151,6 +2163,48 @@
  "news": [
   {
    "date": "2026-11-28",
+   "source": "techcrunch",
+   "title": "Sakana AI’s CEO says its homegrown models are about more than Japan’s national security",
+   "score": null,
+   "url": "https://techcrunch.com/2026/11/28/sakana-ais-ceo-says-its-homegrown-models-are-about-more-than-japans-national-security/"
+  },
+  {
+   "date": "2026-11-28",
+   "source": "hn",
+   "title": "Claude Code sabotage: preliminary benchmarking",
+   "score": 437,
+   "url": "https://xinyadu.github.io/blog/claude-code-sabotage.html"
+  },
+  {
+   "date": "2026-11-28",
+   "source": "hn",
+   "title": "Why stop at Emacs? Native apps you or an AI reprogram in Clojure while they run",
+   "score": 37,
+   "url": "https://github.com/RiccardoSottini/AffrescoUI"
+  },
+  {
+   "date": "2026-11-28",
+   "source": "hn",
+   "title": "Started writing book on how ai changes development.formals, docs, tests",
+   "score": 4,
+   "url": "https://github.com/posix4e/growing-verified-systems"
+  },
+  {
+   "date": "2026-11-28",
+   "source": "hn",
+   "title": "If AI takes every job who will buy things?",
+   "score": 31,
+   "url": "https://coryalthoff.com/essays/if-ai-takes-every-job-who-will-buy-things"
+  },
+  {
+   "date": "2026-11-28",
+   "source": "hn",
+   "title": "AI Isn't That Dangerous",
+   "score": 50,
+   "url": "https://www.verysane.ai/p/ai-isnt-that-dangerous"
+  },
+  {
+   "date": "2026-11-28",
    "source": "devua",
    "title": "Маркетолог за п’ять днів створив застосунок для вишивання хрестиком за допомогою Claude Code. За 10 днів він зібрав понад 900 користувачів",
    "score": null,
@@ -2160,14 +2214,14 @@
    "date": "2026-11-28",
    "source": "hn",
    "title": "GGUF LLM Models with Hidden Malware on Hugging Face Reached 2400 Victims",
-   "score": 11,
+   "score": 128,
    "url": "https://malspark.com/blog/malicious-gguf-models-hugging-face/"
   },
   {
    "date": "2026-11-28",
    "source": "hn",
    "title": "Show HN: Fleetlayer – Framework for running many AI agents on multiple machines",
-   "score": 10,
+   "score": 22,
    "url": "https://fleetlayer.ai/"
   },
   {
@@ -2190,48 +2244,6 @@
    "title": "What It Takes to Let AI Agents Work While You Walk Away",
    "score": 4,
    "url": "https://ivankahl.com/blog/what-it-takes-to-let-ai-agents-work-while-you-walk-away/"
-  },
-  {
-   "date": "2026-11-28",
-   "source": "devua",
-   "title": "Посланець путіна хоче залучати ШІ до підготовки мирної угоди з Україною. Нейромережу пропонує налаштовувати під позицію росії",
-   "score": null,
-   "url": "https://dev.ua/news/oleh-1795786617"
-  },
-  {
-   "date": "2026-11-28",
-   "source": "speka",
-   "title": "Мозок працює не так, як вважали раніше: більшість нейронів реагує на різні сигнали",
-   "score": null,
-   "url": "https://speka.ua/news/neirony-mozku-universaly-doslidzhennya-nature-p6wkzo"
-  },
-  {
-   "date": "2026-11-28",
-   "source": "hn",
-   "title": "Google adding official Google AI plan support to Pi coding agent",
-   "score": 25,
-   "url": "https://github.com/earendil-works/pi/pull/12614"
-  },
-  {
-   "date": "2026-11-28",
-   "source": "hn",
-   "title": "54% faster LLM token generation by removing the Linux OS and llama.cpp",
-   "score": 9,
-   "url": "https://twitter.com/superalesha/status/2125682626056839259"
-  },
-  {
-   "date": "2026-11-28",
-   "source": "hn",
-   "title": "Claude has not been trained to sabotage work",
-   "score": 6,
-   "url": "https://twitter.com/edwinarbus/status/2126507795642187855"
-  },
-  {
-   "date": "2026-11-28",
-   "source": "hn",
-   "title": "Claude silently added rules to ignore users skintone preferences in our app",
-   "score": 26,
-   "url": "https://twitter.com/jakozloski/status/2126281598517576049"
   }
  ],
  "competitors": [
@@ -2342,14 +2354,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "284",
-   "agent": "factcheck",
-   "task": "Незалежний фактчек guide194 (№194, 4.12)",
-   "started": "2026-11-27T10:29:01Z",
-   "finished": "2026-11-27T10:34:35Z",
-   "result": "guide194: PASS з умовами — 53 PASS / 7 FIX / 1 CUT; правки: цитата Кластера, «стартує з 13.11», «реєструватися не потрібно», без «за кілька хвилин», вебінар — організатори, «найкраща пропозиція» як думка Байта"
-  },
   {
    "id": "285",
    "agent": "shorts",
@@ -2683,6 +2687,15 @@
    "started": "2026-11-28T13:19:48Z",
    "finished": "2026-11-28T13:28:05Z",
    "result": "ru-класифікатор по каналу: +23 рос. канали в niche, 3 хибні виправлено; p_zero_feed лише Shorts (≤180 с); 80 тестів ok"
+  },
+  {
+   "id": "324",
+   "agent": "de",
+   "task": "Збирач даталейку 16:53Z: новини, TikTok/IG/TG",
+   "started": "2026-11-28T16:52:55Z",
+   "finished": null,
+   "result": "",
+   "agent_raw": "data"
   }
  ],
  "agents": [
@@ -3055,12 +3068,12 @@
   {
    "name": "Instagram Reels",
    "state": "ok",
-   "text": "усі Shorts з 24.11 опубліковано · останній пост 27.11"
+   "text": "усі Shorts з 24.11 опубліковано · останній пост 28.11"
   },
   {
    "name": "TikTok",
    "state": "ok",
-   "text": "усі Shorts з 23.11 опубліковано · останній пост 27.11"
+   "text": "усі Shorts з 23.11 опубліковано · останній пост 28.11"
   },
   {
    "name": "Стрічка Shorts",
