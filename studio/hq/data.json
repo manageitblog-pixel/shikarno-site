@@ -1,23 +1,23 @@
 {
- "generated": "2026-11-28T20:08:57Z",
+ "generated": "2026-11-28T20:56:06Z",
  "fresh": {
-  "yt_live": "2026-11-28T20:08:57Z",
+  "yt_live": "2026-11-28T20:56:06Z",
   "yt_analytics": "2026-11-25",
-  "tg_members": "2026-11-28T20:08:58Z",
-  "tg_posts": "2026-11-28T20:08:49Z",
-  "ideas": "2026-11-28T16:55:16Z",
-  "news": "2026-11-28 16:53",
+  "tg_members": "2026-11-28T20:56:08Z",
+  "tg_posts": "2026-11-28T20:56:10Z",
+  "ideas": "2026-11-28T20:55:45Z",
+  "news": "2026-11-28 20:53",
   "comp": "2026-11-23",
-  "tiktok": "2026-11-28T16",
-  "instagram": "2026-11-28T16",
+  "tiktok": "2026-11-28T20",
+  "instagram": "2026-11-28T20",
   "site": "2026-11-26",
-  "site_live": "2026-11-28T20:08:52Z",
-  "activity": "2026-11-28T16:52:55Z",
+  "site_live": "2026-11-28T20:56:11Z",
+  "activity": "2026-11-28T20:56:06Z",
   "asks": "2026-11-28T07:40Z"
  },
  "notes": [],
  "kpi": {
-  "subs": 477,
+  "subs": 478,
   "subs_goal": 1000,
   "long_hours": 12.1,
   "long_hours_ads": 7.0,
@@ -34,7 +34,7 @@
   ],
   "subs_since": {
    "base": 439,
-   "d": 38,
+   "d": 39,
    "at": "2026-11-27T19:06Z",
    "from": "2026-11-27"
   },
@@ -427,7 +427,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 302
+   "subs_total": 303
   },
   {
    "w": "2026-08-03",
@@ -441,7 +441,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 302
+   "subs_total": 303
   },
   {
    "w": "2026-08-17",
@@ -455,7 +455,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 302
+   "subs_total": 303
   },
   {
    "w": "2026-08-24",
@@ -469,7 +469,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 302
+   "subs_total": 303
   },
   {
    "w": "2026-08-31",
@@ -483,7 +483,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 302
+   "subs_total": 303
   },
   {
    "w": "2026-09-07",
@@ -497,7 +497,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 302
+   "subs_total": 303
   },
   {
    "w": "2026-09-28",
@@ -511,7 +511,7 @@
    "partial_site": false,
    "subs_cum": -1,
    "long_cum": 0.0,
-   "subs_total": 301
+   "subs_total": 302
   },
   {
    "w": "2026-10-19",
@@ -525,7 +525,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.2,
-   "subs_total": 302
+   "subs_total": 303
   },
   {
    "w": "2026-10-26",
@@ -539,7 +539,7 @@
    "partial_site": false,
    "subs_cum": 6,
    "long_cum": 0.7,
-   "subs_total": 308
+   "subs_total": 309
   },
   {
    "w": "2026-11-02",
@@ -553,7 +553,7 @@
    "partial_site": false,
    "subs_cum": 155,
    "long_cum": 5.5,
-   "subs_total": 457
+   "subs_total": 458
   },
   {
    "w": "2026-11-09",
@@ -567,7 +567,7 @@
    "partial_site": false,
    "subs_cum": 160,
    "long_cum": 8.2,
-   "subs_total": 462
+   "subs_total": 463
   },
   {
    "w": "2026-11-16",
@@ -581,7 +581,7 @@
    "partial_site": false,
    "subs_cum": 163,
    "long_cum": 10.9,
-   "subs_total": 465
+   "subs_total": 466
   },
   {
    "w": "2026-11-23",
@@ -595,7 +595,7 @@
    "partial_site": true,
    "subs_cum": 175,
    "long_cum": 17.2,
-   "subs_total": 477
+   "subs_total": 478
   }
  ],
  "tg_hist": [
@@ -630,10 +630,10 @@
  ],
  "platforms": {
   "youtube": {
-   "subs": 477,
+   "subs": 478,
    "views_total": 14203,
    "videos": 105,
-   "live_at": "2026-11-28T20:08:57Z",
+   "live_at": "2026-11-28T20:56:06Z",
    "views_7d": 1386,
    "pct_7d": 51.1,
    "subs_7d": 15,
@@ -710,13 +710,13 @@
    ]
   },
   "tiktok": {
-   "videos": 41,
-   "views_total": 73619,
-   "views_7d": 2539,
-   "new_7d": 9,
+   "videos": 42,
+   "views_total": 73672,
+   "views_7d": 2592,
+   "new_7d": 10,
    "saves_total": 1248,
-   "likes_total": 2010,
-   "last_snapshot": "2026-11-28T16",
+   "likes_total": 2015,
+   "last_snapshot": "2026-11-28T20",
    "best": [
     {
      "title": "Який ШІ для фото й відео? Тір-лист",
@@ -888,6 +888,10 @@
     {
      "x": "2026-11-28T16",
      "v": 73619
+    },
+    {
+     "x": "2026-11-28T20",
+     "v": 73672
     }
    ]
   },
@@ -898,11 +902,11 @@
    "views_30d": 2149,
    "reach_30d": 1507,
    "acc_at": "28.11 08Z",
-   "reels": 16,
-   "plays_total": 523,
+   "reels": 17,
+   "plays_total": 525,
    "likes_total": 10,
    "saves_total": 19,
-   "last_snapshot": "2026-11-28T16",
+   "last_snapshot": "2026-11-28T20",
    "best": [
     {
      "shortcode": "DgGRAlDjqkk",
@@ -1046,6 +1050,10 @@
     {
      "x": "2026-11-28T16",
      "v": 377
+    },
+    {
+     "x": "2026-11-28T20",
+     "v": 330
     }
    ],
    "followers_hist": [
@@ -1168,6 +1176,10 @@
     {
      "x": "2026-11-28T16",
      "v": 32
+    },
+    {
+     "x": "2026-11-28T20",
+     "v": 32
     }
    ]
   },
@@ -1244,7 +1256,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-28T20:08:52Z",
+    "updated": "2026-11-28T20:56:11Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 12,
@@ -1690,7 +1702,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 1
+   "total": 2
   },
   {
    "id": "RIt-PqOGJTg",
@@ -1701,7 +1713,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 0
+   "total": 1
   },
   {
    "id": "h5aUeuaD8OE",
@@ -1712,7 +1724,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 21
+   "total": 22
   },
   {
    "id": "cw7Qm4AMP3U",
@@ -1734,7 +1746,7 @@
    "views7": 5,
    "pct": 75.0,
    "complete": false,
-   "total": 30
+   "total": 35
   },
   {
    "id": "Rlm1u-I6x00",
@@ -1822,7 +1834,7 @@
    "views7": 98,
    "pct": 38.4,
    "complete": false,
-   "total": 104
+   "total": 105
   },
   {
    "id": "gljrHADi4aU",
@@ -2145,13 +2157,13 @@
   }
  ],
  "ideas_count": {
-  "total": 227,
-  "open": 216
+  "total": 230,
+  "open": 219
  },
  "lake": {
   "videos": 104,
   "daily": 926,
-  "news": 2276,
+  "news": 2284,
   "niche": 1643,
   "comp": 511,
   "comp_videos": 62794,
@@ -2164,6 +2176,62 @@
   {
    "date": "2026-11-28",
    "source": "techcrunch",
+   "title": "Anthropic denies that Claude is ‘trained to sabotage work’",
+   "score": null,
+   "url": "https://techcrunch.com/2026/11/28/anthropic-denies-that-claude-is-trained-to-sabotage-work/"
+  },
+  {
+   "date": "2026-11-28",
+   "source": "techcrunch",
+   "title": "OpenAI’s new countersuit accuses Apple of ‘unlawfully pressuring vendors’",
+   "score": null,
+   "url": "https://techcrunch.com/2026/11/28/openais-new-countersuit-accuses-apple-of-unlawfully-pressuring-vendors/"
+  },
+  {
+   "date": "2026-11-28",
+   "source": "verge",
+   "title": "Samsung is testing a feature that changes the angle of photos you’ve already taken",
+   "score": null,
+   "url": "https://www.theverge.com/tech/1045337/samsung-recompose-ai-camera"
+  },
+  {
+   "date": "2026-11-28",
+   "source": "hn",
+   "title": "Donald Knuth suspends error bounties due to an influx of AI-generated reports",
+   "score": 346,
+   "url": "https://cs.stanford.edu/~knuth/moratorium.html"
+  },
+  {
+   "date": "2026-11-28",
+   "source": "hn",
+   "title": "Gmail \"Send as\" ends January 2027",
+   "score": 66,
+   "url": "https://emailfa.st/blog/gmail-send-as-ending-cloudflare-email-routing"
+  },
+  {
+   "date": "2026-11-28",
+   "source": "hn",
+   "title": "Character.ai Bankruptcy Auctions 21M Users' Private Conversations",
+   "score": 8,
+   "url": "https://www.chosun.com/english/industry-en/2026/11/27/C4UJBF7FORHGNAJTE4G27BS7JQ/"
+  },
+  {
+   "date": "2026-11-28",
+   "source": "hn",
+   "title": "The Last Thing They Said",
+   "score": 38,
+   "url": "https://socialhome.network/content/31594834"
+  },
+  {
+   "date": "2026-11-28",
+   "source": "hn",
+   "title": "The Kings of Cocaine Are Masters of Stealth",
+   "score": 4,
+   "url": "https://www.newyorker.com/magazine/2026/11/30/the-kings-of-cocaine-are-masters-of-stealth"
+  },
+  {
+   "date": "2026-11-28",
+   "source": "techcrunch",
    "title": "Sakana AI’s CEO says its homegrown models are about more than Japan’s national security",
    "score": null,
    "url": "https://techcrunch.com/2026/11/28/sakana-ais-ceo-says-its-homegrown-models-are-about-more-than-japans-national-security/"
@@ -2172,14 +2240,14 @@
    "date": "2026-11-28",
    "source": "hn",
    "title": "Claude Code sabotage: preliminary benchmarking",
-   "score": 437,
+   "score": 815,
    "url": "https://xinyadu.github.io/blog/claude-code-sabotage.html"
   },
   {
    "date": "2026-11-28",
    "source": "hn",
    "title": "Why stop at Emacs? Native apps you or an AI reprogram in Clojure while they run",
-   "score": 37,
+   "score": 66,
    "url": "https://github.com/RiccardoSottini/AffrescoUI"
   },
   {
@@ -2188,62 +2256,6 @@
    "title": "Started writing book on how ai changes development.formals, docs, tests",
    "score": 4,
    "url": "https://github.com/posix4e/growing-verified-systems"
-  },
-  {
-   "date": "2026-11-28",
-   "source": "hn",
-   "title": "If AI takes every job who will buy things?",
-   "score": 31,
-   "url": "https://coryalthoff.com/essays/if-ai-takes-every-job-who-will-buy-things"
-  },
-  {
-   "date": "2026-11-28",
-   "source": "hn",
-   "title": "AI Isn't That Dangerous",
-   "score": 50,
-   "url": "https://www.verysane.ai/p/ai-isnt-that-dangerous"
-  },
-  {
-   "date": "2026-11-28",
-   "source": "devua",
-   "title": "Маркетолог за п’ять днів створив застосунок для вишивання хрестиком за допомогою Claude Code. За 10 днів він зібрав понад 900 користувачів",
-   "score": null,
-   "url": "https://dev.ua/news/vyshyvka-1795856347"
-  },
-  {
-   "date": "2026-11-28",
-   "source": "hn",
-   "title": "GGUF LLM Models with Hidden Malware on Hugging Face Reached 2400 Victims",
-   "score": 128,
-   "url": "https://malspark.com/blog/malicious-gguf-models-hugging-face/"
-  },
-  {
-   "date": "2026-11-28",
-   "source": "hn",
-   "title": "Show HN: Fleetlayer – Framework for running many AI agents on multiple machines",
-   "score": 22,
-   "url": "https://fleetlayer.ai/"
-  },
-  {
-   "date": "2026-11-28",
-   "source": "hn",
-   "title": "GTA 6: The AI race to clone the biggest video game for PC",
-   "score": 11,
-   "url": "https://www.bbc.co.uk/news/articles/c64gn8pe5eeqo"
-  },
-  {
-   "date": "2026-11-28",
-   "source": "hn",
-   "title": "Has AI just cracked Internet encryption? Rumoured 'bombshell' stuns scientists",
-   "score": 11,
-   "url": "https://www.nature.com/articles/d41586-026-03875-6"
-  },
-  {
-   "date": "2026-11-28",
-   "source": "hn",
-   "title": "What It Takes to Let AI Agents Work While You Walk Away",
-   "score": 4,
-   "url": "https://ivankahl.com/blog/what-it-takes-to-let-ai-agents-work-while-you-walk-away/"
   }
  ],
  "competitors": [
@@ -2354,15 +2366,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "285",
-   "agent": "shorts",
-   "task": "guide194: правки фактчеку + у чергу TTS після rozbir186",
-   "started": "2026-11-27T10:34:36Z",
-   "finished": "2026-11-27T10:36:23Z",
-   "result": "guide194: 7 обов'язкових + тривалість внесено; у черзі TTS після rozbir186",
-   "agent_raw": "editor"
-  },
   {
    "id": "286",
    "agent": "factcheck",
@@ -2693,8 +2696,17 @@
    "agent": "de",
    "task": "Збирач даталейку 16:53Z: новини, TikTok/IG/TG",
    "started": "2026-11-28T16:52:55Z",
-   "finished": null,
-   "result": "",
+   "finished": "2026-11-28T20:18:05Z",
+   "result": "19 новин, TikTok 8 відео, IG 12 Reels, TG 7, ідеї 223–227 (закрив Диспетчер)",
+   "agent_raw": "data"
+  },
+  {
+   "id": "325",
+   "agent": "de",
+   "task": "Збирач даталейку 20:53Z: новини, TikTok/IG/TG",
+   "started": "2026-11-28T20:53:14Z",
+   "finished": "2026-11-28T20:56:06Z",
+   "result": "+22 новини; TikTok ep85 53 перегл. за 3,4 год; IG ep85 1 за 45 хв; TG 7; ідеї 228–230",
    "agent_raw": "data"
   }
  ],
