@@ -5,6 +5,7 @@ slug: ozhyvyty-foto-shi-bezkoshtovno
 date: 2026-11-28T10:00:00+02:00
 description: "Як оживити фото з ШІ безкоштовно: відео з фото в YouTube Shorts, Google Фото і гіфка в ChatGPT. Кроки, що працює в Україні, де Gemini просить підписку і ризики."
 tags: [video, instrumenty, google, chatgpt]
+telegram_post: 155
 source: {name: "YouTube Help — Create content for Shorts using AI-generated features", url: "https://support.google.com/youtube/answer/15260303?hl=en"}
 sources:
   - {name: "Google — Gemini Omni: доступність у Gemini і YouTube", url: "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni/"}
