@@ -1,23 +1,23 @@
 {
- "generated": "2026-11-28T11:07:09Z",
+ "generated": "2026-11-28T12:06:54Z",
  "fresh": {
-  "yt_live": "2026-11-28T11:07:10Z",
+  "yt_live": "2026-11-28T12:06:54Z",
   "yt_analytics": "2026-11-25",
-  "tg_members": "2026-11-28T11:07:12Z",
-  "tg_posts": "2026-11-28T11:07:14Z",
-  "ideas": "2026-11-28T10:22:58Z",
+  "tg_members": "2026-11-28T12:06:56Z",
+  "tg_posts": "2026-11-28T12:06:58Z",
+  "ideas": "2026-11-28T11:47:42Z",
   "news": "2026-11-28 08:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-28T08",
   "instagram": "2026-11-28T08",
   "site": "2026-11-26",
-  "site_live": "2026-11-28T11:07:16Z",
-  "activity": "2026-11-28T10:23:28Z",
+  "site_live": "2026-11-28T12:06:59Z",
+  "activity": "2026-11-28T11:48:42Z",
   "asks": "2026-11-28T07:40Z"
  },
  "notes": [],
  "kpi": {
-  "subs": 461,
+  "subs": 479,
   "subs_goal": 1000,
   "long_hours": 11.2,
   "long_hours_ads": 6.3,
@@ -34,7 +34,7 @@
   ],
   "subs_since": {
    "base": 439,
-   "d": 22,
+   "d": 40,
    "at": "2026-11-27T19:06Z",
    "from": "2026-11-27"
   },
@@ -427,7 +427,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 286
+   "subs_total": 304
   },
   {
    "w": "2026-08-03",
@@ -441,7 +441,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 286
+   "subs_total": 304
   },
   {
    "w": "2026-08-17",
@@ -455,7 +455,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 286
+   "subs_total": 304
   },
   {
    "w": "2026-08-24",
@@ -469,7 +469,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 286
+   "subs_total": 304
   },
   {
    "w": "2026-08-31",
@@ -483,7 +483,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 286
+   "subs_total": 304
   },
   {
    "w": "2026-09-07",
@@ -497,7 +497,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 286
+   "subs_total": 304
   },
   {
    "w": "2026-09-28",
@@ -511,7 +511,7 @@
    "partial_site": false,
    "subs_cum": -1,
    "long_cum": 0.0,
-   "subs_total": 285
+   "subs_total": 303
   },
   {
    "w": "2026-10-19",
@@ -525,7 +525,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.2,
-   "subs_total": 286
+   "subs_total": 304
   },
   {
    "w": "2026-10-26",
@@ -539,7 +539,7 @@
    "partial_site": false,
    "subs_cum": 6,
    "long_cum": 0.7,
-   "subs_total": 292
+   "subs_total": 310
   },
   {
    "w": "2026-11-02",
@@ -553,7 +553,7 @@
    "partial_site": false,
    "subs_cum": 155,
    "long_cum": 5.5,
-   "subs_total": 441
+   "subs_total": 459
   },
   {
    "w": "2026-11-09",
@@ -567,7 +567,7 @@
    "partial_site": false,
    "subs_cum": 160,
    "long_cum": 8.2,
-   "subs_total": 446
+   "subs_total": 464
   },
   {
    "w": "2026-11-16",
@@ -581,7 +581,7 @@
    "partial_site": false,
    "subs_cum": 163,
    "long_cum": 10.9,
-   "subs_total": 449
+   "subs_total": 467
   },
   {
    "w": "2026-11-23",
@@ -595,7 +595,7 @@
    "partial_site": true,
    "subs_cum": 175,
    "long_cum": 17.2,
-   "subs_total": 461
+   "subs_total": 479
   }
  ],
  "tg_hist": [
@@ -630,10 +630,10 @@
  ],
  "platforms": {
   "youtube": {
-   "subs": 461,
+   "subs": 479,
    "views_total": 13861,
    "videos": 104,
-   "live_at": "2026-11-28T11:07:10Z",
+   "live_at": "2026-11-28T12:06:54Z",
    "views_7d": 1386,
    "pct_7d": 51.1,
    "subs_7d": 15,
@@ -1220,24 +1220,19 @@
     }
    ],
    "live": {
-    "updated": "2026-11-28T11:07:16Z",
+    "updated": "2026-11-28T12:06:59Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
-    "today_pageloads": 2,
-    "today_visits": 2,
+    "today_pageloads": 3,
+    "today_visits": 3,
     "yesterday_pageloads": 17,
     "yesterday_visits": 15,
-    "pageloads_7d": 69,
-    "visits_7d": 61,
+    "pageloads_7d": 70,
+    "visits_7d": 62,
     "last24h": {
      "pageloads": 15,
      "visits": 14,
      "hours": [
-      {
-       "h": "2026-11-27T12:00:00Z",
-       "pageloads": 1,
-       "visits": 1
-      },
       {
        "h": "2026-11-27T13:00:00Z",
        "pageloads": 2,
@@ -1350,6 +1345,11 @@
       },
       {
        "h": "2026-11-28T11:00:00Z",
+       "pageloads": 1,
+       "visits": 1
+      },
+      {
+       "h": "2026-11-28T12:00:00Z",
        "pageloads": 0,
        "visits": 0
       }
@@ -1436,15 +1436,15 @@
      },
      {
       "d": "2026-11-28",
-      "pageloads": 2,
-      "visits": 2,
+      "pageloads": 3,
+      "visits": 3,
       "sampled": false
      }
     ],
     "top_pages_7d": [
      {
       "path": "/",
-      "count": 27
+      "count": 28
      },
      {
       "path": "/novyny/chorna-pyatnytsya-shi-pidpysky-znyzhky/",
@@ -1466,7 +1466,7 @@
     "top_referrers_7d": [
      {
       "host": "(прямі / без реферера)",
-      "count": 33
+      "count": 34
      },
      {
       "host": "www.google.com",
@@ -1492,7 +1492,7 @@
      },
      {
       "country": "US",
-      "count": 13
+      "count": 14
      },
      {
       "country": "CN",
@@ -2120,7 +2120,7 @@
  ],
  "ideas_count": {
   "total": 214,
-  "open": 204
+  "open": 203
  },
  "lake": {
   "videos": 104,
@@ -2625,8 +2625,8 @@
    "agent": "longs",
    "task": "Шоу #3: збірка, обкладинка, meta, стаття, заливка на 29.11 12:00Z",
    "started": "2026-11-28T08:30:16Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-28T11:48:42Z",
+   "result": "шоу #3 залито S_6k_2vDGTM, private → 29.11 12:00Z, finalize PASS, Drive OK, стаття 14:00 Київ"
   },
   {
    "id": "314",
