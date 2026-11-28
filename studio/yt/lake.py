@@ -201,8 +201,9 @@ FEEDS = {
     "google": ("https://blog.google/technology/ai/rss/", False),
     "gemini": ("https://blog.google/products/gemini/rss/", False),
     "deepmind": ("https://deepmind.google/blog/rss.xml", False),
-    "microsoft": ("https://www.microsoft.com/en-us/ai/blog/feed/", False),
-    "msnews": ("https://news.microsoft.com/source/topics/ai/feed/", False),
+    # 28.11: microsoft.com/en-us/ai/blog/feed і news.microsoft.com/source/topics/ai/feed — HTTP 403 з 22.11 (перевірено 28.11 07:3xZ);
+    # заміна — загальний Official Microsoft Blog (200, Ignite 17.11), тому з фільтром AI_RX
+    "microsoft": ("https://blogs.microsoft.com/feed/", True),
     "meta": ("https://about.fb.com/news/feed/", True),
     "metaeng": ("https://engineering.fb.com/feed/", True),
     "hf": ("https://huggingface.co/blog/feed.xml", False),

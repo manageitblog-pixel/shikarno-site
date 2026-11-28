@@ -159,13 +159,22 @@ def sync(days=120):
     slug_by_id = {v: k for k, v in json.load(open(UP)).items()}
     pls = audit.playlist_map()
     ids = all_videos()
+    # 28.11 (datalake-quality): плейлист uploads інколи не віддає ролик (ep53 n-WP6KVd6U8 випав 26–28.11, хоча public) →
+    # доповнюємо id, що вже є в videos, і друкуємо, хто з відомих public не потрапив у snap
+    known = [r[0] for r in c.execute("select id from videos")]
+    extra = [i for i in known if i not in set(ids)]
+    if extra: print("snap: немає в uploads, беру з videos:", len(extra), extra[:5])
+    ids += extra; got = set()
     for i in range(0, len(ids), 50):
         for v in yt.api("videos", part="snippet,contentDetails,statistics,status", id=",".join(ids[i:i + 50]))["items"]:
             if v["status"]["privacyStatus"] != "public": continue
+            got.add(v["id"])
             d = audit.iso_sec(v["contentDetails"]["duration"]); t = v["snippet"]["title"]; p = pls.get(v["id"], [])
             c.execute("insert or replace into videos values(?,?,?,?,?,?,?,?)",
                       (v["id"], slug_by_id.get(v["id"], ""), t, v["snippet"]["publishedAt"], d, int(d <= 180), fmt(t, p), ",".join(p)))
             c.execute("insert or replace into snap values(?,?,?)", (v["id"], today.isoformat(), int(v["statistics"].get("viewCount", 0))))
+    miss = [i for i in known if i not in got]
+    if miss: print("snap: пропущено відомих (не public або не віддано API):", len(miss), miss[:5])
     print("format overrides:", len(apply_overrides(c)), "змінено")
     start = (today - datetime.timedelta(days=days)).isoformat(); end = today.isoformat()
     # API не дає day×video разом для всіх → по ролику
