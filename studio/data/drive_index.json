@@ -1680,6 +1680,20 @@
    "parent": "1YZU0DfTeKB625fF76KpkHf_mVaH0tLMc",
    "size": 3217948
   },
+  "repo:studio/eps/weekly3/align.json": {
+   "dir": "Відео й озвучка/weekly3",
+   "id": "1a3p0QNnFSSu2K0TBj95Fcsx-d6NBGfzU",
+   "md5": "d99e3e761f4f6d58c7979671af240223",
+   "parent": "1HFbqalYwbEGal5JGIiz9KWgL-irbPhM0",
+   "size": 2774
+  },
+  "repo:studio/eps/weekly3/audit_vo.json": {
+   "dir": "Відео й озвучка/weekly3",
+   "id": "1EOtSPziIw9fzohWelQWkzmPAzvM8WXj_",
+   "md5": "d0f16e7f884f2969a4e8361723659e03",
+   "parent": "1HFbqalYwbEGal5JGIiz9KWgL-irbPhM0",
+   "size": 5698
+  },
   "repo:studio/eps/weekly3/part0.wav": {
    "dir": "Відео й озвучка/weekly3",
    "id": "17pKY6N7TU2yCnRwQLX-NRWJ15Qz2QxPU",
@@ -1700,6 +1714,13 @@
    "md5": "4b5ad24eac23dd0b4765ec35c673e427",
    "parent": "1HFbqalYwbEGal5JGIiz9KWgL-irbPhM0",
    "size": 2903548
+  },
+  "repo:studio/eps/weekly3/part11.wav": {
+   "dir": "Відео й озвучка/weekly3",
+   "id": "12pOcUkTQXfKISZXqxx1LkTHXcQTFAM8t",
+   "md5": "4e90e9de8da302977277f24eaa7c329e",
+   "parent": "1HFbqalYwbEGal5JGIiz9KWgL-irbPhM0",
+   "size": 2356828
   },
   "repo:studio/eps/weekly3/part2.wav": {
    "dir": "Відео й озвучка/weekly3",
@@ -1784,6 +1805,48 @@
    "md5": "4b5ad24eac23dd0b4765ec35c673e427",
    "parent": "1N1PU2lJE3mLV0RNsA3xPe3OQacSqBesZ",
    "size": 2903548
+  },
+  "repo:studio/eps/weekly3/takes/part11_take1_audit.json": {
+   "dir": "Відео й озвучка/weekly3/takes",
+   "id": "1rbqglG-BxQONkc3zLeU6pdQQvCPBs6QE",
+   "md5": "13b0cb002191062b2f0a58f8a25c1cf2",
+   "parent": "1N1PU2lJE3mLV0RNsA3xPe3OQacSqBesZ",
+   "size": 1392
+  },
+  "repo:studio/eps/weekly3/takes/part11_take1_f0_139.6.wav": {
+   "dir": "Відео й озвучка/weekly3/takes",
+   "id": "1ZngAph_XuzUa10BpOBM19vJYsM-BBtEI",
+   "md5": "b139f517ba821e9d2b51880e16e9be09",
+   "parent": "1N1PU2lJE3mLV0RNsA3xPe3OQacSqBesZ",
+   "size": 2236828
+  },
+  "repo:studio/eps/weekly3/takes/part11_take2_audit.json": {
+   "dir": "Відео й озвучка/weekly3/takes",
+   "id": "187ENqWjKiNjqI3_vTHGnej3KJRSSph7P",
+   "md5": "b7c63ed3334a54c333770df335e5a20c",
+   "parent": "1N1PU2lJE3mLV0RNsA3xPe3OQacSqBesZ",
+   "size": 1457
+  },
+  "repo:studio/eps/weekly3/takes/part11_take2_f0_120.5.wav": {
+   "dir": "Відео й озвучка/weekly3/takes",
+   "id": "1JAvVexUQhQSFfClvd-ZKGBbfyZETpmAM",
+   "md5": "86d5f7cd684823662c1ba320b95e8b63",
+   "parent": "1N1PU2lJE3mLV0RNsA3xPe3OQacSqBesZ",
+   "size": 2379868
+  },
+  "repo:studio/eps/weekly3/takes/part11_take3_audit.json": {
+   "dir": "Відео й озвучка/weekly3/takes",
+   "id": "1P_jw0HAjDVfUMbZjBYK8ZTsb5fzsOxD3",
+   "md5": "b96ee1db73e93f9f0cd37191a895cfd0",
+   "parent": "1N1PU2lJE3mLV0RNsA3xPe3OQacSqBesZ",
+   "size": 1374
+  },
+  "repo:studio/eps/weekly3/takes/part11_take3_f0_129.9.wav": {
+   "dir": "Відео й озвучка/weekly3/takes",
+   "id": "1aXQnIsvwLp51NJaderWfgjkbBT4SUuhD",
+   "md5": "4e90e9de8da302977277f24eaa7c329e",
+   "parent": "1N1PU2lJE3mLV0RNsA3xPe3OQacSqBesZ",
+   "size": 2356828
   },
   "repo:studio/eps/weekly3/takes/part1_take1_audit.json": {
    "dir": "Відео й озвучка/weekly3/takes",
@@ -2036,6 +2099,27 @@
    "md5": "fd49aa83b2c79d9ad23f327e6569bd66",
    "parent": "1N1PU2lJE3mLV0RNsA3xPe3OQacSqBesZ",
    "size": 3634588
+  },
+  "repo:studio/eps/weekly3/vo.wav": {
+   "dir": "Відео й озвучка/weekly3",
+   "id": "1Csf2HHwwaEIyu5mviZma-Ogaon2JbJqx",
+   "md5": "bc963e50fa8078de875775241cfb3d49",
+   "parent": "1HFbqalYwbEGal5JGIiz9KWgL-irbPhM0",
+   "size": 71114110
+  },
+  "repo:studio/eps/weekly3/vo_raw.wav": {
+   "dir": "Відео й озвучка/weekly3",
+   "id": "1axzGNY8lAg7onTWzsT7hH7To6UTrhjnV",
+   "md5": "906745de86e304f56083bdca9014ab98",
+   "parent": "1HFbqalYwbEGal5JGIiz9KWgL-irbPhM0",
+   "size": 38701558
+  },
+  "repo:studio/eps/weekly3/vo_tl.json": {
+   "dir": "Відео й озвучка/weekly3",
+   "id": "1yk1RYbGHpus9KBR2VvjKfTKCMZwTBWih",
+   "md5": "e7b3653f3bf37fd188efacc1dcd38052",
+   "parent": "1HFbqalYwbEGal5JGIiz9KWgL-irbPhM0",
+   "size": 1781
   },
   "repo:studio/hq/asks.json": {
    "dir": "Артефакти/HQ-дашборд",
