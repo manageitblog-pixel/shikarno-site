@@ -1,0 +1,57 @@
+[
+ {
+  "id": "6mIdp843fKo",
+  "content_id": "clip3",
+  "date": "2026-11-28",
+  "old_title": "Реклама в ChatGPT вже в Україні: як не сплутати її з порадою ШІ 📢 #ШІ #shorts",
+  "new_title": "Реклама в чат GPT вже в Україні: як не сплутати її з порадою ШІ 📢 #ШІ #shorts",
+  "old_tags": [
+   "ChatGPT",
+   "ChatGPT ads",
+   "ChatGPT реклама Україна",
+   "OpenAI",
+   "ШІ",
+   "ШІ за місяць",
+   "ШІкарно",
+   "безкоштовний ChatGPT",
+   "новини ШІ",
+   "реклама ШІ",
+   "реклама в ChatGPT",
+   "штучний інтелект"
+  ],
+  "added_tags": [
+   "реклама в чат гпт",
+   "реклама чат гпт"
+  ],
+  "why": "7д: 14 переглядів (медіана S:clip 45) при 67.5% перегляду; kw.py 28.11: «реклама в чат гпт» 20, «реклама чат гпт» 16 vs «реклама в chatgpt» 10",
+  "proposals_not_applied": [
+   {
+    "id": "bvS0k_r3_bs",
+    "content_id": "ep82_tier_kitchen",
+    "why": "frame0 variant (+related-cta-v2, tg-cta)",
+    "views": 159,
+    "pct": 53.5,
+    "median": 200,
+    "proposal": "Що приготувати на обід з того, що є: меню на тиждень з ШІ 🍳 Тір-лист Байта #7 #ШІ #shorts; +теги «що приготувати на обід», «що приготувати поїсти»"
+   },
+   {
+    "id": "xaYHobFNYHo",
+    "content_id": "ep81_tier_kids",
+    "why": "frame0 control (+tg-cta variant)",
+    "views": 44,
+    "pct": 68.4,
+    "median": 200,
+    "proposal": "Який ШІ безпечний для дитини: ChatGPT, Gemini чи Claude? 🧒 Тір-лист Байта #6 #ШІ #shorts"
+   },
+   {
+    "id": "gljrHADi4aU",
+    "content_id": "ep79_tier_money",
+    "why": "frame0 control (+tg-cta control)",
+    "views": 8,
+    "pct": 87.1,
+    "median": 200,
+    "proposal": "Як вести сімейний бюджет з ШІ: який ШІ рахує гроші? 💸 Тір-лист Байта #5 #ШІ #shorts"
+   }
+  ]
+ }
+]
