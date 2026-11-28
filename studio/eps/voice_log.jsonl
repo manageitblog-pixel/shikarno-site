@@ -591,3 +591,10 @@
 {"ev": "tts_ok", "n": 1, "out": "/home/claude/eps/rozbir186/part1.wav", "res": "(64.97, 24000, 'audio/wav')", "t": "08:28:30Z", "d": "2026-11-28"}
 {"ev": "part", "part": 1, "take": 3, "f0": 127.5, "f0_ok": false, "dur": 65.0, "audit": [{"seg": 2, "ratio": 1.08, "match": 0.92}, {"seg": 3, "ratio": 0.91, "match": 0.74}, {"seg": 4, "ratio": 0.93, "match": 0.77}], "repeat_suspect": false, "t": "08:29:35Z", "d": "2026-11-28"}
 {"ev": "tts_ok", "n": 2, "out": "/home/claude/eps/rozbir186/part1.wav", "res": "(61.37, 24000, 'audio/wav')", "t": "08:30:16Z", "d": "2026-11-28"}
+{"ev": "part", "part": 1, "take": 4, "f0": 119.4, "f0_ok": false, "dur": 61.4, "audit": [{"seg": 2, "ratio": 1.0, "match": 0.62}, {"seg": 3, "ratio": 0.94, "match": 0.67}, {"seg": 4, "ratio": 0.95, "match": 0.72}], "repeat_suspect": false, "t": "08:31:11Z", "d": "2026-11-28"}
+{"ev": "part_retry_later", "part": 1, "best_take": 3, "f0": 127.5, "takes": 4, "max_takes": 6, "t": "08:31:11Z", "d": "2026-11-28"}
+{"ev": "tts_ok", "n": 3, "out": "/home/claude/eps/rozbir186/part2.wav", "res": "(62.03, 24000, 'audio/wav')", "t": "08:31:52Z", "d": "2026-11-28"}
+{"ev": "part", "part": 2, "take": 3, "f0": 135.7, "f0_ok": true, "dur": 62.0, "audit": [{"seg": 5, "ratio": 0.88, "match": 0.67}, {"seg": 6, "ratio": 1.0, "match": 0.83}, {"seg": 7, "ratio": 0.84, "match": 0.57}], "repeat_suspect": false, "t": "08:32:58Z", "d": "2026-11-28"}
+{"ev": "part_final", "part": 2, "take": 3, "f0": 135.7, "clean": true, "t": "08:32:58Z", "d": "2026-11-28"}
+{"ev": "STOP", "reason": "TTS quota exhausted: 4 consecutive HTTP 429 from Gemini (gemini-3.8-flash-tts); try later or another key/model", "ok_requests": 3, "t": "08:34:31Z", "d": "2026-11-28"}
+{"ev": "STOP", "reason": "TTS quota exhausted: 4 consecutive HTTP 429 from Gemini (gemini-3.8-flash-tts); try later or another key/model", "ok_requests": 0, "t": "08:36:04Z", "d": "2026-11-28"}
