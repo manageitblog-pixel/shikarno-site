@@ -1597,8 +1597,8 @@
    "agent": "de",
    "task": "Data engineer: прапорець ru у niche (рос. канали проходять) + p_zero_feed лише для Shorts у прогнозі",
    "started": "2026-11-28T13:19:48Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-28T13:28:05Z",
+   "result": "ru-класифікатор по каналу: +23 рос. канали в niche, 3 хибні виправлено; p_zero_feed лише Shorts (≤180 с); 80 тестів ok"
   }
  ]
 }
