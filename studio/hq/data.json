@@ -1,18 +1,18 @@
 {
- "generated": "2026-11-28T06:21:28Z",
+ "generated": "2026-11-28T07:06:23Z",
  "fresh": {
-  "yt_live": "2026-11-28T06:21:29Z",
-  "yt_analytics": "2026-11-24",
-  "tg_members": "2026-11-28T06:21:30Z",
-  "tg_posts": "2026-11-28T06:06:53Z",
+  "yt_live": "2026-11-28T07:06:24Z",
+  "yt_analytics": "2026-11-25",
+  "tg_members": "2026-11-28T07:06:25Z",
+  "tg_posts": "2026-11-28T07:06:27Z",
   "ideas": "2026-11-27T19:22:18Z",
   "news": "2026-11-28 04:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-28T04",
   "instagram": "2026-11-28T04",
   "site": "2026-11-25",
-  "site_live": "2026-11-28T06:21:31Z",
-  "activity": "2026-11-28T04:54:27Z",
+  "site_live": "2026-11-28T07:06:28Z",
+  "activity": "2026-11-28T06:42:01Z",
   "asks": "2026-11-27T18:40Z"
  },
  "notes": [],
@@ -25,12 +25,12 @@
   "star_deadline": "2027-01-31",
   "views_total": 13861,
   "videos": 104,
-  "views_7d": 1031,
-  "pct_7d": 49.2,
-  "subs_7d": 4,
+  "views_7d": 1386,
+  "pct_7d": 51.1,
+  "subs_7d": 15,
   "window": [
-   "2026-11-18",
-   "2026-11-24"
+   "2026-11-19",
+   "2026-11-25"
   ],
   "subs_since": {
    "base": 439,
@@ -212,13 +212,18 @@
   },
   {
    "d": "2026-11-23",
-   "v": 246,
-   "p": 41.3
+   "v": 242,
+   "p": 41.2
   },
   {
    "d": "2026-11-24",
    "v": 302,
    "p": 52.8
+  },
+  {
+   "d": "2026-11-25",
+   "v": 476,
+   "p": 55.9
   }
  ],
  "site": [
@@ -416,7 +421,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 286
+   "subs_total": 275
   },
   {
    "w": "2026-08-03",
@@ -430,7 +435,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 286
+   "subs_total": 275
   },
   {
    "w": "2026-08-17",
@@ -444,7 +449,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 286
+   "subs_total": 275
   },
   {
    "w": "2026-08-24",
@@ -458,7 +463,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 286
+   "subs_total": 275
   },
   {
    "w": "2026-08-31",
@@ -472,7 +477,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 286
+   "subs_total": 275
   },
   {
    "w": "2026-09-07",
@@ -486,7 +491,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 286
+   "subs_total": 275
   },
   {
    "w": "2026-09-28",
@@ -500,7 +505,7 @@
    "partial_site": false,
    "subs_cum": -1,
    "long_cum": 0.0,
-   "subs_total": 285
+   "subs_total": 274
   },
   {
    "w": "2026-10-19",
@@ -514,7 +519,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.2,
-   "subs_total": 286
+   "subs_total": 275
   },
   {
    "w": "2026-10-26",
@@ -528,7 +533,7 @@
    "partial_site": false,
    "subs_cum": 6,
    "long_cum": 0.7,
-   "subs_total": 292
+   "subs_total": 281
   },
   {
    "w": "2026-11-02",
@@ -542,7 +547,7 @@
    "partial_site": false,
    "subs_cum": 155,
    "long_cum": 5.5,
-   "subs_total": 441
+   "subs_total": 430
   },
   {
    "w": "2026-11-09",
@@ -556,7 +561,7 @@
    "partial_site": false,
    "subs_cum": 160,
    "long_cum": 8.2,
-   "subs_total": 446
+   "subs_total": 435
   },
   {
    "w": "2026-11-16",
@@ -570,20 +575,20 @@
    "partial_site": false,
    "subs_cum": 163,
    "long_cum": 10.9,
-   "subs_total": 449
+   "subs_total": 438
   },
   {
    "w": "2026-11-23",
-   "views": 548,
-   "subs": 1,
-   "long_h": 1.4,
-   "short_views": 433,
+   "views": 1020,
+   "subs": 12,
+   "long_h": 6.3,
+   "short_views": 663,
    "clicks": 4,
    "impr": 294,
    "partial": true,
    "partial_site": true,
-   "subs_cum": 164,
-   "long_cum": 12.4,
+   "subs_cum": 175,
+   "long_cum": 17.2,
    "subs_total": 450
   }
  ],
@@ -622,13 +627,13 @@
    "subs": 450,
    "views_total": 13861,
    "videos": 104,
-   "live_at": "2026-11-28T06:21:29Z",
-   "views_7d": 1031,
-   "pct_7d": 49.2,
-   "subs_7d": 4,
+   "live_at": "2026-11-28T07:06:24Z",
+   "views_7d": 1386,
+   "pct_7d": 51.1,
+   "subs_7d": 15,
    "window": [
-    "2026-11-18",
-    "2026-11-24"
+    "2026-11-19",
+    "2026-11-25"
    ],
    "long_hours": 11.2,
    "history": [
@@ -659,25 +664,25 @@
     },
     {
      "x": "2026-11-23",
-     "v": 548,
+     "v": 1020,
      "p": true
     }
    ],
    "best": [
     {
      "title": "Меню на тиждень з ШІ і вечеря з того, що є 🍳 Тір-лист Байта #7",
-     "views": 135,
+     "views": 159,
      "id": "bvS0k_r3_bs"
     },
     {
      "title": "ШІ для вчителя: план уроку і тест за 5 хвилин у Google Classroom 🍎",
-     "views": 114,
+     "views": 117,
      "id": "ENKGdbr04h0"
     },
     {
-     "title": "Як продати на OLX швидше з ШІ: опис, ціна, шахраї 🛍️ ШІ для професій #9",
-     "views": 89,
-     "id": "LtNuOtQe0pc"
+     "title": "Новини ШІ за тиждень (листопад 2026): Anthropic на біржі, Gemini платить сам | #2",
+     "views": 98,
+     "id": "aTUsauz53rs"
     }
    ],
    "best_live": [
@@ -1197,7 +1202,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-28T06:21:31Z",
+    "updated": "2026-11-28T07:06:28Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 2,
@@ -1210,11 +1215,6 @@
      "pageloads": 18,
      "visits": 16,
      "hours": [
-      {
-       "h": "2026-11-27T07:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
       {
        "h": "2026-11-27T08:00:00Z",
        "pageloads": 3,
@@ -1329,6 +1329,11 @@
        "h": "2026-11-28T06:00:00Z",
        "pageloads": 1,
        "visits": 1
+      },
+      {
+       "h": "2026-11-28T07:00:00Z",
+       "pageloads": 0,
+       "visits": 0
       }
      ]
     },
@@ -1609,9 +1614,9 @@
   },
   {
    "name": "Short · sec",
-   "n": 12,
-   "views": 35.5,
-   "pct": 45.8
+   "n": 13,
+   "views": 36,
+   "pct": 45.7
   },
   {
    "name": "Довгий · news",
@@ -1632,12 +1637,12 @@
    "pct": 30.1
   }
  ],
- "formats_cutoff": "2026-11-18",
+ "formats_cutoff": "2026-11-19",
  "videos": [
   {
    "id": "RIt-PqOGJTg",
    "title": "Логопедичні заняття з ШІ: картки на Р, ігри, звіти | ШІ для професій #10",
-   "format": null,
+   "format": "tier",
    "short": true,
    "published": "2026-11-27",
    "views7": null,
@@ -1648,7 +1653,7 @@
   {
    "id": "h5aUeuaD8OE",
    "title": "Claude безкоштовно українською: як користуватися без VPN | Гайд 2026",
-   "format": null,
+   "format": "free",
    "short": false,
    "published": "2026-11-27",
    "views7": null,
@@ -1673,8 +1678,8 @@
    "format": "guide",
    "short": false,
    "published": "2026-11-25",
-   "views7": null,
-   "pct": null,
+   "views7": 5,
+   "pct": 75.0,
    "complete": false,
    "total": 23
   },
@@ -1684,7 +1689,7 @@
    "format": "sec",
    "short": true,
    "published": "2026-11-25",
-   "views7": null,
+   "views7": 0,
    "pct": null,
    "complete": false,
    "total": 5
@@ -1695,8 +1700,8 @@
    "format": "clip",
    "short": true,
    "published": "2026-11-25",
-   "views7": null,
-   "pct": null,
+   "views7": 14,
+   "pct": 67.5,
    "complete": false,
    "total": 22
   },
@@ -1706,8 +1711,8 @@
    "format": "tier",
    "short": true,
    "published": "2026-11-24",
-   "views7": 135,
-   "pct": 56.5,
+   "views7": 159,
+   "pct": 53.5,
    "complete": false,
    "total": 166
   },
@@ -1717,8 +1722,8 @@
    "format": "clip",
    "short": true,
    "published": "2026-11-24",
-   "views7": 25,
-   "pct": 24.1,
+   "views7": 35,
+   "pct": 35.6,
    "complete": false,
    "total": 39
   },
@@ -1728,8 +1733,8 @@
    "format": "tier",
    "short": true,
    "published": "2026-11-23",
-   "views7": 34,
-   "pct": 58.9,
+   "views7": 43,
+   "pct": 67.8,
    "complete": false,
    "total": 55
   },
@@ -1739,8 +1744,8 @@
    "format": "clip",
    "short": true,
    "published": "2026-11-23",
-   "views7": 114,
-   "pct": 47.5,
+   "views7": 117,
+   "pct": 47.8,
    "complete": false,
    "total": 124
   },
@@ -1750,8 +1755,8 @@
    "format": "prof",
    "short": true,
    "published": "2026-11-22",
-   "views7": 89,
-   "pct": 63.8,
+   "views7": 94,
+   "pct": 66.2,
    "complete": false,
    "total": 103
   },
@@ -1761,8 +1766,8 @@
    "format": "digest",
    "short": false,
    "published": "2026-11-22",
-   "views7": 62,
-   "pct": 26.1,
+   "views7": 98,
+   "pct": 38.4,
    "complete": false,
    "total": 101
   },
@@ -1772,7 +1777,7 @@
    "format": "tier",
    "short": true,
    "published": "2026-11-21",
-   "views7": 7,
+   "views7": 8,
    "pct": 87.1,
    "complete": false,
    "total": 12
@@ -1783,7 +1788,7 @@
    "format": "sec",
    "short": true,
    "published": "2026-11-20",
-   "views7": 8,
+   "views7": 10,
    "pct": 50.5,
    "complete": false,
    "total": 10
@@ -1994,31 +1999,6 @@
    "score": 366.6
   },
   {
-   "title": "3 приховані ШІ-фішки, які вже є у твоєму Android безкоштовно: обвести й знайти, переклад усього екрана, текст із камери — про які мало хто знає",
-   "format": "free",
-   "channels": [
-    "short",
-    "tiktok",
-    "insta",
-    "site"
-   ],
-   "demand": 4,
-   "fresh": 3,
-   "show": 5,
-   "fit": 5,
-   "length": 30,
-   "hook": "you",
-   "source": "https://support.google.com/websearch/answer/14508957",
-   "by": "researcher-niche",
-   "note": "TikTok UA: @adel_resort «Я в шоці» — приховані фішки інтерфейсу TikTok 11,8x / 724K (17.11), @kibernetiki.com.ua «Приховані фішки iPad» 16,2x / 49K (20.11) — формат «приховані фішки» + split screen (обличчя/Байт + запис екрана) зараз злітає в українському TikTok. Наша версія — ШІ-функції Google: Circle to Search (переклад усього екрана — лише на окремих пристроях, за support.google.com), Google Lens (текст з камери, понад 100 мов, android.com). Під час запису перевірити на реальному телефоні, що працює в Україні українською; якщо щось ні — сказати чесно. iPhone-версія — окремий ролик.",
-   "status": "approved",
-   "added": "2026-11-24",
-   "id": "122",
-   "decision": "Бал 353 ≥300 (free, формат «приховані фішки» злітає в UA TikTok 11,8x/16,2x): Short чт 3.12 17:00Z (19:00 Київ) + TikTok/Reels + сайт; сценарій до 1.12, кожну фішку перевірити на реальному Android в Україні, незалежний фактчек, link при заливці",
-   "kw": "android для пк (18); як користуватися android auto (16); android курс (26) — kw.py 25.11; запитів про ШІ-фішки Android немає",
-   "score": 353.3
-  },
-  {
    "title": "Банк каже: «ШІ-агент — на твій ризик». Wells Fargo з 24.11 вважає кожну дію агента твоєю — 3 правила, перш ніж дати ШІ доступ до банку",
    "format": "sec",
    "channels": [
@@ -2042,7 +2022,7 @@
    "decision": "Сценарій ep90 (24.11 ~20Z), вихід ср 2.12 13Z (17Z — гайд #2); контроль yt-related-cta-v2, Related FcWmonPhvqE; потрібен незалежний фактчек; link при заливці",
    "kw": "що таке ші агент (10); ші агенти (10); як створити ші агента (10) — попит низький, «Wells Fargo» в UA-підказках нема",
    "episode": "ep90",
-   "score": 351.5
+   "score": 354.1
   },
   {
    "title": "Google тепер бачить твої витрати: AI Mode у Пошуку підключає Google Wallet (а згодом Drive і Gemini) — що він знатиме і де вимкнути",
@@ -2068,7 +2048,7 @@
    "decision": "Бал 354 (sec, твої дані + свіжий реліз Google 23.11): Short 19:00 Київ найближчим вільним слотом + сайт + TG; перевірити доступність в Україні й показати, де вимкнути (Search Personalization → Connected Apps).",
    "note2": "24.11 ep-редактор: не взято на 2.12 — Personal Intelligence в AI Mode лише для особистих акаунтів у США (преса; blog.google країн не називає); для UA лише з чесним «в Україні поки нема»",
    "kw": "google wallet (88); google гаманець (18); google wallet android (9) — kw.py 25.11",
-   "score": 351.5
+   "score": 354.1
   },
   {
    "title": "«Шпигун уже в телефоні»? Що ChatGPT справді пам’ятає про тебе — де за 20 секунд подивитись і стерти пам’ять (і чат, який нічого не запам’ятовує)",
@@ -2094,7 +2074,30 @@
    "id": "119",
    "decision": "Бал 351 ≥300 (sec, «твоє + дія», TikTok-аналог 569K): Short пт 4.12 17:00Z (19:00 Київ) + TikTok/Reels + сайт + TG; шлях у налаштуваннях лише з Memory FAQ OpenAI, звірити укр. інтерфейс під час запису, незалежний фактчек, link при заливці",
    "kw": "chatgpt як користуватися (10); пам'ять на телефоні (27) — kw.py 25.11; прямих запитів «пам'ять chatgpt» немає",
-   "score": 351.5
+   "score": 354.1
+  },
+  {
+   "title": "Фейковий магазин на Чорну пʼятницю тепер без жодної помилки: ШІ пише тексти й фото — 3 перевірки перед оплатою, що працюють досі",
+   "format": "sec",
+   "channels": [
+    "site",
+    "tg",
+    "tiktok"
+   ],
+   "demand": 4,
+   "fresh": 5,
+   "show": 4,
+   "fit": 5,
+   "length": 30,
+   "hook": "you",
+   "source": "https://www.ukfinance.org.uk/news-and-insight/press-release/ps660-million-stolen-fraudsters-uk-finance-calls-tougher-action",
+   "by": "researcher-news",
+   "note": "Перевірено 25.11 ~13:25Z. UK Finance, 25.11.2026 (H1 2026 vs H1 2025): усього £659,5 млн (+8%); APP-шахрайство £316 млн (+22%), 138 345 випадків (+25%); шахрайство з покупками — 69% APP-випадків, втрати +24% до £66 млн; 58% випадків почалися онлайн. Сам реліз UK Finance ШІ НЕ згадує (зв'язок з ШІ — у подачі FT, не перевірено) — у тексті не приписувати їм ШІ. Про ШІ: Savi Security (Scamwise), звіт 20.10.2026 — за словами CEO Patrick Coughlin (WATE), ~75% проаналізованих фейкових магазинів мали ШІ-згенеровані фото й тексти; вибірка — сайти, які люди самі надсилали на перевірку (не репрезентативна), цифра компанії. Поради: перевірити домен і дату реєстрації (whois), не платити переказом на картку/IBAN — лише карткою з chargeback, шукати магазин у відгуках поза сайтом. Перевірити, чи є свіжі попередження Кіберполіції до 27.11 (сайт cyberpolice.gov.ua фетчером не читається). Пара до №34 і №136.",
+   "status": "in_work",
+   "added": "2026-11-25",
+   "id": "151",
+   "decision": "Скан 25.11 день: бал 351,5 ≥300 (sec, сезон до 30.11). Слот: сайт + TG чт 26.11 до 10Z (за добу до Чорної пʼятниці; №136 — пт 27.11, №34 ep87 — до 28.11), TikTok чт 26.11 вечір або пт 27.11 зранку. Short — ні (слоти до 5.12 зайняті). Цифри UK Finance подавати без ШІ (у релізі ШІ немає); 75% — заява Savi Security, вибірка не репрезентативна. Перед публікацією — свіжі попередження Кіберполіції. Сайт done 25.11: /novyny/yak-pereviryty-internet-magazyn-na-shakhrajstvo/ (чт 26.11 09:00 Київ). TG-пост — TG-відділ 26.11; TikTok — окремо.",
+   "score": 354.1
   }
  ],
  "ideas_count": {
@@ -2102,10 +2105,10 @@
   "open": 191
  },
  "lake": {
-  "videos": 102,
-  "daily": 893,
+  "videos": 104,
+  "daily": 926,
   "news": 2256,
-  "niche": 1435,
+  "niche": 1636,
   "comp": 511,
   "comp_videos": 62794,
   "research": 86,
@@ -2307,15 +2310,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "262",
-   "agent": "trend",
-   "task": "фон: вечірній веб-скан трендів 26.11 (11:20–19:20Z) + кандидати UPDATE_28",
-   "started": "2026-11-26T19:18:10Z",
-   "finished": "2026-11-26T19:22:37Z",
-   "result": "релізів немає; нова ідея #185 FCA (ШІ-шахрайство з інвестиціями) → рекомендація UPDATE_28; запас #175 Talkie",
-   "agent_raw": "researcher"
-  },
   {
    "id": "263",
    "agent": "coo",
@@ -2652,6 +2646,15 @@
    "finished": "2026-11-28T04:54:27Z",
    "result": "news +17 (лише HN), ідей 0; TikTok ep84 164; IG ep84 5, clip3 0; TG 6; vidIQ 5 кр.",
    "agent_raw": "data"
+  },
+  {
+   "id": "302",
+   "agent": "cm",
+   "task": "TG-відділ 28.11: метрика, чернетка промпту дня (публікує головна сесія), воронки, група",
+   "started": "2026-11-28T06:42:01Z",
+   "finished": null,
+   "result": "",
+   "agent_raw": "tg"
   }
  ],
  "agents": [
@@ -3029,7 +3032,7 @@
    "name": "Стрічка Shorts",
    "state": "warn",
    "label": "увага",
-   "text": "без показу у стрічці (≤6 переглядів за першу добу) — 4 з 12 за 10 днів: 20.11 sec «Шахраї по телефону і в SMS: перевір по» (3); 21.11 tier «Сімейний бюджет з ШІ: який ШІ рахує гр» (2); 25.11 sec «ШІ в телефоні читає твою переписку? Що» (2); 26.11 sec «Шахрайські SMS на iPhone: Moonlock від» (3). Спільне (аудит COO 27.11, 15–26.11): 4 з 5 нулів — тривожний кадр 0 (⚠️/щит, «шахраї», «світить дані»). Перевірка — ep90 2.12 з нейтральним кадром 0 (RUNBOOK «НУЛЬ СТРІЧКИ SHORTS»)."
+   "text": "без показу у стрічці (≤6 переглядів за першу добу) — 5 з 13 за 10 днів: 20.11 sec «Шахраї по телефону і в SMS: перевір по» (3); 21.11 tier «Сімейний бюджет з ШІ: який ШІ рахує гр» (2); 25.11 sec «ШІ в телефоні читає твою переписку? Що» (2); 26.11 sec «Шахрайські SMS на iPhone: Moonlock від» (3); 27.11 tier «Логопедичні заняття з ШІ: картки на Р,» (0). Спільне (аудит COO 27.11, 15–26.11): 4 з 5 нулів — тривожний кадр 0 (⚠️/щит, «шахраї», «світить дані»). Перевірка — ep90 2.12 з нейтральним кадром 0 (RUNBOOK «НУЛЬ СТРІЧКИ SHORTS»)."
   }
  ]
 }
