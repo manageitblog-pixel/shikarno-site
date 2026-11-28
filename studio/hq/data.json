@@ -1,9 +1,9 @@
 {
- "generated": "2026-11-28T06:06:50Z",
+ "generated": "2026-11-28T06:21:28Z",
  "fresh": {
-  "yt_live": "2026-11-28T06:06:50Z",
+  "yt_live": "2026-11-28T06:21:29Z",
   "yt_analytics": "2026-11-24",
-  "tg_members": "2026-11-28T06:06:51Z",
+  "tg_members": "2026-11-28T06:21:30Z",
   "tg_posts": "2026-11-28T06:06:53Z",
   "ideas": "2026-11-27T19:22:18Z",
   "news": "2026-11-28 04:53",
@@ -11,13 +11,13 @@
   "tiktok": "2026-11-28T04",
   "instagram": "2026-11-28T04",
   "site": "2026-11-25",
-  "site_live": "2026-11-28T06:06:54Z",
+  "site_live": "2026-11-28T06:21:31Z",
   "activity": "2026-11-28T04:54:27Z",
   "asks": "2026-11-27T18:40Z"
  },
  "notes": [],
  "kpi": {
-  "subs": 449,
+  "subs": 450,
   "subs_goal": 1000,
   "long_hours": 11.2,
   "long_hours_ads": 6.3,
@@ -34,7 +34,7 @@
   ],
   "subs_since": {
    "base": 439,
-   "d": 10,
+   "d": 11,
    "at": "2026-11-27T19:06Z",
    "from": "2026-11-27"
   },
@@ -416,7 +416,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 285
+   "subs_total": 286
   },
   {
    "w": "2026-08-03",
@@ -430,7 +430,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 285
+   "subs_total": 286
   },
   {
    "w": "2026-08-17",
@@ -444,7 +444,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 285
+   "subs_total": 286
   },
   {
    "w": "2026-08-24",
@@ -458,7 +458,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 285
+   "subs_total": 286
   },
   {
    "w": "2026-08-31",
@@ -472,7 +472,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 285
+   "subs_total": 286
   },
   {
    "w": "2026-09-07",
@@ -486,7 +486,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 285
+   "subs_total": 286
   },
   {
    "w": "2026-09-28",
@@ -500,7 +500,7 @@
    "partial_site": false,
    "subs_cum": -1,
    "long_cum": 0.0,
-   "subs_total": 284
+   "subs_total": 285
   },
   {
    "w": "2026-10-19",
@@ -514,7 +514,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.2,
-   "subs_total": 285
+   "subs_total": 286
   },
   {
    "w": "2026-10-26",
@@ -528,7 +528,7 @@
    "partial_site": false,
    "subs_cum": 6,
    "long_cum": 0.7,
-   "subs_total": 291
+   "subs_total": 292
   },
   {
    "w": "2026-11-02",
@@ -542,7 +542,7 @@
    "partial_site": false,
    "subs_cum": 155,
    "long_cum": 5.5,
-   "subs_total": 440
+   "subs_total": 441
   },
   {
    "w": "2026-11-09",
@@ -556,7 +556,7 @@
    "partial_site": false,
    "subs_cum": 160,
    "long_cum": 8.2,
-   "subs_total": 445
+   "subs_total": 446
   },
   {
    "w": "2026-11-16",
@@ -570,7 +570,7 @@
    "partial_site": false,
    "subs_cum": 163,
    "long_cum": 10.9,
-   "subs_total": 448
+   "subs_total": 449
   },
   {
    "w": "2026-11-23",
@@ -584,7 +584,7 @@
    "partial_site": true,
    "subs_cum": 164,
    "long_cum": 12.4,
-   "subs_total": 449
+   "subs_total": 450
   }
  ],
  "tg_hist": [
@@ -619,10 +619,10 @@
  ],
  "platforms": {
   "youtube": {
-   "subs": 449,
+   "subs": 450,
    "views_total": 13861,
    "videos": 104,
-   "live_at": "2026-11-28T06:06:50Z",
+   "live_at": "2026-11-28T06:21:29Z",
    "views_7d": 1031,
    "pct_7d": 49.2,
    "subs_7d": 4,
@@ -1197,7 +1197,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-28T06:06:54Z",
+    "updated": "2026-11-28T06:21:31Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 2,
@@ -3013,7 +3013,7 @@
   {
    "name": "Озвучка",
    "state": "warn",
-   "text": "ліміт Gemini TTS вичерпано (429) з 28.11 05:21 Київ; за 24 год успішних запитів 18 — денний ліміт ковзний (~15–19 запитів), слоти повертаються через добу після використаних. Наступне вікно — 10:02–10:52 Київ. Готово частин: шоу #3 11/12 (лишились ч.11); №186 «IT» (2.12) 0/12; №194 «Сертифікат» (4.12) 0/13; шоу #4 0/15; гайд #3 4/17."
+   "text": "ліміт Gemini TTS вичерпано (429) з 28.11 08:21 Київ; за 24 год успішних запитів 19 — денний ліміт ковзний (~15–19 запитів), слоти повертаються через добу після використаних. Наступне вікно — 10:02–10:52 Київ. Готово частин: шоу #3 11/12 (лишились ч.11); №186 «IT» (2.12) 0/12; №194 «Сертифікат» (4.12) 0/13; шоу #4 0/15; гайд #3 4/17."
   },
   {
    "name": "Instagram Reels",
