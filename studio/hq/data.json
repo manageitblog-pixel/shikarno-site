@@ -1,23 +1,23 @@
 {
- "generated": "2026-11-28T07:18:43Z",
+ "generated": "2026-11-28T07:36:39Z",
  "fresh": {
-  "yt_live": "2026-11-28T07:18:43Z",
+  "yt_live": "2026-11-28T07:36:39Z",
   "yt_analytics": "2026-11-25",
-  "tg_members": "2026-11-28T07:18:45Z",
-  "tg_posts": "2026-11-28T07:06:27Z",
-  "ideas": "2026-11-27T19:22:18Z",
+  "tg_members": "2026-11-28T07:36:40Z",
+  "tg_posts": "2026-11-28T07:34:58Z",
+  "ideas": "2026-11-28T07:34:14Z",
   "news": "2026-11-28 04:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-28T04",
   "instagram": "2026-11-28T04",
   "site": "2026-11-25",
-  "site_live": "2026-11-28T07:18:46Z",
-  "activity": "2026-11-28T07:17:49Z",
-  "asks": "2026-11-27T18:40Z"
+  "site_live": "2026-11-28T07:34:59Z",
+  "activity": "2026-11-28T07:27:46Z",
+  "asks": "2026-11-28T07:40Z"
  },
  "notes": [],
  "kpi": {
-  "subs": 452,
+  "subs": 453,
   "subs_goal": 1000,
   "long_hours": 11.2,
   "long_hours_ads": 6.3,
@@ -34,7 +34,7 @@
   ],
   "subs_since": {
    "base": 439,
-   "d": 13,
+   "d": 14,
    "at": "2026-11-27T19:06Z",
    "from": "2026-11-27"
   },
@@ -421,7 +421,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 277
+   "subs_total": 278
   },
   {
    "w": "2026-08-03",
@@ -435,7 +435,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 277
+   "subs_total": 278
   },
   {
    "w": "2026-08-17",
@@ -449,7 +449,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 277
+   "subs_total": 278
   },
   {
    "w": "2026-08-24",
@@ -463,7 +463,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 277
+   "subs_total": 278
   },
   {
    "w": "2026-08-31",
@@ -477,7 +477,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 277
+   "subs_total": 278
   },
   {
    "w": "2026-09-07",
@@ -491,7 +491,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 277
+   "subs_total": 278
   },
   {
    "w": "2026-09-28",
@@ -505,7 +505,7 @@
    "partial_site": false,
    "subs_cum": -1,
    "long_cum": 0.0,
-   "subs_total": 276
+   "subs_total": 277
   },
   {
    "w": "2026-10-19",
@@ -519,7 +519,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.2,
-   "subs_total": 277
+   "subs_total": 278
   },
   {
    "w": "2026-10-26",
@@ -533,7 +533,7 @@
    "partial_site": false,
    "subs_cum": 6,
    "long_cum": 0.7,
-   "subs_total": 283
+   "subs_total": 284
   },
   {
    "w": "2026-11-02",
@@ -547,7 +547,7 @@
    "partial_site": false,
    "subs_cum": 155,
    "long_cum": 5.5,
-   "subs_total": 432
+   "subs_total": 433
   },
   {
    "w": "2026-11-09",
@@ -561,7 +561,7 @@
    "partial_site": false,
    "subs_cum": 160,
    "long_cum": 8.2,
-   "subs_total": 437
+   "subs_total": 438
   },
   {
    "w": "2026-11-16",
@@ -575,7 +575,7 @@
    "partial_site": false,
    "subs_cum": 163,
    "long_cum": 10.9,
-   "subs_total": 440
+   "subs_total": 441
   },
   {
    "w": "2026-11-23",
@@ -589,7 +589,7 @@
    "partial_site": true,
    "subs_cum": 175,
    "long_cum": 17.2,
-   "subs_total": 452
+   "subs_total": 453
   }
  ],
  "tg_hist": [
@@ -624,10 +624,10 @@
  ],
  "platforms": {
   "youtube": {
-   "subs": 452,
+   "subs": 453,
    "views_total": 13861,
    "videos": 104,
-   "live_at": "2026-11-28T07:18:43Z",
+   "live_at": "2026-11-28T07:36:39Z",
    "views_7d": 1386,
    "pct_7d": 51.1,
    "subs_7d": 15,
@@ -1202,7 +1202,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-28T07:18:46Z",
+    "updated": "2026-11-28T07:34:59Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 2,
@@ -2101,8 +2101,8 @@
   }
  ],
  "ideas_count": {
-  "total": 201,
-  "open": 191
+  "total": 207,
+  "open": 197
  },
  "lake": {
   "videos": 104,
@@ -2310,24 +2310,6 @@
   }
  ],
  "activity": [
-  {
-   "id": "268",
-   "agent": "de",
-   "task": "Аудит прогнозів: ролики, яким 7 днів (опубл. 19–20.11)",
-   "started": "2026-11-27T00:19:42Z",
-   "finished": "2026-11-27T00:22:43Z",
-   "result": "ep77: прогноз 38 → факт 10 (×0.26), стрічка Shorts 0 — як ep79; 4/10 Shorts 15–23.11 без стрічки, решта ≥прогнозу → бектест 01.12 двома групами",
-   "agent_raw": "data"
-  },
-  {
-   "id": "269",
-   "agent": "de",
-   "task": "Збирач даталейку 00:53Z: новини, TikTok/IG/TG-знімок",
-   "started": "2026-11-27T00:53:13Z",
-   "finished": "2026-11-27T00:55:01Z",
-   "result": "news +19 (лише HN, першоджерела 0 → ідей 0); TikTok 7 відео; IG 12 Reels (2127); TG 6; deepmind RSS ERR; vidIQ 5 кр.",
-   "agent_raw": "data"
-  },
   {
    "id": "270",
    "agent": "de",
@@ -2618,32 +2600,32 @@
    "agent": "designer",
    "task": "Дизайнер 28.11: упаковка роликів на 3 дні вперед (ep85, шоу #3, ep88/89, ep91) — обкладинки/кадр 0",
    "started": "2026-11-28T07:17:49Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-28T07:25:37Z",
+   "result": "пакування 28.11–3.12: правки ep88/ep90/ep91 (SERIES, переноси, «Оплата»), ep85/86/89 ок; бриф обкладинки шоу #3 у design-guide"
   },
   {
    "id": "304",
    "agent": "clip",
    "task": "Кліп-редактор: нарізки з гайду #2 Claude (27.11) за 48 год",
    "started": "2026-11-28T07:17:49Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-28T07:20:10Z",
+   "result": "медіа гайду #2 стерте — кліпів нема; 3 кандидати з таймкодами (3:42, 13:23, 12:23) для vidIQ generate_clips"
   },
   {
    "id": "305",
    "agent": "seo",
    "task": "SEO 28.11: сторінки GSC покази≥50 поз.4–20, ще не переписані",
    "started": "2026-11-28T07:17:49Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-28T07:20:36Z",
+   "result": "кандидатів нема: усі 11 сторінок у експериментах title-ctr/hub-refresh; наступне вікно ≥1.12 (promty-dlya-chatgpt)"
   },
   {
    "id": "306",
    "agent": "trend",
    "task": "фон: веб-скан трендів 28.11 ранок (12–24 год) → ідеї",
    "started": "2026-11-28T07:17:49Z",
-   "finished": null,
-   "result": "",
+   "finished": "2026-11-28T07:25:57Z",
+   "result": "5 ідей №203–207; топ №203 eSIM-swap «від lifecell» (354); кандидати шоу #4: №204 агенти-покупки, №206",
    "agent_raw": "researcher"
   },
   {
@@ -2651,9 +2633,25 @@
    "agent": "de",
    "task": "фон: якість даталейку + стан експериментів ops.py",
    "started": "2026-11-28T07:17:49Z",
-   "finished": null,
-   "result": "",
+   "finished": "2026-11-28T07:23:40Z",
+   "result": "2 фікси (snap ep53 з videos; Microsoft RSS → blogs.microsoft.com/feed); експерименти: T1 база/вікно не узгоджені, related-cta-v2 недосяжний — до CSO",
    "agent_raw": "data"
+  },
+  {
+   "id": "308",
+   "agent": "seo",
+   "task": "фон: нова SEO-стаття під непокритий запит (28.11)",
+   "started": "2026-11-28T07:20:36Z",
+   "finished": "2026-11-28T07:26:37Z",
+   "result": "стаття shi-pomichnyk-shcho-tse (390/міс UA), вихід 29.11 10:00 Київ"
+  },
+  {
+   "id": "309",
+   "agent": "coo",
+   "task": "COO ранок 28.11: думати, дашборд, конвеєр",
+   "started": "2026-11-28T07:27:46Z",
+   "finished": null,
+   "result": ""
   }
  ],
  "agents": [
@@ -2971,9 +2969,21 @@
    "time": "20:27",
    "what": "Директор студії: вечірній звіт власнику",
    "agent": "coo"
+  },
+  {
+   "time": "23:41",
+   "what": "Нічний резерв у Google Drive: документи, дані, медіа роликів (drive_sync.py all)",
+   "agent": "de"
   }
  ],
+ "schedule_checked": "28.11",
  "asks": [
+  {
+   "what": "Telegram-взаємопіар: надіслати 3 повідомлення адмінам від свого акаунта — @kirioswriter (@gptmike), @hworknet (Hworknet Community), @mrvooooo (@llms_ua)",
+   "why": "TG стоїть на 6 учасниках 7 днів (tg_daily 22–28.11, Δ 0; пости щодня не рухають); рішення COO 25.11 — безкоштовний взаємопіар. Шаблон і персональний рядок для кожного — docs/research/tg-cross-promo-2026-11-26.md. Бот першим писати не може; по одному, без масових розсилок. Коли надішлеш — напиши боту «взаємопіар надіслано»",
+   "when": "26–27.11 → прострочено; COO: перший пункт вечірнього звіту 28.11 (перевірка 29.11: tg_daily ≥ 8 або ≥ 1 домовленість)",
+   "status": "чекає власника"
+  },
   {
    "what": "Google Ads: чернетка «Довгі ролики — глядачі каналу» (на паузі, 3 оголошення) — назви суму (денну або загальну), період і напиши «так» на запуск",
    "why": "чернетку створено 27.11 через API, усе PAUSED; 196 грн/день — лише технічна заглушка (мінімум Demand Gen), не пропозиція. Реклама не рахується в YPP — дає лише розгін і follow-on перегляди; рішення — після ціни підписника з Analytics за поточною кампанією (закінчується 4.12). Нічого не вмикаємо без твого «так»",
@@ -2996,12 +3006,6 @@
    "what": "Гайд #1 (M-KQwpDwpA4): закріпити перший коментар і запустити Test & compare обкладинок",
    "why": "A/B обкладинок робиться лише вручну в Studio",
    "when": "зараз (вийшов 25.11 19:00 Київ; перший коментар уже запощено 19:07)",
-   "status": "чекає власника"
-  },
-  {
-   "what": "Telegram-взаємопіар: надіслати 3 повідомлення адмінам від свого акаунта — @kirioswriter (@gptmike), @hworknet (Hworknet Community), @mrvooooo (@llms_ua)",
-   "why": "TG стоїть на 6 учасниках 4–5 днів; рішення COO 25.11 — безкоштовний взаємопіар. Шаблон і персональний рядок для кожного — docs/research/tg-cross-promo-2026-11-26.md. Бот першим писати не може; по одному, без масових розсилок. Коли надішлеш — напиши боту «взаємопіар надіслано»",
-   "when": "26–27.11 (перевірка 29.11: tg_daily ≥ 8 або ≥ 1 домовленість)",
    "status": "чекає власника"
   },
   {

@@ -42,12 +42,34 @@ def plural(n):
     if 2 <= n % 10 <= 4 and not 12 <= n % 100 <= 14: return "матеріали"
     return "матеріалів"
 
+def kyiv_offset_check(f, key, d):
+    """COO 28.11: агенти ставили +03:00 (літній час, як у прикладі CLAUDE.md з жовтня) на листопадові дати — стаття 29.11
+    вийшла б на годину пізніше. Київ: +02:00 з останньої неділі жовтня до останньої неділі березня, +03:00 — решту року.
+    Лише попередження (вихід build не змінюється, SEO не чіпаємо); помилки зони не валять збірку."""
+    try:
+        from zoneinfo import ZoneInfo
+        if d.tzinfo is None:
+            DATE_WARN.append(f"{f.name}: {key} без часової зони — постав +02:00 (зима) або +03:00 (літо)"); return
+        exp = d.astimezone(ZoneInfo("Europe/Kyiv")).utcoffset()
+        if d.utcoffset() != exp:
+            h = int(exp.total_seconds() // 3600)
+            DATE_WARN.append(f"{f.name}: {key} {d.isoformat()} — у Києві на цю дату +0{h}:00 "
+                             f"(вийде о {d.astimezone(ZoneInfo('Europe/Kyiv')).strftime('%H:%M')} Київ, а не о {d.strftime('%H:%M')})")
+    except Exception:  # noqa: BLE001 — немає tzdata тощо
+        pass
+
+DATE_WARN = []
+
 def posts_all():
     out = []
     for f in sorted((ROOT/"content/posts").glob("*.md")):
         p = load(f)
         if p.get("draft"): continue
         d = p["date"] if isinstance(p["date"], dt.datetime) else dt.datetime.fromisoformat(str(p["date"]))
+        kyiv_offset_check(f, "date", d)
+        if p.get("updated"):
+            uu = p["updated"] if isinstance(p["updated"], dt.datetime) else dt.datetime.fromisoformat(str(p["updated"]))
+            kyiv_offset_check(f, "updated", uu)
         if d > dt.datetime.now(dt.timezone.utc) and "--future" not in sys.argv: continue  # відкладена публікація
         kind = p.get("kind", "news"); sec, sec_name, label = KINDS[kind]
         p.update(kind=kind, sec=sec, sec_name=sec_name, label=label, long=kind != "news")
@@ -218,3 +240,4 @@ addEventListener('hashchange',show);show();"""
 
 if __name__ == "__main__":
     build(preview="--preview" in sys.argv)
+    for w in dict.fromkeys(DATE_WARN): print("⚠ ЧАСОВА ЗОНА:", w)

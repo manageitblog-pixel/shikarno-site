@@ -11,7 +11,8 @@
   python3 drive_sync.py push <файл|тека> [...]    → залити нові/змінені
   python3 drive_sync.py all                        → документи + воркфлоу + артефакти + дані + усі eps/<slug>
   python3 drive_sync.py restore [префікс-ключа]    → стягнути відсутні локально (напр. restore claude:eps/ep88)
-  python3 drive_sync.py status"""
+  python3 drive_sync.py status
+  python3 drive_sync.py check <slug>               → чи в Drive vo.wav, align.json, vo_tl.json, final.mp4 (джерела кліпів); код 1 — бракує"""
 import hashlib, json, os, sys, urllib.request, urllib.parse
 sys.path.insert(0, '/home/claude/yt'); import yt
 H = os.path.realpath('/home/claude')
@@ -156,8 +157,23 @@ def restore(prefix=''):
     print('restored', n)
 
 
+CLIP_SRC = ('vo.wav', 'align.json', 'vo_tl.json', 'final.mp4')  # clip_cut.py бере голос з vo.wav по межах align.json
+
+
+def check(slug):
+    """COO 28.11: чи є в Drive (індекс + той самий md5) усе, з чого ріжуться кліпи довгого. Офлайн, без API. Код 1 — чогось бракує."""
+    d = idx(); miss = []
+    for f in CLIP_SRC:
+        p = os.path.join(H, 'eps', slug, f); k = key_of(p) if os.path.exists(p) else 'claude:eps/%s/%s' % (slug, f)
+        m = d['files'].get(k)
+        if not m: miss.append(f + (' (немає і локально)' if not os.path.exists(p) else ' (не залито)'))
+        elif os.path.exists(p) and m['md5'] != md5(p): miss.append(f + ' (у Drive стара версія)')
+    print('drive check', slug, 'OK' if not miss else 'БРАКУЄ: ' + ', '.join(miss)); return 1 if miss else 0
+
+
 if __name__ == '__main__':
     a = sys.argv[1:] or ['status']
+    if a[0] == 'check': sys.exit(check(a[1]))
     if a[0] == 'push': push(a[1:])
     elif a[0] == 'all': push(all_paths()); dedup(idx())
     elif a[0] == 'restore': restore(a[1] if len(a) > 1 else '')

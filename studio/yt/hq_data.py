@@ -36,7 +36,7 @@ DEPTS = [
   dict(id="design", name="Дизайн", color="#FF8FD8"), dict(id="research", name="Дослідження та аналітика", color="#4CF2FF"),
   dict(id="growth", name="Зростання (Growth)", color="#FFA94D"), dict(id="dist", name="Дистрибуція", color="#C792FF"),
 ]
-# Реальний розклад (звірено з list_triggers 24.11, вікно TTS — 26.11; час — Київ). Час виходу роликів — це publish_at у YouTube, не запуск агента.
+# Реальний розклад (звірено з list_triggers 28.11 COO — SCHEDULE_CHECKED нижче, дата йде на сторінку; час — Київ). Час виходу роликів — це publish_at у YouTube, не запуск агента.
 SCHEDULE = [  # (Київ, що, агент)
   ("щогодини :06", "Асистент власника: перевірка бота, відкладені статті, оновлення HQ", "ea"),
   ("щогодини :17", "Диспетчер: пул 5 агентів, самоперевірка, оновлення HQ", "coo"),
@@ -58,7 +58,9 @@ SCHEDULE = [  # (Київ, що, агент)
   ("19:00", "Вихід Short дня (YouTube) + TikTok + стаття + TG", "dist"),
   ("19:00 ср", "Вихід гайду (довге відео)", "longs"),
   ("20:27", "Директор студії: вечірній звіт власнику", "coo"),
+  ("23:41", "Нічний резерв у Google Drive: документи, дані, медіа роликів (drive_sync.py all)", "de"),  # COO 28.11: тригер є з 25.11, у HQ не було
 ]
+SCHEDULE_CHECKED = "28.11"  # COO 28.11: дата звірки SCHEDULE з list_triggers — оновлювати тут, а не в index.html
 # Старі/неточні agent_id у журналі activity.json → реальні ролі з AGENTS (інакше офіс не бачить, хто працює)
 ALIASES = {"editor": "shorts", "voice": "post", "production": "post", "design": "designer", "analyst": "da",
            "niche": "trend", "dispatcher": "coo", "writer": "shorts", "showrunner": "longs", "data": "de",
@@ -516,7 +518,7 @@ def main():
         days=[dict(d=d, v=v, p=round(p or 0, 1)) for d, v, p in days], site=[dict(d=d, c=cl, i=im, pos=round(po, 1)) for d, cl, im, po in site],
         history=hist, tg_hist=tg_hist, platforms=platforms, formats=formats, formats_cutoff=cutoff, videos=vids, ideas=ideas_open[:12],
         ideas_count=dict(total=len(ideas), open=len(ideas_open)), lake=lake, news=news, competitors=comp_top,
-        activity=acts, agents=AGENTS, depts=DEPTS, schedule=[dict(time=a, what=b, agent=c_) for a, b, c_ in SCHEDULE], asks=asks_items, pipe=pipeline_status(meta),
+        activity=acts, agents=AGENTS, depts=DEPTS, schedule=[dict(time=a, what=b, agent=c_) for a, b, c_ in SCHEDULE], schedule_checked=SCHEDULE_CHECKED, asks=asks_items, pipe=pipeline_status(meta),
     )
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     json.dump(data, open(OUT, "w"), ensure_ascii=False, indent=1)

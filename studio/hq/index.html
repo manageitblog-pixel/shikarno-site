@@ -145,7 +145,7 @@ a{color:var(--cyan)}
   </section>
 
   <section aria-labelledby="h-day">
-    <h2 id="h-day">Конвеєр дня <span>що і коли запускається (час Київ)</span> <span class="fr">звірено з розкладом задач 26.11</span></h2>
+    <h2 id="h-day">Конвеєр дня <span>що і коли запускається (час Київ)</span> <span class="fr" id="sched-checked">звірено з розкладом задач 26.11</span></h2>
     <div class="timeline" id="timeline"></div>
   </section>
 
@@ -249,6 +249,7 @@ function render(D){
   const now=kyivNow(), hm=now.getHours()*60+now.getMinutes();
   const DOW=["нд","пн","вт","ср","чт","пт","сб"][now.getDay()];
   $("#pipe").innerHTML=(D.pipe||[]).map(p=>`<div class="tl"><span class="t"><span class="state ${p.state==="ok"?"ok":p.state==="bad"?"bad":"warn"}">${p.state==="ok"?"ок":p.state==="bad"?"пропуск":p.label||"ліміт"}</span></span><span><b style="font-weight:600">${esc(p.name)}</b> — ${esc(p.text)}</span><span class="who"></span></div>`).join("")||`<div class="tl"><span class="t">—</span><span style="color:var(--mut)">Немає даних про ліміти й пропуски.</span><span></span></div>`;
+  if(D.schedule_checked)$("#sched-checked").textContent="звірено з розкладом задач "+D.schedule_checked;
   $("#timeline").innerHTML=D.schedule.map(s=>{const m=/^(\d\d):(\d\d)/.exec(s.time);const days=s.time.match(/(пн|вт|ср|чт|пт|сб|нд)/g);const today=!days||days.includes(DOW);const near=today&&m&&Math.abs(+m[1]*60+ +m[2]-hm)<=45;const a=D.agents.find(x=>x.id===s.agent);return `<div class="tl ${near?"now":""}"><span class="t">${esc(s.time)}</span><span>${esc(s.what)}</span><span class="who" style="color:var(--mut)">${esc(a?a.name.split(" (")[0]:"")}</span></div>`}).join("");
 
   // ideas

@@ -54,3 +54,15 @@ def _git(slug, label):
         if r.returncode: raise RuntimeError("push (коміт лишився локально, піде з наступним push): " + r.stderr[-200:])
     except Exception as e:  # noqa: BLE001
         _log(ev="vo_backup_git_fail", slug=slug, label=label, err=str(e)[:300])
+
+
+# COO 28.11: гайди #1/#2 втратили vo.wav/align.json (рестарт) → clip_cut.py не має джерела, кліпів немає. Частини partN.opus
+# уже в git, з них vo_raw/vo.wav відтворюються; align.json (Whisper, довго) і vo_tl.json — ні. Після align.py довгого:
+#   python3 studio/eps/vo_backup.py meta <slug>   → align.json + vo_tl.json у _vo_backup/<slug>/ (КБ, коміт лише цієї теки)
+if __name__ == "__main__":
+    if len(sys.argv) == 3 and sys.argv[1] == "meta":
+        D = os.path.join("/home/claude/eps", sys.argv[2])
+        got = backup(sys.argv[2], [], "meta", extra=[os.path.join(D, f) for f in ("align.json", "vo_tl.json")])
+        print("vo_backup meta:", [os.path.basename(x) for x in got] or "НІЧОГО (немає align.json/vo_tl.json)")
+        sys.exit(0 if got else 1)
+    print("usage: vo_backup.py meta <slug>"); sys.exit(2)

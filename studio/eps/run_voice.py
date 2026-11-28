@@ -89,8 +89,14 @@ def short(mod):
     # tts-заміну ШІ→«штучний інтелект», Shorts — ні. Не палимо квоту: спершу виправити gsay у сценарії.
     bad = [i for i, s in enumerate(ep.SCENES) if re.search(r"(?<![А-ЯІЇЄҐа-яіїєґ])ШІ(?![а-яіїєґ])", s.get("gsay", ""))]
     if bad: log(ev="gsay_lint", ep=mod, scenes=bad, fix="ШІ → «штучний інтелект» або «ші» у gsay"); return
+    # COO 28.11: Shorts завжди міряються еталоном Shorts 141,5±8. guide("weekly3") лишав у os.environ VC_REF=126/VC_TOL=5, і в гілці
+    # «ч.11 шоу вже є» short("ep90") ішов одразу після нього → дубль 125 Гц («довгий» голос) пройшов би як OK. Скидаємо смугу довгих тут.
+    for k in ("VC_REF", "VC_TOL"): os.environ.pop(k, None)
     env = dict(os.environ, TTS_PACE="hype"); best = None
-    for take in (1, 2):
+    # COO 28.11: дублі нумеруються наскрізно між вікнами з F0 у назві (takeN_f0_X_vo_raw.wav), як у guide_part. Раніше take1/take2
+    # перезаписувались щогодини — ep90 втратив найближчі дублі 130,7 і 132,2, лишився 125,3; найкращий вибирається з усіх збережених.
+    prev = max([int(m.group(1)) for f in os.listdir(f"{D}/takes") if (m := re.match(r"take(\d+)_", f))] + [0])
+    for take in (prev + 1, prev + 2):
         for f in os.listdir(D):
             if f.startswith("full_") and f.endswith(".wav"): os.remove(f"{D}/{f}")
         gap = 20 - (time.time() - tts_call.last)
@@ -104,11 +110,14 @@ def short(mod):
             raise RuntimeError("gen_full failed " + mod)
         REQ["ok"] += 1; log(ev="tts_ok", n=REQ["ok"], out=mod, http_notes=err[-300:])
         F, ok = f0(D)
-        for f in ("vo_raw.wav", "vo_tl.json"): shutil.copy(f"{D}/{f}", f"{D}/takes/take{take}_{f}")
+        for f in ("vo_raw.wav", "vo_tl.json"): shutil.copy(f"{D}/{f}", f"{D}/takes/take{take}_f0_{F:.1f}_{f}")
         log(ev="short", ep=mod, take=take, f0=F, f0_ok=ok, scenes=[l for l in r.stdout.splitlines() if re.match(r"^\d+ ", l)])
-        if best is None or abs(F - float(os.environ.get("VC_REF", VC.REF))) < abs(best[1] - float(os.environ.get("VC_REF", VC.REF))): best = (take, F)
         if ok: break
     ref = float(os.environ.get("VC_REF", VC.REF))
+    for f in os.listdir(f"{D}/takes"):  # найближчий до еталона серед УСІХ дублів (і цього, і попередніх вікон)
+        m = re.match(r"take(\d+)_f0_([\d.]+)_vo_raw\.wav$", f)
+        if m and os.path.exists(f"{D}/takes/take{m.group(1)}_f0_{m.group(2)}_vo_tl.json") and (best is None or abs(float(m.group(2)) - ref) < abs(best[1] - ref)):
+            best = (f"{m.group(1)}_f0_{m.group(2)}", float(m.group(2)))
     fb = [f for f in os.listdir(f"{D}/takes") if re.match(r"vo_fallback_f0_[\d.]+_raw\.wav$", f)]
     if fb:  # QA 23.11: запасний дубль (з таймлайном) лишається, якщо новий не ближчий до еталона
         fF = float(re.search(r"f0_([\d.]+)_raw", fb[0]).group(1))
@@ -117,7 +126,7 @@ def short(mod):
             shutil.copy(f"{D}/takes/{base}_raw.wav", f"{D}/vo_raw.wav"); shutil.copy(f"{D}/takes/{base}_tl.json", f"{D}/vo_tl.json")
             log(ev="short_fallback_kept", ep=mod, new_f0=best[1], fallback_f0=fF); best = None
     if best is not None:
-        for f in ("vo_raw.wav", "vo_tl.json"): shutil.copy(f"{D}/takes/take{best[0]}_{f}", f"{D}/{f}")
+        for f in ("vo_raw.wav", "vo_tl.json"): shutil.copy(f"{D}/takes/take{best[0]}_{f}", f"{D}/{f}")  # best[0] = «N_f0_X»
     best = best or (0, fF)
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", f"{D}/vo_raw.wav", "-af",
                     "highpass=f=60,acompressor=threshold=-18dB:ratio=3:attack=5:release=80,loudnorm=I=-14:TP=-1.5:LRA=7",
@@ -167,7 +176,9 @@ if __name__ == "__main__":
         # 28–29.11, поки немає part11 шоу #3 (тригер 08:30Z), №186 не чіпаємо — квота спершу на шоу (той самий резерв, що й для guide3 нижче).
         _w3 = importlib.import_module("weekly3")
         if datetime.date.today().isoformat() in ("2026-11-28", "2026-11-29") and not os.path.exists(f"/home/claude/eps/{_w3.SLUG}/part{len(_w3.PARTS) - 1}.wav"):
-            log(ev="reserve_weekly3", note="квота 28–29.11 — спершу остання частина шоу #3, rozbir186 після неї", ok_requests=REQ["ok"])
+            # COO 28.11: раніше ця гілка далі йшла в цикл Shorts і палила по 2 запити на ep90 у кожному циклі 08:02–08:22Z — до тригера
+            # ч.11 о 08:30Z. Резерв означає резерв: поки ч.11 немає, нових запитів не робимо (ep88/ep89 уже мають vo.wav).
+            log(ev="reserve_weekly3", note="квота 28–29.11 — спершу остання частина шоу #3 (тригер 08:30Z); ep90 і rozbir186 після неї", ok_requests=REQ["ok"]); sys.exit(0)
         else:
             # COO 27.11 веч.: ep90 (вихід 2.12) — F0 122,7 / match 0,54 нижче норми; vo.wav прибрано в takes/vo_fallback_* → 1–2 запити ДО №186
             short("ep90")
