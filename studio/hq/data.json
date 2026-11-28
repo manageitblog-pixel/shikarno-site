@@ -1,9 +1,9 @@
 {
- "generated": "2026-11-28T12:56:13Z",
+ "generated": "2026-11-28T13:06:41Z",
  "fresh": {
-  "yt_live": "2026-11-28T12:56:14Z",
+  "yt_live": "2026-11-28T13:06:41Z",
   "yt_analytics": "2026-11-25",
-  "tg_members": "2026-11-28T12:56:14Z",
+  "tg_members": "2026-11-28T13:06:43Z",
   "tg_posts": "2026-11-28T12:56:16Z",
   "ideas": "2026-11-28T12:55:40Z",
   "news": "2026-11-28 12:53",
@@ -15,7 +15,9 @@
   "activity": "2026-11-28T12:56:13Z",
   "asks": "2026-11-28T07:40Z"
  },
- "notes": [],
+ "notes": [
+  "Cloudflare: кеш: Cloudflare не відповів (HTTPError)"
+ ],
  "kpi": {
   "subs": 479,
   "subs_goal": 1000,
@@ -633,7 +635,7 @@
    "subs": 479,
    "views_total": 13861,
    "videos": 104,
-   "live_at": "2026-11-28T12:56:14Z",
+   "live_at": "2026-11-28T13:06:41Z",
    "views_7d": 1386,
    "pct_7d": 51.1,
    "subs_7d": 15,
@@ -1518,7 +1520,8 @@
       "country": "NL",
       "count": 2
      }
-    ]
+    ],
+    "error": "кеш: Cloudflare не відповів (HTTPError)"
    }
   },
   "telegram": {
