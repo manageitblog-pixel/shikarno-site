@@ -1,23 +1,23 @@
 {
- "generated": "2026-11-27T23:20:03Z",
+ "generated": "2026-11-28T00:06:55Z",
  "fresh": {
-  "yt_live": "2026-11-27T23:20:03Z",
+  "yt_live": "2026-11-28T00:06:55Z",
   "yt_analytics": "2026-11-24",
-  "tg_members": "2026-11-27T23:20:05Z",
-  "tg_posts": "2026-11-27T23:06:50Z",
+  "tg_members": "2026-11-28T00:06:56Z",
+  "tg_posts": "2026-11-28T00:06:58Z",
   "ideas": "2026-11-27T19:22:18Z",
   "news": "2026-11-27 20:53",
   "comp": "2026-11-23",
   "tiktok": "2026-11-27T20",
   "instagram": "2026-11-27T20",
   "site": "2026-11-25",
-  "site_live": "2026-11-27T23:20:06Z",
+  "site_live": "2026-11-28T00:06:59Z",
   "activity": "2026-11-27T20:55:01Z",
   "asks": "2026-11-27T18:40Z"
  },
  "notes": [],
  "kpi": {
-  "subs": 445,
+  "subs": 446,
   "subs_goal": 1000,
   "long_hours": 11.2,
   "long_hours_ads": 6.3,
@@ -33,10 +33,10 @@
    "2026-11-24"
   ],
   "subs_since": {
-   "base": 395,
-   "d": 50,
-   "at": "2026-11-26T19:06Z",
-   "from": "2026-11-26"
+   "base": 439,
+   "d": 7,
+   "at": "2026-11-27T19:06Z",
+   "from": "2026-11-27"
   },
   "tg": 6,
   "tg_goal": 150,
@@ -416,7 +416,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 281
+   "subs_total": 282
   },
   {
    "w": "2026-08-03",
@@ -430,7 +430,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 281
+   "subs_total": 282
   },
   {
    "w": "2026-08-17",
@@ -444,7 +444,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 281
+   "subs_total": 282
   },
   {
    "w": "2026-08-24",
@@ -458,7 +458,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 281
+   "subs_total": 282
   },
   {
    "w": "2026-08-31",
@@ -472,7 +472,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 281
+   "subs_total": 282
   },
   {
    "w": "2026-09-07",
@@ -486,7 +486,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.0,
-   "subs_total": 281
+   "subs_total": 282
   },
   {
    "w": "2026-09-28",
@@ -500,7 +500,7 @@
    "partial_site": false,
    "subs_cum": -1,
    "long_cum": 0.0,
-   "subs_total": 280
+   "subs_total": 281
   },
   {
    "w": "2026-10-19",
@@ -514,7 +514,7 @@
    "partial_site": false,
    "subs_cum": 0,
    "long_cum": 0.2,
-   "subs_total": 281
+   "subs_total": 282
   },
   {
    "w": "2026-10-26",
@@ -528,7 +528,7 @@
    "partial_site": false,
    "subs_cum": 6,
    "long_cum": 0.7,
-   "subs_total": 287
+   "subs_total": 288
   },
   {
    "w": "2026-11-02",
@@ -542,7 +542,7 @@
    "partial_site": false,
    "subs_cum": 155,
    "long_cum": 5.5,
-   "subs_total": 436
+   "subs_total": 437
   },
   {
    "w": "2026-11-09",
@@ -556,7 +556,7 @@
    "partial_site": false,
    "subs_cum": 160,
    "long_cum": 8.2,
-   "subs_total": 441
+   "subs_total": 442
   },
   {
    "w": "2026-11-16",
@@ -570,7 +570,7 @@
    "partial_site": false,
    "subs_cum": 163,
    "long_cum": 10.9,
-   "subs_total": 444
+   "subs_total": 445
   },
   {
    "w": "2026-11-23",
@@ -584,7 +584,7 @@
    "partial_site": true,
    "subs_cum": 164,
    "long_cum": 12.4,
-   "subs_total": 445
+   "subs_total": 446
   }
  ],
  "tg_hist": [
@@ -615,10 +615,10 @@
  ],
  "platforms": {
   "youtube": {
-   "subs": 445,
+   "subs": 446,
    "views_total": 13536,
    "videos": 104,
-   "live_at": "2026-11-27T23:20:03Z",
+   "live_at": "2026-11-28T00:06:55Z",
    "views_7d": 1031,
    "pct_7d": 49.2,
    "subs_7d": 4,
@@ -1169,7 +1169,7 @@
     }
    ],
    "live": {
-    "updated": "2026-11-27T23:20:06Z",
+    "updated": "2026-11-28T00:06:59Z",
     "source": "Cloudflare Web Analytics",
     "tz": "Europe/Kyiv",
     "today_pageloads": 0,
@@ -1182,11 +1182,6 @@
      "pageloads": 17,
      "visits": 15,
      "hours": [
-      {
-       "h": "2026-11-27T00:00:00Z",
-       "pageloads": 0,
-       "visits": 0
-      },
       {
        "h": "2026-11-27T01:00:00Z",
        "pageloads": 0,
@@ -1301,6 +1296,11 @@
        "h": "2026-11-27T23:00:00Z",
        "pageloads": 0,
        "visits": 0
+      },
+      {
+       "h": "2026-11-28T00:00:00Z",
+       "pageloads": 0,
+       "visits": 0
       }
      ]
     },
@@ -1337,9 +1337,9 @@
      },
      {
       "d": "2026-11-20",
-      "pageloads": 7,
-      "visits": 5,
-      "sampled": false
+      "pageloads": 10,
+      "visits": 0,
+      "sampled": true
      },
      {
       "d": "2026-11-21",
@@ -1644,7 +1644,7 @@
    "views7": null,
    "pct": null,
    "complete": false,
-   "total": 23
+   "total": 22
   },
   {
    "id": "Rlm1u-I6x00",
@@ -2172,15 +2172,15 @@
    "channel": "Орлов вигорів з АІ",
    "subs": 12800,
    "lang": "uk",
-   "avg": 18569,
-   "n": 15
+   "avg": 17233,
+   "n": 14
   },
   {
    "channel": "DOU",
    "subs": 104000,
    "lang": "uk",
-   "avg": 15780,
-   "n": 93
+   "avg": 15928,
+   "n": 92
   },
   {
    "channel": "Serhii Nemchynskyi",
@@ -2200,8 +2200,8 @@
    "channel": "Відчайдушний програміст",
    "subs": 18300,
    "lang": "uk",
-   "avg": 10025,
-   "n": 33
+   "avg": 10443,
+   "n": 31
   },
   {
    "channel": "dev ua   ",
@@ -2263,8 +2263,8 @@
    "channel": "Vicky x Vlogs",
    "subs": 102000,
    "lang": "en",
-   "avg": 1146529,
-   "n": 107
+   "avg": 1132460,
+   "n": 105
   },
   {
    "channel": "Iman Gadzhi",
@@ -2996,7 +2996,7 @@
    "name": "Стрічка Shorts",
    "state": "warn",
    "label": "увага",
-   "text": "без показу у стрічці (≤6 переглядів за першу добу) — 4 з 13 за 10 днів: 20.11 sec «Шахраї по телефону і в SMS: перевір по» (3); 21.11 tier «Сімейний бюджет з ШІ: який ШІ рахує гр» (2); 25.11 sec «ШІ в телефоні читає твою переписку? Що» (2); 26.11 sec «Шахрайські SMS на iPhone: Moonlock від» (3). Спільне (аудит COO 27.11, 15–26.11): 4 з 5 нулів — тривожний кадр 0 (⚠️/щит, «шахраї», «світить дані»). Перевірка — ep90 2.12 з нейтральним кадром 0 (RUNBOOK «НУЛЬ СТРІЧКИ SHORTS»)."
+   "text": "без показу у стрічці (≤6 переглядів за першу добу) — 4 з 12 за 10 днів: 20.11 sec «Шахраї по телефону і в SMS: перевір по» (3); 21.11 tier «Сімейний бюджет з ШІ: який ШІ рахує гр» (2); 25.11 sec «ШІ в телефоні читає твою переписку? Що» (2); 26.11 sec «Шахрайські SMS на iPhone: Moonlock від» (3). Спільне (аудит COO 27.11, 15–26.11): 4 з 5 нулів — тривожний кадр 0 (⚠️/щит, «шахраї», «світить дані»). Перевірка — ep90 2.12 з нейтральним кадром 0 (RUNBOOK «НУЛЬ СТРІЧКИ SHORTS»)."
   }
  ]
 }
