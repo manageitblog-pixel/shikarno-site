@@ -1597,8 +1597,8 @@
    "agent": "seo",
    "task": "Діагностика: chatgpt-bezkoshtovno-v-ukraini випала з Google з 15.11 (25–38 показів/день → 0)",
    "started": "2026-11-28T10:19:18Z",
-   "finished": null,
-   "result": ""
+   "finished": "2026-11-28T10:23:28Z",
+   "result": "сайт не зламано: Google понизив сторінку — у видачі тепер AI Overview + сам ChatGPT; індексація OK; чекаємо до ~10.12, потім розвести інтенти"
   }
  ]
 }
